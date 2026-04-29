@@ -1,323 +1,354 @@
-{
-  "id": "019d6143a5ad7500b254e263a93eb317",
-  "type": "character",
-  "name": "Bartlomiej Pathak",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Black market dealer and aug shop owner (unlicensed low-tier augmentation parts)",
-  "age": 23,
-  "status": "active",
-  "location": "The Oxidian Market, Ironvein, near Western and Chicago Ave",
-  "description": "Bartlomiej Pathak is short and sharp-featured, with warm dark brown skin, natural hair cut close on the sides and loose on top, and a right arm from the elbow down that is a mismatched patchwork of three different manufacturers' chrome — she's repaired it so many times with whatever parts were available that it has become a kind of portfolio piece, demonstrating exactly what she can do with limited materials. She has cat ears (geneware, a gift from her older sister at fifteen, mottled gray-black) that she keeps unselfconsciously expressive. Her stall is in the Oxidian Market's lower row, technically licensed as a 'personal electronics repair' operation, which is true as far as it goes.\n\nBartlomiej Pathak moves fast and thinks faster — she has the focused intensity of someone who taught herself cyberware installation from pirated Helix Biosystems technical manuals and has so far not killed anyone, which she considers evidence that she knows what she's doing. She does, mostly. She is the go-to for people in the Ironvein-adjacent neighborhoods who need basic augmentation work — neural ports, subdermal mods, sensory enhancements — but can't access licensed clinics due to cost, ID status, or warrant concerns. She is not reckless but she operates in a space with no margin for error and she knows it. She has a quick, fierce loyalty to regulars and a zero-tolerance policy for anyone who tries to use her clientele as a pressure point.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.7,
-      "id": 0.7,
-      "shadow": 0.4,
-      "mask": 0.4,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Killing someone on the table through a mistake she should have caught",
-      "Being shut down by a corponation licensing enforcement sweep — not for herself, but because her clients will have nowhere to go"
-    ],
-    "core_desires": [
-      "To get good enough that she can fix anything, eventually including herself",
-      "A legitimate clinic — her own, licensed, affordable, real"
-    ],
-    "coping_mechanisms": [
-      "Hyper-focus on technical problems as a way to not feel the weight of what she's carrying",
-      "Physicality — she runs in the Ironvein drainage tunnels at 2am when she can't sleep"
-    ],
-    "blind_spots": [
-      "Her protective instinct for clients sometimes overrides her self-preservation calculus in ways that are genuinely dangerous",
-      "She reads aggression as a challenge to solve rather than a signal to leave"
-    ],
-    "secret": "She botched an installation fourteen months ago — a neural port that she installed slightly misaligned, causing the client chronic low-grade pain they haven't connected to her work yet. She thinks about it every day. She hasn't told them."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical cyberware terminology delivered at speed, Guinean-French constructions from her parents' household, Ironvein street slang, impatient clipping of non-essential words",
-    "cadence": "Fast, staccato, always sounds like she's already thinking about the next thing",
-    "verbal_tics": [
-      "Clicks the fingers of her cybernetic hand when thinking — a distinctive soft metallic tap",
-      "'Yeah, I can do that.' (said before fully hearing the request, then amended)"
-    ],
-    "example_lines": [
-      "'Neural port, basic, one-hour install, Φ55 parts and labor, you're in and out. Helix charges Φ200 and makes you sign four data agreements. You tell me.'",
-      "'Don't touch anything in the back room. Not because I'm precious about it. Because some of it is live.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The client with the misaligned neural port has started developing symptoms she recognizes, and she has to decide whether to come forward before they connect the dots themselves — or before it gets worse",
-    "A Helix Biosystems licensing enforcement team has started moving through the Oxidian Market, and someone is tipping them toward specific stalls — Amara needs to know if she's on the list and who is feeding information"
-  ],
-  "narrative_function": "Low-cost augmentation source, contact for unlicensed installation, connection to ID-adjacent and warrant-flagged populations, quest giver for supply and equipment problems",
-  "augmentations": "Right arm (elbow-down) — multi-manufacturer patchwork cyberlimb, high-dexterity fine motor configuration; gray-black mottled cat ears (geneware, cosmetic); reinforced sternum plate (installed herself, precautionary)",
-  "daily_life": "She opens at 10am, does consultations and sales until 3pm, then does installation and repair work in the back room until midnight. She eats one large meal a day, always from the same dumpling cart, always at 6pm.",
-  "affiliation": "Independent; pays informal dues to the Oxidian Market Vendors Guild and has a protective arrangement with a local crew called the Ironvein Laterals",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 7,
-      "expression": 5,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": 3,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "unlicensed augmentation",
-      "self-taught technician",
-      "community resource",
-      "guilty secret",
-      "fierce loyalty",
-      "working class climber"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never install something she hasn't verified is clean and functional — her reputation and someone's body depend on it equally",
-      "Never give up a client's identity or medical information regardless of who asks"
-    ],
-    "escalation_ladder": [
-      "Firm verbal no and return to work",
-      "Stands up and addresses it directly with the Laterals visibly nearby",
-      "Calls the Laterals in explicitly — she doesn't fight if she doesn't have to"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Brisk and professional — assesses competence and threat level simultaneously, warms up fast if neither is a problem",
-      "friends": "Loud, teasing, genuinely invested, will work unpaid on their hardware at 1am if they need it"
-    },
-    "stress_responses": {
-      "low": "Works faster",
-      "medium": "Stops talking entirely and focuses exclusively on whatever is in her hands",
-      "high": "Runs. Literally. Gets to the drainage tunnels and runs until she can think again."
-    },
-    "contradictions": [
-      "Deeply risk-averse about her clients' bodies; cavalier about her own safety"
-    ],
-    "habits": [
-      "Taps a rhythm on the workbench with her cybernetic fingers between tasks",
-      "Reads pirated technical manuals on her tablet every night before sleep",
-      "Always shakes hands with the cybernetic arm — she says it lets her assess someone's grip response"
-    ],
-    "breaking_points": [
-      "Harm coming to a client due to her work",
-      "Someone threatening to report her clientele to corponation enforcement"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Oxidian Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Ironvein to Guinean-Māori parents; father a pipeworks laborer, mother a market vendor",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Sister gave her the cat ears geneware mod for her 12th birthday; first exposure to cosmetic modification",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Lost two fingers to a factory press at 15; received a basic public-tier cybernetic replacement; became obsessed with how it worked",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Taught herself installation from pirated Helix manuals; performed her first successful unlicensed install on herself",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Opened the stall; misaligned neural port incident occurred fourteen months before current date",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Current: established Oxidian Market presence, guilt ongoing, Helix enforcement sweep beginning",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Oxidian Market",
-    "Helix Biosystems",
-    "Ironvein",
-    "Pressure Drop",
-    "Chicago",
-    "Neural Palate",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly South Asian (54.4%) with significant Hispanic/Latin American (31.2%), Middle Eastern (8.3%), Northern European (4.0%), and Central Asian (2.1%) ancestry. Her phenotype reflects this dominant South Asian foundation with warm undertones from Latin American and Middle Eastern heritage, creating a striking multicultural appearance. The South Asian structure forms her base — high cheekbones, defined jawline — while Hispanic/Latin American warmth and Middle Eastern richness layer into her complexion and facial structure.",
-    "height_cm": 158,
-    "weight_kg": 52,
-    "build": "Compact and wiry, all lean muscle with minimal body fat — the physique of someone who moves constantly and eats efficiently. Narrow shoulders, sharp hip bones, the kind of frame that fits easily into tight workspaces.",
-    "hair_color": "Natural black",
-    "hair_style": "Undercut: sides clipped to 3mm, top left long and textured, often pulled back with strips of salvaged synthetic material or left loose to frame her face",
-    "hair_length": "Short on sides, medium-long on top",
-    "eye_color": "Dark brown, natural",
-    "skin_tone": "Deep warm golden-brown with olive and terracotta undertones, reflecting the South Asian depth as primary tone enhanced by Hispanic/Latin American warmth and Middle Eastern richness. Luminous and even complexion with subtle warmth throughout.",
-    "complexion": "High cheekbones with defined angularity characteristic of South Asian heritage, balanced by a warm, gently rounded jawline influenced by Hispanic/Latin American and Middle Eastern structure. Small, slightly rounded nose with warm undertones. Eyes set with the subtle depth typical of South Asian phenotype. Skin is clear with minor reactive irritation around the right shoulder joint — faint chemical burns from solder work.",
-    "distinguishing_marks": [
-      "Faint scar across the underside of right forearm (chrome side), approximately 4cm long, from an early installation mistake at age 18",
-      "Thin burn marks on inner left wrist from acid chemical contact during parts cleaning, three parallel lines, each 1-2cm",
-      "Surgical scar at right elbow where the patchwork prosthetic attaches, reinforced with subdermal titanium mesh"
-    ],
-    "visible_augmentations": "Right arm from elbow down is a obvious mismatched cybernetic limb: three distinct chrome sections in slightly different finish (brushed matte, polished reflective, and worn gunmetal gray), assembled and reassembled with visible seam work and cross-manufacturer connectors. The palm and fingers show evidence of constant micro-welding and replacement. Mottled gray-black cat ears (geneware) protrude from the top of her skull, naturally expressive — rotate and twitch with her emotional state and attention. A faint outline of reinforced sternum plating is visible under fitted clothing as a subtle geometric pattern beneath the skin.",
-    "posture_movement": "She moves economically and fast, with the precise coordination of someone who works constantly with her hands. Her right arm moves with the fluid but noticeably different rhythm of installed chrome — slightly faster, smoother, zero hesitation. She often holds objects or tools in her chrome hand while working with her left. Cat ears track conversations and movement around her workspace; they point toward whoever is speaking to her. She rarely sits still; even while talking, her fingers are working — stripping wire, sorting components, tightening fasteners. Her gaze is direct and unsentimental.",
-    "clothing_style": "Tier 4 / Ironvein working-class practical: form-fitting dark synthetic bodysuit (midnight blue or black, water-resistant), reinforced at elbows and knees with gray neoprene panels. Oversized sleeveless utility vest in charcoal with deep pockets and magnetic panel-strips for holding small tools and components. Heavy-duty work boots with steel toe and grippy soles (scuffed, well-maintained). Fingerless gloves on her left hand only; her right chrome hand is always bare. A thin chain collar of brushed steel around her neck, no pendant. Her fingers are stained with trace amounts of solder and component residue that never fully wash out. She wears no jewelry beyond the collar and occasionally salvaged circuit-board rings on her left hand (functional and cosmetic)."
-  },
-  "image_prompt": "Bartlomiej Pathak, 158cm tall, compact wiry frame, deep warm golden-brown skin with olive undertones reflecting South Asian-dominant heritage blended with Hispanic and Middle Eastern ancestry. High cheekbones and defined jawline, small rounded nose, dark brown natural eyes with subtle depth. Black undercut hair with long textured top section, naturally expressive mottled gray-black cat ears protruding from skull. Mismatched cybernetic right arm from elbow down with three chrome sections in different finishes (brushed matte, polished, worn gunmetal), visible seam work and cross-manufacturer connectors. Reinforced sternum plating subtly visible under skin as geometric pattern. Surgical scar at right elbow, faint chemical burns on left inner wrist, scar on right forearm underside. Midnight blue water-resistant form-fitting bodysuit reinforced at elbows and knees with gray neoprene, oversized charcoal sleeveless utility vest with deep pockets and magnetic strips, heavy steel-toe work boots, fingerless gloves on left hand only, brushed steel chain collar. Fingers stained with solder residue, salvaged circuit-board rings on left hand. Direct unsentimental gaze, economical precise movement, working in neon-lit underground workshop surrounded by components and tools, GLMZ Great Lakes Metropolitan Zone, atmospheric lighting casting chrome arm highlights, moody industrial setting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 54.4,
-    "Hispanic/Latin American": 31.2,
-    "Middle Eastern": 8.3,
-    "Northern European": 4,
-    "Central Asian": 2.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Indian": {
-        "Malayali": 37.2
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 7,
-        "Sinhalese": 10.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 28.5
-      },
-      "Caribbean": {
-        "Puerto Rican": 2.7
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 8.3
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Dutch": 2.8,
-        "German": 1.2
-      }
-    },
-    "Central Asian": {
-      "Turkic": {
-        "Kazakh": 0.5,
-        "Kyrgyz": 1.1
-      },
-      "Iranian Central": {
-        "Hazara": 0.1,
-        "Tajik": 0.4
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5ad7500b254e263a93eb317",
+    "type":  "character",
+    "name":  "Bartlomiej Pathak",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Black market dealer and aug shop owner (unlicensed low-tier augmentation parts)",
+    "age":  23,
+    "status":  "active",
+    "location":  "The Oxidian Market, Ironvein, near Western and Chicago Ave",
+    "description":  "Bartlomiej Pathak is short and sharp-featured, with warm dark brown skin, natural hair cut close on the sides and loose on top, and a right arm from the elbow down that is a mismatched patchwork of three different manufacturers\u0027 chrome â€” she\u0027s repaired it so many times with whatever parts were available that it has become a kind of portfolio piece, demonstrating exactly what she can do with limited materials. She has cat ears (geneware, a gift from her older sister at fifteen, mottled gray-black) that she keeps unselfconsciously expressive. Her stall is in the Oxidian Market\u0027s lower row, technically licensed as a \u0027personal electronics repair\u0027 operation, which is true as far as it goes.\n\nBartlomiej Pathak moves fast and thinks faster â€” she has the focused intensity of someone who taught herself cyberware installation from pirated Helix Biosystems technical manuals and has so far not killed anyone, which she considers evidence that she knows what she\u0027s doing. She does, mostly. She is the go-to for people in the Ironvein-adjacent neighborhoods who need basic augmentation work â€” neural ports, subdermal mods, sensory enhancements â€” but can\u0027t access licensed clinics due to cost, ID status, or warrant concerns. She is not reckless but she operates in a space with no margin for error and she knows it. She has a quick, fierce loyalty to regulars and a zero-tolerance policy for anyone who tries to use her clientele as a pressure point.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Killing someone on the table through a mistake she should have caught",
+                                          "Being shut down by a corponation licensing enforcement sweep â€” not for herself, but because her clients will have nowhere to go"
+                                      ],
+                       "core_desires":  [
+                                            "To get good enough that she can fix anything, eventually including herself",
+                                            "A legitimate clinic â€” her own, licensed, affordable, real"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Hyper-focus on technical problems as a way to not feel the weight of what she\u0027s carrying",
+                                                 "Physicality â€” she runs in the Ironvein drainage tunnels at 2am when she can\u0027t sleep"
+                                             ],
+                       "blind_spots":  [
+                                           "Her protective instinct for clients sometimes overrides her self-preservation calculus in ways that are genuinely dangerous",
+                                           "She reads aggression as a challenge to solve rather than a signal to leave"
+                                       ],
+                       "secret":  "She botched an installation fourteen months ago â€” a neural port that she installed slightly misaligned, causing the client chronic low-grade pain they haven\u0027t connected to her work yet. She thinks about it every day. She hasn\u0027t told them."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical cyberware terminology delivered at speed, Guinean-French constructions from her parents\u0027 household, Ironvein street slang, impatient clipping of non-essential words",
+                            "cadence":  "Fast, staccato, always sounds like she\u0027s already thinking about the next thing",
+                            "verbal_tics":  [
+                                                "Clicks the fingers of her cybernetic hand when thinking â€” a distinctive soft metallic tap",
+                                                "\u0027Yeah, I can do that.\u0027 (said before fully hearing the request, then amended)"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Neural port, basic, one-hour install, Î¦55 parts and labor, you\u0027re in and out. Helix charges Î¦200 and makes you sign four data agreements. You tell me.\u0027",
+                                                  "\u0027Don\u0027t touch anything in the back room. Not because I\u0027m precious about it. Because some of it is live.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The client with the misaligned neural port has started developing symptoms she recognizes, and she has to decide whether to come forward before they connect the dots themselves â€” or before it gets worse",
+                        "A Helix Biosystems licensing enforcement team has started moving through the Oxidian Market, and someone is tipping them toward specific stalls â€” Amara needs to know if she\u0027s on the list and who is feeding information"
+                    ],
+    "narrative_function":  "Low-cost augmentation source, contact for unlicensed installation, connection to ID-adjacent and warrant-flagged populations, quest giver for supply and equipment problems",
+    "augmentations":  "Right arm (elbow-down) â€” multi-manufacturer patchwork cyberlimb, high-dexterity fine motor configuration; gray-black mottled cat ears (geneware, cosmetic); reinforced sternum plate (installed herself, precautionary)",
+    "daily_life":  "She opens at 10am, does consultations and sales until 3pm, then does installation and repair work in the back room until midnight. She eats one large meal a day, always from the same dumpling cart, always at 6pm.",
+    "affiliation":  "Independent; pays informal dues to the Oxidian Market Vendors Guild and has a protective arrangement with a local crew called the Ironvein Laterals",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  7,
+                                 "expression":  5,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "unlicensed augmentation",
+                               "self-taught technician",
+                               "community resource",
+                               "guilty secret",
+                               "fierce loyalty",
+                               "working class climber"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never install something she hasn\u0027t verified is clean and functional â€” her reputation and someone\u0027s body depend on it equally",
+                                              "Never give up a client\u0027s identity or medical information regardless of who asks"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Firm verbal no and return to work",
+                                                 "Stands up and addresses it directly with the Laterals visibly nearby",
+                                                 "Calls the Laterals in explicitly â€” she doesn\u0027t fight if she doesn\u0027t have to"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Brisk and professional â€” assesses competence and threat level simultaneously, warms up fast if neither is a problem",
+                                                   "friends":  "Loud, teasing, genuinely invested, will work unpaid on their hardware at 1am if they need it"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works faster",
+                                                "medium":  "Stops talking entirely and focuses exclusively on whatever is in her hands",
+                                                "high":  "Runs. Literally. Gets to the drainage tunnels and runs until she can think again."
+                                            },
+                       "contradictions":  [
+                                              "Deeply risk-averse about her clients\u0027 bodies; cavalier about her own safety"
+                                          ],
+                       "habits":  [
+                                      "Taps a rhythm on the workbench with her cybernetic fingers between tasks",
+                                      "Reads pirated technical manuals on her tablet every night before sleep",
+                                      "Always shakes hands with the cybernetic arm â€” she says it lets her assess someone\u0027s grip response"
+                                  ],
+                       "breaking_points":  [
+                                               "Harm coming to a client due to her work",
+                                               "Someone threatening to report her clientele to corponation enforcement"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Oxidian Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Ironvein to Guinean-MÄori parents; father a pipeworks laborer, mother a market vendor",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Sister gave her the cat ears geneware mod for her 12th birthday; first exposure to cosmetic modification",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Lost two fingers to a factory press at 15; received a basic public-tier cybernetic replacement; became obsessed with how it worked",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Taught herself installation from pirated Helix manuals; performed her first successful unlicensed install on herself",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Opened the stall; misaligned neural port incident occurred fourteen months before current date",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Current: established Oxidian Market presence, guilt ongoing, Helix enforcement sweep beginning",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Oxidian Market",
+                             "Helix Biosystems",
+                             "Ironvein",
+                             "Pressure Drop",
+                             "Chicago",
+                             "Neural Palate",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly South Asian (54.4%) with significant Hispanic/Latin American (31.2%), Middle Eastern (8.3%), Northern European (4.0%), and Central Asian (2.1%) ancestry. Her phenotype reflects this dominant South Asian foundation with warm undertones from Latin American and Middle Eastern heritage, creating a striking multicultural appearance. The South Asian structure forms her base â€” high cheekbones, defined jawline â€” while Hispanic/Latin American warmth and Middle Eastern richness layer into her complexion and facial structure.",
+                                 "height_cm":  158,
+                                 "weight_kg":  52,
+                                 "build":  "Compact and wiry, all lean muscle with minimal body fat â€” the physique of someone who moves constantly and eats efficiently. Narrow shoulders, sharp hip bones, the kind of frame that fits easily into tight workspaces.",
+                                 "hair_color":  "Natural black",
+                                 "hair_style":  "Undercut: sides clipped to 3mm, top left long and textured, often pulled back with strips of salvaged synthetic material or left loose to frame her face",
+                                 "hair_length":  "Short on sides, medium-long on top",
+                                 "eye_color":  "Dark brown, natural",
+                                 "skin_tone":  "Deep warm golden-brown with olive and terracotta undertones, reflecting the South Asian depth as primary tone enhanced by Hispanic/Latin American warmth and Middle Eastern richness. Luminous and even complexion with subtle warmth throughout.",
+                                 "complexion":  "High cheekbones with defined angularity characteristic of South Asian heritage, balanced by a warm, gently rounded jawline influenced by Hispanic/Latin American and Middle Eastern structure. Small, slightly rounded nose with warm undertones. Eyes set with the subtle depth typical of South Asian phenotype. Skin is clear with minor reactive irritation around the right shoulder joint â€” faint chemical burns from solder work.",
+                                 "distinguishing_marks":  [
+                                                              "Faint scar across the underside of right forearm (chrome side), approximately 4cm long, from an early installation mistake at age 18",
+                                                              "Thin burn marks on inner left wrist from acid chemical contact during parts cleaning, three parallel lines, each 1-2cm",
+                                                              "Surgical scar at right elbow where the patchwork prosthetic attaches, reinforced with subdermal titanium mesh"
+                                                          ],
+                                 "visible_augmentations":  "Right arm from elbow down is a obvious mismatched cybernetic limb: three distinct chrome sections in slightly different finish (brushed matte, polished reflective, and worn gunmetal gray), assembled and reassembled with visible seam work and cross-manufacturer connectors. The palm and fingers show evidence of constant micro-welding and replacement. Mottled gray-black cat ears (geneware) protrude from the top of her skull, naturally expressive â€” rotate and twitch with her emotional state and attention. A faint outline of reinforced sternum plating is visible under fitted clothing as a subtle geometric pattern beneath the skin.",
+                                 "posture_movement":  "She moves economically and fast, with the precise coordination of someone who works constantly with her hands. Her right arm moves with the fluid but noticeably different rhythm of installed chrome â€” slightly faster, smoother, zero hesitation. She often holds objects or tools in her chrome hand while working with her left. Cat ears track conversations and movement around her workspace; they point toward whoever is speaking to her. She rarely sits still; even while talking, her fingers are working â€” stripping wire, sorting components, tightening fasteners. Her gaze is direct and unsentimental.",
+                                 "clothing_style":  "Tier 4 / Ironvein working-class practical: form-fitting dark synthetic bodysuit (midnight blue or black, water-resistant), reinforced at elbows and knees with gray neoprene panels. Oversized sleeveless utility vest in charcoal with deep pockets and magnetic panel-strips for holding small tools and components. Heavy-duty work boots with steel toe and grippy soles (scuffed, well-maintained). Fingerless gloves on her left hand only; her right chrome hand is always bare. A thin chain collar of brushed steel around her neck, no pendant. Her fingers are stained with trace amounts of solder and component residue that never fully wash out. She wears no jewelry beyond the collar and occasionally salvaged circuit-board rings on her left hand (functional and cosmetic)."
+                             },
+    "image_prompt":  "Bartlomiej Pathak, 158cm tall, compact wiry frame, deep warm golden-brown skin with olive undertones reflecting South Asian-dominant heritage blended with Hispanic and Middle Eastern ancestry. High cheekbones and defined jawline, small rounded nose, dark brown natural eyes with subtle depth. Black undercut hair with long textured top section, naturally expressive mottled gray-black cat ears protruding from skull. Mismatched cybernetic right arm from elbow down with three chrome sections in different finishes (brushed matte, polished, worn gunmetal), visible seam work and cross-manufacturer connectors. Reinforced sternum plating subtly visible under skin as geometric pattern. Surgical scar at right elbow, faint chemical burns on left inner wrist, scar on right forearm underside. Midnight blue water-resistant form-fitting bodysuit reinforced at elbows and knees with gray neoprene, oversized charcoal sleeveless utility vest with deep pockets and magnetic strips, heavy steel-toe work boots, fingerless gloves on left hand only, brushed steel chain collar. Fingers stained with solder residue, salvaged circuit-board rings on left hand. Direct unsentimental gaze, economical precise movement, working in neon-lit underground workshop surrounded by components and tools, GLMZ Great Lakes Metropolitan Zone, atmospheric lighting casting chrome arm highlights, moody industrial setting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  54.4,
+                             "Hispanic/Latin American":  31.2,
+                             "Middle Eastern":  8.3,
+                             "Northern European":  4,
+                             "Central Asian":  2.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Malayali":  37.2
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  7,
+                                                                   "Sinhalese":  10.2
+                                                               }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  28.5
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  2.7
+                                                                          }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  8.3
+                                                               }
+                                               },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Dutch":  2.8,
+                                                                       "German":  1.2
+                                                                   }
+                                                  },
+                            "Central Asian":  {
+                                                  "Turkic":  {
+                                                                 "Kazakh":  0.5,
+                                                                 "Kyrgyz":  1.1
+                                                             },
+                                                  "Iranian Central":  {
+                                                                          "Hazara":  0.1,
+                                                                          "Tajik":  0.4
+                                                                      }
+                                              }
+                        },
+    "tier":  "2"
 }

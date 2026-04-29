@@ -1,349 +1,360 @@
-{
-  "id": "019d6143a5ec7bbc95456b6f2710052d",
-  "type": "character",
-  "name": "Bilal Duong",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Personnel recovery and hostile extraction — extraction specialist",
-  "age": 45,
-  "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures, near Fullerton and Damen",
-  "description": "Bilal Duong is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a extraction specialist out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Bilal Duong is one of the ones who actually does it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.66,
-      "ideal": 0.27,
-      "id": 0.44,
-      "shadow": 0.13,
-      "mask": 0.97,
-      "ghost": 0.39
-    },
-    "core_fears": [
-      "Losing their edge to age — the body slows before the mind accepts it",
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Being identified by corporate facial recognition — living off-grid is survival"
-    ],
-    "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "Freedom from augmentation debt — the interest compounds like a tumor",
-      "The perfect run — one job so clean it becomes legend"
-    ],
-    "coping_mechanisms": [
-      "Planning — responds to chaos by making detailed contingency plans for everything",
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
-    ],
-    "blind_spots": [
-      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
-      "Cannot see that their independence is actually isolation wearing a better outfit",
-      "Trusts technology more than people — machines don't betray"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
-    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
-    "verbal_tics": [
-      "Ends statements with 'yeah?' — not a question, a dare",
-      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
-    ],
-    "example_lines": [
-      "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
-      "\"The extraction window is four minutes. I've done it in three.\"",
-      "\"I don't rescue people. I relocate them aggressively.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Tier 4 executive offers Deniz Dahlberg-Boakye a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "A crew member from Deniz Dahlberg-Boakye's past shows up in GLMZ, carrying old grievances and new chrome",
-    "Deniz Dahlberg-Boakye is offered a contract that would clear all their debts — the target is someone they respect"
-  ],
-  "narrative_function": "As a extraction specialist, Deniz Dahlberg-Boakye embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs. Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Unaffiliated — too volatile for permanent crews; The Glass Ladder",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 7
-      },
-      "agility": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 4
-      },
-      "reflexes": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 8
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 4
-      },
-      "perception": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 5
-      },
-      "willpower": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 9
-      },
-      "technical": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 9
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 8
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 9
-      },
-      "deception": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 10
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 6
-      }
-    },
-    "personality": {
-      "aggression": 0.23,
-      "caution": 0.95,
-      "loyalty": 0.83,
-      "greed": 0.7,
-      "empathy": 0.45
-    },
-    "drives": [
-      "revenge",
-      "survival",
-      "justice"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 5,
-      "loyalty_break": 9
-    },
-    "strengths": [
-      "ability to remain calm under fire",
-      "encyclopedic knowledge of GLMZ infrastructure"
-    ],
-    "weaknesses": [
-      "old injury that flares under specific conditions",
-      "trust issues that limit crew effectiveness"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "extraction specialist",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Will work with anyone once. Second time requires vouching from someone trusted."
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
-      "Preaches independence but is desperate for approval from people they respect"
-    ],
-    "habits": [
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Checks exits within 10 seconds of entering any room",
-      "Keeps a physical paper notebook — no digital record of personal thoughts"
-    ],
-    "breaking_points": [
-      "Discovering their employer deliberately sent them into a death trap",
-      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Synthetic muscle fiber replacement in legs",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
-      "replaces": ""
-    },
-    {
-      "name": "Cyberears with directional microphones and sound dampening",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Protector": 0.9,
-    "Pragmatist": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Havoc-44 'Mauler'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Havoc-44 'Mauler'"
-  ],
-  "related_entities": [
-    "Bioelectric Muscle Fiber",
-    "The Narrows Compact",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Slagworks Industrial",
-    "Pellucid Systems",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Southeast Asian (67%) with significant East Asian (30.6%) and minor Middle Eastern (2.4%) ancestry — a refined blend resulting in warm, light to medium olive skin tone with subtle golden undertones. Features show the defined bone structure characteristic of Southeast Asian and East Asian genetics, with slightly broader facial proportions balanced by the angular cheekbones of both lineages.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Wiry and lean with efficient musculature — the physique of someone who converts nervous energy into controlled motion. Synthetic muscle fiber in legs creates subtle asymmetries in calf definition.",
-    "hair_color": "Dark brown with premature silver threading at temples",
-    "hair_style": "Short, pragmatic cut — minimal maintenance, pulled back slightly at crown",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, alert and assessing",
-    "skin_tone": "Warm light to medium olive with golden undertones — the blended result of Southeast Asian dominance (67%) with East Asian (30.6%) refinement and trace Middle Eastern (2.4%) warmth. Carries the pallor of someone who spends irregular hours indoors, creating subtle shadowing across cheekbones.",
-    "complexion": "Defined cheekbones and sharp jawline with the refined nasal structure characteristic of Southeast and East Asian heritage. Well-proportioned brow structure with the slightly broader facial width typical of Southeast Asian ancestry, refined by East Asian angular definition. Weathered around the eyes from sustained focus work. Five o'clock shadow is his default state across the lower jaw and upper lip. No visible facial scars but the skin has a tightness suggesting old impact trauma healed cleanly.",
-    "distinguishing_marks": [
-      "Cigarette burn scar on the inside of left wrist — thumb-sized, pale and old",
-      "Linear scar along right temple extending into hairline — security training injury, precise suture work",
-      "Faded corporate security tattoo on left shoulder blade — a symbol he no longer acknowledges"
-    ],
-    "visible_augmentations": "Synthetic muscle fiber replacement visible in both legs below the knee — matte gunmetal finish with faint seam lines along the calf. The prosthetics are functional, not cosmetic. Discrete chrome bezels around ears marking cyberear housing — partially obscured by hair. Wrist has a faint industrial port scar where old gear was interfaced.",
-    "posture_movement": "Perpetually coiled — standing weight forward on the balls of feet. Movement is economical and sudden; he does not amble. Hands rarely still, often checking cuffs, adjusting jacket, touching the chrome at his ears. Eyes constantly tracking exits, angles, sight lines. Conversation posture is slightly angled — cyberears allow him to monitor peripheral audio.",
-    "clothing_style": "Tier 3-4 utilitarian — durable synthweave in dark colors (charcoal, black, deep navy). Multi-pocket cargo jacket worn open over fitted base layers. Reinforced knuckle gloves, often not removed indoors. Durable boots with high ankle support rated for urban infiltration. A single piece of visible hardware: brushed steel chain on left wrist, practical rather than decorative. Everything functional, nothing that announces itself. No corporate logos or runner affectations — he dresses like someone whose appearance should be forgotten in two minutes."
-  },
-  "image_prompt": "GLMZ portrait of Bilal Duong, Southeast Asian-East Asian blend with olive skin and golden undertones, dark brown hair with silver at temples, sharp angular cheekbones, alert dark eyes weathered from focus work. 178cm tall, lean wiry build. Wearing dark charcoal synthweave cargo jacket over fitted base layer, reinforced knuckle gloves, high-ankle urban boots. Chrome bezels visible at ears from cyberear housing, matte gunmetal synthetic muscle fiber visible on calves below the knee. Brushed steel chain on left wrist. Five o'clock shadow, perpetually coiled posture with weight forward. Standing in dimly-lit industrial setting, neon accent lighting casting shadows across defined features, slightly angled conversation posture, eyes tracking exits. Atmospheric megacity environment, moody tungsten and cool blue lighting, forgotten-in-two-minutes aesthetic, functional and lethal. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 67,
-    "East Asian": 30.6,
-    "Middle Eastern": 2.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 29.1
-      },
-      "Cambodian": {
-        "Khmer": 17.7
-      },
-      "Laotian": {
-        "Laotian": 20.2
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Cantonese": 24.8
-      },
-      "Japanese": {
-        "Japanese": 3
-      },
-      "Korean": {
-        "Korean": 2.8
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Iraqi": 1.8
-      },
-      "Persian": {
-        "Iranian": 0.5,
-        "Tajik Persian": 0.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5ec7bbc95456b6f2710052d",
+    "type":  "character",
+    "name":  "Bilal Duong",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Personnel recovery and hostile extraction â€” extraction specialist",
+    "age":  45,
+    "status":  "active",
+    "location":  "The Narrows â€” cramped residential corridors between megastructures, near Fullerton and Damen",
+    "description":  "Bilal Duong is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible â€” synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on s â€” and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate â€” low-tier security, the kind that teaches you exactly how the system\u0027s defenses fail. He works as a extraction specialist out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they\u0027ll do, Bilal Duong is one of the ones who actually does it.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing their edge to age â€” the body slows before the mind accepts it",
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "Being identified by corporate facial recognition â€” living off-grid is survival"
+                                      ],
+                       "core_desires":  [
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor",
+                                            "The perfect run â€” one job so clean it becomes legend"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Planning â€” responds to chaos by making detailed contingency plans for everything",
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+                                                 "Art â€” draws, paints, or sculpts in private; the violence goes somewhere constructive"
+                                             ],
+                       "blind_spots":  [
+                                           "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+                                           "Cannot see that their independence is actually isolation wearing a better outfit",
+                                           "Trusts technology more than people â€” machines don\u0027t betray"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+                            "cadence":  "Measured and deliberate â€” pauses before important words for emphasis.",
+                            "verbal_tics":  [
+                                                "Ends statements with \u0027yeah?\u0027 â€” not a question, a dare",
+                                                "Uses \u0027we\u0027 instead of \u0027I\u0027 â€” either royal or dissociative, nobody asks"
+                                            ],
+                            "example_lines":  [
+                                                  "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
+                                                  "\"The extraction window is four minutes. I\u0027ve done it in three.\"",
+                                                  "\"I don\u0027t rescue people. I relocate them aggressively.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Tier 4 executive offers Deniz Dahlberg-Boakye a permanent position â€” the pay is obscene and the strings are invisible until they tighten",
+                        "A crew member from Deniz Dahlberg-Boakye\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
+                        "Deniz Dahlberg-Boakye is offered a contract that would clear all their debts â€” the target is someone they respect"
+                    ],
+    "narrative_function":  "As a extraction specialist, Deniz Dahlberg-Boakye embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+    "augmentations":  "Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs. Cyberears with directional microphones and sound dampening â€” can hear whispers at 50 meters",
+    "daily_life":  "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather â€” not for pleasure, but for market intelligence.",
+    "affiliation":  "Unaffiliated â€” too volatile for permanent crews; The Glass Ladder",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  4,
+                                                    "augmented":  0,
+                                                    "effective":  7
+                                                },
+                                   "agility":  {
+                                                   "base":  3,
+                                                   "augmented":  2,
+                                                   "effective":  8
+                                               },
+                                   "endurance":  {
+                                                     "base":  4,
+                                                     "augmented":  3,
+                                                     "effective":  4
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  7,
+                                                    "augmented":  1,
+                                                    "effective":  8
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  7,
+                                                      "augmented":  3,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  6,
+                                                    "augmented":  0,
+                                                    "effective":  5
+                                                },
+                                 "willpower":  {
+                                                   "base":  7,
+                                                   "augmented":  0,
+                                                   "effective":  9
+                                               },
+                                 "technical":  {
+                                                   "base":  7,
+                                                   "augmented":  2,
+                                                   "effective":  9
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  6,
+                                                  "augmented":  2,
+                                                  "effective":  8
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  1,
+                                                      "effective":  9
+                                                  },
+                                 "deception":  {
+                                                   "base":  4,
+                                                   "augmented":  2,
+                                                   "effective":  10
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  0,
+                                                 "effective":  6
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.23,
+                                      "caution":  0.95,
+                                      "loyalty":  0.83,
+                                      "greed":  0.7,
+                                      "empathy":  0.45
+                                  },
+                  "drives":  [
+                                 "revenge",
+                                 "survival",
+                                 "justice"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  5,
+                                     "loyalty_break":  9
+                                 },
+                  "strengths":  [
+                                    "ability to remain calm under fire",
+                                    "encyclopedic knowledge of GLMZ infrastructure"
+                                ],
+                  "weaknesses":  [
+                                     "old injury that flares under specific conditions",
+                                     "trust issues that limit crew effectiveness"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "extraction specialist",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted."
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+                                              "Preaches independence but is desperate for approval from people they respect"
+                                          ],
+                       "habits":  [
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Keeps a physical paper notebook â€” no digital record of personal thoughts"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering their employer deliberately sent them into a death trap",
+                                               "Their body rejecting their cyberware â€” chrome rot, immune rejection, the nightmare scenario"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Synthetic muscle fiber replacement in legs",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cyberears with directional microphones and sound dampening",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Cyberears with directional microphones and sound dampening â€” can hear whispers at 50 meters",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Protector":  0.9,
+                       "Pragmatist":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Havoc-44 \u0027Mauler\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Havoc-44 \u0027Mauler\u0027"
+                            ],
+    "related_entities":  [
+                             "Bioelectric Muscle Fiber",
+                             "The Narrows Compact",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "Slagworks Industrial",
+                             "Pellucid Systems",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian (67%) with significant East Asian (30.6%) and minor Middle Eastern (2.4%) ancestry â€” a refined blend resulting in warm, light to medium olive skin tone with subtle golden undertones. Features show the defined bone structure characteristic of Southeast Asian and East Asian genetics, with slightly broader facial proportions balanced by the angular cheekbones of both lineages.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Wiry and lean with efficient musculature â€” the physique of someone who converts nervous energy into controlled motion. Synthetic muscle fiber in legs creates subtle asymmetries in calf definition.",
+                                 "hair_color":  "Dark brown with premature silver threading at temples",
+                                 "hair_style":  "Short, pragmatic cut â€” minimal maintenance, pulled back slightly at crown",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, alert and assessing",
+                                 "skin_tone":  "Warm light to medium olive with golden undertones â€” the blended result of Southeast Asian dominance (67%) with East Asian (30.6%) refinement and trace Middle Eastern (2.4%) warmth. Carries the pallor of someone who spends irregular hours indoors, creating subtle shadowing across cheekbones.",
+                                 "complexion":  "Defined cheekbones and sharp jawline with the refined nasal structure characteristic of Southeast and East Asian heritage. Well-proportioned brow structure with the slightly broader facial width typical of Southeast Asian ancestry, refined by East Asian angular definition. Weathered around the eyes from sustained focus work. Five o\u0027clock shadow is his default state across the lower jaw and upper lip. No visible facial scars but the skin has a tightness suggesting old impact trauma healed cleanly.",
+                                 "distinguishing_marks":  [
+                                                              "Cigarette burn scar on the inside of left wrist â€” thumb-sized, pale and old",
+                                                              "Linear scar along right temple extending into hairline â€” security training injury, precise suture work",
+                                                              "Faded corporate security tattoo on left shoulder blade â€” a symbol he no longer acknowledges"
+                                                          ],
+                                 "visible_augmentations":  "Synthetic muscle fiber replacement visible in both legs below the knee â€” matte gunmetal finish with faint seam lines along the calf. The prosthetics are functional, not cosmetic. Discrete chrome bezels around ears marking cyberear housing â€” partially obscured by hair. Wrist has a faint industrial port scar where old gear was interfaced.",
+                                 "posture_movement":  "Perpetually coiled â€” standing weight forward on the balls of feet. Movement is economical and sudden; he does not amble. Hands rarely still, often checking cuffs, adjusting jacket, touching the chrome at his ears. Eyes constantly tracking exits, angles, sight lines. Conversation posture is slightly angled â€” cyberears allow him to monitor peripheral audio.",
+                                 "clothing_style":  "Tier 3-4 utilitarian â€” durable synthweave in dark colors (charcoal, black, deep navy). Multi-pocket cargo jacket worn open over fitted base layers. Reinforced knuckle gloves, often not removed indoors. Durable boots with high ankle support rated for urban infiltration. A single piece of visible hardware: brushed steel chain on left wrist, practical rather than decorative. Everything functional, nothing that announces itself. No corporate logos or runner affectations â€” he dresses like someone whose appearance should be forgotten in two minutes."
+                             },
+    "image_prompt":  "GLMZ portrait of Bilal Duong, Southeast Asian-East Asian blend with olive skin and golden undertones, dark brown hair with silver at temples, sharp angular cheekbones, alert dark eyes weathered from focus work. 178cm tall, lean wiry build. Wearing dark charcoal synthweave cargo jacket over fitted base layer, reinforced knuckle gloves, high-ankle urban boots. Chrome bezels visible at ears from cyberear housing, matte gunmetal synthetic muscle fiber visible on calves below the knee. Brushed steel chain on left wrist. Five o\u0027clock shadow, perpetually coiled posture with weight forward. Standing in dimly-lit industrial setting, neon accent lighting casting shadows across defined features, slightly angled conversation posture, eyes tracking exits. Atmospheric megacity environment, moody tungsten and cool blue lighting, forgotten-in-two-minutes aesthetic, functional and lethal. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  67,
+                             "East Asian":  30.6,
+                             "Middle Eastern":  2.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  29.1
+                                                                   },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  17.7
+                                                                  },
+                                                    "Laotian":  {
+                                                                    "Laotian":  20.2
+                                                                }
+                                                },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Cantonese":  24.8
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  3
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  2.8
+                                                          }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  1.8
+                                                                 },
+                                                   "Persian":  {
+                                                                   "Iranian":  0.5,
+                                                                   "Tajik Persian":  0.1
+                                                               }
+                                               }
+                        },
+    "tier":  "3"
 }

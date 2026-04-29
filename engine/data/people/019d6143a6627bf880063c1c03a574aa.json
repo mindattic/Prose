@@ -1,352 +1,363 @@
-{
-  "id": "019d6143a6627bf880063c1c03a574aa",
-  "type": "character",
-  "name": "Ante Salazar",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Personnel recovery and hostile extraction — extraction specialist",
-  "age": 33,
-  "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Division",
-  "description": "Ante Salazar is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a extraction specialist out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.31,
-      "ideal": 0.91,
-      "id": 0.22,
-      "shadow": 0.69,
-      "mask": 0.74,
-      "ghost": 0.36
-    },
-    "core_fears": [
-      "The quiet — silence means something is about to go very wrong",
-      "Being replaced — younger, faster, cheaper runners coming up behind them",
-      "Losing their edge to age — the body slows before the mind accepts it"
-    ],
-    "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "To build something that outlasts the next contract cycle",
-      "Freedom from augmentation debt — the interest compounds like a tumor"
-    ],
-    "coping_mechanisms": [
-      "Isolates — retreats into their space when overwhelmed, emerges only for work",
-      "Ritual — follows the same pre-job routine every time, superstition as structure",
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
-    ],
-    "blind_spots": [
-      "Cannot see that their independence is actually isolation wearing a better outfit",
-      "Trusts technology more than people — machines don't betray",
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there"
-    ],
-    "secret": "Nika Svensson-Kone murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
-    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
-    "verbal_tics": [
-      "Whispers when angry — the quieter the voice, the worse the situation",
-      "Never uses contractions when lying — 'I did not' instead of 'I didn't'"
-    ],
-    "example_lines": [
-      "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
-      "\"The extraction window is four minutes. I've done it in three.\"",
-      "\"I don't rescue people. I relocate them aggressively.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A corporate black site Nika Svensson-Kone once infiltrated is being reopened, and the people inside know her face",
-    "Nika Svensson-Kone discovers a job they completed last year was a setup for something much larger and much worse",
-    "A dead drop Nika Svensson-Kone maintains is found and cleaned out — whoever did it now has leverage"
-  ],
-  "narrative_function": "Nika Svensson-Kone represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Reflex boosters wired into spinal column — shaves reaction time by 40ms. Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
-  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Semi-independent — has standing arrangements with several crews",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 4
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 7
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 7
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 7
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 10
-      },
-      "willpower": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 10
-      },
-      "technical": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 10
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 6
-      },
-      "intimidation": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 10
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 9
-      },
-      "empathy": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 8
-      }
-    },
-    "personality": {
-      "aggression": 0.3,
-      "caution": 0.24,
-      "loyalty": 0.99,
-      "greed": 0.67,
-      "empathy": 0.58
-    },
-    "drives": [
-      "loyalty",
-      "money",
-      "survival"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 6,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "physical endurance",
-      "multilingual — speaks 4+ languages fluently"
-    ],
-    "weaknesses": [
-      "grudge-holding that compromises rational decision-making",
-      "physical limitation from incomplete augmentation",
-      "augmentation dependency — performance drops sharply if chrome malfunctions"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "extraction specialist",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Never discusses active contracts with anyone not directly involved",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Values loyalty intensely but has betrayed someone in the past to survive",
-      "Claims not to care about reputation but monitors what people say about them obsessively",
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
-    ],
-    "habits": [
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
-      "Checks exits within 10 seconds of entering any room"
-    ],
-    "breaking_points": [
-      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
-      "Running out of options — no contacts, no money, no safe house, no way out"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Reflex boosters wired into spinal column",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Reflex boosters wired into spinal column — shaves reaction time by 40ms",
-      "replaces": ""
-    },
-    {
-      "name": "Internal air filtration system",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Protector": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Ashfield",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPM-6 'Equalizer'",
-    "Crucible Industries Fang-9 'Switchblade'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPM-6 'Equalizer'",
-    "Crucible Industries Fang-9 'Switchblade'"
-  ],
-  "related_entities": [
-    "The Heritage Vault",
-    "Diaspora Table",
-    "Ashfield",
-    "Stratum",
-    "Neuromorphic Pressure Cestus",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "South Asian dominant (46.2%) with substantial Hispanic/Latin American (43.5%) creating a striking cosmopolitan fusion. Southeast Asian (7.5%) and Eastern European (2.8%) ancestry add subtle refinements to the overall phenotype. South Asian bone structure — defined, angular cheekbones and strong jawline — is warmed and softened by Hispanic/Latin heritage which broadens the facial structure slightly and adds generous dimensionality. Southeast Asian influences manifest in subtle eye shape and epicanthal softness. Eastern European traces emerge faintly in hair undertones and skin luminosity variations. The genetic combination produces a face that transcends single-origin classification: high, prominent cheekbones with generous structure from the South and Latin American blend, warm deep bronze skin with golden undertones from South Asian ancestry and reddish warmth from Hispanic/Latin heritage, combined with the characteristic luminosity of mixed South Asian and Latin American genetics.",
-    "height_cm": 172,
-    "weight_kg": 61,
-    "build": "Athletic and lean with defined musculature — dancer's grace combined with fighter's efficiency. Shoulders broad but not bulky, legs powerful and economical. No wasted mass.",
-    "hair_color": "Dark blonde with natural silver threading at temples",
-    "hair_style": "Pulled back in a tight, functional braid that sits high on the crown — practical for work, reveals the nape where spinal chrome terminates",
-    "hair_length": "Medium",
-    "eye_color": "Light grey-blue, alert and analytical",
-    "skin_tone": "Deep warm bronze with golden undertones and subtle reddish warmth — South Asian and Hispanic/Latin American ancestry creates a luminous base that catches light distinctly across the cheekbones and temples. Ochre and cream undertones at the jawline with warm reddish depth from the blended heritage. Pronounced luminescent quality concentrated at the cheek apples, temples, and bridge of nose.",
-    "complexion": "Strong South Asian and Hispanic/Latin American bone structure with prominent, high cheekbones and defined, angular jawline that catches light sharply. Broader nasal bridge reflecting South Asian heritage, softened by the warmth and facial fullness of Latin American ancestry with subtle Southeast Asian refinement. Skin weathered by nocturnal living — faint circles under eyes that resist full elimination. A thin white scar traces her left temple, barely visible unless light catches it directly. Slight fullness in the lower cheeks balanced by the angular definition of her jawline.",
-    "distinguishing_marks": [
-      "Surgical scar running the length of her cervical spine, visible when she wears anything backless — chrome interface ports flush with skin at C3 and C5 vertebrae",
-      "Thin white line across left temple, approximately 4cm, angled toward her hairline — old blade work",
-      "Faint burn marks on the inside of her right forearm — three parallel lines, deliberate, old enough to be pale against her deep bronze skin"
-    ],
-    "visible_augmentations": "Reflex booster chrome visible along the spine — iridescent titanium-alloy ports at cervical vertebrae catch light when she moves. The metallic sheen is impossible to hide; she doesn't try. Synthetic lung architecture visible in the subtle way her ribcage moves — slightly different biomechanics than natural respiration, noticeable only if you're watching closely.",
-    "posture_movement": "Economical and controlled — no wasted motion. Stands with weight balanced toward the balls of her feet, ready for immediate action. Moves like she's always calculating distance and angles. Hands are rarely still; fidgets with equipment, adjusts straps, tests weapon weight. Eye contact direct and held slightly too long — unsettling to most people.",
-    "clothing_style": "Tier 3-4 functional gear — well-maintained but worn. Black synthetic bodysuit with reinforced panels at shoulders, ribs, and thighs (impact protection). Armored jacket over top — matte tactical weave with cargo pockets, sleeves cut short to reveal forearm augmentation scars. Combat boots, laced tight. Webbing harness for tools and weapons — organized with military precision. No decoration, no excess. Everything serves a purpose or doesn't exist."
-  },
-  "image_prompt": "Ante Salazar, GLMZ, female fighter with deep warm bronze skin and golden undertones, prominent high cheekbones and angular jawline blending South Asian and Latin American heritage, light grey-blue alert eyes, dark blonde hair with silver threading pulled in tight functional braid, 172cm athletic lean build with defined musculature. Iridescent titanium cervical spine ports visible, thin white temple scar, surgical marks on forearms. Black reinforced tactical bodysuit, matte weave armored jacket with cut sleeves, combat boots, tool harness. Standing in ready posture, economical movement, cool focused expression. Neon-lit industrial setting, cool blue and amber lighting catching her cheekbones and chrome augmentations, neo-noir urban environment, professional action pose --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 46.2,
-    "Hispanic/Latin American": 43.5,
-    "Southeast Asian": 7.5,
-    "Eastern European": 2.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 15.9
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 18.5,
-        "Pashtun": 2.7
-      },
-      "Sri Lankan": {
-        "Sinhalese": 9.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 34.2,
-        "Nicaraguan": 9.3
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 5.8
-      },
-      "Cambodian": {
-        "Khmer": 1.7
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Croatian": 2.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6627bf880063c1c03a574aa",
+    "type":  "character",
+    "name":  "Ante Salazar",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Personnel recovery and hostile extraction â€” extraction specialist",
+    "age":  33,
+    "status":  "active",
+    "location":  "Ashfield â€” former residential district, half-burned, now squatter territory, near Ashland and Division",
+    "description":  "Ante Salazar is athletic and fluid, the kind of body that suggests either dancer or fighter â€” and in GLMZ, the distinction is academic. At 33, her face carries the layered heritage of generations of diaspora mixing â€” features that resist easy categorization and reward attention. The chrome is visible â€” reflex boosters wired into spinal column â€” shaves reaction time by 40ms â€” and she makes no effort to hide it.\n\nMilitary training â€” one of the private security corps that folded during the consolidation wars â€” left her with skills and night terrors in equal measure. She works as a extraction specialist out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that\u0027s worth more.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "The quiet â€” silence means something is about to go very wrong",
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them",
+                                          "Losing their edge to age â€” the body slows before the mind accepts it"
+                                      ],
+                       "core_desires":  [
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "To build something that outlasts the next contract cycle",
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Isolates â€” retreats into their space when overwhelmed, emerges only for work",
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure",
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot see that their independence is actually isolation wearing a better outfit",
+                                           "Trusts technology more than people â€” machines don\u0027t betray",
+                                           "Mistakes pattern recognition for wisdom â€” sees connections that aren\u0027t there"
+                                       ],
+                       "secret":  "Nika Svensson-Kone murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated vocabulary wrapped in street delivery â€” the contrast is deliberate.",
+                            "cadence":  "Flowing and unhurried â€” talks like someone who has never been interrupted and doesn\u0027t expect to be.",
+                            "verbal_tics":  [
+                                                "Whispers when angry â€” the quieter the voice, the worse the situation",
+                                                "Never uses contractions when lying â€” \u0027I did not\u0027 instead of \u0027I didn\u0027t\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\"We go in, we get the asset, we leave. Everything else is improvisation.\"",
+                                                  "\"The extraction window is four minutes. I\u0027ve done it in three.\"",
+                                                  "\"I don\u0027t rescue people. I relocate them aggressively.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A corporate black site Nika Svensson-Kone once infiltrated is being reopened, and the people inside know her face",
+                        "Nika Svensson-Kone discovers a job they completed last year was a setup for something much larger and much worse",
+                        "A dead drop Nika Svensson-Kone maintains is found and cleaned out â€” whoever did it now has leverage"
+                    ],
+    "narrative_function":  "Nika Svensson-Kone represents the working professional of the runner world â€” competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+    "augmentations":  "Reflex boosters wired into spinal column â€” shaves reaction time by 40ms. Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks",
+    "daily_life":  "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+    "affiliation":  "Semi-independent â€” has standing arrangements with several crews",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  5,
+                                                    "augmented":  1,
+                                                    "effective":  4
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  2,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  8,
+                                                     "augmented":  0,
+                                                     "effective":  7
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  1,
+                                                    "effective":  7
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  5,
+                                                      "augmented":  1,
+                                                      "effective":  7
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  0,
+                                                    "effective":  10
+                                                },
+                                 "willpower":  {
+                                                   "base":  5,
+                                                   "augmented":  0,
+                                                   "effective":  10
+                                               },
+                                 "technical":  {
+                                                   "base":  3,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  2,
+                                                  "effective":  6
+                                              },
+                                 "intimidation":  {
+                                                      "base":  7,
+                                                      "augmented":  3,
+                                                      "effective":  10
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  9
+                                               },
+                                 "empathy":  {
+                                                 "base":  4,
+                                                 "augmented":  1,
+                                                 "effective":  8
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.3,
+                                      "caution":  0.24,
+                                      "loyalty":  0.99,
+                                      "greed":  0.67,
+                                      "empathy":  0.58
+                                  },
+                  "drives":  [
+                                 "loyalty",
+                                 "money",
+                                 "survival"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  6,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "physical endurance",
+                                    "multilingual â€” speaks 4+ languages fluently"
+                                ],
+                  "weaknesses":  [
+                                     "grudge-holding that compromises rational decision-making",
+                                     "physical limitation from incomplete augmentation",
+                                     "augmentation dependency â€” performance drops sharply if chrome malfunctions"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "extraction specialist",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Professional and transactional. The relationship is defined by the contract and nothing else.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Values loyalty intensely but has betrayed someone in the past to survive",
+                                              "Claims not to care about reputation but monitors what people say about them obsessively",
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+                                          ],
+                       "habits":  [
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore",
+                                      "Talks to their gear â€” names weapons, thanks tools, treats equipment as companions",
+                                      "Checks exits within 10 seconds of entering any room"
+                                  ],
+                       "breaking_points":  [
+                                               "Their body rejecting their cyberware â€” chrome rot, immune rejection, the nightmare scenario",
+                                               "Running out of options â€” no contacts, no money, no safe house, no way out"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Reflex boosters wired into spinal column",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Reflex boosters wired into spinal column â€” shaves reaction time by 40ms",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Internal air filtration system",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Protector":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Ashfield",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPM-6 \u0027Equalizer\u0027",
+                            "Crucible Industries Fang-9 \u0027Switchblade\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPM-6 \u0027Equalizer\u0027",
+                                "Crucible Industries Fang-9 \u0027Switchblade\u0027"
+                            ],
+    "related_entities":  [
+                             "The Heritage Vault",
+                             "Diaspora Table",
+                             "Ashfield",
+                             "Stratum",
+                             "Neuromorphic Pressure Cestus",
+                             "Slagworks Industrial",
+                             "GLMZ"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "South Asian dominant (46.2%) with substantial Hispanic/Latin American (43.5%) creating a striking cosmopolitan fusion. Southeast Asian (7.5%) and Eastern European (2.8%) ancestry add subtle refinements to the overall phenotype. South Asian bone structure â€” defined, angular cheekbones and strong jawline â€” is warmed and softened by Hispanic/Latin heritage which broadens the facial structure slightly and adds generous dimensionality. Southeast Asian influences manifest in subtle eye shape and epicanthal softness. Eastern European traces emerge faintly in hair undertones and skin luminosity variations. The genetic combination produces a face that transcends single-origin classification: high, prominent cheekbones with generous structure from the South and Latin American blend, warm deep bronze skin with golden undertones from South Asian ancestry and reddish warmth from Hispanic/Latin heritage, combined with the characteristic luminosity of mixed South Asian and Latin American genetics.",
+                                 "height_cm":  172,
+                                 "weight_kg":  61,
+                                 "build":  "Athletic and lean with defined musculature â€” dancer\u0027s grace combined with fighter\u0027s efficiency. Shoulders broad but not bulky, legs powerful and economical. No wasted mass.",
+                                 "hair_color":  "Dark blonde with natural silver threading at temples",
+                                 "hair_style":  "Pulled back in a tight, functional braid that sits high on the crown â€” practical for work, reveals the nape where spinal chrome terminates",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Light grey-blue, alert and analytical",
+                                 "skin_tone":  "Deep warm bronze with golden undertones and subtle reddish warmth â€” South Asian and Hispanic/Latin American ancestry creates a luminous base that catches light distinctly across the cheekbones and temples. Ochre and cream undertones at the jawline with warm reddish depth from the blended heritage. Pronounced luminescent quality concentrated at the cheek apples, temples, and bridge of nose.",
+                                 "complexion":  "Strong South Asian and Hispanic/Latin American bone structure with prominent, high cheekbones and defined, angular jawline that catches light sharply. Broader nasal bridge reflecting South Asian heritage, softened by the warmth and facial fullness of Latin American ancestry with subtle Southeast Asian refinement. Skin weathered by nocturnal living â€” faint circles under eyes that resist full elimination. A thin white scar traces her left temple, barely visible unless light catches it directly. Slight fullness in the lower cheeks balanced by the angular definition of her jawline.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar running the length of her cervical spine, visible when she wears anything backless â€” chrome interface ports flush with skin at C3 and C5 vertebrae",
+                                                              "Thin white line across left temple, approximately 4cm, angled toward her hairline â€” old blade work",
+                                                              "Faint burn marks on the inside of her right forearm â€” three parallel lines, deliberate, old enough to be pale against her deep bronze skin"
+                                                          ],
+                                 "visible_augmentations":  "Reflex booster chrome visible along the spine â€” iridescent titanium-alloy ports at cervical vertebrae catch light when she moves. The metallic sheen is impossible to hide; she doesn\u0027t try. Synthetic lung architecture visible in the subtle way her ribcage moves â€” slightly different biomechanics than natural respiration, noticeable only if you\u0027re watching closely.",
+                                 "posture_movement":  "Economical and controlled â€” no wasted motion. Stands with weight balanced toward the balls of her feet, ready for immediate action. Moves like she\u0027s always calculating distance and angles. Hands are rarely still; fidgets with equipment, adjusts straps, tests weapon weight. Eye contact direct and held slightly too long â€” unsettling to most people.",
+                                 "clothing_style":  "Tier 3-4 functional gear â€” well-maintained but worn. Black synthetic bodysuit with reinforced panels at shoulders, ribs, and thighs (impact protection). Armored jacket over top â€” matte tactical weave with cargo pockets, sleeves cut short to reveal forearm augmentation scars. Combat boots, laced tight. Webbing harness for tools and weapons â€” organized with military precision. No decoration, no excess. Everything serves a purpose or doesn\u0027t exist."
+                             },
+    "image_prompt":  "Ante Salazar, GLMZ, female fighter with deep warm bronze skin and golden undertones, prominent high cheekbones and angular jawline blending South Asian and Latin American heritage, light grey-blue alert eyes, dark blonde hair with silver threading pulled in tight functional braid, 172cm athletic lean build with defined musculature. Iridescent titanium cervical spine ports visible, thin white temple scar, surgical marks on forearms. Black reinforced tactical bodysuit, matte weave armored jacket with cut sleeves, combat boots, tool harness. Standing in ready posture, economical movement, cool focused expression. Neon-lit industrial setting, cool blue and amber lighting catching her cheekbones and chrome augmentations, neo-noir urban environment, professional action pose --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  46.2,
+                             "Hispanic/Latin American":  43.5,
+                             "Southeast Asian":  7.5,
+                             "Eastern European":  2.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  15.9
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  18.5,
+                                                                  "Pashtun":  2.7
+                                                              },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  9.1
+                                                               }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  34.2,
+                                                                                     "Nicaraguan":  9.3
+                                                                                 }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  5.8
+                                                                },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  1.7
+                                                                  }
+                                                },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Croatian":  2.8
+                                                                      }
+                                                 }
+                        },
+    "tier":  "3"
 }

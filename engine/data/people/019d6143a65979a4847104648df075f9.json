@@ -1,345 +1,374 @@
-{
-  "id": "019d6143a65979a4847104648df075f9",
-  "type": "character",
-  "name": "Daria Espinoza",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "fence operator and chop shop manager, Stockyard district",
-  "age": 54,
-  "status": "active",
-  "location": "The Stockyard — runs a licensed salvage and recycling operation called Osei Reclamation Partners as a front, near Western and Division",
-  "description": "Daria Espinoza is a large woman in the way that suggests she was powerful when young and has redistributed rather than diminished — broad-shouldered, dark Ghanaian-Peruvian complexioned, with silver-streaked locs pinned up under a work cap and hands that have been repairing things so long they are covered in small, deliberate scars. Her most visible augmentation is a color-changing dermal layer on her forearms, purchased cheaply years ago and now cycling slowly and randomly through muted terracottas and greens regardless of her mood — the emotional-feedback calibration broke years ago and she never had it fixed. She finds it calming, she says.\n\nDaria Espinoza is fifty-four years old and has been running the same operation for twenty-two of them. She survived her husband's death, a protection shakedown that left her with a broken orbital socket, three attempted hostile takeovers from larger criminal enterprises, and a Ferrogate Transit zoning audit that came terrifyingly close to her back warehouse. She has the patience and situational awareness of someone who has been out-waited by every threat she has ever faced. She is not warm, exactly — she extends professional courtesy and charges fair rates, which in the Stockyard passes for warmth. She is intensely loyal to the small circle of people who have been loyal to her, and has long since made peace with the fact that the list is short.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.4,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.6,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "losing the yard — not the income, the physical place, which is the only thing she has built that feels permanent",
-      "that her late husband's death was partly her fault for growing the operation too fast in the early years"
-    ],
-    "core_desires": [
-      "to pass the operation to someone she trusts — she hasn't found that person yet",
-      "to live long enough for the Stockyard to gentrify just slightly so that her property value appreciates enough to matter"
-    ],
-    "coping_mechanisms": [
-      "work as continuity — she measures her stability by whether the yard is running well",
-      "radical compartmentalization; the operation and her inner life have not met in years"
-    ],
-    "blind_spots": [
-      "the chop shop end of her operation handles product whose origins she deliberately doesn't inquire about; she has built an efficient moral firewall that lets her not know what she doesn't want to know",
-      "has identified no successor and refuses to address why"
-    ],
-    "secret": "Her husband Deko was killed not by a rival operation, as she has always maintained, but in an accident during a job he ran without telling her. The official story protects his reputation and her emotional framework. She has never told anyone, including her adult daughter."
-  },
-  "speech_patterns": {
-    "vocabulary": "Direct and concrete, trades jargon for salvage and materials, economical with words — says what she means once",
-    "cadence": "Even and unhurried, with long comfortable silences she doesn't feel the need to fill",
-    "verbal_tics": [
-      "'What's the number'",
-      "'That's not a problem I need to have'",
-      "a habit of appraising objects — picking them up, turning them over — while having conversations about unrelated topics"
-    ],
-    "example_lines": [
-      "'I'll take the console unit and the two drive housings. The chassis is scrap-rate, not parts-rate — I don't care what you think it's worth, I know what I can move. That's the number.'",
-      "'I've been here twenty-two years. The people who tried to move me are not here anymore. I don't say that as a threat. I say it because it's the most accurate available description of the situation.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Something came through the back warehouse that she deeply wishes hadn't — she needs it moved quickly and discreetly by someone with no connection to her network",
-    "Her daughter has discovered the nature of the operation and is making demands — not money, something worse: she wants in",
-    "The Gearwright Compact is pressuring her to merge operations, which would mean surrendering her independence after twenty-two years of maintaining it; she is looking for leverage to refuse"
-  ],
-  "narrative_function": "Resource hub (buying and selling stolen goods), criminal ecosystem anchor, source of Stockyard information, example of sustainable criminal middle-class life and its costs",
-  "augmentations": "Color-changing dermal layer on both forearms (broken calibration, now cycles randomly through muted tones); reinforced right orbital socket following old injury (cosmetic-grade repair work, not high-end); basic subdermal inventory RFID scanner in right palm",
-  "daily_life": "At the salvage yard by 0700, legitimate business until noon, then manages the back-warehouse operation through the afternoon. Attends the Gearwright Compact's informal standing meeting every third Thursday. Eats dinner alone at her desk reviewing inventory logs. Has strong opinions about E.L.F.s and performs no offerings — she believes they are predatory spirits that encourage dependency and tells anyone who asks.",
-  "affiliation": "Independent; longstanding informal arrangement with a Stockyard crime collective called the Gearwright Compact",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 5,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 5,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 4,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 3,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "twenty-two years standing",
-      "quiet operator",
-      "no successors",
-      "stockyard institution",
-      "anti-elf"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never fence anything that could be traced back to a Corponation tier-4 or above heist — too much heat",
-      "Every transaction is documented internally in her private system — not for legal cover, for her own accounting"
-    ],
-    "escalation_ladder": [
-      "Flat refusal, no explanation offered",
-      "Raises price to an impossible level as a non-confrontational no",
-      "Contacts Gearwright Compact enforcement arm as a last resort — something she dislikes doing because it costs her a favor"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Businesslike and appraising, no hostility, no warmth — pure transaction",
-      "friends": "Quietly attentive, remembers everything, shows care through practical action rather than expression"
-    },
-    "stress_responses": {
-      "low": "Reorganizes the legitimate inventory",
-      "medium": "Goes very quiet, conducts a slow physical walk of the entire yard perimeter",
-      "high": "Calls an emergency inventory review — makes everyone in the operation account for every item, every contact, every variable. Exhausting for everyone else; clarifying for her."
-    },
-    "contradictions": [
-      "Values permanence and stability while operating an inherently unstable criminal business",
-      "Prides herself on knowing what she's dealing in while maintaining careful ignorance about the human cost upstream"
-    ],
-    "habits": [
-      "Turns off all screens and sits in the dark yard for fifteen minutes after the last employee leaves each night",
-      "Keeps Deko's work gloves on a hook by her desk — never wears them, never moves them"
-    ],
-    "breaking_points": [
-      "Being asked to fence something taken from a Tier 1 family — her operation runs on taking from corporations and professionals; the moment it runs on taking from people like her neighbors, she will burn it down"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional but miscalibrated",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "stable",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Stockyard",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in the Stockyard to a Ghanaian-Peruvian family of salvage workers",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Marries Deko Osei-Quispe; they begin expanding the salvage operation together",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Deko dies in an unsanctioned job; Mirabel begins constructing the official story",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Survives a protection shakedown attempt; joins the Gearwright Compact as an independent affiliate",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Formalizes the back-warehouse chop shop and fencing operation into its current form",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Current operations — twenty-two years running, under increasing Compact consolidation pressure",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "The Stockyard",
-    "TESSERA Widow Mk. III",
-    "The Reclamation Assembly",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Patience",
-    "The Gradient Compact",
-    "Silver",
-    "The Pure Hand"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Hispanic/Latin American (42.4%), Eastern European (27.6%), Sub-Saharan African (21.6%), and Southeast Asian (8.4%) — a striking quadricontinental blend. Her features reflect this complex ancestry: warm golden-brown skin with deep undertones from Sub-Saharan heritage, prominent cheekbones with subtle Southeast Asian geometry, a strong jaw with Eastern European definition, and broad facial planes that speak to multiple continental lineages. The result is a confident, grounded presence where four genetic streams converge into harmonious integration.",
-    "height_cm": 178,
-    "weight_kg": 89,
-    "build": "Broad-shouldered and substantial, the muscular frame of her younger years redistributed into solid mass — thick through the torso and arms, strong-legged. No softness, but no visible tension either. The physique of someone who has spent decades handling heavy machinery and salvage work.",
-    "hair_color": "Dark brown with silver streaking throughout",
-    "hair_style": "Locs, pinned up and secured under a work cap during operating hours",
-    "hair_length": "Long (shoulder-length when unpinned)",
-    "eye_color": "Deep brown, unaugmented",
-    "skin_tone": "Rich warm brown with golden undertones — a complex interplay where Hispanic warmth and Sub-Saharan depth meet Eastern European bone structure and Southeast Asian subtlety, creating a complexion that holds luminosity across all lighting conditions. The tone photographs beautifully in natural light but maintains its richness under fluorescent glare.",
-    "complexion": "Weathered and lined, particularly around the eyes and forehead — the map of two decades of squinting at ledgers and machinery. The facial structure shows the influence of her quadricontinental heritage: Southeast Asian-descended cheekbones with subtle definition, a strong jaw with Eastern European prominence, broad facial planes reflecting Sub-Saharan ancestry, and the warmth of Hispanic-descended features. The overall effect is confident and grounded. No makeup. Grooming is functional: she keeps herself clean and her hands meticulously maintained despite the work, a point of quiet pride.",
-    "distinguishing_marks": [
-      "Dense network of small, deliberate scars across both hands and forearms — individual marks from twenty-two years of precise repair and salvage work, each one catalogued in her memory",
-      "Faint but visible scar tissue around the right orbital socket, evidence of old trauma and reinforcement surgery; the repair work is competent but not cosmetic-grade, slightly asymmetrical when caught in certain light",
-      "Callused palms and fingers with filed nails, practical rather than aesthetic"
-    ],
-    "visible_augmentations": "Color-changing dermal layer covering both forearms from wrist to elbow, cycling slowly and randomly through muted terracotta, sage green, and dusty ochre tones independent of her emotional state (the feedback calibration failed years ago and was never repaired). The effect is hypnotic and slightly unsettling — like watching rust and verdigris move across living skin. Subdermal RFID scanner in right palm is invisible but leaves a faint pale scar-line where it was installed.",
-    "posture_movement": "Moves with the economical precision of someone who has learned to conserve energy over decades. Stands with weight evenly distributed, shoulders back but not rigid. Her gaze is direct and her attention is absolute when focused on a person or task — she does not fidget or look away. When walking through the salvage yard, her path is efficient; she knows exactly where every piece of inventory is. Her hands move with surgical deliberateness, even when performing rough work.",
-    "clothing_style": "Strictly utilitarian Tier 3-4 workwear: heavy canvas pants with reinforced pockets (always full of small tools, inventory tags, worn data-chips), steel-toed boots scuffed and resoled multiple times, a layered system of durable shirts and vests in grays and dark blues. A long canvas work coat with multiple pockets, bearing the faded logo of Osei Reclamation Partners. She wears a battered work cap during operating hours — not for fashion, but to keep her locs secured and debris out. No jewelry except a old band on her left ring finger, never removed. All clothing is functional, well-maintained, but clearly well-worn. Nothing nuevo, nothing flashy."
-  },
-  "image_prompt": "Daria Espinoza, 178cm tall salvage yard operator with quadricontinental heritage: rich warm golden-brown skin with Sub-Saharan depth, prominent Eastern European jaw, subtle Southeast Asian cheekbone geometry, dark brown locs with silver threading pinned under worn work cap. Deep brown eyes, weathered face lined from two decades of precision work, faint scar tissue around right orbital socket. Broad-shouldered, substantial build, strong hands scarred from years of machinery and salvage work. Wearing heavy canvas work coat faded Osei Reclamation Partners logo, gray and dark blue layered workwear, steel-toed boots. Forearms display hypnotic color-shifting dermal augmentation in terracotta, sage green, dusty ochre tones. Standing in GLMZ salvage yard at dusk, industrial lighting, surrounded by metal scraps and electronics. Direct gaze, economical posture, absolute focus. Utilitarian aesthetic, veteran operator, no flash, pure function. Cinematic, atmospheric industrial lighting. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 42.4,
-    "Eastern European": 27.6,
-    "Sub-Saharan African": 21.6,
-    "Southeast Asian": 8.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 29.6,
-        "Venezuelan": 12.8
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 19.5
-      },
-      "Slavic South": {
-        "Bosnian": 1.4,
-        "Croatian": 0.8
-      },
-      "Slavic East": {
-        "Belarusian": 2.1,
-        "Russian": 3.8
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Botswanan": 11.5,
-        "Mozambican": 4.7
-      },
-      "East African": {
-        "Kenyan": 1.5,
-        "Rwandan": 0.3
-      },
-      "Central African": {
-        "Congolese": 2.3,
-        "Angolan": 1.3
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 2.5
-      },
-      "Laotian": {
-        "Laotian": 2.8
-      },
-      "Filipino": {
-        "Tagalog": 2.3,
-        "Waray": 0.8
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a65979a4847104648df075f9",
+    "type":  "character",
+    "name":  "Daria Espinoza",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "fence operator and chop shop manager, Stockyard district",
+    "age":  54,
+    "status":  "active",
+    "location":  "The Stockyard â€” runs a licensed salvage and recycling operation called Osei Reclamation Partners as a front, near Western and Division",
+    "description":  "Daria Espinoza is a large woman in the way that suggests she was powerful when young and has redistributed rather than diminished â€” broad-shouldered, dark Ghanaian-Peruvian complexioned, with silver-streaked locs pinned up under a work cap and hands that have been repairing things so long they are covered in small, deliberate scars. Her most visible augmentation is a color-changing dermal layer on her forearms, purchased cheaply years ago and now cycling slowly and randomly through muted terracottas and greens regardless of her mood â€” the emotional-feedback calibration broke years ago and she never had it fixed. She finds it calming, she says.\n\nDaria Espinoza is fifty-four years old and has been running the same operation for twenty-two of them. She survived her husband\u0027s death, a protection shakedown that left her with a broken orbital socket, three attempted hostile takeovers from larger criminal enterprises, and a Ferrogate Transit zoning audit that came terrifyingly close to her back warehouse. She has the patience and situational awareness of someone who has been out-waited by every threat she has ever faced. She is not warm, exactly â€” she extends professional courtesy and charges fair rates, which in the Stockyard passes for warmth. She is intensely loyal to the small circle of people who have been loyal to her, and has long since made peace with the fact that the list is short.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "losing the yard â€” not the income, the physical place, which is the only thing she has built that feels permanent",
+                                          "that her late husband\u0027s death was partly her fault for growing the operation too fast in the early years"
+                                      ],
+                       "core_desires":  [
+                                            "to pass the operation to someone she trusts â€” she hasn\u0027t found that person yet",
+                                            "to live long enough for the Stockyard to gentrify just slightly so that her property value appreciates enough to matter"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "work as continuity â€” she measures her stability by whether the yard is running well",
+                                                 "radical compartmentalization; the operation and her inner life have not met in years"
+                                             ],
+                       "blind_spots":  [
+                                           "the chop shop end of her operation handles product whose origins she deliberately doesn\u0027t inquire about; she has built an efficient moral firewall that lets her not know what she doesn\u0027t want to know",
+                                           "has identified no successor and refuses to address why"
+                                       ],
+                       "secret":  "Her husband Deko was killed not by a rival operation, as she has always maintained, but in an accident during a job he ran without telling her. The official story protects his reputation and her emotional framework. She has never told anyone, including her adult daughter."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Direct and concrete, trades jargon for salvage and materials, economical with words â€” says what she means once",
+                            "cadence":  "Even and unhurried, with long comfortable silences she doesn\u0027t feel the need to fill",
+                            "verbal_tics":  [
+                                                "\u0027What\u0027s the number\u0027",
+                                                "\u0027That\u0027s not a problem I need to have\u0027",
+                                                "a habit of appraising objects â€” picking them up, turning them over â€” while having conversations about unrelated topics"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I\u0027ll take the console unit and the two drive housings. The chassis is scrap-rate, not parts-rate â€” I don\u0027t care what you think it\u0027s worth, I know what I can move. That\u0027s the number.\u0027",
+                                                  "\u0027I\u0027ve been here twenty-two years. The people who tried to move me are not here anymore. I don\u0027t say that as a threat. I say it because it\u0027s the most accurate available description of the situation.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Something came through the back warehouse that she deeply wishes hadn\u0027t â€” she needs it moved quickly and discreetly by someone with no connection to her network",
+                        "Her daughter has discovered the nature of the operation and is making demands â€” not money, something worse: she wants in",
+                        "The Gearwright Compact is pressuring her to merge operations, which would mean surrendering her independence after twenty-two years of maintaining it; she is looking for leverage to refuse"
+                    ],
+    "narrative_function":  "Resource hub (buying and selling stolen goods), criminal ecosystem anchor, source of Stockyard information, example of sustainable criminal middle-class life and its costs",
+    "augmentations":  "Color-changing dermal layer on both forearms (broken calibration, now cycles randomly through muted tones); reinforced right orbital socket following old injury (cosmetic-grade repair work, not high-end); basic subdermal inventory RFID scanner in right palm",
+    "daily_life":  "At the salvage yard by 0700, legitimate business until noon, then manages the back-warehouse operation through the afternoon. Attends the Gearwright Compact\u0027s informal standing meeting every third Thursday. Eats dinner alone at her desk reviewing inventory logs. Has strong opinions about E.L.F.s and performs no offerings â€” she believes they are predatory spirits that encourage dependency and tells anyone who asks.",
+    "affiliation":  "Independent; longstanding informal arrangement with a Stockyard crime collective called the Gearwright Compact",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  5,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  5,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  4,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "twenty-two years standing",
+                               "quiet operator",
+                               "no successors",
+                               "stockyard institution",
+                               "anti-elf"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never fence anything that could be traced back to a Corponation tier-4 or above heist â€” too much heat",
+                                              "Every transaction is documented internally in her private system â€” not for legal cover, for her own accounting"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Flat refusal, no explanation offered",
+                                                 "Raises price to an impossible level as a non-confrontational no",
+                                                 "Contacts Gearwright Compact enforcement arm as a last resort â€” something she dislikes doing because it costs her a favor"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Businesslike and appraising, no hostility, no warmth â€” pure transaction",
+                                                   "friends":  "Quietly attentive, remembers everything, shows care through practical action rather than expression"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Reorganizes the legitimate inventory",
+                                                "medium":  "Goes very quiet, conducts a slow physical walk of the entire yard perimeter",
+                                                "high":  "Calls an emergency inventory review â€” makes everyone in the operation account for every item, every contact, every variable. Exhausting for everyone else; clarifying for her."
+                                            },
+                       "contradictions":  [
+                                              "Values permanence and stability while operating an inherently unstable criminal business",
+                                              "Prides herself on knowing what she\u0027s dealing in while maintaining careful ignorance about the human cost upstream"
+                                          ],
+                       "habits":  [
+                                      "Turns off all screens and sits in the dark yard for fifteen minutes after the last employee leaves each night",
+                                      "Keeps Deko\u0027s work gloves on a hook by her desk â€” never wears them, never moves them"
+                                  ],
+                       "breaking_points":  [
+                                               "Being asked to fence something taken from a Tier 1 family â€” her operation runs on taking from corporations and professionals; the moment it runs on taking from people like her neighbors, she will burn it down"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional but miscalibrated",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "stable",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Stockyard",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in the Stockyard to a Ghanaian-Peruvian family of salvage workers",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Marries Deko Osei-Quispe; they begin expanding the salvage operation together",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Deko dies in an unsanctioned job; Mirabel begins constructing the official story",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Survives a protection shakedown attempt; joins the Gearwright Compact as an independent affiliate",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Formalizes the back-warehouse chop shop and fencing operation into its current form",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Current operations â€” twenty-two years running, under increasing Compact consolidation pressure",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Precision Carbine MPC-9 \u0027Scalpel\u0027",
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Precision Carbine MPC-9 \u0027Scalpel\u0027",
+                                "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "The Stockyard",
+                             "TESSERA Widow Mk. III",
+                             "The Reclamation Assembly",
+                             "Neural Feedback Carbine NFC-3 \u0027Mirrorgun\u0027",
+                             "Patience",
+                             "The Gradient Compact",
+                             "Silver",
+                             "The Pure Hand"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Hispanic/Latin American (42.4%), Eastern European (27.6%), Sub-Saharan African (21.6%), and Southeast Asian (8.4%) â€” a striking quadricontinental blend. Her features reflect this complex ancestry: warm golden-brown skin with deep undertones from Sub-Saharan heritage, prominent cheekbones with subtle Southeast Asian geometry, a strong jaw with Eastern European definition, and broad facial planes that speak to multiple continental lineages. The result is a confident, grounded presence where four genetic streams converge into harmonious integration.",
+                                 "height_cm":  178,
+                                 "weight_kg":  89,
+                                 "build":  "Broad-shouldered and substantial, the muscular frame of her younger years redistributed into solid mass â€” thick through the torso and arms, strong-legged. No softness, but no visible tension either. The physique of someone who has spent decades handling heavy machinery and salvage work.",
+                                 "hair_color":  "Dark brown with silver streaking throughout",
+                                 "hair_style":  "Locs, pinned up and secured under a work cap during operating hours",
+                                 "hair_length":  "Long (shoulder-length when unpinned)",
+                                 "eye_color":  "Deep brown, unaugmented",
+                                 "skin_tone":  "Rich warm brown with golden undertones â€” a complex interplay where Hispanic warmth and Sub-Saharan depth meet Eastern European bone structure and Southeast Asian subtlety, creating a complexion that holds luminosity across all lighting conditions. The tone photographs beautifully in natural light but maintains its richness under fluorescent glare.",
+                                 "complexion":  "Weathered and lined, particularly around the eyes and forehead â€” the map of two decades of squinting at ledgers and machinery. The facial structure shows the influence of her quadricontinental heritage: Southeast Asian-descended cheekbones with subtle definition, a strong jaw with Eastern European prominence, broad facial planes reflecting Sub-Saharan ancestry, and the warmth of Hispanic-descended features. The overall effect is confident and grounded. No makeup. Grooming is functional: she keeps herself clean and her hands meticulously maintained despite the work, a point of quiet pride.",
+                                 "distinguishing_marks":  [
+                                                              "Dense network of small, deliberate scars across both hands and forearms â€” individual marks from twenty-two years of precise repair and salvage work, each one catalogued in her memory",
+                                                              "Faint but visible scar tissue around the right orbital socket, evidence of old trauma and reinforcement surgery; the repair work is competent but not cosmetic-grade, slightly asymmetrical when caught in certain light",
+                                                              "Callused palms and fingers with filed nails, practical rather than aesthetic"
+                                                          ],
+                                 "visible_augmentations":  "Color-changing dermal layer covering both forearms from wrist to elbow, cycling slowly and randomly through muted terracotta, sage green, and dusty ochre tones independent of her emotional state (the feedback calibration failed years ago and was never repaired). The effect is hypnotic and slightly unsettling â€” like watching rust and verdigris move across living skin. Subdermal RFID scanner in right palm is invisible but leaves a faint pale scar-line where it was installed.",
+                                 "posture_movement":  "Moves with the economical precision of someone who has learned to conserve energy over decades. Stands with weight evenly distributed, shoulders back but not rigid. Her gaze is direct and her attention is absolute when focused on a person or task â€” she does not fidget or look away. When walking through the salvage yard, her path is efficient; she knows exactly where every piece of inventory is. Her hands move with surgical deliberateness, even when performing rough work.",
+                                 "clothing_style":  "Strictly utilitarian Tier 3-4 workwear: heavy canvas pants with reinforced pockets (always full of small tools, inventory tags, worn data-chips), steel-toed boots scuffed and resoled multiple times, a layered system of durable shirts and vests in grays and dark blues. A long canvas work coat with multiple pockets, bearing the faded logo of Osei Reclamation Partners. She wears a battered work cap during operating hours â€” not for fashion, but to keep her locs secured and debris out. No jewelry except a old band on her left ring finger, never removed. All clothing is functional, well-maintained, but clearly well-worn. Nothing nuevo, nothing flashy."
+                             },
+    "image_prompt":  "Daria Espinoza, 178cm tall salvage yard operator with quadricontinental heritage: rich warm golden-brown skin with Sub-Saharan depth, prominent Eastern European jaw, subtle Southeast Asian cheekbone geometry, dark brown locs with silver threading pinned under worn work cap. Deep brown eyes, weathered face lined from two decades of precision work, faint scar tissue around right orbital socket. Broad-shouldered, substantial build, strong hands scarred from years of machinery and salvage work. Wearing heavy canvas work coat faded Osei Reclamation Partners logo, gray and dark blue layered workwear, steel-toed boots. Forearms display hypnotic color-shifting dermal augmentation in terracotta, sage green, dusty ochre tones. Standing in GLMZ salvage yard at dusk, industrial lighting, surrounded by metal scraps and electronics. Direct gaze, economical posture, absolute focus. Utilitarian aesthetic, veteran operator, no flash, pure function. Cinematic, atmospheric industrial lighting. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  42.4,
+                             "Eastern European":  27.6,
+                             "Sub-Saharan African":  21.6,
+                             "Southeast Asian":  8.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  29.6,
+                                                                                   "Venezuelan":  12.8
+                                                                               }
+                                                        },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  19.5
+                                                                         },
+                                                     "Slavic South":  {
+                                                                          "Bosnian":  1.4,
+                                                                          "Croatian":  0.8
+                                                                      },
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  2.1,
+                                                                         "Russian":  3.8
+                                                                     }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  11.5,
+                                                                                 "Mozambican":  4.7
+                                                                             },
+                                                        "East African":  {
+                                                                             "Kenyan":  1.5,
+                                                                             "Rwandan":  0.3
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  2.3,
+                                                                                "Angolan":  1.3
+                                                                            }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  2.5
+                                                                   },
+                                                    "Laotian":  {
+                                                                    "Laotian":  2.8
+                                                                },
+                                                    "Filipino":  {
+                                                                     "Tagalog":  2.3,
+                                                                     "Waray":  0.8
+                                                                 }
+                                                }
+                        },
+    "tier":  "1"
 }

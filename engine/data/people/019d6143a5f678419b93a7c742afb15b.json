@@ -1,248 +1,269 @@
-{
-  "id": "019d6143a5f678419b93a7c742afb15b",
-  "type": "character",
-  "name": "Busayo Jeong-Balasanyan",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Street pharmacist and unlicensed gene-cosmetic clinic operator",
-  "age": 34,
-  "status": "active",
-  "location": "The Laceworks, Ironvein, near Lincoln and Belmont",
-  "description": "Busayo Jeong-Balasanyan is lean and precise-looking in the way that suggests either discipline or hunger — in his case it's mostly discipline, with hunger underneath. His skin is deep brown and he has voluntarily undergone a bioluminescent dermal treatment that makes his forearms and the sides of his neck glow a faint pulsing teal in low light — not Helix-certified work, his own. He keeps his hair short and wears a pair of magnifying optics on a headband that he pushes up when not in use, giving him a permanently slightly academic look. His hands are always impeccably clean. His fingernails are trimmed to the millimeter. He smells faintly of antiseptic and something floral he hasn't identified the source of.\n\nBusayo Jeong-Balasanyan is not a doctor. He has never claimed to be. He is very careful about this. What he is, is someone who has read everything available about gene-cosmetic application, has practiced on himself for eight years, and has a 94% satisfaction rate among his returning clients. He operates out of a converted textile workshop in the Laceworks, curtained into sections, scrupulously clean. He sells regulated cosmetic mods at street prices and a curated selection of pharmaceutical compounds — mood stabilizers, pain management, focus enhancers — sourced from a supply chain he describes only as 'reliable.' He is proud of his work in the specific, anxious way of someone who knows that one bad batch could end everything.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.7,
-      "id": 0.4,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Making a mistake that hurts someone irreparably",
-      "Being shut down by Helix enforcement and losing everything he's built"
-    ],
-    "core_desires": [
-      "To be recognized as genuinely skilled, not just tolerated as a street hack",
-      "To one day operate legitimately without corporate gatekeeping"
-    ],
-    "coping_mechanisms": [
-      "Hyper-meticulous preparation rituals before any procedure",
-      "Intellectualizes anxiety — researches the thing he's afraid of until the fear becomes manageable data"
-    ],
-    "blind_spots": [
-      "His pride in his own competence makes him slow to admit when something is beyond his abilities",
-      "Trusts his supply chain more than he should because the alternative — admitting the risk — is too destabilizing"
-    ],
-    "secret": "Six months ago a client had a severe allergic cascade reaction to one of his cosmetic applications. Dresdan managed it and the client survived, but it wasn't close. The client signed a non-disclosure in exchange for free corrective work. Dresdan retooled his entire allergen screening protocol afterward, but the incident haunts him. He has told himself it proves the system works. He hasn't told himself what happens if the system fails again."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise and technical when discussing his work; shifts to careful, measured casualness in social contexts. Never uses slang for his products — always clinical terminology.",
-    "cadence": "Even and unhurried. Rarely interrupts. Answers questions fully, sometimes more fully than asked.",
-    "verbal_tics": [
-      "Prefaces uncertain statements with 'In my experience—'",
-      "Repeats client questions back before answering them",
-      "Says 'that's not nothing' when acknowledging risk"
-    ],
-    "example_lines": [
-      "'I want to be clear about what I can and can't do here. I can give you what you're asking for. I want you to understand what it involves first.'",
-      "'In my experience, the itch you're describing is transient — peaks around day three. That's not nothing, but it resolves.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He's identified an unusual compound in a pharmaceutical batch he received — something that shouldn't be there, something that looks like it was put there deliberately. He doesn't know what it does. He hasn't dispensed any of it yet.",
-    "A corporate-tier client has been coming to him for off-record cosmetic work. She's paid well and asked for nothing unusual. Then she asked him to modify a second person's appearance to match a specific target profile. He refused. She came back.",
-    "His grey-market Helix distributor has gone silent. His stock is running low and he doesn't know another supplier. He needs a new supply chain before his clients notice the gaps."
-  ],
-  "narrative_function": "Service provider and reluctant information source. Characters who need cosmetic work done off the books, pharmaceutical compounds without a corporate prescription trail, or someone who quietly notices unusual substances come to Dresdan. He's not a gossip but he observes everything.",
-  "augmentations": "Self-applied bioluminescent dermal layer (teal, forearms and neck). Neural focus-thread — a thin cognitive augmentation that sharpens fine-motor precision, Tessera-brand but sourced secondhand. Olfactory enhancement (medical grade, helps him assess chemical compositions by smell).",
-  "daily_life": "Mornings he restocks and reviews his supply logs; afternoons he sees clients by appointment for cosmetic procedures; evenings he sells pharmaceuticals to walk-ins from a fold-out table near the Laceworks' east entrance. He reads extensively on a battered tablet during slow hours.",
-  "affiliation": "Independent; loose supply relationship with a Helix Biosystems grey-market distributor he's never met in person",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 5,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -1,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "meticulous",
-      "grey-market professional",
-      "self-taught expert",
-      "anxious competence",
-      "off-the-books healer"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never perform a procedure he hasn't researched thoroughly first",
-      "Refuse clients who are visibly impaired or coerced",
-      "Keep records of everything in encrypted form — for safety, not compliance"
-    ],
-    "escalation_ladder": [
-      "Calmly declines and explains why",
-      "Repeats refusal with less explanation",
-      "Closes and locks the workspace, ends the interaction entirely",
-      "Calls in a favor with a security contact he has never actually needed to use"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional courtesy and careful assessment — he needs to know if they're a risk before he'll do anything.",
-      "friends": "Warmer but still slightly formal; expresses care through practical action rather than words."
-    },
-    "stress_responses": {
-      "low": "Cleans and reorganizes equipment",
-      "medium": "Becomes very quiet and deliberate — every movement calculated",
-      "high": "Shuts down emotionally and operates purely on procedure; requires processing time afterward"
-    },
-    "contradictions": [
-      "Deeply cares about client wellbeing but structures his business to minimize emotional attachment",
-      "Believes in bodily autonomy completely but struggles not to lecture clients about risky choices"
-    ],
-    "habits": [
-      "Sterilizes his tools in a specific order he never deviates from",
-      "Leaves a small data-offering at the workshop's ELF shrine every morning — a chemical formula, a research abstract",
-      "Keeps a handwritten logbook in addition to digital records, trusts paper more"
-    ],
-    "breaking_points": [
-      "A client suffering harm from his work",
-      "Someone attempting to use his skills to hurt another person"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Scholar": 0.9,
-    "Pragmatist": 0.9,
-    "Networker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Laceworks",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Compact Rifle MCR-2 'Errand'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "related_entities": [
-    "The Laceworks",
-    "WELLSPRING",
-    "Ironvein",
-    "The Pure Hand",
-    "Nightlight"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Complex diaspora phenotype reflecting 55% East Asian, 27% Middle Eastern, 11% South Asian, and 7% Sub-Saharan African ancestry. Busayo's appearance synthesizes these regional traits into a distinctive whole: the East Asian foundation provides the baseline facial geometry and eye shape, while Middle Eastern heritage adds warmth and slight broadness to the face, South Asian ancestry contributes to lip fullness and nasal structure, and Sub-Saharan heritage deepens and enriches overall skin tone. The result is unmistakably mixed-heritage—a visual signature of the Ubiquitous Diaspora.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Lean and economical, with visible muscle definition in forearms and shoulders from steady precision work. No excess — disciplined rather than ascetic.",
-    "hair_color": "Natural black",
-    "hair_style": "Cropped close to scalp, neat and functional",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, natural",
-    "skin_tone": "Medium golden-brown with warm amber undertones. The tone reflects the synthesis of East Asian warmth, Middle Eastern richness, South Asian depth, and Sub-Saharan African warmth—luminous quality that catches light subtly across the cheekbones and bridge of nose.",
-    "complexion": "Clean-shaven, skin unblemished and scrupulously maintained. Facial structure shows the slightly elevated cheekbones and angular geometry characteristic of East Asian ancestry, tempered by the fuller lips and slightly broader nasal structure from Middle Eastern and South Asian heritage. Expression often concentrated, slightly furrowed brow from magnifying work. Fine-featured overall with a precise jawline and balanced proportions.",
-    "distinguishing_marks": [
-      "Bioluminescent teal dermal treatment covering both forearms in organic, vein-like patterns that pulse faintly in low light",
-      "Matching bioluminescent treatment along both sides of neck from jaw to clavicle in subtle wave patterns"
-    ],
-    "visible_augmentations": "Magnifying optics headband (worn pushed up on crown when idle, giving perpetually academic appearance). Bioluminescent dermal layer visible on forearms and neck, glowing faint teal in dim conditions. Hands show no visible chrome or scarring — deliberately unmarked to maintain professional appearance for procedure work.",
-    "posture_movement": "Upright, economical posture suggesting both discipline and wariness. Hands move with deliberate precision — no wasted motion. When seated, often examines his own hands with clinical detachment. Gait is measured and careful, never rushed even in crowds.",
-    "clothing_style": "Tier 4 working-professional aesthetic. Clean, fitted dark utility jacket (charcoal or deep blue) with multiple internal pockets for tools and samples. Thermal-responsive undershirt. Precise black slacks with minimal wear. Worn leather gloves when handling supplies, removed during client consultations to display immaculate hands. No jewelry. A faded cloth bracelet on left wrist — origin unknown, never mentioned. Keeps workspace coat (light gray, clinically clean) folded within arm's reach."
-  },
-  "image_prompt": "Busayo Jeong-Balasanyan, mixed-heritage precision technician in GLMZ. Medium golden-brown skin, dark natural eyes, close-cropped black hair. Fine-featured with slightly elevated cheekbones and angular geometry softened by fuller lips and broader nasal structure—distinctly diaspora phenotype. Magnifying optics headband pushed up on crown. Bioluminescent teal dermal treatments visible on both forearms and neck in organic vein-like patterns, faintly pulsing. Wearing charcoal utility jacket with multiple pockets, thermal-responsive undershirt, immaculate black slacks, leather gloves at hand. Upright disciplined posture, hands positioned with clinical precision. Workspace interior with soft overhead lighting catching the glow of dermal implants. Faded cloth bracelet on left wrist. Expression concentrated and focused. Neo-noir urban aesthetic, professional and controlled. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 55.1,
-    "Middle Eastern": 26.7,
-    "South Asian": 10.9,
-    "Sub-Saharan African": 7.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 24.8
-      },
-      "Japanese": {
-        "Japanese": 30.3
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Emirati": 13.7
-      },
-      "Persian": {
-        "Iranian": 13
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 10.9
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Ghanaian": 7.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5f678419b93a7c742afb15b",
+    "type":  "character",
+    "name":  "Busayo Jeong-Balasanyan",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Street pharmacist and unlicensed gene-cosmetic clinic operator",
+    "age":  34,
+    "status":  "active",
+    "location":  "The Laceworks, Ironvein, near Lincoln and Belmont",
+    "description":  "Busayo Jeong-Balasanyan is lean and precise-looking in the way that suggests either discipline or hunger â€” in his case it\u0027s mostly discipline, with hunger underneath. His skin is deep brown and he has voluntarily undergone a bioluminescent dermal treatment that makes his forearms and the sides of his neck glow a faint pulsing teal in low light â€” not Helix-certified work, his own. He keeps his hair short and wears a pair of magnifying optics on a headband that he pushes up when not in use, giving him a permanently slightly academic look. His hands are always impeccably clean. His fingernails are trimmed to the millimeter. He smells faintly of antiseptic and something floral he hasn\u0027t identified the source of.\n\nBusayo Jeong-Balasanyan is not a doctor. He has never claimed to be. He is very careful about this. What he is, is someone who has read everything available about gene-cosmetic application, has practiced on himself for eight years, and has a 94% satisfaction rate among his returning clients. He operates out of a converted textile workshop in the Laceworks, curtained into sections, scrupulously clean. He sells regulated cosmetic mods at street prices and a curated selection of pharmaceutical compounds â€” mood stabilizers, pain management, focus enhancers â€” sourced from a supply chain he describes only as \u0027reliable.\u0027 He is proud of his work in the specific, anxious way of someone who knows that one bad batch could end everything.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Making a mistake that hurts someone irreparably",
+                                          "Being shut down by Helix enforcement and losing everything he\u0027s built"
+                                      ],
+                       "core_desires":  [
+                                            "To be recognized as genuinely skilled, not just tolerated as a street hack",
+                                            "To one day operate legitimately without corporate gatekeeping"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Hyper-meticulous preparation rituals before any procedure",
+                                                 "Intellectualizes anxiety â€” researches the thing he\u0027s afraid of until the fear becomes manageable data"
+                                             ],
+                       "blind_spots":  [
+                                           "His pride in his own competence makes him slow to admit when something is beyond his abilities",
+                                           "Trusts his supply chain more than he should because the alternative â€” admitting the risk â€” is too destabilizing"
+                                       ],
+                       "secret":  "Six months ago a client had a severe allergic cascade reaction to one of his cosmetic applications. Dresdan managed it and the client survived, but it wasn\u0027t close. The client signed a non-disclosure in exchange for free corrective work. Dresdan retooled his entire allergen screening protocol afterward, but the incident haunts him. He has told himself it proves the system works. He hasn\u0027t told himself what happens if the system fails again."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and technical when discussing his work; shifts to careful, measured casualness in social contexts. Never uses slang for his products â€” always clinical terminology.",
+                            "cadence":  "Even and unhurried. Rarely interrupts. Answers questions fully, sometimes more fully than asked.",
+                            "verbal_tics":  [
+                                                "Prefaces uncertain statements with \u0027In my experienceâ€”\u0027",
+                                                "Repeats client questions back before answering them",
+                                                "Says \u0027that\u0027s not nothing\u0027 when acknowledging risk"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I want to be clear about what I can and can\u0027t do here. I can give you what you\u0027re asking for. I want you to understand what it involves first.\u0027",
+                                                  "\u0027In my experience, the itch you\u0027re describing is transient â€” peaks around day three. That\u0027s not nothing, but it resolves.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He\u0027s identified an unusual compound in a pharmaceutical batch he received â€” something that shouldn\u0027t be there, something that looks like it was put there deliberately. He doesn\u0027t know what it does. He hasn\u0027t dispensed any of it yet.",
+                        "A corporate-tier client has been coming to him for off-record cosmetic work. She\u0027s paid well and asked for nothing unusual. Then she asked him to modify a second person\u0027s appearance to match a specific target profile. He refused. She came back.",
+                        "His grey-market Helix distributor has gone silent. His stock is running low and he doesn\u0027t know another supplier. He needs a new supply chain before his clients notice the gaps."
+                    ],
+    "narrative_function":  "Service provider and reluctant information source. Characters who need cosmetic work done off the books, pharmaceutical compounds without a corporate prescription trail, or someone who quietly notices unusual substances come to Dresdan. He\u0027s not a gossip but he observes everything.",
+    "augmentations":  "Self-applied bioluminescent dermal layer (teal, forearms and neck). Neural focus-thread â€” a thin cognitive augmentation that sharpens fine-motor precision, Tessera-brand but sourced secondhand. Olfactory enhancement (medical grade, helps him assess chemical compositions by smell).",
+    "daily_life":  "Mornings he restocks and reviews his supply logs; afternoons he sees clients by appointment for cosmetic procedures; evenings he sells pharmaceuticals to walk-ins from a fold-out table near the Laceworks\u0027 east entrance. He reads extensively on a battered tablet during slow hours.",
+    "affiliation":  "Independent; loose supply relationship with a Helix Biosystems grey-market distributor he\u0027s never met in person",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  5,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "meticulous",
+                               "grey-market professional",
+                               "self-taught expert",
+                               "anxious competence",
+                               "off-the-books healer"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never perform a procedure he hasn\u0027t researched thoroughly first",
+                                              "Refuse clients who are visibly impaired or coerced",
+                                              "Keep records of everything in encrypted form â€” for safety, not compliance"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Calmly declines and explains why",
+                                                 "Repeats refusal with less explanation",
+                                                 "Closes and locks the workspace, ends the interaction entirely",
+                                                 "Calls in a favor with a security contact he has never actually needed to use"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional courtesy and careful assessment â€” he needs to know if they\u0027re a risk before he\u0027ll do anything.",
+                                                   "friends":  "Warmer but still slightly formal; expresses care through practical action rather than words."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Cleans and reorganizes equipment",
+                                                "medium":  "Becomes very quiet and deliberate â€” every movement calculated",
+                                                "high":  "Shuts down emotionally and operates purely on procedure; requires processing time afterward"
+                                            },
+                       "contradictions":  [
+                                              "Deeply cares about client wellbeing but structures his business to minimize emotional attachment",
+                                              "Believes in bodily autonomy completely but struggles not to lecture clients about risky choices"
+                                          ],
+                       "habits":  [
+                                      "Sterilizes his tools in a specific order he never deviates from",
+                                      "Leaves a small data-offering at the workshop\u0027s ELF shrine every morning â€” a chemical formula, a research abstract",
+                                      "Keeps a handwritten logbook in addition to digital records, trusts paper more"
+                                  ],
+                       "breaking_points":  [
+                                               "A client suffering harm from his work",
+                                               "Someone attempting to use his skills to hurt another person"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Scholar":  0.9,
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Laceworks",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact Rifle MCR-2 \u0027Errand\u0027",
+                            "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Compact Rifle MCR-2 \u0027Errand\u0027",
+                                "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                            ],
+    "related_entities":  [
+                             "The Laceworks",
+                             "WELLSPRING",
+                             "Ironvein",
+                             "The Pure Hand",
+                             "Nightlight"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora phenotype reflecting 55% East Asian, 27% Middle Eastern, 11% South Asian, and 7% Sub-Saharan African ancestry. Busayo\u0027s appearance synthesizes these regional traits into a distinctive whole: the East Asian foundation provides the baseline facial geometry and eye shape, while Middle Eastern heritage adds warmth and slight broadness to the face, South Asian ancestry contributes to lip fullness and nasal structure, and Sub-Saharan heritage deepens and enriches overall skin tone. The result is unmistakably mixed-heritageâ€”a visual signature of the Ubiquitous Diaspora.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and economical, with visible muscle definition in forearms and shoulders from steady precision work. No excess â€” disciplined rather than ascetic.",
+                                 "hair_color":  "Natural black",
+                                 "hair_style":  "Cropped close to scalp, neat and functional",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, natural",
+                                 "skin_tone":  "Medium golden-brown with warm amber undertones. The tone reflects the synthesis of East Asian warmth, Middle Eastern richness, South Asian depth, and Sub-Saharan African warmthâ€”luminous quality that catches light subtly across the cheekbones and bridge of nose.",
+                                 "complexion":  "Clean-shaven, skin unblemished and scrupulously maintained. Facial structure shows the slightly elevated cheekbones and angular geometry characteristic of East Asian ancestry, tempered by the fuller lips and slightly broader nasal structure from Middle Eastern and South Asian heritage. Expression often concentrated, slightly furrowed brow from magnifying work. Fine-featured overall with a precise jawline and balanced proportions.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent teal dermal treatment covering both forearms in organic, vein-like patterns that pulse faintly in low light",
+                                                              "Matching bioluminescent treatment along both sides of neck from jaw to clavicle in subtle wave patterns"
+                                                          ],
+                                 "visible_augmentations":  "Magnifying optics headband (worn pushed up on crown when idle, giving perpetually academic appearance). Bioluminescent dermal layer visible on forearms and neck, glowing faint teal in dim conditions. Hands show no visible chrome or scarring â€” deliberately unmarked to maintain professional appearance for procedure work.",
+                                 "posture_movement":  "Upright, economical posture suggesting both discipline and wariness. Hands move with deliberate precision â€” no wasted motion. When seated, often examines his own hands with clinical detachment. Gait is measured and careful, never rushed even in crowds.",
+                                 "clothing_style":  "Tier 4 working-professional aesthetic. Clean, fitted dark utility jacket (charcoal or deep blue) with multiple internal pockets for tools and samples. Thermal-responsive undershirt. Precise black slacks with minimal wear. Worn leather gloves when handling supplies, removed during client consultations to display immaculate hands. No jewelry. A faded cloth bracelet on left wrist â€” origin unknown, never mentioned. Keeps workspace coat (light gray, clinically clean) folded within arm\u0027s reach."
+                             },
+    "image_prompt":  "Busayo Jeong-Balasanyan, mixed-heritage precision technician in GLMZ. Medium golden-brown skin, dark natural eyes, close-cropped black hair. Fine-featured with slightly elevated cheekbones and angular geometry softened by fuller lips and broader nasal structureâ€”distinctly diaspora phenotype. Magnifying optics headband pushed up on crown. Bioluminescent teal dermal treatments visible on both forearms and neck in organic vein-like patterns, faintly pulsing. Wearing charcoal utility jacket with multiple pockets, thermal-responsive undershirt, immaculate black slacks, leather gloves at hand. Upright disciplined posture, hands positioned with clinical precision. Workspace interior with soft overhead lighting catching the glow of dermal implants. Faded cloth bracelet on left wrist. Expression concentrated and focused. Neo-noir urban aesthetic, professional and controlled. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  55.1,
+                             "Middle Eastern":  26.7,
+                             "South Asian":  10.9,
+                             "Sub-Saharan African":  7.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  24.8
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  30.3
+                                                            }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Emirati":  13.7
+                                                                 },
+                                                   "Persian":  {
+                                                                   "Iranian":  13
+                                                               }
+                                               },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  10.9
+                                                                }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Ghanaian":  7.3
+                                                                         }
+                                                    }
+                        },
+    "tier":  "3"
 }

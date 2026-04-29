@@ -1,374 +1,387 @@
-{
-  "id": "019d6143a6247b2b86391a1d8c2d4200",
-  "type": "character",
-  "name": "Futaba Sigurdsson",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Infrastructure disruption and industrial sabotage — saboteur",
-  "age": 23,
-  "status": "active",
-  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Milwaukee and North Ave",
-  "description": "Futaba Sigurdsson is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 23, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a saboteur out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nFutaba Sigurdsson operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.77,
-      "ideal": 0.86,
-      "id": 0.1,
-      "shadow": 0.73,
-      "mask": 0.92,
-      "ghost": 0.12
-    },
-    "core_fears": [
-      "Going cyberpsycho — losing the boundary between human and machine",
-      "Being replaced — younger, faster, cheaper runners coming up behind them",
-      "Being captured alive — death is preferable to corporate interrogation"
-    ],
-    "core_desires": [
-      "To prove everyone who dismissed them catastrophically wrong",
-      "Freedom from augmentation debt — the interest compounds like a tumor",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
-    ],
-    "coping_mechanisms": [
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat",
-      "Maintains weapons obsessively — cleaning guns is meditation"
-    ],
-    "blind_spots": [
-      "Assumes their skill set is more transferable than it actually is",
-      "Believes their trauma makes them special instead of recognizing it as damage to manage",
-      "Fails to notice when their own behavior mirrors the people they despise"
-    ],
-    "secret": "Halima Gutierrez-Asante murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
-    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
-    "verbal_tics": [
-      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries",
-      "Uses technical jargon for everything, including emotions"
-    ],
-    "example_lines": [
-      "\"I don't break things. I introduce structural critiques.\"",
-      "\"The most effective sabotage looks like bad luck.\"",
-      "\"Everything has a weakness. Infrastructure has thousands.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Halima Gutierrez-Asante's reputation — and a price for silence",
-    "A high-paying contract turns out to target someone Halima Gutierrez-Asante owes a personal debt to",
-    "Halima Gutierrez-Asante intercepts intelligence about a threat to their district and must decide between profit and protection"
-  ],
-  "narrative_function": "Halima Gutierrez-Asante is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
-  "augmentations": "Subdermal weapon mount — pop-out blade in each forearm. Neural interface jack at base of skull — standard runner-grade, allows direct net access",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Semi-independent — has standing arrangements with several crews",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 6
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 4
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 10
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 8
-      },
-      "perception": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 7
-      },
-      "willpower": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 9
-      },
-      "technical": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 4
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 9
-      },
-      "intimidation": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 8
-      },
-      "deception": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 5
-      },
-      "empathy": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 7
-      }
-    },
-    "personality": {
-      "aggression": 0.34,
-      "caution": 0.27,
-      "loyalty": 0.75,
-      "greed": 0.38,
-      "empathy": 0.15
-    },
-    "drives": [
-      "loyalty",
-      "knowledge",
-      "survival"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 8,
-      "loyalty_break": 6
-    },
-    "strengths": [
-      "social chameleon — adapts to any environment",
-      "natural leadership presence",
-      "expert marksman"
-    ],
-    "weaknesses": [
-      "physical limitation from incomplete augmentation",
-      "difficulty with authority figures",
-      "grudge-holding that compromises rational decision-making"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "saboteur",
-      "tier-2",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Always verifies target identity independently before lethal contracts",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Insists they work alone but performs noticeably better in a team",
-      "Claims not to care about reputation but monitors what people say about them obsessively",
-      "Presents as emotionless professional but is deeply affected by collateral damage"
-    ],
-    "habits": [
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
-      "Carries a specific caliber round as a lucky charm — has never fired it",
-      "Checks exits within 10 seconds of entering any room"
-    ],
-    "breaking_points": [
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized",
-      "Running out of options — no contacts, no money, no safe house, no way out"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal weapon mount",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Subdermal weapon mount — pop-out blade in each forearm",
-      "replaces": ""
-    },
-    {
-      "name": "Neural interface jack at base of skull",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Steamvent Alley",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Unfinished Theorem",
-    "Slagworks Industrial",
-    "Compass Rose",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Northern European (40.6%), Southeast Asian (18.2%), East Asian (15.9%), South Asian (10.8%), Hispanic/Latin American (7.6%), Indigenous American (6.9%) — a truly global blend creating warm medium-brown skin with subtle golden undertones and hints of olive. High cheekbones and defined facial structure reflect East and Southeast Asian ancestry, while lean efficient build shows Northern European influence. The mix produces a unified warm-toned complexion with minimal contrast, carrying undertones from multiple continental sources. Facial proportions blend Northern European angularity with Southeast and East Asian features, while the warm undertones reflect South Asian and Latin American heritage.",
-    "height_cm": 178,
-    "weight_kg": 62,
-    "build": "Tall and rawboned — lean and efficient rather than undernourished. Long muscle definition in arms and legs suggests functional strength over bulk. Angular shoulders, narrow through the hips. The kind of frame that moves well in confined spaces.",
-    "hair_color": "Black with natural dark brown undertones",
-    "hair_style": "Pulled back tight, usually in a single braid or wrapped close to the scalp for practical reasons",
-    "hair_length": "Medium — shoulder-length when unbound, but habitually restrained",
-    "eye_color": "Dark brown, natural — no visible augmentation",
-    "skin_tone": "Warm medium brown with golden and subtle olive undertones — the blend of Northern European, Southeast Asian, East Asian, and South Asian ancestry creates a unified complexion with depth. The golden warmth is prominent, with slight olive undertones reflecting the South Asian and Latin American components. No sharp contrast between lighter and darker areas.",
-    "complexion": "Angular face with high cheekbones and sharp jawline, showing influence of East and Southeast Asian ancestry layered over Northern European bone structure. Warm medium-brown complexion with golden undertones. Skin is clear but bears minor marks of hard living — small scars on chin and left temple, perpetually tired around the eyes. Minimal grooming beyond function: no makeup, no jewelry except a simple steel ear stud on left ear.",
-    "distinguishing_marks": [
-      "Linear scar across left temple, approximately 4cm, white and surgical-looking — old injury, well-healed",
-      "Small puncture-mark scarring at base of skull where neural jack integrates, dark red and slightly raised",
-      "Thin white scar on right cheekbone, diagonal, approximately 2cm — knife work, deliberately left uncovered",
-      "Network of faint subdermal chrome visible beneath skin of both forearms in geometric patterns — weapon mount architecture, visible as slight metallic sheen under flexed skin"
-    ],
-    "visible_augmentations": "Subdermal weapon mounts visible in both forearms as geometric chrome patterns beneath skin, most prominent when arms are tensed or angled in certain light. Base-of-skull neural interface jack visible as a port roughly the size of a thumbnail, dark red and slightly proud of the skin surface. No cosmetic plating or attempt to conceal either augmentation.",
-    "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward, head level. Walk is steady and low-center-gravity, weight distributed for balance. In repose, jaw is slightly tight, eyes tracking. Default state suggests controlled readiness rather than relaxation. Hands rest with fingers naturally curled, never fully open.",
-    "clothing_style": "Tier 3-4 utilitarian. Favors dark technical fabrics — black or dark grey cargo pants with reinforced pockets and subdermal-compatible sleeve design. Fitted long-sleeve compression shirts or modified jackets that don't restrict forearm mobility. Steel-toed boots with good ankle support, laces kept tight. Outer layers are functional: a worn grey synth-leather jacket or industrial coveralls depending on the work. No corpo logos. No bright colors. Everything is built for movement and work, not presentation. Wears a battered smartwatch on left wrist — vintage model, clearly maintained, no display of Φ status."
-  },
-  "image_prompt": "Futaba Sigurdsson, tall lean mixed-heritage operative in GLMZ, warm medium-brown skin with golden undertones, high cheekbones and angular features blending East Asian and Northern European ancestry, dark brown eyes with tired intensity, black hair pulled back tight in a braid. Visible subdermal chrome weapon mounts in both forearms glinting beneath skin, dark red neural jack port at base of skull, thin white scar on right cheekbone. Wearing black cargo pants and fitted dark compression shirt with grey worn synth-leather jacket, steel-toed boots, vintage smartwatch. Posture economical and precise, shoulders slightly forward, standing in industrial low-light neo-noir corridor with neon reflecting off metal surfaces, hands at ready, controlled expression, no emotion, cinematic noir lighting with cool shadows and warm accent light catching the subdermal chrome, 2200s dystopian setting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 40.6,
-    "Southeast Asian": 18.2,
-    "East Asian": 15.9,
-    "South Asian": 10.8,
-    "Hispanic/Latin American": 7.6,
-    "Indigenous American": 6.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "British Isles": {
-        "Irish": 13.2,
-        "English": 1.5
-      },
-      "Scandinavian": {
-        "Danish": 4.1,
-        "Icelandic": 8.7
-      },
-      "Germanic": {
-        "German": 6,
-        "Swiss German": 7.1
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 18.2
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 11.4
-      },
-      "Korean": {
-        "Korean": 4.5
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Baloch": 2,
-        "Punjabi Pakistani": 2.2
-      },
-      "Nepali": {
-        "Nepali": 6.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 1.9,
-        "Guatemalan": 3.6
-      },
-      "Mexican": {
-        "Mexican": 2.1
-      }
-    },
-    "Indigenous American": {
-      "Plains Nations": {
-        "Muscogee": 2.9
-      },
-      "Mesoamerican": {
-        "Maya": 3.6
-      },
-      "Andean": {
-        "Quechua": 0.4
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6247b2b86391a1d8c2d4200",
+    "type":  "character",
+    "name":  "Futaba Sigurdsson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Infrastructure disruption and industrial sabotage â€” saboteur",
+    "age":  23,
+    "status":  "active",
+    "location":  "Steamvent Alley â€” geothermal district, hot and chemical-smelling, near Milwaukee and North Ave",
+    "description":  "Futaba Sigurdsson is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 23, there\u0027s something unfinished about her face, like a sculpture the artist walked away from â€” striking rather than beautiful. The chrome is visible â€” subdermal weapon mount â€” pop-out blade in each forearm â€” and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a saboteur out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nFutaba Sigurdsson operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Going cyberpsycho â€” losing the boundary between human and machine",
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them",
+                                          "Being captured alive â€” death is preferable to corporate interrogation"
+                                      ],
+                       "core_desires":  [
+                                            "To prove everyone who dismissed them catastrophically wrong",
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor",
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring",
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat",
+                                                 "Maintains weapons obsessively â€” cleaning guns is meditation"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes their skill set is more transferable than it actually is",
+                                           "Believes their trauma makes them special instead of recognizing it as damage to manage",
+                                           "Fails to notice when their own behavior mirrors the people they despise"
+                                       ],
+                       "secret":  "Halima Gutierrez-Asante murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated vocabulary wrapped in street delivery â€” the contrast is deliberate.",
+                            "cadence":  "Flowing and unhurried â€” talks like someone who has never been interrupted and doesn\u0027t expect to be.",
+                            "verbal_tics":  [
+                                                "Speaks in clipped fragments when stressed â€” drops pronouns, articles, pleasantries",
+                                                "Uses technical jargon for everything, including emotions"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I don\u0027t break things. I introduce structural critiques.\"",
+                                                  "\"The most effective sabotage looks like bad luck.\"",
+                                                  "\"Everything has a weakness. Infrastructure has thousands.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former associate resurfaces with evidence that could destroy Halima Gutierrez-Asante\u0027s reputation â€” and a price for silence",
+                        "A high-paying contract turns out to target someone Halima Gutierrez-Asante owes a personal debt to",
+                        "Halima Gutierrez-Asante intercepts intelligence about a threat to their district and must decide between profit and protection"
+                    ],
+    "narrative_function":  "Halima Gutierrez-Asante is a pressure point â€” the kind of character whose choices ripple outward. When she makes a decision, other people\u0027s lives change. That weight is the engine of her stories.",
+    "augmentations":  "Subdermal weapon mount â€” pop-out blade in each forearm. Neural interface jack at base of skull â€” standard runner-grade, allows direct net access",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Semi-independent â€” has standing arrangements with several crews",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  6,
+                                                    "augmented":  1,
+                                                    "effective":  6
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  1,
+                                                   "effective":  8
+                                               },
+                                   "endurance":  {
+                                                     "base":  7,
+                                                     "augmented":  0,
+                                                     "effective":  4
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  3,
+                                                    "effective":  10
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  5,
+                                                      "augmented":  2,
+                                                      "effective":  8
+                                                  },
+                                 "perception":  {
+                                                    "base":  8,
+                                                    "augmented":  3,
+                                                    "effective":  7
+                                                },
+                                 "willpower":  {
+                                                   "base":  4,
+                                                   "augmented":  3,
+                                                   "effective":  9
+                                               },
+                                 "technical":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  4
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  7,
+                                                  "augmented":  0,
+                                                  "effective":  9
+                                              },
+                                 "intimidation":  {
+                                                      "base":  5,
+                                                      "augmented":  3,
+                                                      "effective":  8
+                                                  },
+                                 "deception":  {
+                                                   "base":  6,
+                                                   "augmented":  1,
+                                                   "effective":  5
+                                               },
+                                 "empathy":  {
+                                                 "base":  7,
+                                                 "augmented":  1,
+                                                 "effective":  7
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.34,
+                                      "caution":  0.27,
+                                      "loyalty":  0.75,
+                                      "greed":  0.38,
+                                      "empathy":  0.15
+                                  },
+                  "drives":  [
+                                 "loyalty",
+                                 "knowledge",
+                                 "survival"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  8,
+                                     "loyalty_break":  6
+                                 },
+                  "strengths":  [
+                                    "social chameleon â€” adapts to any environment",
+                                    "natural leadership presence",
+                                    "expert marksman"
+                                ],
+                  "weaknesses":  [
+                                     "physical limitation from incomplete augmentation",
+                                     "difficulty with authority figures",
+                                     "grudge-holding that compromises rational decision-making"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "saboteur",
+                               "tier-2",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Claims not to care about reputation but monitors what people say about them obsessively",
+                                              "Presents as emotionless professional but is deeply affected by collateral damage"
+                                          ],
+                       "habits":  [
+                                      "Talks to their gear â€” names weapons, thanks tools, treats equipment as companions",
+                                      "Carries a specific caliber round as a lucky charm â€” has never fired it",
+                                      "Checks exits within 10 seconds of entering any room"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized",
+                                               "Running out of options â€” no contacts, no money, no safe house, no way out"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal weapon mount",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal weapon mount â€” pop-out blade in each forearm",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural interface jack at base of skull",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Neural interface jack at base of skull â€” standard runner-grade, allows direct net access",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Steamvent Alley",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Unfinished Theorem",
+                             "Slagworks Industrial",
+                             "Compass Rose",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Northern European (40.6%), Southeast Asian (18.2%), East Asian (15.9%), South Asian (10.8%), Hispanic/Latin American (7.6%), Indigenous American (6.9%) â€” a truly global blend creating warm medium-brown skin with subtle golden undertones and hints of olive. High cheekbones and defined facial structure reflect East and Southeast Asian ancestry, while lean efficient build shows Northern European influence. The mix produces a unified warm-toned complexion with minimal contrast, carrying undertones from multiple continental sources. Facial proportions blend Northern European angularity with Southeast and East Asian features, while the warm undertones reflect South Asian and Latin American heritage.",
+                                 "height_cm":  178,
+                                 "weight_kg":  62,
+                                 "build":  "Tall and rawboned â€” lean and efficient rather than undernourished. Long muscle definition in arms and legs suggests functional strength over bulk. Angular shoulders, narrow through the hips. The kind of frame that moves well in confined spaces.",
+                                 "hair_color":  "Black with natural dark brown undertones",
+                                 "hair_style":  "Pulled back tight, usually in a single braid or wrapped close to the scalp for practical reasons",
+                                 "hair_length":  "Medium â€” shoulder-length when unbound, but habitually restrained",
+                                 "eye_color":  "Dark brown, natural â€” no visible augmentation",
+                                 "skin_tone":  "Warm medium brown with golden and subtle olive undertones â€” the blend of Northern European, Southeast Asian, East Asian, and South Asian ancestry creates a unified complexion with depth. The golden warmth is prominent, with slight olive undertones reflecting the South Asian and Latin American components. No sharp contrast between lighter and darker areas.",
+                                 "complexion":  "Angular face with high cheekbones and sharp jawline, showing influence of East and Southeast Asian ancestry layered over Northern European bone structure. Warm medium-brown complexion with golden undertones. Skin is clear but bears minor marks of hard living â€” small scars on chin and left temple, perpetually tired around the eyes. Minimal grooming beyond function: no makeup, no jewelry except a simple steel ear stud on left ear.",
+                                 "distinguishing_marks":  [
+                                                              "Linear scar across left temple, approximately 4cm, white and surgical-looking â€” old injury, well-healed",
+                                                              "Small puncture-mark scarring at base of skull where neural jack integrates, dark red and slightly raised",
+                                                              "Thin white scar on right cheekbone, diagonal, approximately 2cm â€” knife work, deliberately left uncovered",
+                                                              "Network of faint subdermal chrome visible beneath skin of both forearms in geometric patterns â€” weapon mount architecture, visible as slight metallic sheen under flexed skin"
+                                                          ],
+                                 "visible_augmentations":  "Subdermal weapon mounts visible in both forearms as geometric chrome patterns beneath skin, most prominent when arms are tensed or angled in certain light. Base-of-skull neural interface jack visible as a port roughly the size of a thumbnail, dark red and slightly proud of the skin surface. No cosmetic plating or attempt to conceal either augmentation.",
+                                 "posture_movement":  "Moves with economical precision â€” no wasted motion. Shoulders slightly forward, head level. Walk is steady and low-center-gravity, weight distributed for balance. In repose, jaw is slightly tight, eyes tracking. Default state suggests controlled readiness rather than relaxation. Hands rest with fingers naturally curled, never fully open.",
+                                 "clothing_style":  "Tier 3-4 utilitarian. Favors dark technical fabrics â€” black or dark grey cargo pants with reinforced pockets and subdermal-compatible sleeve design. Fitted long-sleeve compression shirts or modified jackets that don\u0027t restrict forearm mobility. Steel-toed boots with good ankle support, laces kept tight. Outer layers are functional: a worn grey synth-leather jacket or industrial coveralls depending on the work. No corpo logos. No bright colors. Everything is built for movement and work, not presentation. Wears a battered smartwatch on left wrist â€” vintage model, clearly maintained, no display of Î¦ status."
+                             },
+    "image_prompt":  "Futaba Sigurdsson, tall lean mixed-heritage operative in GLMZ, warm medium-brown skin with golden undertones, high cheekbones and angular features blending East Asian and Northern European ancestry, dark brown eyes with tired intensity, black hair pulled back tight in a braid. Visible subdermal chrome weapon mounts in both forearms glinting beneath skin, dark red neural jack port at base of skull, thin white scar on right cheekbone. Wearing black cargo pants and fitted dark compression shirt with grey worn synth-leather jacket, steel-toed boots, vintage smartwatch. Posture economical and precise, shoulders slightly forward, standing in industrial low-light neo-noir corridor with neon reflecting off metal surfaces, hands at ready, controlled expression, no emotion, cinematic noir lighting with cool shadows and warm accent light catching the subdermal chrome, 2200s dystopian setting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  40.6,
+                             "Southeast Asian":  18.2,
+                             "East Asian":  15.9,
+                             "South Asian":  10.8,
+                             "Hispanic/Latin American":  7.6,
+                             "Indigenous American":  6.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  13.2,
+                                                                            "English":  1.5
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Danish":  4.1,
+                                                                           "Icelandic":  8.7
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "German":  6,
+                                                                       "Swiss German":  7.1
+                                                                   }
+                                                  },
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  18.2
+                                                                  }
+                                                },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  11.4
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  4.5
+                                                          }
+                                           },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Baloch":  2,
+                                                                  "Punjabi Pakistani":  2.2
+                                                              },
+                                                "Nepali":  {
+                                                               "Nepali":  6.6
+                                                           }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  1.9,
+                                                                                     "Guatemalan":  3.6
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  2.1
+                                                                        }
+                                                        },
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Muscogee":  2.9
+                                                                           },
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  3.6
+                                                                         },
+                                                        "Andean":  {
+                                                                       "Quechua":  0.4
+                                                                   }
+                                                    }
+                        },
+    "tier":  "2"
 }

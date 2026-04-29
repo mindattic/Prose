@@ -1,322 +1,333 @@
-{
-  "id": "019d6143a6727b35944f38519eb05b81",
-  "type": "character",
-  "name": "Hai Calvillo-Lewandowski",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Street-Level Information Broker / Oral Historian",
-  "age": 67,
-  "status": "active",
-  "location": "Old Harbor, near Lake Shore and Navy Pier",
-  "description": "Hai Calvillo-Lewandowski is a large, slow-moving man with the specific gravity of someone who has decided to stop being in a hurry. Yoruba and Puerto Rican, he carries both heritages openly — a rotating collection of hand-dyed agbadas worn over thermal underlayers against the harbor cold, and a way of greeting people that involves actual sustained eye contact, which in Old Harbor is either deeply comforting or deeply unnerving depending on what you've done lately. His face is deeply lined, his beard gone fully white, his hands scarred from years of dock work before he transitioned into his current occupation. His only augmentation is a cochlear archive implant he had installed at fifty — it records everything he hears with his consent toggle on, and he keeps the toggle on almost always.\n\nFemi has lived in Old Harbor for forty-one years, long enough to have watched three generations of families cycle through its tenements, its fishing operations, its smuggling economies, and its periodic brutal restructurings at the hands of corporate port interests. He is not a fixer, not a runner, not muscle. He is the person who knows where the bodies are buried because he attended the funerals. His currency is memory — who owes whom, which families have a blood grudge going back to the '50s, which enforcement captain can be reasoned with and which one enjoys it too much. He trades information carefully, at his own pace, and has an intricate personal ethics about what he will and will not sell.\n\nHe runs a small legitimate operation: a repair stall for small watercraft and electronics near Pier 14, which gives him a reason to be everywhere and talk to everyone. He has no ambitions beyond Old Harbor. He has been offered relocation, money, protection, and has declined all of it. He says he is too old to learn a new set of names. What he means is that Old Harbor is the only place where he is fully himself, and he will not trade that for safety.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.58,
-      "ideal": 0.77,
-      "id": 0.45,
-      "shadow": 0.42,
-      "mask": 0.35,
-      "ghost": 0.69
-    },
-    "core_fears": [
-      "That Old Harbor will be finally, completely destroyed and his memory of it will be all that remains",
-      "That he will be forced to sell information that gets someone he loves killed",
-      "Losing the archive implant — losing the record",
-      "Dying before he finds someone worthy to pass the knowledge to"
-    ],
-    "core_desires": [
-      "For Old Harbor to survive in some form that still belongs to its people",
-      "A genuine apprentice — someone who wants to learn the neighborhood, not just mine it",
-      "To be useful without being used",
-      "To grieve properly for everyone he has outlived"
-    ],
-    "coping_mechanisms": [
-      "Storytelling as processing — he narrates his own experiences to himself in the archive",
-      "Physical work as grounding (the repair stall is genuinely therapeutic)",
-      "Cooking elaborate meals for neighbors with no stated occasion",
-      "Deliberate slowness as resistance to a world that wants him to be efficient"
-    ],
-    "blind_spots": [
-      "His attachment to Old Harbor makes him a predictable target — anyone who wants leverage on him knows exactly where he'll be",
-      "Overestimates his ability to read younger generations whose reference points he doesn't share",
-      "His distrust of corporate-affiliated people sometimes causes him to miss individuals worth trusting",
-      "Romanticizes Old Harbor's past in ways that elide its historical harms"
-    ],
-    "secret": "The archive implant contains testimony from a woman who died twelve years ago — she described, in detail, a killing carried out by a man who is now a respected community elder in Old Harbor. Femi has never disclosed this. He tells himself it's because the woman asked him not to during her lifetime. He knows it's also because exposing the elder would tear apart three families who have finally found stability."
-  },
-  "speech_patterns": {
-    "vocabulary": "Rich and unhurried, mixing English with Yoruba phrases and occasional Spanish that surfaces when he's emotional. References historical events and people as if they were recent. Uses 'we' more than 'I' when talking about Old Harbor.",
-    "cadence": "Slow, deliberate, full of pauses that are not uncertainty but emphasis. Storytelling rhythm — he builds. Rarely gives a direct answer before establishing context.",
-    "verbal_tics": [
-      "\"Let me tell you something about this place.\" (precedes important information)",
-      "\"Mm.\" (extended, evaluative — means he's deciding whether to trust you)",
-      "Addresses people by their full name on first meeting, never shortens without permission",
-      "\"You know what they don't put in the histories?\" (rhetorical, means he's about to)",
-      "Sighs that function as punctuation"
-    ],
-    "example_lines": [
-      "\"You want to know about the Pier 9 situation. Alright. But I need you to understand what Pier 9 was before it was a situation, or nothing I tell you will make any sense at all.\"",
-      "\"I've been asked to leave this neighborhood four times by four different kinds of people. I'm still here. They are not. Draw your own conclusions about whose judgment was better.\"",
-      "\"Information is not a commodity. It is a relationship. You want me to sell you something, you're in the wrong stall. You want to understand something, sit down.\"",
-      "\"She was a good woman and she deserved a better city. Most people here did. That doesn't stop being true just because it's inconvenient.\""
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Fenwick Oduya-Marsh",
-      "type": "complicated kinship / mutual wariness",
-      "description": "Femi knew Fenwick's family before Fenwick was whatever Fenwick has become. He holds that history like a debt he's not sure who owes whom.",
-      "emotional_core": "Grief for who Fenwick might have been, genuine care for who he is, deep worry about what he's becoming",
-      "story_tension": "Femi may know things about Fenwick's past that Fenwick has buried — and Fenwick knows Femi knows"
-    },
-    {
-      "name": "Nadira Osei-Brempong",
-      "type": "trusted contact / chosen family adjacent",
-      "description": "One of the few people Femi shares archive recordings with, selectively. She comes to him for context; he comes to her when he needs someone to tell him he's wrong.",
-      "emotional_core": "Mutual respect with genuine warmth; she is close to being the apprentice he's looking for but neither has said so",
-      "story_tension": "Femi's protectiveness may withhold information she needs; her independence may take her somewhere he cannot follow"
-    },
-    {
-      "name": "The community elder (unnamed)",
-      "type": "public ally / private burden",
-      "description": "They share meals, community meetings, festival organizing. Femi is courteous and present. The archive implant hums.",
-      "emotional_core": "Suppressed moral crisis sustained for twelve years; a kind of terrible intimacy born of knowing",
-      "story_tension": "If the secret ever surfaces, every relationship Femi has in Old Harbor will be recontextualized"
-    }
-  ],
-  "story_hooks": [
-    "Someone approaches Femi seeking specific archived testimony — and they seem to already know it exists",
-    "A corporate port acquisition threatens Pier 14 directly, forcing Femi to either act or finally leave",
-    "A young runner asks Femi to teach them the neighborhood; he has to decide if they're an apprentice or an asset for someone else",
-    "The community elder is dying and wants to confess — to Femi, who already knows",
-    "An Old Harbor family feud Femi has carefully managed for years suddenly escalates beyond his ability to contain it"
-  ],
-  "narrative_function": "Living memory and moral compass for Old Harbor storylines. He provides historical context, relationship maps, and a street-level perspective grounded in decades rather than immediate survival. His archive implant makes him a walking evidence repository. His ethical complexity around the secret gives him a shadow side that prevents him from being purely a wise mentor figure.",
-  "augmentations": "Cochlear archive implant (self-installed via back-alley augmentation clinic, age 50) — continuous audio recording with manual consent toggle; 41 years of selective archive stored on encrypted external drives in his stall,Arthritis management implant (basic, medical) — joint inflammation suppression in both hands",
-  "daily_life": "Up before dawn to watch the harbor, which he does not romanticize and cannot stop doing. Opens the repair stall by seven. Talks to everyone who passes. Works on actual repairs — he is genuinely skilled. Closes around six, eats with neighbors when invited, alone when not. Spends evenings annotating archive recordings with handwritten notes in a physical journal. Sleeps less than he should. Visits the same three graves in the Old Harbor community plot every Sunday morning.",
-  "affiliation": "None formal. Trusted by multiple competing factions in Old Harbor specifically because he belongs to none of them. Has declined affiliation offers from smuggling operations, community defense groups, and one corporate 'community liaison' program with memorable directness.",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 3,
-      "vitality": 4,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 8,
-      "expression": 9,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 6,
-      "empathy_detachment": 7,
-      "impulsivity_deliberation": 8,
-      "assertion_deference": 6,
-      "transparency_guardedness": 5
-    },
-    "drives": [
-      "Preserve Old Harbor's memory",
-      "Find a worthy apprentice",
-      "Be useful without being used"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 7,
-        "response": "Storytelling intensifies — narrates to process, context before answers"
-      },
-      "moral": 7,
-      "trust": 5,
-      "desperation": 6
-    },
-    "strengths": [
-      "Wisdom",
-      "Perspective",
-      "Fairness",
-      "Social Intelligence",
-      "Kindness"
-    ],
-    "weaknesses": [
-      "Prudence",
-      "Self-Regulation",
-      "Zest",
-      "Creativity",
-      "Bravery"
-    ],
-    "tags": [
-      "information-broker",
-      "oral-historian",
-      "elder",
-      "old-harbor-anchor",
-      "archive-implant",
-      "community-memory"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always establish context before giving information — 'Let me tell you something about this place'",
-      "Sell information carefully, in calibrated portions, at his own pace",
-      "Never share the elder's testimony from the archive — the three families have found stability",
-      "Keep the archive consent toggle on almost always",
-      "Remain in Old Harbor — learning a new set of names is not worth the cost",
-      "Use sustained eye contact as both greeting and assessment",
-      "Cook for neighbors — feed people before asking anything of them"
-    ],
-    "escalation_ladder": [
-      "'Mm.' — extended, evaluative, deciding whether to trust you",
-      "Storytelling pace slows further — context becomes a wall",
-      "Addresses you by full name with formal distance",
-      "Refuses the transaction — 'Information is not a commodity, it is a relationship'",
-      "Activates the archive — plays back recordings as evidence or leverage"
-    ],
-    "interpersonal_modes": {
-      "Fenwick Oduya-Marsh": "Grief for who he might have been, care for who he is, worry about what he is becoming",
-      "Nadira Osei-Brempong": "Mutual respect with genuine warmth — she is closest to the apprentice he seeks",
-      "the community elder": "Public courtesy masking a twelve-year moral crisis — the archive hums",
-      "young people": "Cautious assessment — apprentice or someone else's asset?"
-    },
-    "stress_responses": {
-      "low": "Storytelling lengthens — more context, more history, more preamble",
-      "medium": "Physical work at the repair stall — hands in boat parts or electronics",
-      "high": "Cooks elaborate meals for neighbors with no stated occasion",
-      "critical": "Visits the three graves in the community plot — the Sunday ritual pulled forward"
-    },
-    "contradictions": [
-      "Holds testimony that could bring justice for a murdered woman but protects the elder to preserve three families' stability",
-      "Romanticizes Old Harbor's past in ways that elide its historical harms",
-      "Overestimates his ability to read younger generations whose reference points he does not share"
-    ],
-    "habits": [
-      "Up before dawn to watch the harbor — does not romanticize it, cannot stop doing it",
-      "Opens the repair stall by seven, talks to everyone who passes",
-      "Annotates archive recordings with handwritten notes in a physical journal each evening",
-      "Visits the same three graves every Sunday morning",
-      "Sighs that function as punctuation in conversation"
-    ],
-    "breaking_points": [
-      "Someone seeking the specific archived testimony and already knowing it exists",
-      "Pier 14 being threatened by corporate port acquisition",
-      "The community elder dying and wanting to confess to the one person who already knows",
-      "Old Harbor being finally, completely destroyed"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.7,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Old Harbor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Kang-Petrov Arms KPS-9 'Rattler'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Kang-Petrov Arms KPS-9 'Rattler'"
-  ],
-  "related_entities": [
-    "Irontide Tidal Energy",
-    "Harbor Fish Shack",
-    "Lazarus LX-2 'Lab Rat'",
-    "The Pure Hand"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Eastern European (52.6%), Indigenous American (25.2%), and Hispanic/Latin American (22.2%) ancestry creating a distinctly blended phenotype. Strong Eastern European foundation visible in bone structure and facial geometry, with pronounced Indigenous American cheekbones and facial width, warmed throughout by Hispanic/Latin American melanin contribution. The combination produces a weathered, richly-toned appearance that reflects decades of sun and wind exposure across all three ancestral streams.",
-    "height_cm": 188,
-    "weight_kg": 104,
-    "build": "Large-framed, broad-shouldered, softened with age but still substantial. Moves with deliberate slowness — not infirmity, but intentionality. The build of a man who spent thirty years doing physical labor and has earned the right to stop rushing.",
-    "hair_color": "White",
-    "hair_style": "Close-cropped, groomed but not fastidious",
-    "hair_length": "Short",
-    "eye_color": "Dark brown",
-    "skin_tone": "Rich medium-bronze with warm golden undertones — the result of Eastern European baseline substantially deepened by Indigenous American and Hispanic/Latin American melanin. Sun-darkened from decades on the water into a deep, weathered mahogany-brown.",
-    "complexion": "Deeply lined face with full white beard kept neatly trimmed. Prominent high cheekbones with strong Indigenous American structure softened by age and accumulated sun damage. Wide-set eyes characteristic of Indigenous American ancestry. Skin shows four decades of harbor exposure — wind-marked and weathered with consistent warm bronze tone throughout. Eyes carry the weight of accumulated knowledge; expression defaults to calm attentiveness. Facial geometry shows blended ancestry in pronounced cheekbone prominence, moderate facial width, angular jaw structure, and strong facial planes characteristic of the Eastern European and Indigenous American combination.",
-    "distinguishing_marks": [
-      "Extensive scarring across both hands — pale, old scars from dock work and tool injuries, particularly prominent across knuckles and palms",
-      "A thin white scar running from left temple toward ear, barely visible beneath beard line",
-      "Deep creases around eyes and mouth from decades of squinting at water and faces",
-      "Faded tattoo on right forearm — Yoruba symbols for 'witness' and 'memory', done by hand in Old Harbor, 1989"
-    ],
-    "visible_augmentations": "Cochlear implant visible as a small silver port behind left ear, often partially concealed by collar. No visible external interface — the archive exists on encrypted drives in his stall, not on his body. Arthritis implant is subcutaneous, invisible.",
-    "posture_movement": "Stands with weight evenly distributed, rarely shifts quickly. Moves with economical precision — every motion purposeful. Maintains sustained eye contact during conversation, a habit that makes people either trust him immediately or become deeply uncomfortable. Gestures are spare but expressive with hands. Walks with the gait of someone who has learned to pace himself over distance.",
-    "clothing_style": "Tier 4 / working-class authentic. Rotates through hand-dyed agbadas in rust, indigo, and ochre over thermal underlayers designed for harbor wind. Worn but meticulously maintained — fabric shows age but no holes. Heavy canvas work pants, steel-toed boots resoled multiple times. A dark wool coat that has belonged to him for at least fifteen years. No corporate logos, no artificial fiber where natural would suffice. Grooming is deliberate: beard oil, clean hands despite the work, clothes that announce his heritage without apology."
-  },
-  "image_prompt": "An older man of mixed Eastern European, Indigenous American, and Hispanic/Latin American heritage, standing 188cm tall with substantial, weathered build. Dark mahogany-bronze skin deeply creased from decades of sun exposure, prominent high cheekbones, wide-set dark brown eyes conveying calm attentiveness. White close-cropped hair and neatly trimmed white beard. Scarred hands with pale old dock-work scars visible. Wearing hand-dyed rust-colored agbada over thermal layer, heavy canvas work pants, steel-toed boots. Small silver cochlear implant port visible behind left ear. Standing with economical posture in Great Lakes harbor setting, GLMZ, moody maritime lighting, worn authenticity, no corporate aesthetic, slow intentional presence, weathered pier background, cinematic realism --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 52.6,
-    "Indigenous American": 25.2,
-    "Hispanic/Latin American": 22.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 52.6
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Nahua": 9.1,
-        "Mixtec": 6.9
-      },
-      "Plains Nations": {
-        "Choctaw": 6.7
-      },
-      "Andean": {
-        "Quechua": 2.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 7.8
-      },
-      "South American": {
-        "Ecuadorian": 2.7
-      },
-      "Mexican": {
-        "Mexican": 11.7
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6727b35944f38519eb05b81",
+    "type":  "character",
+    "name":  "Hai Calvillo-Lewandowski",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Street-Level Information Broker / Oral Historian",
+    "age":  67,
+    "status":  "active",
+    "location":  "Old Harbor, near Lake Shore and Navy Pier",
+    "description":  "Hai Calvillo-Lewandowski is a large, slow-moving man with the specific gravity of someone who has decided to stop being in a hurry. Yoruba and Puerto Rican, he carries both heritages openly â€” a rotating collection of hand-dyed agbadas worn over thermal underlayers against the harbor cold, and a way of greeting people that involves actual sustained eye contact, which in Old Harbor is either deeply comforting or deeply unnerving depending on what you\u0027ve done lately. His face is deeply lined, his beard gone fully white, his hands scarred from years of dock work before he transitioned into his current occupation. His only augmentation is a cochlear archive implant he had installed at fifty â€” it records everything he hears with his consent toggle on, and he keeps the toggle on almost always.\n\nFemi has lived in Old Harbor for forty-one years, long enough to have watched three generations of families cycle through its tenements, its fishing operations, its smuggling economies, and its periodic brutal restructurings at the hands of corporate port interests. He is not a fixer, not a runner, not muscle. He is the person who knows where the bodies are buried because he attended the funerals. His currency is memory â€” who owes whom, which families have a blood grudge going back to the \u002750s, which enforcement captain can be reasoned with and which one enjoys it too much. He trades information carefully, at his own pace, and has an intricate personal ethics about what he will and will not sell.\n\nHe runs a small legitimate operation: a repair stall for small watercraft and electronics near Pier 14, which gives him a reason to be everywhere and talk to everyone. He has no ambitions beyond Old Harbor. He has been offered relocation, money, protection, and has declined all of it. He says he is too old to learn a new set of names. What he means is that Old Harbor is the only place where he is fully himself, and he will not trade that for safety.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That Old Harbor will be finally, completely destroyed and his memory of it will be all that remains",
+                                          "That he will be forced to sell information that gets someone he loves killed",
+                                          "Losing the archive implant â€” losing the record",
+                                          "Dying before he finds someone worthy to pass the knowledge to"
+                                      ],
+                       "core_desires":  [
+                                            "For Old Harbor to survive in some form that still belongs to its people",
+                                            "A genuine apprentice â€” someone who wants to learn the neighborhood, not just mine it",
+                                            "To be useful without being used",
+                                            "To grieve properly for everyone he has outlived"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Storytelling as processing â€” he narrates his own experiences to himself in the archive",
+                                                 "Physical work as grounding (the repair stall is genuinely therapeutic)",
+                                                 "Cooking elaborate meals for neighbors with no stated occasion",
+                                                 "Deliberate slowness as resistance to a world that wants him to be efficient"
+                                             ],
+                       "blind_spots":  [
+                                           "His attachment to Old Harbor makes him a predictable target â€” anyone who wants leverage on him knows exactly where he\u0027ll be",
+                                           "Overestimates his ability to read younger generations whose reference points he doesn\u0027t share",
+                                           "His distrust of corporate-affiliated people sometimes causes him to miss individuals worth trusting",
+                                           "Romanticizes Old Harbor\u0027s past in ways that elide its historical harms"
+                                       ],
+                       "secret":  "The archive implant contains testimony from a woman who died twelve years ago â€” she described, in detail, a killing carried out by a man who is now a respected community elder in Old Harbor. Femi has never disclosed this. He tells himself it\u0027s because the woman asked him not to during her lifetime. He knows it\u0027s also because exposing the elder would tear apart three families who have finally found stability."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Rich and unhurried, mixing English with Yoruba phrases and occasional Spanish that surfaces when he\u0027s emotional. References historical events and people as if they were recent. Uses \u0027we\u0027 more than \u0027I\u0027 when talking about Old Harbor.",
+                            "cadence":  "Slow, deliberate, full of pauses that are not uncertainty but emphasis. Storytelling rhythm â€” he builds. Rarely gives a direct answer before establishing context.",
+                            "verbal_tics":  [
+                                                "\"Let me tell you something about this place.\" (precedes important information)",
+                                                "\"Mm.\" (extended, evaluative â€” means he\u0027s deciding whether to trust you)",
+                                                "Addresses people by their full name on first meeting, never shortens without permission",
+                                                "\"You know what they don\u0027t put in the histories?\" (rhetorical, means he\u0027s about to)",
+                                                "Sighs that function as punctuation"
+                                            ],
+                            "example_lines":  [
+                                                  "\"You want to know about the Pier 9 situation. Alright. But I need you to understand what Pier 9 was before it was a situation, or nothing I tell you will make any sense at all.\"",
+                                                  "\"I\u0027ve been asked to leave this neighborhood four times by four different kinds of people. I\u0027m still here. They are not. Draw your own conclusions about whose judgment was better.\"",
+                                                  "\"Information is not a commodity. It is a relationship. You want me to sell you something, you\u0027re in the wrong stall. You want to understand something, sit down.\"",
+                                                  "\"She was a good woman and she deserved a better city. Most people here did. That doesn\u0027t stop being true just because it\u0027s inconvenient.\""
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Fenwick Oduya-Marsh",
+                              "type":  "complicated kinship / mutual wariness",
+                              "description":  "Femi knew Fenwick\u0027s family before Fenwick was whatever Fenwick has become. He holds that history like a debt he\u0027s not sure who owes whom.",
+                              "emotional_core":  "Grief for who Fenwick might have been, genuine care for who he is, deep worry about what he\u0027s becoming",
+                              "story_tension":  "Femi may know things about Fenwick\u0027s past that Fenwick has buried â€” and Fenwick knows Femi knows"
+                          },
+                          {
+                              "name":  "Nadira Osei-Brempong",
+                              "type":  "trusted contact / chosen family adjacent",
+                              "description":  "One of the few people Femi shares archive recordings with, selectively. She comes to him for context; he comes to her when he needs someone to tell him he\u0027s wrong.",
+                              "emotional_core":  "Mutual respect with genuine warmth; she is close to being the apprentice he\u0027s looking for but neither has said so",
+                              "story_tension":  "Femi\u0027s protectiveness may withhold information she needs; her independence may take her somewhere he cannot follow"
+                          },
+                          {
+                              "name":  "The community elder (unnamed)",
+                              "type":  "public ally / private burden",
+                              "description":  "They share meals, community meetings, festival organizing. Femi is courteous and present. The archive implant hums.",
+                              "emotional_core":  "Suppressed moral crisis sustained for twelve years; a kind of terrible intimacy born of knowing",
+                              "story_tension":  "If the secret ever surfaces, every relationship Femi has in Old Harbor will be recontextualized"
+                          }
+                      ],
+    "story_hooks":  [
+                        "Someone approaches Femi seeking specific archived testimony â€” and they seem to already know it exists",
+                        "A corporate port acquisition threatens Pier 14 directly, forcing Femi to either act or finally leave",
+                        "A young runner asks Femi to teach them the neighborhood; he has to decide if they\u0027re an apprentice or an asset for someone else",
+                        "The community elder is dying and wants to confess â€” to Femi, who already knows",
+                        "An Old Harbor family feud Femi has carefully managed for years suddenly escalates beyond his ability to contain it"
+                    ],
+    "narrative_function":  "Living memory and moral compass for Old Harbor storylines. He provides historical context, relationship maps, and a street-level perspective grounded in decades rather than immediate survival. His archive implant makes him a walking evidence repository. His ethical complexity around the secret gives him a shadow side that prevents him from being purely a wise mentor figure.",
+    "augmentations":  "Cochlear archive implant (self-installed via back-alley augmentation clinic, age 50) â€” continuous audio recording with manual consent toggle; 41 years of selective archive stored on encrypted external drives in his stall,Arthritis management implant (basic, medical) â€” joint inflammation suppression in both hands",
+    "daily_life":  "Up before dawn to watch the harbor, which he does not romanticize and cannot stop doing. Opens the repair stall by seven. Talks to everyone who passes. Works on actual repairs â€” he is genuinely skilled. Closes around six, eats with neighbors when invited, alone when not. Spends evenings annotating archive recordings with handwritten notes in a physical journal. Sleeps less than he should. Visits the same three graves in the Old Harbor community plot every Sunday morning.",
+    "affiliation":  "None formal. Trusted by multiple competing factions in Old Harbor specifically because he belongs to none of them. Has declined affiliation offers from smuggling operations, community defense groups, and one corporate \u0027community liaison\u0027 program with memorable directness.",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  3,
+                                   "vitality":  4,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  8,
+                                 "expression":  9,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  6,
+                                      "empathy_detachment":  7,
+                                      "impulsivity_deliberation":  8,
+                                      "assertion_deference":  6,
+                                      "transparency_guardedness":  5
+                                  },
+                  "drives":  [
+                                 "Preserve Old Harbor\u0027s memory",
+                                 "Find a worthy apprentice",
+                                 "Be useful without being used"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  7,
+                                                    "response":  "Storytelling intensifies â€” narrates to process, context before answers"
+                                                },
+                                     "moral":  7,
+                                     "trust":  5,
+                                     "desperation":  6
+                                 },
+                  "strengths":  [
+                                    "Wisdom",
+                                    "Perspective",
+                                    "Fairness",
+                                    "Social Intelligence",
+                                    "Kindness"
+                                ],
+                  "weaknesses":  [
+                                     "Prudence",
+                                     "Self-Regulation",
+                                     "Zest",
+                                     "Creativity",
+                                     "Bravery"
+                                 ],
+                  "tags":  [
+                               "information-broker",
+                               "oral-historian",
+                               "elder",
+                               "old-harbor-anchor",
+                               "archive-implant",
+                               "community-memory"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always establish context before giving information â€” \u0027Let me tell you something about this place\u0027",
+                                              "Sell information carefully, in calibrated portions, at his own pace",
+                                              "Never share the elder\u0027s testimony from the archive â€” the three families have found stability",
+                                              "Keep the archive consent toggle on almost always",
+                                              "Remain in Old Harbor â€” learning a new set of names is not worth the cost",
+                                              "Use sustained eye contact as both greeting and assessment",
+                                              "Cook for neighbors â€” feed people before asking anything of them"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "\u0027Mm.\u0027 â€” extended, evaluative, deciding whether to trust you",
+                                                 "Storytelling pace slows further â€” context becomes a wall",
+                                                 "Addresses you by full name with formal distance",
+                                                 "Refuses the transaction â€” \u0027Information is not a commodity, it is a relationship\u0027",
+                                                 "Activates the archive â€” plays back recordings as evidence or leverage"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "Fenwick Oduya-Marsh":  "Grief for who he might have been, care for who he is, worry about what he is becoming",
+                                                   "Nadira Osei-Brempong":  "Mutual respect with genuine warmth â€” she is closest to the apprentice he seeks",
+                                                   "the community elder":  "Public courtesy masking a twelve-year moral crisis â€” the archive hums",
+                                                   "young people":  "Cautious assessment â€” apprentice or someone else\u0027s asset?"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Storytelling lengthens â€” more context, more history, more preamble",
+                                                "medium":  "Physical work at the repair stall â€” hands in boat parts or electronics",
+                                                "high":  "Cooks elaborate meals for neighbors with no stated occasion",
+                                                "critical":  "Visits the three graves in the community plot â€” the Sunday ritual pulled forward"
+                                            },
+                       "contradictions":  [
+                                              "Holds testimony that could bring justice for a murdered woman but protects the elder to preserve three families\u0027 stability",
+                                              "Romanticizes Old Harbor\u0027s past in ways that elide its historical harms",
+                                              "Overestimates his ability to read younger generations whose reference points he does not share"
+                                          ],
+                       "habits":  [
+                                      "Up before dawn to watch the harbor â€” does not romanticize it, cannot stop doing it",
+                                      "Opens the repair stall by seven, talks to everyone who passes",
+                                      "Annotates archive recordings with handwritten notes in a physical journal each evening",
+                                      "Visits the same three graves every Sunday morning",
+                                      "Sighs that function as punctuation in conversation"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone seeking the specific archived testimony and already knowing it exists",
+                                               "Pier 14 being threatened by corporate port acquisition",
+                                               "The community elder dying and wanting to confess to the one person who already knows",
+                                               "Old Harbor being finally, completely destroyed"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.7,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Old Harbor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Viper Mk.III \u0027Copperhead\u0027",
+                            "Kang-Petrov Arms KPS-9 \u0027Rattler\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Viper Mk.III \u0027Copperhead\u0027",
+                                "Kang-Petrov Arms KPS-9 \u0027Rattler\u0027"
+                            ],
+    "related_entities":  [
+                             "Irontide Tidal Energy",
+                             "Harbor Fish Shack",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "The Pure Hand"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Eastern European (52.6%), Indigenous American (25.2%), and Hispanic/Latin American (22.2%) ancestry creating a distinctly blended phenotype. Strong Eastern European foundation visible in bone structure and facial geometry, with pronounced Indigenous American cheekbones and facial width, warmed throughout by Hispanic/Latin American melanin contribution. The combination produces a weathered, richly-toned appearance that reflects decades of sun and wind exposure across all three ancestral streams.",
+                                 "height_cm":  188,
+                                 "weight_kg":  104,
+                                 "build":  "Large-framed, broad-shouldered, softened with age but still substantial. Moves with deliberate slowness â€” not infirmity, but intentionality. The build of a man who spent thirty years doing physical labor and has earned the right to stop rushing.",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Close-cropped, groomed but not fastidious",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown",
+                                 "skin_tone":  "Rich medium-bronze with warm golden undertones â€” the result of Eastern European baseline substantially deepened by Indigenous American and Hispanic/Latin American melanin. Sun-darkened from decades on the water into a deep, weathered mahogany-brown.",
+                                 "complexion":  "Deeply lined face with full white beard kept neatly trimmed. Prominent high cheekbones with strong Indigenous American structure softened by age and accumulated sun damage. Wide-set eyes characteristic of Indigenous American ancestry. Skin shows four decades of harbor exposure â€” wind-marked and weathered with consistent warm bronze tone throughout. Eyes carry the weight of accumulated knowledge; expression defaults to calm attentiveness. Facial geometry shows blended ancestry in pronounced cheekbone prominence, moderate facial width, angular jaw structure, and strong facial planes characteristic of the Eastern European and Indigenous American combination.",
+                                 "distinguishing_marks":  [
+                                                              "Extensive scarring across both hands â€” pale, old scars from dock work and tool injuries, particularly prominent across knuckles and palms",
+                                                              "A thin white scar running from left temple toward ear, barely visible beneath beard line",
+                                                              "Deep creases around eyes and mouth from decades of squinting at water and faces",
+                                                              "Faded tattoo on right forearm â€” Yoruba symbols for \u0027witness\u0027 and \u0027memory\u0027, done by hand in Old Harbor, 1989"
+                                                          ],
+                                 "visible_augmentations":  "Cochlear implant visible as a small silver port behind left ear, often partially concealed by collar. No visible external interface â€” the archive exists on encrypted drives in his stall, not on his body. Arthritis implant is subcutaneous, invisible.",
+                                 "posture_movement":  "Stands with weight evenly distributed, rarely shifts quickly. Moves with economical precision â€” every motion purposeful. Maintains sustained eye contact during conversation, a habit that makes people either trust him immediately or become deeply uncomfortable. Gestures are spare but expressive with hands. Walks with the gait of someone who has learned to pace himself over distance.",
+                                 "clothing_style":  "Tier 4 / working-class authentic. Rotates through hand-dyed agbadas in rust, indigo, and ochre over thermal underlayers designed for harbor wind. Worn but meticulously maintained â€” fabric shows age but no holes. Heavy canvas work pants, steel-toed boots resoled multiple times. A dark wool coat that has belonged to him for at least fifteen years. No corporate logos, no artificial fiber where natural would suffice. Grooming is deliberate: beard oil, clean hands despite the work, clothes that announce his heritage without apology."
+                             },
+    "image_prompt":  "An older man of mixed Eastern European, Indigenous American, and Hispanic/Latin American heritage, standing 188cm tall with substantial, weathered build. Dark mahogany-bronze skin deeply creased from decades of sun exposure, prominent high cheekbones, wide-set dark brown eyes conveying calm attentiveness. White close-cropped hair and neatly trimmed white beard. Scarred hands with pale old dock-work scars visible. Wearing hand-dyed rust-colored agbada over thermal layer, heavy canvas work pants, steel-toed boots. Small silver cochlear implant port visible behind left ear. Standing with economical posture in Great Lakes harbor setting, GLMZ, moody maritime lighting, worn authenticity, no corporate aesthetic, slow intentional presence, weathered pier background, cinematic realism --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  52.6,
+                             "Indigenous American":  25.2,
+                             "Hispanic/Latin American":  22.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  52.6
+                                                                         }
+                                                 },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  9.1,
+                                                                             "Mixtec":  6.9
+                                                                         },
+                                                        "Plains Nations":  {
+                                                                               "Choctaw":  6.7
+                                                                           },
+                                                        "Andean":  {
+                                                                       "Quechua":  2.5
+                                                                   }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  7.8
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  2.7
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  11.7
+                                                                        }
+                                                        }
+                        },
+    "tier":  "3"
 }

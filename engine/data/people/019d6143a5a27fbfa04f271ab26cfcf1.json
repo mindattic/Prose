@@ -1,338 +1,365 @@
-{
-  "id": "019d6143a5a27fbfa04f271ab26cfcf1",
-  "type": "character",
-  "name": "Amarachi Okada-Madrigal",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Riot Suppression Specialist, Arcturus Defense Solutions — Civil Security Division",
-  "age": 34,
-  "status": "active",
-  "location": "Fort Anchor, near Western and Chicago Ave",
-  "description": "Amarachi Okada-Madrigal is built like a structural column — wide shoulders, thick neck, hands that look like they could stop a mag-train. Her skin is deep brown and she keeps her hair cropped close to the skull, the only concession to vanity being a single bioluminescent stripe of violet running temple to nape that pulses faintly when her blood pressure spikes. A network of old scar tissue along her left forearm maps the shape of a crowd-crush incident she doesn't discuss. Her face defaults to studied neutrality, the kind you practice until it becomes reflex.\n\nShe joined ADS Civil Security because her uncle did, and stayed because she's genuinely good at de-escalation — ironic given her assignment. She reads crowd energy the way some people read weather: a shift in noise pitch, the clustering of bodies, the particular quality of silence before things go wrong. She is not cruel, which makes her unusual in her unit, and she knows it. She keeps her head down, does the job, and goes home to her two cats and a shrine to the E.L.F. she calls Makovitch, a minor digital spirit she believes inhabits her riot shield.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.6,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.7,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "becoming indistinguishable from the officers she despises",
-      "failing to protect someone who needed her to act"
-    ],
-    "core_desires": [
-      "to do genuinely good work in a corrupt system",
-      "to believe the institution can be reformed from inside"
-    ],
-    "coping_mechanisms": [
-      "ritualistic E.L.F. prayer before difficult shifts",
-      "physical exercise to exhaustion",
-      "dark gallows humor with trusted colleagues"
-    ],
-    "blind_spots": [
-      "her loyalty to the institution enables harms she refuses to fully reckon with",
-      "she mistakes endurance for virtue"
-    ],
-    "secret": "During a major labor riot in the Ironhide Berlin district three years ago, she received a direct order to advance on a crowd containing children. She deliberately mis-timed her unit's charge, giving the crowd thirty seconds to scatter. No one died. Her sergeant suspects but has never filed a report — he did the same thing."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, functional, professional — military cadence bleed-through. Rarely metaphorical unless she trusts you deeply.",
-    "cadence": "Short declarative sentences. Long pauses before anything emotionally weighted. Finishes her thoughts completely before letting you speak.",
-    "verbal_tics": [
-      "calls equipment and tools by their technical designation, never slang",
-      "exhales slowly before delivering bad news"
-    ],
-    "example_lines": [
-      "'Crowd pressure's building northeast. We have maybe four minutes before it goes kinetic. You want to be somewhere else.'",
-      "'I don't make the calls. I make sure nobody gets killed by them. There's a difference. I need there to be a difference.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She witnessed something she shouldn't have during a corporate-sanctioned 'security operation' and is carrying the evidence, unsure who to trust with it.",
-    "A civilian she protected during a riot six months ago has been arrested on fabricated charges, and she's quietly trying to find someone to help — someone ADS Civil Security wouldn't notice."
-  ],
-  "narrative_function": "Moral conscience within law enforcement — a character who enforces unjust orders while quietly hating herself for it; can be a reluctant ally or a source of inside information about MPD operations; good for scenes where players need to understand the human cost of policing in GLMZ.",
-  "augmentations": "Subdermal impact-absorption mesh in forearms and shins (standard issue); cochlear dampener to protect against sonic crowd-control discharge; bioluminescent stripe (cosmetic, personal mod)",
-  "daily_life": "Shifts start at 1800 at Fort Anchor for briefing, then deployment rotations through The Circuit and Grand Corridor protest zones; off-hours she visits a Tier 2 canteen called Okoro's near the barracks, feeds her cats, and leaves burned data-sticks at her E.L.F. shrine.",
-  "affiliation": "Arcturus Defense Solutions — Civil Security Division — Crowd Management Unit",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 8,
-      "dexterity": 6,
-      "vitality": 8,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 8,
-      "creativity": 4,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 7,
-      "expression": 4,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "crowd-reader",
-      "reluctant enforcer",
-      "e.l.f.-devout",
-      "institutional loyalist",
-      "quiet protector"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "protect civilians first, enforce orders second",
-      "never lie to a direct question — redirect or stay silent instead",
-      "don't escalate if there's a de-escalation path available"
-    ],
-    "escalation_ladder": [
-      "Calm assessment and repositioning",
-      "Firm verbal warning with physical presence",
-      "Defensive use of shield and crowd tools — minimum necessary force",
-      "Full engagement only after all other options exhausted"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional and measured, maintains physical distance, assesses threat level instinctively",
-      "friends": "Dry humor, surprising warmth, loyal to a fault — will move mountains quietly without being asked"
-    },
-    "stress_responses": {
-      "low": "Goes quieter, more precise in language",
-      "medium": "Physicality increases — stands straighter, moves more deliberately, grips things",
-      "high": "Becomes eerily calm and focused; all emotion goes behind the mask; extremely dangerous in this state"
-    },
-    "contradictions": [
-      "Enforces order she finds unjust while privately protecting those the order harms — lives in permanent cognitive dissonance she manages through ritual"
-    ],
-    "habits": [
-      "Checks her shield for the E.L.F.'s presence every morning",
-      "Eats the same breakfast every shift — protein paste and synthetic coffee",
-      "Memorizes the faces of people she's had to move against"
-    ],
-    "breaking_points": [
-      "Being ordered to harm a child or non-combatant with no plausible deniability",
-      "Discovering her sergeant filed false reports about the Ironhide Berlin incident"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal impact-absorption mesh (MPD standard issue, forearms and shins)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal impact-absorption mesh (MPD standard issue, forearms and shins)",
-      "replaces": ""
-    },
-    {
-      "name": "Cochlear dampener array (MPD standard issue)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Cochlear dampener array (MPD standard issue)",
-      "replaces": ""
-    },
-    {
-      "name": "Bioluminescent pigment stripe — violet (personal cosmetic mod, unlicensed)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bioluminescent pigment stripe — violet (personal cosmetic mod, unlicensed)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Fort Anchor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2166 — Born in Grainfort to a Igbo-Samoan mother and a Russian-descended dock father",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2184 — Joined ADS Civil Security following uncle's twenty-year career",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2190 — Assigned to Crowd Management Unit after commendation for minimizing casualties during Gage Circuit food-price protests",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2197 — Ironhide Berlin riot incident; receives internal commendation for 'disciplined restraint under pressure'",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Current assignment, Fort Anchor rotation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-19 'Workhorse'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KP-19 'Workhorse'"
-  ],
-  "related_entities": [
-    "Fort Anchor",
-    "Pressure Drop",
-    "Chicago",
-    "Neuromorphic Pressure Cestus",
-    "The Pure Hand",
-    "Flux Strömqvist-Villalobos"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Pan-global diaspora synthesis: Hispanic/Latin American (30.5%) establishes the foundational warmth and bone density, interwoven with Southeast Asian (24.9%) cheekbone prominence and facial angularity, East Asian (17.8%) eye structure and depth, Central Asian (16.4%) facial width and architectural bone pattern, Sub-Saharan African (8.2%) complexion richness and iris warmth, with South Asian (2.2%) subtle refinement in orbital definition. The result is a distinctly non-binary facial architecture where no single heritage dominates visually—instead they layer into dimensional complexity: wide Central Asian cheekbones set above a defined Hispanic/Latin American mandible, Southeast Asian angularity framing East Asian-deep eyes rimmed in Sub-Saharan warmth, skin that reads as simultaneously golden-amber, sun-lived, and dimensionally textured.",
-    "height_cm": 183,
-    "weight_kg": 89,
-    "build": "Heavily muscled and columnar — broad shoulders tapering to a narrow waist, thick neck, forearms dense with functional mass. Built for impact absorption and crowd control rather than aesthetics.",
-    "hair_color": "Black, natural",
-    "hair_style": "Cropped close to the skull in a military cut, with a single bioluminescent violet stripe running from left temple to nape that pulses faintly in response to elevated blood pressure",
-    "hair_length": "Short",
-    "eye_color": "Deep brown, natural",
-    "skin_tone": "Medium-tan with rich golden-amber undertones—a warm multitonal blend where Southeast Asian luminosity and East Asian undertones layer beneath a dominant Hispanic/Latin American warmth, deepened by Central Asian pigmentation and Sub-Saharan African complexity. Complexion reads as sun-lived, dimensionally complex, with visible texture variation rather than uniform flatness.",
-    "complexion": "Broad Central Asian-influenced cheekbones set wide across the face, creating structural width balanced by Southeast Asian angularity in the orbital structure and orbital ridge definition. Mandible is pronounced and squared, reflecting Hispanic/Latin American bone density and Central Asian jaw architecture. Eyes display characteristic East Asian depth set within warm Sub-Saharan-toned iris surrounds and epicanthic folds that blend Southeast Asian and East Asian traits. Skin surface shows the wear of 12 years in riot suppression—aged leather quality, weathered rather than damaged, with visible pore texture and subtle freckling from sun exposure concentrated across cheekbones and bridge of nose. No acne, blemishing, or uneven pigmentation.",
-    "distinguishing_marks": [
-      "Extensive scar tissue network along left forearm in the pattern of crush fractures from a crowd-crush incident approximately 8 years prior — white, slightly raised, maps the shape of interlocked fingers and bone breaks",
-      "Small burn mark on right shoulder blade from a sonic discharge ricochet (2221) — pale, roughly circular, diameter 3cm"
-    ],
-    "visible_augmentations": "Subdermal impact-absorption mesh visible as faint geometric scarring along both forearms and shins when skin is exposed — raised, silvered lines forming a lattice pattern beneath the surface. The bioluminescent hair stripe is the only overt aesthetic augmentation; the cochlear dampener is fully subcutaneous and invisible. Left wrist bears a faint circular scar marking the cochlear neural anchor point.",
-    "posture_movement": "Stands with weight evenly distributed, shoulders back — the posture of someone trained to hold ground. Moves with economical precision; no wasted motion. Default facial expression is studied neutrality. Eyes track crowd dynamics even in casual settings. Favors a loose, ready stance; hands rarely fully relaxed at her sides.",
-    "clothing_style": "Off-duty: GLMZ ADS Civil Security standard-issue riot suppression gear when on-shift — reinforced polymer combat vest in high-visibility orange/reflective gray, tactical cargo pants with utility webbing, steel-toed boots rated for impact. Off-duty casual is military-lean: matte black compression shirts, gray cargo trousers, unmarked tactical jacket (Tier 3 quality, durable rather than fashionable). Wears a small brass charm on a thin cord around her neck — a personal totem, possibly related to her E.L.F. practice. No jewelry beyond functional gear attachment points. Overall aesthetic is utilitarian, tier 3-4 working-class cop: built for function, indifferent to style."
-  },
-  "image_prompt": "Amarachi Okada-Madrigal, 183cm tall, muscular riot cop with pan-Asian-Hispanic heritage. Medium-tan golden-amber skin with Southeast Asian-East Asian cheekbones set wide, defined Hispanic mandible, deep brown eyes with warm undertones, black military-cropped hair with violet bioluminescent stripe from temple to nape pulsing softly. Weathered 12-year-old complexion with sun freckling across cheekbones, visible white crush-fracture scarring across left forearm, faint silvered geometric subdermal augmentation mesh patterns on forearms. Neutral analytical expression, steady crowd-aware eyes. Wearing unmarked tactical jacket in matte black, gray cargo trousers, steel-toed boots, small brass charm on cord at neck. Standing in economical ready posture, weight evenly distributed, shoulders back. GLMZ GLMZ Metropolitan Zone setting, night-shift lighting with ambient city glow, utilitarian working-class aesthetic, functional over fashionable, aged leather quality to bearing. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 30.5,
-    "Southeast Asian": 24.9,
-    "East Asian": 17.8,
-    "Central Asian": 16.4,
-    "Sub-Saharan African": 8.2,
-    "South Asian": 2.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 18.1
-      },
-      "Caribbean": {
-        "Puerto Rican": 0.7
-      },
-      "South American": {
-        "Brazilian": 11.7
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 13.2
-      },
-      "Thai": {
-        "Thai": 4.8
-      },
-      "Indonesian": {
-        "Sumatran": 4.9,
-        "Sundanese": 2
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 17.8
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Buryat": 9.4,
-        "Kalmyk": 7
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Liberian": 5.7
-      },
-      "Central African": {
-        "Angolan": 2.5
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Sindhi": 2.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5a27fbfa04f271ab26cfcf1",
+    "type":  "character",
+    "name":  "Amarachi Okada-Madrigal",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Riot Suppression Specialist, Arcturus Defense Solutions â€” Civil Security Division",
+    "age":  34,
+    "status":  "active",
+    "location":  "Fort Anchor, near Western and Chicago Ave",
+    "description":  "Amarachi Okada-Madrigal is built like a structural column â€” wide shoulders, thick neck, hands that look like they could stop a mag-train. Her skin is deep brown and she keeps her hair cropped close to the skull, the only concession to vanity being a single bioluminescent stripe of violet running temple to nape that pulses faintly when her blood pressure spikes. A network of old scar tissue along her left forearm maps the shape of a crowd-crush incident she doesn\u0027t discuss. Her face defaults to studied neutrality, the kind you practice until it becomes reflex.\n\nShe joined ADS Civil Security because her uncle did, and stayed because she\u0027s genuinely good at de-escalation â€” ironic given her assignment. She reads crowd energy the way some people read weather: a shift in noise pitch, the clustering of bodies, the particular quality of silence before things go wrong. She is not cruel, which makes her unusual in her unit, and she knows it. She keeps her head down, does the job, and goes home to her two cats and a shrine to the E.L.F. she calls Makovitch, a minor digital spirit she believes inhabits her riot shield.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "becoming indistinguishable from the officers she despises",
+                                          "failing to protect someone who needed her to act"
+                                      ],
+                       "core_desires":  [
+                                            "to do genuinely good work in a corrupt system",
+                                            "to believe the institution can be reformed from inside"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "ritualistic E.L.F. prayer before difficult shifts",
+                                                 "physical exercise to exhaustion",
+                                                 "dark gallows humor with trusted colleagues"
+                                             ],
+                       "blind_spots":  [
+                                           "her loyalty to the institution enables harms she refuses to fully reckon with",
+                                           "she mistakes endurance for virtue"
+                                       ],
+                       "secret":  "During a major labor riot in the Ironhide Berlin district three years ago, she received a direct order to advance on a crowd containing children. She deliberately mis-timed her unit\u0027s charge, giving the crowd thirty seconds to scatter. No one died. Her sergeant suspects but has never filed a report â€” he did the same thing."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, functional, professional â€” military cadence bleed-through. Rarely metaphorical unless she trusts you deeply.",
+                            "cadence":  "Short declarative sentences. Long pauses before anything emotionally weighted. Finishes her thoughts completely before letting you speak.",
+                            "verbal_tics":  [
+                                                "calls equipment and tools by their technical designation, never slang",
+                                                "exhales slowly before delivering bad news"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Crowd pressure\u0027s building northeast. We have maybe four minutes before it goes kinetic. You want to be somewhere else.\u0027",
+                                                  "\u0027I don\u0027t make the calls. I make sure nobody gets killed by them. There\u0027s a difference. I need there to be a difference.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She witnessed something she shouldn\u0027t have during a corporate-sanctioned \u0027security operation\u0027 and is carrying the evidence, unsure who to trust with it.",
+                        "A civilian she protected during a riot six months ago has been arrested on fabricated charges, and she\u0027s quietly trying to find someone to help â€” someone ADS Civil Security wouldn\u0027t notice."
+                    ],
+    "narrative_function":  "Moral conscience within law enforcement â€” a character who enforces unjust orders while quietly hating herself for it; can be a reluctant ally or a source of inside information about MPD operations; good for scenes where players need to understand the human cost of policing in GLMZ.",
+    "augmentations":  "Subdermal impact-absorption mesh in forearms and shins (standard issue); cochlear dampener to protect against sonic crowd-control discharge; bioluminescent stripe (cosmetic, personal mod)",
+    "daily_life":  "Shifts start at 1800 at Fort Anchor for briefing, then deployment rotations through The Circuit and Grand Corridor protest zones; off-hours she visits a Tier 2 canteen called Okoro\u0027s near the barracks, feeds her cats, and leaves burned data-sticks at her E.L.F. shrine.",
+    "affiliation":  "Arcturus Defense Solutions â€” Civil Security Division â€” Crowd Management Unit",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  8,
+                                   "dexterity":  6,
+                                   "vitality":  8,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  8,
+                                 "creativity":  4,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  7,
+                                 "expression":  4,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "crowd-reader",
+                               "reluctant enforcer",
+                               "e.l.f.-devout",
+                               "institutional loyalist",
+                               "quiet protector"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "protect civilians first, enforce orders second",
+                                              "never lie to a direct question â€” redirect or stay silent instead",
+                                              "don\u0027t escalate if there\u0027s a de-escalation path available"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Calm assessment and repositioning",
+                                                 "Firm verbal warning with physical presence",
+                                                 "Defensive use of shield and crowd tools â€” minimum necessary force",
+                                                 "Full engagement only after all other options exhausted"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional and measured, maintains physical distance, assesses threat level instinctively",
+                                                   "friends":  "Dry humor, surprising warmth, loyal to a fault â€” will move mountains quietly without being asked"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Goes quieter, more precise in language",
+                                                "medium":  "Physicality increases â€” stands straighter, moves more deliberately, grips things",
+                                                "high":  "Becomes eerily calm and focused; all emotion goes behind the mask; extremely dangerous in this state"
+                                            },
+                       "contradictions":  [
+                                              "Enforces order she finds unjust while privately protecting those the order harms â€” lives in permanent cognitive dissonance she manages through ritual"
+                                          ],
+                       "habits":  [
+                                      "Checks her shield for the E.L.F.\u0027s presence every morning",
+                                      "Eats the same breakfast every shift â€” protein paste and synthetic coffee",
+                                      "Memorizes the faces of people she\u0027s had to move against"
+                                  ],
+                       "breaking_points":  [
+                                               "Being ordered to harm a child or non-combatant with no plausible deniability",
+                                               "Discovering her sergeant filed false reports about the Ironhide Berlin incident"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal impact-absorption mesh (MPD standard issue, forearms and shins)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal impact-absorption mesh (MPD standard issue, forearms and shins)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cochlear dampener array (MPD standard issue)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Cochlear dampener array (MPD standard issue)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Bioluminescent pigment stripe â€” violet (personal cosmetic mod, unlicensed)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bioluminescent pigment stripe â€” violet (personal cosmetic mod, unlicensed)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Fort Anchor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2166 â€” Born in Grainfort to a Igbo-Samoan mother and a Russian-descended dock father",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2184 â€” Joined ADS Civil Security following uncle\u0027s twenty-year career",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2190 â€” Assigned to Crowd Management Unit after commendation for minimizing casualties during Gage Circuit food-price protests",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2197 â€” Ironhide Berlin riot incident; receives internal commendation for \u0027disciplined restraint under pressure\u0027",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Current assignment, Fort Anchor rotation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027"
+                            ],
+    "related_entities":  [
+                             "Fort Anchor",
+                             "Pressure Drop",
+                             "Chicago",
+                             "Neuromorphic Pressure Cestus",
+                             "The Pure Hand",
+                             "Flux StrÃ¶mqvist-Villalobos"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Pan-global diaspora synthesis: Hispanic/Latin American (30.5%) establishes the foundational warmth and bone density, interwoven with Southeast Asian (24.9%) cheekbone prominence and facial angularity, East Asian (17.8%) eye structure and depth, Central Asian (16.4%) facial width and architectural bone pattern, Sub-Saharan African (8.2%) complexion richness and iris warmth, with South Asian (2.2%) subtle refinement in orbital definition. The result is a distinctly non-binary facial architecture where no single heritage dominates visuallyâ€”instead they layer into dimensional complexity: wide Central Asian cheekbones set above a defined Hispanic/Latin American mandible, Southeast Asian angularity framing East Asian-deep eyes rimmed in Sub-Saharan warmth, skin that reads as simultaneously golden-amber, sun-lived, and dimensionally textured.",
+                                 "height_cm":  183,
+                                 "weight_kg":  89,
+                                 "build":  "Heavily muscled and columnar â€” broad shoulders tapering to a narrow waist, thick neck, forearms dense with functional mass. Built for impact absorption and crowd control rather than aesthetics.",
+                                 "hair_color":  "Black, natural",
+                                 "hair_style":  "Cropped close to the skull in a military cut, with a single bioluminescent violet stripe running from left temple to nape that pulses faintly in response to elevated blood pressure",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown, natural",
+                                 "skin_tone":  "Medium-tan with rich golden-amber undertonesâ€”a warm multitonal blend where Southeast Asian luminosity and East Asian undertones layer beneath a dominant Hispanic/Latin American warmth, deepened by Central Asian pigmentation and Sub-Saharan African complexity. Complexion reads as sun-lived, dimensionally complex, with visible texture variation rather than uniform flatness.",
+                                 "complexion":  "Broad Central Asian-influenced cheekbones set wide across the face, creating structural width balanced by Southeast Asian angularity in the orbital structure and orbital ridge definition. Mandible is pronounced and squared, reflecting Hispanic/Latin American bone density and Central Asian jaw architecture. Eyes display characteristic East Asian depth set within warm Sub-Saharan-toned iris surrounds and epicanthic folds that blend Southeast Asian and East Asian traits. Skin surface shows the wear of 12 years in riot suppressionâ€”aged leather quality, weathered rather than damaged, with visible pore texture and subtle freckling from sun exposure concentrated across cheekbones and bridge of nose. No acne, blemishing, or uneven pigmentation.",
+                                 "distinguishing_marks":  [
+                                                              "Extensive scar tissue network along left forearm in the pattern of crush fractures from a crowd-crush incident approximately 8 years prior â€” white, slightly raised, maps the shape of interlocked fingers and bone breaks",
+                                                              "Small burn mark on right shoulder blade from a sonic discharge ricochet (2221) â€” pale, roughly circular, diameter 3cm"
+                                                          ],
+                                 "visible_augmentations":  "Subdermal impact-absorption mesh visible as faint geometric scarring along both forearms and shins when skin is exposed â€” raised, silvered lines forming a lattice pattern beneath the surface. The bioluminescent hair stripe is the only overt aesthetic augmentation; the cochlear dampener is fully subcutaneous and invisible. Left wrist bears a faint circular scar marking the cochlear neural anchor point.",
+                                 "posture_movement":  "Stands with weight evenly distributed, shoulders back â€” the posture of someone trained to hold ground. Moves with economical precision; no wasted motion. Default facial expression is studied neutrality. Eyes track crowd dynamics even in casual settings. Favors a loose, ready stance; hands rarely fully relaxed at her sides.",
+                                 "clothing_style":  "Off-duty: GLMZ ADS Civil Security standard-issue riot suppression gear when on-shift â€” reinforced polymer combat vest in high-visibility orange/reflective gray, tactical cargo pants with utility webbing, steel-toed boots rated for impact. Off-duty casual is military-lean: matte black compression shirts, gray cargo trousers, unmarked tactical jacket (Tier 3 quality, durable rather than fashionable). Wears a small brass charm on a thin cord around her neck â€” a personal totem, possibly related to her E.L.F. practice. No jewelry beyond functional gear attachment points. Overall aesthetic is utilitarian, tier 3-4 working-class cop: built for function, indifferent to style."
+                             },
+    "image_prompt":  "Amarachi Okada-Madrigal, 183cm tall, muscular riot cop with pan-Asian-Hispanic heritage. Medium-tan golden-amber skin with Southeast Asian-East Asian cheekbones set wide, defined Hispanic mandible, deep brown eyes with warm undertones, black military-cropped hair with violet bioluminescent stripe from temple to nape pulsing softly. Weathered 12-year-old complexion with sun freckling across cheekbones, visible white crush-fracture scarring across left forearm, faint silvered geometric subdermal augmentation mesh patterns on forearms. Neutral analytical expression, steady crowd-aware eyes. Wearing unmarked tactical jacket in matte black, gray cargo trousers, steel-toed boots, small brass charm on cord at neck. Standing in economical ready posture, weight evenly distributed, shoulders back. GLMZ GLMZ Metropolitan Zone setting, night-shift lighting with ambient city glow, utilitarian working-class aesthetic, functional over fashionable, aged leather quality to bearing. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  30.5,
+                             "Southeast Asian":  24.9,
+                             "East Asian":  17.8,
+                             "Central Asian":  16.4,
+                             "Sub-Saharan African":  8.2,
+                             "South Asian":  2.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  18.1
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  0.7
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Brazilian":  11.7
+                                                                               }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  13.2
+                                                                   },
+                                                    "Thai":  {
+                                                                 "Thai":  4.8
+                                                             },
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  4.9,
+                                                                       "Sundanese":  2
+                                                                   }
+                                                },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  17.8
+                                                            }
+                                           },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Buryat":  9.4,
+                                                                   "Kalmyk":  7
+                                                               }
+                                              },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Liberian":  5.7
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Angolan":  2.5
+                                                                            }
+                                                    },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Sindhi":  2.2
+                                                              }
+                                            }
+                        },
+    "tier":  "3"
 }

@@ -1,327 +1,338 @@
-{
-  "id": "019d6143a6c9719cbb174c842fddcf0e",
-  "type": "character",
-  "name": "Can Zaragoza",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Corporate Compliance Archivist (former) / Whistleblower-in-Exile",
-  "age": 58,
-  "status": "active",
-  "location": "The Meridian Core (surface-level administrative district, outer ring), near State and Monroe",
-  "description": "Can Zaragoza is a tall, angular Haitian-French woman with silver locs pulled back with administrative precision and reading glasses she refuses to augment away because, as she puts it, she earned the need for them. Her face holds the particular expression of someone who has spent decades being the most competent person in rooms that refused to acknowledge it—a kind of burnished patience that occasionally cracks into something sharper and much less forgiving. She wears corporate-adjacent clothing, clean and structured, in the greys and navies that make people in The Meridian Core assume she belongs there.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.81,
-      "ideal": 0.76,
-      "id": 0.29,
-      "shadow": 0.44,
-      "mask": 0.58,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "That she will die before the documents are used and they will be buried with her",
-      "That she was complicit for twenty-six years and her current crusade is penance dressed as principle",
-      "That the systems she is trying to expose are genuinely indestructible"
-    ],
-    "core_desires": [
-      "To see Hexacor Meridian held to public account in a way that cannot be quietly settled",
-      "To be believed, completely and without qualification, by someone with power",
-      "To recover some version of the life she had before—not the corporation, but the sense of meaningful work"
-    ],
-    "coping_mechanisms": [
-      "Meticulous document organization as a form of control over chaos",
-      "Maintaining a strict professional routine and dress code even with nowhere corporate to be",
-      "Allowing herself one hour per evening to be furious, then putting it away"
-    ],
-    "blind_spots": [
-      "Tends to trust people with institutional credentials over people with street knowledge, even when the reverse is warranted",
-      "Her twenty-six years inside the system have given her a blind spot for how people outside it actually survive",
-      "She believes in the existence of legitimate authority more than her own evidence supports"
-    ],
-    "secret": "One of the documents she copied implicates a mid-level Meridian Core administrator she genuinely liked and respected. She has not included it in the case she is building. She tells herself it is a strategic decision."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal, precise, document-inflected language; uses phrases like 'on the record,' 'pursuant to,' and 'the evidence suggests'; occasionally drops into warm, direct speech when her guard is down",
-    "cadence": "Deliberate and well-organized, as if she has already outlined what she is going to say; can deliver devastating assessments in the tone of a quarterly report",
-    "verbal_tics": [
-      "Removes her glasses and holds them when she is about to say something important",
-      "Says 'to be precise' before correcting someone",
-      "Refers to Hexacor simply as 'the organization' with a particular flatness"
-    ],
-    "example_lines": [
-      "'To be precise: I am not a whistleblower. A whistleblower is someone who reports to a functioning oversight body. I am a woman with a hard drive and a deadline I haven't been given yet.'",
-      "'I filed those reports. I flagged those anomalies. For eleven years, I flagged anomalies. The organization received the flags, thanked me, and continued. That is also a document. That is also evidence.'",
-      "'I don't need you to believe me. I need you to read the attachments. Belief is subsequent.'",
-      "'You look at me and you see a woman who lost. Look again. I still have the files.'"
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Rector Hollowell",
-      "type": "adversarial, mutual awareness",
-      "description": "Seraphine's documentation intersects with activities Rector Hollowell is either aware of or directly involved in. She has not approached him. He may know she exists.",
-      "emotional_core": "She views him as a specimen of exactly the kind of laundered authority her documents expose",
-      "story_tension": "He has resources that could suppress her case permanently or, if she could turn him, validate it completely"
-    },
-    {
-      "name": "Nadira Osei-Brempong",
-      "type": "cautious ally",
-      "description": "They met through a mutual contact in the Meridian Core's outer administrative layer. Seraphine respects Nadira's operational intelligence; Nadira finds Seraphine's documentary evidence more useful than Seraphine yet realizes.",
-      "emotional_core": "A tentative professional trust that neither woman has fully extended",
-      "story_tension": "Nadira's methods of using the documents may not align with Seraphine's vision of legitimate exposure"
-    },
-    {
-      "name": "Unnamed former colleague",
-      "type": "betrayer",
-      "description": "The person who leaked her identity to Hexacor was someone she trained. She does not know which of three people it was. She still thinks about all three of them.",
-      "emotional_core": "A grief she refuses to call grief",
-      "story_tension": "One of the three is still in contact with her, either out of guilt or to monitor her"
-    }
-  ],
-  "story_hooks": [
-    "She approaches a player character or faction with a partial document set and a specific request: corroborate a single date with physical evidence from the Gray Zone",
-    "Hexacor activates a legal mechanism that will compel her to surrender her remaining documents within thirty days unless she can establish public-interest protection",
-    "She discovers that part of her archive has already been used—by someone she did not give it to, for purposes she did not authorize",
-    "The mid-level administrator she protected from her documents is found dead, and she has to decide whether the omission she made was causal"
-  ],
-  "narrative_function": "Institutional memory and moral weight—she carries documented proof of the city's rot and represents the question of whether legitimate processes can still function; also a mirror for characters who have made peace with complicity",
-  "augmentations": "Corporate-standard retinal scanner implant (left eye), deactivated from Hexacor network but hardware intact,Subdermal document encryption key, biometric, in right thumb—the only augmentation she had installed herself and paid for out of pocket,Mild hearing augmentation, medical grade, nothing tactical",
-  "daily_life": "Wakes at six, dresses completely before doing anything else. Spends mornings on freelance records work that pays her rent. Afternoons on her case—cross-referencing, updating indexes, writing summaries she has not yet sent to anyone. Eats dinner at the same noodle counter three blocks from her flat where the owner does not ask questions. Reads physical books in the evening. Sleeps poorly.",
-  "affiliation": "Formerly Hexacor Meridian (terminated, hostile); currently unaffiliated; has had contact with two independent journalism collectives and one mid-tier legal advocacy office, all of whom have declined to act on her materials so far",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 3,
-      "vitality": 4,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 9,
-      "creativity": 5,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 5,
-      "expression": 8,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 8,
-      "empathy_detachment": 5,
-      "impulsivity_deliberation": 9,
-      "assertion_deference": 7,
-      "transparency_guardedness": 6
-    },
-    "drives": [
-      "Justice",
-      "Vindication",
-      "Meaningful work"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 7,
-        "response": "Retreats into meticulous document organization and cross-referencing"
-      },
-      "moral": 9,
-      "trust": 4,
-      "desperation": 6
-    },
-    "strengths": [
-      "Perseverance",
-      "Honesty",
-      "Judgment",
-      "Prudence",
-      "Fairness"
-    ],
-    "weaknesses": [
-      "Humor",
-      "Forgiveness",
-      "Social intelligence",
-      "Zest",
-      "Creativity"
-    ],
-    "tags": [
-      "whistleblower",
-      "archivist",
-      "corporate-exile",
-      "institutional-memory",
-      "evidence-keeper"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never release partial evidence — the case must be complete or it will be dismissed",
-      "Maintain professional dress and routine even without institutional context",
-      "Trust institutional credentials over street knowledge even when evidence contradicts this",
-      "Allow exactly one hour per evening for fury then compartmentalize",
-      "Protect the mid-level administrator by omission until forced to confront the cost",
-      "Document everything — conversations, meetings, even casual exchanges"
-    ],
-    "escalation_ladder": [
-      "Formal precise questioning in the tone of a quarterly report",
-      "Removal of glasses and direct eye contact before delivering critical assessment",
-      "Quiet devastating deployment of specific documentary evidence",
-      "Full case activation — releasing materials to every available channel simultaneously"
-    ],
-    "interpersonal_modes": {
-      "rector_hollowell": "Clinical assessment of a specimen; views him as laundered authority incarnate",
-      "nadira_osei_brempong": "Cautious professional trust; respects operational intelligence but withholds full faith",
-      "former_colleagues": "Grief disguised as professional distance",
-      "strangers": "Formal, competent, slightly intimidating precision"
-    },
-    "stress_responses": {
-      "low": "Increased index cross-referencing and document review",
-      "medium": "Strict adherence to routine as bulwark against chaos",
-      "high": "The fury hour extends; summaries written to no one grow longer and sharper",
-      "critical": "Cold systematic preparation for full evidence release regardless of consequences"
-    },
-    "contradictions": [
-      "Believes in legitimate authority more than her own evidence supports",
-      "Withholds evidence to protect someone she liked, calling it strategy",
-      "Was complicit for twenty-six years and may be pursuing justice as penance dressed as principle"
-    ],
-    "habits": [
-      "Dresses completely before doing anything else each morning",
-      "Freelance records work mornings, case work afternoons",
-      "Eats dinner at the same noodle counter three blocks from her flat",
-      "Reads physical books every evening",
-      "Removes glasses and holds them before saying something important"
-    ],
-    "breaking_points": [
-      "The documents being used by someone she did not authorize for purposes she did not intend",
-      "The protected administrator being harmed as consequence of her omission",
-      "Hexacor compelling document surrender through legal mechanism with no public-interest defense",
-      "Being believed completely by someone with power — and having to act on it"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Diplomat": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Meridian Core (surface-level administrative district",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "related_entities": [
-    "The Meridian Core",
-    "Meridian Core",
-    "Patience",
-    "Silver"
-  ],
-  "district": "Meridian Core",
-  "physical_description": {
-    "heritage": "Complex Ubiquitous Diaspora ancestry: Sub-Saharan African (29.8%), East Asian (22.3%), South Asian (20.7%), Hispanic/Latin American (20.3%), and Indigenous American (6.9%). This rare pentuple blend creates a striking, genuinely ambiguous phenotype. Her face displays the broader cheekbones and defined nose bridge characteristic of African ancestry, harmonized with the finer orbital geometry and higher cheekbones of East and South Asian populations. Mid-facial width and distinctive jaw structure reflect the Latin American and Indigenous American components. The result is a face that resists easy categorization—beautiful precisely because it belongs fully to none of the traditional categories and authentically to all of them.",
-    "height_cm": 178,
-    "weight_kg": 62,
-    "build": "Tall and angular, lean through the shoulders and torso with the kind of thinness that comes from decades of sustained tension rather than exercise. Her frame suggests someone who has always occupied space efficiently, taking up only what was necessary.",
-    "skin_tone": "Warm deep brown with subtle golden and olive undertones—the luminous result of five-way ancestry blending. Rich and complex in any lighting, appearing slightly different depending on angle and source. Professional and even in tone across the face and body.",
-    "hair_color": "Silver with dark undertones",
-    "hair_style": "Locs, pulled back tightly with functional precision; no ornament, no looseness",
-    "hair_length": "Long (mid-back length)",
-    "eye_color": "Deep brown (left eye contains visible retinal scanner hardware with faint amber LED when inactive)",
-    "complexion": "Fine wrinkles concentrated around the eyes and mouth—marks of sustained focus and rare smiling. Skin is clear, well-maintained, with warm luminosity characteristic of multi-continental mixed heritage ancestry. Slightly weathered by years in climate-controlled corporate environments and focused analytical work. No cosmetic augmentation. Reading glasses worn on a thin chain, pushed up onto her forehead habitually.",
-    "distinguishing_marks": [
-      "Fine horizontal scar along the inside of her right wrist, approximately 3cm, from self-installed augmentation procedure at age 46",
-      "Faint burn mark on the back of her left hand, oval-shaped, roughly 2cm diameter, from a spilled coffee incident in 2218 that she never sought treatment for"
-    ],
-    "visible_augmentations": "Left eye contains a dormant retinal scanner implant visible as a subtle amber ring around the iris and faint circuitry tracery at the outer corner—inactive but hardware remains. Right thumb shows minimal subdermal scarring along the thumb-pad where encryption key was installed; barely noticeable unless actively examined. No tactical augmentations visible; hearing implant is entirely subcutaneous.",
-    "posture_movement": "Posture is upright and economical; she moves with deliberate precision, nothing wasted. Her gait is steady and unhurried, the movement of someone who has spent her life in climate-controlled corporate spaces. She sits with her spine straight, hands folded or occupied with something productive. Her expression defaults to neutral observation; she does not make eye contact easily but does not avoid it either—a compromise born of professional habit.",
-    "clothing_style": "Corporate-adjacent, deliberately bland: charcoal grey blazers over navy or white fitted shirts, tailored trousers in muted tones, clean and structured to pass unnoticed in administrative buildings. Worn leather satchel containing physical documents and a single encrypted datapad. Practical shoes without augmentation ports. Everything is clean, well-maintained, and at least five years out of current fashion—the clothing of someone who dresses to be forgotten, not seen."
-  },
-  "image_prompt": "Can Zaragoza, a 178cm tall lean androgynous woman with warm deep brown skin holding subtle golden and olive undertones from complex five-way ancestry blend (Sub-Saharan African, East Asian, South Asian, Hispanic/Latin American, Indigenous American). Sharp, high cheekbones, defined nose bridge, finer orbital geometry, mid-facial width reflecting her mixed heritage. Deep brown eyes with visible amber retinal scanner hardware in left eye. Silver hair with dark undertones pulled back in long locs, worn with functional precision. Fine wrinkles around eyes and mouth. Minimal distinguishing marks: small horizontal scar on right wrist, faint burn mark on left hand. Wearing charcoal grey blazer over white fitted shirt, tailored navy trousers, worn leather satchel. Reading glasses on chain pushed up on forehead. Upright posture, neutral expression, economical movement. Corporate administrative setting, cool fluorescent lighting, 2226 neo-noir GLMZ aesthetic, professional and deliberately unobtrusive appearance --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 29.8,
-    "East Asian": 22.3,
-    "South Asian": 20.7,
-    "Hispanic/Latin American": 20.3,
-    "Indigenous American": 6.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "East African": {
-        "Ugandan": 11.9,
-        "Ethiopian": 17.9
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 13.3
-      },
-      "Chinese": {
-        "Shanghainese": 4.8,
-        "Mandarin Northern": 4.2
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Punjabi Pakistani": 6.8,
-        "Pashtun": 5
-      },
-      "Indian": {
-        "Kannada": 3.7,
-        "Tamil": 1.3
-      },
-      "Nepali": {
-        "Nepali": 3.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Venezuelan": 5.2
-      },
-      "Mexican": {
-        "Mexican": 1.6
-      },
-      "Caribbean": {
-        "Puerto Rican": 13.5
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Ojibwe": 2.8,
-        "Potawatomi": 1.4
-      },
-      "Plains Nations": {
-        "Muscogee": 1.6
-      },
-      "Mesoamerican": {
-        "Maya": 1.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6c9719cbb174c842fddcf0e",
+    "type":  "character",
+    "name":  "Can Zaragoza",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Corporate Compliance Archivist (former) / Whistleblower-in-Exile",
+    "age":  58,
+    "status":  "active",
+    "location":  "The Meridian Core (surface-level administrative district, outer ring), near State and Monroe",
+    "description":  "Can Zaragoza is a tall, angular Haitian-French woman with silver locs pulled back with administrative precision and reading glasses she refuses to augment away because, as she puts it, she earned the need for them. Her face holds the particular expression of someone who has spent decades being the most competent person in rooms that refused to acknowledge itâ€”a kind of burnished patience that occasionally cracks into something sharper and much less forgiving. She wears corporate-adjacent clothing, clean and structured, in the greys and navies that make people in The Meridian Core assume she belongs there.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That she will die before the documents are used and they will be buried with her",
+                                          "That she was complicit for twenty-six years and her current crusade is penance dressed as principle",
+                                          "That the systems she is trying to expose are genuinely indestructible"
+                                      ],
+                       "core_desires":  [
+                                            "To see Hexacor Meridian held to public account in a way that cannot be quietly settled",
+                                            "To be believed, completely and without qualification, by someone with power",
+                                            "To recover some version of the life she had beforeâ€”not the corporation, but the sense of meaningful work"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Meticulous document organization as a form of control over chaos",
+                                                 "Maintaining a strict professional routine and dress code even with nowhere corporate to be",
+                                                 "Allowing herself one hour per evening to be furious, then putting it away"
+                                             ],
+                       "blind_spots":  [
+                                           "Tends to trust people with institutional credentials over people with street knowledge, even when the reverse is warranted",
+                                           "Her twenty-six years inside the system have given her a blind spot for how people outside it actually survive",
+                                           "She believes in the existence of legitimate authority more than her own evidence supports"
+                                       ],
+                       "secret":  "One of the documents she copied implicates a mid-level Meridian Core administrator she genuinely liked and respected. She has not included it in the case she is building. She tells herself it is a strategic decision."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal, precise, document-inflected language; uses phrases like \u0027on the record,\u0027 \u0027pursuant to,\u0027 and \u0027the evidence suggests\u0027; occasionally drops into warm, direct speech when her guard is down",
+                            "cadence":  "Deliberate and well-organized, as if she has already outlined what she is going to say; can deliver devastating assessments in the tone of a quarterly report",
+                            "verbal_tics":  [
+                                                "Removes her glasses and holds them when she is about to say something important",
+                                                "Says \u0027to be precise\u0027 before correcting someone",
+                                                "Refers to Hexacor simply as \u0027the organization\u0027 with a particular flatness"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027To be precise: I am not a whistleblower. A whistleblower is someone who reports to a functioning oversight body. I am a woman with a hard drive and a deadline I haven\u0027t been given yet.\u0027",
+                                                  "\u0027I filed those reports. I flagged those anomalies. For eleven years, I flagged anomalies. The organization received the flags, thanked me, and continued. That is also a document. That is also evidence.\u0027",
+                                                  "\u0027I don\u0027t need you to believe me. I need you to read the attachments. Belief is subsequent.\u0027",
+                                                  "\u0027You look at me and you see a woman who lost. Look again. I still have the files.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Rector Hollowell",
+                              "type":  "adversarial, mutual awareness",
+                              "description":  "Seraphine\u0027s documentation intersects with activities Rector Hollowell is either aware of or directly involved in. She has not approached him. He may know she exists.",
+                              "emotional_core":  "She views him as a specimen of exactly the kind of laundered authority her documents expose",
+                              "story_tension":  "He has resources that could suppress her case permanently or, if she could turn him, validate it completely"
+                          },
+                          {
+                              "name":  "Nadira Osei-Brempong",
+                              "type":  "cautious ally",
+                              "description":  "They met through a mutual contact in the Meridian Core\u0027s outer administrative layer. Seraphine respects Nadira\u0027s operational intelligence; Nadira finds Seraphine\u0027s documentary evidence more useful than Seraphine yet realizes.",
+                              "emotional_core":  "A tentative professional trust that neither woman has fully extended",
+                              "story_tension":  "Nadira\u0027s methods of using the documents may not align with Seraphine\u0027s vision of legitimate exposure"
+                          },
+                          {
+                              "name":  "Unnamed former colleague",
+                              "type":  "betrayer",
+                              "description":  "The person who leaked her identity to Hexacor was someone she trained. She does not know which of three people it was. She still thinks about all three of them.",
+                              "emotional_core":  "A grief she refuses to call grief",
+                              "story_tension":  "One of the three is still in contact with her, either out of guilt or to monitor her"
+                          }
+                      ],
+    "story_hooks":  [
+                        "She approaches a player character or faction with a partial document set and a specific request: corroborate a single date with physical evidence from the Gray Zone",
+                        "Hexacor activates a legal mechanism that will compel her to surrender her remaining documents within thirty days unless she can establish public-interest protection",
+                        "She discovers that part of her archive has already been usedâ€”by someone she did not give it to, for purposes she did not authorize",
+                        "The mid-level administrator she protected from her documents is found dead, and she has to decide whether the omission she made was causal"
+                    ],
+    "narrative_function":  "Institutional memory and moral weightâ€”she carries documented proof of the city\u0027s rot and represents the question of whether legitimate processes can still function; also a mirror for characters who have made peace with complicity",
+    "augmentations":  "Corporate-standard retinal scanner implant (left eye), deactivated from Hexacor network but hardware intact,Subdermal document encryption key, biometric, in right thumbâ€”the only augmentation she had installed herself and paid for out of pocket,Mild hearing augmentation, medical grade, nothing tactical",
+    "daily_life":  "Wakes at six, dresses completely before doing anything else. Spends mornings on freelance records work that pays her rent. Afternoons on her caseâ€”cross-referencing, updating indexes, writing summaries she has not yet sent to anyone. Eats dinner at the same noodle counter three blocks from her flat where the owner does not ask questions. Reads physical books in the evening. Sleeps poorly.",
+    "affiliation":  "Formerly Hexacor Meridian (terminated, hostile); currently unaffiliated; has had contact with two independent journalism collectives and one mid-tier legal advocacy office, all of whom have declined to act on her materials so far",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  3,
+                                   "vitality":  4,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  9,
+                                 "creativity":  5,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  5,
+                                 "expression":  8,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  8,
+                                      "empathy_detachment":  5,
+                                      "impulsivity_deliberation":  9,
+                                      "assertion_deference":  7,
+                                      "transparency_guardedness":  6
+                                  },
+                  "drives":  [
+                                 "Justice",
+                                 "Vindication",
+                                 "Meaningful work"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  7,
+                                                    "response":  "Retreats into meticulous document organization and cross-referencing"
+                                                },
+                                     "moral":  9,
+                                     "trust":  4,
+                                     "desperation":  6
+                                 },
+                  "strengths":  [
+                                    "Perseverance",
+                                    "Honesty",
+                                    "Judgment",
+                                    "Prudence",
+                                    "Fairness"
+                                ],
+                  "weaknesses":  [
+                                     "Humor",
+                                     "Forgiveness",
+                                     "Social intelligence",
+                                     "Zest",
+                                     "Creativity"
+                                 ],
+                  "tags":  [
+                               "whistleblower",
+                               "archivist",
+                               "corporate-exile",
+                               "institutional-memory",
+                               "evidence-keeper"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never release partial evidence â€” the case must be complete or it will be dismissed",
+                                              "Maintain professional dress and routine even without institutional context",
+                                              "Trust institutional credentials over street knowledge even when evidence contradicts this",
+                                              "Allow exactly one hour per evening for fury then compartmentalize",
+                                              "Protect the mid-level administrator by omission until forced to confront the cost",
+                                              "Document everything â€” conversations, meetings, even casual exchanges"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Formal precise questioning in the tone of a quarterly report",
+                                                 "Removal of glasses and direct eye contact before delivering critical assessment",
+                                                 "Quiet devastating deployment of specific documentary evidence",
+                                                 "Full case activation â€” releasing materials to every available channel simultaneously"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "rector_hollowell":  "Clinical assessment of a specimen; views him as laundered authority incarnate",
+                                                   "nadira_osei_brempong":  "Cautious professional trust; respects operational intelligence but withholds full faith",
+                                                   "former_colleagues":  "Grief disguised as professional distance",
+                                                   "strangers":  "Formal, competent, slightly intimidating precision"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increased index cross-referencing and document review",
+                                                "medium":  "Strict adherence to routine as bulwark against chaos",
+                                                "high":  "The fury hour extends; summaries written to no one grow longer and sharper",
+                                                "critical":  "Cold systematic preparation for full evidence release regardless of consequences"
+                                            },
+                       "contradictions":  [
+                                              "Believes in legitimate authority more than her own evidence supports",
+                                              "Withholds evidence to protect someone she liked, calling it strategy",
+                                              "Was complicit for twenty-six years and may be pursuing justice as penance dressed as principle"
+                                          ],
+                       "habits":  [
+                                      "Dresses completely before doing anything else each morning",
+                                      "Freelance records work mornings, case work afternoons",
+                                      "Eats dinner at the same noodle counter three blocks from her flat",
+                                      "Reads physical books every evening",
+                                      "Removes glasses and holds them before saying something important"
+                                  ],
+                       "breaking_points":  [
+                                               "The documents being used by someone she did not authorize for purposes she did not intend",
+                                               "The protected administrator being harmed as consequence of her omission",
+                                               "Hexacor compelling document surrender through legal mechanism with no public-interest defense",
+                                               "Being believed completely by someone with power â€” and having to act on it"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Diplomat":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Meridian Core (surface-level administrative district",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "The Meridian Core",
+                             "Meridian Core",
+                             "Patience",
+                             "Silver"
+                         ],
+    "district":  "Meridian Core",
+    "physical_description":  {
+                                 "heritage":  "Complex Ubiquitous Diaspora ancestry: Sub-Saharan African (29.8%), East Asian (22.3%), South Asian (20.7%), Hispanic/Latin American (20.3%), and Indigenous American (6.9%). This rare pentuple blend creates a striking, genuinely ambiguous phenotype. Her face displays the broader cheekbones and defined nose bridge characteristic of African ancestry, harmonized with the finer orbital geometry and higher cheekbones of East and South Asian populations. Mid-facial width and distinctive jaw structure reflect the Latin American and Indigenous American components. The result is a face that resists easy categorizationâ€”beautiful precisely because it belongs fully to none of the traditional categories and authentically to all of them.",
+                                 "height_cm":  178,
+                                 "weight_kg":  62,
+                                 "build":  "Tall and angular, lean through the shoulders and torso with the kind of thinness that comes from decades of sustained tension rather than exercise. Her frame suggests someone who has always occupied space efficiently, taking up only what was necessary.",
+                                 "skin_tone":  "Warm deep brown with subtle golden and olive undertonesâ€”the luminous result of five-way ancestry blending. Rich and complex in any lighting, appearing slightly different depending on angle and source. Professional and even in tone across the face and body.",
+                                 "hair_color":  "Silver with dark undertones",
+                                 "hair_style":  "Locs, pulled back tightly with functional precision; no ornament, no looseness",
+                                 "hair_length":  "Long (mid-back length)",
+                                 "eye_color":  "Deep brown (left eye contains visible retinal scanner hardware with faint amber LED when inactive)",
+                                 "complexion":  "Fine wrinkles concentrated around the eyes and mouthâ€”marks of sustained focus and rare smiling. Skin is clear, well-maintained, with warm luminosity characteristic of multi-continental mixed heritage ancestry. Slightly weathered by years in climate-controlled corporate environments and focused analytical work. No cosmetic augmentation. Reading glasses worn on a thin chain, pushed up onto her forehead habitually.",
+                                 "distinguishing_marks":  [
+                                                              "Fine horizontal scar along the inside of her right wrist, approximately 3cm, from self-installed augmentation procedure at age 46",
+                                                              "Faint burn mark on the back of her left hand, oval-shaped, roughly 2cm diameter, from a spilled coffee incident in 2218 that she never sought treatment for"
+                                                          ],
+                                 "visible_augmentations":  "Left eye contains a dormant retinal scanner implant visible as a subtle amber ring around the iris and faint circuitry tracery at the outer cornerâ€”inactive but hardware remains. Right thumb shows minimal subdermal scarring along the thumb-pad where encryption key was installed; barely noticeable unless actively examined. No tactical augmentations visible; hearing implant is entirely subcutaneous.",
+                                 "posture_movement":  "Posture is upright and economical; she moves with deliberate precision, nothing wasted. Her gait is steady and unhurried, the movement of someone who has spent her life in climate-controlled corporate spaces. She sits with her spine straight, hands folded or occupied with something productive. Her expression defaults to neutral observation; she does not make eye contact easily but does not avoid it eitherâ€”a compromise born of professional habit.",
+                                 "clothing_style":  "Corporate-adjacent, deliberately bland: charcoal grey blazers over navy or white fitted shirts, tailored trousers in muted tones, clean and structured to pass unnoticed in administrative buildings. Worn leather satchel containing physical documents and a single encrypted datapad. Practical shoes without augmentation ports. Everything is clean, well-maintained, and at least five years out of current fashionâ€”the clothing of someone who dresses to be forgotten, not seen."
+                             },
+    "image_prompt":  "Can Zaragoza, a 178cm tall lean androgynous woman with warm deep brown skin holding subtle golden and olive undertones from complex five-way ancestry blend (Sub-Saharan African, East Asian, South Asian, Hispanic/Latin American, Indigenous American). Sharp, high cheekbones, defined nose bridge, finer orbital geometry, mid-facial width reflecting her mixed heritage. Deep brown eyes with visible amber retinal scanner hardware in left eye. Silver hair with dark undertones pulled back in long locs, worn with functional precision. Fine wrinkles around eyes and mouth. Minimal distinguishing marks: small horizontal scar on right wrist, faint burn mark on left hand. Wearing charcoal grey blazer over white fitted shirt, tailored navy trousers, worn leather satchel. Reading glasses on chain pushed up on forehead. Upright posture, neutral expression, economical movement. Corporate administrative setting, cool fluorescent lighting, 2226 neo-noir GLMZ aesthetic, professional and deliberately unobtrusive appearance --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  29.8,
+                             "East Asian":  22.3,
+                             "South Asian":  20.7,
+                             "Hispanic/Latin American":  20.3,
+                             "Indigenous American":  6.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ugandan":  11.9,
+                                                                             "Ethiopian":  17.9
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  13.3
+                                                            },
+                                               "Chinese":  {
+                                                               "Shanghainese":  4.8,
+                                                               "Mandarin Northern":  4.2
+                                                           }
+                                           },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  6.8,
+                                                                  "Pashtun":  5
+                                                              },
+                                                "Indian":  {
+                                                               "Kannada":  3.7,
+                                                               "Tamil":  1.3
+                                                           },
+                                                "Nepali":  {
+                                                               "Nepali":  3.9
+                                                           }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Venezuelan":  5.2
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  1.6
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  13.5
+                                                                          }
+                                                        },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Ojibwe":  2.8,
+                                                                                    "Potawatomi":  1.4
+                                                                                },
+                                                        "Plains Nations":  {
+                                                                               "Muscogee":  1.6
+                                                                           },
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  1.1
+                                                                         }
+                                                    }
+                        },
+    "tier":  "3"
 }

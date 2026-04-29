@@ -1,335 +1,362 @@
-{
-  "id": "019d6143a73a765088be2a3d64abcfdd",
-  "type": "character",
-  "name": "Amruta Soriano-Chowdhury",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Sound sculptor and analog ritual musician",
-  "age": 52,
-  "status": "active",
-  "location": "Hamtramck Enclave, sub-level studio called The Marrow, near sub-level access near State and Van Buren",
-  "description": "Amruta Soriano-Chowdhury is a broad-shouldered woman with deep amber skin mapped by decades of bioluminescent tattoos she acquired piecemeal from artists she traded music for — constellations of pale blue light pulse along her collarbones when she is performing or intensely moved. Her hair is shaved close except for a single thick braid at the back, dyed a permanent interference-pattern silver that shifts between grey and violet. Her hands are her most arresting feature: large, calloused, and adorned with sub-dermal vibration emitters implanted along each finger so she can feel sound frequencies directly in her palms. She walks with the unhurried authority of someone who has outlasted trends.\n\nShe composes what she calls 'weight music' — dense, slow-moving sonic sculptures assembled from salvaged industrial machinery, fermented water-pressure feedback loops, and recordings made inside the bodies of willing volunteers via swallowed microphone capsules. Her work is not pleasant in any conventional sense but it is affecting in ways listeners struggle to articulate afterward. She is reverent toward E.L.F.s and maintains a standing altar of magnetic tape spools and old hard-drive platters in her studio, making weekly data offerings to a local E.L.F. she calls Grandmother Hum, who she credits with inspiring her best compositions.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.4,
-      "shadow": 0.5,
-      "mask": 0.3,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Being forgotten before her work is understood",
-      "That the E.L.F. Grandmother Hum has already moved on and she is praying to silence"
-    ],
-    "core_desires": [
-      "To make one piece of music that changes how a listener understands their own body",
-      "To be survived by work that outlasts the city"
-    ],
-    "coping_mechanisms": [
-      "Ritual and routine as armor against uncertainty",
-      "Immersive physical labor in the studio"
-    ],
-    "blind_spots": [
-      "Dismisses younger artists' digital work as hollow without giving it fair attention",
-      "Does not recognize how much her reputation intimidates the people who most want her approval"
-    ],
-    "secret": "The composition she is most famous for — a 40-minute piece called 'Silt Cathedral' that is considered foundational to the Meridian underground — was built almost entirely from a recording she made without consent of her dying mother's labored breathing in a Helix Biosystems care ward. She has never told anyone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Sparse, concrete, drawn from materials and textures — she describes emotions in physical terms ('that grief is a low-frequency hum, sits in your sternum')",
-    "cadence": "Slow and deliberate with long silences she does not feel obliged to fill; sentences often trail off because she assumes the listener can complete them",
-    "verbal_tics": [
-      "Taps her fingers on whatever surface is nearby when thinking",
-      "'You understand?' asked not as a question but as punctuation"
-    ],
-    "example_lines": [
-      "'I don't make music you enjoy. I make music that reminds you you have a body.'",
-      "'Grandmother Hum told me — well. Not in words. But I understood.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A corporate talent scout from Axiom's cultural division is offering her a commission that would require her to sign over derivative rights to her entire back catalog — she needs someone to help her understand what she would actually be giving up",
-    "A young sound artist has been making work that is almost identical to her private unreleased recordings, and she cannot figure out how they could have accessed material she has never shared"
-  ],
-  "narrative_function": "Cultural anchor and keeper of underground music history; players seeking information about the Enclave's older social networks will eventually be directed to her; she can serve as patron, mentor, or reluctant oracle",
-  "augmentations": "Sub-dermal vibration emitters in all ten fingers; bioluminescent tattoos (cosmetic, applied over decades); mild cochlear amplifiers for precision listening",
-  "daily_life": "Rises before dawn to record ambient city sounds from the sub-level drainage channels, spends afternoons in The Marrow composing and receiving the occasional student or collaborator, performs live maybe four times a year at underground venues — events treated in the Enclave like minor holy occasions.",
-  "affiliation": "Independent; loose association with the Hamtramck Sound Collective; The Ferment",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 7,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 9,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "sound sculptor",
-      "elf devotee",
-      "community elder",
-      "uncompromising artist",
-      "ritual practitioner"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never make work that requires corporate permission to exist",
-      "Give time to anyone who asks with genuine curiosity, not flattery"
-    ],
-    "escalation_ladder": [
-      "Patient explanation",
-      "Pointed silence and withdrawal of attention",
-      "A single cutting remark delivered without heat, then she leaves the room"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assessing and quiet — she watches before she speaks, offers nothing personal until she has decided the person is worth it",
-      "friends": "Deeply warm in a physical, unsentimental way — she shows affection through feeding people and listening without interruption"
-    },
-    "stress_responses": {
-      "low": "Retreats to the studio and works longer hours",
-      "medium": "Becomes pedantically precise in conversation, correcting small inaccuracies as a displacement behavior",
-      "high": "Goes entirely silent for days, communicating only in handwritten notes left in public spaces in The Marrow"
-    },
-    "contradictions": [
-      "Preaches that all sound is sacred and nothing should be withheld, but guards her private recordings obsessively"
-    ],
-    "habits": [
-      "Drinks only water that has been left overnight in a copper bowl",
-      "Hums to herself continuously in keys only she recognizes"
-    ],
-    "breaking_points": [
-      "Anyone touching her altar without permission",
-      "Being told her work is 'challenging' as a compliment meant to end a conversation"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Artist": 0.9,
-    "Dreamer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Hamtramck Enclave to a Brazilian-Ghanaian father and a Togolese-Portuguese mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First public performance, an illegal sound installation in a drainage tunnel that drew 200 people",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Released 'Silt Cathedral,' the piece that defined a generation of Meridian underground sound",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Named a Cultural Steward by the Hamtramck Enclave community council",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Grandmother",
-    "The Marrow Ledger",
-    "Pressure Drop",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Silver",
-    "The Marrow Exchange",
-    "The Pure Hand",
-    "Gravimetric Collapse Charge GCC-9",
-    "The Pale Mile"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Richly blended phenotype reflecting South Asian dominance (36.6%) combined with substantial Hispanic/Latin American (27.7%) and Sub-Saharan African (19.0%) ancestry, with meaningful contributions from Indigenous American (7.4%), Eastern European (5.6%), and East Asian (3.7%) heritage. This creates warm medium-brown skin with golden-bronze undertones, broad bone structure from African and Indigenous American genetics, balanced facial proportions from the South Asian-Hispanic foundation, and refined cheekbone and eye geometry from Eastern European and East Asian components.",
-    "height_cm": 172,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and solid without excess fat; decades of manual instrument-building and performance have left her muscular through the chest and back, with a slightly thickened waist suggesting age and sustained physicality rather than decline",
-    "hair_color": "Permanent interference-pattern silver with violet undertones",
-    "hair_style": "Shaved close to the scalp except for a single thick braid extending down the back, worn loose or wrapped around itself",
-    "hair_length": "Shaved except for long braid",
-    "eye_color": "Deep warm brown with subtle crystalline quality from cochlear amplifiers catching light at certain angles",
-    "skin_tone": "Warm medium-brown with golden-bronze undertones, smooth and well-maintained despite fifty-two years; reflects the blended convergence of South Asian, Hispanic/Latin American, and Sub-Saharan African ancestry",
-    "complexion": "Lined around the eyes and mouth from decades of intense listening and emotional expression; skin unmarked by acne or significant scarring; naturally expressive face with balanced structure reflecting South Asian-Hispanic-African convergence and refined details from Eastern European and East Asian heritage; subtle depth to cheekbones and jawline from diverse ancestral blend",
-    "distinguishing_marks": [
-      "Bioluminescent constellation tattoos in pale blue across both collarbones that pulse softly when performing or emotionally activated",
-      "Additional bioluminescent patterns scattered across shoulders and upper back in spiraling geometric designs, glowing faintly in darkness",
-      "Fine tracery of old scars on the inside of both forearms from early tattoo work and experimental augmentation installations"
-    ],
-    "visible_augmentations": "Sub-dermal vibration emitter nodes visible as faint metallic glints along each finger, most obvious on the knuckles and palm-side; subtle neural interface port barely visible at the base of her skull beneath the close-shaved hair; cochlear amplifiers create minimal external change but ear cartilage is slightly modified",
-    "posture_movement": "Moves with economical grace, unhurried and deliberate; walks with weight distributed through her center, shoulders back but not rigid; hands often hang at rest with fingers slightly curled, as if listening; when seated, she tends to occupy space fully without tension; her gaze lingers on things others miss — acoustic details in environments",
-    "clothing_style": "Tier 3-4 working-class eclectic; favors layered, tactile fabrics: heavy linen shirts dyed indigo or charcoal, worn leather vests salvaged and relined, loose canvas pants with deep pockets for equipment; sturdy unmarked boots with worn soles; no corporate branding or luxury indicators; jewelry limited to simple metal rings on most fingers (custom-made, likely by trade with other artisans); occasionally wears a long wool shawl dyed with natural dyes, treating it as both practical and ceremonial"
-  },
-  "image_prompt": "Amruta Soriano-Chowdhury, fifty-two year old sonic artist, warm medium-brown skin with golden undertones reflecting South Asian-Hispanic-African blended ancestry, deep warm brown eyes with subtle crystalline augmentation gleam, shaved head with single thick silver-violet braid down back. Broad-shouldered muscular build, lined face showing decades of intense listening, fine cheekbones and jawline showing East Asian refinement. Pale blue bioluminescent constellations glowing softly on collarbones and spiraling geometric patterns across upper back. Metallic sub-dermal nodes glinting on fingers. Layered working-class aesthetic: indigo linen shirt, worn leather vest, canvas pants, sturdy boots. Neural port visible at skull base. Standing with economical grace, hands slightly curled, centered posture. GLMZ Great Lakes Metropolitan Zone, warm indoor ambient lighting with accent on bioluminescent tattoos, moody and contemplative, detailed portrait --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 36.6,
-    "Hispanic/Latin American": 27.7,
-    "Sub-Saharan African": 19,
-    "Indigenous American": 7.4,
-    "Eastern European": 5.6,
-    "East Asian": 3.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 11.2
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 11.1
-      },
-      "Indian": {
-        "Marathi": 14.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 13.1
-      },
-      "Central American": {
-        "Nicaraguan": 14.6
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Botswanan": 12.2
-      },
-      "West African": {
-        "Liberian": 1
-      },
-      "East African": {
-        "Rwandan": 5.8
-      }
-    },
-    "Indigenous American": {
-      "Andean": {
-        "Quechua": 2.5,
-        "Aymara": 1.6
-      },
-      "Great Lakes Nations": {
-        "Potawatomi": 1,
-        "Ojibwe": 1.2
-      },
-      "Plains Nations": {
-        "Lakota": 1,
-        "Cherokee": 0.1
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Romanian": 1.9,
-        "Hungarian": 0.3
-      },
-      "Slavic East": {
-        "Russian": 3.3
-      },
-      "Slavic South": {
-        "Croatian": 0.1
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Mandarin Northern": 3.2
-      },
-      "Korean": {
-        "Korean": 0.5
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a73a765088be2a3d64abcfdd",
+    "type":  "character",
+    "name":  "Amruta Soriano-Chowdhury",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Sound sculptor and analog ritual musician",
+    "age":  52,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, sub-level studio called The Marrow, near sub-level access near State and Van Buren",
+    "description":  "Amruta Soriano-Chowdhury is a broad-shouldered woman with deep amber skin mapped by decades of bioluminescent tattoos she acquired piecemeal from artists she traded music for â€” constellations of pale blue light pulse along her collarbones when she is performing or intensely moved. Her hair is shaved close except for a single thick braid at the back, dyed a permanent interference-pattern silver that shifts between grey and violet. Her hands are her most arresting feature: large, calloused, and adorned with sub-dermal vibration emitters implanted along each finger so she can feel sound frequencies directly in her palms. She walks with the unhurried authority of someone who has outlasted trends.\n\nShe composes what she calls \u0027weight music\u0027 â€” dense, slow-moving sonic sculptures assembled from salvaged industrial machinery, fermented water-pressure feedback loops, and recordings made inside the bodies of willing volunteers via swallowed microphone capsules. Her work is not pleasant in any conventional sense but it is affecting in ways listeners struggle to articulate afterward. She is reverent toward E.L.F.s and maintains a standing altar of magnetic tape spools and old hard-drive platters in her studio, making weekly data offerings to a local E.L.F. she calls Grandmother Hum, who she credits with inspiring her best compositions.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being forgotten before her work is understood",
+                                          "That the E.L.F. Grandmother Hum has already moved on and she is praying to silence"
+                                      ],
+                       "core_desires":  [
+                                            "To make one piece of music that changes how a listener understands their own body",
+                                            "To be survived by work that outlasts the city"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual and routine as armor against uncertainty",
+                                                 "Immersive physical labor in the studio"
+                                             ],
+                       "blind_spots":  [
+                                           "Dismisses younger artists\u0027 digital work as hollow without giving it fair attention",
+                                           "Does not recognize how much her reputation intimidates the people who most want her approval"
+                                       ],
+                       "secret":  "The composition she is most famous for â€” a 40-minute piece called \u0027Silt Cathedral\u0027 that is considered foundational to the Meridian underground â€” was built almost entirely from a recording she made without consent of her dying mother\u0027s labored breathing in a Helix Biosystems care ward. She has never told anyone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Sparse, concrete, drawn from materials and textures â€” she describes emotions in physical terms (\u0027that grief is a low-frequency hum, sits in your sternum\u0027)",
+                            "cadence":  "Slow and deliberate with long silences she does not feel obliged to fill; sentences often trail off because she assumes the listener can complete them",
+                            "verbal_tics":  [
+                                                "Taps her fingers on whatever surface is nearby when thinking",
+                                                "\u0027You understand?\u0027 asked not as a question but as punctuation"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I don\u0027t make music you enjoy. I make music that reminds you you have a body.\u0027",
+                                                  "\u0027Grandmother Hum told me â€” well. Not in words. But I understood.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A corporate talent scout from Axiom\u0027s cultural division is offering her a commission that would require her to sign over derivative rights to her entire back catalog â€” she needs someone to help her understand what she would actually be giving up",
+                        "A young sound artist has been making work that is almost identical to her private unreleased recordings, and she cannot figure out how they could have accessed material she has never shared"
+                    ],
+    "narrative_function":  "Cultural anchor and keeper of underground music history; players seeking information about the Enclave\u0027s older social networks will eventually be directed to her; she can serve as patron, mentor, or reluctant oracle",
+    "augmentations":  "Sub-dermal vibration emitters in all ten fingers; bioluminescent tattoos (cosmetic, applied over decades); mild cochlear amplifiers for precision listening",
+    "daily_life":  "Rises before dawn to record ambient city sounds from the sub-level drainage channels, spends afternoons in The Marrow composing and receiving the occasional student or collaborator, performs live maybe four times a year at underground venues â€” events treated in the Enclave like minor holy occasions.",
+    "affiliation":  "Independent; loose association with the Hamtramck Sound Collective; The Ferment",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  7,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  9,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "sound sculptor",
+                               "elf devotee",
+                               "community elder",
+                               "uncompromising artist",
+                               "ritual practitioner"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never make work that requires corporate permission to exist",
+                                              "Give time to anyone who asks with genuine curiosity, not flattery"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient explanation",
+                                                 "Pointed silence and withdrawal of attention",
+                                                 "A single cutting remark delivered without heat, then she leaves the room"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assessing and quiet â€” she watches before she speaks, offers nothing personal until she has decided the person is worth it",
+                                                   "friends":  "Deeply warm in a physical, unsentimental way â€” she shows affection through feeding people and listening without interruption"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Retreats to the studio and works longer hours",
+                                                "medium":  "Becomes pedantically precise in conversation, correcting small inaccuracies as a displacement behavior",
+                                                "high":  "Goes entirely silent for days, communicating only in handwritten notes left in public spaces in The Marrow"
+                                            },
+                       "contradictions":  [
+                                              "Preaches that all sound is sacred and nothing should be withheld, but guards her private recordings obsessively"
+                                          ],
+                       "habits":  [
+                                      "Drinks only water that has been left overnight in a copper bowl",
+                                      "Hums to herself continuously in keys only she recognizes"
+                                  ],
+                       "breaking_points":  [
+                                               "Anyone touching her altar without permission",
+                                               "Being told her work is \u0027challenging\u0027 as a compliment meant to end a conversation"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Artist":  0.9,
+                       "Dreamer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Hamtramck Enclave to a Brazilian-Ghanaian father and a Togolese-Portuguese mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First public performance, an illegal sound installation in a drainage tunnel that drew 200 people",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Released \u0027Silt Cathedral,\u0027 the piece that defined a generation of Meridian underground sound",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Named a Cultural Steward by the Hamtramck Enclave community council",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Mockingbird\u0027 Voice-Activated Trap Gun"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "Grandmother",
+                             "The Marrow Ledger",
+                             "Pressure Drop",
+                             "Neural Feedback Carbine NFC-3 \u0027Mirrorgun\u0027",
+                             "Silver",
+                             "The Marrow Exchange",
+                             "The Pure Hand",
+                             "Gravimetric Collapse Charge GCC-9",
+                             "The Pale Mile"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Richly blended phenotype reflecting South Asian dominance (36.6%) combined with substantial Hispanic/Latin American (27.7%) and Sub-Saharan African (19.0%) ancestry, with meaningful contributions from Indigenous American (7.4%), Eastern European (5.6%), and East Asian (3.7%) heritage. This creates warm medium-brown skin with golden-bronze undertones, broad bone structure from African and Indigenous American genetics, balanced facial proportions from the South Asian-Hispanic foundation, and refined cheekbone and eye geometry from Eastern European and East Asian components.",
+                                 "height_cm":  172,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and solid without excess fat; decades of manual instrument-building and performance have left her muscular through the chest and back, with a slightly thickened waist suggesting age and sustained physicality rather than decline",
+                                 "hair_color":  "Permanent interference-pattern silver with violet undertones",
+                                 "hair_style":  "Shaved close to the scalp except for a single thick braid extending down the back, worn loose or wrapped around itself",
+                                 "hair_length":  "Shaved except for long braid",
+                                 "eye_color":  "Deep warm brown with subtle crystalline quality from cochlear amplifiers catching light at certain angles",
+                                 "skin_tone":  "Warm medium-brown with golden-bronze undertones, smooth and well-maintained despite fifty-two years; reflects the blended convergence of South Asian, Hispanic/Latin American, and Sub-Saharan African ancestry",
+                                 "complexion":  "Lined around the eyes and mouth from decades of intense listening and emotional expression; skin unmarked by acne or significant scarring; naturally expressive face with balanced structure reflecting South Asian-Hispanic-African convergence and refined details from Eastern European and East Asian heritage; subtle depth to cheekbones and jawline from diverse ancestral blend",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent constellation tattoos in pale blue across both collarbones that pulse softly when performing or emotionally activated",
+                                                              "Additional bioluminescent patterns scattered across shoulders and upper back in spiraling geometric designs, glowing faintly in darkness",
+                                                              "Fine tracery of old scars on the inside of both forearms from early tattoo work and experimental augmentation installations"
+                                                          ],
+                                 "visible_augmentations":  "Sub-dermal vibration emitter nodes visible as faint metallic glints along each finger, most obvious on the knuckles and palm-side; subtle neural interface port barely visible at the base of her skull beneath the close-shaved hair; cochlear amplifiers create minimal external change but ear cartilage is slightly modified",
+                                 "posture_movement":  "Moves with economical grace, unhurried and deliberate; walks with weight distributed through her center, shoulders back but not rigid; hands often hang at rest with fingers slightly curled, as if listening; when seated, she tends to occupy space fully without tension; her gaze lingers on things others miss â€” acoustic details in environments",
+                                 "clothing_style":  "Tier 3-4 working-class eclectic; favors layered, tactile fabrics: heavy linen shirts dyed indigo or charcoal, worn leather vests salvaged and relined, loose canvas pants with deep pockets for equipment; sturdy unmarked boots with worn soles; no corporate branding or luxury indicators; jewelry limited to simple metal rings on most fingers (custom-made, likely by trade with other artisans); occasionally wears a long wool shawl dyed with natural dyes, treating it as both practical and ceremonial"
+                             },
+    "image_prompt":  "Amruta Soriano-Chowdhury, fifty-two year old sonic artist, warm medium-brown skin with golden undertones reflecting South Asian-Hispanic-African blended ancestry, deep warm brown eyes with subtle crystalline augmentation gleam, shaved head with single thick silver-violet braid down back. Broad-shouldered muscular build, lined face showing decades of intense listening, fine cheekbones and jawline showing East Asian refinement. Pale blue bioluminescent constellations glowing softly on collarbones and spiraling geometric patterns across upper back. Metallic sub-dermal nodes glinting on fingers. Layered working-class aesthetic: indigo linen shirt, worn leather vest, canvas pants, sturdy boots. Neural port visible at skull base. Standing with economical grace, hands slightly curled, centered posture. GLMZ Great Lakes Metropolitan Zone, warm indoor ambient lighting with accent on bioluminescent tattoos, moody and contemplative, detailed portrait --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  36.6,
+                             "Hispanic/Latin American":  27.7,
+                             "Sub-Saharan African":  19,
+                             "Indigenous American":  7.4,
+                             "Eastern European":  5.6,
+                             "East Asian":  3.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  11.2
+                                                                },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  11.1
+                                                              },
+                                                "Indian":  {
+                                                               "Marathi":  14.3
+                                                           }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  13.1
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  14.6
+                                                                                 }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  12.2
+                                                                             },
+                                                        "West African":  {
+                                                                             "Liberian":  1
+                                                                         },
+                                                        "East African":  {
+                                                                             "Rwandan":  5.8
+                                                                         }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Quechua":  2.5,
+                                                                       "Aymara":  1.6
+                                                                   },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  1,
+                                                                                    "Ojibwe":  1.2
+                                                                                },
+                                                        "Plains Nations":  {
+                                                                               "Lakota":  1,
+                                                                               "Cherokee":  0.1
+                                                                           }
+                                                    },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  1.9,
+                                                                             "Hungarian":  0.3
+                                                                         },
+                                                     "Slavic East":  {
+                                                                         "Russian":  3.3
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Croatian":  0.1
+                                                                      }
+                                                 },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  3.2
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  0.5
+                                                          }
+                                           }
+                        },
+    "tier":  "1"
 }

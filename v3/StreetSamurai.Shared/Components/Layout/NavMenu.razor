@@ -150,7 +150,13 @@
             "utilities"       => new(null, null, "Utilities",        null,          "bi-tools"),
             "dashboard"       => new("Tools",          "/board/tools",          "Dashboard",         "bi-grid-3x3-gap",     "bi-speedometer2"),
             "oracle"          => new("Tools",          "/board/tools",          "World Oracle",      "bi-grid-3x3-gap",     "bi-book-half"),
-            "stories"         => new("Tools",          "/board/tools",          "Stories",           "bi-grid-3x3-gap",     "bi-journal-richtext"),
+            "books"           => new("Tools",          "/board/tools",          "Bookshelf",         "bi-grid-3x3-gap",     "bi-book"),
+            _ when seg.StartsWith("books/") && seg.EndsWith("/chapters")
+                              => new("Bookshelf",      "/books",                "Chapters",          "bi-book",             "bi-list-ol",
+                                     "Tools",          "/board/tools",          "bi-grid-3x3-gap"),
+            _ when seg.StartsWith("books/")
+                              => new("Bookshelf",      "/books",                "Book",              "bi-book",             "bi-book-half",
+                                     "Tools",          "/board/tools",          "bi-grid-3x3-gap"),
             "facts"           => new("Tools",          "/board/tools",          "Fact Discovery",    "bi-grid-3x3-gap",     "bi-lightbulb"),
             "char-pipeline"   => new("Tools",          "/board/tools",          "Character Pipeline","bi-grid-3x3-gap",     "bi-person-badge"),
             "world-health"    => new("Tools",          "/board/tools",          "World Health",      "bi-grid-3x3-gap",     "bi-heart-pulse"),
@@ -160,7 +166,7 @@
             "map"             => new("Visualizations", "/board/visualizations", "Map",               "bi-easel2",           "bi-map-fill"),
             "heritage"        => new("Visualizations", "/board/visualizations", "Heritage",          "bi-easel2",           "bi-tree-fill"),
             _ when seg.StartsWith("stories/write/")
-                              => new("Stories",        "/stories",              "Write",             "bi-journal-richtext", "bi-pencil-fill",
+                              => new("Bookshelf",      "/books",                "Edit Chapter",      "bi-book",             "bi-pencil-fill",
                                      "Tools",          "/board/tools",          "bi-grid-3x3-gap"),
             "contracts"       => new(null,            null,                   "Contracts",       null,                   "bi-file-earmark-text"),
             "characters"      => new("Characters",    "/board/characters",    "People",          "bi-people-fill",       "bi-person"),

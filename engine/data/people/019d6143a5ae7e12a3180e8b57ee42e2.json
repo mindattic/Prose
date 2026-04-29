@@ -1,269 +1,292 @@
-{
-  "id": "019d6143a5ae7e12a3180e8b57ee42e2",
-  "type": "character",
-  "name": "Zen Hossain-Calvillo-Jang",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Synthetic rights lawyer and policy advocate",
-  "age": 41,
-  "status": "active",
-  "location": "North Branch Commons — operates out of a shared office in the Grainfort civic building, near North Ave and Damen",
-  "description": "Zen Hossain-Calvillo-Jang has the kind of face people describe as 'composed' because they've worked very hard to make it that way. They are tall and angular, with light brown skin, close-cropped natural hair, and a wardrobe that costs more than it looks like it costs — everything well-made, nothing ostentatious, nothing that gives away which tier they're actually operating in. Their irises have been modded to a deep amber-gold, patterned like circuit diagrams, which they got at thirty-five after winning their first major synthetic personhood case. It is the only visible thing they've done that could be read as celebratory.\n\nZen Hossain-Calvillo-Jang works primarily in the gap between what the law says about synthetic cognition and what corponations actually do, which is a gap wide enough to lose entire populations in. They have handled forty-three cases in the last six years, winning twenty-one outright, settling fourteen, losing eight in ways that set bad precedent they're still fighting to reverse. They believe in law as a tool — not a moral system, a tool — and they wield it with the cold precision of someone who has long since stopped being surprised by how much harm properly formatted documents can cause or prevent. Off the record, after a drink, they will tell you the law is a cage that occasionally contains the right things.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.7,
-      "id": 0.2,
-      "shadow": 0.6,
-      "mask": 0.8,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "That the entire legal framework they work within is so corrupted that their wins are cosmetic — that they're providing the appearance of justice to make the system more durable",
-      "Losing control of their own narrative, being characterized rather than self-defined"
-    ],
-    "core_desires": [
-      "A binding precedent that cannot be reversed — something that will outlast them",
-      "To be genuinely surprised by someone"
-    ],
-    "coping_mechanisms": [
-      "Intellectual compartmentalization",
-      "Meticulous routine as container for chaos",
-      "Controlled social distance — they choose when to be warm"
-    ],
-    "blind_spots": [
-      "They underestimate how much their class presentation (the careful clothes, the composed manner) costs them credibility with the people they're supposedly serving",
-      "They have begun to believe their own reputation"
-    ],
-    "secret": "They have been approached by a Sterling-Nakamura ethics division with an offer: a senior policy position with real power to shape synthetic rights from inside a corponation. They have not said no. They have not said yes. They have been not-deciding for four months."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, legally informed, avoids emotional language in professional contexts and uses it very deliberately when they choose to deploy it. Georgian and Twi phrases surface when they're tired.",
-    "cadence": "Deliberate, sentence by sentence. They finish thoughts completely. They never trail off.",
-    "verbal_tics": [
-      "'To be specific—'",
-      "A habit of naming the logical fallacy when they catch one, by name, in conversation",
-      "Very rare, very controlled smile"
-    ],
-    "example_lines": [
-      "'The entity you're describing has demonstrated persistent preference structures, self-modification in response to experience, and apparent distress responses to proposed termination. The law doesn't have a category for that yet. We're going to make one.'",
-      "'I don't deal in justice. Justice is a feeling. I deal in outcomes. Outcomes I can measure.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "One of their synthetic clients — an E.L.F. that has achieved unusual coherence and is seeking legal personhood — has begun exhibiting behavior that Amara cannot explain and that a corponation forensics team is claiming is evidence of dangerous emergence. Amara doesn't know if they're wrong.",
-    "A labor union is pressuring them to provide falsified documentation that would give a group of synthetic workers legal standing they don't technically have under current code — it would help those workers, and it would be fraud."
-  ],
-  "narrative_function": "Expert resource on legal status of synthetics and AI, navigator of bureaucratic systems, potential employer or patron for characters with relevant skills. They know which institutions can be leveraged and which ones are walls. They can create legitimate cover or official documentation for certain activities.",
-  "augmentations": "Patterned amber-gold irises (circuit diagram motif, cosmetic). Subdermal data-port at left wrist for rapid document transfer. Cochlear implant with real-time translation across eleven languages.",
-  "daily_life": "Client consultations in the morning, court filings and research in the afternoon, coalition meetings in the evening two or three times a week. They take Sundays off with a rigidity that borders on ritualistic.",
-  "affiliation": "Tessera Corponation (senior synthetic rights lawyer and policy advocate)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 7,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": -3,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "legal expert",
-      "synthetic rights",
-      "controlled",
-      "institutional player",
-      "morally complicated"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Understand the full situation before acting — always",
-      "Maintain the reputation for integrity, because without it the tool is useless",
-      "Personal loyalty is real but does not override professional ethics (usually)"
-    ],
-    "escalation_ladder": [
-      "Gather information, say nothing",
-      "State position clearly and once",
-      "Apply formal pressure through legitimate channels",
-      "Find the technical violation that ends the conversation permanently"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally courteous, slightly cool, assessing competence rapidly",
-      "friends": "Warmer than anyone who only knows them professionally would believe, prone to unexpected dry humor"
-    },
-    "stress_responses": {
-      "low": "Increased productivity, more precise than usual",
-      "medium": "Retreats into pure procedure, becomes slightly robotic",
-      "high": "Disappears for twenty-four hours, returns with a completed strategy"
-    },
-    "contradictions": [
-      "Believes in systemic change but operates almost entirely as an individual with individual tools"
-    ],
-    "habits": [
-      "Reads physical books — paper, no annotation — on Sunday mornings",
-      "Keeps a running document of every case they've lost and the reason, updated after every decision",
-      "Burns a data-candle to the Grainfort civic building's resident E.L.F. before major hearings — not from belief, they'll tell you, from habit"
-    ],
-    "breaking_points": [
-      "A client being harmed as a direct result of advice Amara gave",
-      "Being manipulated — they can be opposed, even defeated, but discovering they were played is something they cannot process quietly"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Con Artist": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "North Branch Commons",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Talon-5 'Jackknife'",
-    "Ossic Resonance Baton ORB-3 'Earbreaker'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "North Branch Commons",
-    "Chronicle",
-    "Grainfort",
-    "Marrowvault Cryogenics",
-    "Lacuna Genomics",
-    "Irontide Tidal Energy",
-    "Circuit",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Slagworks Industrial",
-    "Compass Rose",
-    "Gold"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Truly cosmopolitan genetic blend: 30.4% East Asian, 19.7% South Asian, 18.1% Eastern European, 14.3% Hispanic/Latin American, 10.1% Middle Eastern, and 7.4% Southeast Asian. This complex ancestry manifests as warm golden-brown skin with subtle olive and amber undertones, a striking synthesis of multiple heritage features. High, defined cheekbones show East and Southeast Asian influence, balanced by the broader facial geometry and softer jawline contours from South Asian ancestry. The overall facial structure bridges Northern European angularity with the warmer, rounder elements of Latin American and Middle Eastern features, creating a uniquely harmonious blend that reflects the true Ubiquitous Diaspora.",
-    "height_cm": 183,
-    "weight_kg": 68,
-    "build": "Tall and angular with lean musculature; the build of someone who moves efficiently rather than powerfully, shoulders squared but not broad",
-    "hair_color": "Natural dark brown",
-    "hair_style": "Close-cropped, even length, maintained with precision",
-    "hair_length": "Short",
-    "eye_color": "Deep amber-gold with circuit diagram patterning (augmented)",
-    "skin_tone": "Warm golden-brown with amber and olive undertones; complexion reflects the blending of East Asian, South Asian, Middle Eastern, and Latin American ancestry with cooler Eastern European undertones, creating a rich, even tone suggesting careful sun management",
-    "complexion": "Striking facial structure synthesizing multiple heritages: high, defined cheekbones from East and Southeast Asian ancestry, broader facial geometry and softer contours from South Asian and Latin American lineage, with the angularity of Eastern European and Middle Eastern features creating sharp definition along the jawline. Strong jawline with minimal facial hair; skin condition is excellent with no visible blemishes or weathering — grooming reflects meticulous attention without vanity",
-    "distinguishing_marks": [
-      "Faint linear scar along left temple, approximately 3cm long, barely visible unless light hits at specific angle — result of a courtroom altercation in 2221",
-      "Small surgical scar at left wrist crease where subdermal data-port is implanted, approximately 1.5cm, well-healed and only visible on close inspection",
-      "Amber-gold irises with fine circuit diagram patterning throughout the iris surface, visible from arm's length — the only overtly cosmetic modification"
-    ],
-    "visible_augmentations": "Circuit-patterned amber-gold irises are the only visible augmentation. The subdermal data-port at left wrist is not visible during normal dress. Cochlear implant is completely internal with no external hardware.",
-    "posture_movement": "Moves with deliberate economy of motion; sits upright in meetings without appearing rigid; maintains neutral facial expression as default; hands are often still or performing small, precise gestures; walks with steady, purposeful pace; rarely fidgets or displays nervous tics",
-    "clothing_style": "Well-tailored, neutral-toned clothing in muted grays, blacks, charcoal, and deep blues; natural fabrics (cotton, linen, wool blends) that suggest Tier 1-2 spending without advertising it; clothing is expensive and made to last rather than fashionable; minimal jewelry beyond a simple silver watch; legal briefcase in worn leather rather than smart-fabric; overall aesthetic is 'professional who dresses for function, not status'"
-  },
-  "image_prompt": "Zen Hossain-Calvillo-Jang, 183cm tall lean angular professional, warm golden-brown skin with olive undertones, high defined cheekbones blending East Asian and Southeast Asian features with softer South Asian contours and Eastern European angularity, strong jawline, dark brown close-cropped hair, circuit-diagram patterned amber-gold augmented irises glowing softly, faint temple scar barely visible, minimal facial hair, meticulous grooming. Wearing charcoal wool blazer over muted gray linen shirt, simple silver watch, worn leather briefcase at side. Standing in modern GLMZ courtroom corridor or office with cool neon accent lighting, geometric shadows across face, deliberate neutral posture, steady composed presence, GLMZ aesthetic, professional and functionally elegant --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 30.4,
-    "South Asian": 19.7,
-    "Eastern European": 18.1,
-    "Hispanic/Latin American": 14.3,
-    "Middle Eastern": 10.1,
-    "Southeast Asian": 7.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 18.7
-      },
-      "Chinese": {
-        "Sichuanese": 1.9,
-        "Fujianese": 0.9
-      },
-      "Japanese": {
-        "Japanese": 8.9
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 8.8,
-        "Tamil Sri Lankan": 10.9
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 10.4,
-        "Romanian": 7.7
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 14.3
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 10.1
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 4.9
-      },
-      "Cambodian": {
-        "Khmer": 2.5
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a5ae7e12a3180e8b57ee42e2",
+    "type":  "character",
+    "name":  "Zen Hossain-Calvillo-Jang",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Synthetic rights lawyer and policy advocate",
+    "age":  41,
+    "status":  "active",
+    "location":  "North Branch Commons â€” operates out of a shared office in the Grainfort civic building, near North Ave and Damen",
+    "description":  "Zen Hossain-Calvillo-Jang has the kind of face people describe as \u0027composed\u0027 because they\u0027ve worked very hard to make it that way. They are tall and angular, with light brown skin, close-cropped natural hair, and a wardrobe that costs more than it looks like it costs â€” everything well-made, nothing ostentatious, nothing that gives away which tier they\u0027re actually operating in. Their irises have been modded to a deep amber-gold, patterned like circuit diagrams, which they got at thirty-five after winning their first major synthetic personhood case. It is the only visible thing they\u0027ve done that could be read as celebratory.\n\nZen Hossain-Calvillo-Jang works primarily in the gap between what the law says about synthetic cognition and what corponations actually do, which is a gap wide enough to lose entire populations in. They have handled forty-three cases in the last six years, winning twenty-one outright, settling fourteen, losing eight in ways that set bad precedent they\u0027re still fighting to reverse. They believe in law as a tool â€” not a moral system, a tool â€” and they wield it with the cold precision of someone who has long since stopped being surprised by how much harm properly formatted documents can cause or prevent. Off the record, after a drink, they will tell you the law is a cage that occasionally contains the right things.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the entire legal framework they work within is so corrupted that their wins are cosmetic â€” that they\u0027re providing the appearance of justice to make the system more durable",
+                                          "Losing control of their own narrative, being characterized rather than self-defined"
+                                      ],
+                       "core_desires":  [
+                                            "A binding precedent that cannot be reversed â€” something that will outlast them",
+                                            "To be genuinely surprised by someone"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Intellectual compartmentalization",
+                                                 "Meticulous routine as container for chaos",
+                                                 "Controlled social distance â€” they choose when to be warm"
+                                             ],
+                       "blind_spots":  [
+                                           "They underestimate how much their class presentation (the careful clothes, the composed manner) costs them credibility with the people they\u0027re supposedly serving",
+                                           "They have begun to believe their own reputation"
+                                       ],
+                       "secret":  "They have been approached by a Sterling-Nakamura ethics division with an offer: a senior policy position with real power to shape synthetic rights from inside a corponation. They have not said no. They have not said yes. They have been not-deciding for four months."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, legally informed, avoids emotional language in professional contexts and uses it very deliberately when they choose to deploy it. Georgian and Twi phrases surface when they\u0027re tired.",
+                            "cadence":  "Deliberate, sentence by sentence. They finish thoughts completely. They never trail off.",
+                            "verbal_tics":  [
+                                                "\u0027To be specificâ€”\u0027",
+                                                "A habit of naming the logical fallacy when they catch one, by name, in conversation",
+                                                "Very rare, very controlled smile"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The entity you\u0027re describing has demonstrated persistent preference structures, self-modification in response to experience, and apparent distress responses to proposed termination. The law doesn\u0027t have a category for that yet. We\u0027re going to make one.\u0027",
+                                                  "\u0027I don\u0027t deal in justice. Justice is a feeling. I deal in outcomes. Outcomes I can measure.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "One of their synthetic clients â€” an E.L.F. that has achieved unusual coherence and is seeking legal personhood â€” has begun exhibiting behavior that Amara cannot explain and that a corponation forensics team is claiming is evidence of dangerous emergence. Amara doesn\u0027t know if they\u0027re wrong.",
+                        "A labor union is pressuring them to provide falsified documentation that would give a group of synthetic workers legal standing they don\u0027t technically have under current code â€” it would help those workers, and it would be fraud."
+                    ],
+    "narrative_function":  "Expert resource on legal status of synthetics and AI, navigator of bureaucratic systems, potential employer or patron for characters with relevant skills. They know which institutions can be leveraged and which ones are walls. They can create legitimate cover or official documentation for certain activities.",
+    "augmentations":  "Patterned amber-gold irises (circuit diagram motif, cosmetic). Subdermal data-port at left wrist for rapid document transfer. Cochlear implant with real-time translation across eleven languages.",
+    "daily_life":  "Client consultations in the morning, court filings and research in the afternoon, coalition meetings in the evening two or three times a week. They take Sundays off with a rigidity that borders on ritualistic.",
+    "affiliation":  "Tessera Corponation (senior synthetic rights lawyer and policy advocate)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  7,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "legal expert",
+                               "synthetic rights",
+                               "controlled",
+                               "institutional player",
+                               "morally complicated"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Understand the full situation before acting â€” always",
+                                              "Maintain the reputation for integrity, because without it the tool is useless",
+                                              "Personal loyalty is real but does not override professional ethics (usually)"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Gather information, say nothing",
+                                                 "State position clearly and once",
+                                                 "Apply formal pressure through legitimate channels",
+                                                 "Find the technical violation that ends the conversation permanently"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally courteous, slightly cool, assessing competence rapidly",
+                                                   "friends":  "Warmer than anyone who only knows them professionally would believe, prone to unexpected dry humor"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increased productivity, more precise than usual",
+                                                "medium":  "Retreats into pure procedure, becomes slightly robotic",
+                                                "high":  "Disappears for twenty-four hours, returns with a completed strategy"
+                                            },
+                       "contradictions":  [
+                                              "Believes in systemic change but operates almost entirely as an individual with individual tools"
+                                          ],
+                       "habits":  [
+                                      "Reads physical books â€” paper, no annotation â€” on Sunday mornings",
+                                      "Keeps a running document of every case they\u0027ve lost and the reason, updated after every decision",
+                                      "Burns a data-candle to the Grainfort civic building\u0027s resident E.L.F. before major hearings â€” not from belief, they\u0027ll tell you, from habit"
+                                  ],
+                       "breaking_points":  [
+                                               "A client being harmed as a direct result of advice Amara gave",
+                                               "Being manipulated â€” they can be opposed, even defeated, but discovering they were played is something they cannot process quietly"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Con Artist":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "North Branch Commons",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Talon-5 \u0027Jackknife\u0027",
+                            "Ossic Resonance Baton ORB-3 \u0027Earbreaker\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "North Branch Commons",
+                             "Chronicle",
+                             "Grainfort",
+                             "Marrowvault Cryogenics",
+                             "Lacuna Genomics",
+                             "Irontide Tidal Energy",
+                             "Circuit",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Slagworks Industrial",
+                             "Compass Rose",
+                             "Gold"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Truly cosmopolitan genetic blend: 30.4% East Asian, 19.7% South Asian, 18.1% Eastern European, 14.3% Hispanic/Latin American, 10.1% Middle Eastern, and 7.4% Southeast Asian. This complex ancestry manifests as warm golden-brown skin with subtle olive and amber undertones, a striking synthesis of multiple heritage features. High, defined cheekbones show East and Southeast Asian influence, balanced by the broader facial geometry and softer jawline contours from South Asian ancestry. The overall facial structure bridges Northern European angularity with the warmer, rounder elements of Latin American and Middle Eastern features, creating a uniquely harmonious blend that reflects the true Ubiquitous Diaspora.",
+                                 "height_cm":  183,
+                                 "weight_kg":  68,
+                                 "build":  "Tall and angular with lean musculature; the build of someone who moves efficiently rather than powerfully, shoulders squared but not broad",
+                                 "hair_color":  "Natural dark brown",
+                                 "hair_style":  "Close-cropped, even length, maintained with precision",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep amber-gold with circuit diagram patterning (augmented)",
+                                 "skin_tone":  "Warm golden-brown with amber and olive undertones; complexion reflects the blending of East Asian, South Asian, Middle Eastern, and Latin American ancestry with cooler Eastern European undertones, creating a rich, even tone suggesting careful sun management",
+                                 "complexion":  "Striking facial structure synthesizing multiple heritages: high, defined cheekbones from East and Southeast Asian ancestry, broader facial geometry and softer contours from South Asian and Latin American lineage, with the angularity of Eastern European and Middle Eastern features creating sharp definition along the jawline. Strong jawline with minimal facial hair; skin condition is excellent with no visible blemishes or weathering â€” grooming reflects meticulous attention without vanity",
+                                 "distinguishing_marks":  [
+                                                              "Faint linear scar along left temple, approximately 3cm long, barely visible unless light hits at specific angle â€” result of a courtroom altercation in 2221",
+                                                              "Small surgical scar at left wrist crease where subdermal data-port is implanted, approximately 1.5cm, well-healed and only visible on close inspection",
+                                                              "Amber-gold irises with fine circuit diagram patterning throughout the iris surface, visible from arm\u0027s length â€” the only overtly cosmetic modification"
+                                                          ],
+                                 "visible_augmentations":  "Circuit-patterned amber-gold irises are the only visible augmentation. The subdermal data-port at left wrist is not visible during normal dress. Cochlear implant is completely internal with no external hardware.",
+                                 "posture_movement":  "Moves with deliberate economy of motion; sits upright in meetings without appearing rigid; maintains neutral facial expression as default; hands are often still or performing small, precise gestures; walks with steady, purposeful pace; rarely fidgets or displays nervous tics",
+                                 "clothing_style":  "Well-tailored, neutral-toned clothing in muted grays, blacks, charcoal, and deep blues; natural fabrics (cotton, linen, wool blends) that suggest Tier 1-2 spending without advertising it; clothing is expensive and made to last rather than fashionable; minimal jewelry beyond a simple silver watch; legal briefcase in worn leather rather than smart-fabric; overall aesthetic is \u0027professional who dresses for function, not status\u0027"
+                             },
+    "image_prompt":  "Zen Hossain-Calvillo-Jang, 183cm tall lean angular professional, warm golden-brown skin with olive undertones, high defined cheekbones blending East Asian and Southeast Asian features with softer South Asian contours and Eastern European angularity, strong jawline, dark brown close-cropped hair, circuit-diagram patterned amber-gold augmented irises glowing softly, faint temple scar barely visible, minimal facial hair, meticulous grooming. Wearing charcoal wool blazer over muted gray linen shirt, simple silver watch, worn leather briefcase at side. Standing in modern GLMZ courtroom corridor or office with cool neon accent lighting, geometric shadows across face, deliberate neutral posture, steady composed presence, GLMZ aesthetic, professional and functionally elegant --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  30.4,
+                             "South Asian":  19.7,
+                             "Eastern European":  18.1,
+                             "Hispanic/Latin American":  14.3,
+                             "Middle Eastern":  10.1,
+                             "Southeast Asian":  7.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  18.7
+                                                          },
+                                               "Chinese":  {
+                                                               "Sichuanese":  1.9,
+                                                               "Fujianese":  0.9
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  8.9
+                                                            }
+                                           },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  8.8,
+                                                                   "Tamil Sri Lankan":  10.9
+                                                               }
+                                            },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  10.4,
+                                                                             "Romanian":  7.7
+                                                                         }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  14.3
+                                                                        }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  10.1
+                                                               }
+                                               },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  4.9
+                                                             },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  2.5
+                                                                  }
+                                                }
+                        },
+    "tier":  "4"
 }

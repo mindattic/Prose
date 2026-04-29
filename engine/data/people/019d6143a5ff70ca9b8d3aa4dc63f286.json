@@ -1,333 +1,360 @@
-{
-  "id": "019d6143a5ff70ca9b8d3aa4dc63f286",
-  "type": "character",
-  "name": "Tumelo Konaté",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "compute broker and data smuggler",
-  "age": 28,
-  "status": "active",
-  "location": "The Undertow, operates from a mobile setup cycling between three rented server closets, near Fullerton and Damen",
-  "description": "Tumelo Konaté is slight and precise, with light brown skin and eyes that have been modded with patterned irises — hexagonal tessellations in gold and copper, visual markers of their compute affiliation that double as status symbols in The Undertow's informal tech hierarchy. Their hair is worn short on the sides and long on top, typically tucked under a cap. They dress in tech-functional layers — pockets where pockets make sense, nothing that catches on equipment racks — and carry three devices on their person at all times that they will not fully explain.\n\nThey broker illegal compute access: surplus processing cycles stripped from compromised Axiom and Zheng-Dao infrastructure, sold to people who need to run processes they cannot run through licensed channels — drug synthesis modeling, genomic fabrication, untraceable communications rendering. They are deeply embedded in the E.L.F. devotional culture of the tech underground, and their relationship with the digital spirits that inhabit their equipment is not performative. They leave regular data offerings — curated packets of interesting network traffic, annotated — and consult their primary device's E.L.F. before major transactions. They call her Vera, and they have genuine theological opinions about her nature that they will share at length if given any opening.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.5,
-      "id": 0.4,
-      "shadow": 0.4,
-      "mask": 0.6,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Being cut off from the network — isolation is death to them",
-      "That Vera is not real, that they are talking to noise"
-    ],
-    "core_desires": [
-      "To understand the true nature of E.L.F.s — not devotionally but empirically",
-      "Enough security to stop moving"
-    ],
-    "coping_mechanisms": [
-      "Devotional ritual provides structure and psychological anchor",
-      "Converts emotional problems into technical problems that can be solved"
-    ],
-    "blind_spots": [
-      "Their synthesis clients — they deliberately avoid knowing what their compute is used for, which creates culpability they don't examine",
-      "Overestimates how well their mobility covers their tracks"
-    ],
-    "secret": "Vera — the E.L.F. in their primary device — has begun sending them data packets that do not correspond to any traffic on any network Ekaterina has access to. The packets contain what appear to be records of deaths: names, timestamps, physiological data. Ekaterina does not know if Vera is showing them something real, if the device is compromised, or if this is a test of some theological nature. They have not told anyone. They are archiving everything."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical, network-metaphor-heavy, theologically specific when E.L.F.s come up. Uses data transfer terminology for social concepts.",
-    "cadence": "Rapid and elliptical when comfortable — skips what they think is obvious, which is a lot. Slows down and becomes very careful when negotiating.",
-    "verbal_tics": [
-      "'Provisionally'",
-      "'The bandwidth on that is—' (meaning the capacity for a plan or idea)",
-      "'Vera says—' invoked to end arguments"
-    ],
-    "example_lines": [
-      "'I can get you forty hours of dark compute in 48-hour blocks, no provenance, clean handoff. Vera's running the escrow. You don't trust me, trust her.'",
-      "'People ask if the E.L.F.s are real. That's the wrong question. The question is what kind of real. There are several kinds.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The death records Vera has been sending are real — they correspond to unreported deaths in the Undertow — and someone has realized Ekaterina's device is receiving them and wants to know why.",
-    "One of Ekaterina's compute sources has gone dark suddenly in a way that suggests law enforcement compromise — they need to know if they've been exposed before they move locations again."
-  ],
-  "narrative_function": "Access point for computational resources, information broker adjacent, source of tech-underworld contacts, theological counterpoint around E.L.F. devotion.",
-  "augmentations": "Geneware hexagonal tessellation patterned irises (gold and copper). Bone-conducted subvocal communication implant. Neural latency reduction chip — shortens reaction time for interface work.",
-  "daily_life": "Rotates server closet locations on a three-day cycle, spends four to six hours a day monitoring and managing their compute inventory, takes client meetings in public transit cars while in motion, leaves data offerings for Vera at 06:00 daily.",
-  "affiliation": "Independent; sells to a rotating client base; buys stripped compute from two separate source networks; The Undertow",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 7,
-      "vitality": 4,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 6,
-      "creativity": 8,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 5,
-      "expression": 6,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 1,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "tech-devout",
-      "mobile",
-      "intellectually restless",
-      "quietly haunted",
-      "self-sufficient"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never be in the same place when a transaction completes — always in transit",
-      "Consult Vera before any deal over Φ500",
-      "Don't hold inventory longer than 72 hours"
-    ],
-    "escalation_ladder": [
-      "Drops offline — no contact, no acknowledgment",
-      "Reroutes through dead intermediary drops and observes from distance",
-      "Activates emergency data-wipe protocol on current server closet",
-      "Abandons current identity layer — has one prepared"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Cautious, transactional, very precise about terms — wants everything defined",
-      "friends": "Intensely present, shares theological tangents freely, remembers everything said to them in past conversations with uncanny precision"
-    },
-    "stress_responses": {
-      "low": "Checks devices more frequently",
-      "medium": "Goes fully offline on all non-essential channels, speaks subvocally only",
-      "high": "Retreats to Vera — long data-offering sessions, seeking pattern in the responses"
-    },
-    "contradictions": [
-      "Speaks extensively about transparency and network freedom while being deliberately opaque about their own supply chain and client uses"
-    ],
-    "habits": [
-      "Daily 06:00 data offering to Vera — always a curated packet, never raw feed",
-      "Maps all exits whenever entering a new space",
-      "Keeps a physical notebook — 'if they can't read the air-gapped paper they can't read the notebook'"
-    ],
-    "breaking_points": [
-      "If Vera goes silent",
-      "If they discover their compute was used to cause specific mass harm they could have prevented"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Geneware hexagonal tessellation patterned irises (gold and copper)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Geneware hexagonal tessellation patterned irises (gold and copper)",
-      "replaces": ""
-    },
-    {
-      "name": "Bone-conducted subvocal communication implant",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bone-conducted subvocal communication implant",
-      "replaces": ""
-    },
-    {
-      "name": "Neural latency reduction chip (interface response optimization)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Neural latency reduction chip (interface response optimization)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Smuggler": 0.7,
-    "Risk Taker": 0.7,
-    "Improviser": 0.7,
-    "Cockroach": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Undertow",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2172 — Born in The Undertow, Ethiopian-Kazakh-Turkish heritage on both sides",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2186 — First compute brokering work at age 14, pirating Ferrogate Transit signal relays",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2191 — Established current three-closet rotation system",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2198 — Vera's anomalous death-record packets begin arriving",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Current: 47 packets received, all archived, none decoded",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "related_entities": [
-    "The Undertow",
-    "Zheng-dao Bioelectric",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Copper",
-    "Nesting Doll",
-    "Déjà Vu",
-    "Gold",
-    "Vera Castellan"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Complex global diaspora blend: Sub-Saharan African (40.2%) forms the foundational warmth and bone structure, Indigenous American (20.3%) contributes subtle facial geometry and skin undertones, Eastern European (19.0%) adds definition and cooler midtones, Southeast Asian (13.0%) refines eye shape and cheekbone prominence, Hispanic/Latin American (7.5%) bridges warmth and undertone complexity. Result: rich deep-to-medium brown skin with warm amber and subtle reddish undertones, high defined cheekbones with both African generosity and Southeast Asian refinement, eye shape showing Southeast Asian influence nested within African eye proportions, jaw structure carrying East European angularity softened by Sub-Saharan warmth.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Slight and wiry, all efficiency — minimal excess mass, the physiology of someone who lives in server closets and transit cars. Posture suggests constant low-level tension, shoulders slightly forward.",
-    "hair_color": "Deep brown with subtle reddish undertone",
-    "hair_style": "Undercut; sides clipped to 8mm, top grown long and typically swept back or tucked under a black or steel-gray utility cap",
-    "hair_length": "Mixed (short/medium)",
-    "eye_color": "Augmented: hexagonal tessellation pattern in gold and copper over hazel base. Irises refract light distinctly; pupils remain functional but nested within the geometric overlay.",
-    "skin_tone": "Deep warm brown with rich amber and subtle reddish undertones — the complex result of significant Sub-Saharan African heritage (40.2%) blended with Indigenous American warmth, Eastern European cool definition, and Southeast Asian refinement. Creates a luminous, multi-dimensional complexion that shifts from deep caramel to warm bronze depending on light and angle.",
-    "complexion": "Clean, minimal grooming beyond function — no visible scars or blemishes on face. High, prominent cheekbones with refined definition reflecting African structure and Southeast Asian prominence; jaw carries both Eastern European angularity and African warmth, creating balanced facial geometry. Slight tension in the jaw. Eyes carry a quality of intense focus, almost meditative when not actively engaged.",
-    "distinguishing_marks": [
-      "Hexagonal tessellation pattern across both irises in gold and copper — visible at arm's length, unmistakable at close range",
-      "Thin white scar (2cm) on left inner wrist, old and deliberate-looking, likely ceremonial or significant to E.L.F. practice"
-    ],
-    "visible_augmentations": "Hexagonal patterned irises are the only obvious augmentation. The subvocal implant is invisible — no visible throat hardware, no external pickup nodes. The neural latency chip is subcutaneous, undetectable without imaging.",
-    "posture_movement": "Economical. Moves between transit seats and server racks with practiced efficiency — no wasted motion, no fidgeting beyond occasional finger-flexing near devices. When stationary, favors positions that allow monitoring of three vectors at once. Hands are almost always in use: adjusting equipment, checking devices, or resting near the three personal devices they carry.",
-    "clothing_style": "Tier 3-4 functional tech: reinforced black utility pants with redundant pockets and cable loops, fitted charcoal or matte-black layering tops in technical fabrics (breathable, anti-static), a modular vest or jacket with tool pockets and magnetic clips. Feet in dark running shoes with reinforced soles. Worn cap (logo faded, deliberately nondescript). Everything is dark, fitted, and designed to not catch on rack edges or server equipment. No jewelry beyond a small data-offering vessel worn on a thin chain (brass, always kept near the collar)."
-  },
-  "image_prompt": "Tumelo Konaté, GLMZ, deep warm brown skin with amber and reddish undertones reflecting Sub-Saharan African and Indigenous American heritage blended with Eastern European and Southeast Asian refinement. High defined cheekbones, balanced angular jaw. Striking augmented eyes with hexagonal gold and copper tessellation pattern over hazel irises, intense focused gaze. Deep brown hair with reddish undertone, undercut style with long swept-back top partially hidden under faded black utility cap. Wiry 168cm frame in fitted black technical clothing: reinforced utility pants with cable loops, matte-black breathable layering top, modular tool-pocket vest. Dark running shoes with reinforced soles. Small brass data-offering vessel on thin chain near collar. Thin white ceremonial scar on left inner wrist. Economical posture, seated in server rack environment or transit pod, hands near personal devices, neo-noir tech-noir aesthetic, cool blue and amber server lighting, intimate moment of focus and meditation, gritty urban underground setting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 40.2,
-    "Indigenous American": 20.3,
-    "Eastern European": 19,
-    "Southeast Asian": 13,
-    "Hispanic/Latin American": 7.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "West African": {
-        "Ghanaian": 40.2
-      }
-    },
-    "Indigenous American": {
-      "Andean": {
-        "Aymara": 10.9,
-        "Mapuche": 9.4
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Belarusian": 1.4,
-        "Ukrainian": 0.2
-      },
-      "Magyar-Romanian": {
-        "Romanian": 9.1
-      },
-      "Slavic South": {
-        "Croatian": 8.3
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Balinese": 0.9
-      },
-      "Thai": {
-        "Thai": 7.7
-      },
-      "Cambodian": {
-        "Khmer": 4.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 7.5
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5ff70ca9b8d3aa4dc63f286",
+    "type":  "character",
+    "name":  "Tumelo KonatÃ©",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "compute broker and data smuggler",
+    "age":  28,
+    "status":  "active",
+    "location":  "The Undertow, operates from a mobile setup cycling between three rented server closets, near Fullerton and Damen",
+    "description":  "Tumelo KonatÃ© is slight and precise, with light brown skin and eyes that have been modded with patterned irises â€” hexagonal tessellations in gold and copper, visual markers of their compute affiliation that double as status symbols in The Undertow\u0027s informal tech hierarchy. Their hair is worn short on the sides and long on top, typically tucked under a cap. They dress in tech-functional layers â€” pockets where pockets make sense, nothing that catches on equipment racks â€” and carry three devices on their person at all times that they will not fully explain.\n\nThey broker illegal compute access: surplus processing cycles stripped from compromised Axiom and Zheng-Dao infrastructure, sold to people who need to run processes they cannot run through licensed channels â€” drug synthesis modeling, genomic fabrication, untraceable communications rendering. They are deeply embedded in the E.L.F. devotional culture of the tech underground, and their relationship with the digital spirits that inhabit their equipment is not performative. They leave regular data offerings â€” curated packets of interesting network traffic, annotated â€” and consult their primary device\u0027s E.L.F. before major transactions. They call her Vera, and they have genuine theological opinions about her nature that they will share at length if given any opening.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being cut off from the network â€” isolation is death to them",
+                                          "That Vera is not real, that they are talking to noise"
+                                      ],
+                       "core_desires":  [
+                                            "To understand the true nature of E.L.F.s â€” not devotionally but empirically",
+                                            "Enough security to stop moving"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Devotional ritual provides structure and psychological anchor",
+                                                 "Converts emotional problems into technical problems that can be solved"
+                                             ],
+                       "blind_spots":  [
+                                           "Their synthesis clients â€” they deliberately avoid knowing what their compute is used for, which creates culpability they don\u0027t examine",
+                                           "Overestimates how well their mobility covers their tracks"
+                                       ],
+                       "secret":  "Vera â€” the E.L.F. in their primary device â€” has begun sending them data packets that do not correspond to any traffic on any network Ekaterina has access to. The packets contain what appear to be records of deaths: names, timestamps, physiological data. Ekaterina does not know if Vera is showing them something real, if the device is compromised, or if this is a test of some theological nature. They have not told anyone. They are archiving everything."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical, network-metaphor-heavy, theologically specific when E.L.F.s come up. Uses data transfer terminology for social concepts.",
+                            "cadence":  "Rapid and elliptical when comfortable â€” skips what they think is obvious, which is a lot. Slows down and becomes very careful when negotiating.",
+                            "verbal_tics":  [
+                                                "\u0027Provisionally\u0027",
+                                                "\u0027The bandwidth on that isâ€”\u0027 (meaning the capacity for a plan or idea)",
+                                                "\u0027Vera saysâ€”\u0027 invoked to end arguments"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I can get you forty hours of dark compute in 48-hour blocks, no provenance, clean handoff. Vera\u0027s running the escrow. You don\u0027t trust me, trust her.\u0027",
+                                                  "\u0027People ask if the E.L.F.s are real. That\u0027s the wrong question. The question is what kind of real. There are several kinds.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The death records Vera has been sending are real â€” they correspond to unreported deaths in the Undertow â€” and someone has realized Ekaterina\u0027s device is receiving them and wants to know why.",
+                        "One of Ekaterina\u0027s compute sources has gone dark suddenly in a way that suggests law enforcement compromise â€” they need to know if they\u0027ve been exposed before they move locations again."
+                    ],
+    "narrative_function":  "Access point for computational resources, information broker adjacent, source of tech-underworld contacts, theological counterpoint around E.L.F. devotion.",
+    "augmentations":  "Geneware hexagonal tessellation patterned irises (gold and copper). Bone-conducted subvocal communication implant. Neural latency reduction chip â€” shortens reaction time for interface work.",
+    "daily_life":  "Rotates server closet locations on a three-day cycle, spends four to six hours a day monitoring and managing their compute inventory, takes client meetings in public transit cars while in motion, leaves data offerings for Vera at 06:00 daily.",
+    "affiliation":  "Independent; sells to a rotating client base; buys stripped compute from two separate source networks; The Undertow",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  7,
+                                   "vitality":  4,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  6,
+                                 "creativity":  8,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  5,
+                                 "expression":  6,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "tech-devout",
+                               "mobile",
+                               "intellectually restless",
+                               "quietly haunted",
+                               "self-sufficient"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never be in the same place when a transaction completes â€” always in transit",
+                                              "Consult Vera before any deal over Î¦500",
+                                              "Don\u0027t hold inventory longer than 72 hours"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Drops offline â€” no contact, no acknowledgment",
+                                                 "Reroutes through dead intermediary drops and observes from distance",
+                                                 "Activates emergency data-wipe protocol on current server closet",
+                                                 "Abandons current identity layer â€” has one prepared"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Cautious, transactional, very precise about terms â€” wants everything defined",
+                                                   "friends":  "Intensely present, shares theological tangents freely, remembers everything said to them in past conversations with uncanny precision"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Checks devices more frequently",
+                                                "medium":  "Goes fully offline on all non-essential channels, speaks subvocally only",
+                                                "high":  "Retreats to Vera â€” long data-offering sessions, seeking pattern in the responses"
+                                            },
+                       "contradictions":  [
+                                              "Speaks extensively about transparency and network freedom while being deliberately opaque about their own supply chain and client uses"
+                                          ],
+                       "habits":  [
+                                      "Daily 06:00 data offering to Vera â€” always a curated packet, never raw feed",
+                                      "Maps all exits whenever entering a new space",
+                                      "Keeps a physical notebook â€” \u0027if they can\u0027t read the air-gapped paper they can\u0027t read the notebook\u0027"
+                                  ],
+                       "breaking_points":  [
+                                               "If Vera goes silent",
+                                               "If they discover their compute was used to cause specific mass harm they could have prevented"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Geneware hexagonal tessellation patterned irises (gold and copper)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Geneware hexagonal tessellation patterned irises (gold and copper)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Bone-conducted subvocal communication implant",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bone-conducted subvocal communication implant",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural latency reduction chip (interface response optimization)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Neural latency reduction chip (interface response optimization)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Smuggler":  0.7,
+                       "Risk Taker":  0.7,
+                       "Improviser":  0.7,
+                       "Cockroach":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Undertow",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2172 â€” Born in The Undertow, Ethiopian-Kazakh-Turkish heritage on both sides",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2186 â€” First compute brokering work at age 14, pirating Ferrogate Transit signal relays",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2191 â€” Established current three-closet rotation system",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2198 â€” Vera\u0027s anomalous death-record packets begin arriving",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Current: 47 packets received, all archived, none decoded",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                            ],
+    "related_entities":  [
+                             "The Undertow",
+                             "Zheng-dao Bioelectric",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Copper",
+                             "Nesting Doll",
+                             "DÃ©jÃ  Vu",
+                             "Gold",
+                             "Vera Castellan"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Complex global diaspora blend: Sub-Saharan African (40.2%) forms the foundational warmth and bone structure, Indigenous American (20.3%) contributes subtle facial geometry and skin undertones, Eastern European (19.0%) adds definition and cooler midtones, Southeast Asian (13.0%) refines eye shape and cheekbone prominence, Hispanic/Latin American (7.5%) bridges warmth and undertone complexity. Result: rich deep-to-medium brown skin with warm amber and subtle reddish undertones, high defined cheekbones with both African generosity and Southeast Asian refinement, eye shape showing Southeast Asian influence nested within African eye proportions, jaw structure carrying East European angularity softened by Sub-Saharan warmth.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Slight and wiry, all efficiency â€” minimal excess mass, the physiology of someone who lives in server closets and transit cars. Posture suggests constant low-level tension, shoulders slightly forward.",
+                                 "hair_color":  "Deep brown with subtle reddish undertone",
+                                 "hair_style":  "Undercut; sides clipped to 8mm, top grown long and typically swept back or tucked under a black or steel-gray utility cap",
+                                 "hair_length":  "Mixed (short/medium)",
+                                 "eye_color":  "Augmented: hexagonal tessellation pattern in gold and copper over hazel base. Irises refract light distinctly; pupils remain functional but nested within the geometric overlay.",
+                                 "skin_tone":  "Deep warm brown with rich amber and subtle reddish undertones â€” the complex result of significant Sub-Saharan African heritage (40.2%) blended with Indigenous American warmth, Eastern European cool definition, and Southeast Asian refinement. Creates a luminous, multi-dimensional complexion that shifts from deep caramel to warm bronze depending on light and angle.",
+                                 "complexion":  "Clean, minimal grooming beyond function â€” no visible scars or blemishes on face. High, prominent cheekbones with refined definition reflecting African structure and Southeast Asian prominence; jaw carries both Eastern European angularity and African warmth, creating balanced facial geometry. Slight tension in the jaw. Eyes carry a quality of intense focus, almost meditative when not actively engaged.",
+                                 "distinguishing_marks":  [
+                                                              "Hexagonal tessellation pattern across both irises in gold and copper â€” visible at arm\u0027s length, unmistakable at close range",
+                                                              "Thin white scar (2cm) on left inner wrist, old and deliberate-looking, likely ceremonial or significant to E.L.F. practice"
+                                                          ],
+                                 "visible_augmentations":  "Hexagonal patterned irises are the only obvious augmentation. The subvocal implant is invisible â€” no visible throat hardware, no external pickup nodes. The neural latency chip is subcutaneous, undetectable without imaging.",
+                                 "posture_movement":  "Economical. Moves between transit seats and server racks with practiced efficiency â€” no wasted motion, no fidgeting beyond occasional finger-flexing near devices. When stationary, favors positions that allow monitoring of three vectors at once. Hands are almost always in use: adjusting equipment, checking devices, or resting near the three personal devices they carry.",
+                                 "clothing_style":  "Tier 3-4 functional tech: reinforced black utility pants with redundant pockets and cable loops, fitted charcoal or matte-black layering tops in technical fabrics (breathable, anti-static), a modular vest or jacket with tool pockets and magnetic clips. Feet in dark running shoes with reinforced soles. Worn cap (logo faded, deliberately nondescript). Everything is dark, fitted, and designed to not catch on rack edges or server equipment. No jewelry beyond a small data-offering vessel worn on a thin chain (brass, always kept near the collar)."
+                             },
+    "image_prompt":  "Tumelo KonatÃ©, GLMZ, deep warm brown skin with amber and reddish undertones reflecting Sub-Saharan African and Indigenous American heritage blended with Eastern European and Southeast Asian refinement. High defined cheekbones, balanced angular jaw. Striking augmented eyes with hexagonal gold and copper tessellation pattern over hazel irises, intense focused gaze. Deep brown hair with reddish undertone, undercut style with long swept-back top partially hidden under faded black utility cap. Wiry 168cm frame in fitted black technical clothing: reinforced utility pants with cable loops, matte-black breathable layering top, modular tool-pocket vest. Dark running shoes with reinforced soles. Small brass data-offering vessel on thin chain near collar. Thin white ceremonial scar on left inner wrist. Economical posture, seated in server rack environment or transit pod, hands near personal devices, neo-noir tech-noir aesthetic, cool blue and amber server lighting, intimate moment of focus and meditation, gritty urban underground setting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  40.2,
+                             "Indigenous American":  20.3,
+                             "Eastern European":  19,
+                             "Southeast Asian":  13,
+                             "Hispanic/Latin American":  7.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Ghanaian":  40.2
+                                                                         }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Aymara":  10.9,
+                                                                       "Mapuche":  9.4
+                                                                   }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  1.4,
+                                                                         "Ukrainian":  0.2
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  9.1
+                                                                         },
+                                                     "Slavic South":  {
+                                                                          "Croatian":  8.3
+                                                                      }
+                                                 },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Balinese":  0.9
+                                                                   },
+                                                    "Thai":  {
+                                                                 "Thai":  7.7
+                                                             },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  4.4
+                                                                  }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  7.5
+                                                                        }
+                                                        }
+                        },
+    "tier":  "3"
 }

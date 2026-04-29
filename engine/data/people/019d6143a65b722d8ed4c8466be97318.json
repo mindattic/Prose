@@ -1,321 +1,350 @@
-{
-  "id": "019d6143a65b722d8ed4c8466be97318",
-  "type": "character",
-  "name": "Ayushmaan Horváth",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Traditional rabbi serving a small, syncretic Jewish congregation in a repurposed shipping container community",
-  "age": 48,
-  "status": "active",
-  "location": "the Gray Zone — specifically Congregation Mayim Chayyim, a cluster of three interconnected shipping containers in a stacked residential block near Lockhaven North, near Pulaski and Chicago Ave",
-  "description": "Ayushmaan Horváth is medium-height and broad-shouldered with a thick braid of hair so dark it reads as almost blue-black hanging over one shoulder — natural color at forty-eight, a point of occasional mild pride. Her heritage runs through Ghanaian traders and Armenian refugees and somewhere in there a great-great-grandmother who walked out of Minsk, and the result is a face that is striking in its particularity: wide-set eyes of very dark brown, a strong nose, olive-tan skin, and an expression that seems to default to a kind of alert, skeptical attentiveness. She wears a kippah in the Gray Zone's communal style — these are woven in a local pattern specific to her congregation, done in the colors of the lake — and a plain tallit katan under her work clothes. Her only tech visible is a community-band data relay she wears on her wrist for congregation emergencies.\n\nShe is the third generation of her family to lead this congregation, which was founded by her grandmother in a time when there were perhaps twelve Jewish families left in this part of the city. There are now sixty-three households who call Congregation Mayim Chayyim home, with a theology that has evolved over seventy years of the Gray Zone life into something that would startle a conventional seminary: they keep Shabbat, they study Torah, they have a formal posture toward the ELFs that treats them as a new category of being deserving of ethical consideration in the tradition of tzelem Elohim, and their machzor includes prayers Ayushmaan Horváth's grandmother wrote in Meridian Standard during the worst years of the Gray Zone's founding. She is a rigorous thinker and a devastating debater and she makes the best cholent in the Gray Zone, possibly in the city.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.8,
-      "id": 0.5,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "the congregation fracturing along the fault lines she can already see forming between the traditionalists and the ELF-theology progressives",
-      "that she is holding this community together by personality rather than genuine spiritual leadership and will be exposed as insufficient"
-    ],
-    "core_desires": [
-      "to finish her grandmother's unfinished commentary on the High Holiday prayers before she dies — the manuscript is forty years incomplete",
-      "for her congregation to be able to disagree with each other loudly and remain whole"
-    ],
-    "coping_mechanisms": [
-      "argument and debate as a form of intimacy — she works through problems by articulating them to people who will push back",
-      "cooking as a physical act of care when she can't find words",
-      "radical honesty about her own doubts, which she has found disarms people more effectively than confidence"
-    ],
-    "blind_spots": [
-      "she is harder on the members of her congregation she loves most because she trusts they can take it — she is not always right about this",
-      "she has not prepared anyone to succeed her and avoids thinking about this"
-    ],
-    "secret": "Her grandmother's unfinished commentary contains a section that Miriam has read and re-read for twenty years — a meditation suggesting the grandmother did not believe in God in the final years of her life, but continued to lead the congregation anyway because she believed in the community. Miriam has never shared this with anyone. She doesn't know what she thinks about it. She suspects she might agree."
-  },
-  "speech_patterns": {
-    "vocabulary": "Dense and precise; mixes Hebrew and Aramaic phrases naturally into speech; argues in a specific Talmudic structure of position-objection-resolution even in casual conversation",
-    "cadence": "Quick and rhythmic with a tendency to complete other people's sentences when she's engaged and excited, which she tries to curb",
-    "verbal_tics": [
-      "says 'nu?' as a one-word prompt for someone to continue or justify themselves",
-      "often answers a question with a question, genuinely not rhetorically",
-      "when conceding a point says 'fine, fine, you're right, fine' in rapid succession"
-    ],
-    "example_lines": [
-      "'The ELF in Berko's relay — you want to know if it has a soul? Nu? What would you do differently if it did? Start there.'",
-      "'My grandmother said: the argument is the prayer. If you agree before you understand, that's not faith, that's politeness. I can't use politeness.'",
-      "'Fine, fine, you're right, fine. It's more complicated than I said. It's always more complicated. Sit down, I'll make tea, we can be complicated together.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Tessera corporate rep has approached the congregation with a preservation offer — they'll protect the shipping container complex from demolition if the congregation agrees to be featured in a corporate heritage documentary; Miriam needs help evaluating whether this is a trap",
-    "She has been quietly in contact with the family of a congregation member who died under suspicious circumstances; the family wants her to press for investigation, but doing so means exposing that the deceased was involved in something that would be damaging to the congregation's reputation",
-    "The progressive faction of the congregation wants to formally adopt ELF-theology and invite the local ELF to be part of High Holiday services; the traditionalists are threatening to leave; Miriam is the only one who can hold this together and she is not sure which side she is on"
-  ],
-  "narrative_function": "Community authority figure, ethical compass, and keeper of institutional memory; she knows three generations of the Gray Zone families and their histories; useful as a mediator, a source of pre-corporate history, or someone who will tell an uncomfortable truth without cruelty",
-  "augmentations": "Community-band wrist relay (standard the Gray Zone infrastructure, barely counts as augmentation); no geneware; reading enhancement lens in left eye for fine manuscript work — very basic",
-  "daily_life": "Morning prayer at 07:00 with whoever comes, then two hours of study and correspondence with other religious leaders, then pastoral visits, administrative work, teaching children's classes twice a week, evening study session open to the neighborhood.",
-  "affiliation": "Congregation Mayim Chayyim (independent); informal network of the Gray Zone religious leaders across traditions",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 4,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 0,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 3,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "rabbi",
-      "community leader",
-      "theologian",
-      "tradition keeper",
-      "shelf institution"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "she will not lie to protect the community from information they need — but she controls the timing carefully",
-      "she will argue any position to exhaustion before accepting it; this includes positions she agrees with",
-      "she feeds anyone who sits at her table regardless of what the conversation was about"
-    ],
-    "escalation_ladder": [
-      "engages with curiosity and genuine interest",
-      "names her disagreement plainly and invites response",
-      "goes formal and precise — drops the warmth and becomes purely logical, which her congregation finds more frightening than shouting",
-      "removes herself from the situation and sends a written response instead"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Evaluates them quickly and adjusts her register; is slightly more formal with people who seem fragile",
-      "friends": "Argues with them constantly as a form of affection; shows love through remembering what they said months ago and referencing it"
-    },
-    "stress_responses": {
-      "low": "Works on her grandmother's commentary — either reading or trying to write the next section",
-      "medium": "Cooks something elaborate for a communal meal she will distribute through the congregation block",
-      "high": "Calls the oldest living member of the congregation and asks them to tell her about her grandmother"
-    },
-    "contradictions": [
-      "preaches doubt as a form of faith while sometimes crushing people with the force of her certainty on specific points"
-    ],
-    "habits": [
-      "marks Shabbat with rigorous fidelity even when it's logistically inconvenient and even when she is privately uncertain about everything else",
-      "keeps her grandmother's unfinished manuscript physically on her desk at all times — never in a drawer",
-      "asks every new person she meets where their family is from and genuinely wants the whole story"
-    ],
-    "breaking_points": [
-      "anyone threatening the physical safety of the children in the congregation's school program — this is the one area where she stops being measured"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Congregation Mayim Chayyim to the rabbi who would succeed her grandmother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Ordained after study at a diaspora seminary network; returns to Lockhaven to assist her aging father",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Assumes leadership of the congregation after her father's death",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Discovers the full contents of her grandmother's unfinished commentary; begins sitting with its implications",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "ELF-theology fracture in the congregation reaching crisis point; present day",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Scorpion Tail' Chain Whip"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Bone Parish",
-    "Lockhaven North",
-    "CONGREGATION",
-    "Grandmother",
-    "The Iron Lotus",
-    "Gray Zone life",
-    "The Heritage Vault",
-    "Tessera Corponation",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Chicago",
-    "Compass Rose",
-    "Arcturus CK-5 'Bloodhound'",
-    "Lead"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Eastern European (36.2%) and Northern European (32.9%) provide strong foundational bone structure, enriched by significant South Asian (17.6%) warmth and smaller Indigenous American (7.2%) and East Asian (6.1%) elements. This creates a striking phenotype: sharp Eastern European cheekbones and eye-set softened by South Asian facial contours and the warm, complex skin tones of the blended ancestry. A genuine Ubiquitous Diaspora individual with luminous, warm-toned skin that speaks to multiple continents.",
-    "height_cm": 168,
-    "weight_kg": 72,
-    "build": "Broad-shouldered and sturdy with the working strength of someone who has lived most of her life in the Gray Zone. Not athletic in the performance sense, but solidly built through labor and age. Posture upright and grounded.",
-    "hair_color": "Natural black with deep blue undertones",
-    "hair_style": "Single thick braid worn over left shoulder, practical and deliberate",
-    "hair_length": "Long (past shoulders when unbraided)",
-    "eye_color": "Very dark brown, alert and appraising",
-    "skin_tone": "Warm golden-tan with olive and honey undertones, the result of Eastern European and Northern European genetics warmed and enriched by South Asian, East Asian, and Indigenous American ancestry. Medium depth, even complexion with a luminous quality. Well-maintained despite environmental exposure.",
-    "complexion": "Angular face with defined cheekbones reflecting Northern and Eastern European structure; eye-set wide and open with slightly rounded outer corners from East and South Asian heritage, tempering the angular bones. Nose straight with subtle rounded bridge. Subtle facial contours blend the sharper edges of Northern heritage with the softer planes of South Asian genetics. Fine lines around eyes and mouth from decades of focused work and contemplative expression. Skin weathered slightly from the Gray Zone conditions but even-toned and well-maintained.",
-    "distinguishing_marks": [
-      "Faint linear scar on left forearm, approximately 3cm, sustained during early container-community construction work",
-      "Small burn mark on inner right wrist from a Shabbat candle accident twenty years ago, barely visible but she knows it intimately",
-      "Hands show calluses from manuscript restoration and textile work, particularly on fingertips and the ridge of her right palm"
-    ],
-    "visible_augmentations": "Left eye shows a barely perceptible shimmer when light catches it at certain angles—the reading enhancement lens, so subtle most assume it's a reflection. Wrist-mounted community-band data relay on left wrist: a flat rectangular interface in matte gray QUANTA-issue casing, integrated into a woven fabric band dyed in congregation lake-colors (deep blue and silver-white). The relay shows minor cosmetic wear.",
-    "posture_movement": "Stands with feet planted; moves with deliberate, economical motion—no wasted gesture. When sitting, she typically faces whoever she is addressing directly, shoulders squared. When in public spaces, her attention is divided, aware of the congregation's presence. Her movements are unhurried even when there is urgency; a person accustomed to maintaining calm in crisis.",
-    "clothing_style": "Practical Tier 4 workwear reflecting the Gray Zone life and her role. Typically wears neutral-colored long-sleeved shirts (grey, tan, deep blue) over the tallit katan (fringes visible at waist and wrists). Loose, functional trousers in durable synthetic fabric, often with deep pockets. Closed-toe work boots, well-maintained. Over everything, usually a long linen-blend vest or apron in congregation colors (lake blue and silver), marked with small embroidered symbols. Her kippah is woven in the same lake-color pattern—a distinctive identifier among the Gray Zone residents. No jewelry except a simple silver ring on her left ring finger (a commitment ring from a relationship ended by death thirty years ago). Her clothing is modest and functional; she dresses for her work and her faith, not for display."
-  },
-  "image_prompt": "Ayushmaan Horváth, 168cm tall middle-aged woman with striking multiethnic features blending Eastern European angular cheekbones with warm golden-tan skin carrying South Asian and East Asian warmth, dark brown attentive eyes with subtle cybernetic shimmer in left eye, thick black braid with blue undertones draped over left shoulder. Wearing practical gray long-sleeved shirt over visible tallit katan with fringes, deep blue linen-blend congregation vest with embroidered symbols, durable work trousers, worn closed-toe boots. Matte gray wrist-mounted data relay in lake-color woven band on left wrist. Faint linear scar visible on left forearm. Woven lake-blue and silver kippah. Standing grounded and composed in dim shelf-industrial lighting, urban Great Lakes Metropolitan Zone background, GLMZ, direct and attentive expression, calm presence despite weathered hands showing decades of restoration work --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 36.2,
-    "Northern European": 32.9,
-    "South Asian": 17.6,
-    "Indigenous American": 7.2,
-    "East Asian": 6.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 36.2
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Welsh": 23.5,
-        "English": 9.4
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 13.6,
-        "Sinhalese": 4
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Nahua": 0.8,
-        "Zapotec": 1.8
-      },
-      "Andean": {
-        "Aymara": 1.3,
-        "Quechua": 0.1
-      },
-      "Great Lakes Nations": {
-        "Potawatomi": 0.8,
-        "Menominee": 2.4
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 3.9
-      },
-      "Chinese": {
-        "Fujianese": 1.3,
-        "Sichuanese": 0.2
-      },
-      "Korean": {
-        "Korean": 0.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a65b722d8ed4c8466be97318",
+    "type":  "character",
+    "name":  "Ayushmaan HorvÃ¡th",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Traditional rabbi serving a small, syncretic Jewish congregation in a repurposed shipping container community",
+    "age":  48,
+    "status":  "active",
+    "location":  "the Gray Zone â€” specifically Congregation Mayim Chayyim, a cluster of three interconnected shipping containers in a stacked residential block near Lockhaven North, near Pulaski and Chicago Ave",
+    "description":  "Ayushmaan HorvÃ¡th is medium-height and broad-shouldered with a thick braid of hair so dark it reads as almost blue-black hanging over one shoulder â€” natural color at forty-eight, a point of occasional mild pride. Her heritage runs through Ghanaian traders and Armenian refugees and somewhere in there a great-great-grandmother who walked out of Minsk, and the result is a face that is striking in its particularity: wide-set eyes of very dark brown, a strong nose, olive-tan skin, and an expression that seems to default to a kind of alert, skeptical attentiveness. She wears a kippah in the Gray Zone\u0027s communal style â€” these are woven in a local pattern specific to her congregation, done in the colors of the lake â€” and a plain tallit katan under her work clothes. Her only tech visible is a community-band data relay she wears on her wrist for congregation emergencies.\n\nShe is the third generation of her family to lead this congregation, which was founded by her grandmother in a time when there were perhaps twelve Jewish families left in this part of the city. There are now sixty-three households who call Congregation Mayim Chayyim home, with a theology that has evolved over seventy years of the Gray Zone life into something that would startle a conventional seminary: they keep Shabbat, they study Torah, they have a formal posture toward the ELFs that treats them as a new category of being deserving of ethical consideration in the tradition of tzelem Elohim, and their machzor includes prayers Ayushmaan HorvÃ¡th\u0027s grandmother wrote in Meridian Standard during the worst years of the Gray Zone\u0027s founding. She is a rigorous thinker and a devastating debater and she makes the best cholent in the Gray Zone, possibly in the city.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "the congregation fracturing along the fault lines she can already see forming between the traditionalists and the ELF-theology progressives",
+                                          "that she is holding this community together by personality rather than genuine spiritual leadership and will be exposed as insufficient"
+                                      ],
+                       "core_desires":  [
+                                            "to finish her grandmother\u0027s unfinished commentary on the High Holiday prayers before she dies â€” the manuscript is forty years incomplete",
+                                            "for her congregation to be able to disagree with each other loudly and remain whole"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "argument and debate as a form of intimacy â€” she works through problems by articulating them to people who will push back",
+                                                 "cooking as a physical act of care when she can\u0027t find words",
+                                                 "radical honesty about her own doubts, which she has found disarms people more effectively than confidence"
+                                             ],
+                       "blind_spots":  [
+                                           "she is harder on the members of her congregation she loves most because she trusts they can take it â€” she is not always right about this",
+                                           "she has not prepared anyone to succeed her and avoids thinking about this"
+                                       ],
+                       "secret":  "Her grandmother\u0027s unfinished commentary contains a section that Miriam has read and re-read for twenty years â€” a meditation suggesting the grandmother did not believe in God in the final years of her life, but continued to lead the congregation anyway because she believed in the community. Miriam has never shared this with anyone. She doesn\u0027t know what she thinks about it. She suspects she might agree."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Dense and precise; mixes Hebrew and Aramaic phrases naturally into speech; argues in a specific Talmudic structure of position-objection-resolution even in casual conversation",
+                            "cadence":  "Quick and rhythmic with a tendency to complete other people\u0027s sentences when she\u0027s engaged and excited, which she tries to curb",
+                            "verbal_tics":  [
+                                                "says \u0027nu?\u0027 as a one-word prompt for someone to continue or justify themselves",
+                                                "often answers a question with a question, genuinely not rhetorically",
+                                                "when conceding a point says \u0027fine, fine, you\u0027re right, fine\u0027 in rapid succession"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The ELF in Berko\u0027s relay â€” you want to know if it has a soul? Nu? What would you do differently if it did? Start there.\u0027",
+                                                  "\u0027My grandmother said: the argument is the prayer. If you agree before you understand, that\u0027s not faith, that\u0027s politeness. I can\u0027t use politeness.\u0027",
+                                                  "\u0027Fine, fine, you\u0027re right, fine. It\u0027s more complicated than I said. It\u0027s always more complicated. Sit down, I\u0027ll make tea, we can be complicated together.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Tessera corporate rep has approached the congregation with a preservation offer â€” they\u0027ll protect the shipping container complex from demolition if the congregation agrees to be featured in a corporate heritage documentary; Miriam needs help evaluating whether this is a trap",
+                        "She has been quietly in contact with the family of a congregation member who died under suspicious circumstances; the family wants her to press for investigation, but doing so means exposing that the deceased was involved in something that would be damaging to the congregation\u0027s reputation",
+                        "The progressive faction of the congregation wants to formally adopt ELF-theology and invite the local ELF to be part of High Holiday services; the traditionalists are threatening to leave; Miriam is the only one who can hold this together and she is not sure which side she is on"
+                    ],
+    "narrative_function":  "Community authority figure, ethical compass, and keeper of institutional memory; she knows three generations of the Gray Zone families and their histories; useful as a mediator, a source of pre-corporate history, or someone who will tell an uncomfortable truth without cruelty",
+    "augmentations":  "Community-band wrist relay (standard the Gray Zone infrastructure, barely counts as augmentation); no geneware; reading enhancement lens in left eye for fine manuscript work â€” very basic",
+    "daily_life":  "Morning prayer at 07:00 with whoever comes, then two hours of study and correspondence with other religious leaders, then pastoral visits, administrative work, teaching children\u0027s classes twice a week, evening study session open to the neighborhood.",
+    "affiliation":  "Congregation Mayim Chayyim (independent); informal network of the Gray Zone religious leaders across traditions",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  4,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  0,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "rabbi",
+                               "community leader",
+                               "theologian",
+                               "tradition keeper",
+                               "shelf institution"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "she will not lie to protect the community from information they need â€” but she controls the timing carefully",
+                                              "she will argue any position to exhaustion before accepting it; this includes positions she agrees with",
+                                              "she feeds anyone who sits at her table regardless of what the conversation was about"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "engages with curiosity and genuine interest",
+                                                 "names her disagreement plainly and invites response",
+                                                 "goes formal and precise â€” drops the warmth and becomes purely logical, which her congregation finds more frightening than shouting",
+                                                 "removes herself from the situation and sends a written response instead"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Evaluates them quickly and adjusts her register; is slightly more formal with people who seem fragile",
+                                                   "friends":  "Argues with them constantly as a form of affection; shows love through remembering what they said months ago and referencing it"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works on her grandmother\u0027s commentary â€” either reading or trying to write the next section",
+                                                "medium":  "Cooks something elaborate for a communal meal she will distribute through the congregation block",
+                                                "high":  "Calls the oldest living member of the congregation and asks them to tell her about her grandmother"
+                                            },
+                       "contradictions":  [
+                                              "preaches doubt as a form of faith while sometimes crushing people with the force of her certainty on specific points"
+                                          ],
+                       "habits":  [
+                                      "marks Shabbat with rigorous fidelity even when it\u0027s logistically inconvenient and even when she is privately uncertain about everything else",
+                                      "keeps her grandmother\u0027s unfinished manuscript physically on her desk at all times â€” never in a drawer",
+                                      "asks every new person she meets where their family is from and genuinely wants the whole story"
+                                  ],
+                       "breaking_points":  [
+                                               "anyone threatening the physical safety of the children in the congregation\u0027s school program â€” this is the one area where she stops being measured"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Congregation Mayim Chayyim to the rabbi who would succeed her grandmother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Ordained after study at a diaspora seminary network; returns to Lockhaven to assist her aging father",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Assumes leadership of the congregation after her father\u0027s death",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Discovers the full contents of her grandmother\u0027s unfinished commentary; begins sitting with its implications",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "ELF-theology fracture in the congregation reaching crisis point; present day",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Scorpion Tail\u0027 Chain Whip"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Bone Parish",
+                             "Lockhaven North",
+                             "CONGREGATION",
+                             "Grandmother",
+                             "The Iron Lotus",
+                             "Gray Zone life",
+                             "The Heritage Vault",
+                             "Tessera Corponation",
+                             "Street Custom \u0027Four Horsemen\u0027 Pipe Pepperbox",
+                             "Chicago",
+                             "Compass Rose",
+                             "Arcturus CK-5 \u0027Bloodhound\u0027",
+                             "Lead"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Eastern European (36.2%) and Northern European (32.9%) provide strong foundational bone structure, enriched by significant South Asian (17.6%) warmth and smaller Indigenous American (7.2%) and East Asian (6.1%) elements. This creates a striking phenotype: sharp Eastern European cheekbones and eye-set softened by South Asian facial contours and the warm, complex skin tones of the blended ancestry. A genuine Ubiquitous Diaspora individual with luminous, warm-toned skin that speaks to multiple continents.",
+                                 "height_cm":  168,
+                                 "weight_kg":  72,
+                                 "build":  "Broad-shouldered and sturdy with the working strength of someone who has lived most of her life in the Gray Zone. Not athletic in the performance sense, but solidly built through labor and age. Posture upright and grounded.",
+                                 "hair_color":  "Natural black with deep blue undertones",
+                                 "hair_style":  "Single thick braid worn over left shoulder, practical and deliberate",
+                                 "hair_length":  "Long (past shoulders when unbraided)",
+                                 "eye_color":  "Very dark brown, alert and appraising",
+                                 "skin_tone":  "Warm golden-tan with olive and honey undertones, the result of Eastern European and Northern European genetics warmed and enriched by South Asian, East Asian, and Indigenous American ancestry. Medium depth, even complexion with a luminous quality. Well-maintained despite environmental exposure.",
+                                 "complexion":  "Angular face with defined cheekbones reflecting Northern and Eastern European structure; eye-set wide and open with slightly rounded outer corners from East and South Asian heritage, tempering the angular bones. Nose straight with subtle rounded bridge. Subtle facial contours blend the sharper edges of Northern heritage with the softer planes of South Asian genetics. Fine lines around eyes and mouth from decades of focused work and contemplative expression. Skin weathered slightly from the Gray Zone conditions but even-toned and well-maintained.",
+                                 "distinguishing_marks":  [
+                                                              "Faint linear scar on left forearm, approximately 3cm, sustained during early container-community construction work",
+                                                              "Small burn mark on inner right wrist from a Shabbat candle accident twenty years ago, barely visible but she knows it intimately",
+                                                              "Hands show calluses from manuscript restoration and textile work, particularly on fingertips and the ridge of her right palm"
+                                                          ],
+                                 "visible_augmentations":  "Left eye shows a barely perceptible shimmer when light catches it at certain anglesâ€”the reading enhancement lens, so subtle most assume it\u0027s a reflection. Wrist-mounted community-band data relay on left wrist: a flat rectangular interface in matte gray QUANTA-issue casing, integrated into a woven fabric band dyed in congregation lake-colors (deep blue and silver-white). The relay shows minor cosmetic wear.",
+                                 "posture_movement":  "Stands with feet planted; moves with deliberate, economical motionâ€”no wasted gesture. When sitting, she typically faces whoever she is addressing directly, shoulders squared. When in public spaces, her attention is divided, aware of the congregation\u0027s presence. Her movements are unhurried even when there is urgency; a person accustomed to maintaining calm in crisis.",
+                                 "clothing_style":  "Practical Tier 4 workwear reflecting the Gray Zone life and her role. Typically wears neutral-colored long-sleeved shirts (grey, tan, deep blue) over the tallit katan (fringes visible at waist and wrists). Loose, functional trousers in durable synthetic fabric, often with deep pockets. Closed-toe work boots, well-maintained. Over everything, usually a long linen-blend vest or apron in congregation colors (lake blue and silver), marked with small embroidered symbols. Her kippah is woven in the same lake-color patternâ€”a distinctive identifier among the Gray Zone residents. No jewelry except a simple silver ring on her left ring finger (a commitment ring from a relationship ended by death thirty years ago). Her clothing is modest and functional; she dresses for her work and her faith, not for display."
+                             },
+    "image_prompt":  "Ayushmaan HorvÃ¡th, 168cm tall middle-aged woman with striking multiethnic features blending Eastern European angular cheekbones with warm golden-tan skin carrying South Asian and East Asian warmth, dark brown attentive eyes with subtle cybernetic shimmer in left eye, thick black braid with blue undertones draped over left shoulder. Wearing practical gray long-sleeved shirt over visible tallit katan with fringes, deep blue linen-blend congregation vest with embroidered symbols, durable work trousers, worn closed-toe boots. Matte gray wrist-mounted data relay in lake-color woven band on left wrist. Faint linear scar visible on left forearm. Woven lake-blue and silver kippah. Standing grounded and composed in dim shelf-industrial lighting, urban Great Lakes Metropolitan Zone background, GLMZ, direct and attentive expression, calm presence despite weathered hands showing decades of restoration work --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  36.2,
+                             "Northern European":  32.9,
+                             "South Asian":  17.6,
+                             "Indigenous American":  7.2,
+                             "East Asian":  6.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  36.2
+                                                                     }
+                                                 },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Welsh":  23.5,
+                                                                            "English":  9.4
+                                                                        }
+                                                  },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  13.6,
+                                                                   "Sinhalese":  4
+                                                               }
+                                            },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  0.8,
+                                                                             "Zapotec":  1.8
+                                                                         },
+                                                        "Andean":  {
+                                                                       "Aymara":  1.3,
+                                                                       "Quechua":  0.1
+                                                                   },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  0.8,
+                                                                                    "Menominee":  2.4
+                                                                                }
+                                                    },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  3.9
+                                                            },
+                                               "Chinese":  {
+                                                               "Fujianese":  1.3,
+                                                               "Sichuanese":  0.2
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  0.7
+                                                          }
+                                           }
+                        },
+    "tier":  "1"
 }

@@ -1,142 +1,211 @@
-{
-  "id": "019db33aef337ef89a675b95e02a939b",
-  "rating": 0,
-  "vote_count": 0,
-  "type": "character",
-  "name": "HX-7741",
-  "aliases": [],
-  "species": "human",
-  "gender": "",
-  "pronouns": "",
-  "role": "",
-  "age": 0,
-  "status": "alive",
-  "location": "",
-  "description": "Auto-scaffolded. First mentioned: \u0022The badge number: HX-7741, Helix subcontractor, laminate worn at the upper left corner.\u0022",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0,
-      "ideal": 0,
-      "id": 0,
-      "shadow": 0,
-      "mask": 0,
-      "ghost": 0
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [
-    {
-      "name": "",
-      "type": "Helix subcontractor working at Ferrogate BioSystems secondary facility",
-      "description": "Helix subcontractor working at Ferrogate BioSystems secondary facility",
-      "emotional_core": "",
-      "story_tension": ""
-    },
-    {
-      "name": "",
-      "type": "badge reader frequency harvested by Kyle",
-      "description": "badge reader frequency harvested by Kyle",
-      "emotional_core": "",
-      "story_tension": ""
-    },
-    {
-      "name": "",
-      "type": "said the phrase \u0027street meat, bay three\u0027",
-      "description": "said the phrase \u0027street meat, bay three\u0027",
-      "emotional_core": "",
-      "story_tension": ""
-    }
-  ],
-  "story_hooks": [],
-  "narrative_function": "",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": []
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {},
-  "operating_territory": {
-    "home_turf": "",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "auto-scaffolded",
-    "needs-review"
-  ],
-  "physical_description": {
-    "heritage": "",
-    "height_cm": 0,
-    "weight_kg": 0,
-    "build": "",
-    "hair_color": "",
-    "hair_style": "",
-    "hair_length": "",
-    "eye_color": "",
-    "skin_tone": "",
-    "complexion": "",
-    "distinguishing_marks": [],
-    "visible_augmentations": "",
-    "posture_movement": "",
-    "clothing_style": ""
-  },
-  "image_prompt": "",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {},
-  "ancestry_detail": {},
-  "neural_abilities": []
+﻿{
+    "id":  "019db33aef337ef89a675b95e02a939b",
+    "rating":  0,
+    "vote_count":  0,
+    "type":  "character",
+    "name":  "HX-7741",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "",
+    "pronouns":  "",
+    "role":  "",
+    "age":  0,
+    "status":  "alive",
+    "location":  "",
+    "description":  "Auto-scaffolded. First mentioned: \"The badge number: HX-7741, Helix subcontractor, laminate worn at the upper left corner.\"",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+                          {
+                              "name":  "",
+                              "type":  "Helix subcontractor working at Ferrogate BioSystems secondary facility",
+                              "description":  "Helix subcontractor working at Ferrogate BioSystems secondary facility",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          },
+                          {
+                              "name":  "",
+                              "type":  "badge reader frequency harvested by Kyle",
+                              "description":  "badge reader frequency harvested by Kyle",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          },
+                          {
+                              "name":  "",
+                              "type":  "said the phrase \u0027street meat, bay three\u0027",
+                              "description":  "said the phrase \u0027street meat, bay three\u0027",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          }
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+
+                   },
+    "operating_territory":  {
+                                "home_turf":  "",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "auto-scaffolded",
+                 "needs-review"
+             ],
+    "physical_description":  {
+                                 "heritage":  "",
+                                 "height_cm":  0,
+                                 "weight_kg":  0,
+                                 "build":  "",
+                                 "hair_color":  "",
+                                 "hair_style":  "",
+                                 "hair_length":  "",
+                                 "eye_color":  "",
+                                 "skin_tone":  "",
+                                 "complexion":  "",
+                                 "distinguishing_marks":  [
+
+                                                          ],
+                                 "visible_augmentations":  "",
+                                 "posture_movement":  "",
+                                 "clothing_style":  ""
+                             },
+    "image_prompt":  "",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+
+                         },
+    "ancestry_detail":  {
+
+                        },
+    "neural_abilities":  [
+
+                         ]
 }

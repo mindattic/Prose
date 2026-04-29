@@ -1,360 +1,373 @@
-{
-  "id": "019d6143a63c759b9c3b089288bbec2f",
-  "rating": 70,
-  "type": "character",
-  "name": "Agustina Taualagi",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Electronic and physical observation expert — surveillance specialist",
-  "age": 65,
-  "status": "active",
-  "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Halsted and Chicago Ave",
-  "description": "Agustina Taualagi is lean and angular, all sharp edges and visible tension. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a surveillance specialist out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented surveillance specialist in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.86,
-      "ideal": 0.5,
-      "id": 0.62,
-      "shadow": 0.1,
-      "mask": 0.2,
-      "ghost": 0.84
-    },
-    "core_fears": [
-      "Being replaced — younger, faster, cheaper runners coming up behind them",
-      "That they're fundamentally alone and connection is just a vulnerability",
-      "Being captured alive — death is preferable to corporate interrogation"
-    ],
-    "core_desires": [
-      "Justice — the corporate kind, where the punishment fits the profit margin",
-      "Stability — a place to sleep that's the same place two nights running",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
-    ],
-    "coping_mechanisms": [
-      "Maintains weapons obsessively — cleaning guns is meditation",
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Overwork — takes every contract offered because idleness invites thinking"
-    ],
-    "blind_spots": [
-      "Fails to notice when their own behavior mirrors the people they despise",
-      "Assumes everyone has an angle because they always have an angle",
-      "Cannot accept help without interpreting it as leverage"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
-    "cadence": "Staccato bursts separated by calculating silences.",
-    "verbal_tics": [
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
-      "Uses technical jargon for everything, including emotions"
-    ],
-    "example_lines": [
-      "\"I've been watching you for three days. You should close your curtains.\"",
-      "\"Information is the only commodity that appreciates with age.\"",
-      "\"Everyone thinks they're careful. Nobody is careful enough.\""
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Kadiatou Hallberg-Acheampong's reputation — and a price for silence",
-    "Kadiatou Hallberg-Acheampong is offered a contract that would clear all their debts — the target is someone they respect",
-    "A corporate black site Kadiatou Hallberg-Acheampong once infiltrated is being reopened, and the people inside know his face"
-  ],
-  "narrative_function": "Kadiatou Hallberg-Acheampong is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
-  "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Unaffiliated — too volatile for permanent crews; The Coffin Nails",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 5
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 4
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 9
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 8
-      },
-      "perception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 9
-      },
-      "willpower": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 9
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 4
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 4
-      },
-      "intimidation": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 8
-      },
-      "deception": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 6
-      },
-      "empathy": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 5
-      }
-    },
-    "personality": {
-      "aggression": 0.38,
-      "caution": 0.98,
-      "loyalty": 0.23,
-      "greed": 0.95,
-      "empathy": 0.53
-    },
-    "drives": [
-      "survival",
-      "money",
-      "protection"
-    ],
-    "thresholds": {
-      "pain": 8,
-      "stress": 6,
-      "loyalty_break": 5
-    },
-    "strengths": [
-      "technical expertise with augmentation systems",
-      "social chameleon — adapts to any environment",
-      "pain tolerance beyond normal limits"
-    ],
-    "weaknesses": [
-      "physical limitation from incomplete augmentation",
-      "trust issues that limit crew effectiveness"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "surveillance specialist",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never discusses active contracts with anyone not directly involved",
-      "Always has an exit route planned before agreeing to any meeting",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Refuses contracts that require operating inside The Spires — too much surveillance"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Insists they work alone but performs noticeably better in a team",
-      "Advocates caution to others but takes insane risks personally — double standard they can't see"
-    ],
-    "habits": [
-      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Practices a kata or fighting form every morning regardless of circumstances"
-    ],
-    "breaking_points": [
-      "Running out of options — no contacts, no money, no safe house, no way out",
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Wired reflexes with adrenaline pump",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
-      "replaces": ""
-    },
-    {
-      "name": "Synthetic muscle fiber replacement in legs",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Analyst": 0.9,
-    "Pattern Reader": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Crucible Square",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Complex diaspora blend: Southeast Asian (37.8%), Pacific Islander (28.2%), Hispanic/Latin American (15.3%), Middle Eastern (12.8%), Sub-Saharan African (5.9%). Features reflect this multifaceted ancestry — warm bronze skin with golden and amber undertones from Southeast Asian and Pacific Islander heritage, high cheekbones and eye shape influenced by Southeast Asian ancestry, prominent jaw structure with subtle width from Pacific Islander and Hispanic lineage, and facial bone structure showing depth and richness from Middle Eastern and African heritage markers.",
-    "height_cm": 178,
-    "weight_kg": 72,
-    "build": "Lean and angular with visible muscle definition — wiry rather than bulky. The synthetic muscle fiber in his legs gives him a slightly asymmetrical appearance, calves slightly fuller and more defined than natural aging would permit. Minimal body fat, carved by decades of discipline and chemical augmentation.",
-    "hair_color": "Steel gray with residual black at the roots",
-    "hair_style": "Closely trimmed, military-precise",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, naturally — alert and constantly assessing",
-    "skin_tone": "Warm bronze-gold with golden and amber undertones, weathered by age and exposure. The tone reflects the blended heritage of Southeast Asian warmth, Pacific Islander depth, Hispanic richness, Middle Eastern character, and Sub-Saharan African undertones.",
-    "complexion": "Deep facial lines around the eyes and mouth — the map of 65 years of tension and squinting at monitors. Jaw prominent and sharp with subtle width from Pacific Islander and Hispanic heritage. Skin texture rough in places where augmentation scarring has healed imperfectly. High cheekbones with slight angular quality from Southeast Asian ancestry. Facial bone structure shows depth characteristic of Middle Eastern and African heritage.",
-    "distinguishing_marks": [
-      "Chrome circuitry visible at both temples — silver-gray neural interface ports running from jawline to hairline, installed with functional brutality and minimal cosmetic finish.",
-      "Jagged scar tissue along the right jawline where the adrenaline pump was grafted, silvery-white and slightly raised.",
-      "Thin burn marks running down the inside of both forearms — old electrical contact scars from early maintenance mistakes.",
-      "A faded tattoo on his left shoulder blade: a runner's marker from the Gray Zone, now barely visible under sun damage."
-    ],
-    "visible_augmentations": "Chrome neural interface ports at temples and jawline are immediately obvious — deliberate, unapologetic exposure. The synthetic muscle fiber in his legs creates a subtle visual discontinuity in his calf definition and bulk. His movements are too fast, too precise for his age — the wired reflexes betray their presence in micro-adjustments and reaction speed.",
-    "posture_movement": "Stands with weight balanced, always ready to move. His gait is economical and quick, though he favors flat ground and visibly tenses on stairs — a tell that his leg augmentations don't handle inclines well. His head moves in small, precise rotations, scanning. Even at rest, his hands are never still — fidgeting with a contract chip, a surveillance scanner, something. A man wound too tight.",
-    "clothing_style": "Tier 3-4 functional wear with no pretense of style. Dark gray or black reinforced cargo pants with multiple pockets and a faint sheen of wear-resistant coating. A faded black synth-cotton shirt, sleeves pushed to the elbows to expose the augmentation scars — a statement of acceptance. Over it, a worn grey synthetic jacket with internal cable management and reinforced pockets for surveillance gear. Utilitarian boots, scuffed and re-soled multiple times. No jewelry, no chrome accents. Everything worn, everything practical, nothing decorative."
-  },
-  "image_prompt": "Agustina Taualagi, 65-year-old neo-noir operative, 178cm tall, lean angular build with visible muscle definition. Warm bronze-gold skin with golden and amber undertones reflecting Southeast Asian, Pacific Islander, Hispanic, Middle Eastern, and African heritage. High Southeast Asian cheekbones, prominent sharp jaw with Pacific Islander width, deep weathered facial lines, dark brown alert eyes. Steel gray hair with black roots, closely trimmed military-precise cut. Chrome neural interface ports visible at temples and jawline running to neck, silvery-gray and functional. Jagged scarring along right jaw from adrenaline pump graft. Thin electrical burn scars on inner forearms. Faded tattoo on left shoulder blade. Synthetic muscle fiber in legs creates subtle calf definition asymmetry. Standing in balanced ready posture, slightly tense. Wearing faded black synth-cotton shirt with pushed-up sleeves exposing augmentation scars, worn grey synthetic jacket with reinforced pockets, dark cargo pants with wear-resistant coating, scuffed utilitarian boots. No jewelry, practical everything. Hands fidgeting with surveillance gear. GLMZ, Great Lakes Metropolitan Zone, dimly lit tech-noir interior with neon accents casting shadows across weathered face, moody contemplative expression, gritty realism, cinematic lighting --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Southeast Asian": 37.8,
-    "Pacific Islander": 28.2,
-    "Hispanic/Latin American": 15.3,
-    "Middle Eastern": 12.8,
-    "Sub-Saharan African": 5.9
-  },
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 25.2
-      },
-      "Vietnamese": {
-        "Vietnamese": 5.7
-      },
-      "Laotian": {
-        "Laotian": 6.9
-      }
-    },
-    "Pacific Islander": {
-      "Polynesian": {
-        "Tuvaluan": 1.8,
-        "Tokelauan": 0.8
-      },
-      "Micronesian": {
-        "Marshallese": 3.8,
-        "Palauan": 9.9
-      },
-      "Melanesian": {
-        "Fijian": 11.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 3.3
-      },
-      "South American": {
-        "Ecuadorian": 9.3,
-        "Brazilian": 2.7
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 6.4,
-        "Afghan Dari": 2.2
-      },
-      "Kurdish": {
-        "Kurdish": 4.2
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Gabonese": 3.5,
-        "Congolese": 1.3
-      },
-      "East African": {
-        "Kenyan": 1.1
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a63c759b9c3b089288bbec2f",
+    "rating":  70,
+    "type":  "character",
+    "name":  "Agustina Taualagi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Electronic and physical observation expert â€” surveillance specialist",
+    "age":  65,
+    "status":  "active",
+    "location":  "Crucible Square â€” open-air market, Tier 1-2 commerce, near Halsted and Chicago Ave",
+    "description":  "Agustina Taualagi is lean and angular, all sharp edges and visible tension. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible â€” wired reflexes with adrenaline pump â€” chemical-mechanical hybrid augmentation â€” and he makes no effort to hide it.\n\nHe came up through the Gray Zone\u0027s informal apprentice system, learning the trade from runners who didn\u0027t survive long enough to see him surpass them. He works as a surveillance specialist out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented surveillance specialist in GLMZ, but he might be the most stubborn, and in this city that\u0027s worth more.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them",
+                                          "That they\u0027re fundamentally alone and connection is just a vulnerability",
+                                          "Being captured alive â€” death is preferable to corporate interrogation"
+                                      ],
+                       "core_desires":  [
+                                            "Justice â€” the corporate kind, where the punishment fits the profit margin",
+                                            "Stability â€” a place to sleep that\u0027s the same place two nights running",
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Maintains weapons obsessively â€” cleaning guns is meditation",
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring",
+                                                 "Overwork â€” takes every contract offered because idleness invites thinking"
+                                             ],
+                       "blind_spots":  [
+                                           "Fails to notice when their own behavior mirrors the people they despise",
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Cannot accept help without interpreting it as leverage"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
+                            "cadence":  "Staccato bursts separated by calculating silences.",
+                            "verbal_tics":  [
+                                                "Pauses mid-sentence to listen â€” combat habit that bleeds into conversation",
+                                                "Uses technical jargon for everything, including emotions"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I\u0027ve been watching you for three days. You should close your curtains.\"",
+                                                  "\"Information is the only commodity that appreciates with age.\"",
+                                                  "\"Everyone thinks they\u0027re careful. Nobody is careful enough.\""
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former associate resurfaces with evidence that could destroy Kadiatou Hallberg-Acheampong\u0027s reputation â€” and a price for silence",
+                        "Kadiatou Hallberg-Acheampong is offered a contract that would clear all their debts â€” the target is someone they respect",
+                        "A corporate black site Kadiatou Hallberg-Acheampong once infiltrated is being reopened, and the people inside know his face"
+                    ],
+    "narrative_function":  "Kadiatou Hallberg-Acheampong is a pressure point â€” the kind of character whose choices ripple outward. When he makes a decision, other people\u0027s lives change. That weight is the engine of his stories.",
+    "augmentations":  "Wired reflexes with adrenaline pump â€” chemical-mechanical hybrid augmentation. Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs",
+    "daily_life":  "Keeps a rigid daily structure â€” wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+    "affiliation":  "Unaffiliated â€” too volatile for permanent crews; The Coffin Nails",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  0,
+                                                    "effective":  5
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  8,
+                                                     "augmented":  1,
+                                                     "effective":  4
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  0,
+                                                    "effective":  9
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  3,
+                                                      "augmented":  0,
+                                                      "effective":  8
+                                                  },
+                                 "perception":  {
+                                                    "base":  5,
+                                                    "augmented":  2,
+                                                    "effective":  9
+                                                },
+                                 "willpower":  {
+                                                   "base":  6,
+                                                   "augmented":  3,
+                                                   "effective":  9
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  3,
+                                                   "effective":  4
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  3,
+                                                  "effective":  4
+                                              },
+                                 "intimidation":  {
+                                                      "base":  8,
+                                                      "augmented":  0,
+                                                      "effective":  8
+                                                  },
+                                 "deception":  {
+                                                   "base":  3,
+                                                   "augmented":  1,
+                                                   "effective":  6
+                                               },
+                                 "empathy":  {
+                                                 "base":  5,
+                                                 "augmented":  1,
+                                                 "effective":  5
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.38,
+                                      "caution":  0.98,
+                                      "loyalty":  0.23,
+                                      "greed":  0.95,
+                                      "empathy":  0.53
+                                  },
+                  "drives":  [
+                                 "survival",
+                                 "money",
+                                 "protection"
+                             ],
+                  "thresholds":  {
+                                     "pain":  8,
+                                     "stress":  6,
+                                     "loyalty_break":  5
+                                 },
+                  "strengths":  [
+                                    "technical expertise with augmentation systems",
+                                    "social chameleon â€” adapts to any environment",
+                                    "pain tolerance beyond normal limits"
+                                ],
+                  "weaknesses":  [
+                                     "physical limitation from incomplete augmentation",
+                                     "trust issues that limit crew effectiveness"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "surveillance specialist",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Advocates caution to others but takes insane risks personally â€” double standard they can\u0027t see"
+                                          ],
+                       "habits":  [
+                                      "Taps a specific rhythm on hard surfaces when thinking â€” Morse code for a word they won\u0027t say",
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Practices a kata or fighting form every morning regardless of circumstances"
+                                  ],
+                       "breaking_points":  [
+                                               "Running out of options â€” no contacts, no money, no safe house, no way out",
+                                               "Complete isolation â€” cut off from network, contacts, and purpose simultaneously"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Wired reflexes with adrenaline pump",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Wired reflexes with adrenaline pump â€” chemical-mechanical hybrid augmentation",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Synthetic muscle fiber replacement in legs",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Analyst":  0.9,
+                       "Pattern Reader":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Crucible Square",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: Southeast Asian (37.8%), Pacific Islander (28.2%), Hispanic/Latin American (15.3%), Middle Eastern (12.8%), Sub-Saharan African (5.9%). Features reflect this multifaceted ancestry â€” warm bronze skin with golden and amber undertones from Southeast Asian and Pacific Islander heritage, high cheekbones and eye shape influenced by Southeast Asian ancestry, prominent jaw structure with subtle width from Pacific Islander and Hispanic lineage, and facial bone structure showing depth and richness from Middle Eastern and African heritage markers.",
+                                 "height_cm":  178,
+                                 "weight_kg":  72,
+                                 "build":  "Lean and angular with visible muscle definition â€” wiry rather than bulky. The synthetic muscle fiber in his legs gives him a slightly asymmetrical appearance, calves slightly fuller and more defined than natural aging would permit. Minimal body fat, carved by decades of discipline and chemical augmentation.",
+                                 "hair_color":  "Steel gray with residual black at the roots",
+                                 "hair_style":  "Closely trimmed, military-precise",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, naturally â€” alert and constantly assessing",
+                                 "skin_tone":  "Warm bronze-gold with golden and amber undertones, weathered by age and exposure. The tone reflects the blended heritage of Southeast Asian warmth, Pacific Islander depth, Hispanic richness, Middle Eastern character, and Sub-Saharan African undertones.",
+                                 "complexion":  "Deep facial lines around the eyes and mouth â€” the map of 65 years of tension and squinting at monitors. Jaw prominent and sharp with subtle width from Pacific Islander and Hispanic heritage. Skin texture rough in places where augmentation scarring has healed imperfectly. High cheekbones with slight angular quality from Southeast Asian ancestry. Facial bone structure shows depth characteristic of Middle Eastern and African heritage.",
+                                 "distinguishing_marks":  [
+                                                              "Chrome circuitry visible at both temples â€” silver-gray neural interface ports running from jawline to hairline, installed with functional brutality and minimal cosmetic finish.",
+                                                              "Jagged scar tissue along the right jawline where the adrenaline pump was grafted, silvery-white and slightly raised.",
+                                                              "Thin burn marks running down the inside of both forearms â€” old electrical contact scars from early maintenance mistakes.",
+                                                              "A faded tattoo on his left shoulder blade: a runner\u0027s marker from the Gray Zone, now barely visible under sun damage."
+                                                          ],
+                                 "visible_augmentations":  "Chrome neural interface ports at temples and jawline are immediately obvious â€” deliberate, unapologetic exposure. The synthetic muscle fiber in his legs creates a subtle visual discontinuity in his calf definition and bulk. His movements are too fast, too precise for his age â€” the wired reflexes betray their presence in micro-adjustments and reaction speed.",
+                                 "posture_movement":  "Stands with weight balanced, always ready to move. His gait is economical and quick, though he favors flat ground and visibly tenses on stairs â€” a tell that his leg augmentations don\u0027t handle inclines well. His head moves in small, precise rotations, scanning. Even at rest, his hands are never still â€” fidgeting with a contract chip, a surveillance scanner, something. A man wound too tight.",
+                                 "clothing_style":  "Tier 3-4 functional wear with no pretense of style. Dark gray or black reinforced cargo pants with multiple pockets and a faint sheen of wear-resistant coating. A faded black synth-cotton shirt, sleeves pushed to the elbows to expose the augmentation scars â€” a statement of acceptance. Over it, a worn grey synthetic jacket with internal cable management and reinforced pockets for surveillance gear. Utilitarian boots, scuffed and re-soled multiple times. No jewelry, no chrome accents. Everything worn, everything practical, nothing decorative."
+                             },
+    "image_prompt":  "Agustina Taualagi, 65-year-old neo-noir operative, 178cm tall, lean angular build with visible muscle definition. Warm bronze-gold skin with golden and amber undertones reflecting Southeast Asian, Pacific Islander, Hispanic, Middle Eastern, and African heritage. High Southeast Asian cheekbones, prominent sharp jaw with Pacific Islander width, deep weathered facial lines, dark brown alert eyes. Steel gray hair with black roots, closely trimmed military-precise cut. Chrome neural interface ports visible at temples and jawline running to neck, silvery-gray and functional. Jagged scarring along right jaw from adrenaline pump graft. Thin electrical burn scars on inner forearms. Faded tattoo on left shoulder blade. Synthetic muscle fiber in legs creates subtle calf definition asymmetry. Standing in balanced ready posture, slightly tense. Wearing faded black synth-cotton shirt with pushed-up sleeves exposing augmentation scars, worn grey synthetic jacket with reinforced pockets, dark cargo pants with wear-resistant coating, scuffed utilitarian boots. No jewelry, practical everything. Hands fidgeting with surveillance gear. GLMZ, Great Lakes Metropolitan Zone, dimly lit tech-noir interior with neon accents casting shadows across weathered face, moody contemplative expression, gritty realism, cinematic lighting --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  37.8,
+                             "Pacific Islander":  28.2,
+                             "Hispanic/Latin American":  15.3,
+                             "Middle Eastern":  12.8,
+                             "Sub-Saharan African":  5.9
+                         },
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  25.2
+                                                             },
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  5.7
+                                                                   },
+                                                    "Laotian":  {
+                                                                    "Laotian":  6.9
+                                                                }
+                                                },
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Tuvaluan":  1.8,
+                                                                        "Tokelauan":  0.8
+                                                                    },
+                                                     "Micronesian":  {
+                                                                         "Marshallese":  3.8,
+                                                                         "Palauan":  9.9
+                                                                     },
+                                                     "Melanesian":  {
+                                                                        "Fijian":  11.9
+                                                                    }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  3.3
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Ecuadorian":  9.3,
+                                                                                   "Brazilian":  2.7
+                                                                               }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  6.4,
+                                                                   "Afghan Dari":  2.2
+                                                               },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  4.2
+                                                               }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Gabonese":  3.5,
+                                                                                "Congolese":  1.3
+                                                                            },
+                                                        "East African":  {
+                                                                             "Kenyan":  1.1
+                                                                         }
+                                                    }
+                        }
 }

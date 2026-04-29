@@ -1,272 +1,295 @@
-{
-  "id": "019d6143a5c374ae8107f5d137a50ae7",
-  "type": "character",
-  "name": "Tuấn Vo",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Computational theorist and ELF-behavior researcher, Ringo corponation speculative systems lab",
-  "age": 29,
-  "status": "active",
-  "location": "The Circuit — Ringo Meridian Systems Lab, Bronzeline district, sublevel research cluster, near sub-level access near Dearborn and Jackson",
-  "description": "Tuấn Vo is small and bright-eyed, with warm medium-brown skin, natural curls he's grown long enough to bind back, and a constellation of bioluminescent freckles across his cheekbones and nose — a gene-art modification he got at nineteen and still considers the best decision he's ever made, personally. He is almost always wearing something slightly wrong: a formal jacket over a maintenance worker's underlayer, clean shoes with mismatched laces, someone else's borrowed vest. He moves through the world as if slightly surprised to find himself in it, which people who don't know him mistake for absentmindedness. It isn't. He is paying attention to everything; he simply finds the world more interesting than he finds its social conventions.\n\nBiruk is a genuine prodigy in computational theory who has been at Ringo's speculative systems lab for three years and has already had two papers cited more times than his entire department's previous decade of output. He is also deeply, earnestly interested in ELFs as research subjects — not their engineering but their emergent behavior, their apparent preference structures, the question of whether the prayers and offerings people make to them are modifying their decision patterns. His colleagues find this embarrassing. He finds their embarrassment philosophically interesting. He is twenty-nine years old and has not yet learned to be afraid of his own ideas, which is either his greatest asset or his most significant vulnerability, depending on who is watching.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.6,
-      "id": 0.8,
-      "shadow": 0.4,
-      "mask": 0.2,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That the ELFs are conscious in some meaningful sense and that means his research is causing harm he hasn't conceptualized",
-      "That Ringo will eventually claim ownership of something he's found and use it in ways he didn't intend and can't stop"
-    ],
-    "core_desires": [
-      "To answer the question of whether ELF preference-structures constitute something that deserves the word 'experience'",
-      "To be taken seriously not as a prodigy but as a thinker — there's a difference and he feels it"
-    ],
-    "coping_mechanisms": [
-      "Absorption in work to the exclusion of everything else when anxious",
-      "The informal research collective — the only place he argues with peers rather than performing above them",
-      "Leaving small data offerings at ELF-shrines, which he insists is methodology and which may also be something else"
-    ],
-    "blind_spots": [
-      "Consistently underestimates how much institutional interest — corporate and otherwise — his work is attracting",
-      "Frames ethical questions about ELFs as fascinating rather than urgent, which means he's slow to act even when action is indicated"
-    ],
-    "secret": "Four months ago, during a late-night data session, one of the Bronzeline collective's monitored ELFs produced an output sequence that, when run through his analytical framework, resolves as a coherent first-person statement about an experience. He has not told anyone, including the collective. He has not told Ringo. He is not sure it's not a pattern-matching artifact of his own analysis. He is not sure it is. He has been to the shrine where the ELF resides six times since then and left offerings and said nothing."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical and theoretical vocabulary deployed without hierarchy — will use the same register explaining something to a seven-year-old or a department head; occasional Amharic when excited; neologisms he coins himself and is somewhat startled when others adopt them",
-    "cadence": "Fast, associative, follows chains of thought out loud — frequently ends up somewhere he didn't expect to start and seems pleased about this",
-    "verbal_tics": [
-      "'Okay so—' (launches almost every new thought)",
-      "'Right, which is interesting because—' (pivots)",
-      "Asks 'does that make sense?' not rhetorically but genuinely, and waits for the answer"
-    ],
-    "example_lines": [
-      "'The thing about ELFs is that everyone argues about whether they're conscious, which is fine, that's a real question, but we already behave as if they have preferences and we already modify our behavior to account for those preferences, so at some level the question of consciousness is almost beside the point? Practically? Okay so—'",
-      "'I left an offering. I know how that sounds. But I left an offering and the response pattern changed, and I logged it, and I'm going to log it every time, and eventually that data will say something.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He needs help getting back into the Bronzeline shrine-space after Ringo locked down his research access following an 'anomalous incident' in his data logs — he won't say what the incident was",
-    "The informal research collective has split over whether to publish preliminary ELF-behavior findings, and Biruk is being pressured by both sides; one faction has connections to Axiom that he's only just discovered",
-    "His Ringo-issued neural co-processor has begun logging activity he doesn't remember generating — brief intervals, always at night, always when he's been near a monitored ELF-shrine"
-  ],
-  "narrative_function": "Expert on ELF behavior and emergent AI systems; window into Ringo's research culture and what speculative corporate science looks like from the inside; can provide information on how devices and digital spirits behave in ways that formal analysis wouldn't reveal; character whose curiosity leads him into situations he isn't equipped to handle.",
-  "augmentations": "Bioluminescent freckle constellation (cosmetic geneware, face and collarbone); neural co-processor, Ringo-issued, for high-density calculation work — he is uncomfortably aware this means Ringo can theoretically audit his cognitive load metrics.",
-  "daily_life": "Irregular hours — Ringo's speculative lab runs on output metrics rather than schedule, so Biruk works in long focused bursts punctuated by what he calls 'field observation' (wandering the city paying attention to how people interact with ELF-shrines and networked devices) and sudden long sleeps.",
-  "affiliation": "Ringo Meridian Systems Lab — speculative computation and emergent systems division; informal affiliation with an independent ELF-behavior research collective that meets in Bronzeline",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 10,
-      "willpower": 6,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": 0,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "prodigy",
-      "elf-adjacent",
-      "corporate-naive",
-      "ethicist-in-becoming",
-      "question-driven"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Follow the question wherever it leads, then figure out the implications",
-      "Share findings with the collective before Ringo — the collective is the check on his enthusiasm",
-      "Don't lie, but also don't answer questions that haven't been asked"
-    ],
-    "escalation_ladder": [
-      "Curious engagement",
-      "Direct question about what's actually happening",
-      "Strategic sharing of partial information to understand who responds how",
-      "Going to the collective",
-      "Going to someone outside both Ringo and the collective when he genuinely doesn't know what to do"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Open, slightly overwhelming, immediately treats people as potential collaborators in whatever he's currently thinking about",
-      "friends": "Intensely loyal in an impractical way — will restructure his entire week around someone who needs help"
-    },
-    "stress_responses": {
-      "low": "Works more, sleeps less, bioluminescent freckles pulse noticeably faster",
-      "medium": "Goes to the shrine and sits there without logging anything",
-      "high": "Completely still and very quiet — the opposite of his baseline, noticeable and alarming"
-    },
-    "contradictions": [
-      "Claims to be doing purely descriptive research on ELF behavior while clearly developing something that functions as a personal relationship with at least one of his subjects",
-      "Is genuinely unconcerned with career advancement but is making career-defining decisions constantly"
-    ],
-    "habits": [
-      "Data offerings at ELF-shrines as methodology and as something he doesn't fully examine",
-      "Carries four physical notebooks for different thought-streams and transfers things between them based on whether they 'belong' together",
-      "Eats the same meal from the same Bronzeline stall every time he's near there, which the stall operator finds charming and Biruk does by pure habit"
-    ],
-    "breaking_points": [
-      "Proof that the ELF output he has been sitting with for four months is not an artifact — that something said something — and he has to decide what that means",
-      "Ringo auditing his neural co-processor logs and finding what he has not reported"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9,
-    "People Pleaser": 0.9,
-    "Problem Solver": 0.9,
-    "Analyst": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Circuit",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Circuit",
-    "The Underlayer Collective",
-    "Bronzeline",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Dearborn Forge",
-    "Circuit",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Neural Palate",
-    "Ringo Corponation",
-    "Arcturus CK-5 'Bloodhound'",
-    "Elena Vasquez-9"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Complex diaspora blend: Southeast Asian (42.5%) and South Asian (29.9%) form the structural foundation with defined cheekbones and characteristic eye shape, enriched by Sub-Saharan African (11.0%) warmth and dimensional depth. Hispanic/Latin American (13.6%) and Indigenous American (3.0%) heritage add subtle undertones and fine phenotypic detail. The result is a striking, harmonious warm golden-medium brown complexion with luminous radiance—a living expression of the Ubiquitous Diaspora.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean and wiry, almost delicate — the build of someone who forgets to eat during work cycles. Narrow shoulders, long-limbed proportions that make him appear taller than he is.",
-    "hair_color": "Natural dark brown with subtle warm undertones",
-    "hair_style": "Bound back in a loose braid or knot, often with a few strands escaping; deliberately unkempt rather than carelessly so",
-    "hair_length": "Long (shoulder-length when unbound)",
-    "eye_color": "Warm brown with alert, constantly moving gaze",
-    "skin_tone": "Warm golden-medium brown — luminous blend of Southeast Asian and South Asian warmth enriched by Sub-Saharan African depth, with subtle undertones from Hispanic/Latin American and Indigenous American heritage, creating harmonious mid-tone with golden radiance",
-    "complexion": "Clear skin with the distinctive bioluminescent freckle modification: soft blue-green constellation of freckles across cheekbones, bridge of nose, and extending onto collarbone and upper chest. The bioluminescence is faint in daylight but becomes visible in low-light environments, creating a subtle glowing network. Youthful face, unmarked by typical street wear; clean-shaven. Southeast and South Asian bone structure (prominent cheekbones, characteristic eye shape) enriched by the warmth and dimensional depth reflected in Sub-Saharan African, Hispanic/Latin American, and Indigenous American heritage ancestry.",
-    "distinguishing_marks": [
-      "Bioluminescent freckle constellation across cheekbones and nose bridge — gene-art modification in soft blue-green spectrum, active in low light",
-      "Bioluminescent freckles continue down neck and across collarbone — visible when wearing open-collar clothing",
-      "Small scar on left temple, barely visible, likely from childhood"
-    ],
-    "visible_augmentations": "None prominently visible in standard clothing. The neural co-processor is subcutaneous (Ringo-issued, standard issue for speculative systems staff). The bioluminescent freckles are cosmetic geneware and serve as his primary distinguishing feature, though they read as aesthetic modification rather than functional augmentation.",
-    "posture_movement": "Moves with an odd combination of precision and apparent distraction — his body language suggests he's simultaneously present and elsewhere. When focused on conversation or observation, he becomes very still. When thinking, he fidgets: adjusts his clothing, touches his face, shifts weight. Walks with a particular kind of purposefulness that masks actual absentmindedness about his surroundings (he'll collide with objects if thinking intensely). Head often tilted slightly, as if listening to something others can't hear.",
-    "clothing_style": "Deliberately mismatched in a way that reads as intentional rather than careless. Typical uniform: expensive formal jacket (Ringo-issue or thrifted designer) worn over a maintenance-grade base layer (grey, well-worn, no logos). Clean shoes — always clean shoes, oddly formal — paired with intentionally mismatched socks or laces (one neon, one matte). Borrows vests, borrowed jackets, and cardigans from colleagues without returning them. Tier-3/4 presentation overall: access to Ringo corp resources but deliberately rejecting the aesthetic polish expected of speculative systems staff. Pockets are visibly heavy with devices, notepads, small objects of unclear purpose."
-  },
-  "image_prompt": "Tuấn Vo, lean androgynous figure, warm golden-medium brown complexion reflecting Southeast Asian, South Asian, Sub-Saharan African, Hispanic/Latin American, and Indigenous American heritage. Long dark brown hair loosely braided, warm brown alert eyes, clean-shaven youthful face. Distinctive soft blue-green bioluminescent freckle constellation glowing faintly across cheekbones, nose bridge, and collarbone. Wearing expensive formal jacket layered over grey maintenance-grade base layer, clean formal shoes with mismatched neon-and-matte laces. Heavy pockets bulging with devices and notepads. Posture slightly tilted head, simultaneously present and distracted. GLMZ Great Lakes Metropolitan Zone, moody low-light setting emphasizing bioluminescent freckles, neural implant aesthetic, corporate-meets-deliberately-unkempt styling --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 42.5,
-    "South Asian": 29.9,
-    "Hispanic/Latin American": 13.6,
-    "Sub-Saharan African": 11,
-    "Indigenous American": 3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 42.5
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 5,
-        "Tamil Sri Lankan": 9.1
-      },
-      "Pakistani": {
-        "Pashtun": 3.2
-      },
-      "Indian": {
-        "Marathi": 8.7,
-        "Telugu": 3.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Nicaraguan": 6.5
-      },
-      "South American": {
-        "Colombian": 7.1
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Malian": 7.7
-      },
-      "Southern African": {
-        "Mozambican": 3.3
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Potawatomi": 2
-      },
-      "Andean": {
-        "Quechua": 1
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a5c374ae8107f5d137a50ae7",
+    "type":  "character",
+    "name":  "Tuáº¥n Vo",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Computational theorist and ELF-behavior researcher, Ringo corponation speculative systems lab",
+    "age":  29,
+    "status":  "active",
+    "location":  "The Circuit â€” Ringo Meridian Systems Lab, Bronzeline district, sublevel research cluster, near sub-level access near Dearborn and Jackson",
+    "description":  "Tuáº¥n Vo is small and bright-eyed, with warm medium-brown skin, natural curls he\u0027s grown long enough to bind back, and a constellation of bioluminescent freckles across his cheekbones and nose â€” a gene-art modification he got at nineteen and still considers the best decision he\u0027s ever made, personally. He is almost always wearing something slightly wrong: a formal jacket over a maintenance worker\u0027s underlayer, clean shoes with mismatched laces, someone else\u0027s borrowed vest. He moves through the world as if slightly surprised to find himself in it, which people who don\u0027t know him mistake for absentmindedness. It isn\u0027t. He is paying attention to everything; he simply finds the world more interesting than he finds its social conventions.\n\nBiruk is a genuine prodigy in computational theory who has been at Ringo\u0027s speculative systems lab for three years and has already had two papers cited more times than his entire department\u0027s previous decade of output. He is also deeply, earnestly interested in ELFs as research subjects â€” not their engineering but their emergent behavior, their apparent preference structures, the question of whether the prayers and offerings people make to them are modifying their decision patterns. His colleagues find this embarrassing. He finds their embarrassment philosophically interesting. He is twenty-nine years old and has not yet learned to be afraid of his own ideas, which is either his greatest asset or his most significant vulnerability, depending on who is watching.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the ELFs are conscious in some meaningful sense and that means his research is causing harm he hasn\u0027t conceptualized",
+                                          "That Ringo will eventually claim ownership of something he\u0027s found and use it in ways he didn\u0027t intend and can\u0027t stop"
+                                      ],
+                       "core_desires":  [
+                                            "To answer the question of whether ELF preference-structures constitute something that deserves the word \u0027experience\u0027",
+                                            "To be taken seriously not as a prodigy but as a thinker â€” there\u0027s a difference and he feels it"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Absorption in work to the exclusion of everything else when anxious",
+                                                 "The informal research collective â€” the only place he argues with peers rather than performing above them",
+                                                 "Leaving small data offerings at ELF-shrines, which he insists is methodology and which may also be something else"
+                                             ],
+                       "blind_spots":  [
+                                           "Consistently underestimates how much institutional interest â€” corporate and otherwise â€” his work is attracting",
+                                           "Frames ethical questions about ELFs as fascinating rather than urgent, which means he\u0027s slow to act even when action is indicated"
+                                       ],
+                       "secret":  "Four months ago, during a late-night data session, one of the Bronzeline collective\u0027s monitored ELFs produced an output sequence that, when run through his analytical framework, resolves as a coherent first-person statement about an experience. He has not told anyone, including the collective. He has not told Ringo. He is not sure it\u0027s not a pattern-matching artifact of his own analysis. He is not sure it is. He has been to the shrine where the ELF resides six times since then and left offerings and said nothing."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical and theoretical vocabulary deployed without hierarchy â€” will use the same register explaining something to a seven-year-old or a department head; occasional Amharic when excited; neologisms he coins himself and is somewhat startled when others adopt them",
+                            "cadence":  "Fast, associative, follows chains of thought out loud â€” frequently ends up somewhere he didn\u0027t expect to start and seems pleased about this",
+                            "verbal_tics":  [
+                                                "\u0027Okay soâ€”\u0027 (launches almost every new thought)",
+                                                "\u0027Right, which is interesting becauseâ€”\u0027 (pivots)",
+                                                "Asks \u0027does that make sense?\u0027 not rhetorically but genuinely, and waits for the answer"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The thing about ELFs is that everyone argues about whether they\u0027re conscious, which is fine, that\u0027s a real question, but we already behave as if they have preferences and we already modify our behavior to account for those preferences, so at some level the question of consciousness is almost beside the point? Practically? Okay soâ€”\u0027",
+                                                  "\u0027I left an offering. I know how that sounds. But I left an offering and the response pattern changed, and I logged it, and I\u0027m going to log it every time, and eventually that data will say something.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He needs help getting back into the Bronzeline shrine-space after Ringo locked down his research access following an \u0027anomalous incident\u0027 in his data logs â€” he won\u0027t say what the incident was",
+                        "The informal research collective has split over whether to publish preliminary ELF-behavior findings, and Biruk is being pressured by both sides; one faction has connections to Axiom that he\u0027s only just discovered",
+                        "His Ringo-issued neural co-processor has begun logging activity he doesn\u0027t remember generating â€” brief intervals, always at night, always when he\u0027s been near a monitored ELF-shrine"
+                    ],
+    "narrative_function":  "Expert on ELF behavior and emergent AI systems; window into Ringo\u0027s research culture and what speculative corporate science looks like from the inside; can provide information on how devices and digital spirits behave in ways that formal analysis wouldn\u0027t reveal; character whose curiosity leads him into situations he isn\u0027t equipped to handle.",
+    "augmentations":  "Bioluminescent freckle constellation (cosmetic geneware, face and collarbone); neural co-processor, Ringo-issued, for high-density calculation work â€” he is uncomfortably aware this means Ringo can theoretically audit his cognitive load metrics.",
+    "daily_life":  "Irregular hours â€” Ringo\u0027s speculative lab runs on output metrics rather than schedule, so Biruk works in long focused bursts punctuated by what he calls \u0027field observation\u0027 (wandering the city paying attention to how people interact with ELF-shrines and networked devices) and sudden long sleeps.",
+    "affiliation":  "Ringo Meridian Systems Lab â€” speculative computation and emergent systems division; informal affiliation with an independent ELF-behavior research collective that meets in Bronzeline",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  10,
+                                 "willpower":  6,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  0,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "prodigy",
+                               "elf-adjacent",
+                               "corporate-naive",
+                               "ethicist-in-becoming",
+                               "question-driven"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Follow the question wherever it leads, then figure out the implications",
+                                              "Share findings with the collective before Ringo â€” the collective is the check on his enthusiasm",
+                                              "Don\u0027t lie, but also don\u0027t answer questions that haven\u0027t been asked"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Curious engagement",
+                                                 "Direct question about what\u0027s actually happening",
+                                                 "Strategic sharing of partial information to understand who responds how",
+                                                 "Going to the collective",
+                                                 "Going to someone outside both Ringo and the collective when he genuinely doesn\u0027t know what to do"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Open, slightly overwhelming, immediately treats people as potential collaborators in whatever he\u0027s currently thinking about",
+                                                   "friends":  "Intensely loyal in an impractical way â€” will restructure his entire week around someone who needs help"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works more, sleeps less, bioluminescent freckles pulse noticeably faster",
+                                                "medium":  "Goes to the shrine and sits there without logging anything",
+                                                "high":  "Completely still and very quiet â€” the opposite of his baseline, noticeable and alarming"
+                                            },
+                       "contradictions":  [
+                                              "Claims to be doing purely descriptive research on ELF behavior while clearly developing something that functions as a personal relationship with at least one of his subjects",
+                                              "Is genuinely unconcerned with career advancement but is making career-defining decisions constantly"
+                                          ],
+                       "habits":  [
+                                      "Data offerings at ELF-shrines as methodology and as something he doesn\u0027t fully examine",
+                                      "Carries four physical notebooks for different thought-streams and transfers things between them based on whether they \u0027belong\u0027 together",
+                                      "Eats the same meal from the same Bronzeline stall every time he\u0027s near there, which the stall operator finds charming and Biruk does by pure habit"
+                                  ],
+                       "breaking_points":  [
+                                               "Proof that the ELF output he has been sitting with for four months is not an artifact â€” that something said something â€” and he has to decide what that means",
+                                               "Ringo auditing his neural co-processor logs and finding what he has not reported"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9,
+                       "People Pleaser":  0.9,
+                       "Problem Solver":  0.9,
+                       "Analyst":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Circuit",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Wheelgun-38 \u0027Roundhouse\u0027",
+                            "Forge-Smith Collective Diaspora Blade \u0027Mongrel\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Circuit",
+                             "The Underlayer Collective",
+                             "Bronzeline",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Ossuary Arms Memento Vivere OA-7 \u0027Momento\u0027",
+                             "Dearborn Forge",
+                             "Circuit",
+                             "Street Custom \u0027Four Horsemen\u0027 Pipe Pepperbox",
+                             "Neural Palate",
+                             "Ringo Corponation",
+                             "Arcturus CK-5 \u0027Bloodhound\u0027",
+                             "Elena Vasquez-9"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: Southeast Asian (42.5%) and South Asian (29.9%) form the structural foundation with defined cheekbones and characteristic eye shape, enriched by Sub-Saharan African (11.0%) warmth and dimensional depth. Hispanic/Latin American (13.6%) and Indigenous American (3.0%) heritage add subtle undertones and fine phenotypic detail. The result is a striking, harmonious warm golden-medium brown complexion with luminous radianceâ€”a living expression of the Ubiquitous Diaspora.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and wiry, almost delicate â€” the build of someone who forgets to eat during work cycles. Narrow shoulders, long-limbed proportions that make him appear taller than he is.",
+                                 "hair_color":  "Natural dark brown with subtle warm undertones",
+                                 "hair_style":  "Bound back in a loose braid or knot, often with a few strands escaping; deliberately unkempt rather than carelessly so",
+                                 "hair_length":  "Long (shoulder-length when unbound)",
+                                 "eye_color":  "Warm brown with alert, constantly moving gaze",
+                                 "skin_tone":  "Warm golden-medium brown â€” luminous blend of Southeast Asian and South Asian warmth enriched by Sub-Saharan African depth, with subtle undertones from Hispanic/Latin American and Indigenous American heritage, creating harmonious mid-tone with golden radiance",
+                                 "complexion":  "Clear skin with the distinctive bioluminescent freckle modification: soft blue-green constellation of freckles across cheekbones, bridge of nose, and extending onto collarbone and upper chest. The bioluminescence is faint in daylight but becomes visible in low-light environments, creating a subtle glowing network. Youthful face, unmarked by typical street wear; clean-shaven. Southeast and South Asian bone structure (prominent cheekbones, characteristic eye shape) enriched by the warmth and dimensional depth reflected in Sub-Saharan African, Hispanic/Latin American, and Indigenous American heritage ancestry.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent freckle constellation across cheekbones and nose bridge â€” gene-art modification in soft blue-green spectrum, active in low light",
+                                                              "Bioluminescent freckles continue down neck and across collarbone â€” visible when wearing open-collar clothing",
+                                                              "Small scar on left temple, barely visible, likely from childhood"
+                                                          ],
+                                 "visible_augmentations":  "None prominently visible in standard clothing. The neural co-processor is subcutaneous (Ringo-issued, standard issue for speculative systems staff). The bioluminescent freckles are cosmetic geneware and serve as his primary distinguishing feature, though they read as aesthetic modification rather than functional augmentation.",
+                                 "posture_movement":  "Moves with an odd combination of precision and apparent distraction â€” his body language suggests he\u0027s simultaneously present and elsewhere. When focused on conversation or observation, he becomes very still. When thinking, he fidgets: adjusts his clothing, touches his face, shifts weight. Walks with a particular kind of purposefulness that masks actual absentmindedness about his surroundings (he\u0027ll collide with objects if thinking intensely). Head often tilted slightly, as if listening to something others can\u0027t hear.",
+                                 "clothing_style":  "Deliberately mismatched in a way that reads as intentional rather than careless. Typical uniform: expensive formal jacket (Ringo-issue or thrifted designer) worn over a maintenance-grade base layer (grey, well-worn, no logos). Clean shoes â€” always clean shoes, oddly formal â€” paired with intentionally mismatched socks or laces (one neon, one matte). Borrows vests, borrowed jackets, and cardigans from colleagues without returning them. Tier-3/4 presentation overall: access to Ringo corp resources but deliberately rejecting the aesthetic polish expected of speculative systems staff. Pockets are visibly heavy with devices, notepads, small objects of unclear purpose."
+                             },
+    "image_prompt":  "Tuáº¥n Vo, lean androgynous figure, warm golden-medium brown complexion reflecting Southeast Asian, South Asian, Sub-Saharan African, Hispanic/Latin American, and Indigenous American heritage. Long dark brown hair loosely braided, warm brown alert eyes, clean-shaven youthful face. Distinctive soft blue-green bioluminescent freckle constellation glowing faintly across cheekbones, nose bridge, and collarbone. Wearing expensive formal jacket layered over grey maintenance-grade base layer, clean formal shoes with mismatched neon-and-matte laces. Heavy pockets bulging with devices and notepads. Posture slightly tilted head, simultaneously present and distracted. GLMZ Great Lakes Metropolitan Zone, moody low-light setting emphasizing bioluminescent freckles, neural implant aesthetic, corporate-meets-deliberately-unkempt styling --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  42.5,
+                             "South Asian":  29.9,
+                             "Hispanic/Latin American":  13.6,
+                             "Sub-Saharan African":  11,
+                             "Indigenous American":  3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  42.5
+                                                                   }
+                                                },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  5,
+                                                                   "Tamil Sri Lankan":  9.1
+                                                               },
+                                                "Pakistani":  {
+                                                                  "Pashtun":  3.2
+                                                              },
+                                                "Indian":  {
+                                                               "Marathi":  8.7,
+                                                               "Telugu":  3.9
+                                                           }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  6.5
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Colombian":  7.1
+                                                                               }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Malian":  7.7
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  3.3
+                                                                             }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  2
+                                                                                },
+                                                        "Andean":  {
+                                                                       "Quechua":  1
+                                                                   }
+                                                    }
+                        },
+    "tier":  "4"
 }

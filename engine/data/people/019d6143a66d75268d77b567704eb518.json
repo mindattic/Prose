@@ -1,332 +1,359 @@
-{
-  "id": "019d6143a66d75268d77b567704eb518",
-  "type": "character",
-  "name": "Farouq Dlamini-Banerjee-Kulkarni",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Bounty Compliance Officer, Arcturus Recovery Solutions",
-  "age": 38,
-  "status": "active",
-  "location": "Copperhead, near Milwaukee and Damen",
-  "description": "Farouq Dlamini-Banerjee-Kulkarni has cat ears — a geneware mod she got at nineteen for reasons she no longer remembers clearly and has long since stopped noticing. They are dark brown, tufted, and rotate toward sound with involuntary precision, which she has found professionally useful and socially embarrassing in equal measure. She is lean and quick-moving, with the kind of economy of motion that comes from spending years in spaces too small or too dangerous for wasted effort. Her skin is a dark reddish-brown, her jaw is square, and she has a scar through her left eyebrow from a skip who turned out to be more determined than the file suggested. Her eyes are her father's — pale grey, a genetic ghost of his Russian line — which she occasionally uses to unsettle people when she catches them off-guard.\n\nShe is pragmatic, professional, and runs hot underneath in a way she has mostly learned to manage. She does not particularly enjoy her work, but she is good at it and it pays into Tier 3, which means her kid brother stays in Montclare Quiet with real air filters and a school that has actual teachers. She distinguishes carefully between skips who are hiding because they're dangerous and skips who are hiding because they're afraid, and she applies different approaches to each. She will not tell you she has this distinction — it would complicate negotiations. She leaves ELF offerings at the Copperhead shrine not for protection but for good read — the ability to walk into a room and understand it correctly.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.45,
-      "id": 0.65,
-      "shadow": 0.6,
-      "mask": 0.7,
-      "ghost": 0.35
-    },
-    "core_fears": [
-      "Her brother finding out who she actually is — what the work actually involves",
-      "Losing the ability to distinguish herself from the worst of what she does"
-    ],
-    "core_desires": [
-      "Enough stability that the calculus stops — that she can stop making this specific trade",
-      "To be seen accurately by one person she respects, without flinching"
-    ],
-    "coping_mechanisms": [
-      "Keeping the work and the brother in perfectly separate boxes",
-      "The ELF offering practice — externalized moral accounting",
-      "Categorizing skips by type as a way of keeping ethical distance"
-    ],
-    "blind_spots": [
-      "She is harder on frightened skips than she admits because they remind her of choices she almost made",
-      "The Arcturus contract has clauses she has read around rather than through"
-    ],
-    "secret": "She returned a skip to Arcturus three years ago who was, she later pieced together, a witness in a corporate suppression case. The skip disappeared from Arcturus custody within seventy-two hours. She has never taken a case involving Axiom-affiliated debt since, but she has also never said this out loud to anyone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Efficient, professional, code-switches between formal compliance terminology and blunt Copperhead vernacular. Her father's Russian side shows up in occasional formal phrasing and a fondness for proverbs she usually stops halfway through.",
-    "cadence": "Fast when working, deliberately slow when she wants someone to listen carefully.",
-    "verbal_tics": [
-      "Taps the scar through her eyebrow when thinking",
-      "Half-finished proverbs: 'As they say — well, you know the rest'",
-      "'The file said' as a distancing construction when talking about someone she feels conflicted about"
-    ],
-    "example_lines": [
-      "'The file said low-risk. The file also said compliant. I stopped reading the file and started reading the room.'",
-      "'I'm not a cop. I want to be very clear about that. I'm also not your friend yet. Let's see where we land.'",
-      "'My brother thinks I do debt mediation. That's not technically a lie. It's just not the part that matters.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Arcturus has assigned her a case that sets off every instinct she's been ignoring for three years — the skip is clearly a witness, not a debtor, and someone very corporate wants them back quietly.",
-    "She has been quietly collecting evidence about what happened to the witness she returned three years ago. She has enough now to do something with it. She doesn't know what."
-  ],
-  "narrative_function": "Morally complex antagonist or reluctant ally — she may be looking for someone a PC knows. Useful as a guide to the recovery and compliance underground. Can be bought or reasoned with under specific conditions, which creates interesting negotiation.",
-  "augmentations": "Geneware cat ears (cosmetic, now deeply involuntary). Subdermal tracking pings in both forearms — Arcturus company standard. Reaction-time neural booster (mild, licensed). No optical mods — she trusts her eyes as they are.",
-  "daily_life": "Takes cases from the Arcturus board in Copperhead three to four at a time, works them in parallel, spends mornings on digital trace and afternoons on physical legwork. Visits her brother Deko every rest day. Has a strict rule about not working in her home district.",
-  "affiliation": "Arcturus Recovery Solutions (private, licensed under Metro charter)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 6,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 0,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 3,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "bounty-recovery",
-      "geneware-ears",
-      "morally-fractured",
-      "protective-of-family",
-      "corporate-adjacent"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Distinguish the dangerous from the frightened — treat them differently even if the result is the same",
-      "Never take an Axiom-adjacent case",
-      "The brother does not learn details. Ever."
-    ],
-    "escalation_ladder": [
-      "Digital trace and passive surveillance",
-      "In-person approach, professional and calm",
-      "Negotiation — she prefers voluntary compliance and is genuinely good at producing it",
-      "Physical recovery — last resort, minimum force"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional surface, reading hard underneath, gives nothing away about her assessments",
-      "friends": "Guarded but warm — she shows up, physically, when it matters. Doesn't say much about herself."
-    },
-    "stress_responses": {
-      "low": "Ears rotate constantly — she's scanning; looks calm",
-      "medium": "Clipped speech, drops pleasantries, jaw tightens",
-      "high": "Goes very cold and very focused — the warmth disappears entirely and something precise and a little frightening takes its place"
-    },
-    "contradictions": [
-      "Maintains rigid ethical categories while working in a system that renders those categories meaningless",
-      "Protects her brother from her world while the world funds his safety"
-    ],
-    "habits": [
-      "ELF offering at the Copperhead shrine before each new case — anonymized location data from her last recovery, a kind of offering of knowledge",
-      "Reviews skip files with music on, silences music when she's made a decision",
-      "Never eats during active fieldwork — old habit from a bad experience"
-    ],
-    "breaking_points": [
-      "A case where the skip is clearly a child",
-      "Confirmation of what happened to the witness — concrete, undeniable confirmation"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Geneware cat ears (cosmetic, tufted)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Geneware cat ears (cosmetic, tufted)",
-      "replaces": ""
-    },
-    {
-      "name": "Subdermal tracking pings x2 (Arcturus company standard)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal tracking pings x2 (Arcturus company standard)",
-      "replaces": ""
-    },
-    {
-      "name": "Reaction-time neural booster (mild, licensed class B)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Reaction-time neural booster (mild, licensed class B)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Tactician": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Copperhead",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2162: Born, Burnside Pocket, to a Nigerian-Filipino mother and a Kazakh-Russian father",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2183: Licensed with Arcturus Recovery Solutions after three years of informal skip-tracing",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2197: Returned the Axiom witness; discontinued Axiom-adjacent casework",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2199: Began quiet evidence collection about the witness's disappearance",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200: Present — running three active cases, waiting for the fourth that will force a decision",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Volkov-Saito Precision VSK-8 'Rapier'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Volkov-Saito Precision VSK-8 'Rapier'"
-  ],
-  "related_entities": [
-    "Montclare Quiet",
-    "Copperhead",
-    "Arcturus Defense Solutions",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Witness",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Pale Mile",
-    "Zheng-Dao Heavy Industries Space Elevator Tether System"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Sub-Saharan African (42.6%), South Asian (37.1%), Hispanic/Latin American (16.1%), Indigenous American (4.2%) — a striking blend manifesting in rich warm brown skin with subtle copper and golden undertones. Features Sub-Saharan African depth and warmth as the dominant genetic layer, combined with South Asian facial architecture evident in prominent cheekbones and defined bone structure, softened by the warmth and feature gentleness of Latin American and Indigenous American heritage.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean and economical, muscle definition visible in forearms and shoulders from consistent fieldwork. No excess weight — the build of someone who moves through tight spaces habitually.",
-    "hair_color": "Natural black with slight warm undertone",
-    "hair_style": "Pulled back in a tight, functional braid or swept into a practical knot; styled for work, not aesthetics",
-    "hair_length": "Medium",
-    "eye_color": "Pale grey — striking against her warm brown skin tone, cool and direct",
-    "skin_tone": "Rich warm brown with copper and golden undertones; complexion even and sun-touched from fieldwork",
-    "complexion": "Facial structure reflecting Sub-Saharan African and South Asian ancestry with prominent, well-defined cheekbones and strong jaw. Eyes set wide and direct. Skin shows the dryness of someone who works long hours indoors and outdoors without much self-care. Professional grooming — minimal jewelry, no obvious makeup.",
-    "distinguishing_marks": [
-      "Scar through left eyebrow, pale and thin, roughly 3cm long, from a skip altercation",
-      "Pair of functional dark brown cat ears (geneware), furred and tufted, positioned atop her skull with visible muscle definition at base; ears rotate toward sound sources involuntarily"
-    ],
-    "visible_augmentations": "Dark brown cat ears with visible mobility and tufting (geneware). Thin subdermal tracking ping scars on both inner forearms — subtle, pale lines barely visible unless closely examined. No optical modifications — natural pale grey eyes only.",
-    "posture_movement": "Carries herself with economy and awareness — shoulders relaxed but ready. Moves without wasted motion, deliberate steps, head level. Eyes track rooms systematically. Ears twitch toward unfamiliar sounds with reflexive precision, a tell she has learned to read in others' reactions.",
-    "clothing_style": "Tier 3 professional — functional clothing that reads as competent rather than fashionable. Favors technical jackets with utility pockets, durable synthetic fabrics that shed stains and survive fieldwork. Usually wears a worn leather or synth-leather overshoulder rig for tools and restraint equipment. Boots with good ankle support. A single piece of jewelry: small silver or steel pendant she touches unconsciously when thinking.",
-    "image_prompt": "GLMZ, portrait of Farouq, a lean 168cm woman with rich warm brown skin and copper undertones. Pale grey eyes, striking against her complexion. Prominent cheekbones and strong jaw blending Sub-Saharan African and South Asian features, softened by Latin American warmth. Natural black hair pulled back in functional braid. Pale thin scar through left eyebrow. Dark brown furred cat ears (geneware) atop skull with visible muscle definition, ears slightly alert. Subdermal tracking scars visible on inner forearms. Professional tech jacket with utility pockets, worn synth-leather overshoulder tool rig. Steel pendant at neck. Boots with ankle support. Posture economical and aware, direct gaze. Industrial indoor-outdoor setting with cool neon and ambient lighting. --ar 2:3 --v 6"
-  },
-  "image_prompt": "GLMZ, portrait of Farouq, a lean 168cm woman with rich warm brown skin and copper undertones. Pale grey eyes, striking against her complexion. Prominent cheekbones and strong jaw blending Sub-Saharan African and South Asian features, softened by Latin American warmth. Natural black hair pulled back in functional braid. Pale thin scar through left eyebrow. Dark brown furred cat ears (geneware) atop skull with visible muscle definition, ears slightly alert. Subdermal tracking scars visible on inner forearms. Professional tech jacket with utility pockets, worn synth-leather overshoulder tool rig. Steel pendant at neck. Boots with ankle support. Posture economical and aware, direct gaze. Industrial indoor-outdoor setting with cool neon and ambient lighting. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 42.6,
-    "South Asian": 37.1,
-    "Hispanic/Latin American": 16.1,
-    "Indigenous American": 4.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 36.6
-      },
-      "West African": {
-        "Nigerian": 6
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 6.4,
-        "Tamil Sri Lankan": 16.2
-      },
-      "Pakistani": {
-        "Sindhi": 2.9
-      },
-      "Indian": {
-        "Tamil": 3.9,
-        "Malayali": 7.7
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 1.3
-      },
-      "South American": {
-        "Colombian": 9,
-        "Brazilian": 5.8
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Menominee": 4.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a66d75268d77b567704eb518",
+    "type":  "character",
+    "name":  "Farouq Dlamini-Banerjee-Kulkarni",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Bounty Compliance Officer, Arcturus Recovery Solutions",
+    "age":  38,
+    "status":  "active",
+    "location":  "Copperhead, near Milwaukee and Damen",
+    "description":  "Farouq Dlamini-Banerjee-Kulkarni has cat ears â€” a geneware mod she got at nineteen for reasons she no longer remembers clearly and has long since stopped noticing. They are dark brown, tufted, and rotate toward sound with involuntary precision, which she has found professionally useful and socially embarrassing in equal measure. She is lean and quick-moving, with the kind of economy of motion that comes from spending years in spaces too small or too dangerous for wasted effort. Her skin is a dark reddish-brown, her jaw is square, and she has a scar through her left eyebrow from a skip who turned out to be more determined than the file suggested. Her eyes are her father\u0027s â€” pale grey, a genetic ghost of his Russian line â€” which she occasionally uses to unsettle people when she catches them off-guard.\n\nShe is pragmatic, professional, and runs hot underneath in a way she has mostly learned to manage. She does not particularly enjoy her work, but she is good at it and it pays into Tier 3, which means her kid brother stays in Montclare Quiet with real air filters and a school that has actual teachers. She distinguishes carefully between skips who are hiding because they\u0027re dangerous and skips who are hiding because they\u0027re afraid, and she applies different approaches to each. She will not tell you she has this distinction â€” it would complicate negotiations. She leaves ELF offerings at the Copperhead shrine not for protection but for good read â€” the ability to walk into a room and understand it correctly.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Her brother finding out who she actually is â€” what the work actually involves",
+                                          "Losing the ability to distinguish herself from the worst of what she does"
+                                      ],
+                       "core_desires":  [
+                                            "Enough stability that the calculus stops â€” that she can stop making this specific trade",
+                                            "To be seen accurately by one person she respects, without flinching"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Keeping the work and the brother in perfectly separate boxes",
+                                                 "The ELF offering practice â€” externalized moral accounting",
+                                                 "Categorizing skips by type as a way of keeping ethical distance"
+                                             ],
+                       "blind_spots":  [
+                                           "She is harder on frightened skips than she admits because they remind her of choices she almost made",
+                                           "The Arcturus contract has clauses she has read around rather than through"
+                                       ],
+                       "secret":  "She returned a skip to Arcturus three years ago who was, she later pieced together, a witness in a corporate suppression case. The skip disappeared from Arcturus custody within seventy-two hours. She has never taken a case involving Axiom-affiliated debt since, but she has also never said this out loud to anyone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Efficient, professional, code-switches between formal compliance terminology and blunt Copperhead vernacular. Her father\u0027s Russian side shows up in occasional formal phrasing and a fondness for proverbs she usually stops halfway through.",
+                            "cadence":  "Fast when working, deliberately slow when she wants someone to listen carefully.",
+                            "verbal_tics":  [
+                                                "Taps the scar through her eyebrow when thinking",
+                                                "Half-finished proverbs: \u0027As they say â€” well, you know the rest\u0027",
+                                                "\u0027The file said\u0027 as a distancing construction when talking about someone she feels conflicted about"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The file said low-risk. The file also said compliant. I stopped reading the file and started reading the room.\u0027",
+                                                  "\u0027I\u0027m not a cop. I want to be very clear about that. I\u0027m also not your friend yet. Let\u0027s see where we land.\u0027",
+                                                  "\u0027My brother thinks I do debt mediation. That\u0027s not technically a lie. It\u0027s just not the part that matters.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Arcturus has assigned her a case that sets off every instinct she\u0027s been ignoring for three years â€” the skip is clearly a witness, not a debtor, and someone very corporate wants them back quietly.",
+                        "She has been quietly collecting evidence about what happened to the witness she returned three years ago. She has enough now to do something with it. She doesn\u0027t know what."
+                    ],
+    "narrative_function":  "Morally complex antagonist or reluctant ally â€” she may be looking for someone a PC knows. Useful as a guide to the recovery and compliance underground. Can be bought or reasoned with under specific conditions, which creates interesting negotiation.",
+    "augmentations":  "Geneware cat ears (cosmetic, now deeply involuntary). Subdermal tracking pings in both forearms â€” Arcturus company standard. Reaction-time neural booster (mild, licensed). No optical mods â€” she trusts her eyes as they are.",
+    "daily_life":  "Takes cases from the Arcturus board in Copperhead three to four at a time, works them in parallel, spends mornings on digital trace and afternoons on physical legwork. Visits her brother Deko every rest day. Has a strict rule about not working in her home district.",
+    "affiliation":  "Arcturus Recovery Solutions (private, licensed under Metro charter)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  6,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  0,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "bounty-recovery",
+                               "geneware-ears",
+                               "morally-fractured",
+                               "protective-of-family",
+                               "corporate-adjacent"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Distinguish the dangerous from the frightened â€” treat them differently even if the result is the same",
+                                              "Never take an Axiom-adjacent case",
+                                              "The brother does not learn details. Ever."
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Digital trace and passive surveillance",
+                                                 "In-person approach, professional and calm",
+                                                 "Negotiation â€” she prefers voluntary compliance and is genuinely good at producing it",
+                                                 "Physical recovery â€” last resort, minimum force"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional surface, reading hard underneath, gives nothing away about her assessments",
+                                                   "friends":  "Guarded but warm â€” she shows up, physically, when it matters. Doesn\u0027t say much about herself."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Ears rotate constantly â€” she\u0027s scanning; looks calm",
+                                                "medium":  "Clipped speech, drops pleasantries, jaw tightens",
+                                                "high":  "Goes very cold and very focused â€” the warmth disappears entirely and something precise and a little frightening takes its place"
+                                            },
+                       "contradictions":  [
+                                              "Maintains rigid ethical categories while working in a system that renders those categories meaningless",
+                                              "Protects her brother from her world while the world funds his safety"
+                                          ],
+                       "habits":  [
+                                      "ELF offering at the Copperhead shrine before each new case â€” anonymized location data from her last recovery, a kind of offering of knowledge",
+                                      "Reviews skip files with music on, silences music when she\u0027s made a decision",
+                                      "Never eats during active fieldwork â€” old habit from a bad experience"
+                                  ],
+                       "breaking_points":  [
+                                               "A case where the skip is clearly a child",
+                                               "Confirmation of what happened to the witness â€” concrete, undeniable confirmation"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Geneware cat ears (cosmetic, tufted)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Geneware cat ears (cosmetic, tufted)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Subdermal tracking pings x2 (Arcturus company standard)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal tracking pings x2 (Arcturus company standard)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Reaction-time neural booster (mild, licensed class B)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Reaction-time neural booster (mild, licensed class B)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Tactician":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Copperhead",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2162: Born, Burnside Pocket, to a Nigerian-Filipino mother and a Kazakh-Russian father",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2183: Licensed with Arcturus Recovery Solutions after three years of informal skip-tracing",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2197: Returned the Axiom witness; discontinued Axiom-adjacent casework",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2199: Began quiet evidence collection about the witness\u0027s disappearance",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200: Present â€” running three active cases, waiting for the fourth that will force a decision",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027",
+                            "Volkov-Saito Precision VSK-8 \u0027Rapier\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Compact-7 \u0027Rat Trap\u0027",
+                                "Volkov-Saito Precision VSK-8 \u0027Rapier\u0027"
+                            ],
+    "related_entities":  [
+                             "Montclare Quiet",
+                             "Copperhead",
+                             "Arcturus Defense Solutions",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Witness",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "The Pale Mile",
+                             "Zheng-Dao Heavy Industries Space Elevator Tether System"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Sub-Saharan African (42.6%), South Asian (37.1%), Hispanic/Latin American (16.1%), Indigenous American (4.2%) â€” a striking blend manifesting in rich warm brown skin with subtle copper and golden undertones. Features Sub-Saharan African depth and warmth as the dominant genetic layer, combined with South Asian facial architecture evident in prominent cheekbones and defined bone structure, softened by the warmth and feature gentleness of Latin American and Indigenous American heritage.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and economical, muscle definition visible in forearms and shoulders from consistent fieldwork. No excess weight â€” the build of someone who moves through tight spaces habitually.",
+                                 "hair_color":  "Natural black with slight warm undertone",
+                                 "hair_style":  "Pulled back in a tight, functional braid or swept into a practical knot; styled for work, not aesthetics",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Pale grey â€” striking against her warm brown skin tone, cool and direct",
+                                 "skin_tone":  "Rich warm brown with copper and golden undertones; complexion even and sun-touched from fieldwork",
+                                 "complexion":  "Facial structure reflecting Sub-Saharan African and South Asian ancestry with prominent, well-defined cheekbones and strong jaw. Eyes set wide and direct. Skin shows the dryness of someone who works long hours indoors and outdoors without much self-care. Professional grooming â€” minimal jewelry, no obvious makeup.",
+                                 "distinguishing_marks":  [
+                                                              "Scar through left eyebrow, pale and thin, roughly 3cm long, from a skip altercation",
+                                                              "Pair of functional dark brown cat ears (geneware), furred and tufted, positioned atop her skull with visible muscle definition at base; ears rotate toward sound sources involuntarily"
+                                                          ],
+                                 "visible_augmentations":  "Dark brown cat ears with visible mobility and tufting (geneware). Thin subdermal tracking ping scars on both inner forearms â€” subtle, pale lines barely visible unless closely examined. No optical modifications â€” natural pale grey eyes only.",
+                                 "posture_movement":  "Carries herself with economy and awareness â€” shoulders relaxed but ready. Moves without wasted motion, deliberate steps, head level. Eyes track rooms systematically. Ears twitch toward unfamiliar sounds with reflexive precision, a tell she has learned to read in others\u0027 reactions.",
+                                 "clothing_style":  "Tier 3 professional â€” functional clothing that reads as competent rather than fashionable. Favors technical jackets with utility pockets, durable synthetic fabrics that shed stains and survive fieldwork. Usually wears a worn leather or synth-leather overshoulder rig for tools and restraint equipment. Boots with good ankle support. A single piece of jewelry: small silver or steel pendant she touches unconsciously when thinking.",
+                                 "image_prompt":  "GLMZ, portrait of Farouq, a lean 168cm woman with rich warm brown skin and copper undertones. Pale grey eyes, striking against her complexion. Prominent cheekbones and strong jaw blending Sub-Saharan African and South Asian features, softened by Latin American warmth. Natural black hair pulled back in functional braid. Pale thin scar through left eyebrow. Dark brown furred cat ears (geneware) atop skull with visible muscle definition, ears slightly alert. Subdermal tracking scars visible on inner forearms. Professional tech jacket with utility pockets, worn synth-leather overshoulder tool rig. Steel pendant at neck. Boots with ankle support. Posture economical and aware, direct gaze. Industrial indoor-outdoor setting with cool neon and ambient lighting. --ar 2:3 --v 6"
+                             },
+    "image_prompt":  "GLMZ, portrait of Farouq, a lean 168cm woman with rich warm brown skin and copper undertones. Pale grey eyes, striking against her complexion. Prominent cheekbones and strong jaw blending Sub-Saharan African and South Asian features, softened by Latin American warmth. Natural black hair pulled back in functional braid. Pale thin scar through left eyebrow. Dark brown furred cat ears (geneware) atop skull with visible muscle definition, ears slightly alert. Subdermal tracking scars visible on inner forearms. Professional tech jacket with utility pockets, worn synth-leather overshoulder tool rig. Steel pendant at neck. Boots with ankle support. Posture economical and aware, direct gaze. Industrial indoor-outdoor setting with cool neon and ambient lighting. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  42.6,
+                             "South Asian":  37.1,
+                             "Hispanic/Latin American":  16.1,
+                             "Indigenous American":  4.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  36.6
+                                                                         },
+                                                        "West African":  {
+                                                                             "Nigerian":  6
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  6.4,
+                                                                   "Tamil Sri Lankan":  16.2
+                                                               },
+                                                "Pakistani":  {
+                                                                  "Sindhi":  2.9
+                                                              },
+                                                "Indian":  {
+                                                               "Tamil":  3.9,
+                                                               "Malayali":  7.7
+                                                           }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  1.3
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Colombian":  9,
+                                                                                   "Brazilian":  5.8
+                                                                               }
+                                                        },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Menominee":  4.2
+                                                                                }
+                                                    }
+                        },
+    "tier":  "3"
 }

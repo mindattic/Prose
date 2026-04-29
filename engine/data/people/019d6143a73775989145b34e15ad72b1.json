@@ -1,283 +1,302 @@
-{
-  "id": "019d6143a73775989145b34e15ad72b1",
-  "type": "character",
-  "name": "Efigenia Baek-Nakamura",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Night-shift cook, 24-hour canteen in the Hamtramck Enclave",
-  "age": 26,
-  "status": "active",
-  "location": "Hamtramck Enclave, 'Marta's Canteen' — technically named after the original owner, Zipporah runs the 2200-0600 shift, near Pulaski and Chicago Ave",
-  "description": "Efigenia Baek-Nakamura is wiry and restless in the way of someone whose body has never learned to be still — they bounce a knee, tap a rhythm on the counter, flip a spatula even when nothing is cooking. Their skin is a warm medium brown and their geneware includes bioluminescent freckles across their cheeks and collarbones that pulse faintly blue when their heart rate elevates, which is often. They keep their hair buzzed on the sides and natural on top, currently dyed a deep copper that doesn't quite match their natural dark brown at the roots. They have one retractable claw mod on their right hand's index finger that they got at seventeen and use almost exclusively to open packaging.\n\nEfigenia Baek-Nakamura is the night canteen's entire personality. The Enclave's late-shift workers — third-shift Ferrogate operators, clinic nurses, waste handlers — come as much for the conversation as the food. Zip has a gift for making people feel found rather than seen, which is different. They are also running on a permanent low-grade sleep deficit that they treat as a point of pride, are catastrophically bad with money, and have recently become slightly obsessed with the E.L.F. they believe inhabits the canteen's ancient griddle — they call it Sizzle and have begun leaving it tiny sculptures made of food scraps shaped into abstract geometric forms.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.7,
-      "shadow": 0.3,
-      "mask": 0.4,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "the canteen closing and losing the community they've built there",
-      "being fundamentally forgettable when the noise stops"
-    ],
-    "core_desires": [
-      "to own the canteen outright someday",
-      "to matter specifically to specific people, not just generally to everyone"
-    ],
-    "coping_mechanisms": [
-      "constant motion and noise",
-      "feeding people as a love language and deflection simultaneously",
-      "humor as a distance-maintenance tool"
-    ],
-    "blind_spots": [
-      "mistakes familiarity for intimacy and wonders why they feel lonely",
-      "catastrophic financial habits rationalized as generosity"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, colloquial, full of Enclave slang and invented words, switches registers instantly when someone seems upset",
-    "cadence": "Rapid-fire with sudden full stops, talks while doing three other things",
-    "verbal_tics": [
-      "'Right, right, right'",
-      "calls everyone 'neighbor' regardless of whether they are",
-      "narrates what they're cooking as they work"
-    ],
-    "example_lines": [
-      "'Right, right, right — you want the noodles or the rice situation, and before you answer, the noodles are better tonight, Sizzle's in a mood.'",
-      "'Sit down, neighbor. You've got that face. The face. You're eating something before you explain it to me.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The canteen's absentee owner suddenly wants to sell to a Palladian real estate subsidiary, and Zipporah doesn't have enough saved and doesn't know who to ask for help",
-    "A regular customer stopped coming three weeks ago — a Ferrogate night operator who ate there every shift — and Zipporah is the only one who noticed"
-  ],
-  "narrative_function": "Social hub, information source for the Enclave's night community, character who provides warmth and levity, potential connection point between different worlds of the city's working night-shift population.",
-  "augmentations": "Bioluminescent freckle geneware (pulse-responsive). Single retractable claw, right index finger. Nicotine patch port on left forearm (cosmetic mod repurposed for stim patches).",
-  "daily_life": "Sleeps 0700-1400 in a rented room two blocks from the canteen, spends late afternoon at the Enclave's community market buying ingredients under budget, opens the canteen at 2200 and runs it solo until 0600.",
-  "affiliation": "Independent (works for Marta's surviving daughter who owns the canteen but lives in Glenville Sound and shows up twice a year)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 7,
-      "vitality": 5,
-      "perception": 6
-    },
-    "mental": {
-      "cognition": 5,
-      "willpower": 4,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "social glue",
-      "night person",
-      "community hub",
-      "lovably chaotic",
-      "quietly ambitious"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "feed people first, ask questions second",
-      "never let anyone sit alone in the canteen if they look like they're struggling"
-    ],
-    "escalation_ladder": [
-      "deflect with humor",
-      "get serious and ask direct questions",
-      "get in the middle of something physically",
-      "panic and call everyone they know simultaneously"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Aggressively welcoming, treats them like a regular immediately, uses names as soon as they're given",
-      "friends": "Deeply affectionate but avoids earnest conversation, keeps things moving"
-    },
-    "stress_responses": {
-      "low": "Cooks more, speeds up",
-      "medium": "Talks too much, bioluminescence visibly pulses",
-      "high": "Goes very flat, very quiet — uncharacteristic and alarming to anyone who knows them"
-    },
-    "contradictions": [
-      "craves deep connection but keeps every conversation light enough to exit quickly",
-      "is generous to the point of self-sabotage except in one specific private way"
-    ],
-    "habits": [
-      "leaving Sizzle food-scrap sculptures at the end of every shift",
-      "knowing every regular's order before they sit down",
-      "eating standing up over the counter at 0400 when the canteen's empty"
-    ],
-    "breaking_points": [
-      "the canteen being threatened",
-      "a regular being hurt and them not having noticed the warning signs"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Bioluminescent freckle geneware — cheeks and collarbones, pulse-reactive",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bioluminescent freckle geneware — cheeks and collarbones, pulse-reactive",
-      "replaces": ""
-    },
-    {
-      "name": "Retractable claw — right index finger, cosmetic grade",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Retractable claw — right index finger, cosmetic grade",
-      "replaces": ""
-    },
-    {
-      "name": "Stim patch port — left forearm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Stim patch port — left forearm",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Judge": 0.7,
-    "Sentinel": 0.7,
-    "Code Keeper": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-44 'Fenris'",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-44 'Fenris'",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
-    "Ferrogate Transit",
-    "Palladian Construction",
-    "Plot 17",
-    "Tamale Marta",
-    "Chicago",
-    "Copper",
-    "Auni Bergqvist"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly East Asian (85.6%) with significant Sub-Saharan African heritage (7.3%), balanced by Eastern European (4.3%) and Hispanic/Latin American (2.8%) ancestry. The genetic blend creates a warm, complex phenotype—East Asian bone structure and eye shape form the foundation, deepened and warmed by Sub-Saharan heritage creating richness in skin tone and facial depth, with subtle Eastern European influence visible in cheekbone prominence and complexion resilience, and faint Latin American warmth in undertones",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Wiry and lean with visible muscle definition from constant movement and kitchen work; restless frame that seems to vibrate at a frequency slightly faster than the rest of the world",
-    "hair_color": "Deep copper dye over natural dark brown roots (currently 1-2cm of regrowth showing)",
-    "hair_style": "Buzzed short on sides (undercut, left side faded to stubble), natural texture left longer on top (roughly 5cm, texture-styled upward)",
-    "hair_length": "Short/Medium (asymmetrical)",
-    "eye_color": "Dark brown, alert and constantly scanning",
-    "skin_tone": "Warm medium-deep brown with golden-amber undertones; the result of dominant East Asian heritage creating smooth dimension, Sub-Saharan ancestry adding warmth and richness, Eastern European influence contributing subtle olive undertones, Hispanic/Latin American ancestry adding warmth to the overall effect",
-    "complexion": "Clean but weathered from 2200-0600 kitchen heat exposure; perpetually flushed cheeks with natural depth; bioluminescent freckles across cheekbones and collarbones that glow faint blue when heart rate rises (which is frequently). Facial features show East Asian eye-fold characteristics and mid-face structure, with Sub-Saharan warmth and fullness in lips and cheek contours",
-    "distinguishing_marks": [
-      "Bioluminescent freckle pattern across both cheekbones and extending down collarbones — pale blue glow, pulse-responsive, most visible in low light",
-      "Nicotine patch port on left forearm (small circular scar with faint chrome ring, cosmetically modified and repurposed for stim patches)"
-    ],
-    "visible_augmentations": "Right index finger sports a retractable chrome claw (currently retracted, but visible as a faint seam at fingertip); nicotine patch port on left forearm with subtle metallurgical sheen; bioluminescent freckle geneware active and visible, especially in dimly lit environments",
-    "posture_movement": "Perpetually in motion — bouncing knee when seated, constant finger-tapping rhythms on any surface, restless hand gestures while speaking. Moves through space with efficient kitchen choreography, economical but never still. Fidgets with objects compulsively (spatula flips, claw clicks, patch adjustments)",
-    "clothing_style": "Tier 3-4 working class. Standard black nonslip kitchen pants (reinforced weave), loose-fitting grey or faded band-logo t-shirt under an oversized, grease-stained denim jacket with rolled sleeves. Worn black canvas work shoes with visible copper-wire zipper pulls for durability. Small silver chain necklace (repurposed from broken jewelry). Nicotine patches visible on left forearm. No formal grooming — practical and minimal, everything chosen for function over appearance"
-  },
-  "image_prompt": "Efigenia Baek-Nakamura, 168cm wiry lean figure, warm medium-deep brown skin with golden-amber undertones reflecting East Asian-African heritage blend. Sharp East Asian facial structure with full Sub-Saharan cheek contours, dark brown alert eyes constantly scanning. Deep copper-dyed hair with dark roots, asymmetrical undercut with buzzed sides fading to stubble, longer texture-styled top. Faint bioluminescent blue freckles across cheekbones pulsing with restless energy. Weathered kitchen-worker complexion, perpetually flushed. Right index finger showing chrome claw seam, left forearm nicotine patch port visible with metallurgical sheen. Wearing oversized grease-stained denim jacket over faded band-logo t-shirt, black reinforced kitchen pants, worn black canvas work shoes. Small silver chain necklace. Fidgeting with hands, restless energy radiating. GLMZ GLMZ kitchen worker on break, moody blue-tinted neon lighting, industrial kitchen background with stainless steel surfaces reflecting faint bioluminescence, gritty urban dystopian aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 85.6,
-    "Sub-Saharan African": 7.3,
-    "Eastern European": 4.3,
-    "Hispanic/Latin American": 2.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 14
-      },
-      "Korean": {
-        "Korean": 55.4
-      },
-      "Chinese": {
-        "Cantonese": 5.6,
-        "Hakka": 10.6
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 7.3
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 4.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Brazilian": 2.8
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a73775989145b34e15ad72b1",
+    "type":  "character",
+    "name":  "Efigenia Baek-Nakamura",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Night-shift cook, 24-hour canteen in the Hamtramck Enclave",
+    "age":  26,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, \u0027Marta\u0027s Canteen\u0027 â€” technically named after the original owner, Zipporah runs the 2200-0600 shift, near Pulaski and Chicago Ave",
+    "description":  "Efigenia Baek-Nakamura is wiry and restless in the way of someone whose body has never learned to be still â€” they bounce a knee, tap a rhythm on the counter, flip a spatula even when nothing is cooking. Their skin is a warm medium brown and their geneware includes bioluminescent freckles across their cheeks and collarbones that pulse faintly blue when their heart rate elevates, which is often. They keep their hair buzzed on the sides and natural on top, currently dyed a deep copper that doesn\u0027t quite match their natural dark brown at the roots. They have one retractable claw mod on their right hand\u0027s index finger that they got at seventeen and use almost exclusively to open packaging.\n\nEfigenia Baek-Nakamura is the night canteen\u0027s entire personality. The Enclave\u0027s late-shift workers â€” third-shift Ferrogate operators, clinic nurses, waste handlers â€” come as much for the conversation as the food. Zip has a gift for making people feel found rather than seen, which is different. They are also running on a permanent low-grade sleep deficit that they treat as a point of pride, are catastrophically bad with money, and have recently become slightly obsessed with the E.L.F. they believe inhabits the canteen\u0027s ancient griddle â€” they call it Sizzle and have begun leaving it tiny sculptures made of food scraps shaped into abstract geometric forms.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "the canteen closing and losing the community they\u0027ve built there",
+                                          "being fundamentally forgettable when the noise stops"
+                                      ],
+                       "core_desires":  [
+                                            "to own the canteen outright someday",
+                                            "to matter specifically to specific people, not just generally to everyone"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "constant motion and noise",
+                                                 "feeding people as a love language and deflection simultaneously",
+                                                 "humor as a distance-maintenance tool"
+                                             ],
+                       "blind_spots":  [
+                                           "mistakes familiarity for intimacy and wonders why they feel lonely",
+                                           "catastrophic financial habits rationalized as generosity"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, colloquial, full of Enclave slang and invented words, switches registers instantly when someone seems upset",
+                            "cadence":  "Rapid-fire with sudden full stops, talks while doing three other things",
+                            "verbal_tics":  [
+                                                "\u0027Right, right, right\u0027",
+                                                "calls everyone \u0027neighbor\u0027 regardless of whether they are",
+                                                "narrates what they\u0027re cooking as they work"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Right, right, right â€” you want the noodles or the rice situation, and before you answer, the noodles are better tonight, Sizzle\u0027s in a mood.\u0027",
+                                                  "\u0027Sit down, neighbor. You\u0027ve got that face. The face. You\u0027re eating something before you explain it to me.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The canteen\u0027s absentee owner suddenly wants to sell to a Palladian real estate subsidiary, and Zipporah doesn\u0027t have enough saved and doesn\u0027t know who to ask for help",
+                        "A regular customer stopped coming three weeks ago â€” a Ferrogate night operator who ate there every shift â€” and Zipporah is the only one who noticed"
+                    ],
+    "narrative_function":  "Social hub, information source for the Enclave\u0027s night community, character who provides warmth and levity, potential connection point between different worlds of the city\u0027s working night-shift population.",
+    "augmentations":  "Bioluminescent freckle geneware (pulse-responsive). Single retractable claw, right index finger. Nicotine patch port on left forearm (cosmetic mod repurposed for stim patches).",
+    "daily_life":  "Sleeps 0700-1400 in a rented room two blocks from the canteen, spends late afternoon at the Enclave\u0027s community market buying ingredients under budget, opens the canteen at 2200 and runs it solo until 0600.",
+    "affiliation":  "Independent (works for Marta\u0027s surviving daughter who owns the canteen but lives in Glenville Sound and shows up twice a year)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  7,
+                                   "vitality":  5,
+                                   "perception":  6
+                               },
+                  "mental":  {
+                                 "cognition":  5,
+                                 "willpower":  4,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "social glue",
+                               "night person",
+                               "community hub",
+                               "lovably chaotic",
+                               "quietly ambitious"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "feed people first, ask questions second",
+                                              "never let anyone sit alone in the canteen if they look like they\u0027re struggling"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "deflect with humor",
+                                                 "get serious and ask direct questions",
+                                                 "get in the middle of something physically",
+                                                 "panic and call everyone they know simultaneously"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Aggressively welcoming, treats them like a regular immediately, uses names as soon as they\u0027re given",
+                                                   "friends":  "Deeply affectionate but avoids earnest conversation, keeps things moving"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Cooks more, speeds up",
+                                                "medium":  "Talks too much, bioluminescence visibly pulses",
+                                                "high":  "Goes very flat, very quiet â€” uncharacteristic and alarming to anyone who knows them"
+                                            },
+                       "contradictions":  [
+                                              "craves deep connection but keeps every conversation light enough to exit quickly",
+                                              "is generous to the point of self-sabotage except in one specific private way"
+                                          ],
+                       "habits":  [
+                                      "leaving Sizzle food-scrap sculptures at the end of every shift",
+                                      "knowing every regular\u0027s order before they sit down",
+                                      "eating standing up over the counter at 0400 when the canteen\u0027s empty"
+                                  ],
+                       "breaking_points":  [
+                                               "the canteen being threatened",
+                                               "a regular being hurt and them not having noticed the warning signs"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Bioluminescent freckle geneware â€” cheeks and collarbones, pulse-reactive",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bioluminescent freckle geneware â€” cheeks and collarbones, pulse-reactive",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Retractable claw â€” right index finger, cosmetic grade",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Retractable claw â€” right index finger, cosmetic grade",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Stim patch port â€” left forearm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Stim patch port â€” left forearm",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Judge":  0.7,
+                       "Sentinel":  0.7,
+                       "Code Keeper":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-44 \u0027Fenris\u0027",
+                            "Volkov-Saito Precision VS-R44 Heritage \u0027Legacy\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-44 \u0027Fenris\u0027",
+                                "Volkov-Saito Precision VS-R44 Heritage \u0027Legacy\u0027"
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
+                             "Ferrogate Transit",
+                             "Palladian Construction",
+                             "Plot 17",
+                             "Tamale Marta",
+                             "Chicago",
+                             "Copper",
+                             "Auni Bergqvist"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly East Asian (85.6%) with significant Sub-Saharan African heritage (7.3%), balanced by Eastern European (4.3%) and Hispanic/Latin American (2.8%) ancestry. The genetic blend creates a warm, complex phenotypeâ€”East Asian bone structure and eye shape form the foundation, deepened and warmed by Sub-Saharan heritage creating richness in skin tone and facial depth, with subtle Eastern European influence visible in cheekbone prominence and complexion resilience, and faint Latin American warmth in undertones",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Wiry and lean with visible muscle definition from constant movement and kitchen work; restless frame that seems to vibrate at a frequency slightly faster than the rest of the world",
+                                 "hair_color":  "Deep copper dye over natural dark brown roots (currently 1-2cm of regrowth showing)",
+                                 "hair_style":  "Buzzed short on sides (undercut, left side faded to stubble), natural texture left longer on top (roughly 5cm, texture-styled upward)",
+                                 "hair_length":  "Short/Medium (asymmetrical)",
+                                 "eye_color":  "Dark brown, alert and constantly scanning",
+                                 "skin_tone":  "Warm medium-deep brown with golden-amber undertones; the result of dominant East Asian heritage creating smooth dimension, Sub-Saharan ancestry adding warmth and richness, Eastern European influence contributing subtle olive undertones, Hispanic/Latin American ancestry adding warmth to the overall effect",
+                                 "complexion":  "Clean but weathered from 2200-0600 kitchen heat exposure; perpetually flushed cheeks with natural depth; bioluminescent freckles across cheekbones and collarbones that glow faint blue when heart rate rises (which is frequently). Facial features show East Asian eye-fold characteristics and mid-face structure, with Sub-Saharan warmth and fullness in lips and cheek contours",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent freckle pattern across both cheekbones and extending down collarbones â€” pale blue glow, pulse-responsive, most visible in low light",
+                                                              "Nicotine patch port on left forearm (small circular scar with faint chrome ring, cosmetically modified and repurposed for stim patches)"
+                                                          ],
+                                 "visible_augmentations":  "Right index finger sports a retractable chrome claw (currently retracted, but visible as a faint seam at fingertip); nicotine patch port on left forearm with subtle metallurgical sheen; bioluminescent freckle geneware active and visible, especially in dimly lit environments",
+                                 "posture_movement":  "Perpetually in motion â€” bouncing knee when seated, constant finger-tapping rhythms on any surface, restless hand gestures while speaking. Moves through space with efficient kitchen choreography, economical but never still. Fidgets with objects compulsively (spatula flips, claw clicks, patch adjustments)",
+                                 "clothing_style":  "Tier 3-4 working class. Standard black nonslip kitchen pants (reinforced weave), loose-fitting grey or faded band-logo t-shirt under an oversized, grease-stained denim jacket with rolled sleeves. Worn black canvas work shoes with visible copper-wire zipper pulls for durability. Small silver chain necklace (repurposed from broken jewelry). Nicotine patches visible on left forearm. No formal grooming â€” practical and minimal, everything chosen for function over appearance"
+                             },
+    "image_prompt":  "Efigenia Baek-Nakamura, 168cm wiry lean figure, warm medium-deep brown skin with golden-amber undertones reflecting East Asian-African heritage blend. Sharp East Asian facial structure with full Sub-Saharan cheek contours, dark brown alert eyes constantly scanning. Deep copper-dyed hair with dark roots, asymmetrical undercut with buzzed sides fading to stubble, longer texture-styled top. Faint bioluminescent blue freckles across cheekbones pulsing with restless energy. Weathered kitchen-worker complexion, perpetually flushed. Right index finger showing chrome claw seam, left forearm nicotine patch port visible with metallurgical sheen. Wearing oversized grease-stained denim jacket over faded band-logo t-shirt, black reinforced kitchen pants, worn black canvas work shoes. Small silver chain necklace. Fidgeting with hands, restless energy radiating. GLMZ GLMZ kitchen worker on break, moody blue-tinted neon lighting, industrial kitchen background with stainless steel surfaces reflecting faint bioluminescence, gritty urban dystopian aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  85.6,
+                             "Sub-Saharan African":  7.3,
+                             "Eastern European":  4.3,
+                             "Hispanic/Latin American":  2.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  14
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  55.4
+                                                          },
+                                               "Chinese":  {
+                                                               "Cantonese":  5.6,
+                                                               "Hakka":  10.6
+                                                           }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  7.3
+                                                                         }
+                                                    },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  4.3
+                                                                         }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Brazilian":  2.8
+                                                                               }
+                                                        }
+                        },
+    "tier":  "2"
 }

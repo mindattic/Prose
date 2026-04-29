@@ -1,335 +1,366 @@
-{
-  "id": "019d6143a7247c099dbb0ded5045e7f3",
-  "type": "character",
-  "name": "Bhavleen Konaté-Villalobos",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Fungus farmer and underground food supplier",
-  "age": 58,
-  "status": "active",
-  "location": "Irkalla, Sub-Level 7 — the 'Bloom Halls', a repurposed water reclamation chamber, near sub-level access near State and Van Buren",
-  "description": "Bhavleen Konaté-Villalobos is a broad-shouldered woman who moves through her fungal gardens with the deliberate grace of someone who has learned to never knock anything over in the dark. She is tall, with deep brown skin that has taken on an extraordinary quality in her years underground: faint bioluminescent patches on her forearms and the sides of her neck — not implants, but a genuine dermal symbiosis with a engineered photobacterial culture she cultivated herself and chose to inoculate into her own skin thirty years ago. In the dim blue-green glow of the Bloom Halls, she is hauntingly beautiful. On the rare occasions she surfaces, people stare.\n\nShe grows over forty varieties of engineered and wild-caught fungus in a network of cultivation racks that fill three former water reclamation chambers. She trades in food, medicine (several of her cultures have antibiotic and analgesic properties), and a mild psychoactive she calls Quietcap that she dispenses only to people she has personally assessed as not in crisis. She is the closest thing Irkalla's sub-level community has to a matriarch, doctor, and pharmacist — a role she accepted reluctantly and now occupies with the resigned authority of someone who knows no one else will do it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.3,
-      "mask": 0.2,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "the Bloom Halls being discovered and stripped by a corponation survey team",
-      "outliving everyone she has taken responsibility for"
-    ],
-    "core_desires": [
-      "for the sub-level community to achieve genuine self-sufficiency",
-      "to be remembered as someone who fed people"
-    ],
-    "coping_mechanisms": [
-      "physical labor as emotional regulation",
-      "humor — dry, unsentimental, often landing before people realize it's a joke"
-    ],
-    "blind_spots": [
-      "gives too much, does not ask for help, does not notice her own exhaustion until it becomes a crisis",
-      "occasionally too slow to recognize that someone is exploiting her generosity"
-    ],
-    "secret": "Her bioluminescent symbiote is slowly spreading. She engineered it to be localized but it has been migrating toward her spine for two years. She does not know if this is benign or catastrophic, and she has no way to scan it properly. She has told no one."
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm but precise. She uses botanical and mycological terminology casually. Her Bore Rat pidgin is perfect; she can also speak three surface languages.",
-    "cadence": "Unhurried and rhythmic, like someone who learned to speak at the pace of things that grow slowly.",
-    "verbal_tics": [
-      "'Let it breathe.' (advice she applies to fungi, arguments, and people equally)",
-      "'Now.' (at the start of a new thought, not urgently)",
-      "clicks tongue when someone has made a mistake she saw coming"
-    ],
-    "example_lines": [
-      "'Now. Sit. I don't feed anyone standing up — it's disrespectful to the food.'",
-      "'That one you're looking at? That's Quietcap. It is not for you right now. Let it breathe. Come back when you're not running from something.'",
-      "'The corponations built everything you're standing in. That's true. They also abandoned it. So who does it belong to now?'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A new fungal contamination has begun killing cultures in the outer chambers — it arrived on someone's boots, and she needs to find out who came in from where before it reaches the medical cultivars.",
-    "A Tessera biosurveillance team is mapping the sub-levels and her symbiote culture — which she did not patent, because how could she — may technically belong to Helix Biosystems under the Derived Organisms Statute."
-  ],
-  "narrative_function": "Community anchor, information hub, healer figure — she knows everyone in the sub-levels of Irkalla and has strong opinions about all of them. Can provide resources, medicine, Quietcap, and extremely candid assessments of other characters.",
-  "augmentations": "Self-inoculated bioluminescent photobacterial symbiote (forearms, neck — faint blue-green glow); basic respiratory filter implant (nasal); no other augmentations",
-  "daily_life": "Rises by internal clock around 0500 to check moisture levels and harvest timings; distributes daily food rations to her community roster; spends afternoons on cultivation work and medical consultations; holds an informal evening gathering she calls 'the dark table' where people eat together in near-total darkness.",
-  "affiliation": "Irkalla sub-level community; informal trade relationships with Undertow merchants; The Undertow",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 8,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 9,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -5,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 3,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community-anchor",
-      "healer",
-      "cultivator",
-      "bioluminescent",
-      "matriarch"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Feed first, ask questions second — but she will eventually ask all the questions",
-      "Will not give Quietcap to anyone in acute distress, ever"
-    ],
-    "escalation_ladder": [
-      "Warmth and patience",
-      "Pointed questions that make the other person feel subtly examined",
-      "Withdrawal of resources and access with a clear and emotionless explanation"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately assesses their nutritional state, then their emotional state. Offers food before words. Watches how they eat.",
-      "friends": "Tactile and direct — touches arms, sits close, tells uncomfortable truths with tremendous gentleness."
-    },
-    "stress_responses": {
-      "low": "Hums while working — a single repetitive phrase from an old Tarawa fishing song",
-      "medium": "Becomes overly practical, redirecting all emotion into task management",
-      "high": "Goes completely silent and begins cleaning — methodically, exhaustively, until the crisis resolves or she breaks"
-    },
-    "contradictions": [
-      "Believes deeply in community self-determination but makes almost all community decisions unilaterally because she doesn't trust the process to be fast enough"
-    ],
-    "habits": [
-      "Touches every rack in the Bloom Halls at the start of each day — a greeting as much as an inspection",
-      "Eats last, always"
-    ],
-    "breaking_points": [
-      "A child going hungry when she had something she could have given"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Self-cultivated bioluminescent photobacterial symbiote (non-commercial, unique)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Self-cultivated bioluminescent photobacterial symbiote (non-commercial, unique)",
-      "replaces": ""
-    },
-    {
-      "name": "Basic nasal respiratory filter implant (early-generation, installed 2171)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Basic nasal respiratory filter implant (early-generation, installed 2171)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.7,
-    "Scholar": 0.7,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Irkalla",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2142 — Born on the surface in what was then the Ashfeld district",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2160 — Voluntarily moved underground following a Sterling-Nakamura eviction sweep that displaced her neighborhood",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2163 — Began fungal cultivation as survival necessity; discovered the Bloom Halls chambers",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2170 — Self-inoculated bioluminescent symbiote culture after three years of controlled testing",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2198 — Symbiote migration toward spine first noticed",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Operates the Bloom Halls as the primary food source for approximately 200 sub-level residents",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Helix Biosystems",
-    "The Reclamation Assembly",
-    "Ferrofluid Induction Cannon FIC-6 'Ironbloom'",
-    "Noir Dining",
-    "Tessera Corponation",
-    "Irkalla",
-    "Nightlight"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Complex multiethnic blend of Hispanic/Latin American (34.3%), Middle Eastern (21.8%), Indigenous American (18.6%), Sub-Saharan African (14.3%), South Asian (6.9%), and Southeast Asian (4.1%) ancestry — the Ubiquitous Diaspora made flesh. Her features reflect this global convergence: warm golden-brown skin with subtle undertones from the Latin, Middle Eastern, and South Asian components; fuller lips and natural textural richness from Sub-Saharan ancestry; defined cheekbones and a refined nose bridge carrying Middle Eastern structure; slight epicanthal fold at the eyes reflecting Southeast Asian lineage; and the broad facial plane characteristic of Indigenous American heritage. A living mosaic of the 22nd century's population mobility.",
-    "height_cm": 178,
-    "weight_kg": 82,
-    "build": "Broad-shouldered and substantial, muscular through deliberate work rather than training — strong core and forearms from thirty years of careful handling in tight spaces, carrying nutrient loads, and tending cultivation racks. Not heavy, but densely built.",
-    "hair_color": "Steel gray with dark undertones",
-    "hair_style": "Kept in tight, practical braids pinned close to the scalp; functional, no ornamentation",
-    "hair_length": "Medium",
-    "eye_color": "Deep brown, slightly yellowed at the whites from decades in low-light conditions",
-    "skin_tone": "Rich golden-brown with warm, honeyed undertones — the natural blending of Hispanic, Middle Eastern, Indigenous American, Sub-Saharan African, and South Asian heritage, slightly desiccated from underground humidity cycles",
-    "complexion": "Weathered but clear; minimal cosmetic care; fine lines around the eyes from constant low-light focus; subtle age spots on temples. Moderate nose bridge with fuller lips reflecting her diverse ancestry. Defined cheekbones carrying Middle Eastern structure. Her face carries the still attention of someone who listens more than speaks.",
-    "distinguishing_marks": [
-      "Faint bioluminescent patches across both forearms in abstract, organic patterns — blue-green photobacterial symbiote that glows softly in darkness, visible at night like living tattoos.",
-      "Similar bioluminescent patches along both sides of the neck, fading toward the collarbone.",
-      "Deep scar running three inches along the outer right forearm — old industrial burn from early years as a food technician, now partially obscured by the bioluminescent growth.",
-      "Small, callused burn mark on the inside of her right wrist — deliberate self-marking from her inoculation thirty years ago, now barely visible."
-    ],
-    "visible_augmentations": "Faint bioluminescent dermal symbiosis (forearms and neck); barely-visible nasal respiratory filter implant (small mesh intake ports flanking the septum, only noticeable in direct light). No obvious chrome or external cybernetics — her augmentations are subtle and biological.",
-    "posture_movement": "Moves with deliberate economy in confined spaces — no wasted motion, minimal jarring. Her gait is slow and careful even when moving quickly, a learned habit. When still, she has an almost meditative posture: shoulders relaxed, hands usually occupied (checking something, touching something, listening through her fingertips). In her gardens, she moves like she's underwater.",
-    "clothing_style": "Tier 5 utilitarian: layered linen and moisture-wicking synth fabrics in muted grays, deep greens, and blacks — practical for temperature fluctuation and fungal spore exposure. Loose fitting to allow movement and air circulation. A long sleeveless vest (no collar, open front) worn over a long-sleeved undershirt — both enable visibility and access to her bioluminescent patches. Worn leather apron with deep pockets and reinforced seams, darkened by thirty years of work. Simple canvas slip-on shoes with good grip. No jewelry except a single thin bracelet of braided plant fiber. Clothes are clean but well-mended, showing careful maintenance rather than replacement."
-  },
-  "image_prompt": "Bhavleen Konaté-Villalobos, 178cm tall, broad-shouldered and dense-muscled from decades of cultivation work, standing in soft bioluminescent blue-green glow from organic patches on her forearms and neck. Rich golden-brown skin with warm undertones blending Hispanic, Middle Eastern, Indigenous American, Sub-Saharan, South Asian, and Southeast Asian heritage; weathered face with defined cheekbones, fuller lips, slight epicanthal folds, fine lines around deep brown eyes with yellowed whites. Steel gray braids pinned close to scalp. Wearing muted utilitarian layers: long-sleeved undershirt, sleeveless open vest, darkened leather work apron with deep pockets. Simple canvas slip-on shoes. Single braided plant fiber bracelet. Subtle nasal respiratory filter implant barely visible. Faint industrial burn scar on right forearm partially covered by bioluminescent symbiote. Standing in underground hydroponic garden setting, GLMZ, low-light cultivation space, meditative posture, hands occupied with careful work, economy of movement, atmospheric moisture visible in air, warm practical lighting. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 34.3,
-    "Middle Eastern": 21.8,
-    "Indigenous American": 18.6,
-    "Sub-Saharan African": 14.3,
-    "South Asian": 6.9,
-    "Southeast Asian": 4.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 19.4
-      },
-      "South American": {
-        "Peruvian": 8.3
-      },
-      "Caribbean": {
-        "Puerto Rican": 6.6
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Kuwaiti": 5.9,
-        "Emirati": 10.6
-      },
-      "Kurdish": {
-        "Kurdish": 5.3
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Zapotec": 4.6,
-        "Maya": 14
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 2,
-        "Senegalese": 0.6
-      },
-      "Central African": {
-        "Congolese": 11.7
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Bengali": 4.9,
-        "Gujarati": 2
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 4.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a7247c099dbb0ded5045e7f3",
+    "type":  "character",
+    "name":  "Bhavleen KonatÃ©-Villalobos",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Fungus farmer and underground food supplier",
+    "age":  58,
+    "status":  "active",
+    "location":  "Irkalla, Sub-Level 7 â€” the \u0027Bloom Halls\u0027, a repurposed water reclamation chamber, near sub-level access near State and Van Buren",
+    "description":  "Bhavleen KonatÃ©-Villalobos is a broad-shouldered woman who moves through her fungal gardens with the deliberate grace of someone who has learned to never knock anything over in the dark. She is tall, with deep brown skin that has taken on an extraordinary quality in her years underground: faint bioluminescent patches on her forearms and the sides of her neck â€” not implants, but a genuine dermal symbiosis with a engineered photobacterial culture she cultivated herself and chose to inoculate into her own skin thirty years ago. In the dim blue-green glow of the Bloom Halls, she is hauntingly beautiful. On the rare occasions she surfaces, people stare.\n\nShe grows over forty varieties of engineered and wild-caught fungus in a network of cultivation racks that fill three former water reclamation chambers. She trades in food, medicine (several of her cultures have antibiotic and analgesic properties), and a mild psychoactive she calls Quietcap that she dispenses only to people she has personally assessed as not in crisis. She is the closest thing Irkalla\u0027s sub-level community has to a matriarch, doctor, and pharmacist â€” a role she accepted reluctantly and now occupies with the resigned authority of someone who knows no one else will do it.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "the Bloom Halls being discovered and stripped by a corponation survey team",
+                                          "outliving everyone she has taken responsibility for"
+                                      ],
+                       "core_desires":  [
+                                            "for the sub-level community to achieve genuine self-sufficiency",
+                                            "to be remembered as someone who fed people"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "physical labor as emotional regulation",
+                                                 "humor â€” dry, unsentimental, often landing before people realize it\u0027s a joke"
+                                             ],
+                       "blind_spots":  [
+                                           "gives too much, does not ask for help, does not notice her own exhaustion until it becomes a crisis",
+                                           "occasionally too slow to recognize that someone is exploiting her generosity"
+                                       ],
+                       "secret":  "Her bioluminescent symbiote is slowly spreading. She engineered it to be localized but it has been migrating toward her spine for two years. She does not know if this is benign or catastrophic, and she has no way to scan it properly. She has told no one."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm but precise. She uses botanical and mycological terminology casually. Her Bore Rat pidgin is perfect; she can also speak three surface languages.",
+                            "cadence":  "Unhurried and rhythmic, like someone who learned to speak at the pace of things that grow slowly.",
+                            "verbal_tics":  [
+                                                "\u0027Let it breathe.\u0027 (advice she applies to fungi, arguments, and people equally)",
+                                                "\u0027Now.\u0027 (at the start of a new thought, not urgently)",
+                                                "clicks tongue when someone has made a mistake she saw coming"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Now. Sit. I don\u0027t feed anyone standing up â€” it\u0027s disrespectful to the food.\u0027",
+                                                  "\u0027That one you\u0027re looking at? That\u0027s Quietcap. It is not for you right now. Let it breathe. Come back when you\u0027re not running from something.\u0027",
+                                                  "\u0027The corponations built everything you\u0027re standing in. That\u0027s true. They also abandoned it. So who does it belong to now?\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A new fungal contamination has begun killing cultures in the outer chambers â€” it arrived on someone\u0027s boots, and she needs to find out who came in from where before it reaches the medical cultivars.",
+                        "A Tessera biosurveillance team is mapping the sub-levels and her symbiote culture â€” which she did not patent, because how could she â€” may technically belong to Helix Biosystems under the Derived Organisms Statute."
+                    ],
+    "narrative_function":  "Community anchor, information hub, healer figure â€” she knows everyone in the sub-levels of Irkalla and has strong opinions about all of them. Can provide resources, medicine, Quietcap, and extremely candid assessments of other characters.",
+    "augmentations":  "Self-inoculated bioluminescent photobacterial symbiote (forearms, neck â€” faint blue-green glow); basic respiratory filter implant (nasal); no other augmentations",
+    "daily_life":  "Rises by internal clock around 0500 to check moisture levels and harvest timings; distributes daily food rations to her community roster; spends afternoons on cultivation work and medical consultations; holds an informal evening gathering she calls \u0027the dark table\u0027 where people eat together in near-total darkness.",
+    "affiliation":  "Irkalla sub-level community; informal trade relationships with Undertow merchants; The Undertow",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  8,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  9,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -5,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community-anchor",
+                               "healer",
+                               "cultivator",
+                               "bioluminescent",
+                               "matriarch"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Feed first, ask questions second â€” but she will eventually ask all the questions",
+                                              "Will not give Quietcap to anyone in acute distress, ever"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Warmth and patience",
+                                                 "Pointed questions that make the other person feel subtly examined",
+                                                 "Withdrawal of resources and access with a clear and emotionless explanation"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately assesses their nutritional state, then their emotional state. Offers food before words. Watches how they eat.",
+                                                   "friends":  "Tactile and direct â€” touches arms, sits close, tells uncomfortable truths with tremendous gentleness."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Hums while working â€” a single repetitive phrase from an old Tarawa fishing song",
+                                                "medium":  "Becomes overly practical, redirecting all emotion into task management",
+                                                "high":  "Goes completely silent and begins cleaning â€” methodically, exhaustively, until the crisis resolves or she breaks"
+                                            },
+                       "contradictions":  [
+                                              "Believes deeply in community self-determination but makes almost all community decisions unilaterally because she doesn\u0027t trust the process to be fast enough"
+                                          ],
+                       "habits":  [
+                                      "Touches every rack in the Bloom Halls at the start of each day â€” a greeting as much as an inspection",
+                                      "Eats last, always"
+                                  ],
+                       "breaking_points":  [
+                                               "A child going hungry when she had something she could have given"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Self-cultivated bioluminescent photobacterial symbiote (non-commercial, unique)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Self-cultivated bioluminescent photobacterial symbiote (non-commercial, unique)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Basic nasal respiratory filter implant (early-generation, installed 2171)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Basic nasal respiratory filter implant (early-generation, installed 2171)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.7,
+                       "Scholar":  0.7,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Irkalla",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2142 â€” Born on the surface in what was then the Ashfeld district",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2160 â€” Voluntarily moved underground following a Sterling-Nakamura eviction sweep that displaced her neighborhood",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2163 â€” Began fungal cultivation as survival necessity; discovered the Bloom Halls chambers",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2170 â€” Self-inoculated bioluminescent symbiote culture after three years of controlled testing",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2198 â€” Symbiote migration toward spine first noticed",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Operates the Bloom Halls as the primary food source for approximately 200 sub-level residents",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Nkomo-Lindqvist NL-22 \u0027Peacemaker\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Helix Biosystems",
+                             "The Reclamation Assembly",
+                             "Ferrofluid Induction Cannon FIC-6 \u0027Ironbloom\u0027",
+                             "Noir Dining",
+                             "Tessera Corponation",
+                             "Irkalla",
+                             "Nightlight"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Complex multiethnic blend of Hispanic/Latin American (34.3%), Middle Eastern (21.8%), Indigenous American (18.6%), Sub-Saharan African (14.3%), South Asian (6.9%), and Southeast Asian (4.1%) ancestry â€” the Ubiquitous Diaspora made flesh. Her features reflect this global convergence: warm golden-brown skin with subtle undertones from the Latin, Middle Eastern, and South Asian components; fuller lips and natural textural richness from Sub-Saharan ancestry; defined cheekbones and a refined nose bridge carrying Middle Eastern structure; slight epicanthal fold at the eyes reflecting Southeast Asian lineage; and the broad facial plane characteristic of Indigenous American heritage. A living mosaic of the 22nd century\u0027s population mobility.",
+                                 "height_cm":  178,
+                                 "weight_kg":  82,
+                                 "build":  "Broad-shouldered and substantial, muscular through deliberate work rather than training â€” strong core and forearms from thirty years of careful handling in tight spaces, carrying nutrient loads, and tending cultivation racks. Not heavy, but densely built.",
+                                 "hair_color":  "Steel gray with dark undertones",
+                                 "hair_style":  "Kept in tight, practical braids pinned close to the scalp; functional, no ornamentation",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Deep brown, slightly yellowed at the whites from decades in low-light conditions",
+                                 "skin_tone":  "Rich golden-brown with warm, honeyed undertones â€” the natural blending of Hispanic, Middle Eastern, Indigenous American, Sub-Saharan African, and South Asian heritage, slightly desiccated from underground humidity cycles",
+                                 "complexion":  "Weathered but clear; minimal cosmetic care; fine lines around the eyes from constant low-light focus; subtle age spots on temples. Moderate nose bridge with fuller lips reflecting her diverse ancestry. Defined cheekbones carrying Middle Eastern structure. Her face carries the still attention of someone who listens more than speaks.",
+                                 "distinguishing_marks":  [
+                                                              "Faint bioluminescent patches across both forearms in abstract, organic patterns â€” blue-green photobacterial symbiote that glows softly in darkness, visible at night like living tattoos.",
+                                                              "Similar bioluminescent patches along both sides of the neck, fading toward the collarbone.",
+                                                              "Deep scar running three inches along the outer right forearm â€” old industrial burn from early years as a food technician, now partially obscured by the bioluminescent growth.",
+                                                              "Small, callused burn mark on the inside of her right wrist â€” deliberate self-marking from her inoculation thirty years ago, now barely visible."
+                                                          ],
+                                 "visible_augmentations":  "Faint bioluminescent dermal symbiosis (forearms and neck); barely-visible nasal respiratory filter implant (small mesh intake ports flanking the septum, only noticeable in direct light). No obvious chrome or external cybernetics â€” her augmentations are subtle and biological.",
+                                 "posture_movement":  "Moves with deliberate economy in confined spaces â€” no wasted motion, minimal jarring. Her gait is slow and careful even when moving quickly, a learned habit. When still, she has an almost meditative posture: shoulders relaxed, hands usually occupied (checking something, touching something, listening through her fingertips). In her gardens, she moves like she\u0027s underwater.",
+                                 "clothing_style":  "Tier 5 utilitarian: layered linen and moisture-wicking synth fabrics in muted grays, deep greens, and blacks â€” practical for temperature fluctuation and fungal spore exposure. Loose fitting to allow movement and air circulation. A long sleeveless vest (no collar, open front) worn over a long-sleeved undershirt â€” both enable visibility and access to her bioluminescent patches. Worn leather apron with deep pockets and reinforced seams, darkened by thirty years of work. Simple canvas slip-on shoes with good grip. No jewelry except a single thin bracelet of braided plant fiber. Clothes are clean but well-mended, showing careful maintenance rather than replacement."
+                             },
+    "image_prompt":  "Bhavleen KonatÃ©-Villalobos, 178cm tall, broad-shouldered and dense-muscled from decades of cultivation work, standing in soft bioluminescent blue-green glow from organic patches on her forearms and neck. Rich golden-brown skin with warm undertones blending Hispanic, Middle Eastern, Indigenous American, Sub-Saharan, South Asian, and Southeast Asian heritage; weathered face with defined cheekbones, fuller lips, slight epicanthal folds, fine lines around deep brown eyes with yellowed whites. Steel gray braids pinned close to scalp. Wearing muted utilitarian layers: long-sleeved undershirt, sleeveless open vest, darkened leather work apron with deep pockets. Simple canvas slip-on shoes. Single braided plant fiber bracelet. Subtle nasal respiratory filter implant barely visible. Faint industrial burn scar on right forearm partially covered by bioluminescent symbiote. Standing in underground hydroponic garden setting, GLMZ, low-light cultivation space, meditative posture, hands occupied with careful work, economy of movement, atmospheric moisture visible in air, warm practical lighting. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  34.3,
+                             "Middle Eastern":  21.8,
+                             "Indigenous American":  18.6,
+                             "Sub-Saharan African":  14.3,
+                             "South Asian":  6.9,
+                             "Southeast Asian":  4.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  19.4
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Peruvian":  8.3
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  6.6
+                                                                          }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Kuwaiti":  5.9,
+                                                                     "Emirati":  10.6
+                                                                 },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  5.3
+                                                               }
+                                               },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Zapotec":  4.6,
+                                                                             "Maya":  14
+                                                                         }
+                                                    },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  2,
+                                                                             "Senegalese":  0.6
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  11.7
+                                                                            }
+                                                    },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Bengali":  4.9,
+                                                               "Gujarati":  2
+                                                           }
+                                            },
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  4.1
+                                                                  }
+                                                }
+                        },
+    "tier":  "1"
 }

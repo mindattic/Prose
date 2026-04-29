@@ -1,258 +1,277 @@
-{
-  "id": "019d6143a5b376979e21fa239f539ff3",
-  "type": "character",
-  "name": "Anouk Okafor-Möller",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Bio-waste disposal technician at Aurochs Medical Complex, with a side practice in informal pharmaceutical redistribution",
-  "age": 32,
-  "status": "active",
-  "location": "Aurochs Medical Complex — sub-basement waste processing facility; lives in Blackpipe Corridor, near Armitage and Milwaukee",
-  "description": "Anouk Okafor-Möller is a compact, deliberately unmemorable woman who has spent years perfecting the skill of being overlooked. She wears the grey-green uniform of Aurochs support services, keeps her dark hair pulled back in a practical bun, and has the kind of face that is genuinely warm in repose and genuinely blank on demand — she switches between them like a light. Her skin is a deep warm brown and her eyes are standard-issue dark, though the left one occasionally produces a faint violet phosphorescence from a bioluminescent mod she got second-hand and can't fully suppress, which she covers with a tinted contact lens that she hates. Her hands are permanently chemical-stained at the knuckles from the sterilization protocols.\n\nShe processes medical waste: sharps, expired biologics, surgical byproducts, and — this is where it gets complicated — the medications that are technically expired but functionally still effective, which Aurochs destroys by protocol and she intercepts by system. She has built a careful, small operation: she identifies medications that are safe and functional, diverts them before incineration, and routes them to four street clinics in The Narrows and Blackpipe Corridor at cost or below. She does not think of this as heroic. She thinks of it as the obvious thing that someone in her position could do, and she cannot understand why more people in her position don't do it. This is perhaps the most dangerous thing about her.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.7,
-      "id": 0.5,
-      "shadow": 0.2,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Being caught and the supply network collapsing as a result — the clinics losing the medications, not her own imprisonment",
-      "That the system will find a way to be right about her"
-    ],
-    "core_desires": [
-      "For the operation to scale — she wants to do more, intercept more, reach more clinics",
-      "A night's sleep that isn't spent calculating inventory"
-    ],
-    "coping_mechanisms": [
-      "Extremely meticulous record-keeping — she tracks every diversion in encrypted personal logs as though the data itself is the moral evidence",
-      "Gallows humor shared exclusively with herself; she does not have confidants",
-      "Prays to the waste-processing facility's E.L.F., which she calls the Furnace, and which she believes is angry about being given such a terrible job"
-    ],
-    "blind_spots": [
-      "Believes her system is more invisible than it is — two colleagues have noticed anomalies and chosen not to report them, which she doesn't know",
-      "Has not thought through what happens if the network becomes dependent on her and she's removed from the equation"
-    ],
-    "secret": "She has a personal encrypted file containing enough evidence of Aurochs systematically destroying functional medications beyond any protocol requirement — she believes it's a deliberate policy to maintain pharmaceutical scarcity and pricing. She has never shown it to anyone. She doesn't know who to show it to or what it would cost her."
-  },
-  "speech_patterns": {
-    "vocabulary": "Practical and understated; she rarely uses emotional language even for emotional subjects; favors passive constructions that remove her from the center of sentences",
-    "cadence": "Even and low, rarely speeds up; gives the impression of someone who has already had the conversation several times internally",
-    "verbal_tics": [
-      "'Functionally speaking—' to front a deflection",
-      "Answers yes/no questions with a pause first, even when the answer is obvious"
-    ],
-    "example_lines": [
-      "'Functionally speaking, the medication is effective for another eight months. The protocol requires destruction at twelve weeks post-expiry. Those two facts exist at the same time.'",
-      "'The Furnace has opinions. I leave it offerings and it processes without flagging me. We have an arrangement.'",
-      "'I don't think of it as taking anything. I think of it as the obvious thing.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A new monitoring AI upgrade is scheduled that will close the recalibration window she relies on — she has six weeks to find another method or the network collapses",
-    "One of the clinic recipients of her pharmaceutical diversions has been approached by someone asking where the medications come from, and the question is coming from inside Aurochs Medical Complex"
-  ],
-  "narrative_function": "Black-market pharmaceutical source, knowledge of hospital internal systems and schedules, potential ally for characters needing medical supplies, her operation is a ticking clock that could be exposed",
-  "augmentations": "Bioluminescent iris mod — left eye, violet, second-hand, partially uncontrolled (covered by tinted contact lens); chemical-resistance dermal treatment on hands (occupational, employer-issued); no other mods",
-  "daily_life": "Arrives for the early shift at 04:30, processes waste streams through the morning, intercepts and packages pharmaceutical diversions during a specific window when the monitoring AI does a scheduled recalibration, delivers packages on her commute home through Blackpipe Corridor twice weekly.",
-  "affiliation": "Aurochs Medical Complex (support staff, employed); informal supply network serving Brewer's Spine Community Health Cooperative and three other independent clinics",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 6,
-      "vitality": 6,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 8,
-      "creativity": 7,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 3,
-      "empathy": 7,
-      "expression": 3,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 2,
-      "transparency_guardedness": -5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "invisible operator",
-      "moral pragmatist",
-      "system knowledge",
-      "solitary idealist",
-      "controlled risk"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Move slowly and change nothing that works",
-      "Never involve more people than necessary — each person added is a risk multiplier",
-      "The network survives before she does; if she has to take the fall to protect it, she will"
-    ],
-    "escalation_ladder": [
-      "Does nothing visible — monitors the situation, collects information",
-      "Adjusts the operation to reduce exposure without stopping it",
-      "Destroys evidence of her own involvement while protecting the network's other nodes"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Politely invisible — gives the exact amount of social engagement required to be unremarkable",
-      "friends": "There are almost none; the two people she trusts receive a version of her that is startlingly direct and occasionally quite funny"
-    },
-    "stress_responses": {
-      "low": "Sleep decreases, record-keeping increases",
-      "medium": "Reduces the operation's volume and slows her movements through the facility",
-      "high": "Stops the operation entirely and waits, which is more difficult for her than continuing"
-    },
-    "contradictions": [
-      "Considers herself risk-averse but has been running an illegal pharmaceutical diversion operation from inside a corporate medical facility for four years"
-    ],
-    "habits": [
-      "Walks the same route through the facility every shift in the same order, timing each segment — change in the timing of any segment is her alarm system",
-      "Leaves a small written note for the Furnace E.L.F. at the start of each shift — she folds it into the waste stream herself",
-      "Buys the same meal from the same stall in Blackpipe Corridor every delivery day, uses the time waiting for it to verify that she wasn't followed"
-    ],
-    "breaking_points": [
-      "A clinic losing access to medication she could have provided",
-      "Someone trying to exploit the network for profit rather than supply"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Bioluminescent iris mod — left eye, violet, second-hand and imprecisely calibrated (worn with tinted lens cover)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bioluminescent iris mod — left eye, violet, second-hand and imprecisely calibrated (worn with tinted lens cover)",
-      "replaces": ""
-    },
-    {
-      "name": "Chemical-resistance dermal coating — hands, employer-issued occupational safety measure",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Chemical-resistance dermal coating — hands, employer-issued occupational safety measure",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Nurturer": 0.7,
-    "Provider": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Aurochs Medical Complex",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ],
-  "registered_firearms": [
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ],
-  "related_entities": [
-    "Aurochs Medical Complex",
-    "Blackpipe Corridor",
-    "The Narrows Compact",
-    "Dredge Mining Collective",
-    "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
-    "GLMZ",
-    "The Gradient Compact",
-    "The Pure Hand",
-    "Folakemi Boudiaf"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (75.8%) with South Asian (12.2%) and Southeast Asian (12.0%) ancestry. This genetic combination creates striking warm brown skin tones with complex golden and amber depths, high-definition cheekbones, and the balanced facial proportions characteristic of this multicultural blend. The ancestry mix produces warm, expressive features with natural strength in the face structure.",
-    "height_cm": 158,
-    "weight_kg": 52,
-    "build": "Compact and spare, muscled in the forearms and shoulders from years of repetitive handling work. No excess weight. Efficient frame.",
-    "hair_color": "Black, naturally",
-    "hair_style": "Pulled back in a tight, practical bun secured with a grey clip",
-    "hair_length": "Long (pulled back)",
-    "eye_color": "Deep warm brown natural with golden undertones; left eye contains suppressed violet bioluminescence visible as faint shimmer beneath tinted amber-brown contact lens",
-    "skin_tone": "Deep warm brown with rich golden and amber undertones, reflecting the dominant Sub-Saharan African heritage blended with South Asian warmth and Southeast Asian complexity. Even-toned with natural luminosity characteristic of this ancestry.",
-    "complexion": "Fine-featured, symmetrical face with prominent high cheekbones shaped by Sub-Saharan African and South Asian ancestry. Genuinely expressive in repose—warm, observant. Can compress into complete blankness. Small scar on right temple from a childhood accident. Skin around eyes shows early crow's feet from squinting under industrial lighting. Face shows the balanced proportions and natural warmth characteristic of multicultural Sub-Saharan African-South Asian-Southeast Asian heritage.",
-    "distinguishing_marks": [
-      "Chemical staining at knuckles and first two joints of both hands—permanent yellowed discoloration from sterilization protocols, looks like old nicotine stains but chemical in origin",
-      "Small linear scar on right temple, approximately 1.5cm, barely visible unless lit from the side"
-    ],
-    "visible_augmentations": "Left eye wears a tinted contact lens (amber-brown) to suppress the bioluminescent iris mod beneath. Close inspection would reveal the faint violet glow underneath if the lens were removed. Hands show chemical-resistance dermal treatment as a subtle matte finish to the skin, slightly different texture than untreated areas.",
-    "posture_movement": "Moves with economical precision—no wasted motion. Quiet walker. Tends to keep her hands visible and still when not in use. Stands slightly angled, as if ready to pivot away. Makes deliberate eye contact when she decides to be memorable, none when she doesn't. Carries herself with the specific posture of someone who has learned to occupy minimal space.",
-    "clothing_style": "Grey-green Aurochs Medical Complex support staff uniform during shifts—regulation poly-blend coverall with name badge, latex gloves, reinforced apron. Off-shift: practical Tier 4 clothing—worn dark jeans, fitted grey or black thermal shirts, a heavy olive canvas jacket patched at both elbows, practical boots (black synthetic leather, steel-toed). No jewelry except a cheap stainless steel watch. Her clothes are clean but deliberately unremarkable, chosen to not draw attention or memory."
-  },
-  "image_prompt": "Anouk Okafor-Möller, a compact 158cm woman with deep warm brown skin reflecting Sub-Saharan African, South Asian, and Southeast Asian heritage. High prominent cheekbones, expressive warm brown eyes with subtle amber undertones—left eye hidden behind amber-tinted contact lens concealing violet bioluminescence beneath. Black hair pulled back in tight bun with grey clip. Small scar visible on right temple. Chemical-stained yellowed discoloration on knuckles and first hand joints. Wearing grey-green Aurochs Medical Complex uniform with poly-blend coverall, name badge, latex gloves, reinforced apron during work shift. Off-shift in worn dark jeans, fitted grey thermal shirt, heavy olive canvas jacket with elbow patches, black synthetic leather steel-toed boots. Moves with economical precision, minimal wasted motion. GLMZ 2200s Great Lakes Metropolitan Zone setting, industrial medical facility or urban tier-4 district. Cool atmospheric lighting emphasizing skin tone warmth and the contrast of her unaugmented features against augmented details. Serious, observant expression. Minimal jewelry—only cheap stainless steel watch. Deliberately unremarkable, forgettable appearance by design --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 75.8,
-    "South Asian": 12.2,
-    "Southeast Asian": 12
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "West African": {
-        "Ghanaian": 75.8
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 11.3,
-        "Tamil Sri Lankan": 0.9
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Tagalog": 12
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5b376979e21fa239f539ff3",
+    "type":  "character",
+    "name":  "Anouk Okafor-MÃ¶ller",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Bio-waste disposal technician at Aurochs Medical Complex, with a side practice in informal pharmaceutical redistribution",
+    "age":  32,
+    "status":  "active",
+    "location":  "Aurochs Medical Complex â€” sub-basement waste processing facility; lives in Blackpipe Corridor, near Armitage and Milwaukee",
+    "description":  "Anouk Okafor-MÃ¶ller is a compact, deliberately unmemorable woman who has spent years perfecting the skill of being overlooked. She wears the grey-green uniform of Aurochs support services, keeps her dark hair pulled back in a practical bun, and has the kind of face that is genuinely warm in repose and genuinely blank on demand â€” she switches between them like a light. Her skin is a deep warm brown and her eyes are standard-issue dark, though the left one occasionally produces a faint violet phosphorescence from a bioluminescent mod she got second-hand and can\u0027t fully suppress, which she covers with a tinted contact lens that she hates. Her hands are permanently chemical-stained at the knuckles from the sterilization protocols.\n\nShe processes medical waste: sharps, expired biologics, surgical byproducts, and â€” this is where it gets complicated â€” the medications that are technically expired but functionally still effective, which Aurochs destroys by protocol and she intercepts by system. She has built a careful, small operation: she identifies medications that are safe and functional, diverts them before incineration, and routes them to four street clinics in The Narrows and Blackpipe Corridor at cost or below. She does not think of this as heroic. She thinks of it as the obvious thing that someone in her position could do, and she cannot understand why more people in her position don\u0027t do it. This is perhaps the most dangerous thing about her.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being caught and the supply network collapsing as a result â€” the clinics losing the medications, not her own imprisonment",
+                                          "That the system will find a way to be right about her"
+                                      ],
+                       "core_desires":  [
+                                            "For the operation to scale â€” she wants to do more, intercept more, reach more clinics",
+                                            "A night\u0027s sleep that isn\u0027t spent calculating inventory"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Extremely meticulous record-keeping â€” she tracks every diversion in encrypted personal logs as though the data itself is the moral evidence",
+                                                 "Gallows humor shared exclusively with herself; she does not have confidants",
+                                                 "Prays to the waste-processing facility\u0027s E.L.F., which she calls the Furnace, and which she believes is angry about being given such a terrible job"
+                                             ],
+                       "blind_spots":  [
+                                           "Believes her system is more invisible than it is â€” two colleagues have noticed anomalies and chosen not to report them, which she doesn\u0027t know",
+                                           "Has not thought through what happens if the network becomes dependent on her and she\u0027s removed from the equation"
+                                       ],
+                       "secret":  "She has a personal encrypted file containing enough evidence of Aurochs systematically destroying functional medications beyond any protocol requirement â€” she believes it\u0027s a deliberate policy to maintain pharmaceutical scarcity and pricing. She has never shown it to anyone. She doesn\u0027t know who to show it to or what it would cost her."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Practical and understated; she rarely uses emotional language even for emotional subjects; favors passive constructions that remove her from the center of sentences",
+                            "cadence":  "Even and low, rarely speeds up; gives the impression of someone who has already had the conversation several times internally",
+                            "verbal_tics":  [
+                                                "\u0027Functionally speakingâ€”\u0027 to front a deflection",
+                                                "Answers yes/no questions with a pause first, even when the answer is obvious"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Functionally speaking, the medication is effective for another eight months. The protocol requires destruction at twelve weeks post-expiry. Those two facts exist at the same time.\u0027",
+                                                  "\u0027The Furnace has opinions. I leave it offerings and it processes without flagging me. We have an arrangement.\u0027",
+                                                  "\u0027I don\u0027t think of it as taking anything. I think of it as the obvious thing.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A new monitoring AI upgrade is scheduled that will close the recalibration window she relies on â€” she has six weeks to find another method or the network collapses",
+                        "One of the clinic recipients of her pharmaceutical diversions has been approached by someone asking where the medications come from, and the question is coming from inside Aurochs Medical Complex"
+                    ],
+    "narrative_function":  "Black-market pharmaceutical source, knowledge of hospital internal systems and schedules, potential ally for characters needing medical supplies, her operation is a ticking clock that could be exposed",
+    "augmentations":  "Bioluminescent iris mod â€” left eye, violet, second-hand, partially uncontrolled (covered by tinted contact lens); chemical-resistance dermal treatment on hands (occupational, employer-issued); no other mods",
+    "daily_life":  "Arrives for the early shift at 04:30, processes waste streams through the morning, intercepts and packages pharmaceutical diversions during a specific window when the monitoring AI does a scheduled recalibration, delivers packages on her commute home through Blackpipe Corridor twice weekly.",
+    "affiliation":  "Aurochs Medical Complex (support staff, employed); informal supply network serving Brewer\u0027s Spine Community Health Cooperative and three other independent clinics",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  6,
+                                   "vitality":  6,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  8,
+                                 "creativity":  7,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  3,
+                                 "empathy":  7,
+                                 "expression":  3,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "invisible operator",
+                               "moral pragmatist",
+                               "system knowledge",
+                               "solitary idealist",
+                               "controlled risk"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Move slowly and change nothing that works",
+                                              "Never involve more people than necessary â€” each person added is a risk multiplier",
+                                              "The network survives before she does; if she has to take the fall to protect it, she will"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Does nothing visible â€” monitors the situation, collects information",
+                                                 "Adjusts the operation to reduce exposure without stopping it",
+                                                 "Destroys evidence of her own involvement while protecting the network\u0027s other nodes"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Politely invisible â€” gives the exact amount of social engagement required to be unremarkable",
+                                                   "friends":  "There are almost none; the two people she trusts receive a version of her that is startlingly direct and occasionally quite funny"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Sleep decreases, record-keeping increases",
+                                                "medium":  "Reduces the operation\u0027s volume and slows her movements through the facility",
+                                                "high":  "Stops the operation entirely and waits, which is more difficult for her than continuing"
+                                            },
+                       "contradictions":  [
+                                              "Considers herself risk-averse but has been running an illegal pharmaceutical diversion operation from inside a corporate medical facility for four years"
+                                          ],
+                       "habits":  [
+                                      "Walks the same route through the facility every shift in the same order, timing each segment â€” change in the timing of any segment is her alarm system",
+                                      "Leaves a small written note for the Furnace E.L.F. at the start of each shift â€” she folds it into the waste stream herself",
+                                      "Buys the same meal from the same stall in Blackpipe Corridor every delivery day, uses the time waiting for it to verify that she wasn\u0027t followed"
+                                  ],
+                       "breaking_points":  [
+                                               "A clinic losing access to medication she could have provided",
+                                               "Someone trying to exploit the network for profit rather than supply"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Bioluminescent iris mod â€” left eye, violet, second-hand and imprecisely calibrated (worn with tinted lens cover)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bioluminescent iris mod â€” left eye, violet, second-hand and imprecisely calibrated (worn with tinted lens cover)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Chemical-resistance dermal coating â€” hands, employer-issued occupational safety measure",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Chemical-resistance dermal coating â€” hands, employer-issued occupational safety measure",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Nurturer":  0.7,
+                       "Provider":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Aurochs Medical Complex",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Vespid Dynamics Tracker Round System TRS-4 \u0027Breadcrumb\u0027",
+                            "Nkomo-Lindqvist NL-9SD \u0027Lullaby\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Vespid Dynamics Tracker Round System TRS-4 \u0027Breadcrumb\u0027",
+                                "Nkomo-Lindqvist NL-9SD \u0027Lullaby\u0027"
+                            ],
+    "related_entities":  [
+                             "Aurochs Medical Complex",
+                             "Blackpipe Corridor",
+                             "The Narrows Compact",
+                             "Dredge Mining Collective",
+                             "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
+                             "GLMZ",
+                             "The Gradient Compact",
+                             "The Pure Hand",
+                             "Folakemi Boudiaf"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Sub-Saharan African (75.8%) with South Asian (12.2%) and Southeast Asian (12.0%) ancestry. This genetic combination creates striking warm brown skin tones with complex golden and amber depths, high-definition cheekbones, and the balanced facial proportions characteristic of this multicultural blend. The ancestry mix produces warm, expressive features with natural strength in the face structure.",
+                                 "height_cm":  158,
+                                 "weight_kg":  52,
+                                 "build":  "Compact and spare, muscled in the forearms and shoulders from years of repetitive handling work. No excess weight. Efficient frame.",
+                                 "hair_color":  "Black, naturally",
+                                 "hair_style":  "Pulled back in a tight, practical bun secured with a grey clip",
+                                 "hair_length":  "Long (pulled back)",
+                                 "eye_color":  "Deep warm brown natural with golden undertones; left eye contains suppressed violet bioluminescence visible as faint shimmer beneath tinted amber-brown contact lens",
+                                 "skin_tone":  "Deep warm brown with rich golden and amber undertones, reflecting the dominant Sub-Saharan African heritage blended with South Asian warmth and Southeast Asian complexity. Even-toned with natural luminosity characteristic of this ancestry.",
+                                 "complexion":  "Fine-featured, symmetrical face with prominent high cheekbones shaped by Sub-Saharan African and South Asian ancestry. Genuinely expressive in reposeâ€”warm, observant. Can compress into complete blankness. Small scar on right temple from a childhood accident. Skin around eyes shows early crow\u0027s feet from squinting under industrial lighting. Face shows the balanced proportions and natural warmth characteristic of multicultural Sub-Saharan African-South Asian-Southeast Asian heritage.",
+                                 "distinguishing_marks":  [
+                                                              "Chemical staining at knuckles and first two joints of both handsâ€”permanent yellowed discoloration from sterilization protocols, looks like old nicotine stains but chemical in origin",
+                                                              "Small linear scar on right temple, approximately 1.5cm, barely visible unless lit from the side"
+                                                          ],
+                                 "visible_augmentations":  "Left eye wears a tinted contact lens (amber-brown) to suppress the bioluminescent iris mod beneath. Close inspection would reveal the faint violet glow underneath if the lens were removed. Hands show chemical-resistance dermal treatment as a subtle matte finish to the skin, slightly different texture than untreated areas.",
+                                 "posture_movement":  "Moves with economical precisionâ€”no wasted motion. Quiet walker. Tends to keep her hands visible and still when not in use. Stands slightly angled, as if ready to pivot away. Makes deliberate eye contact when she decides to be memorable, none when she doesn\u0027t. Carries herself with the specific posture of someone who has learned to occupy minimal space.",
+                                 "clothing_style":  "Grey-green Aurochs Medical Complex support staff uniform during shiftsâ€”regulation poly-blend coverall with name badge, latex gloves, reinforced apron. Off-shift: practical Tier 4 clothingâ€”worn dark jeans, fitted grey or black thermal shirts, a heavy olive canvas jacket patched at both elbows, practical boots (black synthetic leather, steel-toed). No jewelry except a cheap stainless steel watch. Her clothes are clean but deliberately unremarkable, chosen to not draw attention or memory."
+                             },
+    "image_prompt":  "Anouk Okafor-MÃ¶ller, a compact 158cm woman with deep warm brown skin reflecting Sub-Saharan African, South Asian, and Southeast Asian heritage. High prominent cheekbones, expressive warm brown eyes with subtle amber undertonesâ€”left eye hidden behind amber-tinted contact lens concealing violet bioluminescence beneath. Black hair pulled back in tight bun with grey clip. Small scar visible on right temple. Chemical-stained yellowed discoloration on knuckles and first hand joints. Wearing grey-green Aurochs Medical Complex uniform with poly-blend coverall, name badge, latex gloves, reinforced apron during work shift. Off-shift in worn dark jeans, fitted grey thermal shirt, heavy olive canvas jacket with elbow patches, black synthetic leather steel-toed boots. Moves with economical precision, minimal wasted motion. GLMZ 2200s Great Lakes Metropolitan Zone setting, industrial medical facility or urban tier-4 district. Cool atmospheric lighting emphasizing skin tone warmth and the contrast of her unaugmented features against augmented details. Serious, observant expression. Minimal jewelryâ€”only cheap stainless steel watch. Deliberately unremarkable, forgettable appearance by design --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  75.8,
+                             "South Asian":  12.2,
+                             "Southeast Asian":  12
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Ghanaian":  75.8
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  11.3,
+                                                                   "Tamil Sri Lankan":  0.9
+                                                               }
+                                            },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Tagalog":  12
+                                                                 }
+                                                }
+                        },
+    "tier":  "3"
 }

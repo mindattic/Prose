@@ -1,351 +1,362 @@
-{
-  "id": "019d6143a71476dc84844260e80d57fd",
-  "type": "character",
-  "name": "Dhoruba Tetteh",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Remote drone and vehicle operations specialist — rigger",
-  "age": 20,
-  "status": "active",
-  "location": "The Canopy — elevated walkway district above Geartown, near Lincoln and Belmont",
-  "description": "Dhoruba Tetteh is average height but with a presence that fills more space than the body accounts for. At 20, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a rigger out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDhoruba Tetteh is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.34,
-      "ideal": 0.6,
-      "id": 0.2,
-      "shadow": 0.1,
-      "mask": 0.16,
-      "ghost": 0.44
-    },
-    "core_fears": [
-      "Being replaced — younger, faster, cheaper runners coming up behind them",
-      "Being captured alive — death is preferable to corporate interrogation",
-      "That the work they do makes the city worse, not better"
-    ],
-    "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "A crew worth trusting — people who stay when the shooting starts",
-      "To matter to someone for who they are, not what they can do"
-    ],
-    "coping_mechanisms": [
-      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat",
-      "Planning — responds to chaos by making detailed contingency plans for everything"
-    ],
-    "blind_spots": [
-      "Cannot accept help without interpreting it as leverage",
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
-      "Assumes everyone has an angle because they always have an angle"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
-    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
-    "verbal_tics": [
-      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks",
-      "Uses old pre-collapse slang that nobody else remembers"
-    ],
-    "example_lines": [
-      "\"I have eyes in every district. Most of them are on wings.\"",
-      "\"The drone doesn't care about your feelings. Neither do I.\"",
-      "\"Remote operation means I'm everywhere and nowhere. It's very convenient.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Vesna Strand-Otieno's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
-    "Someone is impersonating Vesna Strand-Otieno on jobs, and the impersonator is better at the work than the original",
-    "A high-paying contract turns out to target someone Vesna Strand-Otieno owes a personal debt to"
-  ],
-  "narrative_function": "Vesna Strand-Otieno is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
-  "augmentations": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces. Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
-  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Semi-independent — has standing arrangements with several crews",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 4
-      },
-      "agility": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 4
-      },
-      "endurance": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 4
-      },
-      "reflexes": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 9
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 4
-      },
-      "perception": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 4
-      },
-      "willpower": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 7
-      },
-      "technical": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 8
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 6
-      },
-      "intimidation": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 9
-      },
-      "deception": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 8
-      },
-      "empathy": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 6
-      }
-    },
-    "personality": {
-      "aggression": 0.12,
-      "caution": 0.61,
-      "loyalty": 0.44,
-      "greed": 0.71,
-      "empathy": 0.66
-    },
-    "drives": [
-      "protection",
-      "revenge",
-      "loyalty"
-    ],
-    "thresholds": {
-      "pain": 5,
-      "stress": 8,
-      "loyalty_break": 8
-    },
-    "strengths": [
-      "expert marksman",
-      "physical endurance",
-      "natural leadership presence"
-    ],
-    "weaknesses": [
-      "trust issues that limit crew effectiveness",
-      "chronic insomnia affecting long-term performance"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "rigger",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Always verifies target identity independently before lethal contracts",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
-      "Values loyalty intensely but has betrayed someone in the past to survive"
-    ],
-    "habits": [
-      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Practices a kata or fighting form every morning regardless of circumstances",
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots"
-    ],
-    "breaking_points": [
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized",
-      "Being forced to choose between a crew member and the mission — and choosing wrong"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Gecko-grip fingertip implants and toe pads",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
-      "replaces": ""
-    },
-    {
-      "name": "Cybernetic arm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Canopy",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "related_entities": [
-    "Masquerade",
-    "Canopy Station Nine",
-    "The Nearfield",
-    "The Heritage Vault",
-    "Diaspora Table",
-    "Geartown",
-    "Stratum",
-    "Canopy",
-    "Lazarus LX-2 'Lab Rat'",
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
-    "Slagworks Industrial"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Mixed global ancestry: predominantly Sub-Saharan African (44.3%) with significant Southeast Asian (32.7%) and East Asian (23.0%) heritage. This creates a striking phenotype — deep warm undertones from African ancestry blended with the facial structure, eye shape, and cheekbone prominence characteristic of Southeast and East Asian heritage, resulting in a uniquely sophisticated appearance with compelling intensity and harmonious bone structure.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean and wiry with defined musculature from climbing work and military conditioning. No excess body fat. Shoulders broad relative to frame from years of rope work and augmentation weight distribution.",
-    "hair_color": "Platinum blonde with dark roots showing — deliberately maintained, not dyed often",
-    "hair_style": "Pulled back in a tight braid, practical and clean",
-    "hair_length": "Long — past shoulders when unbound",
-    "eye_color": "Deep brown with amber undertones, naturally expressive with characteristic monolid shape from East Asian heritage",
-    "skin_tone": "Deep warm brown with golden and amber undertones — sun-darkened around the neck and forearms from rooftop work, creating subtle depth that reflects the blended Sub-Saharan, Southeast Asian, and East Asian ancestry",
-    "complexion": "Prominent high cheekbones with graceful facial width, straight nose with subtle bridge definition, structured jawline with elegant angles. Eyes set with the characteristic depth and monolid shape of Southeast and East Asian heritage, creating striking intensity. Skin is clear but marked by lifestyle — small scars at knuckles from combat training, faint lines around eyes from nocturnal living and screen work. The overall impression is striking and authentically multicultural.",
-    "distinguishing_marks": [
-      "Ragged scar across left palm, webbed between thumb and forefinger — from a climbing accident at age 16, before the gecko implants",
-      "Burn mark on right collarbone, thumb-sized, pale and old — classified incident during private security service",
-      "Tattoo on left inner forearm: simple circuit board pattern in matte black ink, clean lines, military-precise",
-      "Fine white scar along right temple, almost hidden by hairline — shrapnel or blade work, never clarified"
-    ],
-    "visible_augmentations": "Right arm is full chromatic replacement from shoulder to fingertips — brushed steel and darker composite polymer, slightly more defined musculature than biological left. The joints are precise, no servo whine. Fingertips show the gecko-grip pads: microfilamented polymer in matte black, visible as a subtle texture difference. Toe pads create small bulges in boots but are not obvious unless barefoot.",
-    "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight balanced forward on the balls of feet, ready to shift. Climbs with predatory fluidity, three-limb method when using chrome. Eyes rarely settle; constant environmental scanning. Handshake is firm and brief. Smiles infrequently but genuinely when she does.",
-    "clothing_style": "Tier 3-4 practical: black synthetic-weave climbing pants with reinforced knees and cargo pockets, fitted gray thermal under matte-black sleeveless technical vest with webbing and tool loops. Boots are aggressive — grippy soles, ankle support, scuffed from real use. Gloves are fingerless tactical leather, reinforced at knuckles, worn. Faded Geartown Municipal patch on vest. One silver chain around neck, military-issue dog tag aesthetic but blank. No jewelry beyond function."
-  },
-  "image_prompt": "Dhoruba Tetteh, lean wiry neo-noir woman, 168cm tall, deep warm brown skin with golden undertones, prominent high cheekbones, straight nose, structured elegant jawline, deep brown eyes with amber flecks and monolid shape, platinum blonde hair with dark roots in tight braid. Right arm full chromatic replacement: brushed steel and black polymer with gecko-grip pads on fingertips. Ragged scar across left palm, burn mark on right collarbone, circuit board tattoo on left forearm, fine white scar along temple. Black climbing pants with reinforced knees, fitted gray thermal, matte-black sleeveless technical vest with webbing, aggressive grip boots scuffed from use, fingerless tactical leather gloves. Silver military-issue blank dog tag on chain. Economical precise posture, weight forward on balls of feet, constantly scanning. Rooftop setting, neon glow, 2226 GLMZ 2200s aesthetic, moody atmospheric lighting, rain-slicked surfaces, intense and ready --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 44.3,
-    "Southeast Asian": 32.7,
-    "East Asian": 23
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 44.3
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 32.7
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 9.8
-      },
-      "Japanese": {
-        "Japanese": 6.1
-      },
-      "Chinese": {
-        "Shanghainese": 5.5,
-        "Cantonese": 1.6
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a71476dc84844260e80d57fd",
+    "type":  "character",
+    "name":  "Dhoruba Tetteh",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Remote drone and vehicle operations specialist â€” rigger",
+    "age":  20,
+    "status":  "active",
+    "location":  "The Canopy â€” elevated walkway district above Geartown, near Lincoln and Belmont",
+    "description":  "Dhoruba Tetteh is average height but with a presence that fills more space than the body accounts for. At 20, her face carries the layered heritage of generations of diaspora mixing â€” features that resist easy categorization and reward attention. The chrome is visible â€” gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces â€” and she makes no effort to hide it.\n\nMilitary training â€” one of the private security corps that folded during the consolidation wars â€” left her with skills and night terrors in equal measure. She works as a rigger out of The Canopy, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nDhoruba Tetteh is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them",
+                                          "Being captured alive â€” death is preferable to corporate interrogation",
+                                          "That the work they do makes the city worse, not better"
+                                      ],
+                       "core_desires":  [
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "To matter to someone for who they are, not what they can do"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Art â€” draws, paints, or sculpts in private; the violence goes somewhere constructive",
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat",
+                                                 "Planning â€” responds to chaos by making detailed contingency plans for everything"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot accept help without interpreting it as leverage",
+                                           "Mistakes pattern recognition for wisdom â€” sees connections that aren\u0027t there",
+                                           "Assumes everyone has an angle because they always have an angle"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Terse to the point of rudeness. Treats words like ammunition â€” expensive and not to be wasted.",
+                            "cadence":  "Rapid and dense â€” information-heavy sentences that demand attention.",
+                            "verbal_tics":  [
+                                                "Uses \u0027we\u0027 instead of \u0027I\u0027 â€” either royal or dissociative, nobody asks",
+                                                "Uses old pre-collapse slang that nobody else remembers"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I have eyes in every district. Most of them are on wings.\"",
+                                                  "\"The drone doesn\u0027t care about your feelings. Neither do I.\"",
+                                                  "\"Remote operation means I\u0027m everywhere and nowhere. It\u0027s very convenient.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Vesna Strand-Otieno\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad",
+                        "Someone is impersonating Vesna Strand-Otieno on jobs, and the impersonator is better at the work than the original",
+                        "A high-paying contract turns out to target someone Vesna Strand-Otieno owes a personal debt to"
+                    ],
+    "narrative_function":  "Vesna Strand-Otieno is a pressure point â€” the kind of character whose choices ripple outward. When she makes a decision, other people\u0027s lives change. That weight is the engine of her stories.",
+    "augmentations":  "Gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces. Cybernetic arm â€” right, full replacement from shoulder â€” stronger than organic, obvious chrome",
+    "daily_life":  "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+    "affiliation":  "Semi-independent â€” has standing arrangements with several crews",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  0,
+                                                    "effective":  4
+                                                },
+                                   "agility":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  4
+                                               },
+                                   "endurance":  {
+                                                     "base":  5,
+                                                     "augmented":  2,
+                                                     "effective":  4
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  6,
+                                                    "augmented":  3,
+                                                    "effective":  9
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  7,
+                                                      "augmented":  3,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  6,
+                                                    "augmented":  1,
+                                                    "effective":  4
+                                                },
+                                 "willpower":  {
+                                                   "base":  3,
+                                                   "augmented":  1,
+                                                   "effective":  7
+                                               },
+                                 "technical":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  8
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  6,
+                                                  "augmented":  0,
+                                                  "effective":  6
+                                              },
+                                 "intimidation":  {
+                                                      "base":  8,
+                                                      "augmented":  2,
+                                                      "effective":  9
+                                                  },
+                                 "deception":  {
+                                                   "base":  7,
+                                                   "augmented":  3,
+                                                   "effective":  8
+                                               },
+                                 "empathy":  {
+                                                 "base":  7,
+                                                 "augmented":  0,
+                                                 "effective":  6
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.12,
+                                      "caution":  0.61,
+                                      "loyalty":  0.44,
+                                      "greed":  0.71,
+                                      "empathy":  0.66
+                                  },
+                  "drives":  [
+                                 "protection",
+                                 "revenge",
+                                 "loyalty"
+                             ],
+                  "thresholds":  {
+                                     "pain":  5,
+                                     "stress":  8,
+                                     "loyalty_break":  8
+                                 },
+                  "strengths":  [
+                                    "expert marksman",
+                                    "physical endurance",
+                                    "natural leadership presence"
+                                ],
+                  "weaknesses":  [
+                                     "trust issues that limit crew effectiveness",
+                                     "chronic insomnia affecting long-term performance"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "rigger",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+                                              "Values loyalty intensely but has betrayed someone in the past to survive"
+                                          ],
+                       "habits":  [
+                                      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Practices a kata or fighting form every morning regardless of circumstances",
+                                      "Wears the same item of clothing for luck â€” a scarf, a glove, a specific pair of boots"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized",
+                                               "Being forced to choose between a crew member and the mission â€” and choosing wrong"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Gecko-grip fingertip implants and toe pads",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cybernetic arm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Cybernetic arm â€” right, full replacement from shoulder â€” stronger than organic, obvious chrome",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Canopy",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Scout Rifle HSR-10 \u0027Wanderer\u0027",
+                            "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Scout Rifle HSR-10 \u0027Wanderer\u0027",
+                                "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                            ],
+    "related_entities":  [
+                             "Masquerade",
+                             "Canopy Station Nine",
+                             "The Nearfield",
+                             "The Heritage Vault",
+                             "Diaspora Table",
+                             "Geartown",
+                             "Stratum",
+                             "Canopy",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Mixed global ancestry: predominantly Sub-Saharan African (44.3%) with significant Southeast Asian (32.7%) and East Asian (23.0%) heritage. This creates a striking phenotype â€” deep warm undertones from African ancestry blended with the facial structure, eye shape, and cheekbone prominence characteristic of Southeast and East Asian heritage, resulting in a uniquely sophisticated appearance with compelling intensity and harmonious bone structure.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and wiry with defined musculature from climbing work and military conditioning. No excess body fat. Shoulders broad relative to frame from years of rope work and augmentation weight distribution.",
+                                 "hair_color":  "Platinum blonde with dark roots showing â€” deliberately maintained, not dyed often",
+                                 "hair_style":  "Pulled back in a tight braid, practical and clean",
+                                 "hair_length":  "Long â€” past shoulders when unbound",
+                                 "eye_color":  "Deep brown with amber undertones, naturally expressive with characteristic monolid shape from East Asian heritage",
+                                 "skin_tone":  "Deep warm brown with golden and amber undertones â€” sun-darkened around the neck and forearms from rooftop work, creating subtle depth that reflects the blended Sub-Saharan, Southeast Asian, and East Asian ancestry",
+                                 "complexion":  "Prominent high cheekbones with graceful facial width, straight nose with subtle bridge definition, structured jawline with elegant angles. Eyes set with the characteristic depth and monolid shape of Southeast and East Asian heritage, creating striking intensity. Skin is clear but marked by lifestyle â€” small scars at knuckles from combat training, faint lines around eyes from nocturnal living and screen work. The overall impression is striking and authentically multicultural.",
+                                 "distinguishing_marks":  [
+                                                              "Ragged scar across left palm, webbed between thumb and forefinger â€” from a climbing accident at age 16, before the gecko implants",
+                                                              "Burn mark on right collarbone, thumb-sized, pale and old â€” classified incident during private security service",
+                                                              "Tattoo on left inner forearm: simple circuit board pattern in matte black ink, clean lines, military-precise",
+                                                              "Fine white scar along right temple, almost hidden by hairline â€” shrapnel or blade work, never clarified"
+                                                          ],
+                                 "visible_augmentations":  "Right arm is full chromatic replacement from shoulder to fingertips â€” brushed steel and darker composite polymer, slightly more defined musculature than biological left. The joints are precise, no servo whine. Fingertips show the gecko-grip pads: microfilamented polymer in matte black, visible as a subtle texture difference. Toe pads create small bulges in boots but are not obvious unless barefoot.",
+                                 "posture_movement":  "Moves with economical precision â€” no wasted motion. Stands with weight balanced forward on the balls of feet, ready to shift. Climbs with predatory fluidity, three-limb method when using chrome. Eyes rarely settle; constant environmental scanning. Handshake is firm and brief. Smiles infrequently but genuinely when she does.",
+                                 "clothing_style":  "Tier 3-4 practical: black synthetic-weave climbing pants with reinforced knees and cargo pockets, fitted gray thermal under matte-black sleeveless technical vest with webbing and tool loops. Boots are aggressive â€” grippy soles, ankle support, scuffed from real use. Gloves are fingerless tactical leather, reinforced at knuckles, worn. Faded Geartown Municipal patch on vest. One silver chain around neck, military-issue dog tag aesthetic but blank. No jewelry beyond function."
+                             },
+    "image_prompt":  "Dhoruba Tetteh, lean wiry neo-noir woman, 168cm tall, deep warm brown skin with golden undertones, prominent high cheekbones, straight nose, structured elegant jawline, deep brown eyes with amber flecks and monolid shape, platinum blonde hair with dark roots in tight braid. Right arm full chromatic replacement: brushed steel and black polymer with gecko-grip pads on fingertips. Ragged scar across left palm, burn mark on right collarbone, circuit board tattoo on left forearm, fine white scar along temple. Black climbing pants with reinforced knees, fitted gray thermal, matte-black sleeveless technical vest with webbing, aggressive grip boots scuffed from use, fingerless tactical leather gloves. Silver military-issue blank dog tag on chain. Economical precise posture, weight forward on balls of feet, constantly scanning. Rooftop setting, neon glow, 2226 GLMZ 2200s aesthetic, moody atmospheric lighting, rain-slicked surfaces, intense and ready --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  44.3,
+                             "Southeast Asian":  32.7,
+                             "East Asian":  23
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  44.3
+                                                                            }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  32.7
+                                                                   }
+                                                },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  9.8
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  6.1
+                                                            },
+                                               "Chinese":  {
+                                                               "Shanghainese":  5.5,
+                                                               "Cantonese":  1.6
+                                                           }
+                                           }
+                        },
+    "tier":  "3"
 }

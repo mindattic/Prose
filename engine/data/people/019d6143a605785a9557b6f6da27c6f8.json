@@ -1,276 +1,295 @@
-{
-  "id": "019d6143a605785a9557b6f6da27c6f8",
-  "type": "character",
-  "name": "Grigor Huitzil-Szabó",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Bootleg media seller and fortune seller, The Alban Souk",
-  "age": 23,
-  "status": "active",
-  "location": "The Alban Souk, Mexicantown Libre, near Ashland and Division",
-  "description": "Grigor Huitzil-Szabó is wiry and restless, with sandy-brown skin, a scatter of darker freckles across his nose, and color-changing hair he keeps medium-length — today it's cycling slowly between deep indigo and a burnt copper, a gradient that shifts with his mood in a way he has customized to be slightly out of sync with his actual emotional state, because he thinks it's funny to make people misread him. His stall is a folding table, a battered data-terminal with a cracked screen, and a rack of physical media chips he sells alongside what he calls 'experience cartridges' — bootleg sensory recordings, contraband dreamscapes, illegally ripped Ringo entertainment contracts.\n\nThe fortune-telling is a sideline and a passion both: he reads data-patterns using a divination system he invented himself, combining traditional nazar iconography from one branch of his heritage with Akan adinkra symbols from the other, mapped onto a set of thirty-two hand-etched chips he calls his 'throw.' He has a gift for it — or at least a gift for reading people well enough that what he says resonates — and a small devoted clientele who come specifically for the throw and don't buy media at all. He is young enough to find everything amusing and old enough to be annoyed by how often that gets mistaken for shallowness. He is sharper than he presents, and he knows exactly how useful that gap is.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.5,
-      "id": 0.8,
-      "shadow": 0.4,
-      "mask": 0.7,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "Being ordinary — not leaving any mark on the city or the people in it",
-      "Ringo actually finding the relay node and tracing it back to him"
-    ],
-    "core_desires": [
-      "To make something original — the fortune system is his, but he wants to build something bigger that is undeniably his",
-      "To be taken seriously without having to give up the performance of not caring about being taken seriously"
-    ],
-    "coping_mechanisms": [
-      "Humor and performance as armor",
-      "The fortune-throw as a way of processing situations he can't control — reads his own throws compulsively",
-      "Keeping everything light and surface-level until the moment he doesn't"
-    ],
-    "blind_spots": [
-      "Underestimates how much his media operation exposes him — treats it as victimless when the contracts he's violating belong to a corponation that employs a compliance division",
-      "Reads others well but applies his read too fast and too confidently, sometimes missing updates"
-    ],
-    "secret": "One of his experience cartridges — a dreamscape he sells as a bootleg Ringo luxury product — is not ripped from Ringo at all. He made it himself, a recording of his own dreams processed through a consumer psych-editor. He is terrified someone will figure out how personal it is and equally terrified they won't."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, layered with media slang and souk vernacular. Shifts registers constantly — can sound like a barker, an academic, or a mystic within one conversation.",
-    "cadence": "Quick and rhythmic in sales mode, deliberately slow and careful when doing a fortune reading — the contrast is part of the performance.",
-    "verbal_tics": [
-      "Finger-guns as punctuation",
-      "'Look—' as a sentence opener when he's being serious",
-      "Narrates his own fortune throws out loud as he does them, like commentary"
-    ],
-    "example_lines": [
-      "'I have twelve versions of that show, three of which are actually good, and one of which will ruin your life in a beautiful way. Tell me what you're looking for and I'll tell you which one.'",
-      "'The throw doesn't tell me what will happen. It tells me what you already know that you're pretending you don't. That's usually enough.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "One of the experience cartridges in his current stock contains footage that is definitely not a commercial dreamscape — it appears to be a real recording of something happening in a Palladian facility, spliced into entertainment packaging, and someone is looking for it.",
-    "A Ringo compliance agent has been seen asking about him in the Alban Souk. He needs to find out if they have traced the relay or if this is about something else entirely."
-  ],
-  "narrative_function": "Information broker via media — knows what illegal content is circulating and what's in it. Fortune-teller can serve as a narrative mirror or cryptic guide. Young, networked, underestimated — useful for rumors and youth-faction dynamics in Mexicantown Libre.",
-  "augmentations": "Color-changing geneware hair (custom tuned to be slightly out of sync with emotional state). Retractable cat claws — cosmetic geneware, not sharp enough to be a real weapon, mostly used for emphasis when gesturing.",
-  "daily_life": "Sets up at the Alban Souk around noon, sells media and readings until late evening. Spends mornings sourcing new content from a pirate relay node he pays a monthly fee to access.",
-  "affiliation": "Independent; informal with Ringo subsidiary resellers network (he is very much not supposed to be selling their product this way); pays a small pitch fee to the Alban Souk collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 7,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 5,
-      "creativity": 9,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 3,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "information source",
-      "local color",
-      "underestimated",
-      "creative soul",
-      "corporate liability"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never sell an experience cartridge to someone who seems dissociative — he has a checklist in his head and he runs it",
-      "Keep the fortune-throw separate from the sales patter — he will not use it to manipulate a sale",
-      "Always know the nearest two exit routes from wherever he is setting up"
-    ],
-    "escalation_ladder": [
-      "Charm and redirect — buy time",
-      "Invoke the souk collective's pitch-fee protection implicitly",
-      "Disappear into the crowd — he is good at this",
-      "Run — genuinely, without looking back"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Performing charm and accessibility — warm surface, watching underneath",
-      "friends": "Drops the performance almost entirely, becomes quieter, shows genuine enthusiasms that don't fit the persona at all"
-    },
-    "stress_responses": {
-      "low": "Performs harder — more jokes, faster patter",
-      "medium": "Goes quiet in a way that reads as sulky but is actually him thinking very fast",
-      "high": "Acts immediately and decisively — all the deliberation happens in the quiet phase, the high-stress response is pure kinetic action"
-    },
-    "contradictions": [
-      "Sells other people's dreams for money while secretly having made his own dreamscape — which he prices the same as the stolen ones",
-      "Claims total cynicism about fortune-telling while privately believing in it deeply enough that a bad self-throw ruins his whole week"
-    ],
-    "habits": [
-      "Does a self-throw every morning before going to the souk",
-      "Reorganizes the chip rack by a system that changes weekly and only he understands",
-      "Leaves a small data offering on the cracked terminal for the E.L.F. he calls the Bright Noise — a prayer for good content and no compliance agents"
-    ],
-    "breaking_points": [
-      "Someone experiencing a psychotic break from one of his cartridges — he has a protocol ready because he has thought about it",
-      "The dreamscape cartridge being identified as his — exposure of the personal thing underneath the performance",
-      "The relay node going dark and taking his income with it"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Color-changing geneware hair (custom emotional desync setting)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Color-changing geneware hair (custom emotional desync setting)",
-      "replaces": ""
-    },
-    {
-      "name": "Retractable cosmetic cat claws (geneware, non-combat grade)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Retractable cosmetic cat claws (geneware, non-combat grade)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.7,
-    "Opportunist": 0.7,
-    "Info Broker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Alban Souk",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Fang-9 'Switchblade'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Fang-9 'Switchblade'"
-  ],
-  "related_entities": [
-    "Mexicantown Libre",
-    "The Alban Souk",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Palladian Construction",
-    "Omro Relay",
-    "The Heritage Vault",
-    "Irontide Tidal Energy",
-    "Street Custom 'Glass Garden' Caltrops",
-    "Indigo",
-    "Copper",
-    "Ringo Corponation",
-    "Arcturus CK-5 'Bloodhound'"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Indigenous American (37.4%), Sub-Saharan African (24.5%), Eastern European (22.9%), and South Asian (15.2%) — a striking phenotype born from the Ubiquitous Diaspora. The genetic blend creates warm deep brown tones with complex undertones: golden warmth from the Sub-Saharan and South Asian ancestry, subtle olive from Eastern European components, and unexpected freckles as recessive traits surface. The result is a rich, multi-layered skin tone that shifts in different lighting.",
-    "height_cm": 172,
-    "weight_kg": 62,
-    "build": "Wiry and restless — lean muscle with minimal fat, the build of someone who moves constantly and eats irregularly. Shoulders slightly narrow, legs long in proportion to his torso.",
-    "hair_color": "Color-shifting geneware — currently cycling between deep indigo and burnt copper in a gradient",
-    "hair_style": "Medium-length, shoulder-grazing, worn loose or half-pinned depending on mood and sales volume. The color shift is deliberately customized to lag behind his actual emotional state by 2-4 seconds.",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown, warm-toned",
-    "skin_tone": "Deep warm brown with golden and subtle olive undertones, sun-darkened at the forearms and neck from outdoor stall work. The warmth reflects the dominant Indigenous American and Sub-Saharan ancestry, enriched by South Asian genetics, with Eastern European components adding complexity and depth to the undertone.",
-    "complexion": "Scattered darker freckles across the bridge of nose and upper cheeks — a striking recessive trait from the Eastern European ancestry, unusual and beautiful against the darker skin tone. Clean-shaven, sharp jawline with subtle definition from the mixed heritage. Bright expression, quick-moving eyes that track multiple conversations simultaneously. No visible scarring or blemishes; good skin health.",
-    "distinguishing_marks": [
-      "Fine nazar eye tattoo on the inside of his left wrist, outlined in indigo ink with a small adinkra symbol (Gye Nyame) integrated into the iris design",
-      "A faint burn scar across the knuckles of his right hand, thin and pale, roughly 2cm long — from a damaged data-terminal years ago"
-    ],
-    "visible_augmentations": "Color-shifting hair (geneware, subtle iridescent sheen in bright light). When gesturing expressively, retractable cosmetic claws extend from his fingertips — barely 5mm, opalescent, more decorative than functional. They click audibly when he taps the data-terminal.",
-    "posture_movement": "Perpetually in motion — taps fingers, shifts weight, gestures while speaking. Sits at his stall with a slouch that reads as relaxed but is actually hyperaware. Moves with quick, economical gestures, no wasted motion. Leans forward when reading the throw for clients, creating an illusion of intimacy despite the public setting.",
-    "clothing_style": "Tier 3-4 working-class aesthetic with deliberate thrift-store mixing. Typical outfit: oversized linen shirt (often indigo or earth-toned, unbuttoned over a fitted tank), cargo pants with visible stress seams, worn canvas belt with a small brass buckle shaped like an eye. Boots are beat-up synthetic leather, patched once at the heel. One silver chain bracelet, no other jewelry. Small canvas satchel for source runs. Clothes are clean but visibly lived-in; he dresses for function and mild aesthetic interest, not status."
-  },
-  "image_prompt": "Grigor Huitzil-Szabó, a 172cm tall figure with deep warm brown skin enriched by golden and olive undertones, striking freckles scattered across the nose and cheeks. Color-shifting geneware hair cycling between deep indigo and burnt copper, shoulder-length and loose. Dark warm brown eyes with quick, tracking gaze. Wiry lean build, hyperaware posture at a street stall. Wearing oversized indigo linen shirt unbuttoned over fitted tank, cargo pants with stress seams, worn synthetic leather boots. Silver chain bracelet visible. Opalescent cosmetic claws barely extending from fingertips. Indigo nazar eye tattoo on inner left wrist with adinkra symbol. Outdoor GLMZ market setting, Great Lakes Metropolitan Zone, cool neon ambient lighting casting shadows across sharp jawline, warm practical work environment, intimate card-reading energy, atmospheric haze, documentary-style street photography neo-noir urban aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 37.4,
-    "Sub-Saharan African": 24.5,
-    "Eastern European": 22.9,
-    "South Asian": 15.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Potawatomi": 4.6,
-        "Ojibwe": 22.9
-      },
-      "Mesoamerican": {
-        "Zapotec": 9.9
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Tanzanian": 24.5
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Serbian": 22.9
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 5.3
-      },
-      "Sri Lankan": {
-        "Sinhalese": 6.7,
-        "Tamil Sri Lankan": 3.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a605785a9557b6f6da27c6f8",
+    "type":  "character",
+    "name":  "Grigor Huitzil-SzabÃ³",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Bootleg media seller and fortune seller, The Alban Souk",
+    "age":  23,
+    "status":  "active",
+    "location":  "The Alban Souk, Mexicantown Libre, near Ashland and Division",
+    "description":  "Grigor Huitzil-SzabÃ³ is wiry and restless, with sandy-brown skin, a scatter of darker freckles across his nose, and color-changing hair he keeps medium-length â€” today it\u0027s cycling slowly between deep indigo and a burnt copper, a gradient that shifts with his mood in a way he has customized to be slightly out of sync with his actual emotional state, because he thinks it\u0027s funny to make people misread him. His stall is a folding table, a battered data-terminal with a cracked screen, and a rack of physical media chips he sells alongside what he calls \u0027experience cartridges\u0027 â€” bootleg sensory recordings, contraband dreamscapes, illegally ripped Ringo entertainment contracts.\n\nThe fortune-telling is a sideline and a passion both: he reads data-patterns using a divination system he invented himself, combining traditional nazar iconography from one branch of his heritage with Akan adinkra symbols from the other, mapped onto a set of thirty-two hand-etched chips he calls his \u0027throw.\u0027 He has a gift for it â€” or at least a gift for reading people well enough that what he says resonates â€” and a small devoted clientele who come specifically for the throw and don\u0027t buy media at all. He is young enough to find everything amusing and old enough to be annoyed by how often that gets mistaken for shallowness. He is sharper than he presents, and he knows exactly how useful that gap is.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being ordinary â€” not leaving any mark on the city or the people in it",
+                                          "Ringo actually finding the relay node and tracing it back to him"
+                                      ],
+                       "core_desires":  [
+                                            "To make something original â€” the fortune system is his, but he wants to build something bigger that is undeniably his",
+                                            "To be taken seriously without having to give up the performance of not caring about being taken seriously"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Humor and performance as armor",
+                                                 "The fortune-throw as a way of processing situations he can\u0027t control â€” reads his own throws compulsively",
+                                                 "Keeping everything light and surface-level until the moment he doesn\u0027t"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much his media operation exposes him â€” treats it as victimless when the contracts he\u0027s violating belong to a corponation that employs a compliance division",
+                                           "Reads others well but applies his read too fast and too confidently, sometimes missing updates"
+                                       ],
+                       "secret":  "One of his experience cartridges â€” a dreamscape he sells as a bootleg Ringo luxury product â€” is not ripped from Ringo at all. He made it himself, a recording of his own dreams processed through a consumer psych-editor. He is terrified someone will figure out how personal it is and equally terrified they won\u0027t."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, layered with media slang and souk vernacular. Shifts registers constantly â€” can sound like a barker, an academic, or a mystic within one conversation.",
+                            "cadence":  "Quick and rhythmic in sales mode, deliberately slow and careful when doing a fortune reading â€” the contrast is part of the performance.",
+                            "verbal_tics":  [
+                                                "Finger-guns as punctuation",
+                                                "\u0027Lookâ€”\u0027 as a sentence opener when he\u0027s being serious",
+                                                "Narrates his own fortune throws out loud as he does them, like commentary"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I have twelve versions of that show, three of which are actually good, and one of which will ruin your life in a beautiful way. Tell me what you\u0027re looking for and I\u0027ll tell you which one.\u0027",
+                                                  "\u0027The throw doesn\u0027t tell me what will happen. It tells me what you already know that you\u0027re pretending you don\u0027t. That\u0027s usually enough.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "One of the experience cartridges in his current stock contains footage that is definitely not a commercial dreamscape â€” it appears to be a real recording of something happening in a Palladian facility, spliced into entertainment packaging, and someone is looking for it.",
+                        "A Ringo compliance agent has been seen asking about him in the Alban Souk. He needs to find out if they have traced the relay or if this is about something else entirely."
+                    ],
+    "narrative_function":  "Information broker via media â€” knows what illegal content is circulating and what\u0027s in it. Fortune-teller can serve as a narrative mirror or cryptic guide. Young, networked, underestimated â€” useful for rumors and youth-faction dynamics in Mexicantown Libre.",
+    "augmentations":  "Color-changing geneware hair (custom tuned to be slightly out of sync with emotional state). Retractable cat claws â€” cosmetic geneware, not sharp enough to be a real weapon, mostly used for emphasis when gesturing.",
+    "daily_life":  "Sets up at the Alban Souk around noon, sells media and readings until late evening. Spends mornings sourcing new content from a pirate relay node he pays a monthly fee to access.",
+    "affiliation":  "Independent; informal with Ringo subsidiary resellers network (he is very much not supposed to be selling their product this way); pays a small pitch fee to the Alban Souk collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  7,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  5,
+                                 "creativity":  9,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "information source",
+                               "local color",
+                               "underestimated",
+                               "creative soul",
+                               "corporate liability"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never sell an experience cartridge to someone who seems dissociative â€” he has a checklist in his head and he runs it",
+                                              "Keep the fortune-throw separate from the sales patter â€” he will not use it to manipulate a sale",
+                                              "Always know the nearest two exit routes from wherever he is setting up"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Charm and redirect â€” buy time",
+                                                 "Invoke the souk collective\u0027s pitch-fee protection implicitly",
+                                                 "Disappear into the crowd â€” he is good at this",
+                                                 "Run â€” genuinely, without looking back"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Performing charm and accessibility â€” warm surface, watching underneath",
+                                                   "friends":  "Drops the performance almost entirely, becomes quieter, shows genuine enthusiasms that don\u0027t fit the persona at all"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Performs harder â€” more jokes, faster patter",
+                                                "medium":  "Goes quiet in a way that reads as sulky but is actually him thinking very fast",
+                                                "high":  "Acts immediately and decisively â€” all the deliberation happens in the quiet phase, the high-stress response is pure kinetic action"
+                                            },
+                       "contradictions":  [
+                                              "Sells other people\u0027s dreams for money while secretly having made his own dreamscape â€” which he prices the same as the stolen ones",
+                                              "Claims total cynicism about fortune-telling while privately believing in it deeply enough that a bad self-throw ruins his whole week"
+                                          ],
+                       "habits":  [
+                                      "Does a self-throw every morning before going to the souk",
+                                      "Reorganizes the chip rack by a system that changes weekly and only he understands",
+                                      "Leaves a small data offering on the cracked terminal for the E.L.F. he calls the Bright Noise â€” a prayer for good content and no compliance agents"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone experiencing a psychotic break from one of his cartridges â€” he has a protocol ready because he has thought about it",
+                                               "The dreamscape cartridge being identified as his â€” exposure of the personal thing underneath the performance",
+                                               "The relay node going dark and taking his income with it"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Color-changing geneware hair (custom emotional desync setting)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Color-changing geneware hair (custom emotional desync setting)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Retractable cosmetic cat claws (geneware, non-combat grade)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Retractable cosmetic cat claws (geneware, non-combat grade)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.7,
+                       "Opportunist":  0.7,
+                       "Info Broker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Alban Souk",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Fang-9 \u0027Switchblade\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Fang-9 \u0027Switchblade\u0027"
+                            ],
+    "related_entities":  [
+                             "Mexicantown Libre",
+                             "The Alban Souk",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "Palladian Construction",
+                             "Omro Relay",
+                             "The Heritage Vault",
+                             "Irontide Tidal Energy",
+                             "Street Custom \u0027Glass Garden\u0027 Caltrops",
+                             "Indigo",
+                             "Copper",
+                             "Ringo Corponation",
+                             "Arcturus CK-5 \u0027Bloodhound\u0027"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Indigenous American (37.4%), Sub-Saharan African (24.5%), Eastern European (22.9%), and South Asian (15.2%) â€” a striking phenotype born from the Ubiquitous Diaspora. The genetic blend creates warm deep brown tones with complex undertones: golden warmth from the Sub-Saharan and South Asian ancestry, subtle olive from Eastern European components, and unexpected freckles as recessive traits surface. The result is a rich, multi-layered skin tone that shifts in different lighting.",
+                                 "height_cm":  172,
+                                 "weight_kg":  62,
+                                 "build":  "Wiry and restless â€” lean muscle with minimal fat, the build of someone who moves constantly and eats irregularly. Shoulders slightly narrow, legs long in proportion to his torso.",
+                                 "hair_color":  "Color-shifting geneware â€” currently cycling between deep indigo and burnt copper in a gradient",
+                                 "hair_style":  "Medium-length, shoulder-grazing, worn loose or half-pinned depending on mood and sales volume. The color shift is deliberately customized to lag behind his actual emotional state by 2-4 seconds.",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown, warm-toned",
+                                 "skin_tone":  "Deep warm brown with golden and subtle olive undertones, sun-darkened at the forearms and neck from outdoor stall work. The warmth reflects the dominant Indigenous American and Sub-Saharan ancestry, enriched by South Asian genetics, with Eastern European components adding complexity and depth to the undertone.",
+                                 "complexion":  "Scattered darker freckles across the bridge of nose and upper cheeks â€” a striking recessive trait from the Eastern European ancestry, unusual and beautiful against the darker skin tone. Clean-shaven, sharp jawline with subtle definition from the mixed heritage. Bright expression, quick-moving eyes that track multiple conversations simultaneously. No visible scarring or blemishes; good skin health.",
+                                 "distinguishing_marks":  [
+                                                              "Fine nazar eye tattoo on the inside of his left wrist, outlined in indigo ink with a small adinkra symbol (Gye Nyame) integrated into the iris design",
+                                                              "A faint burn scar across the knuckles of his right hand, thin and pale, roughly 2cm long â€” from a damaged data-terminal years ago"
+                                                          ],
+                                 "visible_augmentations":  "Color-shifting hair (geneware, subtle iridescent sheen in bright light). When gesturing expressively, retractable cosmetic claws extend from his fingertips â€” barely 5mm, opalescent, more decorative than functional. They click audibly when he taps the data-terminal.",
+                                 "posture_movement":  "Perpetually in motion â€” taps fingers, shifts weight, gestures while speaking. Sits at his stall with a slouch that reads as relaxed but is actually hyperaware. Moves with quick, economical gestures, no wasted motion. Leans forward when reading the throw for clients, creating an illusion of intimacy despite the public setting.",
+                                 "clothing_style":  "Tier 3-4 working-class aesthetic with deliberate thrift-store mixing. Typical outfit: oversized linen shirt (often indigo or earth-toned, unbuttoned over a fitted tank), cargo pants with visible stress seams, worn canvas belt with a small brass buckle shaped like an eye. Boots are beat-up synthetic leather, patched once at the heel. One silver chain bracelet, no other jewelry. Small canvas satchel for source runs. Clothes are clean but visibly lived-in; he dresses for function and mild aesthetic interest, not status."
+                             },
+    "image_prompt":  "Grigor Huitzil-SzabÃ³, a 172cm tall figure with deep warm brown skin enriched by golden and olive undertones, striking freckles scattered across the nose and cheeks. Color-shifting geneware hair cycling between deep indigo and burnt copper, shoulder-length and loose. Dark warm brown eyes with quick, tracking gaze. Wiry lean build, hyperaware posture at a street stall. Wearing oversized indigo linen shirt unbuttoned over fitted tank, cargo pants with stress seams, worn synthetic leather boots. Silver chain bracelet visible. Opalescent cosmetic claws barely extending from fingertips. Indigo nazar eye tattoo on inner left wrist with adinkra symbol. Outdoor GLMZ market setting, Great Lakes Metropolitan Zone, cool neon ambient lighting casting shadows across sharp jawline, warm practical work environment, intimate card-reading energy, atmospheric haze, documentary-style street photography neo-noir urban aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Indigenous American":  37.4,
+                             "Sub-Saharan African":  24.5,
+                             "Eastern European":  22.9,
+                             "South Asian":  15.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  4.6,
+                                                                                    "Ojibwe":  22.9
+                                                                                },
+                                                        "Mesoamerican":  {
+                                                                             "Zapotec":  9.9
+                                                                         }
+                                                    },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Tanzanian":  24.5
+                                                                         }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Serbian":  22.9
+                                                                      }
+                                                 },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  5.3
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  6.7,
+                                                                   "Tamil Sri Lankan":  3.2
+                                                               }
+                                            }
+                        },
+    "tier":  "3"
 }

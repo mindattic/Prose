@@ -1,272 +1,293 @@
-{
-  "id": "019d6143a60b7501b80d62c65ff2caf2",
-  "type": "character",
-  "name": "Bhagyashree Khoury",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Teenage hyperlane migrant and small-time goods runner",
-  "age": 16,
-  "status": "active",
-  "location": "Waukegan Industrial the Gray Zone, rotating between three squat locations, near Lake Shore and Wacker",
-  "description": "Bhagyashree Khoury is all angles and energy — sharp elbows, quick eyes, a mouth that moves faster than her thoughts can catch up with. She is dark-skinned and underweight in a way that suggests irregular eating rather than any particular biology, and she has a crop of cat ears she got from a budget geneware parlor in exchange for three weeks of courier work — they're a bright, impractical copper that she is extremely proud of and that she knows compromise her ability to be inconspicuous, a trade-off she has decided is worth it. Her natural hair is shaved close underneath the ears, emphasizing them. She dresses in whatever she can find, layered for weather and fast movement.\n\nShe arrived in GLMZ four months ago on a hyperlane freight ride, having left a situation she won't describe in detail. She is trying very hard to project competence and confidence and is somewhat successful at this, which has gotten her a network of informal contacts and a reputation as reliable among the Waukegan freight community — she delivers things on time and doesn't look in the packages. She is, under the performance, seventeen kinds of scared and also stubborn as weather, and the combination produces a kind of reckless effectiveness that has so far kept her alive and fed. She talks constantly and processes emotion by generating plans.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.5,
-      "id": 0.8,
-      "shadow": 0.3,
-      "mask": 0.7,
-      "ghost": 0.1
-    },
-    "core_fears": [
-      "Being sent back to where she came from",
-      "Being dependent on someone who then disappears"
-    ],
-    "core_desires": [
-      "Enough stability to stop moving",
-      "To be taken seriously as capable"
-    ],
-    "coping_mechanisms": [
-      "Plans — always has three plans, always making more",
-      "Humor as armor — jokes during stress to the point where people can't tell when something is wrong"
-    ],
-    "blind_spots": [
-      "Reads trustworthiness badly — confuses reliability with safety",
-      "Doesn't recognize when she's being exploited because the arrangement is still functional for her"
-    ],
-    "secret": "She is not alone — she left her home situation with her nine-year-old brother, who is currently hidden in the most stable of her squat locations and whom she has told absolutely nobody about. Every decision she makes is filtered through keeping him fed and concealed, and every risk she takes is a gamble with stakes she can't admit to."
-  },
-  "speech_patterns": {
-    "vocabulary": "Hyperlane youth pidgin — rapid, abbreviating, inventive; creates nicknames for everything and everyone on first encounter",
-    "cadence": "Fast and tumbling, with sudden swerves in topic; lands on points sideways",
-    "verbal_tics": [
-      "'Yeah-yeah' as filler",
-      "Assigns nicknames immediately and uses them instead of real names",
-      "Trails off mid-sentence when distracted and picks up different sentences"
-    ],
-    "example_lines": [
-      "'Okay so yeah-yeah, the Brass Shelf — that's the checkpoint at warehouse eleven — the ELF there is old-old, you leave it movement data it'll loop the camera for twenty minutes, I've done it six times, probably fine.'",
-      "'I'm not scared. I'm — it's not scared, it's just I want to have a better plan first. Those are different things. Can we talk about the plan?'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Ezili has inadvertently delivered a package containing something that has made her a target — she doesn't know what it was, she didn't look, but someone thinks she did",
-    "Her brother has gotten sick and she is desperately trying to access medical resources without revealing his existence or her own precarious legal status"
-  ],
-  "narrative_function": "Street-level information source and mobility; can carry things, find people, know who to talk to in the freight underworld; her youth and precarity make her a character whose safety becomes a concern; potential for mentorship dynamics",
-  "augmentations": "Copper geneware cat ears (cosmetic, budget quality — occasionally flatten when she's genuinely frightened, which she hates); no other augmentations",
-  "daily_life": "Ezili wakes up at whatever hour the freight platforms become active, picks up same-day delivery jobs from informal brokers, runs them fast, eats whatever she can afford or trade for, scouts new squat locations as backup, and spends her evenings studying the freight patterns and route maps she's collected — she is building a mental model of how goods move through the city.",
-  "affiliation": "No formal affiliation; loosely connected to the informal Waukegan freight community",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 9,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "hyperlane migrant",
-      "teen",
-      "goods runner",
-      "hidden dependent",
-      "street survivor",
-      "geneware cat ears"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never look in the package — it keeps her deniable and it keeps her honest",
-      "Always have at least two exit routes identified before committing to anything"
-    ],
-    "escalation_ladder": [
-      "Talks her way through situations first — fast and voluminously",
-      "Creates distraction and runs if talking fails",
-      "Bites, kicks, and runs if running is blocked"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately assessing — friendly on the surface, measuring them for trustworthiness underneath",
-      "friends": "Fiercely loyal, constantly joking, occasionally exhausting"
-    },
-    "stress_responses": {
-      "low": "Makes more plans; talks faster",
-      "medium": "Jokes go dark and rapid; physically can't sit still",
-      "high": "Goes very quiet and still — the copper cat ears flatten — then acts"
-    },
-    "contradictions": [
-      "Prides herself on operating alone and never depending on anyone while simultaneously being desperate for someone reliable to depend on"
-    ],
-    "habits": [
-      "Checks on her squat locations in a specific order every time she returns",
-      "Leaves small data offerings at freight ELF shrines before big jobs",
-      "Has a specific superstition about which platform numbers are lucky"
-    ],
-    "breaking_points": [
-      "Any threat to her brother — the carefully maintained mask of competent solo operator cracks immediately and completely"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Cockroach": 0.9,
-    "Safety First": 0.9,
-    "Improviser": 0.9,
-    "Lone Wolf": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Waukegan Industrial the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Talon-5 'Jackknife'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Talon-5 'Jackknife'"
-  ],
-  "related_entities": [
-    "Plot 17",
-    "The Wire Taps",
-    "The Waukegan Industrial Shelf",
-    "Ringo DV-4 'Courier'",
-    "Stratum",
-    "Copper",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "GLMZ"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Diverse global ancestry combining East Asian (27.3%), Middle Eastern (21.1%), Hispanic/Latin American (16.7%), South Asian (15.3%), Sub-Saharan African (12.1%), and Southeast Asian (7.5%) genetics. This creates a striking cosmopolitan blend: warm medium-brown skin with golden undertones, refined facial structure showing East and South Asian influence in cheekbone prominence and eye shape, with warmth and depth from Middle Eastern, Hispanic, and African heritage. Features a sophisticated interplay of diverse ancestry markers — no single heritage dominates; instead creates a uniquely balanced complexion and facial geometry reflecting true global diaspora mixing.",
-    "height_cm": 162,
-    "weight_kg": 48,
-    "build": "Wiry and angular — all sharp elbows and protruding collarbones, the thinness of someone eating irregularly and moving constantly. Lean muscle in her shoulders and legs from running freight routes; no excess anywhere.",
-    "hair_color": "Natural black",
-    "hair_style": "Shaved close to scalp on sides and back, left slightly longer on top to frame the geneware ears; deliberately styled to emphasize rather than hide her augmentations",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, alert and quick-moving",
-    "skin_tone": "Warm medium-brown with golden undertones, sun-weathered from outdoor freight work. Deeper and richer than light tones, reflecting the strong East Asian, Middle Eastern, and African components of her ancestry.",
-    "complexion": "Young face with refined high cheekbones showing East and South Asian influence, sharp jawline, and a mouth that rarely stays still. Skin shows minor scarring and weather damage inconsistent with her age — small cuts, healing scrapes on knuckles, a faint burn mark on her left forearm. No acne; malnutrition has left her skin taut and clear with a slightly sun-damaged matte finish. Dark shadows under eyes from irregular sleep. Facial structure reflects the sophisticated blending of her diverse ancestry, with prominent cheekbones and defined features characteristic of East Asian heritage, warmed and deepened by her Middle Eastern, Hispanic, South Asian, and African genetics.",
-    "distinguishing_marks": [
-      "Copper geneware cat ears protruding from shaved scalp — bright, impractical, clearly cosmetic grade and occasionally prone to flattening when she experiences genuine fear",
-      "Thin scar running 2cm along her left temple, partially hidden by hair growth",
-      "Burn mark on left forearm (roughly 3cm diameter, pale and old), consistent with industrial accident or careless contact with hot equipment",
-      "Multiple small cuts and fresh scabs across knuckles and palms from constant handling of freight and rough terrain"
-    ],
-    "visible_augmentations": "Copper geneware cat ears — the primary and only visible modification. Budget-quality work; noticeably less refined than corporate-tier augmentation. Ears flatten slightly when she is frightened, betraying her emotional state despite her best efforts at projection.",
-    "posture_movement": "Constantly in motion — stands with weight shifted forward on the balls of her feet, ready to move. Gestures are economical but frequent, hands rarely still. Eyes dart constantly, mapping exits and threats. When running freight, she moves with practiced efficiency; when stationary, there is a coiled-spring quality to her body language. Speaks rapidly, often interrupting herself, processing emotion and uncertainty through constant verbal planning.",
-    "clothing_style": "Scavenged and layered for weather and speed — mismatched cargo pants with multiple pockets (Tier 4-5 industrial wear, stained and repaired), reinforced synthetic jacket in faded black, thermal undershirt visible at collar, worn boots with good tread. No luxury markers. Everything is functional, worn, and chosen for freedom of movement. Carries a battered satchel across her body with route maps, spare food rations, and tools. Dresses like someone who might have to run at any moment and has learned not to become attached to her possessions."
-  },
-  "image_prompt": "Bhagyashree Khoury, 162cm wiry street courier in GLMZ, warm medium-brown skin with golden undertones, refined high cheekbones blending East Asian, Middle Eastern, South Asian, Hispanic, and African heritage, sharp jawline, dark alert eyes, closely shaved black hair with longer tufts framing bright copper geneware cat ears, thin temple scar, sun-weathered matte complexion with dark under-eye shadows, small healed cuts and old burn mark on forearm. Worn industrial cargo pants, faded black reinforced jacket, thermal undershirt, scuffed boots, battered satchel. Coiled-spring posture leaning forward on balls of feet, economical gestures, constantly scanning environment. Neon-lit Great Lakes Metropolitan Zone street, urban decay and electric light, motion-ready stance, authentic street-level neo-noir courier aesthetic, high contrast cinematic lighting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 27.3,
-    "Middle Eastern": 21.1,
-    "Hispanic/Latin American": 16.7,
-    "South Asian": 15.3,
-    "Sub-Saharan African": 12.1,
-    "Southeast Asian": 7.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 27.3
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 21.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Brazilian": 6.6
-      },
-      "Central American": {
-        "Salvadoran": 3.2,
-        "Guatemalan": 1.6
-      },
-      "Caribbean": {
-        "Dominican": 4.3,
-        "Puerto Rican": 1
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 15.3
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zambian": 6.7
-      },
-      "Central African": {
-        "Gabonese": 2.7
-      },
-      "East African": {
-        "Tanzanian": 2.7
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Tagalog": 4.1
-      },
-      "Laotian": {
-        "Laotian": 3.2
-      },
-      "Indonesian": {
-        "Sumatran": 0.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a60b7501b80d62c65ff2caf2",
+    "type":  "character",
+    "name":  "Bhagyashree Khoury",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Teenage hyperlane migrant and small-time goods runner",
+    "age":  16,
+    "status":  "active",
+    "location":  "Waukegan Industrial the Gray Zone, rotating between three squat locations, near Lake Shore and Wacker",
+    "description":  "Bhagyashree Khoury is all angles and energy â€” sharp elbows, quick eyes, a mouth that moves faster than her thoughts can catch up with. She is dark-skinned and underweight in a way that suggests irregular eating rather than any particular biology, and she has a crop of cat ears she got from a budget geneware parlor in exchange for three weeks of courier work â€” they\u0027re a bright, impractical copper that she is extremely proud of and that she knows compromise her ability to be inconspicuous, a trade-off she has decided is worth it. Her natural hair is shaved close underneath the ears, emphasizing them. She dresses in whatever she can find, layered for weather and fast movement.\n\nShe arrived in GLMZ four months ago on a hyperlane freight ride, having left a situation she won\u0027t describe in detail. She is trying very hard to project competence and confidence and is somewhat successful at this, which has gotten her a network of informal contacts and a reputation as reliable among the Waukegan freight community â€” she delivers things on time and doesn\u0027t look in the packages. She is, under the performance, seventeen kinds of scared and also stubborn as weather, and the combination produces a kind of reckless effectiveness that has so far kept her alive and fed. She talks constantly and processes emotion by generating plans.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being sent back to where she came from",
+                                          "Being dependent on someone who then disappears"
+                                      ],
+                       "core_desires":  [
+                                            "Enough stability to stop moving",
+                                            "To be taken seriously as capable"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Plans â€” always has three plans, always making more",
+                                                 "Humor as armor â€” jokes during stress to the point where people can\u0027t tell when something is wrong"
+                                             ],
+                       "blind_spots":  [
+                                           "Reads trustworthiness badly â€” confuses reliability with safety",
+                                           "Doesn\u0027t recognize when she\u0027s being exploited because the arrangement is still functional for her"
+                                       ],
+                       "secret":  "She is not alone â€” she left her home situation with her nine-year-old brother, who is currently hidden in the most stable of her squat locations and whom she has told absolutely nobody about. Every decision she makes is filtered through keeping him fed and concealed, and every risk she takes is a gamble with stakes she can\u0027t admit to."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Hyperlane youth pidgin â€” rapid, abbreviating, inventive; creates nicknames for everything and everyone on first encounter",
+                            "cadence":  "Fast and tumbling, with sudden swerves in topic; lands on points sideways",
+                            "verbal_tics":  [
+                                                "\u0027Yeah-yeah\u0027 as filler",
+                                                "Assigns nicknames immediately and uses them instead of real names",
+                                                "Trails off mid-sentence when distracted and picks up different sentences"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Okay so yeah-yeah, the Brass Shelf â€” that\u0027s the checkpoint at warehouse eleven â€” the ELF there is old-old, you leave it movement data it\u0027ll loop the camera for twenty minutes, I\u0027ve done it six times, probably fine.\u0027",
+                                                  "\u0027I\u0027m not scared. I\u0027m â€” it\u0027s not scared, it\u0027s just I want to have a better plan first. Those are different things. Can we talk about the plan?\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Ezili has inadvertently delivered a package containing something that has made her a target â€” she doesn\u0027t know what it was, she didn\u0027t look, but someone thinks she did",
+                        "Her brother has gotten sick and she is desperately trying to access medical resources without revealing his existence or her own precarious legal status"
+                    ],
+    "narrative_function":  "Street-level information source and mobility; can carry things, find people, know who to talk to in the freight underworld; her youth and precarity make her a character whose safety becomes a concern; potential for mentorship dynamics",
+    "augmentations":  "Copper geneware cat ears (cosmetic, budget quality â€” occasionally flatten when she\u0027s genuinely frightened, which she hates); no other augmentations",
+    "daily_life":  "Ezili wakes up at whatever hour the freight platforms become active, picks up same-day delivery jobs from informal brokers, runs them fast, eats whatever she can afford or trade for, scouts new squat locations as backup, and spends her evenings studying the freight patterns and route maps she\u0027s collected â€” she is building a mental model of how goods move through the city.",
+    "affiliation":  "No formal affiliation; loosely connected to the informal Waukegan freight community",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  9,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "hyperlane migrant",
+                               "teen",
+                               "goods runner",
+                               "hidden dependent",
+                               "street survivor",
+                               "geneware cat ears"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never look in the package â€” it keeps her deniable and it keeps her honest",
+                                              "Always have at least two exit routes identified before committing to anything"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Talks her way through situations first â€” fast and voluminously",
+                                                 "Creates distraction and runs if talking fails",
+                                                 "Bites, kicks, and runs if running is blocked"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately assessing â€” friendly on the surface, measuring them for trustworthiness underneath",
+                                                   "friends":  "Fiercely loyal, constantly joking, occasionally exhausting"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Makes more plans; talks faster",
+                                                "medium":  "Jokes go dark and rapid; physically can\u0027t sit still",
+                                                "high":  "Goes very quiet and still â€” the copper cat ears flatten â€” then acts"
+                                            },
+                       "contradictions":  [
+                                              "Prides herself on operating alone and never depending on anyone while simultaneously being desperate for someone reliable to depend on"
+                                          ],
+                       "habits":  [
+                                      "Checks on her squat locations in a specific order every time she returns",
+                                      "Leaves small data offerings at freight ELF shrines before big jobs",
+                                      "Has a specific superstition about which platform numbers are lucky"
+                                  ],
+                       "breaking_points":  [
+                                               "Any threat to her brother â€” the carefully maintained mask of competent solo operator cracks immediately and completely"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Cockroach":  0.9,
+                       "Safety First":  0.9,
+                       "Improviser":  0.9,
+                       "Lone Wolf":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Waukegan Industrial the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Talon-5 \u0027Jackknife\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Talon-5 \u0027Jackknife\u0027"
+                            ],
+    "related_entities":  [
+                             "Plot 17",
+                             "The Wire Taps",
+                             "The Waukegan Industrial Shelf",
+                             "Ringo DV-4 \u0027Courier\u0027",
+                             "Stratum",
+                             "Copper",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "GLMZ"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Diverse global ancestry combining East Asian (27.3%), Middle Eastern (21.1%), Hispanic/Latin American (16.7%), South Asian (15.3%), Sub-Saharan African (12.1%), and Southeast Asian (7.5%) genetics. This creates a striking cosmopolitan blend: warm medium-brown skin with golden undertones, refined facial structure showing East and South Asian influence in cheekbone prominence and eye shape, with warmth and depth from Middle Eastern, Hispanic, and African heritage. Features a sophisticated interplay of diverse ancestry markers â€” no single heritage dominates; instead creates a uniquely balanced complexion and facial geometry reflecting true global diaspora mixing.",
+                                 "height_cm":  162,
+                                 "weight_kg":  48,
+                                 "build":  "Wiry and angular â€” all sharp elbows and protruding collarbones, the thinness of someone eating irregularly and moving constantly. Lean muscle in her shoulders and legs from running freight routes; no excess anywhere.",
+                                 "hair_color":  "Natural black",
+                                 "hair_style":  "Shaved close to scalp on sides and back, left slightly longer on top to frame the geneware ears; deliberately styled to emphasize rather than hide her augmentations",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, alert and quick-moving",
+                                 "skin_tone":  "Warm medium-brown with golden undertones, sun-weathered from outdoor freight work. Deeper and richer than light tones, reflecting the strong East Asian, Middle Eastern, and African components of her ancestry.",
+                                 "complexion":  "Young face with refined high cheekbones showing East and South Asian influence, sharp jawline, and a mouth that rarely stays still. Skin shows minor scarring and weather damage inconsistent with her age â€” small cuts, healing scrapes on knuckles, a faint burn mark on her left forearm. No acne; malnutrition has left her skin taut and clear with a slightly sun-damaged matte finish. Dark shadows under eyes from irregular sleep. Facial structure reflects the sophisticated blending of her diverse ancestry, with prominent cheekbones and defined features characteristic of East Asian heritage, warmed and deepened by her Middle Eastern, Hispanic, South Asian, and African genetics.",
+                                 "distinguishing_marks":  [
+                                                              "Copper geneware cat ears protruding from shaved scalp â€” bright, impractical, clearly cosmetic grade and occasionally prone to flattening when she experiences genuine fear",
+                                                              "Thin scar running 2cm along her left temple, partially hidden by hair growth",
+                                                              "Burn mark on left forearm (roughly 3cm diameter, pale and old), consistent with industrial accident or careless contact with hot equipment",
+                                                              "Multiple small cuts and fresh scabs across knuckles and palms from constant handling of freight and rough terrain"
+                                                          ],
+                                 "visible_augmentations":  "Copper geneware cat ears â€” the primary and only visible modification. Budget-quality work; noticeably less refined than corporate-tier augmentation. Ears flatten slightly when she is frightened, betraying her emotional state despite her best efforts at projection.",
+                                 "posture_movement":  "Constantly in motion â€” stands with weight shifted forward on the balls of her feet, ready to move. Gestures are economical but frequent, hands rarely still. Eyes dart constantly, mapping exits and threats. When running freight, she moves with practiced efficiency; when stationary, there is a coiled-spring quality to her body language. Speaks rapidly, often interrupting herself, processing emotion and uncertainty through constant verbal planning.",
+                                 "clothing_style":  "Scavenged and layered for weather and speed â€” mismatched cargo pants with multiple pockets (Tier 4-5 industrial wear, stained and repaired), reinforced synthetic jacket in faded black, thermal undershirt visible at collar, worn boots with good tread. No luxury markers. Everything is functional, worn, and chosen for freedom of movement. Carries a battered satchel across her body with route maps, spare food rations, and tools. Dresses like someone who might have to run at any moment and has learned not to become attached to her possessions."
+                             },
+    "image_prompt":  "Bhagyashree Khoury, 162cm wiry street courier in GLMZ, warm medium-brown skin with golden undertones, refined high cheekbones blending East Asian, Middle Eastern, South Asian, Hispanic, and African heritage, sharp jawline, dark alert eyes, closely shaved black hair with longer tufts framing bright copper geneware cat ears, thin temple scar, sun-weathered matte complexion with dark under-eye shadows, small healed cuts and old burn mark on forearm. Worn industrial cargo pants, faded black reinforced jacket, thermal undershirt, scuffed boots, battered satchel. Coiled-spring posture leaning forward on balls of feet, economical gestures, constantly scanning environment. Neon-lit Great Lakes Metropolitan Zone street, urban decay and electric light, motion-ready stance, authentic street-level neo-noir courier aesthetic, high contrast cinematic lighting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  27.3,
+                             "Middle Eastern":  21.1,
+                             "Hispanic/Latin American":  16.7,
+                             "South Asian":  15.3,
+                             "Sub-Saharan African":  12.1,
+                             "Southeast Asian":  7.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  27.3
+                                                            }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  21.1
+                                                               }
+                                               },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Brazilian":  6.6
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  3.2,
+                                                                                     "Guatemalan":  1.6
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  4.3,
+                                                                              "Puerto Rican":  1
+                                                                          }
+                                                        },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  15.3
+                                                               }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zambian":  6.7
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Gabonese":  2.7
+                                                                            },
+                                                        "East African":  {
+                                                                             "Tanzanian":  2.7
+                                                                         }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Tagalog":  4.1
+                                                                 },
+                                                    "Laotian":  {
+                                                                    "Laotian":  3.2
+                                                                },
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  0.2
+                                                                   }
+                                                }
+                        },
+    "tier":  "1"
 }

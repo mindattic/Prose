@@ -1,245 +1,266 @@
-{
-  "id": "019d6143a68f708abab297ee40ff4c3e",
-  "type": "character",
-  "name": "Hanan Chakraborty-Thorvaldsdóttir",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Truant message runner, the Gray Zone streets",
-  "age": 11,
-  "status": "active",
-  "location": "the Gray Zone, Blackpipe Corridor, near Pulaski and Chicago Ave",
-  "description": "Hanan Chakraborty-Thorvaldsdóttir is small even for eleven, with deep umber skin, a gap-toothed grin she's not shy about, and natural hair sectioned into uneven puffs held together by whatever elastic she could find that morning. Her eyes are quick and dark, always cataloguing exits. She wears a patchwork jacket she stitched herself from three dead jackets — hence the alias — with pockets sewn into places no tailor would think of: the lining of the hood, behind the collar, inside the cuffs. She smells faintly of the solvent she uses to peel address-tags off packages.\n\nHanan Chakraborty-Thorvaldsdóttir is relentlessly cheerful in a way that unsettles adults who look closely enough to see how deliberate it is. She learned early that a smiling kid gets waved through checkpoints a sullen one does not. She collects information the way other children collect toys — who owes whom, which corridor the Ferrogate patrol skips at shift change, whose E.L.F. shrine is still active in the Blackpipe utility alcove — and she stores it all behind that gap-toothed smile. She is fiercely protective of the two younger kids she runs messages with, and will not admit this even to herself.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.5,
-      "id": 0.7,
-      "shadow": 0.3,
-      "mask": 0.8,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "Being invisible — truly unseen, not strategically ignored",
-      "Losing the two younger kids she runs with"
-    ],
-    "core_desires": [
-      "Enough Quanta saved to buy a real room — door that locks, window that opens",
-      "To be taken seriously by someone she actually respects"
-    ],
-    "coping_mechanisms": [
-      "Cheerfulness as armor",
-      "Obsessive route-memorization as control ritual",
-      "Leaving small food offerings at E.L.F. shrines for luck"
-    ],
-    "blind_spots": [
-      "Underestimates how much danger she's actually in on any given run",
-      "Assumes she can read everyone; occasionally catastrophically wrong about adults who perform kindness"
-    ],
-    "secret": "She intercepted a message six weeks ago that she couldn't deliver because the recipient had died — and she read it. It was a parent's message to a child in a corporate school. She has memorized it and sometimes recites it quietly to herself when she's alone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Street-clipped, efficient, lots of spatial prepositions and timing language; surprisingly precise when giving directions",
-    "cadence": "Fast, runs clauses together, slows down noticeably when she's being careful or lying",
-    "verbal_tics": [
-      "'Yeah-yeah-yeah' as affirmative filler",
-      "Clicks tongue when thinking"
-    ],
-    "example_lines": [
-      "'Package goes under-Corridor by the shrine, not through-Corridor, because Ferrogate does the through-sweep at half-eight, yeah-yeah-yeah.'",
-      "'I didn't read it. Why would I read it? I can't even — look, do you want the message or not.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She witnessed a body being moved through Blackpipe at 3 AM and catalogued it the same way she catalogues everything — without understanding what she has",
-    "One of her regular message clients has stopped answering; the door is locked but she can hear something inside"
-  ],
-  "narrative_function": "Local color and unexpected information source; she has seen things adults don't notice because adults don't look at children. Quest giver for micro-scale street-level plots. Potential ward or contact for player characters who earn her trust.",
-  "augmentations": "None. She wants cat-eye irises when she's older and has already picked the color: amber.",
-  "daily_life": "Wakes before dawn in a hot-bunk arrangement in a Blackpipe tenement crawlspace, picks up morning message bundles from three regular clients, runs routes through the Corridor and into the Gray Zone before school patrols activate, eats whatever the shrine-keeper at the Corridor E.L.F. alcove puts out for offering-overflow.",
-  "affiliation": "Informal runner collective (the 'Patchwork Post'), loosely tolerated by Blackpipe Corridor small merchants",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 6,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 7,
-      "expression": 7,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street-wise",
-      "route-memory",
-      "small-frame",
-      "resourceful",
-      "masked"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always have an exit before committing to a conversation",
-      "Never run a message you can't plausibly deny knowing about",
-      "Feed the younger kids first"
-    ],
-    "escalation_ladder": [
-      "Smile wider and talk faster",
-      "Introduce a plausible misdirection",
-      "Run — she knows every route through Blackpipe cold"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally sunny, helpful, faintly transactional — she is always calculating what this person is worth to her network",
-      "friends": "Drops the performance, becomes terse and loyal and occasionally startlingly perceptive"
-    },
-    "stress_responses": {
-      "low": "Chews the inside of her cheek and keeps smiling",
-      "medium": "Starts planning alternate routes aloud under her breath",
-      "high": "Goes completely silent and still — the smile vanishes and she becomes a different child entirely"
-    },
-    "contradictions": [
-      "Performs not caring about anything while clearly caring enormously about her two young charges",
-      "Claims she only runs messages for the money but turns down higher-paying runs that feel wrong to her"
-    ],
-    "habits": [
-      "Mentally maps every new space she enters",
-      "Checks the Corridor E.L.F. shrine every morning even when she has no offering",
-      "Repairs her jacket obsessively — a loose stitch bothers her all day"
-    ],
-    "breaking_points": [
-      "Anything that threatens the younger kids she runs with",
-      "Being lied to by someone she trusted enough to actually believe"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Dreamer": 0.9,
-    "Seeker": 0.9,
-    "Quick Study": 0.9,
-    "Optimist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "Ferrogate Transit",
-    "GLMZ",
-    "The Peninsula",
-    "Chicago",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Northern European (39.2%), South Asian (38.6%), and Eastern European (22.2%) ancestry create a striking balanced phenotype—high, pronounced cheekbones from South Asian genetics softened by Northern European bone structure, with the slightly broader facial width characteristic of Eastern European heritage; warm medium brown skin with golden undertones from the South Asian component balanced against cooler undertones from Northern and Eastern European ancestry, creating a complex warm-neutral tone; the genetic blend produces an angular, distinctive face where no single ancestry dominates",
-    "height_cm": 135,
-    "weight_kg": 28,
-    "build": "Slight and wiry for her age, all lean muscle from constant running; shoulders already developing the forward hunch of someone who carries weight in patched pockets",
-    "hair_color": "Natural black",
-    "hair_style": "Uneven puffs sectioned across her scalp, each bundle tied with whatever elastic was available that morning—mismatched colors, some showing strain",
-    "hair_length": "Medium (3-4 inches per puff)",
-    "eye_color": "Dark brown, alert and restless",
-    "skin_tone": "Medium warm brown with subtle golden undertones from South Asian ancestry balanced against cooler undertones from Northern and Eastern European heritage; the slight ashy quality of someone who lives indoors under artificial light creates a subtle matte finish across cheekbones and forehead",
-    "complexion": "Balanced angular face with high, pronounced cheekbones reflecting the South Asian component, strengthened by Northern European bone structure and the slightly broader facial proportions of Eastern European heritage; gap-toothed smile (missing one upper molar—extraction, not loss), fine scar tissue on left cheekbone from childhood scrape, perpetually flushed cheeks with warmth showing readily across warm-toned skin",
-    "distinguishing_marks": [
-      "Thin white scar running 2cm along left cheekbone, pale against medium-brown skin",
-      "Callus marks on index and middle fingers from grip friction on package bundles",
-      "Faint chemical stains on cuticles of fingernails from solvent exposure",
-      "Small burn mark on inner right wrist (diameter: 0.5cm), years old, from a radiator"
-    ],
-    "visible_augmentations": "None. Completely biological.",
-    "posture_movement": "Constantly in motion even when standing still—weight shifts between feet, eyes cataloguing exits and sightlines, hands restless. Moves with economical precision through crowded spaces; no wasted energy. Smile deployed deliberately, switching on and off like a data toggle.",
-    "clothing_style": "Signature patchwork jacket assembled from three salvaged jackets—tan synthleather, faded blue denim, charcoal poly-blend—stitched together with visible black thread in chaotic patchwork. Pockets everywhere: hood lining, collar reverse, cuff interiors, thigh patches. Underneath: cheap long-sleeve thermal to cut solvent contact. Tier 5 scavenger aesthetic: everything repurposed, nothing new, all functional."
-  },
-  "image_prompt": "GLMZ portrait of Hanan, a 135cm tall young street courier with mixed Northern European, South Asian, and Eastern European ancestry. Medium warm brown skin with golden undertones and matte finish from indoor living. High angular cheekbones, gap-toothed smile, thin scar on left cheek. Dark alert eyes. Natural black hair in uneven puffs tied with mismatched elastics. Wearing a chaotic patchwork jacket made from tan synthleather, faded blue denim, and charcoal poly-blend, heavily patched and stitched with black thread, covered in visible salvage pockets. Long-sleeve cheap thermal underneath. Chemical stains on fingernails, callus marks on grip fingers, small burn scar on inner wrist. Slight wiry build, constantly restless posture. Great Lakes Metropolitan Zone Tier 5 scavenger aesthetic. Neon-lit underpass or warehouse setting, cool LED lighting casting shadows across angular features. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 39.2,
-    "South Asian": 38.6,
-    "Eastern European": 22.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Germanic": {
-        "German": 25.2,
-        "Swiss German": 14
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 10.8
-      },
-      "Indian": {
-        "Kannada": 4.7
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 15.5,
-        "Pashtun": 7.6
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Serbian": 4.5,
-        "Bulgarian": 2.9
-      },
-      "Slavic West": {
-        "Czech": 11.7
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 3.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a68f708abab297ee40ff4c3e",
+    "type":  "character",
+    "name":  "Hanan Chakraborty-ThorvaldsdÃ³ttir",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Truant message runner, the Gray Zone streets",
+    "age":  11,
+    "status":  "active",
+    "location":  "the Gray Zone, Blackpipe Corridor, near Pulaski and Chicago Ave",
+    "description":  "Hanan Chakraborty-ThorvaldsdÃ³ttir is small even for eleven, with deep umber skin, a gap-toothed grin she\u0027s not shy about, and natural hair sectioned into uneven puffs held together by whatever elastic she could find that morning. Her eyes are quick and dark, always cataloguing exits. She wears a patchwork jacket she stitched herself from three dead jackets â€” hence the alias â€” with pockets sewn into places no tailor would think of: the lining of the hood, behind the collar, inside the cuffs. She smells faintly of the solvent she uses to peel address-tags off packages.\n\nHanan Chakraborty-ThorvaldsdÃ³ttir is relentlessly cheerful in a way that unsettles adults who look closely enough to see how deliberate it is. She learned early that a smiling kid gets waved through checkpoints a sullen one does not. She collects information the way other children collect toys â€” who owes whom, which corridor the Ferrogate patrol skips at shift change, whose E.L.F. shrine is still active in the Blackpipe utility alcove â€” and she stores it all behind that gap-toothed smile. She is fiercely protective of the two younger kids she runs messages with, and will not admit this even to herself.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being invisible â€” truly unseen, not strategically ignored",
+                                          "Losing the two younger kids she runs with"
+                                      ],
+                       "core_desires":  [
+                                            "Enough Quanta saved to buy a real room â€” door that locks, window that opens",
+                                            "To be taken seriously by someone she actually respects"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Cheerfulness as armor",
+                                                 "Obsessive route-memorization as control ritual",
+                                                 "Leaving small food offerings at E.L.F. shrines for luck"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much danger she\u0027s actually in on any given run",
+                                           "Assumes she can read everyone; occasionally catastrophically wrong about adults who perform kindness"
+                                       ],
+                       "secret":  "She intercepted a message six weeks ago that she couldn\u0027t deliver because the recipient had died â€” and she read it. It was a parent\u0027s message to a child in a corporate school. She has memorized it and sometimes recites it quietly to herself when she\u0027s alone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Street-clipped, efficient, lots of spatial prepositions and timing language; surprisingly precise when giving directions",
+                            "cadence":  "Fast, runs clauses together, slows down noticeably when she\u0027s being careful or lying",
+                            "verbal_tics":  [
+                                                "\u0027Yeah-yeah-yeah\u0027 as affirmative filler",
+                                                "Clicks tongue when thinking"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Package goes under-Corridor by the shrine, not through-Corridor, because Ferrogate does the through-sweep at half-eight, yeah-yeah-yeah.\u0027",
+                                                  "\u0027I didn\u0027t read it. Why would I read it? I can\u0027t even â€” look, do you want the message or not.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She witnessed a body being moved through Blackpipe at 3 AM and catalogued it the same way she catalogues everything â€” without understanding what she has",
+                        "One of her regular message clients has stopped answering; the door is locked but she can hear something inside"
+                    ],
+    "narrative_function":  "Local color and unexpected information source; she has seen things adults don\u0027t notice because adults don\u0027t look at children. Quest giver for micro-scale street-level plots. Potential ward or contact for player characters who earn her trust.",
+    "augmentations":  "None. She wants cat-eye irises when she\u0027s older and has already picked the color: amber.",
+    "daily_life":  "Wakes before dawn in a hot-bunk arrangement in a Blackpipe tenement crawlspace, picks up morning message bundles from three regular clients, runs routes through the Corridor and into the Gray Zone before school patrols activate, eats whatever the shrine-keeper at the Corridor E.L.F. alcove puts out for offering-overflow.",
+    "affiliation":  "Informal runner collective (the \u0027Patchwork Post\u0027), loosely tolerated by Blackpipe Corridor small merchants",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  6,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  7,
+                                 "expression":  7,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street-wise",
+                               "route-memory",
+                               "small-frame",
+                               "resourceful",
+                               "masked"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always have an exit before committing to a conversation",
+                                              "Never run a message you can\u0027t plausibly deny knowing about",
+                                              "Feed the younger kids first"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Smile wider and talk faster",
+                                                 "Introduce a plausible misdirection",
+                                                 "Run â€” she knows every route through Blackpipe cold"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally sunny, helpful, faintly transactional â€” she is always calculating what this person is worth to her network",
+                                                   "friends":  "Drops the performance, becomes terse and loyal and occasionally startlingly perceptive"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Chews the inside of her cheek and keeps smiling",
+                                                "medium":  "Starts planning alternate routes aloud under her breath",
+                                                "high":  "Goes completely silent and still â€” the smile vanishes and she becomes a different child entirely"
+                                            },
+                       "contradictions":  [
+                                              "Performs not caring about anything while clearly caring enormously about her two young charges",
+                                              "Claims she only runs messages for the money but turns down higher-paying runs that feel wrong to her"
+                                          ],
+                       "habits":  [
+                                      "Mentally maps every new space she enters",
+                                      "Checks the Corridor E.L.F. shrine every morning even when she has no offering",
+                                      "Repairs her jacket obsessively â€” a loose stitch bothers her all day"
+                                  ],
+                       "breaking_points":  [
+                                               "Anything that threatens the younger kids she runs with",
+                                               "Being lied to by someone she trusted enough to actually believe"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Dreamer":  0.9,
+                       "Seeker":  0.9,
+                       "Quick Study":  0.9,
+                       "Optimist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+                             "Ferrogate Transit",
+                             "GLMZ",
+                             "The Peninsula",
+                             "Chicago",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Northern European (39.2%), South Asian (38.6%), and Eastern European (22.2%) ancestry create a striking balanced phenotypeâ€”high, pronounced cheekbones from South Asian genetics softened by Northern European bone structure, with the slightly broader facial width characteristic of Eastern European heritage; warm medium brown skin with golden undertones from the South Asian component balanced against cooler undertones from Northern and Eastern European ancestry, creating a complex warm-neutral tone; the genetic blend produces an angular, distinctive face where no single ancestry dominates",
+                                 "height_cm":  135,
+                                 "weight_kg":  28,
+                                 "build":  "Slight and wiry for her age, all lean muscle from constant running; shoulders already developing the forward hunch of someone who carries weight in patched pockets",
+                                 "hair_color":  "Natural black",
+                                 "hair_style":  "Uneven puffs sectioned across her scalp, each bundle tied with whatever elastic was available that morningâ€”mismatched colors, some showing strain",
+                                 "hair_length":  "Medium (3-4 inches per puff)",
+                                 "eye_color":  "Dark brown, alert and restless",
+                                 "skin_tone":  "Medium warm brown with subtle golden undertones from South Asian ancestry balanced against cooler undertones from Northern and Eastern European heritage; the slight ashy quality of someone who lives indoors under artificial light creates a subtle matte finish across cheekbones and forehead",
+                                 "complexion":  "Balanced angular face with high, pronounced cheekbones reflecting the South Asian component, strengthened by Northern European bone structure and the slightly broader facial proportions of Eastern European heritage; gap-toothed smile (missing one upper molarâ€”extraction, not loss), fine scar tissue on left cheekbone from childhood scrape, perpetually flushed cheeks with warmth showing readily across warm-toned skin",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar running 2cm along left cheekbone, pale against medium-brown skin",
+                                                              "Callus marks on index and middle fingers from grip friction on package bundles",
+                                                              "Faint chemical stains on cuticles of fingernails from solvent exposure",
+                                                              "Small burn mark on inner right wrist (diameter: 0.5cm), years old, from a radiator"
+                                                          ],
+                                 "visible_augmentations":  "None. Completely biological.",
+                                 "posture_movement":  "Constantly in motion even when standing stillâ€”weight shifts between feet, eyes cataloguing exits and sightlines, hands restless. Moves with economical precision through crowded spaces; no wasted energy. Smile deployed deliberately, switching on and off like a data toggle.",
+                                 "clothing_style":  "Signature patchwork jacket assembled from three salvaged jacketsâ€”tan synthleather, faded blue denim, charcoal poly-blendâ€”stitched together with visible black thread in chaotic patchwork. Pockets everywhere: hood lining, collar reverse, cuff interiors, thigh patches. Underneath: cheap long-sleeve thermal to cut solvent contact. Tier 5 scavenger aesthetic: everything repurposed, nothing new, all functional."
+                             },
+    "image_prompt":  "GLMZ portrait of Hanan, a 135cm tall young street courier with mixed Northern European, South Asian, and Eastern European ancestry. Medium warm brown skin with golden undertones and matte finish from indoor living. High angular cheekbones, gap-toothed smile, thin scar on left cheek. Dark alert eyes. Natural black hair in uneven puffs tied with mismatched elastics. Wearing a chaotic patchwork jacket made from tan synthleather, faded blue denim, and charcoal poly-blend, heavily patched and stitched with black thread, covered in visible salvage pockets. Long-sleeve cheap thermal underneath. Chemical stains on fingernails, callus marks on grip fingers, small burn scar on inner wrist. Slight wiry build, constantly restless posture. Great Lakes Metropolitan Zone Tier 5 scavenger aesthetic. Neon-lit underpass or warehouse setting, cool LED lighting casting shadows across angular features. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  39.2,
+                             "South Asian":  38.6,
+                             "Eastern European":  22.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  25.2,
+                                                                       "Swiss German":  14
+                                                                   }
+                                                  },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  10.8
+                                                               },
+                                                "Indian":  {
+                                                               "Kannada":  4.7
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  15.5,
+                                                                  "Pashtun":  7.6
+                                                              }
+                                            },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Serbian":  4.5,
+                                                                          "Bulgarian":  2.9
+                                                                      },
+                                                     "Slavic West":  {
+                                                                         "Czech":  11.7
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  3.1
+                                                                         }
+                                                 }
+                        },
+    "tier":  "1"
 }

@@ -1,304 +1,333 @@
-{
-  "id": "019d6143a6477fefaefcb418092ec984",
-  "type": "character",
-  "name": "Harshad Vestergaard",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "numbers runner and low-level gang prospect, The Narrows",
-  "age": 17,
-  "status": "active",
-  "location": "The Narrows — works the stretch between the Blackpipe Corridor transit stop and the Gage Circuit market row, near Fullerton and Damen",
-  "description": "Harshad Vestergaard is seventeen and looks it — still growing into his frame, with Ghanaian-Croatian features and close-cropped natural hair with a dyed orange streak. He moves fast and light, the way kids who grew up in tight corridors move, always slightly angled like he's prepared to redirect. He has geneware cat ears — soft black-and-orange, a birthday mod from his older sister — that perk and flatten with his mood in ways he hasn't learned to control yet. His clothes are Tier 1 practical: durable synthetics, good shoes chosen for speed.\n\nHarshad Vestergaard is smart in ways the Narrows rewards and in ways it doesn't. He can memorize a route, a face, a number, and a cover story simultaneously; he reads social dynamics in a room within seconds; he is genuinely funny and likable and uses both as tools before he even realizes he's doing it. What he cannot do yet is see far enough ahead. He thinks about the next run, the next Φ, the next step up — not about what the gang will ask of him when stepping up means something worse than carrying slips. He is not innocent, exactly. He is not yet not-innocent. The window is closing.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.6,
-      "id": 0.7,
-      "shadow": 0.2,
-      "mask": 0.5,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "becoming like the older Coppermouth Boys who have stopped thinking about getting out",
-      "letting his grandmother find out what he's actually doing"
-    ],
-    "core_desires": [
-      "enough Quanta to move his grandmother out of the Narrows before her health gets worse",
-      "to be genuinely respected — not feared, respected"
-    ],
-    "coping_mechanisms": [
-      "humor as deflection and social armor",
-      "refusing to think about the future in any specific way"
-    ],
-    "blind_spots": [
-      "the gang's escalating asks feel incremental enough that he adjusts to each one without seeing the cumulative distance he's traveled",
-      "believes his loyalty to his grandmother makes him fundamentally different from the others, which it doesn't"
-    ],
-    "secret": "He memorizes the numbers slips he runs and has been quietly compiling a picture of the Coppermouth operation — not to sell it, just because he can't help himself. He has a notebook at home with three months of routes, figures, and names that would be extremely dangerous if anyone found it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Narrows street vernacular mixed with flashes of surprising vocabulary from his sporadic schooling; code-switches rapidly based on audience",
-    "cadence": "fast and energetic when comfortable, goes very still and quiet when nervous in a way that's completely unlike his baseline",
-    "verbal_tics": [
-      "'Nah but real talk though'",
-      "'That's not — no, that's not how that works'",
-      "his cat ears perk up visibly when he's interested in something, which he's embarrassed by"
-    ],
-    "example_lines": [
-      "'I got places to be, but I can give you like three minutes. What do you actually need?'",
-      "'My nan thinks I'm doing courier work. Which, technically. So that's not even a lie, right? That's not a lie.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "His memorized data notebook has accidentally captured information about something much larger than a street numbers operation — and he doesn't know it yet",
-    "A Coppermouth lieutenant is asking him to graduate to carrying something other than slips; he's looking for any reason not to say yes",
-    "His older sister has figured out what he's doing and is threatening to tell their grandmother — he needs to find a way forward that doesn't collapse his life in multiple directions at once"
-  ],
-  "narrative_function": "Human cost of criminal economy, potential point-of-view character for Narrows life, someone who can be saved or lost depending on how events unfold — moral pressure point",
-  "augmentations": "Geneware cat ears (black with orange tips, cosmetic); no chrome — too young and too broke",
-  "daily_life": "School, technically, in the mornings — attends about half the time. Afternoons and evenings running numbers slips between Coppermouth collection points on his stretch. Eats dinner with his grandmother most nights. Leaves wrapped candy at the cracked transit kiosk on the Blackpipe corner, which he believes has a friendly E.L.F. inside that gives him good luck.",
-  "affiliation": "Prospect-level member of a Narrows street gang called the Coppermouth Boys; no formal rank",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 5,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 7,
-      "expression": 7,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": 1,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street smart",
-      "at the threshold",
-      "cat-eared",
-      "memorizer",
-      "grandmother's boy"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never run slips on the school block — that's the one rule he made for himself and he keeps it",
-      "Don't let anyone see where he lives; the Narrows knows separating home from work is survival"
-    ],
-    "escalation_ladder": [
-      "Deflects with jokes and apparent obliviousness",
-      "Suddenly has somewhere urgently to be",
-      "Runs — literally; he is very fast"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Friendly and readable-as-harmless — this is calculated, mostly, but also just how he is",
-      "friends": "Genuinely warm, takes care of people, organizes things without being asked — naturally slides into logistics roles"
-    },
-    "stress_responses": {
-      "low": "Jokes more frequently and more loudly",
-      "medium": "Goes quiet and starts doing something with his hands — sorting things, organizing",
-      "high": "Disappears. Literally goes to ground in a spot no one knows about — a maintenance crawlspace off the Gage Circuit market"
-    },
-    "contradictions": [
-      "Genuinely cares about his community's people while participating in the economy that exploits them"
-    ],
-    "habits": [
-      "Leaves candy at the Blackpipe kiosk every morning before the first run",
-      "Does a mental route review before sleep — runs every collection point forward and backward in his head like a map"
-    ],
-    "breaking_points": [
-      "Being asked to do something that hurts someone he can specifically see — not an abstraction, a specific person in front of him"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in the Narrows; father absent, mother deceased in a transit accident when he was four",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Moves in with paternal grandmother in the Blackpipe Corridor area",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First contact with Coppermouth Boys — begins as occasional lookout",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Becomes regular numbers runner; receives cat ear geneware as sixteenth birthday gift from sister",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Current status — being watched by a Coppermouth lieutenant for potential promotion",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Forge-Smith Collective Carbon Machete 'Cane Cutter'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "Gage Circuit",
-    "The Narrows Compact",
-    "Grandmother",
-    "Uncle Jun's Synth-Noodle Window",
-    "Plot 17",
-    "GLMZ",
-    "Circuit",
-    "Slagworks Industrial"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Northern European (44.5%) with Sub-Saharan African (31.2%) and East Asian (23.0%) ancestry, with minor Hispanic/Latin American (1.3%) influence. This creates a striking multi-continental phenotype: warm medium-to-deep brown skin with golden undertones from the African heritage, cooled by Northern European undertones in shadows, with subtle East Asian facial structure integration and warm Latin accents.",
-    "height_cm": 173,
-    "weight_kg": 62,
-    "build": "Lean and wiry with the restless musculature of someone who moves constantly through tight urban spaces. Still filling out — shoulders narrower than they will be, all quick angles and economical motion.",
-    "hair_color": "Natural dark brown with a bright orange dye streak on the left side, fading slightly from repeated washing",
-    "hair_style": "Close-cropped fade, precision-cut, with the orange streak running from temple to back along one side",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, alert and tracking",
-    "skin_tone": "Warm medium-deep brown with golden undertones from Sub-Saharan African heritage, balanced by cooler Northern European undertones in shadows. Radiant when sun-exposed, with subtle warmth throughout.",
-    "complexion": "Clean-shaven or light peach fuzz on his jaw, skin clear except for occasional stress-picked spots on his chin. Facial structure shows integrated ancestry: defined nose with subtle width from African heritage, well-defined cheekbones enhanced by East Asian bone structure, expressive brows. Expression naturally animated — eyebrows mobile, eyes always reading the room. Small scar on his upper lip from a childhood fall.",
-    "distinguishing_marks": [
-      "Thin scar on upper left lip, barely visible, from childhood accident",
-      "Small tattoo on inside right wrist: three vertical dots in black ink, gang marker, done roughly with a needle and ink pen — fresh enough to still look slightly raised"
-    ],
-    "visible_augmentations": "Geneware cat ears: soft black fur with orange-tipped points, genetically integrated into his skull. They sit naturally on top of his head and move with genuine autonomy — they perk forward when he's focused or nervous, flatten back when he's relaxed or trying to blend. The orange matches his hair streak intentionally. No visible chrome or subdermal plating.",
-    "posture_movement": "Moves in quick, angled lines rather than straight paths — shoulders slightly forward, weight on the balls of his feet, always slightly repositioning even when standing still. Fast hands, restless fidgeting. When he's focused on a conversation or counting, he goes very still, but the stillness is tense, like a caught animal. When relaxed, he sprawls, takes up space, leans into jokes.",
-    "clothing_style": "Tier 4 practical streetwear: synthetic jackets in dark greys or blacks with good pocket architecture, reinforced jeans in dark denim, running shoes chosen for speed and grip rather than status (currently wearing worn Shenzen-brand synthetic leather high-tops in charcoal). Layered for quick removal or concealment. No gang colors worn overtly — safer that way. Hoodie or light jacket always accessible. Everything worn is functional, nothing flashy, nothing that costs more than a few days' Φ from running numbers."
-  },
-  "image_prompt": "GLMZ, Harshad Vestergaard: 173cm lean wiry street operative with warm medium-deep brown skin, golden undertones, sharp African-Nordic-East Asian blended facial structure with defined cheekbones and expressive brows. Dark brown alert eyes reading the environment. Short dark brown hair with bright orange dye streak on left side fading from wear. Black genetically-integrated geneware cat ears with orange tips, perked forward with focus. Small scar on upper left lip barely visible. Clean-shaven or light peach fuzz. Wearing dark grey synthetic technical jacket with pocket architecture, reinforced dark denim, worn charcoal Shenzen-brand synthetic leather high-tops. Quick-angled posture, weight on balls of feet, restless hands, tense readiness. Fresh three-dot tattoo visible on inside right wrist. Urban night setting, neon glow from rain-slick streets, tight alley or building interior, tension and alertness in every line of his body, shadows emphasizing cool undertones on face while golden warmth catches highlights. Neo-noir gritty realism, street-level perspective. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 44.5,
-    "Sub-Saharan African": 31.2,
-    "East Asian": 23,
-    "Hispanic/Latin American": 1.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "British Isles": {
-        "Irish": 6.6
-      },
-      "Scandinavian": {
-        "Finnish": 37.9
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zambian": 28.4
-      },
-      "East African": {
-        "Kenyan": 0.6,
-        "Ugandan": 0.6
-      },
-      "West African": {
-        "Senegalese": 1.6
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 23
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 0.7
-      },
-      "South American": {
-        "Venezuelan": 0.1,
-        "Ecuadorian": 0.1
-      },
-      "Caribbean": {
-        "Cuban": 0.4
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6477fefaefcb418092ec984",
+    "type":  "character",
+    "name":  "Harshad Vestergaard",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "numbers runner and low-level gang prospect, The Narrows",
+    "age":  17,
+    "status":  "active",
+    "location":  "The Narrows â€” works the stretch between the Blackpipe Corridor transit stop and the Gage Circuit market row, near Fullerton and Damen",
+    "description":  "Harshad Vestergaard is seventeen and looks it â€” still growing into his frame, with Ghanaian-Croatian features and close-cropped natural hair with a dyed orange streak. He moves fast and light, the way kids who grew up in tight corridors move, always slightly angled like he\u0027s prepared to redirect. He has geneware cat ears â€” soft black-and-orange, a birthday mod from his older sister â€” that perk and flatten with his mood in ways he hasn\u0027t learned to control yet. His clothes are Tier 1 practical: durable synthetics, good shoes chosen for speed.\n\nHarshad Vestergaard is smart in ways the Narrows rewards and in ways it doesn\u0027t. He can memorize a route, a face, a number, and a cover story simultaneously; he reads social dynamics in a room within seconds; he is genuinely funny and likable and uses both as tools before he even realizes he\u0027s doing it. What he cannot do yet is see far enough ahead. He thinks about the next run, the next Î¦, the next step up â€” not about what the gang will ask of him when stepping up means something worse than carrying slips. He is not innocent, exactly. He is not yet not-innocent. The window is closing.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "becoming like the older Coppermouth Boys who have stopped thinking about getting out",
+                                          "letting his grandmother find out what he\u0027s actually doing"
+                                      ],
+                       "core_desires":  [
+                                            "enough Quanta to move his grandmother out of the Narrows before her health gets worse",
+                                            "to be genuinely respected â€” not feared, respected"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "humor as deflection and social armor",
+                                                 "refusing to think about the future in any specific way"
+                                             ],
+                       "blind_spots":  [
+                                           "the gang\u0027s escalating asks feel incremental enough that he adjusts to each one without seeing the cumulative distance he\u0027s traveled",
+                                           "believes his loyalty to his grandmother makes him fundamentally different from the others, which it doesn\u0027t"
+                                       ],
+                       "secret":  "He memorizes the numbers slips he runs and has been quietly compiling a picture of the Coppermouth operation â€” not to sell it, just because he can\u0027t help himself. He has a notebook at home with three months of routes, figures, and names that would be extremely dangerous if anyone found it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Narrows street vernacular mixed with flashes of surprising vocabulary from his sporadic schooling; code-switches rapidly based on audience",
+                            "cadence":  "fast and energetic when comfortable, goes very still and quiet when nervous in a way that\u0027s completely unlike his baseline",
+                            "verbal_tics":  [
+                                                "\u0027Nah but real talk though\u0027",
+                                                "\u0027That\u0027s not â€” no, that\u0027s not how that works\u0027",
+                                                "his cat ears perk up visibly when he\u0027s interested in something, which he\u0027s embarrassed by"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I got places to be, but I can give you like three minutes. What do you actually need?\u0027",
+                                                  "\u0027My nan thinks I\u0027m doing courier work. Which, technically. So that\u0027s not even a lie, right? That\u0027s not a lie.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "His memorized data notebook has accidentally captured information about something much larger than a street numbers operation â€” and he doesn\u0027t know it yet",
+                        "A Coppermouth lieutenant is asking him to graduate to carrying something other than slips; he\u0027s looking for any reason not to say yes",
+                        "His older sister has figured out what he\u0027s doing and is threatening to tell their grandmother â€” he needs to find a way forward that doesn\u0027t collapse his life in multiple directions at once"
+                    ],
+    "narrative_function":  "Human cost of criminal economy, potential point-of-view character for Narrows life, someone who can be saved or lost depending on how events unfold â€” moral pressure point",
+    "augmentations":  "Geneware cat ears (black with orange tips, cosmetic); no chrome â€” too young and too broke",
+    "daily_life":  "School, technically, in the mornings â€” attends about half the time. Afternoons and evenings running numbers slips between Coppermouth collection points on his stretch. Eats dinner with his grandmother most nights. Leaves wrapped candy at the cracked transit kiosk on the Blackpipe corner, which he believes has a friendly E.L.F. inside that gives him good luck.",
+    "affiliation":  "Prospect-level member of a Narrows street gang called the Coppermouth Boys; no formal rank",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  5,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  7,
+                                 "expression":  7,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street smart",
+                               "at the threshold",
+                               "cat-eared",
+                               "memorizer",
+                               "grandmother\u0027s boy"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never run slips on the school block â€” that\u0027s the one rule he made for himself and he keeps it",
+                                              "Don\u0027t let anyone see where he lives; the Narrows knows separating home from work is survival"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Deflects with jokes and apparent obliviousness",
+                                                 "Suddenly has somewhere urgently to be",
+                                                 "Runs â€” literally; he is very fast"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Friendly and readable-as-harmless â€” this is calculated, mostly, but also just how he is",
+                                                   "friends":  "Genuinely warm, takes care of people, organizes things without being asked â€” naturally slides into logistics roles"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Jokes more frequently and more loudly",
+                                                "medium":  "Goes quiet and starts doing something with his hands â€” sorting things, organizing",
+                                                "high":  "Disappears. Literally goes to ground in a spot no one knows about â€” a maintenance crawlspace off the Gage Circuit market"
+                                            },
+                       "contradictions":  [
+                                              "Genuinely cares about his community\u0027s people while participating in the economy that exploits them"
+                                          ],
+                       "habits":  [
+                                      "Leaves candy at the Blackpipe kiosk every morning before the first run",
+                                      "Does a mental route review before sleep â€” runs every collection point forward and backward in his head like a map"
+                                  ],
+                       "breaking_points":  [
+                                               "Being asked to do something that hurts someone he can specifically see â€” not an abstraction, a specific person in front of him"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in the Narrows; father absent, mother deceased in a transit accident when he was four",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Moves in with paternal grandmother in the Blackpipe Corridor area",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First contact with Coppermouth Boys â€” begins as occasional lookout",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Becomes regular numbers runner; receives cat ear geneware as sixteenth birthday gift from sister",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Current status â€” being watched by a Coppermouth lieutenant for potential promotion",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Forge-Smith Collective Carbon Machete \u0027Cane Cutter\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "Gage Circuit",
+                             "The Narrows Compact",
+                             "Grandmother",
+                             "Uncle Jun\u0027s Synth-Noodle Window",
+                             "Plot 17",
+                             "GLMZ",
+                             "Circuit",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Northern European (44.5%) with Sub-Saharan African (31.2%) and East Asian (23.0%) ancestry, with minor Hispanic/Latin American (1.3%) influence. This creates a striking multi-continental phenotype: warm medium-to-deep brown skin with golden undertones from the African heritage, cooled by Northern European undertones in shadows, with subtle East Asian facial structure integration and warm Latin accents.",
+                                 "height_cm":  173,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and wiry with the restless musculature of someone who moves constantly through tight urban spaces. Still filling out â€” shoulders narrower than they will be, all quick angles and economical motion.",
+                                 "hair_color":  "Natural dark brown with a bright orange dye streak on the left side, fading slightly from repeated washing",
+                                 "hair_style":  "Close-cropped fade, precision-cut, with the orange streak running from temple to back along one side",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, alert and tracking",
+                                 "skin_tone":  "Warm medium-deep brown with golden undertones from Sub-Saharan African heritage, balanced by cooler Northern European undertones in shadows. Radiant when sun-exposed, with subtle warmth throughout.",
+                                 "complexion":  "Clean-shaven or light peach fuzz on his jaw, skin clear except for occasional stress-picked spots on his chin. Facial structure shows integrated ancestry: defined nose with subtle width from African heritage, well-defined cheekbones enhanced by East Asian bone structure, expressive brows. Expression naturally animated â€” eyebrows mobile, eyes always reading the room. Small scar on his upper lip from a childhood fall.",
+                                 "distinguishing_marks":  [
+                                                              "Thin scar on upper left lip, barely visible, from childhood accident",
+                                                              "Small tattoo on inside right wrist: three vertical dots in black ink, gang marker, done roughly with a needle and ink pen â€” fresh enough to still look slightly raised"
+                                                          ],
+                                 "visible_augmentations":  "Geneware cat ears: soft black fur with orange-tipped points, genetically integrated into his skull. They sit naturally on top of his head and move with genuine autonomy â€” they perk forward when he\u0027s focused or nervous, flatten back when he\u0027s relaxed or trying to blend. The orange matches his hair streak intentionally. No visible chrome or subdermal plating.",
+                                 "posture_movement":  "Moves in quick, angled lines rather than straight paths â€” shoulders slightly forward, weight on the balls of his feet, always slightly repositioning even when standing still. Fast hands, restless fidgeting. When he\u0027s focused on a conversation or counting, he goes very still, but the stillness is tense, like a caught animal. When relaxed, he sprawls, takes up space, leans into jokes.",
+                                 "clothing_style":  "Tier 4 practical streetwear: synthetic jackets in dark greys or blacks with good pocket architecture, reinforced jeans in dark denim, running shoes chosen for speed and grip rather than status (currently wearing worn Shenzen-brand synthetic leather high-tops in charcoal). Layered for quick removal or concealment. No gang colors worn overtly â€” safer that way. Hoodie or light jacket always accessible. Everything worn is functional, nothing flashy, nothing that costs more than a few days\u0027 Î¦ from running numbers."
+                             },
+    "image_prompt":  "GLMZ, Harshad Vestergaard: 173cm lean wiry street operative with warm medium-deep brown skin, golden undertones, sharp African-Nordic-East Asian blended facial structure with defined cheekbones and expressive brows. Dark brown alert eyes reading the environment. Short dark brown hair with bright orange dye streak on left side fading from wear. Black genetically-integrated geneware cat ears with orange tips, perked forward with focus. Small scar on upper left lip barely visible. Clean-shaven or light peach fuzz. Wearing dark grey synthetic technical jacket with pocket architecture, reinforced dark denim, worn charcoal Shenzen-brand synthetic leather high-tops. Quick-angled posture, weight on balls of feet, restless hands, tense readiness. Fresh three-dot tattoo visible on inside right wrist. Urban night setting, neon glow from rain-slick streets, tight alley or building interior, tension and alertness in every line of his body, shadows emphasizing cool undertones on face while golden warmth catches highlights. Neo-noir gritty realism, street-level perspective. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  44.5,
+                             "Sub-Saharan African":  31.2,
+                             "East Asian":  23,
+                             "Hispanic/Latin American":  1.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  6.6
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Finnish":  37.9
+                                                                       }
+                                                  },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zambian":  28.4
+                                                                             },
+                                                        "East African":  {
+                                                                             "Kenyan":  0.6,
+                                                                             "Ugandan":  0.6
+                                                                         },
+                                                        "West African":  {
+                                                                             "Senegalese":  1.6
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  23
+                                                          }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  0.7
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Venezuelan":  0.1,
+                                                                                   "Ecuadorian":  0.1
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  0.4
+                                                                          }
+                                                        }
+                        },
+    "tier":  "1"
 }

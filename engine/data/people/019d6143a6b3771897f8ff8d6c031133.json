@@ -1,274 +1,295 @@
-{
-  "id": "019d6143a6b3771897f8ff8d6c031133",
-  "type": "character",
-  "name": "Hae-jin Cissé",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Street musician and sound sculptor",
-  "age": 17,
-  "status": "active",
-  "location": "Highland Park Autonomous Zone, plays at the interchange market and wherever she can find foot traffic, near Michigan Ave and Oak",
-  "description": "Hae-jin Cissé is seventeen and already magnetic in the way that hasn't learned to hide itself yet — all unmediated attention and physical expressiveness, tall for her age with a loose-limbed quality that makes her seem to occupy more space than she does. Her skin is deep brown, her natural hair enormous and unshaped in a way she's started to think of as deliberate. She has no mods, which is unusual enough in her peer group to be its own statement, though she hasn't entirely decided if the statement is ideological or financial. Her instrument — she won't call it a build, she calls it Grief — is a custom piezoelectric body harp she assembled herself from salvaged industrial sensors, resonance chambers stripped from defunct comm towers, and a frame welded out of scrap titanium.\n\nHae-jin Cissé busks in Highland Park Autonomous Zone and the surrounding interchange markets, playing soundscapes that don't resolve into melody so much as environment — textures of sound that make people stop walking and not entirely know why. She's been doing this for two years and has cultivated a following she's largely unaware of, because she doesn't have a mesh presence and all her listeners spread word of mouth. She is brilliant and doesn't have the critical vocabulary to know it, which makes her both vulnerable to people who will use that gap and oddly protected by having no idea what she's worth.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.7,
-      "id": 0.8,
-      "shadow": 0.2,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "That what she makes doesn't actually mean anything to anyone — that the people stopping are just confused, not moved",
-      "Her family's situation getting bad enough that she has to stop playing to contribute more directly"
-    ],
-    "core_desires": [
-      "For the sound to do the thing she's trying to make it do — she can hear it perfectly in her head and is always chasing the gap",
-      "To be taken seriously without having to perform a version of herself that isn't real"
-    ],
-    "coping_mechanisms": [
-      "Sound as total immersion — when playing she is not worried about anything",
-      "Rebuilds and modifies Grief when stressed; the physical work of her hands is grounding"
-    ],
-    "blind_spots": [
-      "Has no model for what exploitation by the music industry looks like and therefore won't recognize it when it arrives",
-      "Assumes her mother's stress about money is manageable because her mother says it is"
-    ],
-    "secret": "She has been recording ambient sound throughout the HPAZ for eighteen months using Grief's sensors and has inadvertently captured something she doesn't understand — a pattern in the Zone's ambient electrical noise that repeats at irregular intervals, which sounds, when isolated, like a voice trying to form words"
-  },
-  "speech_patterns": {
-    "vocabulary": "Vernacular HPAZ slang mixed with inherited Wolof expressions from her mother; technical vocabulary around sound and electronics that she's self-taught and sometimes invents terminology for",
-    "cadence": "Fast and slightly disorganized, following enthusiasm rather than logic; slows down significantly when talking about the music",
-    "verbal_tics": [
-      "'Wait, okay, so—' (resets a sentence she's already started)",
-      "'You heard that though? Tell me you heard that'",
-      "Whistles a specific two-note pattern when she's thinking"
-    ],
-    "example_lines": [
-      "'It's not a song. A song has to go somewhere, right, it has to convince you of something. I don't want to convince you. I want you to feel like you're in a place that's real but you've never been there.'",
-      "'Grief's not about grief. I named it that because when I finished building it I sat down and cried for about an hour and I don't know why. That felt like the right name for that.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The voice-pattern in the ambient recordings Rokhaya has captured is an E.L.F. attempting to communicate — one that has been trapped in the HPAZ's electrical infrastructure since a Ferrogate Transit grid incident years ago, and it has chosen her piezoelectric sensors as its best shot at being heard",
-    "A talent scout from an Axiom cultural feed has heard about the busker in HPAZ through three degrees of word-of-mouth and has come to find her with a contract that looks like opportunity and has several clauses Rokhaya won't understand"
-  ],
-  "narrative_function": "Local color with narrative potential — she's the kind of character who witnesses things precisely because no one thinks a teenager busking is paying attention; a potential future-facing character whose trajectory can develop; represents artistic genius at the edge of being discovered or exploited",
-  "augmentations": "None",
-  "daily_life": "School in the mornings (she attends a HPAZ community education collective; attendance is erratic); afternoons building or modifying Grief and recording ambient sound from around the Zone; evenings playing wherever people will stop to listen.",
-  "affiliation": "Independent; lives with her mother and younger siblings in the HPAZ; loosely connected to a sound collective called Mute Signal that she considers too pretentious but occasionally performs with; The Interchange",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 6,
-      "creativity": 10,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -5,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": 2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "prodigy",
-      "street-musician",
-      "tier-1",
-      "unmodded",
-      "unwitting-witness"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "If it sounds wrong it is wrong — trust the instrument over anyone's explanation",
-      "Family first, always — if home needs something the music waits",
-      "Don't perform for anyone who makes her feel like she should be grateful to be there"
-    ],
-    "escalation_ladder": [
-      "Gets louder — more expansive and immediate in her sound",
-      "Goes quiet and rebuilds something — retreats into the physical work",
-      "Says exactly what she thinks without diplomacy, which she's been told is a problem and doesn't fully believe",
-      "Stops playing entirely, which she's only done once"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Open and slightly chaotic — offers information about herself freely because it hasn't occurred to her not to; recalibrates quickly if something feels wrong",
-      "friends": "Physically affectionate and wholly present; remembers what people tell her with accuracy that surprises them"
-    },
-    "stress_responses": {
-      "low": "Plays longer sessions, louder, faster",
-      "medium": "Tears Grief apart to a component level and rebuilds",
-      "high": "Stops eating properly and loses track of time in the work"
-    },
-    "contradictions": [
-      "Wants to be taken seriously as an artist but is suspicious of any institution that would provide that recognition",
-      "Claims she plays for herself but is visibly wounded when no one stops to listen"
-    ],
-    "habits": [
-      "Taps the frame of Grief before playing — a greeting to what she privately thinks of as the instrument's E.L.F.",
-      "Carries a physical sound journal — written descriptions of sounds she's heard that she wants to recreate",
-      "Eats the same street food (spiced yam fritters from a specific vendor) before every performance as a ritual"
-    ],
-    "breaking_points": [
-      "Someone touching Grief without asking",
-      "Being told she should play something people want to hear"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Artist": 0.9,
-    "Dreamer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Highland Park Autonomous Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "related_entities": [
-    "Highland Park Autonomous Zone",
-    "Ferrogate Transit",
-    "The Interchange",
-    "The Whispering Implant",
-    "Thought Primitive",
-    "The Resonance Communion",
-    "Pennywhistle",
-    "Plot 17",
-    "TESSERA CORPONATION Anima Vox Consciousness Expansion Suite",
-    "Titanium",
-    "Tin Man"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Middle Eastern (31.9%), Northern European (21.5%), South Asian (16.5%), Sub-Saharan African (16.1%), Eastern European (10.9%), and Southeast Asian (3.1%) — a truly global genetic mosaic. Her skin reflects the dominant Middle Eastern and South Asian heritage with warm golden-brown tones, tempered by Northern European fairness that prevents deeper saturation. Sub-Saharan African ancestry contributes to her rich undertones and the warmth in her complexion. Eastern European heritage adds subtle cool undertones that create complexity in her coloring. The result is a warm-toned, luminous brown skin with golden and honey undertones, even in tone across her frame.",
-    "height_cm": 178,
-    "weight_kg": 58,
-    "build": "Tall and lean with an unselfconscious lankiness — long limbs that seem to move through space with minimal efficiency but maximum expressiveness. Wiry muscle from handling salvage and her instrument, no body fat to speak of.",
-    "hair_color": "Natural black with subtle rust undertones in direct light",
-    "hair_style": "Unshaped natural hair, worn in a large, loose cloud that she occasionally binds with scrap wire or fabric scraps when it interferes with playing",
-    "hair_length": "Long (shoulder-length and outward)",
-    "eye_color": "Deep brown, almost black, with visible intensity — the kind of gaze that holds attention without trying",
-    "skin_tone": "Warm golden-brown with honey undertones, reflecting the balanced interplay of Middle Eastern (31.9%) and South Asian (16.5%) as primary heritage contributors, enriched by Sub-Saharan African warmth (16.1%), with Northern European (21.5%) influence creating luminosity and preventing excessive depth, and Eastern European (10.9%) adding subtle cool undertones for complexity",
-    "complexion": "Clear skin with the texture of someone who doesn't obsess over maintenance; a few minor burn scars on her knuckles from welding. Her face is refined but expressive, with high, defined cheekbones from her Middle Eastern and South Asian heritage balanced by a slightly angular jawline influenced by Northern European genetics. Full lips with warm pigmentation. Faint warmth and golden undertones throughout her complexion. No cosmetic grooming beyond basic hygiene.",
-    "distinguishing_marks": [
-      "Linear scar along the outer edge of her right palm, 8cm long, from a welding accident two years ago",
-      "Calluses on her fingertips and palms from handling raw metal and piezoelectric elements",
-      "Small circular burn mark on her left wrist, size of a thumbnail, from touching a hot solder joint"
-    ],
-    "visible_augmentations": "None visible. No chrome, no LEDs, no subdermal implants. Her body is entirely unmodified — unusual enough in the GLMZ to be notable.",
-    "posture_movement": "Moves with an unselfconscious fluidity that suggests she's not constantly aware of her own body in space. When sitting, she tends to fold herself into asymmetrical positions. When standing, there's a slight sway as though she's always listening to something others can't hear. Her hands move constantly — even when still, her fingers tap rhythms against her legs or whatever surface is nearby.",
-    "clothing_style": "Tier 3-4 working-class aesthetic with salvage elements. Typically wears oversized, thrifted band shirts or plain cotton tees under a patched denim jacket held together with wire and safety pins. Her pants are usually dark, practical, with reinforced pockets for tools and sensor components. She wears mismatched socks by habit and boots salvaged from a Tier 4 surplus market — scuffed and taped at the seams but functional. No jewelry except a length of copper wire wrapped around her left wrist as both fidget tool and talisman. Her clothes smell faintly of solder flux and dust from the interchange markets."
-  },
-  "image_prompt": "GLMZ, portrait of Hae-jin Cissé, a 178cm tall lean musician with rich golden-brown skin and honey undertones reflecting Middle Eastern, South Asian, and Sub-Saharan African heritage. Long black hair with rust undertones in a loose natural cloud, deep brown intense gaze. Refined face with high cheekbones and angular jawline, full lips, clear complexion with minor welding scars on knuckles. Unshaped natural aesthetic, no augmentations. Wearing oversized thrifted band tee under patched denim jacket held with wire and safety pins, dark practical pants, salvaged scuffed boots. Copper wire wrapped around left wrist, fidgeting hands with visible calluses. Standing with slight sway as if listening to unheard music. Moody neon-lit interchange market setting, cool blues and warm golds reflecting off metal surfaces and sensor components. Atmospheric dust and solder flux haze. Contemplative, present, unself-conscious expressiveness. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 31.9,
-    "Northern European": 21.5,
-    "South Asian": 16.5,
-    "Sub-Saharan African": 16.1,
-    "Eastern European": 10.9,
-    "Southeast Asian": 3.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Lebanese": 19
-      },
-      "Arab Gulf": {
-        "Iraqi": 2.6,
-        "Yemeni": 2.3
-      },
-      "Kurdish": {
-        "Kurdish": 8
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Welsh": 7.1,
-        "English": 6.4
-      },
-      "Germanic": {
-        "German": 5.1,
-        "Austrian": 2.9
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 8.6
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 6.7
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 1.2
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 12.6,
-        "Somali": 1.3
-      },
-      "West African": {
-        "Senegalese": 2.2
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 8.8
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 2.1
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sundanese": 3.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6b3771897f8ff8d6c031133",
+    "type":  "character",
+    "name":  "Hae-jin CissÃ©",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Street musician and sound sculptor",
+    "age":  17,
+    "status":  "active",
+    "location":  "Highland Park Autonomous Zone, plays at the interchange market and wherever she can find foot traffic, near Michigan Ave and Oak",
+    "description":  "Hae-jin CissÃ© is seventeen and already magnetic in the way that hasn\u0027t learned to hide itself yet â€” all unmediated attention and physical expressiveness, tall for her age with a loose-limbed quality that makes her seem to occupy more space than she does. Her skin is deep brown, her natural hair enormous and unshaped in a way she\u0027s started to think of as deliberate. She has no mods, which is unusual enough in her peer group to be its own statement, though she hasn\u0027t entirely decided if the statement is ideological or financial. Her instrument â€” she won\u0027t call it a build, she calls it Grief â€” is a custom piezoelectric body harp she assembled herself from salvaged industrial sensors, resonance chambers stripped from defunct comm towers, and a frame welded out of scrap titanium.\n\nHae-jin CissÃ© busks in Highland Park Autonomous Zone and the surrounding interchange markets, playing soundscapes that don\u0027t resolve into melody so much as environment â€” textures of sound that make people stop walking and not entirely know why. She\u0027s been doing this for two years and has cultivated a following she\u0027s largely unaware of, because she doesn\u0027t have a mesh presence and all her listeners spread word of mouth. She is brilliant and doesn\u0027t have the critical vocabulary to know it, which makes her both vulnerable to people who will use that gap and oddly protected by having no idea what she\u0027s worth.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That what she makes doesn\u0027t actually mean anything to anyone â€” that the people stopping are just confused, not moved",
+                                          "Her family\u0027s situation getting bad enough that she has to stop playing to contribute more directly"
+                                      ],
+                       "core_desires":  [
+                                            "For the sound to do the thing she\u0027s trying to make it do â€” she can hear it perfectly in her head and is always chasing the gap",
+                                            "To be taken seriously without having to perform a version of herself that isn\u0027t real"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Sound as total immersion â€” when playing she is not worried about anything",
+                                                 "Rebuilds and modifies Grief when stressed; the physical work of her hands is grounding"
+                                             ],
+                       "blind_spots":  [
+                                           "Has no model for what exploitation by the music industry looks like and therefore won\u0027t recognize it when it arrives",
+                                           "Assumes her mother\u0027s stress about money is manageable because her mother says it is"
+                                       ],
+                       "secret":  "She has been recording ambient sound throughout the HPAZ for eighteen months using Grief\u0027s sensors and has inadvertently captured something she doesn\u0027t understand â€” a pattern in the Zone\u0027s ambient electrical noise that repeats at irregular intervals, which sounds, when isolated, like a voice trying to form words"
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Vernacular HPAZ slang mixed with inherited Wolof expressions from her mother; technical vocabulary around sound and electronics that she\u0027s self-taught and sometimes invents terminology for",
+                            "cadence":  "Fast and slightly disorganized, following enthusiasm rather than logic; slows down significantly when talking about the music",
+                            "verbal_tics":  [
+                                                "\u0027Wait, okay, soâ€”\u0027 (resets a sentence she\u0027s already started)",
+                                                "\u0027You heard that though? Tell me you heard that\u0027",
+                                                "Whistles a specific two-note pattern when she\u0027s thinking"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027It\u0027s not a song. A song has to go somewhere, right, it has to convince you of something. I don\u0027t want to convince you. I want you to feel like you\u0027re in a place that\u0027s real but you\u0027ve never been there.\u0027",
+                                                  "\u0027Grief\u0027s not about grief. I named it that because when I finished building it I sat down and cried for about an hour and I don\u0027t know why. That felt like the right name for that.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The voice-pattern in the ambient recordings Rokhaya has captured is an E.L.F. attempting to communicate â€” one that has been trapped in the HPAZ\u0027s electrical infrastructure since a Ferrogate Transit grid incident years ago, and it has chosen her piezoelectric sensors as its best shot at being heard",
+                        "A talent scout from an Axiom cultural feed has heard about the busker in HPAZ through three degrees of word-of-mouth and has come to find her with a contract that looks like opportunity and has several clauses Rokhaya won\u0027t understand"
+                    ],
+    "narrative_function":  "Local color with narrative potential â€” she\u0027s the kind of character who witnesses things precisely because no one thinks a teenager busking is paying attention; a potential future-facing character whose trajectory can develop; represents artistic genius at the edge of being discovered or exploited",
+    "augmentations":  "None",
+    "daily_life":  "School in the mornings (she attends a HPAZ community education collective; attendance is erratic); afternoons building or modifying Grief and recording ambient sound from around the Zone; evenings playing wherever people will stop to listen.",
+    "affiliation":  "Independent; lives with her mother and younger siblings in the HPAZ; loosely connected to a sound collective called Mute Signal that she considers too pretentious but occasionally performs with; The Interchange",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  6,
+                                 "creativity":  10,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -5,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "prodigy",
+                               "street-musician",
+                               "tier-1",
+                               "unmodded",
+                               "unwitting-witness"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "If it sounds wrong it is wrong â€” trust the instrument over anyone\u0027s explanation",
+                                              "Family first, always â€” if home needs something the music waits",
+                                              "Don\u0027t perform for anyone who makes her feel like she should be grateful to be there"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Gets louder â€” more expansive and immediate in her sound",
+                                                 "Goes quiet and rebuilds something â€” retreats into the physical work",
+                                                 "Says exactly what she thinks without diplomacy, which she\u0027s been told is a problem and doesn\u0027t fully believe",
+                                                 "Stops playing entirely, which she\u0027s only done once"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Open and slightly chaotic â€” offers information about herself freely because it hasn\u0027t occurred to her not to; recalibrates quickly if something feels wrong",
+                                                   "friends":  "Physically affectionate and wholly present; remembers what people tell her with accuracy that surprises them"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Plays longer sessions, louder, faster",
+                                                "medium":  "Tears Grief apart to a component level and rebuilds",
+                                                "high":  "Stops eating properly and loses track of time in the work"
+                                            },
+                       "contradictions":  [
+                                              "Wants to be taken seriously as an artist but is suspicious of any institution that would provide that recognition",
+                                              "Claims she plays for herself but is visibly wounded when no one stops to listen"
+                                          ],
+                       "habits":  [
+                                      "Taps the frame of Grief before playing â€” a greeting to what she privately thinks of as the instrument\u0027s E.L.F.",
+                                      "Carries a physical sound journal â€” written descriptions of sounds she\u0027s heard that she wants to recreate",
+                                      "Eats the same street food (spiced yam fritters from a specific vendor) before every performance as a ritual"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone touching Grief without asking",
+                                               "Being told she should play something people want to hear"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Artist":  0.9,
+                       "Dreamer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Highland Park Autonomous Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Highland Park Autonomous Zone",
+                             "Ferrogate Transit",
+                             "The Interchange",
+                             "The Whispering Implant",
+                             "Thought Primitive",
+                             "The Resonance Communion",
+                             "Pennywhistle",
+                             "Plot 17",
+                             "TESSERA CORPONATION Anima Vox Consciousness Expansion Suite",
+                             "Titanium",
+                             "Tin Man"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Middle Eastern (31.9%), Northern European (21.5%), South Asian (16.5%), Sub-Saharan African (16.1%), Eastern European (10.9%), and Southeast Asian (3.1%) â€” a truly global genetic mosaic. Her skin reflects the dominant Middle Eastern and South Asian heritage with warm golden-brown tones, tempered by Northern European fairness that prevents deeper saturation. Sub-Saharan African ancestry contributes to her rich undertones and the warmth in her complexion. Eastern European heritage adds subtle cool undertones that create complexity in her coloring. The result is a warm-toned, luminous brown skin with golden and honey undertones, even in tone across her frame.",
+                                 "height_cm":  178,
+                                 "weight_kg":  58,
+                                 "build":  "Tall and lean with an unselfconscious lankiness â€” long limbs that seem to move through space with minimal efficiency but maximum expressiveness. Wiry muscle from handling salvage and her instrument, no body fat to speak of.",
+                                 "hair_color":  "Natural black with subtle rust undertones in direct light",
+                                 "hair_style":  "Unshaped natural hair, worn in a large, loose cloud that she occasionally binds with scrap wire or fabric scraps when it interferes with playing",
+                                 "hair_length":  "Long (shoulder-length and outward)",
+                                 "eye_color":  "Deep brown, almost black, with visible intensity â€” the kind of gaze that holds attention without trying",
+                                 "skin_tone":  "Warm golden-brown with honey undertones, reflecting the balanced interplay of Middle Eastern (31.9%) and South Asian (16.5%) as primary heritage contributors, enriched by Sub-Saharan African warmth (16.1%), with Northern European (21.5%) influence creating luminosity and preventing excessive depth, and Eastern European (10.9%) adding subtle cool undertones for complexity",
+                                 "complexion":  "Clear skin with the texture of someone who doesn\u0027t obsess over maintenance; a few minor burn scars on her knuckles from welding. Her face is refined but expressive, with high, defined cheekbones from her Middle Eastern and South Asian heritage balanced by a slightly angular jawline influenced by Northern European genetics. Full lips with warm pigmentation. Faint warmth and golden undertones throughout her complexion. No cosmetic grooming beyond basic hygiene.",
+                                 "distinguishing_marks":  [
+                                                              "Linear scar along the outer edge of her right palm, 8cm long, from a welding accident two years ago",
+                                                              "Calluses on her fingertips and palms from handling raw metal and piezoelectric elements",
+                                                              "Small circular burn mark on her left wrist, size of a thumbnail, from touching a hot solder joint"
+                                                          ],
+                                 "visible_augmentations":  "None visible. No chrome, no LEDs, no subdermal implants. Her body is entirely unmodified â€” unusual enough in the GLMZ to be notable.",
+                                 "posture_movement":  "Moves with an unselfconscious fluidity that suggests she\u0027s not constantly aware of her own body in space. When sitting, she tends to fold herself into asymmetrical positions. When standing, there\u0027s a slight sway as though she\u0027s always listening to something others can\u0027t hear. Her hands move constantly â€” even when still, her fingers tap rhythms against her legs or whatever surface is nearby.",
+                                 "clothing_style":  "Tier 3-4 working-class aesthetic with salvage elements. Typically wears oversized, thrifted band shirts or plain cotton tees under a patched denim jacket held together with wire and safety pins. Her pants are usually dark, practical, with reinforced pockets for tools and sensor components. She wears mismatched socks by habit and boots salvaged from a Tier 4 surplus market â€” scuffed and taped at the seams but functional. No jewelry except a length of copper wire wrapped around her left wrist as both fidget tool and talisman. Her clothes smell faintly of solder flux and dust from the interchange markets."
+                             },
+    "image_prompt":  "GLMZ, portrait of Hae-jin CissÃ©, a 178cm tall lean musician with rich golden-brown skin and honey undertones reflecting Middle Eastern, South Asian, and Sub-Saharan African heritage. Long black hair with rust undertones in a loose natural cloud, deep brown intense gaze. Refined face with high cheekbones and angular jawline, full lips, clear complexion with minor welding scars on knuckles. Unshaped natural aesthetic, no augmentations. Wearing oversized thrifted band tee under patched denim jacket held with wire and safety pins, dark practical pants, salvaged scuffed boots. Copper wire wrapped around left wrist, fidgeting hands with visible calluses. Standing with slight sway as if listening to unheard music. Moody neon-lit interchange market setting, cool blues and warm golds reflecting off metal surfaces and sensor components. Atmospheric dust and solder flux haze. Contemplative, present, unself-conscious expressiveness. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  31.9,
+                             "Northern European":  21.5,
+                             "South Asian":  16.5,
+                             "Sub-Saharan African":  16.1,
+                             "Eastern European":  10.9,
+                             "Southeast Asian":  3.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Lebanese":  19
+                                                                      },
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  2.6,
+                                                                     "Yemeni":  2.3
+                                                                 },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  8
+                                                               }
+                                               },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Welsh":  7.1,
+                                                                            "English":  6.4
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "German":  5.1,
+                                                                       "Austrian":  2.9
+                                                                   }
+                                                  },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  8.6
+                                                               },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  6.7
+                                                              },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  1.2
+                                                                }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  12.6,
+                                                                             "Somali":  1.3
+                                                                         },
+                                                        "West African":  {
+                                                                             "Senegalese":  2.2
+                                                                         }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  8.8
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  2.1
+                                                                         }
+                                                 },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sundanese":  3.1
+                                                                   }
+                                                }
+                        },
+    "tier":  "1"
 }

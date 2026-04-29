@@ -1,337 +1,350 @@
-{
-  "id": "019d6143a5d273b7a8bfbb56a09ab432",
-  "type": "character",
-  "name": "Ivar Hong-Magnúsdóttir-Holm",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Structural breach and explosive ordnance specialist — demolitions expert",
-  "age": 40,
-  "status": "active",
-  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Ashland and Division",
-  "description": "Ivar Hong-Magnúsdóttir-Holm are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 40, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a demolitions expert out of the Gray Zone, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Ivar Hong-Magnúsdóttir-Holm are known for getting the job done and not asking questions that would make the job harder to stomach.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.26,
-      "ideal": 0.48,
-      "id": 0.39,
-      "shadow": 0.52,
-      "mask": 0.13,
-      "ghost": 0.39
-    },
-    "core_fears": [
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "That they're fundamentally alone and connection is just a vulnerability",
-      "Being identified by corporate facial recognition — living off-grid is survival"
-    ],
-    "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Power — enough leverage that nobody ever threatens them again"
-    ],
-    "coping_mechanisms": [
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat",
-      "Ritual — follows the same pre-job routine every time, superstition as structure"
-    ],
-    "blind_spots": [
-      "Assumes everyone has an angle because they always have an angle",
-      "Believes their trauma makes them special instead of recognizing it as damage to manage",
-      "Cannot see that their independence is actually isolation wearing a better outfit"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
-    "cadence": "Staccato bursts separated by calculating silences.",
-    "verbal_tics": [
-      "Ends statements with 'yeah?' — not a question, a dare",
-      "Hums tunelessly when planning — the team has learned to wait for the humming to stop"
-    ],
-    "example_lines": [
-      "\"Explosives are just engineering with a deadline. Usually a very short deadline.\"",
-      "\"I don't blow things up. I perform structural rearrangement.\"",
-      "\"The blast radius is your problem. My problem is making sure there's a blast.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Cassiel Kimura-Nkrumah is offered a contract that would clear all their debts — the target is someone they respect",
-    "A corporate black site Cassiel Kimura-Nkrumah once infiltrated is being reopened, and the people inside know their face",
-    "Cassiel Kimura-Nkrumah discovers a job they completed last year was a setup for something much larger and much worse"
-  ],
-  "narrative_function": "Cassiel Kimura-Nkrumah is a pressure point — the kind of character whose choices ripple outward. When they make a decision, other people's lives change. That weight is the engine of their stories.",
-  "augmentations": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs. Neural interface jack at base of skull — standard runner-grade, allows direct net access",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Freelance — multi-district operator",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 8
-      },
-      "agility": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 6
-      },
-      "endurance": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 5
-      },
-      "reflexes": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 9
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 8
-      },
-      "perception": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 4
-      },
-      "willpower": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 7
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 6
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 6
-      },
-      "intimidation": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 8
-      },
-      "deception": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 4
-      },
-      "empathy": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 8
-      }
-    },
-    "personality": {
-      "aggression": 0.17,
-      "caution": 0.69,
-      "loyalty": 0.48,
-      "greed": 0.36,
-      "empathy": 0.48
-    },
-    "drives": [
-      "loyalty",
-      "freedom",
-      "reputation"
-    ],
-    "thresholds": {
-      "pain": 4,
-      "stress": 8,
-      "loyalty_break": 6
-    },
-    "strengths": [
-      "network of reliable contacts",
-      "expert marksman"
-    ],
-    "weaknesses": [
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
-      "difficulty with authority figures",
-      "physical limitation from incomplete augmentation"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "demolitions expert",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always has an exit route planned before agreeing to any meeting",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Advocates caution to others but takes insane risks personally — double standard they can't see",
-      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
-      "Presents as emotionless professional but is deeply affected by collateral damage"
-    ],
-    "habits": [
-      "Keeps a physical paper notebook — no digital record of personal thoughts",
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
-      "Checks exits within 10 seconds of entering any room"
-    ],
-    "breaking_points": [
-      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
-      "A child being put in danger as leverage against them"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Synthetic muscle fiber replacement in legs",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
-      "replaces": ""
-    },
-    {
-      "name": "Neural interface jack at base of skull",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Arsonist": 0.7,
-    "Risk Taker": 0.7,
-    "Chaos Creator": 0.7,
-    "Prepared": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Street Custom 'Glass Garden' Caltrops"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Bioelectric Muscle Fiber",
-    "The Heritage Vault",
-    "Diaspora Table",
-    "Stratum",
-    "Burden of Longitude",
-    "Lazarus LX-2 'Lab Rat'",
-    "Pellucid Systems"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Northern European (63.9%), East Asian (22.2%), South Asian (13.9%) — a balanced diaspora blend manifesting as medium-light skin with cool undertones from Nordic ancestry warmed by East and South Asian components. The genetic mix produces distinctly Nordic bone structure—high, prominent cheekbones and a broad brow ridge—softened by East Asian eye shape and South Asian fullness in the lower face and cheeks. Neither distinctly cool nor warm, the skin tone reflects all three ancestral regions equally.",
-    "height_cm": 178,
-    "weight_kg": 94,
-    "build": "Broad-shouldered and heavily muscled, carrying weight with deliberate density rather than bulk. Chest and torso built for stability and power; legs augmented with synthetic fiber and visibly denser than a baseline human frame.",
-    "hair_color": "Dark brown, graying at temples",
-    "hair_style": "Cropped short and practical, maintained with military precision",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, unremarkable without augmentation",
-    "skin_tone": "Medium-light with balanced undertones—cool-toned Nordic base enriched by warm East and South Asian midtones. Pale enough to reveal Northern European heritage clearly, yet the warmer undertones prevent starkness, creating a genuinely neutral complexion that reads as naturally diaspora-mixed rather than distinctly one region.",
-    "complexion": "Angular face reflecting precise genetic blend—prominent Nordic cheekbones and broad brow ridge balanced by softer East Asian eye shape (slight epicanthal fold, deeper-set eyes) and South Asian fullness in the cheeks and lower jaw. Jawline shows controlled angularity without severity. Skin weathered but well-maintained. Fine scar tissue visible at the left temple and along the right side of the jaw—old impacts, professionally healed. Deep-set eyes, perpetually focused. Minimal grooming beyond functional maintenance.",
-    "distinguishing_marks": [
-      "Thin scar running from left temple to the corner of the left eye, approximately 4cm, silvered with age",
-      "Jagged scar along the right jawline from ear to chin, roughly 8cm, indicating impact or laceration trauma",
-      "Faded burn marks on both forearms—contact burns from ordnance work, pale against baseline skin tone",
-      "A small anchor tattoo on the inside of the left wrist in black ink, barely visible unless pointed out"
-    ],
-    "visible_augmentations": "Synthetic muscle fiber replacement visible in both legs from mid-thigh downward—chrome-gray biomechanical plating at the knee joints and along the anterior tibialis. The augmented legs have a distinctly different texture and sheen compared to baseline skin. Neural interface jack at the base of the skull is partially visible as a small raised port beneath short hair, with faint circuitry etching around it.",
-    "posture_movement": "Stands with weight slightly forward, shoulders squared, as if perpetually bracing against impact. Movement is economical and controlled—no wasted motion. When walking, the augmented legs move with mechanical precision that breaks the rhythm of natural gait, especially noticeable on stairs or uneven surfaces. At rest, their hands are still, fingers slightly flexed. Default expression is neutral to mildly skeptical.",
-    "clothing_style": "Tier 3-4 utilitarian: heavy reinforced cargo pants with internal thigh pockets, black or dark gray. Worn composite-fiber jacket with visible tool loops and gear attachment points. Steel-toed boots, maintained but scuffed. No jewelry or nonessential ornamentation. Clothing shows repair patches and wear consistent with field work. Layers suggest climate adaptation rather than fashion—undersuit visible at collar, likely temperature-regulating underlayer common to runners and demolitions workers."
-  },
-  "image_prompt": "Ivar Hong-Magnúsdóttir-Holm, 2226 neo-noir operative, 178cm tall with broad muscular build. Medium-light warm-neutral skin tone reflecting Nordic, East Asian, and South Asian heritage. Dark brown hair graying at temples, cropped military-short. Angular face with high Nordic cheekbones softened by subtle East Asian eye shape and South Asian facial fullness. Deep-set dark brown eyes with neutral expression. Visible scars: 4cm silvered scar from left temple to eye corner, 8cm jagged scar along right jawline. Faded burn marks on forearms. Small anchor tattoo on inner left wrist. Chrome-gray biomechanical augmentations visible on both legs from mid-thigh down with plating at knee joints. Neural interface jack visible at base of skull. Wearing black reinforced cargo pants with gear pockets, worn composite-fiber jacket with tool loops, steel-toed boots. Temperature-regulating undersuit visible at collar. Stands with squared shoulders, weight forward, economical controlled posture. Dystopian industrial setting, cool neon lighting casting blue and gray shadows, depth-of-field background, cinematic intensity --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 63.9,
-    "East Asian": 22.2,
-    "South Asian": 13.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "British Isles": {
-        "English": 14.7,
-        "Scottish": 49.2
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 22.2
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 13.9
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5d273b7a8bfbb56a09ab432",
+    "type":  "character",
+    "name":  "Ivar Hong-MagnÃºsdÃ³ttir-Holm",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Structural breach and explosive ordnance specialist â€” demolitions expert",
+    "age":  40,
+    "status":  "active",
+    "location":  "the Gray Zone â€” lower district tenements near the old lakeshore, near Ashland and Division",
+    "description":  "Ivar Hong-MagnÃºsdÃ³ttir-Holm are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 40, their face carries the layered heritage of generations of diaspora mixing â€” features that resist easy categorization and reward attention. The chrome is visible â€” synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on s â€” and they make no effort to hide it.\n\nTheir entry into running was involuntary â€” a debt to the wrong people, a choice between working it off or losing parts â€” and the debt is still not fully paid. They work as a demolitions expert out of the Gray Zone, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Ivar Hong-MagnÃºsdÃ³ttir-Holm are known for getting the job done and not asking questions that would make the job harder to stomach.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "That they\u0027re fundamentally alone and connection is just a vulnerability",
+                                          "Being identified by corporate facial recognition â€” living off-grid is survival"
+                                      ],
+                       "core_desires":  [
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail",
+                                            "Power â€” enough leverage that nobody ever threatens them again"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring",
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat",
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Believes their trauma makes them special instead of recognizing it as damage to manage",
+                                           "Cannot see that their independence is actually isolation wearing a better outfit"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated vocabulary wrapped in street delivery â€” the contrast is deliberate.",
+                            "cadence":  "Staccato bursts separated by calculating silences.",
+                            "verbal_tics":  [
+                                                "Ends statements with \u0027yeah?\u0027 â€” not a question, a dare",
+                                                "Hums tunelessly when planning â€” the team has learned to wait for the humming to stop"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Explosives are just engineering with a deadline. Usually a very short deadline.\"",
+                                                  "\"I don\u0027t blow things up. I perform structural rearrangement.\"",
+                                                  "\"The blast radius is your problem. My problem is making sure there\u0027s a blast.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Cassiel Kimura-Nkrumah is offered a contract that would clear all their debts â€” the target is someone they respect",
+                        "A corporate black site Cassiel Kimura-Nkrumah once infiltrated is being reopened, and the people inside know their face",
+                        "Cassiel Kimura-Nkrumah discovers a job they completed last year was a setup for something much larger and much worse"
+                    ],
+    "narrative_function":  "Cassiel Kimura-Nkrumah is a pressure point â€” the kind of character whose choices ripple outward. When they make a decision, other people\u0027s lives change. That weight is the engine of their stories.",
+    "augmentations":  "Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs. Neural interface jack at base of skull â€” standard runner-grade, allows direct net access",
+    "daily_life":  "Keeps a rigid daily structure â€” wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+    "affiliation":  "Freelance â€” multi-district operator",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  0,
+                                                    "effective":  8
+                                                },
+                                   "agility":  {
+                                                   "base":  5,
+                                                   "augmented":  1,
+                                                   "effective":  6
+                                               },
+                                   "endurance":  {
+                                                     "base":  4,
+                                                     "augmented":  0,
+                                                     "effective":  5
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  7,
+                                                    "augmented":  0,
+                                                    "effective":  9
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  3,
+                                                      "augmented":  0,
+                                                      "effective":  8
+                                                  },
+                                 "perception":  {
+                                                    "base":  7,
+                                                    "augmented":  0,
+                                                    "effective":  4
+                                                },
+                                 "willpower":  {
+                                                   "base":  6,
+                                                   "augmented":  3,
+                                                   "effective":  7
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  6
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  0,
+                                                  "effective":  6
+                                              },
+                                 "intimidation":  {
+                                                      "base":  6,
+                                                      "augmented":  3,
+                                                      "effective":  8
+                                                  },
+                                 "deception":  {
+                                                   "base":  3,
+                                                   "augmented":  2,
+                                                   "effective":  4
+                                               },
+                                 "empathy":  {
+                                                 "base":  8,
+                                                 "augmented":  0,
+                                                 "effective":  8
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.17,
+                                      "caution":  0.69,
+                                      "loyalty":  0.48,
+                                      "greed":  0.36,
+                                      "empathy":  0.48
+                                  },
+                  "drives":  [
+                                 "loyalty",
+                                 "freedom",
+                                 "reputation"
+                             ],
+                  "thresholds":  {
+                                     "pain":  4,
+                                     "stress":  8,
+                                     "loyalty_break":  6
+                                 },
+                  "strengths":  [
+                                    "network of reliable contacts",
+                                    "expert marksman"
+                                ],
+                  "weaknesses":  [
+                                     "augmentation dependency â€” performance drops sharply if chrome malfunctions",
+                                     "difficulty with authority figures",
+                                     "physical limitation from incomplete augmentation"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "demolitions expert",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Advocates caution to others but takes insane risks personally â€” double standard they can\u0027t see",
+                                              "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
+                                              "Presents as emotionless professional but is deeply affected by collateral damage"
+                                          ],
+                       "habits":  [
+                                      "Keeps a physical paper notebook â€” no digital record of personal thoughts",
+                                      "Wears the same item of clothing for luck â€” a scarf, a glove, a specific pair of boots",
+                                      "Checks exits within 10 seconds of entering any room"
+                                  ],
+                       "breaking_points":  [
+                                               "Their body rejecting their cyberware â€” chrome rot, immune rejection, the nightmare scenario",
+                                               "A child being put in danger as leverage against them"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Synthetic muscle fiber replacement in legs",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural interface jack at base of skull",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Neural interface jack at base of skull â€” standard runner-grade, allows direct net access",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Arsonist":  0.7,
+                       "Risk Taker":  0.7,
+                       "Chaos Creator":  0.7,
+                       "Prepared":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Wheelgun-38 \u0027Roundhouse\u0027",
+                            "Street Custom \u0027Glass Garden\u0027 Caltrops"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Bioelectric Muscle Fiber",
+                             "The Heritage Vault",
+                             "Diaspora Table",
+                             "Stratum",
+                             "Burden of Longitude",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "Pellucid Systems"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Northern European (63.9%), East Asian (22.2%), South Asian (13.9%) â€” a balanced diaspora blend manifesting as medium-light skin with cool undertones from Nordic ancestry warmed by East and South Asian components. The genetic mix produces distinctly Nordic bone structureâ€”high, prominent cheekbones and a broad brow ridgeâ€”softened by East Asian eye shape and South Asian fullness in the lower face and cheeks. Neither distinctly cool nor warm, the skin tone reflects all three ancestral regions equally.",
+                                 "height_cm":  178,
+                                 "weight_kg":  94,
+                                 "build":  "Broad-shouldered and heavily muscled, carrying weight with deliberate density rather than bulk. Chest and torso built for stability and power; legs augmented with synthetic fiber and visibly denser than a baseline human frame.",
+                                 "hair_color":  "Dark brown, graying at temples",
+                                 "hair_style":  "Cropped short and practical, maintained with military precision",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, unremarkable without augmentation",
+                                 "skin_tone":  "Medium-light with balanced undertonesâ€”cool-toned Nordic base enriched by warm East and South Asian midtones. Pale enough to reveal Northern European heritage clearly, yet the warmer undertones prevent starkness, creating a genuinely neutral complexion that reads as naturally diaspora-mixed rather than distinctly one region.",
+                                 "complexion":  "Angular face reflecting precise genetic blendâ€”prominent Nordic cheekbones and broad brow ridge balanced by softer East Asian eye shape (slight epicanthal fold, deeper-set eyes) and South Asian fullness in the cheeks and lower jaw. Jawline shows controlled angularity without severity. Skin weathered but well-maintained. Fine scar tissue visible at the left temple and along the right side of the jawâ€”old impacts, professionally healed. Deep-set eyes, perpetually focused. Minimal grooming beyond functional maintenance.",
+                                 "distinguishing_marks":  [
+                                                              "Thin scar running from left temple to the corner of the left eye, approximately 4cm, silvered with age",
+                                                              "Jagged scar along the right jawline from ear to chin, roughly 8cm, indicating impact or laceration trauma",
+                                                              "Faded burn marks on both forearmsâ€”contact burns from ordnance work, pale against baseline skin tone",
+                                                              "A small anchor tattoo on the inside of the left wrist in black ink, barely visible unless pointed out"
+                                                          ],
+                                 "visible_augmentations":  "Synthetic muscle fiber replacement visible in both legs from mid-thigh downwardâ€”chrome-gray biomechanical plating at the knee joints and along the anterior tibialis. The augmented legs have a distinctly different texture and sheen compared to baseline skin. Neural interface jack at the base of the skull is partially visible as a small raised port beneath short hair, with faint circuitry etching around it.",
+                                 "posture_movement":  "Stands with weight slightly forward, shoulders squared, as if perpetually bracing against impact. Movement is economical and controlledâ€”no wasted motion. When walking, the augmented legs move with mechanical precision that breaks the rhythm of natural gait, especially noticeable on stairs or uneven surfaces. At rest, their hands are still, fingers slightly flexed. Default expression is neutral to mildly skeptical.",
+                                 "clothing_style":  "Tier 3-4 utilitarian: heavy reinforced cargo pants with internal thigh pockets, black or dark gray. Worn composite-fiber jacket with visible tool loops and gear attachment points. Steel-toed boots, maintained but scuffed. No jewelry or nonessential ornamentation. Clothing shows repair patches and wear consistent with field work. Layers suggest climate adaptation rather than fashionâ€”undersuit visible at collar, likely temperature-regulating underlayer common to runners and demolitions workers."
+                             },
+    "image_prompt":  "Ivar Hong-MagnÃºsdÃ³ttir-Holm, 2226 neo-noir operative, 178cm tall with broad muscular build. Medium-light warm-neutral skin tone reflecting Nordic, East Asian, and South Asian heritage. Dark brown hair graying at temples, cropped military-short. Angular face with high Nordic cheekbones softened by subtle East Asian eye shape and South Asian facial fullness. Deep-set dark brown eyes with neutral expression. Visible scars: 4cm silvered scar from left temple to eye corner, 8cm jagged scar along right jawline. Faded burn marks on forearms. Small anchor tattoo on inner left wrist. Chrome-gray biomechanical augmentations visible on both legs from mid-thigh down with plating at knee joints. Neural interface jack visible at base of skull. Wearing black reinforced cargo pants with gear pockets, worn composite-fiber jacket with tool loops, steel-toed boots. Temperature-regulating undersuit visible at collar. Stands with squared shoulders, weight forward, economical controlled posture. Dystopian industrial setting, cool neon lighting casting blue and gray shadows, depth-of-field background, cinematic intensity --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  63.9,
+                             "East Asian":  22.2,
+                             "South Asian":  13.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  14.7,
+                                                                            "Scottish":  49.2
+                                                                        }
+                                                  },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  22.2
+                                                          }
+                                           },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  13.9
+                                                               }
+                                            }
+                        },
+    "tier":  "3"
 }

@@ -1,374 +1,387 @@
-{
-  "id": "019d6143a5aa7a9a8f96346cbbf159cc",
-  "type": "character",
-  "name": "Vesper Cardenas",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Counter-surveillance and mole detection — counterintelligence specialist",
-  "age": 59,
-  "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics, near Ashland and Chicago Ave",
-  "description": "Vesper Cardenas is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 59, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Vesper Cardenas describe him as a precision instrument — point him at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.43,
-      "ideal": 0.23,
-      "id": 0.42,
-      "shadow": 0.52,
-      "mask": 0.36,
-      "ghost": 0.58
-    },
-    "core_fears": [
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Being identified by corporate facial recognition — living off-grid is survival",
-      "Dying alone in some alley and nobody noticing for weeks"
-    ],
-    "core_desires": [
-      "Freedom from augmentation debt — the interest compounds like a tumor",
-      "To matter to someone for who they are, not what they can do",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
-    ],
-    "coping_mechanisms": [
-      "Violence — hits something when they can't process emotions, preferably something that deserves it",
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Compartmentalization — work feelings and personal feelings exist in separate boxes"
-    ],
-    "blind_spots": [
-      "Fails to notice when their own behavior mirrors the people they despise",
-      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
-      "Trusts technology more than people — machines don't betray"
-    ],
-    "secret": "Altan Magnusson-Camara betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
-  },
-  "speech_patterns": {
-    "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
-    "cadence": "Low and even — the vocal equivalent of still water.",
-    "verbal_tics": [
-      "Uses technical jargon for everything, including emotions",
-      "Speaks in clipped fragments when stressed — drops pronouns, articles, pleasantries"
-    ],
-    "example_lines": [
-      "\"Everyone in this room is lying. My job is knowing who's lying about what.\"",
-      "\"Paranoia isn't a disorder in this profession. It's a job requirement.\"",
-      "\"I find the leak. What happens to the leak after that isn't my department.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Altan Magnusson-Camara is offered a contract that would clear all their debts — the target is someone they respect",
-    "Someone is impersonating Altan Magnusson-Camara on jobs, and the impersonator is better at the work than the original",
-    "Altan Magnusson-Camara's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
-  ],
-  "narrative_function": "Altan Magnusson-Camara is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
-  "augmentations": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster. Thermal masking system — body heat signature can be suppressed or spoofed",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Independent — operates through reputation only",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 6
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 4
-      },
-      "reflexes": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 9
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 6
-      },
-      "perception": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 10
-      },
-      "willpower": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 10
-      },
-      "technical": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 10
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 6
-      },
-      "intimidation": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 6
-      },
-      "deception": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 6
-      },
-      "empathy": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 10
-      }
-    },
-    "personality": {
-      "aggression": 0.34,
-      "caution": 0.32,
-      "loyalty": 0.81,
-      "greed": 0.35,
-      "empathy": 0.46
-    },
-    "drives": [
-      "freedom",
-      "reputation",
-      "knowledge"
-    ],
-    "thresholds": {
-      "pain": 4,
-      "stress": 8,
-      "loyalty_break": 6
-    },
-    "strengths": [
-      "technical expertise with augmentation systems",
-      "photographic memory for faces and layouts",
-      "exceptional close-quarters combat"
-    ],
-    "weaknesses": [
-      "poor impulse control in specific triggers",
-      "grudge-holding that compromises rational decision-making"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "counterintelligence specialist",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Always has an exit route planned before agreeing to any meeting"
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Presents as emotionless professional but is deeply affected by collateral damage"
-    ],
-    "habits": [
-      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
-      "Maintains a dead drop with emergency supplies in three separate districts",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
-    ],
-    "breaking_points": [
-      "Being publicly exposed — name, face, address, all of it blown",
-      "Discovering their employer deliberately sent them into a death trap"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Synthetic blood with oxygen-carrying nanites",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
-      "replaces": ""
-    },
-    {
-      "name": "Thermal masking system",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Thermal masking system — body heat signature can be suppressed or spoofed",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Networker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Kessler Row",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Dispatch-45 'Last Word'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Masquerade",
-    "The Nearfield",
-    "The Heritage Vault",
-    "Diaspora Table",
-    "Stratum",
-    "Chicago",
-    "Burden of Longitude",
-    "Slagworks Industrial",
-    "Pellucid Systems",
-    "GLMZ"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex global diaspora: Hispanic/Latin American (32.1%), Middle Eastern (23.9%), Sub-Saharan African (22.3%), East Asian (13.6%), Central Asian (5.8%), South Asian (2.3%). This creates a richly layered phenotype — deep golden-brown base with warm amber undertones from the Latin and African heritage, grounded by Middle Eastern depth and intensity, refined by East Asian bone structure, and enriched by Central Asian warmth. The result is a cohesive, sophisticated blend where no single ancestry dominates visually.",
-    "height_cm": 188,
-    "weight_kg": 102,
-    "build": "Broad-shouldered and heavily muscled, carrying weight with deliberate density — not fat but compressed power. Chest and shoulders dominate his frame; legs solid beneath.",
-    "hair_color": "Steel gray with residual black at the temples",
-    "hair_style": "Cropped short, practical, no styling — maintained for function not appearance",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with thermal variance visible in low light — the natural color enriched by ancestry, the thermal aspect from augmentation",
-    "skin_tone": "Deep rich golden-brown with warm amber undertones — the complex blending of Latin American, Middle Eastern, African, East Asian, and Central Asian ancestry creating a dimensioned tone. Warmer on cheekbones and temples, slightly deeper along the jawline, with subtle olive notes from Middle Eastern heritage.",
-    "complexion": "Weathered and lined — 59 years of sustained tension mapped across his jaw and forehead. Bone structure shows East Asian influence in the cheekbones and eye set, harmonizing with the broader Latin American, Middle Eastern, and African features to create balanced, strong facial geometry. Minimal grooming beyond function; scars visible at the left temple and along the right cheekbone. No facial hair.",
-    "distinguishing_marks": [
-      "Surgical scar along the left temple, approximately 4cm, precise and old — augmentation entry point",
-      "Ragged white scar across the right cheekbone, 6cm, from blunt force trauma — healed with visible dimpling",
-      "Thin chrome-silver tracery visible along both wrists where synthetic blood system integrates with natural vasculature — deliberately exposed",
-      "Burn mark on left forearm, small but deliberate-looking, partially obscured by sleeve"
-    ],
-    "visible_augmentations": "Synthetic blood system is visibly integrated — chrome-silver arterial lines visible at wrists and along the sides of the neck where the nanite circulatory system connects. The chrome has a polished, well-maintained appearance. Eyes register faint thermal fluctuation in shadow. No attempt to conceal the augmentations.",
-    "posture_movement": "Moves with controlled economy — no wasted motion. Stands with weight centered, shoulders back, ready to shift. Eyes are constant, scanning patterns even in conversation. Breathing is deliberately regulated. Hands rest flat or closed, never exposed or splayed. His presence compresses space around him; people unconsciously give him room.",
-    "clothing_style": "Tier 3-4 utilitarian — dark tactical pants with multiple pockets, fitted black compression shirt under a worn charcoal field jacket. No logos or affiliation markers. Boots are reinforced synthetic leather, well-maintained, designed for sustained movement. A thin steel chain bracelet on his left wrist — no ornamentation beyond that. Clothing is chosen for durability and function; colors are muted to avoid attention."
-  },
-  "image_prompt": "Vesper Cardenas, 188cm tall heavily muscled man, deep rich golden-brown skin with warm amber undertones blending Latin American, Middle Eastern, African, East Asian, and Central Asian heritage, weathered face with strong East Asian-influenced cheekbones, 59 years old, steel gray hair cropped short with black at temples, deep brown eyes with thermal augmentation glow in shadow, facial scars at left temple and right cheekbone, no facial hair. Visible chrome-silver synthetic blood system tracery at wrists and neck where nanite circulatory system integrates, polished augmentation lines deliberately exposed. Wearing dark tactical pants, fitted black compression shirt, worn charcoal field jacket, reinforced synthetic leather boots. Steel chain bracelet on left wrist. Standing with controlled posture, weight centered, shoulders back, ready to shift, scanning presence compressing space. GLMZ Great Lakes Metropolitan Zone, moody lowlight setting, neon-edged shadows, industrial environment, air of sustained tension and controlled power. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 32.1,
-    "Middle Eastern": 23.9,
-    "Sub-Saharan African": 22.3,
-    "East Asian": 13.6,
-    "Central Asian": 5.8,
-    "South Asian": 2.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 32.1
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 23.9
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Senegalese": 12.6,
-        "Guinean": 5.8
-      },
-      "Central African": {
-        "Congolese": 1.1
-      },
-      "East African": {
-        "Kenyan": 2.8
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Cantonese": 4.6,
-        "Mandarin Northern": 1.2
-      },
-      "Korean": {
-        "Korean": 7.8
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Mongolian": 2.1
-      },
-      "Iranian Central": {
-        "Hazara": 2.2,
-        "Tajik": 0.1
-      },
-      "Turkic": {
-        "Kyrgyz": 0.7,
-        "Uyghur": 0.7
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 2.3
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5aa7a9a8f96346cbbf159cc",
+    "type":  "character",
+    "name":  "Vesper Cardenas",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Counter-surveillance and mole detection â€” counterintelligence specialist",
+    "age":  59,
+    "status":  "active",
+    "location":  "Kessler Row â€” arms dealers and augmentation clinics, near Ashland and Chicago Ave",
+    "description":  "Vesper Cardenas is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 59, his face carries the layered heritage of generations of diaspora mixing â€” features that resist easy categorization and reward attention. The chrome is visible â€” synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster â€” and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation â€” he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Vesper Cardenas describe him as a precision instrument â€” point him at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "Being identified by corporate facial recognition â€” living off-grid is survival",
+                                          "Dying alone in some alley and nobody noticing for weeks"
+                                      ],
+                       "core_desires":  [
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor",
+                                            "To matter to someone for who they are, not what they can do",
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Violence â€” hits something when they can\u0027t process emotions, preferably something that deserves it",
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring",
+                                                 "Compartmentalization â€” work feelings and personal feelings exist in separate boxes"
+                                             ],
+                       "blind_spots":  [
+                                           "Fails to notice when their own behavior mirrors the people they despise",
+                                           "Refuses to update their mental model of people â€” first impressions calcify into permanent judgments",
+                                           "Trusts technology more than people â€” machines don\u0027t betray"
+                                       ],
+                       "secret":  "Altan Magnusson-Camara betrayed their previous crew to survive a corporate raid. The crew didn\u0027t survive. Nobody in GLMZ knows this."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
+                            "cadence":  "Low and even â€” the vocal equivalent of still water.",
+                            "verbal_tics":  [
+                                                "Uses technical jargon for everything, including emotions",
+                                                "Speaks in clipped fragments when stressed â€” drops pronouns, articles, pleasantries"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Everyone in this room is lying. My job is knowing who\u0027s lying about what.\"",
+                                                  "\"Paranoia isn\u0027t a disorder in this profession. It\u0027s a job requirement.\"",
+                                                  "\"I find the leak. What happens to the leak after that isn\u0027t my department.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Altan Magnusson-Camara is offered a contract that would clear all their debts â€” the target is someone they respect",
+                        "Someone is impersonating Altan Magnusson-Camara on jobs, and the impersonator is better at the work than the original",
+                        "Altan Magnusson-Camara\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad"
+                    ],
+    "narrative_function":  "Altan Magnusson-Camara is a pressure point â€” the kind of character whose choices ripple outward. When he makes a decision, other people\u0027s lives change. That weight is the engine of his stories.",
+    "augmentations":  "Synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster. Thermal masking system â€” body heat signature can be suppressed or spoofed",
+    "daily_life":  "Keeps a rigid daily structure â€” wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+    "affiliation":  "Independent â€” operates through reputation only",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  4,
+                                                    "augmented":  3,
+                                                    "effective":  6
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  6,
+                                                     "augmented":  2,
+                                                     "effective":  4
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  8,
+                                                    "augmented":  0,
+                                                    "effective":  9
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  3,
+                                                      "augmented":  1,
+                                                      "effective":  6
+                                                  },
+                                 "perception":  {
+                                                    "base":  4,
+                                                    "augmented":  1,
+                                                    "effective":  10
+                                                },
+                                 "willpower":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                 "technical":  {
+                                                   "base":  6,
+                                                   "augmented":  3,
+                                                   "effective":  10
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  3,
+                                                  "effective":  6
+                                              },
+                                 "intimidation":  {
+                                                      "base":  4,
+                                                      "augmented":  2,
+                                                      "effective":  6
+                                                  },
+                                 "deception":  {
+                                                   "base":  7,
+                                                   "augmented":  0,
+                                                   "effective":  6
+                                               },
+                                 "empathy":  {
+                                                 "base":  8,
+                                                 "augmented":  0,
+                                                 "effective":  10
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.34,
+                                      "caution":  0.32,
+                                      "loyalty":  0.81,
+                                      "greed":  0.35,
+                                      "empathy":  0.46
+                                  },
+                  "drives":  [
+                                 "freedom",
+                                 "reputation",
+                                 "knowledge"
+                             ],
+                  "thresholds":  {
+                                     "pain":  4,
+                                     "stress":  8,
+                                     "loyalty_break":  6
+                                 },
+                  "strengths":  [
+                                    "technical expertise with augmentation systems",
+                                    "photographic memory for faces and layouts",
+                                    "exceptional close-quarters combat"
+                                ],
+                  "weaknesses":  [
+                                     "poor impulse control in specific triggers",
+                                     "grudge-holding that compromises rational decision-making"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "counterintelligence specialist",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Always has an exit route planned before agreeing to any meeting"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Presents as emotionless professional but is deeply affected by collateral damage"
+                                          ],
+                       "habits":  [
+                                      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+                                      "Maintains a dead drop with emergency supplies in three separate districts",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore",
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle"
+                                  ],
+                       "breaking_points":  [
+                                               "Being publicly exposed â€” name, face, address, all of it blown",
+                                               "Discovering their employer deliberately sent them into a death trap"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Synthetic blood with oxygen-carrying nanites",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Thermal masking system",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Thermal masking system â€” body heat signature can be suppressed or spoofed",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Networker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Kessler Row",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Dispatch-45 \u0027Last Word\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Masquerade",
+                             "The Nearfield",
+                             "The Heritage Vault",
+                             "Diaspora Table",
+                             "Stratum",
+                             "Chicago",
+                             "Burden of Longitude",
+                             "Slagworks Industrial",
+                             "Pellucid Systems",
+                             "GLMZ"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex global diaspora: Hispanic/Latin American (32.1%), Middle Eastern (23.9%), Sub-Saharan African (22.3%), East Asian (13.6%), Central Asian (5.8%), South Asian (2.3%). This creates a richly layered phenotype â€” deep golden-brown base with warm amber undertones from the Latin and African heritage, grounded by Middle Eastern depth and intensity, refined by East Asian bone structure, and enriched by Central Asian warmth. The result is a cohesive, sophisticated blend where no single ancestry dominates visually.",
+                                 "height_cm":  188,
+                                 "weight_kg":  102,
+                                 "build":  "Broad-shouldered and heavily muscled, carrying weight with deliberate density â€” not fat but compressed power. Chest and shoulders dominate his frame; legs solid beneath.",
+                                 "hair_color":  "Steel gray with residual black at the temples",
+                                 "hair_style":  "Cropped short, practical, no styling â€” maintained for function not appearance",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with thermal variance visible in low light â€” the natural color enriched by ancestry, the thermal aspect from augmentation",
+                                 "skin_tone":  "Deep rich golden-brown with warm amber undertones â€” the complex blending of Latin American, Middle Eastern, African, East Asian, and Central Asian ancestry creating a dimensioned tone. Warmer on cheekbones and temples, slightly deeper along the jawline, with subtle olive notes from Middle Eastern heritage.",
+                                 "complexion":  "Weathered and lined â€” 59 years of sustained tension mapped across his jaw and forehead. Bone structure shows East Asian influence in the cheekbones and eye set, harmonizing with the broader Latin American, Middle Eastern, and African features to create balanced, strong facial geometry. Minimal grooming beyond function; scars visible at the left temple and along the right cheekbone. No facial hair.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar along the left temple, approximately 4cm, precise and old â€” augmentation entry point",
+                                                              "Ragged white scar across the right cheekbone, 6cm, from blunt force trauma â€” healed with visible dimpling",
+                                                              "Thin chrome-silver tracery visible along both wrists where synthetic blood system integrates with natural vasculature â€” deliberately exposed",
+                                                              "Burn mark on left forearm, small but deliberate-looking, partially obscured by sleeve"
+                                                          ],
+                                 "visible_augmentations":  "Synthetic blood system is visibly integrated â€” chrome-silver arterial lines visible at wrists and along the sides of the neck where the nanite circulatory system connects. The chrome has a polished, well-maintained appearance. Eyes register faint thermal fluctuation in shadow. No attempt to conceal the augmentations.",
+                                 "posture_movement":  "Moves with controlled economy â€” no wasted motion. Stands with weight centered, shoulders back, ready to shift. Eyes are constant, scanning patterns even in conversation. Breathing is deliberately regulated. Hands rest flat or closed, never exposed or splayed. His presence compresses space around him; people unconsciously give him room.",
+                                 "clothing_style":  "Tier 3-4 utilitarian â€” dark tactical pants with multiple pockets, fitted black compression shirt under a worn charcoal field jacket. No logos or affiliation markers. Boots are reinforced synthetic leather, well-maintained, designed for sustained movement. A thin steel chain bracelet on his left wrist â€” no ornamentation beyond that. Clothing is chosen for durability and function; colors are muted to avoid attention."
+                             },
+    "image_prompt":  "Vesper Cardenas, 188cm tall heavily muscled man, deep rich golden-brown skin with warm amber undertones blending Latin American, Middle Eastern, African, East Asian, and Central Asian heritage, weathered face with strong East Asian-influenced cheekbones, 59 years old, steel gray hair cropped short with black at temples, deep brown eyes with thermal augmentation glow in shadow, facial scars at left temple and right cheekbone, no facial hair. Visible chrome-silver synthetic blood system tracery at wrists and neck where nanite circulatory system integrates, polished augmentation lines deliberately exposed. Wearing dark tactical pants, fitted black compression shirt, worn charcoal field jacket, reinforced synthetic leather boots. Steel chain bracelet on left wrist. Standing with controlled posture, weight centered, shoulders back, ready to shift, scanning presence compressing space. GLMZ Great Lakes Metropolitan Zone, moody lowlight setting, neon-edged shadows, industrial environment, air of sustained tension and controlled power. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  32.1,
+                             "Middle Eastern":  23.9,
+                             "Sub-Saharan African":  22.3,
+                             "East Asian":  13.6,
+                             "Central Asian":  5.8,
+                             "South Asian":  2.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  32.1
+                                                                                 }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  23.9
+                                                               }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Senegalese":  12.6,
+                                                                             "Guinean":  5.8
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  1.1
+                                                                            },
+                                                        "East African":  {
+                                                                             "Kenyan":  2.8
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Cantonese":  4.6,
+                                                               "Mandarin Northern":  1.2
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  7.8
+                                                          }
+                                           },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  2.1
+                                                               },
+                                                  "Iranian Central":  {
+                                                                          "Hazara":  2.2,
+                                                                          "Tajik":  0.1
+                                                                      },
+                                                  "Turkic":  {
+                                                                 "Kyrgyz":  0.7,
+                                                                 "Uyghur":  0.7
+                                                             }
+                                              },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  2.3
+                                                                }
+                                            }
+                        },
+    "tier":  "3"
 }

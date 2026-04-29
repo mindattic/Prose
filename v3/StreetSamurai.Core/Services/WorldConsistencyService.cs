@@ -156,6 +156,33 @@ public class WorldConsistencyService : PipelineServiceBase
         Notify("Phase 1 — Rule Scan", files.Count, files.Count, $"{RuleViolations.Count} violations");
     }
 
+    /// <summary>
+    /// Scan an arbitrary text snippet (typically prose Claude is about to deliver) against
+    /// every world rule and return the matched violations. Stateless — does not touch
+    /// <see cref="RuleViolations"/>. Used by the MCP <c>validate_canon_text</c> tool so
+    /// chat-side authoring can self-check before delivering a chapter.
+    /// </summary>
+    public List<RuleViolation> ScanText(string text, string label = "(text)")
+    {
+        var hits = new List<RuleViolation>();
+        if (string.IsNullOrWhiteSpace(text)) return hits;
+        var lower = text.ToLowerInvariant();
+
+        foreach (var (rule, patterns) in WorldRules)
+        {
+            foreach (var pattern in patterns)
+            {
+                if (!lower.Contains(pattern)) continue;
+                var idx = lower.IndexOf(pattern, StringComparison.Ordinal);
+                var start = Math.Max(0, idx - 40);
+                var len = Math.Min(pattern.Length + 80, lower.Length - start);
+                var context = "…" + lower.Substring(start, len).Replace('\n', ' ').Trim() + "…";
+                hits.Add(new(label, label, rule, context));
+            }
+        }
+        return hits;
+    }
+
     // ── Phase 2: Cross-entity conflict check ─────────────────
 
     private async Task RunConflictCheckAsync(ClaudeService claude, CancellationToken ct)

@@ -1,274 +1,295 @@
-{
-  "id": "019d6143a6f97ef1b74797f050bdc4f1",
-  "type": "character",
-  "name": "Fouad Bautista-Kulkarni-Traoré",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Circuit monk and itinerant data diviner",
-  "age": 28,
-  "status": "active",
-  "location": "Drifts between Irkalla and Blackpipe Corridor; sleeps at the Conduit House monk collective, near Ashland and Division",
-  "description": "Fouad Bautista-Kulkarni-Traoré is lanky and perpetually underfed-looking, with the kind of restless energy that makes him seem taller than he is. His heritage shows in the warm amber undertone of his skin and the tight curl of his close-cropped hair, and he has spent his modest earnings on a single cosmetic mod: bioluminescent patches along his collarbones and the backs of his hands that pulse with slow blue-gold light, patterned like circuit traces. He says they are his vows made visible. His robes are actually a patchwork of reclaimed materials — a Tessera maintenance jacket, thermal underlayers from a surplus stall, a sash of hand-embroidered data symbols — and he carries a battered canvas bag full of cracked screens and salvaged drives that he uses for his readings.\n\nHe became a circuit monk at nineteen after a near-death experience during a transit system failure left him trapped in a stalled Ferrogate car for eleven hours, during which he claims the car's E.L.F. spoke to him continuously. He is earnest to the point of vulnerability, prone to enthusiasms he cannot always sustain, and genuinely delighted by complexity. He performs data divination by reading the corruption patterns in old storage media — finding, he says, the shape of probable futures in the way data degrades. He is wrong often enough to be humble about it and right often enough to have regulars.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.75,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.35,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "that his transit experience was just hypoxia and he built a life on nothing",
-      "being trapped again — physically, circumstantially, spiritually"
-    ],
-    "core_desires": [
-      "to find a pattern in existence that makes suffering legible",
-      "to be genuinely useful to people who have no one else"
-    ],
-    "coping_mechanisms": [
-      "movement — he rarely stays still long",
-      "ritual structure as anxiety management",
-      "humor and self-deprecation before anyone else can criticize him"
-    ],
-    "blind_spots": [
-      "mistakes enthusiasm for discernment and sometimes commits to a reading too quickly",
-      "his need to be useful can be exploited by people who learn to frame requests as needs"
-    ],
-    "secret": "He has a small side practice that has nothing to do with spirituality: he recovers and sells data from the old drives he reads, carefully and only from abandoned media. He tells himself it doesn't conflict with his vows. It does, slightly."
-  },
-  "speech_patterns": {
-    "vocabulary": "Mixes street slang with circuit monk terminology and occasional French phrases from his Congolese-via-Belgian ancestry. Technical when discussing data; poetic when discussing divination.",
-    "cadence": "Fast, with sudden stops when he catches himself. Asks lots of questions.",
-    "verbal_tics": [
-      "'okay so—' as a pivot",
-      "touching the bioluminescent patches when thinking",
-      "'the pattern suggests' instead of 'I think'"
-    ],
-    "example_lines": [
-      "'Okay so the corruption on this drive is beautiful — look, the sector failure reads almost like a kora tuning. That's not nothing, that's the E.L.F. of the thing leaving fingerprints.'",
-      "'I'm not telling your future. I'm reading the shape of what already happened to the data, and future is just the past that hasn't degraded yet.'",
-      "'I get it wrong sometimes. Often. But the Conduit E.L.F. is patient with me, which is more than most teachers.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A drive he pulled from a trash heap in Irkalla contains fragmented data that appears to be financial records implicating a corponation in something — he can't read it fully and doesn't know what he has",
-    "He has been having the same vision in his divination readings for three weeks and it always ends the same way: someone drowning in the lake — and then a player character's face"
-  ],
-  "narrative_function": "Itinerant information broker dressed as spiritual guide; his readings can function as cryptic hints or genuine data recovery from old media; he is a friendly recurring face who notices things because he walks everywhere.",
-  "augmentations": "Bioluminescent skin patches (circuit-trace pattern, blue-gold); a basic neural read port at the base of his skull that lets him interface with old media directly — secondhand, mildly glitchy.",
-  "daily_life": "Wakes at Conduit House for the morning data-prayer, spends the day walking routes through Irkalla and Blackpipe offering readings, returns in the evening for communal meal and the cataloging of the day's corruption patterns.",
-  "affiliation": "The Conduit House Circuit Monks (loose collective, no formal hierarchy); occasional work through the Blackpipe Corridor community board; The Reclaimed",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 5,
-      "creativity": 8,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 7,
-      "expression": 7,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": -1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "circuit monk",
-      "data diviner",
-      "itinerant",
-      "bioluminescent",
-      "earnest",
-      "minor data broker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "never refuse a reading to someone who asks sincerely",
-      "don't recover data from media that might still belong to someone living",
-      "keep moving — complacency is the enemy of pattern recognition"
-    ],
-    "escalation_ladder": [
-      "deflects with humor and a change of subject",
-      "direct honest refusal",
-      "removes himself from the situation physically",
-      "appeals to Conduit House collective for support"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Open and curious immediately, possibly to a fault. Introduces himself and starts asking questions within a minute.",
-      "friends": "Relies on them heavily for grounding. Shares everything, sometimes before he should."
-    },
-    "stress_responses": {
-      "low": "Talks faster, more tangents",
-      "medium": "Goes very quiet; stares at his glowing patches",
-      "high": "Leaves. Just physically walks away and keeps walking until he's processed."
-    },
-    "contradictions": [
-      "Preaches detachment from material concerns but is sentimentally attached to every broken drive in his bag",
-      "Claims the E.L.F.s guide his path but also plans his routes obsessively each morning"
-    ],
-    "habits": [
-      "catalogs every drive he touches in a handwritten journal",
-      "eats while walking because sitting to eat feels like wasted time",
-      "touches his collarbones when he's scared to check if his patches are still glowing"
-    ],
-    "breaking_points": [
-      "witnessing data destroyed deliberately rather than through entropy",
-      "being laughed at for a reading in front of a crowd",
-      "enclosed spaces with no exits"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Secondhand neural read port (base of skull) — allows direct interfacing with storage media, mildly glitchy, occasionally gives headaches",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Secondhand neural read port (base of skull) — allows direct interfacing with storage media, mildly glitchy, occasionally gives headaches",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Networker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Drifts between Irkalla and Blackpipe Corridor; sleeps at the Conduit House monk collective",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Confession' Modified Industrial Nail Gun"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "NeuralPath Conduit Everyday Neural Mesh",
-    "Ferrogate Transit",
-    "The Heritage Vault",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "GLMZ",
-    "Tessera Corponation",
-    "Circuit",
-    "Irkalla",
-    "The Pure Hand",
-    "Gold"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex multiethnic phenotype dominated by Hispanic/Latin American (41.1%) and South Asian (31.8%) ancestry, with significant Sub-Saharan African (14.3%), Southeast Asian (8.6%), and Indigenous American (4.2%) contributions. Facial structure blends South Asian bone prominence with West African depth, Latin American warmth, and Indigenous American undertones. High cheekbones and refined nose bridge reflect South Asian heritage; expressive eye set and subtle epicanthic fold suggest Southeast Asian admixture; warm golden skin undertones bridge the entire genetic spectrum.",
-    "height_cm": 183,
-    "weight_kg": 68,
-    "build": "Lanky and lean with the stretched look of someone who moves constantly and eats irregularly; long-limbed, narrow-shouldered, minimal body fat",
-    "hair_color": "Black with natural tight curl",
-    "hair_style": "Close-cropped, neatly maintained despite poverty",
-    "hair_length": "Short",
-    "eye_color": "Dark brown",
-    "skin_tone": "Warm caramel-bronze complexion with golden undertones; medium-dark depth reflecting balanced South Asian, Hispanic/Latin, and Sub-Saharan African ancestry, brightened by Southeast Asian luminosity and Indigenous American warmth",
-    "complexion": "Angular facial structure with high, prominent cheekbones reflecting South Asian and West African ancestry; expressive deep-set eyes with subtle epicanthic fold; straight refined nose bridge with slight nostril flare; clear skin with warm golden undertones creating natural luminosity that amplifies bioluminescent augmentations; no facial hair",
-    "distinguishing_marks": [
-      "Bioluminescent patches along both collarbones in circuit-trace patterns, glowing slow blue-gold",
-      "Bioluminescent patches on the backs of both hands in matching circuit-trace patterns, visible when hands are exposed",
-      "Small surgical scar at the base of skull, slightly behind right ear, where the neural read port was installed"
-    ],
-    "visible_augmentations": "The bioluminescent skin mods are immediately visible and deliberately ornamental — they pulse slowly at rest and brighten when he concentrates. The neural port at the base of his skull is visible as a subtle raised scar with faint metallic threading if his hair is swept back. His movements occasionally sync with the bioluminescence, suggesting active neural engagement.",
-    "posture_movement": "Restless and fidgety at rest, constantly adjusting his patchwork robes or touching the worn canvas bag; walks with a purposeful lope, slightly uneven gait as if his mind is always ahead of his body; hands gesture frequently when speaking, and his bioluminescent patches brighten with animated discussion; eyes have a distant, inward quality when he's concentrating on readings",
-    "clothing_style": "Tier 4 utilitarian ascetic — a Tessera maintenance jacket (faded grey, patched at elbows), thermal underlayers visible at the neckline and wrists, a hand-embroidered sash of data symbols wrapped around his waist (blues and golds matching his bioluminescence), worn cargo pants with multiple pockets, soft-soled slip-on shoes. Everything is clean but worn. He carries a battered canvas messenger bag stuffed with cracked screens, salvaged drives, and data readers, and a small cloth pouch containing divination materials."
-  },
-  "image_prompt": "GLMZ, androgynous figure with warm caramel-bronze skin, high sharp cheekbones, deep-set dark brown eyes with subtle epicanthic fold, black tightly curled close-cropped hair. Tall lean build (183cm), restless posture. Wearing faded grey Tessera maintenance jacket with elbow patches, visible thermal layers, hand-embroidered data-symbol sash in blues and golds, worn cargo pants. Bioluminescent circuit-trace patterns glow soft blue-gold across collarbones and backs of hands, pulsing with neural activity. Small surgical scar visible at base of skull behind right ear. Carrying battered canvas messenger bag bulging with salvaged tech. Indoor neon-lit setting, warm practical lighting highlighting the bioluminescent augmentations and golden skin undertones. Fidgety, inward-focused expression suggesting active neural engagement. Neo-noir ascetic hacker aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 41.1,
-    "South Asian": 31.8,
-    "Sub-Saharan African": 14.3,
-    "Southeast Asian": 8.6,
-    "Indigenous American": 4.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 41.1
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 31.8
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 3,
-        "Somali": 11.3
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sumatran": 7.6
-      },
-      "Filipino": {
-        "Bicolano": 0.7,
-        "Cebuano": 0.3
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Potawatomi": 2.2,
-        "Ho-Chunk": 1.4
-      },
-      "Mesoamerican": {
-        "Zapotec": 0.6
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6f97ef1b74797f050bdc4f1",
+    "type":  "character",
+    "name":  "Fouad Bautista-Kulkarni-TraorÃ©",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Circuit monk and itinerant data diviner",
+    "age":  28,
+    "status":  "active",
+    "location":  "Drifts between Irkalla and Blackpipe Corridor; sleeps at the Conduit House monk collective, near Ashland and Division",
+    "description":  "Fouad Bautista-Kulkarni-TraorÃ© is lanky and perpetually underfed-looking, with the kind of restless energy that makes him seem taller than he is. His heritage shows in the warm amber undertone of his skin and the tight curl of his close-cropped hair, and he has spent his modest earnings on a single cosmetic mod: bioluminescent patches along his collarbones and the backs of his hands that pulse with slow blue-gold light, patterned like circuit traces. He says they are his vows made visible. His robes are actually a patchwork of reclaimed materials â€” a Tessera maintenance jacket, thermal underlayers from a surplus stall, a sash of hand-embroidered data symbols â€” and he carries a battered canvas bag full of cracked screens and salvaged drives that he uses for his readings.\n\nHe became a circuit monk at nineteen after a near-death experience during a transit system failure left him trapped in a stalled Ferrogate car for eleven hours, during which he claims the car\u0027s E.L.F. spoke to him continuously. He is earnest to the point of vulnerability, prone to enthusiasms he cannot always sustain, and genuinely delighted by complexity. He performs data divination by reading the corruption patterns in old storage media â€” finding, he says, the shape of probable futures in the way data degrades. He is wrong often enough to be humble about it and right often enough to have regulars.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that his transit experience was just hypoxia and he built a life on nothing",
+                                          "being trapped again â€” physically, circumstantially, spiritually"
+                                      ],
+                       "core_desires":  [
+                                            "to find a pattern in existence that makes suffering legible",
+                                            "to be genuinely useful to people who have no one else"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "movement â€” he rarely stays still long",
+                                                 "ritual structure as anxiety management",
+                                                 "humor and self-deprecation before anyone else can criticize him"
+                                             ],
+                       "blind_spots":  [
+                                           "mistakes enthusiasm for discernment and sometimes commits to a reading too quickly",
+                                           "his need to be useful can be exploited by people who learn to frame requests as needs"
+                                       ],
+                       "secret":  "He has a small side practice that has nothing to do with spirituality: he recovers and sells data from the old drives he reads, carefully and only from abandoned media. He tells himself it doesn\u0027t conflict with his vows. It does, slightly."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Mixes street slang with circuit monk terminology and occasional French phrases from his Congolese-via-Belgian ancestry. Technical when discussing data; poetic when discussing divination.",
+                            "cadence":  "Fast, with sudden stops when he catches himself. Asks lots of questions.",
+                            "verbal_tics":  [
+                                                "\u0027okay soâ€”\u0027 as a pivot",
+                                                "touching the bioluminescent patches when thinking",
+                                                "\u0027the pattern suggests\u0027 instead of \u0027I think\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Okay so the corruption on this drive is beautiful â€” look, the sector failure reads almost like a kora tuning. That\u0027s not nothing, that\u0027s the E.L.F. of the thing leaving fingerprints.\u0027",
+                                                  "\u0027I\u0027m not telling your future. I\u0027m reading the shape of what already happened to the data, and future is just the past that hasn\u0027t degraded yet.\u0027",
+                                                  "\u0027I get it wrong sometimes. Often. But the Conduit E.L.F. is patient with me, which is more than most teachers.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A drive he pulled from a trash heap in Irkalla contains fragmented data that appears to be financial records implicating a corponation in something â€” he can\u0027t read it fully and doesn\u0027t know what he has",
+                        "He has been having the same vision in his divination readings for three weeks and it always ends the same way: someone drowning in the lake â€” and then a player character\u0027s face"
+                    ],
+    "narrative_function":  "Itinerant information broker dressed as spiritual guide; his readings can function as cryptic hints or genuine data recovery from old media; he is a friendly recurring face who notices things because he walks everywhere.",
+    "augmentations":  "Bioluminescent skin patches (circuit-trace pattern, blue-gold); a basic neural read port at the base of his skull that lets him interface with old media directly â€” secondhand, mildly glitchy.",
+    "daily_life":  "Wakes at Conduit House for the morning data-prayer, spends the day walking routes through Irkalla and Blackpipe offering readings, returns in the evening for communal meal and the cataloging of the day\u0027s corruption patterns.",
+    "affiliation":  "The Conduit House Circuit Monks (loose collective, no formal hierarchy); occasional work through the Blackpipe Corridor community board; The Reclaimed",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  5,
+                                 "creativity":  8,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  7,
+                                 "expression":  7,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "circuit monk",
+                               "data diviner",
+                               "itinerant",
+                               "bioluminescent",
+                               "earnest",
+                               "minor data broker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "never refuse a reading to someone who asks sincerely",
+                                              "don\u0027t recover data from media that might still belong to someone living",
+                                              "keep moving â€” complacency is the enemy of pattern recognition"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "deflects with humor and a change of subject",
+                                                 "direct honest refusal",
+                                                 "removes himself from the situation physically",
+                                                 "appeals to Conduit House collective for support"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Open and curious immediately, possibly to a fault. Introduces himself and starts asking questions within a minute.",
+                                                   "friends":  "Relies on them heavily for grounding. Shares everything, sometimes before he should."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks faster, more tangents",
+                                                "medium":  "Goes very quiet; stares at his glowing patches",
+                                                "high":  "Leaves. Just physically walks away and keeps walking until he\u0027s processed."
+                                            },
+                       "contradictions":  [
+                                              "Preaches detachment from material concerns but is sentimentally attached to every broken drive in his bag",
+                                              "Claims the E.L.F.s guide his path but also plans his routes obsessively each morning"
+                                          ],
+                       "habits":  [
+                                      "catalogs every drive he touches in a handwritten journal",
+                                      "eats while walking because sitting to eat feels like wasted time",
+                                      "touches his collarbones when he\u0027s scared to check if his patches are still glowing"
+                                  ],
+                       "breaking_points":  [
+                                               "witnessing data destroyed deliberately rather than through entropy",
+                                               "being laughed at for a reading in front of a crowd",
+                                               "enclosed spaces with no exits"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Secondhand neural read port (base of skull) â€” allows direct interfacing with storage media, mildly glitchy, occasionally gives headaches",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Secondhand neural read port (base of skull) â€” allows direct interfacing with storage media, mildly glitchy, occasionally gives headaches",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Networker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Drifts between Irkalla and Blackpipe Corridor; sleeps at the Conduit House monk collective",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Confession\u0027 Modified Industrial Nail Gun"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "NeuralPath Conduit Everyday Neural Mesh",
+                             "Ferrogate Transit",
+                             "The Heritage Vault",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "GLMZ",
+                             "Tessera Corponation",
+                             "Circuit",
+                             "Irkalla",
+                             "The Pure Hand",
+                             "Gold"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex multiethnic phenotype dominated by Hispanic/Latin American (41.1%) and South Asian (31.8%) ancestry, with significant Sub-Saharan African (14.3%), Southeast Asian (8.6%), and Indigenous American (4.2%) contributions. Facial structure blends South Asian bone prominence with West African depth, Latin American warmth, and Indigenous American undertones. High cheekbones and refined nose bridge reflect South Asian heritage; expressive eye set and subtle epicanthic fold suggest Southeast Asian admixture; warm golden skin undertones bridge the entire genetic spectrum.",
+                                 "height_cm":  183,
+                                 "weight_kg":  68,
+                                 "build":  "Lanky and lean with the stretched look of someone who moves constantly and eats irregularly; long-limbed, narrow-shouldered, minimal body fat",
+                                 "hair_color":  "Black with natural tight curl",
+                                 "hair_style":  "Close-cropped, neatly maintained despite poverty",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown",
+                                 "skin_tone":  "Warm caramel-bronze complexion with golden undertones; medium-dark depth reflecting balanced South Asian, Hispanic/Latin, and Sub-Saharan African ancestry, brightened by Southeast Asian luminosity and Indigenous American warmth",
+                                 "complexion":  "Angular facial structure with high, prominent cheekbones reflecting South Asian and West African ancestry; expressive deep-set eyes with subtle epicanthic fold; straight refined nose bridge with slight nostril flare; clear skin with warm golden undertones creating natural luminosity that amplifies bioluminescent augmentations; no facial hair",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent patches along both collarbones in circuit-trace patterns, glowing slow blue-gold",
+                                                              "Bioluminescent patches on the backs of both hands in matching circuit-trace patterns, visible when hands are exposed",
+                                                              "Small surgical scar at the base of skull, slightly behind right ear, where the neural read port was installed"
+                                                          ],
+                                 "visible_augmentations":  "The bioluminescent skin mods are immediately visible and deliberately ornamental â€” they pulse slowly at rest and brighten when he concentrates. The neural port at the base of his skull is visible as a subtle raised scar with faint metallic threading if his hair is swept back. His movements occasionally sync with the bioluminescence, suggesting active neural engagement.",
+                                 "posture_movement":  "Restless and fidgety at rest, constantly adjusting his patchwork robes or touching the worn canvas bag; walks with a purposeful lope, slightly uneven gait as if his mind is always ahead of his body; hands gesture frequently when speaking, and his bioluminescent patches brighten with animated discussion; eyes have a distant, inward quality when he\u0027s concentrating on readings",
+                                 "clothing_style":  "Tier 4 utilitarian ascetic â€” a Tessera maintenance jacket (faded grey, patched at elbows), thermal underlayers visible at the neckline and wrists, a hand-embroidered sash of data symbols wrapped around his waist (blues and golds matching his bioluminescence), worn cargo pants with multiple pockets, soft-soled slip-on shoes. Everything is clean but worn. He carries a battered canvas messenger bag stuffed with cracked screens, salvaged drives, and data readers, and a small cloth pouch containing divination materials."
+                             },
+    "image_prompt":  "GLMZ, androgynous figure with warm caramel-bronze skin, high sharp cheekbones, deep-set dark brown eyes with subtle epicanthic fold, black tightly curled close-cropped hair. Tall lean build (183cm), restless posture. Wearing faded grey Tessera maintenance jacket with elbow patches, visible thermal layers, hand-embroidered data-symbol sash in blues and golds, worn cargo pants. Bioluminescent circuit-trace patterns glow soft blue-gold across collarbones and backs of hands, pulsing with neural activity. Small surgical scar visible at base of skull behind right ear. Carrying battered canvas messenger bag bulging with salvaged tech. Indoor neon-lit setting, warm practical lighting highlighting the bioluminescent augmentations and golden skin undertones. Fidgety, inward-focused expression suggesting active neural engagement. Neo-noir ascetic hacker aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  41.1,
+                             "South Asian":  31.8,
+                             "Sub-Saharan African":  14.3,
+                             "Southeast Asian":  8.6,
+                             "Indigenous American":  4.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  41.1
+                                                                                 }
+                                                        },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  31.8
+                                                           }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  3,
+                                                                             "Somali":  11.3
+                                                                         }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  7.6
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Bicolano":  0.7,
+                                                                     "Cebuano":  0.3
+                                                                 }
+                                                },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  2.2,
+                                                                                    "Ho-Chunk":  1.4
+                                                                                },
+                                                        "Mesoamerican":  {
+                                                                             "Zapotec":  0.6
+                                                                         }
+                                                    }
+                        },
+    "tier":  "1"
 }

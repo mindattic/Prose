@@ -1,364 +1,377 @@
-{
-  "id": "019d6143a5f57b6da5608c001d6a781c",
-  "type": "character",
-  "name": "Epifanio Erikstad",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Electronic and physical observation expert — surveillance specialist",
-  "age": 34,
-  "status": "active",
-  "location": "The Circuit — neon-lit entertainment and vice district, near Damen and Armitage",
-  "description": "Epifanio Erikstad is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 34, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Epifanio Erikstad plans to keep it that way. She works as a surveillance specialist out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Epifanio Erikstad describe her as a precision instrument — point her at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.41,
-      "ideal": 0.66,
-      "id": 0.26,
-      "shadow": 0.96,
-      "mask": 0.29,
-      "ghost": 0.88
-    },
-    "core_fears": [
-      "Being captured alive — death is preferable to corporate interrogation",
-      "That the work they do makes the city worse, not better",
-      "Their past catching up — debts, enemies, broken promises"
-    ],
-    "core_desires": [
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Power — enough leverage that nobody ever threatens them again",
-      "To matter to someone for who they are, not what they can do"
-    ],
-    "coping_mechanisms": [
-      "Maintains weapons obsessively — cleaning guns is meditation",
-      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
-      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
-    ],
-    "blind_spots": [
-      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
-      "Assumes everyone has an angle because they always have an angle",
-      "Cannot see that their independence is actually isolation wearing a better outfit"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
-    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
-    "verbal_tics": [
-      "Calls everyone 'friend' — the warmth varies from genuine to threatening",
-      "Refers to killing as 'solving' — clinical detachment as coping mechanism"
-    ],
-    "example_lines": [
-      "\"I've been watching you for three days. You should close your curtains.\"",
-      "\"Information is the only commodity that appreciates with age.\"",
-      "\"Everyone thinks they're careful. Nobody is careful enough.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A corporate black site Dragan Petersen-Bah once infiltrated is being reopened, and the people inside know her face",
-    "Dragan Petersen-Bah intercepts intelligence about a threat to their district and must decide between profit and protection",
-    "Dragan Petersen-Bah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad"
-  ],
-  "narrative_function": "Dragan Petersen-Bah functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters. Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
-  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Independent — Dockside connections",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 9
-      },
-      "agility": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 5
-      },
-      "reflexes": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 9
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 5
-      },
-      "perception": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 10
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 5
-      },
-      "technical": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 9
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 5
-      },
-      "intimidation": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 7
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 7
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 5
-      }
-    },
-    "personality": {
-      "aggression": 0.5,
-      "caution": 0.2,
-      "loyalty": 0.14,
-      "greed": 0.46,
-      "empathy": 0.3
-    },
-    "drives": [
-      "power",
-      "survival",
-      "money"
-    ],
-    "thresholds": {
-      "pain": 5,
-      "stress": 6,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "mechanical aptitude — can repair or modify almost anything",
-      "technical expertise with augmentation systems"
-    ],
-    "weaknesses": [
-      "old injury that flares under specific conditions",
-      "substance dependency — functional but fragile"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "surveillance specialist",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never discusses active contracts with anyone not directly involved",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Always has an exit route planned before agreeing to any meeting",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
-    ],
-    "habits": [
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
-      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
-      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
-      "Checks exits within 10 seconds of entering any room"
-    ],
-    "breaking_points": [
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
-      "Discovering their employer deliberately sent them into a death trap"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Cyberears with directional microphones and sound dampening",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
-      "replaces": ""
-    },
-    {
-      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Networker": 0.7,
-    "Manipulator": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Circuit",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Circuit",
-    "The Nearfield",
-    "Circuit",
-    "The Pure Hand",
-    "Slagworks Industrial"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Ubiquitous Diaspora blend: Southeast Asian foundation (33.6%) provides facial structure and midface width; Sub-Saharan African ancestry (13.1%) contributes jaw robustness and skin depth; Hispanic/Latin American heritage (22.0%) adds warmth and definition; East Asian ancestry (16.6%) brings angular cheekbones and subtle eye shape variation; Eastern European lineage (14.7%) contributes facial angularity and bone prominence. The result is phenotypically complex—features that resist categorization, a living mosaic of global genetic admixture.",
-    "height_cm": 168,
-    "weight_kg": 78,
-    "build": "Stocky and solid with dense musculature — shoulders broad, core heavy, limbs packed with functional strength rather than aesthetic definition. Hands are large and calloused, knuckles scarred from impact work. No wasted geometry.",
-    "hair_color": "Dark brown with early silver threading at temples and crown",
-    "hair_style": "Pulled back tight into a utilitarian braid, often pinned at the nape. Minimal maintenance required — practical for fieldwork and surveillance.",
-    "hair_length": "Medium",
-    "eye_color": "Deep brown with warm undertones",
-    "skin_tone": "Medium-warm brown with golden and reddish undertones — Southeast Asian foundation balanced with Sub-Saharan African depth, Latin American warmth, and subtle olive notes from Eastern European ancestry. Tone shifts across lighting conditions, neither purely cool nor warm but complex and adaptive.",
-    "complexion": "Face is weathered and angular with prominent cheekbones shaped by Eastern European and East Asian ancestry; squared jaw reflecting Sub-Saharan African and East Asian definition. Skin texture weathered from nocturnal living and exposure work. Faint premature creasing around eyes from years of concentration and scope work. Midface width and structure reflect strong Southeast Asian genetic influence. Subtle epicanthic fold variation in eye shape from East Asian heritage. Overall facial architecture reads as deliberately unplaceable—a genetic map of global mobility.",
-    "distinguishing_marks": [
-      "Jagged scar tissue forming a rough semicircle at the base of skull, partially obscured by hair growth — cortical bomb extraction site, approximately 8cm across",
-      "Linear scar running along the lateral edge of left forearm, thin and pale, approximately 12cm — knife work, old",
-      "Dispersed impact scars across knuckles and dorsal hands — consistent with unarmed combat training",
-      "Small burn scar on right collarbone, round and deep — approximately 1.5cm diameter"
-    ],
-    "visible_augmentations": "Cyberears are the dominant visible modification — sleek chrome with matte-black acoustic baffles, replacements for organic ears. They sit slightly proud of the skull, with visible connector ports at the temporal junction. Minimal surgical scarring around the implant interface suggests professional installation and integration.",
-    "posture_movement": "Moves with deliberate economy — no wasted motion, weight always centered over the balls of her feet. Stands in slight forward lean, shoulders rounded inward as if perpetually listening or preparing for threat assessment. Head rotates to track sounds independently of body movement. Hands rest in neutral position, ready. Rarely relaxes the baseline tension in her frame.",
-    "clothing_style": "Tier 3-4 functional wardrobe optimized for surveillance and fieldwork — matte-black synthleather jacket with multiple interior pockets for equipment, reinforced cuffs. Cargo pants or tactical trousers in dark charcoal, fitted enough for mobility. Steel-toed boots, broken in and scarred. Wears no jewelry except a cheap analog watch and a small RFID key fob on a carabiner. Clothing shows wear and patching, but is meticulously maintained."
-  },
-  "image_prompt": "Epifanio Erikstad, 168cm tall, stocky muscular build, medium-warm brown skin with golden undertones reflecting Southeast Asian, Sub-Saharan African, Latin American, and Eastern European ancestry. Angular weathered face with prominent cheekbones, squared jaw, deep warm brown eyes. Dark brown hair with silver threading pulled into tight braid. Sleek chrome cyberears with black acoustic baffles and visible temporal ports. Multiple scars visible: semicircular scar at skull base, linear forearm scar, knuckle impact scars, collarbone burn scar. Wearing matte-black synthleather jacket with reinforced cuffs, dark charcoal tactical trousers, steel-toed scarred boots. Slight forward lean, hands in neutral ready position, perpetual listening posture. GLMZ 2200s aesthetic, nocturnal surveillance operative, moody cool lighting with subtle amber highlights catching skin and chrome, gritty industrial setting, photorealistic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 33.6,
-    "Hispanic/Latin American": 22,
-    "East Asian": 16.6,
-    "Eastern European": 14.7,
-    "Sub-Saharan African": 13.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 23.2
-      },
-      "Filipino": {
-        "Cebuano": 5.6
-      },
-      "Thai": {
-        "Thai": 4.8
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Haitian": 1.4,
-        "Puerto Rican": 6.5
-      },
-      "South American": {
-        "Brazilian": 11.6
-      },
-      "Mexican": {
-        "Mexican": 2.5
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Fujianese": 16.6
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 6.8
-      },
-      "Slavic West": {
-        "Slovak": 1.1,
-        "Polish": 0.1
-      },
-      "Slavic East": {
-        "Ukrainian": 6.7
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zimbabwean": 7.4,
-        "Botswanan": 5.7
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5f57b6da5608c001d6a781c",
+    "type":  "character",
+    "name":  "Epifanio Erikstad",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Electronic and physical observation expert â€” surveillance specialist",
+    "age":  34,
+    "status":  "active",
+    "location":  "The Circuit â€” neon-lit entertainment and vice district, near Damen and Armitage",
+    "description":  "Epifanio Erikstad is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 34, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible â€” cyberears with directional microphones and sound dampening â€” can hear whispers a â€” and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name â€” that person is officially dead, and Epifanio Erikstad plans to keep it that way. She works as a surveillance specialist out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Epifanio Erikstad describe her as a precision instrument â€” point her at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being captured alive â€” death is preferable to corporate interrogation",
+                                          "That the work they do makes the city worse, not better",
+                                          "Their past catching up â€” debts, enemies, broken promises"
+                                      ],
+                       "core_desires":  [
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "Power â€” enough leverage that nobody ever threatens them again",
+                                            "To matter to someone for who they are, not what they can do"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Maintains weapons obsessively â€” cleaning guns is meditation",
+                                                 "Denial â€” nothing is wrong, everything is fine, they are fine, shut up",
+                                                 "Control â€” micromanages everything within reach to compensate for the chaos everywhere else"
+                                             ],
+                       "blind_spots":  [
+                                           "Refuses to update their mental model of people â€” first impressions calcify into permanent judgments",
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Cannot see that their independence is actually isolation wearing a better outfit"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Old-fashioned formal diction â€” sounds like they learned to speak from pre-collapse recordings.",
+                            "cadence":  "Flowing and unhurried â€” talks like someone who has never been interrupted and doesn\u0027t expect to be.",
+                            "verbal_tics":  [
+                                                "Calls everyone \u0027friend\u0027 â€” the warmth varies from genuine to threatening",
+                                                "Refers to killing as \u0027solving\u0027 â€” clinical detachment as coping mechanism"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I\u0027ve been watching you for three days. You should close your curtains.\"",
+                                                  "\"Information is the only commodity that appreciates with age.\"",
+                                                  "\"Everyone thinks they\u0027re careful. Nobody is careful enough.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A corporate black site Dragan Petersen-Bah once infiltrated is being reopened, and the people inside know her face",
+                        "Dragan Petersen-Bah intercepts intelligence about a threat to their district and must decide between profit and protection",
+                        "Dragan Petersen-Bah\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad"
+                    ],
+    "narrative_function":  "Dragan Petersen-Bah functions as a connector â€” her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Cyberears with directional microphones and sound dampening â€” can hear whispers at 50 meters. Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+    "daily_life":  "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+    "affiliation":  "Independent â€” Dockside connections",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  4,
+                                                    "augmented":  2,
+                                                    "effective":  9
+                                                },
+                                   "agility":  {
+                                                   "base":  8,
+                                                   "augmented":  2,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  3,
+                                                     "augmented":  0,
+                                                     "effective":  5
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  6,
+                                                    "augmented":  3,
+                                                    "effective":  9
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  7,
+                                                      "augmented":  3,
+                                                      "effective":  5
+                                                  },
+                                 "perception":  {
+                                                    "base":  6,
+                                                    "augmented":  1,
+                                                    "effective":  10
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  5
+                                               },
+                                 "technical":  {
+                                                   "base":  8,
+                                                   "augmented":  0,
+                                                   "effective":  9
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  2,
+                                                  "effective":  5
+                                              },
+                                 "intimidation":  {
+                                                      "base":  6,
+                                                      "augmented":  3,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  1,
+                                                   "effective":  7
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  1,
+                                                 "effective":  5
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.5,
+                                      "caution":  0.2,
+                                      "loyalty":  0.14,
+                                      "greed":  0.46,
+                                      "empathy":  0.3
+                                  },
+                  "drives":  [
+                                 "power",
+                                 "survival",
+                                 "money"
+                             ],
+                  "thresholds":  {
+                                     "pain":  5,
+                                     "stress":  6,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "mechanical aptitude â€” can repair or modify almost anything",
+                                    "technical expertise with augmentation systems"
+                                ],
+                  "weaknesses":  [
+                                     "old injury that flares under specific conditions",
+                                     "substance dependency â€” functional but fragile"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "surveillance specialist",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+                                          ],
+                       "habits":  [
+                                      "Talks to their gear â€” names weapons, thanks tools, treats equipment as companions",
+                                      "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
+                                      "Taps a specific rhythm on hard surfaces when thinking â€” Morse code for a word they won\u0027t say",
+                                      "Checks exits within 10 seconds of entering any room"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Betrayal by the one person they actually trust â€” the single point of failure in their emotional architecture",
+                                               "Discovering their employer deliberately sent them into a death trap"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Cyberears with directional microphones and sound dampening",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Cyberears with directional microphones and sound dampening â€” can hear whispers at 50 meters",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Networker":  0.7,
+                       "Manipulator":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Circuit",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Mockingbird\u0027 Voice-Activated Trap Gun"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Circuit",
+                             "The Nearfield",
+                             "Circuit",
+                             "The Pure Hand",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Ubiquitous Diaspora blend: Southeast Asian foundation (33.6%) provides facial structure and midface width; Sub-Saharan African ancestry (13.1%) contributes jaw robustness and skin depth; Hispanic/Latin American heritage (22.0%) adds warmth and definition; East Asian ancestry (16.6%) brings angular cheekbones and subtle eye shape variation; Eastern European lineage (14.7%) contributes facial angularity and bone prominence. The result is phenotypically complexâ€”features that resist categorization, a living mosaic of global genetic admixture.",
+                                 "height_cm":  168,
+                                 "weight_kg":  78,
+                                 "build":  "Stocky and solid with dense musculature â€” shoulders broad, core heavy, limbs packed with functional strength rather than aesthetic definition. Hands are large and calloused, knuckles scarred from impact work. No wasted geometry.",
+                                 "hair_color":  "Dark brown with early silver threading at temples and crown",
+                                 "hair_style":  "Pulled back tight into a utilitarian braid, often pinned at the nape. Minimal maintenance required â€” practical for fieldwork and surveillance.",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Deep brown with warm undertones",
+                                 "skin_tone":  "Medium-warm brown with golden and reddish undertones â€” Southeast Asian foundation balanced with Sub-Saharan African depth, Latin American warmth, and subtle olive notes from Eastern European ancestry. Tone shifts across lighting conditions, neither purely cool nor warm but complex and adaptive.",
+                                 "complexion":  "Face is weathered and angular with prominent cheekbones shaped by Eastern European and East Asian ancestry; squared jaw reflecting Sub-Saharan African and East Asian definition. Skin texture weathered from nocturnal living and exposure work. Faint premature creasing around eyes from years of concentration and scope work. Midface width and structure reflect strong Southeast Asian genetic influence. Subtle epicanthic fold variation in eye shape from East Asian heritage. Overall facial architecture reads as deliberately unplaceableâ€”a genetic map of global mobility.",
+                                 "distinguishing_marks":  [
+                                                              "Jagged scar tissue forming a rough semicircle at the base of skull, partially obscured by hair growth â€” cortical bomb extraction site, approximately 8cm across",
+                                                              "Linear scar running along the lateral edge of left forearm, thin and pale, approximately 12cm â€” knife work, old",
+                                                              "Dispersed impact scars across knuckles and dorsal hands â€” consistent with unarmed combat training",
+                                                              "Small burn scar on right collarbone, round and deep â€” approximately 1.5cm diameter"
+                                                          ],
+                                 "visible_augmentations":  "Cyberears are the dominant visible modification â€” sleek chrome with matte-black acoustic baffles, replacements for organic ears. They sit slightly proud of the skull, with visible connector ports at the temporal junction. Minimal surgical scarring around the implant interface suggests professional installation and integration.",
+                                 "posture_movement":  "Moves with deliberate economy â€” no wasted motion, weight always centered over the balls of her feet. Stands in slight forward lean, shoulders rounded inward as if perpetually listening or preparing for threat assessment. Head rotates to track sounds independently of body movement. Hands rest in neutral position, ready. Rarely relaxes the baseline tension in her frame.",
+                                 "clothing_style":  "Tier 3-4 functional wardrobe optimized for surveillance and fieldwork â€” matte-black synthleather jacket with multiple interior pockets for equipment, reinforced cuffs. Cargo pants or tactical trousers in dark charcoal, fitted enough for mobility. Steel-toed boots, broken in and scarred. Wears no jewelry except a cheap analog watch and a small RFID key fob on a carabiner. Clothing shows wear and patching, but is meticulously maintained."
+                             },
+    "image_prompt":  "Epifanio Erikstad, 168cm tall, stocky muscular build, medium-warm brown skin with golden undertones reflecting Southeast Asian, Sub-Saharan African, Latin American, and Eastern European ancestry. Angular weathered face with prominent cheekbones, squared jaw, deep warm brown eyes. Dark brown hair with silver threading pulled into tight braid. Sleek chrome cyberears with black acoustic baffles and visible temporal ports. Multiple scars visible: semicircular scar at skull base, linear forearm scar, knuckle impact scars, collarbone burn scar. Wearing matte-black synthleather jacket with reinforced cuffs, dark charcoal tactical trousers, steel-toed scarred boots. Slight forward lean, hands in neutral ready position, perpetual listening posture. GLMZ 2200s aesthetic, nocturnal surveillance operative, moody cool lighting with subtle amber highlights catching skin and chrome, gritty industrial setting, photorealistic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  33.6,
+                             "Hispanic/Latin American":  22,
+                             "East Asian":  16.6,
+                             "Eastern European":  14.7,
+                             "Sub-Saharan African":  13.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  23.2
+                                                                  },
+                                                    "Filipino":  {
+                                                                     "Cebuano":  5.6
+                                                                 },
+                                                    "Thai":  {
+                                                                 "Thai":  4.8
+                                                             }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Haitian":  1.4,
+                                                                              "Puerto Rican":  6.5
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Brazilian":  11.6
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  2.5
+                                                                        }
+                                                        },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Fujianese":  16.6
+                                                           }
+                                           },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  6.8
+                                                                         },
+                                                     "Slavic West":  {
+                                                                         "Slovak":  1.1,
+                                                                         "Polish":  0.1
+                                                                     },
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  6.7
+                                                                     }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  7.4,
+                                                                                 "Botswanan":  5.7
+                                                                             }
+                                                    }
+                        },
+    "tier":  "3"
 }

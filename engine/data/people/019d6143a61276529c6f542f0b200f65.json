@@ -1,366 +1,377 @@
-{
-  "id": "019d6143a61276529c6f542f0b200f65",
-  "type": "character",
-  "name": "Anahera Taufa",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Covert entry and social penetration specialist — infiltrator",
-  "age": 39,
-  "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
-  "description": "Anahera Taufa is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 39, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a infiltrator out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAnahera Taufa has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.49,
-      "ideal": 0.86,
-      "id": 0.71,
-      "shadow": 0.42,
-      "mask": 0.76,
-      "ghost": 0.65
-    },
-    "core_fears": [
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Being identified by corporate facial recognition — living off-grid is survival",
-      "Losing control of their own body to a hacker or malfunctioning cyberware"
-    ],
-    "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Control — over their body, their schedule, their future"
-    ],
-    "coping_mechanisms": [
-      "Humor — deflects everything serious with jokes until the joke becomes the personality",
-      "Isolates — retreats into their space when overwhelmed, emerges only for work",
-      "Violence — hits something when they can't process emotions, preferably something that deserves it"
-    ],
-    "blind_spots": [
-      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
-      "Cannot distinguish between caution and cowardice in themselves or others",
-      "Assumes everyone has an angle because they always have an angle"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
-    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
-    "verbal_tics": [
-      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'",
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation"
-    ],
-    "example_lines": [
-      "\"The best disguise is being exactly who they expect to see.\"",
-      "\"I was in the building for six hours before anyone realized I didn't work there.\"",
-      "\"Security is a story people tell themselves. I'm the plot twist.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A dead drop Fatoumata Mwangi-Leblanc maintains is found and cleaned out — whoever did it now has leverage",
-    "Fatoumata Mwangi-Leblanc discovers a job they completed last year was a setup for something much larger and much worse",
-    "A Tier 4 executive offers Fatoumata Mwangi-Leblanc a permanent position — the pay is obscene and the strings are invisible until they tighten"
-  ],
-  "narrative_function": "Fatoumata Mwangi-Leblanc is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
-  "augmentations": "Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers. Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Freelance — works the Gray Zone circuit exclusively",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 8
-      },
-      "agility": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 7
-      },
-      "endurance": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 8
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 4
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 5
-      },
-      "perception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 6
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 8
-      },
-      "technical": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 7
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 10
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 8
-      },
-      "deception": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 9
-      },
-      "empathy": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.53,
-      "caution": 0.24,
-      "loyalty": 0.57,
-      "greed": 0.65,
-      "empathy": 0.35
-    },
-    "drives": [
-      "knowledge",
-      "reputation",
-      "revenge"
-    ],
-    "thresholds": {
-      "pain": 8,
-      "stress": 4,
-      "loyalty_break": 8
-    },
-    "strengths": [
-      "encyclopedic knowledge of GLMZ infrastructure",
-      "expert marksman",
-      "strategic thinking under pressure"
-    ],
-    "weaknesses": [
-      "old injury that flares under specific conditions",
-      "substance dependency — functional but fragile",
-      "inability to delegate — must control everything personally"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "infiltrator",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Presents as emotionless professional but is deeply affected by collateral damage"
-    ],
-    "habits": [
-      "Maintains a dead drop with emergency supplies in three separate districts",
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Never drinks anything they didn't see poured or open themselves",
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
-    ],
-    "breaking_points": [
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
-      "Watching someone they trained or mentored die on a job they recommended"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal armor plating across torso and forearms",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Subdermal armor plating across torso and forearms — military surplus, scratched serial numbers",
-      "replaces": ""
-    },
-    {
-      "name": "Pain editor",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Pain editor — dampens pain signals, allows function through injuries that would incapacitate",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Ghost": 0.9,
-    "Social Chameleon": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Ashfield",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "related_entities": [
-    "Ashfield",
-    "Chicago",
-    "Lazarus LX-2 'Lab Rat'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Slagworks Industrial",
-    "Felix Roundtree"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex Ubiquitous Diaspora blend: predominantly Sub-Saharan African (46.8%) with significant Pacific Islander ancestry (28.2%), complemented by Hispanic/Latin American (11.1%), South Asian (10.7%), and East Asian (3.2%) heritage. This genetic combination produces rich deep brown skin with warm golden undertones, featuring the strong bone structure and facial geometry characteristic of African and Pacific Islander ancestry, with subtle warmth and facial definition from South Asian and Latin American genetics, and slight eye shape influence from East Asian heritage. The blend creates naturally radiant skin that maintains depth and luminosity across a range of light conditions.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Wiry and lean with dense musculature from constant conditioning. Minimal body fat. Moves like coiled spring — economical, precise, ready to redirect energy at any moment.",
-    "hair_color": "Black with ash-gray streaking at temples",
-    "hair_style": "Pulled back tight in a functional braid or wrapped in dark fabric. No loose ends. Pragmatic.",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown, naturally sharp and alert",
-    "skin_tone": "Deep warm brown with golden radiant undertones — characteristic of Sub-Saharan African and Pacific Islander genetic dominance, enriched by South Asian warmth and subtle Latin American depth. Naturally maintains rich tone that deepens with sun exposure. Lighter palms and inner forearms from years of gloved work.",
-    "complexion": "Tight, weathered from stress and exposure. Fine lines around eyes from squinting in low light. Jaw set habitually. Strong bone structure with prominent cheekbones and defined facial geometry reflecting African and Pacific Islander ancestry. Subtle warmth in cheek and temple areas from South Asian heritage. Slight eye shape definition influenced by East Asian genetics. No cosmetic grooming — functional only.",
-    "distinguishing_marks": [
-      "Jagged surgical scarring around both temples where neural interface was installed — uneven, suggesting rushed or rough augmentation work",
-      "Thin scar running along left jawline from angle of ear to chin — old injury, possibly from extraction work gone wrong",
-      "Visible augmentation seams at collarbone and sternum where subdermal armor plating edges meet skin — scratched steel-gray chrome with file marks"
-    ],
-    "visible_augmentations": "Subdermal armor plating visible across forearms and upper chest — military-grade surplus with erased serial numbers, surface scratched and scuffed from contact work. Chrome edges catch light at collarbone and wrists. Temple scarring from pain editor installation is visible when hair is pulled back. No attempt to conceal — the augmentations are part of her professional appearance.",
-    "posture_movement": "Never still. Stands with weight distributed on the balls of her feet, ready to move. Hands positioned where they can access gear quickly. Eyes track exits and sight lines automatically. When seated, her leg bounces or her fingers drum — converting anxiety into small kinetic patterns. Moves through space with minimal wasted motion — every step is purpose-driven.",
-    "clothing_style": "Tier 4-5 utilitarian. Dark synthetic blend cargo pants with reinforced thigh pockets and ankle straps. Fitted black long-sleeve compression shirt under a scarred leather or reinforced polymer jacket in charcoal gray. Steel-toed boots with visible wear. Fingerless tactical gloves. Gear bag slung across body at all times — contains lock-picks, portable deck, spare tools, medical kit. No jewelry. No branding visible. Clothing designed for movement, durability, and quick equipment access — every pocket has purpose."
-  },
-  "image_prompt": "Anahera Taufa, 168cm lean wiry operative with deep warm golden-brown skin blending Sub-Saharan African, Pacific Islander, South Asian and Hispanic heritage. Sharp dark brown eyes, prominent cheekbones, black hair with gray streaks pulled back tight. Jagged temple scars from neural implant visible, thin scar along left jawline. Subdermal chrome armor plating across forearms and upper chest with scratched edges catching neon light. Wearing fitted black compression shirt under charred gray reinforced polymer jacket, dark cargo pants with tactical straps, steel-toed boots, fingerless gloves. Gear bag slung across body. Weight on balls of feet, intense alert posture. GLMZ Great Lakes Metropolitan Zone, gritty underground location with cool blue and amber neon lighting, rain-slicked surfaces, industrial architecture. Mood: focused, dangerous, ready. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 46.8,
-    "Pacific Islander": 28.2,
-    "Hispanic/Latin American": 11.1,
-    "South Asian": 10.7,
-    "East Asian": 3.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "East African": {
-        "Somali": 14.4,
-        "Tanzanian": 9.4
-      },
-      "Southern African": {
-        "South African": 20.2
-      },
-      "Central African": {
-        "Congolese": 2.8
-      }
-    },
-    "Pacific Islander": {
-      "Melanesian": {
-        "Fijian": 25.6,
-        "Papua New Guinean": 2.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 8.9
-      },
-      "South American": {
-        "Peruvian": 1.5,
-        "Brazilian": 0.7
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 10.7
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 1.3
-      },
-      "Chinese": {
-        "Sichuanese": 1.7
-      },
-      "Japanese": {
-        "Japanese": 0.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a61276529c6f542f0b200f65",
+    "type":  "character",
+    "name":  "Anahera Taufa",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Covert entry and social penetration specialist â€” infiltrator",
+    "age":  39,
+    "status":  "active",
+    "location":  "Ashfield â€” former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
+    "description":  "Anahera Taufa is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 39, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible â€” subdermal armor plating across torso and forearms â€” military surplus, scratched â€” and she makes no effort to hide it.\n\nHer entry into running was involuntary â€” a debt to the wrong people, a choice between working it off or losing parts â€” and the debt is still not fully paid. She works as a infiltrator out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAnahera Taufa has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "Being identified by corporate facial recognition â€” living off-grid is survival",
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware"
+                                      ],
+                       "core_desires":  [
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "Control â€” over their body, their schedule, their future"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Humor â€” deflects everything serious with jokes until the joke becomes the personality",
+                                                 "Isolates â€” retreats into their space when overwhelmed, emerges only for work",
+                                                 "Violence â€” hits something when they can\u0027t process emotions, preferably something that deserves it"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care",
+                                           "Cannot distinguish between caution and cowardice in themselves or others",
+                                           "Assumes everyone has an angle because they always have an angle"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, profane, and vivid. Speaks in images â€” everything is a metaphor for violence or weather.",
+                            "cadence":  "Rhythmic, almost musical â€” the sentence structure has a pattern even when the words are brutal.",
+                            "verbal_tics":  [
+                                                "Addresses people by physical traits â€” \u0027hey, tall one\u0027 or \u0027listen, chrome-arm\u0027",
+                                                "Pauses mid-sentence to listen â€” combat habit that bleeds into conversation"
+                                            ],
+                            "example_lines":  [
+                                                  "\"The best disguise is being exactly who they expect to see.\"",
+                                                  "\"I was in the building for six hours before anyone realized I didn\u0027t work there.\"",
+                                                  "\"Security is a story people tell themselves. I\u0027m the plot twist.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A dead drop Fatoumata Mwangi-Leblanc maintains is found and cleaned out â€” whoever did it now has leverage",
+                        "Fatoumata Mwangi-Leblanc discovers a job they completed last year was a setup for something much larger and much worse",
+                        "A Tier 4 executive offers Fatoumata Mwangi-Leblanc a permanent position â€” the pay is obscene and the strings are invisible until they tighten"
+                    ],
+    "narrative_function":  "Fatoumata Mwangi-Leblanc is a pressure point â€” the kind of character whose choices ripple outward. When she makes a decision, other people\u0027s lives change. That weight is the engine of her stories.",
+    "augmentations":  "Subdermal armor plating across torso and forearms â€” military surplus, scratched serial numbers. Pain editor â€” dampens pain signals, allows function through injuries that would incapacitate",
+    "daily_life":  "Keeps a rigid daily structure â€” wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+    "affiliation":  "Freelance â€” works the Gray Zone circuit exclusively",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  5,
+                                                    "augmented":  2,
+                                                    "effective":  8
+                                                },
+                                   "agility":  {
+                                                   "base":  5,
+                                                   "augmented":  3,
+                                                   "effective":  7
+                                               },
+                                   "endurance":  {
+                                                     "base":  8,
+                                                     "augmented":  2,
+                                                     "effective":  8
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  3,
+                                                    "effective":  4
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  4,
+                                                      "augmented":  1,
+                                                      "effective":  5
+                                                  },
+                                 "perception":  {
+                                                    "base":  5,
+                                                    "augmented":  2,
+                                                    "effective":  6
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  8
+                                               },
+                                 "technical":  {
+                                                   "base":  8,
+                                                   "augmented":  0,
+                                                   "effective":  7
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  4,
+                                                  "augmented":  3,
+                                                  "effective":  10
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  1,
+                                                      "effective":  8
+                                                  },
+                                 "deception":  {
+                                                   "base":  3,
+                                                   "augmented":  0,
+                                                   "effective":  9
+                                               },
+                                 "empathy":  {
+                                                 "base":  4,
+                                                 "augmented":  3,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.53,
+                                      "caution":  0.24,
+                                      "loyalty":  0.57,
+                                      "greed":  0.65,
+                                      "empathy":  0.35
+                                  },
+                  "drives":  [
+                                 "knowledge",
+                                 "reputation",
+                                 "revenge"
+                             ],
+                  "thresholds":  {
+                                     "pain":  8,
+                                     "stress":  4,
+                                     "loyalty_break":  8
+                                 },
+                  "strengths":  [
+                                    "encyclopedic knowledge of GLMZ infrastructure",
+                                    "expert marksman",
+                                    "strategic thinking under pressure"
+                                ],
+                  "weaknesses":  [
+                                     "old injury that flares under specific conditions",
+                                     "substance dependency â€” functional but fragile",
+                                     "inability to delegate â€” must control everything personally"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "infiltrator",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Presents as emotionless professional but is deeply affected by collateral damage"
+                                          ],
+                       "habits":  [
+                                      "Maintains a dead drop with emergency supplies in three separate districts",
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Never drinks anything they didn\u0027t see poured or open themselves",
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle"
+                                  ],
+                       "breaking_points":  [
+                                               "Complete isolation â€” cut off from network, contacts, and purpose simultaneously",
+                                               "Watching someone they trained or mentored die on a job they recommended"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal armor plating across torso and forearms",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal armor plating across torso and forearms â€” military surplus, scratched serial numbers",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Pain editor",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Pain editor â€” dampens pain signals, allows function through injuries that would incapacitate",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Ghost":  0.9,
+                       "Social Chameleon":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Ashfield",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Dual-Mode DMR MDDM-7 \u0027Switchback\u0027",
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Dual-Mode DMR MDDM-7 \u0027Switchback\u0027",
+                                "Hearthstone Firearms Model 9 \u0027Payday\u0027"
+                            ],
+    "related_entities":  [
+                             "Ashfield",
+                             "Chicago",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "Slagworks Industrial",
+                             "Felix Roundtree"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex Ubiquitous Diaspora blend: predominantly Sub-Saharan African (46.8%) with significant Pacific Islander ancestry (28.2%), complemented by Hispanic/Latin American (11.1%), South Asian (10.7%), and East Asian (3.2%) heritage. This genetic combination produces rich deep brown skin with warm golden undertones, featuring the strong bone structure and facial geometry characteristic of African and Pacific Islander ancestry, with subtle warmth and facial definition from South Asian and Latin American genetics, and slight eye shape influence from East Asian heritage. The blend creates naturally radiant skin that maintains depth and luminosity across a range of light conditions.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Wiry and lean with dense musculature from constant conditioning. Minimal body fat. Moves like coiled spring â€” economical, precise, ready to redirect energy at any moment.",
+                                 "hair_color":  "Black with ash-gray streaking at temples",
+                                 "hair_style":  "Pulled back tight in a functional braid or wrapped in dark fabric. No loose ends. Pragmatic.",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown, naturally sharp and alert",
+                                 "skin_tone":  "Deep warm brown with golden radiant undertones â€” characteristic of Sub-Saharan African and Pacific Islander genetic dominance, enriched by South Asian warmth and subtle Latin American depth. Naturally maintains rich tone that deepens with sun exposure. Lighter palms and inner forearms from years of gloved work.",
+                                 "complexion":  "Tight, weathered from stress and exposure. Fine lines around eyes from squinting in low light. Jaw set habitually. Strong bone structure with prominent cheekbones and defined facial geometry reflecting African and Pacific Islander ancestry. Subtle warmth in cheek and temple areas from South Asian heritage. Slight eye shape definition influenced by East Asian genetics. No cosmetic grooming â€” functional only.",
+                                 "distinguishing_marks":  [
+                                                              "Jagged surgical scarring around both temples where neural interface was installed â€” uneven, suggesting rushed or rough augmentation work",
+                                                              "Thin scar running along left jawline from angle of ear to chin â€” old injury, possibly from extraction work gone wrong",
+                                                              "Visible augmentation seams at collarbone and sternum where subdermal armor plating edges meet skin â€” scratched steel-gray chrome with file marks"
+                                                          ],
+                                 "visible_augmentations":  "Subdermal armor plating visible across forearms and upper chest â€” military-grade surplus with erased serial numbers, surface scratched and scuffed from contact work. Chrome edges catch light at collarbone and wrists. Temple scarring from pain editor installation is visible when hair is pulled back. No attempt to conceal â€” the augmentations are part of her professional appearance.",
+                                 "posture_movement":  "Never still. Stands with weight distributed on the balls of her feet, ready to move. Hands positioned where they can access gear quickly. Eyes track exits and sight lines automatically. When seated, her leg bounces or her fingers drum â€” converting anxiety into small kinetic patterns. Moves through space with minimal wasted motion â€” every step is purpose-driven.",
+                                 "clothing_style":  "Tier 4-5 utilitarian. Dark synthetic blend cargo pants with reinforced thigh pockets and ankle straps. Fitted black long-sleeve compression shirt under a scarred leather or reinforced polymer jacket in charcoal gray. Steel-toed boots with visible wear. Fingerless tactical gloves. Gear bag slung across body at all times â€” contains lock-picks, portable deck, spare tools, medical kit. No jewelry. No branding visible. Clothing designed for movement, durability, and quick equipment access â€” every pocket has purpose."
+                             },
+    "image_prompt":  "Anahera Taufa, 168cm lean wiry operative with deep warm golden-brown skin blending Sub-Saharan African, Pacific Islander, South Asian and Hispanic heritage. Sharp dark brown eyes, prominent cheekbones, black hair with gray streaks pulled back tight. Jagged temple scars from neural implant visible, thin scar along left jawline. Subdermal chrome armor plating across forearms and upper chest with scratched edges catching neon light. Wearing fitted black compression shirt under charred gray reinforced polymer jacket, dark cargo pants with tactical straps, steel-toed boots, fingerless gloves. Gear bag slung across body. Weight on balls of feet, intense alert posture. GLMZ Great Lakes Metropolitan Zone, gritty underground location with cool blue and amber neon lighting, rain-slicked surfaces, industrial architecture. Mood: focused, dangerous, ready. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  46.8,
+                             "Pacific Islander":  28.2,
+                             "Hispanic/Latin American":  11.1,
+                             "South Asian":  10.7,
+                             "East Asian":  3.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Somali":  14.4,
+                                                                             "Tanzanian":  9.4
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  20.2
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Congolese":  2.8
+                                                                            }
+                                                    },
+                            "Pacific Islander":  {
+                                                     "Melanesian":  {
+                                                                        "Fijian":  25.6,
+                                                                        "Papua New Guinean":  2.6
+                                                                    }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  8.9
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Peruvian":  1.5,
+                                                                                   "Brazilian":  0.7
+                                                                               }
+                                                        },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  10.7
+                                                           }
+                                            },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  1.3
+                                                          },
+                                               "Chinese":  {
+                                                               "Sichuanese":  1.7
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  0.2
+                                                            }
+                                           }
+                        },
+    "tier":  "3"
 }

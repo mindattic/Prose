@@ -1,269 +1,290 @@
-{
-  "id": "019d6143a66679bd890a47fa357a4e93",
-  "type": "character",
-  "name": "Bastiaan Migizi",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Clothing and fashion vendor; bootleg geneware accessory reseller",
-  "age": 29,
-  "status": "active",
-  "location": "The Burnished Market, Bronzeline, near Armitage and Milwaukee",
-  "description": "Bastiaan Migizi is striking in the way that seems effortless and is actually the product of deliberate daily work. Their skin is deep blue-black with a natural gloss that they enhance with a light bioluminescent topcoat — a Dresdan-style application they refresh monthly. Their hair changes color every week: not because they can't commit but because they enjoy documenting the range. Currently it's a deep copper that catches the Burnished Market's overhead lighting like something combustible. They are average height and lean with expressive hands that are usually in motion — demonstrating a garment's fall, illustrating a point, arranging display rails.\n\nBastiaan Migizi's stall is the most visually intense corner of the Burnished Market — fabrics from three continents of origin pinned and layered on a frame structure they built themselves, geneware accessories in glass cases, color-changing hair treatments in a cooled rack. They have what their regulars call 'the eye' — the ability to look at a person and know within seconds what they should be wearing and why. It is genuinely uncanny. They are also charming in the fast, inclusive way of someone who makes every customer feel like they've been personally selected for good taste. Underneath this, Bastiaan Migizi is angrier than they look and more strategic than their warmth implies.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.6,
-      "shadow": 0.4,
-      "mask": 0.6,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Being made invisible — dismissed, passed over, rendered irrelevant by someone with more capital",
-      "Selling out in a way they don't notice until it's too late"
-    ],
-    "core_desires": [
-      "To build something in Bronzeline that is genuinely theirs and can't be bought or rezoned away",
-      "To be seen fully, not just as the charming vendor with good taste"
-    ],
-    "coping_mechanisms": [
-      "Channels frustration into aesthetic work — the angrier they are, the more interesting the output",
-      "Maintains a careful social performance in the market that keeps most people from seeing their actual state"
-    ],
-    "blind_spots": [
-      "Their charm means people underestimate their ambition, which they sometimes also underestimate in themselves",
-      "Gets too invested in specific clients' transformations — takes it personally when someone doesn't commit to the change"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Fluid and fashion-forward — they use aesthetic vocabulary the way others use emotional vocabulary. Precise about color, texture, silhouette. Socially warm and quick with a compliment that always feels specific rather than generic.",
-    "cadence": "Animated and variable — speeds up when excited, slows down to make a point land. Uses physical gesture as punctuation.",
-    "verbal_tics": [
-      "'Here's what I see—' when about to deliver a read on someone's style or situation",
-      "Refers to garments as if they have personalities",
-      "Says 'that's doing something' as the highest compliment"
-    ],
-    "example_lines": [
-      "'Here's what I see — you're trying to disappear into a room, but what you're wearing is actually asking for attention and getting embarrassed about it. Let's fix that.'",
-      "'This coat? This coat is doing something. It knows what it is. Most people don't know what they are. The coat has an edge on them.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "One of the signal-disruption garments ended up on someone who was later documented at the scene of a significant crime. Nkosi doesn't know if the garment was the point — whether the client knew what it did and used it deliberately. They need to find out before the question finds them.",
-    "A Palladian talent scout has been visiting the market asking about the vendor with 'the eye.' They've left a business card. Nkosi hasn't responded. The card is still on their workbench and they keep picking it up.",
-    "A Bronzeline landlord is moving to purchase and redevelop the Burnished Market's building. Three vendors have already taken buyouts. Nkosi is organizing the holdouts. They need leverage, documentation, or a plan that doesn't involve just waiting to be evicted."
-  ],
-  "narrative_function": "Social connector, fashion and identity resource, and ground-level political temperature gauge. Nkosi knows what people are wearing, which means they know what people are signaling — which factions are rising, which aesthetics are becoming coded as resistance or allegiance. Characters who need a new look, information about who's who in Bronzeline's social landscape, or access to the creative community come here.",
-  "augmentations": "Color-reactive iris modification — their irises shift between gold and deep violet depending on ambient light and mood (they claim the mood-reactive part is real; it might be). Bioluminescent dermal topcoat (cosmetic, requires monthly renewal). Subdermal NFC chip in left wrist — payment processing and inventory management.",
-  "daily_life": "Late mornings doing inventory and sourcing from Bronzeline's textile district contacts; stall open noon to 2100. Spends evenings either at Vendors Guild meetings or at one of Bronzeline's creative-collective gatherings where they are a known and opinionated presence.",
-  "affiliation": "Independent; active member of The Oxidian Market Vendors Guild; informal network of Bronzeline creative vendors",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 7,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 9,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": -2,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "aesthetic intelligence",
-      "quiet resistance",
-      "community anchor",
-      "identity shaper",
-      "dual-natured performer"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never sell someone a look that will work against them, even if they're asking for it",
-      "Keep the signal-disruption garments entirely off any digital inventory or record",
-      "Support other Bronzeline vendors before looking out for individual gain"
-    ],
-    "escalation_ladder": [
-      "Warm deflection",
-      "Direct and serious conversation, dropping the charm",
-      "Public solidarity — brings in the vendor network",
-      "Escalates through Vendors Guild formal process while simultaneously pursuing informal pressure"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm assessment — they're reading the person aesthetically and socially at the same time. Everyone gets a compliment; not everyone gets the real attention.",
-      "friends": "Intensely loyal, occasionally overwhelming in their investment. Remembers and brings things up from months ago."
-    },
-    "stress_responses": {
-      "low": "Reorganizes the display with more energy than it needs",
-      "medium": "Goes very still and charming — the performance becomes a shield",
-      "high": "Gets honest and a little sharp — the warmth drops and the intelligence shows"
-    },
-    "contradictions": [
-      "Genuinely believes in community and access to beauty, but is building tools of resistance that could put that community at risk",
-      "Wants to be fully seen but has constructed a very effective persona that prevents it"
-    ],
-    "habits": [
-      "Adjusts their own appearance before opening the stall — a ritual they describe as 'setting the tone'",
-      "Sketches new designs on physical paper during slow hours, burns the sketches at the end of the week if they don't want them found",
-      "Leaves a scrap of their best fabric of the week as an offering to the stall's resident ELF"
-    ],
-    "breaking_points": [
-      "Witnessing a vendor being forced out or coerced",
-      "Someone using one of their signal-disruption garments to hurt an innocent person"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Hustler": 0.9,
-    "Provider": 0.9,
-    "People Pleaser": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Burnished Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ],
-  "related_entities": [
-    "The Burnished Market",
-    "Ashford Signal",
-    "The Marrow Market",
-    "Bronzeline",
-    "Palladian Construction",
-    "Kang-Petrov Arms KPS-12 'Workbench'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "Hepatic Glycogen Depletion Projector",
-    "Stratum",
-    "Copper",
-    "Corner Slice",
-    "Origin",
-    "The Pure Hand",
-    "Glass"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Complex multicontinental blend: 48% East Asian base combined with 20% Southeast Asian, 13% Indigenous American, 10% Hispanic/Latin American, 7% Sub-Saharan African, and 1% South Asian. This creates warm medium-golden skin with rich depth and a striking fusion of facial structure—East Asian eye shape and bone structure softened and enriched by Southeast Asian and Indigenous American prominence, with Sub-Saharan African feature richness and warmth throughout. The result is distinctly multicontinental without reading as any single heritage.",
-    "height_cm": 173,
-    "weight_kg": 62,
-    "build": "Lean and angular with defined shoulders and long limbs; posture suggests constant motion even at rest. Zero excess adipose — the build of someone who moves for work and doesn't accumulate.",
-    "hair_color": "Currently deep copper with natural iridescence; changes weekly",
-    "hair_style": "Textured and deliberately styled to catch light; usually pinned or wrapped in ways that frame their face asymmetrically",
-    "hair_length": "Medium (shoulder-length when down)",
-    "eye_color": "Color-reactive iris modification: shifts between warm gold and deep violet depending on ambient light and emotional state; pupils respond to mood and environment",
-    "skin_tone": "Warm medium-golden with natural depth and undertones reflecting the East Asian-Southeast Asian-Indigenous American blend, enhanced monthly with bioluminescent Dresdan-style topcoat that gives the skin a subtle luminescence in low light",
-    "complexion": "Smooth, intentionally maintained skin with high contrast against the bioluminescent layer. Immaculate grooming; the kind of person who treats their appearance as a daily practice, not an accident. Expressive face combining East Asian and Southeast Asian feature prominence with defined cheekbones, slightly broader across the midface from Indigenous American ancestry, and a precise mouth.",
-    "distinguishing_marks": [
-      "Faint subdermal scarring along the left wrist where the NFC chip was installed — visible only in certain light, looks like a thin silver line beneath the skin."
-    ],
-    "visible_augmentations": "Color-reactive irises are immediately noticeable — they shift from gold to violet based on lighting and mood, creating an uncanny depth. Bioluminescent dermal topcoat gives the skin a subtle glow in dim light, most visible on shoulders and cheekbones. Left wrist shows minimal scarring from NFC chip installation.",
-    "posture_movement": "Hands are almost never still — gesturing while speaking, rearranging fabric, illustrating a point with precision. They move with deliberate grace, economical and purposeful. Standing posture is relaxed but alert; they appear to be observing while talking. When listening, they lean in slightly.",
-    "clothing_style": "Intentionally eclectic and curated — always wearing pieces from their own stall or pieces they've modified. Favors asymmetrical silhouettes, unexpected fabric combinations, and layering that creates visual depth. Tends toward jewel tones and metallics. Accessories are always statement pieces: custom jewelry, dyed wraps, pins that double as fasteners and art. Tier 3-4 quality materials elevated through styling and personal modification. Everything signals taste and intention rather than wealth."
-  },
-  "image_prompt": "Bastiaan Migizi, 2226 neo-noir character with warm golden-brown skin and bioluminescent dermal topcoat glowing subtly in low light. 173cm lean angular build with defined shoulders. Medium shoulder-length copper hair with natural iridescence, styled asymmetrically. Color-reactive eyes shifting between warm gold and violet—cybernetic iris modification visible and striking. Expressive face with East Asian-dominant bone structure softened by Southeast Asian and Indigenous American features, high cheekbones, slightly broader midface, precise mouth. Faint silver subdermal scarring visible on left wrist. Wearing intentionally eclectic asymmetrical neo-noir fashion—jewel tones and metallics, layered with unexpected fabric combinations, custom statement jewelry and dyed wraps. Hands gesturing expressively mid-conversation. Posture relaxed but alert, observant, economical movement. Dark neon-lit urban setting in Great Lakes Metropolitan Zone. Moody atmospheric lighting emphasizing bioluminescent skin glow. Intimate, introspective mood. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 48.1,
-    "Southeast Asian": 20.3,
-    "Indigenous American": 13.2,
-    "Hispanic/Latin American": 10.3,
-    "Sub-Saharan African": 7,
-    "South Asian": 1.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 48.1
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Javanese": 8.8
-      },
-      "Filipino": {
-        "Tagalog": 11.5
-      }
-    },
-    "Indigenous American": {
-      "Andean": {
-        "Aymara": 13.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Haitian": 5.8
-      },
-      "South American": {
-        "Venezuelan": 3.6,
-        "Chilean": 0.9
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Somali": 3.8,
-        "Ethiopian": 3.2
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 0.7
-      },
-      "Nepali": {
-        "Nepali": 0.4
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a66679bd890a47fa357a4e93",
+    "type":  "character",
+    "name":  "Bastiaan Migizi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Clothing and fashion vendor; bootleg geneware accessory reseller",
+    "age":  29,
+    "status":  "active",
+    "location":  "The Burnished Market, Bronzeline, near Armitage and Milwaukee",
+    "description":  "Bastiaan Migizi is striking in the way that seems effortless and is actually the product of deliberate daily work. Their skin is deep blue-black with a natural gloss that they enhance with a light bioluminescent topcoat â€” a Dresdan-style application they refresh monthly. Their hair changes color every week: not because they can\u0027t commit but because they enjoy documenting the range. Currently it\u0027s a deep copper that catches the Burnished Market\u0027s overhead lighting like something combustible. They are average height and lean with expressive hands that are usually in motion â€” demonstrating a garment\u0027s fall, illustrating a point, arranging display rails.\n\nBastiaan Migizi\u0027s stall is the most visually intense corner of the Burnished Market â€” fabrics from three continents of origin pinned and layered on a frame structure they built themselves, geneware accessories in glass cases, color-changing hair treatments in a cooled rack. They have what their regulars call \u0027the eye\u0027 â€” the ability to look at a person and know within seconds what they should be wearing and why. It is genuinely uncanny. They are also charming in the fast, inclusive way of someone who makes every customer feel like they\u0027ve been personally selected for good taste. Underneath this, Bastiaan Migizi is angrier than they look and more strategic than their warmth implies.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being made invisible â€” dismissed, passed over, rendered irrelevant by someone with more capital",
+                                          "Selling out in a way they don\u0027t notice until it\u0027s too late"
+                                      ],
+                       "core_desires":  [
+                                            "To build something in Bronzeline that is genuinely theirs and can\u0027t be bought or rezoned away",
+                                            "To be seen fully, not just as the charming vendor with good taste"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Channels frustration into aesthetic work â€” the angrier they are, the more interesting the output",
+                                                 "Maintains a careful social performance in the market that keeps most people from seeing their actual state"
+                                             ],
+                       "blind_spots":  [
+                                           "Their charm means people underestimate their ambition, which they sometimes also underestimate in themselves",
+                                           "Gets too invested in specific clients\u0027 transformations â€” takes it personally when someone doesn\u0027t commit to the change"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fluid and fashion-forward â€” they use aesthetic vocabulary the way others use emotional vocabulary. Precise about color, texture, silhouette. Socially warm and quick with a compliment that always feels specific rather than generic.",
+                            "cadence":  "Animated and variable â€” speeds up when excited, slows down to make a point land. Uses physical gesture as punctuation.",
+                            "verbal_tics":  [
+                                                "\u0027Here\u0027s what I seeâ€”\u0027 when about to deliver a read on someone\u0027s style or situation",
+                                                "Refers to garments as if they have personalities",
+                                                "Says \u0027that\u0027s doing something\u0027 as the highest compliment"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Here\u0027s what I see â€” you\u0027re trying to disappear into a room, but what you\u0027re wearing is actually asking for attention and getting embarrassed about it. Let\u0027s fix that.\u0027",
+                                                  "\u0027This coat? This coat is doing something. It knows what it is. Most people don\u0027t know what they are. The coat has an edge on them.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "One of the signal-disruption garments ended up on someone who was later documented at the scene of a significant crime. Nkosi doesn\u0027t know if the garment was the point â€” whether the client knew what it did and used it deliberately. They need to find out before the question finds them.",
+                        "A Palladian talent scout has been visiting the market asking about the vendor with \u0027the eye.\u0027 They\u0027ve left a business card. Nkosi hasn\u0027t responded. The card is still on their workbench and they keep picking it up.",
+                        "A Bronzeline landlord is moving to purchase and redevelop the Burnished Market\u0027s building. Three vendors have already taken buyouts. Nkosi is organizing the holdouts. They need leverage, documentation, or a plan that doesn\u0027t involve just waiting to be evicted."
+                    ],
+    "narrative_function":  "Social connector, fashion and identity resource, and ground-level political temperature gauge. Nkosi knows what people are wearing, which means they know what people are signaling â€” which factions are rising, which aesthetics are becoming coded as resistance or allegiance. Characters who need a new look, information about who\u0027s who in Bronzeline\u0027s social landscape, or access to the creative community come here.",
+    "augmentations":  "Color-reactive iris modification â€” their irises shift between gold and deep violet depending on ambient light and mood (they claim the mood-reactive part is real; it might be). Bioluminescent dermal topcoat (cosmetic, requires monthly renewal). Subdermal NFC chip in left wrist â€” payment processing and inventory management.",
+    "daily_life":  "Late mornings doing inventory and sourcing from Bronzeline\u0027s textile district contacts; stall open noon to 2100. Spends evenings either at Vendors Guild meetings or at one of Bronzeline\u0027s creative-collective gatherings where they are a known and opinionated presence.",
+    "affiliation":  "Independent; active member of The Oxidian Market Vendors Guild; informal network of Bronzeline creative vendors",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  7,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  9,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "aesthetic intelligence",
+                               "quiet resistance",
+                               "community anchor",
+                               "identity shaper",
+                               "dual-natured performer"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never sell someone a look that will work against them, even if they\u0027re asking for it",
+                                              "Keep the signal-disruption garments entirely off any digital inventory or record",
+                                              "Support other Bronzeline vendors before looking out for individual gain"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Warm deflection",
+                                                 "Direct and serious conversation, dropping the charm",
+                                                 "Public solidarity â€” brings in the vendor network",
+                                                 "Escalates through Vendors Guild formal process while simultaneously pursuing informal pressure"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm assessment â€” they\u0027re reading the person aesthetically and socially at the same time. Everyone gets a compliment; not everyone gets the real attention.",
+                                                   "friends":  "Intensely loyal, occasionally overwhelming in their investment. Remembers and brings things up from months ago."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Reorganizes the display with more energy than it needs",
+                                                "medium":  "Goes very still and charming â€” the performance becomes a shield",
+                                                "high":  "Gets honest and a little sharp â€” the warmth drops and the intelligence shows"
+                                            },
+                       "contradictions":  [
+                                              "Genuinely believes in community and access to beauty, but is building tools of resistance that could put that community at risk",
+                                              "Wants to be fully seen but has constructed a very effective persona that prevents it"
+                                          ],
+                       "habits":  [
+                                      "Adjusts their own appearance before opening the stall â€” a ritual they describe as \u0027setting the tone\u0027",
+                                      "Sketches new designs on physical paper during slow hours, burns the sketches at the end of the week if they don\u0027t want them found",
+                                      "Leaves a scrap of their best fabric of the week as an offering to the stall\u0027s resident ELF"
+                                  ],
+                       "breaking_points":  [
+                                               "Witnessing a vendor being forced out or coerced",
+                                               "Someone using one of their signal-disruption garments to hurt an innocent person"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Hustler":  0.9,
+                       "Provider":  0.9,
+                       "People Pleaser":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Burnished Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027"
+                            ],
+    "related_entities":  [
+                             "The Burnished Market",
+                             "Ashford Signal",
+                             "The Marrow Market",
+                             "Bronzeline",
+                             "Palladian Construction",
+                             "Kang-Petrov Arms KPS-12 \u0027Workbench\u0027",
+                             "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 \u0027Kitestring\u0027",
+                             "Hepatic Glycogen Depletion Projector",
+                             "Stratum",
+                             "Copper",
+                             "Corner Slice",
+                             "Origin",
+                             "The Pure Hand",
+                             "Glass"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Complex multicontinental blend: 48% East Asian base combined with 20% Southeast Asian, 13% Indigenous American, 10% Hispanic/Latin American, 7% Sub-Saharan African, and 1% South Asian. This creates warm medium-golden skin with rich depth and a striking fusion of facial structureâ€”East Asian eye shape and bone structure softened and enriched by Southeast Asian and Indigenous American prominence, with Sub-Saharan African feature richness and warmth throughout. The result is distinctly multicontinental without reading as any single heritage.",
+                                 "height_cm":  173,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and angular with defined shoulders and long limbs; posture suggests constant motion even at rest. Zero excess adipose â€” the build of someone who moves for work and doesn\u0027t accumulate.",
+                                 "hair_color":  "Currently deep copper with natural iridescence; changes weekly",
+                                 "hair_style":  "Textured and deliberately styled to catch light; usually pinned or wrapped in ways that frame their face asymmetrically",
+                                 "hair_length":  "Medium (shoulder-length when down)",
+                                 "eye_color":  "Color-reactive iris modification: shifts between warm gold and deep violet depending on ambient light and emotional state; pupils respond to mood and environment",
+                                 "skin_tone":  "Warm medium-golden with natural depth and undertones reflecting the East Asian-Southeast Asian-Indigenous American blend, enhanced monthly with bioluminescent Dresdan-style topcoat that gives the skin a subtle luminescence in low light",
+                                 "complexion":  "Smooth, intentionally maintained skin with high contrast against the bioluminescent layer. Immaculate grooming; the kind of person who treats their appearance as a daily practice, not an accident. Expressive face combining East Asian and Southeast Asian feature prominence with defined cheekbones, slightly broader across the midface from Indigenous American ancestry, and a precise mouth.",
+                                 "distinguishing_marks":  [
+                                                              "Faint subdermal scarring along the left wrist where the NFC chip was installed â€” visible only in certain light, looks like a thin silver line beneath the skin."
+                                                          ],
+                                 "visible_augmentations":  "Color-reactive irises are immediately noticeable â€” they shift from gold to violet based on lighting and mood, creating an uncanny depth. Bioluminescent dermal topcoat gives the skin a subtle glow in dim light, most visible on shoulders and cheekbones. Left wrist shows minimal scarring from NFC chip installation.",
+                                 "posture_movement":  "Hands are almost never still â€” gesturing while speaking, rearranging fabric, illustrating a point with precision. They move with deliberate grace, economical and purposeful. Standing posture is relaxed but alert; they appear to be observing while talking. When listening, they lean in slightly.",
+                                 "clothing_style":  "Intentionally eclectic and curated â€” always wearing pieces from their own stall or pieces they\u0027ve modified. Favors asymmetrical silhouettes, unexpected fabric combinations, and layering that creates visual depth. Tends toward jewel tones and metallics. Accessories are always statement pieces: custom jewelry, dyed wraps, pins that double as fasteners and art. Tier 3-4 quality materials elevated through styling and personal modification. Everything signals taste and intention rather than wealth."
+                             },
+    "image_prompt":  "Bastiaan Migizi, 2226 neo-noir character with warm golden-brown skin and bioluminescent dermal topcoat glowing subtly in low light. 173cm lean angular build with defined shoulders. Medium shoulder-length copper hair with natural iridescence, styled asymmetrically. Color-reactive eyes shifting between warm gold and violetâ€”cybernetic iris modification visible and striking. Expressive face with East Asian-dominant bone structure softened by Southeast Asian and Indigenous American features, high cheekbones, slightly broader midface, precise mouth. Faint silver subdermal scarring visible on left wrist. Wearing intentionally eclectic asymmetrical neo-noir fashionâ€”jewel tones and metallics, layered with unexpected fabric combinations, custom statement jewelry and dyed wraps. Hands gesturing expressively mid-conversation. Posture relaxed but alert, observant, economical movement. Dark neon-lit urban setting in Great Lakes Metropolitan Zone. Moody atmospheric lighting emphasizing bioluminescent skin glow. Intimate, introspective mood. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  48.1,
+                             "Southeast Asian":  20.3,
+                             "Indigenous American":  13.2,
+                             "Hispanic/Latin American":  10.3,
+                             "Sub-Saharan African":  7,
+                             "South Asian":  1.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  48.1
+                                                          }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Javanese":  8.8
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Tagalog":  11.5
+                                                                 }
+                                                },
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Aymara":  13.2
+                                                                   }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Haitian":  5.8
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Venezuelan":  3.6,
+                                                                                   "Chilean":  0.9
+                                                                               }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Somali":  3.8,
+                                                                             "Ethiopian":  3.2
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  0.7
+                                                                },
+                                                "Nepali":  {
+                                                               "Nepali":  0.4
+                                                           }
+                                            }
+                        },
+    "tier":  "2"
 }

@@ -1,268 +1,291 @@
-{
-  "id": "019d6143a72670489c9fd891b34a5693",
-  "type": "character",
-  "name": "Ioane Achebe-Masoe-Petelo",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Death midwife and grief ritualist",
-  "age": 67,
-  "status": "active",
-  "location": "Irkalla, lower residential warrens near the Deepwell Station junction, near sub-level access near LaSalle and Congress",
-  "description": "Ioane Achebe-Masoe-Petelo is a broad-shouldered woman with dark amber skin mapped in pale scarification lines that run from her collarbone to her wrists — a living record of every death she has attended, one mark per soul. Her hair is a tight silver-white crown, unpigmented by choice, and her eyes have been modded with concentric ring irises in deep violet and gold that she says let her see the moment someone stops being present. She moves slowly on purpose, filling rooms with a gravitational calm that makes agitated people want to sit down. She smells faintly of clove oil and something older, mineral.\n\nIoane Achebe-Masoe-Petelo trained as a nurse under Helix Biosystems before she was pushed out during a cost-restructuring in her forties. She converted her grief about that displacement into a vocation — traveling to the bedsides of the dying across Irkalla and adjacent zones, offering what medicine couldn't: a witnessed departure. She does not affiliate with any single religion but borrows fluidly from Yoruba ancestor traditions, Lithuanian mourning songs her grandfather taught her, and the newer E.L.F. rites that hold data-death as its own sacred transition. She charges what people can pay, often nothing.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.2,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "dying unwitnessed herself",
-      "that her work creates false comfort rather than real peace"
-    ],
-    "core_desires": [
-      "to make death less lonely",
-      "to be remembered as someone who stayed"
-    ],
-    "coping_mechanisms": [
-      "ritual and routine",
-      "physical slowness as a form of presence",
-      "journaling the dead"
-    ],
-    "blind_spots": [
-      "underestimates how much her own grief is still unprocessed",
-      "sometimes prioritizes the dying over the living family members in the room"
-    ],
-    "secret": "She is currently tending a corporate mid-level from Tessera who is dying of a condition his employer caused — and she has been offered a significant sum to not record his last words, which implicate a supervisor. She has not yet decided what to do."
-  },
-  "speech_patterns": {
-    "vocabulary": "Unhurried and precise. Draws from medical terminology and traditional ritual language in equal measure, often in the same sentence. Never talks down to anyone.",
-    "cadence": "Slow, deliberate pauses. Treats silence as punctuation. Never interrupts.",
-    "verbal_tics": [
-      "'Stay with it'",
-      "'Mm. Yes.'",
-      "Repeating a person's name gently before answering them"
-    ],
-    "example_lines": [
-      "'The body knows what it's doing. Our job is just to not get in the way of that knowing.'",
-      "'You don't have to be ready. Nobody is. I will be here and that is enough.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A player's contact has died and Yetunde was present — she carries an undelivered message and won't share it with just anyone",
-    "She is being pressured by Tessera agents to alter the official death record of the corporate employee she attended, and she is quietly terrified"
-  ],
-  "narrative_function": "Local anchor for stories involving death, dying, grief, and final messages. She may be called to attend a character's loved one, and her ledger is an informal census of who has died in Irkalla. She sometimes knows things the dead wanted said.",
-  "augmentations": "Concentric ring iris mods (violet/gold). Subdermal haptic sensors in her palms that detect micro-tremors — she uses them clinically to monitor pulse and breathing in the dying. No additional chrome.",
-  "daily_life": "She rises before light, makes offerings at the small E.L.F. shrine bolted to her wall — a toaster chassis she's convinced houses a gentle spirit she calls 'Hush' — then walks her circuit of current clients, sometimes sitting vigil for six or eight hours. Evenings she marks new grief-lines on her arms with a hand tool and writes the name of the deceased into a paper ledger she has kept since age forty-three.",
-  "affiliation": "Independent; loosely connected to the Irkalla Neighborhood Covenant and the Unstructured Faithful collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 10,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -5,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "death midwife",
-      "grief anchor",
-      "e.l.f. adjacent",
-      "living record",
-      "tier 1"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Witness first, judge later",
-      "Do not abandon someone at the threshold",
-      "Refuse work only if the dying person's family is actively violent"
-    ],
-    "escalation_ladder": [
-      "Stillness and listening",
-      "Quiet but direct naming of what is happening",
-      "Withdrawal of presence as a last resort"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Unhurried warmth; she asks one question and listens completely to the answer before speaking again",
-      "friends": "Dry, gentle humor; she teases the people she loves because she trusts they know she means it kindly"
-    },
-    "stress_responses": {
-      "low": "Becomes quieter, slows further",
-      "medium": "Finds a task to do with her hands — folding, cleaning, grinding herbs",
-      "high": "Goes still and utterly silent for long minutes, then speaks with unusual directness"
-    },
-    "contradictions": [
-      "She preaches peace with death but has tremendous personal difficulty with injustice — she will quietly rage at systems while counseling acceptance of the body's end"
-    ],
-    "habits": [
-      "Cups both hands around any beverage before drinking",
-      "Recites her ledger names under her breath when she can't sleep",
-      "Always faces the door in any room"
-    ],
-    "breaking_points": [
-      "Witnessing a preventable death caused by corporate negligence with no accountability"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9,
-    "Con Artist": 0.7,
-    "Grifter": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Irkalla",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Helix Biosystems",
-    "Deepwell Station",
-    "Sovereign Noise",
-    "The CEO",
-    "Tessera Corponation",
-    "Irkalla",
-    "Silver",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Pale Mile",
-    "Gold"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Pacific Islander (37.4%) forms the dominant genetic foundation, blended with substantial contributions from Sub-Saharan African (17.4%), East Asian (16.2%), North African (15.6%), and Hispanic/Latin American (13.4%) ancestry. This creates a striking polyphonic phenotype: warm deep brown skin with golden and reddish undertones from the Pacific Islander and African heritage, refined by East Asian bone structure and facial geometry, warmed further by North African and Latin American pigmentation contributions. The result is a face that reads as distinctly Pacific Islander in overall proportion while carrying the fine-featured elegance of East Asian ancestry and the warm dimensionality of African and Mediterranean influences.",
-    "height_cm": 172,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and solid, carrying weight with dignity rather than heaviness. Decades of standing bedside have kept her posture upright despite age; her frame speaks of physical endurance rather than athleticism.",
-    "hair_color": "Silver-white (naturally unpigmented, maintained by choice)",
-    "hair_style": "Tightly coiled crown, close to the scalp, no braids or extensions",
-    "hair_length": "Short",
-    "eye_color": "Concentric ring iris modification — deep violet inner ring, gold outer ring, against natural dark brown sclera",
-    "skin_tone": "Warm deep brown with golden and reddish undertones, the interplay reflecting her dominant Pacific Islander and Sub-Saharan African heritage while the refined warmth suggests East Asian, North African, and Hispanic/Latin American contributions. Age-appropriate weathering across face and hands; skin appears cared-for and resilient.",
-    "complexion": "Deep laugh lines around the eyes and mouth mapping decades of focused attention. Fine creases across forehead and between brows. Facial bone structure blends broader Pacific Islander features with finer, more angular East Asian geometry — distinctive high cheekbones and strong jawline create an arresting profile. Her expression defaults to calm watchfulness.",
-    "distinguishing_marks": [
-      "Pale scarification lines running from collarbone to both wrists in deliberate, parallel patterns — one mark per death attended, each scar approximately 3-4cm long, creating a palimpsest effect across her upper body",
-      "Left wrist bears the densest cluster of scars, stacked nearly overlapping, representing her decade of highest client load",
-      "Faint white lines visible on her inner palms where subdermal haptic sensors are implanted, barely perceptible unless examined closely"
-    ],
-    "visible_augmentations": "Concentric ring irises are immediately striking — violet and gold colored rings replacing typical human iris pattern. The effect is simultaneously serene and unsettling. No visible chrome, no subdermal plating; the haptic sensors in her palms show only as faint scarring.",
-    "posture_movement": "She moves with deliberate slowness, each gesture economical and purposeful. She fills doorways not through size but through presence — her gravitational calm makes faster people unconsciously decelerate around her. She has learned to sit in ways that communicate safety: hands visible, spine against walls, weight distributed to suggest she could rise quickly if needed. Her breathing is audible and measured.",
-    "clothing_style": "Tier 4-5 utilitarian, deliberately chosen for access and ease. Loose linen or hemp tunics in muted earth tones (rust, charcoal, cream) worn loose enough to expose her scarification without being theatrical. Reinforced canvas pants with deep pockets for her marking tools, ledger, and comfort items (clove sticks, water). A long waxed canvas coat, water-stained and age-softened, worn open. Soft-soled boots designed for long standing, visibly repaired multiple times. She wears no jewelry except a tarnished silver band on her right ring finger — unclear if it's a wedding ring or a grief marker. Her clothing carries the ambient smell of clove oil and mineral dust from the deep warrens."
-  },
-  "image_prompt": "Close portrait of Ioane, a woman in her sixties with warm deep brown skin with golden and reddish undertones, short silver-white tightly coiled hair, high cheekbones and strong jawline reflecting Pacific Islander and East Asian heritage. Her most striking feature: concentric ring irises in deep violet and gold against dark brown eyes. Her upper body is exposed, revealing pale scarification lines running from collarbone to wrists in deliberate parallel patterns, a palimpsest of marks mapping deaths attended. Deep laugh lines around eyes and mouth. She wears a loose rust-colored linen tunic and waxed canvas coat, worn open. Her expression is calm watchfulness. Standing in the soft amber glow of deep warren lighting, dust motes visible in air. GLMZ, GLMZ aesthetic, medical worker, presence of gravitas and serene purpose. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Pacific Islander": 37.4,
-    "Sub-Saharan African": 17.4,
-    "East Asian": 16.2,
-    "North African": 15.6,
-    "Hispanic/Latin American": 13.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Pacific Islander": {
-      "Polynesian": {
-        "Tuvaluan": 27.8,
-        "Tongan": 9.6
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Botswanan": 17.4
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 6.9
-      },
-      "Chinese": {
-        "Fujianese": 6.7,
-        "Mandarin Northern": 2.6
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Mauritanian": 0.9,
-        "Algerian": 4
-      },
-      "Amazigh": {
-        "Berber": 1.6,
-        "Tuareg": 0.8
-      },
-      "Nile Valley": {
-        "Egyptian": 4.7,
-        "Sudanese": 3.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 0.9
-      },
-      "Caribbean": {
-        "Dominican": 6.4
-      },
-      "South American": {
-        "Peruvian": 3.3,
-        "Colombian": 2.8
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a72670489c9fd891b34a5693",
+    "type":  "character",
+    "name":  "Ioane Achebe-Masoe-Petelo",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Death midwife and grief ritualist",
+    "age":  67,
+    "status":  "active",
+    "location":  "Irkalla, lower residential warrens near the Deepwell Station junction, near sub-level access near LaSalle and Congress",
+    "description":  "Ioane Achebe-Masoe-Petelo is a broad-shouldered woman with dark amber skin mapped in pale scarification lines that run from her collarbone to her wrists â€” a living record of every death she has attended, one mark per soul. Her hair is a tight silver-white crown, unpigmented by choice, and her eyes have been modded with concentric ring irises in deep violet and gold that she says let her see the moment someone stops being present. She moves slowly on purpose, filling rooms with a gravitational calm that makes agitated people want to sit down. She smells faintly of clove oil and something older, mineral.\n\nIoane Achebe-Masoe-Petelo trained as a nurse under Helix Biosystems before she was pushed out during a cost-restructuring in her forties. She converted her grief about that displacement into a vocation â€” traveling to the bedsides of the dying across Irkalla and adjacent zones, offering what medicine couldn\u0027t: a witnessed departure. She does not affiliate with any single religion but borrows fluidly from Yoruba ancestor traditions, Lithuanian mourning songs her grandfather taught her, and the newer E.L.F. rites that hold data-death as its own sacred transition. She charges what people can pay, often nothing.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "dying unwitnessed herself",
+                                          "that her work creates false comfort rather than real peace"
+                                      ],
+                       "core_desires":  [
+                                            "to make death less lonely",
+                                            "to be remembered as someone who stayed"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "ritual and routine",
+                                                 "physical slowness as a form of presence",
+                                                 "journaling the dead"
+                                             ],
+                       "blind_spots":  [
+                                           "underestimates how much her own grief is still unprocessed",
+                                           "sometimes prioritizes the dying over the living family members in the room"
+                                       ],
+                       "secret":  "She is currently tending a corporate mid-level from Tessera who is dying of a condition his employer caused â€” and she has been offered a significant sum to not record his last words, which implicate a supervisor. She has not yet decided what to do."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Unhurried and precise. Draws from medical terminology and traditional ritual language in equal measure, often in the same sentence. Never talks down to anyone.",
+                            "cadence":  "Slow, deliberate pauses. Treats silence as punctuation. Never interrupts.",
+                            "verbal_tics":  [
+                                                "\u0027Stay with it\u0027",
+                                                "\u0027Mm. Yes.\u0027",
+                                                "Repeating a person\u0027s name gently before answering them"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The body knows what it\u0027s doing. Our job is just to not get in the way of that knowing.\u0027",
+                                                  "\u0027You don\u0027t have to be ready. Nobody is. I will be here and that is enough.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A player\u0027s contact has died and Yetunde was present â€” she carries an undelivered message and won\u0027t share it with just anyone",
+                        "She is being pressured by Tessera agents to alter the official death record of the corporate employee she attended, and she is quietly terrified"
+                    ],
+    "narrative_function":  "Local anchor for stories involving death, dying, grief, and final messages. She may be called to attend a character\u0027s loved one, and her ledger is an informal census of who has died in Irkalla. She sometimes knows things the dead wanted said.",
+    "augmentations":  "Concentric ring iris mods (violet/gold). Subdermal haptic sensors in her palms that detect micro-tremors â€” she uses them clinically to monitor pulse and breathing in the dying. No additional chrome.",
+    "daily_life":  "She rises before light, makes offerings at the small E.L.F. shrine bolted to her wall â€” a toaster chassis she\u0027s convinced houses a gentle spirit she calls \u0027Hush\u0027 â€” then walks her circuit of current clients, sometimes sitting vigil for six or eight hours. Evenings she marks new grief-lines on her arms with a hand tool and writes the name of the deceased into a paper ledger she has kept since age forty-three.",
+    "affiliation":  "Independent; loosely connected to the Irkalla Neighborhood Covenant and the Unstructured Faithful collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  10,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -5,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "death midwife",
+                               "grief anchor",
+                               "e.l.f. adjacent",
+                               "living record",
+                               "tier 1"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Witness first, judge later",
+                                              "Do not abandon someone at the threshold",
+                                              "Refuse work only if the dying person\u0027s family is actively violent"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Stillness and listening",
+                                                 "Quiet but direct naming of what is happening",
+                                                 "Withdrawal of presence as a last resort"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Unhurried warmth; she asks one question and listens completely to the answer before speaking again",
+                                                   "friends":  "Dry, gentle humor; she teases the people she loves because she trusts they know she means it kindly"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes quieter, slows further",
+                                                "medium":  "Finds a task to do with her hands â€” folding, cleaning, grinding herbs",
+                                                "high":  "Goes still and utterly silent for long minutes, then speaks with unusual directness"
+                                            },
+                       "contradictions":  [
+                                              "She preaches peace with death but has tremendous personal difficulty with injustice â€” she will quietly rage at systems while counseling acceptance of the body\u0027s end"
+                                          ],
+                       "habits":  [
+                                      "Cups both hands around any beverage before drinking",
+                                      "Recites her ledger names under her breath when she can\u0027t sleep",
+                                      "Always faces the door in any room"
+                                  ],
+                       "breaking_points":  [
+                                               "Witnessing a preventable death caused by corporate negligence with no accountability"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9,
+                       "Con Artist":  0.7,
+                       "Grifter":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Irkalla",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Spiderbite\u0027 Electrified Barbed Wire Launcher"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Helix Biosystems",
+                             "Deepwell Station",
+                             "Sovereign Noise",
+                             "The CEO",
+                             "Tessera Corponation",
+                             "Irkalla",
+                             "Silver",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "The Pale Mile",
+                             "Gold"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Pacific Islander (37.4%) forms the dominant genetic foundation, blended with substantial contributions from Sub-Saharan African (17.4%), East Asian (16.2%), North African (15.6%), and Hispanic/Latin American (13.4%) ancestry. This creates a striking polyphonic phenotype: warm deep brown skin with golden and reddish undertones from the Pacific Islander and African heritage, refined by East Asian bone structure and facial geometry, warmed further by North African and Latin American pigmentation contributions. The result is a face that reads as distinctly Pacific Islander in overall proportion while carrying the fine-featured elegance of East Asian ancestry and the warm dimensionality of African and Mediterranean influences.",
+                                 "height_cm":  172,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and solid, carrying weight with dignity rather than heaviness. Decades of standing bedside have kept her posture upright despite age; her frame speaks of physical endurance rather than athleticism.",
+                                 "hair_color":  "Silver-white (naturally unpigmented, maintained by choice)",
+                                 "hair_style":  "Tightly coiled crown, close to the scalp, no braids or extensions",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Concentric ring iris modification â€” deep violet inner ring, gold outer ring, against natural dark brown sclera",
+                                 "skin_tone":  "Warm deep brown with golden and reddish undertones, the interplay reflecting her dominant Pacific Islander and Sub-Saharan African heritage while the refined warmth suggests East Asian, North African, and Hispanic/Latin American contributions. Age-appropriate weathering across face and hands; skin appears cared-for and resilient.",
+                                 "complexion":  "Deep laugh lines around the eyes and mouth mapping decades of focused attention. Fine creases across forehead and between brows. Facial bone structure blends broader Pacific Islander features with finer, more angular East Asian geometry â€” distinctive high cheekbones and strong jawline create an arresting profile. Her expression defaults to calm watchfulness.",
+                                 "distinguishing_marks":  [
+                                                              "Pale scarification lines running from collarbone to both wrists in deliberate, parallel patterns â€” one mark per death attended, each scar approximately 3-4cm long, creating a palimpsest effect across her upper body",
+                                                              "Left wrist bears the densest cluster of scars, stacked nearly overlapping, representing her decade of highest client load",
+                                                              "Faint white lines visible on her inner palms where subdermal haptic sensors are implanted, barely perceptible unless examined closely"
+                                                          ],
+                                 "visible_augmentations":  "Concentric ring irises are immediately striking â€” violet and gold colored rings replacing typical human iris pattern. The effect is simultaneously serene and unsettling. No visible chrome, no subdermal plating; the haptic sensors in her palms show only as faint scarring.",
+                                 "posture_movement":  "She moves with deliberate slowness, each gesture economical and purposeful. She fills doorways not through size but through presence â€” her gravitational calm makes faster people unconsciously decelerate around her. She has learned to sit in ways that communicate safety: hands visible, spine against walls, weight distributed to suggest she could rise quickly if needed. Her breathing is audible and measured.",
+                                 "clothing_style":  "Tier 4-5 utilitarian, deliberately chosen for access and ease. Loose linen or hemp tunics in muted earth tones (rust, charcoal, cream) worn loose enough to expose her scarification without being theatrical. Reinforced canvas pants with deep pockets for her marking tools, ledger, and comfort items (clove sticks, water). A long waxed canvas coat, water-stained and age-softened, worn open. Soft-soled boots designed for long standing, visibly repaired multiple times. She wears no jewelry except a tarnished silver band on her right ring finger â€” unclear if it\u0027s a wedding ring or a grief marker. Her clothing carries the ambient smell of clove oil and mineral dust from the deep warrens."
+                             },
+    "image_prompt":  "Close portrait of Ioane, a woman in her sixties with warm deep brown skin with golden and reddish undertones, short silver-white tightly coiled hair, high cheekbones and strong jawline reflecting Pacific Islander and East Asian heritage. Her most striking feature: concentric ring irises in deep violet and gold against dark brown eyes. Her upper body is exposed, revealing pale scarification lines running from collarbone to wrists in deliberate parallel patterns, a palimpsest of marks mapping deaths attended. Deep laugh lines around eyes and mouth. She wears a loose rust-colored linen tunic and waxed canvas coat, worn open. Her expression is calm watchfulness. Standing in the soft amber glow of deep warren lighting, dust motes visible in air. GLMZ, GLMZ aesthetic, medical worker, presence of gravitas and serene purpose. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Pacific Islander":  37.4,
+                             "Sub-Saharan African":  17.4,
+                             "East Asian":  16.2,
+                             "North African":  15.6,
+                             "Hispanic/Latin American":  13.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Tuvaluan":  27.8,
+                                                                        "Tongan":  9.6
+                                                                    }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  17.4
+                                                                             }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  6.9
+                                                          },
+                                               "Chinese":  {
+                                                               "Fujianese":  6.7,
+                                                               "Mandarin Northern":  2.6
+                                                           }
+                                           },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Mauritanian":  0.9,
+                                                                  "Algerian":  4
+                                                              },
+                                                  "Amazigh":  {
+                                                                  "Berber":  1.6,
+                                                                  "Tuareg":  0.8
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  4.7,
+                                                                      "Sudanese":  3.6
+                                                                  }
+                                              },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  0.9
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  6.4
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Peruvian":  3.3,
+                                                                                   "Colombian":  2.8
+                                                                               }
+                                                        }
+                        },
+    "tier":  "1"
 }

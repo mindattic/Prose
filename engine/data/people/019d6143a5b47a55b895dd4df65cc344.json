@@ -1,277 +1,306 @@
-{
-  "id": "019d6143a5b47a55b895dd4df65cc344",
-  "type": "character",
-  "name": "Ivana Banerjee",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Logistics, safe house management, and community network — Last Light",
-  "age": 27,
-  "status": "active",
-  "location": "the Gray Zone — maintains a small apartment above the community center that doubles as Last Light's operational hub, near Western and Division",
-  "description": "Ivana Banerjee is the reason Last Light functions at all. She manages the logistics of a pro-bono protection operation in a community with no resources — safe house rotations, transport arrangements, community contact networks, supply chains for medical kits and food, client scheduling, and the thousand administrative details that separate a functioning crew from three idealists shouting into the void. She does this with a budget that wouldn't cover a week's coffee for a corporate crew, and she does it well.\n\nShe came to the Gray Zone from the Milwaukee Core working class — her parents ran a small printing business that went under when the corporate district's digital infrastructure made physical printing economically impossible. The family relocated to the Gray Zone when Anya was seventeen. She watched her parents lose everything they'd built — not to malice, but to the indifferent machinery of corporate progress that treats small businesses as statistical noise. She finished her education through the Gray Zone community programs, developed organizational skills through necessity, and joined Last Light because Ruth Agada was the first person she'd met who responded to systemic injustice with organized resistance rather than resignation.\n\nAnya is compact, precise, with dark hair pulled back and the permanently alert expression of someone managing too many moving pieces. She carries a tablet everywhere — the device is her operational hub, containing contact networks, resource inventories, safe house statuses, and the scheduling system that keeps Last Light's operations from collapsing. She dresses practically, sleeps insufficiently, and eats whatever's closest. She is burning out. She knows this. She hasn't stopped because stopping would be worse.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.6,
-      "id": 0.35,
-      "shadow": 0.3,
-      "mask": 0.55,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "That she'll make an organizational error that gets a client hurt — a wrong safe house, a missed schedule, a contact who was compromised",
-      "That her burnout will become visible and Ruth will tell her to rest, which would feel like being told she's failed",
-      "That the work is genuinely unsustainable and her organizational brilliance is just delaying the inevitable collapse"
-    ],
-    "core_desires": [
-      "To build a system that works — a community protection infrastructure that doesn't depend on three people working themselves to death",
-      "To be recognized as essential without having to perform essentiality — to have the organizational work valued as much as Ruth's moral authority or Josiah's physical protection",
-      "To sleep. Really, genuinely, to sleep for twelve hours and wake up rested. She can't remember the last time this happened."
-    ],
-    "coping_mechanisms": [
-      "Organizational work as anxiety management — if the system is running, the anxiety has a channel. When the system idles, the anxiety floods.",
-      "Resets the biomonitor because the data is too frightening and showing it to Ruth would create a problem Anya doesn't have the energy to manage",
-      "Treats her own exhaustion as a logistics problem — she schedules rest like she schedules safe house rotations and then fails to execute the schedule"
-    ],
-    "blind_spots": [
-      "She believes she's hiding the burnout when everyone can see it — the dark circles, the weight loss, the shortened fuse",
-      "She treats her own needs as a resource allocation problem and consistently allocates zero",
-      "She doesn't recognize that her burnout is contagious — her exhaustion puts pressure on Ruth and Josiah that amplifies their own"
-    ],
-    "secret": "She has been maintaining a second set of books — a parallel budget that tracks the actual cost of Last Light's operations against what they take in. The numbers are devastating. At current burn rate, Last Light has approximately five months of operational capacity before the safe houses can't be maintained and the medical supplies run out. She has been quietly approaching external funding sources that Ruth would not approve of. No commitments yet. But the conversations have started."
-  },
-  "speech_patterns": {
-    "vocabulary": "Organizational, logistical, efficient. She speaks in systems — schedules, contacts, resources, contingencies. When she's tired, which is always, the efficiency becomes clipped.",
-    "cadence": "Fast, compressed. She packs maximum information into minimum sentences. Not impatient — efficient. The distinction matters but people can't always tell.",
-    "verbal_tics": [
-      "Says 'updating' when she's processing new information — literally updating the mental model in real-time",
-      "Refers to problems as 'gaps' — 'we have a gap in safe house coverage' means 'this is urgent'",
-      "Goes silent when the biomonitor buzzes — a brief internal negotiation with her body that she always loses"
-    ],
-    "example_lines": [
-      "Updating. The east-side safe house is compromised — we need to rotate the Karim family to the backup on Lakeshore. I can have transport in forty minutes.",
-      "We have a gap. Medical supplies are at thirty percent and there's no restock scheduled. I need options by tomorrow.",
-      "I'm fine, Ruth. The system is running. The clients are covered. That's what matters."
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Ruth Agada",
-      "type": "crew lead / moral inspiration / concern",
-      "description": "Ruth is why Anya does this work. Ruth's moral certainty provides the compass; Anya provides the map. She would follow Ruth into any fight. She is also exhausted by Ruth's refusal to accept help from compromised sources, because the purity makes the logistics harder.",
-      "emotional_core": "Devotion complicated by pragmatism — she believes in Ruth's mission but not in Ruth's resource constraints",
-      "story_tension": "Anya's secret funding conversations are the first time she has acted against Ruth's principles. The guilt and the necessity are eating her."
-    },
-    {
-      "name": "Josiah Pine",
-      "type": "crewmate / complementary function",
-      "description": "Josiah protects people physically. Anya protects people logistically. The overlap is seamless when it works and catastrophic when it doesn't. She respects his strength and worries about his anger the way Ruth does, but from a distance.",
-      "emotional_core": "Professional dependency that neither invests in emotionally because there's no energy left for personal connection",
-      "story_tension": "If Josiah noticed Anya's burnout — really noticed, not just observed — the conversation might help. But noticing requires bandwidth neither of them has."
-    },
-    {
-      "name": "Community contacts (network of approximately 40 people)",
-      "type": "operational network / lifeline",
-      "description": "Forty people across the Gray Zone and into Milwaukee Core who provide Last Light with information, safe house access, transport, and occasional supplies. Anya maintains every relationship personally. Each contact is a thread in a web that keeps the operation alive.",
-      "emotional_core": "The distributed trust that makes the impossible possible",
-      "story_tension": "The network is only as strong as Anya's ability to maintain it. If she collapses, the threads drop one by one, and Last Light's operational capacity unravels."
-    }
-  ],
-  "story_hooks": [
-    "Anya's funding conversations lead to an offer that would sustain Last Light but compromise its independence — the pragmatism versus the principle",
-    "A safe house is compromised because Anya was too exhausted to catch the signal — the burnout has consequences",
-    "Anya collapses physically and the crew must operate without her — revealing how much of Last Light depends on one person",
-    "A community contact betrays the network, and Anya must rebuild trust across forty relationships while running on empty"
-  ],
-  "narrative_function": "Anya is the invisible infrastructure — the character whose work makes the visible heroism possible. Her stories explore burnout, the invisibility of organizational labor, and the particular tragedy of someone who is excellent at supporting others and terrible at supporting herself. She is the character most likely to collapse, and her collapse would take Last Light down with her.",
-  "augmentations": "Communication suite with encrypted multi-channel capability — manages simultaneous conversations with community contacts, clients, and crew. Eidetic organizational memory — perfect recall of names, addresses, schedules, and resource inventories. Low-grade biomonitor that she ignores the warnings from. No physical augmentations.",
-  "daily_life": "Wakes at 0500 — before Ruth, though Ruth doesn't know this. Reviews overnight messages, safe house status, and client schedules. Builds the day's operational plan and presents it to Ruth at 0600. Spends the day coordinating — client transport, safe house assignments, resource allocation, community contact maintenance. Handles the administrative side of every protection case. Evenings she updates records, maintains the contact network, and tries to sleep. The biomonitor suggests she's averaging four hours. She resets it weekly so Ruth doesn't see the cumulative data.",
-  "affiliation": "Last Light",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": []
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will always have a backup safe house identified for every active client — redundancy is survival",
-      "Will maintain the contact network even when exhausted — the relationships are the infrastructure and the infrastructure cannot be deferred",
-      "Will not show Ruth the biomonitor data — the concern it would generate is a resource cost the crew can't afford",
-      "Will reset the parallel budget daily and adjust projections — the five-month timeline is a moving target she watches obsessively",
-      "Will always answer a community contact's call regardless of hour — the network runs on availability",
-      "Will eat whatever is closest and fastest because meal planning is a luxury she allocates to clients, not herself"
-    ],
-    "escalation_ladder": [
-      "1. Redirect — reroute the client through the backup plan. Every plan has a backup. Every backup has a contingency.",
-      "2. Network — activate community contacts. Call in favors, arrange transport, open alternative safe houses.",
-      "3. Document — record everything for Ruth's legal cases. The administrative record is the foundation of the legal approach.",
-      "4. Coordinate — manage crew movements, client positioning, and resource deployment simultaneously. This is where the organizational skill becomes operational art.",
-      "5. Appeal — contact external allies. Other crews, sympathetic businesses, community organizations. Last Light's reputation buys goodwill that Anya can spend in emergencies.",
-      "6. Improvise — when every system fails, Anya's organizational memory contains the raw material for new solutions. She has rebuilt operational plans from scratch three times. Each time was worse than the last."
-    ],
-    "interpersonal_modes": {
-      "ruth": "Deferential, devoted, increasingly strained. She brings Ruth operational reports and doesn't include her own status. When Ruth asks 'how are you,' Anya answers with a system status. Ruth has stopped asking because the deflection is consistent.",
-      "josiah": "Functional, supportive, slightly envious. Josiah's role is visible — everyone sees the man standing between the client and the threat. Anya's role is invisible. The envy is small, specific, and something she considers petty.",
-      "clients": "Efficient, warm, organized. She manages their fear through structure — here's where you'll go, here's who'll be there, here's what happens next. The certainty is a gift she gives to others from a supply she doesn't have for herself.",
-      "community_contacts": "Grateful, reliable, always responsive. She treats every contact as essential because they are. The relationships are maintained through consistency and reciprocity — she remembers their needs, their families, their concerns.",
-      "alone": "Empty. When the tablet is off and the contacts are quiet and the clients are safe for the night, Anya sits in the dark and breathes. The biomonitor buzzes. She resets it."
-    },
-    "stress_responses": {
-      "low": "System optimization. She reviews and improves the operational infrastructure — tighter schedules, better resource allocation, more efficient contact rotations. This is productive and sustainable.",
-      "medium": "Sleep deteriorates further. She works through nights, catches twenty-minute naps at the desk, and the biomonitor warnings increase in frequency.",
-      "high": "Organizational obsession. She re-checks systems that are already running, re-contacts people who've already confirmed, and re-plans operations that are already set. The redundancy is anxiety, not efficiency.",
-      "critical": "She stops performing. The warm, efficient interface drops and what remains is a woman who is too tired to manage anyone's perceptions, including her own. Her voice goes flat, her movements slow, and the system degrades in real-time because she is the system. This has happened twice. Both times, Ruth noticed. Both times, Anya recovered within 48 hours and pretended nothing happened."
-    },
-    "contradictions": [
-      "She is the most essential member of Last Light and the one who receives the least recognition — the infrastructure is invisible by design",
-      "She hides her burnout to protect Ruth but the hiding makes the burnout worse — the concealment is self-defeating",
-      "She believes in Ruth's funding principles but has started violating them because the alternative is operational collapse",
-      "She manages the care of excluded clients with extraordinary skill while managing her own care with extraordinary negligence"
-    ],
-    "habits": [
-      "Wakes before everyone else and reviews systems before anyone knows she's awake — the head start is essential",
-      "Carries the tablet everywhere, including to the bathroom — the operational hub is an extension of her nervous system",
-      "Resets the biomonitor weekly — the data reset is a small act of self-deception she performs faithfully",
-      "Maintains the parallel budget daily — the five-month countdown is the number she tracks most closely and shares with nobody",
-      "Falls asleep mid-task at least twice a week — her body overrides her will. She wakes with tablet marks on her face and continues immediately."
-    ],
-    "breaking_points": [
-      "A client being hurt because of an organizational failure she made while exhausted — the burnout producing the outcome she's killing herself to prevent",
-      "Ruth discovering the funding conversations and interpreting them as betrayal — the pragmatism being rejected by the person who makes the pragmatism necessary",
-      "Complete physical collapse — the biomonitor warnings she's been ignoring becoming a medical emergency",
-      "All forty community contacts going dark simultaneously — the network failing and the operational infrastructure disappearing overnight"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-10C 'Bullpup'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KP-10C 'Bullpup'"
-  ],
-  "related_entities": [
-    "The Milwaukee Core",
-    "Dredge Mining Collective",
-    "The Iron Lotus",
-    "Ashford Signal",
-    "Plot 17",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Vantablack Media",
-    "The Gradient Compact",
-    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
-    "Lead"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Eastern European (50.8%), South Asian (26.8%), East Asian (14.0%), Sub-Saharan African (8.4%) — a striking cosmopolitan blend. Features reflect this complex mix: angular facial structure with high, prominent cheekbones characteristic of Eastern European ancestry, balanced with the warmer undertones and defined nose bridge from South Asian ancestry, softened by East Asian bone structure and enriched by Sub-Saharan African heritage in lip fullness and facial warmth.",
-    "height_cm": 162,
-    "weight_kg": 54,
-    "build": "Compact and wiry, muscle definition from constant movement rather than intentional training. Shoulders slightly tensed from chronic stress. No excess body fat.",
-    "hair_color": "Dark brown, naturally",
-    "hair_style": "Pulled back in a functional bun or tight ponytail, secured with whatever's at hand",
-    "hair_length": "Medium — long enough to pull back, short enough to be practical",
-    "eye_color": "Dark brown with warm amber undertones",
-    "skin_tone": "Warm golden-bronze, the result of blended Eastern European, South Asian, and East Asian ancestry enriched by Sub-Saharan African undertones. Sun-responsive with a natural warm golden tone rather than pink or cool undertone.",
-    "complexion": "Angular features with prominent high cheekbones and defined jawline — Eastern European and South Asian heritage evident in facial geometry, with softer contours from East Asian ancestry. Fuller lips reflecting Sub-Saharan African heritage. Skin shows signs of exhaustion — slight darkness under eyes, occasional tension lines around the mouth. Warm golden-bronze complexion with minimal blemishing. Well-maintained but utilitarian — minimal makeup, functional grooming.",
-    "distinguishing_marks": [
-      "Small pale scar on left temple, barely visible, from childhood accident",
-      "Callus patterns on right hand fingers from constant tablet interface use and note-taking",
-      "Faint stress-induced eczema patch on inner left wrist, usually covered by sleeve"
-    ],
-    "visible_augmentations": "None visible. Communication suite and eidetic memory implants are subcutaneous neural arrays — not externally apparent. Wears a discrete ear-bud communicator on her right ear, easily mistaken for standard audio tech.",
-    "posture_movement": "Perpetually alert posture, shoulders slightly forward. Moves with efficiency rather than grace — quick, purposeful steps. Frequently distracted by incoming communications, eyes tracking tablet or mid-distance into AR interface space. Fidgets with stylus or tablet edge when stationary. Rarely fully relaxes.",
-    "clothing_style": "Tier 3-4 working class, heavily practical. Standard black or gray utility pants with multiple pockets, worn comfortable not fashionable. Fitted long-sleeve shirts in muted colors (charcoal, navy, dark green) — layers for temperature control and concealment of biomonitor. Worn synthetic jacket, weathered but well-maintained. Practical boots suitable for moving through the Gray Zone's unstable infrastructure. A single piece of jewelry: thin silver chain necklace, gift from parents before they died, worn under clothing. Minimal styling — function over appearance."
-  },
-  "image_prompt": "Ivana Banerjee, 162cm tall compact wiry frame, warm golden-bronze skin blending Eastern European, South Asian, East Asian, and Sub-Saharan African heritage. Angular high cheekbones, defined jawline, fuller lips, dark brown eyes with warm amber undertones. Dark brown hair pulled back tight in functional ponytail. Fatigue shadows under eyes, slight tension lines. Wearing fitted charcoal long-sleeve shirt under weathered synthetic jacket, black utility pants with multiple pockets, worn practical boots. Discrete ear-bud communicator on right ear. Thin silver chain necklace barely visible under shirt collar. Perpetually alert posture, shoulders slightly forward. Hand near tablet interface, fidgeting with stylus. Small pale scar barely visible on left temple. GLMZ Great Lakes Metropolitan Zone setting, moody neon-lit background with holographic interface glow, cinematic lighting emphasizing her exhaustion and focused intensity, urban dystopian atmosphere --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 50.8,
-    "South Asian": 26.8,
-    "East Asian": 14,
-    "Sub-Saharan African": 8.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic West": {
-        "Slovak": 7.9,
-        "Czech": 1
-      },
-      "Slavic East": {
-        "Belarusian": 15.9
-      },
-      "Magyar-Romanian": {
-        "Romanian": 26
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 26.8
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 8
-      },
-      "Korean": {
-        "Korean": 6
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 4.3
-      },
-      "Southern African": {
-        "Mozambican": 0.3,
-        "Zimbabwean": 0.1
-      },
-      "Central African": {
-        "Cameroonian": 3.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a5b47a55b895dd4df65cc344",
+    "type":  "character",
+    "name":  "Ivana Banerjee",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Logistics, safe house management, and community network â€” Last Light",
+    "age":  27,
+    "status":  "active",
+    "location":  "the Gray Zone â€” maintains a small apartment above the community center that doubles as Last Light\u0027s operational hub, near Western and Division",
+    "description":  "Ivana Banerjee is the reason Last Light functions at all. She manages the logistics of a pro-bono protection operation in a community with no resources â€” safe house rotations, transport arrangements, community contact networks, supply chains for medical kits and food, client scheduling, and the thousand administrative details that separate a functioning crew from three idealists shouting into the void. She does this with a budget that wouldn\u0027t cover a week\u0027s coffee for a corporate crew, and she does it well.\n\nShe came to the Gray Zone from the Milwaukee Core working class â€” her parents ran a small printing business that went under when the corporate district\u0027s digital infrastructure made physical printing economically impossible. The family relocated to the Gray Zone when Anya was seventeen. She watched her parents lose everything they\u0027d built â€” not to malice, but to the indifferent machinery of corporate progress that treats small businesses as statistical noise. She finished her education through the Gray Zone community programs, developed organizational skills through necessity, and joined Last Light because Ruth Agada was the first person she\u0027d met who responded to systemic injustice with organized resistance rather than resignation.\n\nAnya is compact, precise, with dark hair pulled back and the permanently alert expression of someone managing too many moving pieces. She carries a tablet everywhere â€” the device is her operational hub, containing contact networks, resource inventories, safe house statuses, and the scheduling system that keeps Last Light\u0027s operations from collapsing. She dresses practically, sleeps insufficiently, and eats whatever\u0027s closest. She is burning out. She knows this. She hasn\u0027t stopped because stopping would be worse.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That she\u0027ll make an organizational error that gets a client hurt â€” a wrong safe house, a missed schedule, a contact who was compromised",
+                                          "That her burnout will become visible and Ruth will tell her to rest, which would feel like being told she\u0027s failed",
+                                          "That the work is genuinely unsustainable and her organizational brilliance is just delaying the inevitable collapse"
+                                      ],
+                       "core_desires":  [
+                                            "To build a system that works â€” a community protection infrastructure that doesn\u0027t depend on three people working themselves to death",
+                                            "To be recognized as essential without having to perform essentiality â€” to have the organizational work valued as much as Ruth\u0027s moral authority or Josiah\u0027s physical protection",
+                                            "To sleep. Really, genuinely, to sleep for twelve hours and wake up rested. She can\u0027t remember the last time this happened."
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Organizational work as anxiety management â€” if the system is running, the anxiety has a channel. When the system idles, the anxiety floods.",
+                                                 "Resets the biomonitor because the data is too frightening and showing it to Ruth would create a problem Anya doesn\u0027t have the energy to manage",
+                                                 "Treats her own exhaustion as a logistics problem â€” she schedules rest like she schedules safe house rotations and then fails to execute the schedule"
+                                             ],
+                       "blind_spots":  [
+                                           "She believes she\u0027s hiding the burnout when everyone can see it â€” the dark circles, the weight loss, the shortened fuse",
+                                           "She treats her own needs as a resource allocation problem and consistently allocates zero",
+                                           "She doesn\u0027t recognize that her burnout is contagious â€” her exhaustion puts pressure on Ruth and Josiah that amplifies their own"
+                                       ],
+                       "secret":  "She has been maintaining a second set of books â€” a parallel budget that tracks the actual cost of Last Light\u0027s operations against what they take in. The numbers are devastating. At current burn rate, Last Light has approximately five months of operational capacity before the safe houses can\u0027t be maintained and the medical supplies run out. She has been quietly approaching external funding sources that Ruth would not approve of. No commitments yet. But the conversations have started."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Organizational, logistical, efficient. She speaks in systems â€” schedules, contacts, resources, contingencies. When she\u0027s tired, which is always, the efficiency becomes clipped.",
+                            "cadence":  "Fast, compressed. She packs maximum information into minimum sentences. Not impatient â€” efficient. The distinction matters but people can\u0027t always tell.",
+                            "verbal_tics":  [
+                                                "Says \u0027updating\u0027 when she\u0027s processing new information â€” literally updating the mental model in real-time",
+                                                "Refers to problems as \u0027gaps\u0027 â€” \u0027we have a gap in safe house coverage\u0027 means \u0027this is urgent\u0027",
+                                                "Goes silent when the biomonitor buzzes â€” a brief internal negotiation with her body that she always loses"
+                                            ],
+                            "example_lines":  [
+                                                  "Updating. The east-side safe house is compromised â€” we need to rotate the Karim family to the backup on Lakeshore. I can have transport in forty minutes.",
+                                                  "We have a gap. Medical supplies are at thirty percent and there\u0027s no restock scheduled. I need options by tomorrow.",
+                                                  "I\u0027m fine, Ruth. The system is running. The clients are covered. That\u0027s what matters."
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Ruth Agada",
+                              "type":  "crew lead / moral inspiration / concern",
+                              "description":  "Ruth is why Anya does this work. Ruth\u0027s moral certainty provides the compass; Anya provides the map. She would follow Ruth into any fight. She is also exhausted by Ruth\u0027s refusal to accept help from compromised sources, because the purity makes the logistics harder.",
+                              "emotional_core":  "Devotion complicated by pragmatism â€” she believes in Ruth\u0027s mission but not in Ruth\u0027s resource constraints",
+                              "story_tension":  "Anya\u0027s secret funding conversations are the first time she has acted against Ruth\u0027s principles. The guilt and the necessity are eating her."
+                          },
+                          {
+                              "name":  "Josiah Pine",
+                              "type":  "crewmate / complementary function",
+                              "description":  "Josiah protects people physically. Anya protects people logistically. The overlap is seamless when it works and catastrophic when it doesn\u0027t. She respects his strength and worries about his anger the way Ruth does, but from a distance.",
+                              "emotional_core":  "Professional dependency that neither invests in emotionally because there\u0027s no energy left for personal connection",
+                              "story_tension":  "If Josiah noticed Anya\u0027s burnout â€” really noticed, not just observed â€” the conversation might help. But noticing requires bandwidth neither of them has."
+                          },
+                          {
+                              "name":  "Community contacts (network of approximately 40 people)",
+                              "type":  "operational network / lifeline",
+                              "description":  "Forty people across the Gray Zone and into Milwaukee Core who provide Last Light with information, safe house access, transport, and occasional supplies. Anya maintains every relationship personally. Each contact is a thread in a web that keeps the operation alive.",
+                              "emotional_core":  "The distributed trust that makes the impossible possible",
+                              "story_tension":  "The network is only as strong as Anya\u0027s ability to maintain it. If she collapses, the threads drop one by one, and Last Light\u0027s operational capacity unravels."
+                          }
+                      ],
+    "story_hooks":  [
+                        "Anya\u0027s funding conversations lead to an offer that would sustain Last Light but compromise its independence â€” the pragmatism versus the principle",
+                        "A safe house is compromised because Anya was too exhausted to catch the signal â€” the burnout has consequences",
+                        "Anya collapses physically and the crew must operate without her â€” revealing how much of Last Light depends on one person",
+                        "A community contact betrays the network, and Anya must rebuild trust across forty relationships while running on empty"
+                    ],
+    "narrative_function":  "Anya is the invisible infrastructure â€” the character whose work makes the visible heroism possible. Her stories explore burnout, the invisibility of organizational labor, and the particular tragedy of someone who is excellent at supporting others and terrible at supporting herself. She is the character most likely to collapse, and her collapse would take Last Light down with her.",
+    "augmentations":  "Communication suite with encrypted multi-channel capability â€” manages simultaneous conversations with community contacts, clients, and crew. Eidetic organizational memory â€” perfect recall of names, addresses, schedules, and resource inventories. Low-grade biomonitor that she ignores the warnings from. No physical augmentations.",
+    "daily_life":  "Wakes at 0500 â€” before Ruth, though Ruth doesn\u0027t know this. Reviews overnight messages, safe house status, and client schedules. Builds the day\u0027s operational plan and presents it to Ruth at 0600. Spends the day coordinating â€” client transport, safe house assignments, resource allocation, community contact maintenance. Handles the administrative side of every protection case. Evenings she updates records, maintains the contact network, and tries to sleep. The biomonitor suggests she\u0027s averaging four hours. She resets it weekly so Ruth doesn\u0027t see the cumulative data.",
+    "affiliation":  "Last Light",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will always have a backup safe house identified for every active client â€” redundancy is survival",
+                                              "Will maintain the contact network even when exhausted â€” the relationships are the infrastructure and the infrastructure cannot be deferred",
+                                              "Will not show Ruth the biomonitor data â€” the concern it would generate is a resource cost the crew can\u0027t afford",
+                                              "Will reset the parallel budget daily and adjust projections â€” the five-month timeline is a moving target she watches obsessively",
+                                              "Will always answer a community contact\u0027s call regardless of hour â€” the network runs on availability",
+                                              "Will eat whatever is closest and fastest because meal planning is a luxury she allocates to clients, not herself"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Redirect â€” reroute the client through the backup plan. Every plan has a backup. Every backup has a contingency.",
+                                                 "2. Network â€” activate community contacts. Call in favors, arrange transport, open alternative safe houses.",
+                                                 "3. Document â€” record everything for Ruth\u0027s legal cases. The administrative record is the foundation of the legal approach.",
+                                                 "4. Coordinate â€” manage crew movements, client positioning, and resource deployment simultaneously. This is where the organizational skill becomes operational art.",
+                                                 "5. Appeal â€” contact external allies. Other crews, sympathetic businesses, community organizations. Last Light\u0027s reputation buys goodwill that Anya can spend in emergencies.",
+                                                 "6. Improvise â€” when every system fails, Anya\u0027s organizational memory contains the raw material for new solutions. She has rebuilt operational plans from scratch three times. Each time was worse than the last."
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "ruth":  "Deferential, devoted, increasingly strained. She brings Ruth operational reports and doesn\u0027t include her own status. When Ruth asks \u0027how are you,\u0027 Anya answers with a system status. Ruth has stopped asking because the deflection is consistent.",
+                                                   "josiah":  "Functional, supportive, slightly envious. Josiah\u0027s role is visible â€” everyone sees the man standing between the client and the threat. Anya\u0027s role is invisible. The envy is small, specific, and something she considers petty.",
+                                                   "clients":  "Efficient, warm, organized. She manages their fear through structure â€” here\u0027s where you\u0027ll go, here\u0027s who\u0027ll be there, here\u0027s what happens next. The certainty is a gift she gives to others from a supply she doesn\u0027t have for herself.",
+                                                   "community_contacts":  "Grateful, reliable, always responsive. She treats every contact as essential because they are. The relationships are maintained through consistency and reciprocity â€” she remembers their needs, their families, their concerns.",
+                                                   "alone":  "Empty. When the tablet is off and the contacts are quiet and the clients are safe for the night, Anya sits in the dark and breathes. The biomonitor buzzes. She resets it."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "System optimization. She reviews and improves the operational infrastructure â€” tighter schedules, better resource allocation, more efficient contact rotations. This is productive and sustainable.",
+                                                "medium":  "Sleep deteriorates further. She works through nights, catches twenty-minute naps at the desk, and the biomonitor warnings increase in frequency.",
+                                                "high":  "Organizational obsession. She re-checks systems that are already running, re-contacts people who\u0027ve already confirmed, and re-plans operations that are already set. The redundancy is anxiety, not efficiency.",
+                                                "critical":  "She stops performing. The warm, efficient interface drops and what remains is a woman who is too tired to manage anyone\u0027s perceptions, including her own. Her voice goes flat, her movements slow, and the system degrades in real-time because she is the system. This has happened twice. Both times, Ruth noticed. Both times, Anya recovered within 48 hours and pretended nothing happened."
+                                            },
+                       "contradictions":  [
+                                              "She is the most essential member of Last Light and the one who receives the least recognition â€” the infrastructure is invisible by design",
+                                              "She hides her burnout to protect Ruth but the hiding makes the burnout worse â€” the concealment is self-defeating",
+                                              "She believes in Ruth\u0027s funding principles but has started violating them because the alternative is operational collapse",
+                                              "She manages the care of excluded clients with extraordinary skill while managing her own care with extraordinary negligence"
+                                          ],
+                       "habits":  [
+                                      "Wakes before everyone else and reviews systems before anyone knows she\u0027s awake â€” the head start is essential",
+                                      "Carries the tablet everywhere, including to the bathroom â€” the operational hub is an extension of her nervous system",
+                                      "Resets the biomonitor weekly â€” the data reset is a small act of self-deception she performs faithfully",
+                                      "Maintains the parallel budget daily â€” the five-month countdown is the number she tracks most closely and shares with nobody",
+                                      "Falls asleep mid-task at least twice a week â€” her body overrides her will. She wakes with tablet marks on her face and continues immediately."
+                                  ],
+                       "breaking_points":  [
+                                               "A client being hurt because of an organizational failure she made while exhausted â€” the burnout producing the outcome she\u0027s killing herself to prevent",
+                                               "Ruth discovering the funding conversations and interpreting them as betrayal â€” the pragmatism being rejected by the person who makes the pragmatism necessary",
+                                               "Complete physical collapse â€” the biomonitor warnings she\u0027s been ignoring becoming a medical emergency",
+                                               "All forty community contacts going dark simultaneously â€” the network failing and the operational infrastructure disappearing overnight"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KP-10C \u0027Bullpup\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KP-10C \u0027Bullpup\u0027"
+                            ],
+    "related_entities":  [
+                             "The Milwaukee Core",
+                             "Dredge Mining Collective",
+                             "The Iron Lotus",
+                             "Ashford Signal",
+                             "Plot 17",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "Vantablack Media",
+                             "The Gradient Compact",
+                             "Endocrine Cascade Volatilization Lance ECVL-5 \u0027Burnout\u0027",
+                             "Lead"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Eastern European (50.8%), South Asian (26.8%), East Asian (14.0%), Sub-Saharan African (8.4%) â€” a striking cosmopolitan blend. Features reflect this complex mix: angular facial structure with high, prominent cheekbones characteristic of Eastern European ancestry, balanced with the warmer undertones and defined nose bridge from South Asian ancestry, softened by East Asian bone structure and enriched by Sub-Saharan African heritage in lip fullness and facial warmth.",
+                                 "height_cm":  162,
+                                 "weight_kg":  54,
+                                 "build":  "Compact and wiry, muscle definition from constant movement rather than intentional training. Shoulders slightly tensed from chronic stress. No excess body fat.",
+                                 "hair_color":  "Dark brown, naturally",
+                                 "hair_style":  "Pulled back in a functional bun or tight ponytail, secured with whatever\u0027s at hand",
+                                 "hair_length":  "Medium â€” long enough to pull back, short enough to be practical",
+                                 "eye_color":  "Dark brown with warm amber undertones",
+                                 "skin_tone":  "Warm golden-bronze, the result of blended Eastern European, South Asian, and East Asian ancestry enriched by Sub-Saharan African undertones. Sun-responsive with a natural warm golden tone rather than pink or cool undertone.",
+                                 "complexion":  "Angular features with prominent high cheekbones and defined jawline â€” Eastern European and South Asian heritage evident in facial geometry, with softer contours from East Asian ancestry. Fuller lips reflecting Sub-Saharan African heritage. Skin shows signs of exhaustion â€” slight darkness under eyes, occasional tension lines around the mouth. Warm golden-bronze complexion with minimal blemishing. Well-maintained but utilitarian â€” minimal makeup, functional grooming.",
+                                 "distinguishing_marks":  [
+                                                              "Small pale scar on left temple, barely visible, from childhood accident",
+                                                              "Callus patterns on right hand fingers from constant tablet interface use and note-taking",
+                                                              "Faint stress-induced eczema patch on inner left wrist, usually covered by sleeve"
+                                                          ],
+                                 "visible_augmentations":  "None visible. Communication suite and eidetic memory implants are subcutaneous neural arrays â€” not externally apparent. Wears a discrete ear-bud communicator on her right ear, easily mistaken for standard audio tech.",
+                                 "posture_movement":  "Perpetually alert posture, shoulders slightly forward. Moves with efficiency rather than grace â€” quick, purposeful steps. Frequently distracted by incoming communications, eyes tracking tablet or mid-distance into AR interface space. Fidgets with stylus or tablet edge when stationary. Rarely fully relaxes.",
+                                 "clothing_style":  "Tier 3-4 working class, heavily practical. Standard black or gray utility pants with multiple pockets, worn comfortable not fashionable. Fitted long-sleeve shirts in muted colors (charcoal, navy, dark green) â€” layers for temperature control and concealment of biomonitor. Worn synthetic jacket, weathered but well-maintained. Practical boots suitable for moving through the Gray Zone\u0027s unstable infrastructure. A single piece of jewelry: thin silver chain necklace, gift from parents before they died, worn under clothing. Minimal styling â€” function over appearance."
+                             },
+    "image_prompt":  "Ivana Banerjee, 162cm tall compact wiry frame, warm golden-bronze skin blending Eastern European, South Asian, East Asian, and Sub-Saharan African heritage. Angular high cheekbones, defined jawline, fuller lips, dark brown eyes with warm amber undertones. Dark brown hair pulled back tight in functional ponytail. Fatigue shadows under eyes, slight tension lines. Wearing fitted charcoal long-sleeve shirt under weathered synthetic jacket, black utility pants with multiple pockets, worn practical boots. Discrete ear-bud communicator on right ear. Thin silver chain necklace barely visible under shirt collar. Perpetually alert posture, shoulders slightly forward. Hand near tablet interface, fidgeting with stylus. Small pale scar barely visible on left temple. GLMZ Great Lakes Metropolitan Zone setting, moody neon-lit background with holographic interface glow, cinematic lighting emphasizing her exhaustion and focused intensity, urban dystopian atmosphere --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  50.8,
+                             "South Asian":  26.8,
+                             "East Asian":  14,
+                             "Sub-Saharan African":  8.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Slovak":  7.9,
+                                                                         "Czech":  1
+                                                                     },
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  15.9
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  26
+                                                                         }
+                                                 },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  26.8
+                                                           }
+                                            },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  8
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  6
+                                                          }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  4.3
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  0.3,
+                                                                                 "Zimbabwean":  0.1
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  3.7
+                                                                            }
+                                                    }
+                        },
+    "tier":  "1"
 }

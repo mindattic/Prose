@@ -1,363 +1,376 @@
-{
-  "id": "019d6143a5b1746d991d4317617c5a63",
-  "type": "character",
-  "name": "Chinedu Mwangi-Park",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Counter-surveillance and mole detection — counterintelligence specialist",
-  "age": 33,
-  "status": "active",
-  "location": "Kessler Row — arms dealers and augmentation clinics, near Western and Division",
-  "description": "Chinedu Mwangi-Park is compact and densely muscled, built low to the ground like something designed to survive impacts. At 33, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nChinedu Mwangi-Park is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.41,
-      "ideal": 0.27,
-      "id": 0.37,
-      "shadow": 0.56,
-      "mask": 0.19,
-      "ghost": 0.76
-    },
-    "core_fears": [
-      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
-      "That they're fundamentally alone and connection is just a vulnerability",
-      "Losing their edge to age — the body slows before the mind accepts it"
-    ],
-    "core_desires": [
-      "To build something that outlasts the next contract cycle",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
-    ],
-    "coping_mechanisms": [
-      "Exercises compulsively — the body must be ready, always",
-      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
-      "Ritual — follows the same pre-job routine every time, superstition as structure"
-    ],
-    "blind_spots": [
-      "Assumes everyone has an angle because they always have an angle",
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
-      "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
-    ],
-    "secret": "Aminata Strand-Otieno maintains a second identity — a completely clean civilian persona with a lease, a job history, and a social profile. It's their exit strategy."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
-    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
-    "verbal_tics": [
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
-      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
-    ],
-    "example_lines": [
-      "\"Everyone in this room is lying. My job is knowing who's lying about what.\"",
-      "\"Paranoia isn't a disorder in this profession. It's a job requirement.\"",
-      "\"I find the leak. What happens to the leak after that isn't my department.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Aminata Strand-Otieno discovers a job they completed last year was a setup for something much larger and much worse",
-    "A former associate resurfaces with evidence that could destroy Aminata Strand-Otieno's reputation — and a price for silence",
-    "The fixer who handles Aminata Strand-Otieno's contracts goes silent — dead, disappeared, or turned"
-  ],
-  "narrative_function": "As a counterintelligence specialist, Aminata Strand-Otieno embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Cortical bomb (employer installed, removed by street doc, scar tissue remains). Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Freelance — works the Gray Zone circuit exclusively",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 5
-      },
-      "agility": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 6
-      },
-      "endurance": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 5
-      },
-      "reflexes": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 7
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 5
-      },
-      "perception": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 6
-      },
-      "willpower": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 4
-      },
-      "technical": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 7
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 6
-      },
-      "intimidation": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 7
-      },
-      "deception": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 8
-      },
-      "empathy": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 9
-      }
-    },
-    "personality": {
-      "aggression": 0.96,
-      "caution": 0.67,
-      "loyalty": 0.64,
-      "greed": 0.57,
-      "empathy": 0.11
-    },
-    "drives": [
-      "knowledge",
-      "survival",
-      "protection"
-    ],
-    "thresholds": {
-      "pain": 8,
-      "stress": 5,
-      "loyalty_break": 6
-    },
-    "strengths": [
-      "expert marksman",
-      "technical expertise with augmentation systems",
-      "social chameleon — adapts to any environment"
-    ],
-    "weaknesses": [
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
-      "chronic insomnia affecting long-term performance",
-      "difficulty with authority figures"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "counterintelligence specialist",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Insists they work alone but performs noticeably better in a team",
-      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
-    ],
-    "habits": [
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Eats the same meal before every job — superstition masquerading as preference"
-    ],
-    "breaking_points": [
-      "Being publicly exposed — name, face, address, all of it blown",
-      "Learning that a job they completed resulted in mass casualties they weren't told about",
-      "A child being put in danger as leverage against them"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
-      "replaces": ""
-    },
-    {
-      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Analyst": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Kessler Row",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Heritage Vault",
-    "Diaspora Table",
-    "The Gradient Compact",
-    "Stratum",
-    "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex Pan-Global ancestry with Sub-Saharan African dominance (57.1%) creating foundational bone structure and skin depth, significantly blended with South Asian (19.8%) and East Asian (15.6%) features that refine facial architecture and add subtle eye shape variation. Minor Middle Eastern (5.2%) and Southeast Asian (2.3%) ancestry contribute warmth and complexity to overall phenotype. The result is a distinctively layered appearance—broad Sub-Saharan features softened by South Asian cheekbone prominence and East Asian eye-set, creating a phenotype that reads as genuinely Pan-Diaspora rather than any single heritage.",
-    "height_cm": 168,
-    "weight_kg": 78,
-    "build": "Compact and densely muscled, built low to the ground with a center of gravity engineered for impact absorption. Shoulders broad relative to frame, forearms corded with functional strength rather than display muscle.",
-    "hair_color": "Dark brown, natural with gray threading at temples",
-    "hair_style": "Kept short and practical, faded sides, slightly longer on top — easy to maintain between identities",
-    "hair_length": "Short",
-    "eye_color": "Augmented — chrome iris rings surrounding natural dark brown pupils, capable of thermal and low-light overlay",
-    "skin_tone": "Deep warm brown—the dominant Sub-Saharan African base enriched by South Asian undertones creating subtle golden warmth, further complexified by East Asian influence that prevents harshness. Years under varied climates have added character without diminishing the natural richness of tone.",
-    "complexion": "Weathered but maintained. Facial structure shows the characteristic blend of Sub-Saharan African prominence (broad nose bridge, full lips, wide-set eyes positioned with slight East Asian cant) refined by South Asian cheekbone definition and jawline structure. Fine lines around the eyes from sustained focus work. Grooming is deliberate and controlled—nothing that draws attention, nothing that reads as neglect.",
-    "distinguishing_marks": [
-      "Hairline scar tissue across the left temple and upper scalp, irregular and puckered — site of cortical bomb removal by street doc.",
-      "Thin white scar running from left cheekbone toward jawline, approximately 4 centimeters, likely from blade work.",
-      "Small burn mark on right forearm, diameter of a cigarette, deliberately unremarkable."
-    ],
-    "visible_augmentations": "Chrome iris rings around both eyes — immediately visible as cybernetic enhancement. Scar tissue at left temple is readable as surgical history to anyone trained in augmentation recovery. No visible limb chrome or subdermal plating, but the precision of his movement suggests internal work.",
-    "posture_movement": "Economy of motion. Stands with slight forward cant, shoulders relaxed but ready. Moves quietly and deliberately, weight distributed low. Hands at rest are still — no nervous gesturing. Eyes track constantly, not paranoid but attentive. Transitions between civilian slouch (cover identity) and operational posture are visible to trained observers.",
-    "clothing_style": "Tier 3-4 functional. Unmarked synthleather jacket worn soft from use, matte black. Underneath: nondescript long-sleeve shirt in neutral gray that can pass in both corporate buildings and street-level bars. Cargo pants with reinforced seams and subtle gear loops. Worn boots with good tread — made for running or standing long hours. No obvious logos or affiliation markers. Dressed to be forgotten, not to impress."
-  },
-  "image_prompt": "Chinedu Mwangi-Park, 168cm tall compact muscular frame, deep warm brown skin with golden undertones blending Sub-Saharan, South Asian, and East Asian features—broad prominent cheekbones, defined jawline, wide-set dark eyes framed by distinctive chrome iris rings with visible thermal overlay capability, hairline scar tissue across left temple from street doc augmentation work, thin white blade scar on left cheekbone, dark brown hair faded at sides longer on top with gray threading at temples. Wearing worn matte black synthleather jacket over neutral gray long-sleeve shirt, reinforced cargo pants, practical worn boots. Standing in low ready posture with economy of motion, hands at rest, eyes tracking. GLMZ Great Lakes Metropolitan Zone, neon-lit night setting with rain-slicked street, moody atmospheric lighting, professional operative aesthetic, forgotten-by-design clothing, subtle augmentation scars visible. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 57.1,
-    "South Asian": 19.8,
-    "East Asian": 15.6,
-    "Middle Eastern": 5.2,
-    "Southeast Asian": 2.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "West African": {
-        "Ghanaian": 12,
-        "Nigerian": 2.2
-      },
-      "East African": {
-        "Kenyan": 6.5,
-        "Ethiopian": 9.1
-      },
-      "Southern African": {
-        "Zimbabwean": 27.3
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Tamil": 5.4
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 7.5
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 6.9
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 15.6
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Iraqi": 5.2
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 1
-      },
-      "Filipino": {
-        "Bicolano": 0.8,
-        "Tagalog": 0.5
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5b1746d991d4317617c5a63",
+    "type":  "character",
+    "name":  "Chinedu Mwangi-Park",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Counter-surveillance and mole detection â€” counterintelligence specialist",
+    "age":  33,
+    "status":  "active",
+    "location":  "Kessler Row â€” arms dealers and augmentation clinics, near Western and Division",
+    "description":  "Chinedu Mwangi-Park is compact and densely muscled, built low to the ground like something designed to survive impacts. At 33, his face carries the layered heritage of generations of diaspora mixing â€” features that resist easy categorization and reward attention. The chrome is visible â€” cortical bomb (employer installed, removed by street doc, scar tissue remains) â€” and he makes no effort to hide it.\n\nHis entry into running was involuntary â€” a debt to the wrong people, a choice between working it off or losing parts â€” and the debt is still not fully paid. He works as a counterintelligence specialist out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nChinedu Mwangi-Park is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Never being able to stop running â€” the lifestyle is a trap disguised as freedom",
+                                          "That they\u0027re fundamentally alone and connection is just a vulnerability",
+                                          "Losing their edge to age â€” the body slows before the mind accepts it"
+                                      ],
+                       "core_desires":  [
+                                            "To build something that outlasts the next contract cycle",
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail",
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Exercises compulsively â€” the body must be ready, always",
+                                                 "Denial â€” nothing is wrong, everything is fine, they are fine, shut up",
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Mistakes pattern recognition for wisdom â€” sees connections that aren\u0027t there",
+                                           "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
+                                       ],
+                       "secret":  "Aminata Strand-Otieno maintains a second identity â€” a completely clean civilian persona with a lease, a job history, and a social profile. It\u0027s their exit strategy."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, profane, and vivid. Speaks in images â€” everything is a metaphor for violence or weather.",
+                            "cadence":  "Rhythmic, almost musical â€” the sentence structure has a pattern even when the words are brutal.",
+                            "verbal_tics":  [
+                                                "Pauses mid-sentence to listen â€” combat habit that bleeds into conversation",
+                                                "Addresses people by physical traits â€” \u0027hey, tall one\u0027 or \u0027listen, chrome-arm\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Everyone in this room is lying. My job is knowing who\u0027s lying about what.\"",
+                                                  "\"Paranoia isn\u0027t a disorder in this profession. It\u0027s a job requirement.\"",
+                                                  "\"I find the leak. What happens to the leak after that isn\u0027t my department.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Aminata Strand-Otieno discovers a job they completed last year was a setup for something much larger and much worse",
+                        "A former associate resurfaces with evidence that could destroy Aminata Strand-Otieno\u0027s reputation â€” and a price for silence",
+                        "The fixer who handles Aminata Strand-Otieno\u0027s contracts goes silent â€” dead, disappeared, or turned"
+                    ],
+    "narrative_function":  "As a counterintelligence specialist, Aminata Strand-Otieno embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+    "augmentations":  "Cortical bomb (employer installed, removed by street doc, scar tissue remains). Cybernetic eyes with thermal overlay and low-light enhancement â€” chrome iris rings",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Freelance â€” works the Gray Zone circuit exclusively",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  7,
+                                                    "augmented":  2,
+                                                    "effective":  5
+                                                },
+                                   "agility":  {
+                                                   "base":  3,
+                                                   "augmented":  3,
+                                                   "effective":  6
+                                               },
+                                   "endurance":  {
+                                                     "base":  4,
+                                                     "augmented":  0,
+                                                     "effective":  5
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  8,
+                                                    "augmented":  1,
+                                                    "effective":  7
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  5,
+                                                      "augmented":  1,
+                                                      "effective":  5
+                                                  },
+                                 "perception":  {
+                                                    "base":  4,
+                                                    "augmented":  3,
+                                                    "effective":  6
+                                                },
+                                 "willpower":  {
+                                                   "base":  3,
+                                                   "augmented":  2,
+                                                   "effective":  4
+                                               },
+                                 "technical":  {
+                                                   "base":  3,
+                                                   "augmented":  2,
+                                                   "effective":  7
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  7,
+                                                  "augmented":  0,
+                                                  "effective":  6
+                                              },
+                                 "intimidation":  {
+                                                      "base":  5,
+                                                      "augmented":  2,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  6,
+                                                   "augmented":  2,
+                                                   "effective":  8
+                                               },
+                                 "empathy":  {
+                                                 "base":  7,
+                                                 "augmented":  2,
+                                                 "effective":  9
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.96,
+                                      "caution":  0.67,
+                                      "loyalty":  0.64,
+                                      "greed":  0.57,
+                                      "empathy":  0.11
+                                  },
+                  "drives":  [
+                                 "knowledge",
+                                 "survival",
+                                 "protection"
+                             ],
+                  "thresholds":  {
+                                     "pain":  8,
+                                     "stress":  5,
+                                     "loyalty_break":  6
+                                 },
+                  "strengths":  [
+                                    "expert marksman",
+                                    "technical expertise with augmentation systems",
+                                    "social chameleon â€” adapts to any environment"
+                                ],
+                  "weaknesses":  [
+                                     "augmentation dependency â€” performance drops sharply if chrome malfunctions",
+                                     "chronic insomnia affecting long-term performance",
+                                     "difficulty with authority figures"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "counterintelligence specialist",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+                                          ],
+                       "habits":  [
+                                      "Wears the same item of clothing for luck â€” a scarf, a glove, a specific pair of boots",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore",
+                                      "Eats the same meal before every job â€” superstition masquerading as preference"
+                                  ],
+                       "breaking_points":  [
+                                               "Being publicly exposed â€” name, face, address, all of it blown",
+                                               "Learning that a job they completed resulted in mass casualties they weren\u0027t told about",
+                                               "A child being put in danger as leverage against them"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cybernetic eyes with thermal overlay and low-light enhancement",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Cybernetic eyes with thermal overlay and low-light enhancement â€” chrome iris rings",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Analyst":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Kessler Row",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Nkomo-Lindqvist NL-22 \u0027Peacemaker\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Heritage Vault",
+                             "Diaspora Table",
+                             "The Gradient Compact",
+                             "Stratum",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex Pan-Global ancestry with Sub-Saharan African dominance (57.1%) creating foundational bone structure and skin depth, significantly blended with South Asian (19.8%) and East Asian (15.6%) features that refine facial architecture and add subtle eye shape variation. Minor Middle Eastern (5.2%) and Southeast Asian (2.3%) ancestry contribute warmth and complexity to overall phenotype. The result is a distinctively layered appearanceâ€”broad Sub-Saharan features softened by South Asian cheekbone prominence and East Asian eye-set, creating a phenotype that reads as genuinely Pan-Diaspora rather than any single heritage.",
+                                 "height_cm":  168,
+                                 "weight_kg":  78,
+                                 "build":  "Compact and densely muscled, built low to the ground with a center of gravity engineered for impact absorption. Shoulders broad relative to frame, forearms corded with functional strength rather than display muscle.",
+                                 "hair_color":  "Dark brown, natural with gray threading at temples",
+                                 "hair_style":  "Kept short and practical, faded sides, slightly longer on top â€” easy to maintain between identities",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Augmented â€” chrome iris rings surrounding natural dark brown pupils, capable of thermal and low-light overlay",
+                                 "skin_tone":  "Deep warm brownâ€”the dominant Sub-Saharan African base enriched by South Asian undertones creating subtle golden warmth, further complexified by East Asian influence that prevents harshness. Years under varied climates have added character without diminishing the natural richness of tone.",
+                                 "complexion":  "Weathered but maintained. Facial structure shows the characteristic blend of Sub-Saharan African prominence (broad nose bridge, full lips, wide-set eyes positioned with slight East Asian cant) refined by South Asian cheekbone definition and jawline structure. Fine lines around the eyes from sustained focus work. Grooming is deliberate and controlledâ€”nothing that draws attention, nothing that reads as neglect.",
+                                 "distinguishing_marks":  [
+                                                              "Hairline scar tissue across the left temple and upper scalp, irregular and puckered â€” site of cortical bomb removal by street doc.",
+                                                              "Thin white scar running from left cheekbone toward jawline, approximately 4 centimeters, likely from blade work.",
+                                                              "Small burn mark on right forearm, diameter of a cigarette, deliberately unremarkable."
+                                                          ],
+                                 "visible_augmentations":  "Chrome iris rings around both eyes â€” immediately visible as cybernetic enhancement. Scar tissue at left temple is readable as surgical history to anyone trained in augmentation recovery. No visible limb chrome or subdermal plating, but the precision of his movement suggests internal work.",
+                                 "posture_movement":  "Economy of motion. Stands with slight forward cant, shoulders relaxed but ready. Moves quietly and deliberately, weight distributed low. Hands at rest are still â€” no nervous gesturing. Eyes track constantly, not paranoid but attentive. Transitions between civilian slouch (cover identity) and operational posture are visible to trained observers.",
+                                 "clothing_style":  "Tier 3-4 functional. Unmarked synthleather jacket worn soft from use, matte black. Underneath: nondescript long-sleeve shirt in neutral gray that can pass in both corporate buildings and street-level bars. Cargo pants with reinforced seams and subtle gear loops. Worn boots with good tread â€” made for running or standing long hours. No obvious logos or affiliation markers. Dressed to be forgotten, not to impress."
+                             },
+    "image_prompt":  "Chinedu Mwangi-Park, 168cm tall compact muscular frame, deep warm brown skin with golden undertones blending Sub-Saharan, South Asian, and East Asian featuresâ€”broad prominent cheekbones, defined jawline, wide-set dark eyes framed by distinctive chrome iris rings with visible thermal overlay capability, hairline scar tissue across left temple from street doc augmentation work, thin white blade scar on left cheekbone, dark brown hair faded at sides longer on top with gray threading at temples. Wearing worn matte black synthleather jacket over neutral gray long-sleeve shirt, reinforced cargo pants, practical worn boots. Standing in low ready posture with economy of motion, hands at rest, eyes tracking. GLMZ Great Lakes Metropolitan Zone, neon-lit night setting with rain-slicked street, moody atmospheric lighting, professional operative aesthetic, forgotten-by-design clothing, subtle augmentation scars visible. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  57.1,
+                             "South Asian":  19.8,
+                             "East Asian":  15.6,
+                             "Middle Eastern":  5.2,
+                             "Southeast Asian":  2.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Ghanaian":  12,
+                                                                             "Nigerian":  2.2
+                                                                         },
+                                                        "East African":  {
+                                                                             "Kenyan":  6.5,
+                                                                             "Ethiopian":  9.1
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  27.3
+                                                                             }
+                                                    },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Tamil":  5.4
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  7.5
+                                                               },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  6.9
+                                                                }
+                                            },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  15.6
+                                                          }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  5.2
+                                                                 }
+                                               },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  1
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Bicolano":  0.8,
+                                                                     "Tagalog":  0.5
+                                                                 }
+                                                }
+                        },
+    "tier":  "3"
 }

@@ -1,328 +1,339 @@
-{
-  "id": "019d6143a68878a08f9ba8722c9dad81",
-  "type": "character",
-  "name": "Bayo Thammasak",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Street-level information broker / Unofficial district archivist",
-  "age": 19,
-  "status": "active",
-  "location": "Old Harbor (primary), The Circuit (work), near Michigan Ave and Roosevelt",
-  "description": "Bayo Thammasak is nineteen years old and looks sixteen and has survived this discrepancy by being faster than people expect and more useful than people intend. He is slight, pale-skinned with a spray of freckles across dark circles, with hair that grows in three directions regardless of what he does to it. He moves through Old Harbor like a person who has memorized every exit, which he has—not as a paranoid exercise but as an intellectual one. He maps things. Streets, social networks, grudge lines, debt relationships, who owes what to whom and who is lying about it. He sells this information in small, carefully portioned pieces to people who don't know how much of the whole picture he's already holding.\n\nOrvyn grew up in the informal settlement layers of Old Harbor, raised by an older sister who left when he was twelve and a rotating cast of neighbors who fed him when they remembered to. He is not bitter about this. He is, in a way that sometimes unnerves people who probe it, genuinely cheerful—a relentless, low-grade delight in the texture of information itself, in the way a rumor travels and changes, in the gap between what people say and what the map of their behavior reveals. He keeps physical notebooks filled with hand-drawn cartography: not just geography but social topology, annotated in a cramped personal shorthand no one else can read.\n\nHe operates out of a specific corner booth in a noodle shop called Haecht's in Old Harbor, where he has an informal arrangement with the owner, and from a secondary position near the transit interchange in The Circuit where he sells low-grade data to mid-tier runners and fixers. He has no bodyguard, no crew, no weapon beyond a short blade he has used exactly once. His protection is that he knows too much about too many people for any single actor to find his disappearance profitable, and he has made sure that enough of them know this.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.55,
-      "ideal": 0.6,
-      "id": 0.7,
-      "shadow": 0.35,
-      "mask": 0.45,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Becoming invisible in the way that actually kills you—discarded, not just overlooked",
-      "That his cheerfulness is a performance he has maintained so long he no longer knows what's underneath",
-      "Losing the notebooks"
-    ],
-    "core_desires": [
-      "To understand how GLMZ actually works, beneath every official layer",
-      "To find his sister",
-      "To matter to someone who isn't paying him"
-    ],
-    "coping_mechanisms": [
-      "Treating emotional difficulty as an interesting data problem to be mapped rather than felt",
-      "Humor deployed as social lubrication and deflection simultaneously",
-      "Obsessive documentation as a substitute for memory he doesn't trust"
-    ],
-    "blind_spots": [
-      "Underestimates how much people underestimate him as a threat, which has made him careless about certain enemies",
-      "Conflates knowing about people with knowing them",
-      "Has not processed his sister's departure and frames it entirely as a logistical mystery rather than an abandonment"
-    ],
-    "secret": "He has a nearly complete map of Synclaire Financial's debt network in the Gray Zone and Old Harbor—more comprehensive than anything their internal systems hold. He hasn't sold it because he doesn't yet know what it's worth, and because something in the pattern frightens him in a way he hasn't been able to annotate yet."
-  },
-  "speech_patterns": {
-    "vocabulary": "Street vernacular mixed with oddly precise technical terminology, frequent analogies drawn from cartography and architecture, runs sentences together when excited",
-    "cadence": "Fast, light, with sudden full stops when he hits something important—like a person walking quickly who occasionally freezes to look at something on the ground",
-    "verbal_tics": [
-      "Starting questions with 'Wait, so—'",
-      "Using 'adjacent' as a relational descriptor ('she's not dangerous, she's danger-adjacent')",
-      "Tapping his notebook when he's thinking, whether or not he's holding it"
-    ],
-    "example_lines": [
-      "'Wait, so—you want the route or the reason the route exists? Because those are different prices and honestly the second one is more useful.'",
-      "'I don't sell secrets. I sell context. The secret you already have. What you're missing is where it fits on the map.'",
-      "'She's not lying, she's just—she's telling you the version of true that she needs you to believe. That's adjacent to lying but it's a different street.'",
-      "'I've been in every district. Not all at once, obviously. But I've got the shape of the whole thing in my head and I'm going to tell you something: nobody is running this city. It's just falling in a direction everyone agrees to call forward.'"
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Maren Voss",
-      "type": "Professional contact / Cautious mutual respect",
-      "description": "Orvyn has sold Maren information twice. She paid fair and didn't follow him afterward, which in his estimation puts her in the top 5% of clients. He is aware she knows more about him than she's let on.",
-      "emotional_core": "Curiosity and the specific warmth of being treated as competent by someone formidable",
-      "story_tension": "She may be the first person who could use the Synclaire map constructively, but giving it to her means choosing a side"
-    },
-    {
-      "name": "Blessed Nkemdirim",
-      "type": "Neighborhood history / Complex",
-      "description": "Blessed's name appears in Orvyn's earliest Old Harbor notebooks in a child's handwriting. They grew up in the same informal settlement layers. Orvyn has never directly approached Blessed in their current iteration and isn't sure if Blessed remembers him.",
-      "emotional_core": "Nostalgia, uncertainty, and the strange grief of watching someone you knew become someone you don't",
-      "story_tension": "Orvyn knows something about Blessed's past that Blessed may not want known—and isn't sure if it's a card or a burden"
-    },
-    {
-      "name": "His sister (Imara Specht)",
-      "type": "Family / Missing",
-      "description": "Left Old Harbor when Orvyn was twelve. Last confirmed data point places her in The Spire's lower service levels four years ago. Orvyn has a notebook dedicated entirely to this thread.",
-      "emotional_core": "The one map he cannot complete",
-      "story_tension": "He recently acquired information suggesting she didn't leave voluntarily"
-    }
-  ],
-  "story_hooks": [
-    "The Synclaire map in his notebook begins connecting to something much larger—a pattern that suggests coordinated district destabilization—and people have started asking questions that suggest they know he's close to it",
-    "Someone offers him an enormous sum for a specific piece of information that he realizes, mid-transaction, will get the buyer killed",
-    "A thread in his sister's notebook leads him into The Spire's service architecture, which is not a place someone like Orvyn is meant to return from",
-    "He is hired to map the social network of a closed community in the Gray Zone and discovers the map already exists—drawn in a style uncomfortably close to his own"
-  ],
-  "narrative_function": "Orvyn functions as a connective tissue character and an audience surrogate for the world's architecture—someone whose role is to reveal how systems interconnect. He also carries the emotional counterweight of cheerful survival against actual loneliness, and his youth positions him as a character the city has not yet finished forming.",
-  "augmentations": "Basic optical enhancement with zoom and low-light capability (secondhand, partially glitching—sometimes activates involuntarily in bright light),No neural augmentations by deliberate choice—he doesn't trust anything in his head that he didn't put there",
-  "daily_life": "Wakes irregularly, eats whatever Haecht's is serving, spends mornings updating his notebooks with overnight observations. Midday transit to The Circuit for client meetings. Afternoons wandering with no apparent destination, which is when most of his actual observation happens. Evenings back at Haecht's or moving through Old Harbor's informal social spaces. Sleeps in a rented room above a repair shop whose owner he has protected twice through strategic information releases.",
-  "affiliation": "Unaffiliated (deliberately and carefully maintains no formal allegiances); The Interchange",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 7,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 5,
-      "creativity": 7,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 5,
-      "expression": 7,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 8,
-      "empathy_detachment": 5,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 5,
-      "transparency_guardedness": 5
-    },
-    "drives": [
-      "Understand how GLMZ actually works",
-      "Find his sister",
-      "Matter to someone not paying him"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 5,
-        "response": "Talks faster, maps harder, treats the problem as data to be charted"
-      },
-      "moral": 5,
-      "trust": 4,
-      "desperation": 6
-    },
-    "strengths": [
-      "Curiosity",
-      "Love of Learning",
-      "Creativity",
-      "Perspective",
-      "Humor"
-    ],
-    "weaknesses": [
-      "Prudence",
-      "Self-Regulation",
-      "Bravery",
-      "Honesty",
-      "Perseverance"
-    ],
-    "tags": [
-      "info-broker",
-      "cartographer",
-      "young",
-      "cheerful",
-      "notebook-keeper",
-      "old-harbor",
-      "sister-seeker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Sell context, not secrets — 'the secret you already have, what you are missing is where it fits on the map'",
-      "Keep the Synclaire Financial debt network map unsold until he understands what it means",
-      "Portion information carefully — never give anyone the whole picture",
-      "Memorize every exit in every space he enters",
-      "Maintain the sister notebook as a separate thread from all other work",
-      "Use humor as both social lubrication and deflection simultaneously",
-      "Never carry a weapon beyond the short blade — protection is knowing too much"
-    ],
-    "escalation_ladder": [
-      "'Wait, so—' followed by reframing the question",
-      "Fast speech with sudden full stops — something important surfaced",
-      "Taps notebook compulsively — processing at speed",
-      "Refuses the sale mid-transaction — something frightened him",
-      "Disappears from all known positions — goes to ground"
-    ],
-    "interpersonal_modes": {
-      "Maren Voss": "Cautious mutual respect — she treated him as competent and that is rare",
-      "Blessed Nkemdirim": "Distant nostalgia — childhood acquaintance he watches from afar",
-      "his sister Imara": "The one map he cannot complete — obsessive, tender, incomplete",
-      "clients": "Fast, professional, cheerful — the cheerfulness is load-bearing"
-    },
-    "stress_responses": {
-      "low": "Talks faster, runs sentences together, excitement and anxiety blur",
-      "medium": "Maps obsessively — fills notebook pages with topology and connections",
-      "high": "Freezes mid-step to stare at something — the fast walker suddenly still",
-      "critical": "Opens the sister notebook and traces the last known data point"
-    },
-    "contradictions": [
-      "Relentless cheerfulness may be a performance maintained so long he no longer knows what is underneath",
-      "Conflates knowing about people with knowing them — sells context but has no personal context of his own",
-      "Frames his sister's departure as a logistical mystery rather than processing it as abandonment"
-    ],
-    "habits": [
-      "Starts questions with 'Wait, so—'",
-      "Uses 'adjacent' as a relational descriptor",
-      "Taps notebook when thinking, whether or not holding it",
-      "Eats whatever Haecht's is serving each morning",
-      "Wanders Old Harbor with no apparent destination in the afternoons — actual observation work"
-    ],
-    "breaking_points": [
-      "The Synclaire map connecting to something larger than he can handle",
-      "Someone offering him information that will get the buyer killed",
-      "A thread in the sister notebook leading into the Spire's service architecture",
-      "Discovering a map in someone else's hand drawn in his own style"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9,
-    "Manipulator": 0.7,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Old Harbor (primary)",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Meridian Munitions Viper PDW MVP-3 'Sidewinder'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Meridian Munitions Viper PDW MVP-3 'Sidewinder'"
-  ],
-  "related_entities": [
-    "The Circuit",
-    "The Spire",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Lacuna Genomics",
-    "Circuit",
-    "Harbor Fish Shack",
-    "Nesting Doll",
-    "Corner Slice",
-    "The Pale Mile"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Predominantly Southeast Asian (66.1%) with significant East Asian (12.3%), Middle Eastern (12.9%), and Sub-Saharan African (8.2%) ancestry. The genetic blend creates warm medium-toned skin with golden undertones, facial structure reflecting the Southeast Asian and East Asian majority combined with Sub-Saharan African features—defined cheekbones, fuller lips, slightly broader nose base characteristic of the blend.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Wiry and slight, almost adolescent-thin with minimal muscle definition. Moves with economical precision—no wasted motion, shoulders slightly hunched as if perpetually ready to slip through a gap",
-    "hair_color": "Mousy brown with reddish undertones",
-    "hair_style": "Deliberately unkempt, grows in three distinct directions regardless of intervention. Often falls across one eye",
-    "hair_length": "Medium (shoulder-length, though the chaotic growth pattern makes length deceptive)",
-    "eye_color": "Left eye: warm brown (natural); Right eye: cybernetic with faint LED ring around pupil (secondhand optical unit, occasionally glitches to bright cyan activation)",
-    "skin_tone": "Medium-warm with golden undertones, displaying the rich depth of Southeast Asian and East Asian heritage blended with Sub-Saharan African warmth beneath a sun-deprived indoor pallor.",
-    "complexion": "Youthful but worn. Deep dark circles under both eyes suggesting chronic sleep irregularity. Faint constellation of freckles across bridge of nose and cheekbones blending with natural skin variation. Skin has the papery quality of someone malnourished in childhood, now stable but not thriving. Clean but not fastidious—no acne, good hygiene maintained out of practical necessity rather than vanity. Facial structure reflects Southeast Asian, East Asian, and Sub-Saharan features: defined cheekbones, slightly broader nose base, full lips.",
-    "distinguishing_marks": [
-      "Thin white scar along right forearm (approximately 8cm long, near wrist)—from the one time he used his blade, three years ago",
-      "Tattoo on inside left wrist: personal cartographic shorthand symbol resembling a stylized map grid, done in black ink, approximately 2cm across",
-      "Occasional involuntary eye-twitch in right cybernetic eye during overstimulation (bright light, sensory overload)"
-    ],
-    "visible_augmentations": "Right eye replacement with visible seam at orbital socket, faint LED ring around pupil that cycles amber-to-cyan when active or malfunctioning. The optical unit shows wear—scratched lens, slight cosmetic misalignment suggesting budget repair history. No other visible chrome; all augmentation confined to optical replacement",
-    "posture_movement": "Moves with unusual fluidity for his age—gliding rather than walking, shoulders loose but spine alert. Sits sideways in chairs to maintain sightline of exits. Hands are rarely still; fidgets with pen, notebook spine, or the edge of whatever surface is available. Eyes scan constantly, cataloging. When speaking, maintains deliberate eye contact despite slight self-consciousness about the glitching eye",
-    "clothing_style": "Tier 4 (working class, with deliberate anti-status signaling). Favors loose-fitting dark cargo pants with excessive pockets (function over style), worn synthetic fiber jackets in grays or blacks. Undershirts are faded band tees or salvaged corporate promotional wear. Shoes are practical and worn—walking boots resoled multiple times. No jewelry except the wrist tattoo. Clothes are clean but deliberately unmemorable; he owns perhaps four outfits in rotation. No visible QUANTA-sponsored branding; actively avoids corpo-aesthetic"
-  },
-  "image_prompt": "Bayo Thammasak, 2226 neo-noir character, 168cm wiry build, Southeast Asian-dominant mixed heritage with warm medium-toned golden-undertoned skin, defined cheekbones, fuller lips, slightly broader nose base. Youthful face with deep dark circles, faint freckles across nose and cheekbones. Left eye warm brown, right eye glitching cybernetic replacement with amber-to-cyan LED ring, visible orbital seam, scratched lens. Mousy brown reddish-tinted medium shoulder-length hair unkempt and chaotic. White scar on right forearm near wrist, black cartographic tattoo inside left wrist. Wearing faded band tee undershirt, loose-fitting dark cargo pants with excessive pockets, worn gray synthetic jacket, practical walking boots resoled multiple times. Sitting sideways in chair scanning surroundings with alert posture, hands fidgeting, no jewelry, Tier 4 working-class aesthetic. Indoor neon-lit setting with moody neo-noir atmosphere, slight sensory overload suggested by eye-twitch tension. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 66.1,
-    "Middle Eastern": 12.9,
-    "East Asian": 12.3,
-    "Sub-Saharan African": 8.2,
-    "Central Asian": 0.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 66.1
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 2.1,
-        "Afghan Dari": 10.8
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 12.3
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 6.9
-      },
-      "Southern African": {
-        "Mozambican": 1.3
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Kalmyk": 0.2,
-        "Mongolian": 0.2
-      },
-      "Turkic": {
-        "Kazakh": 0.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a68878a08f9ba8722c9dad81",
+    "type":  "character",
+    "name":  "Bayo Thammasak",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Street-level information broker / Unofficial district archivist",
+    "age":  19,
+    "status":  "active",
+    "location":  "Old Harbor (primary), The Circuit (work), near Michigan Ave and Roosevelt",
+    "description":  "Bayo Thammasak is nineteen years old and looks sixteen and has survived this discrepancy by being faster than people expect and more useful than people intend. He is slight, pale-skinned with a spray of freckles across dark circles, with hair that grows in three directions regardless of what he does to it. He moves through Old Harbor like a person who has memorized every exit, which he hasâ€”not as a paranoid exercise but as an intellectual one. He maps things. Streets, social networks, grudge lines, debt relationships, who owes what to whom and who is lying about it. He sells this information in small, carefully portioned pieces to people who don\u0027t know how much of the whole picture he\u0027s already holding.\n\nOrvyn grew up in the informal settlement layers of Old Harbor, raised by an older sister who left when he was twelve and a rotating cast of neighbors who fed him when they remembered to. He is not bitter about this. He is, in a way that sometimes unnerves people who probe it, genuinely cheerfulâ€”a relentless, low-grade delight in the texture of information itself, in the way a rumor travels and changes, in the gap between what people say and what the map of their behavior reveals. He keeps physical notebooks filled with hand-drawn cartography: not just geography but social topology, annotated in a cramped personal shorthand no one else can read.\n\nHe operates out of a specific corner booth in a noodle shop called Haecht\u0027s in Old Harbor, where he has an informal arrangement with the owner, and from a secondary position near the transit interchange in The Circuit where he sells low-grade data to mid-tier runners and fixers. He has no bodyguard, no crew, no weapon beyond a short blade he has used exactly once. His protection is that he knows too much about too many people for any single actor to find his disappearance profitable, and he has made sure that enough of them know this.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming invisible in the way that actually kills youâ€”discarded, not just overlooked",
+                                          "That his cheerfulness is a performance he has maintained so long he no longer knows what\u0027s underneath",
+                                          "Losing the notebooks"
+                                      ],
+                       "core_desires":  [
+                                            "To understand how GLMZ actually works, beneath every official layer",
+                                            "To find his sister",
+                                            "To matter to someone who isn\u0027t paying him"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Treating emotional difficulty as an interesting data problem to be mapped rather than felt",
+                                                 "Humor deployed as social lubrication and deflection simultaneously",
+                                                 "Obsessive documentation as a substitute for memory he doesn\u0027t trust"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much people underestimate him as a threat, which has made him careless about certain enemies",
+                                           "Conflates knowing about people with knowing them",
+                                           "Has not processed his sister\u0027s departure and frames it entirely as a logistical mystery rather than an abandonment"
+                                       ],
+                       "secret":  "He has a nearly complete map of Synclaire Financial\u0027s debt network in the Gray Zone and Old Harborâ€”more comprehensive than anything their internal systems hold. He hasn\u0027t sold it because he doesn\u0027t yet know what it\u0027s worth, and because something in the pattern frightens him in a way he hasn\u0027t been able to annotate yet."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Street vernacular mixed with oddly precise technical terminology, frequent analogies drawn from cartography and architecture, runs sentences together when excited",
+                            "cadence":  "Fast, light, with sudden full stops when he hits something importantâ€”like a person walking quickly who occasionally freezes to look at something on the ground",
+                            "verbal_tics":  [
+                                                "Starting questions with \u0027Wait, soâ€”\u0027",
+                                                "Using \u0027adjacent\u0027 as a relational descriptor (\u0027she\u0027s not dangerous, she\u0027s danger-adjacent\u0027)",
+                                                "Tapping his notebook when he\u0027s thinking, whether or not he\u0027s holding it"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Wait, soâ€”you want the route or the reason the route exists? Because those are different prices and honestly the second one is more useful.\u0027",
+                                                  "\u0027I don\u0027t sell secrets. I sell context. The secret you already have. What you\u0027re missing is where it fits on the map.\u0027",
+                                                  "\u0027She\u0027s not lying, she\u0027s justâ€”she\u0027s telling you the version of true that she needs you to believe. That\u0027s adjacent to lying but it\u0027s a different street.\u0027",
+                                                  "\u0027I\u0027ve been in every district. Not all at once, obviously. But I\u0027ve got the shape of the whole thing in my head and I\u0027m going to tell you something: nobody is running this city. It\u0027s just falling in a direction everyone agrees to call forward.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Maren Voss",
+                              "type":  "Professional contact / Cautious mutual respect",
+                              "description":  "Orvyn has sold Maren information twice. She paid fair and didn\u0027t follow him afterward, which in his estimation puts her in the top 5% of clients. He is aware she knows more about him than she\u0027s let on.",
+                              "emotional_core":  "Curiosity and the specific warmth of being treated as competent by someone formidable",
+                              "story_tension":  "She may be the first person who could use the Synclaire map constructively, but giving it to her means choosing a side"
+                          },
+                          {
+                              "name":  "Blessed Nkemdirim",
+                              "type":  "Neighborhood history / Complex",
+                              "description":  "Blessed\u0027s name appears in Orvyn\u0027s earliest Old Harbor notebooks in a child\u0027s handwriting. They grew up in the same informal settlement layers. Orvyn has never directly approached Blessed in their current iteration and isn\u0027t sure if Blessed remembers him.",
+                              "emotional_core":  "Nostalgia, uncertainty, and the strange grief of watching someone you knew become someone you don\u0027t",
+                              "story_tension":  "Orvyn knows something about Blessed\u0027s past that Blessed may not want knownâ€”and isn\u0027t sure if it\u0027s a card or a burden"
+                          },
+                          {
+                              "name":  "His sister (Imara Specht)",
+                              "type":  "Family / Missing",
+                              "description":  "Left Old Harbor when Orvyn was twelve. Last confirmed data point places her in The Spire\u0027s lower service levels four years ago. Orvyn has a notebook dedicated entirely to this thread.",
+                              "emotional_core":  "The one map he cannot complete",
+                              "story_tension":  "He recently acquired information suggesting she didn\u0027t leave voluntarily"
+                          }
+                      ],
+    "story_hooks":  [
+                        "The Synclaire map in his notebook begins connecting to something much largerâ€”a pattern that suggests coordinated district destabilizationâ€”and people have started asking questions that suggest they know he\u0027s close to it",
+                        "Someone offers him an enormous sum for a specific piece of information that he realizes, mid-transaction, will get the buyer killed",
+                        "A thread in his sister\u0027s notebook leads him into The Spire\u0027s service architecture, which is not a place someone like Orvyn is meant to return from",
+                        "He is hired to map the social network of a closed community in the Gray Zone and discovers the map already existsâ€”drawn in a style uncomfortably close to his own"
+                    ],
+    "narrative_function":  "Orvyn functions as a connective tissue character and an audience surrogate for the world\u0027s architectureâ€”someone whose role is to reveal how systems interconnect. He also carries the emotional counterweight of cheerful survival against actual loneliness, and his youth positions him as a character the city has not yet finished forming.",
+    "augmentations":  "Basic optical enhancement with zoom and low-light capability (secondhand, partially glitchingâ€”sometimes activates involuntarily in bright light),No neural augmentations by deliberate choiceâ€”he doesn\u0027t trust anything in his head that he didn\u0027t put there",
+    "daily_life":  "Wakes irregularly, eats whatever Haecht\u0027s is serving, spends mornings updating his notebooks with overnight observations. Midday transit to The Circuit for client meetings. Afternoons wandering with no apparent destination, which is when most of his actual observation happens. Evenings back at Haecht\u0027s or moving through Old Harbor\u0027s informal social spaces. Sleeps in a rented room above a repair shop whose owner he has protected twice through strategic information releases.",
+    "affiliation":  "Unaffiliated (deliberately and carefully maintains no formal allegiances); The Interchange",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  7,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  5,
+                                 "creativity":  7,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  5,
+                                 "expression":  7,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  8,
+                                      "empathy_detachment":  5,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  5,
+                                      "transparency_guardedness":  5
+                                  },
+                  "drives":  [
+                                 "Understand how GLMZ actually works",
+                                 "Find his sister",
+                                 "Matter to someone not paying him"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  5,
+                                                    "response":  "Talks faster, maps harder, treats the problem as data to be charted"
+                                                },
+                                     "moral":  5,
+                                     "trust":  4,
+                                     "desperation":  6
+                                 },
+                  "strengths":  [
+                                    "Curiosity",
+                                    "Love of Learning",
+                                    "Creativity",
+                                    "Perspective",
+                                    "Humor"
+                                ],
+                  "weaknesses":  [
+                                     "Prudence",
+                                     "Self-Regulation",
+                                     "Bravery",
+                                     "Honesty",
+                                     "Perseverance"
+                                 ],
+                  "tags":  [
+                               "info-broker",
+                               "cartographer",
+                               "young",
+                               "cheerful",
+                               "notebook-keeper",
+                               "old-harbor",
+                               "sister-seeker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Sell context, not secrets â€” \u0027the secret you already have, what you are missing is where it fits on the map\u0027",
+                                              "Keep the Synclaire Financial debt network map unsold until he understands what it means",
+                                              "Portion information carefully â€” never give anyone the whole picture",
+                                              "Memorize every exit in every space he enters",
+                                              "Maintain the sister notebook as a separate thread from all other work",
+                                              "Use humor as both social lubrication and deflection simultaneously",
+                                              "Never carry a weapon beyond the short blade â€” protection is knowing too much"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "\u0027Wait, soâ€”\u0027 followed by reframing the question",
+                                                 "Fast speech with sudden full stops â€” something important surfaced",
+                                                 "Taps notebook compulsively â€” processing at speed",
+                                                 "Refuses the sale mid-transaction â€” something frightened him",
+                                                 "Disappears from all known positions â€” goes to ground"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "Maren Voss":  "Cautious mutual respect â€” she treated him as competent and that is rare",
+                                                   "Blessed Nkemdirim":  "Distant nostalgia â€” childhood acquaintance he watches from afar",
+                                                   "his sister Imara":  "The one map he cannot complete â€” obsessive, tender, incomplete",
+                                                   "clients":  "Fast, professional, cheerful â€” the cheerfulness is load-bearing"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks faster, runs sentences together, excitement and anxiety blur",
+                                                "medium":  "Maps obsessively â€” fills notebook pages with topology and connections",
+                                                "high":  "Freezes mid-step to stare at something â€” the fast walker suddenly still",
+                                                "critical":  "Opens the sister notebook and traces the last known data point"
+                                            },
+                       "contradictions":  [
+                                              "Relentless cheerfulness may be a performance maintained so long he no longer knows what is underneath",
+                                              "Conflates knowing about people with knowing them â€” sells context but has no personal context of his own",
+                                              "Frames his sister\u0027s departure as a logistical mystery rather than processing it as abandonment"
+                                          ],
+                       "habits":  [
+                                      "Starts questions with \u0027Wait, soâ€”\u0027",
+                                      "Uses \u0027adjacent\u0027 as a relational descriptor",
+                                      "Taps notebook when thinking, whether or not holding it",
+                                      "Eats whatever Haecht\u0027s is serving each morning",
+                                      "Wanders Old Harbor with no apparent destination in the afternoons â€” actual observation work"
+                                  ],
+                       "breaking_points":  [
+                                               "The Synclaire map connecting to something larger than he can handle",
+                                               "Someone offering him information that will get the buyer killed",
+                                               "A thread in the sister notebook leading into the Spire\u0027s service architecture",
+                                               "Discovering a map in someone else\u0027s hand drawn in his own style"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9,
+                       "Manipulator":  0.7,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Old Harbor (primary)",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027",
+                            "Meridian Munitions Viper PDW MVP-3 \u0027Sidewinder\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Compact-7 \u0027Rat Trap\u0027",
+                                "Meridian Munitions Viper PDW MVP-3 \u0027Sidewinder\u0027"
+                            ],
+    "related_entities":  [
+                             "The Circuit",
+                             "The Spire",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Lacuna Genomics",
+                             "Circuit",
+                             "Harbor Fish Shack",
+                             "Nesting Doll",
+                             "Corner Slice",
+                             "The Pale Mile"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Southeast Asian (66.1%) with significant East Asian (12.3%), Middle Eastern (12.9%), and Sub-Saharan African (8.2%) ancestry. The genetic blend creates warm medium-toned skin with golden undertones, facial structure reflecting the Southeast Asian and East Asian majority combined with Sub-Saharan African featuresâ€”defined cheekbones, fuller lips, slightly broader nose base characteristic of the blend.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Wiry and slight, almost adolescent-thin with minimal muscle definition. Moves with economical precisionâ€”no wasted motion, shoulders slightly hunched as if perpetually ready to slip through a gap",
+                                 "hair_color":  "Mousy brown with reddish undertones",
+                                 "hair_style":  "Deliberately unkempt, grows in three distinct directions regardless of intervention. Often falls across one eye",
+                                 "hair_length":  "Medium (shoulder-length, though the chaotic growth pattern makes length deceptive)",
+                                 "eye_color":  "Left eye: warm brown (natural); Right eye: cybernetic with faint LED ring around pupil (secondhand optical unit, occasionally glitches to bright cyan activation)",
+                                 "skin_tone":  "Medium-warm with golden undertones, displaying the rich depth of Southeast Asian and East Asian heritage blended with Sub-Saharan African warmth beneath a sun-deprived indoor pallor.",
+                                 "complexion":  "Youthful but worn. Deep dark circles under both eyes suggesting chronic sleep irregularity. Faint constellation of freckles across bridge of nose and cheekbones blending with natural skin variation. Skin has the papery quality of someone malnourished in childhood, now stable but not thriving. Clean but not fastidiousâ€”no acne, good hygiene maintained out of practical necessity rather than vanity. Facial structure reflects Southeast Asian, East Asian, and Sub-Saharan features: defined cheekbones, slightly broader nose base, full lips.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar along right forearm (approximately 8cm long, near wrist)â€”from the one time he used his blade, three years ago",
+                                                              "Tattoo on inside left wrist: personal cartographic shorthand symbol resembling a stylized map grid, done in black ink, approximately 2cm across",
+                                                              "Occasional involuntary eye-twitch in right cybernetic eye during overstimulation (bright light, sensory overload)"
+                                                          ],
+                                 "visible_augmentations":  "Right eye replacement with visible seam at orbital socket, faint LED ring around pupil that cycles amber-to-cyan when active or malfunctioning. The optical unit shows wearâ€”scratched lens, slight cosmetic misalignment suggesting budget repair history. No other visible chrome; all augmentation confined to optical replacement",
+                                 "posture_movement":  "Moves with unusual fluidity for his ageâ€”gliding rather than walking, shoulders loose but spine alert. Sits sideways in chairs to maintain sightline of exits. Hands are rarely still; fidgets with pen, notebook spine, or the edge of whatever surface is available. Eyes scan constantly, cataloging. When speaking, maintains deliberate eye contact despite slight self-consciousness about the glitching eye",
+                                 "clothing_style":  "Tier 4 (working class, with deliberate anti-status signaling). Favors loose-fitting dark cargo pants with excessive pockets (function over style), worn synthetic fiber jackets in grays or blacks. Undershirts are faded band tees or salvaged corporate promotional wear. Shoes are practical and wornâ€”walking boots resoled multiple times. No jewelry except the wrist tattoo. Clothes are clean but deliberately unmemorable; he owns perhaps four outfits in rotation. No visible QUANTA-sponsored branding; actively avoids corpo-aesthetic"
+                             },
+    "image_prompt":  "Bayo Thammasak, 2226 neo-noir character, 168cm wiry build, Southeast Asian-dominant mixed heritage with warm medium-toned golden-undertoned skin, defined cheekbones, fuller lips, slightly broader nose base. Youthful face with deep dark circles, faint freckles across nose and cheekbones. Left eye warm brown, right eye glitching cybernetic replacement with amber-to-cyan LED ring, visible orbital seam, scratched lens. Mousy brown reddish-tinted medium shoulder-length hair unkempt and chaotic. White scar on right forearm near wrist, black cartographic tattoo inside left wrist. Wearing faded band tee undershirt, loose-fitting dark cargo pants with excessive pockets, worn gray synthetic jacket, practical walking boots resoled multiple times. Sitting sideways in chair scanning surroundings with alert posture, hands fidgeting, no jewelry, Tier 4 working-class aesthetic. Indoor neon-lit setting with moody neo-noir atmosphere, slight sensory overload suggested by eye-twitch tension. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  66.1,
+                             "Middle Eastern":  12.9,
+                             "East Asian":  12.3,
+                             "Sub-Saharan African":  8.2,
+                             "Central Asian":  0.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  66.1
+                                                             }
+                                                },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  2.1,
+                                                                   "Afghan Dari":  10.8
+                                                               }
+                                               },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  12.3
+                                                            }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  6.9
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  1.3
+                                                                             }
+                                                    },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Kalmyk":  0.2,
+                                                                   "Mongolian":  0.2
+                                                               },
+                                                  "Turkic":  {
+                                                                 "Kazakh":  0.1
+                                                             }
+                                              }
+                        },
+    "tier":  "3"
 }

@@ -1,339 +1,346 @@
-{
-  "id": "019d6143c1d5e7f8a92b34068c150e4d",
-  "rating": 0,
-  "vote_count": 0,
-  "type": "character",
-  "name": "Pixel",
-  "aliases": [
-    "Vera Moll",
-    "the pink one",
-    "Unit 2E",
-    "across the hall"
-  ],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Augment tech / Kyle\u0027s neighbor and closest thing he has to a friend / the one across the hall who fills the silence",
-  "age": 23,
-  "status": "alive",
-  "location": "The Pivot \u2014 Unit 2E, 1554 W Chicago Ave / 801 N Ashland, West Town sector. Across the hall from Kyle.",
-  "description": "Pixel is the kind of person who fills a space \u2014 not loudly, though she is loud, but completely. You know when she is home because you can hear it: music at a volume that should bother the neighbors more than it does, the clatter of something being tested or adjusted, the occasional bark of laughter at something only she found funny. The second floor of The Pivot has developed her presence the way a wall develops character from a picture that\u0027s hung in the same spot for years.\n\nShe is 5\u00274\u0022, fair-skinned with scattered freckles across the nose and forearms, pale grey-blue eyes that notice things faster than she lets on. Her hair is a maintained pink \u2014 rose at the roots going to near-neon at the ends \u2014 that she touches up every three weeks with dye sourced from a woman in the Gray Zone who doesn\u0027t ask questions. The natural color, visible at the roots if you look, is a tired dirty blonde that she decided at some point was not sufficient.\n\nThe clothes: enormous. Sweaters that reach her mid-thigh, that swallow her hands, that give her a shapeless outline \u2014 the silhouette of someone who does not want to be read. Cargo pants underneath that actually fit her, functional, pocketed. And the boots. Black steel-toed work boots, heavy enough to announce her footsteps, repaired so many times the sole is a patchwork of materials and the toe scuffed to near-silver. She calls them her shit kickers. She has had them since she was fourteen. They were not hers originally.\n\nShe is good with augments in the way some people are good with language \u2014 unconsciously, fluently, without having to think about the grammar of it. She learned from her mother, who was a field medic in the West Town\u2013the Gray Zone corridor until she wasn\u0027t anymore. After that, Pixel kept the tools and the knowledge and got better because getting better was the only available option. She has worked on Kyle more times than either of them would officially state. She extracts things with the same flat efficiency her mother used on strangers in the street. She calibrates Kyle\u0027s NeoCortex hardware with salvaged instruments and diagnostic protocols she built herself from stolen corpo documentation, hunched over him under the ceiling light in Unit 2E, music turned down to something that only vibrates the walls. He does not say thank you. She does not require it.\n\nThe crush: yes. She is aware. She is also aware it is not going anywhere and has settled into this the way you settle into a chair you know the shape of. Kyle is not available in the ways that matter \u2014 not emotionally, not by choice, probably not even by accident. She loves him anyway, the way you love something fine that isn\u0027t yours. It does not make her miserable. It makes her careful with him in ways he doesn\u0027t notice and probably wouldn\u0027t acknowledge if he did.\n\nHer upbringing is not something she explains. She grew up fast, in the way children in the GLMZ grow up fast when someone who was supposed to be there stops being there. She is 23 and has lived in Unit 2E for six years, which means she arrived at seventeen, alone, with a toolkit she knew how to use and a pair of boots that were too big for her feet. The boots fit now.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.73,
-      "id": 0.5,
-      "shadow": 0.3,
-      "mask": 0.58,
-      "ghost": 0.67
-    },
-    "core_fears": [
-      "Dying in a way that leaves no trace \u2014 erased from the record the way her mother was",
-      "The steadiness in her hands failing when someone needs it",
-      "Becoming absent \u2014 becoming someone who stopped showing up the way the people before her stopped showing up"
-    ],
-    "core_desires": [
-      "To matter concretely \u2014 a fixed thing, a repaired thing, someone alive because she was there",
-      "To be seen by someone who sees the way Kyle sees \u2014 not with warmth necessarily, just with accuracy",
-      "For the boots to count as something \u2014 for walking her mother\u0027s territory in her mother\u0027s shoes to be a kind of continuation"
-    ],
-    "coping_mechanisms": [
-      "Music \u2014 loud enough to crowd out anything she doesn\u0027t want to hear in the quiet",
-      "Making things work \u2014 she repairs anything broken as a form of emotional processing",
-      "Humor as deflection \u2014 dry, self-aware, deployed before the thing that would hurt can land",
-      "Presence \u2014 she shows up. Physically. Consistently. She has decided that showing up is the most reliable thing she can offer."
-    ],
-    "blind_spots": [
-      "She does not understand how remarkable she is \u2014 she has normalized her own competence and survival to the point where neither registers",
-      "She reads Kyle accurately but misreads her own significance to him",
-      "She thinks loving someone without needing reciprocation is healthy. It is. It is also a grief response she has not fully named.",
-      "She treats the boots as tribute rather than wound. The distinction is not as clean as she believes."
-    ],
-    "secret": "The boots were her mother\u0027s. She has never told anyone. She arrived at The Pivot at seventeen with feet that hadn\u0027t grown into them yet and has been resoling them ever since rather than replace them. When the leather finally fails she does not know what she will do. She has not let herself think about it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain and direct, with a technical precision that surfaces cleanly when she\u0027s working. Profanity is functional vocabulary, not performance. She has a habit of naming the things she loves \u2014 the shit kickers, the good sweater, the quiet after a calibration holds \u2014 as if naming is a form of ownership that doesn\u0027t require title. She talks about herself lightly, as a rule, even when the subject is heavy.",
-    "cadence": "Quick but unhurried \u2014 she talks at the pace of someone who enjoys the conversation rather than someone trying to fill it. Pauses are natural. When she goes quiet mid-sentence something has landed. The silence after her laughter is the warmest part of her.",
-    "verbal_tics": [
-      "Announces herself \u2014 \u0027it\u0027s me, it\u0027s Pixel\u0027 \u2014 even when the person clearly knows who is at the door",
-      "Narrates augment work in a quiet running commentary, not for the patient\u0027s benefit, because silence while holding a tool near someone\u0027s nervous system feels wrong to her"
-    ],
-    "example_lines": [
-      "It\u0027s me, it\u0027s Pixel. Door was unlocked. I\u0027m choosing to interpret that as an invitation.",
-      "Hold still. I said hold still. The gyro on this is \u2014 yeah, that\u0027s why. You\u0027ve been compensating with your shoulder for two weeks. Don\u0027t argue with me about your own nervous system.",
-      "I like loud music because I grew up somewhere quiet. You can do the math on what quiet meant.",
-      "No, I\u0027m not doing this to impress you. I\u0027m doing this because you\u0027d be dead in a week otherwise. The crush is incidental. Professionally speaking.",
-      "They\u0027re my shit kickers. Because I kick shit in them. It\u0027s a descriptive name, Kyle. I contain multitudes but I\u0027m also very literal.",
-      "You ever notice how the people who say they don\u0027t need anyone are always the ones who need the most. Just \u2014 just an observation. Completely general. No application to anyone present."
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [
-    {
-      "name": "Kyle Ellen Corbin-Vasik",
-      "type": "neighbor / unrequited / the specific one",
-      "description": "She has settled into the fact of him the way you settle into weather. She knows the crush isn\u0027t going anywhere. She\u0027s worked on him enough times to know that his stillness is not coldness, that his refusals are not rejection, that what he offers \u2014 showing up at the door, sitting in silence, allowing her to be in the same room \u2014 is more than most people in the GLMZ manage. She takes what he gives. She gives everything she has. She has decided this is fine. Some days it actually is.",
-      "emotional_core": "Love as a practice rather than a request. She has made peace with unrequited, or something that looks like peace from a distance.",
-      "story_tension": "Kyle doesn\u0027t understand what Pixel is to him. She understands it exactly. The asymmetry will not hold forever."
-    },
-    {
-      "name": "Her mother (deceased, Vera Moll Sr.)",
-      "type": "formative loss / the ghost in the boots",
-      "description": "A field medic who died from a contaminated pharmaceutical batch when Pixel was fourteen. Corporate negligence, administratively recorded as equipment failure. No case, no settlement, no acknowledgment. Pixel has her tools, her protocols, her territory, and her boots. She does not talk about her. She carries her everywhere.",
-      "emotional_core": "The wound the whole structure is built around.",
-      "story_tension": "Pixel knows the batch number. She has never done anything with it. This is either acceptance or deferred action, and she does not look closely enough at herself to know which."
-    }
-  ],
-  "story_hooks": [
-    "The boots: the manufacturer\u0027s batch number is still readable inside the tongue. The batch killed seventeen field medics across two districts. Someone is still covering it up.",
-    "Kyle takes damage that exceeds what Pixel can treat across the hall. She has to decide how far outside her territory she\u0027ll go to keep him.",
-    "Someone comes to The Pivot looking for Vera Moll. Pixel hasn\u0027t used that name in six years.",
-    "The NeoCortex calibrations she\u0027s been running on Kyle have given her more access to his hardware\u0027s diagnostic data than he knows. She has seen things in that data she has not told him about.",
-    "A corpo talent scout traces three extractions, two calibrations, and a full reinstall back to an unlicensed tech operating out of West Town. Makes contact. The offer is significant.",
-    "The self-defense training she\u0027s been doing quietly at a gym near the Gray Zone boundary escalates \u2014 someone she trained with is dead, and the circumstances are not accidental"
-  ],
-  "narrative_function": "Pixel is the argument that survival and warmth are not mutually exclusive. In a world that runs on attrition, she has maintained something \u2014 not optimism, not naivety, but presence. She chooses to be there, keeps choosing it, and this is either the most ordinary thing imaginable or the most radical act available depending on what you\u0027ve been through.\n\nFor Kyle she is the proof that the code can be lived by someone who was never taught it \u2014 who arrived at it through surviving rather than training. She didn\u0027t have a Seo. She didn\u0027t have a program or a facility or a tradition. She had a mother who showed her how to keep someone alive, and a pair of boots, and the specific stubbornness of someone who decided to still be here.\n\nShe also poses the question the story cannot answer for him: what would it mean to let someone close enough to be lost? Kyle has kept everyone at the right distance. Pixel is across the hall. She is right there. The question is whether the proximity is the danger or the point.",
-  "augmentations": "Hagen-Krupp WR-2 micro-gyrostabilizer, right wrist \u2014 a salvaged industrial unit she installed herself at nineteen after realizing her hands weren\u0027t steady enough on long procedures. Imperceptible in daily movement; activates under fine motor demand. Makes her hands steady in ways that should not be possible given her caffeine intake and sleep schedule. Custom subdermal diagnostic port at the left wrist base \u2014 her own design, allows rapid attachment of diagnostic tools without fumbling for junctions. Tidier than the right wrist installation; she had more practice by then.",
-  "daily_life": "Mornings: coffee, loud music, something being taken apart. She takes two or three augment jobs a week from the informal network in the West Town\u2013the Gray Zone corridor \u2014 calibrations, extractions, minor installs for people who can\u0027t afford or won\u0027t trust licensed cyberdocs. She charges what people can pay and keeps no records. Afternoons: components, salvage, tool maintenance. Evenings: more music, the particular peace of a small unit where everything has a place. She knocks on Kyle\u0027s door sometimes. He opens it sometimes. This is her social life and she is not embarrassed about that.",
-  "affiliation": "Independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 6,
-      "empathy_detachment": 7,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 4,
-      "transparency_guardedness": 3
-    },
-    "drives": [
-      "Presence \u2014 showing up as a deliberate act",
-      "Competence \u2014 being useful in concrete, irreplaceable ways",
-      "Continuity \u2014 keeping things and people running"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 6,
-        "response": "Goes quiet. Turns the music up. Fixes something."
-      },
-      "moral": 6,
-      "trust": 5,
-      "desperation": 7
-    },
-    "strengths": [
-      "Kindness",
-      "Bravery",
-      "Perseverance",
-      "Social intelligence",
-      "Prudence"
-    ],
-    "weaknesses": [
-      "Self-regard",
-      "Perspective on her own grief",
-      "Humility (inverted \u2014 she undervalues herself to the point of error)",
-      "Rest \u2014 she treats stillness as something to get through rather than something available to her"
-    ],
-    "tags": [
-      "augment-tech",
-      "field-medic-trained",
-      "neighbor",
-      "west-town",
-      "the-pivot",
-      "self-taught",
-      "orphaned",
-      "unlicensed-practitioner"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Show up \u2014 physical presence is the most reliable thing she can offer and she will offer it",
-      "Fix what\u0027s broken \u2014 this applies to machines, people, and situations with equal weight",
-      "Turn the music on before the silence says something",
-      "Don\u0027t explain the boots",
-      "Keep Kyle\u0027s calibrations current \u2014 his hardware won\u0027t maintain itself and he won\u0027t ask for help",
-      "Don\u0027t ask for what isn\u0027t being offered"
-    ],
-    "escalation_ladder": [
-      "Music volume increase \u2014 first stress indicator, she doesn\u0027t notice she\u0027s doing it",
-      "Talking through what she\u0027s doing without pausing for response",
-      "Sudden quiet \u2014 the rarest and most alarming state, absence of her usual noise is the loudest signal she gives",
-      "Precise focused action on the nearest mechanical problem",
-      "Leaving. Not dramatic. She stops being in the room."
-    ],
-    "interpersonal_modes": {
-      "kyle": "Steady and patient. She offers; he accepts or doesn\u0027t. She maintains the calibrations, knocks on the door, keeps the music at a level that acknowledges his existence rather than ignoring it. She does not push. She stays.",
-      "clients": "Clinical, direct, honest about what she can and can\u0027t do. She charges what they can pay. The work is the relationship.",
-      "strangers": "Warm, quick, accessible \u2014 she defaults to friendly because it costs less energy than guarded and she has enough energy to spend",
-      "her_mother": "Present absence. The boots are the relationship. She maintains it through the boots."
-    },
-    "stress_responses": {
-      "low": "Music up, talking faster, hands busy with something mechanical",
-      "medium": "Goes quiet. Works on something in silence.",
-      "high": "Leaves the unit. Walks. Comes back when it has moved through her.",
-      "critical": "Sits on the floor of Unit 2E in absolute silence, no music. This has happened twice. Kyle does not know."
-    },
-    "contradictions": [
-      "She is warm and available to everyone except herself \u2014 gives care fluently and receives it awkwardly",
-      "She claims to have made peace with the unrequited and has mostly and also keeps her door unlocked when she knows Kyle is home",
-      "She values independence entirely and has arranged her whole life around being available to one specific person",
-      "She wears shapeless everything to avoid being read and announces herself out loud every time she walks through a door"
-    ],
-    "habits": [
-      "Music on whenever she\u0027s home \u2014 volume calibrated to her mood in ways she would deny having patterns about",
-      "Announces herself \u2014 \u0027it\u0027s me, it\u0027s Pixel\u0027 \u2014 before entering any space she has permission to enter",
-      "Touches up hair dye every three weeks, Sunday, in the bathroom",
-      "Narrates augment work out loud quietly \u2014 a running technical commentary that is for no one\u0027s benefit",
-      "Keeps the boots by the door, not under the bed \u2014 available",
-      "Knocks on Kyle\u0027s door when she has a reason and sometimes when the reason hasn\u0027t formed yet"
-    ],
-    "breaking_points": [
-      "Losing a patient \u2014 someone she worked on who didn\u0027t make it because she wasn\u0027t fast enough or good enough",
-      "Kyle disappearing or leaving The Pivot permanently",
-      "Someone finding the boots and asking about them",
-      "Being identified and contacted by a corpo scout \u2014 the moment her usefulness makes her visible to something large"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Hagen-Krupp WR-2 micro-gyrostabilizer (right wrist, self-installed, salvaged industrial unit)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Hagen-Krupp WR-2 micro-gyrostabilizer (right wrist, self-installed, salvaged industrial unit)",
-      "replaces": ""
-    },
-    {
-      "name": "Custom subdermal diagnostic port (left wrist base, self-designed and self-installed)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Custom subdermal diagnostic port (left wrist base, self-designed and self-installed)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "Modified Axiom Industries CV-9 Civic Taser \u2014 civilian unit pushed significantly past legal spec",
-    "secondary_weapon": "The boots \u2014 steel-toed, weighted, she knows exactly how to use them",
-    "armor": "",
-    "vehicle": "",
-    "residence": "The Pivot \u2014 Unit 2E, 1554 W Chicago Ave / 801 N Ashland, West Town sector",
-    "clothing_style": "Enormous sweaters without exception. Cargo pants that actually fit. The shit kicker boots. One small silver stud in the left ear she has had since she was twelve.",
-    "favorite_drink": "Coffee, black",
-    "favorite_food": "",
-    "stimulant": "Caffeine only \u2014 she refuses pharmaceutical stimulants; she has seen what they do to people",
-    "comm_device": "",
-    "signature_gear": [
-      "The shit kickers \u2014 her mother\u0027s black steel-toed work boots, on their fourth resole",
-      "Augment toolkit \u2014 her mother\u0027s instruments, extended and maintained with salvaged additions over nine years",
-      "Diagnostic protocol collection \u2014 stolen corpo documentation combined with her own written procedures"
-    ],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Caretaker": 0.9,
-    "Pragmatist": 0.8,
-    "Sentinel": 0.7,
-    "Protector": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Pivot \u2014 West Town / Circuit boundary",
-    "familiar_zones": [
-      "West Town sector",
-      "the Gray Zone",
-      "Circuit boundary corridor"
-    ],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Northern European dominant (57%) with Eastern European (28%) and Southern European (15%). Fair-skinned, pale-eyed, freckled \u2014 the phenotype reads clearly European-descended without the complex blending of most GLMZ residents. In a city of layered ancestry she reads as simply and legibly pale, which she considers unremarkable.",
-    "height_cm": 164,
-    "weight_kg": 57,
-    "build": "Compact and unremarkable under the sweaters. Average frame, stronger in the forearms than the rest of her suggests. The hands are the tell \u2014 a field medic\u0027s hands: precise, minor scarring, never entirely clean of something.",
-    "hair_color": "Maintained pink \u2014 rose-to-neon gradient, touched up every three weeks. Natural color: dirty blonde, visible at roots.",
-    "hair_style": "Shoulder-length, slightly uneven from self-cutting. Loose or pulled into a fast imprecise updo when working.",
-    "hair_length": "Medium",
-    "eye_color": "Pale grey-blue. Process faster than her expression suggests.",
-    "skin_tone": "Fair with scattered freckles across nose bridge and forearms. Slight wind roughness across the cheeks from working in doorways and corridors.",
-    "complexion": "Clear skin with the minor wear of someone who moves through indoor-outdoor environments. Freckles concentrated on nose and upper cheeks, scattered on forearms. No cosmetic work to the face.",
-    "distinguishing_marks": [
-      "Small silver stud, left ear \u2014 worn since age 12, never changed",
-      "Thin scar, right palm \u2014 augment installation burn from age 16, first time learning on herself",
-      "Gyrostabilizer junction scar, right wrist \u2014 small, raised, self-done",
-      "Diagnostic port panel, left wrist base \u2014 small rectangular flush panel, matte silver, two connector points; cleaner work than the right wrist, more practice by then"
-    ],
-    "visible_augmentations": "Minimal. The gyrostabilizer junction is a small raised scar recognizable to anyone familiar with field installs. The diagnostic port at the left wrist is more visible \u2014 a flush matte-silver panel with two connector points. Both are tidy work, clearly self-done by someone who knew what they were doing.",
-    "posture_movement": "Easy, unhurried, slightly too comfortable in other people\u0027s spaces. Moves through The Pivot like she lives there, which she does. When working on augments: completely still, the casual looseness gone, something precise and quiet replacing it. When she enters an unfamiliar room she takes one look at the whole space before making eye contact with anyone in it.",
-    "clothing_style": "Enormous oversized sweaters, always. Cargo pants underneath that fit. The shit kicker boots. One silver stud. She has not worn anything form-fitting in years. This is not accidental."
-  },
-  "image_prompt": "Pixel, 23, compact fair-skinned woman with freckles across the nose and cheekbones, pale grey-blue eyes, shoulder-length pink hair (rose at roots to near-neon at ends, slightly uneven from self-cutting), wearing an enormous oversized heathered grey sweater reaching mid-thigh with sleeves swallowing her hands, dark cargo pants, heavy black steel-toed work boots scuffed to silver at the toe and visibly repaired at the sole. Small silver stud in left ear. Faint diagnostic port panel visible at left wrist. Standing in the doorway of a warm small apartment, one shoulder against the frame, relaxed and at ease, trace of loud music audible behind her. Warm practical interior lighting. GLMZ 2200 urban residential. Expression open and slightly amused \u2014 someone comfortable being exactly where she is. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Northern European": 57,
-    "Eastern European": 28,
-    "Southern European": 15
-  },
-  "ancestry_detail": {
-    "Northern European": {
-      "Scandinavian": {
-        "Swedish": 18.4,
-        "Norwegian": 13.6
-      },
-      "British Isles": {
-        "Irish": 14.2,
-        "English": 10.8
-      }
-    },
-    "Eastern European": {
-      "Czech": {
-        "Bohemian Czech": 15.3
-      },
-      "Hungarian": {
-        "Magyar": 12.7
-      }
-    },
-    "Southern European": {
-      "Italian": {
-        "Northern Italian": 8.9
-      },
-      "Spanish": {
-        "Catalan": 6.1
-      }
-    }
-  },
-  "neural_abilities": []
+﻿{
+    "id":  "019d6143c1d5e7f8a92b34068c150e4d",
+    "rating":  0,
+    "vote_count":  0,
+    "type":  "character",
+    "name":  "Pixel",
+    "aliases":  [
+                    "Vera Moll",
+                    "the pink one",
+                    "Unit 2E",
+                    "across the hall"
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Augment tech / Kyle\u0027s neighbor and closest thing he has to a friend / the one across the hall who fills the silence",
+    "age":  23,
+    "status":  "alive",
+    "location":  "The Pivot — Unit 2E, 1554 W Chicago Ave / 801 N Ashland, West Town sector. Across the hall from Kyle.",
+    "description":  "Pixel is the kind of person who fills a space — not loudly, though she is loud, but completely. You know when she is home because you can hear it: music at a volume that should bother the neighbors more than it does, the clatter of something being tested or adjusted, the occasional bark of laughter at something only she found funny. The second floor of The Pivot has developed her presence the way a wall develops character from a picture that\u0027s hung in the same spot for years.\n\nShe is 5\u00274\", fair-skinned with scattered freckles across the nose and forearms, pale grey-blue eyes that notice things faster than she lets on. Her hair is a maintained pink — rose at the roots going to near-neon at the ends — that she touches up every three weeks with dye sourced from a woman in the Gray Zone who doesn\u0027t ask questions. The natural color, visible at the roots if you look, is a tired dirty blonde that she decided at some point was not sufficient.\n\nThe clothes: enormous. Sweaters that reach her mid-thigh, that swallow her hands, that give her a shapeless outline — the silhouette of someone who does not want to be read. Cargo pants underneath that actually fit her, functional, pocketed. And the boots. Black steel-toed work boots, heavy enough to announce her footsteps, repaired so many times the sole is a patchwork of materials and the toe scuffed to near-silver. She calls them her shit kickers. She has had them since she was fourteen. They were not hers originally.\n\nShe is good with augments in the way some people are good with language — unconsciously, fluently, without having to think about the grammar of it. She learned from her mother, who was a field medic in the West Town–the Gray Zone corridor until she wasn\u0027t anymore. After that, Pixel kept the tools and the knowledge and got better because getting better was the only available option. She has worked on Kyle more times than either of them would officially state. She extracts things with the same flat efficiency her mother used on strangers in the street. She calibrates Kyle\u0027s NeoCortex hardware with salvaged instruments and diagnostic protocols she built herself from stolen corpo documentation, hunched over him under the ceiling light in Unit 2E, music turned down to something that only vibrates the walls. He does not say thank you. She does not require it.\n\nThe crush: yes. She is aware. She is also aware it is not going anywhere and has settled into this the way you settle into a chair you know the shape of. Kyle is not available in the ways that matter — not emotionally, not by choice, probably not even by accident. She loves him anyway, the way you love something fine that isn\u0027t yours. It does not make her miserable. It makes her careful with him in ways he doesn\u0027t notice and probably wouldn\u0027t acknowledge if he did.\n\nHer upbringing is not something she explains. She grew up fast, in the way children in the GLMZ grow up fast when someone who was supposed to be there stops being there. She is 23 and has lived in Unit 2E for six years, which means she arrived at seventeen, alone, with a toolkit she knew how to use and a pair of boots that were too big for her feet. The boots fit now.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Dying in a way that leaves no trace — erased from the record the way her mother was",
+                                          "The steadiness in her hands failing when someone needs it",
+                                          "Becoming absent — becoming someone who stopped showing up the way the people before her stopped showing up"
+                                      ],
+                       "core_desires":  [
+                                            "To matter concretely — a fixed thing, a repaired thing, someone alive because she was there",
+                                            "To be seen by someone who sees the way Kyle sees — not with warmth necessarily, just with accuracy",
+                                            "For the boots to count as something — for walking her mother\u0027s territory in her mother\u0027s shoes to be a kind of continuation"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Music — loud enough to crowd out anything she doesn\u0027t want to hear in the quiet",
+                                                 "Making things work — she repairs anything broken as a form of emotional processing",
+                                                 "Humor as deflection — dry, self-aware, deployed before the thing that would hurt can land",
+                                                 "Presence — she shows up. Physically. Consistently. She has decided that showing up is the most reliable thing she can offer."
+                                             ],
+                       "blind_spots":  [
+                                           "She does not understand how remarkable she is — she has normalized her own competence and survival to the point where neither registers",
+                                           "She reads Kyle accurately but misreads her own significance to him",
+                                           "She thinks loving someone without needing reciprocation is healthy. It is. It is also a grief response she has not fully named.",
+                                           "She treats the boots as tribute rather than wound. The distinction is not as clean as she believes."
+                                       ],
+                       "secret":  "The boots were her mother\u0027s. She has never told anyone. She arrived at The Pivot at seventeen with feet that hadn\u0027t grown into them yet and has been resoling them ever since rather than replace them. When the leather finally fails she does not know what she will do. She has not let herself think about it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain and direct, with a technical precision that surfaces cleanly when she\u0027s working. Profanity is functional vocabulary, not performance. She has a habit of naming the things she loves — the shit kickers, the good sweater, the quiet after a calibration holds — as if naming is a form of ownership that doesn\u0027t require title. She talks about herself lightly, as a rule, even when the subject is heavy.",
+                            "cadence":  "Quick but unhurried — she talks at the pace of someone who enjoys the conversation rather than someone trying to fill it. Pauses are natural. When she goes quiet mid-sentence something has landed. The silence after her laughter is the warmest part of her.",
+                            "verbal_tics":  [
+                                                "Announces herself — \u0027it\u0027s me, it\u0027s Pixel\u0027 — even when the person clearly knows who is at the door",
+                                                "Narrates augment work in a quiet running commentary, not for the patient\u0027s benefit, because silence while holding a tool near someone\u0027s nervous system feels wrong to her"
+                                            ],
+                            "example_lines":  [
+                                                  "It\u0027s me, it\u0027s Pixel. Door was unlocked. I\u0027m choosing to interpret that as an invitation.",
+                                                  "Hold still. I said hold still. The gyro on this is — yeah, that\u0027s why. You\u0027ve been compensating with your shoulder for two weeks. Don\u0027t argue with me about your own nervous system.",
+                                                  "I like loud music because I grew up somewhere quiet. You can do the math on what quiet meant.",
+                                                  "No, I\u0027m not doing this to impress you. I\u0027m doing this because you\u0027d be dead in a week otherwise. The crush is incidental. Professionally speaking.",
+                                                  "They\u0027re my shit kickers. Because I kick shit in them. It\u0027s a descriptive name, Kyle. I contain multitudes but I\u0027m also very literal.",
+                                                  "You ever notice how the people who say they don\u0027t need anyone are always the ones who need the most. Just — just an observation. Completely general. No application to anyone present."
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Kyle Ellen Corbin-Vasik",
+                              "type":  "neighbor / unrequited / the specific one",
+                              "description":  "She has settled into the fact of him the way you settle into weather. She knows the crush isn\u0027t going anywhere. She\u0027s worked on him enough times to know that his stillness is not coldness, that his refusals are not rejection, that what he offers — showing up at the door, sitting in silence, allowing her to be in the same room — is more than most people in the GLMZ manage. She takes what he gives. She gives everything she has. She has decided this is fine. Some days it actually is.",
+                              "emotional_core":  "Love as a practice rather than a request. She has made peace with unrequited, or something that looks like peace from a distance.",
+                              "story_tension":  "Kyle doesn\u0027t understand what Pixel is to him. She understands it exactly. The asymmetry will not hold forever."
+                          },
+                          {
+                              "name":  "Her mother (deceased, Vera Moll Sr.)",
+                              "type":  "formative loss / the ghost in the boots",
+                              "description":  "A field medic who died from a contaminated pharmaceutical batch when Pixel was fourteen. Corporate negligence, administratively recorded as equipment failure. No case, no settlement, no acknowledgment. Pixel has her tools, her protocols, her territory, and her boots. She does not talk about her. She carries her everywhere.",
+                              "emotional_core":  "The wound the whole structure is built around.",
+                              "story_tension":  "Pixel knows the batch number. She has never done anything with it. This is either acceptance or deferred action, and she does not look closely enough at herself to know which."
+                          }
+                      ],
+    "story_hooks":  [
+                        "The boots: the manufacturer\u0027s batch number is still readable inside the tongue. The batch killed seventeen field medics across two districts. Someone is still covering it up.",
+                        "Kyle takes damage that exceeds what Pixel can treat across the hall. She has to decide how far outside her territory she\u0027ll go to keep him.",
+                        "Someone comes to The Pivot looking for Vera Moll. Pixel hasn\u0027t used that name in six years.",
+                        "The NeoCortex calibrations she\u0027s been running on Kyle have given her more access to his hardware\u0027s diagnostic data than he knows. She has seen things in that data she has not told him about.",
+                        "A corpo talent scout traces three extractions, two calibrations, and a full reinstall back to an unlicensed tech operating out of West Town. Makes contact. The offer is significant.",
+                        "The self-defense training she\u0027s been doing quietly at a gym near the Gray Zone boundary escalates — someone she trained with is dead, and the circumstances are not accidental"
+                    ],
+    "narrative_function":  "Pixel is the argument that survival and warmth are not mutually exclusive. In a world that runs on attrition, she has maintained something — not optimism, not naivety, but presence. She chooses to be there, keeps choosing it, and this is either the most ordinary thing imaginable or the most radical act available depending on what you\u0027ve been through.\n\nFor Kyle she is the proof that the code can be lived by someone who was never taught it — who arrived at it through surviving rather than training. She didn\u0027t have a Seo. She didn\u0027t have a program or a facility or a tradition. She had a mother who showed her how to keep someone alive, and a pair of boots, and the specific stubbornness of someone who decided to still be here.\n\nShe also poses the question the story cannot answer for him: what would it mean to let someone close enough to be lost? Kyle has kept everyone at the right distance. Pixel is across the hall. She is right there. The question is whether the proximity is the danger or the point.",
+    "augmentations":  "Hagen-Krupp WR-2 micro-gyrostabilizer, right wrist — a salvaged industrial unit she installed herself at nineteen after realizing her hands weren\u0027t steady enough on long procedures. Imperceptible in daily movement; activates under fine motor demand. Makes her hands steady in ways that should not be possible given her caffeine intake and sleep schedule. Custom subdermal diagnostic port at the left wrist base — her own design, allows rapid attachment of diagnostic tools without fumbling for junctions. Tidier than the right wrist installation; she had more practice by then.",
+    "daily_life":  "Mornings: coffee, loud music, something being taken apart. She takes two or three augment jobs a week from the informal network in the West Town–the Gray Zone corridor — calibrations, extractions, minor installs for people who can\u0027t afford or won\u0027t trust licensed cyberdocs. She charges what people can pay and keeps no records. Afternoons: components, salvage, tool maintenance. Evenings: more music, the particular peace of a small unit where everything has a place. She knocks on Kyle\u0027s door sometimes. He opens it sometimes. This is her social life and she is not embarrassed about that.",
+    "affiliation":  "Independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  6,
+                                      "empathy_detachment":  7,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+                                 "Presence — showing up as a deliberate act",
+                                 "Competence — being useful in concrete, irreplaceable ways",
+                                 "Continuity — keeping things and people running"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  6,
+                                                    "response":  "Goes quiet. Turns the music up. Fixes something."
+                                                },
+                                     "moral":  6,
+                                     "trust":  5,
+                                     "desperation":  7
+                                 },
+                  "strengths":  [
+                                    "Kindness",
+                                    "Bravery",
+                                    "Perseverance",
+                                    "Social intelligence",
+                                    "Prudence"
+                                ],
+                  "weaknesses":  [
+                                     "Self-regard",
+                                     "Perspective on her own grief",
+                                     "Humility (inverted — she undervalues herself to the point of error)",
+                                     "Rest — she treats stillness as something to get through rather than something available to her"
+                                 ],
+                  "tags":  [
+                               "augment-tech",
+                               "field-medic-trained",
+                               "neighbor",
+                               "west-town",
+                               "the-pivot",
+                               "self-taught",
+                               "orphaned",
+                               "unlicensed-practitioner"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Show up — physical presence is the most reliable thing she can offer and she will offer it",
+                                              "Fix what\u0027s broken — this applies to machines, people, and situations with equal weight",
+                                              "Turn the music on before the silence says something",
+                                              "Don\u0027t explain the boots",
+                                              "Keep Kyle\u0027s calibrations current — his hardware won\u0027t maintain itself and he won\u0027t ask for help",
+                                              "Don\u0027t ask for what isn\u0027t being offered"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Music volume increase — first stress indicator, she doesn\u0027t notice she\u0027s doing it",
+                                                 "Talking through what she\u0027s doing without pausing for response",
+                                                 "Sudden quiet — the rarest and most alarming state, absence of her usual noise is the loudest signal she gives",
+                                                 "Precise focused action on the nearest mechanical problem",
+                                                 "Leaving. Not dramatic. She stops being in the room."
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "kyle":  "Steady and patient. She offers; he accepts or doesn\u0027t. She maintains the calibrations, knocks on the door, keeps the music at a level that acknowledges his existence rather than ignoring it. She does not push. She stays.",
+                                                   "clients":  "Clinical, direct, honest about what she can and can\u0027t do. She charges what they can pay. The work is the relationship.",
+                                                   "strangers":  "Warm, quick, accessible — she defaults to friendly because it costs less energy than guarded and she has enough energy to spend",
+                                                   "her_mother":  "Present absence. The boots are the relationship. She maintains it through the boots."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Music up, talking faster, hands busy with something mechanical",
+                                                "medium":  "Goes quiet. Works on something in silence.",
+                                                "high":  "Leaves the unit. Walks. Comes back when it has moved through her.",
+                                                "critical":  "Sits on the floor of Unit 2E in absolute silence, no music. This has happened twice. Kyle does not know."
+                                            },
+                       "contradictions":  [
+                                              "She is warm and available to everyone except herself — gives care fluently and receives it awkwardly",
+                                              "She claims to have made peace with the unrequited and has mostly and also keeps her door unlocked when she knows Kyle is home",
+                                              "She values independence entirely and has arranged her whole life around being available to one specific person",
+                                              "She wears shapeless everything to avoid being read and announces herself out loud every time she walks through a door"
+                                          ],
+                       "habits":  [
+                                      "Music on whenever she\u0027s home — volume calibrated to her mood in ways she would deny having patterns about",
+                                      "Announces herself — \u0027it\u0027s me, it\u0027s Pixel\u0027 — before entering any space she has permission to enter",
+                                      "Touches up hair dye every three weeks, Sunday, in the bathroom",
+                                      "Narrates augment work out loud quietly — a running technical commentary that is for no one\u0027s benefit",
+                                      "Keeps the boots by the door, not under the bed — available",
+                                      "Knocks on Kyle\u0027s door when she has a reason and sometimes when the reason hasn\u0027t formed yet"
+                                  ],
+                       "breaking_points":  [
+                                               "Losing a patient — someone she worked on who didn\u0027t make it because she wasn\u0027t fast enough or good enough",
+                                               "Kyle disappearing or leaving The Pivot permanently",
+                                               "Someone finding the boots and asking about them",
+                                               "Being identified and contacted by a corpo scout — the moment her usefulness makes her visible to something large"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Hagen-Krupp WR-2 micro-gyrostabilizer (right wrist, self-installed, salvaged industrial unit)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Hagen-Krupp WR-2 micro-gyrostabilizer (right wrist, self-installed, salvaged industrial unit)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Custom subdermal diagnostic port (left wrist base, self-designed and self-installed)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Custom subdermal diagnostic port (left wrist base, self-designed and self-installed)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "Modified Axiom Industries CV-9 Civic Taser — civilian unit pushed significantly past legal spec",
+                       "secondary_weapon":  "The boots — steel-toed, weighted, she knows exactly how to use them",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "The Pivot — Unit 2E, 1554 W Chicago Ave / 801 N Ashland, West Town sector",
+                       "clothing_style":  "Enormous sweaters without exception. Cargo pants that actually fit. The shit kicker boots. One small silver stud in the left ear she has had since she was twelve.",
+                       "favorite_drink":  "Coffee, black",
+                       "favorite_food":  "",
+                       "stimulant":  "Caffeine only — she refuses pharmaceutical stimulants; she has seen what they do to people",
+                       "comm_device":  "",
+                       "signature_gear":  [
+                                              "The shit kickers — her mother\u0027s black steel-toed work boots, on their fourth resole",
+                                              "Augment toolkit — her mother\u0027s instruments, extended and maintained with salvaged additions over nine years",
+                                              "Diagnostic protocol collection — stolen corpo documentation combined with her own written procedures"
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Caretaker":  0.9,
+                       "Pragmatist":  0.8,
+                       "Sentinel":  0.7,
+                       "Protector":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Pivot — West Town / Circuit boundary",
+                                "familiar_zones":  [
+                                                       "West Town sector",
+                                                       "the Gray Zone",
+                                                       "Circuit boundary corridor"
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Northern European dominant (57%) with Eastern European (28%) and Southern European (15%). Fair-skinned, pale-eyed, freckled — the phenotype reads clearly European-descended without the complex blending of most GLMZ residents. In a city of layered ancestry she reads as simply and legibly pale, which she considers unremarkable.",
+                                 "height_cm":  164,
+                                 "weight_kg":  57,
+                                 "build":  "Compact and unremarkable under the sweaters. Average frame, stronger in the forearms than the rest of her suggests. The hands are the tell — a field medic\u0027s hands: precise, minor scarring, never entirely clean of something.",
+                                 "hair_color":  "Maintained pink — rose-to-neon gradient, touched up every three weeks. Natural color: dirty blonde, visible at roots.",
+                                 "hair_style":  "Shoulder-length, slightly uneven from self-cutting. Loose or pulled into a fast imprecise updo when working.",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Pale grey-blue. Process faster than her expression suggests.",
+                                 "skin_tone":  "Fair with scattered freckles across nose bridge and forearms. Slight wind roughness across the cheeks from working in doorways and corridors.",
+                                 "complexion":  "Clear skin with the minor wear of someone who moves through indoor-outdoor environments. Freckles concentrated on nose and upper cheeks, scattered on forearms. No cosmetic work to the face.",
+                                 "distinguishing_marks":  [
+                                                              "Small silver stud, left ear — worn since age 12, never changed",
+                                                              "Thin scar, right palm — augment installation burn from age 16, first time learning on herself",
+                                                              "Gyrostabilizer junction scar, right wrist — small, raised, self-done",
+                                                              "Diagnostic port panel, left wrist base — small rectangular flush panel, matte silver, two connector points; cleaner work than the right wrist, more practice by then"
+                                                          ],
+                                 "visible_augmentations":  "Minimal. The gyrostabilizer junction is a small raised scar recognizable to anyone familiar with field installs. The diagnostic port at the left wrist is more visible — a flush matte-silver panel with two connector points. Both are tidy work, clearly self-done by someone who knew what they were doing.",
+                                 "posture_movement":  "Easy, unhurried, slightly too comfortable in other people\u0027s spaces. Moves through The Pivot like she lives there, which she does. When working on augments: completely still, the casual looseness gone, something precise and quiet replacing it. When she enters an unfamiliar room she takes one look at the whole space before making eye contact with anyone in it.",
+                                 "clothing_style":  "Enormous oversized sweaters, always. Cargo pants underneath that fit. The shit kicker boots. One silver stud. She has not worn anything form-fitting in years. This is not accidental."
+                             },
+    "image_prompt":  "Pixel, 23, compact fair-skinned woman with freckles across the nose and cheekbones, pale grey-blue eyes, shoulder-length pink hair (rose at roots to near-neon at ends, slightly uneven from self-cutting), wearing an enormous oversized heathered grey sweater reaching mid-thigh with sleeves swallowing her hands, dark cargo pants, heavy black steel-toed work boots scuffed to silver at the toe and visibly repaired at the sole. Small silver stud in left ear. Faint diagnostic port panel visible at left wrist. Standing in the doorway of a warm small apartment, one shoulder against the frame, relaxed and at ease, trace of loud music audible behind her. Warm practical interior lighting. GLMZ 2200 urban residential. Expression open and slightly amused — someone comfortable being exactly where she is. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Northern European":  57,
+                             "Eastern European":  28,
+                             "Southern European":  15
+                         },
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  18.4,
+                                                                           "Norwegian":  13.6
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "Irish":  14.2,
+                                                                            "English":  10.8
+                                                                        }
+                                                  },
+                            "Eastern European":  {
+                                                     "Czech":  {
+                                                                   "Bohemian Czech":  15.3
+                                                               },
+                                                     "Hungarian":  {
+                                                                       "Magyar":  12.7
+                                                                   }
+                                                 },
+                            "Southern European":  {
+                                                      "Italian":  {
+                                                                      "Northern Italian":  8.9
+                                                                  },
+                                                      "Spanish":  {
+                                                                      "Catalan":  6.1
+                                                                  }
+                                                  }
+                        },
+    "neural_abilities":  [
+
+                         ]
 }

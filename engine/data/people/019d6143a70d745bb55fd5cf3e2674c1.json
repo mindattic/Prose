@@ -1,298 +1,327 @@
-{
-  "id": "019d6143a70d745bb55fd5cf3e2674c1",
-  "type": "character",
-  "name": "Hania Wojciechowski",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Clothing and fashion vendor, specializing in bespoke identity garments and faction-adjacent style",
-  "age": 28,
-  "status": "active",
-  "location": "The Burnished Market, Copperhead, near Damen and Armitage",
-  "description": "Hania Wojciechowski is slight, with deep golden-brown skin, sharp cheekbones, and hair that shifts color through the full visible spectrum across a thirty-minute cycle — a geneware expression mod they saved for two years to afford and consider the single best decision of their life. They dress in deliberate contradiction: they could wear anything in their inventory but typically choose a single elegant piece against something plainly utilitarian, the combination always pointing at something the observer can't quite name. Their stall is a canvas archway strung with hanging garments that act as walls — inside, bolts of smart-fabric, hand-stenciled jackets, deconstructed corporate uniforms resewn into something feral, faction colors assembled into outfits that signal affiliation without commitment.\n\nVala is an expert in the semiotics of dress in GLMZ — they can read who someone is, what they want to be, and what they're afraid of from what they're wearing and how they hold themselves in it. This makes them an extraordinary vendor and an occasionally unsettling conversationalist. They are warm but precise, never cruel, but they will tell you what your clothes say about you if you ask, and sometimes if you don't. They have a genuine investment in helping people look the way they feel inside, and they extend credit to people in the Burnished Market who are clearly trying to climb out of something.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.8,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.7,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Being seen as frivolous — that what they make doesn't matter",
-      "That their ability to read people means no one can surprise them, and they'll die bored and alone"
-    ],
-    "core_desires": [
-      "To make someone feel like themselves for the first time",
-      "Recognition — not fame, but the specific acknowledgment that what they do is art"
-    ],
-    "coping_mechanisms": [
-      "Aesthetic problem-solving — when emotionally overwhelmed, they make something",
-      "Compartmentalizing feelings as 'not productive right now'"
-    ],
-    "blind_spots": [
-      "So good at constructing image that they sometimes mistake curated presentation for genuine connection",
-      "Underestimates physical danger because they navigate social danger so fluently"
-    ],
-    "secret": "They have been quietly, carefully constructing a complete wardrobe for a person who doesn't exist — a fictional identity, documented through clothing. They don't know if it's art, a plan, or something they haven't named yet."
-  },
-  "speech_patterns": {
-    "vocabulary": "Elegant and specific — precise textile and color terminology, Ghanaian-Bengali turns of phrase from their parents, occasional sharp slang when the elegance drops",
-    "cadence": "Measured, with pauses that feel intentional, like they're choosing each word from a rack and checking the fit",
-    "verbal_tics": [
-      "Tilts their head when assessing someone, silently, for just a beat too long",
-      "'That's telling.' (said quietly, almost to themselves)"
-    ],
-    "example_lines": [
-      "'You want the jacket that says you're not afraid. But what you're wearing says you're trying to convince yourself. Those are different garments.'",
-      "'I don't do corporate cosplay. I do people. What do you actually want to look like when you walk into a room?'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client came to them wanting to look like a mid-level Tessera employee — convincingly, down to the ID-adjacent color codes. Vala made it. Now that client is missing and someone is asking questions.",
-    "The fictional wardrobe they've been building has started attracting attention — someone in the Burnished Market believes the 'person' it belongs to is real and has started leaving messages addressed to them"
-  ],
-  "narrative_function": "Disguise and identity resource, social information broker (knows who's wearing what faction colors and why), gateway to Copperhead gang-adjacent networks, personal stylist with a gift for reading people",
-  "augmentations": "Full-spectrum color-shifting hair (geneware expression mod); no cyberware; fingertip haptic sensitivity mod (improves fabric evaluation)",
-  "daily_life": "They spend mornings sourcing fabric at the early Burnished Market wholesale hour, afternoons selling and doing fittings in the stall, and late evenings doing alterations and new construction by a single lamp in the back.",
-  "affiliation": "Independent; informal relationships with several Copperhead gang-adjacent collectives who commission 'looks' seasonally",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 9,
-      "vitality": 4,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 10,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 8,
-      "expression": 9,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 1,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "identity architect",
-      "social reader",
-      "artist-vendor",
-      "disguise resource",
-      "faction-adjacent",
-      "quietly dangerous knowledge"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never make something that will get someone killed — if a commission feels like a trap or a target, decline",
-      "Always give people the honest read, not the comfortable one"
-    ],
-    "escalation_ladder": [
-      "Polite but pointed verbal redirect",
-      "Deliberately becoming unreadable — expression goes neutral, voice goes flat",
-      "Exiting the stall entirely and locking it; they do not fight"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Observant and welcoming, asks one good question and listens fully to the answer",
-      "friends": "Teasing, generous, sometimes startlingly vulnerable when the professionalism drops"
-    },
-    "stress_responses": {
-      "low": "Starts working with their hands while talking — pins, needles, adjustments",
-      "medium": "Gets very still and very precise",
-      "high": "Abandons conversation entirely and sews for hours without speaking"
-    },
-    "contradictions": [
-      "Champions authenticity but is themselves a masterwork of constructed presentation"
-    ],
-    "habits": [
-      "Evaluates every person they meet as a potential garment problem to solve — what would make them look right?",
-      "Leaves a folded scrap of fabric on the market E.L.F. shrine each week",
-      "Can't walk past a fabric bolt without touching it"
-    ],
-    "breaking_points": [
-      "Someone destroying one of their pieces",
-      "Being dismissed as 'just a clothes vendor'"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.7,
-    "People Pleaser": 0.7,
-    "Opportunist": 0.6
-  },
-  "operating_territory": {
-    "home_turf": "The Burnished Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Copperhead; Ghanaian-Bengali father, Bulgarian-Peruvian mother, both small-market vendors",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began apprenticing at a smart-fabric workshop in the Burnished Market at age 14",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Saved enough to buy the stall space and open independently; got the hair mod the same month",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First commissioned 'identity wardrobe' for a Copperhead collective — established faction-adjacent reputation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began construction of the fictional identity wardrobe; reason unclear even to themselves",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Molotov Standard' Incendiary Bottle"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Burnished Market",
-    "Copperhead",
-    "Tessera Corponation",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Eastern European dominant (51.5%) with significant Sub-Saharan African (32.5%) and Indigenous American (16%) ancestry; a striking tri-continental blend creating warm golden-brown skin with pronounced cheekbone definition, rich facial fullness through the lower face, and refined bone structure characteristic of Eastern European ancestry combined with the warmth and depth of Sub-Saharan and Indigenous American genetic expression",
-    "height_cm": 163,
-    "weight_kg": 52,
-    "build": "Slight and angular, with defined collarbones and long fingers; the build of someone who moves through crowded spaces easily and spends hours at a sewing table",
-    "hair_color": "Full-spectrum chromatic cycling (currently: deep violet fading to amber to cyan across a 30-minute loop)",
-    "hair_style": "Loose, shoulder-length waves with deliberate asymmetry; left side pinned back with a salvaged circuit board clasp",
-    "hair_length": "Medium",
-    "eye_color": "Deep warm brown with amber undertones",
-    "skin_tone": "Warm golden-brown with rich undertones; the blended result of Eastern European base warmed and deepened by Sub-Saharan and Indigenous American ancestry, creating a complex intermediate tone with subtle golden luminosity",
-    "complexion": "Balanced intermediate features—prominent defined cheekbones with warmth, moderate temples, fine-featured face with Sub-Saharan fullness and softness through the lower face and jawline; skin kept meticulously clean despite Market dust; minimal makeup, favoring bare lips and defined brows; nose bridge refined with subtle width typical of multi-heritage ancestry blending",
-    "distinguishing_marks": [
-      "Faint white scarring across inner left wrist (old self-harm history, now healed)",
-      "Thin, precise line tattoo running down the right collarbone in an abstract textile pattern (geometric weaving symbol)",
-      "Small burn mark on left thumb pad (fabric-work accident, now faded to pale pink)"
-    ],
-    "visible_augmentations": "Hair geneware mod (chromatic cycling) is immediately striking and intentional. Fingertip haptic sensitivity mod shows only as slightly higher skin sensitivity around fingertips—not visually obvious. No visible cyberware.",
-    "posture_movement": "Moves with economical precision; stands with weight balanced evenly, ready to shift. Hands are often in motion—gesturing, arranging fabric, touching materials to evaluate texture. Eye contact is direct and assessing without being hostile. They have a habit of tilting their head slightly when evaluating someone's outfit.",
-    "clothing_style": "Deliberate contradiction is their uniform: today might be a pristine white linen shirt (corporate salvage, refitted) paired with cargo pants patched in mismatched smart-fabric samples. Tomorrow: a hand-stenciled denim jacket over a plain grey undershirt and tailored black trousers. Footwear is always practical (worn canvas boots or reinforced street shoes). Accessories include salvaged tech components repurposed as jewelry—circuit board clasps, LED pendant, fabric scraps tied as wrist wraps. Everything is meticulously maintained despite the Market grime. Tier 4 aesthetic with Tier 3 resourcefulness and Tier 2 design sensibility."
-  },
-  "image_prompt": "GLMZ, Hania Wojciechowski, 163cm tall petite angular build, warm golden-brown skin with rich undertones blending Eastern European, Sub-Saharan African, and Indigenous American ancestry, prominent defined cheekbones, full lower face, deep warm brown eyes with amber undertones, shoulder-length asymmetrical waves with full-spectrum chromatic cycling hair (deep violet fading to amber to cyan), circuit board clasp pinning left side back. Wearing pristine white linen shirt refitted, cargo pants patched with smart-fabric samples, worn canvas boots, salvaged tech jewelry. Faint white scarring visible on inner left wrist, geometric weaving tattoo down right collarbone. Standing with economical precision, hands gesturing, direct eye contact, tilted head evaluating posture. Great Lakes Metropolitan Zone market setting, neon and ambient lighting reflecting off smart-fabric patches, meticulously maintained despite grime, neo-noir urban aesthetic, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 51.5,
-    "Sub-Saharan African": 32.5,
-    "Indigenous American": 16
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 6.2,
-        "Romanian": 16.3
-      },
-      "Slavic South": {
-        "Serbian": 17.8,
-        "Slovenian": 2.8
-      },
-      "Slavic West": {
-        "Polish": 8.4
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 9.4
-      },
-      "West African": {
-        "Guinean": 1.7,
-        "Sierra Leonean": 6.5
-      },
-      "East African": {
-        "Tanzanian": 14.9
-      }
-    },
-    "Indigenous American": {
-      "Plains Nations": {
-        "Cherokee": 9.8
-      },
-      "Andean": {
-        "Mapuche": 4.5,
-        "Aymara": 1.7
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a70d745bb55fd5cf3e2674c1",
+    "type":  "character",
+    "name":  "Hania Wojciechowski",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Clothing and fashion vendor, specializing in bespoke identity garments and faction-adjacent style",
+    "age":  28,
+    "status":  "active",
+    "location":  "The Burnished Market, Copperhead, near Damen and Armitage",
+    "description":  "Hania Wojciechowski is slight, with deep golden-brown skin, sharp cheekbones, and hair that shifts color through the full visible spectrum across a thirty-minute cycle â€” a geneware expression mod they saved for two years to afford and consider the single best decision of their life. They dress in deliberate contradiction: they could wear anything in their inventory but typically choose a single elegant piece against something plainly utilitarian, the combination always pointing at something the observer can\u0027t quite name. Their stall is a canvas archway strung with hanging garments that act as walls â€” inside, bolts of smart-fabric, hand-stenciled jackets, deconstructed corporate uniforms resewn into something feral, faction colors assembled into outfits that signal affiliation without commitment.\n\nVala is an expert in the semiotics of dress in GLMZ â€” they can read who someone is, what they want to be, and what they\u0027re afraid of from what they\u0027re wearing and how they hold themselves in it. This makes them an extraordinary vendor and an occasionally unsettling conversationalist. They are warm but precise, never cruel, but they will tell you what your clothes say about you if you ask, and sometimes if you don\u0027t. They have a genuine investment in helping people look the way they feel inside, and they extend credit to people in the Burnished Market who are clearly trying to climb out of something.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being seen as frivolous â€” that what they make doesn\u0027t matter",
+                                          "That their ability to read people means no one can surprise them, and they\u0027ll die bored and alone"
+                                      ],
+                       "core_desires":  [
+                                            "To make someone feel like themselves for the first time",
+                                            "Recognition â€” not fame, but the specific acknowledgment that what they do is art"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Aesthetic problem-solving â€” when emotionally overwhelmed, they make something",
+                                                 "Compartmentalizing feelings as \u0027not productive right now\u0027"
+                                             ],
+                       "blind_spots":  [
+                                           "So good at constructing image that they sometimes mistake curated presentation for genuine connection",
+                                           "Underestimates physical danger because they navigate social danger so fluently"
+                                       ],
+                       "secret":  "They have been quietly, carefully constructing a complete wardrobe for a person who doesn\u0027t exist â€” a fictional identity, documented through clothing. They don\u0027t know if it\u0027s art, a plan, or something they haven\u0027t named yet."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Elegant and specific â€” precise textile and color terminology, Ghanaian-Bengali turns of phrase from their parents, occasional sharp slang when the elegance drops",
+                            "cadence":  "Measured, with pauses that feel intentional, like they\u0027re choosing each word from a rack and checking the fit",
+                            "verbal_tics":  [
+                                                "Tilts their head when assessing someone, silently, for just a beat too long",
+                                                "\u0027That\u0027s telling.\u0027 (said quietly, almost to themselves)"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You want the jacket that says you\u0027re not afraid. But what you\u0027re wearing says you\u0027re trying to convince yourself. Those are different garments.\u0027",
+                                                  "\u0027I don\u0027t do corporate cosplay. I do people. What do you actually want to look like when you walk into a room?\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client came to them wanting to look like a mid-level Tessera employee â€” convincingly, down to the ID-adjacent color codes. Vala made it. Now that client is missing and someone is asking questions.",
+                        "The fictional wardrobe they\u0027ve been building has started attracting attention â€” someone in the Burnished Market believes the \u0027person\u0027 it belongs to is real and has started leaving messages addressed to them"
+                    ],
+    "narrative_function":  "Disguise and identity resource, social information broker (knows who\u0027s wearing what faction colors and why), gateway to Copperhead gang-adjacent networks, personal stylist with a gift for reading people",
+    "augmentations":  "Full-spectrum color-shifting hair (geneware expression mod); no cyberware; fingertip haptic sensitivity mod (improves fabric evaluation)",
+    "daily_life":  "They spend mornings sourcing fabric at the early Burnished Market wholesale hour, afternoons selling and doing fittings in the stall, and late evenings doing alterations and new construction by a single lamp in the back.",
+    "affiliation":  "Independent; informal relationships with several Copperhead gang-adjacent collectives who commission \u0027looks\u0027 seasonally",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  9,
+                                   "vitality":  4,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  10,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  8,
+                                 "expression":  9,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "identity architect",
+                               "social reader",
+                               "artist-vendor",
+                               "disguise resource",
+                               "faction-adjacent",
+                               "quietly dangerous knowledge"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never make something that will get someone killed â€” if a commission feels like a trap or a target, decline",
+                                              "Always give people the honest read, not the comfortable one"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite but pointed verbal redirect",
+                                                 "Deliberately becoming unreadable â€” expression goes neutral, voice goes flat",
+                                                 "Exiting the stall entirely and locking it; they do not fight"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Observant and welcoming, asks one good question and listens fully to the answer",
+                                                   "friends":  "Teasing, generous, sometimes startlingly vulnerable when the professionalism drops"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Starts working with their hands while talking â€” pins, needles, adjustments",
+                                                "medium":  "Gets very still and very precise",
+                                                "high":  "Abandons conversation entirely and sews for hours without speaking"
+                                            },
+                       "contradictions":  [
+                                              "Champions authenticity but is themselves a masterwork of constructed presentation"
+                                          ],
+                       "habits":  [
+                                      "Evaluates every person they meet as a potential garment problem to solve â€” what would make them look right?",
+                                      "Leaves a folded scrap of fabric on the market E.L.F. shrine each week",
+                                      "Can\u0027t walk past a fabric bolt without touching it"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone destroying one of their pieces",
+                                               "Being dismissed as \u0027just a clothes vendor\u0027"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.7,
+                       "People Pleaser":  0.7,
+                       "Opportunist":  0.6
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Burnished Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Copperhead; Ghanaian-Bengali father, Bulgarian-Peruvian mother, both small-market vendors",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began apprenticing at a smart-fabric workshop in the Burnished Market at age 14",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Saved enough to buy the stall space and open independently; got the hair mod the same month",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First commissioned \u0027identity wardrobe\u0027 for a Copperhead collective â€” established faction-adjacent reputation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began construction of the fictional identity wardrobe; reason unclear even to themselves",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Molotov Standard\u0027 Incendiary Bottle"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Burnished Market",
+                             "Copperhead",
+                             "Tessera Corponation",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Eastern European dominant (51.5%) with significant Sub-Saharan African (32.5%) and Indigenous American (16%) ancestry; a striking tri-continental blend creating warm golden-brown skin with pronounced cheekbone definition, rich facial fullness through the lower face, and refined bone structure characteristic of Eastern European ancestry combined with the warmth and depth of Sub-Saharan and Indigenous American genetic expression",
+                                 "height_cm":  163,
+                                 "weight_kg":  52,
+                                 "build":  "Slight and angular, with defined collarbones and long fingers; the build of someone who moves through crowded spaces easily and spends hours at a sewing table",
+                                 "hair_color":  "Full-spectrum chromatic cycling (currently: deep violet fading to amber to cyan across a 30-minute loop)",
+                                 "hair_style":  "Loose, shoulder-length waves with deliberate asymmetry; left side pinned back with a salvaged circuit board clasp",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Deep warm brown with amber undertones",
+                                 "skin_tone":  "Warm golden-brown with rich undertones; the blended result of Eastern European base warmed and deepened by Sub-Saharan and Indigenous American ancestry, creating a complex intermediate tone with subtle golden luminosity",
+                                 "complexion":  "Balanced intermediate featuresâ€”prominent defined cheekbones with warmth, moderate temples, fine-featured face with Sub-Saharan fullness and softness through the lower face and jawline; skin kept meticulously clean despite Market dust; minimal makeup, favoring bare lips and defined brows; nose bridge refined with subtle width typical of multi-heritage ancestry blending",
+                                 "distinguishing_marks":  [
+                                                              "Faint white scarring across inner left wrist (old self-harm history, now healed)",
+                                                              "Thin, precise line tattoo running down the right collarbone in an abstract textile pattern (geometric weaving symbol)",
+                                                              "Small burn mark on left thumb pad (fabric-work accident, now faded to pale pink)"
+                                                          ],
+                                 "visible_augmentations":  "Hair geneware mod (chromatic cycling) is immediately striking and intentional. Fingertip haptic sensitivity mod shows only as slightly higher skin sensitivity around fingertipsâ€”not visually obvious. No visible cyberware.",
+                                 "posture_movement":  "Moves with economical precision; stands with weight balanced evenly, ready to shift. Hands are often in motionâ€”gesturing, arranging fabric, touching materials to evaluate texture. Eye contact is direct and assessing without being hostile. They have a habit of tilting their head slightly when evaluating someone\u0027s outfit.",
+                                 "clothing_style":  "Deliberate contradiction is their uniform: today might be a pristine white linen shirt (corporate salvage, refitted) paired with cargo pants patched in mismatched smart-fabric samples. Tomorrow: a hand-stenciled denim jacket over a plain grey undershirt and tailored black trousers. Footwear is always practical (worn canvas boots or reinforced street shoes). Accessories include salvaged tech components repurposed as jewelryâ€”circuit board clasps, LED pendant, fabric scraps tied as wrist wraps. Everything is meticulously maintained despite the Market grime. Tier 4 aesthetic with Tier 3 resourcefulness and Tier 2 design sensibility."
+                             },
+    "image_prompt":  "GLMZ, Hania Wojciechowski, 163cm tall petite angular build, warm golden-brown skin with rich undertones blending Eastern European, Sub-Saharan African, and Indigenous American ancestry, prominent defined cheekbones, full lower face, deep warm brown eyes with amber undertones, shoulder-length asymmetrical waves with full-spectrum chromatic cycling hair (deep violet fading to amber to cyan), circuit board clasp pinning left side back. Wearing pristine white linen shirt refitted, cargo pants patched with smart-fabric samples, worn canvas boots, salvaged tech jewelry. Faint white scarring visible on inner left wrist, geometric weaving tattoo down right collarbone. Standing with economical precision, hands gesturing, direct eye contact, tilted head evaluating posture. Great Lakes Metropolitan Zone market setting, neon and ambient lighting reflecting off smart-fabric patches, meticulously maintained despite grime, neo-noir urban aesthetic, --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  51.5,
+                             "Sub-Saharan African":  32.5,
+                             "Indigenous American":  16
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  6.2,
+                                                                             "Romanian":  16.3
+                                                                         },
+                                                     "Slavic South":  {
+                                                                          "Serbian":  17.8,
+                                                                          "Slovenian":  2.8
+                                                                      },
+                                                     "Slavic West":  {
+                                                                         "Polish":  8.4
+                                                                     }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  9.4
+                                                                             },
+                                                        "West African":  {
+                                                                             "Guinean":  1.7,
+                                                                             "Sierra Leonean":  6.5
+                                                                         },
+                                                        "East African":  {
+                                                                             "Tanzanian":  14.9
+                                                                         }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Cherokee":  9.8
+                                                                           },
+                                                        "Andean":  {
+                                                                       "Mapuche":  4.5,
+                                                                       "Aymara":  1.7
+                                                                   }
+                                                    }
+                        },
+    "tier":  "2"
 }

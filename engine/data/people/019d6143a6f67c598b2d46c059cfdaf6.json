@@ -1,316 +1,343 @@
-{
-  "id": "019d6143a6f67c598b2d46c059cfdaf6",
-  "type": "character",
-  "name": "Cyrille Anang-Ozcoidi",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Street doc and unlicensed augmentation technician",
-  "age": 41,
-  "status": "active",
-  "location": "The Narrows — operates out of a converted shipping container behind the Grainfort fish market, near North Ave and Damen",
-  "description": "Cyrille Anang-Ozcoidi is built like someone who has carried heavy things for a long time and stopped apologizing for it. Her shoulders are broad, her hands scarred across the knuckles from years of close surgical work in bad lighting, and she has the particular stillness of someone who has learned that panic is expensive. Her skin is deep brown with the kind of undertone that catches orange in dim light, and her left eye has been replaced with a secondhand Axiom optical unit she recalibrated herself — the iris displays a faint amber ring that pulses when she's processing something complex. She keeps her natural hair close-cropped and wears a perpetually oil-stained lab coat over whatever she slept in.\n\nCyrille Anang-Ozcoidi is warm the way a woodstove is warm — you have to get close enough to feel it, and it takes a moment to realize how much heat she's actually putting out. She has a dry, slow wit and absolutely no patience for people who waste her time or her supplies. She does not turn patients away based on ability to pay, which is both her moral core and the reason she is perpetually broke. She has strong opinions about the E.L.F. she calls Stitcher, a faint digital presence she believes inhabits her autoclave, and leaves small data packets — maintenance logs, old anatomy files — as offerings before difficult procedures.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.2,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Running out of supplies during a critical moment",
-      "Becoming indifferent to suffering the way licensed doctors are"
-    ],
-    "core_desires": [
-      "A permanent, stable space where she can treat patients without hiding",
-      "To believe she is making a difference that outlasts her"
-    ],
-    "coping_mechanisms": [
-      "Ritualistic supply inventory before bed",
-      "Talking to the Stitcher E.L.F. before hard procedures"
-    ],
-    "blind_spots": [
-      "She trusts repeat patients more than she should",
-      "She does not acknowledge how close to burnout she runs"
-    ],
-    "secret": "She holds a fully valid Helix Biosystems surgical license under a different name — she walked out of a corporate clinic twelve years ago mid-shift and never went back, and the license has been quietly suspended but never revoked. She could return to legal practice. She will not."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise medical terminology mixed with Narrows slang; plain declarative sentences; very little filler",
-    "cadence": "Slow and deliberate, like she's measuring each word before spending it",
-    "verbal_tics": [
-      "'Hold still'",
-      "'That's going to cost more than you think'",
-      "Long pauses before answering difficult questions"
-    ],
-    "example_lines": [
-      "'I can fix this. It'll hurt. You'll owe me. In that order.'",
-      "'The Stitcher's been restless — that means the autoclave runs hot tonight, so don't touch it.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A patient she treated three weeks ago has turned up dead, and the wound pattern doesn't match what she sutured — someone re-opened them",
-    "A Helix Biosystems compliance officer has started asking questions at the fish market about unlicensed practitioners"
-  ],
-  "narrative_function": "Primary street-level medical resource; quest giver for supply runs or information about what injuries she's been treating; local anchor who knows everyone's wounds",
-  "augmentations": "Secondhand Axiom optical implant (recalibrated, amber iris ring); subdermal vibration sensor in right fingertips for locating veins and checking pulse quality; cosmetic: none",
-  "daily_life": "She wakes before dawn to resupply from Grainfort black-market med contacts, sees patients from mid-morning until she physically cannot continue, and spends her evenings doing paperwork she is not legally required to keep but keeps anyway.",
-  "affiliation": "Independent; informal network with the Highland Park Autonomous Zone community health cooperative",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 7,
-      "expression": 5,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -2,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street medic",
-      "unlicensed surgeon",
-      "community anchor",
-      "e.l.f. devotee",
-      "stubborn idealist"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Treat the patient first, ask questions after",
-      "Never give a name to anyone who doesn't give one first",
-      "If a supply is the last of its kind, it goes to the worst case"
-    ],
-    "escalation_ladder": [
-      "Calm explanation of limits",
-      "Firm refusal with stated reasons",
-      "Physical removal from the space"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally neutral, assessing — watches hands and eyes before face",
-      "friends": "Dry humor, genuine warmth, willing to say uncomfortable truths gently"
-    },
-    "stress_responses": {
-      "low": "Goes quieter, moves more efficiently",
-      "medium": "Begins narrating what she's doing aloud, almost to herself",
-      "high": "Complete operational silence, deals with emotions after the crisis is fully resolved"
-    },
-    "contradictions": [
-      "Believes no one is beyond help but has a mental list of people she will not treat again"
-    ],
-    "habits": [
-      "Checks supply inventory before sleep every night",
-      "Leaves a single sterilized needle on the autoclave lid as an offering to Stitcher",
-      "Wipes her hands on her coat even when they're already clean"
-    ],
-    "breaking_points": [
-      "Watching someone die from something she had the supplies to fix but was stolen from her",
-      "Being threatened through a patient rather than directly"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional, occasional flicker in cold weather",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9,
-    "Con Artist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Grainfort to a dockworker mother and a Helix Biosystems lab technician father",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed Helix Biosystems accelerated surgical residency program",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Walked out of Helix clinic mid-shift after being ordered to deny treatment to an uninsured patient in critical condition",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Established current container clinic behind Grainfort fish market",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Helix Biosystems",
-    "The Narrows Compact",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Grainfort",
-    "Patience",
-    "The Pure Hand",
-    "Compass Rose"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Mixed ancestry combining Indigenous American (59.9%), Southeast Asian (19.5%), Eastern European (11.3%), and Middle Eastern (9.3%) heritage. The dominant Indigenous American ancestry shapes her facial structure—broad cheekbones, strong orbital geometry, and a substantial nose bridge. Southeast Asian heritage adds subtle refinement to her features and contributes warm olive undertones to her skin. Eastern European and Middle Eastern ancestry provide secondary genetic influence, visible in the slight variation in her complexion's depth and undertone complexity.",
-    "height_cm": 172,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and muscular without softness — the build of someone who has lifted, carried, and held steady for decades. Her frame is dense and functional rather than elegant; forearms are corded with visible muscle from years of surgical precision work.",
-    "hair_color": "Black with scattered gray at the temples",
-    "hair_style": "Close-cropped fade, kept practical and low-maintenance",
-    "hair_length": "Short",
-    "eye_color": "Left eye: artificial Axiom optical unit with amber iris ring that faintly pulses during cognitive load. Right eye: deep brown, alert and steady.",
-    "skin_tone": "Warm cognac brown with golden and olive undertones—a rich saturation reflecting her 59.9% Indigenous American ancestry, deepened and warmed by Southeast Asian contribution (19.5%), with subtle complexity added by Eastern European and Middle Eastern heritage (20.6% combined). Sun-weathered in exposed areas, pale beneath augmentation scars.",
-    "complexion": "Unlined by vanity but marked by the weather of forty-one years—broad cheekbones and strong orbital structure reflecting Indigenous American and Southeast Asian ancestry; straight nose with powerful bridge; a few surgical scars near the left temple where the optical implant integrates with her scalp; calluses across all knuckles; nails kept short and practical. No cosmetics. A small permanent crease between her brows from concentration.",
-    "distinguishing_marks": [
-      "Dense pattern of fine white scars across both knuckles from decades of surgical work in inadequate lighting and sterile conditions.",
-      "Thin surgical scar at left temple where the Axiom optical implant was integrated, now mostly hidden by her hairline but visible if she pulls her hair back.",
-      "A faint circular burn mark on her right forearm (approximately 5cm diameter) — old, pale, from a spill of hot metal during improvised equipment repair.",
-      "Deep crescent-moon scar on her left palm from a scalpel slip during a difficult procedure in 2218; she does not talk about it."
-    ],
-    "visible_augmentations": "The Axiom optical implant in her left eye is immediately visible — a slightly too-perfect iris with a faint amber ring that pulses during concentration or when she is running diagnostic processes on her own systems. The integration point at her temple is barely visible unless her hair is pulled back. The subdermal vibration sensors in her right fingertips are not externally visible but create a faint geometric scarring pattern across her fingertip pads if examined closely.",
-    "posture_movement": "She moves with the controlled economy of someone who has learned that wasted motion is wasted energy. Her left arm hangs at a slightly different angle than her right — not a disability, but a consequence of years favoring her augmented side during precision work. She tends to stand still rather than shift her weight, and when she does move, it is deliberate and minimal. Her hands are rarely still; they fidget with surgical instruments, diagnostic tools, or data chips even during conversation. She has a habit of tilting her head slightly when her optical implant is processing, bringing that amber ring into focus.",
-    "clothing_style": "A perpetually oil-stained, once-white surgical coat over whatever she slept in — usually plain t-shirts or old thermal undershirts in muted grays or blacks. The coat has deep pockets that always contain: forceps, a headlamp with a dying battery, a small data chip reader, and several packages of sutures in different gauges. Her pants are dark work cargo or heavy denim, practical and worn smooth at the seams. She wears a single piece of jewelry: a plain steel ring on her right index finger — not a wedding ring, but something she made herself from reclaimed surgical steel. Her boots are heavy, scuffed, and re-soled at least twice. Everything she wears is Tier 4-5 practical; nothing matches because she does not buy clothes for matching, she buys them for durability and pockets."
-  },
-  "image_prompt": "Cyrille Anang-Ozcoidi, 41-year-old surgical tech with warm cognac skin toned by Indigenous American, Southeast Asian, and Middle Eastern ancestry; broad cheekbones and strong facial structure, short black hair with gray at temples. Left eye replaced by glowing Axiom optical implant with pulsing amber iris, right eye deep brown. Muscular 172cm frame, weathered and scarred from decades of precision work. Wearing stained white surgical coat over gray thermal undershirt, dark cargo pants, heavy scuffed boots. Hands scarred across knuckles, fidgeting with surgical instrument. Steel ring on right index finger. Temple scarring barely visible at hairline. Standing in dim underground clinic, cool blue-white diagnostic lighting casting shadows across her face, her augmented eye glowing softly. Concentrated expression, slight head tilt as implant processes. GLMZ GLMZ aesthetic, utilitarian and worn. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 59.9,
-    "Southeast Asian": 19.5,
-    "Eastern European": 11.3,
-    "Middle Eastern": 9.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Menominee": 38.8,
-        "Potawatomi": 10.8
-      },
-      "Mesoamerican": {
-        "Nahua": 10.3
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 18.2
-      },
-      "Laotian": {
-        "Laotian": 1.3
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Czech": 0.2,
-        "Polish": 2.6
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 3.1
-      },
-      "Slavic East": {
-        "Russian": 1.2,
-        "Ukrainian": 4.2
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 4.9
-      },
-      "Arab Levantine": {
-        "Syrian": 0.9,
-        "Palestinian": 2.1
-      },
-      "Persian": {
-        "Iranian": 0.4,
-        "Tajik Persian": 1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6f67c598b2d46c059cfdaf6",
+    "type":  "character",
+    "name":  "Cyrille Anang-Ozcoidi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Street doc and unlicensed augmentation technician",
+    "age":  41,
+    "status":  "active",
+    "location":  "The Narrows â€” operates out of a converted shipping container behind the Grainfort fish market, near North Ave and Damen",
+    "description":  "Cyrille Anang-Ozcoidi is built like someone who has carried heavy things for a long time and stopped apologizing for it. Her shoulders are broad, her hands scarred across the knuckles from years of close surgical work in bad lighting, and she has the particular stillness of someone who has learned that panic is expensive. Her skin is deep brown with the kind of undertone that catches orange in dim light, and her left eye has been replaced with a secondhand Axiom optical unit she recalibrated herself â€” the iris displays a faint amber ring that pulses when she\u0027s processing something complex. She keeps her natural hair close-cropped and wears a perpetually oil-stained lab coat over whatever she slept in.\n\nCyrille Anang-Ozcoidi is warm the way a woodstove is warm â€” you have to get close enough to feel it, and it takes a moment to realize how much heat she\u0027s actually putting out. She has a dry, slow wit and absolutely no patience for people who waste her time or her supplies. She does not turn patients away based on ability to pay, which is both her moral core and the reason she is perpetually broke. She has strong opinions about the E.L.F. she calls Stitcher, a faint digital presence she believes inhabits her autoclave, and leaves small data packets â€” maintenance logs, old anatomy files â€” as offerings before difficult procedures.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Running out of supplies during a critical moment",
+                                          "Becoming indifferent to suffering the way licensed doctors are"
+                                      ],
+                       "core_desires":  [
+                                            "A permanent, stable space where she can treat patients without hiding",
+                                            "To believe she is making a difference that outlasts her"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritualistic supply inventory before bed",
+                                                 "Talking to the Stitcher E.L.F. before hard procedures"
+                                             ],
+                       "blind_spots":  [
+                                           "She trusts repeat patients more than she should",
+                                           "She does not acknowledge how close to burnout she runs"
+                                       ],
+                       "secret":  "She holds a fully valid Helix Biosystems surgical license under a different name â€” she walked out of a corporate clinic twelve years ago mid-shift and never went back, and the license has been quietly suspended but never revoked. She could return to legal practice. She will not."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise medical terminology mixed with Narrows slang; plain declarative sentences; very little filler",
+                            "cadence":  "Slow and deliberate, like she\u0027s measuring each word before spending it",
+                            "verbal_tics":  [
+                                                "\u0027Hold still\u0027",
+                                                "\u0027That\u0027s going to cost more than you think\u0027",
+                                                "Long pauses before answering difficult questions"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I can fix this. It\u0027ll hurt. You\u0027ll owe me. In that order.\u0027",
+                                                  "\u0027The Stitcher\u0027s been restless â€” that means the autoclave runs hot tonight, so don\u0027t touch it.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A patient she treated three weeks ago has turned up dead, and the wound pattern doesn\u0027t match what she sutured â€” someone re-opened them",
+                        "A Helix Biosystems compliance officer has started asking questions at the fish market about unlicensed practitioners"
+                    ],
+    "narrative_function":  "Primary street-level medical resource; quest giver for supply runs or information about what injuries she\u0027s been treating; local anchor who knows everyone\u0027s wounds",
+    "augmentations":  "Secondhand Axiom optical implant (recalibrated, amber iris ring); subdermal vibration sensor in right fingertips for locating veins and checking pulse quality; cosmetic: none",
+    "daily_life":  "She wakes before dawn to resupply from Grainfort black-market med contacts, sees patients from mid-morning until she physically cannot continue, and spends her evenings doing paperwork she is not legally required to keep but keeps anyway.",
+    "affiliation":  "Independent; informal network with the Highland Park Autonomous Zone community health cooperative",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  7,
+                                 "expression":  5,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street medic",
+                               "unlicensed surgeon",
+                               "community anchor",
+                               "e.l.f. devotee",
+                               "stubborn idealist"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Treat the patient first, ask questions after",
+                                              "Never give a name to anyone who doesn\u0027t give one first",
+                                              "If a supply is the last of its kind, it goes to the worst case"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Calm explanation of limits",
+                                                 "Firm refusal with stated reasons",
+                                                 "Physical removal from the space"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally neutral, assessing â€” watches hands and eyes before face",
+                                                   "friends":  "Dry humor, genuine warmth, willing to say uncomfortable truths gently"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Goes quieter, moves more efficiently",
+                                                "medium":  "Begins narrating what she\u0027s doing aloud, almost to herself",
+                                                "high":  "Complete operational silence, deals with emotions after the crisis is fully resolved"
+                                            },
+                       "contradictions":  [
+                                              "Believes no one is beyond help but has a mental list of people she will not treat again"
+                                          ],
+                       "habits":  [
+                                      "Checks supply inventory before sleep every night",
+                                      "Leaves a single sterilized needle on the autoclave lid as an offering to Stitcher",
+                                      "Wipes her hands on her coat even when they\u0027re already clean"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone die from something she had the supplies to fix but was stolen from her",
+                                               "Being threatened through a patient rather than directly"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional, occasional flicker in cold weather",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9,
+                       "Con Artist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Grainfort to a dockworker mother and a Helix Biosystems lab technician father",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed Helix Biosystems accelerated surgical residency program",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Walked out of Helix clinic mid-shift after being ordered to deny treatment to an uninsured patient in critical condition",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Established current container clinic behind Grainfort fish market",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027",
+                            "Hearthstone Firearms Defender SMG HDS-5 \u0027Hearth Guard\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Helix Biosystems",
+                             "The Narrows Compact",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "Grainfort",
+                             "Patience",
+                             "The Pure Hand",
+                             "Compass Rose"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Mixed ancestry combining Indigenous American (59.9%), Southeast Asian (19.5%), Eastern European (11.3%), and Middle Eastern (9.3%) heritage. The dominant Indigenous American ancestry shapes her facial structureâ€”broad cheekbones, strong orbital geometry, and a substantial nose bridge. Southeast Asian heritage adds subtle refinement to her features and contributes warm olive undertones to her skin. Eastern European and Middle Eastern ancestry provide secondary genetic influence, visible in the slight variation in her complexion\u0027s depth and undertone complexity.",
+                                 "height_cm":  172,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and muscular without softness â€” the build of someone who has lifted, carried, and held steady for decades. Her frame is dense and functional rather than elegant; forearms are corded with visible muscle from years of surgical precision work.",
+                                 "hair_color":  "Black with scattered gray at the temples",
+                                 "hair_style":  "Close-cropped fade, kept practical and low-maintenance",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Left eye: artificial Axiom optical unit with amber iris ring that faintly pulses during cognitive load. Right eye: deep brown, alert and steady.",
+                                 "skin_tone":  "Warm cognac brown with golden and olive undertonesâ€”a rich saturation reflecting her 59.9% Indigenous American ancestry, deepened and warmed by Southeast Asian contribution (19.5%), with subtle complexity added by Eastern European and Middle Eastern heritage (20.6% combined). Sun-weathered in exposed areas, pale beneath augmentation scars.",
+                                 "complexion":  "Unlined by vanity but marked by the weather of forty-one yearsâ€”broad cheekbones and strong orbital structure reflecting Indigenous American and Southeast Asian ancestry; straight nose with powerful bridge; a few surgical scars near the left temple where the optical implant integrates with her scalp; calluses across all knuckles; nails kept short and practical. No cosmetics. A small permanent crease between her brows from concentration.",
+                                 "distinguishing_marks":  [
+                                                              "Dense pattern of fine white scars across both knuckles from decades of surgical work in inadequate lighting and sterile conditions.",
+                                                              "Thin surgical scar at left temple where the Axiom optical implant was integrated, now mostly hidden by her hairline but visible if she pulls her hair back.",
+                                                              "A faint circular burn mark on her right forearm (approximately 5cm diameter) â€” old, pale, from a spill of hot metal during improvised equipment repair.",
+                                                              "Deep crescent-moon scar on her left palm from a scalpel slip during a difficult procedure in 2218; she does not talk about it."
+                                                          ],
+                                 "visible_augmentations":  "The Axiom optical implant in her left eye is immediately visible â€” a slightly too-perfect iris with a faint amber ring that pulses during concentration or when she is running diagnostic processes on her own systems. The integration point at her temple is barely visible unless her hair is pulled back. The subdermal vibration sensors in her right fingertips are not externally visible but create a faint geometric scarring pattern across her fingertip pads if examined closely.",
+                                 "posture_movement":  "She moves with the controlled economy of someone who has learned that wasted motion is wasted energy. Her left arm hangs at a slightly different angle than her right â€” not a disability, but a consequence of years favoring her augmented side during precision work. She tends to stand still rather than shift her weight, and when she does move, it is deliberate and minimal. Her hands are rarely still; they fidget with surgical instruments, diagnostic tools, or data chips even during conversation. She has a habit of tilting her head slightly when her optical implant is processing, bringing that amber ring into focus.",
+                                 "clothing_style":  "A perpetually oil-stained, once-white surgical coat over whatever she slept in â€” usually plain t-shirts or old thermal undershirts in muted grays or blacks. The coat has deep pockets that always contain: forceps, a headlamp with a dying battery, a small data chip reader, and several packages of sutures in different gauges. Her pants are dark work cargo or heavy denim, practical and worn smooth at the seams. She wears a single piece of jewelry: a plain steel ring on her right index finger â€” not a wedding ring, but something she made herself from reclaimed surgical steel. Her boots are heavy, scuffed, and re-soled at least twice. Everything she wears is Tier 4-5 practical; nothing matches because she does not buy clothes for matching, she buys them for durability and pockets."
+                             },
+    "image_prompt":  "Cyrille Anang-Ozcoidi, 41-year-old surgical tech with warm cognac skin toned by Indigenous American, Southeast Asian, and Middle Eastern ancestry; broad cheekbones and strong facial structure, short black hair with gray at temples. Left eye replaced by glowing Axiom optical implant with pulsing amber iris, right eye deep brown. Muscular 172cm frame, weathered and scarred from decades of precision work. Wearing stained white surgical coat over gray thermal undershirt, dark cargo pants, heavy scuffed boots. Hands scarred across knuckles, fidgeting with surgical instrument. Steel ring on right index finger. Temple scarring barely visible at hairline. Standing in dim underground clinic, cool blue-white diagnostic lighting casting shadows across her face, her augmented eye glowing softly. Concentrated expression, slight head tilt as implant processes. GLMZ GLMZ aesthetic, utilitarian and worn. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Indigenous American":  59.9,
+                             "Southeast Asian":  19.5,
+                             "Eastern European":  11.3,
+                             "Middle Eastern":  9.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Menominee":  38.8,
+                                                                                    "Potawatomi":  10.8
+                                                                                },
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  10.3
+                                                                         }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  18.2
+                                                             },
+                                                    "Laotian":  {
+                                                                    "Laotian":  1.3
+                                                                }
+                                                },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Czech":  0.2,
+                                                                         "Polish":  2.6
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  3.1
+                                                                         },
+                                                     "Slavic East":  {
+                                                                         "Russian":  1.2,
+                                                                         "Ukrainian":  4.2
+                                                                     }
+                                                 },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  4.9
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  0.9,
+                                                                          "Palestinian":  2.1
+                                                                      },
+                                                   "Persian":  {
+                                                                   "Iranian":  0.4,
+                                                                   "Tajik Persian":  1
+                                                               }
+                                               }
+                        },
+    "tier":  "3"
 }

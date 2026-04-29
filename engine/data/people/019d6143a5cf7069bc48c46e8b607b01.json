@@ -1,320 +1,345 @@
-{
-  "id": "019d6143a5cf7069bc48c46e8b607b01",
-  "type": "character",
-  "name": "Adebisi Deshpande",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Holographic muralist and street artist",
-  "age": 27,
-  "status": "active",
-  "location": "Pilsen Veil, operates across Mexicantown Libre and Bronzeline, near Halsted and Chicago Ave",
-  "description": "Adebisi Deshpande is lean and tall with warm brown skin, prominent cheekbones inherited from his Samoan grandmother, and irises modified to project a faint geometric grid pattern over whatever he is looking at — a functional geneware mod he uses to pre-visualize compositions on surfaces before he paints them. He wears his hair in loose, shoulder-length locs dyed in shifting thermal-reactive pigments that bleed between rust red and pale gold depending on the ambient temperature. A faint scarring pattern across his left cheek from a Ferrogate Transit security incident two years ago has become, in the Pilsen Veil community, something close to a badge. He tends to dress in utilitarian layers, always with a projector harness across his chest that strangers occasionally mistake for a weapon rig.\n\nHis murals are enormous, illegal, and technically staggering — layered holographic installations projected onto building surfaces that interact with natural light and viewer movement, showing different images at different times of day or from different angles. His most celebrated piece, a three-block-long work on the Bronzeline overpass called 'What the Lake Remembers,' depicts the drowned geography of pre-megacity Chicago in a way that causes viewers to involuntarily slow down and look back. He has a hot, impatient creative energy and a chip on his shoulder about corponation-sponsored public art that can make him combative in conversation.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.7,
-      "id": 0.8,
-      "shadow": 0.4,
-      "mask": 0.5,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That his work will be co-opted and sanitized into acceptability",
-      "That his anger is the most interesting thing about him and when it fades he will have nothing to say"
-    ],
-    "core_desires": [
-      "Permanent, indelible public presence — to change what people see when they look at their own city",
-      "Respect from the communities whose walls he paints on, not just from art critics"
-    ],
-    "coping_mechanisms": [
-      "Channeling anxiety into planning the next piece",
-      "Surrounding himself with people who need things from him so he feels essential"
-    ],
-    "blind_spots": [
-      "Treats all institutional art as equally corrupt regardless of individual artists' intentions",
-      "His need to be the most politically committed person in any room makes him dismiss allies"
-    ],
-    "secret": "Three of his most celebrated anti-corporate murals were funded, indirectly, by a Tessera cultural subversion budget routed through a fake community foundation — he discovered this six months ago and has told no one because dismantling the murals or confessing would destroy everything he has built"
-  },
-  "speech_patterns": {
-    "vocabulary": "Dense with technical art vocabulary mixed with street slang; references to pre-Meridian art history come naturally; tends toward manifestos when comfortable",
-    "cadence": "Fast and overlapping, runs sentences together when excited, very short when suspicious",
-    "verbal_tics": [
-      "'You see what I mean?' as a genuine question mid-sentence",
-      "Starts disagreements with 'No, listen—'"
-    ],
-    "example_lines": [
-      "'Ferrogate paints their logo on every tunnel and nobody calls that vandalism. I put history on a wall and they send security.'",
-      "'The piece has four layers. Most people only see two. That's fine. The city isn't for most people, it's for all of them.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "One of his murals has begun displaying images he did not encode into it — something is adding data layers to his work at night and he needs to know if it is an E.L.F., a hacker, or something stranger",
-    "Axiom's public art division has offered him a legal commission at a scale he has never had access to, and the debate tearing his collective apart is whether to take it or refuse"
-  ],
-  "narrative_function": "Ground-level source on street politics and territorial disputes between collectives; his murals sometimes contain encoded information or serve as message-drops for people who know how to read them; useful for players needing a fast skilled contact who knows Pilsen Veil's physical layout intimately",
-  "augmentations": "Geneware patterned irises (grid-overlay function); thermal-reactive hair pigment (cosmetic geneware); projector harness (external equipment, not implanted)",
-  "daily_life": "Sleeps late, spends afternoons scouting surfaces and arguing with collaborators over compressed-data calls, then works through the night installing pieces before Ferrogate Transit or Axiom security patrols rotate through.",
-  "affiliation": "Independent; informal ties to a graffiti collective called the Depth Markers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 5,
-      "expression": 8,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": 3,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "holographic artist",
-      "street activist",
-      "technically gifted",
-      "politically combustible",
-      "community embedded"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never ask permission for a wall — permission is the first act of surrender",
-      "If a community member asks you to remove a piece, you remove it, no argument"
-    ],
-    "escalation_ladder": [
-      "Verbal challenge, loud and public",
-      "Physical positioning — steps close, holds eye contact",
-      "Runs, always — he is not a fighter and knows it"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Performatively suspicious until proven interesting, then abruptly generous",
-      "friends": "Loyal in an all-or-nothing way that can become suffocating"
-    },
-    "stress_responses": {
-      "low": "Makes small obsessive sketches on any available surface",
-      "medium": "Picks arguments about politics or aesthetics to externalize internal noise",
-      "high": "Disappears for 48-72 hours to execute an unplanned piece alone, emerges calmer"
-    },
-    "contradictions": [
-      "Insists his work is for the community but rarely asks what the community actually wants"
-    ],
-    "habits": [
-      "Always faces the door in any room",
-      "Photographs every surface he passes out of habit"
-    ],
-    "breaking_points": [
-      "Someone taking credit for his work",
-      "Being told a piece is 'pretty' as if that is the point"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Brawler": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Pilsen Veil",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Mexicantown Libre to a Brazilian-Ghanaian father and a Samoan-Uzbek mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First major illegal installation on a Ferrogate Transit overpass; charges later dropped due to community pressure",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "'What the Lake Remembers' installed on Bronzeline; becomes landmark piece",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Facial scarring incident during security confrontation; becomes locally iconic",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Crucible Industries Havoc-44 'Mauler'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Siege DMR SDMR-3 'Bastion'",
-    "Crucible Industries Havoc-44 'Mauler'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Mexicantown Libre",
-    "Pilsen Veil",
-    "Grandmother",
-    "Bronzeline",
-    "Parliament",
-    "Stratum",
-    "Chicago",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Nesting Doll",
-    "The Pale Mile",
-    "Gold"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "South Asian (51.5%) dominant with significant Hispanic/Latin American (32.4%) influence, enriched by North African (8.1%), East Asian (4.8%), and Middle Eastern (3.2%) ancestry. This blend creates pronounced South Asian facial structure with warm, golden-olive skin tone enhanced by Hispanic/Latin American melanin richness, subtle North African cheekbone prominence, and minimal East Asian eye placement characteristics. The genetic expression is distinctly warm-toned and sun-responsive.",
-    "height_cm": 188,
-    "weight_kg": 72,
-    "build": "Lean and angular with defined shoulders and forearms; the build of someone who climbs scaffolding and works overhead. Minimal body fat, wiry muscle density.",
-    "hair_color": "Black locs with thermal-reactive pigment overlay — shifts between rust red and pale gold depending on ambient temperature",
-    "hair_style": "Shoulder-length locs, loosely bound, asymmetrical; pigment creates a lived-in, slightly wild appearance",
-    "hair_length": "Long",
-    "eye_color": "Deep brown with augmented geometric grid pattern overlaid on the iris — faint luminescence when active, grid intensifies when he focuses on surfaces for composition planning",
-    "skin_tone": "Warm medium-to-deep brown with rich golden and olive undertones; the melanin depth reflects strong South Asian and Hispanic/Latin American ancestry with subtle warm radiance in cheeks and temples, creating complex luminosity across face and body",
-    "complexion": "Strong South Asian and Hispanic cheekbone structure with prominent definition; broad jawline reflecting the ancestry blend; clean-shaven or sparse facial hair; faint scarring pattern across left cheek — pale, fine-lined traces from a Ferrogate Transit security incident two years prior, now a recognized marker in Pilsen Veil community",
-    "distinguishing_marks": [
-      "Faint scarring pattern across left cheek from Ferrogate Transit incident, approximately 8cm in length, pale and linear, gives the appearance of intentional ritualism or acceptance",
-      "Thermal-reactive hair pigment creates a constantly shifting visual signature"
-    ],
-    "visible_augmentations": "Geneware-patterned irises with geometric grid overlay (most noticeable when he focuses intently). Thermal-reactive pigment woven into hair structure. Projector harness worn across chest — matte black reinforced polymer with embedded lens arrays and power cells, frequently mistaken for weapon rig at first glance.",
-    "posture_movement": "Restless energy; fidgets with harness straps when thinking. Moves with practiced verticality — comfortable on scaffolding and rooftops. Leans forward in conversation when engaged, leans back when dismissive. Eyes constantly scan surfaces and walls. Walks with slight impatience, as if the city is moving too slowly around him.",
-    "clothing_style": "Utilitarian layers in muted Tier 4 streetwear — charcoal compression shirt under an oversized, oil-stained grey utility jacket with multiple pockets and cable loops. Cargo pants in weathered black synthetic with paint splatters and thermal burns. Reinforced climbing boots, scuffed. Minimal jewelry except a worn brass lighter he spins obsessively. Occasionally sports a sleeveless denim vest over the harness when preparing for extended outdoor work."
-  },
-  "image_prompt": "Adebisi Deshpande, 188cm lean angular neo-noir in 2226 GLMZ, warm medium-brown skin with golden undertones reflecting South Asian-Hispanic ancestry, sharp defined cheekbones and strong jawline, faint pale scarring across left cheek. Deep brown eyes with glowing augmented geometric grid iris pattern, black shoulder-length locs with thermal-reactive rust-red and gold pigment overlay creating shifting luminescence. Charcoal compression shirt under oversized oil-stained grey utility jacket with cable loops, weathered black cargo pants with paint splatters, scuffed reinforced climbing boots, matte black projector harness across chest with embedded lens arrays. Fidgeting with harness straps, restless energy, eyes scanning urban surfaces. Gritty rooftop or warehouse setting, neo-noir neon ambient lighting casting shadows across scarred cheek, thermal glow catching in reactive hair pigment, moody and focused expression, slightly leaned forward stance, utilitarian streetwear aesthetic, lived-in survival vibe --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 51.5,
-    "Hispanic/Latin American": 32.4,
-    "North African": 8.1,
-    "East Asian": 4.8,
-    "Middle Eastern": 3.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 37.4,
-        "Tamil Sri Lankan": 14.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Cuban": 32.4
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Tuareg": 2.7
-      },
-      "Nile Valley": {
-        "Egyptian": 2.2
-      },
-      "Maghreb": {
-        "Tunisian": 1.5,
-        "Algerian": 1.7
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Sichuanese": 2.3,
-        "Cantonese": 0.5
-      },
-      "Japanese": {
-        "Japanese": 2
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Iraqi": 0.6,
-        "Yemeni": 0.2
-      },
-      "Kurdish": {
-        "Kurdish": 2.1
-      },
-      "Persian": {
-        "Iranian": 0.2,
-        "Tajik Persian": 0.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a5cf7069bc48c46e8b607b01",
+    "type":  "character",
+    "name":  "Adebisi Deshpande",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Holographic muralist and street artist",
+    "age":  27,
+    "status":  "active",
+    "location":  "Pilsen Veil, operates across Mexicantown Libre and Bronzeline, near Halsted and Chicago Ave",
+    "description":  "Adebisi Deshpande is lean and tall with warm brown skin, prominent cheekbones inherited from his Samoan grandmother, and irises modified to project a faint geometric grid pattern over whatever he is looking at â€” a functional geneware mod he uses to pre-visualize compositions on surfaces before he paints them. He wears his hair in loose, shoulder-length locs dyed in shifting thermal-reactive pigments that bleed between rust red and pale gold depending on the ambient temperature. A faint scarring pattern across his left cheek from a Ferrogate Transit security incident two years ago has become, in the Pilsen Veil community, something close to a badge. He tends to dress in utilitarian layers, always with a projector harness across his chest that strangers occasionally mistake for a weapon rig.\n\nHis murals are enormous, illegal, and technically staggering â€” layered holographic installations projected onto building surfaces that interact with natural light and viewer movement, showing different images at different times of day or from different angles. His most celebrated piece, a three-block-long work on the Bronzeline overpass called \u0027What the Lake Remembers,\u0027 depicts the drowned geography of pre-megacity Chicago in a way that causes viewers to involuntarily slow down and look back. He has a hot, impatient creative energy and a chip on his shoulder about corponation-sponsored public art that can make him combative in conversation.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That his work will be co-opted and sanitized into acceptability",
+                                          "That his anger is the most interesting thing about him and when it fades he will have nothing to say"
+                                      ],
+                       "core_desires":  [
+                                            "Permanent, indelible public presence â€” to change what people see when they look at their own city",
+                                            "Respect from the communities whose walls he paints on, not just from art critics"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Channeling anxiety into planning the next piece",
+                                                 "Surrounding himself with people who need things from him so he feels essential"
+                                             ],
+                       "blind_spots":  [
+                                           "Treats all institutional art as equally corrupt regardless of individual artists\u0027 intentions",
+                                           "His need to be the most politically committed person in any room makes him dismiss allies"
+                                       ],
+                       "secret":  "Three of his most celebrated anti-corporate murals were funded, indirectly, by a Tessera cultural subversion budget routed through a fake community foundation â€” he discovered this six months ago and has told no one because dismantling the murals or confessing would destroy everything he has built"
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Dense with technical art vocabulary mixed with street slang; references to pre-Meridian art history come naturally; tends toward manifestos when comfortable",
+                            "cadence":  "Fast and overlapping, runs sentences together when excited, very short when suspicious",
+                            "verbal_tics":  [
+                                                "\u0027You see what I mean?\u0027 as a genuine question mid-sentence",
+                                                "Starts disagreements with \u0027No, listenâ€”\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Ferrogate paints their logo on every tunnel and nobody calls that vandalism. I put history on a wall and they send security.\u0027",
+                                                  "\u0027The piece has four layers. Most people only see two. That\u0027s fine. The city isn\u0027t for most people, it\u0027s for all of them.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "One of his murals has begun displaying images he did not encode into it â€” something is adding data layers to his work at night and he needs to know if it is an E.L.F., a hacker, or something stranger",
+                        "Axiom\u0027s public art division has offered him a legal commission at a scale he has never had access to, and the debate tearing his collective apart is whether to take it or refuse"
+                    ],
+    "narrative_function":  "Ground-level source on street politics and territorial disputes between collectives; his murals sometimes contain encoded information or serve as message-drops for people who know how to read them; useful for players needing a fast skilled contact who knows Pilsen Veil\u0027s physical layout intimately",
+    "augmentations":  "Geneware patterned irises (grid-overlay function); thermal-reactive hair pigment (cosmetic geneware); projector harness (external equipment, not implanted)",
+    "daily_life":  "Sleeps late, spends afternoons scouting surfaces and arguing with collaborators over compressed-data calls, then works through the night installing pieces before Ferrogate Transit or Axiom security patrols rotate through.",
+    "affiliation":  "Independent; informal ties to a graffiti collective called the Depth Markers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  5,
+                                 "expression":  8,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "holographic artist",
+                               "street activist",
+                               "technically gifted",
+                               "politically combustible",
+                               "community embedded"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never ask permission for a wall â€” permission is the first act of surrender",
+                                              "If a community member asks you to remove a piece, you remove it, no argument"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Verbal challenge, loud and public",
+                                                 "Physical positioning â€” steps close, holds eye contact",
+                                                 "Runs, always â€” he is not a fighter and knows it"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Performatively suspicious until proven interesting, then abruptly generous",
+                                                   "friends":  "Loyal in an all-or-nothing way that can become suffocating"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Makes small obsessive sketches on any available surface",
+                                                "medium":  "Picks arguments about politics or aesthetics to externalize internal noise",
+                                                "high":  "Disappears for 48-72 hours to execute an unplanned piece alone, emerges calmer"
+                                            },
+                       "contradictions":  [
+                                              "Insists his work is for the community but rarely asks what the community actually wants"
+                                          ],
+                       "habits":  [
+                                      "Always faces the door in any room",
+                                      "Photographs every surface he passes out of habit"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone taking credit for his work",
+                                               "Being told a piece is \u0027pretty\u0027 as if that is the point"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Brawler":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Pilsen Veil",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Mexicantown Libre to a Brazilian-Ghanaian father and a Samoan-Uzbek mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First major illegal installation on a Ferrogate Transit overpass; charges later dropped due to community pressure",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "\u0027What the Lake Remembers\u0027 installed on Bronzeline; becomes landmark piece",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Facial scarring incident during security confrontation; becomes locally iconic",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Siege DMR SDMR-3 \u0027Bastion\u0027",
+                            "Crucible Industries Havoc-44 \u0027Mauler\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Siege DMR SDMR-3 \u0027Bastion\u0027",
+                                "Crucible Industries Havoc-44 \u0027Mauler\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Mexicantown Libre",
+                             "Pilsen Veil",
+                             "Grandmother",
+                             "Bronzeline",
+                             "Parliament",
+                             "Stratum",
+                             "Chicago",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Nesting Doll",
+                             "The Pale Mile",
+                             "Gold"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "South Asian (51.5%) dominant with significant Hispanic/Latin American (32.4%) influence, enriched by North African (8.1%), East Asian (4.8%), and Middle Eastern (3.2%) ancestry. This blend creates pronounced South Asian facial structure with warm, golden-olive skin tone enhanced by Hispanic/Latin American melanin richness, subtle North African cheekbone prominence, and minimal East Asian eye placement characteristics. The genetic expression is distinctly warm-toned and sun-responsive.",
+                                 "height_cm":  188,
+                                 "weight_kg":  72,
+                                 "build":  "Lean and angular with defined shoulders and forearms; the build of someone who climbs scaffolding and works overhead. Minimal body fat, wiry muscle density.",
+                                 "hair_color":  "Black locs with thermal-reactive pigment overlay â€” shifts between rust red and pale gold depending on ambient temperature",
+                                 "hair_style":  "Shoulder-length locs, loosely bound, asymmetrical; pigment creates a lived-in, slightly wild appearance",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown with augmented geometric grid pattern overlaid on the iris â€” faint luminescence when active, grid intensifies when he focuses on surfaces for composition planning",
+                                 "skin_tone":  "Warm medium-to-deep brown with rich golden and olive undertones; the melanin depth reflects strong South Asian and Hispanic/Latin American ancestry with subtle warm radiance in cheeks and temples, creating complex luminosity across face and body",
+                                 "complexion":  "Strong South Asian and Hispanic cheekbone structure with prominent definition; broad jawline reflecting the ancestry blend; clean-shaven or sparse facial hair; faint scarring pattern across left cheek â€” pale, fine-lined traces from a Ferrogate Transit security incident two years prior, now a recognized marker in Pilsen Veil community",
+                                 "distinguishing_marks":  [
+                                                              "Faint scarring pattern across left cheek from Ferrogate Transit incident, approximately 8cm in length, pale and linear, gives the appearance of intentional ritualism or acceptance",
+                                                              "Thermal-reactive hair pigment creates a constantly shifting visual signature"
+                                                          ],
+                                 "visible_augmentations":  "Geneware-patterned irises with geometric grid overlay (most noticeable when he focuses intently). Thermal-reactive pigment woven into hair structure. Projector harness worn across chest â€” matte black reinforced polymer with embedded lens arrays and power cells, frequently mistaken for weapon rig at first glance.",
+                                 "posture_movement":  "Restless energy; fidgets with harness straps when thinking. Moves with practiced verticality â€” comfortable on scaffolding and rooftops. Leans forward in conversation when engaged, leans back when dismissive. Eyes constantly scan surfaces and walls. Walks with slight impatience, as if the city is moving too slowly around him.",
+                                 "clothing_style":  "Utilitarian layers in muted Tier 4 streetwear â€” charcoal compression shirt under an oversized, oil-stained grey utility jacket with multiple pockets and cable loops. Cargo pants in weathered black synthetic with paint splatters and thermal burns. Reinforced climbing boots, scuffed. Minimal jewelry except a worn brass lighter he spins obsessively. Occasionally sports a sleeveless denim vest over the harness when preparing for extended outdoor work."
+                             },
+    "image_prompt":  "Adebisi Deshpande, 188cm lean angular neo-noir in 2226 GLMZ, warm medium-brown skin with golden undertones reflecting South Asian-Hispanic ancestry, sharp defined cheekbones and strong jawline, faint pale scarring across left cheek. Deep brown eyes with glowing augmented geometric grid iris pattern, black shoulder-length locs with thermal-reactive rust-red and gold pigment overlay creating shifting luminescence. Charcoal compression shirt under oversized oil-stained grey utility jacket with cable loops, weathered black cargo pants with paint splatters, scuffed reinforced climbing boots, matte black projector harness across chest with embedded lens arrays. Fidgeting with harness straps, restless energy, eyes scanning urban surfaces. Gritty rooftop or warehouse setting, neo-noir neon ambient lighting casting shadows across scarred cheek, thermal glow catching in reactive hair pigment, moody and focused expression, slightly leaned forward stance, utilitarian streetwear aesthetic, lived-in survival vibe --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  51.5,
+                             "Hispanic/Latin American":  32.4,
+                             "North African":  8.1,
+                             "East Asian":  4.8,
+                             "Middle Eastern":  3.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  37.4,
+                                                                   "Tamil Sri Lankan":  14.1
+                                                               }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Cuban":  32.4
+                                                                          }
+                                                        },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Tuareg":  2.7
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  2.2
+                                                                  },
+                                                  "Maghreb":  {
+                                                                  "Tunisian":  1.5,
+                                                                  "Algerian":  1.7
+                                                              }
+                                              },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Sichuanese":  2.3,
+                                                               "Cantonese":  0.5
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  2
+                                                            }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  0.6,
+                                                                     "Yemeni":  0.2
+                                                                 },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  2.1
+                                                               },
+                                                   "Persian":  {
+                                                                   "Iranian":  0.2,
+                                                                   "Tajik Persian":  0.1
+                                                               }
+                                               }
+                        },
+    "tier":  "1"
 }

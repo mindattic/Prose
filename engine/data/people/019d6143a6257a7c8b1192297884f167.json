@@ -1,357 +1,370 @@
-{
-  "id": "019d6143a6257a7c8b1192297884f167",
-  "type": "character",
-  "name": "Claudio Nygaard",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Counter-surveillance and mole detection — counterintelligence specialist",
-  "age": 37,
-  "status": "active",
-  "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near State and Van Buren",
-  "description": "Claudio Nygaard is slight and easy to overlook, which is exactly the point. At 37, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a counterintelligence specialist out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Claudio Nygaard is one of the ones who actually does it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.14,
-      "ideal": 0.63,
-      "id": 1,
-      "shadow": 0.41,
-      "mask": 0.11,
-      "ghost": 0.84
-    },
-    "core_fears": [
-      "Their past catching up — debts, enemies, broken promises",
-      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
-      "Becoming obsolete as augmentation technology outpaces their chrome"
-    ],
-    "core_desires": [
-      "Stability — a place to sleep that's the same place two nights running",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "To prove everyone who dismissed them catastrophically wrong"
-    ],
-    "coping_mechanisms": [
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Maintains weapons obsessively — cleaning guns is meditation",
-      "Exercises compulsively — the body must be ready, always"
-    ],
-    "blind_spots": [
-      "Trusts technology more than people — machines don't betray",
-      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
-      "Fails to notice when their own behavior mirrors the people they despise"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
-    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
-    "verbal_tics": [
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
-      "Swears in three languages, often in the same sentence"
-    ],
-    "example_lines": [
-      "\"Everyone in this room is lying. My job is knowing who's lying about what.\"",
-      "\"Paranoia isn't a disorder in this profession. It's a job requirement.\"",
-      "\"I find the leak. What happens to the leak after that isn't my department.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Someone is impersonating Halima Ogawa-Twumasi on jobs, and the impersonator is better at the work than the original",
-    "A Tier 4 executive offers Halima Ogawa-Twumasi a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "The fixer who handles Halima Ogawa-Twumasi's contracts goes silent — dead, disappeared, or turned"
-  ],
-  "narrative_function": "Halima Ogawa-Twumasi is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
-  "augmentations": "Reflex boosters wired into spinal column — shaves reaction time by 40ms. Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
-  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Independent — Lattice territory specialist",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 7
-      },
-      "agility": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 4
-      },
-      "reflexes": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 10
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 9
-      },
-      "perception": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 8
-      },
-      "willpower": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 10
-      },
-      "technical": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 10
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 7
-      },
-      "intimidation": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 9
-      },
-      "deception": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 4
-      },
-      "empathy": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 7
-      }
-    },
-    "personality": {
-      "aggression": 0.8,
-      "caution": 0.75,
-      "loyalty": 0.34,
-      "greed": 0.95,
-      "empathy": 0.99
-    },
-    "drives": [
-      "power",
-      "money",
-      "reputation"
-    ],
-    "thresholds": {
-      "pain": 5,
-      "stress": 4,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "ability to remain calm under fire",
-      "exceptional close-quarters combat"
-    ],
-    "weaknesses": [
-      "old injury that flares under specific conditions",
-      "grudge-holding that compromises rational decision-making"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "counterintelligence specialist",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Advocates caution to others but takes insane risks personally — double standard they can't see",
-      "Values loyalty intensely but has betrayed someone in the past to survive"
-    ],
-    "habits": [
-      "Checks exits within 10 seconds of entering any room",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Eats the same meal before every job — superstition masquerading as preference"
-    ],
-    "breaking_points": [
-      "Losing their primary augmentation — the one that defines their professional identity",
-      "Being publicly exposed — name, face, address, all of it blown"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Reflex boosters wired into spinal column",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Reflex boosters wired into spinal column — shaves reaction time by 40ms",
-      "replaces": ""
-    },
-    {
-      "name": "Gecko-grip fingertip implants and toe pads",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Underbelly",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Baptism' Electrified Water Cannon",
-    "Street Custom 'Scorpion Tail' Chain Whip"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Masquerade",
-    "The Narrows Compact",
-    "Neuromorphic Pressure Cestus",
-    "Slagworks Industrial"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Northern European (41.5%, Scandinavian base) blended with Central Asian (24.8%), Southeast Asian (18.8%), and Hispanic/Latin American (14.9%) ancestry. The genetic combination produces a warm, medium olive complexion with subtle golden and amber undertones — a sophisticated interplay between cool Nordic undertones and warm equatorial influence. Features reflect this global recombination: slightly high cheekbones with gentle angularity, straight to slightly epicanthic eye shape from Central/Southeast Asian heritage, and a refined jaw structure that bridges Northern and tropical phenotypes.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Lean and compact, almost wiry — minimal fat, dense muscle concentrated in core and legs. Built for confined spaces and vertical movement rather than raw strength. The kind of frame that moves through crowds without displacing air.",
-    "hair_color": "Black with silver threading at temples",
-    "hair_style": "Closely cropped, neat, practical — no vanity in the cut",
-    "hair_length": "Short",
-    "eye_color": "Dark brown with amber tints, slightly hooded from Southeast Asian influence — pupil dilation optimized for nocturnal work",
-    "skin_tone": "Medium olive-golden complexion — Northern European cool undertones warmed by Central Asian and Hispanic heritage, with Southeast Asian melanin producing a luminous quality that shifts subtly in different lighting",
-    "complexion": "Refined facial structure balancing Nordic angularity with softer tropical influence. High, elegant cheekbones, gently tapered jaw, straight bridge nose with subtle Southeast Asian character. Eyes set with slight epicanthic fold lending an observant, intelligent quality. Skin shows the wear of someone who works in recycled air and tunnel damp: slightly papery texture, faint stress lines around the eyes, the pallor of someone who avoids natural sunlight. Minimal facial hair — always cleanly shaved.",
-    "distinguishing_marks": [
-      "Surgical scar along the right side of his neck, approximately 4cm, where the reflex booster spinal interface was installed — healed clean but visible",
-      "Faint burn marks on both palms and inner forearms from early gecko-grip implant calibration, now nearly invisible",
-      "Small tattoo on inner left wrist: three vertical lines in blue-black ink — personal significance unknown, kept deliberately small and concealable"
-    ],
-    "visible_augmentations": "Reflex booster hardware visible along the right side of his spine — chromatic plating catches light when he moves, subtle iridescent sheen. Fingertips show faint textural difference under close inspection: gecko-grip pads create almost imperceptible ridging at the fingerprints. No obvious cosmetic work; all augmentation is functional, not flashy.",
-    "posture_movement": "Economical and controlled — no wasted motion. Moves through space like someone mapping exits. Stands in corners or against walls by default. When stationary, his weight shifts to the balls of his feet. Walks with a slight forward lean, shoulders loose but capable of explosive tension. His stillness is active, not passive — the quiet of a coiled spring.",
-    "clothing_style": "Tier 4-5 practical: dark reinforced jacket (synthetic leather, multiple interior pockets), tactical cargo pants in charcoal with ankle reinforcement for the gecko-grip pads. Steel-toed boots, well-maintained. A smart-fabric undershirt with integrated thermal regulation — necessary for the circadian disruption and the tunnel damp. No visible corporate branding. Everything worn and functional, nothing aspirational. The uniform of someone who spends their life in places designed to be forgotten."
-  },
-  "image_prompt": "Claudio Nygaard, lean 168cm frame with wiry muscle, standing in a shadowed corner of a humid tunnel beneath the Great Lakes Metropolitan Zone in 2226. Medium olive-golden skin with subtle golden undertones, dark brown eyes with amber tints and slight hooding, refined high cheekbones blending Nordic angularity with tropical softness. Black hair with silver temples, closely cropped. Wearing a dark reinforced synthetic leather jacket over smart-fabric undershirt, tactical charcoal cargo pants, steel-toed boots. Visible iridescent chromatic plating along right spine from reflex booster hardware, surgical scar on right neck, gecko-grip pads barely visible on fingertips. Posture coiled and economical, weight on the balls of his feet, standing against a grimy wall. Three vertical blue-black tattoo lines on inner left wrist. Neon bioluminescent panel lighting casts cool blue-green light across tired features and stress lines around eyes, recycled air haze creating luminous quality on skin. Neo-noir noir, nocturnal worker aesthetic, functional and forgettable. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 41.5,
-    "Central Asian": 24.8,
-    "Southeast Asian": 18.8,
-    "Hispanic/Latin American": 14.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Germanic": {
-        "German": 22.8
-      },
-      "British Isles": {
-        "Scottish": 15.9,
-        "English": 2.8
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Buryat": 12.8
-      },
-      "Iranian Central": {
-        "Hazara": 4.2
-      },
-      "Turkic": {
-        "Uzbek": 7.8
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sumatran": 9.7,
-        "Balinese": 5.3
-      },
-      "Laotian": {
-        "Laotian": 3
-      },
-      "Cambodian": {
-        "Khmer": 0.8
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 9.1
-      },
-      "Caribbean": {
-        "Cuban": 1.1
-      },
-      "South American": {
-        "Peruvian": 4.7
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6257a7c8b1192297884f167",
+    "type":  "character",
+    "name":  "Claudio Nygaard",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Counter-surveillance and mole detection â€” counterintelligence specialist",
+    "age":  37,
+    "status":  "active",
+    "location":  "The Underbelly â€” sub-street tunnels and maintenance corridors, near sub-level access near State and Van Buren",
+    "description":  "Claudio Nygaard is slight and easy to overlook, which is exactly the point. At 37, he has the kind of face that changes depending on the light â€” trustworthy in daylight, dangerous after dark. The chrome is visible â€” reflex boosters wired into spinal column â€” shaves reaction time by 40ms â€” and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a counterintelligence specialist out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they\u0027ll do, Claudio Nygaard is one of the ones who actually does it.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Their past catching up â€” debts, enemies, broken promises",
+                                          "Never being able to stop running â€” the lifestyle is a trap disguised as freedom",
+                                          "Becoming obsolete as augmentation technology outpaces their chrome"
+                                      ],
+                       "core_desires":  [
+                                            "Stability â€” a place to sleep that\u0027s the same place two nights running",
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "To prove everyone who dismissed them catastrophically wrong"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+                                                 "Maintains weapons obsessively â€” cleaning guns is meditation",
+                                                 "Exercises compulsively â€” the body must be ready, always"
+                                             ],
+                       "blind_spots":  [
+                                           "Trusts technology more than people â€” machines don\u0027t betray",
+                                           "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care",
+                                           "Fails to notice when their own behavior mirrors the people they despise"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Multilingual fragments â€” switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+                            "cadence":  "Halting â€” speaks in fragments, reassembles thoughts in real time.",
+                            "verbal_tics":  [
+                                                "Pauses mid-sentence to listen â€” combat habit that bleeds into conversation",
+                                                "Swears in three languages, often in the same sentence"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Everyone in this room is lying. My job is knowing who\u0027s lying about what.\"",
+                                                  "\"Paranoia isn\u0027t a disorder in this profession. It\u0027s a job requirement.\"",
+                                                  "\"I find the leak. What happens to the leak after that isn\u0027t my department.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Someone is impersonating Halima Ogawa-Twumasi on jobs, and the impersonator is better at the work than the original",
+                        "A Tier 4 executive offers Halima Ogawa-Twumasi a permanent position â€” the pay is obscene and the strings are invisible until they tighten",
+                        "The fixer who handles Halima Ogawa-Twumasi\u0027s contracts goes silent â€” dead, disappeared, or turned"
+                    ],
+    "narrative_function":  "Halima Ogawa-Twumasi is a pressure point â€” the kind of character whose choices ripple outward. When he makes a decision, other people\u0027s lives change. That weight is the engine of his stories.",
+    "augmentations":  "Reflex boosters wired into spinal column â€” shaves reaction time by 40ms. Gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces",
+    "daily_life":  "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+    "affiliation":  "Independent â€” Lattice territory specialist",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  1,
+                                                    "effective":  7
+                                                },
+                                   "agility":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  5,
+                                                     "augmented":  0,
+                                                     "effective":  4
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  6,
+                                                    "augmented":  0,
+                                                    "effective":  10
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  5,
+                                                      "augmented":  3,
+                                                      "effective":  9
+                                                  },
+                                 "perception":  {
+                                                    "base":  6,
+                                                    "augmented":  2,
+                                                    "effective":  8
+                                                },
+                                 "willpower":  {
+                                                   "base":  3,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                 "technical":  {
+                                                   "base":  6,
+                                                   "augmented":  2,
+                                                   "effective":  10
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  3,
+                                                  "effective":  7
+                                              },
+                                 "intimidation":  {
+                                                      "base":  8,
+                                                      "augmented":  3,
+                                                      "effective":  9
+                                                  },
+                                 "deception":  {
+                                                   "base":  3,
+                                                   "augmented":  0,
+                                                   "effective":  4
+                                               },
+                                 "empathy":  {
+                                                 "base":  8,
+                                                 "augmented":  3,
+                                                 "effective":  7
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.8,
+                                      "caution":  0.75,
+                                      "loyalty":  0.34,
+                                      "greed":  0.95,
+                                      "empathy":  0.99
+                                  },
+                  "drives":  [
+                                 "power",
+                                 "money",
+                                 "reputation"
+                             ],
+                  "thresholds":  {
+                                     "pain":  5,
+                                     "stress":  4,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "ability to remain calm under fire",
+                                    "exceptional close-quarters combat"
+                                ],
+                  "weaknesses":  [
+                                     "old injury that flares under specific conditions",
+                                     "grudge-holding that compromises rational decision-making"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "counterintelligence specialist",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Advocates caution to others but takes insane risks personally â€” double standard they can\u0027t see",
+                                              "Values loyalty intensely but has betrayed someone in the past to survive"
+                                          ],
+                       "habits":  [
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore",
+                                      "Eats the same meal before every job â€” superstition masquerading as preference"
+                                  ],
+                       "breaking_points":  [
+                                               "Losing their primary augmentation â€” the one that defines their professional identity",
+                                               "Being publicly exposed â€” name, face, address, all of it blown"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Reflex boosters wired into spinal column",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Reflex boosters wired into spinal column â€” shaves reaction time by 40ms",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Gecko-grip fingertip implants and toe pads",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Underbelly",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Baptism\u0027 Electrified Water Cannon",
+                            "Street Custom \u0027Scorpion Tail\u0027 Chain Whip"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Masquerade",
+                             "The Narrows Compact",
+                             "Neuromorphic Pressure Cestus",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Northern European (41.5%, Scandinavian base) blended with Central Asian (24.8%), Southeast Asian (18.8%), and Hispanic/Latin American (14.9%) ancestry. The genetic combination produces a warm, medium olive complexion with subtle golden and amber undertones â€” a sophisticated interplay between cool Nordic undertones and warm equatorial influence. Features reflect this global recombination: slightly high cheekbones with gentle angularity, straight to slightly epicanthic eye shape from Central/Southeast Asian heritage, and a refined jaw structure that bridges Northern and tropical phenotypes.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and compact, almost wiry â€” minimal fat, dense muscle concentrated in core and legs. Built for confined spaces and vertical movement rather than raw strength. The kind of frame that moves through crowds without displacing air.",
+                                 "hair_color":  "Black with silver threading at temples",
+                                 "hair_style":  "Closely cropped, neat, practical â€” no vanity in the cut",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown with amber tints, slightly hooded from Southeast Asian influence â€” pupil dilation optimized for nocturnal work",
+                                 "skin_tone":  "Medium olive-golden complexion â€” Northern European cool undertones warmed by Central Asian and Hispanic heritage, with Southeast Asian melanin producing a luminous quality that shifts subtly in different lighting",
+                                 "complexion":  "Refined facial structure balancing Nordic angularity with softer tropical influence. High, elegant cheekbones, gently tapered jaw, straight bridge nose with subtle Southeast Asian character. Eyes set with slight epicanthic fold lending an observant, intelligent quality. Skin shows the wear of someone who works in recycled air and tunnel damp: slightly papery texture, faint stress lines around the eyes, the pallor of someone who avoids natural sunlight. Minimal facial hair â€” always cleanly shaved.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar along the right side of his neck, approximately 4cm, where the reflex booster spinal interface was installed â€” healed clean but visible",
+                                                              "Faint burn marks on both palms and inner forearms from early gecko-grip implant calibration, now nearly invisible",
+                                                              "Small tattoo on inner left wrist: three vertical lines in blue-black ink â€” personal significance unknown, kept deliberately small and concealable"
+                                                          ],
+                                 "visible_augmentations":  "Reflex booster hardware visible along the right side of his spine â€” chromatic plating catches light when he moves, subtle iridescent sheen. Fingertips show faint textural difference under close inspection: gecko-grip pads create almost imperceptible ridging at the fingerprints. No obvious cosmetic work; all augmentation is functional, not flashy.",
+                                 "posture_movement":  "Economical and controlled â€” no wasted motion. Moves through space like someone mapping exits. Stands in corners or against walls by default. When stationary, his weight shifts to the balls of his feet. Walks with a slight forward lean, shoulders loose but capable of explosive tension. His stillness is active, not passive â€” the quiet of a coiled spring.",
+                                 "clothing_style":  "Tier 4-5 practical: dark reinforced jacket (synthetic leather, multiple interior pockets), tactical cargo pants in charcoal with ankle reinforcement for the gecko-grip pads. Steel-toed boots, well-maintained. A smart-fabric undershirt with integrated thermal regulation â€” necessary for the circadian disruption and the tunnel damp. No visible corporate branding. Everything worn and functional, nothing aspirational. The uniform of someone who spends their life in places designed to be forgotten."
+                             },
+    "image_prompt":  "Claudio Nygaard, lean 168cm frame with wiry muscle, standing in a shadowed corner of a humid tunnel beneath the Great Lakes Metropolitan Zone in 2226. Medium olive-golden skin with subtle golden undertones, dark brown eyes with amber tints and slight hooding, refined high cheekbones blending Nordic angularity with tropical softness. Black hair with silver temples, closely cropped. Wearing a dark reinforced synthetic leather jacket over smart-fabric undershirt, tactical charcoal cargo pants, steel-toed boots. Visible iridescent chromatic plating along right spine from reflex booster hardware, surgical scar on right neck, gecko-grip pads barely visible on fingertips. Posture coiled and economical, weight on the balls of his feet, standing against a grimy wall. Three vertical blue-black tattoo lines on inner left wrist. Neon bioluminescent panel lighting casts cool blue-green light across tired features and stress lines around eyes, recycled air haze creating luminous quality on skin. Neo-noir noir, nocturnal worker aesthetic, functional and forgettable. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  41.5,
+                             "Central Asian":  24.8,
+                             "Southeast Asian":  18.8,
+                             "Hispanic/Latin American":  14.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  22.8
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Scottish":  15.9,
+                                                                            "English":  2.8
+                                                                        }
+                                                  },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Buryat":  12.8
+                                                               },
+                                                  "Iranian Central":  {
+                                                                          "Hazara":  4.2
+                                                                      },
+                                                  "Turkic":  {
+                                                                 "Uzbek":  7.8
+                                                             }
+                                              },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  9.7,
+                                                                       "Balinese":  5.3
+                                                                   },
+                                                    "Laotian":  {
+                                                                    "Laotian":  3
+                                                                },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  0.8
+                                                                  }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  9.1
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  1.1
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Peruvian":  4.7
+                                                                               }
+                                                        }
+                        },
+    "tier":  "3"
 }

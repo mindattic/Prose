@@ -1,254 +1,277 @@
-{
-  "id": "019d6143a60a7451b7f9ac1f5f380722",
-  "type": "character",
-  "name": "Binh Banerjee",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Street comedian and oral storyteller",
-  "age": 58,
-  "status": "active",
-  "location": "Hamtramck Enclave, performs regularly at the Corrugated Stage open-air market, near Halsted and Division",
-  "description": "Binh Banerjee is a big man gone soft at the edges — broad shoulders still present under a frame that's added roundness over the decades, hands that look built for work but move with theatrical precision. His face is deeply lined, dark complexioned, with a grey-shot beard he trims every third day with aggressive inconsistency. His left eye is a cheap chrome replacement, matte silver with a fixed aperture that doesn't track quite right, which he uses deliberately in performance — holding the chrome eye on someone while the natural eye looks away creates an uncanny effect he calls 'the split.' He dresses in layers of mismatched secondhand, always some piece of vivid color — a patterned scarf, a lacquered button.\n\nBinh Banerjee has been performing in Hamtramck Enclave for twenty-two years. He knows every family, every feud, every absurdity, and his comedy is the neighborhood talking to itself — sharp, intimate, tender with grief, and never punching at those who can't afford to lose. He's turned down three offers to perform in Meridian Core venues and one offer to consult on a Tessera-sponsored cultural feed. He is locally beloved and regionally unknown, which is precisely how he wants it. He is also, quietly, one of the best oral historians of the Enclave's last three decades.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.7,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.3,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "The Enclave being bought out and homogenized until there's nothing left to remember",
-      "Dying before he's transmitted enough — stories, jokes, names — to people who will carry them"
-    ],
-    "core_desires": [
-      "For the community to see itself clearly and laugh without shame",
-      "To be remembered as someone who told the truth in a way people could survive hearing"
-    ],
-    "coping_mechanisms": [
-      "Comedy as a pressure valve — transforms pain into material before it can become paralysis",
-      "Oral documentation — keeps detailed mental records of everyone he meets, as if remembering people hard enough preserves them"
-    ],
-    "blind_spots": [
-      "Underestimates how much his opinion shapes the Enclave's social dynamics — he thinks he's observing, not influencing",
-      "Has avoided examining whether staying deliberately small is wisdom or fear"
-    ],
-    "secret": "He's been secretly recording his performances and oral histories and uploading them encrypted to a dead-drop server, building an archive — but the server belongs to a Ringo subsidiary and he doesn't know it"
-  },
-  "speech_patterns": {
-    "vocabulary": "Richly idiomatic, mixing Zulu-derived phrases with Hamtramck Enclave slang and Creole French inherited from his mother's side; formal when serious, expansive when performing",
-    "cadence": "Deliberate and rhythmic in performance; conversational speech has long pauses that people learn to wait through",
-    "verbal_tics": [
-      "'Now listen—' (performance opener)",
-      "'You understand what I'm telling you?'",
-      "A specific low whistle that signals 'I have seen some things'"
-    ],
-    "example_lines": [
-      "'Tessera built a park on the Westside. Beautiful. Benches, trees, the whole thing. No one from the Westside can afford the transit fare to get there. That's not irony — that's a mission statement.'",
-      "'My grandfather survived four governments, two floods, and one wife. He said the wife was the hardest. I'm not saying he was right. I'm saying he said it with a lot of conviction.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Ezekiel's archive server has been flagged by a Ringo automated content-scraping system, and a Ringo rep has shown up in the Enclave asking questions; Ezekiel doesn't know why, and the neighborhood is starting to look at him differently",
-    "A young performer wants to take Ezekiel's stories and adapt them for a Meridian Core venue — with his blessing — and Ezekiel is torn between pride, suspicion, and the knowledge that this is exactly the dilution he's always feared"
-  ],
-  "narrative_function": "Community anchor and lore keeper; players looking to understand Hamtramck Enclave's history, politics, or personalities will eventually be pointed to Zeke; he's a quest giver for community-stakes problems and a barometer of neighborhood mood",
-  "augmentations": "Left eye chrome replacement (functional, not cosmetic — lost the eye in an industrial accident at 34); no geneware",
-  "daily_life": "Mornings Ezekiel walks the Enclave's market circuit, trading jokes and gossip; afternoons he drafts new material in a battered physical notebook at a tea stall; evenings he performs at the Corrugated Stage two to four nights a week, with the hat passed at the end.",
-  "affiliation": "Independent; deeply embedded in Hamtramck Enclave community; informal ties to the Enclave's neighborhood council",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 4,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 4
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 9,
-      "expression": 10,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -5,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "storyteller",
-      "community-anchor",
-      "lore-keeper",
-      "working-tier",
-      "truth-teller"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Don't take money from anyone whose interests conflict with the Enclave's wellbeing",
-      "Tell the truth in performance — you can wrap it in a joke but it has to be the truth",
-      "Never mock someone who has no power to respond"
-    ],
-    "escalation_ladder": [
-      "Become very still and very polite",
-      "Tell a story that is clearly about the situation without naming names",
-      "Say the thing directly, without performance, which is alarming to anyone who knows him",
-      "Withdraw from public performance — a silence the Enclave notices immediately"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm but evaluating — performs approachability while determining what the stranger is actually after; generous with time, careful with trust",
-      "friends": "Genuinely effusive, remembers everything, shows up with food when things are bad"
-    },
-    "stress_responses": {
-      "low": "Starts collecting material — stress becomes research",
-      "medium": "Performs longer and harder, using the crowd's energy as ballast",
-      "high": "Goes completely quiet, retreats to his notebook, doesn't perform for days"
-    },
-    "contradictions": [
-      "Insists comedy should challenge power but maintains careful social equilibrium in the Enclave to preserve his position",
-      "Talks constantly about legacy and transmission but has never had a formal apprentice"
-    ],
-    "habits": [
-      "Marks his notebook entries with the weather and what he ate — believes context is everything",
-      "Leaves a voice-memo offering for the E.L.F. he believes inhabits the Corrugated Stage's sound system, asking for clear acoustics",
-      "Wears the same pair of worn boots for every performance, resoled four times"
-    ],
-    "breaking_points": [
-      "Watching someone harm a community member who trusted them",
-      "Being called a relic or irrelevant by someone he respects"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Meridian Core",
-    "Irkalla",
-    "Tessera Corponation",
-    "Silver",
-    "Nesting Doll",
-    "Tenderloin",
-    "The Pure Hand",
-    "Ringo Corponation"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "South Asian (54.4%) with significant Hispanic/Latin American (25.3%) and East Asian (20.3%) ancestry — a striking blend reflecting the Ubiquitous Diaspora. Genetic heritage creates a warm medium-to-deep complexion with South Asian cheekbone and nasal structure, enriched by Latin American warmth in skin tone and subtle East Asian features in the eye shape and upper face geometry.",
-    "height_cm": 188,
-    "weight_kg": 94,
-    "build": "Broad-shouldered and heavy-set with a softened middle — muscular frame gone generous with age, the body of someone who once labored physically and now carries the comfort of years. Still powerful in the chest and arms despite the roundness.",
-    "hair_color": "Black with extensive grey streaking throughout",
-    "hair_style": "Kept short and natural, close to the scalp, greying beard trimmed irregularly in a deliberately unkempt manner — groomed roughly every third day with intentional inconsistency",
-    "hair_length": "Short",
-    "eye_color": "Left eye: matte silver chrome replacement with a fixed circular aperture; Right eye: dark brown, warm and quick",
-    "skin_tone": "Medium-deep warm brown with golden-amber undertones — the rich complexion of blended South Asian, Hispanic/Latin American, and East Asian heritage, sun-darkened from two decades of outdoor performance",
-    "complexion": "Deeply lined face carved by years of outdoor performance and sun exposure; expressive around the mouth and eyes; warm medium-deep brown complexion with golden undertones emphasizes the stark contrast of the silver chrome left eye replacement; weathered but maintained with care, grooming shows intention despite its roughness. Bone structure reflects South Asian ancestry in pronounced cheekbones and bridge of nose, with East Asian influence in eye shape and upper face geometry, and Latin American warmth suffusing the overall coloration.",
-    "distinguishing_marks": [
-      "Left eye socket contains a matte silver chrome replacement with a fixed aperture that does not track naturally — the visible seam runs along the orbital ridge",
-      "Thin scar tissue visible along the left side of the face from the industrial accident that claimed the original eye, partially obscured by beard",
-      "Hands bear calluses and old burn marks on palms and forearms — industrial legacy, now used for precise theatrical gestures"
-    ],
-    "visible_augmentations": "Left eye chrome replacement (matte silver finish, functional but noticeably non-biomimetic, with visible seams around the socket). The fixed aperture and slight tracking lag are intentional performance tools.",
-    "posture_movement": "Stands with weight distributed evenly, grounded — a performer's stance that appears casual but is precisely balanced. Moves with theatrical precision despite his bulk; hands are expressive and controlled, gestures economical but impactful. The chrome eye is used deliberately in conversation, holding it fixed on someone while the natural eye looks away to create deliberate unease. Overall bearing suggests comfort in public space, ease with attention.",
-    "clothing_style": "Layers of mismatched secondhand garments — functional, worn Tier 4-5 clothing that reads as deliberately eclectic rather than poor. Always incorporates one piece of vivid color: a patterned scarf in bold geometric designs, a lacquered button, a piece of dyed fabric. Jacket is likely faded denim or canvas, worn at the cuffs. Worn but clean — maintained with the same deliberate inconsistency as his beard. Footwear is practical, broken-in, moves quietly.",
-    "mood_setting": "Street performer, weathered presence, deliberately unsettling but charismatic"
-  },
-  "image_prompt": "Binh Banerjee, 188cm tall broad-shouldered street performer with warm medium-deep brown skin blending South Asian, Hispanic/Latin American, and East Asian heritage. Pronounced South Asian cheekbones, East Asian eye geometry, golden-amber skin undertones. Short black hair heavily streaked with grey, irregular greying beard trimmed roughly. Left eye replaced with matte silver chrome cybernetic implant with fixed aperture and visible orbital seam; right eye dark brown and expressive. Weathered face deeply lined from decades of outdoor performance, theatrical posture perfectly balanced despite heavy-set build with softened middle. Wears mismatched secondhand Tier 4-5 layers in faded denim and canvas, incorporating one bold piece of vivid color — geometric patterned scarf or dyed fabric accent. Hands show industrial calluses and old burn marks used for precise theatrical gestures. Standing in urban street setting, GLMZ Great Lakes Metropolitan Zone, neon-lit evening, deliberately charismatic but unsettling presence, theatrical lighting emphasizing the chrome eye's metallic gleam against warm skin tone, gritty street performer aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 54.4,
-    "Hispanic/Latin American": 25.3,
-    "East Asian": 20.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Indian": {
-        "Malayali": 5.4
-      },
-      "Sri Lankan": {
-        "Sinhalese": 13.7,
-        "Tamil Sri Lankan": 7.2
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 28.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 23.9
-      },
-      "Mexican": {
-        "Mexican": 1.4
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 9.6
-      },
-      "Chinese": {
-        "Mandarin Northern": 7.5,
-        "Sichuanese": 2
-      },
-      "Japanese": {
-        "Japanese": 1.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a60a7451b7f9ac1f5f380722",
+    "type":  "character",
+    "name":  "Binh Banerjee",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Street comedian and oral storyteller",
+    "age":  58,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, performs regularly at the Corrugated Stage open-air market, near Halsted and Division",
+    "description":  "Binh Banerjee is a big man gone soft at the edges â€” broad shoulders still present under a frame that\u0027s added roundness over the decades, hands that look built for work but move with theatrical precision. His face is deeply lined, dark complexioned, with a grey-shot beard he trims every third day with aggressive inconsistency. His left eye is a cheap chrome replacement, matte silver with a fixed aperture that doesn\u0027t track quite right, which he uses deliberately in performance â€” holding the chrome eye on someone while the natural eye looks away creates an uncanny effect he calls \u0027the split.\u0027 He dresses in layers of mismatched secondhand, always some piece of vivid color â€” a patterned scarf, a lacquered button.\n\nBinh Banerjee has been performing in Hamtramck Enclave for twenty-two years. He knows every family, every feud, every absurdity, and his comedy is the neighborhood talking to itself â€” sharp, intimate, tender with grief, and never punching at those who can\u0027t afford to lose. He\u0027s turned down three offers to perform in Meridian Core venues and one offer to consult on a Tessera-sponsored cultural feed. He is locally beloved and regionally unknown, which is precisely how he wants it. He is also, quietly, one of the best oral historians of the Enclave\u0027s last three decades.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "The Enclave being bought out and homogenized until there\u0027s nothing left to remember",
+                                          "Dying before he\u0027s transmitted enough â€” stories, jokes, names â€” to people who will carry them"
+                                      ],
+                       "core_desires":  [
+                                            "For the community to see itself clearly and laugh without shame",
+                                            "To be remembered as someone who told the truth in a way people could survive hearing"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Comedy as a pressure valve â€” transforms pain into material before it can become paralysis",
+                                                 "Oral documentation â€” keeps detailed mental records of everyone he meets, as if remembering people hard enough preserves them"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much his opinion shapes the Enclave\u0027s social dynamics â€” he thinks he\u0027s observing, not influencing",
+                                           "Has avoided examining whether staying deliberately small is wisdom or fear"
+                                       ],
+                       "secret":  "He\u0027s been secretly recording his performances and oral histories and uploading them encrypted to a dead-drop server, building an archive â€” but the server belongs to a Ringo subsidiary and he doesn\u0027t know it"
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Richly idiomatic, mixing Zulu-derived phrases with Hamtramck Enclave slang and Creole French inherited from his mother\u0027s side; formal when serious, expansive when performing",
+                            "cadence":  "Deliberate and rhythmic in performance; conversational speech has long pauses that people learn to wait through",
+                            "verbal_tics":  [
+                                                "\u0027Now listenâ€”\u0027 (performance opener)",
+                                                "\u0027You understand what I\u0027m telling you?\u0027",
+                                                "A specific low whistle that signals \u0027I have seen some things\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Tessera built a park on the Westside. Beautiful. Benches, trees, the whole thing. No one from the Westside can afford the transit fare to get there. That\u0027s not irony â€” that\u0027s a mission statement.\u0027",
+                                                  "\u0027My grandfather survived four governments, two floods, and one wife. He said the wife was the hardest. I\u0027m not saying he was right. I\u0027m saying he said it with a lot of conviction.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Ezekiel\u0027s archive server has been flagged by a Ringo automated content-scraping system, and a Ringo rep has shown up in the Enclave asking questions; Ezekiel doesn\u0027t know why, and the neighborhood is starting to look at him differently",
+                        "A young performer wants to take Ezekiel\u0027s stories and adapt them for a Meridian Core venue â€” with his blessing â€” and Ezekiel is torn between pride, suspicion, and the knowledge that this is exactly the dilution he\u0027s always feared"
+                    ],
+    "narrative_function":  "Community anchor and lore keeper; players looking to understand Hamtramck Enclave\u0027s history, politics, or personalities will eventually be pointed to Zeke; he\u0027s a quest giver for community-stakes problems and a barometer of neighborhood mood",
+    "augmentations":  "Left eye chrome replacement (functional, not cosmetic â€” lost the eye in an industrial accident at 34); no geneware",
+    "daily_life":  "Mornings Ezekiel walks the Enclave\u0027s market circuit, trading jokes and gossip; afternoons he drafts new material in a battered physical notebook at a tea stall; evenings he performs at the Corrugated Stage two to four nights a week, with the hat passed at the end.",
+    "affiliation":  "Independent; deeply embedded in Hamtramck Enclave community; informal ties to the Enclave\u0027s neighborhood council",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  4,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  4
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  9,
+                                 "expression":  10,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -5,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "storyteller",
+                               "community-anchor",
+                               "lore-keeper",
+                               "working-tier",
+                               "truth-teller"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Don\u0027t take money from anyone whose interests conflict with the Enclave\u0027s wellbeing",
+                                              "Tell the truth in performance â€” you can wrap it in a joke but it has to be the truth",
+                                              "Never mock someone who has no power to respond"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Become very still and very polite",
+                                                 "Tell a story that is clearly about the situation without naming names",
+                                                 "Say the thing directly, without performance, which is alarming to anyone who knows him",
+                                                 "Withdraw from public performance â€” a silence the Enclave notices immediately"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm but evaluating â€” performs approachability while determining what the stranger is actually after; generous with time, careful with trust",
+                                                   "friends":  "Genuinely effusive, remembers everything, shows up with food when things are bad"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Starts collecting material â€” stress becomes research",
+                                                "medium":  "Performs longer and harder, using the crowd\u0027s energy as ballast",
+                                                "high":  "Goes completely quiet, retreats to his notebook, doesn\u0027t perform for days"
+                                            },
+                       "contradictions":  [
+                                              "Insists comedy should challenge power but maintains careful social equilibrium in the Enclave to preserve his position",
+                                              "Talks constantly about legacy and transmission but has never had a formal apprentice"
+                                          ],
+                       "habits":  [
+                                      "Marks his notebook entries with the weather and what he ate â€” believes context is everything",
+                                      "Leaves a voice-memo offering for the E.L.F. he believes inhabits the Corrugated Stage\u0027s sound system, asking for clear acoustics",
+                                      "Wears the same pair of worn boots for every performance, resoled four times"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone harm a community member who trusted them",
+                                               "Being called a relic or irrelevant by someone he respects"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027",
+                            "Street-Custom Memory Alloy Butterfly Knife \u0027Quicksilver\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "Meridian Core",
+                             "Irkalla",
+                             "Tessera Corponation",
+                             "Silver",
+                             "Nesting Doll",
+                             "Tenderloin",
+                             "The Pure Hand",
+                             "Ringo Corponation"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "South Asian (54.4%) with significant Hispanic/Latin American (25.3%) and East Asian (20.3%) ancestry â€” a striking blend reflecting the Ubiquitous Diaspora. Genetic heritage creates a warm medium-to-deep complexion with South Asian cheekbone and nasal structure, enriched by Latin American warmth in skin tone and subtle East Asian features in the eye shape and upper face geometry.",
+                                 "height_cm":  188,
+                                 "weight_kg":  94,
+                                 "build":  "Broad-shouldered and heavy-set with a softened middle â€” muscular frame gone generous with age, the body of someone who once labored physically and now carries the comfort of years. Still powerful in the chest and arms despite the roundness.",
+                                 "hair_color":  "Black with extensive grey streaking throughout",
+                                 "hair_style":  "Kept short and natural, close to the scalp, greying beard trimmed irregularly in a deliberately unkempt manner â€” groomed roughly every third day with intentional inconsistency",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Left eye: matte silver chrome replacement with a fixed circular aperture; Right eye: dark brown, warm and quick",
+                                 "skin_tone":  "Medium-deep warm brown with golden-amber undertones â€” the rich complexion of blended South Asian, Hispanic/Latin American, and East Asian heritage, sun-darkened from two decades of outdoor performance",
+                                 "complexion":  "Deeply lined face carved by years of outdoor performance and sun exposure; expressive around the mouth and eyes; warm medium-deep brown complexion with golden undertones emphasizes the stark contrast of the silver chrome left eye replacement; weathered but maintained with care, grooming shows intention despite its roughness. Bone structure reflects South Asian ancestry in pronounced cheekbones and bridge of nose, with East Asian influence in eye shape and upper face geometry, and Latin American warmth suffusing the overall coloration.",
+                                 "distinguishing_marks":  [
+                                                              "Left eye socket contains a matte silver chrome replacement with a fixed aperture that does not track naturally â€” the visible seam runs along the orbital ridge",
+                                                              "Thin scar tissue visible along the left side of the face from the industrial accident that claimed the original eye, partially obscured by beard",
+                                                              "Hands bear calluses and old burn marks on palms and forearms â€” industrial legacy, now used for precise theatrical gestures"
+                                                          ],
+                                 "visible_augmentations":  "Left eye chrome replacement (matte silver finish, functional but noticeably non-biomimetic, with visible seams around the socket). The fixed aperture and slight tracking lag are intentional performance tools.",
+                                 "posture_movement":  "Stands with weight distributed evenly, grounded â€” a performer\u0027s stance that appears casual but is precisely balanced. Moves with theatrical precision despite his bulk; hands are expressive and controlled, gestures economical but impactful. The chrome eye is used deliberately in conversation, holding it fixed on someone while the natural eye looks away to create deliberate unease. Overall bearing suggests comfort in public space, ease with attention.",
+                                 "clothing_style":  "Layers of mismatched secondhand garments â€” functional, worn Tier 4-5 clothing that reads as deliberately eclectic rather than poor. Always incorporates one piece of vivid color: a patterned scarf in bold geometric designs, a lacquered button, a piece of dyed fabric. Jacket is likely faded denim or canvas, worn at the cuffs. Worn but clean â€” maintained with the same deliberate inconsistency as his beard. Footwear is practical, broken-in, moves quietly.",
+                                 "mood_setting":  "Street performer, weathered presence, deliberately unsettling but charismatic"
+                             },
+    "image_prompt":  "Binh Banerjee, 188cm tall broad-shouldered street performer with warm medium-deep brown skin blending South Asian, Hispanic/Latin American, and East Asian heritage. Pronounced South Asian cheekbones, East Asian eye geometry, golden-amber skin undertones. Short black hair heavily streaked with grey, irregular greying beard trimmed roughly. Left eye replaced with matte silver chrome cybernetic implant with fixed aperture and visible orbital seam; right eye dark brown and expressive. Weathered face deeply lined from decades of outdoor performance, theatrical posture perfectly balanced despite heavy-set build with softened middle. Wears mismatched secondhand Tier 4-5 layers in faded denim and canvas, incorporating one bold piece of vivid color â€” geometric patterned scarf or dyed fabric accent. Hands show industrial calluses and old burn marks used for precise theatrical gestures. Standing in urban street setting, GLMZ Great Lakes Metropolitan Zone, neon-lit evening, deliberately charismatic but unsettling presence, theatrical lighting emphasizing the chrome eye\u0027s metallic gleam against warm skin tone, gritty street performer aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  54.4,
+                             "Hispanic/Latin American":  25.3,
+                             "East Asian":  20.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Malayali":  5.4
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  13.7,
+                                                                   "Tamil Sri Lankan":  7.2
+                                                               },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  28.1
+                                                                }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  23.9
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  1.4
+                                                                        }
+                                                        },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  9.6
+                                                          },
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  7.5,
+                                                               "Sichuanese":  2
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  1.2
+                                                            }
+                                           }
+                        },
+    "tier":  "1"
 }

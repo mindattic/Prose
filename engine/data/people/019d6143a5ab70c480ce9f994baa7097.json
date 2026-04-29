@@ -1,360 +1,373 @@
-{
-  "id": "019d6143a5ab70c480ce9f994baa7097",
-  "rating": 70,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Bhoomika Magnúsdóttir",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Personal security and threat neutralization — bodyguard",
-  "age": 35,
-  "status": "active",
-  "location": "The Rookery — dense vertical housing, gang-controlled, near Halsted and Chicago Ave",
-  "description": "Bhoomika Magnúsdóttir is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 35, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Bhoomika Magnúsdóttir plans to keep it that way. He works as a bodyguard out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Bhoomika Magnúsdóttir describe him as a precision instrument — point him at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.35,
-      "ideal": 0.14,
-      "id": 0.8,
-      "shadow": 0.62,
-      "mask": 0.15,
-      "ghost": 0.72
-    },
-    "core_fears": [
-      "Their past catching up — debts, enemies, broken promises",
-      "Going cyberpsycho — losing the boundary between human and machine",
-      "Betrayal by someone they trust — the only currency that matters"
-    ],
-    "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "Justice — the corporate kind, where the punishment fits the profit margin",
-      "Control — over their body, their schedule, their future"
-    ],
-    "coping_mechanisms": [
-      "Exercises compulsively — the body must be ready, always",
-      "Isolates — retreats into their space when overwhelmed, emerges only for work",
-      "Ritual — follows the same pre-job routine every time, superstition as structure"
-    ],
-    "blind_spots": [
-      "Assumes everyone has an angle because they always have an angle",
-      "Assumes their skill set is more transferable than it actually is",
-      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
-    ],
-    "secret": "Altan Tanaka-Frimpong witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
-    "cadence": "Staccato bursts separated by calculating silences.",
-    "verbal_tics": [
-      "Uses old pre-collapse slang that nobody else remembers",
-      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks"
-    ],
-    "example_lines": [
-      "\"You're paying me to be the thing between you and everything else. Stay behind me.\"",
-      "\"I don't protect people I don't respect. Lucky for you, I respect your money.\"",
-      "\"The threat you see isn't the one that kills you. Watch my eyes, not my hands.\""
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Tier 4 executive offers Altan Tanaka-Frimpong a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "A dead drop Altan Tanaka-Frimpong maintains is found and cleaned out — whoever did it now has leverage",
-    "Altan Tanaka-Frimpong intercepts intelligence about a threat to their district and must decide between profit and protection"
-  ],
-  "narrative_function": "Altan Tanaka-Frimpong functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
-  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Independent — Dockside connections",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 7
-      },
-      "agility": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 6
-      },
-      "reflexes": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 5
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 9
-      },
-      "perception": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 10
-      },
-      "willpower": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 6
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 8
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 8
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 4
-      },
-      "deception": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 7
-      },
-      "empathy": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 7
-      }
-    },
-    "personality": {
-      "aggression": 0.71,
-      "caution": 0.31,
-      "loyalty": 0.11,
-      "greed": 0.41,
-      "empathy": 0.77
-    },
-    "drives": [
-      "money",
-      "survival",
-      "knowledge"
-    ],
-    "thresholds": {
-      "pain": 8,
-      "stress": 4,
-      "loyalty_break": 10
-    },
-    "strengths": [
-      "physical endurance",
-      "photographic memory for faces and layouts"
-    ],
-    "weaknesses": [
-      "trust issues that limit crew effectiveness",
-      "inability to delegate — must control everything personally",
-      "risk-averse to the point of missed opportunities"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "bodyguard",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Always has an exit route planned before agreeing to any meeting"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Insists they work alone but performs noticeably better in a team",
-      "Preaches independence but is desperate for approval from people they respect"
-    ],
-    "habits": [
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
-      "Maintains a dead drop with emergency supplies in three separate districts",
-      "Never drinks anything they didn't see poured or open themselves",
-      "Counts ammunition obsessively — knows the exact round count at all times"
-    ],
-    "breaking_points": [
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Internal air filtration system",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
-      "replaces": ""
-    },
-    {
-      "name": "Synthetic muscle fiber replacement in legs",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Protector": 0.9,
-    "Sentinel": 0.9,
-    "Charmer": 0.9,
-    "Networker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Rookery",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Multinational genetic mosaic: Northern European foundation (40.1%) meets substantial Hispanic/Latin American ancestry (34.1%), with significant North African admixture (17.9%), balanced by minor East Asian (5.1%) and Southeast Asian (2.8%) heritage. The result is a striking convergence — warm olive skin with golden undertones from the Latin American and North African blend, refined by Northern European bone structure, with subtle depth in eye shape from East Asian ancestry. A face that reads as ambiguously global, distinctly contemporary.",
-    "height_cm": 188,
-    "weight_kg": 74,
-    "build": "Rawboned and efficient — lean muscle over long bones, minimal body fat, the physique of someone who treats their body as functional equipment rather than an investment. No wasted mass.",
-    "hair_color": "Black with premature gray at temples",
-    "hair_style": "Cropped close to the scalp, practical, sharp line fade",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm olive with golden undertones — a complex blend reflecting the Northern European base warmed by substantial Hispanic/Latin American (34.1%) and North African (17.9%) ancestry. Medium depth with luminous quality, slightly sun-weathered.",
-    "complexion": "Strong, angular features with high prominent cheekbones and defined jaw — Northern European bone structure warmed and deepened by Latin American and North African heritage. Skin tight over bone, unmarked face suggesting either exceptional care or exceptional luck. Fine lines around the eyes — accumulated squinting, accumulated years. Subtle warmth and depth in skin undertone across the face, with faint evidence of sun exposure across the cheekbones and forehead.",
-    "distinguishing_marks": [
-      "Horizontal scar across the left shoulder blade — old, surgical origin, partially hidden by standard clothing",
-      "Faded tattoo on inside of right wrist — geometric pattern, origin and meaning deliberately obscure",
-      "Thin burn scar running along the left side of the neck, barely visible, consistent with thermal weapon discharge"
-    ],
-    "visible_augmentations": "Surgical chrome around the sternum and upper ribcage — intake vents for the synthetic respiratory system are visible through open-collar shirts as fine metallic lattice work. No attempt to conceal. The legs show minimal external modification but move with uncanny efficiency — synthetic muscle fiber replacement evident only in motion, in the unnatural snap of acceleration and deceleration.",
-    "posture_movement": "Moves with deliberate economy — no flourish, no wasted motion. Stands at angles rather than head-on, shoulders relaxed but never fully slack. Weight balanced on the balls of his feet even when stationary. Eyes track constantly, threat assessment running on automatic. When she walks, there's a mechanical precision to the leg movement, the stride too perfect, too controlled.",
-    "clothing_style": "Tier 4 utilitarian — dark synthetic shell jacket with modular pockets, worn over fitted charcoal compression shirt. Carbon-weave pants, reinforced at knees and thighs. Tactical boots, scuffed, broken in. Minimal branding. No jewelry. All clothing is functional, replaceable, untraceable. Carries a messenger bag across the chest — worn leather, contents unknown."
-  },
-  "image_prompt": "Bhoomika Magnúsdóttir, tall androgynous figure, 188cm, lean muscular build. Mixed heritage face: Northern European angular bone structure with warm olive skin, golden undertones, prominent cheekbones, defined jaw. Dark brown eyes with subtle East Asian eye shape. Black hair cropped short with gray at temples. Fine lines around eyes. Faded thermal burn scar on left neck, barely visible. Surgical chrome lattice vents visible on sternum under open charcoal compression shirt. Dark synthetic tactical jacket with modular pockets. Carbon-weave reinforced pants. Scuffed tactical boots. Worn leather messenger bag across chest. Standing at deliberate angle, weight on balls of feet, constant threat assessment in gaze. GLMZ, Great Lakes Metropolitan Zone, neon-lit urban setting, cool blue and amber lighting, moody cinematic atmosphere, photorealistic, high contrast --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Northern European": 40.1,
-    "Hispanic/Latin American": 34.1,
-    "North African": 17.9,
-    "East Asian": 5.1,
-    "Southeast Asian": 2.8
-  },
-  "ancestry_detail": {
-    "Northern European": {
-      "British Isles": {
-        "Irish": 26.7,
-        "English": 13.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Nicaraguan": 1.8,
-        "Guatemalan": 1.4
-      },
-      "Caribbean": {
-        "Puerto Rican": 5.3,
-        "Cuban": 6.1
-      },
-      "Mexican": {
-        "Mexican": 19.5
-      }
-    },
-    "North African": {
-      "Nile Valley": {
-        "Sudanese": 4.1,
-        "Egyptian": 1.7
-      },
-      "Maghreb": {
-        "Tunisian": 7.6,
-        "Algerian": 4.5
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 4.6
-      },
-      "Chinese": {
-        "Fujianese": 0.3,
-        "Shanghainese": 0.2
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 0.8
-      },
-      "Indonesian": {
-        "Javanese": 0.6
-      },
-      "Filipino": {
-        "Waray": 1.4
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5ab70c480ce9f994baa7097",
+    "rating":  70,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Bhoomika MagnÃºsdÃ³ttir",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Personal security and threat neutralization â€” bodyguard",
+    "age":  35,
+    "status":  "active",
+    "location":  "The Rookery â€” dense vertical housing, gang-controlled, near Halsted and Chicago Ave",
+    "description":  "Bhoomika MagnÃºsdÃ³ttir is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 35, his face carries the layered heritage of generations of diaspora mixing â€” features that resist easy categorization and reward attention. The chrome is visible â€” internal air filtration system â€” lungs replaced with synthetic equivalents, immu â€” and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name â€” that person is officially dead, and Bhoomika MagnÃºsdÃ³ttir plans to keep it that way. He works as a bodyguard out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Bhoomika MagnÃºsdÃ³ttir describe him as a precision instrument â€” point him at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Their past catching up â€” debts, enemies, broken promises",
+                                          "Going cyberpsycho â€” losing the boundary between human and machine",
+                                          "Betrayal by someone they trust â€” the only currency that matters"
+                                      ],
+                       "core_desires":  [
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "Justice â€” the corporate kind, where the punishment fits the profit margin",
+                                            "Control â€” over their body, their schedule, their future"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Exercises compulsively â€” the body must be ready, always",
+                                                 "Isolates â€” retreats into their space when overwhelmed, emerges only for work",
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Assumes their skill set is more transferable than it actually is",
+                                           "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care"
+                                       ],
+                       "secret":  "Altan Tanaka-Frimpong witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+                            "cadence":  "Staccato bursts separated by calculating silences.",
+                            "verbal_tics":  [
+                                                "Uses old pre-collapse slang that nobody else remembers",
+                                                "Uses \u0027we\u0027 instead of \u0027I\u0027 â€” either royal or dissociative, nobody asks"
+                                            ],
+                            "example_lines":  [
+                                                  "\"You\u0027re paying me to be the thing between you and everything else. Stay behind me.\"",
+                                                  "\"I don\u0027t protect people I don\u0027t respect. Lucky for you, I respect your money.\"",
+                                                  "\"The threat you see isn\u0027t the one that kills you. Watch my eyes, not my hands.\""
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Tier 4 executive offers Altan Tanaka-Frimpong a permanent position â€” the pay is obscene and the strings are invisible until they tighten",
+                        "A dead drop Altan Tanaka-Frimpong maintains is found and cleaned out â€” whoever did it now has leverage",
+                        "Altan Tanaka-Frimpong intercepts intelligence about a threat to their district and must decide between profit and protection"
+                    ],
+    "narrative_function":  "Altan Tanaka-Frimpong functions as a connector â€” his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks. Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs",
+    "daily_life":  "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+    "affiliation":  "Independent â€” Dockside connections",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  0,
+                                                    "effective":  7
+                                                },
+                                   "agility":  {
+                                                   "base":  7,
+                                                   "augmented":  1,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  7,
+                                                     "augmented":  3,
+                                                     "effective":  6
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  6,
+                                                    "augmented":  3,
+                                                    "effective":  5
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  8,
+                                                      "augmented":  2,
+                                                      "effective":  9
+                                                  },
+                                 "perception":  {
+                                                    "base":  5,
+                                                    "augmented":  1,
+                                                    "effective":  10
+                                                },
+                                 "willpower":  {
+                                                   "base":  7,
+                                                   "augmented":  3,
+                                                   "effective":  6
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  0,
+                                                   "effective":  8
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  1,
+                                                  "effective":  8
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  3,
+                                                      "effective":  4
+                                                  },
+                                 "deception":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  7
+                                               },
+                                 "empathy":  {
+                                                 "base":  7,
+                                                 "augmented":  1,
+                                                 "effective":  7
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.71,
+                                      "caution":  0.31,
+                                      "loyalty":  0.11,
+                                      "greed":  0.41,
+                                      "empathy":  0.77
+                                  },
+                  "drives":  [
+                                 "money",
+                                 "survival",
+                                 "knowledge"
+                             ],
+                  "thresholds":  {
+                                     "pain":  8,
+                                     "stress":  4,
+                                     "loyalty_break":  10
+                                 },
+                  "strengths":  [
+                                    "physical endurance",
+                                    "photographic memory for faces and layouts"
+                                ],
+                  "weaknesses":  [
+                                     "trust issues that limit crew effectiveness",
+                                     "inability to delegate â€” must control everything personally",
+                                     "risk-averse to the point of missed opportunities"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "bodyguard",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Always has an exit route planned before agreeing to any meeting"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Preaches independence but is desperate for approval from people they respect"
+                                          ],
+                       "habits":  [
+                                      "Talks to their gear â€” names weapons, thanks tools, treats equipment as companions",
+                                      "Maintains a dead drop with emergency supplies in three separate districts",
+                                      "Never drinks anything they didn\u0027t see poured or open themselves",
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Their body rejecting their cyberware â€” chrome rot, immune rejection, the nightmare scenario"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Internal air filtration system",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Synthetic muscle fiber replacement in legs",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Synthetic muscle fiber replacement in legs â€” doubles sprint speed, terrible on stairs",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Protector":  0.9,
+                       "Sentinel":  0.9,
+                       "Charmer":  0.9,
+                       "Networker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Rookery",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Multinational genetic mosaic: Northern European foundation (40.1%) meets substantial Hispanic/Latin American ancestry (34.1%), with significant North African admixture (17.9%), balanced by minor East Asian (5.1%) and Southeast Asian (2.8%) heritage. The result is a striking convergence â€” warm olive skin with golden undertones from the Latin American and North African blend, refined by Northern European bone structure, with subtle depth in eye shape from East Asian ancestry. A face that reads as ambiguously global, distinctly contemporary.",
+                                 "height_cm":  188,
+                                 "weight_kg":  74,
+                                 "build":  "Rawboned and efficient â€” lean muscle over long bones, minimal body fat, the physique of someone who treats their body as functional equipment rather than an investment. No wasted mass.",
+                                 "hair_color":  "Black with premature gray at temples",
+                                 "hair_style":  "Cropped close to the scalp, practical, sharp line fade",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, natural",
+                                 "skin_tone":  "Warm olive with golden undertones â€” a complex blend reflecting the Northern European base warmed by substantial Hispanic/Latin American (34.1%) and North African (17.9%) ancestry. Medium depth with luminous quality, slightly sun-weathered.",
+                                 "complexion":  "Strong, angular features with high prominent cheekbones and defined jaw â€” Northern European bone structure warmed and deepened by Latin American and North African heritage. Skin tight over bone, unmarked face suggesting either exceptional care or exceptional luck. Fine lines around the eyes â€” accumulated squinting, accumulated years. Subtle warmth and depth in skin undertone across the face, with faint evidence of sun exposure across the cheekbones and forehead.",
+                                 "distinguishing_marks":  [
+                                                              "Horizontal scar across the left shoulder blade â€” old, surgical origin, partially hidden by standard clothing",
+                                                              "Faded tattoo on inside of right wrist â€” geometric pattern, origin and meaning deliberately obscure",
+                                                              "Thin burn scar running along the left side of the neck, barely visible, consistent with thermal weapon discharge"
+                                                          ],
+                                 "visible_augmentations":  "Surgical chrome around the sternum and upper ribcage â€” intake vents for the synthetic respiratory system are visible through open-collar shirts as fine metallic lattice work. No attempt to conceal. The legs show minimal external modification but move with uncanny efficiency â€” synthetic muscle fiber replacement evident only in motion, in the unnatural snap of acceleration and deceleration.",
+                                 "posture_movement":  "Moves with deliberate economy â€” no flourish, no wasted motion. Stands at angles rather than head-on, shoulders relaxed but never fully slack. Weight balanced on the balls of his feet even when stationary. Eyes track constantly, threat assessment running on automatic. When she walks, there\u0027s a mechanical precision to the leg movement, the stride too perfect, too controlled.",
+                                 "clothing_style":  "Tier 4 utilitarian â€” dark synthetic shell jacket with modular pockets, worn over fitted charcoal compression shirt. Carbon-weave pants, reinforced at knees and thighs. Tactical boots, scuffed, broken in. Minimal branding. No jewelry. All clothing is functional, replaceable, untraceable. Carries a messenger bag across the chest â€” worn leather, contents unknown."
+                             },
+    "image_prompt":  "Bhoomika MagnÃºsdÃ³ttir, tall androgynous figure, 188cm, lean muscular build. Mixed heritage face: Northern European angular bone structure with warm olive skin, golden undertones, prominent cheekbones, defined jaw. Dark brown eyes with subtle East Asian eye shape. Black hair cropped short with gray at temples. Fine lines around eyes. Faded thermal burn scar on left neck, barely visible. Surgical chrome lattice vents visible on sternum under open charcoal compression shirt. Dark synthetic tactical jacket with modular pockets. Carbon-weave reinforced pants. Scuffed tactical boots. Worn leather messenger bag across chest. Standing at deliberate angle, weight on balls of feet, constant threat assessment in gaze. GLMZ, Great Lakes Metropolitan Zone, neon-lit urban setting, cool blue and amber lighting, moody cinematic atmosphere, photorealistic, high contrast --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Northern European":  40.1,
+                             "Hispanic/Latin American":  34.1,
+                             "North African":  17.9,
+                             "East Asian":  5.1,
+                             "Southeast Asian":  2.8
+                         },
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  26.7,
+                                                                            "English":  13.4
+                                                                        }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  1.8,
+                                                                                     "Guatemalan":  1.4
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  5.3,
+                                                                              "Cuban":  6.1
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  19.5
+                                                                        }
+                                                        },
+                            "North African":  {
+                                                  "Nile Valley":  {
+                                                                      "Sudanese":  4.1,
+                                                                      "Egyptian":  1.7
+                                                                  },
+                                                  "Maghreb":  {
+                                                                  "Tunisian":  7.6,
+                                                                  "Algerian":  4.5
+                                                              }
+                                              },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  4.6
+                                                            },
+                                               "Chinese":  {
+                                                               "Fujianese":  0.3,
+                                                               "Shanghainese":  0.2
+                                                           }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  0.8
+                                                                   },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  0.6
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Waray":  1.4
+                                                                 }
+                                                }
+                        }
 }

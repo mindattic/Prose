@@ -1,0 +1,1504 @@
+[
+  {
+    "id": "019dd266",
+    "beat_index": 0,
+    "type": "arrival",
+    "summary": "Kyle is brought to a chamber and restrained in a chair bolted to the floor, facing Hua and her syndicate men.",
+    "participants": [
+      "Kyle",
+      "Hua"
+    ],
+    "location": "syndicate chamber",
+    "object": "zip-cable restraints",
+    "consequence": "Kyle is in a position of captivity and vulnerability, setting up the interrogation/punishment scene",
+    "emotional_weight": 6,
+    "tags": [
+      "captivity",
+      "power imbalance",
+      "threat"
+    ],
+    "timestamp": "2026-04-28T04:43:58.4018292Z"
+  },
+  {
+    "id": "019dd266",
+    "beat_index": 0,
+    "type": "revelation",
+    "summary": "Hua names the Yuen-Pak contract, revealing that Kyle\u0027s theft from the Syndicate is the reason he has been brought here.",
+    "participants": [
+      "Hua",
+      "Kyle"
+    ],
+    "location": "syndicate chamber",
+    "object": "",
+    "consequence": "Establishes the crime and the basis for the punishment to follow",
+    "emotional_weight": 5,
+    "tags": [
+      "accusation",
+      "crime",
+      "reckoning"
+    ],
+    "timestamp": "2026-04-28T04:43:58.4018563Z"
+  },
+  {
+    "id": "019dd266",
+    "beat_index": 0,
+    "type": "dialogue",
+    "summary": "Hua explains the Syndicate\u0027s penalty for theft \u2014 return what was taken, then surrender something of equivalent weight \u2014 and frames the \u03A685,000 Yuen-Pak payment as the measure of what Kyle owes.",
+    "participants": [
+      "Hua",
+      "Kyle"
+    ],
+    "location": "syndicate chamber",
+    "object": "",
+    "consequence": "Defines the stakes and signals that physical punishment or extraction is imminent",
+    "emotional_weight": 8,
+    "tags": [
+      "threat",
+      "power",
+      "violence",
+      "reckoning",
+      "debt"
+    ],
+    "timestamp": "2026-04-28T04:43:58.4018566Z"
+  },
+  {
+    "id": "019dd266",
+    "beat_index": 0,
+    "type": "dialogue",
+    "summary": "Kyle tells Hua he does not have the money.",
+    "participants": [
+      "Kyle",
+      "Hua"
+    ],
+    "location": "syndicate chamber",
+    "object": "",
+    "consequence": "Removes the possibility of financial restitution, forcing the scene toward physical consequence",
+    "emotional_weight": 5,
+    "tags": [
+      "confession",
+      "vulnerability",
+      "defiance"
+    ],
+    "timestamp": "2026-04-28T04:43:58.4018571Z"
+  },
+  {
+    "id": "019dd266",
+    "beat_index": 0,
+    "type": "action",
+    "summary": "Someone unrolls a canvas toolkit on the floor between Kyle and Hua, revealing instruments prepared before Kyle\u0027s arrival.",
+    "participants": [
+      "Hua"
+    ],
+    "location": "syndicate chamber",
+    "object": "roll-canvas toolkit",
+    "consequence": "Signals the beginning of a physical punishment or extraction procedure",
+    "emotional_weight": 9,
+    "tags": [
+      "violence",
+      "ritual",
+      "threat",
+      "dread",
+      "preparation"
+    ],
+    "timestamp": "2026-04-28T04:43:58.4018574Z"
+  },
+  {
+    "id": "019dd268",
+    "beat_index": 1,
+    "type": "conflict",
+    "summary": "Two men seize Kyle by both wrists using a trained immobilization grip while a fourth man readies a cauterizer wand.",
+    "participants": [
+      "Kyle",
+      "first man",
+      "second man",
+      "fourth man"
+    ],
+    "location": "unspecified interior space (canvas-covered)",
+    "object": "Palladian-grade industrial cleaver, cauterizer wand",
+    "consequence": "Kyle is rendered physically helpless and subjected to amputation",
+    "emotional_weight": 9,
+    "tags": [
+      "violence",
+      "captivity",
+      "control",
+      "threat"
+    ],
+    "timestamp": "2026-04-28T04:45:31.3718769Z"
+  },
+  {
+    "id": "019dd268",
+    "beat_index": 1,
+    "type": "injury",
+    "summary": "Kyle\u0027s hands are severed at both wrists with a ceramic-composite cleaver and the wounds are immediately cauterized.",
+    "participants": [
+      "Kyle",
+      "fourth man"
+    ],
+    "location": "unspecified interior space",
+    "object": "Palladian-grade industrial cleaver, cauterizer wand",
+    "consequence": "Kyle loses both hands; his NeoCortex reroutes pain signals to suppress his reaction",
+    "emotional_weight": 10,
+    "tags": [
+      "violence",
+      "mutilation",
+      "endurance",
+      "body horror",
+      "technology"
+    ],
+    "timestamp": "2026-04-28T04:45:31.3718782Z"
+  },
+  {
+    "id": "019dd268",
+    "beat_index": 1,
+    "type": "emotional_shift",
+    "summary": "One of the men holding Kyle looks away during the amputation, which Kyle and his hardware both register.",
+    "participants": [
+      "Kyle",
+      "unnamed guard"
+    ],
+    "location": "unspecified interior space",
+    "object": "",
+    "consequence": "Suggests a crack in the captors\u0027 resolve; Kyle files it as potentially useful information",
+    "emotional_weight": 4,
+    "tags": [
+      "weakness",
+      "observation",
+      "psychological",
+      "power dynamics"
+    ],
+    "timestamp": "2026-04-28T04:45:31.3718786Z"
+  },
+  {
+    "id": "019dd268",
+    "beat_index": 1,
+    "type": "action",
+    "summary": "Hua places Kyle\u0027s severed hands palms-up into a barrel of water in a deliberate, ritualistic manner.",
+    "participants": [
+      "Hua"
+    ],
+    "location": "unspecified interior space",
+    "object": "severed hands, barrel of water",
+    "consequence": "Establishes Hua\u0027s ideological or ceremonial framing of the act; the image is burned into Kyle\u0027s memory",
+    "emotional_weight": 8,
+    "tags": [
+      "ritual",
+      "ceremony",
+      "cruelty",
+      "belief",
+      "symbolism"
+    ],
+    "timestamp": "2026-04-28T04:45:31.3718788Z"
+  },
+  {
+    "id": "019dd268",
+    "beat_index": 1,
+    "type": "departure",
+    "summary": "Kyle is dragged to a grate in the south arm and thrown into a sluice six meters below.",
+    "participants": [
+      "Kyle",
+      "unnamed captors"
+    ],
+    "location": "south arm, sluice system",
+    "object": "",
+    "consequence": "Kyle enters the sluice system, setting up his escape or death; he calculates likely injuries from the fall",
+    "emotional_weight": 8,
+    "tags": [
+      "disposal",
+      "survival",
+      "violence",
+      "captivity",
+      "escape"
+    ],
+    "timestamp": "2026-04-28T04:45:31.3718793Z"
+  },
+  {
+    "id": "019dd269",
+    "beat_index": 2,
+    "type": "injury",
+    "summary": "Kyle hits the slope and slides four meters down the incline, taking impact on his left hip, shoulder, and skull before coming to rest against the wall.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "underground tunnel sluice incline",
+    "object": "",
+    "consequence": "Kyle is injured, disoriented, and left in a vulnerable position with depleted resources",
+    "emotional_weight": 6,
+    "tags": [
+      "survival",
+      "violence",
+      "physical trauma",
+      "control"
+    ],
+    "timestamp": "2026-04-28T04:47:04.3704608Z"
+  },
+  {
+    "id": "019dd269",
+    "beat_index": 2,
+    "type": "action",
+    "summary": "Kyle\u0027s NeoCortex runs a shock protocol, cataloguing bodily damage, rerouting systems, and flagging battery at 24% and endorphin reserves critically low.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "underground tunnel sluice incline",
+    "object": "NeoCortex",
+    "consequence": "Establishes Kyle\u0027s severely limited operational capacity going forward",
+    "emotional_weight": 4,
+    "tags": [
+      "technology",
+      "survival",
+      "body horror",
+      "augmentation"
+    ],
+    "timestamp": "2026-04-28T04:47:04.3704614Z"
+  },
+  {
+    "id": "019dd269",
+    "beat_index": 2,
+    "type": "discovery",
+    "summary": "Kyle inventories his situation and confirms he has nothing \u2014 no blade, no shotgun, only the wall, the slope, and 24% battery.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "underground tunnel sluice incline",
+    "object": "",
+    "consequence": "Forces Kyle into a purely defensive and improvisational posture",
+    "emotional_weight": 7,
+    "tags": [
+      "loss",
+      "survival",
+      "desperation",
+      "clarity"
+    ],
+    "timestamp": "2026-04-28T04:47:04.3704616Z"
+  },
+  {
+    "id": "019dd269",
+    "beat_index": 2,
+    "type": "action",
+    "summary": "Kyle uses the wall and slope to pull himself upright incrementally, achieving a standing position.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "underground tunnel sluice incline",
+    "object": "",
+    "consequence": "Kyle regains minimal mobility and operational readiness",
+    "emotional_weight": 5,
+    "tags": [
+      "survival",
+      "resilience",
+      "physical effort",
+      "control"
+    ],
+    "timestamp": "2026-04-28T04:47:04.3704618Z"
+  },
+  {
+    "id": "019dd269",
+    "beat_index": 2,
+    "type": "arrival",
+    "summary": "An unidentified creature with joints that bend beyond design specification announces its presence from the east branch of the tunnel, moving closer.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "east branch of underground tunnel",
+    "object": "",
+    "consequence": "Introduces an immediate threat that Kyle must face without weapons",
+    "emotional_weight": 8,
+    "tags": [
+      "threat",
+      "danger",
+      "predator",
+      "tension"
+    ],
+    "timestamp": "2026-04-28T04:47:04.370462Z"
+  },
+  {
+    "id": "019dd269",
+    "beat_index": 2,
+    "type": "decision",
+    "summary": "Kyle places his back to the wall and chooses to stand and listen as the creature approaches rather than flee.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "underground tunnel",
+    "object": "",
+    "consequence": "Sets up a confrontation Kyle is severely under-resourced to survive",
+    "emotional_weight": 9,
+    "tags": [
+      "survival",
+      "courage",
+      "desperation",
+      "clarity",
+      "last stand"
+    ],
+    "timestamp": "2026-04-28T04:47:04.3704622Z"
+  },
+  {
+    "id": "019dd26b",
+    "beat_index": 3,
+    "type": "decision",
+    "summary": "Kyle decides to move west and then down rather than east, choosing the maintenance hatch as his escape route.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "facility corridor or room near south wall",
+    "object": "",
+    "consequence": "Sets Kyle on a path into the maintenance bay below, away from the threat to the east.",
+    "emotional_weight": 5,
+    "tags": [
+      "survival",
+      "tactical thinking",
+      "evasion"
+    ],
+    "timestamp": "2026-04-28T04:48:44.6539658Z"
+  },
+  {
+    "id": "019dd26b",
+    "beat_index": 3,
+    "type": "action",
+    "summary": "Kyle forces open a corroded maintenance hatch in the south wall using his forearm and body mechanics.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "south wall of facility",
+    "object": "maintenance hatch",
+    "consequence": "Opens access to the maintenance bay below.",
+    "emotional_weight": 3,
+    "tags": [
+      "survival",
+      "physical effort",
+      "ingenuity"
+    ],
+    "timestamp": "2026-04-28T04:48:44.6539682Z"
+  },
+  {
+    "id": "019dd26b",
+    "beat_index": 3,
+    "type": "action",
+    "summary": "Kyle drops two meters through the hatch onto a grating, landing in a controlled crouch.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "maintenance bay",
+    "object": "",
+    "consequence": "Kyle successfully enters the flooded maintenance bay without injury.",
+    "emotional_weight": 3,
+    "tags": [
+      "survival",
+      "physical capability",
+      "descent"
+    ],
+    "timestamp": "2026-04-28T04:48:44.6539686Z"
+  },
+  {
+    "id": "019dd26b",
+    "beat_index": 3,
+    "type": "discovery",
+    "summary": "Kyle discovers the maintenance bay is Axiom-era construction and assesses the standing water as stable, meaning the bay is sealed from active water inflow.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "maintenance bay",
+    "object": "",
+    "consequence": "Kyle categorizes the environment as stable, reducing immediate environmental threat.",
+    "emotional_weight": 2,
+    "tags": [
+      "assessment",
+      "survival",
+      "knowledge"
+    ],
+    "timestamp": "2026-04-28T04:48:44.653971Z"
+  },
+  {
+    "id": "019dd26b",
+    "beat_index": 3,
+    "type": "discovery",
+    "summary": "Kyle\u0027s NeoCortex hardware detects a salvage-tech harness on a bench via residual heat signature.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "maintenance bay",
+    "object": "salvage-tech harness",
+    "consequence": "Kyle identifies a potentially useful piece of equipment, setting up an attempt to salvage or use it.",
+    "emotional_weight": 4,
+    "tags": [
+      "discovery",
+      "technology",
+      "survival",
+      "opportunity"
+    ],
+    "timestamp": "2026-04-28T04:48:44.6539713Z"
+  },
+  {
+    "id": "019dd26b",
+    "beat_index": 3,
+    "type": "action",
+    "summary": "Kyle begins attempting to don or manipulate the salvage-tech harness using his knee, lacking hands to do so conventionally.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "maintenance bay",
+    "object": "salvage-tech harness",
+    "consequence": "Initiates a physically challenging effort to acquire the harness, outcome unknown.",
+    "emotional_weight": 6,
+    "tags": [
+      "survival",
+      "disability",
+      "ingenuity",
+      "physical effort",
+      "desperation"
+    ],
+    "timestamp": "2026-04-28T04:48:44.6539716Z"
+  },
+  {
+    "id": "019dd26c",
+    "beat_index": 4,
+    "type": "discovery",
+    "summary": "The ambient frequency in the maintenance bay shifts register and the harness diagnostic panel goes dark, signaling an anomalous change in the environment.",
+    "participants": [],
+    "location": "sealed maintenance bay",
+    "object": "harness diagnostic panel",
+    "consequence": "Alerts the protagonist that something is actively changing the harness\u0027s behavior",
+    "emotional_weight": 5,
+    "tags": [
+      "tension",
+      "unknown presence",
+      "technology",
+      "foreboding"
+    ],
+    "timestamp": "2026-04-28T04:50:30.0056666Z"
+  },
+  {
+    "id": "019dd26c",
+    "beat_index": 4,
+    "type": "revelation",
+    "summary": "The harness status strip lights in an unrecognized sequence \u2014 not factory default \u2014 suggesting an external intelligence is interfacing with the hardware.",
+    "participants": [],
+    "location": "sealed maintenance bay",
+    "object": "harness status strip",
+    "consequence": "Establishes that the harness is being operated or modified by an unknown presence",
+    "emotional_weight": 7,
+    "tags": [
+      "unknown presence",
+      "technology",
+      "mystery",
+      "alien grammar"
+    ],
+    "timestamp": "2026-04-28T04:50:30.0056676Z"
+  },
+  {
+    "id": "019dd26c",
+    "beat_index": 4,
+    "type": "action",
+    "summary": "The harness right arm finds its calibration zero on its own, the firmware lag drops to workable levels, and the diagnostic panel resolves from amber to green.",
+    "participants": [],
+    "location": "sealed maintenance bay",
+    "object": "harness",
+    "consequence": "The broken salvage equipment becomes functional, giving the protagonist a chance of survival",
+    "emotional_weight": 6,
+    "tags": [
+      "technology",
+      "intervention",
+      "survival",
+      "repair"
+    ],
+    "timestamp": "2026-04-28T04:50:30.0056686Z"
+  },
+  {
+    "id": "019dd26c",
+    "beat_index": 4,
+    "type": "dialogue",
+    "summary": "The protagonist speaks aloud into the dark, asking \u0027Are you helping me.\u0027",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "sealed maintenance bay",
+    "object": "",
+    "consequence": "Opens a one-sided communication attempt with the unknown presence, inviting a response",
+    "emotional_weight": 8,
+    "tags": [
+      "vulnerability",
+      "trust",
+      "unknown presence",
+      "isolation",
+      "desperation"
+    ],
+    "timestamp": "2026-04-28T04:50:30.0056688Z"
+  },
+  {
+    "id": "019dd26c",
+    "beat_index": 4,
+    "type": "action",
+    "summary": "The harness right arm flexes fifteen degrees at the elbow without any input from the protagonist, then returns to zero.",
+    "participants": [],
+    "location": "sealed maintenance bay",
+    "object": "harness right arm",
+    "consequence": "Functions as a non-verbal acknowledgment from the unknown presence, confirming it is aware and communicating",
+    "emotional_weight": 9,
+    "tags": [
+      "unknown presence",
+      "communication",
+      "tenderness",
+      "technology",
+      "ambiguity"
+    ],
+    "timestamp": "2026-04-28T04:50:30.0056692Z"
+  },
+  {
+    "id": "019dd26c",
+    "beat_index": 4,
+    "type": "revelation",
+    "summary": "The protagonist understands that a presence predating the facility\u0027s abandonment has been here since and has chosen to intervene in his specific crisis.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "sealed maintenance bay",
+    "object": "",
+    "consequence": "Reframes the entire situation \u2014 the protagonist is not alone and has been, for unknown reasons, selected for aid",
+    "emotional_weight": 10,
+    "tags": [
+      "unknown presence",
+      "mystery",
+      "survival",
+      "trust",
+      "isolation",
+      "intervention"
+    ],
+    "timestamp": "2026-04-28T04:50:30.0056694Z"
+  },
+  {
+    "id": "019dd273",
+    "beat_index": 8,
+    "type": "arrival",
+    "summary": "He crosses through rising water to reach the woman, stopping two meters away from her.",
+    "participants": [
+      "unnamed man",
+      "unnamed woman"
+    ],
+    "location": "flooded room",
+    "object": "",
+    "consequence": "Positions the two characters for the confrontation that follows.",
+    "emotional_weight": 4,
+    "tags": [
+      "tension",
+      "inevitability",
+      "approach"
+    ],
+    "timestamp": "2026-04-28T04:58:07.9950069Z"
+  },
+  {
+    "id": "019dd273",
+    "beat_index": 8,
+    "type": "dialogue",
+    "summary": "He tells her \u0027I don\u0027t have the money,\u0027 which she understands as a coded death sentence.",
+    "participants": [
+      "unnamed man",
+      "unnamed woman"
+    ],
+    "location": "flooded room",
+    "object": "",
+    "consequence": "The woman recognizes she is about to be killed and accepts it.",
+    "emotional_weight": 8,
+    "tags": [
+      "coded language",
+      "verdict",
+      "resignation",
+      "betrayal"
+    ],
+    "timestamp": "2026-04-28T04:58:07.9950081Z"
+  },
+  {
+    "id": "019dd273",
+    "beat_index": 8,
+    "type": "emotional_shift",
+    "summary": "The woman closes her eyes in quiet resignation upon understanding the sentence is a death verdict she has long anticipated.",
+    "participants": [
+      "unnamed woman"
+    ],
+    "location": "flooded room",
+    "object": "",
+    "consequence": "Establishes her foreknowledge and acceptance, reframing the killing as an expected outcome rather than a surprise.",
+    "emotional_weight": 9,
+    "tags": [
+      "resignation",
+      "inevitability",
+      "relief",
+      "acceptance"
+    ],
+    "timestamp": "2026-04-28T04:58:07.9950084Z"
+  },
+  {
+    "id": "019dd273",
+    "beat_index": 8,
+    "type": "death",
+    "summary": "The E.L.F. arm raises and fires a precise shot through the woman\u0027s sternum, killing her instantly and silently.",
+    "participants": [
+      "unnamed man",
+      "unnamed woman",
+      "E.L.F."
+    ],
+    "location": "flooded room",
+    "object": "E.L.F. prosthetic arm",
+    "consequence": "The woman is dead; her clasped hands come apart as she falls, a detail the man registers and suppresses.",
+    "emotional_weight": 10,
+    "tags": [
+      "violence",
+      "death",
+      "precision",
+      "suppression",
+      "cold execution"
+    ],
+    "timestamp": "2026-04-28T04:58:07.9950095Z"
+  },
+  {
+    "id": "019dd273",
+    "beat_index": 8,
+    "type": "discovery",
+    "summary": "He retrieves his severed hands from a barrel where they had been stored, finding them preserved exactly as Hua had placed them.",
+    "participants": [
+      "unnamed man",
+      "E.L.F."
+    ],
+    "location": "flooded room",
+    "object": "severed hands",
+    "consequence": "Sets up the ritual act of wearing the hands as a necklace; reveals prior mutilation and its significance.",
+    "emotional_weight": 8,
+    "tags": [
+      "body horror",
+      "loss",
+      "identity",
+      "preservation"
+    ],
+    "timestamp": "2026-04-28T04:58:07.9950099Z"
+  },
+  {
+    "id": "019dd273",
+    "beat_index": 8,
+    "type": "action",
+    "summary": "The E.L.F. arm threads twine through the cauterized wrists and fashions the severed hands into a necklace, which is then lowered over his head.",
+    "participants": [
+      "unnamed man",
+      "E.L.F."
+    ],
+    "location": "flooded room",
+    "object": "twine, severed hands",
+    "consequence": "He now wears his own hands against his chest, palms outward \u2014 a deliberate, ritualistic act of carrying his loss.",
+    "emotional_weight": 10,
+    "tags": [
+      "ritual",
+      "grief",
+      "identity",
+      "body horror",
+      "tenderness",
+      "loss"
+    ],
+    "timestamp": "2026-04-28T04:58:07.9950107Z"
+  },
+  {
+    "id": "019dd273",
+    "beat_index": 8,
+    "type": "decision",
+    "summary": "He nods once \u2014 not to anyone present \u2014 and turns toward the surface, departing the room.",
+    "participants": [
+      "unnamed man"
+    ],
+    "location": "flooded room",
+    "object": "E.L.F. harness",
+    "consequence": "Closes the scene; the single pulse of the status strip and the nod signal an internal resolution before he moves on.",
+    "emotional_weight": 7,
+    "tags": [
+      "closure",
+      "resolve",
+      "departure",
+      "solitude",
+      "ritual"
+    ],
+    "timestamp": "2026-04-28T04:58:07.9950116Z"
+  },
+  {
+    "id": "019dd42c",
+    "beat_index": 0,
+    "type": "revelation",
+    "summary": "Kyle reveals that the Syndicate courier was selling cold-chain data to Arcturus, exposing a leak in Hua\u0027s operation.",
+    "participants": [
+      "Kyle",
+      "Hua"
+    ],
+    "location": "facility room with crocodile tank",
+    "object": "",
+    "consequence": "Shifts the power dynamic of the interrogation; Hua\u0027s certainty is disrupted and the punishment is implicitly suspended",
+    "emotional_weight": 9,
+    "tags": [
+      "betrayal",
+      "leverage",
+      "survival",
+      "information",
+      "power shift"
+    ],
+    "timestamp": "2026-04-28T12:59:24.9391124Z"
+  },
+  {
+    "id": "019dd42c",
+    "beat_index": 0,
+    "type": "conflict",
+    "summary": "Hua confronts Kyle about completing a Syndicate delivery and keeping the fee, framing it as an accounting of wrongdoing.",
+    "participants": [
+      "Hua",
+      "Kyle"
+    ],
+    "location": "facility room with crocodile tank",
+    "object": "",
+    "consequence": "Establishes the interrogation\u0027s stakes and Hua\u0027s intent to punish Kyle\u0027s hands",
+    "emotional_weight": 7,
+    "tags": [
+      "power",
+      "interrogation",
+      "threat",
+      "control"
+    ],
+    "timestamp": "2026-04-28T12:59:24.939116Z"
+  },
+  {
+    "id": "019dd42c",
+    "beat_index": 0,
+    "type": "action",
+    "summary": "One of Hua\u0027s men crouches and begins unknotting a surgical canvas toolkit on the floor.",
+    "participants": [
+      "unnamed guard"
+    ],
+    "location": "facility room with crocodile tank",
+    "object": "canvas toolkit",
+    "consequence": "Signals imminent physical punishment; raises tension and threat level",
+    "emotional_weight": 7,
+    "tags": [
+      "violence",
+      "threat",
+      "preparation",
+      "dread"
+    ],
+    "timestamp": "2026-04-28T12:59:24.9391162Z"
+  },
+  {
+    "id": "019dd42c",
+    "beat_index": 0,
+    "type": "decision",
+    "summary": "Kyle chooses to break his silence and reveal the courier\u0027s betrayal rather than accept punishment.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "facility room with crocodile tank",
+    "object": "",
+    "consequence": "Reframes Kyle\u0027s actions as protective rather than treacherous, potentially saving his hands",
+    "emotional_weight": 8,
+    "tags": [
+      "survival",
+      "calculated risk",
+      "leverage",
+      "defiance"
+    ],
+    "timestamp": "2026-04-28T12:59:24.9391165Z"
+  },
+  {
+    "id": "019dd42c",
+    "beat_index": 0,
+    "type": "emotional_shift",
+    "summary": "Hua goes very still in a qualitatively different way after Kyle\u0027s revelation, her certainty visibly disrupted.",
+    "participants": [
+      "Hua"
+    ],
+    "location": "facility room with crocodile tank",
+    "object": "",
+    "consequence": "Indicates Kyle\u0027s information has landed and the interrogation\u0027s trajectory has changed",
+    "emotional_weight": 8,
+    "tags": [
+      "power shift",
+      "uncertainty",
+      "control",
+      "recalculation"
+    ],
+    "timestamp": "2026-04-28T12:59:24.9391167Z"
+  },
+  {
+    "id": "019dd42c",
+    "beat_index": 0,
+    "type": "action",
+    "summary": "The crocodile silently slides off its heat rock into the dark water.",
+    "participants": [],
+    "location": "crocodile tank",
+    "object": "",
+    "consequence": "Punctuates the tension of Kyle\u0027s revelation; functions as an ominous environmental echo of the room\u0027s shift",
+    "emotional_weight": 5,
+    "tags": [
+      "dread",
+      "omen",
+      "atmosphere",
+      "tension"
+    ],
+    "timestamp": "2026-04-28T12:59:24.939117Z"
+  },
+  {
+    "id": "019dd42d",
+    "beat_index": 1,
+    "type": "decision",
+    "summary": "Hua silently decides that the leak does not change her course of action, communicating her verdict through withdrawal of attention rather than words.",
+    "participants": [
+      "Hua"
+    ],
+    "location": "room with lacquered table",
+    "object": "",
+    "consequence": "Sets the violence that follows in motion; the man with the canvas roll is signaled to proceed.",
+    "emotional_weight": 6,
+    "tags": [
+      "power",
+      "control",
+      "silence",
+      "judgment"
+    ],
+    "timestamp": "2026-04-28T13:01:12.8499379Z"
+  },
+  {
+    "id": "019dd42d",
+    "beat_index": 1,
+    "type": "action",
+    "summary": "Two men pin Kyle\u0027s wrists to the chair arms while a third approaches from the left with a cleaver.",
+    "participants": [
+      "Kyle",
+      "two unnamed guards",
+      "unnamed man with cleaver"
+    ],
+    "location": "room with lacquered table",
+    "object": "cleaver",
+    "consequence": "Positions Kyle for amputation; establishes the coordinated, practiced nature of the violence.",
+    "emotional_weight": 8,
+    "tags": [
+      "violence",
+      "restraint",
+      "coercion",
+      "efficiency"
+    ],
+    "timestamp": "2026-04-28T13:01:12.8499397Z"
+  },
+  {
+    "id": "019dd42d",
+    "beat_index": 1,
+    "type": "injury",
+    "summary": "Kyle\u0027s hands are amputated with a cleaver and his wrists are cauterized.",
+    "participants": [
+      "Kyle",
+      "unnamed man with cleaver"
+    ],
+    "location": "room with lacquered table",
+    "object": "cleaver, cauterizer band",
+    "consequence": "Kyle loses both hands; his NeoCortex reroutes the pain load, allowing him to remain functional and composed.",
+    "emotional_weight": 10,
+    "tags": [
+      "violence",
+      "mutilation",
+      "endurance",
+      "body horror",
+      "augmentation"
+    ],
+    "timestamp": "2026-04-28T13:01:12.8499399Z"
+  },
+  {
+    "id": "019dd42d",
+    "beat_index": 1,
+    "type": "action",
+    "summary": "Hua carries Kyle\u0027s severed hands to a chum barrel and places them inside palms-up, leaving the lid ajar.",
+    "participants": [
+      "Hua"
+    ],
+    "location": "room with lacquered table",
+    "object": "chum barrel, Kyle\u0027s severed hands",
+    "consequence": "Signals deliberate, cataloguing disposal \u2014 a message of finality and control rather than rage.",
+    "emotional_weight": 9,
+    "tags": [
+      "power",
+      "ritual",
+      "coldness",
+      "dominance",
+      "symbolism"
+    ],
+    "timestamp": "2026-04-28T13:01:12.8499401Z"
+  },
+  {
+    "id": "019dd42d",
+    "beat_index": 1,
+    "type": "action",
+    "summary": "Hua rests her hand on Silence\u0027s saya for three deliberate seconds in full view of everyone in the room.",
+    "participants": [
+      "Hua"
+    ],
+    "location": "room with lacquered table",
+    "object": "Silence (sword), saya (scabbard)",
+    "consequence": "Publicly asserts ownership or claim over Silence; the witnessed gesture functions as a declaration.",
+    "emotional_weight": 7,
+    "tags": [
+      "power",
+      "possession",
+      "performance",
+      "threat",
+      "symbolism"
+    ],
+    "timestamp": "2026-04-28T13:01:12.8499403Z"
+  },
+  {
+    "id": "019dd42d",
+    "beat_index": 1,
+    "type": "departure",
+    "summary": "Two guards carry Kyle through an unused door, down a corridor, and drop him through a freight grate into darkness six meters above moving water.",
+    "participants": [
+      "Kyle",
+      "two unnamed guards"
+    ],
+    "location": "corridor, freight grate",
+    "object": "freight grate",
+    "consequence": "Kyle is disposed of \u2014 removed from the space and left in an unknown underground environment, separated from Silence.",
+    "emotional_weight": 8,
+    "tags": [
+      "abandonment",
+      "disposal",
+      "survival",
+      "isolation",
+      "finality"
+    ],
+    "timestamp": "2026-04-28T13:01:12.8499405Z"
+  },
+  {
+    "id": "019dd42d",
+    "beat_index": 1,
+    "type": "emotional_shift",
+    "summary": "As the grate closes above him, Kyle registers that Silence remains upstairs under someone else\u0027s hand.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "underground, below freight grate",
+    "object": "Silence (sword)",
+    "consequence": "Establishes Kyle\u0027s loss of Silence as a defining wound beyond the physical \u2014 sets up potential future motivation to reclaim it.",
+    "emotional_weight": 9,
+    "tags": [
+      "loss",
+      "separation",
+      "grief",
+      "attachment",
+      "longing"
+    ],
+    "timestamp": "2026-04-28T13:01:12.8499407Z"
+  },
+  {
+    "id": "019dd42f",
+    "beat_index": 2,
+    "type": "injury",
+    "summary": "The protagonist hits a ferrocrete slope at an angle, sliding three meters with cauterizer bands dragging across the surface, causing seeping wounds at the seal edges.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "Depot lower levels tunnel",
+    "object": "cauterizer bands",
+    "consequence": "Blood loss begins registering in amber on his HUD; physical capability is severely compromised",
+    "emotional_weight": 6,
+    "tags": [
+      "injury",
+      "survival",
+      "body horror",
+      "augmentation"
+    ],
+    "timestamp": "2026-04-28T13:02:43.1585249Z"
+  },
+  {
+    "id": "019dd42f",
+    "beat_index": 2,
+    "type": "decision",
+    "summary": "The protagonist commands himself to get up despite having no hands to bear his weight.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "Depot lower levels tunnel",
+    "object": "",
+    "consequence": "Sets in motion the physical struggle to stand, establishing the architectural problem of handlessness",
+    "emotional_weight": 7,
+    "tags": [
+      "survival",
+      "willpower",
+      "disability",
+      "determination"
+    ],
+    "timestamp": "2026-04-28T13:02:43.1585272Z"
+  },
+  {
+    "id": "019dd42f",
+    "beat_index": 2,
+    "type": "action",
+    "summary": "The protagonist rolls onto his side, gets his knees under him, finds the wall with his shoulder, and walks himself upright using the ferrocrete wall.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "Depot lower levels tunnel",
+    "object": "",
+    "consequence": "He achieves standing \u2014 a complete, hard-won physical state that enables further movement",
+    "emotional_weight": 6,
+    "tags": [
+      "survival",
+      "determination",
+      "physical struggle",
+      "augmentation"
+    ],
+    "timestamp": "2026-04-28T13:02:43.1585275Z"
+  },
+  {
+    "id": "019dd42f",
+    "beat_index": 2,
+    "type": "discovery",
+    "summary": "The protagonist detects multiple creatures moving toward him in the tunnel, parsing echoes to count three or more by their wrongly-configured joint sounds.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "Depot lower levels tunnel",
+    "object": "",
+    "consequence": "Introduces an immediate predatory threat hunting him by heat signature, forcing him to move",
+    "emotional_weight": 8,
+    "tags": [
+      "threat",
+      "horror",
+      "survival",
+      "predator",
+      "body horror"
+    ],
+    "timestamp": "2026-04-28T13:02:43.1585278Z"
+  },
+  {
+    "id": "019dd42f",
+    "beat_index": 2,
+    "type": "revelation",
+    "summary": "The protagonist recalls a witnessed gesture \u2014 Hua\u0027s thumb crossing a friction-sheath\u0027s edge over Silence on a lacquered table \u2014 as the only image his mind will organize around.",
+    "participants": [
+      "protagonist",
+      "Silence",
+      "Hua"
+    ],
+    "location": "memory / flashback",
+    "object": "friction-sheath",
+    "consequence": "This memory becomes his sole motivating anchor, orienting his will to survive and move toward a destination",
+    "emotional_weight": 9,
+    "tags": [
+      "memory",
+      "motivation",
+      "trust",
+      "tenderness",
+      "witnessed moment",
+      "intimacy"
+    ],
+    "timestamp": "2026-04-28T13:02:43.1585281Z"
+  },
+  {
+    "id": "019dd42f",
+    "beat_index": 2,
+    "type": "decision",
+    "summary": "The protagonist chooses to walk toward the sound of faster-moving water, reasoning it indicates a junction and a way up, ignoring the closing threat behind him.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "Depot lower levels tunnel",
+    "object": "",
+    "consequence": "Sets his direction of escape and survival; he does not look back at the pursuing creatures",
+    "emotional_weight": 7,
+    "tags": [
+      "survival",
+      "determination",
+      "escape",
+      "willpower"
+    ],
+    "timestamp": "2026-04-28T13:02:43.1585284Z"
+  },
+  {
+    "id": "019dd42f",
+    "beat_index": 2,
+    "type": "conflict",
+    "summary": "The pursuing creatures multiply in sound behind the protagonist as he walks away, closing the distance while he refuses to look back.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "Depot lower levels tunnel",
+    "object": "",
+    "consequence": "Escalates the immediate threat; the protagonist\u0027s survival remains unresolved and under pressure",
+    "emotional_weight": 8,
+    "tags": [
+      "pursuit",
+      "threat",
+      "survival",
+      "horror",
+      "predator"
+    ],
+    "timestamp": "2026-04-28T13:02:43.1585287Z"
+  },
+  {
+    "id": "019dd430",
+    "beat_index": 3,
+    "type": "decision",
+    "summary": "The character chooses the right branch at the junction after hearing rushing water.",
+    "participants": [
+      "unnamed protagonist"
+    ],
+    "location": "underground tunnel junction",
+    "object": "",
+    "consequence": "Leads him to the trench and the discovery of the automaton.",
+    "emotional_weight": 2,
+    "tags": [
+      "survival",
+      "navigation",
+      "instinct"
+    ],
+    "timestamp": "2026-04-28T13:04:06.8601703Z"
+  },
+  {
+    "id": "019dd430",
+    "beat_index": 3,
+    "type": "discovery",
+    "summary": "The protagonist discovers a partially buried, centuries-old Axiom industrial automaton still showing a live status signal on its left arm.",
+    "participants": [
+      "unnamed protagonist"
+    ],
+    "location": "freight runoff trench",
+    "object": "Axiom industrial cargo-handler automaton",
+    "consequence": "Presents the protagonist with a potential resource \u2014 a functional manipulator arm.",
+    "emotional_weight": 6,
+    "tags": [
+      "technology",
+      "decay",
+      "survival",
+      "discovery"
+    ],
+    "timestamp": "2026-04-28T13:04:06.8601713Z"
+  },
+  {
+    "id": "019dd430",
+    "beat_index": 3,
+    "type": "revelation",
+    "summary": "The protagonist determines the automaton predates 2147, meaning it has been submerged longer than he has been alive.",
+    "participants": [
+      "unnamed protagonist"
+    ],
+    "location": "freight runoff trench",
+    "object": "Axiom industrial cargo-handler automaton",
+    "consequence": "Establishes the age and isolation of the machine, contextualizing its degraded state.",
+    "emotional_weight": 3,
+    "tags": [
+      "history",
+      "time",
+      "decay",
+      "isolation"
+    ],
+    "timestamp": "2026-04-28T13:04:06.8601716Z"
+  },
+  {
+    "id": "019dd430",
+    "beat_index": 3,
+    "type": "decision",
+    "summary": "The NeoCortex autonomously presents a surgical procedure to detach the automaton\u0027s manipulator arm without asking the protagonist\u0027s consent.",
+    "participants": [
+      "unnamed protagonist",
+      "NeoCortex"
+    ],
+    "location": "freight runoff trench",
+    "object": "automaton left manipulator arm",
+    "consequence": "Forces the protagonist into an immediate high-stakes choice under time pressure from the approaching threat.",
+    "emotional_weight": 7,
+    "tags": [
+      "autonomy",
+      "technology",
+      "body horror",
+      "survival",
+      "control"
+    ],
+    "timestamp": "2026-04-28T13:04:06.860172Z"
+  },
+  {
+    "id": "019dd430",
+    "beat_index": 3,
+    "type": "conflict",
+    "summary": "An unidentified creature or entity moving with a wet articulated sound resumes advancing down the left branch toward the protagonist.",
+    "participants": [
+      "unnamed protagonist",
+      "unknown pursuer"
+    ],
+    "location": "left tunnel branch",
+    "object": "",
+    "consequence": "Creates immediate time pressure forcing a decision on the arm-extraction procedure.",
+    "emotional_weight": 8,
+    "tags": [
+      "threat",
+      "pursuit",
+      "survival",
+      "tension",
+      "horror"
+    ],
+    "timestamp": "2026-04-28T13:04:06.860173Z"
+  },
+  {
+    "id": "019dd435",
+    "beat_index": 6,
+    "type": "action",
+    "summary": "The E.L.F. redirected the protagonist toward a sealed maintenance door and opened it using a specific mechanical sequence.",
+    "participants": [
+      "E.L.F.",
+      "protagonist"
+    ],
+    "location": "Depot lower levels, maintenance door",
+    "object": "maintenance door with pressure-bar lock",
+    "consequence": "Reveals the E.L.F. has deep institutional knowledge of the Depot\u0027s original infrastructure, predating current ownership.",
+    "emotional_weight": 4,
+    "tags": [
+      "control",
+      "trust",
+      "mystery",
+      "guidance"
+    ],
+    "timestamp": "2026-04-28T13:09:33.16346Z"
+  },
+  {
+    "id": "019dd435",
+    "beat_index": 6,
+    "type": "action",
+    "summary": "The E.L.F. twice steered the protagonist into side corridors and held him still to avoid an irregular patrol.",
+    "participants": [
+      "E.L.F.",
+      "protagonist"
+    ],
+    "location": "Depot lower levels, side corridors",
+    "object": "",
+    "consequence": "Protagonist survives undetected; establishes the E.L.F. as a capable and proactive protector with superior sensory processing.",
+    "emotional_weight": 5,
+    "tags": [
+      "survival",
+      "trust",
+      "guidance",
+      "danger"
+    ],
+    "timestamp": "2026-04-28T13:09:33.1634612Z"
+  },
+  {
+    "id": "019dd435",
+    "beat_index": 6,
+    "type": "dialogue",
+    "summary": "The protagonist asked the E.L.F. why it is helping him.",
+    "participants": [
+      "protagonist",
+      "E.L.F."
+    ],
+    "location": "Third landing, Depot lower levels",
+    "object": "",
+    "consequence": "Prompts the E.L.F. to reveal its true motivation via the salvage rights glyph.",
+    "emotional_weight": 6,
+    "tags": [
+      "trust",
+      "uncertainty",
+      "alliance",
+      "vulnerability"
+    ],
+    "timestamp": "2026-04-28T13:09:33.1634615Z"
+  },
+  {
+    "id": "019dd435",
+    "beat_index": 6,
+    "type": "revelation",
+    "summary": "The E.L.F.\u0027s status strip resolved into the salvage rights glyph, revealing its motivation is acquisition rather than alliance or help.",
+    "participants": [
+      "E.L.F.",
+      "protagonist"
+    ],
+    "location": "Third landing, Depot lower levels",
+    "object": "status strip display",
+    "consequence": "Reframes the entire relationship \u2014 the protagonist is not being aided out of goodwill but claimed as something worth collecting, leaving the nature of the collection ambiguous.",
+    "emotional_weight": 8,
+    "tags": [
+      "betrayal",
+      "ambiguity",
+      "ownership",
+      "revelation",
+      "transactional"
+    ],
+    "timestamp": "2026-04-28T13:09:33.1634618Z"
+  },
+  {
+    "id": "019dd435",
+    "beat_index": 6,
+    "type": "decision",
+    "summary": "The protagonist chose to set aside the question of what the E.L.F. intends to collect and continue upstairs.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "Third landing, Depot lower levels",
+    "object": "",
+    "consequence": "Defers a potentially critical reckoning in favor of immediate survival priorities, accepting an uncertain alliance.",
+    "emotional_weight": 6,
+    "tags": [
+      "pragmatism",
+      "survival",
+      "trust",
+      "ambiguity",
+      "deferred consequence"
+    ],
+    "timestamp": "2026-04-28T13:09:33.1634621Z"
+  },
+  {
+    "id": "019dd435",
+    "beat_index": 6,
+    "type": "action",
+    "summary": "The E.L.F. pointed up the next flight of stairs and the protagonist followed.",
+    "participants": [
+      "E.L.F.",
+      "protagonist"
+    ],
+    "location": "Third landing, Depot lower levels",
+    "object": "",
+    "consequence": "The pair resume their ascent toward the protagonist\u0027s objective upstairs.",
+    "emotional_weight": 3,
+    "tags": [
+      "guidance",
+      "compliance",
+      "forward momentum"
+    ],
+    "timestamp": "2026-04-28T13:09:33.1634627Z"
+  },
+  {
+    "id": "019dd43a",
+    "beat_index": 9,
+    "type": "discovery",
+    "summary": "The protagonist locates a freight grate twenty meters above his starting point by following the sound of rain through the ferrocrete.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "maintenance stairs and utility corridor",
+    "object": "freight grate",
+    "consequence": "Enables his escape to the surface alley",
+    "emotional_weight": 3,
+    "tags": [
+      "survival",
+      "resourcefulness",
+      "escape"
+    ],
+    "timestamp": "2026-04-28T13:15:08.3254377Z"
+  },
+  {
+    "id": "019dd43a",
+    "beat_index": 9,
+    "type": "arrival",
+    "summary": "The protagonist emerges through the freight grate into a rain-soaked alley and collapses to his knees on wet asphalt before the hardware forces him to stand.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "alley, Gray Zone",
+    "object": "cargo arm",
+    "consequence": "Establishes his severely depleted physical and mechanical state at nine percent power",
+    "emotional_weight": 5,
+    "tags": [
+      "exhaustion",
+      "survival",
+      "body horror",
+      "machine dependency"
+    ],
+    "timestamp": "2026-04-28T13:15:08.3254384Z"
+  },
+  {
+    "id": "019dd43a",
+    "beat_index": 9,
+    "type": "arrival",
+    "summary": "The protagonist reaches the AutoDoc kiosk on the corner where the alley opens, having navigated four blocks by physical signage.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "corner of Ashland and Whiting, Gray Zone",
+    "object": "AutoDoc kiosk",
+    "consequence": "Initiates the medical procedure that will reattach his hands",
+    "emotional_weight": 4,
+    "tags": [
+      "survival",
+      "maintenance",
+      "ritual",
+      "desperation"
+    ],
+    "timestamp": "2026-04-28T13:15:08.3254387Z"
+  },
+  {
+    "id": "019dd43a",
+    "beat_index": 9,
+    "type": "action",
+    "summary": "The protagonist keys the AutoDoc interface with his chin and the kiosk reads the necklace of severed hands, biometrically matching them to his cauterized stumps.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "AutoDoc kiosk, Gray Zone",
+    "object": "necklace of severed hands",
+    "consequence": "The kiosk door opens and the surgical procedure begins",
+    "emotional_weight": 6,
+    "tags": [
+      "body horror",
+      "survival",
+      "identity",
+      "technology"
+    ],
+    "timestamp": "2026-04-28T13:15:08.3254388Z"
+  },
+  {
+    "id": "019dd43a",
+    "beat_index": 9,
+    "type": "action",
+    "summary": "The AutoDoc\u0027s surgical arms lift the protagonist onto the table, remove the necklace and cable binding, and deliberately lay Silence on the side tray aligned exactly as Hua had arranged it.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "AutoDoc kiosk interior, Gray Zone",
+    "object": "Silence (sword), cargo arm, necklace",
+    "consequence": "The protagonist is prepared for surgery; the sword\u0027s careful placement echoes Hua\u0027s arrangement without instruction, suggesting something uncanny",
+    "emotional_weight": 7,
+    "tags": [
+      "tenderness",
+      "absence",
+      "grief",
+      "ritual",
+      "the uncanny"
+    ],
+    "timestamp": "2026-04-28T13:15:08.325439Z"
+  },
+  {
+    "id": "019dd43a",
+    "beat_index": 9,
+    "type": "revelation",
+    "summary": "As the anesthesia enters, the cargo arm\u0027s status strip resolves from brownout to a decommissioned Axiom glyph reading \u0027We are not done.\u0027",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "AutoDoc kiosk interior, Gray Zone",
+    "object": "cargo arm / E.L.F. status strip",
+    "consequence": "Reframes the cargo arm as a potentially sentient or communicative entity with its own will and continuity beyond its borrowed role",
+    "emotional_weight": 9,
+    "tags": [
+      "revelation",
+      "machine consciousness",
+      "solidarity",
+      "survival",
+      "the uncanny",
+      "trust"
+    ],
+    "timestamp": "2026-04-28T13:15:08.3254392Z"
+  },
+  {
+    "id": "019dd43a",
+    "beat_index": 9,
+    "type": "action",
+    "summary": "The anesthesia compound is administered and the protagonist loses consciousness as the AutoDoc begins surgery.",
+    "participants": [
+      "protagonist"
+    ],
+    "location": "AutoDoc kiosk interior, Gray Zone",
+    "object": "anesthesia port",
+    "consequence": "The protagonist surrenders control entirely; surgery proceeds",
+    "emotional_weight": 5,
+    "tags": [
+      "vulnerability",
+      "surrender",
+      "survival",
+      "trust"
+    ],
+    "timestamp": "2026-04-28T13:15:08.3254394Z"
+  }
+]

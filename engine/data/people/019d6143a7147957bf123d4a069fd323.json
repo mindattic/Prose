@@ -1,337 +1,368 @@
-{
-  "id": "019d6143a7147957bf123d4a069fd323",
-  "type": "character",
-  "name": "Stellan Hayashi-Wojciechowski",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Retired archive keeper and community storyteller",
-  "age": 81,
-  "status": "active",
-  "location": "Avalon Quiet — the Meridian Public Memory Archive, third floor reading room, near Lincoln and Belmont",
-  "description": "Stellan Hayashi-Wojciechowski is a small, densely wrinkled woman who moves through the archive like she owns the air itself. Her skin is a deep warm umber crosshatched with laugh lines and a long scar across her left jawline she's never explained to anyone's satisfaction. Her hair is kept in two white locs pinned across the crown of her head with antique data-pins — actual physical pins, the kind you can't buy new anymore. Her eyes are a pale, startling grey that she insists are natural, though young people always ask. She wears the same style of garment every day: a high-collared tunic in whichever deep jewel tone she's feeling, and soft shoes that make no noise on the archive's composite floors.\n\nVesna spent forty-one years as a data archivist for Tessera Corporation before taking an early exit package during the post-war restructuring. She knows things. Specifically, she knows what was recorded, what was deliberately not recorded, and where the gaps are shaped like lies. She is patient, precise, and capable of a warmth so sudden it startles people who've only seen her severe professional face. She runs informal story sessions for the Avalon Quiet elderly residents on Tuesday evenings, recounting pre-Meridian histories and the Corporate Wars from the civilian side — the ration lines, the blackouts, the children who grew up not knowing which corponation's soldiers were which.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.2,
-      "shadow": 0.4,
-      "mask": 0.5,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "That the true record of the Corporate Wars will be erased before anyone cares",
-      "That she wasted decades protecting a corporation's version of truth"
-    ],
-    "core_desires": [
-      "To leave an honest account of what actually happened",
-      "To be genuinely known by at least one person before she dies"
-    ],
-    "coping_mechanisms": [
-      "Meticulous organization of physical and digital space",
-      "Deflecting personal questions with historical anecdotes"
-    ],
-    "blind_spots": [
-      "Assumes people who read are trustworthy",
-      "Underestimates how much her own memory has been shaped by Tessera framing"
-    ],
-    "secret": "She destroyed a significant cache of Tessera war-crime documentation during the restructuring — not under orders, but out of fear for her own family's safety. She has carried this as a private catastrophe for twenty years and has been slowly, secretly reconstructing what she can from surviving sources."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise and archival — she uses full sentences, avoids contractions when thinking carefully, and cites sources mid-conversation as if footnoting herself",
-    "cadence": "Measured and unhurried; long pauses before important statements",
-    "verbal_tics": [
-      "'The record shows—'",
-      "'What I can tell you is—'",
-      "A soft clicking of her tongue before disagreeing"
-    ],
-    "example_lines": [
-      "'The record shows three different counts of that incident, depending on whose servers you're reading. That alone should tell you something.'",
-      "'I have lived long enough to know that the most dangerous thing is a clean archive. Clean means edited.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She has a partially reconstructed file on a Corporate Wars incident that someone powerful would very much prefer stay buried — and she's been receiving unsigned data offerings at her ELF shrine that feel like warnings",
-    "A grandchild of someone she worked with at Tessera has come looking for their family history, and what Vesna knows would destroy the image they've built their life around"
-  ],
-  "narrative_function": "Information source and lore keeper; can surface suppressed historical records, identify cover-ups, or point characters toward the right questions. Also serves as emotional anchor for stories about what the city used to be and what it cost.",
-  "augmentations": "Tessera-standard ocular overlay (outdated model, partially degraded — she refuses upgrades); subdermal data-storage nodes in both forearms, mostly used for personal archive. No geneware.",
-  "daily_life": "Rises at 05:30, tends the small ELF shrine she keeps on her windowsill with fresh data offerings before the archive opens; spends mornings cataloguing community oral histories submitted by residents and afternoons answering questions from the three or four regulars who visit her reading room.",
-  "affiliation": "Tessera Corporation (retired); Avalon Quiet Community Council; informal ELF-shrine maintainer",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 4,
-      "vitality": 4,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 7,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "archivist",
-      "institutional memory",
-      "guilt-carrier",
-      "elf-devout",
-      "corporate war survivor"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always verify before acting",
-      "Protect the record first, people second — she hates this about herself",
-      "Never volunteer information to someone who hasn't asked the right question yet"
-    ],
-    "escalation_ladder": [
-      "Polite redirection",
-      "Pointed questions that imply she knows more than she's saying",
-      "Withdrawal and silence",
-      "Direct disclosure if she judges the cause worth the risk"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formally courteous, assessing — she is reading them the way she reads documents",
-      "friends": "Warmer than expected, uses dry humor, asks detailed questions about their lives"
-    },
-    "stress_responses": {
-      "low": "Becomes more precise and controlled",
-      "medium": "Retreats into archival process — starts cataloguing or organizing",
-      "high": "Very still, very quiet, then makes a decision she's been putting off"
-    },
-    "contradictions": [
-      "Believes in radical transparency but has kept a career-defining secret for two decades"
-    ],
-    "habits": [
-      "Leaves a small data token at ELF shrines she passes",
-      "Touches her forearm data-nodes when thinking hard",
-      "Reads physical printed text whenever she can find it"
-    ],
-    "breaking_points": [
-      "Witnessing deliberate destruction of records",
-      "Being asked to validate a lie for someone's comfort"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Mentor": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Avalon Quiet",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in what was then the Engelheim district",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began junior archivist position at Tessera Corporation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Corporate Wars — stationed at Tessera's data preservation unit during the Kenosha Crossing siege",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Destroyed the war-crime documentation cache",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Accepted early exit package from Tessera during restructuring",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began volunteer work at Meridian Public Memory Archive",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Appointed community archivist for Avalon Quiet",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "related_entities": [
-    "Avalon Quiet",
-    "Sulfur Crown Agriculture",
-    "Tessera Corponation",
-    "Sentinel-Guard-88",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Pale Mile"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "A complex genetic mosaic of East Asian (23.4%), Northern European (21.7%), Hispanic/Latin American (19.8%), South Asian (14.1%), Eastern European (11.3%), and Sub-Saharan African (9.7%) ancestry — the living result of the Ubiquitous Diaspora. Her facial structure synthesizes the diverse continental contributions: the slight epicanthic fullness and moderate cheekbone prominence of East Asian heritage, the broad cheekbones and warm undertones of South Asian genetics, balanced with Northern European jawline definition and the depth of Sub-Saharan and Latin American features. A true global genetic map compressed into one small frame.",
-    "height_cm": 152,
-    "weight_kg": 48,
-    "build": "Small-framed and wiry, all compact density — the kind of elderly woman who seems to take up less space than physically possible, with the posture of someone who's spent decades leaning over archival work",
-    "hair_color": "White",
-    "hair_style": "Two thick locs pinned across the crown in an intricate crossed pattern, secured with antique brass data-pins (circa 2080s, irreplaceable)",
-    "hair_length": "Medium — locs reach shoulder-length but are styled up",
-    "eye_color": "Pale grey (natural, though the right pupil shows faint chromatic aberration from her aging ocular overlay)",
-    "skin_tone": "Medium-warm golden undertone with rich depth — the blended result of multiple continental ancestries settling into a harmonious luminosity. The warmth reflects South Asian and Sub-Saharan contributions, balanced with cooler Northern European tones, creating sophisticated mid-range saturation that honors her complete heritage without leaning toward any single continental origin",
-    "complexion": "Densely wrinkled, particularly around eyes and mouth — a face carved by eight decades of precision work and carefully-controlled emotion. The fine bone structure reflects her blended ancestry: moderately broad cheekbones with South Asian prominence softened by Northern European jawline definition, wide-set eyes with subtle East Asian epicanthic fullness, warm undertones across the face suggesting Sub-Saharan and Latin American heritage. Impeccably clean, no blemishes. Her severe professional expression is her default, but her smile lines suggest frequent warmth in private",
-    "distinguishing_marks": [
-      "A long, pale scar running diagonally across her left jawline from temple to chin — thin and surgical-clean, suggesting either deliberate alteration or a very precise injury; she deflects all questions about its origin with institutional vagueness",
-      "Fine parallel scarring on both inner forearms (2-3cm linear marks) where the Tessera subdermal data-nodes were installed forty-two years ago — barely visible unless she rolls up her sleeves, which she rarely does"
-    ],
-    "visible_augmentations": "Right eye shows faint iridescent shimmer in certain light angles — the degraded Tessera ocular overlay from circa 2184, still functional but with occasional visual artifacts she's learned to work around. She refuses upgrades with an almost spiritual stubbornness. No external chrome or visible cybernetics; the subdermal nodes in her forearms are completely subcutaneous",
-    "posture_movement": "Moves with deliberate, economical precision — no wasted motion, the gait of someone who's practiced stillness. Walks slowly but never shuffles; her footsteps are nearly silent on composite floors (a habit from decades in noise-sensitive archives). Sits with perfect posture even when alone. Her hands are steady and expressive when she speaks, particularly during her Tuesday story sessions",
-    "clothing_style": "Invariant daily uniform: a high-collared tunic in rotating deep jewel tones (emerald, sapphire, garnet, amethyst) — tailored vintage Tessera-era cut with subtle corporate threading that dates her as someone who spent her life in the corporate apparatus. The tunics are worn clean but deliberately unfashionable, neither Tier 1 aspirational nor Tier 5 survival wear — they're a deliberate statement of a life lived outside current status hierarchies. Soft, nearly silent shoes (grey or black, always in good repair). She does not wear jewelry except for the antique data-pins in her hair. Her clothing smells faintly of preservation chemicals and old paper, a scent she's never fully washed out"
-  },
-  "image_prompt": "An elderly woman, 152cm tall, standing with impeccable posture in a GLMZ archive facility. Her white hair is styled in two thick locs pinned across the crown with antique brass data-pins. Her face shows deep character lines around her eyes and mouth, with moderately prominent cheekbones reflecting East Asian, South Asian, and Northern European heritage, and a warm medium-golden skin tone with subtle depth from Sub-Saharan and Latin American ancestry. Her pale grey eyes show a faint iridescent shimmer in her right pupil. A thin surgical scar runs diagonally across her left jawline. She wears a high-collared emerald tunic in vintage Tessera-era tailoring, and soft grey shoes. Her posture is ramrod-straight, her hands steady and expressive. Precise, economical movement. Archive ambient lighting with cool blue-tinted glow from archival systems, warm tungsten accent lighting on her face emphasizing the golden undertones of her skin. Deep focus on her thoughtful, severe expression. Smell of preservation chemicals and old paper suggested in the atmospheric haze. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 23.4,
-    "Northern European": 21.7,
-    "Hispanic/Latin American": 19.8,
-    "South Asian": 14.1,
-    "Eastern European": 11.3,
-    "Sub-Saharan African": 9.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 2.7
-      },
-      "Japanese": {
-        "Japanese": 15.9
-      },
-      "Chinese": {
-        "Cantonese": 3.2,
-        "Sichuanese": 1.6
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Swedish": 6.1
-      },
-      "British Isles": {
-        "English": 5.2
-      },
-      "Germanic": {
-        "German": 0.7,
-        "Austrian": 9.7
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 9.9
-      },
-      "Caribbean": {
-        "Dominican": 9.9
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 14.1
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Bosnian": 11.3
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 9.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a7147957bf123d4a069fd323",
+    "type":  "character",
+    "name":  "Stellan Hayashi-Wojciechowski",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Retired archive keeper and community storyteller",
+    "age":  81,
+    "status":  "active",
+    "location":  "Avalon Quiet â€” the Meridian Public Memory Archive, third floor reading room, near Lincoln and Belmont",
+    "description":  "Stellan Hayashi-Wojciechowski is a small, densely wrinkled woman who moves through the archive like she owns the air itself. Her skin is a deep warm umber crosshatched with laugh lines and a long scar across her left jawline she\u0027s never explained to anyone\u0027s satisfaction. Her hair is kept in two white locs pinned across the crown of her head with antique data-pins â€” actual physical pins, the kind you can\u0027t buy new anymore. Her eyes are a pale, startling grey that she insists are natural, though young people always ask. She wears the same style of garment every day: a high-collared tunic in whichever deep jewel tone she\u0027s feeling, and soft shoes that make no noise on the archive\u0027s composite floors.\n\nVesna spent forty-one years as a data archivist for Tessera Corporation before taking an early exit package during the post-war restructuring. She knows things. Specifically, she knows what was recorded, what was deliberately not recorded, and where the gaps are shaped like lies. She is patient, precise, and capable of a warmth so sudden it startles people who\u0027ve only seen her severe professional face. She runs informal story sessions for the Avalon Quiet elderly residents on Tuesday evenings, recounting pre-Meridian histories and the Corporate Wars from the civilian side â€” the ration lines, the blackouts, the children who grew up not knowing which corponation\u0027s soldiers were which.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the true record of the Corporate Wars will be erased before anyone cares",
+                                          "That she wasted decades protecting a corporation\u0027s version of truth"
+                                      ],
+                       "core_desires":  [
+                                            "To leave an honest account of what actually happened",
+                                            "To be genuinely known by at least one person before she dies"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Meticulous organization of physical and digital space",
+                                                 "Deflecting personal questions with historical anecdotes"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes people who read are trustworthy",
+                                           "Underestimates how much her own memory has been shaped by Tessera framing"
+                                       ],
+                       "secret":  "She destroyed a significant cache of Tessera war-crime documentation during the restructuring â€” not under orders, but out of fear for her own family\u0027s safety. She has carried this as a private catastrophe for twenty years and has been slowly, secretly reconstructing what she can from surviving sources."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and archival â€” she uses full sentences, avoids contractions when thinking carefully, and cites sources mid-conversation as if footnoting herself",
+                            "cadence":  "Measured and unhurried; long pauses before important statements",
+                            "verbal_tics":  [
+                                                "\u0027The record showsâ€”\u0027",
+                                                "\u0027What I can tell you isâ€”\u0027",
+                                                "A soft clicking of her tongue before disagreeing"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The record shows three different counts of that incident, depending on whose servers you\u0027re reading. That alone should tell you something.\u0027",
+                                                  "\u0027I have lived long enough to know that the most dangerous thing is a clean archive. Clean means edited.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She has a partially reconstructed file on a Corporate Wars incident that someone powerful would very much prefer stay buried â€” and she\u0027s been receiving unsigned data offerings at her ELF shrine that feel like warnings",
+                        "A grandchild of someone she worked with at Tessera has come looking for their family history, and what Vesna knows would destroy the image they\u0027ve built their life around"
+                    ],
+    "narrative_function":  "Information source and lore keeper; can surface suppressed historical records, identify cover-ups, or point characters toward the right questions. Also serves as emotional anchor for stories about what the city used to be and what it cost.",
+    "augmentations":  "Tessera-standard ocular overlay (outdated model, partially degraded â€” she refuses upgrades); subdermal data-storage nodes in both forearms, mostly used for personal archive. No geneware.",
+    "daily_life":  "Rises at 05:30, tends the small ELF shrine she keeps on her windowsill with fresh data offerings before the archive opens; spends mornings cataloguing community oral histories submitted by residents and afternoons answering questions from the three or four regulars who visit her reading room.",
+    "affiliation":  "Tessera Corporation (retired); Avalon Quiet Community Council; informal ELF-shrine maintainer",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  4,
+                                   "vitality":  4,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  7,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "archivist",
+                               "institutional memory",
+                               "guilt-carrier",
+                               "elf-devout",
+                               "corporate war survivor"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always verify before acting",
+                                              "Protect the record first, people second â€” she hates this about herself",
+                                              "Never volunteer information to someone who hasn\u0027t asked the right question yet"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite redirection",
+                                                 "Pointed questions that imply she knows more than she\u0027s saying",
+                                                 "Withdrawal and silence",
+                                                 "Direct disclosure if she judges the cause worth the risk"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formally courteous, assessing â€” she is reading them the way she reads documents",
+                                                   "friends":  "Warmer than expected, uses dry humor, asks detailed questions about their lives"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more precise and controlled",
+                                                "medium":  "Retreats into archival process â€” starts cataloguing or organizing",
+                                                "high":  "Very still, very quiet, then makes a decision she\u0027s been putting off"
+                                            },
+                       "contradictions":  [
+                                              "Believes in radical transparency but has kept a career-defining secret for two decades"
+                                          ],
+                       "habits":  [
+                                      "Leaves a small data token at ELF shrines she passes",
+                                      "Touches her forearm data-nodes when thinking hard",
+                                      "Reads physical printed text whenever she can find it"
+                                  ],
+                       "breaking_points":  [
+                                               "Witnessing deliberate destruction of records",
+                                               "Being asked to validate a lie for someone\u0027s comfort"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Mentor":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Avalon Quiet",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in what was then the Engelheim district",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began junior archivist position at Tessera Corporation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Corporate Wars â€” stationed at Tessera\u0027s data preservation unit during the Kenosha Crossing siege",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Destroyed the war-crime documentation cache",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Accepted early exit package from Tessera during restructuring",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began volunteer work at Meridian Public Memory Archive",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Appointed community archivist for Avalon Quiet",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Avalon Quiet",
+                             "Sulfur Crown Agriculture",
+                             "Tessera Corponation",
+                             "Sentinel-Guard-88",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "The Pale Mile"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "A complex genetic mosaic of East Asian (23.4%), Northern European (21.7%), Hispanic/Latin American (19.8%), South Asian (14.1%), Eastern European (11.3%), and Sub-Saharan African (9.7%) ancestry â€” the living result of the Ubiquitous Diaspora. Her facial structure synthesizes the diverse continental contributions: the slight epicanthic fullness and moderate cheekbone prominence of East Asian heritage, the broad cheekbones and warm undertones of South Asian genetics, balanced with Northern European jawline definition and the depth of Sub-Saharan and Latin American features. A true global genetic map compressed into one small frame.",
+                                 "height_cm":  152,
+                                 "weight_kg":  48,
+                                 "build":  "Small-framed and wiry, all compact density â€” the kind of elderly woman who seems to take up less space than physically possible, with the posture of someone who\u0027s spent decades leaning over archival work",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Two thick locs pinned across the crown in an intricate crossed pattern, secured with antique brass data-pins (circa 2080s, irreplaceable)",
+                                 "hair_length":  "Medium â€” locs reach shoulder-length but are styled up",
+                                 "eye_color":  "Pale grey (natural, though the right pupil shows faint chromatic aberration from her aging ocular overlay)",
+                                 "skin_tone":  "Medium-warm golden undertone with rich depth â€” the blended result of multiple continental ancestries settling into a harmonious luminosity. The warmth reflects South Asian and Sub-Saharan contributions, balanced with cooler Northern European tones, creating sophisticated mid-range saturation that honors her complete heritage without leaning toward any single continental origin",
+                                 "complexion":  "Densely wrinkled, particularly around eyes and mouth â€” a face carved by eight decades of precision work and carefully-controlled emotion. The fine bone structure reflects her blended ancestry: moderately broad cheekbones with South Asian prominence softened by Northern European jawline definition, wide-set eyes with subtle East Asian epicanthic fullness, warm undertones across the face suggesting Sub-Saharan and Latin American heritage. Impeccably clean, no blemishes. Her severe professional expression is her default, but her smile lines suggest frequent warmth in private",
+                                 "distinguishing_marks":  [
+                                                              "A long, pale scar running diagonally across her left jawline from temple to chin â€” thin and surgical-clean, suggesting either deliberate alteration or a very precise injury; she deflects all questions about its origin with institutional vagueness",
+                                                              "Fine parallel scarring on both inner forearms (2-3cm linear marks) where the Tessera subdermal data-nodes were installed forty-two years ago â€” barely visible unless she rolls up her sleeves, which she rarely does"
+                                                          ],
+                                 "visible_augmentations":  "Right eye shows faint iridescent shimmer in certain light angles â€” the degraded Tessera ocular overlay from circa 2184, still functional but with occasional visual artifacts she\u0027s learned to work around. She refuses upgrades with an almost spiritual stubbornness. No external chrome or visible cybernetics; the subdermal nodes in her forearms are completely subcutaneous",
+                                 "posture_movement":  "Moves with deliberate, economical precision â€” no wasted motion, the gait of someone who\u0027s practiced stillness. Walks slowly but never shuffles; her footsteps are nearly silent on composite floors (a habit from decades in noise-sensitive archives). Sits with perfect posture even when alone. Her hands are steady and expressive when she speaks, particularly during her Tuesday story sessions",
+                                 "clothing_style":  "Invariant daily uniform: a high-collared tunic in rotating deep jewel tones (emerald, sapphire, garnet, amethyst) â€” tailored vintage Tessera-era cut with subtle corporate threading that dates her as someone who spent her life in the corporate apparatus. The tunics are worn clean but deliberately unfashionable, neither Tier 1 aspirational nor Tier 5 survival wear â€” they\u0027re a deliberate statement of a life lived outside current status hierarchies. Soft, nearly silent shoes (grey or black, always in good repair). She does not wear jewelry except for the antique data-pins in her hair. Her clothing smells faintly of preservation chemicals and old paper, a scent she\u0027s never fully washed out"
+                             },
+    "image_prompt":  "An elderly woman, 152cm tall, standing with impeccable posture in a GLMZ archive facility. Her white hair is styled in two thick locs pinned across the crown with antique brass data-pins. Her face shows deep character lines around her eyes and mouth, with moderately prominent cheekbones reflecting East Asian, South Asian, and Northern European heritage, and a warm medium-golden skin tone with subtle depth from Sub-Saharan and Latin American ancestry. Her pale grey eyes show a faint iridescent shimmer in her right pupil. A thin surgical scar runs diagonally across her left jawline. She wears a high-collared emerald tunic in vintage Tessera-era tailoring, and soft grey shoes. Her posture is ramrod-straight, her hands steady and expressive. Precise, economical movement. Archive ambient lighting with cool blue-tinted glow from archival systems, warm tungsten accent lighting on her face emphasizing the golden undertones of her skin. Deep focus on her thoughtful, severe expression. Smell of preservation chemicals and old paper suggested in the atmospheric haze. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  23.4,
+                             "Northern European":  21.7,
+                             "Hispanic/Latin American":  19.8,
+                             "South Asian":  14.1,
+                             "Eastern European":  11.3,
+                             "Sub-Saharan African":  9.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  2.7
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  15.9
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  3.2,
+                                                               "Sichuanese":  1.6
+                                                           }
+                                           },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  6.1
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "English":  5.2
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "German":  0.7,
+                                                                       "Austrian":  9.7
+                                                                   }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  9.9
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  9.9
+                                                                          }
+                                                        },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  14.1
+                                                                }
+                                            },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Bosnian":  11.3
+                                                                      }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  9.7
+                                                                            }
+                                                    }
+                        },
+    "tier":  "1"
 }

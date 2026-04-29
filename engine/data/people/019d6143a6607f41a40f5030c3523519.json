@@ -1,265 +1,286 @@
-{
-  "id": "019d6143a6607f41a40f5030c3523519",
-  "type": "character",
-  "name": "Hasna Vo",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Compute broker and data fence operating from the Stockyard's tech bazaar",
-  "age": 38,
-  "status": "active",
-  "location": "The Stockyard — stall 114 in the Harrowgate Industrial Plateau overflow market, known locally as the Cracker Barrel, near Kedzie and Division",
-  "description": "Hasna Vo is a rangy, precise man with Nigerian-Greek-Iranian features — angular face, heavy brows, skin a warm teak-brown, and round eyes whose irises he's modded with slowly rotating mandala patterns in blue and copper that give him an air of perpetual thoughtfulness. He keeps his head shaved close and his clothes exactly one tier above what the Stockyard expects: pressed shirt, clean trousers, quality coat, the whole ensemble waterproofed and subtly armored. He wears a battered Axiom university lanyard — he was a student there for two semesters, a decade ago — that he has never returned.\n\nThe nickname 'Professor' started as mockery and calcified into respect. Hasna Vo has a genuine gift for making complex technical explanations feel like revelations, and he uses this constantly — explaining to buyers exactly what they're getting, exactly why it's valuable, and exactly what it would cost them to try to get it cheaper elsewhere. He's not wrong. He moves stolen datasets, pirated processing time, cracked software licenses, and occasionally darker algorithmic goods with the cheerful confidence of a man who has decided that information wants to be free and has also decided he should be compensated for its liberation.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.8,
-      "id": 0.6,
-      "shadow": 0.4,
-      "mask": 0.5,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "being proven intellectually wrong — permanently, publicly, irrefutably",
-      "that the thing he's become is not the thing he meant to become"
-    ],
-    "core_desires": [
-      "to be recognized as genuinely brilliant rather than clever",
-      "to complete the research project he abandoned when he left Axiom"
-    ],
-    "coping_mechanisms": [
-      "intellectualizing everything, including his own moral choices",
-      "maintaining the fiction that brokering data is a form of information activism"
-    ],
-    "blind_spots": [
-      "does not adequately assess physical danger — it registers as an abstraction",
-      "consistently overestimates how much his clients share his ethical framework"
-    ],
-    "secret": "The dataset he's most proud of fencing — a trove of Axiom biomedical research he sold to six different parties — contained suppressed safety trial data. People may have died because Axiom kept using the flawed compound. He hasn't confirmed this. He's not looking."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical, precise, prone to analogies and parenthetical qualifications; code-switches into warmer register when he wants something",
-    "cadence": "Lecture pacing — builds to points, loves a rhetorical question",
-    "verbal_tics": [
-      "'Here's the thing about that—'",
-      "Repeats the last word of your sentence quietly before responding",
-      "'Definitionally speaking'"
-    ],
-    "example_lines": [
-      "Here's the thing about that dataset — it's not worth what you think it's worth, it's worth what I'm telling you it's worth, and those are the same number for reasons I'm going to explain.",
-      "Definitionally speaking, I'm not selling stolen goods. I'm selling access to information that was improperly withheld from the market.",
-      "You could go cheaper. You could also eat from the recyc-bins. Both are options. I'm merely describing the available options."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A piece of data he brokered six months ago has been traced — not to him yet, but one link away; someone is methodically following the chain",
-    "He has come into possession of a dataset he cannot price because he cannot identify what it is, only that two separate parties have already approached him about it and he suspects a third is watching the stall",
-    "An old Axiom classmate has shown up asking for help accessing something inside Axiom's internal network — and Ndubuisi owes her"
-  ],
-  "narrative_function": "Information marketplace — he doesn't run or fight but he knows things, sells things, and can connect people to what they need digitally. Quest giver for data-related problems. Exposition source dressed as commerce.",
-  "augmentations": "Mandala-patterned modded irises; cortical co-processor (legitimate, registered, but running unlicensed partition software); subvocal comms implant",
-  "daily_life": "At the stall by 0800, ostensibly selling refurbished hardware and licensed software. Conducts brokerage business through an encrypted side-channel between 1100 and 1600 when the market is loudest. Spends evenings cataloguing new inventory and reading technical papers he accesses through an anonymized academic mirror.",
-  "affiliation": "Independent broker; has standing relationships with three different data theft crews he doesn't work directly with and maintains strict operational separation from",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 10,
-      "willpower": 6,
-      "creativity": 8,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 5,
-      "expression": 9,
-      "integrity": 4
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 4,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "data fence",
-      "compute broker",
-      "tech bazaar",
-      "intellectual criminal",
-      "axiom dropout"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never handle biological data — organs, genetics, medical records — it creates legal exposure he's calculated as prohibitive",
-      "Always meets new clients twice before transacting; the second meeting is to see if their story changed",
-      "Prices everything 15% above floor to leave room to be negotiated down — the negotiation builds trust"
-    ],
-    "escalation_ladder": [
-      "Declines with detailed explanation of why the request doesn't fit his inventory",
-      "If threatened intellectually (rival claims to have better product), demolishes their claim with data",
-      "If threatened physically, immediately becomes extremely agreeable and starts planning how to burn the relationship later",
-      "Has a Stockyard security contact on retainer — an off-books arrangement he's never had to fully activate"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm and professorial — performs accessibility to put clients at ease while evaluating them thoroughly",
-      "friends": "Argumentative, competitive, deeply loyal in ways he expresses through doing favors rather than saying things"
-    },
-    "stress_responses": {
-      "low": "Research mode — pulls technical documentation and reads until the problem clarifies",
-      "medium": "Verbose and over-explaining — talks too much, hears too little",
-      "high": "Shuts completely down, retreats to his stall's back partition, needs two hours alone before he can function"
-    },
-    "contradictions": [
-      "Believes passionately in information freedom while keeping his own operation aggressively opaque",
-      "Brilliant at assessing data risk; poor at assessing human risk"
-    ],
-    "habits": [
-      "Handles every piece of hardware he sells with deliberate care — unconscious performance of quality",
-      "Takes handwritten notes during every client meeting, in his own shorthand, which he burns weekly"
-    ],
-    "breaking_points": [
-      "Being held responsible for downstream harm from data he brokered — he has built elaborate psychological defenses against this and they would shatter badly",
-      "Having his intelligence genuinely, humiliatingly underestimated by someone who then proves to be right"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Pragmatist": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Stockyard",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Crucible Industries Viper Mk.III 'Copperhead'"
-  ],
-  "registered_firearms": [
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'",
-    "Crucible Industries Viper Mk.III 'Copperhead'"
-  ],
-  "related_entities": [
-    "Harrowgate Industrial Plateau",
-    "The Stockyard",
-    "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
-    "ShieldTech CLA-3 'Cascade'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Copper",
-    "Teak"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Pluralistic genetic blend: Hispanic/Latin American (36.9%), Southeast Asian (33.2%), Central Asian (17.4%), and Eastern European (12.5%) ancestry. Features reflect this diverse mix: warm golden-brown complexion from Southeast Asian and Hispanic heritage, with subtle cool undertones from Eastern European ancestry creating a balanced warmth. Strong, angular bone structure influenced by Central Asian ancestry with Southeast Asian cheekbone prominence. Dark eyes with warm depth, high prominent cheekbones with distinctive mixed continental geometry, creating an appearance that bridges multiple heritage groups with seamless integration.",
-    "height_cm": 183,
-    "weight_kg": 72,
-    "build": "Rangy and lean with defined musculature; economical frame suggesting minimal wasted motion, built for endurance rather than power",
-    "hair_color": "Natural black",
-    "hair_style": "Close-cropped fade, immaculately maintained",
-    "hair_length": "Short",
-    "eye_color": "Modified: base brown iris with rotating mandala patterns in electric blue and copper that shift slowly, hypnotic",
-    "skin_tone": "Warm golden-brown with balanced undertones reflecting Southeast Asian, Hispanic, and Eastern European blend; evenly pigmented with natural depth and subtle radiance, neither olive nor ruddy",
-    "complexion": "Angular face with strong, expressive brows set above high, prominent cheekbones; clean-shaven; skin clear and well-maintained; bone structure shows integrated Central Asian angularity with Southeast Asian prominence; thoughtful expression as default state",
-    "distinguishing_marks": [
-      "Faint burn scar on right forearm near wrist, roughly 4cm long, consistent with old industrial accident or equipment malfunction",
-      "Small tattoo on left inner wrist: circuit board pattern in minimalist black lines, approximately 2cm across"
-    ],
-    "visible_augmentations": "Modded irises with slowly rotating blue and copper mandala patterns, immediately noticeable in direct light. Subvocal comms implant visible as faint silver trace along left jawline beneath skin. Cortical co-processor is subcutaneous, not visible.",
-    "posture_movement": "Upright, precise carriage with economical gesture; moves with deliberate calm and minimal wasted motion; hands often gesture while speaking to emphasize technical points; maintains steady eye contact, the rotating mandala patterns adding an almost meditative quality to his gaze",
-    "clothing_style": "Tier 3 professional aesthetic: pressed synthetic-linen blend shirts (charcoal, navy, cream), fitted technical trousers with reinforced pockets and hidden RFID-blocking panels, waterproofed long-coat in matte black with subtle ceramic plating along shoulders and forearms, quality closed-toe boots rated for industrial environments. Wears faded Axiom University lanyard around neck as permanent affectation — visible status symbol from abandoned academic track. Everything immaculately maintained and one tier above Stockyard baseline, signaling credibility and discipline."
-  },
-  "image_prompt": "Hasna Vo, tall lean neo-noir professional with golden-brown complexion blending Southeast Asian, Hispanic, Central Asian, and Eastern European heritage, high angular cheekbones, short black close-cropped fade, impeccably groomed. Striking modified eyes with rotating electric blue and copper mandala patterns. Clean-shaven, thoughtful expression. Wearing charcoal pressed synthetic-linen shirt, fitted technical trousers, matte black ceramic-plated long-coat, quality industrial boots. Faded Axiom University lanyard visible. Precise upright posture, economical deliberate movements. Faint silver subvocal implant trace along jawline. Faint burn scar visible on right forearm, minimalist circuit board tattoo on left inner wrist. Great Lakes Metropolitan Zone near-future megacity setting, cool neon ambient lighting reflecting off ceramic plating, professional yet slightly detached demeanor, meditative gaze, neo-Tokyo meets Chicago industrial architecture in background, cinematic depth of field --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 36.9,
-    "Southeast Asian": 33.2,
-    "Central Asian": 17.4,
-    "Eastern European": 12.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Brazilian": 12.6
-      },
-      "Mexican": {
-        "Mexican": 6.8
-      },
-      "Caribbean": {
-        "Dominican": 14.7,
-        "Puerto Rican": 2.8
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 20.8
-      },
-      "Filipino": {
-        "Ilocano": 8.4,
-        "Cebuano": 1.6
-      },
-      "Indonesian": {
-        "Javanese": 2.4
-      }
-    },
-    "Central Asian": {
-      "Iranian Central": {
-        "Tajik": 7.3
-      },
-      "Turkic": {
-        "Kyrgyz": 4.3,
-        "Uzbek": 5.8
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Slovak": 9.7,
-        "Czech": 0.1
-      },
-      "Slavic South": {
-        "Croatian": 2.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6607f41a40f5030c3523519",
+    "type":  "character",
+    "name":  "Hasna Vo",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Compute broker and data fence operating from the Stockyard\u0027s tech bazaar",
+    "age":  38,
+    "status":  "active",
+    "location":  "The Stockyard â€” stall 114 in the Harrowgate Industrial Plateau overflow market, known locally as the Cracker Barrel, near Kedzie and Division",
+    "description":  "Hasna Vo is a rangy, precise man with Nigerian-Greek-Iranian features â€” angular face, heavy brows, skin a warm teak-brown, and round eyes whose irises he\u0027s modded with slowly rotating mandala patterns in blue and copper that give him an air of perpetual thoughtfulness. He keeps his head shaved close and his clothes exactly one tier above what the Stockyard expects: pressed shirt, clean trousers, quality coat, the whole ensemble waterproofed and subtly armored. He wears a battered Axiom university lanyard â€” he was a student there for two semesters, a decade ago â€” that he has never returned.\n\nThe nickname \u0027Professor\u0027 started as mockery and calcified into respect. Hasna Vo has a genuine gift for making complex technical explanations feel like revelations, and he uses this constantly â€” explaining to buyers exactly what they\u0027re getting, exactly why it\u0027s valuable, and exactly what it would cost them to try to get it cheaper elsewhere. He\u0027s not wrong. He moves stolen datasets, pirated processing time, cracked software licenses, and occasionally darker algorithmic goods with the cheerful confidence of a man who has decided that information wants to be free and has also decided he should be compensated for its liberation.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being proven intellectually wrong â€” permanently, publicly, irrefutably",
+                                          "that the thing he\u0027s become is not the thing he meant to become"
+                                      ],
+                       "core_desires":  [
+                                            "to be recognized as genuinely brilliant rather than clever",
+                                            "to complete the research project he abandoned when he left Axiom"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "intellectualizing everything, including his own moral choices",
+                                                 "maintaining the fiction that brokering data is a form of information activism"
+                                             ],
+                       "blind_spots":  [
+                                           "does not adequately assess physical danger â€” it registers as an abstraction",
+                                           "consistently overestimates how much his clients share his ethical framework"
+                                       ],
+                       "secret":  "The dataset he\u0027s most proud of fencing â€” a trove of Axiom biomedical research he sold to six different parties â€” contained suppressed safety trial data. People may have died because Axiom kept using the flawed compound. He hasn\u0027t confirmed this. He\u0027s not looking."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical, precise, prone to analogies and parenthetical qualifications; code-switches into warmer register when he wants something",
+                            "cadence":  "Lecture pacing â€” builds to points, loves a rhetorical question",
+                            "verbal_tics":  [
+                                                "\u0027Here\u0027s the thing about thatâ€”\u0027",
+                                                "Repeats the last word of your sentence quietly before responding",
+                                                "\u0027Definitionally speaking\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "Here\u0027s the thing about that dataset â€” it\u0027s not worth what you think it\u0027s worth, it\u0027s worth what I\u0027m telling you it\u0027s worth, and those are the same number for reasons I\u0027m going to explain.",
+                                                  "Definitionally speaking, I\u0027m not selling stolen goods. I\u0027m selling access to information that was improperly withheld from the market.",
+                                                  "You could go cheaper. You could also eat from the recyc-bins. Both are options. I\u0027m merely describing the available options."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A piece of data he brokered six months ago has been traced â€” not to him yet, but one link away; someone is methodically following the chain",
+                        "He has come into possession of a dataset he cannot price because he cannot identify what it is, only that two separate parties have already approached him about it and he suspects a third is watching the stall",
+                        "An old Axiom classmate has shown up asking for help accessing something inside Axiom\u0027s internal network â€” and Ndubuisi owes her"
+                    ],
+    "narrative_function":  "Information marketplace â€” he doesn\u0027t run or fight but he knows things, sells things, and can connect people to what they need digitally. Quest giver for data-related problems. Exposition source dressed as commerce.",
+    "augmentations":  "Mandala-patterned modded irises; cortical co-processor (legitimate, registered, but running unlicensed partition software); subvocal comms implant",
+    "daily_life":  "At the stall by 0800, ostensibly selling refurbished hardware and licensed software. Conducts brokerage business through an encrypted side-channel between 1100 and 1600 when the market is loudest. Spends evenings cataloguing new inventory and reading technical papers he accesses through an anonymized academic mirror.",
+    "affiliation":  "Independent broker; has standing relationships with three different data theft crews he doesn\u0027t work directly with and maintains strict operational separation from",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  10,
+                                 "willpower":  6,
+                                 "creativity":  8,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  5,
+                                 "expression":  9,
+                                 "integrity":  4
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "data fence",
+                               "compute broker",
+                               "tech bazaar",
+                               "intellectual criminal",
+                               "axiom dropout"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never handle biological data â€” organs, genetics, medical records â€” it creates legal exposure he\u0027s calculated as prohibitive",
+                                              "Always meets new clients twice before transacting; the second meeting is to see if their story changed",
+                                              "Prices everything 15% above floor to leave room to be negotiated down â€” the negotiation builds trust"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Declines with detailed explanation of why the request doesn\u0027t fit his inventory",
+                                                 "If threatened intellectually (rival claims to have better product), demolishes their claim with data",
+                                                 "If threatened physically, immediately becomes extremely agreeable and starts planning how to burn the relationship later",
+                                                 "Has a Stockyard security contact on retainer â€” an off-books arrangement he\u0027s never had to fully activate"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm and professorial â€” performs accessibility to put clients at ease while evaluating them thoroughly",
+                                                   "friends":  "Argumentative, competitive, deeply loyal in ways he expresses through doing favors rather than saying things"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Research mode â€” pulls technical documentation and reads until the problem clarifies",
+                                                "medium":  "Verbose and over-explaining â€” talks too much, hears too little",
+                                                "high":  "Shuts completely down, retreats to his stall\u0027s back partition, needs two hours alone before he can function"
+                                            },
+                       "contradictions":  [
+                                              "Believes passionately in information freedom while keeping his own operation aggressively opaque",
+                                              "Brilliant at assessing data risk; poor at assessing human risk"
+                                          ],
+                       "habits":  [
+                                      "Handles every piece of hardware he sells with deliberate care â€” unconscious performance of quality",
+                                      "Takes handwritten notes during every client meeting, in his own shorthand, which he burns weekly"
+                                  ],
+                       "breaking_points":  [
+                                               "Being held responsible for downstream harm from data he brokered â€” he has built elaborate psychological defenses against this and they would shatter badly",
+                                               "Having his intelligence genuinely, humiliatingly underestimated by someone who then proves to be right"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Pragmatist":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Stockyard",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Carrion Defense Works Marrow Drill MD-7 \u0027Dentist\u0027",
+                            "Crucible Industries Viper Mk.III \u0027Copperhead\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Carrion Defense Works Marrow Drill MD-7 \u0027Dentist\u0027",
+                                "Crucible Industries Viper Mk.III \u0027Copperhead\u0027"
+                            ],
+    "related_entities":  [
+                             "Harrowgate Industrial Plateau",
+                             "The Stockyard",
+                             "Piezoelectric Fracture Pistol PFP-7 \u0027Hairline\u0027",
+                             "ShieldTech CLA-3 \u0027Cascade\u0027",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Copper",
+                             "Teak"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Pluralistic genetic blend: Hispanic/Latin American (36.9%), Southeast Asian (33.2%), Central Asian (17.4%), and Eastern European (12.5%) ancestry. Features reflect this diverse mix: warm golden-brown complexion from Southeast Asian and Hispanic heritage, with subtle cool undertones from Eastern European ancestry creating a balanced warmth. Strong, angular bone structure influenced by Central Asian ancestry with Southeast Asian cheekbone prominence. Dark eyes with warm depth, high prominent cheekbones with distinctive mixed continental geometry, creating an appearance that bridges multiple heritage groups with seamless integration.",
+                                 "height_cm":  183,
+                                 "weight_kg":  72,
+                                 "build":  "Rangy and lean with defined musculature; economical frame suggesting minimal wasted motion, built for endurance rather than power",
+                                 "hair_color":  "Natural black",
+                                 "hair_style":  "Close-cropped fade, immaculately maintained",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Modified: base brown iris with rotating mandala patterns in electric blue and copper that shift slowly, hypnotic",
+                                 "skin_tone":  "Warm golden-brown with balanced undertones reflecting Southeast Asian, Hispanic, and Eastern European blend; evenly pigmented with natural depth and subtle radiance, neither olive nor ruddy",
+                                 "complexion":  "Angular face with strong, expressive brows set above high, prominent cheekbones; clean-shaven; skin clear and well-maintained; bone structure shows integrated Central Asian angularity with Southeast Asian prominence; thoughtful expression as default state",
+                                 "distinguishing_marks":  [
+                                                              "Faint burn scar on right forearm near wrist, roughly 4cm long, consistent with old industrial accident or equipment malfunction",
+                                                              "Small tattoo on left inner wrist: circuit board pattern in minimalist black lines, approximately 2cm across"
+                                                          ],
+                                 "visible_augmentations":  "Modded irises with slowly rotating blue and copper mandala patterns, immediately noticeable in direct light. Subvocal comms implant visible as faint silver trace along left jawline beneath skin. Cortical co-processor is subcutaneous, not visible.",
+                                 "posture_movement":  "Upright, precise carriage with economical gesture; moves with deliberate calm and minimal wasted motion; hands often gesture while speaking to emphasize technical points; maintains steady eye contact, the rotating mandala patterns adding an almost meditative quality to his gaze",
+                                 "clothing_style":  "Tier 3 professional aesthetic: pressed synthetic-linen blend shirts (charcoal, navy, cream), fitted technical trousers with reinforced pockets and hidden RFID-blocking panels, waterproofed long-coat in matte black with subtle ceramic plating along shoulders and forearms, quality closed-toe boots rated for industrial environments. Wears faded Axiom University lanyard around neck as permanent affectation â€” visible status symbol from abandoned academic track. Everything immaculately maintained and one tier above Stockyard baseline, signaling credibility and discipline."
+                             },
+    "image_prompt":  "Hasna Vo, tall lean neo-noir professional with golden-brown complexion blending Southeast Asian, Hispanic, Central Asian, and Eastern European heritage, high angular cheekbones, short black close-cropped fade, impeccably groomed. Striking modified eyes with rotating electric blue and copper mandala patterns. Clean-shaven, thoughtful expression. Wearing charcoal pressed synthetic-linen shirt, fitted technical trousers, matte black ceramic-plated long-coat, quality industrial boots. Faded Axiom University lanyard visible. Precise upright posture, economical deliberate movements. Faint silver subvocal implant trace along jawline. Faint burn scar visible on right forearm, minimalist circuit board tattoo on left inner wrist. Great Lakes Metropolitan Zone near-future megacity setting, cool neon ambient lighting reflecting off ceramic plating, professional yet slightly detached demeanor, meditative gaze, neo-Tokyo meets Chicago industrial architecture in background, cinematic depth of field --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  36.9,
+                             "Southeast Asian":  33.2,
+                             "Central Asian":  17.4,
+                             "Eastern European":  12.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Brazilian":  12.6
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  6.8
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  14.7,
+                                                                              "Puerto Rican":  2.8
+                                                                          }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  20.8
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Ilocano":  8.4,
+                                                                     "Cebuano":  1.6
+                                                                 },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  2.4
+                                                                   }
+                                                },
+                            "Central Asian":  {
+                                                  "Iranian Central":  {
+                                                                          "Tajik":  7.3
+                                                                      },
+                                                  "Turkic":  {
+                                                                 "Kyrgyz":  4.3,
+                                                                 "Uzbek":  5.8
+                                                             }
+                                              },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Slovak":  9.7,
+                                                                         "Czech":  0.1
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Croatian":  2.7
+                                                                      }
+                                                 }
+                        },
+    "tier":  "1"
 }

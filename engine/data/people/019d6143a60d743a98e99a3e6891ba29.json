@@ -1,371 +1,382 @@
-{
-  "id": "019d6143a60d743a98e99a3e6891ba29",
-  "type": "character",
-  "name": "Asana Migizi",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Information trader and intelligence analyst — broker",
-  "age": 43,
-  "status": "active",
-  "location": "Burnside Corridor — transit hub connecting the Gray Zone to Circuit, near North Ave and Damen",
-  "description": "Asana Migizi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 43, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a broker out of Burnside Corridor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented broker in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.39,
-      "ideal": 0.73,
-      "id": 0.59,
-      "shadow": 0.71,
-      "mask": 0.95,
-      "ghost": 0.19
-    },
-    "core_fears": [
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Going cyberpsycho — losing the boundary between human and machine",
-      "Being identified by corporate facial recognition — living off-grid is survival"
-    ],
-    "core_desires": [
-      "To find the person who burned them and make it educational",
-      "A crew worth trusting — people who stay when the shooting starts",
-      "The perfect run — one job so clean it becomes legend"
-    ],
-    "coping_mechanisms": [
-      "Isolates — retreats into their space when overwhelmed, emerges only for work",
-      "Exercises compulsively — the body must be ready, always",
-      "Ritual — follows the same pre-job routine every time, superstition as structure"
-    ],
-    "blind_spots": [
-      "Thinks speed can substitute for planning because it's worked so far",
-      "Trusts technology more than people — machines don't betray",
-      "Overestimates their own abilities in situations outside their specialty"
-    ],
-    "secret": "Fanta Ahlstrom-Quartey betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
-    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
-    "verbal_tics": [
-      "Whispers when angry — the quieter the voice, the worse the situation",
-      "Hums tunelessly when planning — the team has learned to wait for the humming to stop"
-    ],
-    "example_lines": [
-      "\"I don't sell information. I sell certainty. Different product, different price.\"",
-      "\"Everything has a value. Most people underestimate what they know.\"",
-      "\"My sources are confidential. My prices are not.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Fanta Ahlstrom-Quartey is offered a contract that would clear all their debts — the target is someone they respect",
-    "Fanta Ahlstrom-Quartey's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
-    "Fanta Ahlstrom-Quartey intercepts intelligence about a threat to their district and must decide between profit and protection"
-  ],
-  "narrative_function": "Fanta Ahlstrom-Quartey represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Chemical analyzer in nasal passages — can identify substances by scent alone. Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Unaffiliated — too volatile for permanent crews; The Glass Ladder",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 4
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 6
-      },
-      "reflexes": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 6
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 6
-      },
-      "perception": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 8
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 5
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 7
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 8
-      },
-      "intimidation": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 9
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 7
-      },
-      "empathy": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 6
-      }
-    },
-    "personality": {
-      "aggression": 0.38,
-      "caution": 0.27,
-      "loyalty": 0.81,
-      "greed": 0.67,
-      "empathy": 0.95
-    },
-    "drives": [
-      "protection",
-      "freedom",
-      "reputation"
-    ],
-    "thresholds": {
-      "pain": 9,
-      "stress": 7,
-      "loyalty_break": 10
-    },
-    "strengths": [
-      "network of reliable contacts",
-      "ability to remain calm under fire"
-    ],
-    "weaknesses": [
-      "old injury that flares under specific conditions",
-      "overconfidence in specialty areas leading to blind spots"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "broker",
-      "tier-2",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Always verifies target identity independently before lethal contracts",
-      "Will work with anyone once. Second time requires vouching from someone trusted."
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Presents as emotionless professional but is deeply affected by collateral damage",
-      "Insists they work alone but performs noticeably better in a team",
-      "Preaches independence but is desperate for approval from people they respect"
-    ],
-    "habits": [
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
-      "Practices a kata or fighting form every morning regardless of circumstances",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
-    ],
-    "breaking_points": [
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Chemical analyzer in nasal passages",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Chemical analyzer in nasal passages — can identify substances by scent alone",
-      "replaces": ""
-    },
-    {
-      "name": "Move-by-wire system",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Move-by-wire system — full nervous system augmentation, makes the body a weapon platform",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Pragmatist": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Burnside Corridor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Tessera TKR-10 'Executor'",
-    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Precision Carbine MPC-9 'Scalpel'",
-    "Tessera TKR-10 'Executor'"
-  ],
-  "related_entities": [
-    "The Nearfield",
-    "Burnside Pocket",
-    "GLMZ",
-    "Circuit",
-    "The Pure Hand",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Slagworks Industrial",
-    "Pellucid Systems",
-    "Compass Rose",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Ubiquitous Diaspora blend — Indigenous American (35.9%), Hispanic/Latin American (25.5%), East Asian (15.5%), Sub-Saharan African (13.3%), Central Asian (9.8%). The combination creates distinctive features: prominent high cheekbones with strong angular bone structure from Indigenous American and Central Asian heritage, broad nose bridge characteristic of Indigenous ancestry, warm brown eyes with subtle epicanthic folds from East Asian lineage. Skin carries warm golden and amber undertones from the synthesis of African, Hispanic, Indigenous, and Central Asian ancestry — a rich deep warm brown that speaks to this continental blend.",
-    "height_cm": 167,
-    "weight_kg": 78,
-    "build": "Stocky and solid, muscular without bulk — the physiology of someone built for leverage and endurance rather than speed. Shoulders broad, core compact, legs thick. Hands oversized and scarred, knuckles flattened from impact training.",
-    "hair_color": "Dark brown with premature silver threading through the crown",
-    "hair_style": "Pulled back tight in a practical braid, no vanity in the arrangement",
-    "hair_length": "Medium",
-    "eye_color": "Warm brown with amber undertones, unremarkable until you notice they don't blink at normal intervals",
-    "skin_tone": "Deep warm brown with golden undertones — the result of Indigenous American, Hispanic/Latin American, East Asian, Sub-Saharan African, and Central Asian ancestry blending. Sun-weathered and uneven in texture from environmental exposure rather than heritage.",
-    "complexion": "Weathered face — lines around the eyes and mouth from stress and lack of sleep rather than age. Skin has the texture of someone who doesn't prioritize skincare. Prominent angular cheekbones characteristic of Indigenous American and Central Asian heritage. Jaw is strong and defined, scarred along the angle where augmentation interfacing was installed.",
-    "distinguishing_marks": [
-      "Surgical scarring along both temples, visible chrome integration points barely concealed by hair, roughly 4cm each side",
-      "Jagged scar across her left knuckle from a fight or industrial accident, old and pale",
-      "Thin white line running from her right jawline down to her collarbone — knife wound, expertly stitched years ago",
-      "Chemical analyzer chrome visible in her nasal passages when she breathes — dull metallic gleam, no cosmetic work done to blend it"
-    ],
-    "visible_augmentations": "Chrome chemical analyzer built into nasal passages — visible as a subtle metallic sheen and precise geometric geometry inside her nostrils when light catches them. Move-by-wire system invisible to casual observation, but betrayed by her movement — too smooth, too efficient, zero wasted motion. Slight servo micro-adjustments visible in her neck and shoulder movements under stress.",
-    "posture_movement": "Stands with weight distributed low and even, ready to move in any direction without telegraph. Movements economical and precise — no fidgeting, no nervous tics. When walking, she moves like a predator checking angles. Doesn't sit with her back to doors. Eyes track exits and threats constantly. Her default expression is flat, but small movements around her jaw suggest she's running constant calculations.",
-    "clothing_style": "Tier 3-4 utilitarian — worn tech-weave pants in charcoal with reinforced thigh pockets, a fitted synthetic undershirt that moves with her augmentations, and a neutral-colored field jacket with too many pockets. Everything functional, nothing new. Boots are good quality but scuffed from real work. No jewelry except a worn paracord bracelet in matte black. She dresses like someone who might need to run or fight in the next five minutes."
-  },
-  "image_prompt": "Asana Migizi, a 167cm stocky woman with deep warm brown skin and golden undertones reflecting Indigenous American, Hispanic, East Asian, Sub-Saharan African, and Central Asian ancestry. Prominent angular cheekbones, broad nose bridge, warm brown eyes with subtle epicanthic folds. Dark brown hair with silver threading pulled back in a tight braid. Weathered face with stress lines, surgical scarring at temples with visible chrome integration points, jagged scar on left knuckle, thin white knife wound scar along right jawline to collarbone. Chemical analyzer chrome visible in nasal passages. Move-by-wire augmentations betrayed by too-smooth, predatory movements. Wearing charcoal tech-weave utilitarian pants with reinforced pockets, fitted synthetic undershirt, neutral-colored field jacket with multiple pockets, scuffed quality boots, matte black paracord bracelet. Standing in low-ready stance with weight distributed evenly, eyes tracking threats, expression flat. GLMZ, Great Lakes Metropolitan Zone, neon-lit industrial setting, cool blue and amber lighting casting shadows across augmentation scars, gritty realism, photorealistic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 35.9,
-    "Hispanic/Latin American": 25.5,
-    "East Asian": 15.5,
-    "Sub-Saharan African": 13.3,
-    "Central Asian": 9.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Plains Nations": {
-        "Choctaw": 16.6
-      },
-      "Mesoamerican": {
-        "Maya": 9.7
-      },
-      "Great Lakes Nations": {
-        "Potawatomi": 7.4,
-        "Ojibwe": 2.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 8.8
-      },
-      "Caribbean": {
-        "Dominican": 13.4
-      },
-      "Central American": {
-        "Honduran": 1.4,
-        "Salvadoran": 1.9
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 15.5
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Somali": 3.1
-      },
-      "Central African": {
-        "Angolan": 10.2
-      }
-    },
-    "Central Asian": {
-      "Iranian Central": {
-        "Hazara": 9.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a60d743a98e99a3e6891ba29",
+    "type":  "character",
+    "name":  "Asana Migizi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Information trader and intelligence analyst â€” broker",
+    "age":  43,
+    "status":  "active",
+    "location":  "Burnside Corridor â€” transit hub connecting the Gray Zone to Circuit, near North Ave and Damen",
+    "description":  "Asana Migizi is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 43, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible â€” chemical analyzer in nasal passages â€” can identify substances by scent alone â€” and she makes no effort to hide it.\n\nMilitary training â€” one of the private security corps that folded during the consolidation wars â€” left her with skills and night terrors in equal measure. She works as a broker out of Burnside Corridor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented broker in GLMZ, but she might be the most stubborn, and in this city that\u0027s worth more.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "Going cyberpsycho â€” losing the boundary between human and machine",
+                                          "Being identified by corporate facial recognition â€” living off-grid is survival"
+                                      ],
+                       "core_desires":  [
+                                            "To find the person who burned them and make it educational",
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "The perfect run â€” one job so clean it becomes legend"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Isolates â€” retreats into their space when overwhelmed, emerges only for work",
+                                                 "Exercises compulsively â€” the body must be ready, always",
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure"
+                                             ],
+                       "blind_spots":  [
+                                           "Thinks speed can substitute for planning because it\u0027s worked so far",
+                                           "Trusts technology more than people â€” machines don\u0027t betray",
+                                           "Overestimates their own abilities in situations outside their specialty"
+                                       ],
+                       "secret":  "Fanta Ahlstrom-Quartey betrayed their previous crew to survive a corporate raid. The crew didn\u0027t survive. Nobody in GLMZ knows this."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+                            "cadence":  "Halting â€” speaks in fragments, reassembles thoughts in real time.",
+                            "verbal_tics":  [
+                                                "Whispers when angry â€” the quieter the voice, the worse the situation",
+                                                "Hums tunelessly when planning â€” the team has learned to wait for the humming to stop"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I don\u0027t sell information. I sell certainty. Different product, different price.\"",
+                                                  "\"Everything has a value. Most people underestimate what they know.\"",
+                                                  "\"My sources are confidential. My prices are not.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Fanta Ahlstrom-Quartey is offered a contract that would clear all their debts â€” the target is someone they respect",
+                        "Fanta Ahlstrom-Quartey\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad",
+                        "Fanta Ahlstrom-Quartey intercepts intelligence about a threat to their district and must decide between profit and protection"
+                    ],
+    "narrative_function":  "Fanta Ahlstrom-Quartey represents the working professional of the runner world â€” competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+    "augmentations":  "Chemical analyzer in nasal passages â€” can identify substances by scent alone. Move-by-wire system â€” full nervous system augmentation, makes the body a weapon platform",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Unaffiliated â€” too volatile for permanent crews; The Glass Ladder",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  0,
+                                                    "effective":  4
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  0,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  3,
+                                                     "augmented":  2,
+                                                     "effective":  6
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  5,
+                                                    "augmented":  3,
+                                                    "effective":  6
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  8,
+                                                      "augmented":  3,
+                                                      "effective":  6
+                                                  },
+                                 "perception":  {
+                                                    "base":  5,
+                                                    "augmented":  1,
+                                                    "effective":  8
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  5
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  3,
+                                                   "effective":  7
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  1,
+                                                  "effective":  8
+                                              },
+                                 "intimidation":  {
+                                                      "base":  7,
+                                                      "augmented":  1,
+                                                      "effective":  9
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  7
+                                               },
+                                 "empathy":  {
+                                                 "base":  5,
+                                                 "augmented":  1,
+                                                 "effective":  6
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.38,
+                                      "caution":  0.27,
+                                      "loyalty":  0.81,
+                                      "greed":  0.67,
+                                      "empathy":  0.95
+                                  },
+                  "drives":  [
+                                 "protection",
+                                 "freedom",
+                                 "reputation"
+                             ],
+                  "thresholds":  {
+                                     "pain":  9,
+                                     "stress":  7,
+                                     "loyalty_break":  10
+                                 },
+                  "strengths":  [
+                                    "network of reliable contacts",
+                                    "ability to remain calm under fire"
+                                ],
+                  "weaknesses":  [
+                                     "old injury that flares under specific conditions",
+                                     "overconfidence in specialty areas leading to blind spots"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "broker",
+                               "tier-2",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted."
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Presents as emotionless professional but is deeply affected by collateral damage",
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Preaches independence but is desperate for approval from people they respect"
+                                          ],
+                       "habits":  [
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Wears the same item of clothing for luck â€” a scarf, a glove, a specific pair of boots",
+                                      "Practices a kata or fighting form every morning regardless of circumstances",
+                                      "Arrives fifteen minutes early to everything â€” late once, nearly died, never again"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Chemical analyzer in nasal passages",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Chemical analyzer in nasal passages â€” can identify substances by scent alone",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Move-by-wire system",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Move-by-wire system â€” full nervous system augmentation, makes the body a weapon platform",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Pragmatist":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Burnside Corridor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Precision Carbine MPC-9 \u0027Scalpel\u0027",
+                            "Tessera TKR-10 \u0027Executor\u0027",
+                            "Street-Custom Memory Alloy Butterfly Knife \u0027Quicksilver\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Precision Carbine MPC-9 \u0027Scalpel\u0027",
+                                "Tessera TKR-10 \u0027Executor\u0027"
+                            ],
+    "related_entities":  [
+                             "The Nearfield",
+                             "Burnside Pocket",
+                             "GLMZ",
+                             "Circuit",
+                             "The Pure Hand",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "Slagworks Industrial",
+                             "Pellucid Systems",
+                             "Compass Rose",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Ubiquitous Diaspora blend â€” Indigenous American (35.9%), Hispanic/Latin American (25.5%), East Asian (15.5%), Sub-Saharan African (13.3%), Central Asian (9.8%). The combination creates distinctive features: prominent high cheekbones with strong angular bone structure from Indigenous American and Central Asian heritage, broad nose bridge characteristic of Indigenous ancestry, warm brown eyes with subtle epicanthic folds from East Asian lineage. Skin carries warm golden and amber undertones from the synthesis of African, Hispanic, Indigenous, and Central Asian ancestry â€” a rich deep warm brown that speaks to this continental blend.",
+                                 "height_cm":  167,
+                                 "weight_kg":  78,
+                                 "build":  "Stocky and solid, muscular without bulk â€” the physiology of someone built for leverage and endurance rather than speed. Shoulders broad, core compact, legs thick. Hands oversized and scarred, knuckles flattened from impact training.",
+                                 "hair_color":  "Dark brown with premature silver threading through the crown",
+                                 "hair_style":  "Pulled back tight in a practical braid, no vanity in the arrangement",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Warm brown with amber undertones, unremarkable until you notice they don\u0027t blink at normal intervals",
+                                 "skin_tone":  "Deep warm brown with golden undertones â€” the result of Indigenous American, Hispanic/Latin American, East Asian, Sub-Saharan African, and Central Asian ancestry blending. Sun-weathered and uneven in texture from environmental exposure rather than heritage.",
+                                 "complexion":  "Weathered face â€” lines around the eyes and mouth from stress and lack of sleep rather than age. Skin has the texture of someone who doesn\u0027t prioritize skincare. Prominent angular cheekbones characteristic of Indigenous American and Central Asian heritage. Jaw is strong and defined, scarred along the angle where augmentation interfacing was installed.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scarring along both temples, visible chrome integration points barely concealed by hair, roughly 4cm each side",
+                                                              "Jagged scar across her left knuckle from a fight or industrial accident, old and pale",
+                                                              "Thin white line running from her right jawline down to her collarbone â€” knife wound, expertly stitched years ago",
+                                                              "Chemical analyzer chrome visible in her nasal passages when she breathes â€” dull metallic gleam, no cosmetic work done to blend it"
+                                                          ],
+                                 "visible_augmentations":  "Chrome chemical analyzer built into nasal passages â€” visible as a subtle metallic sheen and precise geometric geometry inside her nostrils when light catches them. Move-by-wire system invisible to casual observation, but betrayed by her movement â€” too smooth, too efficient, zero wasted motion. Slight servo micro-adjustments visible in her neck and shoulder movements under stress.",
+                                 "posture_movement":  "Stands with weight distributed low and even, ready to move in any direction without telegraph. Movements economical and precise â€” no fidgeting, no nervous tics. When walking, she moves like a predator checking angles. Doesn\u0027t sit with her back to doors. Eyes track exits and threats constantly. Her default expression is flat, but small movements around her jaw suggest she\u0027s running constant calculations.",
+                                 "clothing_style":  "Tier 3-4 utilitarian â€” worn tech-weave pants in charcoal with reinforced thigh pockets, a fitted synthetic undershirt that moves with her augmentations, and a neutral-colored field jacket with too many pockets. Everything functional, nothing new. Boots are good quality but scuffed from real work. No jewelry except a worn paracord bracelet in matte black. She dresses like someone who might need to run or fight in the next five minutes."
+                             },
+    "image_prompt":  "Asana Migizi, a 167cm stocky woman with deep warm brown skin and golden undertones reflecting Indigenous American, Hispanic, East Asian, Sub-Saharan African, and Central Asian ancestry. Prominent angular cheekbones, broad nose bridge, warm brown eyes with subtle epicanthic folds. Dark brown hair with silver threading pulled back in a tight braid. Weathered face with stress lines, surgical scarring at temples with visible chrome integration points, jagged scar on left knuckle, thin white knife wound scar along right jawline to collarbone. Chemical analyzer chrome visible in nasal passages. Move-by-wire augmentations betrayed by too-smooth, predatory movements. Wearing charcoal tech-weave utilitarian pants with reinforced pockets, fitted synthetic undershirt, neutral-colored field jacket with multiple pockets, scuffed quality boots, matte black paracord bracelet. Standing in low-ready stance with weight distributed evenly, eyes tracking threats, expression flat. GLMZ, Great Lakes Metropolitan Zone, neon-lit industrial setting, cool blue and amber lighting casting shadows across augmentation scars, gritty realism, photorealistic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Indigenous American":  35.9,
+                             "Hispanic/Latin American":  25.5,
+                             "East Asian":  15.5,
+                             "Sub-Saharan African":  13.3,
+                             "Central Asian":  9.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Choctaw":  16.6
+                                                                           },
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  9.7
+                                                                         },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  7.4,
+                                                                                    "Ojibwe":  2.2
+                                                                                }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  8.8
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  13.4
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Honduran":  1.4,
+                                                                                     "Salvadoran":  1.9
+                                                                                 }
+                                                        },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  15.5
+                                                            }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Somali":  3.1
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Angolan":  10.2
+                                                                            }
+                                                    },
+                            "Central Asian":  {
+                                                  "Iranian Central":  {
+                                                                          "Hazara":  9.8
+                                                                      }
+                                              }
+                        },
+    "tier":  "3"
 }

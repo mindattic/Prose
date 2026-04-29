@@ -1,362 +1,393 @@
-{
-  "id": "019d6143a6da73a38e3eb094adb0c220",
-  "type": "character",
-  "name": "Canan Chaiyaporn-Calvillo-Hernández",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "organ harvester and black-market tissue broker",
-  "age": 38,
-  "status": "active",
-  "location": "The Undertow, operating out of a converted cold-storage unit in the Escanaba Gateway industrial strip, near Michigan Ave South and Cermak",
-  "description": "Canan Chaiyaporn-Calvillo-Hernández is built like someone designed for endurance rather than strength — medium height, dense through the shoulders and hips, with a wiry toughness that reads as practical rather than threatening until she needs it to read as threatening. She has her Irish grandmother's pale freckled complexion shot through with the warmer undertones of her Guinean father's family, and her hair is a tight natural coil she keeps bound under a surgical-grade hygiene cap more often than not. Her eyes are dark and evaluating. She has cosmetic bioluminescent tracery along her collarbones — pale green — which she got at nineteen and now considers a poor decision she's too superstitious to remove. Her hands are her tell: surgically precise, always slightly cool, the grip of someone accustomed to handling things that used to be alive.\n\nCanan Chaiyaporn-Calvillo-Hernández is not a monster — she knows this because she has thought about it carefully and often. She is a pragmatist operating in a system where Aurochs Medical and Helix Biosystems have cornered legitimate organ markets behind tiered pricing that kills anyone below Tier 3. She tells herself she redistributes. She sometimes believes it. She is efficient, professionally warm in the way of doctors who have learned warmth as a tool, and she maintains a meticulous cold chain and storage protocol that she is genuinely proud of. What she does not examine carefully is the question of where, exactly, her suppliers obtain their inventory.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.5,
-      "id": 0.4,
-      "shadow": 0.7,
-      "mask": 0.6,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "discovering irrefutable evidence that her suppliers are killers and being forced to act on it",
-      "dying of the kidney disease she refuses to treat with her own inventory because that would be crossing a line she hasn't defined yet"
-    ],
-    "core_desires": [
-      "to believe she is net-positive in the world",
-      "enough money to get out before the shadow catches up with her"
-    ],
-    "coping_mechanisms": [
-      "professional detachment language",
-      "obsessive facility cleanliness as moral performance",
-      "leaving data offerings at an E.L.F. she believes governs cold storage systems"
-    ],
-    "blind_spots": [
-      "willfully does not ask her suppliers provenance questions she could ask",
-      "mistakes her own professionalism for ethics"
-    ],
-    "secret": "She has a failing kidney — ironic, she knows — and has been slowly stealing treatment from her own inventory, one small dose at a time, compromising samples she then sells as viable"
-  },
-  "speech_patterns": {
-    "vocabulary": "clinical and precise, medical jargon used naturally, occasional Irish-inflected expressions from her grandmother's recordings",
-    "cadence": "measured and calm, the practiced even tone of someone who delivers bad news professionally",
-    "verbal_tics": [
-      "'Viability is everything. Everything else is negotiable.'",
-      "addresses clients as 'friend' with a warmth that doesn't quite reach her eyes",
-      "talks about organs in purely technical terms, never euphemisms but never personalizing either"
-    ],
-    "example_lines": [
-      "'The hepatic tissue is grade-A viable, cold-chain intact, forty-one hours from harvest. Friend, that is a gift. Don't insult me by questioning the provenance.'",
-      "'I sleep fine. The people who can't afford Aurochs prices sleep in the ground. I am the reason some of them don't.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A batch of organs she sold has been traced back through the chain and the trail ends somewhere she didn't expect — not a back-alley harvester but a Helix Biosystems subsidiary quietly clearing undesirables",
-    "Her kidney condition has worsened to crisis point and she is now desperately negotiating for a compatible donor through channels that are beginning to resemble her own supply network uncomfortably closely"
-  ],
-  "narrative_function": "Quest giver (a shipment has gone wrong, a client is dying, a supplier has gone silent), moral mirror for players, information source about the medical underworld, potential ally or threat depending on player choices",
-  "augmentations": "Bioluminescent cosmetic tracery (collarbones, pale green), medical-grade haptic sensitivity enhancement in fingertips, subdermal temperature sensors in both palms, olfactory augment calibrated for tissue viability detection",
-  "daily_life": "Maintains the cold-storage facility and manages inventory in the mornings; afternoons are for client consultations and supplier meetings; twice a week she assists in gray-market transplant procedures at a floating clinic in Gravesend Basin.",
-  "affiliation": "Loose network of black-market medics called the Sutured Hand; pays protection to a Undertow crew called the Escanaba Skinners; The Undertow",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 6,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 6,
-      "integrity": 4
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "medical-professional",
-      "self-deceiving",
-      "pragmatist",
-      "secretly-ill",
-      "cold-chain-obsessive"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "maintain cold chain above all — a ruined product is a ruined reputation",
-      "never treat children's organs as inventory, an absolute line she has held so far",
-      "always have an exit route from any facility"
-    ],
-    "escalation_ladder": [
-      "professional deflection and redirection",
-      "invoking the Escanaba Skinners' protection as a deterrent",
-      "disappearing with the inventory before a confrontation becomes physical",
-      "extreme pragmatic violence if cornered with no exit"
-    ],
-    "interpersonal_modes": {
-      "strangers": "warm, clinical, professionally reassuring — a bedside manner that is entirely constructed",
-      "friends": "rare, but when present, brutally honest and somewhat sardonic"
-    },
-    "stress_responses": {
-      "low": "cleans the facility obsessively",
-      "medium": "becomes more formal and technical in speech",
-      "high": "dissociates into pure procedure, stops using names"
-    },
-    "contradictions": [
-      "maintains elaborate self-justifications but quietly leaves double anonymized donations at the gray-market clinic for patients who can't pay even black-market prices"
-    ],
-    "habits": [
-      "checks cold-storage temperature readings every two hours including through the night via implant ping",
-      "whispers a short prayer to the cold-storage E.L.F. before every procedure",
-      "never eats meat"
-    ],
-    "breaking_points": [
-      "incontrovertible proof that a supplier is killing specifically to supply her",
-      "being asked to harvest from someone she knows personally"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Bioluminescent cosmetic tracery — collarbones, pale green, cosmetic grade",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bioluminescent cosmetic tracery — collarbones, pale green, cosmetic grade",
-      "replaces": ""
-    },
-    {
-      "name": "Haptic sensitivity enhancement — fingertips, medical grade",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Haptic sensitivity enhancement — fingertips, medical grade",
-      "replaces": ""
-    },
-    {
-      "name": "Subdermal temperature sensors — both palms",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal temperature sensors — both palms",
-      "replaces": ""
-    },
-    {
-      "name": "Olfactory augment — calibrated for biological viability detection",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Olfactory augment — calibrated for biological viability detection",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.7,
-    "Scholar": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Undertow",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2162: Born in the Undertow, daughter of a Guinean dock worker and an Irish-descended Meridian native",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2179: Began training as a paramedic with a gray-market medical collective",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2184: First tissue brokerage commission after a legitimate transplant job fell through Aurochs pricing tiers",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2191: Established the Escanaba Gateway cold-storage facility",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2198: Diagnosed herself with progressive kidney failure using stolen Aurochs diagnostic equipment",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200: Current — managing deteriorating health while maintaining professional facade",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Street Custom 'Sunday School' Weaponized Religious Artifact"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Helix Biosystems",
-    "Escanaba Gateway",
-    "The Undertow",
-    "Grandmother",
-    "ShieldTech CLA-3 'Cascade'",
-    "Carrion Defense Works Harvester CDW-12 'Thresher'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Clearpath",
-    "SynapTech GripTrue Palmar Adhesion Implant",
-    "Gravimetric Collapse Charge GCC-9",
-    "The Pure Hand",
-    "Folakemi Boudiaf",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "The Pale Mile"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Complex diaspora ancestry: primarily Hispanic/Latin American (45.9%) with significant Southeast Asian (22.0%), Northern European (13.4%), Sub-Saharan African (10.5%), and Indigenous American (8.2%) heritage. This blend creates a uniquely multifaceted phenotype reflecting the Ubiquitous Diaspora. Her features show the warm, defined cheekbones and facial width characteristic of Southeast Asian ancestry, enriched by the deep golden undertones of Latin American and African heritage, refined by Northern European bone structure, and grounded in Indigenous American features. The result is a striking, even complexion with subtle regional feature blending—neither distinctly one ancestry nor another, but a harmonious synthesis.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Medium frame, dense through shoulders and hips, wiry and compact. Built for endurance and precision rather than strength. Low body fat, defined musculature in forearms and hands from years of surgical work.",
-    "hair_color": "Dark brown, natural coil",
-    "hair_style": "Tightly bound under a surgical-grade hygiene cap in clinical settings; when unbound, worn close to the scalp in natural coils",
-    "hair_length": "Short (shoulder-length when unbound)",
-    "eye_color": "Dark brown, evaluative and steady",
-    "skin_tone": "Warm medium complexion with golden-amber undertones blending Latin American, Southeast Asian, Indigenous American, and Sub-Saharan African heritage, refined by Northern European ancestry. Rich luminous tone with subtle olive warmth, even and radiant across face and body.",
-    "complexion": "Clear, well-maintained skin with faint freckles across nose and cheekbones. Minimal scarring on her face—her professional control extends to her appearance. Slight creases around her eyes from years of focused concentration. Cold lips, minimal color. Facial structure reflects the blended heritage: defined, high cheekbones with subtle fullness at temples (Southeast Asian influence), warm undertone depth (Latin American and African ancestry), refined bone structure with gentle angularity (Northern European genetics), and grounded by strong, balanced proportions (Indigenous American heritage).",
-    "distinguishing_marks": [
-      "Bioluminescent cosmetic tracery in pale green running along both collarbones in intricate geometric patterns—a nineteen-year-old decision she now considers superstitious to remove",
-      "Fine surgical scars on both palms and inner forearms, barely visible unless light catches them at specific angles",
-      "Faint track marks of multiple subdermal implants along the inside of both wrists—temperature sensors, subtle and professional"
-    ],
-    "visible_augmentations": "Bioluminescent collarbone tracery (pale green, visible above neckline), faint subdermal sensor grid visible at inner wrists under certain lighting. Hands show unusual precision in movement—haptic sensitivity enhancement subtle but evident to trained eyes. No visible chrome or external augmentation; all work is discrete and medical-grade.",
-    "posture_movement": "Stands with spine straight but not rigid—the posture of someone accustomed to standing still for long procedures. Moves with economical efficiency, no wasted motion. Hands are always slightly cooler to the touch, move with surgical precision and constant micro-adjustments. Eyes rarely blink; she watches more than she looks. When she walks, each step is deliberate and grounded.",
-    "clothing_style": "Tier 3-4 functional professional. Default: surgical-grade hygiene cap, fitted thermal base layer under a charcoal grey medical-weight coat with discrete padding at shoulders and ribs (Escanaba Skinners protection), black utility trousers with reinforced pockets, sterile nitrile gloves kept in coat pockets. No jewelry except a worn stainless steel ring on her right index finger. Boots are durable, non-slip medical-grade rubber. Everything is kept meticulously clean and shows no signs of wear or staining. She dresses like someone for whom cleanliness is not habit but ideology."
-  },
-  "image_prompt": "Portrait of Canan Chaiyaporn-Calvillo-Hernández, 168cm tall surgical specialist in GLMZ, golden-amber warm medium complexion blending Southeast Asian and Latin American features with refined Northern European bone structure. High defined cheekbones, dark evaluative eyes, dark brown natural coils partially hidden under surgical hygiene cap. Faint pale green bioluminescent tracery glows across collarbones in geometric patterns. Wearing charcoal grey medical-weight protective coat, thermal base layer, black utility trousers, sterile nitrile gloves. Hands show surgical precision, faint subdermal sensor marks visible at wrists. Cool professional demeanor, economical posture, barely visible surgical scars catching light. Clean, ideology-driven aesthetic. Neo-noir clinic lighting, cool-toned and sterile, with subtle bioluminescent highlights on collar tracery. Serious, focused expression. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 45.9,
-    "Southeast Asian": 22,
-    "Northern European": 13.4,
-    "Sub-Saharan African": 10.5,
-    "Indigenous American": 8.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 22
-      },
-      "South American": {
-        "Peruvian": 17.4
-      },
-      "Caribbean": {
-        "Puerto Rican": 3.8,
-        "Cuban": 2.7
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 16.1
-      },
-      "Indonesian": {
-        "Sundanese": 1.4,
-        "Javanese": 4.5
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Danish": 5.8
-      },
-      "Germanic": {
-        "German": 4.1,
-        "Dutch": 3.5
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Rwandan": 10.1
-      },
-      "West African": {
-        "Malian": 0.4
-      }
-    },
-    "Indigenous American": {
-      "Plains Nations": {
-        "Cherokee": 8.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6da73a38e3eb094adb0c220",
+    "type":  "character",
+    "name":  "Canan Chaiyaporn-Calvillo-HernÃ¡ndez",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "organ harvester and black-market tissue broker",
+    "age":  38,
+    "status":  "active",
+    "location":  "The Undertow, operating out of a converted cold-storage unit in the Escanaba Gateway industrial strip, near Michigan Ave South and Cermak",
+    "description":  "Canan Chaiyaporn-Calvillo-HernÃ¡ndez is built like someone designed for endurance rather than strength â€” medium height, dense through the shoulders and hips, with a wiry toughness that reads as practical rather than threatening until she needs it to read as threatening. She has her Irish grandmother\u0027s pale freckled complexion shot through with the warmer undertones of her Guinean father\u0027s family, and her hair is a tight natural coil she keeps bound under a surgical-grade hygiene cap more often than not. Her eyes are dark and evaluating. She has cosmetic bioluminescent tracery along her collarbones â€” pale green â€” which she got at nineteen and now considers a poor decision she\u0027s too superstitious to remove. Her hands are her tell: surgically precise, always slightly cool, the grip of someone accustomed to handling things that used to be alive.\n\nCanan Chaiyaporn-Calvillo-HernÃ¡ndez is not a monster â€” she knows this because she has thought about it carefully and often. She is a pragmatist operating in a system where Aurochs Medical and Helix Biosystems have cornered legitimate organ markets behind tiered pricing that kills anyone below Tier 3. She tells herself she redistributes. She sometimes believes it. She is efficient, professionally warm in the way of doctors who have learned warmth as a tool, and she maintains a meticulous cold chain and storage protocol that she is genuinely proud of. What she does not examine carefully is the question of where, exactly, her suppliers obtain their inventory.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "discovering irrefutable evidence that her suppliers are killers and being forced to act on it",
+                                          "dying of the kidney disease she refuses to treat with her own inventory because that would be crossing a line she hasn\u0027t defined yet"
+                                      ],
+                       "core_desires":  [
+                                            "to believe she is net-positive in the world",
+                                            "enough money to get out before the shadow catches up with her"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "professional detachment language",
+                                                 "obsessive facility cleanliness as moral performance",
+                                                 "leaving data offerings at an E.L.F. she believes governs cold storage systems"
+                                             ],
+                       "blind_spots":  [
+                                           "willfully does not ask her suppliers provenance questions she could ask",
+                                           "mistakes her own professionalism for ethics"
+                                       ],
+                       "secret":  "She has a failing kidney â€” ironic, she knows â€” and has been slowly stealing treatment from her own inventory, one small dose at a time, compromising samples she then sells as viable"
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "clinical and precise, medical jargon used naturally, occasional Irish-inflected expressions from her grandmother\u0027s recordings",
+                            "cadence":  "measured and calm, the practiced even tone of someone who delivers bad news professionally",
+                            "verbal_tics":  [
+                                                "\u0027Viability is everything. Everything else is negotiable.\u0027",
+                                                "addresses clients as \u0027friend\u0027 with a warmth that doesn\u0027t quite reach her eyes",
+                                                "talks about organs in purely technical terms, never euphemisms but never personalizing either"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The hepatic tissue is grade-A viable, cold-chain intact, forty-one hours from harvest. Friend, that is a gift. Don\u0027t insult me by questioning the provenance.\u0027",
+                                                  "\u0027I sleep fine. The people who can\u0027t afford Aurochs prices sleep in the ground. I am the reason some of them don\u0027t.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A batch of organs she sold has been traced back through the chain and the trail ends somewhere she didn\u0027t expect â€” not a back-alley harvester but a Helix Biosystems subsidiary quietly clearing undesirables",
+                        "Her kidney condition has worsened to crisis point and she is now desperately negotiating for a compatible donor through channels that are beginning to resemble her own supply network uncomfortably closely"
+                    ],
+    "narrative_function":  "Quest giver (a shipment has gone wrong, a client is dying, a supplier has gone silent), moral mirror for players, information source about the medical underworld, potential ally or threat depending on player choices",
+    "augmentations":  "Bioluminescent cosmetic tracery (collarbones, pale green), medical-grade haptic sensitivity enhancement in fingertips, subdermal temperature sensors in both palms, olfactory augment calibrated for tissue viability detection",
+    "daily_life":  "Maintains the cold-storage facility and manages inventory in the mornings; afternoons are for client consultations and supplier meetings; twice a week she assists in gray-market transplant procedures at a floating clinic in Gravesend Basin.",
+    "affiliation":  "Loose network of black-market medics called the Sutured Hand; pays protection to a Undertow crew called the Escanaba Skinners; The Undertow",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  6,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  6,
+                                 "integrity":  4
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "medical-professional",
+                               "self-deceiving",
+                               "pragmatist",
+                               "secretly-ill",
+                               "cold-chain-obsessive"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "maintain cold chain above all â€” a ruined product is a ruined reputation",
+                                              "never treat children\u0027s organs as inventory, an absolute line she has held so far",
+                                              "always have an exit route from any facility"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "professional deflection and redirection",
+                                                 "invoking the Escanaba Skinners\u0027 protection as a deterrent",
+                                                 "disappearing with the inventory before a confrontation becomes physical",
+                                                 "extreme pragmatic violence if cornered with no exit"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "warm, clinical, professionally reassuring â€” a bedside manner that is entirely constructed",
+                                                   "friends":  "rare, but when present, brutally honest and somewhat sardonic"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "cleans the facility obsessively",
+                                                "medium":  "becomes more formal and technical in speech",
+                                                "high":  "dissociates into pure procedure, stops using names"
+                                            },
+                       "contradictions":  [
+                                              "maintains elaborate self-justifications but quietly leaves double anonymized donations at the gray-market clinic for patients who can\u0027t pay even black-market prices"
+                                          ],
+                       "habits":  [
+                                      "checks cold-storage temperature readings every two hours including through the night via implant ping",
+                                      "whispers a short prayer to the cold-storage E.L.F. before every procedure",
+                                      "never eats meat"
+                                  ],
+                       "breaking_points":  [
+                                               "incontrovertible proof that a supplier is killing specifically to supply her",
+                                               "being asked to harvest from someone she knows personally"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Bioluminescent cosmetic tracery â€” collarbones, pale green, cosmetic grade",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bioluminescent cosmetic tracery â€” collarbones, pale green, cosmetic grade",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Haptic sensitivity enhancement â€” fingertips, medical grade",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Haptic sensitivity enhancement â€” fingertips, medical grade",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Subdermal temperature sensors â€” both palms",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal temperature sensors â€” both palms",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Olfactory augment â€” calibrated for biological viability detection",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Olfactory augment â€” calibrated for biological viability detection",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.7,
+                       "Scholar":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Undertow",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2162: Born in the Undertow, daughter of a Guinean dock worker and an Irish-descended Meridian native",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2179: Began training as a paramedic with a gray-market medical collective",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2184: First tissue brokerage commission after a legitimate transplant job fell through Aurochs pricing tiers",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2191: Established the Escanaba Gateway cold-storage facility",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2198: Diagnosed herself with progressive kidney failure using stolen Aurochs diagnostic equipment",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200: Current â€” managing deteriorating health while maintaining professional facade",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Wheelgun-38 \u0027Roundhouse\u0027",
+                            "Street Custom \u0027Sunday School\u0027 Weaponized Religious Artifact"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Helix Biosystems",
+                             "Escanaba Gateway",
+                             "The Undertow",
+                             "Grandmother",
+                             "ShieldTech CLA-3 \u0027Cascade\u0027",
+                             "Carrion Defense Works Harvester CDW-12 \u0027Thresher\u0027",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Clearpath",
+                             "SynapTech GripTrue Palmar Adhesion Implant",
+                             "Gravimetric Collapse Charge GCC-9",
+                             "The Pure Hand",
+                             "Folakemi Boudiaf",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "Hearthstone Firearms Trail-357 \u0027Pathfinder\u0027",
+                             "The Pale Mile"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora ancestry: primarily Hispanic/Latin American (45.9%) with significant Southeast Asian (22.0%), Northern European (13.4%), Sub-Saharan African (10.5%), and Indigenous American (8.2%) heritage. This blend creates a uniquely multifaceted phenotype reflecting the Ubiquitous Diaspora. Her features show the warm, defined cheekbones and facial width characteristic of Southeast Asian ancestry, enriched by the deep golden undertones of Latin American and African heritage, refined by Northern European bone structure, and grounded in Indigenous American features. The result is a striking, even complexion with subtle regional feature blendingâ€”neither distinctly one ancestry nor another, but a harmonious synthesis.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Medium frame, dense through shoulders and hips, wiry and compact. Built for endurance and precision rather than strength. Low body fat, defined musculature in forearms and hands from years of surgical work.",
+                                 "hair_color":  "Dark brown, natural coil",
+                                 "hair_style":  "Tightly bound under a surgical-grade hygiene cap in clinical settings; when unbound, worn close to the scalp in natural coils",
+                                 "hair_length":  "Short (shoulder-length when unbound)",
+                                 "eye_color":  "Dark brown, evaluative and steady",
+                                 "skin_tone":  "Warm medium complexion with golden-amber undertones blending Latin American, Southeast Asian, Indigenous American, and Sub-Saharan African heritage, refined by Northern European ancestry. Rich luminous tone with subtle olive warmth, even and radiant across face and body.",
+                                 "complexion":  "Clear, well-maintained skin with faint freckles across nose and cheekbones. Minimal scarring on her faceâ€”her professional control extends to her appearance. Slight creases around her eyes from years of focused concentration. Cold lips, minimal color. Facial structure reflects the blended heritage: defined, high cheekbones with subtle fullness at temples (Southeast Asian influence), warm undertone depth (Latin American and African ancestry), refined bone structure with gentle angularity (Northern European genetics), and grounded by strong, balanced proportions (Indigenous American heritage).",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent cosmetic tracery in pale green running along both collarbones in intricate geometric patternsâ€”a nineteen-year-old decision she now considers superstitious to remove",
+                                                              "Fine surgical scars on both palms and inner forearms, barely visible unless light catches them at specific angles",
+                                                              "Faint track marks of multiple subdermal implants along the inside of both wristsâ€”temperature sensors, subtle and professional"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent collarbone tracery (pale green, visible above neckline), faint subdermal sensor grid visible at inner wrists under certain lighting. Hands show unusual precision in movementâ€”haptic sensitivity enhancement subtle but evident to trained eyes. No visible chrome or external augmentation; all work is discrete and medical-grade.",
+                                 "posture_movement":  "Stands with spine straight but not rigidâ€”the posture of someone accustomed to standing still for long procedures. Moves with economical efficiency, no wasted motion. Hands are always slightly cooler to the touch, move with surgical precision and constant micro-adjustments. Eyes rarely blink; she watches more than she looks. When she walks, each step is deliberate and grounded.",
+                                 "clothing_style":  "Tier 3-4 functional professional. Default: surgical-grade hygiene cap, fitted thermal base layer under a charcoal grey medical-weight coat with discrete padding at shoulders and ribs (Escanaba Skinners protection), black utility trousers with reinforced pockets, sterile nitrile gloves kept in coat pockets. No jewelry except a worn stainless steel ring on her right index finger. Boots are durable, non-slip medical-grade rubber. Everything is kept meticulously clean and shows no signs of wear or staining. She dresses like someone for whom cleanliness is not habit but ideology."
+                             },
+    "image_prompt":  "Portrait of Canan Chaiyaporn-Calvillo-HernÃ¡ndez, 168cm tall surgical specialist in GLMZ, golden-amber warm medium complexion blending Southeast Asian and Latin American features with refined Northern European bone structure. High defined cheekbones, dark evaluative eyes, dark brown natural coils partially hidden under surgical hygiene cap. Faint pale green bioluminescent tracery glows across collarbones in geometric patterns. Wearing charcoal grey medical-weight protective coat, thermal base layer, black utility trousers, sterile nitrile gloves. Hands show surgical precision, faint subdermal sensor marks visible at wrists. Cool professional demeanor, economical posture, barely visible surgical scars catching light. Clean, ideology-driven aesthetic. Neo-noir clinic lighting, cool-toned and sterile, with subtle bioluminescent highlights on collar tracery. Serious, focused expression. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  45.9,
+                             "Southeast Asian":  22,
+                             "Northern European":  13.4,
+                             "Sub-Saharan African":  10.5,
+                             "Indigenous American":  8.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  22
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Peruvian":  17.4
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  3.8,
+                                                                              "Cuban":  2.7
+                                                                          }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  16.1
+                                                             },
+                                                    "Indonesian":  {
+                                                                       "Sundanese":  1.4,
+                                                                       "Javanese":  4.5
+                                                                   }
+                                                },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Danish":  5.8
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "German":  4.1,
+                                                                       "Dutch":  3.5
+                                                                   }
+                                                  },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Rwandan":  10.1
+                                                                         },
+                                                        "West African":  {
+                                                                             "Malian":  0.4
+                                                                         }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Cherokee":  8.2
+                                                                           }
+                                                    }
+                        },
+    "tier":  "1"
 }

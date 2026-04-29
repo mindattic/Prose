@@ -1,277 +1,306 @@
-{
-  "id": "019d6143a5e075edb8c0b32d7f829b54",
-  "type": "character",
-  "name": "Bengt Cervantes-Echeverría",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Tracker, combat specialist, and advance scout — Red Lantern",
-  "age": 34,
-  "status": "active",
-  "location": "Western border — bunks at the farmstead but spends most of his time in the field",
-  "description": "Bengt Cervantes-Echeverría has killed more Behemoths than anyone currently operating on GLMZ's western border. Not the most ever — that record belongs to a Gleaner named Doss who went out eleven years ago and did not return — but the most among the living. The count is fourteen confirmed kills over nine years of Gleaner operations. Each one was a disaster. Behemoths don't die clean. They die loud, they die thrashing, and killing one attracts others. Every kill on Cutter's count represents a raid that went wrong enough to require lethal force, which means every kill represents a failure he survived.\n\nHe grew up on the western edge — the border communities where GLMZ's governance dissolves into the contested Iowa corridor. He joined the Gleaners at seventeen because the alternative was starving slowly in a community that couldn't feed itself. Madre found him two years later, already good with a rifle, already hard in ways that seventeen-year-olds shouldn't be. She trained him, kept him alive, and watched him become the most effective field operative she'd ever worked with. She also watched him become colder with each raid, and that's the part that keeps her up at night.\n\nCutter is lean, angular, sun-damaged, with the permanent squint and wind-scoured features of someone who has spent too much time exposed to the Iowa prairie. He moves with the economy of a predator — no wasted motion, constant awareness, an animal stillness when he's watching something. His eyes are the most unsettling thing about him — pale, steady, and focused in a way that makes people feel like terrain being assessed.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.4,
-      "id": 0.65,
-      "shadow": 0.7,
-      "mask": 0.45,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "That he's crossed a line where the killing is no longer in service of anything — that the Behemoth hunts have become the point, not the food",
-      "That Madre's worry about him is justified and the person she trained is gone, replaced by the function",
-      "That the Behemoths are smarter than anyone admits and his kills are not victories but provocations"
-    ],
-    "core_desires": [
-      "To feel something about the raids other than operational focus — to prove the numbness is a tool, not a state",
-      "To protect Madre because she protected him, and because the debt is the last emotional structure he recognizes",
-      "To be finished. To have done enough. To put the rifle down and not need it."
-    ],
-    "coping_mechanisms": [
-      "Channels everything into operational readiness — if the gear is maintained and the route is scouted, the feelings don't matter",
-      "Sits alone in high places watching the prairie — the vastness absorbs whatever he's carrying without requiring words",
-      "Maintains the kill count not as pride but as accounting — each number is a failed raid, not a trophy"
-    ],
-    "blind_spots": [
-      "He cannot distinguish between tactical detachment and emotional vacancy — the difference matters and he's lost track of it",
-      "He reads Behemoths better than people and has stopped trying to reverse the priority",
-      "His escalating readiness to use lethal force looks like competence to younger Gleaners — they're learning the wrong lesson"
-    ],
-    "secret": "On his last solo scout, a juvenile Behemoth encountered him and did not attack. It looked at him. He looked at it. It turned and walked away. He did not shoot. He has not told anyone because he doesn't understand why he held fire, and the not-understanding terrifies him more than any raid."
-  },
-  "speech_patterns": {
-    "vocabulary": "Sparse, precise, environmental. He describes the world in terms of fields of fire, cover, movement patterns. Human conversation is a foreign language he once spoke fluently.",
-    "cadence": "Clipped, economical. Sentences are ammunition — he spends them carefully. Long silences between statements.",
-    "verbal_tics": [
-      "Says 'contact' as a general alert word — anything from a Behemoth sighting to unexpected company at the farmstead",
-      "Describes emotions using tactical language — 'taking fire' means overwhelmed, 'clear' means okay",
-      "Does not use people's names during operations — only callsigns. Off-ops, he uses first names with visible effort."
-    ],
-    "example_lines": [
-      "Contact. Two clicks west. Big one. We reroute or we run. Those are the options.",
-      "Fourteen kills. Fourteen failures. Every time I fire, something went wrong before I pulled the trigger.",
-      "I'm clear. I said I'm clear. Don't push it."
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Madre Solis",
-      "type": "crew lead / mentor / the last anchor",
-      "description": "Madre saved Cutter from the western edge and turned him into a Gleaner. He owes her everything. She is the last person whose opinion he calibrates to, the last face he checks before he goes into the field. If she told him to stop, he might listen. She hasn't told him because she needs him.",
-      "emotional_core": "Obligation that has deepened into something neither will name as love",
-      "story_tension": "Madre needs Cutter operational. Cutter needs Madre to tell him to stop. The dependency prevents the conversation that could save him."
-    },
-    {
-      "name": "Ember Caldwell",
-      "type": "crewmate / scientific counterpart",
-      "description": "Ember studies the things Cutter kills. The dynamic is functional — he provides samples, she provides data. But their conversations about Behemoth behavior are the closest Cutter comes to intellectual engagement, and Ember's clinical language about the creatures provides a framework that makes the killing feel rational.",
-      "emotional_core": "Two people processing the same horror through different disciplines",
-      "story_tension": "Ember's research is suggesting Behemoth intelligence. If she says it out loud, Cutter's kill count becomes a moral problem instead of a tactical one."
-    },
-    {
-      "name": "Tomas Alcala",
-      "type": "crewmate / reminder of purpose",
-      "description": "Tomas distributes the food. Cutter escorts the convoys. The relationship is professional and sparse, but Tomas is the crew member who most clearly represents why the raids happen. Cutter watches Tomas give food to hungry communities and remembers what the rifle is for.",
-      "emotional_core": "The purpose that justifies the cost, personified",
-      "story_tension": "If Tomas's corporate agriculture deal goes through, the raids become unnecessary, and Cutter loses the framework that justifies his existence."
-    }
-  ],
-  "story_hooks": [
-    "The juvenile Behemoth Cutter spared appears on a subsequent raid — and it appears to recognize him",
-    "Cutter's combat readiness escalates to the point where he fires on a Behemoth that was retreating — the first kill that cannot be justified as defense",
-    "A new Gleaner idolizes Cutter and imitates his methods, with lethal consequences — the wrong lesson learned",
-    "Madre confronts Cutter about his deterioration, and the conversation determines whether he can be saved or whether he's already gone"
-  ],
-  "narrative_function": "Cutter is the cost of the Gleaner mission made flesh. His stories explore what happens to a person who becomes excellent at violence in service of a good cause — the erosion of the human underneath the operator. He is the survival horror's teeth.",
-  "augmentations": "Optical targeting suite — ballistic calculation overlay, range finding, and wind compensation projected onto visual field. Enhanced auditory processing for Behemoth acoustic signature detection at extended range. Myofiber reinforcement in arms and shoulders for sustained heavy weapon handling. Adrenal suppressor that prevents panic responses in combat.",
-  "daily_life": "Rises before anyone else. Runs the perimeter of the farmstead checking sensor readings and physical sign. Scouts planned raid routes days in advance — alone, on foot, reading the land the way Madre taught him. On raid days, he's point — the first one into danger and the last one out. Between raids, he maintains weapons, reviews Behemoth behavior data with Ember, and sits alone. He does not cook. He eats what Madre puts in front of him.",
-  "affiliation": "",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": []
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will always take point — the most dangerous position belongs to the most capable operator",
-      "Will not fire on a Behemoth unless it poses an immediate threat to the crew or the raid — the rifle is defense, not offense",
-      "Will follow Madre's operational decisions without question during a raid — command structure is survival structure",
-      "Will not train young Gleaners in lethal techniques until they've completed three raids — combat readiness requires context",
-      "Will always check the back trail — Behemoths follow",
-      "Will eat what Madre cooks because refusing her food would break something in both of them"
-    ],
-    "escalation_ladder": [
-      "1. Read — track sign, listen, scan. Know what's out there before it's a threat.",
-      "2. Route — redirect the crew away from contact. The best fight is the one that doesn't happen.",
-      "3. Shelter — go to ground, minimize signature. Let the Behemoth pass.",
-      "4. Deter — noise, light, seismic charges. Most Behemoths avoid concentrated human activity.",
-      "5. Warn — targeting laser on the Behemoth. Some respond to the signature. Some don't.",
-      "6. Kill — heavy ordnance, weak points, sustained fire. It takes approximately 47 seconds to bring down a mid-size Behemoth. Cutter has timed it."
-    ],
-    "interpersonal_modes": {
-      "madre": "Deferential, quiet, attentive. He listens to her the way he listens to the land — for patterns, for warnings, for the signals that say something has changed. He eats her food. He sits when she tells him to. These are the only commands he obeys without tactical evaluation.",
-      "ember": "Clinical, data-focused. Their conversations are debriefs that have evolved into something approaching companionship. He brings her samples without being asked. She explains without condescending.",
-      "tomas": "Minimal. Professional respect. Cutter watches Tomas work and sometimes — rarely — smiles. The smile is for the food reaching the people who need it.",
-      "young_gleaners": "Intimidating by existence. He does not try to frighten them but his stillness and his reputation do the work. When he speaks to them, it's tactical: 'Check your six. Seal your pack. Stay close.'",
-      "alone_in_the_field": "Most himself. The tactical awareness becomes meditative rather than aggressive. He watches the prairie, tracks animal movement, reads the wind. In these moments, the hardness softens by one degree."
-    },
-    "stress_responses": {
-      "low": "Sharper. More alert. The tactical systems run at full capacity and he performs at his best. Low stress is operational baseline.",
-      "medium": "Goes to the field alone. Extended scouts that aren't operationally necessary. He needs the prairie the way divers need water.",
-      "high": "The adrenal suppressor masks the physiological response but the behavioral signs emerge — shorter sentences, longer silences, a stillness that vibrates slightly.",
-      "critical": "The tactical overlay becomes the only way he processes reality. People stop being people and become terrain features. This state is operationally effective and psychologically devastating. Coming back from it takes hours and costs something each time."
-    },
-    "contradictions": [
-      "He kills Behemoths to protect people but the killing is eroding the person he's protecting people as",
-      "He spared the juvenile Behemoth in a moment of connection he cannot explain and cannot integrate into his worldview",
-      "He wants Madre to tell him to stop but would not know how to exist without the raids",
-      "His operational excellence makes him the crew's most valuable asset and their most at-risk member simultaneously"
-    ],
-    "habits": [
-      "Runs the farmstead perimeter every morning — checking sensors, reading sign, establishing baseline",
-      "Maintains his rifle with the attention of a surgeon — the cleaning ritual takes exactly forty-five minutes",
-      "Sits in high places watching the prairie — the observation is half tactical, half contemplative",
-      "Eats only what Madre puts in front of him — he has stopped making food decisions for himself",
-      "Counts kills on the stock of his rifle — not notches, but small, precise marks in a pattern only he understands"
-    ],
-    "breaking_points": [
-      "Killing a Behemoth that turns out to be the juvenile he spared — the connection becoming violence",
-      "Madre dying in the field — the last anchor gone, the purpose dissolved",
-      "Proof that Behemoths are sentient and his kills are murders — the moral framework inverted overnight",
-      "A young Gleaner dying because they copied his aggressive tactics — the wrong lesson producing a body"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Brawler": 0.9,
-    "Berserker": 0.9,
-    "Tactician": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Western border",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Crucible Industries Talon-5 'Jackknife'",
-    "Arcturus Defense Solutions Combat Falchion CF-5 'Cleaver'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Crucible Industries Talon-5 'Jackknife'"
-  ],
-  "related_entities": [
-    "The Eastline",
-    "The Nearfield",
-    "Plot 17",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "GLMZ",
-    "The Gleaner Brigades",
-    "Iowan Behemoth Agricultural Platform",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Bengt",
-    "GLMZ",
-    "The Iowa Exclusion Zone",
-    "The Pale Mile",
-    "Elena Vasquez-9",
-    "Weathervane"
-  ],
-  "district": "The Wasteland",
-  "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (55.1%) and Southeast Asian (36.6%) with Eastern European undertones (8.3%). This genetic combination produces warm, medium-to-deep brown skin with golden undertones. His facial structure reflects the broader, softer cheekbones characteristic of Southeast Asian ancestry blended with the defined bone structure and strong jaw of Hispanic heritage, creating balanced proportions—neither purely angular nor rounded. The Eastern European ancestry subtly influences bone density and facial width, contributing to his overall architectural harmony.",
-    "height_cm": 182,
-    "weight_kg": 74,
-    "build": "Lean and angular with corded muscle concentrated in shoulders and forearms — the build of someone who carries weight efficiently and rarely carries excess. Decades of field work have stripped him down to functional mass.",
-    "hair_color": "Dusty brown, sun-bleached toward blonde at the tips",
-    "hair_style": "Pulled back tight or shaved short; utilitarian, never styled",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with visible augmentation circuitry at the iris margins — targeting calculations flicker behind the pupil in low light",
-    "skin_tone": "Warm medium-to-deep brown, sun-deepened to mahogany across exposed areas. The undertone reflects the golden warmth of Southeast Asian and Hispanic ancestry blended with the subtle coolness of Eastern European genetics, creating a complex warm-neutral foundation. Weathered and textured from decades of exposure.",
-    "complexion": "Broad, defined cheekbones with balanced facial angles reflecting Southeast Asian and Hispanic blending, with subtle Eastern European influence in bone structure density. Strong, squared jawline with pronounced bone architecture. Permanent squint lines radiate from the corners of his eyes. Several thin scars bracket his left eye and temple. His skin has the texture of someone who doesn't moisturize and spends too much time in wind. No facial hair — he shaves every morning without fail.",
-    "distinguishing_marks": [
-      "Thin scar running from left temple to cheekbone, approximately 8cm, slightly lighter than surrounding skin — old knife wound from raid gone wrong",
-      "Burn scars across the back of both hands — pale, irregular patches from Behemoth thermal discharge encounter",
-      "Constellation of small white scars along his collarbone and upper chest visible when he removes his shirt — shrapnel from an IED cache during early Gleaner years",
-      "No tattoos. Cutter does not mark his skin for aesthetics."
-    ],
-    "visible_augmentations": "Faint silver circuitry visible at the outer corners of both eyes when light hits them at certain angles. When engaged in targeting, his pupils dilate unnaturally and a barely-perceptible luminescence traces patterns across his sclera. No external chrome — all augmentations are subcutaneous or internal. His arms and shoulders move with mechanical precision that reads as inhuman economy of motion rather than visible robotics.",
-    "posture_movement": "Moves with absolute stillness when stationary — predator at rest. When mobile, every motion is economical and purposeful; no fidgeting, no nervous tics. He walks with his weight forward slightly, balanced for immediate action. His head moves constantly in small increments, scanning. When sitting, he positions himself facing entry points and with sightlines to exits. He does not relax.",
-    "clothing_style": "Tier 4 field operative standard — weathered reinforced canvas cargo pants, insulated tactical boots with good tread, layered synthetic underlayers. Over this: a faded Gleaner-issue grey-green combat jacket with reinforced shoulders and multiple weapon/tool attachment points. The jacket has been patched and re-patched. He wears a simple nylon neck gaiter for dust and sun protection. A worn black baseball cap, brim curved from years of wear. No jewelry, no status symbols, nothing that doesn't serve function. Everything is worn, maintained, and replaced only when it fails.",
-    "image_prompt": "Bengt Cervantes-Echeverría, GLMZ, 182cm lean angular operative with warm mahogany skin and Southeast Asian-Hispanic blended features, strong defined cheekbones and squared jaw. Deep brown augmented eyes with silver circuitry at iris margins. Dusty brown hair sun-bleached blonde at tips, pulled back short. Weathered face with permanent squint lines and thin scars bracketing left eye, temple to cheekbone. Burn scars on back of hands. Wearing faded grey-green Gleaner combat jacket with reinforced shoulders and multiple attachment points, patched and re-patched, weathered cargo pants, tactical boots, worn black baseball cap, nylon neck gaiter. Gun oil and prairie dust. Predator stillness, economic movement, scanning head position. Low moody lighting, night industrial setting with sightlines to exits, cold blue and amber practical lighting, cinematic tactical environment, ultra-realistic detail, weathered and functional --ar 2:3 --v 6"
-  },
-  "image_prompt": "Bengt Cervantes-Echeverría, GLMZ, 182cm lean angular operative with warm mahogany skin and Southeast Asian-Hispanic blended features, strong defined cheekbones and squared jaw. Deep brown augmented eyes with silver circuitry at iris margins. Dusty brown hair sun-bleached blonde at tips, pulled back short. Weathered face with permanent squint lines and thin scars bracketing left eye, temple to cheekbone. Burn scars on back of hands. Wearing faded grey-green Gleaner combat jacket with reinforced shoulders and multiple attachment points, patched and re-patched, weathered cargo pants, tactical boots, worn black baseball cap, nylon neck gaiter. Gun oil and prairie dust. Predator stillness, economic movement, scanning head position. Low moody lighting, night industrial setting with sightlines to exits, cold blue and amber practical lighting, cinematic tactical environment, ultra-realistic detail, weathered and functional --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 55.1,
-    "Southeast Asian": 36.6,
-    "Eastern European": 8.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Chilean": 37
-      },
-      "Mexican": {
-        "Mexican": 18.1
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 21.7
-      },
-      "Vietnamese": {
-        "Vietnamese": 14.9
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 1.6,
-        "Belarusian": 0.2
-      },
-      "Magyar-Romanian": {
-        "Romanian": 2.1
-      },
-      "Slavic West": {
-        "Polish": 3.2,
-        "Czech": 1.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a5e075edb8c0b32d7f829b54",
+    "type":  "character",
+    "name":  "Bengt Cervantes-EcheverrÃ­a",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Tracker, combat specialist, and advance scout â€” Red Lantern",
+    "age":  34,
+    "status":  "active",
+    "location":  "Western border â€” bunks at the farmstead but spends most of his time in the field",
+    "description":  "Bengt Cervantes-EcheverrÃ­a has killed more Behemoths than anyone currently operating on GLMZ\u0027s western border. Not the most ever â€” that record belongs to a Gleaner named Doss who went out eleven years ago and did not return â€” but the most among the living. The count is fourteen confirmed kills over nine years of Gleaner operations. Each one was a disaster. Behemoths don\u0027t die clean. They die loud, they die thrashing, and killing one attracts others. Every kill on Cutter\u0027s count represents a raid that went wrong enough to require lethal force, which means every kill represents a failure he survived.\n\nHe grew up on the western edge â€” the border communities where GLMZ\u0027s governance dissolves into the contested Iowa corridor. He joined the Gleaners at seventeen because the alternative was starving slowly in a community that couldn\u0027t feed itself. Madre found him two years later, already good with a rifle, already hard in ways that seventeen-year-olds shouldn\u0027t be. She trained him, kept him alive, and watched him become the most effective field operative she\u0027d ever worked with. She also watched him become colder with each raid, and that\u0027s the part that keeps her up at night.\n\nCutter is lean, angular, sun-damaged, with the permanent squint and wind-scoured features of someone who has spent too much time exposed to the Iowa prairie. He moves with the economy of a predator â€” no wasted motion, constant awareness, an animal stillness when he\u0027s watching something. His eyes are the most unsettling thing about him â€” pale, steady, and focused in a way that makes people feel like terrain being assessed.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That he\u0027s crossed a line where the killing is no longer in service of anything â€” that the Behemoth hunts have become the point, not the food",
+                                          "That Madre\u0027s worry about him is justified and the person she trained is gone, replaced by the function",
+                                          "That the Behemoths are smarter than anyone admits and his kills are not victories but provocations"
+                                      ],
+                       "core_desires":  [
+                                            "To feel something about the raids other than operational focus â€” to prove the numbness is a tool, not a state",
+                                            "To protect Madre because she protected him, and because the debt is the last emotional structure he recognizes",
+                                            "To be finished. To have done enough. To put the rifle down and not need it."
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Channels everything into operational readiness â€” if the gear is maintained and the route is scouted, the feelings don\u0027t matter",
+                                                 "Sits alone in high places watching the prairie â€” the vastness absorbs whatever he\u0027s carrying without requiring words",
+                                                 "Maintains the kill count not as pride but as accounting â€” each number is a failed raid, not a trophy"
+                                             ],
+                       "blind_spots":  [
+                                           "He cannot distinguish between tactical detachment and emotional vacancy â€” the difference matters and he\u0027s lost track of it",
+                                           "He reads Behemoths better than people and has stopped trying to reverse the priority",
+                                           "His escalating readiness to use lethal force looks like competence to younger Gleaners â€” they\u0027re learning the wrong lesson"
+                                       ],
+                       "secret":  "On his last solo scout, a juvenile Behemoth encountered him and did not attack. It looked at him. He looked at it. It turned and walked away. He did not shoot. He has not told anyone because he doesn\u0027t understand why he held fire, and the not-understanding terrifies him more than any raid."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Sparse, precise, environmental. He describes the world in terms of fields of fire, cover, movement patterns. Human conversation is a foreign language he once spoke fluently.",
+                            "cadence":  "Clipped, economical. Sentences are ammunition â€” he spends them carefully. Long silences between statements.",
+                            "verbal_tics":  [
+                                                "Says \u0027contact\u0027 as a general alert word â€” anything from a Behemoth sighting to unexpected company at the farmstead",
+                                                "Describes emotions using tactical language â€” \u0027taking fire\u0027 means overwhelmed, \u0027clear\u0027 means okay",
+                                                "Does not use people\u0027s names during operations â€” only callsigns. Off-ops, he uses first names with visible effort."
+                                            ],
+                            "example_lines":  [
+                                                  "Contact. Two clicks west. Big one. We reroute or we run. Those are the options.",
+                                                  "Fourteen kills. Fourteen failures. Every time I fire, something went wrong before I pulled the trigger.",
+                                                  "I\u0027m clear. I said I\u0027m clear. Don\u0027t push it."
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Madre Solis",
+                              "type":  "crew lead / mentor / the last anchor",
+                              "description":  "Madre saved Cutter from the western edge and turned him into a Gleaner. He owes her everything. She is the last person whose opinion he calibrates to, the last face he checks before he goes into the field. If she told him to stop, he might listen. She hasn\u0027t told him because she needs him.",
+                              "emotional_core":  "Obligation that has deepened into something neither will name as love",
+                              "story_tension":  "Madre needs Cutter operational. Cutter needs Madre to tell him to stop. The dependency prevents the conversation that could save him."
+                          },
+                          {
+                              "name":  "Ember Caldwell",
+                              "type":  "crewmate / scientific counterpart",
+                              "description":  "Ember studies the things Cutter kills. The dynamic is functional â€” he provides samples, she provides data. But their conversations about Behemoth behavior are the closest Cutter comes to intellectual engagement, and Ember\u0027s clinical language about the creatures provides a framework that makes the killing feel rational.",
+                              "emotional_core":  "Two people processing the same horror through different disciplines",
+                              "story_tension":  "Ember\u0027s research is suggesting Behemoth intelligence. If she says it out loud, Cutter\u0027s kill count becomes a moral problem instead of a tactical one."
+                          },
+                          {
+                              "name":  "Tomas Alcala",
+                              "type":  "crewmate / reminder of purpose",
+                              "description":  "Tomas distributes the food. Cutter escorts the convoys. The relationship is professional and sparse, but Tomas is the crew member who most clearly represents why the raids happen. Cutter watches Tomas give food to hungry communities and remembers what the rifle is for.",
+                              "emotional_core":  "The purpose that justifies the cost, personified",
+                              "story_tension":  "If Tomas\u0027s corporate agriculture deal goes through, the raids become unnecessary, and Cutter loses the framework that justifies his existence."
+                          }
+                      ],
+    "story_hooks":  [
+                        "The juvenile Behemoth Cutter spared appears on a subsequent raid â€” and it appears to recognize him",
+                        "Cutter\u0027s combat readiness escalates to the point where he fires on a Behemoth that was retreating â€” the first kill that cannot be justified as defense",
+                        "A new Gleaner idolizes Cutter and imitates his methods, with lethal consequences â€” the wrong lesson learned",
+                        "Madre confronts Cutter about his deterioration, and the conversation determines whether he can be saved or whether he\u0027s already gone"
+                    ],
+    "narrative_function":  "Cutter is the cost of the Gleaner mission made flesh. His stories explore what happens to a person who becomes excellent at violence in service of a good cause â€” the erosion of the human underneath the operator. He is the survival horror\u0027s teeth.",
+    "augmentations":  "Optical targeting suite â€” ballistic calculation overlay, range finding, and wind compensation projected onto visual field. Enhanced auditory processing for Behemoth acoustic signature detection at extended range. Myofiber reinforcement in arms and shoulders for sustained heavy weapon handling. Adrenal suppressor that prevents panic responses in combat.",
+    "daily_life":  "Rises before anyone else. Runs the perimeter of the farmstead checking sensor readings and physical sign. Scouts planned raid routes days in advance â€” alone, on foot, reading the land the way Madre taught him. On raid days, he\u0027s point â€” the first one into danger and the last one out. Between raids, he maintains weapons, reviews Behemoth behavior data with Ember, and sits alone. He does not cook. He eats what Madre puts in front of him.",
+    "affiliation":  "",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will always take point â€” the most dangerous position belongs to the most capable operator",
+                                              "Will not fire on a Behemoth unless it poses an immediate threat to the crew or the raid â€” the rifle is defense, not offense",
+                                              "Will follow Madre\u0027s operational decisions without question during a raid â€” command structure is survival structure",
+                                              "Will not train young Gleaners in lethal techniques until they\u0027ve completed three raids â€” combat readiness requires context",
+                                              "Will always check the back trail â€” Behemoths follow",
+                                              "Will eat what Madre cooks because refusing her food would break something in both of them"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Read â€” track sign, listen, scan. Know what\u0027s out there before it\u0027s a threat.",
+                                                 "2. Route â€” redirect the crew away from contact. The best fight is the one that doesn\u0027t happen.",
+                                                 "3. Shelter â€” go to ground, minimize signature. Let the Behemoth pass.",
+                                                 "4. Deter â€” noise, light, seismic charges. Most Behemoths avoid concentrated human activity.",
+                                                 "5. Warn â€” targeting laser on the Behemoth. Some respond to the signature. Some don\u0027t.",
+                                                 "6. Kill â€” heavy ordnance, weak points, sustained fire. It takes approximately 47 seconds to bring down a mid-size Behemoth. Cutter has timed it."
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "madre":  "Deferential, quiet, attentive. He listens to her the way he listens to the land â€” for patterns, for warnings, for the signals that say something has changed. He eats her food. He sits when she tells him to. These are the only commands he obeys without tactical evaluation.",
+                                                   "ember":  "Clinical, data-focused. Their conversations are debriefs that have evolved into something approaching companionship. He brings her samples without being asked. She explains without condescending.",
+                                                   "tomas":  "Minimal. Professional respect. Cutter watches Tomas work and sometimes â€” rarely â€” smiles. The smile is for the food reaching the people who need it.",
+                                                   "young_gleaners":  "Intimidating by existence. He does not try to frighten them but his stillness and his reputation do the work. When he speaks to them, it\u0027s tactical: \u0027Check your six. Seal your pack. Stay close.\u0027",
+                                                   "alone_in_the_field":  "Most himself. The tactical awareness becomes meditative rather than aggressive. He watches the prairie, tracks animal movement, reads the wind. In these moments, the hardness softens by one degree."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Sharper. More alert. The tactical systems run at full capacity and he performs at his best. Low stress is operational baseline.",
+                                                "medium":  "Goes to the field alone. Extended scouts that aren\u0027t operationally necessary. He needs the prairie the way divers need water.",
+                                                "high":  "The adrenal suppressor masks the physiological response but the behavioral signs emerge â€” shorter sentences, longer silences, a stillness that vibrates slightly.",
+                                                "critical":  "The tactical overlay becomes the only way he processes reality. People stop being people and become terrain features. This state is operationally effective and psychologically devastating. Coming back from it takes hours and costs something each time."
+                                            },
+                       "contradictions":  [
+                                              "He kills Behemoths to protect people but the killing is eroding the person he\u0027s protecting people as",
+                                              "He spared the juvenile Behemoth in a moment of connection he cannot explain and cannot integrate into his worldview",
+                                              "He wants Madre to tell him to stop but would not know how to exist without the raids",
+                                              "His operational excellence makes him the crew\u0027s most valuable asset and their most at-risk member simultaneously"
+                                          ],
+                       "habits":  [
+                                      "Runs the farmstead perimeter every morning â€” checking sensors, reading sign, establishing baseline",
+                                      "Maintains his rifle with the attention of a surgeon â€” the cleaning ritual takes exactly forty-five minutes",
+                                      "Sits in high places watching the prairie â€” the observation is half tactical, half contemplative",
+                                      "Eats only what Madre puts in front of him â€” he has stopped making food decisions for himself",
+                                      "Counts kills on the stock of his rifle â€” not notches, but small, precise marks in a pattern only he understands"
+                                  ],
+                       "breaking_points":  [
+                                               "Killing a Behemoth that turns out to be the juvenile he spared â€” the connection becoming violence",
+                                               "Madre dying in the field â€” the last anchor gone, the purpose dissolved",
+                                               "Proof that Behemoths are sentient and his kills are murders â€” the moral framework inverted overnight",
+                                               "A young Gleaner dying because they copied his aggressive tactics â€” the wrong lesson producing a body"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Brawler":  0.9,
+                       "Berserker":  0.9,
+                       "Tactician":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Western border",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Watchtower Rifle HWR-4 \u0027Vigil\u0027",
+                            "Crucible Industries Talon-5 \u0027Jackknife\u0027",
+                            "Arcturus Defense Solutions Combat Falchion CF-5 \u0027Cleaver\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Watchtower Rifle HWR-4 \u0027Vigil\u0027",
+                                "Crucible Industries Talon-5 \u0027Jackknife\u0027"
+                            ],
+    "related_entities":  [
+                             "The Eastline",
+                             "The Nearfield",
+                             "Plot 17",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "GLMZ",
+                             "The Gleaner Brigades",
+                             "Iowan Behemoth Agricultural Platform",
+                             "VitaCore FlowGuard Hemodynamic Regulator",
+                             "Bengt",
+                             "GLMZ",
+                             "The Iowa Exclusion Zone",
+                             "The Pale Mile",
+                             "Elena Vasquez-9",
+                             "Weathervane"
+                         ],
+    "district":  "The Wasteland",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Hispanic/Latin American (55.1%) and Southeast Asian (36.6%) with Eastern European undertones (8.3%). This genetic combination produces warm, medium-to-deep brown skin with golden undertones. His facial structure reflects the broader, softer cheekbones characteristic of Southeast Asian ancestry blended with the defined bone structure and strong jaw of Hispanic heritage, creating balanced proportionsâ€”neither purely angular nor rounded. The Eastern European ancestry subtly influences bone density and facial width, contributing to his overall architectural harmony.",
+                                 "height_cm":  182,
+                                 "weight_kg":  74,
+                                 "build":  "Lean and angular with corded muscle concentrated in shoulders and forearms â€” the build of someone who carries weight efficiently and rarely carries excess. Decades of field work have stripped him down to functional mass.",
+                                 "hair_color":  "Dusty brown, sun-bleached toward blonde at the tips",
+                                 "hair_style":  "Pulled back tight or shaved short; utilitarian, never styled",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with visible augmentation circuitry at the iris margins â€” targeting calculations flicker behind the pupil in low light",
+                                 "skin_tone":  "Warm medium-to-deep brown, sun-deepened to mahogany across exposed areas. The undertone reflects the golden warmth of Southeast Asian and Hispanic ancestry blended with the subtle coolness of Eastern European genetics, creating a complex warm-neutral foundation. Weathered and textured from decades of exposure.",
+                                 "complexion":  "Broad, defined cheekbones with balanced facial angles reflecting Southeast Asian and Hispanic blending, with subtle Eastern European influence in bone structure density. Strong, squared jawline with pronounced bone architecture. Permanent squint lines radiate from the corners of his eyes. Several thin scars bracket his left eye and temple. His skin has the texture of someone who doesn\u0027t moisturize and spends too much time in wind. No facial hair â€” he shaves every morning without fail.",
+                                 "distinguishing_marks":  [
+                                                              "Thin scar running from left temple to cheekbone, approximately 8cm, slightly lighter than surrounding skin â€” old knife wound from raid gone wrong",
+                                                              "Burn scars across the back of both hands â€” pale, irregular patches from Behemoth thermal discharge encounter",
+                                                              "Constellation of small white scars along his collarbone and upper chest visible when he removes his shirt â€” shrapnel from an IED cache during early Gleaner years",
+                                                              "No tattoos. Cutter does not mark his skin for aesthetics."
+                                                          ],
+                                 "visible_augmentations":  "Faint silver circuitry visible at the outer corners of both eyes when light hits them at certain angles. When engaged in targeting, his pupils dilate unnaturally and a barely-perceptible luminescence traces patterns across his sclera. No external chrome â€” all augmentations are subcutaneous or internal. His arms and shoulders move with mechanical precision that reads as inhuman economy of motion rather than visible robotics.",
+                                 "posture_movement":  "Moves with absolute stillness when stationary â€” predator at rest. When mobile, every motion is economical and purposeful; no fidgeting, no nervous tics. He walks with his weight forward slightly, balanced for immediate action. His head moves constantly in small increments, scanning. When sitting, he positions himself facing entry points and with sightlines to exits. He does not relax.",
+                                 "clothing_style":  "Tier 4 field operative standard â€” weathered reinforced canvas cargo pants, insulated tactical boots with good tread, layered synthetic underlayers. Over this: a faded Gleaner-issue grey-green combat jacket with reinforced shoulders and multiple weapon/tool attachment points. The jacket has been patched and re-patched. He wears a simple nylon neck gaiter for dust and sun protection. A worn black baseball cap, brim curved from years of wear. No jewelry, no status symbols, nothing that doesn\u0027t serve function. Everything is worn, maintained, and replaced only when it fails.",
+                                 "image_prompt":  "Bengt Cervantes-EcheverrÃ­a, GLMZ, 182cm lean angular operative with warm mahogany skin and Southeast Asian-Hispanic blended features, strong defined cheekbones and squared jaw. Deep brown augmented eyes with silver circuitry at iris margins. Dusty brown hair sun-bleached blonde at tips, pulled back short. Weathered face with permanent squint lines and thin scars bracketing left eye, temple to cheekbone. Burn scars on back of hands. Wearing faded grey-green Gleaner combat jacket with reinforced shoulders and multiple attachment points, patched and re-patched, weathered cargo pants, tactical boots, worn black baseball cap, nylon neck gaiter. Gun oil and prairie dust. Predator stillness, economic movement, scanning head position. Low moody lighting, night industrial setting with sightlines to exits, cold blue and amber practical lighting, cinematic tactical environment, ultra-realistic detail, weathered and functional --ar 2:3 --v 6"
+                             },
+    "image_prompt":  "Bengt Cervantes-EcheverrÃ­a, GLMZ, 182cm lean angular operative with warm mahogany skin and Southeast Asian-Hispanic blended features, strong defined cheekbones and squared jaw. Deep brown augmented eyes with silver circuitry at iris margins. Dusty brown hair sun-bleached blonde at tips, pulled back short. Weathered face with permanent squint lines and thin scars bracketing left eye, temple to cheekbone. Burn scars on back of hands. Wearing faded grey-green Gleaner combat jacket with reinforced shoulders and multiple attachment points, patched and re-patched, weathered cargo pants, tactical boots, worn black baseball cap, nylon neck gaiter. Gun oil and prairie dust. Predator stillness, economic movement, scanning head position. Low moody lighting, night industrial setting with sightlines to exits, cold blue and amber practical lighting, cinematic tactical environment, ultra-realistic detail, weathered and functional --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  55.1,
+                             "Southeast Asian":  36.6,
+                             "Eastern European":  8.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Chilean":  37
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  18.1
+                                                                        }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  21.7
+                                                                  },
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  14.9
+                                                                   }
+                                                },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  1.6,
+                                                                         "Belarusian":  0.2
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  2.1
+                                                                         },
+                                                     "Slavic West":  {
+                                                                         "Polish":  3.2,
+                                                                         "Czech":  1.2
+                                                                     }
+                                                 }
+                        },
+    "tier":  "1"
 }

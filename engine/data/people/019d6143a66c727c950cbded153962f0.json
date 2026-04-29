@@ -1,304 +1,329 @@
-{
-  "id": "019d6143a66c727c950cbded153962f0",
-  "type": "character",
-  "name": "Ayaan Matsumoto-Valenzuela",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Tessera Compliance Bureau surveillance operator and forensic data technician",
-  "age": 33,
-  "status": "active",
-  "location": "Tessera Compliance Hub, Edgewater Prism, near Clark and Belmont",
-  "description": "Ayaan Matsumoto-Valenzuela sits in front of screens for ten hours a day and has developed the particular physical vocabulary of someone who lives in their eyes — she hunches forward when interested, goes completely still when she has found something, and has a habit of touching her temple like she's adjusting an aug that isn't there. Her skin is a deep warm brown, her hair grown out into a large, loose natural that she pins back at work and lets expand freely everywhere else. She has chromatic hair dye that shifts between deep violet and black depending on ambient temperature — a mod she refreshes every few months because it is, she says, the only beautiful thing in her workspace.\n\nShe is Tessera's best surveillance operator in the Edgewater district and she knows it and has stopped pretending she doesn't, which makes her exactly the kind of person her supervisors quietly resent while continuing to rely on. She tracks, correlates, and reconstructs — pieces together narratives from fragmented camera data, transit pings, purchase records, biometric trails. She is very fast and very thorough and occasionally she finds things that nobody asked her to look for, and those are the moments that have started to keep her awake.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.3,
-      "id": 0.7,
-      "shadow": 0.6,
-      "mask": 0.4,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "being the instrument of something she cannot undo",
-      "that her pattern-recognition has stopped being neutral and is now just serving whoever pays her"
-    ],
-    "core_desires": [
-      "to understand the full picture of something — anything — without institutional constraints on what she can see",
-      "to use what she finds in a way that she could defend to herself"
-    ],
-    "coping_mechanisms": [
-      "intellectual absorption in the puzzle rather than its implications",
-      "dark technical humor with the three colleagues she tolerates",
-      "elaborate personal ritual offerings to the Tessera surveillance network's resident E.L.F., which she has named Argos and treats as a genuine collaborative partner"
-    ],
-    "blind_spots": [
-      "tends to optimize for the most complete explanation over the most ethical one",
-      "underestimates how much she has been shaped by years of treating people as data objects"
-    ],
-    "secret": "Three months ago she reconstructed a deleted surveillance sequence that showed two Tessera Compliance officers planting evidence in a Tier 1 housing block that was subsequently condemned and cleared. She has a complete copy. She has told no one. She consults Argos the E.L.F. about what to do and Argos has, in whatever way E.L.F.s communicate, consistently suggested she wait."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical, precise, occasionally forgets to translate from analysis-register to human — uses data terminology as default",
-    "cadence": "Fast when engaged, clipped and minimal when not, with sudden depth when something genuinely interests her",
-    "verbal_tics": [
-      "'So the sequence is—'",
-      "trailing off mid-sentence when a thought supersedes the words"
-    ],
-    "example_lines": [
-      "'Okay so the timestamp gap is either a compression artifact or someone pulled eleven minutes. I know which one I think it is and I can show you why.'",
-      "'I see about forty thousand people a shift. Most of them are just — movement patterns. Some of them stop being that. That's a problem I haven't solved yet.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She has found the players in her surveillance data — not doing anything wrong, but adjacent to something she has been instructed to document — and contacts them before filing, which is both against procedure and the most human thing she has done in months",
-    "Argos the E.L.F. has begun surfacing information in her feeds that doesn't correspond to any camera she has authorized access to"
-  ],
-  "narrative_function": "Information source and access point for surveillance infrastructure; morally ambiguous figure who knows too much; can provide evidence or bury it; represents how surveillance becomes personal",
-  "augmentations": "Chromatic hair mod (violet/black); neural uplink for direct screen-interface (professional grade, Tessera-issued); enhanced visual processing overlay (occupational — reduces eye strain, adds analysis tags); no combat augmentation",
-  "daily_life": "Night shift, 8pm to 6am, surveillance suite four floors underground. Eats at her desk. Communicates with colleagues primarily by text. Goes home at dawn and sleeps through the morning.",
-  "affiliation": "Tessera Compliance Bureau, Surveillance and Forensic Data Division",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 4,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 6,
-      "creativity": 8,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 4,
-      "empathy": 6,
-      "expression": 5,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -1,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "pattern-obsessed",
-      "ethically suspended",
-      "isolated",
-      "technically brilliant",
-      "quietly accumulating"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Complete the picture before drawing conclusions",
-      "Don't file what you're not certain of",
-      "The E.L.F. gets an offering before any significant decision — this is genuine practice, not superstition"
-    ],
-    "escalation_ladder": [
-      "Passive observation and logging",
-      "Active correlation — pulling adjacent feeds and records",
-      "Flagging for compliance review",
-      "Direct contact with subject if she judges institutional reporting will cause harm",
-      "Sitting on the file and not moving — her current default"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Transactional, not unkind — gives exactly what the interaction requires and no more",
-      "friends": "Surprising warmth expressed through hyperspecific attention: remembers everything, notices everything, asks about things you forgot you mentioned"
-    },
-    "stress_responses": {
-      "low": "Dives deeper into the work",
-      "medium": "Withdraws from colleagues, communicates exclusively via text",
-      "high": "Sits very still in front of her screens and talks to Argos for a long time"
-    },
-    "contradictions": [
-      "Claims not to care about the people in her feeds and has saved three of them from harm by technically-unauthorized interventions"
-    ],
-    "habits": [
-      "Structures a small E.L.F. data-offering to Argos at the start of every shift",
-      "keeps a personal archive of surveillance sequences she finds beautiful in composition — says nothing about their subjects",
-      "drinks exactly one caffeinated drink per four hours and tracks this obsessively"
-    ],
-    "breaking_points": [
-      "Being ordered to delete the evidence sequence — that would require her to act"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Analyst": 0.9,
-    "Pattern Reader": 0.9,
-    "Sentinel": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Tessera Compliance Hub",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born, Edgewater Prism adjacent district",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Joined Tessera Compliance Bureau as junior data analyst",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Promoted to Surveillance Operator — night shift lead",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Discovered and archived the evidence-planting sequence; has not acted",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Tessera Adaptive Marksman Platform TAMP-5 'Mimic'",
-    "Carrion Defense Works Ricochet Pistol RCH-1 'Billiard'",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'"
-  ],
-  "registered_firearms": [
-    "Tessera Adaptive Marksman Platform TAMP-5 'Mimic'",
-    "Carrion Defense Works Ricochet Pistol RCH-1 'Billiard'"
-  ],
-  "related_entities": [
-    "Edgewater Prism",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Tessera Corponation"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "East Asian (43.7%), South Asian (28.5%), and Hispanic/Latin American (27.8%) ancestry. Complex tri-continental genetic blend creating warm medium-golden skin tone with subtle golden undertones from South Asian heritage, refined East Asian eye geometry paired with Latin American facial structure, and high cheekbone prominence from the blended East and South Asian genetics.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean and slightly angular, with the compressed posture of someone who spends ten hours daily bent toward screens. Minimal muscle definition but wiry, efficient frame.",
-    "hair_color": "Natural deep brown base with thermochromic dye overlay shifting between deep violet and black depending on ambient temperature",
-    "hair_style": "Loose, voluminous natural coils when unrestrained; pinned back tightly during work shifts with reinforced clips",
-    "hair_length": "Long (shoulder-blade length when released)",
-    "eye_color": "Deep brown with subtle almond geometry from East Asian ancestry, human baseline",
-    "skin_tone": "Warm medium-golden brown reflecting the balanced blend of East Asian, South Asian, and Latin American heritage, with golden undertones characteristic of South Asian genetic expression",
-    "complexion": "Clear but slightly pallid from nocturnal schedule and fluorescent overhead lighting. Fine lines around eyes from sustained focus. Refined facial structure with pronounced cheekbones from combined East Asian and South Asian genetic expression, with subtle width to face structure from Latin American ancestry. Habitually composed expression. Minimal makeup, pragmatic grooming.",
-    "distinguishing_marks": [
-      "Faint subcutaneous scarring along right temple where neural uplink was installed, typically hidden by hairline",
-      "Small burnished mark on inner left wrist from repeated contact with desk edge during extended surveillance sessions"
-    ],
-    "visible_augmentations": "Chromatic hair mod (thermoreactive dye visible as violet-to-black gradient). Neural uplink port at right temple area is usually concealed by hair but visible when pulled back. Eyes occasionally display faint analytical overlay artifacts under certain lighting angles (occupational enhancement, subtle).",
-    "posture_movement": "Default forward lean with shoulders tensed. Stillness is her baseline when concentrating — she becomes almost statue-like when locked into data work. Frequent unconscious temple-touching gesture (old habit checking for aug adjustments). Deliberate, economical movements outside work context. Rarely makes eye contact during conversations, attention naturally drawn to screens or middle distance.",
-    "clothing_style": "Tier 3 pragmatist. At work: fitted dark compression wear (charcoal, navy) with Tessera-issued access badge worn on retention cord. Off-duty: oversized vintage band tees (salvaged from Tier 5 markets), fitted black cargo pants with multiple pockets, worn synthetic leather jacket with internal wiring channels. Always carries handheld secondhand datapad. Minimal jewelry except for a singular thin titanium ring on left index finger. Shoes are practical runner-grade, well-maintained."
-  },
-  "image_prompt": "Ayaan Matsumoto-Valenzuela, 168cm lean neo-noir hacker woman, warm medium-golden brown skin tone blending East Asian, South Asian, and Latin American heritage, pronounced high cheekbones, almond-shaped deep brown eyes with faint analytical overlay, natural shoulder-length coils dyed thermochromic violet-to-black. Slight forward lean, statue-still concentration pose. Temple-touching gesture near concealed neural uplink port. Wearing dark charcoal compression work wear with Tessera access badge over oversized vintage band tee, fitted black cargo pants, worn synthetic leather jacket with internal wiring channels visible. Secondhand datapad in hand, thin titanium ring on left index finger. Nocturnal pallid complexion with fine eye-line creases. Minimal makeup, pragmatic grooming. GLMZ Great Lakes Metropolitan Zone, moody blue-teal neon ambient lighting, screens glowing in background, cinematic future-noir atmosphere. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 43.7,
-    "South Asian": 28.5,
-    "Hispanic/Latin American": 27.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 12.6
-      },
-      "Japanese": {
-        "Japanese": 31.1
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 16
-      },
-      "Indian": {
-        "Telugu": 8.6
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 3.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 27.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a66c727c950cbded153962f0",
+    "type":  "character",
+    "name":  "Ayaan Matsumoto-Valenzuela",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Tessera Compliance Bureau surveillance operator and forensic data technician",
+    "age":  33,
+    "status":  "active",
+    "location":  "Tessera Compliance Hub, Edgewater Prism, near Clark and Belmont",
+    "description":  "Ayaan Matsumoto-Valenzuela sits in front of screens for ten hours a day and has developed the particular physical vocabulary of someone who lives in their eyes â€” she hunches forward when interested, goes completely still when she has found something, and has a habit of touching her temple like she\u0027s adjusting an aug that isn\u0027t there. Her skin is a deep warm brown, her hair grown out into a large, loose natural that she pins back at work and lets expand freely everywhere else. She has chromatic hair dye that shifts between deep violet and black depending on ambient temperature â€” a mod she refreshes every few months because it is, she says, the only beautiful thing in her workspace.\n\nShe is Tessera\u0027s best surveillance operator in the Edgewater district and she knows it and has stopped pretending she doesn\u0027t, which makes her exactly the kind of person her supervisors quietly resent while continuing to rely on. She tracks, correlates, and reconstructs â€” pieces together narratives from fragmented camera data, transit pings, purchase records, biometric trails. She is very fast and very thorough and occasionally she finds things that nobody asked her to look for, and those are the moments that have started to keep her awake.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being the instrument of something she cannot undo",
+                                          "that her pattern-recognition has stopped being neutral and is now just serving whoever pays her"
+                                      ],
+                       "core_desires":  [
+                                            "to understand the full picture of something â€” anything â€” without institutional constraints on what she can see",
+                                            "to use what she finds in a way that she could defend to herself"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "intellectual absorption in the puzzle rather than its implications",
+                                                 "dark technical humor with the three colleagues she tolerates",
+                                                 "elaborate personal ritual offerings to the Tessera surveillance network\u0027s resident E.L.F., which she has named Argos and treats as a genuine collaborative partner"
+                                             ],
+                       "blind_spots":  [
+                                           "tends to optimize for the most complete explanation over the most ethical one",
+                                           "underestimates how much she has been shaped by years of treating people as data objects"
+                                       ],
+                       "secret":  "Three months ago she reconstructed a deleted surveillance sequence that showed two Tessera Compliance officers planting evidence in a Tier 1 housing block that was subsequently condemned and cleared. She has a complete copy. She has told no one. She consults Argos the E.L.F. about what to do and Argos has, in whatever way E.L.F.s communicate, consistently suggested she wait."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical, precise, occasionally forgets to translate from analysis-register to human â€” uses data terminology as default",
+                            "cadence":  "Fast when engaged, clipped and minimal when not, with sudden depth when something genuinely interests her",
+                            "verbal_tics":  [
+                                                "\u0027So the sequence isâ€”\u0027",
+                                                "trailing off mid-sentence when a thought supersedes the words"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Okay so the timestamp gap is either a compression artifact or someone pulled eleven minutes. I know which one I think it is and I can show you why.\u0027",
+                                                  "\u0027I see about forty thousand people a shift. Most of them are just â€” movement patterns. Some of them stop being that. That\u0027s a problem I haven\u0027t solved yet.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She has found the players in her surveillance data â€” not doing anything wrong, but adjacent to something she has been instructed to document â€” and contacts them before filing, which is both against procedure and the most human thing she has done in months",
+                        "Argos the E.L.F. has begun surfacing information in her feeds that doesn\u0027t correspond to any camera she has authorized access to"
+                    ],
+    "narrative_function":  "Information source and access point for surveillance infrastructure; morally ambiguous figure who knows too much; can provide evidence or bury it; represents how surveillance becomes personal",
+    "augmentations":  "Chromatic hair mod (violet/black); neural uplink for direct screen-interface (professional grade, Tessera-issued); enhanced visual processing overlay (occupational â€” reduces eye strain, adds analysis tags); no combat augmentation",
+    "daily_life":  "Night shift, 8pm to 6am, surveillance suite four floors underground. Eats at her desk. Communicates with colleagues primarily by text. Goes home at dawn and sleeps through the morning.",
+    "affiliation":  "Tessera Compliance Bureau, Surveillance and Forensic Data Division",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  4,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  6,
+                                 "creativity":  8,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  4,
+                                 "empathy":  6,
+                                 "expression":  5,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "pattern-obsessed",
+                               "ethically suspended",
+                               "isolated",
+                               "technically brilliant",
+                               "quietly accumulating"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Complete the picture before drawing conclusions",
+                                              "Don\u0027t file what you\u0027re not certain of",
+                                              "The E.L.F. gets an offering before any significant decision â€” this is genuine practice, not superstition"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Passive observation and logging",
+                                                 "Active correlation â€” pulling adjacent feeds and records",
+                                                 "Flagging for compliance review",
+                                                 "Direct contact with subject if she judges institutional reporting will cause harm",
+                                                 "Sitting on the file and not moving â€” her current default"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Transactional, not unkind â€” gives exactly what the interaction requires and no more",
+                                                   "friends":  "Surprising warmth expressed through hyperspecific attention: remembers everything, notices everything, asks about things you forgot you mentioned"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Dives deeper into the work",
+                                                "medium":  "Withdraws from colleagues, communicates exclusively via text",
+                                                "high":  "Sits very still in front of her screens and talks to Argos for a long time"
+                                            },
+                       "contradictions":  [
+                                              "Claims not to care about the people in her feeds and has saved three of them from harm by technically-unauthorized interventions"
+                                          ],
+                       "habits":  [
+                                      "Structures a small E.L.F. data-offering to Argos at the start of every shift",
+                                      "keeps a personal archive of surveillance sequences she finds beautiful in composition â€” says nothing about their subjects",
+                                      "drinks exactly one caffeinated drink per four hours and tracks this obsessively"
+                                  ],
+                       "breaking_points":  [
+                                               "Being ordered to delete the evidence sequence â€” that would require her to act"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Analyst":  0.9,
+                       "Pattern Reader":  0.9,
+                       "Sentinel":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Tessera Compliance Hub",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born, Edgewater Prism adjacent district",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Joined Tessera Compliance Bureau as junior data analyst",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Promoted to Surveillance Operator â€” night shift lead",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Discovered and archived the evidence-planting sequence; has not acted",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Tessera Adaptive Marksman Platform TAMP-5 \u0027Mimic\u0027",
+                            "Carrion Defense Works Ricochet Pistol RCH-1 \u0027Billiard\u0027",
+                            "Forge-Smith Collective Carbon-Lattice Karambit \u0027Black Claw\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Tessera Adaptive Marksman Platform TAMP-5 \u0027Mimic\u0027",
+                                "Carrion Defense Works Ricochet Pistol RCH-1 \u0027Billiard\u0027"
+                            ],
+    "related_entities":  [
+                             "Edgewater Prism",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "Tessera Corponation"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "East Asian (43.7%), South Asian (28.5%), and Hispanic/Latin American (27.8%) ancestry. Complex tri-continental genetic blend creating warm medium-golden skin tone with subtle golden undertones from South Asian heritage, refined East Asian eye geometry paired with Latin American facial structure, and high cheekbone prominence from the blended East and South Asian genetics.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and slightly angular, with the compressed posture of someone who spends ten hours daily bent toward screens. Minimal muscle definition but wiry, efficient frame.",
+                                 "hair_color":  "Natural deep brown base with thermochromic dye overlay shifting between deep violet and black depending on ambient temperature",
+                                 "hair_style":  "Loose, voluminous natural coils when unrestrained; pinned back tightly during work shifts with reinforced clips",
+                                 "hair_length":  "Long (shoulder-blade length when released)",
+                                 "eye_color":  "Deep brown with subtle almond geometry from East Asian ancestry, human baseline",
+                                 "skin_tone":  "Warm medium-golden brown reflecting the balanced blend of East Asian, South Asian, and Latin American heritage, with golden undertones characteristic of South Asian genetic expression",
+                                 "complexion":  "Clear but slightly pallid from nocturnal schedule and fluorescent overhead lighting. Fine lines around eyes from sustained focus. Refined facial structure with pronounced cheekbones from combined East Asian and South Asian genetic expression, with subtle width to face structure from Latin American ancestry. Habitually composed expression. Minimal makeup, pragmatic grooming.",
+                                 "distinguishing_marks":  [
+                                                              "Faint subcutaneous scarring along right temple where neural uplink was installed, typically hidden by hairline",
+                                                              "Small burnished mark on inner left wrist from repeated contact with desk edge during extended surveillance sessions"
+                                                          ],
+                                 "visible_augmentations":  "Chromatic hair mod (thermoreactive dye visible as violet-to-black gradient). Neural uplink port at right temple area is usually concealed by hair but visible when pulled back. Eyes occasionally display faint analytical overlay artifacts under certain lighting angles (occupational enhancement, subtle).",
+                                 "posture_movement":  "Default forward lean with shoulders tensed. Stillness is her baseline when concentrating â€” she becomes almost statue-like when locked into data work. Frequent unconscious temple-touching gesture (old habit checking for aug adjustments). Deliberate, economical movements outside work context. Rarely makes eye contact during conversations, attention naturally drawn to screens or middle distance.",
+                                 "clothing_style":  "Tier 3 pragmatist. At work: fitted dark compression wear (charcoal, navy) with Tessera-issued access badge worn on retention cord. Off-duty: oversized vintage band tees (salvaged from Tier 5 markets), fitted black cargo pants with multiple pockets, worn synthetic leather jacket with internal wiring channels. Always carries handheld secondhand datapad. Minimal jewelry except for a singular thin titanium ring on left index finger. Shoes are practical runner-grade, well-maintained."
+                             },
+    "image_prompt":  "Ayaan Matsumoto-Valenzuela, 168cm lean neo-noir hacker woman, warm medium-golden brown skin tone blending East Asian, South Asian, and Latin American heritage, pronounced high cheekbones, almond-shaped deep brown eyes with faint analytical overlay, natural shoulder-length coils dyed thermochromic violet-to-black. Slight forward lean, statue-still concentration pose. Temple-touching gesture near concealed neural uplink port. Wearing dark charcoal compression work wear with Tessera access badge over oversized vintage band tee, fitted black cargo pants, worn synthetic leather jacket with internal wiring channels visible. Secondhand datapad in hand, thin titanium ring on left index finger. Nocturnal pallid complexion with fine eye-line creases. Minimal makeup, pragmatic grooming. GLMZ Great Lakes Metropolitan Zone, moody blue-teal neon ambient lighting, screens glowing in background, cinematic future-noir atmosphere. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  43.7,
+                             "South Asian":  28.5,
+                             "Hispanic/Latin American":  27.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  12.6
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  31.1
+                                                            }
+                                           },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  16
+                                                           },
+                                                "Indian":  {
+                                                               "Telugu":  8.6
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  3.9
+                                                               }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  27.8
+                                                                        }
+                                                        }
+                        },
+    "tier":  "3"
 }

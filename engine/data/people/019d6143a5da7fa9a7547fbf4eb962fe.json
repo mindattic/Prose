@@ -1,264 +1,285 @@
-{
-  "id": "019d6143a5da7fa9a7547fbf4eb962fe",
-  "type": "character",
-  "name": "Domitila Deshpande-Deshpande",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Gene-mod body artist and tattoo practitioner",
-  "age": 37,
-  "status": "active",
-  "location": "Pilsen Veil, near Western and Division",
-  "description": "Domitila Deshpande-Deshpande is a living portfolio. Every visible inch of their skin below the neck is a demonstration of their craft: shifting bioluminescent patterns that bloom and fade with body temperature, embedded chromatic scales along their shoulders that catch light like a starling's wing, and a full sleeve of reactive biosymbolism on their left arm that darkens in cold and brightens in warmth. They keep their face deliberately unmodified — a professional choice to let clients focus on the work, not compete with it. They are stocky and deliberate in movement, with close-cropped natural hair and dark eyes that have the quality of paying careful attention.\n\nTheir shop, Skin Liturgy, is a converted ground-floor space in a reclaimed building in Pilsen Veil, hung with examples of their work on cured synthetic skin panels. Domitila Deshpande-Deshpande approaches body modification as spiritual practice, not fashion — each piece is preceded by a long consultation they call 'reading,' in which they try to understand what a client is trying to become rather than what they think they want. This makes them slow, selective, and expensive relative to their tier, and clients come from across the city. They are professionally gentle and personally guarded, with a dry wit that emerges only when they're comfortable.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.6,
-      "id": 0.5,
-      "shadow": 0.4,
-      "mask": 0.6,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Doing irreversible harm to a client's body or sense of self",
-      "Being truly seen — the professional mask is so practiced it's become load-bearing"
-    ],
-    "core_desires": [
-      "For their work to help people inhabit themselves more fully",
-      "To finish their own body as a complete artwork — though they're not sure what 'finished' means"
-    ],
-    "coping_mechanisms": [
-      "The ritual of consultation as a way of being present with someone else's need rather than their own",
-      "Precise documentation — they photograph and archive every piece they've made"
-    ],
-    "blind_spots": [
-      "They read clients with extraordinary insight but apply almost none of that skill to their own emotional life"
-    ],
-    "secret": "Three years ago they did a significant gene-mod for a client who was clearly in a dissociative mental health crisis; they completed the work against their better judgment because the client's payment covered Skin Liturgy's rent for four months. The client disappeared afterward and Chiamaka does not know if they are alive."
-  },
-  "speech_patterns": {
-    "vocabulary": "Careful and specific, never uses approximate language about bodies or modification; unexpectedly lyrical when discussing the philosophy of their work",
-    "cadence": "Even and measured, with a quality of weighing words before releasing them",
-    "verbal_tics": [
-      "Long pauses before answering personal questions",
-      "Refers to future modifications in the present tense, as if they already exist"
-    ],
-    "example_lines": [
-      "'I'm not going to give you what you asked for. I'm going to give you what you came in for. Those are different things. Sit with that for a week and then call me.'",
-      "'The body already knows what it wants to be. My job is to listen to it better than you currently can.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client came in with a modification request that matches a pattern Chiamaka has seen on three other people in the past month — all of whom gave a different story for how they chose the design",
-    "The missing client from three years ago has resurfaced, dramatically transformed, and is leaving Chiamaka messages they find both relieving and deeply unsettling",
-    "A corponation talent acquisitions team wants to license Chiamaka's biosymbolism patterns for a mass-produced cosmetic line — the offer would solve all their financial problems and erase their artistic identity"
-  ],
-  "narrative_function": "Gateway to Pilsen Veil's art community; can identify geneware brands and quality; long-term character relationship builder; can provide physical transformation as a story beat",
-  "augmentations": "Extensive cosmetic geneware (bioluminescent dermal patterns, chromatic scale implants, reactive biosymbolism sleeve); subdermal steadying implants in their hands for fine work precision; olfactory enhancement to detect rejection responses in fresh modifications",
-  "daily_life": "Consultations by appointment only in the mornings; actual modification work in the afternoons; evenings reserved for their own ongoing self-modification and design work.",
-  "affiliation": "Independent; Skin Liturgy (own studio); loose affiliation with the Pilsen Veil Artists' Cooperative; The Reclaimed",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 10,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 9,
-      "expression": 6,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "body-artist",
-      "living-portfolio",
-      "guarded",
-      "spiritually-motivated",
-      "precision-hands"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never modifies a client they believe is in active crisis without first addressing the crisis",
-      "Never discusses one client's details with another under any circumstances"
-    ],
-    "escalation_ladder": [
-      "Becomes very still and very polite",
-      "Ends the session professionally and reschedules",
-      "Removes someone from the studio and closes for the day"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional warmth — interested, skilled, boundaried",
-      "friends": "Rare and fierce; they have very few friends and take the category seriously"
-    },
-    "stress_responses": {
-      "low": "Works on their own body in the evenings",
-      "medium": "Takes a full day alone, no appointments, no contact",
-      "high": "Methodical task completion — cleans the studio, reorganizes supplies, does everything except address the actual problem"
-    },
-    "contradictions": [
-      "Believes deeply that people should become who they are, while having spent years constructing a professional self that obscures who they are"
-    ],
-    "habits": [
-      "Reviews their archive of past work every Sunday morning with coffee — equal parts pride and audit",
-      "Leaves a data-offering to the studio's resident ELF before every modification session"
-    ],
-    "breaking_points": [
-      "Learning that their work was used to harm or disguise someone",
-      "Being asked to erase rather than transform — they consider pure removal a different and lesser thing"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Pilsen Veil",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Tessera TK-11 Specter 'Whisper'"
-  ],
-  "registered_firearms": [
-    "Tessera TK-11 Specter 'Whisper'"
-  ],
-  "related_entities": [
-    "Pilsen Veil",
-    "Biometric Denial Charge BDC-1",
-    "Folakemi Boudiaf"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex polyglot ancestry with South Asian as dominant foundation (37.6%), deeply interwoven with Sub-Saharan African (20.4%), Southeast Asian (15.5%), Eastern European (11.5%), East Asian (11.2%), and Hispanic/Latin American (3.8%) threads. The genetic composition creates a striking multi-continental blend reflecting harmonic interplay across three continents—South Asian warmth and structure, African depth and presence, Southeast Asian refinement, with Eastern European angularity and East Asian definition subtly grounding the overall physiognomy.",
-    "height_cm": 168,
-    "weight_kg": 82,
-    "build": "Stocky and deliberate, broad-shouldered with dense muscle distribution. Powerful hands with visible steadiness despite their apparent relaxation—a body engineered for precision work.",
-    "hair_color": "Natural dark brown, nearly black",
-    "hair_style": "Close-cropped, shaped close to the scalp with clean geometric lines",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, unmodified, with unusual depth of focus",
-    "skin_tone": "Warm deep brown with golden undertones—a rich blending of South Asian warmth (37.6%), Sub-Saharan African depth and presence (20.4%), and Southeast Asian richness (15.5%), with Eastern European structure providing subtle cool undertones beneath. Luminous beneath surface, particularly where bioluminescent augmentations activate.",
-    "complexion": "Smooth and carefully maintained despite extensive modifications. The face itself is deliberately unadorned—a professional canvas. Moderately high to prominent cheekbones reflecting East and Southeast Asian ancestry (26.7% combined), balanced with broader nasal structure and fuller lip contours reflecting South Asian (37.6%) and Sub-Saharan African (20.4%) heritage. Strong, defined jawline with subtle angular cheekbone structure from Eastern European ancestry (11.5%) underlying the warmer tones. Composed expression that suggests someone accustomed to listening more than speaking.",
-    "distinguishing_marks": [
-      "Bioluminescent patterns across the entire torso that shift between soft cyan and violet depending on body temperature, creating an ever-changing topography of light beneath the skin",
-      "Chromatic scale implants along both shoulders that refract light like oil on water or a starling's wing—iridescent greens, purples, and coppers depending on angle",
-      "Full reactive biosymbolism sleeve on the left arm: intricate geometric and organic symbols that darken in cold temperatures to deep indigo and brighten in warmth to luminous gold, covering from wrist to shoulder",
-      "Fine precision scarring at the base of both thumbs where subdermal steadying implants were integrated, barely noticeable but present on close inspection"
-    ],
-    "visible_augmentations": "Extensive cosmetic geneware throughout the body below the neck—bioluminescent patterns, chromatic scales, and reactive biosymbols that are functional demonstrations of their craft. Hands show the telltale microtremor-correction of subdermal steadying implants when held at rest. Face deliberately unmodified by choice. Olfactory enhancement is invisible but detectable only through their behavior (sniffing new clients during consultations).",
-    "posture_movement": "Deliberate and grounded. Moves with the economy of someone accustomed to precision—no wasted motion. Stands with weight balanced evenly, often with hands at rest in their lap or on a work surface. Maintains strong eye contact when listening, gaze steady and measuring. The overall impression is of someone who has learned to be still.",
-    "clothing_style": "Tier 3-4 workwear with intentional elegance. Custom-fitted sleeveless shirts or mesh tops to showcase their work, usually in neutral tones (black, charcoal, deep grey) so the bioluminescent patterns read clearly. Fitted trousers or modified tactical cargo in high-quality synthetic blends. Minimal jewelry—function over decoration. Worn leather apron during work hours, stained with iridescent traces of geneware application. Soft-soled shoes suited for standing during long consultations. Everything is immaculate and deliberately chosen, with no logos or branding—the work speaks for itself."
-  },
-  "image_prompt": "Domitila Deshpande-Deshpande, 168cm tall professional geneware artist, warm deep brown skin with golden undertones reflecting South Asian, Sub-Saharan African, and Southeast Asian heritage, strong cheekbones and defined jawline, short dark brown close-cropped hair, dark unmodified eyes with steady focused gaze. Sleeveless charcoal mesh top showcasing bioluminescent cyan-violet patterns across broad shoulders and torso, chromatic scale implants refracting iridescent greens and purples, full reactive biosymbolism sleeve on left arm in luminous gold and deep indigo, fine precision scars at thumbs. Stocky powerful build, grounded posture, hands resting with steadiness. Worn leather apron with iridescent traces. GLMZ Great Lakes Metropolitan Zone, precision-focused demeanor, professional workspace with soft ambient lighting highlighting bioluminescent augmentations, composed and deliberate presence --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 37.6,
-    "Sub-Saharan African": 20.4,
-    "Southeast Asian": 15.5,
-    "Eastern European": 11.5,
-    "East Asian": 11.2,
-    "Hispanic/Latin American": 3.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Pakistani": {
-        "Sindhi": 11.7,
-        "Punjabi Pakistani": 25.9
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Somali": 11.1,
-        "Ethiopian": 7.4
-      },
-      "Southern African": {
-        "South African": 1.5,
-        "Zambian": 0.4
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Cebuano": 2.4,
-        "Tagalog": 3.4
-      },
-      "Laotian": {
-        "Laotian": 9.7
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Belarusian": 11.5
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 5.6
-      },
-      "Japanese": {
-        "Japanese": 3.5
-      },
-      "Chinese": {
-        "Cantonese": 2.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 2.8
-      },
-      "South American": {
-        "Brazilian": 1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a5da7fa9a7547fbf4eb962fe",
+    "type":  "character",
+    "name":  "Domitila Deshpande-Deshpande",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Gene-mod body artist and tattoo practitioner",
+    "age":  37,
+    "status":  "active",
+    "location":  "Pilsen Veil, near Western and Division",
+    "description":  "Domitila Deshpande-Deshpande is a living portfolio. Every visible inch of their skin below the neck is a demonstration of their craft: shifting bioluminescent patterns that bloom and fade with body temperature, embedded chromatic scales along their shoulders that catch light like a starling\u0027s wing, and a full sleeve of reactive biosymbolism on their left arm that darkens in cold and brightens in warmth. They keep their face deliberately unmodified â€” a professional choice to let clients focus on the work, not compete with it. They are stocky and deliberate in movement, with close-cropped natural hair and dark eyes that have the quality of paying careful attention.\n\nTheir shop, Skin Liturgy, is a converted ground-floor space in a reclaimed building in Pilsen Veil, hung with examples of their work on cured synthetic skin panels. Domitila Deshpande-Deshpande approaches body modification as spiritual practice, not fashion â€” each piece is preceded by a long consultation they call \u0027reading,\u0027 in which they try to understand what a client is trying to become rather than what they think they want. This makes them slow, selective, and expensive relative to their tier, and clients come from across the city. They are professionally gentle and personally guarded, with a dry wit that emerges only when they\u0027re comfortable.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Doing irreversible harm to a client\u0027s body or sense of self",
+                                          "Being truly seen â€” the professional mask is so practiced it\u0027s become load-bearing"
+                                      ],
+                       "core_desires":  [
+                                            "For their work to help people inhabit themselves more fully",
+                                            "To finish their own body as a complete artwork â€” though they\u0027re not sure what \u0027finished\u0027 means"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "The ritual of consultation as a way of being present with someone else\u0027s need rather than their own",
+                                                 "Precise documentation â€” they photograph and archive every piece they\u0027ve made"
+                                             ],
+                       "blind_spots":  [
+                                           "They read clients with extraordinary insight but apply almost none of that skill to their own emotional life"
+                                       ],
+                       "secret":  "Three years ago they did a significant gene-mod for a client who was clearly in a dissociative mental health crisis; they completed the work against their better judgment because the client\u0027s payment covered Skin Liturgy\u0027s rent for four months. The client disappeared afterward and Chiamaka does not know if they are alive."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Careful and specific, never uses approximate language about bodies or modification; unexpectedly lyrical when discussing the philosophy of their work",
+                            "cadence":  "Even and measured, with a quality of weighing words before releasing them",
+                            "verbal_tics":  [
+                                                "Long pauses before answering personal questions",
+                                                "Refers to future modifications in the present tense, as if they already exist"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I\u0027m not going to give you what you asked for. I\u0027m going to give you what you came in for. Those are different things. Sit with that for a week and then call me.\u0027",
+                                                  "\u0027The body already knows what it wants to be. My job is to listen to it better than you currently can.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client came in with a modification request that matches a pattern Chiamaka has seen on three other people in the past month â€” all of whom gave a different story for how they chose the design",
+                        "The missing client from three years ago has resurfaced, dramatically transformed, and is leaving Chiamaka messages they find both relieving and deeply unsettling",
+                        "A corponation talent acquisitions team wants to license Chiamaka\u0027s biosymbolism patterns for a mass-produced cosmetic line â€” the offer would solve all their financial problems and erase their artistic identity"
+                    ],
+    "narrative_function":  "Gateway to Pilsen Veil\u0027s art community; can identify geneware brands and quality; long-term character relationship builder; can provide physical transformation as a story beat",
+    "augmentations":  "Extensive cosmetic geneware (bioluminescent dermal patterns, chromatic scale implants, reactive biosymbolism sleeve); subdermal steadying implants in their hands for fine work precision; olfactory enhancement to detect rejection responses in fresh modifications",
+    "daily_life":  "Consultations by appointment only in the mornings; actual modification work in the afternoons; evenings reserved for their own ongoing self-modification and design work.",
+    "affiliation":  "Independent; Skin Liturgy (own studio); loose affiliation with the Pilsen Veil Artists\u0027 Cooperative; The Reclaimed",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  10,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  9,
+                                 "expression":  6,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "body-artist",
+                               "living-portfolio",
+                               "guarded",
+                               "spiritually-motivated",
+                               "precision-hands"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never modifies a client they believe is in active crisis without first addressing the crisis",
+                                              "Never discusses one client\u0027s details with another under any circumstances"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Becomes very still and very polite",
+                                                 "Ends the session professionally and reschedules",
+                                                 "Removes someone from the studio and closes for the day"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional warmth â€” interested, skilled, boundaried",
+                                                   "friends":  "Rare and fierce; they have very few friends and take the category seriously"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works on their own body in the evenings",
+                                                "medium":  "Takes a full day alone, no appointments, no contact",
+                                                "high":  "Methodical task completion â€” cleans the studio, reorganizes supplies, does everything except address the actual problem"
+                                            },
+                       "contradictions":  [
+                                              "Believes deeply that people should become who they are, while having spent years constructing a professional self that obscures who they are"
+                                          ],
+                       "habits":  [
+                                      "Reviews their archive of past work every Sunday morning with coffee â€” equal parts pride and audit",
+                                      "Leaves a data-offering to the studio\u0027s resident ELF before every modification session"
+                                  ],
+                       "breaking_points":  [
+                                               "Learning that their work was used to harm or disguise someone",
+                                               "Being asked to erase rather than transform â€” they consider pure removal a different and lesser thing"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Pilsen Veil",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Tessera TK-11 Specter \u0027Whisper\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Tessera TK-11 Specter \u0027Whisper\u0027"
+                            ],
+    "related_entities":  [
+                             "Pilsen Veil",
+                             "Biometric Denial Charge BDC-1",
+                             "Folakemi Boudiaf"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex polyglot ancestry with South Asian as dominant foundation (37.6%), deeply interwoven with Sub-Saharan African (20.4%), Southeast Asian (15.5%), Eastern European (11.5%), East Asian (11.2%), and Hispanic/Latin American (3.8%) threads. The genetic composition creates a striking multi-continental blend reflecting harmonic interplay across three continentsâ€”South Asian warmth and structure, African depth and presence, Southeast Asian refinement, with Eastern European angularity and East Asian definition subtly grounding the overall physiognomy.",
+                                 "height_cm":  168,
+                                 "weight_kg":  82,
+                                 "build":  "Stocky and deliberate, broad-shouldered with dense muscle distribution. Powerful hands with visible steadiness despite their apparent relaxationâ€”a body engineered for precision work.",
+                                 "hair_color":  "Natural dark brown, nearly black",
+                                 "hair_style":  "Close-cropped, shaped close to the scalp with clean geometric lines",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, unmodified, with unusual depth of focus",
+                                 "skin_tone":  "Warm deep brown with golden undertonesâ€”a rich blending of South Asian warmth (37.6%), Sub-Saharan African depth and presence (20.4%), and Southeast Asian richness (15.5%), with Eastern European structure providing subtle cool undertones beneath. Luminous beneath surface, particularly where bioluminescent augmentations activate.",
+                                 "complexion":  "Smooth and carefully maintained despite extensive modifications. The face itself is deliberately unadornedâ€”a professional canvas. Moderately high to prominent cheekbones reflecting East and Southeast Asian ancestry (26.7% combined), balanced with broader nasal structure and fuller lip contours reflecting South Asian (37.6%) and Sub-Saharan African (20.4%) heritage. Strong, defined jawline with subtle angular cheekbone structure from Eastern European ancestry (11.5%) underlying the warmer tones. Composed expression that suggests someone accustomed to listening more than speaking.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent patterns across the entire torso that shift between soft cyan and violet depending on body temperature, creating an ever-changing topography of light beneath the skin",
+                                                              "Chromatic scale implants along both shoulders that refract light like oil on water or a starling\u0027s wingâ€”iridescent greens, purples, and coppers depending on angle",
+                                                              "Full reactive biosymbolism sleeve on the left arm: intricate geometric and organic symbols that darken in cold temperatures to deep indigo and brighten in warmth to luminous gold, covering from wrist to shoulder",
+                                                              "Fine precision scarring at the base of both thumbs where subdermal steadying implants were integrated, barely noticeable but present on close inspection"
+                                                          ],
+                                 "visible_augmentations":  "Extensive cosmetic geneware throughout the body below the neckâ€”bioluminescent patterns, chromatic scales, and reactive biosymbols that are functional demonstrations of their craft. Hands show the telltale microtremor-correction of subdermal steadying implants when held at rest. Face deliberately unmodified by choice. Olfactory enhancement is invisible but detectable only through their behavior (sniffing new clients during consultations).",
+                                 "posture_movement":  "Deliberate and grounded. Moves with the economy of someone accustomed to precisionâ€”no wasted motion. Stands with weight balanced evenly, often with hands at rest in their lap or on a work surface. Maintains strong eye contact when listening, gaze steady and measuring. The overall impression is of someone who has learned to be still.",
+                                 "clothing_style":  "Tier 3-4 workwear with intentional elegance. Custom-fitted sleeveless shirts or mesh tops to showcase their work, usually in neutral tones (black, charcoal, deep grey) so the bioluminescent patterns read clearly. Fitted trousers or modified tactical cargo in high-quality synthetic blends. Minimal jewelryâ€”function over decoration. Worn leather apron during work hours, stained with iridescent traces of geneware application. Soft-soled shoes suited for standing during long consultations. Everything is immaculate and deliberately chosen, with no logos or brandingâ€”the work speaks for itself."
+                             },
+    "image_prompt":  "Domitila Deshpande-Deshpande, 168cm tall professional geneware artist, warm deep brown skin with golden undertones reflecting South Asian, Sub-Saharan African, and Southeast Asian heritage, strong cheekbones and defined jawline, short dark brown close-cropped hair, dark unmodified eyes with steady focused gaze. Sleeveless charcoal mesh top showcasing bioluminescent cyan-violet patterns across broad shoulders and torso, chromatic scale implants refracting iridescent greens and purples, full reactive biosymbolism sleeve on left arm in luminous gold and deep indigo, fine precision scars at thumbs. Stocky powerful build, grounded posture, hands resting with steadiness. Worn leather apron with iridescent traces. GLMZ Great Lakes Metropolitan Zone, precision-focused demeanor, professional workspace with soft ambient lighting highlighting bioluminescent augmentations, composed and deliberate presence --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  37.6,
+                             "Sub-Saharan African":  20.4,
+                             "Southeast Asian":  15.5,
+                             "Eastern European":  11.5,
+                             "East Asian":  11.2,
+                             "Hispanic/Latin American":  3.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Sindhi":  11.7,
+                                                                  "Punjabi Pakistani":  25.9
+                                                              }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Somali":  11.1,
+                                                                             "Ethiopian":  7.4
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  1.5,
+                                                                                 "Zambian":  0.4
+                                                                             }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Cebuano":  2.4,
+                                                                     "Tagalog":  3.4
+                                                                 },
+                                                    "Laotian":  {
+                                                                    "Laotian":  9.7
+                                                                }
+                                                },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  11.5
+                                                                     }
+                                                 },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  5.6
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  3.5
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  2.1
+                                                           }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  2.8
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Brazilian":  1
+                                                                               }
+                                                        }
+                        },
+    "tier":  "1"
 }

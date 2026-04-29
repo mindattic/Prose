@@ -1,350 +1,363 @@
-{
-  "id": "019d6143a5b274e5bc109b1d5b123116",
-  "rating": 70,
-  "type": "character",
-  "name": "Alia Yoon-Villanueva",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Contract broker and resource coordinator — fixer",
-  "age": 34,
-  "status": "active",
-  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near North Ave and Milwaukee",
-  "description": "Alia Yoon-Villanueva is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 34, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Alia Yoon-Villanueva plans to keep it that way. He works as a fixer out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Alia Yoon-Villanueva agrees on two things: he is worth the fee, and he is terrible company at dinner.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.58,
-      "ideal": 0.21,
-      "id": 0.29,
-      "shadow": 0.23,
-      "mask": 0.81,
-      "ghost": 0.62
-    },
-    "core_fears": [
-      "Their past catching up — debts, enemies, broken promises",
-      "Losing their edge to age — the body slows before the mind accepts it",
-      "Becoming obsolete as augmentation technology outpaces their chrome"
-    ],
-    "core_desires": [
-      "To build something that outlasts the next contract cycle",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "Control — over their body, their schedule, their future"
-    ],
-    "coping_mechanisms": [
-      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat",
-      "Isolates — retreats into their space when overwhelmed, emerges only for work"
-    ],
-    "blind_spots": [
-      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
-      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
-      "Refuses to update their mental model of people — first impressions calcify into permanent judgments"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "the Gray Zone street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
-    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
-    "verbal_tics": [
-      "Ends statements with 'yeah?' — not a question, a dare",
-      "Never uses contractions when lying — 'I did not' instead of 'I didn't'"
-    ],
-    "example_lines": [
-      "\"I know a person who knows a person. That's not evasion — that's the service.\"",
-      "\"My commission is fifteen percent. You're welcome to find someone cheaper. You won't find someone better.\"",
-      "\"The job isn't dangerous. The people involved are dangerous. The job is just logistics.\""
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A crew member from Aminata Vargas-Baffour's past shows up in GLMZ, carrying old grievances and new chrome",
-    "A former associate resurfaces with evidence that could destroy Aminata Vargas-Baffour's reputation — and a price for silence",
-    "Aminata Vargas-Baffour is offered a contract that would clear all their debts — the target is someone they respect"
-  ],
-  "narrative_function": "As a fixer, Aminata Vargas-Baffour embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Vocal modulator — can replicate any voice after 30 seconds of sample audio. Internal drug synthesizer — produces combat stims and medical compounds on demand",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Freelance — Geartown regular; The Third Rail",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 4
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 7
-      },
-      "reflexes": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 5
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 9
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 4
-      },
-      "willpower": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 8
-      },
-      "technical": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 9
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 7
-      },
-      "intimidation": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 4
-      },
-      "deception": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 6
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.37,
-      "caution": 0.53,
-      "loyalty": 0.38,
-      "greed": 0.53,
-      "empathy": 0.67
-    },
-    "drives": [
-      "money",
-      "justice",
-      "reputation"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 8,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "network of reliable contacts",
-      "physical endurance"
-    ],
-    "weaknesses": [
-      "trust issues that limit crew effectiveness",
-      "physical limitation from incomplete augmentation"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "fixer",
-      "tier-2",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Never discusses active contracts with anyone not directly involved",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Will not betray a client who paid in full, regardless of better offers"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Values loyalty intensely but has betrayed someone in the past to survive",
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
-      "Advocates caution to others but takes insane risks personally — double standard they can't see"
-    ],
-    "habits": [
-      "Checks exits within 10 seconds of entering any room",
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots"
-    ],
-    "breaking_points": [
-      "Being forced to choose between a crew member and the mission — and choosing wrong",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Vocal modulator",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Vocal modulator — can replicate any voice after 30 seconds of sample audio",
-      "replaces": ""
-    },
-    {
-      "name": "Internal drug synthesizer",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Internal drug synthesizer — produces combat stims and medical compounds on demand",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Glassway",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "A striking genetic mosaic where Sub-Saharan African (36.4%) and Hispanic/Latin American (39%) ancestries form the dominant visual foundation—warm, deep, and luminous—while East Asian heritage (13.9%) contributes refined geometric precision to facial architecture. Eastern European ancestry (9.1%) introduces subtle structural undertones and cool undertones that play across his features, with trace Pacific Islander heritage (1.6%) adding refinement to the overall blend. The result is a unified phenotype where no single ancestry dominates but instead creates seamless integration: African depth and warmth, Latin vitality and fullness, East Asian angularity and eye-set, European cool undertones, all converging into an authentically post-national appearance.",
-    "height_cm": 192,
-    "weight_kg": 78,
-    "build": "Lean and angular, built for endurance rather than power. Long limbs suggest a runner's physiology — minimal excess mass, efficient musculature. Carries himself with the coiled stillness of someone trained to move precisely when required.",
-    "hair_color": "Dark brown, naturally textured",
-    "hair_style": "Kept short and functional, no ornamentation",
-    "hair_length": "Short",
-    "eye_color": "Dark brown with subtle amber undertone",
-    "skin_tone": "Deep warm brown with luminous golden undertones—a sophisticated blend where Sub-Saharan and Hispanic ancestries create the primary rich foundation, enriched by East Asian warmth that adds structure and depth to the cheekbones and bridge of nose. Eastern European heritage introduces subtle cooling at the periphery and temple areas. The skin has natural radiance with golden highlights that shift across facial planes, particularly pronounced along high cheekbones and browbones, darker around eye sockets and jawline, creating visual depth and complexity. The overall effect is warm luminosity with cool structural undertones—a living map of genetic layering.",
-    "complexion": "Scarred face — not disfiguring but clearly marked with damage. Facial structure reflects precise blending of Sub-Saharan African fullness and warmth, Hispanic vitality in the lips and cheek prominence, East Asian geometric refinement in the eye-set and jaw angles, and Eastern European coolness in the overall bone structure. Pronounced high cheekbones catch light distinctly with warm golden notes; defined jawline has strong architectural presence; dark expressive eyes set deep beneath prominent brows with the slightly rounded eye shape characteristic of African and East Asian blending; nose bridge structured and warm. A jagged line runs from left temple to jawline, approximately 10cm — pale and well-healed, suggesting blade work. Smaller puckered scar on right cheekbone, approximately 0.8cm diameter, consistent with high-caliber exit wound with radiating tissue damage. Thin scar bisects his upper left lip, approximately 3cm, from close-contact trauma. Grooming is precise and minimal — clean-shaven, no cosmetic work to hide the marks. Eyes have a flat, observant quality. Jaw set in a way that suggests old tension.",
-    "distinguishing_marks": [
-      "Jagged scar from left temple to left jawline, approximately 10cm, suggests blade work or shrapnel — pale and well-healed",
-      "Puckered circular scar on right cheekbone, approximately 0.8cm diameter, consistent with high-caliber exit wound — tissue damage radiates outward",
-      "Thin horizontal scar bisecting upper left lip, approximately 3cm, suggests close-contact trauma",
-      "Faint burn scarring across the dorsal aspect of right hand, suggesting thermal weapon exposure or chemical burn — pattern irregular"
-    ],
-    "visible_augmentations": "Vocal modulator mounted at the base of his throat — matte gunmetal finish with subtle LED indicator ring that pulses faintly when active. Sits just above the collarbone, deliberately visible. No attempt to conceal it with clothing. Subcutaneous drug synthesizer is not visible externally.",
-    "posture_movement": "Moves with trained economy — every motion purposeful, nothing wasted. When standing, weight distributed evenly, shoulders relaxed but alert. When walking, footfalls are light and deliberate. Hands tend to stay visible and loosely at his sides. Makes direct eye contact but doesn't hold it longer than functional. Speaks slowly, as if calculating word choice. When using the vocal modulator, his own body language shifts minutely to match the assumed voice — a tell for those watching.",
-    "clothing_style": "Tier 3-4 practical streetwear. Matte black synth-leather jacket with minimal branding — utility cut, designed for concealment and quick movement. Beneath, charcoal gray compression shirt (subcutaneous interface point, barely visible). Dark tactical trousers with redistribution pockets. Worn black boots, military-grade, well-maintained. No jewelry, no visible tracking devices. Clothing shows signs of regular wear but is meticulously kept. No corporate logos or gang affiliations. The aesthetic reads as 'ghost' — designed to be forgotten five seconds after he passes."
-  },
-  "image_prompt": "A 192cm lean, angular figure in GLMZ, mixed-heritage male with deep warm brown skin bearing luminous golden undertones. Dark brown naturally textured hair kept short and functional. Face mapped with scars: jagged line from left temple to jawline, puckered circular scar on right cheekbone from exit wound, thin scar bisecting upper lip. Facial structure shows African depth and warmth, Hispanic fullness, East Asian geometric refinement in eye-set, Eastern European cool undertones. Prominent high cheekbones, defined jawline, dark expressive eyes set deep beneath prominent brows. Clean-shaven, no cosmetic concealment of scars. Matte gunmetal vocal modulator visible at throat base with subtle LED indicator. Wearing matte black synth-leather utility jacket, charcoal gray compression shirt beneath, dark tactical trousers, worn military-grade black boots. Faint burn scarring visible on right hand dorsal surface. Posture is coiled stillness, weight balanced, shoulders alert, hands visible at sides. Flat observant gaze, jaw set with old tension. Background: neon-lit urban sprawl, GLMZ streetscape, cool blue and amber lighting. Mood: dangerous precision, ghost operative in motion. Neo-noir urban aesthetic, photorealistic, cinematic depth. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 39,
-    "Sub-Saharan African": 36.4,
-    "East Asian": 13.9,
-    "Eastern European": 9.1,
-    "Pacific Islander": 1.6
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 39
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Rwandan": 25.9
-      },
-      "West African": {
-        "Ghanaian": 2.4,
-        "Nigerian": 2.4
-      },
-      "Central African": {
-        "Cameroonian": 5.7
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 8.9
-      },
-      "Japanese": {
-        "Japanese": 2.3
-      },
-      "Chinese": {
-        "Fujianese": 2.4,
-        "Cantonese": 0.3
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 4.6
-      },
-      "Slavic West": {
-        "Sorbian": 4.5
-      }
-    },
-    "Pacific Islander": {
-      "Polynesian": {
-        "Hawaiian": 1.6
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5b274e5bc109b1d5b123116",
+    "rating":  70,
+    "type":  "character",
+    "name":  "Alia Yoon-Villanueva",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Contract broker and resource coordinator â€” fixer",
+    "age":  34,
+    "status":  "active",
+    "location":  "Glassway â€” corporate-adjacent retail district, heavy surveillance, near North Ave and Milwaukee",
+    "description":  "Alia Yoon-Villanueva is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 34, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible â€” vocal modulator â€” can replicate any voice after 30 seconds of sample audio â€” and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name â€” that person is officially dead, and Alia Yoon-Villanueva plans to keep it that way. He works as a fixer out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who\u0027s worked with Alia Yoon-Villanueva agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Their past catching up â€” debts, enemies, broken promises",
+                                          "Losing their edge to age â€” the body slows before the mind accepts it",
+                                          "Becoming obsolete as augmentation technology outpaces their chrome"
+                                      ],
+                       "core_desires":  [
+                                            "To build something that outlasts the next contract cycle",
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "Control â€” over their body, their schedule, their future"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Control â€” micromanages everything within reach to compensate for the chaos everywhere else",
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat",
+                                                 "Isolates â€” retreats into their space when overwhelmed, emerges only for work"
+                                             ],
+                       "blind_spots":  [
+                                           "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+                                           "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care",
+                                           "Refuses to update their mental model of people â€” first impressions calcify into permanent judgments"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "the Gray Zone street dialect â€” layered slang, rhythm-heavy, half the meaning is in the cadence.",
+                            "cadence":  "Rhythmic, almost musical â€” the sentence structure has a pattern even when the words are brutal.",
+                            "verbal_tics":  [
+                                                "Ends statements with \u0027yeah?\u0027 â€” not a question, a dare",
+                                                "Never uses contractions when lying â€” \u0027I did not\u0027 instead of \u0027I didn\u0027t\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I know a person who knows a person. That\u0027s not evasion â€” that\u0027s the service.\"",
+                                                  "\"My commission is fifteen percent. You\u0027re welcome to find someone cheaper. You won\u0027t find someone better.\"",
+                                                  "\"The job isn\u0027t dangerous. The people involved are dangerous. The job is just logistics.\""
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A crew member from Aminata Vargas-Baffour\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
+                        "A former associate resurfaces with evidence that could destroy Aminata Vargas-Baffour\u0027s reputation â€” and a price for silence",
+                        "Aminata Vargas-Baffour is offered a contract that would clear all their debts â€” the target is someone they respect"
+                    ],
+    "narrative_function":  "As a fixer, Aminata Vargas-Baffour embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+    "augmentations":  "Vocal modulator â€” can replicate any voice after 30 seconds of sample audio. Internal drug synthesizer â€” produces combat stims and medical compounds on demand",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Freelance â€” Geartown regular; The Third Rail",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  3,
+                                                    "effective":  4
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  2,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  6,
+                                                     "augmented":  3,
+                                                     "effective":  7
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  4,
+                                                    "augmented":  3,
+                                                    "effective":  5
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  7,
+                                                      "augmented":  2,
+                                                      "effective":  9
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  1,
+                                                    "effective":  4
+                                                },
+                                 "willpower":  {
+                                                   "base":  5,
+                                                   "augmented":  3,
+                                                   "effective":  8
+                                               },
+                                 "technical":  {
+                                                   "base":  3,
+                                                   "augmented":  0,
+                                                   "effective":  9
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  8,
+                                                  "augmented":  3,
+                                                  "effective":  7
+                                              },
+                                 "intimidation":  {
+                                                      "base":  8,
+                                                      "augmented":  1,
+                                                      "effective":  4
+                                                  },
+                                 "deception":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  6
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  0,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.37,
+                                      "caution":  0.53,
+                                      "loyalty":  0.38,
+                                      "greed":  0.53,
+                                      "empathy":  0.67
+                                  },
+                  "drives":  [
+                                 "money",
+                                 "justice",
+                                 "reputation"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  8,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "network of reliable contacts",
+                                    "physical endurance"
+                                ],
+                  "weaknesses":  [
+                                     "trust issues that limit crew effectiveness",
+                                     "physical limitation from incomplete augmentation"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "fixer",
+                               "tier-2",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Will not betray a client who paid in full, regardless of better offers"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Values loyalty intensely but has betrayed someone in the past to survive",
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+                                              "Advocates caution to others but takes insane risks personally â€” double standard they can\u0027t see"
+                                          ],
+                       "habits":  [
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle",
+                                      "Wears the same item of clothing for luck â€” a scarf, a glove, a specific pair of boots"
+                                  ],
+                       "breaking_points":  [
+                                               "Being forced to choose between a crew member and the mission â€” and choosing wrong",
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Vocal modulator",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Vocal modulator â€” can replicate any voice after 30 seconds of sample audio",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Internal drug synthesizer",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Internal drug synthesizer â€” produces combat stims and medical compounds on demand",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Glassway",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "A striking genetic mosaic where Sub-Saharan African (36.4%) and Hispanic/Latin American (39%) ancestries form the dominant visual foundationâ€”warm, deep, and luminousâ€”while East Asian heritage (13.9%) contributes refined geometric precision to facial architecture. Eastern European ancestry (9.1%) introduces subtle structural undertones and cool undertones that play across his features, with trace Pacific Islander heritage (1.6%) adding refinement to the overall blend. The result is a unified phenotype where no single ancestry dominates but instead creates seamless integration: African depth and warmth, Latin vitality and fullness, East Asian angularity and eye-set, European cool undertones, all converging into an authentically post-national appearance.",
+                                 "height_cm":  192,
+                                 "weight_kg":  78,
+                                 "build":  "Lean and angular, built for endurance rather than power. Long limbs suggest a runner\u0027s physiology â€” minimal excess mass, efficient musculature. Carries himself with the coiled stillness of someone trained to move precisely when required.",
+                                 "hair_color":  "Dark brown, naturally textured",
+                                 "hair_style":  "Kept short and functional, no ornamentation",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown with subtle amber undertone",
+                                 "skin_tone":  "Deep warm brown with luminous golden undertonesâ€”a sophisticated blend where Sub-Saharan and Hispanic ancestries create the primary rich foundation, enriched by East Asian warmth that adds structure and depth to the cheekbones and bridge of nose. Eastern European heritage introduces subtle cooling at the periphery and temple areas. The skin has natural radiance with golden highlights that shift across facial planes, particularly pronounced along high cheekbones and browbones, darker around eye sockets and jawline, creating visual depth and complexity. The overall effect is warm luminosity with cool structural undertonesâ€”a living map of genetic layering.",
+                                 "complexion":  "Scarred face â€” not disfiguring but clearly marked with damage. Facial structure reflects precise blending of Sub-Saharan African fullness and warmth, Hispanic vitality in the lips and cheek prominence, East Asian geometric refinement in the eye-set and jaw angles, and Eastern European coolness in the overall bone structure. Pronounced high cheekbones catch light distinctly with warm golden notes; defined jawline has strong architectural presence; dark expressive eyes set deep beneath prominent brows with the slightly rounded eye shape characteristic of African and East Asian blending; nose bridge structured and warm. A jagged line runs from left temple to jawline, approximately 10cm â€” pale and well-healed, suggesting blade work. Smaller puckered scar on right cheekbone, approximately 0.8cm diameter, consistent with high-caliber exit wound with radiating tissue damage. Thin scar bisects his upper left lip, approximately 3cm, from close-contact trauma. Grooming is precise and minimal â€” clean-shaven, no cosmetic work to hide the marks. Eyes have a flat, observant quality. Jaw set in a way that suggests old tension.",
+                                 "distinguishing_marks":  [
+                                                              "Jagged scar from left temple to left jawline, approximately 10cm, suggests blade work or shrapnel â€” pale and well-healed",
+                                                              "Puckered circular scar on right cheekbone, approximately 0.8cm diameter, consistent with high-caliber exit wound â€” tissue damage radiates outward",
+                                                              "Thin horizontal scar bisecting upper left lip, approximately 3cm, suggests close-contact trauma",
+                                                              "Faint burn scarring across the dorsal aspect of right hand, suggesting thermal weapon exposure or chemical burn â€” pattern irregular"
+                                                          ],
+                                 "visible_augmentations":  "Vocal modulator mounted at the base of his throat â€” matte gunmetal finish with subtle LED indicator ring that pulses faintly when active. Sits just above the collarbone, deliberately visible. No attempt to conceal it with clothing. Subcutaneous drug synthesizer is not visible externally.",
+                                 "posture_movement":  "Moves with trained economy â€” every motion purposeful, nothing wasted. When standing, weight distributed evenly, shoulders relaxed but alert. When walking, footfalls are light and deliberate. Hands tend to stay visible and loosely at his sides. Makes direct eye contact but doesn\u0027t hold it longer than functional. Speaks slowly, as if calculating word choice. When using the vocal modulator, his own body language shifts minutely to match the assumed voice â€” a tell for those watching.",
+                                 "clothing_style":  "Tier 3-4 practical streetwear. Matte black synth-leather jacket with minimal branding â€” utility cut, designed for concealment and quick movement. Beneath, charcoal gray compression shirt (subcutaneous interface point, barely visible). Dark tactical trousers with redistribution pockets. Worn black boots, military-grade, well-maintained. No jewelry, no visible tracking devices. Clothing shows signs of regular wear but is meticulously kept. No corporate logos or gang affiliations. The aesthetic reads as \u0027ghost\u0027 â€” designed to be forgotten five seconds after he passes."
+                             },
+    "image_prompt":  "A 192cm lean, angular figure in GLMZ, mixed-heritage male with deep warm brown skin bearing luminous golden undertones. Dark brown naturally textured hair kept short and functional. Face mapped with scars: jagged line from left temple to jawline, puckered circular scar on right cheekbone from exit wound, thin scar bisecting upper lip. Facial structure shows African depth and warmth, Hispanic fullness, East Asian geometric refinement in eye-set, Eastern European cool undertones. Prominent high cheekbones, defined jawline, dark expressive eyes set deep beneath prominent brows. Clean-shaven, no cosmetic concealment of scars. Matte gunmetal vocal modulator visible at throat base with subtle LED indicator. Wearing matte black synth-leather utility jacket, charcoal gray compression shirt beneath, dark tactical trousers, worn military-grade black boots. Faint burn scarring visible on right hand dorsal surface. Posture is coiled stillness, weight balanced, shoulders alert, hands visible at sides. Flat observant gaze, jaw set with old tension. Background: neon-lit urban sprawl, GLMZ streetscape, cool blue and amber lighting. Mood: dangerous precision, ghost operative in motion. Neo-noir urban aesthetic, photorealistic, cinematic depth. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  39,
+                             "Sub-Saharan African":  36.4,
+                             "East Asian":  13.9,
+                             "Eastern European":  9.1,
+                             "Pacific Islander":  1.6
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  39
+                                                                        }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Rwandan":  25.9
+                                                                         },
+                                                        "West African":  {
+                                                                             "Ghanaian":  2.4,
+                                                                             "Nigerian":  2.4
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  5.7
+                                                                            }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  8.9
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  2.3
+                                                            },
+                                               "Chinese":  {
+                                                               "Fujianese":  2.4,
+                                                               "Cantonese":  0.3
+                                                           }
+                                           },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  4.6
+                                                                     },
+                                                     "Slavic West":  {
+                                                                         "Sorbian":  4.5
+                                                                     }
+                                                 },
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Hawaiian":  1.6
+                                                                    }
+                                                 }
+                        }
 }

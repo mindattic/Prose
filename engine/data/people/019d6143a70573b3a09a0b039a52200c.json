@@ -1,169 +1,228 @@
-{
-  "id": "019d6143a70573b3a09a0b039a52200c",
-  "rating": 30,
-  "vote_count": 2,
-  "type": "character",
-  "name": "Valentina Boateng",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Fixer - Extraction specialist",
-  "age": 47,
-  "status": "active",
-  "location": "the Gray Zone, near Kedzie and Division",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Complex genetic blend of Hispanic/Latin American (49.9%), Sub-Saharan African (29.2%), East Asian (14.8%), and North African (6.1%) ancestry. This combination creates warm medium-brown skin with golden-reddish undertones, angular facial structure with pronounced cheekbones and strong jaw, and refined eye shape with subtle epicanthic fold influence. The multi-continental mix produces a striking, distinctly weathered appearance.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Lean and corded with functional muscle; the physique of someone who does her own wet work. No excess, all efficiency.",
-    "hair_color": "Steel gray with natural black roots, intentionally maintained for the contrast",
-    "hair_style": "Pulled into a tight, functional braid coiled at the base of her skull",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown with faint amber neon threading in the iris\u2014subcutaneous neural interface marker",
-    "skin_tone": "Warm medium-brown with golden and reddish undertones from the Hispanic/Latin American and Sub-Saharan African blend, deepened and weathered by decades of GLMZ exposure. North African ancestry contributes subtle warmth and depth to undertone complexity.",
-    "complexion": "Weathered, angular face with sharp cheekbones and prominent jaw from African and Latin heritage. Dark brown eyes with subtle epicanthic fold from East Asian ancestry. Minimal grooming, no cosmetics. Two parallel scars mark her left temple, faded but visible. Skin has lived-in texture from decades in variable climate without excessive skincare. Scattered pockmark scars across shoulders and upper back.",
-    "distinguishing_marks": [
-      "Surgical scar running from left temple to cheekbone, approximately 8cm, partially obscured by gray hair",
-      "Tattoo on inner left wrist: Cyrillic characters spelling \u0027\u0412\u042B\u0425\u041E\u0414\u0027 (exit/way out), done in faded black ink, circa 2190s style",
-      "Burn scar on right palm and forearm\u2014mottled pink tissue from fingers to elbow, consistent with electrical contact or plasma weapon discharge",
-      "Small pockmark scars scattered across both shoulders and upper back, old vaccinations or shrapnel"
-    ],
-    "visible_augmentations": "Right hand replaced from wrist down\u2014matt black synthetic composite with articulated chrome finger joints and visible haptic feedback nodes along the palm. Left eye has a faint luminescent quality when light catches it at certain angles (ocular neural interface). Subcutaneous armor plating visible as faint geometric ridges beneath the skin of her ribs on the right side.",
-    "posture_movement": "Economical and alert. She moves as though always assessing exits and threats\u2014shoulders slightly forward, weight distributed to the balls of her feet. Her right synthetic hand is never still, micro-adjusting, testing grip. Direct eye contact is constant, almost aggressive. When at rest, there\u0027s a coiled quality to her; she doesn\u0027t relax, only pauses.",
-    "clothing_style": "Tier 3 utilitarian with older-model high-end components. Black reinforced cargo pants (Hegemony tactical cut, circa 2220) with structural webbing at the thighs. Charcoal matte jacket with internal holster rig visible when unbuttoned. Worn Neo-Gen combat boots, re-soled twice. A faded leather wristband on her left arm\u2014older than her augmentations, possibly sentimental. No visible branding; she dresses for function, not status."
-  },
-  "image_prompt": "Valentina Boateng, 168cm lean-muscled operative with warm medium-brown weathered skin, sharp cheekbones and strong jaw reflecting mixed Hispanic/Latin American, Sub-Saharan African, East Asian and North African heritage. Steel gray hair with black roots in tight functional braid. Dark brown eyes with subtle epicanthic influence and faint amber neon threading. Surgical scar on left temple, pockmark scars on shoulders. Matt black synthetic right hand with chrome finger joints. Faint ocular neural interface glow in left eye. Subcutaneous armor plating ridges visible on ribs. Wearing black reinforced Hegemony tactical cargo pants, charcoal matte jacket, worn Neo-Gen combat boots. Faded Cyrillic wrist tattoo. Coiled, alert posture, direct intense gaze. GLMZ Great Lakes Metropolitan Zone, noir lighting with neon accent, gritty urban environment, moody cinematic atmosphere --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 49.9,
-    "Sub-Saharan African": 29.2,
-    "East Asian": 14.8,
-    "North African": 6.1
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 9
-      },
-      "Caribbean": {
-        "Cuban": 31.1,
-        "Puerto Rican": 9.8
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 29.2
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 14.8
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Berber": 1.8,
-        "Tuareg": 2.2
-      },
-      "Nile Valley": {
-        "Sudanese": 1.1
-      },
-      "Maghreb": {
-        "Algerian": 1
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a70573b3a09a0b039a52200c",
+    "rating":  30,
+    "vote_count":  2,
+    "type":  "character",
+    "name":  "Valentina Boateng",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Fixer - Extraction specialist",
+    "age":  47,
+    "status":  "active",
+    "location":  "the Gray Zone, near Kedzie and Division",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Complex genetic blend of Hispanic/Latin American (49.9%), Sub-Saharan African (29.2%), East Asian (14.8%), and North African (6.1%) ancestry. This combination creates warm medium-brown skin with golden-reddish undertones, angular facial structure with pronounced cheekbones and strong jaw, and refined eye shape with subtle epicanthic fold influence. The multi-continental mix produces a striking, distinctly weathered appearance.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and corded with functional muscle; the physique of someone who does her own wet work. No excess, all efficiency.",
+                                 "hair_color":  "Steel gray with natural black roots, intentionally maintained for the contrast",
+                                 "hair_style":  "Pulled into a tight, functional braid coiled at the base of her skull",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown with faint amber neon threading in the iris—subcutaneous neural interface marker",
+                                 "skin_tone":  "Warm medium-brown with golden and reddish undertones from the Hispanic/Latin American and Sub-Saharan African blend, deepened and weathered by decades of GLMZ exposure. North African ancestry contributes subtle warmth and depth to undertone complexity.",
+                                 "complexion":  "Weathered, angular face with sharp cheekbones and prominent jaw from African and Latin heritage. Dark brown eyes with subtle epicanthic fold from East Asian ancestry. Minimal grooming, no cosmetics. Two parallel scars mark her left temple, faded but visible. Skin has lived-in texture from decades in variable climate without excessive skincare. Scattered pockmark scars across shoulders and upper back.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar running from left temple to cheekbone, approximately 8cm, partially obscured by gray hair",
+                                                              "Tattoo on inner left wrist: Cyrillic characters spelling \u0027ВЫХОД\u0027 (exit/way out), done in faded black ink, circa 2190s style",
+                                                              "Burn scar on right palm and forearm—mottled pink tissue from fingers to elbow, consistent with electrical contact or plasma weapon discharge",
+                                                              "Small pockmark scars scattered across both shoulders and upper back, old vaccinations or shrapnel"
+                                                          ],
+                                 "visible_augmentations":  "Right hand replaced from wrist down—matt black synthetic composite with articulated chrome finger joints and visible haptic feedback nodes along the palm. Left eye has a faint luminescent quality when light catches it at certain angles (ocular neural interface). Subcutaneous armor plating visible as faint geometric ridges beneath the skin of her ribs on the right side.",
+                                 "posture_movement":  "Economical and alert. She moves as though always assessing exits and threats—shoulders slightly forward, weight distributed to the balls of her feet. Her right synthetic hand is never still, micro-adjusting, testing grip. Direct eye contact is constant, almost aggressive. When at rest, there\u0027s a coiled quality to her; she doesn\u0027t relax, only pauses.",
+                                 "clothing_style":  "Tier 3 utilitarian with older-model high-end components. Black reinforced cargo pants (Hegemony tactical cut, circa 2220) with structural webbing at the thighs. Charcoal matte jacket with internal holster rig visible when unbuttoned. Worn Neo-Gen combat boots, re-soled twice. A faded leather wristband on her left arm—older than her augmentations, possibly sentimental. No visible branding; she dresses for function, not status."
+                             },
+    "image_prompt":  "Valentina Boateng, 168cm lean-muscled operative with warm medium-brown weathered skin, sharp cheekbones and strong jaw reflecting mixed Hispanic/Latin American, Sub-Saharan African, East Asian and North African heritage. Steel gray hair with black roots in tight functional braid. Dark brown eyes with subtle epicanthic influence and faint amber neon threading. Surgical scar on left temple, pockmark scars on shoulders. Matt black synthetic right hand with chrome finger joints. Faint ocular neural interface glow in left eye. Subcutaneous armor plating ridges visible on ribs. Wearing black reinforced Hegemony tactical cargo pants, charcoal matte jacket, worn Neo-Gen combat boots. Faded Cyrillic wrist tattoo. Coiled, alert posture, direct intense gaze. GLMZ Great Lakes Metropolitan Zone, noir lighting with neon accent, gritty urban environment, moody cinematic atmosphere --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  49.9,
+                             "Sub-Saharan African":  29.2,
+                             "East Asian":  14.8,
+                             "North African":  6.1
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  9
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  31.1,
+                                                                              "Puerto Rican":  9.8
+                                                                          }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  29.2
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  14.8
+                                                            }
+                                           },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Berber":  1.8,
+                                                                  "Tuareg":  2.2
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Sudanese":  1.1
+                                                                  },
+                                                  "Maghreb":  {
+                                                                  "Algerian":  1
+                                                              }
+                                              }
+                        }
 }

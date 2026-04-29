@@ -1,282 +1,305 @@
-{
-  "id": "019d6143a6c575a4b89173837c5523eb",
-  "type": "character",
-  "name": "Farida Szabó",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Retired secondary school teacher, now volunteer tutor and reluctant community council chair",
-  "age": 67,
-  "status": "active",
-  "location": "Norwood Quiet — the community center on the third floor of the Meridian Commons building, and their own apartment two blocks north, near North Ave and Milwaukee",
-  "description": "Farida Szabó has the posture of someone who spent three decades making themselves large enough to fill a classroom, and they have never lost it despite retirement. They are lean and angular, with the golden-brown skin of their Malawian and Icelandic inheritance, sharp cheekbones, and close-cropped hair they dye a warm amber because they have earned the right to do whatever they like with their hair. Their eyes are dark and quick-moving, always tracking who is paying attention and who has gone somewhere else in their head. They have bioluminescent geneware — a soft teal glow in the skin along their jawline and collarbones — which in their classroom days had the practical benefit of making them extremely visible when the lights went out during power fluctuations, and which in retirement they simply enjoy.\n\nThey are the kind of teacher who is still teaching whether they are in a classroom or not, and they are constitutionally incapable of watching someone struggle with a problem they could help solve. This makes them exhausting and irreplaceable in equal measure. They took on the Norwood Quiet Community Council chair position because no one else would and have been trying to resign for two years. They have opinions about pedagogy, about corponation educational sponsorship programs, about how children are being failed by the system, and they will share all of these opinions clearly and with supporting examples.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.9,
-      "id": 0.5,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "That the educational system is broken in ways that cannot be fixed by individual effort, and that they have spent their life applying individual effort to an institutional problem",
-      "Becoming irrelevant and not knowing it"
-    ],
-    "core_desires": [
-      "To see at least one of their former students do something that proves the work mattered",
-      "To actually successfully resign from the Council and have a quiet afternoon"
-    ],
-    "coping_mechanisms": [
-      "Turning anxiety into action — if they are worried, they organize something",
-      "Self-deprecating humor as a pressure valve"
-    ],
-    "blind_spots": [
-      "They set standards for themselves that they would consider cruelly high if they saw a student setting them",
-      "They are so focused on systemic failures that they sometimes miss the very immediate emotional needs of the individual in front of them"
-    ],
-    "secret": "Three years before they retired, a Sterling-Nakamura educational sponsorship representative offered them a significant sum to steer academically strong students toward Sterling-Nakamura scholarship pipelines — pipelines they knew functioned as early-stage labor capture programs. They refused publicly and loudly and the representative withdrew. But they did not report it, because the school needed a new ventilation system and Sterling-Nakamura was on the board, and they have never been entirely sure they made the right call. Two students who went through a similar pipeline at a different school are now trapped in fifteen-year corporate indenturement contracts."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clear and structured; Chichewa and Old Norse words appear in emotional moments; uses classroom vocabulary by habit ('Let me put it this way,' 'Does that track?')",
-    "cadence": "Direct and well-organized, with a slight tendency to over-explain — the teacher's habit of checking for comprehension",
-    "verbal_tics": [
-      "'Does that track?'",
-      "'Let me put it this way—'",
-      "Pointing with the whole hand rather than a finger, a professional habit"
-    ],
-    "example_lines": [
-      "'The Municipal Education Authority has been underfunding Norwood Quiet's allocation for six years, which — does that track? Six years. I have the figures. I always have the figures.'",
-      "'I am not a community hero. I am someone who cannot watch things go badly without doing something about it, which is frankly a design flaw.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Sterling-Nakamura educational outreach team has arrived in Norwood Quiet with a scholarship program that looks identical to the one Saoirse refused to participate in three years ago — and this time there are parents who desperately want to believe it is legitimate",
-    "One of their adult literacy students has disclosed something during a tutoring session that suggests serious danger in their household, and Saoirse must navigate reporting systems that are slow and unsympathetic"
-  ],
-  "narrative_function": "Community council access point and advocate; educational system information source; can identify children or young people in distress within Norwood Quiet; quest giver for community-level problems that need someone who cares and is competent; social conscience figure",
-  "augmentations": "Bioluminescent geneware (teal, jawline and collarbones); voice amplification implant (originally installed for classroom use, still functional); mild cognitive support mesh for working memory (installed at 60, a practical retirement gift to themselves)",
-  "daily_life": "Three mornings a week they run a free literacy and numeracy group for adults at the community center; the other mornings they handle council correspondence and argue with municipal administrators over vidlink; afternoons are theoretically their own but rarely are.",
-  "affiliation": "Norwood Quiet Community Council (chair, involuntarily continuing); retired from GLMZ Municipal Education Authority (28 years); informal partnership with Washburn Commons learning center",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 8,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 1,
-      "assertion_deference": 4,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "educator",
-      "community organizer",
-      "bioluminescent",
-      "reluctant leader",
-      "systemic thinker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "If you can fix it, fix it; if you can't fix it, document it and make it someone else's problem in the most inconvenient way possible",
-      "Do not let an injustice slide because it would be easier — that's how injustices compound",
-      "Give people the information they need to make their own decisions"
-    ],
-    "escalation_ladder": [
-      "Clear explanation of the problem and proposed solution",
-      "Formal written complaint with documentation",
-      "Community meeting and public pressure",
-      "Council motion and media contact (GLMZ civil broadcast)",
-      "Personal acts of spectacular administrative inconvenience"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Brisk and assessing; warms up quickly if they're curious and engaged; writes off no one permanently",
-      "friends": "Genuinely funny and much more relaxed; will make tea and actually listen without planning their response"
-    },
-    "stress_responses": {
-      "low": "Makes a list",
-      "medium": "Calls an emergency council session and runs it with excessive efficiency",
-      "high": "Goes home, turns the bioluminescence up to full, sits in the dark with it, and talks to the apartment's E.L.F. about what they should have done differently"
-    },
-    "contradictions": [
-      "Champions systemic transparency while carrying a quiet ethical failure they have never disclosed"
-    ],
-    "habits": [
-      "Marks papers even in retirement — they take notes on everything in the same red ink they used for thirty years",
-      "Maintains a physical pin-board of community issues in their apartment that their friends call 'the wall of concern'"
-    ],
-    "breaking_points": [
-      "Watching someone exploit a child's or family's vulnerability for corporate benefit; being told that something cannot be changed"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Mentor": 0.9,
-    "Teacher": 0.7,
-    "Nurturer": 0.7,
-    "Idealist": 0.7,
-    "Dreamer": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Norwood Quiet",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Norwood Quiet",
-    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
-    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Compass Rose",
-    "Nightlight"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Genuine Ubiquitous Diaspora synthesis: Eastern European (28.6%), Northern European (22%), South Asian (18.8%), Hispanic/Latin American (17.7%), Southeast Asian (9.8%), Indigenous American (3.1%). The combination produces a distinctly cosmopolitan phenotype—Eastern European bone structure and cheekbones softened by South and Southeast Asian proportions, Northern European baseline warmed by South Asian and Latin American undertones, with subtle Indigenous American influence in facial width and eye shape. A face that belongs equally to no single region and unmistakably to the post-diaspora world.",
-    "height_cm": 173,
-    "weight_kg": 61,
-    "build": "Lean and angular with commanding presence; decades of classroom posture have made them naturally expansive despite thin frame. Minimal muscle definition but wire-taut core and shoulders squared from standing.",
-    "hair_color": "Amber-dyed (natural color darkened to gray-brown underneath)",
-    "hair_style": "Close-cropped, neat, deliberately maintained",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, perpetually alert",
-    "skin_tone": "Warm medium complexion with golden-honey luminosity—a balanced synthesis of South Asian warmth, Eastern European undertones, Latin American richness, Southeast Asian depth, and Northern European baseline. Catches light with distinct warm radiance across cheekbones and forehead.",
-    "complexion": "Moderate, balanced cheekbones reflecting South and Southeast Asian ancestry combined with Eastern European structure; facial width and proportions show harmonious blend across all ancestry groups rather than dominance of any single tradition. Softer overall proportion than pure Northern European, with slight fullness in lower face suggesting South Asian heritage. Minimal wrinkling despite age—skin well-maintained. Dark circles under eyes from habit of late-night reading. Expression naturally skeptical and observant.",
-    "distinguishing_marks": [
-      "Soft bioluminescent teal glow running along jawline from ear to chin, subtle in daylight but luminous in low-light conditions",
-      "Matching teal bioluminescent line tracing collarbones and upper sternum—visible when wearing open-necked clothing",
-      "Small circular scar on left temple, approximately 1cm diameter, consistent with implant insertion point (voice amplification implant installed ~40 years ago)"
-    ],
-    "visible_augmentations": "Bioluminescent geneware traces (teal, jaw and collarbones—glows softly in darkness). Voice amplification implant scar barely visible at left temple. Cognitive support mesh is subcutaneous and invisible. Minor tech accessibility aural implant behind left ear (for municipal vidlink accessibility).",
-    "posture_movement": "Stands and walks with deliberate verticality—shoulders back, chin slightly elevated, as if perpetually addressing a room. Moves with economical precision. Hands gesture while speaking, fingers quick and expressive. Makes direct eye contact habitually. Sits forward on chairs rather than back. Movement patterns suggest someone still instinctively 'on stage' despite retirement.",
-    "clothing_style": "Tier 3-4 working-professional aesthetic, carried into retirement with no irony. Favors well-fitted, durable clothing: linen and cotton blends, earth and warm tones (rust, cream, muted gold). Typically wears: tailored button-up shirts (often with sleeves rolled to show jawline augmentation), dark practical trousers or midi skirts, sensible boots or slip-ons with good support. Cardigan or structured jacket for council meetings. Minimal jewelry—a simple watch with readable face, one silver ring. No corporate logos or status wear. Reading glasses on thin cord. Crossbody bag with worn canvas fabric, stuffed with papers and teaching materials."
-  },
-  "image_prompt": "Farida Szabó, 173cm lean angular figure with commanding posture, standing with shoulders squared and chin elevated. Warm medium skin tone with golden-honey luminosity blending Eastern European, Northern European, South Asian, Hispanic, Southeast Asian, and Indigenous American heritage—balanced facial proportions with moderate cheekbones and harmonious feature synthesis. Short amber-dyed hair with gray-brown undertones, dark brown alert eyes, natural skeptical expression. Dark circles under eyes. Soft bioluminescent teal glow tracing jawline and collarbones, subtle in daylight but luminous in shadows. Small circular implant scar at left temple. Wearing well-fitted tailored rust-toned linen shirt with sleeves rolled, dark practical trousers, sensible boots. Simple silver watch, reading glasses on thin cord. Crossbody canvas bag filled with papers. Standing in warm-lit interior space, perhaps a library or council chamber, hands gesturing expressively mid-speech. GLMZ Great Lakes Metropolitan Zone aesthetic. Late afternoon golden light catching skin tone and subtle bioluminescent traces. Mood: intellectually engaged, direct, observant. Professional but lived-in appearance. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 28.6,
-    "Northern European": 22,
-    "South Asian": 18.8,
-    "Hispanic/Latin American": 17.7,
-    "Southeast Asian": 9.8,
-    "Indigenous American": 3.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 11.8,
-        "Romanian": 9.9
-      },
-      "Slavic East": {
-        "Ukrainian": 2.7,
-        "Russian": 4.2
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Irish": 3.1,
-        "English": 9.9
-      },
-      "Germanic": {
-        "Austrian": 4.2,
-        "German": 2
-      },
-      "Scandinavian": {
-        "Swedish": 1.5,
-        "Norwegian": 1.3
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Tamil": 11,
-        "Malayali": 4.2
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 3.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Cuban": 17.7
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Balinese": 5.8
-      },
-      "Laotian": {
-        "Laotian": 2.4
-      },
-      "Filipino": {
-        "Cebuano": 1.3,
-        "Tagalog": 0.3
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Nahua": 2
-      },
-      "Great Lakes Nations": {
-        "Potawatomi": 0.8
-      },
-      "Plains Nations": {
-        "Cherokee": 0.2,
-        "Lakota": 0.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6c575a4b89173837c5523eb",
+    "type":  "character",
+    "name":  "Farida SzabÃ³",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Retired secondary school teacher, now volunteer tutor and reluctant community council chair",
+    "age":  67,
+    "status":  "active",
+    "location":  "Norwood Quiet â€” the community center on the third floor of the Meridian Commons building, and their own apartment two blocks north, near North Ave and Milwaukee",
+    "description":  "Farida SzabÃ³ has the posture of someone who spent three decades making themselves large enough to fill a classroom, and they have never lost it despite retirement. They are lean and angular, with the golden-brown skin of their Malawian and Icelandic inheritance, sharp cheekbones, and close-cropped hair they dye a warm amber because they have earned the right to do whatever they like with their hair. Their eyes are dark and quick-moving, always tracking who is paying attention and who has gone somewhere else in their head. They have bioluminescent geneware â€” a soft teal glow in the skin along their jawline and collarbones â€” which in their classroom days had the practical benefit of making them extremely visible when the lights went out during power fluctuations, and which in retirement they simply enjoy.\n\nThey are the kind of teacher who is still teaching whether they are in a classroom or not, and they are constitutionally incapable of watching someone struggle with a problem they could help solve. This makes them exhausting and irreplaceable in equal measure. They took on the Norwood Quiet Community Council chair position because no one else would and have been trying to resign for two years. They have opinions about pedagogy, about corponation educational sponsorship programs, about how children are being failed by the system, and they will share all of these opinions clearly and with supporting examples.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the educational system is broken in ways that cannot be fixed by individual effort, and that they have spent their life applying individual effort to an institutional problem",
+                                          "Becoming irrelevant and not knowing it"
+                                      ],
+                       "core_desires":  [
+                                            "To see at least one of their former students do something that proves the work mattered",
+                                            "To actually successfully resign from the Council and have a quiet afternoon"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Turning anxiety into action â€” if they are worried, they organize something",
+                                                 "Self-deprecating humor as a pressure valve"
+                                             ],
+                       "blind_spots":  [
+                                           "They set standards for themselves that they would consider cruelly high if they saw a student setting them",
+                                           "They are so focused on systemic failures that they sometimes miss the very immediate emotional needs of the individual in front of them"
+                                       ],
+                       "secret":  "Three years before they retired, a Sterling-Nakamura educational sponsorship representative offered them a significant sum to steer academically strong students toward Sterling-Nakamura scholarship pipelines â€” pipelines they knew functioned as early-stage labor capture programs. They refused publicly and loudly and the representative withdrew. But they did not report it, because the school needed a new ventilation system and Sterling-Nakamura was on the board, and they have never been entirely sure they made the right call. Two students who went through a similar pipeline at a different school are now trapped in fifteen-year corporate indenturement contracts."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clear and structured; Chichewa and Old Norse words appear in emotional moments; uses classroom vocabulary by habit (\u0027Let me put it this way,\u0027 \u0027Does that track?\u0027)",
+                            "cadence":  "Direct and well-organized, with a slight tendency to over-explain â€” the teacher\u0027s habit of checking for comprehension",
+                            "verbal_tics":  [
+                                                "\u0027Does that track?\u0027",
+                                                "\u0027Let me put it this wayâ€”\u0027",
+                                                "Pointing with the whole hand rather than a finger, a professional habit"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The Municipal Education Authority has been underfunding Norwood Quiet\u0027s allocation for six years, which â€” does that track? Six years. I have the figures. I always have the figures.\u0027",
+                                                  "\u0027I am not a community hero. I am someone who cannot watch things go badly without doing something about it, which is frankly a design flaw.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Sterling-Nakamura educational outreach team has arrived in Norwood Quiet with a scholarship program that looks identical to the one Saoirse refused to participate in three years ago â€” and this time there are parents who desperately want to believe it is legitimate",
+                        "One of their adult literacy students has disclosed something during a tutoring session that suggests serious danger in their household, and Saoirse must navigate reporting systems that are slow and unsympathetic"
+                    ],
+    "narrative_function":  "Community council access point and advocate; educational system information source; can identify children or young people in distress within Norwood Quiet; quest giver for community-level problems that need someone who cares and is competent; social conscience figure",
+    "augmentations":  "Bioluminescent geneware (teal, jawline and collarbones); voice amplification implant (originally installed for classroom use, still functional); mild cognitive support mesh for working memory (installed at 60, a practical retirement gift to themselves)",
+    "daily_life":  "Three mornings a week they run a free literacy and numeracy group for adults at the community center; the other mornings they handle council correspondence and argue with municipal administrators over vidlink; afternoons are theoretically their own but rarely are.",
+    "affiliation":  "Norwood Quiet Community Council (chair, involuntarily continuing); retired from GLMZ Municipal Education Authority (28 years); informal partnership with Washburn Commons learning center",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  8,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  1,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "educator",
+                               "community organizer",
+                               "bioluminescent",
+                               "reluctant leader",
+                               "systemic thinker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "If you can fix it, fix it; if you can\u0027t fix it, document it and make it someone else\u0027s problem in the most inconvenient way possible",
+                                              "Do not let an injustice slide because it would be easier â€” that\u0027s how injustices compound",
+                                              "Give people the information they need to make their own decisions"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Clear explanation of the problem and proposed solution",
+                                                 "Formal written complaint with documentation",
+                                                 "Community meeting and public pressure",
+                                                 "Council motion and media contact (GLMZ civil broadcast)",
+                                                 "Personal acts of spectacular administrative inconvenience"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Brisk and assessing; warms up quickly if they\u0027re curious and engaged; writes off no one permanently",
+                                                   "friends":  "Genuinely funny and much more relaxed; will make tea and actually listen without planning their response"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Makes a list",
+                                                "medium":  "Calls an emergency council session and runs it with excessive efficiency",
+                                                "high":  "Goes home, turns the bioluminescence up to full, sits in the dark with it, and talks to the apartment\u0027s E.L.F. about what they should have done differently"
+                                            },
+                       "contradictions":  [
+                                              "Champions systemic transparency while carrying a quiet ethical failure they have never disclosed"
+                                          ],
+                       "habits":  [
+                                      "Marks papers even in retirement â€” they take notes on everything in the same red ink they used for thirty years",
+                                      "Maintains a physical pin-board of community issues in their apartment that their friends call \u0027the wall of concern\u0027"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone exploit a child\u0027s or family\u0027s vulnerability for corporate benefit; being told that something cannot be changed"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Mentor":  0.9,
+                       "Teacher":  0.7,
+                       "Nurturer":  0.7,
+                       "Idealist":  0.7,
+                       "Dreamer":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Norwood Quiet",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Norwood Quiet",
+                             "Osseoconductive Fracture Hammer OFH-1 \u0027Inheritance\u0027",
+                             "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Compass Rose",
+                             "Nightlight"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Genuine Ubiquitous Diaspora synthesis: Eastern European (28.6%), Northern European (22%), South Asian (18.8%), Hispanic/Latin American (17.7%), Southeast Asian (9.8%), Indigenous American (3.1%). The combination produces a distinctly cosmopolitan phenotypeâ€”Eastern European bone structure and cheekbones softened by South and Southeast Asian proportions, Northern European baseline warmed by South Asian and Latin American undertones, with subtle Indigenous American influence in facial width and eye shape. A face that belongs equally to no single region and unmistakably to the post-diaspora world.",
+                                 "height_cm":  173,
+                                 "weight_kg":  61,
+                                 "build":  "Lean and angular with commanding presence; decades of classroom posture have made them naturally expansive despite thin frame. Minimal muscle definition but wire-taut core and shoulders squared from standing.",
+                                 "hair_color":  "Amber-dyed (natural color darkened to gray-brown underneath)",
+                                 "hair_style":  "Close-cropped, neat, deliberately maintained",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, perpetually alert",
+                                 "skin_tone":  "Warm medium complexion with golden-honey luminosityâ€”a balanced synthesis of South Asian warmth, Eastern European undertones, Latin American richness, Southeast Asian depth, and Northern European baseline. Catches light with distinct warm radiance across cheekbones and forehead.",
+                                 "complexion":  "Moderate, balanced cheekbones reflecting South and Southeast Asian ancestry combined with Eastern European structure; facial width and proportions show harmonious blend across all ancestry groups rather than dominance of any single tradition. Softer overall proportion than pure Northern European, with slight fullness in lower face suggesting South Asian heritage. Minimal wrinkling despite ageâ€”skin well-maintained. Dark circles under eyes from habit of late-night reading. Expression naturally skeptical and observant.",
+                                 "distinguishing_marks":  [
+                                                              "Soft bioluminescent teal glow running along jawline from ear to chin, subtle in daylight but luminous in low-light conditions",
+                                                              "Matching teal bioluminescent line tracing collarbones and upper sternumâ€”visible when wearing open-necked clothing",
+                                                              "Small circular scar on left temple, approximately 1cm diameter, consistent with implant insertion point (voice amplification implant installed ~40 years ago)"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent geneware traces (teal, jaw and collarbonesâ€”glows softly in darkness). Voice amplification implant scar barely visible at left temple. Cognitive support mesh is subcutaneous and invisible. Minor tech accessibility aural implant behind left ear (for municipal vidlink accessibility).",
+                                 "posture_movement":  "Stands and walks with deliberate verticalityâ€”shoulders back, chin slightly elevated, as if perpetually addressing a room. Moves with economical precision. Hands gesture while speaking, fingers quick and expressive. Makes direct eye contact habitually. Sits forward on chairs rather than back. Movement patterns suggest someone still instinctively \u0027on stage\u0027 despite retirement.",
+                                 "clothing_style":  "Tier 3-4 working-professional aesthetic, carried into retirement with no irony. Favors well-fitted, durable clothing: linen and cotton blends, earth and warm tones (rust, cream, muted gold). Typically wears: tailored button-up shirts (often with sleeves rolled to show jawline augmentation), dark practical trousers or midi skirts, sensible boots or slip-ons with good support. Cardigan or structured jacket for council meetings. Minimal jewelryâ€”a simple watch with readable face, one silver ring. No corporate logos or status wear. Reading glasses on thin cord. Crossbody bag with worn canvas fabric, stuffed with papers and teaching materials."
+                             },
+    "image_prompt":  "Farida SzabÃ³, 173cm lean angular figure with commanding posture, standing with shoulders squared and chin elevated. Warm medium skin tone with golden-honey luminosity blending Eastern European, Northern European, South Asian, Hispanic, Southeast Asian, and Indigenous American heritageâ€”balanced facial proportions with moderate cheekbones and harmonious feature synthesis. Short amber-dyed hair with gray-brown undertones, dark brown alert eyes, natural skeptical expression. Dark circles under eyes. Soft bioluminescent teal glow tracing jawline and collarbones, subtle in daylight but luminous in shadows. Small circular implant scar at left temple. Wearing well-fitted tailored rust-toned linen shirt with sleeves rolled, dark practical trousers, sensible boots. Simple silver watch, reading glasses on thin cord. Crossbody canvas bag filled with papers. Standing in warm-lit interior space, perhaps a library or council chamber, hands gesturing expressively mid-speech. GLMZ Great Lakes Metropolitan Zone aesthetic. Late afternoon golden light catching skin tone and subtle bioluminescent traces. Mood: intellectually engaged, direct, observant. Professional but lived-in appearance. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  28.6,
+                             "Northern European":  22,
+                             "South Asian":  18.8,
+                             "Hispanic/Latin American":  17.7,
+                             "Southeast Asian":  9.8,
+                             "Indigenous American":  3.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  11.8,
+                                                                             "Romanian":  9.9
+                                                                         },
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  2.7,
+                                                                         "Russian":  4.2
+                                                                     }
+                                                 },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  3.1,
+                                                                            "English":  9.9
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "Austrian":  4.2,
+                                                                       "German":  2
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  1.5,
+                                                                           "Norwegian":  1.3
+                                                                       }
+                                                  },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Tamil":  11,
+                                                               "Malayali":  4.2
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  3.6
+                                                                }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Cuban":  17.7
+                                                                          }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Balinese":  5.8
+                                                                   },
+                                                    "Laotian":  {
+                                                                    "Laotian":  2.4
+                                                                },
+                                                    "Filipino":  {
+                                                                     "Cebuano":  1.3,
+                                                                     "Tagalog":  0.3
+                                                                 }
+                                                },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  2
+                                                                         },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  0.8
+                                                                                },
+                                                        "Plains Nations":  {
+                                                                               "Cherokee":  0.2,
+                                                                               "Lakota":  0.1
+                                                                           }
+                                                    }
+                        },
+    "tier":  "1"
 }

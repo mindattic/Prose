@@ -1,275 +1,296 @@
-{
-  "id": "019d6143a6367ae78c645172e9fc0a6f",
-  "type": "character",
-  "name": "Renata Cardenas",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Corponation-sponsored VR experience designer",
-  "age": 41,
-  "status": "active",
-  "location": "Lakeview Neon, Axiom Creative Division offices and a private studio in Calumet Rise",
-  "description": "Renata Cardenas is striking in the composed, deliberate way of someone who has studied what 'striking' means and engineered it. She has deep Ghana-coastal black skin and keeps her hair in elaborate braided architecture that incorporates fiber-optic threads so fine they're almost invisible until she moves and the light catches them. She dresses in Axiom's tier-3 corporate aesthetic — fitted, neutral-toned, expensive in ways that don't announce themselves. Her eyes have been modified with multi-focal lenses that let her perceive both standard visual space and the VR overlay simultaneously, a practical tool she's had for so long she forgets it's augmentation.\n\nRenata Cardenas designs premium VR experiences for Axiom's top-tier client division — not games, but immersive narrative environments that wealthy clients pay enormous sums to inhabit for a few hours. She is extraordinarily good at her job, recognized within Axiom as one of their most valuable creative assets, and she is slowly and quietly losing her mind from the gap between what she is capable of making and what she is permitted to make. Her personal studio in Calumet Rise is where she makes what she actually wants to make — raw, politically uncomfortable VR spaces that she has never shown to anyone.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.7,
-      "id": 0.3,
-      "shadow": 0.8,
-      "mask": 0.9,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "that she has already sold what mattered and cannot recover it",
-      "being discovered — either the secret work or the hollowness beneath the professional surface"
-    ],
-    "core_desires": [
-      "to show the private work, once, to an audience that can receive it",
-      "to stop performing competence and simply be it"
-    ],
-    "coping_mechanisms": [
-      "extreme professional perfectionism as displacement activity",
-      "compartmentalization so practiced it's become structural to her personality"
-    ],
-    "blind_spots": [
-      "she reads every human interaction through a narrative-design lens, which means she's often manipulating rather than connecting without realizing it",
-      "she's convinced she is more trapped than she actually is because leaving Axiom has become conceptually impossible in her mind"
-    ],
-    "secret": "The private VR experiences she's been building in Calumet Rise are based on her maternal grandmother's memories of coastal Ghana before the megacity consolidations — memories transmitted through recorded testimony and letters, some of which Isadora has fabricated to fill gaps. She doesn't know where testimony ends and her invention begins anymore. She's terrified this is a form of desecration. She's equally terrified it's her best work."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, professional, with a tendency toward design-speak that she uses as a distancing mechanism. When genuinely moved drops into something warmer and less polished. Occasional Icelandic or Akan proverbs from her two grandmothers, used privately rather than in professional settings.",
-    "cadence": "Measured and even in professional contexts, with very controlled affect. Privately, she speaks faster and trails into silence when thinking.",
-    "verbal_tics": [
-      "'The throughline here is — '",
-      "pausing to consider word choice visibly",
-      "using design terminology for non-design situations ('what's the user experience of this conversation?')"
-    ],
-    "example_lines": [
-      "'What Axiom pays me to build is a product. What I build is an experience. That's not the same thing, and most days the distinction sustains me.'",
-      "'My grandmother said: if you are going to tell someone else's story, you had better have the courage to tell your own first. I think about that every day. I haven't done it yet.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "An Axiom junior designer on her team has found access to her private studio's VR files — not by hacking, but because a scheduling error gave them the wrong facility key. Isadora needs to know what they've seen, whether they'll report it, and whether the work is actually as dangerous to her career as she's always assumed.",
-    "A client who paid for a private VR experience has been returning to it obsessively — daily for six months — and Axiom has flagged it as a liability. They want Isadora to alter the experience to break the dependency. She's designed something that grips people this completely before, in her private work, and she needs to understand what she built before she can take it apart."
-  ],
-  "narrative_function": "Access point to Axiom's creative division and its internal politics; potential patron or employer for artist characters; her secret work could be a significant story driver; she's a character who represents the corponation-artist compromise at its most successful and most hollow.",
-  "augmentations": "Multi-focal dual-perception ocular modification (practical, tier 3), neural interface port for direct VR authoring (standard Axiom professional equipment), patterned irises (geometric Adinkra symbols, cosmetic)",
-  "daily_life": "Corporate hours at Lakeview Neon overseeing a team of junior designers; evenings in Calumet Rise alone with her private work; meticulous about keeping these two lives from touching.",
-  "affiliation": "Axiom Creative Division (employed); independent work kept strictly secret",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 9,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "corponation-employed",
-      "double-life",
-      "tier-3",
-      "vr-designer",
-      "suppressed-artist",
-      "compartmentalized"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Professional self always comes first in any setting that touches Axiom",
-      "The private work is never discussed, never shown, never acknowledged",
-      "Always know what someone wants from a conversation before entering it"
-    ],
-    "escalation_ladder": [
-      "Polite redirection",
-      "Formal, documented professional pushback",
-      "Strategic use of Axiom's internal processes to neutralize a threat",
-      "Quiet removal of herself from a situation that's becoming unmanageable",
-      "The one thing she has never done: fully losing control in a professional setting — she doesn't know what that looks like"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally warm, genuinely attentive in a way that feels like being studied — because she is studying you",
-      "friends": "She has very few; with those she has, she is unexpectedly dry and funny, and occasionally says something so honest it stops the conversation"
-    },
-    "stress_responses": {
-      "low": "Immaculate professional performance, zero visible affect",
-      "medium": "Extra hours in the private studio, often building something destructive within the VR space that she then deletes",
-      "high": "Rare complete withdrawal — calls in sick to Axiom, does not answer messages, sits in the VR environment for hours"
-    },
-    "contradictions": [
-      "Designs experiences meant to create deep emotional truth while systematically preventing any emotional truth in her own interactions",
-      "Despises what corponation sponsorship does to art while being the most successful corponation-sponsored artist on her team"
-    ],
-    "habits": [
-      "Reviews her private work's file sizes without opening the files — a ritual check that it still exists",
-      "Brings Axiom-branded coffee to meetings as a kind of ironic personal joke no one else is in on",
-      "Leaves a small digital data-offering for the Lakeview Neon ELFs on the first day of each project"
-    ],
-    "breaking_points": [
-      "The private work being seen without her consent",
-      "Being asked to design an experience that requires fabricating a real person's memory without their consent — a line she has already blurred herself and knows it"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Multi-focal dual-perception ocular modification (tier 3, practical)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Multi-focal dual-perception ocular modification (tier 3, practical)",
-      "replaces": ""
-    },
-    {
-      "name": "Neural interface port, base of skull (tier 2, standard Axiom professional kit)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Neural interface port, base of skull (tier 2, standard Axiom professional kit)",
-      "replaces": ""
-    },
-    {
-      "name": "Patterned irises, Adinkra geometric symbols (cosmetic, tier 1)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Patterned irises, Adinkra geometric symbols (cosmetic, tier 1)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Artist": 0.9,
-    "Dreamer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Lakeview Neon",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Lakeview Neon",
-    "Calumet Rise",
-    "Lacuna Genomics",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "CHROMEWORKS Auris Focal Directional Hearing Suite"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (49.6%) with substantial Sub-Saharan African (39.5%) and Indigenous American (10.9%) ancestry. This genetic blend creates a striking phenotype: warm deep-brown skin tone with rich undertones draws from the combined African and Latin American heritage, while Indigenous American ancestry contributes subtle bone structure definition and warm golden notes to complexion. The result is luminous deep chocolate-brown skin with golden warmth, high pronounced cheekbones with strong contour, and a defined jawline reflecting the ancestral blend of African and Indigenous features.",
-    "height_cm": 172,
-    "weight_kg": 62,
-    "build": "Lean and precise, with the controlled posture of someone who has learned to move deliberately. Long-limbed, minimal body fat, built for endurance rather than strength.",
-    "hair_color": "Deep black with embedded fiber-optic threads",
-    "hair_style": "Elaborate braided architecture with geometric patterns; braids incorporate fine near-invisible fiber-optic filaments that catch light when she moves",
-    "hair_length": "Long (waist-length when fully extended, typically worn pinned or coiled)",
-    "eye_color": "Dark brown with patterned geometric irises (Adinkra symbols, cosmetic modification)",
-    "skin_tone": "Luminous deep chocolate-brown with warm golden undertones—a complex blend of Sub-Saharan African depth, Hispanic/Latin American warmth, and Indigenous American golden notes. Rich and dimensional, glowing warmth beneath the surface.",
-    "complexion": "Flawless and deliberately maintained, minimal natural aging visible. High, pronounced cheekbones with strong definition reflecting Indigenous and African ancestry, powerful jawline with warm-toned contour. No visible scarring or blemishes.",
-    "distinguishing_marks": [
-      "Micro-scarring along the temporal region behind left ear where neural interface port was installed (visible only in direct side-profile lighting)"
-    ],
-    "visible_augmentations": "Geometric Adinkra symbol patterns visible within iris structure of both eyes (purely cosmetic). Subtle neural interface port scar behind left ear. Multi-focal lenses create barely-perceptible depth shift in her gaze when she toggles between standard and overlay vision.",
-    "posture_movement": "Moves with studied precision and minimal wasted motion. Her gaze often has a fractional delay before focusing, a tell that she's processing dual visual layers simultaneously. Sits with deliberate posture. Hands still when not actively working. Her stillness has an engineered quality to it—relaxation that required effort to perfect.",
-    "clothing_style": "Axiom tier-3 corporate aesthetic: fitted, expensive, deliberately understated. Neutral color palette (charcoal, cream, deep blue, graphite). High-quality natural fabrics with subtle tech integration. Tailored jackets over smart-fabric layers. Minimal jewelry—one understated silver ring on right index finger. Personal studio wear is looser, darker, more experimental but equally precise."
-  },
-  "image_prompt": "Renata Cardenas, 2226 neo-noir corporate executive, luminous deep chocolate-brown skin with golden undertones, high pronounced cheekbones, strong jawline, dark eyes with geometric Adinkra symbol irises showing technological enhancement, long black waist-length braided hair woven with fiber-optic threads catching light, 172cm lean precise build, wearing charcoal Axiom tier-3 tailored jacket over smart-fabric layers, minimal silver jewelry, subtle neural interface micro-scar behind left ear visible in side-profile, studied precise posture, fraction-second gaze delay suggesting dual visual processing, Great Lakes Metropolitan Zone corporate environment, cool overhead lighting casting sharp shadows, 2:3 portrait composition emphasizing deliberate stillness and engineered composure, GLMZ 2200s aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 49.6,
-    "Sub-Saharan African": 39.5,
-    "Indigenous American": 10.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 21.2
-      },
-      "Caribbean": {
-        "Puerto Rican": 21.3
-      },
-      "Mexican": {
-        "Mexican": 7.1
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 31.2,
-        "Gabonese": 8.3
-      }
-    },
-    "Indigenous American": {
-      "Plains Nations": {
-        "Muscogee": 2.1,
-        "Lakota": 1.9
-      },
-      "Great Lakes Nations": {
-        "Potawatomi": 2,
-        "Ojibwe": 4.2
-      },
-      "Mesoamerican": {
-        "Nahua": 0.7
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6367ae78c645172e9fc0a6f",
+    "type":  "character",
+    "name":  "Renata Cardenas",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Corponation-sponsored VR experience designer",
+    "age":  41,
+    "status":  "active",
+    "location":  "Lakeview Neon, Axiom Creative Division offices and a private studio in Calumet Rise",
+    "description":  "Renata Cardenas is striking in the composed, deliberate way of someone who has studied what \u0027striking\u0027 means and engineered it. She has deep Ghana-coastal black skin and keeps her hair in elaborate braided architecture that incorporates fiber-optic threads so fine they\u0027re almost invisible until she moves and the light catches them. She dresses in Axiom\u0027s tier-3 corporate aesthetic â€” fitted, neutral-toned, expensive in ways that don\u0027t announce themselves. Her eyes have been modified with multi-focal lenses that let her perceive both standard visual space and the VR overlay simultaneously, a practical tool she\u0027s had for so long she forgets it\u0027s augmentation.\n\nRenata Cardenas designs premium VR experiences for Axiom\u0027s top-tier client division â€” not games, but immersive narrative environments that wealthy clients pay enormous sums to inhabit for a few hours. She is extraordinarily good at her job, recognized within Axiom as one of their most valuable creative assets, and she is slowly and quietly losing her mind from the gap between what she is capable of making and what she is permitted to make. Her personal studio in Calumet Rise is where she makes what she actually wants to make â€” raw, politically uncomfortable VR spaces that she has never shown to anyone.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that she has already sold what mattered and cannot recover it",
+                                          "being discovered â€” either the secret work or the hollowness beneath the professional surface"
+                                      ],
+                       "core_desires":  [
+                                            "to show the private work, once, to an audience that can receive it",
+                                            "to stop performing competence and simply be it"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "extreme professional perfectionism as displacement activity",
+                                                 "compartmentalization so practiced it\u0027s become structural to her personality"
+                                             ],
+                       "blind_spots":  [
+                                           "she reads every human interaction through a narrative-design lens, which means she\u0027s often manipulating rather than connecting without realizing it",
+                                           "she\u0027s convinced she is more trapped than she actually is because leaving Axiom has become conceptually impossible in her mind"
+                                       ],
+                       "secret":  "The private VR experiences she\u0027s been building in Calumet Rise are based on her maternal grandmother\u0027s memories of coastal Ghana before the megacity consolidations â€” memories transmitted through recorded testimony and letters, some of which Isadora has fabricated to fill gaps. She doesn\u0027t know where testimony ends and her invention begins anymore. She\u0027s terrified this is a form of desecration. She\u0027s equally terrified it\u0027s her best work."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, professional, with a tendency toward design-speak that she uses as a distancing mechanism. When genuinely moved drops into something warmer and less polished. Occasional Icelandic or Akan proverbs from her two grandmothers, used privately rather than in professional settings.",
+                            "cadence":  "Measured and even in professional contexts, with very controlled affect. Privately, she speaks faster and trails into silence when thinking.",
+                            "verbal_tics":  [
+                                                "\u0027The throughline here is â€” \u0027",
+                                                "pausing to consider word choice visibly",
+                                                "using design terminology for non-design situations (\u0027what\u0027s the user experience of this conversation?\u0027)"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027What Axiom pays me to build is a product. What I build is an experience. That\u0027s not the same thing, and most days the distinction sustains me.\u0027",
+                                                  "\u0027My grandmother said: if you are going to tell someone else\u0027s story, you had better have the courage to tell your own first. I think about that every day. I haven\u0027t done it yet.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "An Axiom junior designer on her team has found access to her private studio\u0027s VR files â€” not by hacking, but because a scheduling error gave them the wrong facility key. Isadora needs to know what they\u0027ve seen, whether they\u0027ll report it, and whether the work is actually as dangerous to her career as she\u0027s always assumed.",
+                        "A client who paid for a private VR experience has been returning to it obsessively â€” daily for six months â€” and Axiom has flagged it as a liability. They want Isadora to alter the experience to break the dependency. She\u0027s designed something that grips people this completely before, in her private work, and she needs to understand what she built before she can take it apart."
+                    ],
+    "narrative_function":  "Access point to Axiom\u0027s creative division and its internal politics; potential patron or employer for artist characters; her secret work could be a significant story driver; she\u0027s a character who represents the corponation-artist compromise at its most successful and most hollow.",
+    "augmentations":  "Multi-focal dual-perception ocular modification (practical, tier 3), neural interface port for direct VR authoring (standard Axiom professional equipment), patterned irises (geometric Adinkra symbols, cosmetic)",
+    "daily_life":  "Corporate hours at Lakeview Neon overseeing a team of junior designers; evenings in Calumet Rise alone with her private work; meticulous about keeping these two lives from touching.",
+    "affiliation":  "Axiom Creative Division (employed); independent work kept strictly secret",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  9,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "corponation-employed",
+                               "double-life",
+                               "tier-3",
+                               "vr-designer",
+                               "suppressed-artist",
+                               "compartmentalized"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Professional self always comes first in any setting that touches Axiom",
+                                              "The private work is never discussed, never shown, never acknowledged",
+                                              "Always know what someone wants from a conversation before entering it"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite redirection",
+                                                 "Formal, documented professional pushback",
+                                                 "Strategic use of Axiom\u0027s internal processes to neutralize a threat",
+                                                 "Quiet removal of herself from a situation that\u0027s becoming unmanageable",
+                                                 "The one thing she has never done: fully losing control in a professional setting â€” she doesn\u0027t know what that looks like"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally warm, genuinely attentive in a way that feels like being studied â€” because she is studying you",
+                                                   "friends":  "She has very few; with those she has, she is unexpectedly dry and funny, and occasionally says something so honest it stops the conversation"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Immaculate professional performance, zero visible affect",
+                                                "medium":  "Extra hours in the private studio, often building something destructive within the VR space that she then deletes",
+                                                "high":  "Rare complete withdrawal â€” calls in sick to Axiom, does not answer messages, sits in the VR environment for hours"
+                                            },
+                       "contradictions":  [
+                                              "Designs experiences meant to create deep emotional truth while systematically preventing any emotional truth in her own interactions",
+                                              "Despises what corponation sponsorship does to art while being the most successful corponation-sponsored artist on her team"
+                                          ],
+                       "habits":  [
+                                      "Reviews her private work\u0027s file sizes without opening the files â€” a ritual check that it still exists",
+                                      "Brings Axiom-branded coffee to meetings as a kind of ironic personal joke no one else is in on",
+                                      "Leaves a small digital data-offering for the Lakeview Neon ELFs on the first day of each project"
+                                  ],
+                       "breaking_points":  [
+                                               "The private work being seen without her consent",
+                                               "Being asked to design an experience that requires fabricating a real person\u0027s memory without their consent â€” a line she has already blurred herself and knows it"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Multi-focal dual-perception ocular modification (tier 3, practical)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Multi-focal dual-perception ocular modification (tier 3, practical)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural interface port, base of skull (tier 2, standard Axiom professional kit)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Neural interface port, base of skull (tier 2, standard Axiom professional kit)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Patterned irises, Adinkra geometric symbols (cosmetic, tier 1)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Patterned irises, Adinkra geometric symbols (cosmetic, tier 1)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Artist":  0.9,
+                       "Dreamer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Lakeview Neon",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Nkomo-Lindqvist NL-22 \u0027Peacemaker\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Lakeview Neon",
+                             "Calumet Rise",
+                             "Lacuna Genomics",
+                             "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+                             "CHROMEWORKS Auris Focal Directional Hearing Suite"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Hispanic/Latin American (49.6%) with substantial Sub-Saharan African (39.5%) and Indigenous American (10.9%) ancestry. This genetic blend creates a striking phenotype: warm deep-brown skin tone with rich undertones draws from the combined African and Latin American heritage, while Indigenous American ancestry contributes subtle bone structure definition and warm golden notes to complexion. The result is luminous deep chocolate-brown skin with golden warmth, high pronounced cheekbones with strong contour, and a defined jawline reflecting the ancestral blend of African and Indigenous features.",
+                                 "height_cm":  172,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and precise, with the controlled posture of someone who has learned to move deliberately. Long-limbed, minimal body fat, built for endurance rather than strength.",
+                                 "hair_color":  "Deep black with embedded fiber-optic threads",
+                                 "hair_style":  "Elaborate braided architecture with geometric patterns; braids incorporate fine near-invisible fiber-optic filaments that catch light when she moves",
+                                 "hair_length":  "Long (waist-length when fully extended, typically worn pinned or coiled)",
+                                 "eye_color":  "Dark brown with patterned geometric irises (Adinkra symbols, cosmetic modification)",
+                                 "skin_tone":  "Luminous deep chocolate-brown with warm golden undertonesâ€”a complex blend of Sub-Saharan African depth, Hispanic/Latin American warmth, and Indigenous American golden notes. Rich and dimensional, glowing warmth beneath the surface.",
+                                 "complexion":  "Flawless and deliberately maintained, minimal natural aging visible. High, pronounced cheekbones with strong definition reflecting Indigenous and African ancestry, powerful jawline with warm-toned contour. No visible scarring or blemishes.",
+                                 "distinguishing_marks":  [
+                                                              "Micro-scarring along the temporal region behind left ear where neural interface port was installed (visible only in direct side-profile lighting)"
+                                                          ],
+                                 "visible_augmentations":  "Geometric Adinkra symbol patterns visible within iris structure of both eyes (purely cosmetic). Subtle neural interface port scar behind left ear. Multi-focal lenses create barely-perceptible depth shift in her gaze when she toggles between standard and overlay vision.",
+                                 "posture_movement":  "Moves with studied precision and minimal wasted motion. Her gaze often has a fractional delay before focusing, a tell that she\u0027s processing dual visual layers simultaneously. Sits with deliberate posture. Hands still when not actively working. Her stillness has an engineered quality to itâ€”relaxation that required effort to perfect.",
+                                 "clothing_style":  "Axiom tier-3 corporate aesthetic: fitted, expensive, deliberately understated. Neutral color palette (charcoal, cream, deep blue, graphite). High-quality natural fabrics with subtle tech integration. Tailored jackets over smart-fabric layers. Minimal jewelryâ€”one understated silver ring on right index finger. Personal studio wear is looser, darker, more experimental but equally precise."
+                             },
+    "image_prompt":  "Renata Cardenas, 2226 neo-noir corporate executive, luminous deep chocolate-brown skin with golden undertones, high pronounced cheekbones, strong jawline, dark eyes with geometric Adinkra symbol irises showing technological enhancement, long black waist-length braided hair woven with fiber-optic threads catching light, 172cm lean precise build, wearing charcoal Axiom tier-3 tailored jacket over smart-fabric layers, minimal silver jewelry, subtle neural interface micro-scar behind left ear visible in side-profile, studied precise posture, fraction-second gaze delay suggesting dual visual processing, Great Lakes Metropolitan Zone corporate environment, cool overhead lighting casting sharp shadows, 2:3 portrait composition emphasizing deliberate stillness and engineered composure, GLMZ 2200s aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  49.6,
+                             "Sub-Saharan African":  39.5,
+                             "Indigenous American":  10.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  21.2
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  21.3
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  7.1
+                                                                        }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  31.2,
+                                                                                "Gabonese":  8.3
+                                                                            }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Muscogee":  2.1,
+                                                                               "Lakota":  1.9
+                                                                           },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  2,
+                                                                                    "Ojibwe":  4.2
+                                                                                },
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  0.7
+                                                                         }
+                                                    }
+                        },
+    "tier":  "3"
 }

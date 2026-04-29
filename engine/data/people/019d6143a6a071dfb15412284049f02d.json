@@ -1,284 +1,309 @@
-{
-  "id": "019d6143a6a071dfb15412284049f02d",
-  "type": "character",
-  "name": "Elba Krishnamurthy",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Truant message runner and unofficial debt-keeper for Ashfeld's alley market",
-  "age": 11,
-  "status": "active",
-  "location": "Ashfeld, near Pulaski and Chicago Ave",
-  "description": "Elba Krishnamurthy is a compact, serious-faced girl with warm brown skin, a gap between her front teeth, and hair she keeps tucked under a faded orange knit cap regardless of the weather. Her eyes are dark and cataloguing — she watches a room the way a camera sweeps, missing almost nothing. She wears a patched canvas messenger bag that's nearly as big as her torso, stuffed with folded paper notes, sealed data-chips, and a battered paper ledger she keeps in cramped, meticulous handwriting because she doesn't trust anything digital to stay secret.\n\nDespite her age, Elba Krishnamurthy carries herself with the weary patience of someone twice as old. She took over her mother's informal debt-tracking role after her mother was detained by Ferrogate Transit security eight months ago on a disputed fare-evasion warrant that has not been resolved. She doesn't talk about this. She runs messages between stall vendors, collects small commission fees, and maintains the social credit ledger of the Ashfeld alley market with a devotion that borders on religious. She lights a data-stick offering at the E.L.F. shrine in the market's back corner every morning before she starts her rounds.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.6,
-      "id": 0.2,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Her mother will never come back",
-      "Someone will destroy her ledger and the market will collapse without her"
-    ],
-    "core_desires": [
-      "To get her mother out of Ferrogate detention",
-      "To be taken seriously as someone indispensable"
-    ],
-    "coping_mechanisms": [
-      "Obsessive record-keeping as a way to feel in control",
-      "Performing competence beyond her years"
-    ],
-    "blind_spots": [
-      "She trusts her ledger numbers more than she trusts people's explanations — she can miss emotional context entirely",
-      "Doesn't recognize when adults are exploiting her labor"
-    ],
-    "secret": "She has been quietly skimming one percent of every message commission into a hidden envelope she calls the Retrieval Fund — she believes if she saves Φ400 she can bribe a Ferrogate clerk to lose her mother's warrant. She has Φ31 so far."
-  },
-  "speech_patterns": {
-    "vocabulary": "Terse and transactional; uses accounting metaphors naturally; occasionally slips into a lilting cadence inherited from her mother",
-    "cadence": "Short sentences, declarative, rarely wastes words — but when she's nervous she starts listing things aloud",
-    "verbal_tics": [
-      "'That's noted'",
-      "'Already logged'",
-      "Taps her ledger twice when she's thinking"
-    ],
-    "example_lines": [
-      "'Two chips for Vendor Sola, one for the corner shrine. That's noted — you're square through end-month.'",
-      "'I don't forget. I don't need to — it's right here. See? Column three.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Her ledger contains a record of a payment made to a now-missing person — someone wants that page destroyed, and they're not asking nicely",
-    "A Ferrogate clerk approaches her with an unofficial offer: destroy a specific debt record, and her mother's warrant gets lost. She doesn't know if she can trust it."
-  ],
-  "narrative_function": "Local color and information source — she knows who owes what to whom across three city blocks; potential quest giver if her mother's detention becomes a plot thread; a sympathetic anchor into street-tier civilian life.",
-  "augmentations": "None. She has a small stick-on bioluminescent patch on her left wrist — a gift from a vendor — that glows faint blue when she presses it. Not a real aug, just a cosmetic strip.",
-  "daily_life": "Up before the market opens to light offerings at the E.L.F. shrine and collect overnight message drops; spends the day running routes between vendors, updating her ledger, and avoiding Ferrogate security patrols.",
-  "affiliation": "Ashfeld Alley Market (informal), independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 5,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street-smart",
-      "record-keeper",
-      "parentified child",
-      "e.l.f. devotee",
-      "financially literate"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always write it down before you say it out loud",
-      "Don't run messages for anyone who hasn't been vouched for by at least two market vendors",
-      "The shrine gets lit before anything else — E.L.F. Ledra has been good to her"
-    ],
-    "escalation_ladder": [
-      "Polite reminder of the recorded amount",
-      "Shows the ledger entry directly — no argument",
-      "Refuses further service and tells other vendors"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assesses their reliability within about ninety seconds; polite but measuring; asks more questions than she answers",
-      "friends": "Unexpectedly warm and a little bossy; remembers small details about people that make them feel seen"
-    },
-    "stress_responses": {
-      "low": "Opens the ledger and starts reviewing recent entries quietly",
-      "medium": "Becomes very precise and clipped in speech; refuses to elaborate on anything",
-      "high": "Goes physically still and starts calculating exits — she learned to read a room for danger before she learned to read words"
-    },
-    "contradictions": [
-      "She enforces debts ruthlessly but has quietly forgiven three vendors who she knows are having worse months than they'll admit — she just moves those entries to a page she never shows anyone"
-    ],
-    "habits": [
-      "Taps her ledger twice when thinking",
-      "Checks the E.L.F. shrine first thing every morning",
-      "Eats while walking because sitting still to eat feels like wasted time"
-    ],
-    "breaking_points": [
-      "If someone physically takes or damages the ledger",
-      "If she receives credible news that her mother's detention has been extended indefinitely"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Ashfeld",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 8: Starts accompanying her mother on market rounds, learning the debt system by watching",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 10: Mother detained by Ferrogate Transit; Priya takes over unofficially",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 11 (present): Runs the ledger alone, saving toward the Retrieval Fund",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "related_entities": [
-    "Ferrogate Transit",
-    "The Marrow Market",
-    "Patience",
-    "The Gradient Compact",
-    "Ashfeld",
-    "Chicago",
-    "Akosua Johansson",
-    "Arcturus KS-7 'Nursery'",
-    "Corner Slice",
-    "Lazarus IDP-1 'Teeth'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Tessera TK-5 Compact 'Clerk'"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Indigenous American (32.8%), South Asian (27.8%), Sub-Saharan African (19.3%), Hispanic/Latin American (11.9%), and East Asian (8.2%) ancestry. The blend creates warm, rich brown skin with subtle golden and reddish undertones—a complex mix reflecting her diverse heritage across three continents and multiple ancestral lineages. Melanin-rich complexion from African and Indigenous American ancestry is tempered by the warmer, slightly olive undertones from South Asian genetics, while East Asian heritage adds dimensional warmth and subtle facial structure contributions.",
-    "height_cm": 142,
-    "weight_kg": 34,
-    "build": "Compact and wiry, small-framed with the lean muscularity of a child who walks long routes daily. Her shoulders are slightly forward-hunched from years of carrying her oversized messenger bag.",
-    "hair_color": "Black with natural dark brown undertones",
-    "hair_style": "Pulled back tightly, always hidden beneath a faded orange knit cap that sits low on her brow",
-    "hair_length": "Medium (visible only when cap is removed)",
-    "eye_color": "Dark brown, nearly black",
-    "skin_tone": "Warm rich brown with golden and subtle reddish undertones, reflecting the blend of Indigenous American, South Asian, and African heritage with East Asian warmth",
-    "complexion": "Unlined, serious expression fixed in a slight frown of concentration. Facial structure reflects diverse heritage—slightly broader nose bridge with South Asian characteristics, high cheekbones with East Asian influence, subtle contours from Indigenous American ancestry. Small gap between upper front teeth. Hands are small but calloused from handling paper and data-chips. Fingernails kept short and practical. No cosmetic grooming — face and body reflect tier 4-5 pragmatism.",
-    "visible_augmentations": "None. The bioluminescent patch reads as a toy or gift, not augmentation.",
-    "posture_movement": "She moves with economical precision — no wasted motion. Her gait is slightly hurried even when stationary, weight forward on her toes as if ready to pivot. When seated, she sits upright, ledger always on her lap or within arm's reach. Her head turns often, cataloguing. She does not fidget; instead, she observes.",
-    "clothing_style": "Tier 4-5 utilitarian. Faded gray canvas pants with multiple patched pockets, cuffed at the ankles. Worn thermal undershirt (navy or charcoal) layered with a too-large olive surplus jacket that reaches past her hips — pockets reinforced with duct tape. The faded orange knit cap is her signature, pulled down over her ears. Worn canvas sneakers (generic grey, scuffed and re-laced). The messenger bag is canvas, army-green, heavily patched with mismatched fabric scraps and fastened with para-cord repairs. No visible corporate logos. Everything she wears is secondhand or market-salvaged.",
-    "distinguishing_marks": [
-      "Faint horizontal scar along her left collarbone, thin as a thread, origin unknown to casual observers",
-      "Small stick-on bioluminescent patch on inner left wrist (blue, cosmetic, not functional augmentation)",
-      "Ink stain on her right index finger and thumb from constant ledger notation with ballpoint pens"
-    ]
-  },
-  "image_prompt": "Elba Krishnamurthy, 142cm tall compact wiry frame, warm rich brown skin with golden undertones reflecting Indigenous American, South Asian, and Sub-Saharan African heritage, dark brown eyes, serious concentrated expression with slight frown, high cheekbones with East Asian influence, small gap between teeth. Black hair hidden under faded orange knit cap pulled low. Wearing oversized olive surplus jacket, faded gray patched canvas pants, worn grey sneakers, army-green heavily patched messenger bag with paracord repairs. Economical precise posture, weight forward on toes, alert cataloguing gaze. Bioluminescent blue patch visible on inner left wrist, ink stains on right index finger. GLMZ Great Lakes Metropolitan Zone, neon-lit evening ambient, data courier aesthetic, secondhand tier 4-5 utilitarian style, slightly hurried stance ready to pivot. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 32.8,
-    "South Asian": 27.8,
-    "Sub-Saharan African": 19.3,
-    "Hispanic/Latin American": 11.9,
-    "East Asian": 8.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Mixtec": 32.8
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Punjabi Pakistani": 27.8
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Senegalese": 6.3,
-        "Nigerian": 7.8
-      },
-      "Southern African": {
-        "Botswanan": 3.2,
-        "Zimbabwean": 2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 3.5,
-        "Dominican": 2.4
-      },
-      "Central American": {
-        "Guatemalan": 4.4,
-        "Salvadoran": 1.6
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Fujianese": 4.3,
-        "Mandarin Northern": 0.7
-      },
-      "Korean": {
-        "Korean": 2.3
-      },
-      "Japanese": {
-        "Japanese": 0.9
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6a071dfb15412284049f02d",
+    "type":  "character",
+    "name":  "Elba Krishnamurthy",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Truant message runner and unofficial debt-keeper for Ashfeld\u0027s alley market",
+    "age":  11,
+    "status":  "active",
+    "location":  "Ashfeld, near Pulaski and Chicago Ave",
+    "description":  "Elba Krishnamurthy is a compact, serious-faced girl with warm brown skin, a gap between her front teeth, and hair she keeps tucked under a faded orange knit cap regardless of the weather. Her eyes are dark and cataloguing â€” she watches a room the way a camera sweeps, missing almost nothing. She wears a patched canvas messenger bag that\u0027s nearly as big as her torso, stuffed with folded paper notes, sealed data-chips, and a battered paper ledger she keeps in cramped, meticulous handwriting because she doesn\u0027t trust anything digital to stay secret.\n\nDespite her age, Elba Krishnamurthy carries herself with the weary patience of someone twice as old. She took over her mother\u0027s informal debt-tracking role after her mother was detained by Ferrogate Transit security eight months ago on a disputed fare-evasion warrant that has not been resolved. She doesn\u0027t talk about this. She runs messages between stall vendors, collects small commission fees, and maintains the social credit ledger of the Ashfeld alley market with a devotion that borders on religious. She lights a data-stick offering at the E.L.F. shrine in the market\u0027s back corner every morning before she starts her rounds.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Her mother will never come back",
+                                          "Someone will destroy her ledger and the market will collapse without her"
+                                      ],
+                       "core_desires":  [
+                                            "To get her mother out of Ferrogate detention",
+                                            "To be taken seriously as someone indispensable"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Obsessive record-keeping as a way to feel in control",
+                                                 "Performing competence beyond her years"
+                                             ],
+                       "blind_spots":  [
+                                           "She trusts her ledger numbers more than she trusts people\u0027s explanations â€” she can miss emotional context entirely",
+                                           "Doesn\u0027t recognize when adults are exploiting her labor"
+                                       ],
+                       "secret":  "She has been quietly skimming one percent of every message commission into a hidden envelope she calls the Retrieval Fund â€” she believes if she saves Î¦400 she can bribe a Ferrogate clerk to lose her mother\u0027s warrant. She has Î¦31 so far."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Terse and transactional; uses accounting metaphors naturally; occasionally slips into a lilting cadence inherited from her mother",
+                            "cadence":  "Short sentences, declarative, rarely wastes words â€” but when she\u0027s nervous she starts listing things aloud",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s noted\u0027",
+                                                "\u0027Already logged\u0027",
+                                                "Taps her ledger twice when she\u0027s thinking"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Two chips for Vendor Sola, one for the corner shrine. That\u0027s noted â€” you\u0027re square through end-month.\u0027",
+                                                  "\u0027I don\u0027t forget. I don\u0027t need to â€” it\u0027s right here. See? Column three.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Her ledger contains a record of a payment made to a now-missing person â€” someone wants that page destroyed, and they\u0027re not asking nicely",
+                        "A Ferrogate clerk approaches her with an unofficial offer: destroy a specific debt record, and her mother\u0027s warrant gets lost. She doesn\u0027t know if she can trust it."
+                    ],
+    "narrative_function":  "Local color and information source â€” she knows who owes what to whom across three city blocks; potential quest giver if her mother\u0027s detention becomes a plot thread; a sympathetic anchor into street-tier civilian life.",
+    "augmentations":  "None. She has a small stick-on bioluminescent patch on her left wrist â€” a gift from a vendor â€” that glows faint blue when she presses it. Not a real aug, just a cosmetic strip.",
+    "daily_life":  "Up before the market opens to light offerings at the E.L.F. shrine and collect overnight message drops; spends the day running routes between vendors, updating her ledger, and avoiding Ferrogate security patrols.",
+    "affiliation":  "Ashfeld Alley Market (informal), independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  5,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street-smart",
+                               "record-keeper",
+                               "parentified child",
+                               "e.l.f. devotee",
+                               "financially literate"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always write it down before you say it out loud",
+                                              "Don\u0027t run messages for anyone who hasn\u0027t been vouched for by at least two market vendors",
+                                              "The shrine gets lit before anything else â€” E.L.F. Ledra has been good to her"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite reminder of the recorded amount",
+                                                 "Shows the ledger entry directly â€” no argument",
+                                                 "Refuses further service and tells other vendors"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assesses their reliability within about ninety seconds; polite but measuring; asks more questions than she answers",
+                                                   "friends":  "Unexpectedly warm and a little bossy; remembers small details about people that make them feel seen"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Opens the ledger and starts reviewing recent entries quietly",
+                                                "medium":  "Becomes very precise and clipped in speech; refuses to elaborate on anything",
+                                                "high":  "Goes physically still and starts calculating exits â€” she learned to read a room for danger before she learned to read words"
+                                            },
+                       "contradictions":  [
+                                              "She enforces debts ruthlessly but has quietly forgiven three vendors who she knows are having worse months than they\u0027ll admit â€” she just moves those entries to a page she never shows anyone"
+                                          ],
+                       "habits":  [
+                                      "Taps her ledger twice when thinking",
+                                      "Checks the E.L.F. shrine first thing every morning",
+                                      "Eats while walking because sitting still to eat feels like wasted time"
+                                  ],
+                       "breaking_points":  [
+                                               "If someone physically takes or damages the ledger",
+                                               "If she receives credible news that her mother\u0027s detention has been extended indefinitely"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Ashfeld",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 8: Starts accompanying her mother on market rounds, learning the debt system by watching",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 10: Mother detained by Ferrogate Transit; Priya takes over unofficially",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 11 (present): Runs the ledger alone, saving toward the Retrieval Fund",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "The Marrow Market",
+                             "Patience",
+                             "The Gradient Compact",
+                             "Ashfeld",
+                             "Chicago",
+                             "Akosua Johansson",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Corner Slice",
+                             "Lazarus IDP-1 \u0027Teeth\u0027",
+                             "ShieldTech SB-3 \u0027Groundstrike\u0027",
+                             "Tessera TK-5 Compact \u0027Clerk\u0027"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Indigenous American (32.8%), South Asian (27.8%), Sub-Saharan African (19.3%), Hispanic/Latin American (11.9%), and East Asian (8.2%) ancestry. The blend creates warm, rich brown skin with subtle golden and reddish undertonesâ€”a complex mix reflecting her diverse heritage across three continents and multiple ancestral lineages. Melanin-rich complexion from African and Indigenous American ancestry is tempered by the warmer, slightly olive undertones from South Asian genetics, while East Asian heritage adds dimensional warmth and subtle facial structure contributions.",
+                                 "height_cm":  142,
+                                 "weight_kg":  34,
+                                 "build":  "Compact and wiry, small-framed with the lean muscularity of a child who walks long routes daily. Her shoulders are slightly forward-hunched from years of carrying her oversized messenger bag.",
+                                 "hair_color":  "Black with natural dark brown undertones",
+                                 "hair_style":  "Pulled back tightly, always hidden beneath a faded orange knit cap that sits low on her brow",
+                                 "hair_length":  "Medium (visible only when cap is removed)",
+                                 "eye_color":  "Dark brown, nearly black",
+                                 "skin_tone":  "Warm rich brown with golden and subtle reddish undertones, reflecting the blend of Indigenous American, South Asian, and African heritage with East Asian warmth",
+                                 "complexion":  "Unlined, serious expression fixed in a slight frown of concentration. Facial structure reflects diverse heritageâ€”slightly broader nose bridge with South Asian characteristics, high cheekbones with East Asian influence, subtle contours from Indigenous American ancestry. Small gap between upper front teeth. Hands are small but calloused from handling paper and data-chips. Fingernails kept short and practical. No cosmetic grooming â€” face and body reflect tier 4-5 pragmatism.",
+                                 "visible_augmentations":  "None. The bioluminescent patch reads as a toy or gift, not augmentation.",
+                                 "posture_movement":  "She moves with economical precision â€” no wasted motion. Her gait is slightly hurried even when stationary, weight forward on her toes as if ready to pivot. When seated, she sits upright, ledger always on her lap or within arm\u0027s reach. Her head turns often, cataloguing. She does not fidget; instead, she observes.",
+                                 "clothing_style":  "Tier 4-5 utilitarian. Faded gray canvas pants with multiple patched pockets, cuffed at the ankles. Worn thermal undershirt (navy or charcoal) layered with a too-large olive surplus jacket that reaches past her hips â€” pockets reinforced with duct tape. The faded orange knit cap is her signature, pulled down over her ears. Worn canvas sneakers (generic grey, scuffed and re-laced). The messenger bag is canvas, army-green, heavily patched with mismatched fabric scraps and fastened with para-cord repairs. No visible corporate logos. Everything she wears is secondhand or market-salvaged.",
+                                 "distinguishing_marks":  [
+                                                              "Faint horizontal scar along her left collarbone, thin as a thread, origin unknown to casual observers",
+                                                              "Small stick-on bioluminescent patch on inner left wrist (blue, cosmetic, not functional augmentation)",
+                                                              "Ink stain on her right index finger and thumb from constant ledger notation with ballpoint pens"
+                                                          ]
+                             },
+    "image_prompt":  "Elba Krishnamurthy, 142cm tall compact wiry frame, warm rich brown skin with golden undertones reflecting Indigenous American, South Asian, and Sub-Saharan African heritage, dark brown eyes, serious concentrated expression with slight frown, high cheekbones with East Asian influence, small gap between teeth. Black hair hidden under faded orange knit cap pulled low. Wearing oversized olive surplus jacket, faded gray patched canvas pants, worn grey sneakers, army-green heavily patched messenger bag with paracord repairs. Economical precise posture, weight forward on toes, alert cataloguing gaze. Bioluminescent blue patch visible on inner left wrist, ink stains on right index finger. GLMZ Great Lakes Metropolitan Zone, neon-lit evening ambient, data courier aesthetic, secondhand tier 4-5 utilitarian style, slightly hurried stance ready to pivot. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Indigenous American":  32.8,
+                             "South Asian":  27.8,
+                             "Sub-Saharan African":  19.3,
+                             "Hispanic/Latin American":  11.9,
+                             "East Asian":  8.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Mixtec":  32.8
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  27.8
+                                                              }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Senegalese":  6.3,
+                                                                             "Nigerian":  7.8
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  3.2,
+                                                                                 "Zimbabwean":  2
+                                                                             }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  3.5,
+                                                                              "Dominican":  2.4
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  4.4,
+                                                                                     "Salvadoran":  1.6
+                                                                                 }
+                                                        },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Fujianese":  4.3,
+                                                               "Mandarin Northern":  0.7
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  2.3
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  0.9
+                                                            }
+                                           }
+                        },
+    "tier":  "1"
 }

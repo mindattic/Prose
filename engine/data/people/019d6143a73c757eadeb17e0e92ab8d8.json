@@ -1,244 +1,267 @@
-{
-  "id": "019d6143a73c757eadeb17e0e92ab8d8",
-  "type": "character",
-  "name": "Damilola Rahman",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Black market pharmaceutical dealer and street pharmacist — meds, supplements, unscheduled compounds",
-  "age": 24,
-  "status": "active",
-  "location": "The Narrows, Blackpipe Corridor, near Fullerton and Damen",
-  "description": "Damilola Rahman is young enough that it still shows — there's a looseness to him, an unresolved quality, like something that hasn't quite hardened into its final shape. He is tall, lean, with the dark skin and angular jaw of his Tanzanian grandfather and his Filipino grandmother's round cheeks, a combination that makes him look younger than he is and which he has mostly given up being frustrated about. His ears are tipped with small black cat-ear points — geneware done in a parlor on a dare when he was nineteen, which he now can't imagine removing. He keeps his hair mid-length and loose, usually damp, because he is always running slightly late.\n\nHe operates from three locations in rotation — a corner in the Narrows, a back table in a noodle shop in Blackpipe Corridor, and a patch near the old water reclamation junction on the Corridor's south end — and keeps no fixed stall because fixed stalls have fixed addresses. He knows more about pharmacology than most licensed clinicians, taught himself from pirated Helix Biosystems training modules and a mentor who has since retired. He is genuinely trying to help people who cannot afford clinical pricing — and he is also genuinely dealing recreational compounds for profit — and he holds both of these truths without significant cognitive dissonance, which either speaks to moral flexibility or a realistic understanding of how survival works.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.7,
-      "id": 0.7,
-      "shadow": 0.4,
-      "mask": 0.4,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Being arrested and losing the operation before he's built anything sturdy enough to survive without him",
-      "Giving someone the wrong thing and hurting them — this is not abstract, it lives in him"
-    ],
-    "core_desires": [
-      "To run a legitimate clinic one day — he knows exactly what it would look like, down to the layout and the sliding-scale fee structure",
-      "To sleep eight hours without a comm alert"
-    ],
-    "coping_mechanisms": [
-      "Fixates on the people he has genuinely helped — runs the list when things are bad",
-      "Dark jokes that land precisely because they're not entirely jokes"
-    ],
-    "blind_spots": [
-      "Underestimates his own risk tolerance — takes chances he would advise clients against",
-      "Is more emotionally attached to his clients than is professionally safe"
-    ],
-    "secret": "Four months ago a client came to him in acute overdose crisis on a compound he didn't sell her. He stabilized her using everything he had, stayed with her for six hours, and when she was through the worst of it she told him her supplier's name. He has been building a dossier on that supplier since, with no clear plan for what to do with it — he is not a violent person and he is not an informant, and the space between those two things is where he is stuck."
-  },
-  "speech_patterns": {
-    "vocabulary": "Casual, warm, clinical when talking about compounds — the vocabulary shift is notable and a little jarring. Uses a lot of 'like' and 'basically' and 'no, listen' when animated. Swears cheerfully.",
-    "cadence": "Fast when comfortable, careful when discussing medications — he slows down for dosages like he's reading from an internal teleprompter.",
-    "verbal_tics": [
-      "'No, listen—'",
-      "'The thing about that is—'",
-      "Refers to all his regular clients by their ailment in his head, calls them by name out loud — his private shorthand sometimes leaks"
-    ],
-    "example_lines": [
-      "'No, listen, this is not the same compound, the molecular structure is like — okay, imagine the other one is a door and this one is a door that opens the wrong way. You need to know that.'",
-      "'I can get you that. Give me until Thursday. And drink water, I mean it, drink actual water.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The dossier on the bad supplier is now substantial enough to be dangerous — to Zuberi, if it's found — and he needs somewhere to put it that isn't on his person",
-    "A corporate clinic has opened a 'community access' popup in the Narrows, underpricing everything and offering free diagnostics — and Zuberi is watching his client list shrink and trying to figure out what the clinic actually wants before he finds out the hard way"
-  ],
-  "narrative_function": "Resource for medical supplies outside clinical channels. Information source for what's circulating in the Narrows chemically and otherwise. Character study in the ethics of harm reduction in a predatory economy.",
-  "augmentations": "Cat-ear points, black (geneware, cosmetic). No other augmentations — he has spent money on these things and it has always gone to something more urgent.",
-  "daily_life": "He rotates between his three spots on a rough weekly schedule he shares with trusted clients via a dead-drop comm channel. He spends mornings acquiring stock — legal supplements through a legitimate channel he cultivates carefully, unscheduled compounds through three separate suppliers he never introduces to each other. He is chronically sleep-deprived.",
-  "affiliation": "Independent; loosely affiliated with the Blackpipe Corridor residents network; pays an informal fee to the local Oxidian Market Guild chapter not to be reported",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 5,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": -5,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": -1,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "harm-reducer",
-      "young and earnest",
-      "self-taught expert",
-      "overextended",
-      "idealist in realist's clothing"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Do no harm — genuinely, not as a slogan. Will not sell to someone visibly in crisis without triaging first",
-      "Keep the suppliers separate so no single arrest collapses the whole supply chain",
-      "Never front on a price principle — inconsistent pricing is a security vulnerability"
-    ],
-    "escalation_ladder": [
-      "Talks his way out — he is good at this and deploys it first",
-      "Gets very still and very polite — a register shift that experienced Narrows residents recognize as a warning",
-      "Runs. He is fast and he knows the Corridor better than anyone looking for him."
-    ],
-    "interpersonal_modes": {
-      "strangers": "Friendly, quick to joke, takes a beat before trusting anyone with anything real",
-      "friends": "Becomes a slightly exhausting amount of care — checks in, remembers details, shows up when you're sick with something from the bag"
-    },
-    "stress_responses": {
-      "low": "Eats something — stress manifests as hunger for him, which is useful for reminding him to eat",
-      "medium": "Runs his client list mentally, prioritizes who needs contact, uses action as regulation",
-      "high": "Makes very fast decisions he will second-guess later at great length"
-    },
-    "contradictions": [
-      "Believes in systems and structures — wants to build the proper clinic, resents the broken healthcare economy — while depending entirely on working outside any structure for his own survival"
-    ],
-    "habits": [
-      "Leaves a compound-offering — a small vial of something common and non-lethal — at the E.L.F. shrine near the Corridor junction, addressed to what he calls the Healer, a health-spirit he's not sure he believes in but addresses anyway",
-      "Compulsively checks his stock count at the start and end of each rotation"
-    ],
-    "breaking_points": [
-      "Someone dying because they couldn't access care he could have provided",
-      "The dossier being used against someone other than its subject"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9,
-    "Nostalgic": 0.9,
-    "War Weary": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "Helix Biosystems",
-    "GLMZ",
-    "The Narrows Compact",
-    "The Reclamation Assembly",
-    "The CEO",
-    "Grandmother",
-    "Noir Dining",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "GLMZ",
-    "Corner Slice",
-    "Slagworks Industrial"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly East Asian with significant South Asian ancestry, complemented by Indigenous American heritage. The genetic diaspora creates striking feature harmony: East Asian facial geometry and bone structure form the foundation, enriched by South Asian skin depth and warmth, with subtle Indigenous American characteristics visible in cheekbone prominence and facial proportions. He reads as visibly mixed-heritage, features that reflect the Ubiquitous Diaspora rather than any single regional origin.",
-    "height_cm": 188,
-    "weight_kg": 71,
-    "build": "Lean and angular, long-limbed with minimal body fat. The build of someone who forgets to eat regularly and moves constantly. Defined shoulders and chest, but no deliberate musculature — it's the leanness of motion, not training.",
-    "hair_color": "Dark brown, natural",
-    "hair_style": "Mid-length, loose waves, usually damp or freshly dried. Worn unstyled, parted vaguely in the center. Often falls across his face when he bends over his work.",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown, tired",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones — the result of East Asian and South Asian ancestry blending with Indigenous American heritage. Complex saturation that shifts with light, alive with warmth. Uneven from irregular sleep and sun exposure across multiple outdoor locations.",
-    "complexion": "Strong East Asian facial geometry softened by South Asian fullness in the lower face, with Indigenous American prominence in the cheekbones creating a distinctive angular-yet-rounded facial structure. The combination reads younger than his 24 years. Perpetual dark circles under his eyes. A faint shadow of stubble most days — shaving is a luxury when you're running late. Minor acne scarring on his jaw from his late teens. Nose shows East Asian structure with subtle bridge definition.",
-    "distinguishing_marks": [
-      "Small black cat-ear points grafted to the tips of both ears, angled backward slightly. The geneware is cosmetic, clean work but not high-tier. Done in a parlor on a dare at nineteen, now essential to how he sees himself.",
-      "A thin white scar running horizontally across the inside of his left wrist, approximately 4cm long. A story he doesn't tell."
-    ],
-    "visible_augmentations": "Cat-ear points only. Everything else is baseline human biology. His pharmaceutical knowledge doesn't show — it lives in his hands and his memory.",
-    "posture_movement": "Perpetually in motion, even when standing still. A slight forward lean as though always about to move somewhere more urgent. Fidgets with vials, capsules, or whatever's in his pockets. His hands are steady — a pharmacist's hands — but his overall energy is scattered, restless. When he focuses on a customer or a transaction, it's sudden and complete, like a cat's attention snapping to movement. Otherwise, he seems to be three locations ahead of where he actually is.",
-    "clothing_style": "Tier 3-4 streetwear, practical and worn. Usually black or grey cargo pants with working pockets (essential for inventory rotation). Hoodies and layered thermal shirts, often partially unzipped. A particular affection for a faded teal windbreaker that's seen three years of Blackpipe Corridor weather. Worn sneakers, replaced frequently because he walks constantly. A small satchel he keeps close — genuine leather, worn soft, carries his rotation stock. No jewelry except for a simple steel ring on his right index finger (the hand he uses to dispense). Clothes are clean but unstudied, the uniform of someone who dresses in the dark or while already thinking about something else."
-  },
-  "image_prompt": "Damilola Rahman, 24-year-old neo-noir street pharmacist, East Asian-South Asian-Indigenous American mixed heritage with warm golden-brown skin tone. Dark tired eyes, dark brown hair mid-length waves partially obscuring face. Strong East Asian facial geometry softened by South Asian fullness, prominent Indigenous American cheekbones. Black cosmetic cat-ear geneware grafted to ear tips. Lean angular 188cm frame, restless energy even when still. Wearing faded teal windbreaker layered over grey thermal shirt, black cargo pants with working pockets, worn sneakers. Genuine leather satchel slung across body. Small white scar visible on inside of left wrist. Steel ring on right index finger. Perpetual dark circles, stubble shadow, minor jaw scarring. Forward-leaning posture as if always about to move. Neon-lit Blackpipe Corridor alleyway at dusk, pharmaceutical vials visible in jacket pockets, moody atmospheric lighting catching the warm undertones of his skin, GLMZ Great Lakes Metropolitan Zone setting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 52.1,
-    "South Asian": 40,
-    "Indigenous American": 7.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Chinese": {
-        "Cantonese": 5.8,
-        "Shanghainese": 10.2
-      },
-      "Japanese": {
-        "Japanese": 3
-      },
-      "Korean": {
-        "Korean": 33.1
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 40
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Maya": 4.1,
-        "Mixtec": 3.8
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a73c757eadeb17e0e92ab8d8",
+    "type":  "character",
+    "name":  "Damilola Rahman",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Black market pharmaceutical dealer and street pharmacist â€” meds, supplements, unscheduled compounds",
+    "age":  24,
+    "status":  "active",
+    "location":  "The Narrows, Blackpipe Corridor, near Fullerton and Damen",
+    "description":  "Damilola Rahman is young enough that it still shows â€” there\u0027s a looseness to him, an unresolved quality, like something that hasn\u0027t quite hardened into its final shape. He is tall, lean, with the dark skin and angular jaw of his Tanzanian grandfather and his Filipino grandmother\u0027s round cheeks, a combination that makes him look younger than he is and which he has mostly given up being frustrated about. His ears are tipped with small black cat-ear points â€” geneware done in a parlor on a dare when he was nineteen, which he now can\u0027t imagine removing. He keeps his hair mid-length and loose, usually damp, because he is always running slightly late.\n\nHe operates from three locations in rotation â€” a corner in the Narrows, a back table in a noodle shop in Blackpipe Corridor, and a patch near the old water reclamation junction on the Corridor\u0027s south end â€” and keeps no fixed stall because fixed stalls have fixed addresses. He knows more about pharmacology than most licensed clinicians, taught himself from pirated Helix Biosystems training modules and a mentor who has since retired. He is genuinely trying to help people who cannot afford clinical pricing â€” and he is also genuinely dealing recreational compounds for profit â€” and he holds both of these truths without significant cognitive dissonance, which either speaks to moral flexibility or a realistic understanding of how survival works.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being arrested and losing the operation before he\u0027s built anything sturdy enough to survive without him",
+                                          "Giving someone the wrong thing and hurting them â€” this is not abstract, it lives in him"
+                                      ],
+                       "core_desires":  [
+                                            "To run a legitimate clinic one day â€” he knows exactly what it would look like, down to the layout and the sliding-scale fee structure",
+                                            "To sleep eight hours without a comm alert"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Fixates on the people he has genuinely helped â€” runs the list when things are bad",
+                                                 "Dark jokes that land precisely because they\u0027re not entirely jokes"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates his own risk tolerance â€” takes chances he would advise clients against",
+                                           "Is more emotionally attached to his clients than is professionally safe"
+                                       ],
+                       "secret":  "Four months ago a client came to him in acute overdose crisis on a compound he didn\u0027t sell her. He stabilized her using everything he had, stayed with her for six hours, and when she was through the worst of it she told him her supplier\u0027s name. He has been building a dossier on that supplier since, with no clear plan for what to do with it â€” he is not a violent person and he is not an informant, and the space between those two things is where he is stuck."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Casual, warm, clinical when talking about compounds â€” the vocabulary shift is notable and a little jarring. Uses a lot of \u0027like\u0027 and \u0027basically\u0027 and \u0027no, listen\u0027 when animated. Swears cheerfully.",
+                            "cadence":  "Fast when comfortable, careful when discussing medications â€” he slows down for dosages like he\u0027s reading from an internal teleprompter.",
+                            "verbal_tics":  [
+                                                "\u0027No, listenâ€”\u0027",
+                                                "\u0027The thing about that isâ€”\u0027",
+                                                "Refers to all his regular clients by their ailment in his head, calls them by name out loud â€” his private shorthand sometimes leaks"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027No, listen, this is not the same compound, the molecular structure is like â€” okay, imagine the other one is a door and this one is a door that opens the wrong way. You need to know that.\u0027",
+                                                  "\u0027I can get you that. Give me until Thursday. And drink water, I mean it, drink actual water.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The dossier on the bad supplier is now substantial enough to be dangerous â€” to Zuberi, if it\u0027s found â€” and he needs somewhere to put it that isn\u0027t on his person",
+                        "A corporate clinic has opened a \u0027community access\u0027 popup in the Narrows, underpricing everything and offering free diagnostics â€” and Zuberi is watching his client list shrink and trying to figure out what the clinic actually wants before he finds out the hard way"
+                    ],
+    "narrative_function":  "Resource for medical supplies outside clinical channels. Information source for what\u0027s circulating in the Narrows chemically and otherwise. Character study in the ethics of harm reduction in a predatory economy.",
+    "augmentations":  "Cat-ear points, black (geneware, cosmetic). No other augmentations â€” he has spent money on these things and it has always gone to something more urgent.",
+    "daily_life":  "He rotates between his three spots on a rough weekly schedule he shares with trusted clients via a dead-drop comm channel. He spends mornings acquiring stock â€” legal supplements through a legitimate channel he cultivates carefully, unscheduled compounds through three separate suppliers he never introduces to each other. He is chronically sleep-deprived.",
+    "affiliation":  "Independent; loosely affiliated with the Blackpipe Corridor residents network; pays an informal fee to the local Oxidian Market Guild chapter not to be reported",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  5,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  -5,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "harm-reducer",
+                               "young and earnest",
+                               "self-taught expert",
+                               "overextended",
+                               "idealist in realist\u0027s clothing"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Do no harm â€” genuinely, not as a slogan. Will not sell to someone visibly in crisis without triaging first",
+                                              "Keep the suppliers separate so no single arrest collapses the whole supply chain",
+                                              "Never front on a price principle â€” inconsistent pricing is a security vulnerability"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Talks his way out â€” he is good at this and deploys it first",
+                                                 "Gets very still and very polite â€” a register shift that experienced Narrows residents recognize as a warning",
+                                                 "Runs. He is fast and he knows the Corridor better than anyone looking for him."
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Friendly, quick to joke, takes a beat before trusting anyone with anything real",
+                                                   "friends":  "Becomes a slightly exhausting amount of care â€” checks in, remembers details, shows up when you\u0027re sick with something from the bag"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Eats something â€” stress manifests as hunger for him, which is useful for reminding him to eat",
+                                                "medium":  "Runs his client list mentally, prioritizes who needs contact, uses action as regulation",
+                                                "high":  "Makes very fast decisions he will second-guess later at great length"
+                                            },
+                       "contradictions":  [
+                                              "Believes in systems and structures â€” wants to build the proper clinic, resents the broken healthcare economy â€” while depending entirely on working outside any structure for his own survival"
+                                          ],
+                       "habits":  [
+                                      "Leaves a compound-offering â€” a small vial of something common and non-lethal â€” at the E.L.F. shrine near the Corridor junction, addressed to what he calls the Healer, a health-spirit he\u0027s not sure he believes in but addresses anyway",
+                                      "Compulsively checks his stock count at the start and end of each rotation"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone dying because they couldn\u0027t access care he could have provided",
+                                               "The dossier being used against someone other than its subject"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9,
+                       "Nostalgic":  0.9,
+                       "War Weary":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Snapper-22 \u0027Cricket\u0027",
+                            "Street Custom \u0027Rebar Rose\u0027 Improvised Spike Mace"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "Helix Biosystems",
+                             "GLMZ",
+                             "The Narrows Compact",
+                             "The Reclamation Assembly",
+                             "The CEO",
+                             "Grandmother",
+                             "Noir Dining",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "GLMZ",
+                             "Corner Slice",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Predominantly East Asian with significant South Asian ancestry, complemented by Indigenous American heritage. The genetic diaspora creates striking feature harmony: East Asian facial geometry and bone structure form the foundation, enriched by South Asian skin depth and warmth, with subtle Indigenous American characteristics visible in cheekbone prominence and facial proportions. He reads as visibly mixed-heritage, features that reflect the Ubiquitous Diaspora rather than any single regional origin.",
+                                 "height_cm":  188,
+                                 "weight_kg":  71,
+                                 "build":  "Lean and angular, long-limbed with minimal body fat. The build of someone who forgets to eat regularly and moves constantly. Defined shoulders and chest, but no deliberate musculature â€” it\u0027s the leanness of motion, not training.",
+                                 "hair_color":  "Dark brown, natural",
+                                 "hair_style":  "Mid-length, loose waves, usually damp or freshly dried. Worn unstyled, parted vaguely in the center. Often falls across his face when he bends over his work.",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown, tired",
+                                 "skin_tone":  "Warm medium-to-deep brown with golden undertones â€” the result of East Asian and South Asian ancestry blending with Indigenous American heritage. Complex saturation that shifts with light, alive with warmth. Uneven from irregular sleep and sun exposure across multiple outdoor locations.",
+                                 "complexion":  "Strong East Asian facial geometry softened by South Asian fullness in the lower face, with Indigenous American prominence in the cheekbones creating a distinctive angular-yet-rounded facial structure. The combination reads younger than his 24 years. Perpetual dark circles under his eyes. A faint shadow of stubble most days â€” shaving is a luxury when you\u0027re running late. Minor acne scarring on his jaw from his late teens. Nose shows East Asian structure with subtle bridge definition.",
+                                 "distinguishing_marks":  [
+                                                              "Small black cat-ear points grafted to the tips of both ears, angled backward slightly. The geneware is cosmetic, clean work but not high-tier. Done in a parlor on a dare at nineteen, now essential to how he sees himself.",
+                                                              "A thin white scar running horizontally across the inside of his left wrist, approximately 4cm long. A story he doesn\u0027t tell."
+                                                          ],
+                                 "visible_augmentations":  "Cat-ear points only. Everything else is baseline human biology. His pharmaceutical knowledge doesn\u0027t show â€” it lives in his hands and his memory.",
+                                 "posture_movement":  "Perpetually in motion, even when standing still. A slight forward lean as though always about to move somewhere more urgent. Fidgets with vials, capsules, or whatever\u0027s in his pockets. His hands are steady â€” a pharmacist\u0027s hands â€” but his overall energy is scattered, restless. When he focuses on a customer or a transaction, it\u0027s sudden and complete, like a cat\u0027s attention snapping to movement. Otherwise, he seems to be three locations ahead of where he actually is.",
+                                 "clothing_style":  "Tier 3-4 streetwear, practical and worn. Usually black or grey cargo pants with working pockets (essential for inventory rotation). Hoodies and layered thermal shirts, often partially unzipped. A particular affection for a faded teal windbreaker that\u0027s seen three years of Blackpipe Corridor weather. Worn sneakers, replaced frequently because he walks constantly. A small satchel he keeps close â€” genuine leather, worn soft, carries his rotation stock. No jewelry except for a simple steel ring on his right index finger (the hand he uses to dispense). Clothes are clean but unstudied, the uniform of someone who dresses in the dark or while already thinking about something else."
+                             },
+    "image_prompt":  "Damilola Rahman, 24-year-old neo-noir street pharmacist, East Asian-South Asian-Indigenous American mixed heritage with warm golden-brown skin tone. Dark tired eyes, dark brown hair mid-length waves partially obscuring face. Strong East Asian facial geometry softened by South Asian fullness, prominent Indigenous American cheekbones. Black cosmetic cat-ear geneware grafted to ear tips. Lean angular 188cm frame, restless energy even when still. Wearing faded teal windbreaker layered over grey thermal shirt, black cargo pants with working pockets, worn sneakers. Genuine leather satchel slung across body. Small white scar visible on inside of left wrist. Steel ring on right index finger. Perpetual dark circles, stubble shadow, minor jaw scarring. Forward-leaning posture as if always about to move. Neon-lit Blackpipe Corridor alleyway at dusk, pharmaceutical vials visible in jacket pockets, moody atmospheric lighting catching the warm undertones of his skin, GLMZ Great Lakes Metropolitan Zone setting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  52.1,
+                             "South Asian":  40,
+                             "Indigenous American":  7.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Cantonese":  5.8,
+                                                               "Shanghainese":  10.2
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  3
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  33.1
+                                                          }
+                                           },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  40
+                                                                }
+                                            },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  4.1,
+                                                                             "Mixtec":  3.8
+                                                                         }
+                                                    }
+                        },
+    "tier":  "2"
 }

@@ -1,324 +1,353 @@
-{
-  "id": "019d6143a65a7690aa946fbe5d26d0c2",
-  "type": "character",
-  "name": "Enyinnaya Moala",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "protection racket enforcer and neighborhood tax collector",
-  "age": 51,
-  "status": "active",
-  "location": "Shallowgrave, operates across a six-block collection territory centered on the Blackpipe Corridor market strip, near Pulaski and Chicago Ave",
-  "description": "Enyinnaya Moala is a broad, unhurried woman who moves through the Blackpipe Corridor market strip with the proprietary ease of someone who owns the street without holding title to a centimeter of it. She has her Malian grandmother's high cheekbones and her Mongolian grandfather's wide, watchful eyes, a combination that gives her face a stillness that reads as patience or menace depending on context. Her hair is natural and silver-threaded, kept close. She has no cosmetic mods and exactly one piece of visible augmentation: a reinforced subdermal strike plate across both forearms, the seams visible as pale ridged lines. She dresses in practical layers — she's almost always carrying something — and smells faintly of the cardamom tea she drinks constantly from a battered thermos.\n\nPeople in Shallowgrave call her Mama Miri, and the term is not entirely ironic. She has run protection on this strip for nineteen years and she has clear and stated rules: you pay on time, you get quiet streets, fair mediation of disputes, and someone who answers when the Ferrogate inspectors come sniffing. You don't pay, you get one conversation, then one demonstration, then you don't have a stall anymore. She considers herself a service provider with a monopoly, which is accurate, and she extends genuine credit and genuine leniency to vendors she respects, which is also accurate. The violence she deploys is proportional and infrequent — she prefers it that way, both because she is pragmatic and because she is, underneath the landlady performance, genuinely tired.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.3,
-      "shadow": 0.5,
-      "mask": 0.6,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "the territory being taken over by someone who doesn't know the people on it and will hurt them carelessly",
-      "becoming the kind of enforcer she replaced — her predecessor broke a vendor's child's arm over a late payment"
-    ],
-    "core_desires": [
-      "order and predictability above almost anything else",
-      "to be genuinely trusted rather than merely respected out of fear, a distinction she's not sure is possible in her role"
-    ],
-    "coping_mechanisms": [
-      "ritual — the collection circuit, the tea, the same table — routine as psychological armor",
-      "strict personal rules about proportionality as a way of maintaining self-concept"
-    ],
-    "blind_spots": [
-      "genuinely does not see how the extraction itself, regardless of her manner, warps the community she believes she protects",
-      "has convinced herself she could leave this life but has not tried in a decade"
-    ],
-    "secret": "Fourteen years ago she broke both hands of a vendor who had witnessed her predecessor committing a murder, to keep him silent — she told herself it was the least harm, but she knows the man never worked his trade again, and she still pays anonymously for his UBC supplements every month"
-  },
-  "speech_patterns": {
-    "vocabulary": "direct, unhurried, minimal — she uses few words and expects them to carry weight; occasional Bambara phrases when genuinely emotional",
-    "cadence": "slow and deliberate, with significant comfortable silences, the cadence of someone who is never in a hurry because the territory is already hers",
-    "verbal_tics": [
-      "'That's not how this works.'",
-      "long pauses before important statements",
-      "uses people's full names when displeased, first names when approving"
-    ],
-    "example_lines": [
-      "'Jokunu. I've been coming to this stall for eleven years. You know what Tuesday means. What do I need to understand about this Tuesday that's different from the other five hundred Tuesdays?'",
-      "'I'm not a threat. I'm a cost of doing business in a place where business can be done. You want to explain the difference to me, or do you want to pay?'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Something is happening on her strip that violates her personal rules — a new player is hurting people she's sworn implicitly to protect, and she can't move against them without risking the Collective's sanction",
-    "The vendor she silenced fourteen years ago has a child now asking questions about what happened, and the child has found someone willing to listen"
-  ],
-  "narrative_function": "Power broker and local authority figure, quest giver (territory disputes, a vendor who has disappeared, something wrong on her strip), moral gray zone — genuinely protective of her community within the framework of extracting from it",
-  "augmentations": "Subdermal strike reinforcement plates (both forearms), pain suppression shunt (low-grade, installed after a bad collection in 2191), bone-density treatment pellets in hands",
-  "daily_life": "Walks her collection circuit Tuesday and Friday mornings, taking payments and settling disputes; available at her usual table in the Blackpipe tea house most other times for anyone who needs mediation or negotiation; Thursday evenings she handles the Shallowgrave Collective's weekly accounting.",
-  "affiliation": "Shallowgrave Collective (a loose crime family structure), nominally reports to a boss called the Factor but effectively autonomous on her strip",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 6,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 6,
-      "expression": 5,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 4,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "territorial",
-      "proportional-violence",
-      "routine-dependent",
-      "tired-pragmatist",
-      "community-ambivalent"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "one warning, one demonstration, then displacement — never escalation beyond what the situation requires",
-      "never touch children, never damage hands or eyes — there are lines",
-      "always honor an agreed payment plan, always"
-    ],
-    "escalation_ladder": [
-      "conversation at the tea house table",
-      "public demonstration of presence and consequence on the strip",
-      "physical intervention, proportional and precise",
-      "Collective-level escalation, which she resists because it means losing control of outcomes"
-    ],
-    "interpersonal_modes": {
-      "strangers": "assessing, patient, gives them time to reveal themselves before committing to a mode",
-      "friends": "rare warmth, practical loyalty, will absorb significant personal cost for people she has claimed"
-    },
-    "stress_responses": {
-      "low": "drinks tea more slowly",
-      "medium": "becomes entirely silent",
-      "high": "acts — clean, fast, minimal — and returns to silence"
-    },
-    "contradictions": [
-      "believes she protects the community while being the primary structural threat to its economic stability",
-      "maintains strict personal ethics that exist entirely within an unethical enterprise"
-    ],
-    "habits": [
-      "cardamom tea, always, thermos always warm",
-      "walks her circuit in the same order every time and notices every deviation from normal",
-      "checks on three elderly vendors who have no family, off the books, not as collection but as something else"
-    ],
-    "breaking_points": [
-      "witnessing harm to a child on her territory",
-      "being ordered by the Collective to do something that crosses her personal lines"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal strike reinforcement — both forearms, visible seam lines",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal strike reinforcement — both forearms, visible seam lines",
-      "replaces": ""
-    },
-    {
-      "name": "Pain suppression shunt — low grade, localized",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Pain suppression shunt — low grade, localized",
-      "replaces": ""
-    },
-    {
-      "name": "Bone-density treatment pellets — hands",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bone-density treatment pellets — hands",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Shallowgrave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2149: Born in Shallowgrave, daughter of a Malian-Mongolian heritage freight broker and a Malian market vendor",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2170: Began working for the Shallowgrave Collective as a debt reminder",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2181: Took over the Blackpipe Corridor collection territory after her predecessor was removed",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2186: Silenced the witness — the act she cannot reconcile",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2191: Badly injured in a collection dispute, installed pain suppression shunt during recovery",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200: Current — nineteen years on the strip, increasingly aware of the weight",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Hearthstone Firearms Defender SMG HDS-5 'Hearth Guard'"
-  ],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "Dredge Mining Collective",
-    "Shallowgrave",
-    "Grandmother",
-    "The CEO",
-    "Ferrogate Transit",
-    "GLMZ",
-    "Patience",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Chicago",
-    "Silver",
-    "Nesting Doll",
-    "Pellucid Systems",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Pale Mile"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "South Asian dominant (51.4%) with substantial Pacific Islander (35.9%) and Northern European (12.7%) ancestry; creates a distinctive phenotype combining South Asian bone structure and facial geometry with Pacific Islander warmth and depth in skin tone, subtly refined by Nordic elements in brow and orbital structure",
-    "height_cm": 172,
-    "weight_kg": 82,
-    "build": "Broad-shouldered and solid without softness; carries herself with the compact density of someone who has moved through decades of low-grade violence. Not muscular in a performance sense, but functionally strong in the shoulders and core.",
-    "hair_color": "Dark brown with silver threading throughout",
-    "hair_style": "Close-cropped, neat, practical; a few centimeters at most",
-    "hair_length": "Short",
-    "eye_color": "Brown, watchful, set wide",
-    "skin_tone": "Deep warm brown with rich golden-amber undertones, the result of blended South Asian and Pacific Islander ancestry deepened further by consistent sun exposure; creates an earthy, complex complexion that darkens seasonally",
-    "complexion": "High prominent cheekbones with broad face structure characteristic of South Asian ancestry, softened and warmed by Pacific Islander roundness through cheeks and jawline; minimal cosmetic grooming; skin shows sun exposure and weathering from outdoor work; no visible acne or blemishes, suggesting good self-care despite her tier. Faint laugh lines around her eyes. Warm, even skin tone with natural depth and subtle golden undertones.",
-    "distinguishing_marks": [
-      "Pale ridge-work visible along both forearms from elbow to wrist where subdermal strike plates were implanted; the scars are clean and old, approximately 15-20 years healed.",
-      "A thin white line along her left temple, approximately 4cm, from a collection dispute in the early 2200s."
-    ],
-    "visible_augmentations": "Reinforced subdermal strike plates across both forearms, visible as pale raised seams running lengthwise from wrist to elbow. The modifications are functional and deliberately visible—a warning to anyone who looks closely.",
-    "posture_movement": "Moves with unhurried purpose, economical in gesture. She doesn't fidget or rush. When she walks, her weight settles forward slightly—someone who has spent decades on her feet and has learned to conserve energy. Her hands rest naturally in her lap or at her sides, and her shoulders never tense. She makes direct eye contact and holds it without aggression, just observation.",
-    "clothing_style": "Practical layered wear in neutral colors: dark grey or brown base layers, a canvas work jacket or heavy overshirt in charcoal, cargo pants with deep pockets, sturdy boots scuffed from street work. Always carries a battered metal thermos of cardamom tea. No jewelry except a faded woven bracelet on her left wrist—likely handmade, sentimental value unknown. Tier 4 functionally—not corpo polish, but well-maintained and deliberately chosen for durability over fashion."
-  },
-  "image_prompt": "Enyinnaya Moala, a 172cm woman with deep warm brown skin and golden undertones, South Asian and Pacific Islander heritage visible in high cheekbones and broad face softened by island warmth; short dark hair with silver threading, brown watchful eyes set wide. GLMZ, Great Lakes Metropolitan Zone. Reinforced subdermal strike plates visible as pale raised scars running down both forearms—deliberately shown as a warning. Thin white scar along left temple. Posture economical and purposeful, unhurried, direct steady gaze. Wearing layered practical clothing: dark grey base, charcoal canvas work jacket, cargo pants with deep pockets, scuffed sturdy boots. Holding a battered metal thermos of cardamom tea. Faded woven bracelet on left wrist. Tier 4 functionally, deliberately durable over fashionable. Indoor urban setting, warm ambient lighting catching the golden undertones of her complexion, emphasizing the weathered depth of her features and the dangerous pale scars on her forearms. Mood: observant, grounded, competent. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 51.4,
-    "Pacific Islander": 35.9,
-    "Northern European": 12.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 51.4
-      }
-    },
-    "Pacific Islander": {
-      "Melanesian": {
-        "Fijian": 13.1,
-        "Papua New Guinean": 22.8
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Welsh": 6.1,
-        "English": 6.6
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a65a7690aa946fbe5d26d0c2",
+    "type":  "character",
+    "name":  "Enyinnaya Moala",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "protection racket enforcer and neighborhood tax collector",
+    "age":  51,
+    "status":  "active",
+    "location":  "Shallowgrave, operates across a six-block collection territory centered on the Blackpipe Corridor market strip, near Pulaski and Chicago Ave",
+    "description":  "Enyinnaya Moala is a broad, unhurried woman who moves through the Blackpipe Corridor market strip with the proprietary ease of someone who owns the street without holding title to a centimeter of it. She has her Malian grandmother\u0027s high cheekbones and her Mongolian grandfather\u0027s wide, watchful eyes, a combination that gives her face a stillness that reads as patience or menace depending on context. Her hair is natural and silver-threaded, kept close. She has no cosmetic mods and exactly one piece of visible augmentation: a reinforced subdermal strike plate across both forearms, the seams visible as pale ridged lines. She dresses in practical layers â€” she\u0027s almost always carrying something â€” and smells faintly of the cardamom tea she drinks constantly from a battered thermos.\n\nPeople in Shallowgrave call her Mama Miri, and the term is not entirely ironic. She has run protection on this strip for nineteen years and she has clear and stated rules: you pay on time, you get quiet streets, fair mediation of disputes, and someone who answers when the Ferrogate inspectors come sniffing. You don\u0027t pay, you get one conversation, then one demonstration, then you don\u0027t have a stall anymore. She considers herself a service provider with a monopoly, which is accurate, and she extends genuine credit and genuine leniency to vendors she respects, which is also accurate. The violence she deploys is proportional and infrequent â€” she prefers it that way, both because she is pragmatic and because she is, underneath the landlady performance, genuinely tired.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "the territory being taken over by someone who doesn\u0027t know the people on it and will hurt them carelessly",
+                                          "becoming the kind of enforcer she replaced â€” her predecessor broke a vendor\u0027s child\u0027s arm over a late payment"
+                                      ],
+                       "core_desires":  [
+                                            "order and predictability above almost anything else",
+                                            "to be genuinely trusted rather than merely respected out of fear, a distinction she\u0027s not sure is possible in her role"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "ritual â€” the collection circuit, the tea, the same table â€” routine as psychological armor",
+                                                 "strict personal rules about proportionality as a way of maintaining self-concept"
+                                             ],
+                       "blind_spots":  [
+                                           "genuinely does not see how the extraction itself, regardless of her manner, warps the community she believes she protects",
+                                           "has convinced herself she could leave this life but has not tried in a decade"
+                                       ],
+                       "secret":  "Fourteen years ago she broke both hands of a vendor who had witnessed her predecessor committing a murder, to keep him silent â€” she told herself it was the least harm, but she knows the man never worked his trade again, and she still pays anonymously for his UBC supplements every month"
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "direct, unhurried, minimal â€” she uses few words and expects them to carry weight; occasional Bambara phrases when genuinely emotional",
+                            "cadence":  "slow and deliberate, with significant comfortable silences, the cadence of someone who is never in a hurry because the territory is already hers",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s not how this works.\u0027",
+                                                "long pauses before important statements",
+                                                "uses people\u0027s full names when displeased, first names when approving"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Jokunu. I\u0027ve been coming to this stall for eleven years. You know what Tuesday means. What do I need to understand about this Tuesday that\u0027s different from the other five hundred Tuesdays?\u0027",
+                                                  "\u0027I\u0027m not a threat. I\u0027m a cost of doing business in a place where business can be done. You want to explain the difference to me, or do you want to pay?\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Something is happening on her strip that violates her personal rules â€” a new player is hurting people she\u0027s sworn implicitly to protect, and she can\u0027t move against them without risking the Collective\u0027s sanction",
+                        "The vendor she silenced fourteen years ago has a child now asking questions about what happened, and the child has found someone willing to listen"
+                    ],
+    "narrative_function":  "Power broker and local authority figure, quest giver (territory disputes, a vendor who has disappeared, something wrong on her strip), moral gray zone â€” genuinely protective of her community within the framework of extracting from it",
+    "augmentations":  "Subdermal strike reinforcement plates (both forearms), pain suppression shunt (low-grade, installed after a bad collection in 2191), bone-density treatment pellets in hands",
+    "daily_life":  "Walks her collection circuit Tuesday and Friday mornings, taking payments and settling disputes; available at her usual table in the Blackpipe tea house most other times for anyone who needs mediation or negotiation; Thursday evenings she handles the Shallowgrave Collective\u0027s weekly accounting.",
+    "affiliation":  "Shallowgrave Collective (a loose crime family structure), nominally reports to a boss called the Factor but effectively autonomous on her strip",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  6,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  6,
+                                 "expression":  5,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "territorial",
+                               "proportional-violence",
+                               "routine-dependent",
+                               "tired-pragmatist",
+                               "community-ambivalent"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "one warning, one demonstration, then displacement â€” never escalation beyond what the situation requires",
+                                              "never touch children, never damage hands or eyes â€” there are lines",
+                                              "always honor an agreed payment plan, always"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "conversation at the tea house table",
+                                                 "public demonstration of presence and consequence on the strip",
+                                                 "physical intervention, proportional and precise",
+                                                 "Collective-level escalation, which she resists because it means losing control of outcomes"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "assessing, patient, gives them time to reveal themselves before committing to a mode",
+                                                   "friends":  "rare warmth, practical loyalty, will absorb significant personal cost for people she has claimed"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "drinks tea more slowly",
+                                                "medium":  "becomes entirely silent",
+                                                "high":  "acts â€” clean, fast, minimal â€” and returns to silence"
+                                            },
+                       "contradictions":  [
+                                              "believes she protects the community while being the primary structural threat to its economic stability",
+                                              "maintains strict personal ethics that exist entirely within an unethical enterprise"
+                                          ],
+                       "habits":  [
+                                      "cardamom tea, always, thermos always warm",
+                                      "walks her circuit in the same order every time and notices every deviation from normal",
+                                      "checks on three elderly vendors who have no family, off the books, not as collection but as something else"
+                                  ],
+                       "breaking_points":  [
+                                               "witnessing harm to a child on her territory",
+                                               "being ordered by the Collective to do something that crosses her personal lines"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal strike reinforcement â€” both forearms, visible seam lines",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal strike reinforcement â€” both forearms, visible seam lines",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Pain suppression shunt â€” low grade, localized",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Pain suppression shunt â€” low grade, localized",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Bone-density treatment pellets â€” hands",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bone-density treatment pellets â€” hands",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Shallowgrave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2149: Born in Shallowgrave, daughter of a Malian-Mongolian heritage freight broker and a Malian market vendor",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2170: Began working for the Shallowgrave Collective as a debt reminder",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2181: Took over the Blackpipe Corridor collection territory after her predecessor was removed",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2186: Silenced the witness â€” the act she cannot reconcile",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2191: Badly injured in a collection dispute, installed pain suppression shunt during recovery",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200: Current â€” nineteen years on the strip, increasingly aware of the weight",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027",
+                            "Hearthstone Firearms Defender SMG HDS-5 \u0027Hearth Guard\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027",
+                                "Hearthstone Firearms Defender SMG HDS-5 \u0027Hearth Guard\u0027"
+                            ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "Dredge Mining Collective",
+                             "Shallowgrave",
+                             "Grandmother",
+                             "The CEO",
+                             "Ferrogate Transit",
+                             "GLMZ",
+                             "Patience",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Chicago",
+                             "Silver",
+                             "Nesting Doll",
+                             "Pellucid Systems",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "The Pale Mile"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "South Asian dominant (51.4%) with substantial Pacific Islander (35.9%) and Northern European (12.7%) ancestry; creates a distinctive phenotype combining South Asian bone structure and facial geometry with Pacific Islander warmth and depth in skin tone, subtly refined by Nordic elements in brow and orbital structure",
+                                 "height_cm":  172,
+                                 "weight_kg":  82,
+                                 "build":  "Broad-shouldered and solid without softness; carries herself with the compact density of someone who has moved through decades of low-grade violence. Not muscular in a performance sense, but functionally strong in the shoulders and core.",
+                                 "hair_color":  "Dark brown with silver threading throughout",
+                                 "hair_style":  "Close-cropped, neat, practical; a few centimeters at most",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Brown, watchful, set wide",
+                                 "skin_tone":  "Deep warm brown with rich golden-amber undertones, the result of blended South Asian and Pacific Islander ancestry deepened further by consistent sun exposure; creates an earthy, complex complexion that darkens seasonally",
+                                 "complexion":  "High prominent cheekbones with broad face structure characteristic of South Asian ancestry, softened and warmed by Pacific Islander roundness through cheeks and jawline; minimal cosmetic grooming; skin shows sun exposure and weathering from outdoor work; no visible acne or blemishes, suggesting good self-care despite her tier. Faint laugh lines around her eyes. Warm, even skin tone with natural depth and subtle golden undertones.",
+                                 "distinguishing_marks":  [
+                                                              "Pale ridge-work visible along both forearms from elbow to wrist where subdermal strike plates were implanted; the scars are clean and old, approximately 15-20 years healed.",
+                                                              "A thin white line along her left temple, approximately 4cm, from a collection dispute in the early 2200s."
+                                                          ],
+                                 "visible_augmentations":  "Reinforced subdermal strike plates across both forearms, visible as pale raised seams running lengthwise from wrist to elbow. The modifications are functional and deliberately visibleâ€”a warning to anyone who looks closely.",
+                                 "posture_movement":  "Moves with unhurried purpose, economical in gesture. She doesn\u0027t fidget or rush. When she walks, her weight settles forward slightlyâ€”someone who has spent decades on her feet and has learned to conserve energy. Her hands rest naturally in her lap or at her sides, and her shoulders never tense. She makes direct eye contact and holds it without aggression, just observation.",
+                                 "clothing_style":  "Practical layered wear in neutral colors: dark grey or brown base layers, a canvas work jacket or heavy overshirt in charcoal, cargo pants with deep pockets, sturdy boots scuffed from street work. Always carries a battered metal thermos of cardamom tea. No jewelry except a faded woven bracelet on her left wristâ€”likely handmade, sentimental value unknown. Tier 4 functionallyâ€”not corpo polish, but well-maintained and deliberately chosen for durability over fashion."
+                             },
+    "image_prompt":  "Enyinnaya Moala, a 172cm woman with deep warm brown skin and golden undertones, South Asian and Pacific Islander heritage visible in high cheekbones and broad face softened by island warmth; short dark hair with silver threading, brown watchful eyes set wide. GLMZ, Great Lakes Metropolitan Zone. Reinforced subdermal strike plates visible as pale raised scars running down both forearmsâ€”deliberately shown as a warning. Thin white scar along left temple. Posture economical and purposeful, unhurried, direct steady gaze. Wearing layered practical clothing: dark grey base, charcoal canvas work jacket, cargo pants with deep pockets, scuffed sturdy boots. Holding a battered metal thermos of cardamom tea. Faded woven bracelet on left wrist. Tier 4 functionally, deliberately durable over fashionable. Indoor urban setting, warm ambient lighting catching the golden undertones of her complexion, emphasizing the weathered depth of her features and the dangerous pale scars on her forearms. Mood: observant, grounded, competent. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  51.4,
+                             "Pacific Islander":  35.9,
+                             "Northern European":  12.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  51.4
+                                                           }
+                                            },
+                            "Pacific Islander":  {
+                                                     "Melanesian":  {
+                                                                        "Fijian":  13.1,
+                                                                        "Papua New Guinean":  22.8
+                                                                    }
+                                                 },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Welsh":  6.1,
+                                                                            "English":  6.6
+                                                                        }
+                                                  }
+                        },
+    "tier":  "1"
 }

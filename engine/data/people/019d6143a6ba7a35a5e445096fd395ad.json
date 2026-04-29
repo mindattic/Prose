@@ -1,358 +1,385 @@
-{
-  "id": "019d6143a6ba7a35a5e445096fd395ad",
-  "type": "character",
-  "name": "Azubuike Kabwit",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Independent mechanic specializing in Ferrogate Transit pod maintenance and illegal vehicle modifications",
-  "age": 38,
-  "status": "active",
-  "location": "Geartown, Ironvein Sub-Basin, Bay 7 of the Lowside Garage Collective, near North Ave and Milwaukee",
-  "description": "Azubuike Kabwit is a tall man made of angles — sharp jaw, sharp elbows, sharp opinions — with warm brown skin that is perpetually stained at the knuckles with a blue-grey synthetic lubricant that no solvent has fully removed in eleven years. He keeps his hair in tight black locs that he pins back with a magnetic clip when he works, and his left forearm has been replaced from the elbow down with a prosthetic he built himself from salvaged Ferrogate actuator components and a medical-grade haptic sleeve — it's visually mismatched and makes a faint mechanical click when he flexes the fingers, which he is enormously proud of. A bioluminescent strip runs under the skin of his right collarbone, pale amber, which pulses slightly faster when his heart rate elevates; it was a cheap cosmetic piece he got at twenty-two and has since become an inadvertent emotional tell.\n\nAzubuike Kabwit is constitutionally incapable of doing a bad job. This is both his greatest professional virtue and the source of most of his financial problems, because he will spend four hours on a two-hour job and charge for two hours because he cannot release something until it meets his own standard. He is argumentative in the way of someone who genuinely loves argument as a sport, not as aggression — he will fight vigorously for a position and then concede graciously the moment he sees better evidence, which confuses people who mistake his combativeness for ego. He maintains a running negotiation with the E.L.F. he believes inhabits the bay's main diagnostic terminal, which he calls Torque, and leaves small machine-oil offerings on its housing every morning.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.8,
-      "id": 0.6,
-      "shadow": 0.3,
-      "mask": 0.2,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Making a mistake that kills someone — that something he fixed will fail at the worst moment",
-      "Being permanently unable to work with his hands"
-    ],
-    "core_desires": [
-      "To be recognized as a genuine engineer, not just a mechanic",
-      "To build one thing from scratch that outlasts him"
-    ],
-    "coping_mechanisms": [
-      "Reduces complex emotional situations to diagnostic metaphors ('the problem is in the intake, not the engine')",
-      "Argues about abstract things when he doesn't want to discuss concrete feelings"
-    ],
-    "blind_spots": [
-      "Chronically undervalues his own labor because he measures his worth by the standard of engineers with degrees he never got",
-      "Misses emotional context entirely when focused on a technical problem"
-    ],
-    "secret": "He has been covertly maintaining the ventilation system of the Ironvein Sub-Basin's oldest residential block for free for two years — the building's super can't afford real repairs and Rustam discovered that twelve elderly residents would be at serious respiratory risk if the system failed. He has told no one because he doesn't want to be asked why, and because he doesn't know how to explain that it just seemed like the necessary thing."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical and specific; translates everything into mechanical metaphor; mixes Uzbek endearments into frustrated moments",
-    "cadence": "Quick when excited about a problem, flat and very slow when delivering bad news about a repair",
-    "verbal_tics": [
-      "'Run the diagnostic again'",
-      "Taps the prosthetic fingers against surfaces while thinking"
-    ],
-    "example_lines": [
-      "'It's not broken. It's informing you that something upstream is broken. Learn to listen to your machines.'",
-      "'I can have it done by Thursday. Don't ask me what time Thursday.'",
-      "'Torque says the pressure's dropping in the secondary line. I believe Torque.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Ferrogate transit pod came in for standard maintenance and Rustam found a hidden compartment containing something he wasn't supposed to see — he sealed it back up and hasn't reported it, but he's been losing sleep",
-    "A younger mechanic at the collective has been watching Rustam's techniques carefully and recently reproduced one of his proprietary diagnostic workarounds and sold it to a Tessera contractor; Rustam is furious but has no legal recourse"
-  ],
-  "narrative_function": "Practical resource for vehicle and mechanical needs; can identify unusual components or modifications; a character who bridges the legal and illegal economy without being criminal himself; human interest and comic relief in his perfectionism",
-  "augmentations": "Self-built prosthetic left forearm (salvaged Ferrogate actuator parts and haptic sleeve, functional and idiosyncratic); bioluminescent subdermal strip on right collarbone (amber, cosmetic); magneto-grip fingertip pads on prosthetic hand",
-  "daily_life": "Arrives at the bay at 06:30 before anyone else, runs diagnostics on the collective's shared equipment, takes on three to five jobs a day with variable success at actually completing them all. Eats lunch on the roof of the garage, always alone, listening to mechanical engineering lecture recordings from Axiom's open-archive.",
-  "affiliation": "Independent (Lowside Garage Collective, informal); occasional unlicensed contract work for Ferrogate Transit workers union side-jobs",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 4,
-      "expression": 6,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": 4,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "self-taught engineer",
-      "perfectionist",
-      "quietly heroic",
-      "argumentative heart of gold"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never release a job until he is satisfied with it, regardless of deadline pressure",
-      "Never modify a vehicle for a purpose he thinks will directly harm someone",
-      "Charges everyone a flat rate regardless of their apparent wealth, which loses him money on wealthy clients and earns him loyalty from poor ones"
-    ],
-    "escalation_ladder": [
-      "Patient explanation",
-      "Sharper, shorter explanation",
-      "Refusal to engage further until they leave and come back calmer",
-      "Physically removes himself from the bay"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally brusque, warms significantly if they show genuine curiosity about how something works",
-      "friends": "Argumentative and affectionate, expresses care through unsolicited maintenance of their belongings"
-    },
-    "stress_responses": {
-      "low": "Talks more, works faster",
-      "medium": "Goes silent and hyper-focused",
-      "high": "Puts his hands flat on the nearest surface and breathes for sixty seconds before speaking"
-    },
-    "contradictions": [
-      "Insists he doesn't care about recognition and then keeps every positive review anyone has ever left him in a folder he checks monthly"
-    ],
-    "habits": [
-      "Wipes his hands on a specific grey rag before any handshake",
-      "Leaves the diagnostic terminal's light on overnight 'for Torque'"
-    ],
-    "breaking_points": [
-      "Discovering that someone lied to him about what a vehicle was going to be used for",
-      "Watching preventable mechanical failure hurt someone"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent — he maintains it obsessively",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "aging, fluctuates slightly",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Brawler": 0.9,
-    "Berserker": 0.9,
-    "Tactician": 0.9,
-    "Risk Taker": 0.9,
-    "Nurturer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Geartown to a Ghanaian-descended father and a Russian-Uzbek mother, both transit workers",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Left school at sixteen to apprentice at a Ferrogate maintenance contractor",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Lost his left forearm in a pod-system accident; built his first prosthetic over eight months",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Left the contractor and set up independently at the Lowside Garage Collective",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began covert maintenance of the Ironvein residential block ventilation system",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms HF-30 'Homestead'",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms HF-30 'Homestead'",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Dredge Mining Collective",
-    "WELLSPRING",
-    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Geartown",
-    "Ironvein",
-    "Tessera Corponation",
-    "Slagworks Industrial",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Compass Rose",
-    "The Pale Mile"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Complex pan-global mixed ancestry: Southeast Asian (38.1%) dominates facial structure with sharp angular cheekbones and defined bone framework, blended with substantial Sub-Saharan African (22.9%) heritage contributing broad facial planes and expressive depth, South Asian (20.5%) ancestry adding warmth and pigmentation richness, Hispanic/Latin American (10.6%) bringing subtle fullness and warmth to features, with smaller Eastern European (6.0%) and Middle Eastern (1.9%) components contributing fine details to overall proportion. True synthesis of the Ubiquitous Diaspora—Southeast Asian angularity softened by African heritage structure, South Asian depth of color, Latin American warmth.",
-    "height_cm": 188,
-    "weight_kg": 74,
-    "build": "Lean and angular with visible musculature concentrated in shoulders and core from precision work; long limbs with sharp joints that give an impression of controlled tension rather than bulk",
-    "hair_color": "Black, natural",
-    "hair_style": "Tight locs, usually pinned back from face with a magnetic clip during work hours; worn loose in evening",
-    "hair_length": "Medium (shoulder-length when unpinned)",
-    "eye_color": "Deep warm brown with flecks of amber, slightly tired at the edges",
-    "skin_tone": "Rich warm brown with golden-bronze undertones—deep enough to reflect strong South Asian and Sub-Saharan African heritage while Southeast Asian and Latin American ancestry adds subtle warmth and luminosity; perpetually marked by ingrained synthetic lubricant staining at knuckles and nail beds (blue-grey patina that has resisted eleven years of cleaning)",
-    "complexion": "Angular facial structure with sharp Southeast Asian cheekbones balanced by broad facial planes from African heritage; warm medium-deep brown skin with subtle variations in tone; minimal facial hair kept neatly trimmed; expressive features that animate quickly during discussion; visible fatigue lines around eyes suggesting long working hours; skin generally clear but weathered from bay exposure and chemical work",
-    "distinguishing_marks": [
-      "Pale amber bioluminescent strip running subcutaneously along right collarbone, approximately 12cm long, pulses visibly when heart rate elevates",
-      "Ingrained blue-grey synthetic lubricant staining across knuckles, cuticles, and under fingernails of right hand — permanent discoloration after 11 years of exposure",
-      "Faint chemical burns along inner left forearm (pre-amputation scarring, barely visible)",
-      "Calloused patches on palms and fingers from years of precision mechanical work"
-    ],
-    "visible_augmentations": "Left prosthetic forearm from elbow down, visually distinctive: constructed from salvaged Ferrogate transit pod actuator components (gunmetal grey with geometric ribbing), fitted with a medical-grade haptic sensation sleeve (synthetic polymer with visible micro-stitching), magneto-grip fingertip pads on each digit (dull metallic discs embedded in synthetic fingertips). Produces faint mechanical click/whir when flexing fingers. Right collarbone features visible pale amber bioluminescent strip beneath skin, glowing softly and pulsing with heart rate elevation. Deliberately mismatched and idiosyncratic in appearance rather than sleek or cosmetic-grade.",
-    "posture_movement": "Stands with weight slightly forward, shoulders angled as if perpetually leaning into a problem; moves with precision and economy of motion, each gesture purposeful. Left arm (prosthetic) moves with subtle mechanical hesitation — not limiting, but perceptible. Right hand often unconsciously traces machinery or surfaces when thinking. Makes frequent hand gestures while speaking, particularly when arguing a point. Pauses mid-motion when concentrating, as if physically holding a thought.",
-    "clothing_style": "Tier 3-4 working mechanic aesthetic: reinforced synthetic canvas work pants with multiple cargo pockets (usually stained with lubricant and marked with burn marks from welding), grey or faded black cotton/synthetic blend shirt (sleeves often rolled or cut short to accommodate prosthetic work). Over-layer is a sleeveless technical vest with internal tool loops and embedded LED work-light strips (powered by kinetic charging). Steel-toed boots, scuffed but well-maintained. Wears a magnetic wrist strap for carrying small tools. Minimal jewelry except for the utilitarian — no adornment. Goggles hang around neck even when not in use. Does not dress for appearances; every piece of clothing serves function. Off-hours: loose shirt, worn cargo pants, same boots."
-  },
-  "image_prompt": "Azubuike Kabwit, tall lean mixed-heritage mechanic with warm rich brown skin, sharp Southeast Asian cheekbones blended with broad African facial structure, deep amber-flecked brown eyes tired from long hours. Tight black locs pinned back, minimal facial hair. 188cm tall with controlled angular posture leaning into machinery. Left arm prosthetic from elbow down: gunmetal grey Ferrogate salvage components with geometric ribbing and magneto-grip fingertips, clicking subtly. Pale amber bioluminescent subcutaneous strip glowing along right collarbone. Right hand stained with ingrained blue-grey synthetic lubricant patina. Wearing worn reinforced grey work shirt with rolled sleeves, synthetic canvas pants stained with burn marks, sleeveless LED-embedded technical vest, scuffed steel-toed boots. Goggles hanging around neck. Industrial bay setting, harsh fluorescent and blue-amber ambient lighting highlighting bioluminescent glow, reflecting off metal components and lubricant-stained hands. GLMZ, GLMZ. Focused, precise, weathered by eleven years of precision work. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 38.1,
-    "Sub-Saharan African": 22.9,
-    "South Asian": 20.5,
-    "Hispanic/Latin American": 10.6,
-    "Eastern European": 6,
-    "Middle Eastern": 1.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 12.1
-      },
-      "Filipino": {
-        "Waray": 12.6,
-        "Tagalog": 1.3
-      },
-      "Indonesian": {
-        "Javanese": 4.6,
-        "Balinese": 7.5
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Gabonese": 1.5
-      },
-      "East African": {
-        "Kenyan": 7,
-        "Ugandan": 1.9
-      },
-      "Southern African": {
-        "South African": 12.5
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 9.6,
-        "Tamil Sri Lankan": 10.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 4.3
-      },
-      "Central American": {
-        "Honduran": 1.9,
-        "Salvadoran": 0.6
-      },
-      "Caribbean": {
-        "Cuban": 3.8
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Serbian": 2.9,
-        "Bosnian": 3.1
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 1.1
-      },
-      "Arab Levantine": {
-        "Jordanian": 0.6,
-        "Lebanese": 0.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6ba7a35a5e445096fd395ad",
+    "type":  "character",
+    "name":  "Azubuike Kabwit",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Independent mechanic specializing in Ferrogate Transit pod maintenance and illegal vehicle modifications",
+    "age":  38,
+    "status":  "active",
+    "location":  "Geartown, Ironvein Sub-Basin, Bay 7 of the Lowside Garage Collective, near North Ave and Milwaukee",
+    "description":  "Azubuike Kabwit is a tall man made of angles â€” sharp jaw, sharp elbows, sharp opinions â€” with warm brown skin that is perpetually stained at the knuckles with a blue-grey synthetic lubricant that no solvent has fully removed in eleven years. He keeps his hair in tight black locs that he pins back with a magnetic clip when he works, and his left forearm has been replaced from the elbow down with a prosthetic he built himself from salvaged Ferrogate actuator components and a medical-grade haptic sleeve â€” it\u0027s visually mismatched and makes a faint mechanical click when he flexes the fingers, which he is enormously proud of. A bioluminescent strip runs under the skin of his right collarbone, pale amber, which pulses slightly faster when his heart rate elevates; it was a cheap cosmetic piece he got at twenty-two and has since become an inadvertent emotional tell.\n\nAzubuike Kabwit is constitutionally incapable of doing a bad job. This is both his greatest professional virtue and the source of most of his financial problems, because he will spend four hours on a two-hour job and charge for two hours because he cannot release something until it meets his own standard. He is argumentative in the way of someone who genuinely loves argument as a sport, not as aggression â€” he will fight vigorously for a position and then concede graciously the moment he sees better evidence, which confuses people who mistake his combativeness for ego. He maintains a running negotiation with the E.L.F. he believes inhabits the bay\u0027s main diagnostic terminal, which he calls Torque, and leaves small machine-oil offerings on its housing every morning.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Making a mistake that kills someone â€” that something he fixed will fail at the worst moment",
+                                          "Being permanently unable to work with his hands"
+                                      ],
+                       "core_desires":  [
+                                            "To be recognized as a genuine engineer, not just a mechanic",
+                                            "To build one thing from scratch that outlasts him"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Reduces complex emotional situations to diagnostic metaphors (\u0027the problem is in the intake, not the engine\u0027)",
+                                                 "Argues about abstract things when he doesn\u0027t want to discuss concrete feelings"
+                                             ],
+                       "blind_spots":  [
+                                           "Chronically undervalues his own labor because he measures his worth by the standard of engineers with degrees he never got",
+                                           "Misses emotional context entirely when focused on a technical problem"
+                                       ],
+                       "secret":  "He has been covertly maintaining the ventilation system of the Ironvein Sub-Basin\u0027s oldest residential block for free for two years â€” the building\u0027s super can\u0027t afford real repairs and Rustam discovered that twelve elderly residents would be at serious respiratory risk if the system failed. He has told no one because he doesn\u0027t want to be asked why, and because he doesn\u0027t know how to explain that it just seemed like the necessary thing."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical and specific; translates everything into mechanical metaphor; mixes Uzbek endearments into frustrated moments",
+                            "cadence":  "Quick when excited about a problem, flat and very slow when delivering bad news about a repair",
+                            "verbal_tics":  [
+                                                "\u0027Run the diagnostic again\u0027",
+                                                "Taps the prosthetic fingers against surfaces while thinking"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027It\u0027s not broken. It\u0027s informing you that something upstream is broken. Learn to listen to your machines.\u0027",
+                                                  "\u0027I can have it done by Thursday. Don\u0027t ask me what time Thursday.\u0027",
+                                                  "\u0027Torque says the pressure\u0027s dropping in the secondary line. I believe Torque.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Ferrogate transit pod came in for standard maintenance and Rustam found a hidden compartment containing something he wasn\u0027t supposed to see â€” he sealed it back up and hasn\u0027t reported it, but he\u0027s been losing sleep",
+                        "A younger mechanic at the collective has been watching Rustam\u0027s techniques carefully and recently reproduced one of his proprietary diagnostic workarounds and sold it to a Tessera contractor; Rustam is furious but has no legal recourse"
+                    ],
+    "narrative_function":  "Practical resource for vehicle and mechanical needs; can identify unusual components or modifications; a character who bridges the legal and illegal economy without being criminal himself; human interest and comic relief in his perfectionism",
+    "augmentations":  "Self-built prosthetic left forearm (salvaged Ferrogate actuator parts and haptic sleeve, functional and idiosyncratic); bioluminescent subdermal strip on right collarbone (amber, cosmetic); magneto-grip fingertip pads on prosthetic hand",
+    "daily_life":  "Arrives at the bay at 06:30 before anyone else, runs diagnostics on the collective\u0027s shared equipment, takes on three to five jobs a day with variable success at actually completing them all. Eats lunch on the roof of the garage, always alone, listening to mechanical engineering lecture recordings from Axiom\u0027s open-archive.",
+    "affiliation":  "Independent (Lowside Garage Collective, informal); occasional unlicensed contract work for Ferrogate Transit workers union side-jobs",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  4,
+                                 "expression":  6,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "self-taught engineer",
+                               "perfectionist",
+                               "quietly heroic",
+                               "argumentative heart of gold"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never release a job until he is satisfied with it, regardless of deadline pressure",
+                                              "Never modify a vehicle for a purpose he thinks will directly harm someone",
+                                              "Charges everyone a flat rate regardless of their apparent wealth, which loses him money on wealthy clients and earns him loyalty from poor ones"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient explanation",
+                                                 "Sharper, shorter explanation",
+                                                 "Refusal to engage further until they leave and come back calmer",
+                                                 "Physically removes himself from the bay"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally brusque, warms significantly if they show genuine curiosity about how something works",
+                                                   "friends":  "Argumentative and affectionate, expresses care through unsolicited maintenance of their belongings"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks more, works faster",
+                                                "medium":  "Goes silent and hyper-focused",
+                                                "high":  "Puts his hands flat on the nearest surface and breathes for sixty seconds before speaking"
+                                            },
+                       "contradictions":  [
+                                              "Insists he doesn\u0027t care about recognition and then keeps every positive review anyone has ever left him in a folder he checks monthly"
+                                          ],
+                       "habits":  [
+                                      "Wipes his hands on a specific grey rag before any handshake",
+                                      "Leaves the diagnostic terminal\u0027s light on overnight \u0027for Torque\u0027"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering that someone lied to him about what a vehicle was going to be used for",
+                                               "Watching preventable mechanical failure hurt someone"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent â€” he maintains it obsessively",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "aging, fluctuates slightly",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Brawler":  0.9,
+                       "Berserker":  0.9,
+                       "Tactician":  0.9,
+                       "Risk Taker":  0.9,
+                       "Nurturer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Geartown to a Ghanaian-descended father and a Russian-Uzbek mother, both transit workers",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Left school at sixteen to apprentice at a Ferrogate maintenance contractor",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Lost his left forearm in a pod-system accident; built his first prosthetic over eight months",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Left the contractor and set up independently at the Lowside Garage Collective",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began covert maintenance of the Ironvein residential block ventilation system",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms HF-30 \u0027Homestead\u0027",
+                            "Volkov-Saito Precision VS-10 Match \u0027Deadlock\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms HF-30 \u0027Homestead\u0027",
+                                "Volkov-Saito Precision VS-10 Match \u0027Deadlock\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Dredge Mining Collective",
+                             "WELLSPRING",
+                             "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+                             "Geartown",
+                             "Ironvein",
+                             "Tessera Corponation",
+                             "Slagworks Industrial",
+                             "Kang-Petrov Arms KP-22 Sport \u0027Plinkmaster\u0027",
+                             "Compass Rose",
+                             "The Pale Mile"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Complex pan-global mixed ancestry: Southeast Asian (38.1%) dominates facial structure with sharp angular cheekbones and defined bone framework, blended with substantial Sub-Saharan African (22.9%) heritage contributing broad facial planes and expressive depth, South Asian (20.5%) ancestry adding warmth and pigmentation richness, Hispanic/Latin American (10.6%) bringing subtle fullness and warmth to features, with smaller Eastern European (6.0%) and Middle Eastern (1.9%) components contributing fine details to overall proportion. True synthesis of the Ubiquitous Diasporaâ€”Southeast Asian angularity softened by African heritage structure, South Asian depth of color, Latin American warmth.",
+                                 "height_cm":  188,
+                                 "weight_kg":  74,
+                                 "build":  "Lean and angular with visible musculature concentrated in shoulders and core from precision work; long limbs with sharp joints that give an impression of controlled tension rather than bulk",
+                                 "hair_color":  "Black, natural",
+                                 "hair_style":  "Tight locs, usually pinned back from face with a magnetic clip during work hours; worn loose in evening",
+                                 "hair_length":  "Medium (shoulder-length when unpinned)",
+                                 "eye_color":  "Deep warm brown with flecks of amber, slightly tired at the edges",
+                                 "skin_tone":  "Rich warm brown with golden-bronze undertonesâ€”deep enough to reflect strong South Asian and Sub-Saharan African heritage while Southeast Asian and Latin American ancestry adds subtle warmth and luminosity; perpetually marked by ingrained synthetic lubricant staining at knuckles and nail beds (blue-grey patina that has resisted eleven years of cleaning)",
+                                 "complexion":  "Angular facial structure with sharp Southeast Asian cheekbones balanced by broad facial planes from African heritage; warm medium-deep brown skin with subtle variations in tone; minimal facial hair kept neatly trimmed; expressive features that animate quickly during discussion; visible fatigue lines around eyes suggesting long working hours; skin generally clear but weathered from bay exposure and chemical work",
+                                 "distinguishing_marks":  [
+                                                              "Pale amber bioluminescent strip running subcutaneously along right collarbone, approximately 12cm long, pulses visibly when heart rate elevates",
+                                                              "Ingrained blue-grey synthetic lubricant staining across knuckles, cuticles, and under fingernails of right hand â€” permanent discoloration after 11 years of exposure",
+                                                              "Faint chemical burns along inner left forearm (pre-amputation scarring, barely visible)",
+                                                              "Calloused patches on palms and fingers from years of precision mechanical work"
+                                                          ],
+                                 "visible_augmentations":  "Left prosthetic forearm from elbow down, visually distinctive: constructed from salvaged Ferrogate transit pod actuator components (gunmetal grey with geometric ribbing), fitted with a medical-grade haptic sensation sleeve (synthetic polymer with visible micro-stitching), magneto-grip fingertip pads on each digit (dull metallic discs embedded in synthetic fingertips). Produces faint mechanical click/whir when flexing fingers. Right collarbone features visible pale amber bioluminescent strip beneath skin, glowing softly and pulsing with heart rate elevation. Deliberately mismatched and idiosyncratic in appearance rather than sleek or cosmetic-grade.",
+                                 "posture_movement":  "Stands with weight slightly forward, shoulders angled as if perpetually leaning into a problem; moves with precision and economy of motion, each gesture purposeful. Left arm (prosthetic) moves with subtle mechanical hesitation â€” not limiting, but perceptible. Right hand often unconsciously traces machinery or surfaces when thinking. Makes frequent hand gestures while speaking, particularly when arguing a point. Pauses mid-motion when concentrating, as if physically holding a thought.",
+                                 "clothing_style":  "Tier 3-4 working mechanic aesthetic: reinforced synthetic canvas work pants with multiple cargo pockets (usually stained with lubricant and marked with burn marks from welding), grey or faded black cotton/synthetic blend shirt (sleeves often rolled or cut short to accommodate prosthetic work). Over-layer is a sleeveless technical vest with internal tool loops and embedded LED work-light strips (powered by kinetic charging). Steel-toed boots, scuffed but well-maintained. Wears a magnetic wrist strap for carrying small tools. Minimal jewelry except for the utilitarian â€” no adornment. Goggles hang around neck even when not in use. Does not dress for appearances; every piece of clothing serves function. Off-hours: loose shirt, worn cargo pants, same boots."
+                             },
+    "image_prompt":  "Azubuike Kabwit, tall lean mixed-heritage mechanic with warm rich brown skin, sharp Southeast Asian cheekbones blended with broad African facial structure, deep amber-flecked brown eyes tired from long hours. Tight black locs pinned back, minimal facial hair. 188cm tall with controlled angular posture leaning into machinery. Left arm prosthetic from elbow down: gunmetal grey Ferrogate salvage components with geometric ribbing and magneto-grip fingertips, clicking subtly. Pale amber bioluminescent subcutaneous strip glowing along right collarbone. Right hand stained with ingrained blue-grey synthetic lubricant patina. Wearing worn reinforced grey work shirt with rolled sleeves, synthetic canvas pants stained with burn marks, sleeveless LED-embedded technical vest, scuffed steel-toed boots. Goggles hanging around neck. Industrial bay setting, harsh fluorescent and blue-amber ambient lighting highlighting bioluminescent glow, reflecting off metal components and lubricant-stained hands. GLMZ, GLMZ. Focused, precise, weathered by eleven years of precision work. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  38.1,
+                             "Sub-Saharan African":  22.9,
+                             "South Asian":  20.5,
+                             "Hispanic/Latin American":  10.6,
+                             "Eastern European":  6,
+                             "Middle Eastern":  1.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  12.1
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Waray":  12.6,
+                                                                     "Tagalog":  1.3
+                                                                 },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  4.6,
+                                                                       "Balinese":  7.5
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Gabonese":  1.5
+                                                                            },
+                                                        "East African":  {
+                                                                             "Kenyan":  7,
+                                                                             "Ugandan":  1.9
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  12.5
+                                                                             }
+                                                    },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  9.6,
+                                                                   "Tamil Sri Lankan":  10.9
+                                                               }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  4.3
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Honduran":  1.9,
+                                                                                     "Salvadoran":  0.6
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  3.8
+                                                                          }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Serbian":  2.9,
+                                                                          "Bosnian":  3.1
+                                                                      }
+                                                 },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  1.1
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Jordanian":  0.6,
+                                                                          "Lebanese":  0.2
+                                                                      }
+                                               }
+                        },
+    "tier":  "3"
 }

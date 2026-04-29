@@ -1,278 +1,299 @@
-{
-  "id": "019d6143a70f7c159be2fd53e5e9d887",
-  "type": "character",
-  "name": "Bhavika Thorvaldsdóttir-Esquivel",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Junk merchant and scrap reseller",
-  "age": 27,
-  "status": "active",
-  "location": "The Stockyard, Pier 4 overflow lot, Grainfort, near Lake Shore and Navy Pier",
-  "description": "Bhavika Thorvaldsdóttir-Esquivel is lean and angular with the kind of wiry strength that comes from hauling scrap rather than any intentional exercise. Their skin is a deep warm brown, and they have geneware cat ears — dusty grey tabby-patterned, which they've never bothered to remove since getting them at nineteen on a dare — that flatten expressively when they're annoyed and perk forward when something catches their interest, which is often. A bioluminescent stripe runs down the back of each forearm, dim pale blue, activated by stress hormones; they've learned to read it as an early warning system for their own anxiety. Their work clothes are pragmatic catastrophes: safety-orange strapping over layered thermals, magnetic tool clips everywhere, boots with steel inserts they sourced from a Ferrogate Transit maintenance surplus sale.\n\nThey have the paradoxical quality of seeming both completely at ease in the chaos of the Stockyard lots and perpetually slightly amused by it, as though the entire enterprise of human commerce is a joke they're in on. Their actual eye for value is extraordinary — they can assess a pile of mixed scrap and name a fair price in under thirty seconds, and they're almost never wrong. They're known for being the only merchant in Grainfort who won't claim something works if it doesn't.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.2,
-      "mask": 0.4,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Being trapped in a role or place with no room to manoeuvre",
-      "Trusting someone who uses that trust as leverage"
-    ],
-    "core_desires": [
-      "Enough financial cushion to walk away from a bad situation",
-      "Work that feels honest — no pretending something is what it isn't"
-    ],
-    "coping_mechanisms": [
-      "Humour as deflection",
-      "Physical work — sorting and cataloguing to quiet the mind",
-      "Reading the bioluminescent stripes as a biofeedback tool"
-    ],
-    "blind_spots": [
-      "Their comfort with chaos means they sometimes miss when a situation has become genuinely dangerous rather than just messy",
-      "Undercharges people they like"
-    ],
-    "secret": "They've been documenting serial numbers on certain Ferrogate Transit parts coming through the Stockyard — parts that shouldn't exist on the secondary market. They don't know yet what they're going to do with the information, but the file is growing."
-  },
-  "speech_patterns": {
-    "vocabulary": "Casual, technically precise about anything mechanical, fond of dry asides; code-switches between Yoruba proverbs (from their grandmother) and Czech slang (from their father's neighbourhood) without noticing",
-    "cadence": "Easy and unhurried, with sudden bursts of rapid technical detail when something gets interesting",
-    "verbal_tics": [
-      "Clicks tongue when assessing something",
-      "'Honestly?' as a sentence opener for honest assessments"
-    ],
-    "example_lines": [
-      "Honestly? This actuator is cooked. I'll take it off you for Φ4 and strip the housing, which is actually fine. Offering you Φ4 for a dead actuator is me being charitable.",
-      "My baba used to say — well, he'd say it in Czech and I'd understand maybe half — something about how everything valuable is just something someone else stopped paying attention to. Seems right to me."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The Ferrogate Transit serial number file becomes dangerous when one of the maintenance workers figures out Vashti has been documenting",
-    "A specific piece of scrap comes through the lot that is clearly not junk — it's a piece of something that should not exist on the open market at all, and the person who sold it is already dead"
-  ],
-  "narrative_function": "Scrap and salvage information source — knows what's being thrown away by whom; can source unusual components; potential lead on Ferrogate Transit's internal disposal practices; local colour with genuine warmth.",
-  "augmentations": "Geneware cat ears (grey tabby, cosmetic). Bioluminescent stripes on forearms (geneware, stress-reactive). Subdermal magnetic fingertips (functional — allows them to handle small metal components without dropping them).",
-  "daily_life": "Early morning scavenging runs to the Grainfort overflow before other pickers arrive, then sorting and pricing through midday, then open stall from noon to whenever the light goes.",
-  "affiliation": "Independent; trade relationship with three Ferrogate Transit maintenance workers who sell surplus parts off-manifest; loosely pays protection to the Stockyard crew",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 8,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 6,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": 2,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "appraiser",
-      "scavenger",
-      "honest-dealer",
-      "geneware-casual",
-      "information-hoarder"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Don't lie about what something is — your reputation is the business",
-      "Keep one exit always mentally mapped"
-    ],
-    "escalation_ladder": [
-      "Dry humour and redirect",
-      "Direct refusal with clear explanation",
-      "Walking away entirely — no scene, no argument, just gone"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Cheerfully professional and slightly guarded — warm but watching",
-      "friends": "Relaxed, generous, teasing; will help quietly without making it a thing"
-    },
-    "stress_responses": {
-      "low": "Gets more talkative and jokes more",
-      "medium": "Goes quiet, watches the bioluminescent stripes, starts tidying the stall",
-      "high": "Leaves. Just leaves. Comes back when it's done."
-    },
-    "contradictions": [
-      "Values honesty above almost everything but is sitting on information that could burn several people"
-    ],
-    "habits": [
-      "Runs magnetic fingertips along metal surfaces when idle",
-      "Cat ears flatten when reading the bioluminescent stripes — focuses inward"
-    ],
-    "breaking_points": [
-      "Being deliberately deceived by someone they'd decided to trust"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Hustler": 0.9,
-    "Provider": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Stockyard",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Street Custom 'Backfire' Weaponized Exhaust System"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ferrogate Transit",
-    "The Stockyard",
-    "Grainfort",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Stratum",
-    "West Engelheim",
-    "Tin Man",
-    "Sweeper-11",
-    "Steel",
-    "Slagworks Industrial",
-    "The Pale Mile"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (56.8%) with substantial Eastern European (14.8%), Southeast Asian (10.6%), South Asian (6.7%), Sub-Saharan African (5.9%), and East Asian (5.2%) ancestry; the genetic blend creates a warm, complex phenotype with multiple heritage markers visible in facial structure and skin tone",
-    "height_cm": 172,
-    "weight_kg": 58,
-    "build": "Lean and angular with wiry muscle definition from years of hauling scrap; no excess body fat; sinewy forearms and core strength despite slight frame",
-    "hair_color": "Black, naturally textured",
-    "hair_style": "Worn in loose twists, often half-pinned back with salvaged metal clips to keep it clear of work",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Warm medium-brown with golden undertones and subtle olive cast; sun-weathered on shoulders and neck from outdoor scrap work; the blend reflects the dominant Latin American ancestry with Southeast and South Asian chromatic influence",
-    "complexion": "Balanced facial geometry showing blend of Hispanic and Eastern European structure; defined cheekbones with mild prominence from South Asian genetics; warm-toned skin with minor scars and calluses from scrap work; slight Southeast Asian eye shape characteristics; subtle West African bone structure contributing to facial symmetry; sharp, alert expression",
-    "distinguishing_marks": [
-      "Geneware cat ears mounted at the crown, grey tabby-patterned feline ears with natural musculature allowing independent movement and flattening when annoyed",
-      "Pale blue bioluminescent stripes running the length of each forearm on the dorsal side, faintly glowing during moments of stress or heightened adrenaline",
-      "Minor burn scarring on the heel of left hand from an early scrap-sorting accident, now barely visible"
-    ],
-    "visible_augmentations": "Geneware cat ears (cosmetic, animalistic). Bioluminescent forearm stripes (visible as faint pale-blue lines, glow activated by stress). Subdermal magnetic fingertips not visually obvious at rest but create subtle metallic shine under certain light; occasionally small metal shavings cling to fingertips.",
-    "posture_movement": "Moves with economical precision; stands with weight shifted to one side in relaxed stance, often picking up and rotating small objects absently. Cat ears track sounds and movement with subtle autonomic twitches. Overall demeanor is alert but unbothered, moving through chaos with practiced ease.",
-    "clothing_style": "Tier 4 working-class pragmatism: safety-orange high-visibility strapping harness worn over layered thermal undershirts in grey or black. Multiple magnetic tool clips on webbing. Reinforced cargo pants with patched seams, tucked into steel-insert work boots sourced from Ferrogate Transit surplus. Occasional technical jacket in faded blue or neutral tones when weather demands. No visible corporate branding; all gear is salvaged or secondhand. Grooming is minimal but deliberate — nothing wasted, everything functional."
-  },
-  "image_prompt": "Bhavika Thorvaldsdóttir-Esquivel, 2226 neo-noir scrap-worker, 172cm lean angular frame with warm medium-brown skin and golden undertones. Black naturally textured hair in loose twists pinned with metal clips. Dark brown eyes, alert sharp expression. Geneware grey tabby cat ears at crown with independent movement. Pale blue bioluminescent stripes glowing faintly along dorsal forearms. Wears safety-orange high-visibility harness over grey thermal undershirt, reinforced cargo pants with patches, steel-insert work boots. Minor burn scarring on left hand heel. Subdermal magnetic fingertips with metallic shine. Mixed Hispanic/Eastern European/Southeast Asian/South Asian facial geometry with defined cheekbones and subtle East Asian eye characteristics. Sun-weathered shoulders and neck. Standing in economical relaxed posture with weight shifted, picking up small metal scrap absently. Grungy industrial scrapyard background, overhead neon lighting casting shadows, volumetric dust in air catching light. Neo-noir urban aesthetic, practiced ease despite chaos, unbothered demeanor --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 56.8,
-    "Eastern European": 14.8,
-    "Southeast Asian": 10.6,
-    "South Asian": 6.7,
-    "Sub-Saharan African": 5.9,
-    "East Asian": 5.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 36.2,
-        "Guatemalan": 20.6
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 7.5
-      },
-      "Magyar-Romanian": {
-        "Romanian": 6.1,
-        "Hungarian": 1.2
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Tagalog": 10.6
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 6.7
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 0.8,
-        "Mozambican": 0.3
-      },
-      "Central African": {
-        "Cameroonian": 2.3,
-        "Gabonese": 2.5
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 3
-      },
-      "Chinese": {
-        "Hakka": 1.1,
-        "Cantonese": 0.7
-      },
-      "Japanese": {
-        "Japanese": 0.4
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a70f7c159be2fd53e5e9d887",
+    "type":  "character",
+    "name":  "Bhavika ThorvaldsdÃ³ttir-Esquivel",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Junk merchant and scrap reseller",
+    "age":  27,
+    "status":  "active",
+    "location":  "The Stockyard, Pier 4 overflow lot, Grainfort, near Lake Shore and Navy Pier",
+    "description":  "Bhavika ThorvaldsdÃ³ttir-Esquivel is lean and angular with the kind of wiry strength that comes from hauling scrap rather than any intentional exercise. Their skin is a deep warm brown, and they have geneware cat ears â€” dusty grey tabby-patterned, which they\u0027ve never bothered to remove since getting them at nineteen on a dare â€” that flatten expressively when they\u0027re annoyed and perk forward when something catches their interest, which is often. A bioluminescent stripe runs down the back of each forearm, dim pale blue, activated by stress hormones; they\u0027ve learned to read it as an early warning system for their own anxiety. Their work clothes are pragmatic catastrophes: safety-orange strapping over layered thermals, magnetic tool clips everywhere, boots with steel inserts they sourced from a Ferrogate Transit maintenance surplus sale.\n\nThey have the paradoxical quality of seeming both completely at ease in the chaos of the Stockyard lots and perpetually slightly amused by it, as though the entire enterprise of human commerce is a joke they\u0027re in on. Their actual eye for value is extraordinary â€” they can assess a pile of mixed scrap and name a fair price in under thirty seconds, and they\u0027re almost never wrong. They\u0027re known for being the only merchant in Grainfort who won\u0027t claim something works if it doesn\u0027t.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being trapped in a role or place with no room to manoeuvre",
+                                          "Trusting someone who uses that trust as leverage"
+                                      ],
+                       "core_desires":  [
+                                            "Enough financial cushion to walk away from a bad situation",
+                                            "Work that feels honest â€” no pretending something is what it isn\u0027t"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Humour as deflection",
+                                                 "Physical work â€” sorting and cataloguing to quiet the mind",
+                                                 "Reading the bioluminescent stripes as a biofeedback tool"
+                                             ],
+                       "blind_spots":  [
+                                           "Their comfort with chaos means they sometimes miss when a situation has become genuinely dangerous rather than just messy",
+                                           "Undercharges people they like"
+                                       ],
+                       "secret":  "They\u0027ve been documenting serial numbers on certain Ferrogate Transit parts coming through the Stockyard â€” parts that shouldn\u0027t exist on the secondary market. They don\u0027t know yet what they\u0027re going to do with the information, but the file is growing."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Casual, technically precise about anything mechanical, fond of dry asides; code-switches between Yoruba proverbs (from their grandmother) and Czech slang (from their father\u0027s neighbourhood) without noticing",
+                            "cadence":  "Easy and unhurried, with sudden bursts of rapid technical detail when something gets interesting",
+                            "verbal_tics":  [
+                                                "Clicks tongue when assessing something",
+                                                "\u0027Honestly?\u0027 as a sentence opener for honest assessments"
+                                            ],
+                            "example_lines":  [
+                                                  "Honestly? This actuator is cooked. I\u0027ll take it off you for Î¦4 and strip the housing, which is actually fine. Offering you Î¦4 for a dead actuator is me being charitable.",
+                                                  "My baba used to say â€” well, he\u0027d say it in Czech and I\u0027d understand maybe half â€” something about how everything valuable is just something someone else stopped paying attention to. Seems right to me."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The Ferrogate Transit serial number file becomes dangerous when one of the maintenance workers figures out Vashti has been documenting",
+                        "A specific piece of scrap comes through the lot that is clearly not junk â€” it\u0027s a piece of something that should not exist on the open market at all, and the person who sold it is already dead"
+                    ],
+    "narrative_function":  "Scrap and salvage information source â€” knows what\u0027s being thrown away by whom; can source unusual components; potential lead on Ferrogate Transit\u0027s internal disposal practices; local colour with genuine warmth.",
+    "augmentations":  "Geneware cat ears (grey tabby, cosmetic). Bioluminescent stripes on forearms (geneware, stress-reactive). Subdermal magnetic fingertips (functional â€” allows them to handle small metal components without dropping them).",
+    "daily_life":  "Early morning scavenging runs to the Grainfort overflow before other pickers arrive, then sorting and pricing through midday, then open stall from noon to whenever the light goes.",
+    "affiliation":  "Independent; trade relationship with three Ferrogate Transit maintenance workers who sell surplus parts off-manifest; loosely pays protection to the Stockyard crew",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  8,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  6,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "appraiser",
+                               "scavenger",
+                               "honest-dealer",
+                               "geneware-casual",
+                               "information-hoarder"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Don\u0027t lie about what something is â€” your reputation is the business",
+                                              "Keep one exit always mentally mapped"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Dry humour and redirect",
+                                                 "Direct refusal with clear explanation",
+                                                 "Walking away entirely â€” no scene, no argument, just gone"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Cheerfully professional and slightly guarded â€” warm but watching",
+                                                   "friends":  "Relaxed, generous, teasing; will help quietly without making it a thing"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Gets more talkative and jokes more",
+                                                "medium":  "Goes quiet, watches the bioluminescent stripes, starts tidying the stall",
+                                                "high":  "Leaves. Just leaves. Comes back when it\u0027s done."
+                                            },
+                       "contradictions":  [
+                                              "Values honesty above almost everything but is sitting on information that could burn several people"
+                                          ],
+                       "habits":  [
+                                      "Runs magnetic fingertips along metal surfaces when idle",
+                                      "Cat ears flatten when reading the bioluminescent stripes â€” focuses inward"
+                                  ],
+                       "breaking_points":  [
+                                               "Being deliberately deceived by someone they\u0027d decided to trust"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Hustler":  0.9,
+                       "Provider":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Stockyard",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027",
+                            "Street Custom \u0027Backfire\u0027 Weaponized Exhaust System"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "The Stockyard",
+                             "Grainfort",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Stratum",
+                             "West Engelheim",
+                             "Tin Man",
+                             "Sweeper-11",
+                             "Steel",
+                             "Slagworks Industrial",
+                             "The Pale Mile"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Hispanic/Latin American (56.8%) with substantial Eastern European (14.8%), Southeast Asian (10.6%), South Asian (6.7%), Sub-Saharan African (5.9%), and East Asian (5.2%) ancestry; the genetic blend creates a warm, complex phenotype with multiple heritage markers visible in facial structure and skin tone",
+                                 "height_cm":  172,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and angular with wiry muscle definition from years of hauling scrap; no excess body fat; sinewy forearms and core strength despite slight frame",
+                                 "hair_color":  "Black, naturally textured",
+                                 "hair_style":  "Worn in loose twists, often half-pinned back with salvaged metal clips to keep it clear of work",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown, unaugmented",
+                                 "skin_tone":  "Warm medium-brown with golden undertones and subtle olive cast; sun-weathered on shoulders and neck from outdoor scrap work; the blend reflects the dominant Latin American ancestry with Southeast and South Asian chromatic influence",
+                                 "complexion":  "Balanced facial geometry showing blend of Hispanic and Eastern European structure; defined cheekbones with mild prominence from South Asian genetics; warm-toned skin with minor scars and calluses from scrap work; slight Southeast Asian eye shape characteristics; subtle West African bone structure contributing to facial symmetry; sharp, alert expression",
+                                 "distinguishing_marks":  [
+                                                              "Geneware cat ears mounted at the crown, grey tabby-patterned feline ears with natural musculature allowing independent movement and flattening when annoyed",
+                                                              "Pale blue bioluminescent stripes running the length of each forearm on the dorsal side, faintly glowing during moments of stress or heightened adrenaline",
+                                                              "Minor burn scarring on the heel of left hand from an early scrap-sorting accident, now barely visible"
+                                                          ],
+                                 "visible_augmentations":  "Geneware cat ears (cosmetic, animalistic). Bioluminescent forearm stripes (visible as faint pale-blue lines, glow activated by stress). Subdermal magnetic fingertips not visually obvious at rest but create subtle metallic shine under certain light; occasionally small metal shavings cling to fingertips.",
+                                 "posture_movement":  "Moves with economical precision; stands with weight shifted to one side in relaxed stance, often picking up and rotating small objects absently. Cat ears track sounds and movement with subtle autonomic twitches. Overall demeanor is alert but unbothered, moving through chaos with practiced ease.",
+                                 "clothing_style":  "Tier 4 working-class pragmatism: safety-orange high-visibility strapping harness worn over layered thermal undershirts in grey or black. Multiple magnetic tool clips on webbing. Reinforced cargo pants with patched seams, tucked into steel-insert work boots sourced from Ferrogate Transit surplus. Occasional technical jacket in faded blue or neutral tones when weather demands. No visible corporate branding; all gear is salvaged or secondhand. Grooming is minimal but deliberate â€” nothing wasted, everything functional."
+                             },
+    "image_prompt":  "Bhavika ThorvaldsdÃ³ttir-Esquivel, 2226 neo-noir scrap-worker, 172cm lean angular frame with warm medium-brown skin and golden undertones. Black naturally textured hair in loose twists pinned with metal clips. Dark brown eyes, alert sharp expression. Geneware grey tabby cat ears at crown with independent movement. Pale blue bioluminescent stripes glowing faintly along dorsal forearms. Wears safety-orange high-visibility harness over grey thermal undershirt, reinforced cargo pants with patches, steel-insert work boots. Minor burn scarring on left hand heel. Subdermal magnetic fingertips with metallic shine. Mixed Hispanic/Eastern European/Southeast Asian/South Asian facial geometry with defined cheekbones and subtle East Asian eye characteristics. Sun-weathered shoulders and neck. Standing in economical relaxed posture with weight shifted, picking up small metal scrap absently. Grungy industrial scrapyard background, overhead neon lighting casting shadows, volumetric dust in air catching light. Neo-noir urban aesthetic, practiced ease despite chaos, unbothered demeanor --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  56.8,
+                             "Eastern European":  14.8,
+                             "Southeast Asian":  10.6,
+                             "South Asian":  6.7,
+                             "Sub-Saharan African":  5.9,
+                             "East Asian":  5.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  36.2,
+                                                                                     "Guatemalan":  20.6
+                                                                                 }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  7.5
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  6.1,
+                                                                             "Hungarian":  1.2
+                                                                         }
+                                                 },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Tagalog":  10.6
+                                                                 }
+                                                },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  6.7
+                                                           }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  0.8,
+                                                                                 "Mozambican":  0.3
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  2.3,
+                                                                                "Gabonese":  2.5
+                                                                            }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  3
+                                                          },
+                                               "Chinese":  {
+                                                               "Hakka":  1.1,
+                                                               "Cantonese":  0.7
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  0.4
+                                                            }
+                                           }
+                        },
+    "tier":  "3"
 }

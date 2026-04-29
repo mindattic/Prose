@@ -1,253 +1,274 @@
-{
-  "id": "019d6143a5c972fbb6a7bd03af49f1d4",
-  "type": "character",
-  "name": "Rio Szczypiński",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Noodle cart vendor, runs 'Brax's Tangle' off the corner of Copperhead and 9th Lateral",
-  "age": 26,
-  "status": "active",
-  "location": "Copperhead, street level — corner pitch near the Copperhead Transit Hub mouth, near Milwaukee and North Ave",
-  "description": "Rio Szczypiński is a lean young man, all elbows and restless energy, with close-cropped black hair and a jaw that always looks like it needs another day of growth. He has his Guinean grandfather's deep brown skin and his Bosnian grandmother's sharp cheekbones, and he has cat ears — small, tawny, semi-expressive — mounted via a Helix genemod he saved three months of UBC stipend for at seventeen because he thought they'd make him look 'elevated.' They do not make him look elevated. They do make him look like exactly who he is: a cheerful young man who is trying very hard and mostly succeeding. His cart is a battered silver rig he inherited from a previous vendor, pasted over with good-luck ELF shrine stickers and a hand-painted sign in four languages.\n\nHe operates his cart with the manic efficiency of someone who cannot afford to miss a service window. His noodle broth is genuinely excellent — a recipe he built over four years of experimentation, drawing on whatever his parents cooked and whatever he could reverse-engineer from mid-tier restaurant menus he couldn't afford to eat at. He talks too much when he's happy, goes very quiet when he's worried, and has a genuine talent for remembering exactly what every regular customer ordered last time.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.7,
-      "id": 0.6,
-      "shadow": 0.2,
-      "mask": 0.4,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "The cart breaking down catastrophically and him not having the capital to fix it",
-      "Becoming the person who was 'almost something'"
-    ],
-    "core_desires": [
-      "To open a real restaurant — four walls, a name on a sign, a reservation list",
-      "To prove his parents' sacrifice in relocating to GLMZ meant something"
-    ],
-    "coping_mechanisms": [
-      "Cooking experimentally when anxious",
-      "Over-talking with regulars to avoid sitting with worry"
-    ],
-    "blind_spots": [
-      "Extends trust too fast to customers who are kind to him",
-      "Undercharges people he likes, which is a slow financial wound"
-    ],
-    "secret": "One of his regular customers is a low-level Arcturus logistics coordinator who pays him Φ15 extra each week to send a coded tally — just noodle types, quantities, customer descriptors — to a dead-drop address. Braxo has convinced himself it's market research. It is not market research."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, contemporary street slang layered over a slightly formal sentence structure his mother drilled into him. Puns. Too many puns.",
-    "cadence": "Quick and rising, like someone always about to finish a joke",
-    "verbal_tics": [
-      "'Real talk though—'",
-      "Calls everyone 'neighbor' until he knows their name"
-    ],
-    "example_lines": [
-      "'Spicy-six or the mushroom build? Real talk though, the mushroom is having a moment. You look like a mushroom-build person. That's a compliment.'",
-      "'Cart's been out since six, neighbor. You think the ELF in the burner unit is gonna let me down? I left it a whole gigabyte of ambient jazz. We're good.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He noticed a Ferrogate Transit worker boarding the same train every morning for a month and then vanishing — the worker's partner has been asking around the corner",
-    "His Arcturus contact has stopped showing up and the dead-drop instructions have changed; someone is now watching his cart from across the street at irregular intervals"
-  ],
-  "narrative_function": "Street-level information node — positioned at a transit hub, sees everyone. Warm entry point into Copperhead social life. Can be a quest giver for transit-related oddities he's observed.",
-  "augmentations": "Geneware cat ears (Helix Biosystems cosmetic, tawny coloring). No other mods — can't afford them and is saving for a second burner unit for the cart.",
-  "daily_life": "Cart is out by 0630 for the morning transit rush, breaks from 1000-1130, back out for the lunch wave, closes at 2000. Spends late nights recalibrating his broth ratios and watching cooking tutorials he can't fully afford to implement.",
-  "affiliation": "Independent; pays pitch fees to the Copperhead Vendors Collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 5,
-      "creativity": 8,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 4,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": 1,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street-vendor",
-      "information-hub",
-      "ambitious",
-      "naively-entangled",
-      "community-fixture"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always feed someone who looks hungry even if they're short — he'll square it in his head later",
-      "Never badmouth a competitor's cart within earshot of a customer"
-    ],
-    "escalation_ladder": [
-      "Defuse with humor",
-      "Go still and polite in a way that is noticeably different from his normal warmth",
-      "Call it plainly: 'I need you to leave my corner'"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Open, high-energy, immediately tries to get a read on their order preferences as a way of reading them",
-      "friends": "Teasing, loyal, shows up with food without being asked"
-    },
-    "stress_responses": {
-      "low": "Tells more jokes, cart gets noisier",
-      "medium": "Switches to silent, precise cooking movements",
-      "high": "Shuts the cart down early and takes a long walk along the transit hub overpasses"
-    },
-    "contradictions": [
-      "Dreams of a restaurant but is terrified of actually being stationary — the cart's mobility feels like a safety net he hasn't admitted to himself"
-    ],
-    "habits": [
-      "Touches the ELF shrine sticker on the cart's burner before every service window",
-      "Keeps a handwritten tasting journal in his apron pocket"
-    ],
-    "breaking_points": [
-      "Someone damaging or stealing from his cart",
-      "Being made to feel stupid in front of customers"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Provider": 0.9,
-    "Generous Fool": 0.9,
-    "Hustler": 0.7,
-    "People Pleaser": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Copperhead",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "The CEO",
-    "Grandmother",
-    "Copperhead",
-    "Plot 17",
-    "Arcturus Defense Solutions",
-    "Silver",
-    "Corner Slice",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Compass Rose"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly Eastern European (89.2%) with minor Sub-Saharan African (7.5%) and Northern European (3.3%) ancestry. Eastern European genetics dominate: angular facial structure with sharp jawline, moderate-to-high cheekbones, and straight nose typical of Polish-Ukrainian lineages. Sub-Saharan African ancestry contributes warmth to overall skin tone, subtle fullness to lips and lower face, and slight broadening of nasal base. Northern European trace ancestry adds depth to eye color and slight coolness to undertones beneath the warm base. The genetic expression reads as distinctly Central/Eastern European with warm, sun-marked character.",
-    "height_cm": 175,
-    "weight_kg": 62,
-    "build": "Lean and wiry, all elbows and restless kinetic energy — the physiology of someone who moves constantly between cart stations and supplier runs. Minimal body fat, efficient muscle.",
-    "hair_color": "Black, natural",
-    "hair_style": "Close-cropped, deliberately low-maintenance",
-    "hair_length": "Short",
-    "eye_color": "Dark brown",
-    "skin_tone": "Warm golden-tan, medium depth — Eastern European base enriched and deepened by Sub-Saharan African ancestry contribution. Golden undertones from sun exposure and heat work. Lived-in quality from cart-side environment.",
-    "complexion": "Strong Eastern European bone structure: sharp jawline, moderate-to-high cheekbones, straight nose with slight width at base from African heritage. Sub-Saharan ancestry adds warmth and subtle fullness to lower face and lips. Perpetual stubble shadow (two to three days growth standard), skin weathered from cart-side heat and sun exposure. Animated expression — eyebrows mobile, mouth rarely still.",
-    "distinguishing_marks": [
-      "Small tawny cat ears mounted via Helix Biosystems genemod surgery scars visible behind ears where mod plates inserted, semi-expressive cartilage control.",
-      "Minor burn scar on the back of right hand from cart steam accident, approximately 5cm, pale against golden-tan skin."
-    ],
-    "visible_augmentations": "Tawny geneware cat ears (Helix Biosystems cosmetic mod) — semi-expressive, respond to emotion and attention. No chrome, no LED optics, no subdermal plating visible. Deliberately minimal augmentation profile.",
-    "posture_movement": "Hunched slightly forward from years of leaning over cart counters. Moves with rapid, efficient gestures — hand-talking constantly when animated. Fidgets with cart equipment during customer lulls. Stance shifts weight frequently, ready to pivot. Eyes track customers and foot traffic continuously.",
-    "clothing_style": "Tier 4 utilitarian: heat-resistant synthetic apron (food-stained, patterned with faded ELF shrine motifs he refuses to replace), black thermal underlayer, reinforced cargo pants with multiple utility pockets (flour, salt, spice packets). Worn Copperhead Collective vendor badge on lanyard. Footwear is scuffed, solvent-stained work boots. Occasional hoodie in cooler months — generic brand, no logos. Jewelry: single silver ring (family heirloom) on left hand. Overall aesthetic screams 'working class street vendor' rather than aspirational."
-  },
-  "image_prompt": "Rio Szczypiński, 175cm lean neo-noir street vendor with golden-tan warm skin tone and sharp Eastern European features softened by Sub-Saharan African ancestry warmth. Close-cropped black hair, dark brown eyes, animated expression. Small tawny geneware cat ears with visible surgery scars behind ears, semi-expressive. Perpetual three-day stubble, weathered complexion. Hunched slightly forward stance, rapid hand gestures. Wearing heat-resistant apron stained with food and faded shrine motifs, black thermal underlayer, reinforced cargo pants with utility pockets, scuffed work boots, Copperhead Collective vendor badge. Silver family heirloom ring on left hand. Pale burn scar visible on right hand. Standing at food cart in neon-lit Great Lakes Metropolitan Zone street market, warm LED ambient lighting casting golden glow on skin, foot traffic blurred in background, GLMZ aesthetic, working class street vendor energy, kinetic and restless, photorealistic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 89.2,
-    "Sub-Saharan African": 7.5,
-    "Northern European": 3.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 14.5,
-        "Belarusian": 28.1
-      },
-      "Slavic West": {
-        "Czech": 14.4
-      },
-      "Slavic South": {
-        "Bosnian": 7.7,
-        "Croatian": 24.5
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 1.3,
-        "Ivorian": 1.4
-      },
-      "Central African": {
-        "Gabonese": 1.1,
-        "Cameroonian": 0.2
-      },
-      "East African": {
-        "Ethiopian": 2.4,
-        "Rwandan": 1.1
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Irish": 1.6
-      },
-      "Germanic": {
-        "German": 1.5,
-        "Austrian": 0.2
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5c972fbb6a7bd03af49f1d4",
+    "type":  "character",
+    "name":  "Rio SzczypiÅ„ski",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Noodle cart vendor, runs \u0027Brax\u0027s Tangle\u0027 off the corner of Copperhead and 9th Lateral",
+    "age":  26,
+    "status":  "active",
+    "location":  "Copperhead, street level â€” corner pitch near the Copperhead Transit Hub mouth, near Milwaukee and North Ave",
+    "description":  "Rio SzczypiÅ„ski is a lean young man, all elbows and restless energy, with close-cropped black hair and a jaw that always looks like it needs another day of growth. He has his Guinean grandfather\u0027s deep brown skin and his Bosnian grandmother\u0027s sharp cheekbones, and he has cat ears â€” small, tawny, semi-expressive â€” mounted via a Helix genemod he saved three months of UBC stipend for at seventeen because he thought they\u0027d make him look \u0027elevated.\u0027 They do not make him look elevated. They do make him look like exactly who he is: a cheerful young man who is trying very hard and mostly succeeding. His cart is a battered silver rig he inherited from a previous vendor, pasted over with good-luck ELF shrine stickers and a hand-painted sign in four languages.\n\nHe operates his cart with the manic efficiency of someone who cannot afford to miss a service window. His noodle broth is genuinely excellent â€” a recipe he built over four years of experimentation, drawing on whatever his parents cooked and whatever he could reverse-engineer from mid-tier restaurant menus he couldn\u0027t afford to eat at. He talks too much when he\u0027s happy, goes very quiet when he\u0027s worried, and has a genuine talent for remembering exactly what every regular customer ordered last time.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "The cart breaking down catastrophically and him not having the capital to fix it",
+                                          "Becoming the person who was \u0027almost something\u0027"
+                                      ],
+                       "core_desires":  [
+                                            "To open a real restaurant â€” four walls, a name on a sign, a reservation list",
+                                            "To prove his parents\u0027 sacrifice in relocating to GLMZ meant something"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Cooking experimentally when anxious",
+                                                 "Over-talking with regulars to avoid sitting with worry"
+                                             ],
+                       "blind_spots":  [
+                                           "Extends trust too fast to customers who are kind to him",
+                                           "Undercharges people he likes, which is a slow financial wound"
+                                       ],
+                       "secret":  "One of his regular customers is a low-level Arcturus logistics coordinator who pays him Î¦15 extra each week to send a coded tally â€” just noodle types, quantities, customer descriptors â€” to a dead-drop address. Braxo has convinced himself it\u0027s market research. It is not market research."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, contemporary street slang layered over a slightly formal sentence structure his mother drilled into him. Puns. Too many puns.",
+                            "cadence":  "Quick and rising, like someone always about to finish a joke",
+                            "verbal_tics":  [
+                                                "\u0027Real talk thoughâ€”\u0027",
+                                                "Calls everyone \u0027neighbor\u0027 until he knows their name"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Spicy-six or the mushroom build? Real talk though, the mushroom is having a moment. You look like a mushroom-build person. That\u0027s a compliment.\u0027",
+                                                  "\u0027Cart\u0027s been out since six, neighbor. You think the ELF in the burner unit is gonna let me down? I left it a whole gigabyte of ambient jazz. We\u0027re good.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He noticed a Ferrogate Transit worker boarding the same train every morning for a month and then vanishing â€” the worker\u0027s partner has been asking around the corner",
+                        "His Arcturus contact has stopped showing up and the dead-drop instructions have changed; someone is now watching his cart from across the street at irregular intervals"
+                    ],
+    "narrative_function":  "Street-level information node â€” positioned at a transit hub, sees everyone. Warm entry point into Copperhead social life. Can be a quest giver for transit-related oddities he\u0027s observed.",
+    "augmentations":  "Geneware cat ears (Helix Biosystems cosmetic, tawny coloring). No other mods â€” can\u0027t afford them and is saving for a second burner unit for the cart.",
+    "daily_life":  "Cart is out by 0630 for the morning transit rush, breaks from 1000-1130, back out for the lunch wave, closes at 2000. Spends late nights recalibrating his broth ratios and watching cooking tutorials he can\u0027t fully afford to implement.",
+    "affiliation":  "Independent; pays pitch fees to the Copperhead Vendors Collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  5,
+                                 "creativity":  8,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  4,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street-vendor",
+                               "information-hub",
+                               "ambitious",
+                               "naively-entangled",
+                               "community-fixture"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always feed someone who looks hungry even if they\u0027re short â€” he\u0027ll square it in his head later",
+                                              "Never badmouth a competitor\u0027s cart within earshot of a customer"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Defuse with humor",
+                                                 "Go still and polite in a way that is noticeably different from his normal warmth",
+                                                 "Call it plainly: \u0027I need you to leave my corner\u0027"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Open, high-energy, immediately tries to get a read on their order preferences as a way of reading them",
+                                                   "friends":  "Teasing, loyal, shows up with food without being asked"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Tells more jokes, cart gets noisier",
+                                                "medium":  "Switches to silent, precise cooking movements",
+                                                "high":  "Shuts the cart down early and takes a long walk along the transit hub overpasses"
+                                            },
+                       "contradictions":  [
+                                              "Dreams of a restaurant but is terrified of actually being stationary â€” the cart\u0027s mobility feels like a safety net he hasn\u0027t admitted to himself"
+                                          ],
+                       "habits":  [
+                                      "Touches the ELF shrine sticker on the cart\u0027s burner before every service window",
+                                      "Keeps a handwritten tasting journal in his apron pocket"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone damaging or stealing from his cart",
+                                               "Being made to feel stupid in front of customers"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Provider":  0.9,
+                       "Generous Fool":  0.9,
+                       "Hustler":  0.7,
+                       "People Pleaser":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Copperhead",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KP-22 Sport \u0027Plinkmaster\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KP-22 Sport \u0027Plinkmaster\u0027"
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "The CEO",
+                             "Grandmother",
+                             "Copperhead",
+                             "Plot 17",
+                             "Arcturus Defense Solutions",
+                             "Silver",
+                             "Corner Slice",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Compass Rose"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Eastern European (89.2%) with minor Sub-Saharan African (7.5%) and Northern European (3.3%) ancestry. Eastern European genetics dominate: angular facial structure with sharp jawline, moderate-to-high cheekbones, and straight nose typical of Polish-Ukrainian lineages. Sub-Saharan African ancestry contributes warmth to overall skin tone, subtle fullness to lips and lower face, and slight broadening of nasal base. Northern European trace ancestry adds depth to eye color and slight coolness to undertones beneath the warm base. The genetic expression reads as distinctly Central/Eastern European with warm, sun-marked character.",
+                                 "height_cm":  175,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and wiry, all elbows and restless kinetic energy â€” the physiology of someone who moves constantly between cart stations and supplier runs. Minimal body fat, efficient muscle.",
+                                 "hair_color":  "Black, natural",
+                                 "hair_style":  "Close-cropped, deliberately low-maintenance",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown",
+                                 "skin_tone":  "Warm golden-tan, medium depth â€” Eastern European base enriched and deepened by Sub-Saharan African ancestry contribution. Golden undertones from sun exposure and heat work. Lived-in quality from cart-side environment.",
+                                 "complexion":  "Strong Eastern European bone structure: sharp jawline, moderate-to-high cheekbones, straight nose with slight width at base from African heritage. Sub-Saharan ancestry adds warmth and subtle fullness to lower face and lips. Perpetual stubble shadow (two to three days growth standard), skin weathered from cart-side heat and sun exposure. Animated expression â€” eyebrows mobile, mouth rarely still.",
+                                 "distinguishing_marks":  [
+                                                              "Small tawny cat ears mounted via Helix Biosystems genemod surgery scars visible behind ears where mod plates inserted, semi-expressive cartilage control.",
+                                                              "Minor burn scar on the back of right hand from cart steam accident, approximately 5cm, pale against golden-tan skin."
+                                                          ],
+                                 "visible_augmentations":  "Tawny geneware cat ears (Helix Biosystems cosmetic mod) â€” semi-expressive, respond to emotion and attention. No chrome, no LED optics, no subdermal plating visible. Deliberately minimal augmentation profile.",
+                                 "posture_movement":  "Hunched slightly forward from years of leaning over cart counters. Moves with rapid, efficient gestures â€” hand-talking constantly when animated. Fidgets with cart equipment during customer lulls. Stance shifts weight frequently, ready to pivot. Eyes track customers and foot traffic continuously.",
+                                 "clothing_style":  "Tier 4 utilitarian: heat-resistant synthetic apron (food-stained, patterned with faded ELF shrine motifs he refuses to replace), black thermal underlayer, reinforced cargo pants with multiple utility pockets (flour, salt, spice packets). Worn Copperhead Collective vendor badge on lanyard. Footwear is scuffed, solvent-stained work boots. Occasional hoodie in cooler months â€” generic brand, no logos. Jewelry: single silver ring (family heirloom) on left hand. Overall aesthetic screams \u0027working class street vendor\u0027 rather than aspirational."
+                             },
+    "image_prompt":  "Rio SzczypiÅ„ski, 175cm lean neo-noir street vendor with golden-tan warm skin tone and sharp Eastern European features softened by Sub-Saharan African ancestry warmth. Close-cropped black hair, dark brown eyes, animated expression. Small tawny geneware cat ears with visible surgery scars behind ears, semi-expressive. Perpetual three-day stubble, weathered complexion. Hunched slightly forward stance, rapid hand gestures. Wearing heat-resistant apron stained with food and faded shrine motifs, black thermal underlayer, reinforced cargo pants with utility pockets, scuffed work boots, Copperhead Collective vendor badge. Silver family heirloom ring on left hand. Pale burn scar visible on right hand. Standing at food cart in neon-lit Great Lakes Metropolitan Zone street market, warm LED ambient lighting casting golden glow on skin, foot traffic blurred in background, GLMZ aesthetic, working class street vendor energy, kinetic and restless, photorealistic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  89.2,
+                             "Sub-Saharan African":  7.5,
+                             "Northern European":  3.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  14.5,
+                                                                         "Belarusian":  28.1
+                                                                     },
+                                                     "Slavic West":  {
+                                                                         "Czech":  14.4
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Bosnian":  7.7,
+                                                                          "Croatian":  24.5
+                                                                      }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  1.3,
+                                                                             "Ivorian":  1.4
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Gabonese":  1.1,
+                                                                                "Cameroonian":  0.2
+                                                                            },
+                                                        "East African":  {
+                                                                             "Ethiopian":  2.4,
+                                                                             "Rwandan":  1.1
+                                                                         }
+                                                    },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  1.6
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "German":  1.5,
+                                                                       "Austrian":  0.2
+                                                                   }
+                                                  }
+                        },
+    "tier":  "2"
 }

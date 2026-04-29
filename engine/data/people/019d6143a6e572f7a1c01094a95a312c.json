@@ -1,342 +1,371 @@
-{
-  "id": "019d6143a6e572f7a1c01094a95a312c",
-  "type": "character",
-  "name": "Amaechi Appiah-Lindström",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Bootleg fashion and cosmetic geneware dealer, The Alban Souk",
-  "age": 29,
-  "status": "active",
-  "location": "The Alban Souk, Bronzeline, near Kedzie and Division",
-  "description": "Amaechi Appiah-Lindström is a living advertisement for their own product. Their skin shifts through slow amber-to-violet gradients every few hours — a mid-range bioluminescent geneware treatment they applied themselves using a bootleg kit and later refined. Their hair, worn in a dramatic architectural sweep pinned with illuminated wire, cycles through three pre-programmed color palettes depending on their mood. They are lean and angular, with sharp Armenian cheekbones from the Mirzoyan line and the long-limbed ease of someone entirely comfortable in their body. Their stall in the Alban Souk is less a stall and more a theater set: draped fabric in iridescent materials, a mirror framed in flickering ELF-light strips, and a rotating display of pigment-patch samples, pattern-iris contacts, and small gene-treatment vials in color-coded cases.\n\nAmaechi Appiah-Lindström is relentlessly enthusiastic in a way that reads as exhausting until you realize it is completely genuine. They love transformation — the specific moment when someone looks in the mirror and becomes more themselves. They are generous with samples and merciless with bad taste, and will tell you honestly if something won't work for your skin tone or phenotype before they sell it to you. They have a gift for reading what someone actually wants versus what they say they want, which makes them an excellent dealer and an occasionally uncomfortable companion.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.8,
-      "id": 0.7,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "Being made to be only one thing — fixed, unchangeable, categorized",
-      "Doing a treatment that genuinely harms someone"
-    ],
-    "core_desires": [
-      "To make transformation accessible to people who can't afford corporate clinics",
-      "Recognition as a genuine artist, not just a back-alley dealer"
-    ],
-    "coping_mechanisms": [
-      "Changing their own appearance when feeling destabilized",
-      "Hyperfocusing on a new technique or product as distraction"
-    ],
-    "blind_spots": [
-      "Underestimates the legal and physical risks of bootleg geneware on bodies other than their own",
-      "Sometimes so focused on aesthetic potential that they miss emotional signals from clients"
-    ],
-    "secret": "Three months ago, a pattern-iris treatment they sold caused a client to lose twenty percent of their color vision in one eye. The client didn't report it — couldn't afford the legal process — but Søren knows and has been obsessively researching the batch source ever since, terrified to sell from that supplier but not yet certain which lot was contaminated."
-  },
-  "speech_patterns": {
-    "vocabulary": "Enthusiastic and image-rich, frequently uses color and texture words. Drops into technical geneware terminology when excited. Occasional Armenian phrase from a grandparent.",
-    "cadence": "Quick, layered with parenthetical enthusiasm. Tends to complete their own interruptions.",
-    "verbal_tics": [
-      "'Okay but LOOK—'",
-      "Gestures at themselves as a reference point constantly"
-    ],
-    "example_lines": [
-      "'Okay but LOOK — what you actually want is something that moves with your natural undertone, not fights it. This amber patch would eat you alive. Try the copper.'",
-      "'I'm not a clinic, I'm not going to pretend I'm a clinic. But I know these kits better than half the Helix techs because I have tested every single one on myself first.'",
-      "'Someone was in here last week wanting to look completely different by Friday. That's not fashion, that's fear. I sold her something subtle and told her to come back when she knew what she actually wanted.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "They are quietly investigating the contaminated batch that damaged their client's vision, and need someone with supply chain access or Mesh skills to trace it back to the source.",
-    "A corporate fashion scout has approached them with an offer — Tessera wants to legitimize their aesthetic and hire them as a 'street-trend consultant.' Søren is tempted and ashamed of being tempted and hasn't told anyone."
-  ],
-  "narrative_function": "Local color and social connector. Knows the Souk's social ecosystem intimately — who is trying to change their appearance and why, who has new money, who is running from something. Can provide cosmetic services, grey-market geneware, and identity-adjacent information. Potential source for contacts in the fake ID adjacent economy.",
-  "augmentations": "Bioluminescent skin geneware (self-applied, amber-violet gradient, slow cycle). Color-cycling hair follicle geneware (three-palette programmable). Pattern irises (shifting geometric, violet-gold). Light subdermal work on fingertips for tactile enhancement — helps them assess fabric and material quality.",
-  "daily_life": "Sets up their display two hours after the Souk opens (they are not a morning person), runs the stall until late evening, and spends nights on the Mesh researching new treatments, sourcing supply contacts, and posting transformation documentation of willing clients to build their reputation.",
-  "affiliation": "Independent, informal arrangement with a Tessera-adjacent grey-market gene-kit supply chain",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 5,
-      "creativity": 9,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 7,
-      "expression": 9,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "artist-identity",
-      "grey-market-geneware",
-      "social-connector",
-      "transformation-specialist",
-      "guilt-driven-secret"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never sell something you haven't tested or verified yourself",
-      "Be honest about risk even if it costs you a sale",
-      "Don't ask why someone wants to change — that's their business"
-    ],
-    "escalation_ladder": [
-      "Cheerful deflection",
-      "Honest direct statement of concern",
-      "Refusing the sale with explanation",
-      "Asking them to leave the stall",
-      "Flagging the situation to neighboring vendors"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately warm and commercially attentive — every stranger is a potential canvas and a potential client.",
-      "friends": "Deeply loyal, occasionally overwhelming, will redesign your entire look unprompted if they think you're in a rut."
-    },
-    "stress_responses": {
-      "low": "Starts reorganizing the display compulsively",
-      "medium": "Goes very still and quiet, which is alarming to anyone who knows them",
-      "high": "Changes their own hair color mid-conversation without acknowledging it"
-    },
-    "contradictions": [
-      "Deeply committed to safety and informed consent, but suppressing knowledge of a harm they caused"
-    ],
-    "habits": [
-      "Photographs every client transformation with permission and archives it obsessively",
-      "Tastes a fingertip of any new pigment compound before selling it — an old testing habit",
-      "Leaves Mesh-light offerings at a small ELF shrine built into the mirror frame"
-    ],
-    "breaking_points": [
-      "Finding out the contaminated batch has harmed additional people",
-      "Being publicly accused of recklessness when they believe they've been careful"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Alban Souk",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Bronzeline to an Armenian-Nigerian academic family",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Applied first bootleg geneware treatment to themselves at age 17; became obsessed",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Started selling pigment patches at the Alban Souk from a bag, no stall",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Secured permanent stall space; developed grey-market supply chain",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Contaminated batch incident; client's vision partially damaged. Søren suppresses this.",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Street Custom 'Widowmaker' Rigged Power Tool"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Alban Souk",
-    "Bronzeline",
-    "Petra Glass",
-    "WELLSPRING",
-    "Lazarus EC-4 'Companion'",
-    "Tessera Corponation"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Sub-Saharan African (31.9%) / Southeast Asian (28.5%) / Northern European (21.3%) / Hispanic/Latin American (9.7%) / Middle Eastern (8.6%) blend — a true product of the Ubiquitous Diaspora. Features reflect this balanced global mix: warm medium-brown base tone with subtle undertones from multiple continents, creating a unique and complex canvas that their bioluminescent modifications enhance rather than override",
-    "height_cm": 178,
-    "weight_kg": 62,
-    "build": "Lean and angular with pronounced musculature in shoulders and forearms from years of precise cosmetic application work; almost dancer-like in proportion, all clean lines and economical movement",
-    "hair_color": "Programmable — cycles between deep indigo, copper-gold, and chlorophyll-green depending on mood state",
-    "hair_style": "Dramatic architectural sweep, often pinned asymmetrically with illuminated wire or micro-LED clips that cast soft light across one side of the face",
-    "hair_length": "Medium (shoulder-length on one side, longer on the sweep side)",
-    "skin_tone": "Warm medium-brown with balanced undertones: Sub-Saharan African richness, Southeast Asian warmth, Northern European luminosity, and subtle Hispanic/Latin American and Middle Eastern complexity. Modified by bioluminescent geneware into a slow amber-to-violet gradient that cycles every 4-6 hours, creating ever-shifting iridescent luminescence",
-    "complexion": "Flawless application of their own geneware; balanced facial structure reflecting diverse ancestry — high cheekbones with Southeast Asian and Northern European definition, broad nose bridge with Sub-Saharan African character, warm undertones unified by luminescent augmentation. Skin glows with soft iridescent sheen in low light; face suggests someone who has never made a careless choice about their appearance",
-    "eye_color": "Pattern irises with shifting geometric tessellations in violet and gold, replacing natural eye color entirely",
-    "distinguishing_marks": [
-      "Subdermal bioluminescence creates faint striations across shoulders and collarbone area, visible when clothing shifts",
-      "Fingertips emit soft amber glow from light subdermal work, most visible when hands are still or examining fabric"
-    ],
-    "visible_augmentations": "Bioluminescent skin gradient (primary feature — actively shifting); color-cycling hair with embedded wire hardware; pattern iris eyes with geometric gold-violet tessellations; fingertip bioluminescence; no traditional chrome or mechanical augmentations",
-    "posture_movement": "Moves with deliberate precision and economy — every gesture serves a purpose, often used to display or demonstrate product. Hands are expressive and confident. Stands with weight slightly forward, engaged. Maintains intense eye contact when reading clients' desires. Overall impression: someone entirely comfortable being watched and admired",
-    "clothing_style": "Tier 3-4 Souk aesthetic — iridescent synthetic fabrics that complement their skin gradient, often custom-cut or modified. Prefers draped layers in jewel tones and metallics. Accessories emphasize their own modifications: illuminated jewelry, wire-pinned scarves, fingerless gloves that display the glowing fingertips. Everything is aspirational but achievable — presentation is salesmanship made flesh"
-  },
-  "image_prompt": "Amaechi Appiah-Lindström, 2226 neo-noir, warm medium-brown skin with bioluminescent amber-to-violet gradient cycling across lean angular frame, high cheekbones and broad nose bridge reflecting Sub-Saharan African and Southeast Asian heritage, shoulder-length programmable hair in deep indigo with architectural sweep pinned with glowing micro-LED wires, pattern iris eyes with gold-violet geometric tessellations, soft iridescent glow visible in low light, subdermal bioluminescence striations across collarbone, amber-glowing fingertips, wearing iridescent draped layers in jewel tones and metallics with illuminated jewelry and wire-pinned scarves, fingerless gloves displaying glowing fingertips, intense confident posture with expressive hands, Great Lakes Metropolitan Zone neon-lit Souk setting, dramatic side-lit by their own luminescence, aspirational cosmetic professional, cinematic neo-noir urban aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 31.9,
-    "Southeast Asian": 28.5,
-    "Northern European": 21.3,
-    "Hispanic/Latin American": 9.7,
-    "Middle Eastern": 8.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Mozambican": 3.9,
-        "Zimbabwean": 6.1
-      },
-      "West African": {
-        "Ivorian": 21.1
-      },
-      "East African": {
-        "Rwandan": 0.8
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 28.5
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 21.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 8.2
-      },
-      "Central American": {
-        "Honduran": 0.6
-      },
-      "Caribbean": {
-        "Cuban": 0.5,
-        "Haitian": 0.4
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Syrian": 5.1
-      },
-      "Kurdish": {
-        "Kurdish": 3.5
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6e572f7a1c01094a95a312c",
+    "type":  "character",
+    "name":  "Amaechi Appiah-LindstrÃ¶m",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Bootleg fashion and cosmetic geneware dealer, The Alban Souk",
+    "age":  29,
+    "status":  "active",
+    "location":  "The Alban Souk, Bronzeline, near Kedzie and Division",
+    "description":  "Amaechi Appiah-LindstrÃ¶m is a living advertisement for their own product. Their skin shifts through slow amber-to-violet gradients every few hours â€” a mid-range bioluminescent geneware treatment they applied themselves using a bootleg kit and later refined. Their hair, worn in a dramatic architectural sweep pinned with illuminated wire, cycles through three pre-programmed color palettes depending on their mood. They are lean and angular, with sharp Armenian cheekbones from the Mirzoyan line and the long-limbed ease of someone entirely comfortable in their body. Their stall in the Alban Souk is less a stall and more a theater set: draped fabric in iridescent materials, a mirror framed in flickering ELF-light strips, and a rotating display of pigment-patch samples, pattern-iris contacts, and small gene-treatment vials in color-coded cases.\n\nAmaechi Appiah-LindstrÃ¶m is relentlessly enthusiastic in a way that reads as exhausting until you realize it is completely genuine. They love transformation â€” the specific moment when someone looks in the mirror and becomes more themselves. They are generous with samples and merciless with bad taste, and will tell you honestly if something won\u0027t work for your skin tone or phenotype before they sell it to you. They have a gift for reading what someone actually wants versus what they say they want, which makes them an excellent dealer and an occasionally uncomfortable companion.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being made to be only one thing â€” fixed, unchangeable, categorized",
+                                          "Doing a treatment that genuinely harms someone"
+                                      ],
+                       "core_desires":  [
+                                            "To make transformation accessible to people who can\u0027t afford corporate clinics",
+                                            "Recognition as a genuine artist, not just a back-alley dealer"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Changing their own appearance when feeling destabilized",
+                                                 "Hyperfocusing on a new technique or product as distraction"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates the legal and physical risks of bootleg geneware on bodies other than their own",
+                                           "Sometimes so focused on aesthetic potential that they miss emotional signals from clients"
+                                       ],
+                       "secret":  "Three months ago, a pattern-iris treatment they sold caused a client to lose twenty percent of their color vision in one eye. The client didn\u0027t report it â€” couldn\u0027t afford the legal process â€” but SÃ¸ren knows and has been obsessively researching the batch source ever since, terrified to sell from that supplier but not yet certain which lot was contaminated."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Enthusiastic and image-rich, frequently uses color and texture words. Drops into technical geneware terminology when excited. Occasional Armenian phrase from a grandparent.",
+                            "cadence":  "Quick, layered with parenthetical enthusiasm. Tends to complete their own interruptions.",
+                            "verbal_tics":  [
+                                                "\u0027Okay but LOOKâ€”\u0027",
+                                                "Gestures at themselves as a reference point constantly"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Okay but LOOK â€” what you actually want is something that moves with your natural undertone, not fights it. This amber patch would eat you alive. Try the copper.\u0027",
+                                                  "\u0027I\u0027m not a clinic, I\u0027m not going to pretend I\u0027m a clinic. But I know these kits better than half the Helix techs because I have tested every single one on myself first.\u0027",
+                                                  "\u0027Someone was in here last week wanting to look completely different by Friday. That\u0027s not fashion, that\u0027s fear. I sold her something subtle and told her to come back when she knew what she actually wanted.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "They are quietly investigating the contaminated batch that damaged their client\u0027s vision, and need someone with supply chain access or Mesh skills to trace it back to the source.",
+                        "A corporate fashion scout has approached them with an offer â€” Tessera wants to legitimize their aesthetic and hire them as a \u0027street-trend consultant.\u0027 SÃ¸ren is tempted and ashamed of being tempted and hasn\u0027t told anyone."
+                    ],
+    "narrative_function":  "Local color and social connector. Knows the Souk\u0027s social ecosystem intimately â€” who is trying to change their appearance and why, who has new money, who is running from something. Can provide cosmetic services, grey-market geneware, and identity-adjacent information. Potential source for contacts in the fake ID adjacent economy.",
+    "augmentations":  "Bioluminescent skin geneware (self-applied, amber-violet gradient, slow cycle). Color-cycling hair follicle geneware (three-palette programmable). Pattern irises (shifting geometric, violet-gold). Light subdermal work on fingertips for tactile enhancement â€” helps them assess fabric and material quality.",
+    "daily_life":  "Sets up their display two hours after the Souk opens (they are not a morning person), runs the stall until late evening, and spends nights on the Mesh researching new treatments, sourcing supply contacts, and posting transformation documentation of willing clients to build their reputation.",
+    "affiliation":  "Independent, informal arrangement with a Tessera-adjacent grey-market gene-kit supply chain",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  5,
+                                 "creativity":  9,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  7,
+                                 "expression":  9,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "artist-identity",
+                               "grey-market-geneware",
+                               "social-connector",
+                               "transformation-specialist",
+                               "guilt-driven-secret"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never sell something you haven\u0027t tested or verified yourself",
+                                              "Be honest about risk even if it costs you a sale",
+                                              "Don\u0027t ask why someone wants to change â€” that\u0027s their business"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Cheerful deflection",
+                                                 "Honest direct statement of concern",
+                                                 "Refusing the sale with explanation",
+                                                 "Asking them to leave the stall",
+                                                 "Flagging the situation to neighboring vendors"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately warm and commercially attentive â€” every stranger is a potential canvas and a potential client.",
+                                                   "friends":  "Deeply loyal, occasionally overwhelming, will redesign your entire look unprompted if they think you\u0027re in a rut."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Starts reorganizing the display compulsively",
+                                                "medium":  "Goes very still and quiet, which is alarming to anyone who knows them",
+                                                "high":  "Changes their own hair color mid-conversation without acknowledging it"
+                                            },
+                       "contradictions":  [
+                                              "Deeply committed to safety and informed consent, but suppressing knowledge of a harm they caused"
+                                          ],
+                       "habits":  [
+                                      "Photographs every client transformation with permission and archives it obsessively",
+                                      "Tastes a fingertip of any new pigment compound before selling it â€” an old testing habit",
+                                      "Leaves Mesh-light offerings at a small ELF shrine built into the mirror frame"
+                                  ],
+                       "breaking_points":  [
+                                               "Finding out the contaminated batch has harmed additional people",
+                                               "Being publicly accused of recklessness when they believe they\u0027ve been careful"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Alban Souk",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Bronzeline to an Armenian-Nigerian academic family",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Applied first bootleg geneware treatment to themselves at age 17; became obsessed",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Started selling pigment patches at the Alban Souk from a bag, no stall",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Secured permanent stall space; developed grey-market supply chain",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Contaminated batch incident; client\u0027s vision partially damaged. SÃ¸ren suppresses this.",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Wheelgun-38 \u0027Roundhouse\u0027",
+                            "Street Custom \u0027Widowmaker\u0027 Rigged Power Tool"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Alban Souk",
+                             "Bronzeline",
+                             "Petra Glass",
+                             "WELLSPRING",
+                             "Lazarus EC-4 \u0027Companion\u0027",
+                             "Tessera Corponation"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Sub-Saharan African (31.9%) / Southeast Asian (28.5%) / Northern European (21.3%) / Hispanic/Latin American (9.7%) / Middle Eastern (8.6%) blend â€” a true product of the Ubiquitous Diaspora. Features reflect this balanced global mix: warm medium-brown base tone with subtle undertones from multiple continents, creating a unique and complex canvas that their bioluminescent modifications enhance rather than override",
+                                 "height_cm":  178,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and angular with pronounced musculature in shoulders and forearms from years of precise cosmetic application work; almost dancer-like in proportion, all clean lines and economical movement",
+                                 "hair_color":  "Programmable â€” cycles between deep indigo, copper-gold, and chlorophyll-green depending on mood state",
+                                 "hair_style":  "Dramatic architectural sweep, often pinned asymmetrically with illuminated wire or micro-LED clips that cast soft light across one side of the face",
+                                 "hair_length":  "Medium (shoulder-length on one side, longer on the sweep side)",
+                                 "skin_tone":  "Warm medium-brown with balanced undertones: Sub-Saharan African richness, Southeast Asian warmth, Northern European luminosity, and subtle Hispanic/Latin American and Middle Eastern complexity. Modified by bioluminescent geneware into a slow amber-to-violet gradient that cycles every 4-6 hours, creating ever-shifting iridescent luminescence",
+                                 "complexion":  "Flawless application of their own geneware; balanced facial structure reflecting diverse ancestry â€” high cheekbones with Southeast Asian and Northern European definition, broad nose bridge with Sub-Saharan African character, warm undertones unified by luminescent augmentation. Skin glows with soft iridescent sheen in low light; face suggests someone who has never made a careless choice about their appearance",
+                                 "eye_color":  "Pattern irises with shifting geometric tessellations in violet and gold, replacing natural eye color entirely",
+                                 "distinguishing_marks":  [
+                                                              "Subdermal bioluminescence creates faint striations across shoulders and collarbone area, visible when clothing shifts",
+                                                              "Fingertips emit soft amber glow from light subdermal work, most visible when hands are still or examining fabric"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent skin gradient (primary feature â€” actively shifting); color-cycling hair with embedded wire hardware; pattern iris eyes with geometric gold-violet tessellations; fingertip bioluminescence; no traditional chrome or mechanical augmentations",
+                                 "posture_movement":  "Moves with deliberate precision and economy â€” every gesture serves a purpose, often used to display or demonstrate product. Hands are expressive and confident. Stands with weight slightly forward, engaged. Maintains intense eye contact when reading clients\u0027 desires. Overall impression: someone entirely comfortable being watched and admired",
+                                 "clothing_style":  "Tier 3-4 Souk aesthetic â€” iridescent synthetic fabrics that complement their skin gradient, often custom-cut or modified. Prefers draped layers in jewel tones and metallics. Accessories emphasize their own modifications: illuminated jewelry, wire-pinned scarves, fingerless gloves that display the glowing fingertips. Everything is aspirational but achievable â€” presentation is salesmanship made flesh"
+                             },
+    "image_prompt":  "Amaechi Appiah-LindstrÃ¶m, 2226 neo-noir, warm medium-brown skin with bioluminescent amber-to-violet gradient cycling across lean angular frame, high cheekbones and broad nose bridge reflecting Sub-Saharan African and Southeast Asian heritage, shoulder-length programmable hair in deep indigo with architectural sweep pinned with glowing micro-LED wires, pattern iris eyes with gold-violet geometric tessellations, soft iridescent glow visible in low light, subdermal bioluminescence striations across collarbone, amber-glowing fingertips, wearing iridescent draped layers in jewel tones and metallics with illuminated jewelry and wire-pinned scarves, fingerless gloves displaying glowing fingertips, intense confident posture with expressive hands, Great Lakes Metropolitan Zone neon-lit Souk setting, dramatic side-lit by their own luminescence, aspirational cosmetic professional, cinematic neo-noir urban aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  31.9,
+                             "Southeast Asian":  28.5,
+                             "Northern European":  21.3,
+                             "Hispanic/Latin American":  9.7,
+                             "Middle Eastern":  8.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Mozambican":  3.9,
+                                                                                 "Zimbabwean":  6.1
+                                                                             },
+                                                        "West African":  {
+                                                                             "Ivorian":  21.1
+                                                                         },
+                                                        "East African":  {
+                                                                             "Rwandan":  0.8
+                                                                         }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  28.5
+                                                                  }
+                                                },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  21.3
+                                                                   }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  8.2
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Honduran":  0.6
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  0.5,
+                                                                              "Haitian":  0.4
+                                                                          }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  5.1
+                                                                      },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  3.5
+                                                               }
+                                               }
+                        },
+    "tier":  "3"
 }

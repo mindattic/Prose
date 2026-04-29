@@ -1,346 +1,359 @@
-{
-  "id": "019d6143a6c27cc88deab1f70529fb33",
-  "rating": 70,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Hachiro Lindström-Bustamante",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Corporate espionage and data exfiltration — data thief",
-  "age": 28,
-  "status": "active",
-  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Chicago Ave",
-  "description": "Hachiro Lindström-Bustamante is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.2,
-      "ideal": 0.29,
-      "id": 0.79,
-      "shadow": 0.66,
-      "mask": 0.32,
-      "ghost": 0.75
-    },
-    "core_fears": [
-      "Being replaced — younger, faster, cheaper runners coming up behind them",
-      "Betrayal by someone they trust — the only currency that matters",
-      "Their past catching up — debts, enemies, broken promises"
-    ],
-    "core_desires": [
-      "The perfect run — one job so clean it becomes legend",
-      "Justice — the corporate kind, where the punishment fits the profit margin",
-      "A crew worth trusting — people who stay when the shooting starts"
-    ],
-    "coping_mechanisms": [
-      "Planning — responds to chaos by making detailed contingency plans for everything",
-      "Ritual — follows the same pre-job routine every time, superstition as structure",
-      "Humor — deflects everything serious with jokes until the joke becomes the personality"
-    ],
-    "blind_spots": [
-      "Assumes the worst in corporate people, missing the rare ones who could be allies",
-      "Assumes everyone has an angle because they always have an angle",
-      "Cannot accept help without interpreting it as leverage"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
-    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
-    "verbal_tics": [
-      "Repeats the last thing someone said back to them before responding — processing or intimidation",
-      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
-    ],
-    "example_lines": [
-      "\"Your firewalls are decorative. Like curtains on a submarine.\"",
-      "\"I copy things. The original owners rarely appreciate the compliment.\"",
-      "\"Data wants to be free. I just charge a facilitation fee.\""
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Sagyn Osei-Petrov discovers a job they completed last year was a setup for something much larger and much worse",
-    "A high-paying contract turns out to target someone Sagyn Osei-Petrov owes a personal debt to",
-    "A corporate black site Sagyn Osei-Petrov once infiltrated is being reopened, and the people inside know his face"
-  ],
-  "narrative_function": "Sagyn Osei-Petrov functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks. Neural interface jack at base of skull — standard runner-grade, allows direct net access",
-  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Freelance — available through Circuit fixers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 5
-      },
-      "agility": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 10
-      },
-      "reflexes": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 10
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 10
-      },
-      "perception": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 6
-      },
-      "willpower": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 9
-      },
-      "technical": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 7
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 10
-      },
-      "intimidation": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 9
-      },
-      "deception": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 7
-      },
-      "empathy": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 5
-      }
-    },
-    "personality": {
-      "aggression": 0.6,
-      "caution": 0.79,
-      "loyalty": 0.85,
-      "greed": 0.24,
-      "empathy": 0.51
-    },
-    "drives": [
-      "power",
-      "survival",
-      "money"
-    ],
-    "thresholds": {
-      "pain": 4,
-      "stress": 5,
-      "loyalty_break": 6
-    },
-    "strengths": [
-      "multilingual — speaks 4+ languages fluently",
-      "social chameleon — adapts to any environment",
-      "exceptional close-quarters combat"
-    ],
-    "weaknesses": [
-      "grudge-holding that compromises rational decision-making",
-      "emotional volatility under extreme stress"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "data thief",
-      "tier-2",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Always verifies target identity independently before lethal contracts"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Insists they work alone but performs noticeably better in a team"
-    ],
-    "habits": [
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
-      "Checks exits within 10 seconds of entering any room"
-    ],
-    "breaking_points": [
-      "Being publicly exposed — name, face, address, all of it blown",
-      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
-      "Learning that a job they completed resulted in mass casualties they weren't told about"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Internal air filtration system",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
-      "replaces": ""
-    },
-    {
-      "name": "Neural interface jack at base of skull",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9,
-    "People Pleaser": 0.9,
-    "Thief": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Spires",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Mixed diaspora heritage: predominantly Hispanic/Latin American (42.4%) with substantial East Asian (22.5%), Eastern European (17.6%), and Northern European (17.5%) ancestry. The combination creates warm bronze-golden skin tones with balanced feature blending—Latin American and East Asian bone structure creating angular cheekbones softened by Eastern European and Northern European warmth, with East Asian eye shape nuance and Latin American depth of features.",
-    "height_cm": 188,
-    "weight_kg": 74,
-    "build": "Lean and long-limbed with minimal bulk, built for mobility rather than strength. Corded muscle from consistent physical conditioning; chest and torso show the angular geometry of someone who moves deliberately and efficiently.",
-    "hair_color": "Dark brown with subtle grey undertone from neural stress",
-    "hair_style": "Kept short and precise, faded sides with slightly longer crown; maintained for quick field grooming and minimal snag risk",
-    "hair_length": "Short",
-    "eye_color": "Dark brown with warm undertones, one iris shows faint silver threading at 8 o'clock from neural jack proximity",
-    "skin_tone": "Warm bronze-golden medium brown—Latin American and East Asian warmth with Eastern European coolness creating balanced, sun-responsive complexion that reads richer in natural light",
-    "complexion": "Clean-shaven, lean-faced with strong East Asian-influenced cheekbone structure softened by Latin American and Northern European features; pronounced jawline with warm-toned skin that shows the subtle tightness of someone who lives under artificial light. Small network of fine scars at temples from early augmentation work. Dark circles suggest chronic sleep deficit.",
-    "distinguishing_marks": [
-      "Surgical scar running 12cm vertically along the right side of ribcage, thick and pale — lung replacement incision, visible when shirtless",
-      "Neural jack port at base of skull, visible when hair is pulled back: raised circular scar with faint chrome microport flange, approximately 1.5cm diameter",
-      "Thin white burn line across left forearm (inner wrist to elbow) — old industrial accident or early runner mishap, almost invisible unless you know where to look",
-      "Small tattoo on right collarbone: circuit-board pattern in dull silver ink, runner ID marker"
-    ],
-    "visible_augmentations": "Synthetic lungs visible through translucent dermal panels on upper torso — faint blue bioluminescent indicators pulse with breathing rhythm. Chrome is intentional, not hidden: the filtration system shows as iridescent membrane visible through carefully maintained skin integrity. Neural interface jack at skull base creates a slight raised area at the nape, chrome microport gleaming under light. No facial chrome — kept soft-featured as psychological asset.",
-    "posture_movement": "Moves with calculated precision, every motion economical and reversible. Stands with weight distributed evenly, ready to shift direction instantly. Head positioned to keep both ears clear — auditory awareness is tactical. Breathing patterns visible in chest movement due to synthetic lungs; no unconscious fidgeting, no wasted gesture. When at rest, appears coiled rather than relaxed.",
-    "clothing_style": "Tier 3-4 runner aesthetic with corporate-side maintenance. Dark fitted synthweave jacket (matte grey, reinforced seams) over a black responsive-weave shirt that dampens biosignature. Custom cargo pants with sealed pockets and internal organizing webbing — urban grey. Nondescript ankle boots with grip soles and hidden reinforcement. Minimal jewelry except a worn silver signet ring (family, kept as talisman). No corporate logos or affiliations visible — deliberately nondescript. Clothes show signs of field use but meticulous maintenance. Small messenger bag (black leather-composite hybrid) worn crossbody, positioned for quick access and concealment."
-  },
-  "image_prompt": "GLMZ runner portrait: Hachiro Lindström-Bustamante, 188cm tall lean figure with warm bronze-golden medium brown skin blending Latin American and East Asian features with Northern and Eastern European softness. Dark brown hair with grey undertone, short faded sides with longer crown. Strong angular East Asian cheekbones softened by warm Latin American and European depth, clean-shaven with pronounced jawline. Dark brown eyes with silver threading, dark circles from sleep deficit, small scars at temples. Translucent dermal panels on upper torso revealing blue-glowing synthetic lungs with chrome filtration visible. Chrome neural jack at skull base. Wearing matte grey reinforced synthweave jacket over black biosignature-dampening shirt, grey cargo pants, dark ankle boots with reinforced soles. Silver signet ring. Corded muscle definition, coiled posture radiating calculated precision. Neon-lit urban environment with cool blue and warm neon glow casting shadows across taut features. Serious expression, tactical awareness. Black leather-composite messenger bag slung crossbody. Cinematic neo-noir lighting, gritty dystopian setting --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 42.4,
-    "East Asian": 22.5,
-    "Eastern European": 17.6,
-    "Northern European": 17.5
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 20.1,
-        "Cuban": 3.4
-      },
-      "Central American": {
-        "Honduran": 4.8,
-        "Costa Rican": 2.5
-      },
-      "Mexican": {
-        "Mexican": 11.6
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Cantonese": 8.1
-      },
-      "Japanese": {
-        "Japanese": 12.7
-      },
-      "Korean": {
-        "Korean": 1.7
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 17.6
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "English": 17.5
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6c27cc88deab1f70529fb33",
+    "rating":  70,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Hachiro LindstrÃ¶m-Bustamante",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Corporate espionage and data exfiltration â€” data thief",
+    "age":  28,
+    "status":  "active",
+    "location":  "The Spires â€” mid-level corporate residential towers, near Michigan Ave and Chicago Ave",
+    "description":  "Hachiro LindstrÃ¶m-Bustamante is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 28, he has soft features that belie the chrome underneath â€” people underestimate him once, usually only once. The chrome is visible â€” internal air filtration system â€” lungs replaced with synthetic equivalents, immu â€” and he makes no effort to hide it.\n\nHis entry into running was involuntary â€” a debt to the wrong people, a choice between working it off or losing parts â€” and the debt is still not fully paid. He works as a data thief out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in GLMZ, but he might be the most stubborn, and in this city that\u0027s worth more.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them",
+                                          "Betrayal by someone they trust â€” the only currency that matters",
+                                          "Their past catching up â€” debts, enemies, broken promises"
+                                      ],
+                       "core_desires":  [
+                                            "The perfect run â€” one job so clean it becomes legend",
+                                            "Justice â€” the corporate kind, where the punishment fits the profit margin",
+                                            "A crew worth trusting â€” people who stay when the shooting starts"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Planning â€” responds to chaos by making detailed contingency plans for everything",
+                                                 "Ritual â€” follows the same pre-job routine every time, superstition as structure",
+                                                 "Humor â€” deflects everything serious with jokes until the joke becomes the personality"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes the worst in corporate people, missing the rare ones who could be allies",
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Cannot accept help without interpreting it as leverage"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+                            "cadence":  "Measured and deliberate â€” pauses before important words for emphasis.",
+                            "verbal_tics":  [
+                                                "Repeats the last thing someone said back to them before responding â€” processing or intimidation",
+                                                "Addresses people by physical traits â€” \u0027hey, tall one\u0027 or \u0027listen, chrome-arm\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Your firewalls are decorative. Like curtains on a submarine.\"",
+                                                  "\"I copy things. The original owners rarely appreciate the compliment.\"",
+                                                  "\"Data wants to be free. I just charge a facilitation fee.\""
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Sagyn Osei-Petrov discovers a job they completed last year was a setup for something much larger and much worse",
+                        "A high-paying contract turns out to target someone Sagyn Osei-Petrov owes a personal debt to",
+                        "A corporate black site Sagyn Osei-Petrov once infiltrated is being reopened, and the people inside know his face"
+                    ],
+    "narrative_function":  "Sagyn Osei-Petrov functions as a connector â€” his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks. Neural interface jack at base of skull â€” standard runner-grade, allows direct net access",
+    "daily_life":  "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+    "affiliation":  "Freelance â€” available through Circuit fixers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  4,
+                                                    "augmented":  1,
+                                                    "effective":  5
+                                                },
+                                   "agility":  {
+                                                   "base":  7,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  7,
+                                                     "augmented":  0,
+                                                     "effective":  10
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  7,
+                                                    "augmented":  2,
+                                                    "effective":  10
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  7,
+                                                      "augmented":  0,
+                                                      "effective":  10
+                                                  },
+                                 "perception":  {
+                                                    "base":  8,
+                                                    "augmented":  1,
+                                                    "effective":  6
+                                                },
+                                 "willpower":  {
+                                                   "base":  4,
+                                                   "augmented":  0,
+                                                   "effective":  9
+                                               },
+                                 "technical":  {
+                                                   "base":  6,
+                                                   "augmented":  0,
+                                                   "effective":  7
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  8,
+                                                  "augmented":  2,
+                                                  "effective":  10
+                                              },
+                                 "intimidation":  {
+                                                      "base":  8,
+                                                      "augmented":  1,
+                                                      "effective":  9
+                                                  },
+                                 "deception":  {
+                                                   "base":  6,
+                                                   "augmented":  0,
+                                                   "effective":  7
+                                               },
+                                 "empathy":  {
+                                                 "base":  4,
+                                                 "augmented":  3,
+                                                 "effective":  5
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.6,
+                                      "caution":  0.79,
+                                      "loyalty":  0.85,
+                                      "greed":  0.24,
+                                      "empathy":  0.51
+                                  },
+                  "drives":  [
+                                 "power",
+                                 "survival",
+                                 "money"
+                             ],
+                  "thresholds":  {
+                                     "pain":  4,
+                                     "stress":  5,
+                                     "loyalty_break":  6
+                                 },
+                  "strengths":  [
+                                    "multilingual â€” speaks 4+ languages fluently",
+                                    "social chameleon â€” adapts to any environment",
+                                    "exceptional close-quarters combat"
+                                ],
+                  "weaknesses":  [
+                                     "grudge-holding that compromises rational decision-making",
+                                     "emotional volatility under extreme stress"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "data thief",
+                               "tier-2",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Always verifies target identity independently before lethal contracts"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Insists they work alone but performs noticeably better in a team"
+                                          ],
+                       "habits":  [
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle",
+                                      "Arrives fifteen minutes early to everything â€” late once, nearly died, never again",
+                                      "Talks to their gear â€” names weapons, thanks tools, treats equipment as companions",
+                                      "Checks exits within 10 seconds of entering any room"
+                                  ],
+                       "breaking_points":  [
+                                               "Being publicly exposed â€” name, face, address, all of it blown",
+                                               "Betrayal by the one person they actually trust â€” the single point of failure in their emotional architecture",
+                                               "Learning that a job they completed resulted in mass casualties they weren\u0027t told about"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Internal air filtration system",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural interface jack at base of skull",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Neural interface jack at base of skull â€” standard runner-grade, allows direct net access",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9,
+                       "People Pleaser":  0.9,
+                       "Thief":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Spires",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Mixed diaspora heritage: predominantly Hispanic/Latin American (42.4%) with substantial East Asian (22.5%), Eastern European (17.6%), and Northern European (17.5%) ancestry. The combination creates warm bronze-golden skin tones with balanced feature blendingâ€”Latin American and East Asian bone structure creating angular cheekbones softened by Eastern European and Northern European warmth, with East Asian eye shape nuance and Latin American depth of features.",
+                                 "height_cm":  188,
+                                 "weight_kg":  74,
+                                 "build":  "Lean and long-limbed with minimal bulk, built for mobility rather than strength. Corded muscle from consistent physical conditioning; chest and torso show the angular geometry of someone who moves deliberately and efficiently.",
+                                 "hair_color":  "Dark brown with subtle grey undertone from neural stress",
+                                 "hair_style":  "Kept short and precise, faded sides with slightly longer crown; maintained for quick field grooming and minimal snag risk",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown with warm undertones, one iris shows faint silver threading at 8 o\u0027clock from neural jack proximity",
+                                 "skin_tone":  "Warm bronze-golden medium brownâ€”Latin American and East Asian warmth with Eastern European coolness creating balanced, sun-responsive complexion that reads richer in natural light",
+                                 "complexion":  "Clean-shaven, lean-faced with strong East Asian-influenced cheekbone structure softened by Latin American and Northern European features; pronounced jawline with warm-toned skin that shows the subtle tightness of someone who lives under artificial light. Small network of fine scars at temples from early augmentation work. Dark circles suggest chronic sleep deficit.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar running 12cm vertically along the right side of ribcage, thick and pale â€” lung replacement incision, visible when shirtless",
+                                                              "Neural jack port at base of skull, visible when hair is pulled back: raised circular scar with faint chrome microport flange, approximately 1.5cm diameter",
+                                                              "Thin white burn line across left forearm (inner wrist to elbow) â€” old industrial accident or early runner mishap, almost invisible unless you know where to look",
+                                                              "Small tattoo on right collarbone: circuit-board pattern in dull silver ink, runner ID marker"
+                                                          ],
+                                 "visible_augmentations":  "Synthetic lungs visible through translucent dermal panels on upper torso â€” faint blue bioluminescent indicators pulse with breathing rhythm. Chrome is intentional, not hidden: the filtration system shows as iridescent membrane visible through carefully maintained skin integrity. Neural interface jack at skull base creates a slight raised area at the nape, chrome microport gleaming under light. No facial chrome â€” kept soft-featured as psychological asset.",
+                                 "posture_movement":  "Moves with calculated precision, every motion economical and reversible. Stands with weight distributed evenly, ready to shift direction instantly. Head positioned to keep both ears clear â€” auditory awareness is tactical. Breathing patterns visible in chest movement due to synthetic lungs; no unconscious fidgeting, no wasted gesture. When at rest, appears coiled rather than relaxed.",
+                                 "clothing_style":  "Tier 3-4 runner aesthetic with corporate-side maintenance. Dark fitted synthweave jacket (matte grey, reinforced seams) over a black responsive-weave shirt that dampens biosignature. Custom cargo pants with sealed pockets and internal organizing webbing â€” urban grey. Nondescript ankle boots with grip soles and hidden reinforcement. Minimal jewelry except a worn silver signet ring (family, kept as talisman). No corporate logos or affiliations visible â€” deliberately nondescript. Clothes show signs of field use but meticulous maintenance. Small messenger bag (black leather-composite hybrid) worn crossbody, positioned for quick access and concealment."
+                             },
+    "image_prompt":  "GLMZ runner portrait: Hachiro LindstrÃ¶m-Bustamante, 188cm tall lean figure with warm bronze-golden medium brown skin blending Latin American and East Asian features with Northern and Eastern European softness. Dark brown hair with grey undertone, short faded sides with longer crown. Strong angular East Asian cheekbones softened by warm Latin American and European depth, clean-shaven with pronounced jawline. Dark brown eyes with silver threading, dark circles from sleep deficit, small scars at temples. Translucent dermal panels on upper torso revealing blue-glowing synthetic lungs with chrome filtration visible. Chrome neural jack at skull base. Wearing matte grey reinforced synthweave jacket over black biosignature-dampening shirt, grey cargo pants, dark ankle boots with reinforced soles. Silver signet ring. Corded muscle definition, coiled posture radiating calculated precision. Neon-lit urban environment with cool blue and warm neon glow casting shadows across taut features. Serious expression, tactical awareness. Black leather-composite messenger bag slung crossbody. Cinematic neo-noir lighting, gritty dystopian setting --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  42.4,
+                             "East Asian":  22.5,
+                             "Eastern European":  17.6,
+                             "Northern European":  17.5
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  20.1,
+                                                                              "Cuban":  3.4
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Honduran":  4.8,
+                                                                                     "Costa Rican":  2.5
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  11.6
+                                                                        }
+                                                        },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Cantonese":  8.1
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  12.7
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  1.7
+                                                          }
+                                           },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  17.6
+                                                                     }
+                                                 },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  17.5
+                                                                        }
+                                                  }
+                        }
 }

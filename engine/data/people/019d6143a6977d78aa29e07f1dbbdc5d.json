@@ -1,353 +1,382 @@
-{
-  "id": "019d6143a6977d78aa29e07f1dbbdc5d",
-  "type": "character",
-  "name": "Elmer Mukherjee",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Riot Suppression Specialist, Axiom Security Division",
-  "age": 37,
-  "status": "active",
-  "location": "Axiom Corporate Campus, Gage Circuit — deployed to Grand Corridor and surrounding districts, near Damen and Armitage",
-  "description": "Elmer Mukherjee is built like someone who decided early that their body was a professional tool and has maintained it with that framework ever since. She stands 178cm and carries a density of muscle that her Axiom tactical gear accommodates rather than conceals. Her heritage writes itself in a face that is simultaneously angular and broad — sharp Slavic cheekbones, deep Ghanaian skin, a wide nose her grandmother called distinguished. She has retractable subdermal armor plating along her forearms, a Helix Biosystems military-grade installation that she had done at 28 after taking a fragmentation hit that left scars she considers ugly, and a tail — a long, scaled, dark green cosmetic mod she added at 34 after her divorce, which she describes as the first thing she's ever done purely for herself.\n\nElmer Mukherjee is experienced enough to know that riot suppression is political work wearing tactical gear, and she has made her peace with this in the particular way of someone who has not actually made peace with it. She is professionally excellent — controlled, precise, decisive under pressure — and she drinks more than she should on days off and visits the ELF shrine at the Axiom campus entrance with a sincerity that her colleagues find slightly embarrassing. She is good at violence in a way that has never made her proud.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.55,
-      "ideal": 0.4,
-      "id": 0.5,
-      "shadow": 0.65,
-      "mask": 0.75,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That she has hurt people who did not deserve it and that this is simply the cost of the work and not an aberration",
-      "That she will retire and find she has no identity outside of what she can physically do"
-    ],
-    "core_desires": [
-      "To be good at something that is actually good",
-      "Physical and professional respect from people she respects back"
-    ],
-    "coping_mechanisms": [
-      "Exercise structured enough to require full attention and leave no room for reflection",
-      "Keeping social relationships deliberately shallow so that no one can ask hard questions"
-    ],
-    "blind_spots": [
-      "Does not see that her 'professionalism' is a way of outsourcing moral responsibility to Axiom's chain of command",
-      "Cannot recognize that her tail is not just self-expression but a kind of distress signal"
-    ],
-    "secret": "During a dispersal action in Highland Park Autonomous Zone eighteen months ago, she deliberately allowed a group of protesters to escape through a gap in the line she could have closed. She filed the report as a perimeter equipment failure. She has not told Axiom and does not intend to."
-  },
-  "speech_patterns": {
-    "vocabulary": "Tactical, economy of words, tends toward imperative voice. Drops into something warmer and more digressive when off-duty and relaxed. Russian and Twi phrases surface occasionally.",
-    "cadence": "Clipped and direct on duty. Off-duty, slower, occasionally trails off when hitting something she doesn't want to finish saying.",
-    "verbal_tics": [
-      "Exhales slowly through her nose before answering difficult questions",
-      "'Clean' as an all-purpose modifier — clean line, clean situation, clean exit"
-    ],
-    "example_lines": [
-      "'Crowd has three pressure points. We hold the east anchor clean and the whole thing decompresses in under six minutes. Or we don't hold it and we're here until morning.'",
-      "'I don't explain the deployment orders. I execute them cleanly. You want the reasons, they're above my tier.'",
-      "'The tail? I just — yeah. I just wanted something that was mine. That's the whole story.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A journalist has obtained partial surveillance footage from the Highland Park incident and is asking questions; Perpetua does not know how much they have.",
-    "She recognizes someone in a crowd she is deployed to suppress — someone from her personal life — and has approximately four seconds to decide what her action is."
-  ],
-  "narrative_function": "Morally complex enforcer — she can be the face of corporate suppression and simultaneously a person who has doubts she will not voice. Useful as an obstacle, a reluctant ally, or a source of tactical information about Axiom deployment patterns if a relationship of trust is established.",
-  "augmentations": "Subdermal armor plating along both forearms (Helix Biosystems, military grade — installed 2191). Standard Axiom neural reflex lag reducer (central nervous system, employer-installed). Cosmetic scaled tail, dark green, approximately 90cm (personal mod, 2197).",
-  "daily_life": "Tactical briefings at 0730 at Gage Circuit campus. Deployment rotations across Grand Corridor and adjacent districts during high-traffic or elevated-tension periods. Maintains physical conditioning regimen with almost religious consistency. Off-shift evenings at a bar in Bronzeline she has been going to for four years.",
-  "affiliation": "Axiom Security Division, Tactical Response Unit",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 9,
-      "dexterity": 7,
-      "vitality": 9,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 8,
-      "creativity": 4,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 5,
-      "expression": 4,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "disciplined",
-      "physically formidable",
-      "morally queasy",
-      "loyal under pressure",
-      "quietly dissenting"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Execute orders correctly and completely or flag them up the chain — never a personal unilateral deviation",
-      "Protect your team's physical safety over all other considerations",
-      "Do not form relationships with civilians in deployment zones"
-    ],
-    "escalation_ladder": [
-      "Presence and formation as deterrence",
-      "Verbal commands with compliance windows",
-      "Non-lethal suppression deployment",
-      "Containment and detainment protocol",
-      "Escalation request to command — she will not proceed to lethal independently"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally neutral, reads threat vectors automatically, does not engage beyond what the situation requires",
-      "friends": "Dry, sardonic, occasionally vulnerable in ways she immediately covers with a physical joke about her tail or the armor plating"
-    },
-    "stress_responses": {
-      "low": "More quiet than usual, increased physical movement",
-      "medium": "Hyper-focused on tactical details, shuts out non-essential social input entirely",
-      "high": "Becomes very still and very calm in a way her team has learned to recognize as the danger state"
-    },
-    "contradictions": [
-      "Claims to follow orders completely while having committed an act of deliberate disobedience she considers the most moral thing she has done in years",
-      "Cultivates emotional distance as discipline while secretly maintaining a small ELF shrine in her locker"
-    ],
-    "habits": [
-      "Polishes her forearm plating each morning even though it self-maintains",
-      "The tail moves independently when she is angry — she has not fully learned to suppress this",
-      "Always sits with her back to a wall"
-    ],
-    "breaking_points": [
-      "Being ordered to suppress a specific group or individual she cannot justify suppressing even by her own ethical accounting"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Pragmatist": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Axiom Corporate Campus",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Bronzeline to a Russian-Ghanaian family; both parents worked Axiom manufacturing",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Joined Axiom Security Division at 18; placed in tactical track after aptitude assessment",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Took fragmentation damage during civil unrest response in the Gray Zone; had subdermal plating installed during recovery",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Divorce from partner of six years; got the tail the following month",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Highland Park Autonomous Zone dispersal; deliberate gap in perimeter; filed as equipment failure",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Currently second-in-command of her tactical unit; promotion to unit lead is pending review",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "related_entities": [
-    "Helix Biosystems",
-    "Grand Corridor",
-    "Highland Park Autonomous Zone",
-    "Gage Circuit",
-    "Grandmother",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "The Heritage Vault",
-    "Pressure Drop",
-    "GLMZ",
-    "Circuit",
-    "Arcturus CK-5 'Bloodhound'"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Complex diaspora blend: 33% Hispanic/Latin American, 29.3% East Asian, 19.2% South Asian, 15.1% Sub-Saharan African, with minor Eastern European (2.1%) and Northern European (1.3%) ancestry. This creates a warm golden-bronze base with subtle olive undertones from the South Asian component, enriched depth and warmth from African ancestry, and the angular facial structure reflecting balanced East Asian and Hispanic elements. The combination produces a striking warm medium-deep complexion with golden luminosity.",
-    "height_cm": 178,
-    "weight_kg": 82,
-    "build": "Muscular and densely compact, with the functional geometry of someone who trains deliberately for force application. Broad shoulders, minimal body fat, forearms noticeably thickened by subdermal armor plating beneath the skin.",
-    "hair_color": "Dark brown, natural",
-    "hair_style": "Pulled back in a tight braid or high knot, practical and non-regulation-violating",
-    "hair_length": "Medium (gathered)",
-    "eye_color": "Deep brown",
-    "skin_tone": "Warm golden-bronze complexion with subtle olive undertones, medium-deep in depth. The blend of East Asian, South Asian, and Hispanic ancestry creates the golden base, enriched by Sub-Saharan African heritage into a warm, luminous tone.",
-    "complexion": "Angular face with high, defined cheekbones balancing East Asian and Hispanic features with South Asian bone structure. Straight nose with subtle bridge definition. Skin is clear but weathered by years of high-impact physical work and irregular sleep patterns. Expression often neutral or controlled, eyes direct and assessing.",
-    "distinguishing_marks": [
-      "Fragmentation scars across right shoulder and upper back (pre-2191, largely concealed by tactical gear and armor plating)",
-      "Faint ritual marks on inner left forearm in Amharic script (ELF shrine practice, barely visible unless close)"
-    ],
-    "visible_augmentations": "Retractable subdermal armor plating visible along both forearms as subtle raised geometric lines beneath skin when not deployed; the plating itself remains subcutaneous. Dark green scaled cosmetic tail, approximately 90cm, hangs from base of spine — visible when not concealed by gear or long jackets; scales have an opalescent quality in direct light, and the tail moves with deliberate, almost predatory grace.",
-    "posture_movement": "Stands with centered weight distribution and visible postural awareness. Movements are controlled and economical, never wasted. Walks like someone who is assessing angles and exits in any room. In off-duty settings, posture loosens slightly but never fully relaxes. Hands at rest show slight tension in forearms.",
-    "clothing_style": "On-duty: Axiom Security Division tactical gear — ballistic weave cargo pants, reinforced torso plating, modular utility vest in corporate grey-black. Understated Tier 2 corporate aesthetic. Off-duty: Dark fitted jackets that accommodate the tail, usually worn over simple neutral-toned clothing. Boots always practical and maintained to professional standards. Minimal jewelry except for small worn silver pendant (likely religious). Overall presentation is Tier 2 corporate — well-maintained, functional, without ornamentation."
-  },
-  "image_prompt": "Elmer Mukherjee, tall muscular security operative, warm golden-bronze skin with subtle olive undertones, angular face with high cheekbones, deep brown eyes, dark brown hair pulled back tightly, weathered complexion from years of tactical work. Visible geometric subdermal armor plating patterns on forearms. Dark green opalescent scaled tail hanging from spine, 90cm long, moves with predatory grace. Wearing Axiom Security Division tactical gear: grey-black ballistic weave cargo pants, reinforced torso plating, modular utility vest. Small worn silver pendant visible. Centered posture, controlled movements, assessing gaze. GLMZ 2200s Great Lakes Metropolitan Zone, tactical stance in corporate facility or urban setting, cool blue-grey ambient lighting, slight cybernetic aesthetic, professional and dangerous presence --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 33,
-    "East Asian": 29.3,
-    "South Asian": 19.2,
-    "Sub-Saharan African": 15.1,
-    "Eastern European": 2.1,
-    "Northern European": 1.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Brazilian": 33
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 16.7
-      },
-      "Chinese": {
-        "Mandarin Northern": 3.9,
-        "Cantonese": 1.4
-      },
-      "Japanese": {
-        "Japanese": 7.3
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 19.2
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Botswanan": 15.1
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Croatian": 0.7
-      },
-      "Magyar-Romanian": {
-        "Romanian": 0.2,
-        "Hungarian": 1.2
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 0.3,
-        "Austrian": 0.8
-      },
-      "Scandinavian": {
-        "Swedish": 0.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6977d78aa29e07f1dbbdc5d",
+    "type":  "character",
+    "name":  "Elmer Mukherjee",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Riot Suppression Specialist, Axiom Security Division",
+    "age":  37,
+    "status":  "active",
+    "location":  "Axiom Corporate Campus, Gage Circuit â€” deployed to Grand Corridor and surrounding districts, near Damen and Armitage",
+    "description":  "Elmer Mukherjee is built like someone who decided early that their body was a professional tool and has maintained it with that framework ever since. She stands 178cm and carries a density of muscle that her Axiom tactical gear accommodates rather than conceals. Her heritage writes itself in a face that is simultaneously angular and broad â€” sharp Slavic cheekbones, deep Ghanaian skin, a wide nose her grandmother called distinguished. She has retractable subdermal armor plating along her forearms, a Helix Biosystems military-grade installation that she had done at 28 after taking a fragmentation hit that left scars she considers ugly, and a tail â€” a long, scaled, dark green cosmetic mod she added at 34 after her divorce, which she describes as the first thing she\u0027s ever done purely for herself.\n\nElmer Mukherjee is experienced enough to know that riot suppression is political work wearing tactical gear, and she has made her peace with this in the particular way of someone who has not actually made peace with it. She is professionally excellent â€” controlled, precise, decisive under pressure â€” and she drinks more than she should on days off and visits the ELF shrine at the Axiom campus entrance with a sincerity that her colleagues find slightly embarrassing. She is good at violence in a way that has never made her proud.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That she has hurt people who did not deserve it and that this is simply the cost of the work and not an aberration",
+                                          "That she will retire and find she has no identity outside of what she can physically do"
+                                      ],
+                       "core_desires":  [
+                                            "To be good at something that is actually good",
+                                            "Physical and professional respect from people she respects back"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Exercise structured enough to require full attention and leave no room for reflection",
+                                                 "Keeping social relationships deliberately shallow so that no one can ask hard questions"
+                                             ],
+                       "blind_spots":  [
+                                           "Does not see that her \u0027professionalism\u0027 is a way of outsourcing moral responsibility to Axiom\u0027s chain of command",
+                                           "Cannot recognize that her tail is not just self-expression but a kind of distress signal"
+                                       ],
+                       "secret":  "During a dispersal action in Highland Park Autonomous Zone eighteen months ago, she deliberately allowed a group of protesters to escape through a gap in the line she could have closed. She filed the report as a perimeter equipment failure. She has not told Axiom and does not intend to."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Tactical, economy of words, tends toward imperative voice. Drops into something warmer and more digressive when off-duty and relaxed. Russian and Twi phrases surface occasionally.",
+                            "cadence":  "Clipped and direct on duty. Off-duty, slower, occasionally trails off when hitting something she doesn\u0027t want to finish saying.",
+                            "verbal_tics":  [
+                                                "Exhales slowly through her nose before answering difficult questions",
+                                                "\u0027Clean\u0027 as an all-purpose modifier â€” clean line, clean situation, clean exit"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Crowd has three pressure points. We hold the east anchor clean and the whole thing decompresses in under six minutes. Or we don\u0027t hold it and we\u0027re here until morning.\u0027",
+                                                  "\u0027I don\u0027t explain the deployment orders. I execute them cleanly. You want the reasons, they\u0027re above my tier.\u0027",
+                                                  "\u0027The tail? I just â€” yeah. I just wanted something that was mine. That\u0027s the whole story.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A journalist has obtained partial surveillance footage from the Highland Park incident and is asking questions; Perpetua does not know how much they have.",
+                        "She recognizes someone in a crowd she is deployed to suppress â€” someone from her personal life â€” and has approximately four seconds to decide what her action is."
+                    ],
+    "narrative_function":  "Morally complex enforcer â€” she can be the face of corporate suppression and simultaneously a person who has doubts she will not voice. Useful as an obstacle, a reluctant ally, or a source of tactical information about Axiom deployment patterns if a relationship of trust is established.",
+    "augmentations":  "Subdermal armor plating along both forearms (Helix Biosystems, military grade â€” installed 2191). Standard Axiom neural reflex lag reducer (central nervous system, employer-installed). Cosmetic scaled tail, dark green, approximately 90cm (personal mod, 2197).",
+    "daily_life":  "Tactical briefings at 0730 at Gage Circuit campus. Deployment rotations across Grand Corridor and adjacent districts during high-traffic or elevated-tension periods. Maintains physical conditioning regimen with almost religious consistency. Off-shift evenings at a bar in Bronzeline she has been going to for four years.",
+    "affiliation":  "Axiom Security Division, Tactical Response Unit",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  9,
+                                   "dexterity":  7,
+                                   "vitality":  9,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  8,
+                                 "creativity":  4,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  5,
+                                 "expression":  4,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "disciplined",
+                               "physically formidable",
+                               "morally queasy",
+                               "loyal under pressure",
+                               "quietly dissenting"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Execute orders correctly and completely or flag them up the chain â€” never a personal unilateral deviation",
+                                              "Protect your team\u0027s physical safety over all other considerations",
+                                              "Do not form relationships with civilians in deployment zones"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Presence and formation as deterrence",
+                                                 "Verbal commands with compliance windows",
+                                                 "Non-lethal suppression deployment",
+                                                 "Containment and detainment protocol",
+                                                 "Escalation request to command â€” she will not proceed to lethal independently"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally neutral, reads threat vectors automatically, does not engage beyond what the situation requires",
+                                                   "friends":  "Dry, sardonic, occasionally vulnerable in ways she immediately covers with a physical joke about her tail or the armor plating"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More quiet than usual, increased physical movement",
+                                                "medium":  "Hyper-focused on tactical details, shuts out non-essential social input entirely",
+                                                "high":  "Becomes very still and very calm in a way her team has learned to recognize as the danger state"
+                                            },
+                       "contradictions":  [
+                                              "Claims to follow orders completely while having committed an act of deliberate disobedience she considers the most moral thing she has done in years",
+                                              "Cultivates emotional distance as discipline while secretly maintaining a small ELF shrine in her locker"
+                                          ],
+                       "habits":  [
+                                      "Polishes her forearm plating each morning even though it self-maintains",
+                                      "The tail moves independently when she is angry â€” she has not fully learned to suppress this",
+                                      "Always sits with her back to a wall"
+                                  ],
+                       "breaking_points":  [
+                                               "Being ordered to suppress a specific group or individual she cannot justify suppressing even by her own ethical accounting"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Pragmatist":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Axiom Corporate Campus",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Bronzeline to a Russian-Ghanaian family; both parents worked Axiom manufacturing",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Joined Axiom Security Division at 18; placed in tactical track after aptitude assessment",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Took fragmentation damage during civil unrest response in the Gray Zone; had subdermal plating installed during recovery",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Divorce from partner of six years; got the tail the following month",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Highland Park Autonomous Zone dispersal; deliberate gap in perimeter; filed as equipment failure",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Currently second-in-command of her tactical unit; promotion to unit lead is pending review",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPA-8 \u0027Solidarity\u0027",
+                            "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPA-8 \u0027Solidarity\u0027",
+                                "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                            ],
+    "related_entities":  [
+                             "Helix Biosystems",
+                             "Grand Corridor",
+                             "Highland Park Autonomous Zone",
+                             "Gage Circuit",
+                             "Grandmother",
+                             "Carrion Defense Works Pathogen Delivery System PDS-4 \u0027Typhoid\u0027",
+                             "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+                             "The Heritage Vault",
+                             "Pressure Drop",
+                             "GLMZ",
+                             "Circuit",
+                             "Arcturus CK-5 \u0027Bloodhound\u0027"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: 33% Hispanic/Latin American, 29.3% East Asian, 19.2% South Asian, 15.1% Sub-Saharan African, with minor Eastern European (2.1%) and Northern European (1.3%) ancestry. This creates a warm golden-bronze base with subtle olive undertones from the South Asian component, enriched depth and warmth from African ancestry, and the angular facial structure reflecting balanced East Asian and Hispanic elements. The combination produces a striking warm medium-deep complexion with golden luminosity.",
+                                 "height_cm":  178,
+                                 "weight_kg":  82,
+                                 "build":  "Muscular and densely compact, with the functional geometry of someone who trains deliberately for force application. Broad shoulders, minimal body fat, forearms noticeably thickened by subdermal armor plating beneath the skin.",
+                                 "hair_color":  "Dark brown, natural",
+                                 "hair_style":  "Pulled back in a tight braid or high knot, practical and non-regulation-violating",
+                                 "hair_length":  "Medium (gathered)",
+                                 "eye_color":  "Deep brown",
+                                 "skin_tone":  "Warm golden-bronze complexion with subtle olive undertones, medium-deep in depth. The blend of East Asian, South Asian, and Hispanic ancestry creates the golden base, enriched by Sub-Saharan African heritage into a warm, luminous tone.",
+                                 "complexion":  "Angular face with high, defined cheekbones balancing East Asian and Hispanic features with South Asian bone structure. Straight nose with subtle bridge definition. Skin is clear but weathered by years of high-impact physical work and irregular sleep patterns. Expression often neutral or controlled, eyes direct and assessing.",
+                                 "distinguishing_marks":  [
+                                                              "Fragmentation scars across right shoulder and upper back (pre-2191, largely concealed by tactical gear and armor plating)",
+                                                              "Faint ritual marks on inner left forearm in Amharic script (ELF shrine practice, barely visible unless close)"
+                                                          ],
+                                 "visible_augmentations":  "Retractable subdermal armor plating visible along both forearms as subtle raised geometric lines beneath skin when not deployed; the plating itself remains subcutaneous. Dark green scaled cosmetic tail, approximately 90cm, hangs from base of spine â€” visible when not concealed by gear or long jackets; scales have an opalescent quality in direct light, and the tail moves with deliberate, almost predatory grace.",
+                                 "posture_movement":  "Stands with centered weight distribution and visible postural awareness. Movements are controlled and economical, never wasted. Walks like someone who is assessing angles and exits in any room. In off-duty settings, posture loosens slightly but never fully relaxes. Hands at rest show slight tension in forearms.",
+                                 "clothing_style":  "On-duty: Axiom Security Division tactical gear â€” ballistic weave cargo pants, reinforced torso plating, modular utility vest in corporate grey-black. Understated Tier 2 corporate aesthetic. Off-duty: Dark fitted jackets that accommodate the tail, usually worn over simple neutral-toned clothing. Boots always practical and maintained to professional standards. Minimal jewelry except for small worn silver pendant (likely religious). Overall presentation is Tier 2 corporate â€” well-maintained, functional, without ornamentation."
+                             },
+    "image_prompt":  "Elmer Mukherjee, tall muscular security operative, warm golden-bronze skin with subtle olive undertones, angular face with high cheekbones, deep brown eyes, dark brown hair pulled back tightly, weathered complexion from years of tactical work. Visible geometric subdermal armor plating patterns on forearms. Dark green opalescent scaled tail hanging from spine, 90cm long, moves with predatory grace. Wearing Axiom Security Division tactical gear: grey-black ballistic weave cargo pants, reinforced torso plating, modular utility vest. Small worn silver pendant visible. Centered posture, controlled movements, assessing gaze. GLMZ 2200s Great Lakes Metropolitan Zone, tactical stance in corporate facility or urban setting, cool blue-grey ambient lighting, slight cybernetic aesthetic, professional and dangerous presence --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  33,
+                             "East Asian":  29.3,
+                             "South Asian":  19.2,
+                             "Sub-Saharan African":  15.1,
+                             "Eastern European":  2.1,
+                             "Northern European":  1.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Brazilian":  33
+                                                                               }
+                                                        },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  16.7
+                                                          },
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  3.9,
+                                                               "Cantonese":  1.4
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  7.3
+                                                            }
+                                           },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  19.2
+                                                                }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  15.1
+                                                                             }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Croatian":  0.7
+                                                                      },
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  0.2,
+                                                                             "Hungarian":  1.2
+                                                                         }
+                                                 },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  0.3,
+                                                                       "Austrian":  0.8
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  0.2
+                                                                       }
+                                                  }
+                        },
+    "tier":  "1"
 }

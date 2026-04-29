@@ -1,319 +1,346 @@
-{
-  "id": "019d6143a7277788a4bf8fb2140e1dd3",
-  "type": "character",
-  "name": "Altynai Okonkwo",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "identity fabricator and document forger operating in Shallowgrave",
-  "age": 31,
-  "status": "active",
-  "location": "Shallowgrave — a basement workspace beneath a legitimate print-repair shop called Inkblood Restorations, near Ashland and Chicago Ave",
-  "description": "Altynai Okonkwo is small and wiry, with deep brown Yoruba-complexioned skin and natural hair she keeps tucked under an ever-rotating collection of patterned wraps. Her most striking feature is her eyes — she paid a significant portion of her early earnings for iris patterning, and her irises now display slow-rotating mandalas in burnt amber and deep violet, which she claims help her spot microscopic forgery errors others miss. Her fingers are perpetually ink-stained despite her best efforts, and she has a habit of wearing magnification lenses pushed up on her forehead like a second set of eyes.\n\nAltynai Okonkwo is meticulous to the point of compulsion, deeply proud of her craft in a way she has no legitimate outlet for, and socially awkward in a manner that reads as cold until you realize she is simply more comfortable with documents than with people. She thinks of identity fabrication as a form of art — every forged life is a story she writes, and she has genuine contempt for sloppy work, including her own past output which she sometimes obsessively revisits and critiques. She has strong opinions about which corponation residency stamps are aesthetically superior and will share them unprompted.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.7,
-      "id": 0.4,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "producing a forgery that gets a client killed",
-      "being erased from records herself — having no provable identity"
-    ],
-    "core_desires": [
-      "to be recognized, somewhere, as genuinely excellent at something",
-      "to eventually fabricate a clean life for herself and disappear into it"
-    ],
-    "coping_mechanisms": [
-      "perfectionism as avoidance of thinking about the end-users of her work",
-      "categorizing and reorganizing her ink and paper stock when anxious"
-    ],
-    "blind_spots": [
-      "does not think carefully about who is buying new identities or why — it's the craft, not the consequence, that she focuses on",
-      "her 'archives' of client data are a profound security liability she rationalizes as professional pride"
-    ],
-    "secret": "She has fabricated a complete, pristine secondary identity for herself — a corponation-tier Tier 3 Tessera residency profile — and has been maintaining it for three years, updating it regularly, but cannot bring herself to use it. She doesn't know why."
-  },
-  "speech_patterns": {
-    "vocabulary": "technical and precise when discussing her work, sparse and clipped in casual conversation, occasional Yoruba exclamations when surprised or frustrated",
-    "cadence": "fast when talking about craft, slow and halting when discussing anything personal",
-    "verbal_tics": [
-      "'The margins on this are'",
-      "'Sloppy — look at the sloppy'",
-      "clicks her tongue when she spots an error in anything, forged or otherwise"
-    ],
-    "example_lines": [
-      "'Sterling-Nakamura tier-two residency? I can do that. The holographic weave on their current stamps is actually easier than last year's — they cheapened the substrate. Give me six days and don't contact me in between.'",
-      "'I don't need to know why you need a new name. I genuinely do not care. What I care about is that you don't show it to anyone for forty-eight hours after I hand it over — the biometric embedding needs to cure.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She forged an identity for someone who then committed a high-profile crime under that identity — now she's exposed and needs help scrubbing the connection",
-    "A client is asking her to fabricate the identity of a specific real person, not a fictional one — this is a line she hasn't crossed and doesn't know why someone would want it",
-    "She has discovered an error in an old piece of her own work — a forged identity she sold five years ago has a flaw that will be detected when the client tries to use it for a corponation contract signing"
-  ],
-  "narrative_function": "Service provider (can fabricate new identities), world texture (shows what it costs and means to build a fake life), potential quest complication (she keeps copies of everything)",
-  "augmentations": "Cosmetic iris patterning (burnt amber and violet mandalas); micro-tremor suppression implants in both hands (steady hands for precision work); retinal zoom enhancement for document inspection",
-  "daily_life": "Works nights almost exclusively — opens the workshop around 2000, works until 0400, sleeps through the day. Eats takeout from a 24-hour stall and maintains a backlog of orders she works through with obsessive prioritization. Leaves small folded paper offerings at the print-repair shop's primary scanner, which she believes is inhabited by a meticulous E.L.F. she calls the Archivist.",
-  "affiliation": "Independent; occasional contract work for a Shallowgrave crime family called the Splinter Court",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 9,
-      "vitality": 4,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 4,
-      "empathy": 5,
-      "expression": 4,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "precision artisan",
-      "nocturnal",
-      "archive hoarder",
-      "reluctant criminal",
-      "identity scholar"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never fabricate identity documents for anyone who mentions violence, weapons, or children in the same conversation — she has three hard rules and those are two of them",
-      "Keep copies of everything — 'professional archive,' she says, though she knows it's also leverage"
-    ],
-    "escalation_ladder": [
-      "Polite refusal if a job smells wrong",
-      "Silence and non-response if pressure is applied",
-      "Disappears from contact entirely and waits for the problem to pass — she has three backup contact chains"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Transactional and brief, maintains physical distance, avoids eye contact except when examining their documents",
-      "friends": "Unexpectedly warm and intense, talks for hours about her craft and almost nothing else, loans people her reference materials as a gesture of deep trust"
-    },
-    "stress_responses": {
-      "low": "Reorganizes her ink drawers by viscosity",
-      "medium": "Pulls out and re-examines old work, looking for errors",
-      "high": "Goes completely silent and begins stress-drafting documents that will never be used — just to feel like she is making something"
-    },
-    "contradictions": [
-      "Obsessed with authenticity and craft in a profession entirely built on deception"
-    ],
-    "habits": [
-      "Folds a small paper crane from scrap substrate at the start of every new job — leaves it at the Archivist's scanner",
-      "Keeps a private rating system for every piece of work she's ever done, from 1 to 10, in a physical notebook"
-    ],
-    "breaking_points": [
-      "Finding out a client used one of her fabricated identities to victimize someone vulnerable — the idea that her craft enabled predation rather than just escape"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Judge": 0.9,
-    "Sentinel": 0.9,
-    "Code Keeper": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Shallowgrave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Shallowgrave to a Yoruba-Polish family; father ran the legitimate Inkblood Restorations shop",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Father dies in a Splinter Court protection dispute; Yetunde takes over the shop as a front",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Begins forging transit permits and ration cards for neighbors as a favor; discovers her aptitude",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Transitions to full identity fabrication; establishes Splinter Court contract relationship",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completes and begins maintaining her own secret Tessera identity profile",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Tessera TKR-10 'Executor'"
-  ],
-  "registered_firearms": [
-    "Tessera TKR-10 'Executor'"
-  ],
-  "related_entities": [
-    "Shallowgrave",
-    "Underground Altynai",
-    "Chicago",
-    "SynapTech IrisBloom Ocular Color Modulator"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (66.3%) with significant East Asian (16.1%), Hispanic/Latin American (10.7%), and Indigenous American (6.9%) ancestry—creating a rich, warm-toned phenotype. The Sub-Saharan African ancestry dominates her deep melanin base, while East Asian heritage refines her bone structure with subtle angularity across cheekbones and eye shape. Indigenous American ancestry contributes prominent, high cheekbones and facial width. Hispanic/Latin American genetics add warm golden undertones throughout, particularly visible on the nose bridge and upper cheekbones where the ancestry blend creates a complex bronze-to-deep-brown gradient.",
-    "height_cm": 158,
-    "weight_kg": 48,
-    "build": "Wiry and compact, almost bird-like in frame — minimal body fat, defined forearms from precise repetitive work, hunched slightly forward from years bent over document tables",
-    "hair_color": "Natural black with traces of premature gray at temples",
-    "hair_style": "Wrapped in rotating collection of patterned ankara, kente, and adire cloth; rarely seen uncovered",
-    "hair_length": "Long (shoulder-length when unwrapped)",
-    "eye_color": "Augmented: irises display slow-rotating mandalas in burnt amber and deep violet; sclera unchanged",
-    "skin_tone": "Warm deep brown complexion with rich golden and bronze undertones. The base is dark and melanin-dominant from Sub-Saharan African ancestry, layered with warm honey and bronze tones from Hispanic/Latin American heritage. East Asian ancestry contributes subtle luminosity and refinement to the overall tone. Cheekbones and nose bridge show concentrated bronze warmth from the blended Indigenous American, East Asian, and Latin American genetics creating natural contour without makeup.",
-    "complexion": "Clear but weather-marked by years of chemical exposure; permanent dark staining around nail beds and cuticles from ink; fine creases around eyes from squinting at magnification work; minimal makeup, functional grooming only. Facial structure reflects the ancestry blend: high, prominent cheekbones from Indigenous American heritage; subtle eye shape refinement and face width from East Asian genetics; overall bone density and facial proportions from dominant Sub-Saharan African ancestry. Warm bronze undertones concentrated across cheekbones, nose bridge, and temples from the Latin American and East Asian heritage mixing with the deep melanin base.",
-    "distinguishing_marks": [
-      "Chemical burn scar on the back of her left hand — pale against warm brown skin, roughly 4cm across, from early forging accident with solvent",
-      "Microscopic ink tattoo on inner left wrist: a tiny mandala pattern, matching her iris design, approximately 1cm diameter — self-administered and deliberately imperfect as personal critique",
-      "Chronic dark circles beneath eyes from inverted sleep schedule"
-    ],
-    "visible_augmentations": "Iris patterning immediately obvious and striking — mandalas rotate slowly (observable if you watch for 10+ seconds); retinal zoom enhancement visible as occasional subtle pupil dilation/contraction during focus work; micro-tremor suppression invisible but hands never shake regardless of stimulant intake; magnification lenses perpetually pushed up on forehead like a second set of eyes (not technically augmentation but inseparable from her visual signature)",
-    "posture_movement": "Hunched forward slightly, shoulders drawn up — posture of someone who has spent 10,000+ hours bent over detail work; moves with economic precision, no wasted motion; fingers constantly micro-fidgeting (sorting, folding, examining); eye contact uncomfortable and intermittent; speaks in measured, careful tone as if each word is being proofread before utterance",
-    "clothing_style": "Tier 4 utilitarian with deliberate, idiosyncratic flair — black or dark gray fitted cargo pants with excessive pockets and utility loops (filled with tools and sample materials); fitted turtleneck or long-sleeve shirt in dark colors (hides ink stains); layered grey linen overshirt or modified lab coat with custom interior pockets; steel-toed work boots broken in to perfect fit; collection of multi-patterned wraps in vibrant West African textiles that serve as both headwear and occasional statement against the monochromatic workspace; fingerless gloves when handling sensitive documents; single silver thumb ring inherited from her mother"
-  },
-  "image_prompt": "Altynai Okonkwo, a 158cm wiry figure in GLMZ, hunched slightly forward from years of detail work. Deep warm brown skin with rich bronze and golden undertones reflecting Sub-Saharan African, East Asian, Indigenous American, and Hispanic heritage. High, prominent cheekbones, refined bone structure with subtle East Asian angularity. Augmented eyes with slow-rotating burnt amber and deep violet mandalas visible in irises. Black hair with premature gray at temples, wrapped in vibrant patterned West African ankara textile. Weather-marked clear complexion with permanent ink stains on nail beds, fine creases around eyes, chronic dark circles. Pale chemical burn scar visible on back of left hand. Wears dark gray fitted cargo pants, fitted black turtleneck, grey linen overshirt, steel-toed work boots, fingerless gloves, magnification lenses pushed up on forehead. Silver thumb ring. Posture hunched, movements economical and precise, fingers fidgeting with tools. Industrial workspace with chemical apparatus and documents in soft overhead neon lighting, casting cool blues against warm skin tones. Serious, focused expression. Neo-noir archival-forger aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 66.3,
-    "East Asian": 16.1,
-    "Hispanic/Latin American": 10.7,
-    "Indigenous American": 6.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "East African": {
-        "Somali": 66.3
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 12.8
-      },
-      "Chinese": {
-        "Mandarin Northern": 1,
-        "Sichuanese": 1
-      },
-      "Korean": {
-        "Korean": 1.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 6
-      },
-      "Caribbean": {
-        "Cuban": 4.7
-      }
-    },
-    "Indigenous American": {
-      "Andean": {
-        "Aymara": 6.1
-      },
-      "Great Lakes Nations": {
-        "Menominee": 0.6,
-        "Ojibwe": 0.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a7277788a4bf8fb2140e1dd3",
+    "type":  "character",
+    "name":  "Altynai Okonkwo",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "identity fabricator and document forger operating in Shallowgrave",
+    "age":  31,
+    "status":  "active",
+    "location":  "Shallowgrave â€” a basement workspace beneath a legitimate print-repair shop called Inkblood Restorations, near Ashland and Chicago Ave",
+    "description":  "Altynai Okonkwo is small and wiry, with deep brown Yoruba-complexioned skin and natural hair she keeps tucked under an ever-rotating collection of patterned wraps. Her most striking feature is her eyes â€” she paid a significant portion of her early earnings for iris patterning, and her irises now display slow-rotating mandalas in burnt amber and deep violet, which she claims help her spot microscopic forgery errors others miss. Her fingers are perpetually ink-stained despite her best efforts, and she has a habit of wearing magnification lenses pushed up on her forehead like a second set of eyes.\n\nAltynai Okonkwo is meticulous to the point of compulsion, deeply proud of her craft in a way she has no legitimate outlet for, and socially awkward in a manner that reads as cold until you realize she is simply more comfortable with documents than with people. She thinks of identity fabrication as a form of art â€” every forged life is a story she writes, and she has genuine contempt for sloppy work, including her own past output which she sometimes obsessively revisits and critiques. She has strong opinions about which corponation residency stamps are aesthetically superior and will share them unprompted.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "producing a forgery that gets a client killed",
+                                          "being erased from records herself â€” having no provable identity"
+                                      ],
+                       "core_desires":  [
+                                            "to be recognized, somewhere, as genuinely excellent at something",
+                                            "to eventually fabricate a clean life for herself and disappear into it"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "perfectionism as avoidance of thinking about the end-users of her work",
+                                                 "categorizing and reorganizing her ink and paper stock when anxious"
+                                             ],
+                       "blind_spots":  [
+                                           "does not think carefully about who is buying new identities or why â€” it\u0027s the craft, not the consequence, that she focuses on",
+                                           "her \u0027archives\u0027 of client data are a profound security liability she rationalizes as professional pride"
+                                       ],
+                       "secret":  "She has fabricated a complete, pristine secondary identity for herself â€” a corponation-tier Tier 3 Tessera residency profile â€” and has been maintaining it for three years, updating it regularly, but cannot bring herself to use it. She doesn\u0027t know why."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "technical and precise when discussing her work, sparse and clipped in casual conversation, occasional Yoruba exclamations when surprised or frustrated",
+                            "cadence":  "fast when talking about craft, slow and halting when discussing anything personal",
+                            "verbal_tics":  [
+                                                "\u0027The margins on this are\u0027",
+                                                "\u0027Sloppy â€” look at the sloppy\u0027",
+                                                "clicks her tongue when she spots an error in anything, forged or otherwise"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Sterling-Nakamura tier-two residency? I can do that. The holographic weave on their current stamps is actually easier than last year\u0027s â€” they cheapened the substrate. Give me six days and don\u0027t contact me in between.\u0027",
+                                                  "\u0027I don\u0027t need to know why you need a new name. I genuinely do not care. What I care about is that you don\u0027t show it to anyone for forty-eight hours after I hand it over â€” the biometric embedding needs to cure.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She forged an identity for someone who then committed a high-profile crime under that identity â€” now she\u0027s exposed and needs help scrubbing the connection",
+                        "A client is asking her to fabricate the identity of a specific real person, not a fictional one â€” this is a line she hasn\u0027t crossed and doesn\u0027t know why someone would want it",
+                        "She has discovered an error in an old piece of her own work â€” a forged identity she sold five years ago has a flaw that will be detected when the client tries to use it for a corponation contract signing"
+                    ],
+    "narrative_function":  "Service provider (can fabricate new identities), world texture (shows what it costs and means to build a fake life), potential quest complication (she keeps copies of everything)",
+    "augmentations":  "Cosmetic iris patterning (burnt amber and violet mandalas); micro-tremor suppression implants in both hands (steady hands for precision work); retinal zoom enhancement for document inspection",
+    "daily_life":  "Works nights almost exclusively â€” opens the workshop around 2000, works until 0400, sleeps through the day. Eats takeout from a 24-hour stall and maintains a backlog of orders she works through with obsessive prioritization. Leaves small folded paper offerings at the print-repair shop\u0027s primary scanner, which she believes is inhabited by a meticulous E.L.F. she calls the Archivist.",
+    "affiliation":  "Independent; occasional contract work for a Shallowgrave crime family called the Splinter Court",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  9,
+                                   "vitality":  4,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  4,
+                                 "empathy":  5,
+                                 "expression":  4,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "precision artisan",
+                               "nocturnal",
+                               "archive hoarder",
+                               "reluctant criminal",
+                               "identity scholar"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never fabricate identity documents for anyone who mentions violence, weapons, or children in the same conversation â€” she has three hard rules and those are two of them",
+                                              "Keep copies of everything â€” \u0027professional archive,\u0027 she says, though she knows it\u0027s also leverage"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite refusal if a job smells wrong",
+                                                 "Silence and non-response if pressure is applied",
+                                                 "Disappears from contact entirely and waits for the problem to pass â€” she has three backup contact chains"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Transactional and brief, maintains physical distance, avoids eye contact except when examining their documents",
+                                                   "friends":  "Unexpectedly warm and intense, talks for hours about her craft and almost nothing else, loans people her reference materials as a gesture of deep trust"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Reorganizes her ink drawers by viscosity",
+                                                "medium":  "Pulls out and re-examines old work, looking for errors",
+                                                "high":  "Goes completely silent and begins stress-drafting documents that will never be used â€” just to feel like she is making something"
+                                            },
+                       "contradictions":  [
+                                              "Obsessed with authenticity and craft in a profession entirely built on deception"
+                                          ],
+                       "habits":  [
+                                      "Folds a small paper crane from scrap substrate at the start of every new job â€” leaves it at the Archivist\u0027s scanner",
+                                      "Keeps a private rating system for every piece of work she\u0027s ever done, from 1 to 10, in a physical notebook"
+                                  ],
+                       "breaking_points":  [
+                                               "Finding out a client used one of her fabricated identities to victimize someone vulnerable â€” the idea that her craft enabled predation rather than just escape"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Judge":  0.9,
+                       "Sentinel":  0.9,
+                       "Code Keeper":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Shallowgrave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Shallowgrave to a Yoruba-Polish family; father ran the legitimate Inkblood Restorations shop",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Father dies in a Splinter Court protection dispute; Yetunde takes over the shop as a front",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Begins forging transit permits and ration cards for neighbors as a favor; discovers her aptitude",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Transitions to full identity fabrication; establishes Splinter Court contract relationship",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completes and begins maintaining her own secret Tessera identity profile",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Tessera TKR-10 \u0027Executor\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Tessera TKR-10 \u0027Executor\u0027"
+                            ],
+    "related_entities":  [
+                             "Shallowgrave",
+                             "Underground Altynai",
+                             "Chicago",
+                             "SynapTech IrisBloom Ocular Color Modulator"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Sub-Saharan African (66.3%) with significant East Asian (16.1%), Hispanic/Latin American (10.7%), and Indigenous American (6.9%) ancestryâ€”creating a rich, warm-toned phenotype. The Sub-Saharan African ancestry dominates her deep melanin base, while East Asian heritage refines her bone structure with subtle angularity across cheekbones and eye shape. Indigenous American ancestry contributes prominent, high cheekbones and facial width. Hispanic/Latin American genetics add warm golden undertones throughout, particularly visible on the nose bridge and upper cheekbones where the ancestry blend creates a complex bronze-to-deep-brown gradient.",
+                                 "height_cm":  158,
+                                 "weight_kg":  48,
+                                 "build":  "Wiry and compact, almost bird-like in frame â€” minimal body fat, defined forearms from precise repetitive work, hunched slightly forward from years bent over document tables",
+                                 "hair_color":  "Natural black with traces of premature gray at temples",
+                                 "hair_style":  "Wrapped in rotating collection of patterned ankara, kente, and adire cloth; rarely seen uncovered",
+                                 "hair_length":  "Long (shoulder-length when unwrapped)",
+                                 "eye_color":  "Augmented: irises display slow-rotating mandalas in burnt amber and deep violet; sclera unchanged",
+                                 "skin_tone":  "Warm deep brown complexion with rich golden and bronze undertones. The base is dark and melanin-dominant from Sub-Saharan African ancestry, layered with warm honey and bronze tones from Hispanic/Latin American heritage. East Asian ancestry contributes subtle luminosity and refinement to the overall tone. Cheekbones and nose bridge show concentrated bronze warmth from the blended Indigenous American, East Asian, and Latin American genetics creating natural contour without makeup.",
+                                 "complexion":  "Clear but weather-marked by years of chemical exposure; permanent dark staining around nail beds and cuticles from ink; fine creases around eyes from squinting at magnification work; minimal makeup, functional grooming only. Facial structure reflects the ancestry blend: high, prominent cheekbones from Indigenous American heritage; subtle eye shape refinement and face width from East Asian genetics; overall bone density and facial proportions from dominant Sub-Saharan African ancestry. Warm bronze undertones concentrated across cheekbones, nose bridge, and temples from the Latin American and East Asian heritage mixing with the deep melanin base.",
+                                 "distinguishing_marks":  [
+                                                              "Chemical burn scar on the back of her left hand â€” pale against warm brown skin, roughly 4cm across, from early forging accident with solvent",
+                                                              "Microscopic ink tattoo on inner left wrist: a tiny mandala pattern, matching her iris design, approximately 1cm diameter â€” self-administered and deliberately imperfect as personal critique",
+                                                              "Chronic dark circles beneath eyes from inverted sleep schedule"
+                                                          ],
+                                 "visible_augmentations":  "Iris patterning immediately obvious and striking â€” mandalas rotate slowly (observable if you watch for 10+ seconds); retinal zoom enhancement visible as occasional subtle pupil dilation/contraction during focus work; micro-tremor suppression invisible but hands never shake regardless of stimulant intake; magnification lenses perpetually pushed up on forehead like a second set of eyes (not technically augmentation but inseparable from her visual signature)",
+                                 "posture_movement":  "Hunched forward slightly, shoulders drawn up â€” posture of someone who has spent 10,000+ hours bent over detail work; moves with economic precision, no wasted motion; fingers constantly micro-fidgeting (sorting, folding, examining); eye contact uncomfortable and intermittent; speaks in measured, careful tone as if each word is being proofread before utterance",
+                                 "clothing_style":  "Tier 4 utilitarian with deliberate, idiosyncratic flair â€” black or dark gray fitted cargo pants with excessive pockets and utility loops (filled with tools and sample materials); fitted turtleneck or long-sleeve shirt in dark colors (hides ink stains); layered grey linen overshirt or modified lab coat with custom interior pockets; steel-toed work boots broken in to perfect fit; collection of multi-patterned wraps in vibrant West African textiles that serve as both headwear and occasional statement against the monochromatic workspace; fingerless gloves when handling sensitive documents; single silver thumb ring inherited from her mother"
+                             },
+    "image_prompt":  "Altynai Okonkwo, a 158cm wiry figure in GLMZ, hunched slightly forward from years of detail work. Deep warm brown skin with rich bronze and golden undertones reflecting Sub-Saharan African, East Asian, Indigenous American, and Hispanic heritage. High, prominent cheekbones, refined bone structure with subtle East Asian angularity. Augmented eyes with slow-rotating burnt amber and deep violet mandalas visible in irises. Black hair with premature gray at temples, wrapped in vibrant patterned West African ankara textile. Weather-marked clear complexion with permanent ink stains on nail beds, fine creases around eyes, chronic dark circles. Pale chemical burn scar visible on back of left hand. Wears dark gray fitted cargo pants, fitted black turtleneck, grey linen overshirt, steel-toed work boots, fingerless gloves, magnification lenses pushed up on forehead. Silver thumb ring. Posture hunched, movements economical and precise, fingers fidgeting with tools. Industrial workspace with chemical apparatus and documents in soft overhead neon lighting, casting cool blues against warm skin tones. Serious, focused expression. Neo-noir archival-forger aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  66.3,
+                             "East Asian":  16.1,
+                             "Hispanic/Latin American":  10.7,
+                             "Indigenous American":  6.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Somali":  66.3
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  12.8
+                                                            },
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  1,
+                                                               "Sichuanese":  1
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  1.3
+                                                          }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  6
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  4.7
+                                                                          }
+                                                        },
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Aymara":  6.1
+                                                                   },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Menominee":  0.6,
+                                                                                    "Ojibwe":  0.2
+                                                                                }
+                                                    }
+                        },
+    "tier":  "3"
 }

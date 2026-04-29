@@ -1,339 +1,352 @@
-{
-  "id": "019d6143a63f743aa17bc113e72aae9c",
-  "type": "character",
-  "name": "Torsten Kulkarni",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Network intrusion and digital warfare specialist — netrunner",
-  "age": 45,
-  "status": "active",
-  "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Torsten Kulkarni is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — bone lacing — titanium mesh throughout skeleton, increases durability and striki — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Torsten Kulkarni describe him as a precision instrument — point him at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.25,
-      "ideal": 0.7,
-      "id": 0.8,
-      "shadow": 0.67,
-      "mask": 0.44,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Betrayal by someone they trust — the only currency that matters",
-      "That their reputation is built on luck, not skill, and the luck is finite",
-      "Never being able to stop running — the lifestyle is a trap disguised as freedom"
-    ],
-    "core_desires": [
-      "To matter to someone for who they are, not what they can do",
-      "To protect the people in their district who can't protect themselves",
-      "Stability — a place to sleep that's the same place two nights running"
-    ],
-    "coping_mechanisms": [
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Violence — hits something when they can't process emotions, preferably something that deserves it",
-      "Isolates — retreats into their space when overwhelmed, emerges only for work"
-    ],
-    "blind_spots": [
-      "Cannot distinguish between caution and cowardice in themselves or others",
-      "Cannot recognize when they're being manipulated by someone who genuinely seems to care",
-      "Assumes everyone has an angle because they always have an angle"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
-    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
-    "verbal_tics": [
-      "Ends statements with 'yeah?' — not a question, a dare",
-      "Uses technical jargon for everything, including emotions"
-    ],
-    "example_lines": [
-      "\"Every system has a door. Most of them have a door the architect forgot about.\"",
-      "\"I don't hack networks. I have conversations with them. Most of them are lonely.\"",
-      "\"The ice they're running is military-grade. That means expensive, not impenetrable.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A corporate black site Kamala Nystrom-Keita once infiltrated is being reopened, and the people inside know his face",
-    "Kamala Nystrom-Keita discovers a job they completed last year was a setup for something much larger and much worse",
-    "A dead drop Kamala Nystrom-Keita maintains is found and cleaned out — whoever did it now has leverage"
-  ],
-  "narrative_function": "Kamala Nystrom-Keita represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Bone lacing — titanium mesh throughout skeleton, increases durability and striking power. Internal drug synthesizer — produces combat stims and medical compounds on demand",
-  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Independent — loose crew affiliations",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 4
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 7
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 7
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 7
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 10
-      },
-      "willpower": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 10
-      },
-      "technical": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 10
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 6
-      },
-      "intimidation": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 10
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 9
-      },
-      "empathy": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 8
-      }
-    },
-    "personality": {
-      "aggression": 0.3,
-      "caution": 0.24,
-      "loyalty": 0.99,
-      "greed": 0.67,
-      "empathy": 0.58
-    },
-    "drives": [
-      "loyalty",
-      "money",
-      "survival"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 6,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "physical endurance",
-      "multilingual — speaks 4+ languages fluently"
-    ],
-    "weaknesses": [
-      "grudge-holding that compromises rational decision-making",
-      "physical limitation from incomplete augmentation",
-      "augmentation dependency — performance drops sharply if chrome malfunctions"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "netrunner",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Never discusses active contracts with anyone not directly involved",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Values loyalty intensely but has betrayed someone in the past to survive",
-      "Claims not to care about reputation but monitors what people say about them obsessively",
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
-    ],
-    "habits": [
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
-      "Checks exits within 10 seconds of entering any room"
-    ],
-    "breaking_points": [
-      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
-      "Running out of options — no contacts, no money, no safe house, no way out"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Bone lacing",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
-      "replaces": ""
-    },
-    {
-      "name": "Internal drug synthesizer",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Internal drug synthesizer — produces combat stims and medical compounds on demand",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9,
-    "Face": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Spires",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Tessera Industries Phantom Blade PB-1 'Ghost Knife'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Titanium",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Northern European, Eastern European, and South Asian ancestry — a striking blend of 38.6% Northern European, 35.6% Eastern European, and 25.8% South Asian heritage. The combination manifests as warm, olive-toned skin with subtle golden undertones, refined facial structure with moderate cheekbones reflecting the balanced Eastern and Northern European base with South Asian warmth, and naturally dark hair with premature silver threading.",
-    "height_cm": 178,
-    "weight_kg": 74,
-    "build": "Athletic and lean with precise musculature — dancer's flexibility combined with fighter's density. No excess mass; every movement calculated.",
-    "hair_color": "Dark brown with premature silver threading at temples",
-    "hair_style": "Kept short and practical, swept back from forehead",
-    "hair_length": "Short",
-    "eye_color": "Steel gray — natural but intensified by nocturnal living",
-    "skin_tone": "Warm olive with golden undertones, reflecting the tri-continental blend of Northern European fairness, Eastern European depth, and South Asian warmth. Complexion luminous beneath nocturnal pallor.",
-    "complexion": "Smooth and angular — moderate to prominent cheekbones reflecting the balanced three-way blend, sharp jawline with subtle fullness and definition from South Asian ancestry. High cheekbones characteristic of Eastern European heritage soften into warmer golden undertones from South Asian genetics. Skin shows the pallor of nocturnal life; faint dark circles are permanent fixtures. Fine facial structure suggests the harmonious blend of multiple continental ancestries.",
-    "distinguishing_marks": [
-      "Faint white scar running 3cm along left temple, partially hidden by hairline — old knife work",
-      "Thin titanium mesh visible beneath translucent skin along right forearm in geometric lattice pattern",
-      "Skeletal chrome outlining both wrists in subtle raised lines where bone lacing meets skin",
-      "Small burn mark on inside of right elbow — injection site scarring from early synthesizer implant work"
-    ],
-    "visible_augmentations": "Titanium bone lacing is deliberately visible — mesh patterns shimmer faintly beneath skin on forearms, wrists, and along the ridge of his jaw. When he moves, the chrome catches light in deliberate, practiced ways. No attempt at concealment. The internal drug synthesizer leaves no external trace.",
-    "posture_movement": "Moves with economical precision — no wasted motion, no flourish. Stands with weight balanced on the balls of his feet, ready to shift direction instantly. When seated, his posture is deceptively relaxed but his eyes track everything. His movements have the fluidity of someone who has internalized violence so deeply it became dance.",
-    "clothing_style": "Tier 2-3 practical minimalism — dark fitted synthweave layers that breathe well during nocturnal work. Favors charcoal and matte black technical fabrics with subtle chrome accents. Wears a worn midnight-blue duster jacket with reinforced shoulders over a black compression shirt. Cargo pants with strategic pockets. Boots are expensive, quiet, practical — scuffed but maintained. No corporate logos, no gang colors. Everything is built for function and unobstructed movement."
-  },
-  "image_prompt": "Torsten Kulkarni, GLMZ, 178cm athletic lean male with warm olive skin and golden undertones blending Northern European, Eastern European, and South Asian heritage. Dark brown hair with silver threading swept back, steel gray eyes. High prominent cheekbones, sharp jawline with subtle fullness, nocturnal pallor with faint dark circles. Visible titanium bone lacing mesh beneath translucent skin on forearms and wrists, skeletal chrome outlines, temple scar partially hidden by hairline. Wearing midnight-blue duster jacket with reinforced shoulders over black compression shirt, cargo pants, expensive practical boots. Economical precise posture, weight balanced on balls of feet, ready to move. Standing in neon-lit Great Lakes Metropolitan Zone alley at night, shadows and chrome reflections catching on augmentations, cool blue and purple lighting, moody and dangerous atmosphere. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 38.6,
-    "Eastern European": 35.6,
-    "South Asian": 25.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Scandinavian": {
-        "Finnish": 38.6
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Czech": 10.3,
-        "Sorbian": 11.5
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 13.8
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Bengali": 16.9
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 8.9
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a63f743aa17bc113e72aae9c",
+    "type":  "character",
+    "name":  "Torsten Kulkarni",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Network intrusion and digital warfare specialist â€” netrunner",
+    "age":  45,
+    "status":  "active",
+    "location":  "The Spires â€” mid-level corporate residential towers, near Michigan Ave and Oak",
+    "description":  "Torsten Kulkarni is athletic and fluid, the kind of body that suggests either dancer or fighter â€” and in GLMZ, the distinction is academic. At 45, he has soft features that belie the chrome underneath â€” people underestimate him once, usually only once. The chrome is visible â€” bone lacing â€” titanium mesh throughout skeleton, increases durability and striki â€” and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Torsten Kulkarni describe him as a precision instrument â€” point him at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Betrayal by someone they trust â€” the only currency that matters",
+                                          "That their reputation is built on luck, not skill, and the luck is finite",
+                                          "Never being able to stop running â€” the lifestyle is a trap disguised as freedom"
+                                      ],
+                       "core_desires":  [
+                                            "To matter to someone for who they are, not what they can do",
+                                            "To protect the people in their district who can\u0027t protect themselves",
+                                            "Stability â€” a place to sleep that\u0027s the same place two nights running"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+                                                 "Violence â€” hits something when they can\u0027t process emotions, preferably something that deserves it",
+                                                 "Isolates â€” retreats into their space when overwhelmed, emerges only for work"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot distinguish between caution and cowardice in themselves or others",
+                                           "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care",
+                                           "Assumes everyone has an angle because they always have an angle"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
+                            "cadence":  "Rhythmic, almost musical â€” the sentence structure has a pattern even when the words are brutal.",
+                            "verbal_tics":  [
+                                                "Ends statements with \u0027yeah?\u0027 â€” not a question, a dare",
+                                                "Uses technical jargon for everything, including emotions"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Every system has a door. Most of them have a door the architect forgot about.\"",
+                                                  "\"I don\u0027t hack networks. I have conversations with them. Most of them are lonely.\"",
+                                                  "\"The ice they\u0027re running is military-grade. That means expensive, not impenetrable.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A corporate black site Kamala Nystrom-Keita once infiltrated is being reopened, and the people inside know his face",
+                        "Kamala Nystrom-Keita discovers a job they completed last year was a setup for something much larger and much worse",
+                        "A dead drop Kamala Nystrom-Keita maintains is found and cleaned out â€” whoever did it now has leverage"
+                    ],
+    "narrative_function":  "Kamala Nystrom-Keita represents the working professional of the runner world â€” competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+    "augmentations":  "Bone lacing â€” titanium mesh throughout skeleton, increases durability and striking power. Internal drug synthesizer â€” produces combat stims and medical compounds on demand",
+    "daily_life":  "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+    "affiliation":  "Independent â€” loose crew affiliations",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  5,
+                                                    "augmented":  1,
+                                                    "effective":  4
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  2,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  8,
+                                                     "augmented":  0,
+                                                     "effective":  7
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  1,
+                                                    "effective":  7
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  5,
+                                                      "augmented":  1,
+                                                      "effective":  7
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  0,
+                                                    "effective":  10
+                                                },
+                                 "willpower":  {
+                                                   "base":  5,
+                                                   "augmented":  0,
+                                                   "effective":  10
+                                               },
+                                 "technical":  {
+                                                   "base":  3,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  2,
+                                                  "effective":  6
+                                              },
+                                 "intimidation":  {
+                                                      "base":  7,
+                                                      "augmented":  3,
+                                                      "effective":  10
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  9
+                                               },
+                                 "empathy":  {
+                                                 "base":  4,
+                                                 "augmented":  1,
+                                                 "effective":  8
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.3,
+                                      "caution":  0.24,
+                                      "loyalty":  0.99,
+                                      "greed":  0.67,
+                                      "empathy":  0.58
+                                  },
+                  "drives":  [
+                                 "loyalty",
+                                 "money",
+                                 "survival"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  6,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "physical endurance",
+                                    "multilingual â€” speaks 4+ languages fluently"
+                                ],
+                  "weaknesses":  [
+                                     "grudge-holding that compromises rational decision-making",
+                                     "physical limitation from incomplete augmentation",
+                                     "augmentation dependency â€” performance drops sharply if chrome malfunctions"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "netrunner",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Never discusses active contracts with anyone not directly involved",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Professional and transactional. The relationship is defined by the contract and nothing else.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Values loyalty intensely but has betrayed someone in the past to survive",
+                                              "Claims not to care about reputation but monitors what people say about them obsessively",
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+                                          ],
+                       "habits":  [
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore",
+                                      "Talks to their gear â€” names weapons, thanks tools, treats equipment as companions",
+                                      "Checks exits within 10 seconds of entering any room"
+                                  ],
+                       "breaking_points":  [
+                                               "Their body rejecting their cyberware â€” chrome rot, immune rejection, the nightmare scenario",
+                                               "Running out of options â€” no contacts, no money, no safe house, no way out"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Bone lacing",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Bone lacing â€” titanium mesh throughout skeleton, increases durability and striking power",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Internal drug synthesizer",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Internal drug synthesizer â€” produces combat stims and medical compounds on demand",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9,
+                       "Face":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Spires",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-R44 Heritage \u0027Legacy\u0027",
+                            "Tessera Industries Phantom Blade PB-1 \u0027Ghost Knife\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Titanium",
+                             "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
+                             "Slagworks Industrial",
+                             "GLMZ"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Northern European, Eastern European, and South Asian ancestry â€” a striking blend of 38.6% Northern European, 35.6% Eastern European, and 25.8% South Asian heritage. The combination manifests as warm, olive-toned skin with subtle golden undertones, refined facial structure with moderate cheekbones reflecting the balanced Eastern and Northern European base with South Asian warmth, and naturally dark hair with premature silver threading.",
+                                 "height_cm":  178,
+                                 "weight_kg":  74,
+                                 "build":  "Athletic and lean with precise musculature â€” dancer\u0027s flexibility combined with fighter\u0027s density. No excess mass; every movement calculated.",
+                                 "hair_color":  "Dark brown with premature silver threading at temples",
+                                 "hair_style":  "Kept short and practical, swept back from forehead",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Steel gray â€” natural but intensified by nocturnal living",
+                                 "skin_tone":  "Warm olive with golden undertones, reflecting the tri-continental blend of Northern European fairness, Eastern European depth, and South Asian warmth. Complexion luminous beneath nocturnal pallor.",
+                                 "complexion":  "Smooth and angular â€” moderate to prominent cheekbones reflecting the balanced three-way blend, sharp jawline with subtle fullness and definition from South Asian ancestry. High cheekbones characteristic of Eastern European heritage soften into warmer golden undertones from South Asian genetics. Skin shows the pallor of nocturnal life; faint dark circles are permanent fixtures. Fine facial structure suggests the harmonious blend of multiple continental ancestries.",
+                                 "distinguishing_marks":  [
+                                                              "Faint white scar running 3cm along left temple, partially hidden by hairline â€” old knife work",
+                                                              "Thin titanium mesh visible beneath translucent skin along right forearm in geometric lattice pattern",
+                                                              "Skeletal chrome outlining both wrists in subtle raised lines where bone lacing meets skin",
+                                                              "Small burn mark on inside of right elbow â€” injection site scarring from early synthesizer implant work"
+                                                          ],
+                                 "visible_augmentations":  "Titanium bone lacing is deliberately visible â€” mesh patterns shimmer faintly beneath skin on forearms, wrists, and along the ridge of his jaw. When he moves, the chrome catches light in deliberate, practiced ways. No attempt at concealment. The internal drug synthesizer leaves no external trace.",
+                                 "posture_movement":  "Moves with economical precision â€” no wasted motion, no flourish. Stands with weight balanced on the balls of his feet, ready to shift direction instantly. When seated, his posture is deceptively relaxed but his eyes track everything. His movements have the fluidity of someone who has internalized violence so deeply it became dance.",
+                                 "clothing_style":  "Tier 2-3 practical minimalism â€” dark fitted synthweave layers that breathe well during nocturnal work. Favors charcoal and matte black technical fabrics with subtle chrome accents. Wears a worn midnight-blue duster jacket with reinforced shoulders over a black compression shirt. Cargo pants with strategic pockets. Boots are expensive, quiet, practical â€” scuffed but maintained. No corporate logos, no gang colors. Everything is built for function and unobstructed movement."
+                             },
+    "image_prompt":  "Torsten Kulkarni, GLMZ, 178cm athletic lean male with warm olive skin and golden undertones blending Northern European, Eastern European, and South Asian heritage. Dark brown hair with silver threading swept back, steel gray eyes. High prominent cheekbones, sharp jawline with subtle fullness, nocturnal pallor with faint dark circles. Visible titanium bone lacing mesh beneath translucent skin on forearms and wrists, skeletal chrome outlines, temple scar partially hidden by hairline. Wearing midnight-blue duster jacket with reinforced shoulders over black compression shirt, cargo pants, expensive practical boots. Economical precise posture, weight balanced on balls of feet, ready to move. Standing in neon-lit Great Lakes Metropolitan Zone alley at night, shadows and chrome reflections catching on augmentations, cool blue and purple lighting, moody and dangerous atmosphere. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  38.6,
+                             "Eastern European":  35.6,
+                             "South Asian":  25.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Finnish":  38.6
+                                                                       }
+                                                  },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Czech":  10.3,
+                                                                         "Sorbian":  11.5
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  13.8
+                                                                         }
+                                                 },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Bengali":  16.9
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  8.9
+                                                                }
+                                            }
+                        },
+    "tier":  "3"
 }

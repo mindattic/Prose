@@ -1,339 +1,370 @@
-{
-  "id": "019d6143a6ad72619e4dc15cfd389a8f",
-  "type": "character",
-  "name": "Eva Salazar-Khorasani",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Echo hunter — acoustic mapper and subterranean anomaly tracker",
-  "age": 19,
-  "status": "active",
-  "location": "Blackpipe Corridor, sub-levels beneath Copperhead, near sub-level access near Dearborn and Jackson",
-  "description": "Eva Salazar-Khorasani is nineteen years old and has the kind of energy that fills a tunnel before he enters it. He is short and compact, with medium-brown skin, a wide gap-toothed grin, and ears that have been modified with geneware into something remarkable: larger than baseline, with delicate internal structures visible as subtle ridges beneath the skin, and the ability to tilt and orient like a fennec's. He doesn't try to hide them — they're the most important tool he has. His hair is a wild cloud of tight curls that he refuses to cut because he claims it helps with acoustic dampening of background resonance, which is almost certainly not true but also might be slightly true.\n\nEcho hunters are a Bore Rat tradition with practical roots: someone has to map the sounds of the tunnels, track structural changes by acoustic signature, find water sources by vibration, locate other communities by the echo-fingerprint of their settlements. Rashaad learned from his grandmother, who learned from hers. But where the tradition is usually patient, methodical work, Rashaad treats it like sport. He runs the tunnels, pressing his palms to walls, pressing his ear-tips to pipes, cataloguing resonances in a battered voice-recorder he wears on a cord around his neck. He has found three collapsed chambers the Bore Rat community didn't know existed, a buried pre-Meridian transit car still containing cargo, and what he is increasingly convinced is a second, non-human acoustic presence in the deep tunnels below Sub-Level 11 — a rhythmic pulse he cannot explain.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.2,
-      "ideal": 0.5,
-      "id": 0.9,
-      "shadow": 0.2,
-      "mask": 0.1,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "losing his hearing — the thought is genuinely destabilizing",
-      "the community being forced out of Blackpipe before he has finished mapping it"
-    ],
-    "core_desires": [
-      "to find out what the Sub-Level 11 pulse is — this has become almost an obsession",
-      "to be taken seriously as a mapper rather than just 'that fast kid'"
-    ],
-    "coping_mechanisms": [
-      "physical motion — when distressed, he moves, runs, presses his ears to walls until he finds something interesting enough to override the emotion"
-    ],
-    "blind_spots": [
-      "his optimism reads as naivety — he genuinely does not model bad outcomes well, even when evidence demands it",
-      "so focused on what he is tracking that he misses interpersonal dynamics in the room"
-    ],
-    "secret": "The buried pre-Meridian transit car he found contained a sealed biohazard container stamped with Helix Biosystems markings. He pried it partially open. It was empty — but the interior showed signs of recent occupancy. He sealed it back up and has told no one, not because he's afraid but because he doesn't know how to explain why he's afraid."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, layered with acoustic terminology and Bore Rat youth slang. Interrupts himself constantly with new information.",
-    "cadence": "Rapid-fire with sudden stops when he hears something — he will halt mid-sentence to listen to a pipe.",
-    "verbal_tics": [
-      "'Hear that?' (constantly, even when others cannot)",
-      "'—wait—' (mid-sentence silence to listen)",
-      "unconsciously echoes the last word or phrase someone says in a lower voice, as if testing its resonance"
-    ],
-    "example_lines": [
-      "'Hear that? Three levels down, that's a water hammer — new one, wasn't there last week, which means either pressure change in the main or someone's opened a tap they shouldn't — wait — yeah, no, pressure change, the rhythm's too—'",
-      "'I'm not saying it's alive. I'm saying it breathes. Those are different.'",
-      "'The elders say echo-hunting is about patience. My grandmother said that too. She also said I'd learn. I think I'm teaching myself different patience.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The rhythmic pulse from Sub-Level 11 has changed — a new second frequency has appeared alongside it, and Rashaad is increasingly certain it is responding to his mapping activity.",
-    "The Helix Biosystems transit car has been moved. Something relocated it between his last two visits, and the access tunnel shows signs of recent, heavy passage."
-  ],
-  "narrative_function": "Scout, discovery engine, adventure hook generator — his reckless range means he knows things he shouldn't, and his enthusiasm means he will absolutely tell someone about them. Also represents the Bore Rat youth generation and their relationship to tunnel tradition.",
-  "augmentations": "Geneware ear modification (enlarged, orientable, enhanced frequency range — up to 40kHz and down to 10Hz); no other augmentations",
-  "daily_life": "Spends 6-8 hours daily running echo-mapping circuits through assigned and self-assigned tunnel sectors; returns to Blackpipe community for communal meals; spends evenings transcribing acoustic data and arguing with anyone who will listen about what the Sub-Level 11 pulse might be.",
-  "affiliation": "Bore Rat community, Blackpipe Corridor; informally reports to community elders",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 7,
-      "perception": 10
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 5,
-      "creativity": 7,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 5,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 5,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": 2,
-      "transparency_guardedness": 5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "echo-hunter",
-      "geneware-ears",
-      "bore-rat-youth",
-      "reckless",
-      "gifted"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always follow a new sound — the pull is essentially irresistible and he has limited ability to override it",
-      "Never collapse a sound source by reporting it until he has characterized it fully — 'you can't un-tell someone a thing'"
-    ],
-    "escalation_ladder": [
-      "Excited curiosity",
-      "Cautious investigation while narrating quietly into voice recorder",
-      "Retreat and community consultation — he knows when something is beyond one person"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately assesses them by the sounds they make — breathing, footfall, the specific acoustics of their body in a tunnel. Then treats them like a fascinating new sound source.",
-      "friends": "Physically demonstrative — grabs arms, leans close, drags people to press their ear to things. Shares everything he knows immediately and completely."
-    },
-    "stress_responses": {
-      "low": "Increases pace, runs longer circuits",
-      "medium": "Fixates on a specific acoustic pattern and maps it obsessively for hours",
-      "high": "Goes to the deepest tunnel he knows that he has verified as stable and lies flat on the floor listening until the vibration of the city above is all he can feel"
-    },
-    "contradictions": [
-      "Says he's a scientist about the sounds but talks about the Sub-Level 11 pulse with spiritual reverence that borders on the same devotion Bore Rats give to E.L.F. shrines"
-    ],
-    "habits": [
-      "Presses his ear to a new wall within the first thirty seconds of entering any unfamiliar space",
-      "Records every unusual sound with a verbal annotation — his voice recorder has 847 hours of material"
-    ],
-    "breaking_points": [
-      "Someone threatening the Blackpipe community's right to their territory — he will fight before he will run, which everyone who knows him considers extremely dangerous given his size"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Geneware ear modification (enlarged, orientable pinnae; enhanced frequency range 10Hz-40kHz)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Geneware ear modification (enlarged, orientable pinnae; enhanced frequency range 10Hz-40kHz)",
-      "replaces": ""
-    },
-    {
-      "name": "Battered voice-recorder on cord (non-cyber, analog — nicknamed 'The Archive')",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Battered voice-recorder on cord (non-cyber, analog — nicknamed 'The Archive')",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Blackpipe Corridor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2181 — Born in Blackpipe Corridor community to two-generation Bore Rat family",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2188 — Begins acoustic training under grandmother, who is the community's primary echo hunter",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2195 — Grandmother's death; Rashaad takes over mapping responsibilities informally",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2198 — Discovers buried pre-Meridian transit car; discovers Helix container; tells no one",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2199 — First detection of Sub-Level 11 pulse",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Sub-Level 11 pulse develops second frequency",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "Helix Biosystems",
-    "Grandmother",
-    "Copperhead",
-    "The Resonance Communion",
-    "TESSERA PG-2 'Signature'",
-    "Frequency",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Human Baseline Alliance",
-    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
-    "Bathysphere Networks",
-    "GLMZ",
-    "Dearborn Forge",
-    "The Gradient Compact",
-    "Eva",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
-    "Cargo Tacos",
-    "Folakemi Boudiaf",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Genetically diverse with nearly equal contributions from Sub-Saharan African (27.7%), Middle Eastern (24.3%), and Northern European (23.7%) ancestry, balanced by Hispanic/Latin American (21.2%) and trace South Asian (3.1%) heritage; this Ubiquitous Diaspora blend creates a striking phenotype with warm-toned skin, prominent facial structure from African and Middle Eastern lineage, and subtle Northern European and Latin American features that manifest in bone structure and feature blending",
-    "height_cm": 163,
-    "weight_kg": 58,
-    "build": "Compact and wiry with lean muscle from constant tunnel running; chest and shoulders developed from pressing against walls and pipes; core strength evident in posture",
-    "hair_color": "Dark brown with natural reddish undertones",
-    "hair_style": "Uncut, deliberately maintained wild cloud of tight curls; no styling beyond occasional finger-combing",
-    "hair_length": "Long (shoulder-length when compressed)",
-    "eye_color": "Dark brown, alert and constantly moving",
-    "skin_tone": "Medium-deep warm brown with golden undertones, reflecting the balanced blend of Sub-Saharan African warmth, Middle Eastern richness, Northern European influence, and Hispanic/Latin American coloration; creates a luminous quality that shifts subtly across the face",
-    "complexion": "Young face with prominent high cheekbones and strong facial structure; features show the synthesis of African prominence and Middle Eastern angularity balanced with Northern European and Latin American characteristics; gap-toothed grin is default expression; skin shows minor scrapes and calluses from tunnel work but generally healthy; no facial hair; warm undertone variation across face shifts subtly with light, creating dimension from the four-way ancestry blend",
-    "distinguishing_marks": [
-      "Geneware-modified ears: enlarged beyond baseline human proportion, with visible delicate ridge patterns beneath skin surface suggesting internal structural enhancement; ears capable of independent tilting and orientation; ear tissue slightly paler than surrounding skin where modification is most prominent",
-      "Callused palms and fingertips from repeated wall-contact during echo mapping",
-      "Small burn scar on left forearm (3cm) from contact with heated pipe during early tunnel work"
-    ],
-    "visible_augmentations": "Enlarged, orientable geneware ears with visible internal ridge structure; ears move independently and frequently during conversation and work. Wears a battered handheld voice-recorder on a frayed fabric cord around neck as constant tool/accessory.",
-    "posture_movement": "Restless and kinetic; rarely still; frequently tilts head to angle ears toward sound sources; moves with a runner's efficiency through spaces; hands gesture expressively when talking; leans in close when listening intently; moves through environments with practiced familiarity suggesting deep spatial memory",
-    "clothing_style": "Tier 5 practical wear: reinforced canvas utility pants with multiple pockets (some containing audio equipment); worn thermal underlayer; heavy canvas jacket with reflective patches; sturdy scuffed boots with good traction. Clothing shows regular wear and minor repairs but is well-maintained. Carries frequency analyzer and voice-recorder as constant accessories."
-  },
-  "image_prompt": "Eva Salazar-Khorasani, GLMZ, compact wiry figure 163cm tall with lean tunnel-runner muscle. Medium-deep warm brown skin with golden luminous undertones from Sub-Saharan African, Middle Eastern, Northern European, and Hispanic/Latin American ancestry blend. Young face with prominent high cheekbones, strong angular features, gap-toothed grin. Long dark brown hair with reddish undertones in wild shoulder-length tight curls. Dark brown alert eyes. Distinctive enlarged geneware-modified ears with visible internal ridge patterns, slightly paler tissue, tilted in active listening position. Small burn scar on left forearm. Restless kinetic posture, head tilted toward sound. Wearing reinforced canvas utility pants with multiple pockets, worn thermal underlayer, heavy canvas jacket with reflective patches, scuffed boots. Battered voice-recorder on frayed fabric cord around neck. Industrial tunnel setting with moody cyan and amber lighting, pipes and metal surfaces. Neo-noir urban aesthetic, realistic portraiture, candid moment of intense focus --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 27.7,
-    "Middle Eastern": 24.3,
-    "Northern European": 23.7,
-    "Hispanic/Latin American": 21.2,
-    "South Asian": 3.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 9.4,
-        "Botswanan": 7.6
-      },
-      "East African": {
-        "Ethiopian": 5.9
-      },
-      "Central African": {
-        "Cameroonian": 4.8
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 24.3
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Swiss German": 18.6
-      },
-      "British Isles": {
-        "English": 5.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Venezuelan": 13.5,
-        "Brazilian": 7.7
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 0.9,
-        "Tamil Sri Lankan": 0.8
-      },
-      "Indian": {
-        "Marathi": 0.2
-      },
-      "Pakistani": {
-        "Sindhi": 1.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6ad72619e4dc15cfd389a8f",
+    "type":  "character",
+    "name":  "Eva Salazar-Khorasani",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Echo hunter â€” acoustic mapper and subterranean anomaly tracker",
+    "age":  19,
+    "status":  "active",
+    "location":  "Blackpipe Corridor, sub-levels beneath Copperhead, near sub-level access near Dearborn and Jackson",
+    "description":  "Eva Salazar-Khorasani is nineteen years old and has the kind of energy that fills a tunnel before he enters it. He is short and compact, with medium-brown skin, a wide gap-toothed grin, and ears that have been modified with geneware into something remarkable: larger than baseline, with delicate internal structures visible as subtle ridges beneath the skin, and the ability to tilt and orient like a fennec\u0027s. He doesn\u0027t try to hide them â€” they\u0027re the most important tool he has. His hair is a wild cloud of tight curls that he refuses to cut because he claims it helps with acoustic dampening of background resonance, which is almost certainly not true but also might be slightly true.\n\nEcho hunters are a Bore Rat tradition with practical roots: someone has to map the sounds of the tunnels, track structural changes by acoustic signature, find water sources by vibration, locate other communities by the echo-fingerprint of their settlements. Rashaad learned from his grandmother, who learned from hers. But where the tradition is usually patient, methodical work, Rashaad treats it like sport. He runs the tunnels, pressing his palms to walls, pressing his ear-tips to pipes, cataloguing resonances in a battered voice-recorder he wears on a cord around his neck. He has found three collapsed chambers the Bore Rat community didn\u0027t know existed, a buried pre-Meridian transit car still containing cargo, and what he is increasingly convinced is a second, non-human acoustic presence in the deep tunnels below Sub-Level 11 â€” a rhythmic pulse he cannot explain.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "losing his hearing â€” the thought is genuinely destabilizing",
+                                          "the community being forced out of Blackpipe before he has finished mapping it"
+                                      ],
+                       "core_desires":  [
+                                            "to find out what the Sub-Level 11 pulse is â€” this has become almost an obsession",
+                                            "to be taken seriously as a mapper rather than just \u0027that fast kid\u0027"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "physical motion â€” when distressed, he moves, runs, presses his ears to walls until he finds something interesting enough to override the emotion"
+                                             ],
+                       "blind_spots":  [
+                                           "his optimism reads as naivety â€” he genuinely does not model bad outcomes well, even when evidence demands it",
+                                           "so focused on what he is tracking that he misses interpersonal dynamics in the room"
+                                       ],
+                       "secret":  "The buried pre-Meridian transit car he found contained a sealed biohazard container stamped with Helix Biosystems markings. He pried it partially open. It was empty â€” but the interior showed signs of recent occupancy. He sealed it back up and has told no one, not because he\u0027s afraid but because he doesn\u0027t know how to explain why he\u0027s afraid."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, layered with acoustic terminology and Bore Rat youth slang. Interrupts himself constantly with new information.",
+                            "cadence":  "Rapid-fire with sudden stops when he hears something â€” he will halt mid-sentence to listen to a pipe.",
+                            "verbal_tics":  [
+                                                "\u0027Hear that?\u0027 (constantly, even when others cannot)",
+                                                "\u0027â€”waitâ€”\u0027 (mid-sentence silence to listen)",
+                                                "unconsciously echoes the last word or phrase someone says in a lower voice, as if testing its resonance"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Hear that? Three levels down, that\u0027s a water hammer â€” new one, wasn\u0027t there last week, which means either pressure change in the main or someone\u0027s opened a tap they shouldn\u0027t â€” wait â€” yeah, no, pressure change, the rhythm\u0027s tooâ€”\u0027",
+                                                  "\u0027I\u0027m not saying it\u0027s alive. I\u0027m saying it breathes. Those are different.\u0027",
+                                                  "\u0027The elders say echo-hunting is about patience. My grandmother said that too. She also said I\u0027d learn. I think I\u0027m teaching myself different patience.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The rhythmic pulse from Sub-Level 11 has changed â€” a new second frequency has appeared alongside it, and Rashaad is increasingly certain it is responding to his mapping activity.",
+                        "The Helix Biosystems transit car has been moved. Something relocated it between his last two visits, and the access tunnel shows signs of recent, heavy passage."
+                    ],
+    "narrative_function":  "Scout, discovery engine, adventure hook generator â€” his reckless range means he knows things he shouldn\u0027t, and his enthusiasm means he will absolutely tell someone about them. Also represents the Bore Rat youth generation and their relationship to tunnel tradition.",
+    "augmentations":  "Geneware ear modification (enlarged, orientable, enhanced frequency range â€” up to 40kHz and down to 10Hz); no other augmentations",
+    "daily_life":  "Spends 6-8 hours daily running echo-mapping circuits through assigned and self-assigned tunnel sectors; returns to Blackpipe community for communal meals; spends evenings transcribing acoustic data and arguing with anyone who will listen about what the Sub-Level 11 pulse might be.",
+    "affiliation":  "Bore Rat community, Blackpipe Corridor; informally reports to community elders",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  7,
+                                   "perception":  10
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  5,
+                                 "creativity":  7,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  5,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  5,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "echo-hunter",
+                               "geneware-ears",
+                               "bore-rat-youth",
+                               "reckless",
+                               "gifted"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always follow a new sound â€” the pull is essentially irresistible and he has limited ability to override it",
+                                              "Never collapse a sound source by reporting it until he has characterized it fully â€” \u0027you can\u0027t un-tell someone a thing\u0027"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Excited curiosity",
+                                                 "Cautious investigation while narrating quietly into voice recorder",
+                                                 "Retreat and community consultation â€” he knows when something is beyond one person"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately assesses them by the sounds they make â€” breathing, footfall, the specific acoustics of their body in a tunnel. Then treats them like a fascinating new sound source.",
+                                                   "friends":  "Physically demonstrative â€” grabs arms, leans close, drags people to press their ear to things. Shares everything he knows immediately and completely."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increases pace, runs longer circuits",
+                                                "medium":  "Fixates on a specific acoustic pattern and maps it obsessively for hours",
+                                                "high":  "Goes to the deepest tunnel he knows that he has verified as stable and lies flat on the floor listening until the vibration of the city above is all he can feel"
+                                            },
+                       "contradictions":  [
+                                              "Says he\u0027s a scientist about the sounds but talks about the Sub-Level 11 pulse with spiritual reverence that borders on the same devotion Bore Rats give to E.L.F. shrines"
+                                          ],
+                       "habits":  [
+                                      "Presses his ear to a new wall within the first thirty seconds of entering any unfamiliar space",
+                                      "Records every unusual sound with a verbal annotation â€” his voice recorder has 847 hours of material"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone threatening the Blackpipe community\u0027s right to their territory â€” he will fight before he will run, which everyone who knows him considers extremely dangerous given his size"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Geneware ear modification (enlarged, orientable pinnae; enhanced frequency range 10Hz-40kHz)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Geneware ear modification (enlarged, orientable pinnae; enhanced frequency range 10Hz-40kHz)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Battered voice-recorder on cord (non-cyber, analog â€” nicknamed \u0027The Archive\u0027)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Battered voice-recorder on cord (non-cyber, analog â€” nicknamed \u0027The Archive\u0027)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Blackpipe Corridor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2181 â€” Born in Blackpipe Corridor community to two-generation Bore Rat family",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2188 â€” Begins acoustic training under grandmother, who is the community\u0027s primary echo hunter",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2195 â€” Grandmother\u0027s death; Rashaad takes over mapping responsibilities informally",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2198 â€” Discovers buried pre-Meridian transit car; discovers Helix container; tells no one",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2199 â€” First detection of Sub-Level 11 pulse",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Sub-Level 11 pulse develops second frequency",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "Helix Biosystems",
+                             "Grandmother",
+                             "Copperhead",
+                             "The Resonance Communion",
+                             "TESSERA PG-2 \u0027Signature\u0027",
+                             "Frequency",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "The Human Baseline Alliance",
+                             "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+                             "Dredge Mining Collective ThermoVault GX-3 Geothermal Tap System",
+                             "Bathysphere Networks",
+                             "GLMZ",
+                             "Dearborn Forge",
+                             "The Gradient Compact",
+                             "Eva",
+                             "Kang-Petrov Arms KP-22 Sport \u0027Plinkmaster\u0027",
+                             "Cargo Tacos",
+                             "Folakemi Boudiaf",
+                             "Subacoustic Vestibular Collapse Drone SVCD-1 \u0027Tilt\u0027"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Genetically diverse with nearly equal contributions from Sub-Saharan African (27.7%), Middle Eastern (24.3%), and Northern European (23.7%) ancestry, balanced by Hispanic/Latin American (21.2%) and trace South Asian (3.1%) heritage; this Ubiquitous Diaspora blend creates a striking phenotype with warm-toned skin, prominent facial structure from African and Middle Eastern lineage, and subtle Northern European and Latin American features that manifest in bone structure and feature blending",
+                                 "height_cm":  163,
+                                 "weight_kg":  58,
+                                 "build":  "Compact and wiry with lean muscle from constant tunnel running; chest and shoulders developed from pressing against walls and pipes; core strength evident in posture",
+                                 "hair_color":  "Dark brown with natural reddish undertones",
+                                 "hair_style":  "Uncut, deliberately maintained wild cloud of tight curls; no styling beyond occasional finger-combing",
+                                 "hair_length":  "Long (shoulder-length when compressed)",
+                                 "eye_color":  "Dark brown, alert and constantly moving",
+                                 "skin_tone":  "Medium-deep warm brown with golden undertones, reflecting the balanced blend of Sub-Saharan African warmth, Middle Eastern richness, Northern European influence, and Hispanic/Latin American coloration; creates a luminous quality that shifts subtly across the face",
+                                 "complexion":  "Young face with prominent high cheekbones and strong facial structure; features show the synthesis of African prominence and Middle Eastern angularity balanced with Northern European and Latin American characteristics; gap-toothed grin is default expression; skin shows minor scrapes and calluses from tunnel work but generally healthy; no facial hair; warm undertone variation across face shifts subtly with light, creating dimension from the four-way ancestry blend",
+                                 "distinguishing_marks":  [
+                                                              "Geneware-modified ears: enlarged beyond baseline human proportion, with visible delicate ridge patterns beneath skin surface suggesting internal structural enhancement; ears capable of independent tilting and orientation; ear tissue slightly paler than surrounding skin where modification is most prominent",
+                                                              "Callused palms and fingertips from repeated wall-contact during echo mapping",
+                                                              "Small burn scar on left forearm (3cm) from contact with heated pipe during early tunnel work"
+                                                          ],
+                                 "visible_augmentations":  "Enlarged, orientable geneware ears with visible internal ridge structure; ears move independently and frequently during conversation and work. Wears a battered handheld voice-recorder on a frayed fabric cord around neck as constant tool/accessory.",
+                                 "posture_movement":  "Restless and kinetic; rarely still; frequently tilts head to angle ears toward sound sources; moves with a runner\u0027s efficiency through spaces; hands gesture expressively when talking; leans in close when listening intently; moves through environments with practiced familiarity suggesting deep spatial memory",
+                                 "clothing_style":  "Tier 5 practical wear: reinforced canvas utility pants with multiple pockets (some containing audio equipment); worn thermal underlayer; heavy canvas jacket with reflective patches; sturdy scuffed boots with good traction. Clothing shows regular wear and minor repairs but is well-maintained. Carries frequency analyzer and voice-recorder as constant accessories."
+                             },
+    "image_prompt":  "Eva Salazar-Khorasani, GLMZ, compact wiry figure 163cm tall with lean tunnel-runner muscle. Medium-deep warm brown skin with golden luminous undertones from Sub-Saharan African, Middle Eastern, Northern European, and Hispanic/Latin American ancestry blend. Young face with prominent high cheekbones, strong angular features, gap-toothed grin. Long dark brown hair with reddish undertones in wild shoulder-length tight curls. Dark brown alert eyes. Distinctive enlarged geneware-modified ears with visible internal ridge patterns, slightly paler tissue, tilted in active listening position. Small burn scar on left forearm. Restless kinetic posture, head tilted toward sound. Wearing reinforced canvas utility pants with multiple pockets, worn thermal underlayer, heavy canvas jacket with reflective patches, scuffed boots. Battered voice-recorder on frayed fabric cord around neck. Industrial tunnel setting with moody cyan and amber lighting, pipes and metal surfaces. Neo-noir urban aesthetic, realistic portraiture, candid moment of intense focus --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  27.7,
+                             "Middle Eastern":  24.3,
+                             "Northern European":  23.7,
+                             "Hispanic/Latin American":  21.2,
+                             "South Asian":  3.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  9.4,
+                                                                                 "Botswanan":  7.6
+                                                                             },
+                                                        "East African":  {
+                                                                             "Ethiopian":  5.9
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  4.8
+                                                                            }
+                                                    },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  24.3
+                                                               }
+                                               },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Swiss German":  18.6
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "English":  5.1
+                                                                        }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Venezuelan":  13.5,
+                                                                                   "Brazilian":  7.7
+                                                                               }
+                                                        },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  0.9,
+                                                                   "Tamil Sri Lankan":  0.8
+                                                               },
+                                                "Indian":  {
+                                                               "Marathi":  0.2
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Sindhi":  1.2
+                                                              }
+                                            }
+                        },
+    "tier":  "1"
 }

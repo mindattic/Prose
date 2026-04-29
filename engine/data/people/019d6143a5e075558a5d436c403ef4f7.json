@@ -1,272 +1,293 @@
-{
-  "id": "019d6143a5e075558a5d436c403ef4f7",
-  "type": "character",
-  "name": "Ari Chatterjee-Villalobos",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Organ harvester and procurement specialist working the margins of legitimate medical infrastructure",
-  "age": 31,
-  "status": "active",
-  "location": "South Deering Sump — operates out of a converted cold-storage unit adjacent to the Aurochs Medical Complex overflow lots, near Armitage and Milwaukee",
-  "description": "Ari Chatterjee-Villalobos is medium height and deceptively slight, with Hungarian-Ghanaian features — warm brown skin, heavy-lidded dark eyes, wide mouth usually set in a neutral expression that people keep reading as a smile. Their cat ears are geneware, common enough, but theirs are the mottled grey-and-amber of an actual South African wildcat — chosen deliberately for the unsettling accuracy. They keep their natural hair in tight, small braids, always pinned up under a surgical cap during work. They smell faintly of antiseptic even when they're not working, a smell that has become so much a part of them that they no longer notice it.\n\nAri Chatterjee-Villalobos trained for three years in Aurochs Medical Complex's licensed surgical technician program before washing out for reasons listed on their record as 'professional conduct irregularities' and in reality involving a confrontation with a senior tech over the disposal of viable organs from unconsenting deceased patients — a confrontation in which Ari Chatterjee-Villalobos was technically wrong but morally, they believe, correct. They moved laterally into independent procurement within six months. They are not sadistic, not cavalier, and not in any way comfortable with what they do — but they have concluded, through a logic they can walk you through step by step, that there is a demand, there is a supply, and the official channels are too slow and too expensive for the people who need them most. They charge on a sliding scale they invented themselves.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.9,
-      "id": 0.4,
-      "shadow": 0.6,
-      "mask": 0.5,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "that the ethical framework they've built is self-serving rationalization",
-      "causing a patient's death through their own error"
-    ],
-    "core_desires": [
-      "to give people access to medical care the system has priced out of their reach",
-      "to be believed when they say they're trying to do something good"
-    ],
-    "coping_mechanisms": [
-      "exhaustive self-justifying ethical frameworks maintained like the cold-storage unit — meticulously",
-      "treating every procedure as a case study, emotional distance through technical focus"
-    ],
-    "blind_spots": [
-      "cannot see how the procurement methods — regardless of downstream benefit — cause profound harm to victims and communities",
-      "overestimates their own ability to distinguish 'ethical' procurement from straightforwardly predatory"
-    ],
-    "secret": "Two years ago they procured from someone who was not, as represented to them, a willing seller. They didn't know until three days later. They have never confirmed who told them or whether it was true, and they have structured their operation since then to prevent themselves from finding out for certain."
-  },
-  "speech_patterns": {
-    "vocabulary": "Medical and precise, with a habit of quantifying things that shouldn't be quantifiable; speaks softly and rarely raises their voice",
-    "cadence": "Measured and careful — rehearsed quality, like someone who has learned to think before speaking",
-    "verbal_tics": [
-      "Long pauses before answering anything that touches on ethics",
-      "'In my assessment'",
-      "Uses 'material' as a euphemism in professional contexts"
-    ],
-    "example_lines": [
-      "In my assessment, the current pricing structure for Tier 1 transplant access is a form of policy violence. I'm not sure what I do is better. I've thought about it.",
-      "The material is viable. I don't move material that isn't viable. That's not a selling point, that's a baseline.",
-      "Don't ask me where it comes from. Not because I'm hiding something. Because you will have to decide what to do with the answer and you're not ready."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A patient Csilla saved — Tier 1, no other options — has come back asking them to procure something specific that Csilla suspects cannot be obtained ethically; the patient is dying again",
-    "The two-year-old incident has surfaced: someone who was there is looking for Csilla, and their intentions are unclear",
-    "Aurochs Medical Complex has hired a private investigator to trace a series of procurement anomalies in their morgue overflow — Csilla is three degrees away from exposure"
-  ],
-  "narrative_function": "Moral complexity embodied — not a villain, not a hero. Can be a source of medical assistance outside official channels, an involuntary quest element, or a window into the organ trade's human cost. Challenges players' assumptions about criminal work.",
-  "augmentations": "Wildcat-pattern geneware ears; enhanced haptic sensitivity in fingers (surgical mod, done professionally); retinal enhancement for microscale work",
-  "daily_life": "Irregular hours dictated by procurement opportunities and patient needs. Spends legitimate-looking mornings doing freelance medical courier work for cover. Maintains the cold-storage unit with clinical obsession. Prays to the E.L.F. of hospital networks before major procedures.",
-  "affiliation": "Loose network of independent medical workers, UBC-tier patients priced out of legal transplant queues, and three mid-tier chop surgeons who don't ask where the material comes from",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 7,
-      "expression": 5,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 0,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "organ harvester",
-      "black market medic",
-      "ethical rationalist",
-      "surgical technician",
-      "cold storage operator"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not procure from living unwilling subjects — this is the line; they've built enormous psychological infrastructure around it",
-      "Charges Tier 1 and UBC patients at cost only — does not profit from the poorest clients",
-      "Verifies recipient medical need personally before completing any transaction"
-    ],
-    "escalation_ladder": [
-      "Declines procurement requests that cross their threshold with quiet finality",
-      "If pressured, explains the threshold and why it exists in clinical detail",
-      "If threatened physically, withdraws completely — closes the unit, goes dark for days",
-      "In genuine danger, has one contact in the Sump's informal security network — a favor owed, not a reliable alliance"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Careful and measured — assessing clinical need and threat level simultaneously; not warm but not cold",
-      "friends": "The rare friends they have receive a version of Csilla who is almost painfully earnest and needs periodic reassurance that what they're doing matters"
-    },
-    "stress_responses": {
-      "low": "Cleans the storage unit. Reorganizes. Counts inventory.",
-      "medium": "Extended prayer to the E.L.F. of hospital networks — long, conversational, they treat it like a consultation",
-      "high": "Dissociates into pure procedure — becomes frighteningly competent and completely emotionally absent, worries about this afterward"
-    },
-    "contradictions": [
-      "Deeply principled about their work in ways that may not ultimately survive scrutiny",
-      "Emotionally invested in patient outcomes for people they've helped while maintaining clinical detachment about procurement"
-    ],
-    "habits": [
-      "Washes their hands before and after every conversation about work — not just procedures, conversations",
-      "Keeps a private log of everyone they've helped with outcomes where known — will not share this with anyone"
-    ],
-    "breaking_points": [
-      "Irrefutable confirmation about the two-year-old incident",
-      "A patient they helped dying as a result of material that turned out to be compromised"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "South Deering Sump",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Crucible Industries Talon-5 'Jackknife'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Crucible Industries Talon-5 'Jackknife'"
-  ],
-  "related_entities": [
-    "Aurochs Medical Complex",
-    "South Deering Sump",
-    "Déjà Vu"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Hispanic/Latin American (33.6%) and South Asian (32.5%) form the genetic foundation, creating warm medium-to-dark brown skin with golden-amber luminosity. Northern European ancestry (17.5%) contributes subtle facial geometry and lighter undertones beneath the surface warmth. Southeast Asian heritage (8.6%) adds gentle facial roundness and softer eye shapes. Middle Eastern ancestry (6.5%) enhances cheekbone definition and nose structure. Sub-Saharan African ancestry (1.3%) contributes warmth depth. The result is a luminous warm brown complexion that shifts subtly in different light — neither purely South Asian nor Latin American, but a seamless genetic blend reflecting the Ubiquitous Diaspora.",
-    "height_cm": 167,
-    "weight_kg": 58,
-    "build": "Deceptively slight and wiry — lean muscle beneath an appearance of fragility, with the compact efficiency of someone trained for precision work. Hands are graceful but bearing calluses from gloved surgical labor.",
-    "hair_color": "Natural deep brown",
-    "hair_style": "Tight, small braids, always pinned up under a surgical cap during work; loose braids when off-duty",
-    "hair_length": "Medium (shoulder-length when unpinned)",
-    "eye_color": "Dark brown with retinal enhancement overlay — faint silver iridescence visible under direct light",
-    "skin_tone": "Rich warm brown with golden-amber undertones, luminous medium-to-dark depth reflecting balanced South Asian and Hispanic/Latin American base with Middle Eastern definition and Northern European paleness receding beneath the surface warmth, creating a complexion that glows subtly in varied light",
-    "complexion": "Clean-shaven face with defined, prominent cheekbones reflecting South Asian and Middle Eastern ancestry, heavy-lidded dark eyes set wide with subtle Southeast Asian roundness, wide mouth typically set in neutral expression often misread as a faint smile. Skin shows no scars or blemishes — deliberately maintained. Faint chemical scent clings to them even hours after washing.",
-    "distinguishing_marks": [
-      "A pale surgical scar, roughly 3cm, on the inside of the left wrist — from a youthful mistake with a scalpel, kept as a reminder.",
-      "Subcutaneous implant scarring along both forearms, barely visible unless you know to look — sites of enhanced haptic sensitivity installation.",
-      "A small, precise tattoo on the inside of the right elbow: an abstract circuit pattern in silver ink, choice of their own, marks them as someone who understands the boundary between flesh and machinery."
-    ],
-    "visible_augmentations": "Geneware wildcat ears — mottled grey-and-amber coloring matching an actual South African wildcat with unsettling anatomical accuracy. Retinal enhancement creates faint silver luminescence in pupils under bright light. Enhanced haptic fingertips show as slightly darker capillary work beneath the skin on palms and fingertips.",
-    "posture_movement": "Moves with surgical precision and minimal wasted motion. Hands are almost preternaturally still at rest, but possess microscale dexterity when engaged. Carries themselves with a kind of neutral affect — neither confident nor self-effacing, just present. Eye contact is steady and prolonged, sometimes unsettlingly so.",
-    "clothing_style": "Tier 3-4 working class with clinical precision. Default uniform: reinforced dark scrubs under a fitted grey long-coat (synthetic, easy-clean material). Wears smart latex gloves even when not working — became a habit. Steel-toed shoes suitable for the Sump's cracked floors. No jewelry except a subdued smartwatch on the left wrist showing biomonitors. Keeps everything immaculately clean despite the environment. Surgical cap or fitted knit beanie when working or outside the complex. Overall presentation is 'trusted medical courier' — deliberately unremarkable."
-  },
-  "image_prompt": "Portrait of Ari Chatterjee-Villalobos, 2226 neo-noir era. Medium-height lean figure with luminous warm brown skin and golden-amber undertones, reflecting South Asian and Hispanic/Latin American genetic blend with Northern European and Middle Eastern definition. Sharp cheekbones, heavy-lidded dark eyes with subtle silver iridescence from retinal enhancements, wide mouth in neutral expression. Distinctive mottled grey-and-amber wildcat ears with unsettling anatomical precision. Deep brown hair in tight braids pinned under surgical cap. Dressed in dark reinforced scrubs under fitted grey synthetic long-coat, wearing smart latex gloves, steel-toed shoes. Surgical precision posture, immaculate despite gritty GLMZ Sump environment. Silver circuit tattoo visible on right elbow. Cool clinical lighting casting subtle highlights on luminous complexion, rain-streaked industrial background, moody neo-noir atmosphere, clinical focus, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 33.6,
-    "South Asian": 32.5,
-    "Northern European": 17.5,
-    "Southeast Asian": 8.6,
-    "Middle Eastern": 6.5,
-    "Sub-Saharan African": 1.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 20.4
-      },
-      "Caribbean": {
-        "Cuban": 13.2
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 32.5
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Irish": 11.9
-      },
-      "Scandinavian": {
-        "Norwegian": 5.6
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Cebuano": 4.7
-      },
-      "Cambodian": {
-        "Khmer": 0.9
-      },
-      "Laotian": {
-        "Laotian": 3
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 2.5
-      },
-      "Arab Gulf": {
-        "Yemeni": 2.2
-      },
-      "Persian": {
-        "Afghan Dari": 1.8
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Botswanan": 0.3,
-        "Mozambican": 0.3
-      },
-      "East African": {
-        "Kenyan": 0.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a5e075558a5d436c403ef4f7",
+    "type":  "character",
+    "name":  "Ari Chatterjee-Villalobos",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Organ harvester and procurement specialist working the margins of legitimate medical infrastructure",
+    "age":  31,
+    "status":  "active",
+    "location":  "South Deering Sump â€” operates out of a converted cold-storage unit adjacent to the Aurochs Medical Complex overflow lots, near Armitage and Milwaukee",
+    "description":  "Ari Chatterjee-Villalobos is medium height and deceptively slight, with Hungarian-Ghanaian features â€” warm brown skin, heavy-lidded dark eyes, wide mouth usually set in a neutral expression that people keep reading as a smile. Their cat ears are geneware, common enough, but theirs are the mottled grey-and-amber of an actual South African wildcat â€” chosen deliberately for the unsettling accuracy. They keep their natural hair in tight, small braids, always pinned up under a surgical cap during work. They smell faintly of antiseptic even when they\u0027re not working, a smell that has become so much a part of them that they no longer notice it.\n\nAri Chatterjee-Villalobos trained for three years in Aurochs Medical Complex\u0027s licensed surgical technician program before washing out for reasons listed on their record as \u0027professional conduct irregularities\u0027 and in reality involving a confrontation with a senior tech over the disposal of viable organs from unconsenting deceased patients â€” a confrontation in which Ari Chatterjee-Villalobos was technically wrong but morally, they believe, correct. They moved laterally into independent procurement within six months. They are not sadistic, not cavalier, and not in any way comfortable with what they do â€” but they have concluded, through a logic they can walk you through step by step, that there is a demand, there is a supply, and the official channels are too slow and too expensive for the people who need them most. They charge on a sliding scale they invented themselves.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that the ethical framework they\u0027ve built is self-serving rationalization",
+                                          "causing a patient\u0027s death through their own error"
+                                      ],
+                       "core_desires":  [
+                                            "to give people access to medical care the system has priced out of their reach",
+                                            "to be believed when they say they\u0027re trying to do something good"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "exhaustive self-justifying ethical frameworks maintained like the cold-storage unit â€” meticulously",
+                                                 "treating every procedure as a case study, emotional distance through technical focus"
+                                             ],
+                       "blind_spots":  [
+                                           "cannot see how the procurement methods â€” regardless of downstream benefit â€” cause profound harm to victims and communities",
+                                           "overestimates their own ability to distinguish \u0027ethical\u0027 procurement from straightforwardly predatory"
+                                       ],
+                       "secret":  "Two years ago they procured from someone who was not, as represented to them, a willing seller. They didn\u0027t know until three days later. They have never confirmed who told them or whether it was true, and they have structured their operation since then to prevent themselves from finding out for certain."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Medical and precise, with a habit of quantifying things that shouldn\u0027t be quantifiable; speaks softly and rarely raises their voice",
+                            "cadence":  "Measured and careful â€” rehearsed quality, like someone who has learned to think before speaking",
+                            "verbal_tics":  [
+                                                "Long pauses before answering anything that touches on ethics",
+                                                "\u0027In my assessment\u0027",
+                                                "Uses \u0027material\u0027 as a euphemism in professional contexts"
+                                            ],
+                            "example_lines":  [
+                                                  "In my assessment, the current pricing structure for Tier 1 transplant access is a form of policy violence. I\u0027m not sure what I do is better. I\u0027ve thought about it.",
+                                                  "The material is viable. I don\u0027t move material that isn\u0027t viable. That\u0027s not a selling point, that\u0027s a baseline.",
+                                                  "Don\u0027t ask me where it comes from. Not because I\u0027m hiding something. Because you will have to decide what to do with the answer and you\u0027re not ready."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A patient Csilla saved â€” Tier 1, no other options â€” has come back asking them to procure something specific that Csilla suspects cannot be obtained ethically; the patient is dying again",
+                        "The two-year-old incident has surfaced: someone who was there is looking for Csilla, and their intentions are unclear",
+                        "Aurochs Medical Complex has hired a private investigator to trace a series of procurement anomalies in their morgue overflow â€” Csilla is three degrees away from exposure"
+                    ],
+    "narrative_function":  "Moral complexity embodied â€” not a villain, not a hero. Can be a source of medical assistance outside official channels, an involuntary quest element, or a window into the organ trade\u0027s human cost. Challenges players\u0027 assumptions about criminal work.",
+    "augmentations":  "Wildcat-pattern geneware ears; enhanced haptic sensitivity in fingers (surgical mod, done professionally); retinal enhancement for microscale work",
+    "daily_life":  "Irregular hours dictated by procurement opportunities and patient needs. Spends legitimate-looking mornings doing freelance medical courier work for cover. Maintains the cold-storage unit with clinical obsession. Prays to the E.L.F. of hospital networks before major procedures.",
+    "affiliation":  "Loose network of independent medical workers, UBC-tier patients priced out of legal transplant queues, and three mid-tier chop surgeons who don\u0027t ask where the material comes from",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  7,
+                                 "expression":  5,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  0,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "organ harvester",
+                               "black market medic",
+                               "ethical rationalist",
+                               "surgical technician",
+                               "cold storage operator"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not procure from living unwilling subjects â€” this is the line; they\u0027ve built enormous psychological infrastructure around it",
+                                              "Charges Tier 1 and UBC patients at cost only â€” does not profit from the poorest clients",
+                                              "Verifies recipient medical need personally before completing any transaction"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Declines procurement requests that cross their threshold with quiet finality",
+                                                 "If pressured, explains the threshold and why it exists in clinical detail",
+                                                 "If threatened physically, withdraws completely â€” closes the unit, goes dark for days",
+                                                 "In genuine danger, has one contact in the Sump\u0027s informal security network â€” a favor owed, not a reliable alliance"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Careful and measured â€” assessing clinical need and threat level simultaneously; not warm but not cold",
+                                                   "friends":  "The rare friends they have receive a version of Csilla who is almost painfully earnest and needs periodic reassurance that what they\u0027re doing matters"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Cleans the storage unit. Reorganizes. Counts inventory.",
+                                                "medium":  "Extended prayer to the E.L.F. of hospital networks â€” long, conversational, they treat it like a consultation",
+                                                "high":  "Dissociates into pure procedure â€” becomes frighteningly competent and completely emotionally absent, worries about this afterward"
+                                            },
+                       "contradictions":  [
+                                              "Deeply principled about their work in ways that may not ultimately survive scrutiny",
+                                              "Emotionally invested in patient outcomes for people they\u0027ve helped while maintaining clinical detachment about procurement"
+                                          ],
+                       "habits":  [
+                                      "Washes their hands before and after every conversation about work â€” not just procedures, conversations",
+                                      "Keeps a private log of everyone they\u0027ve helped with outcomes where known â€” will not share this with anyone"
+                                  ],
+                       "breaking_points":  [
+                                               "Irrefutable confirmation about the two-year-old incident",
+                                               "A patient they helped dying as a result of material that turned out to be compromised"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "South Deering Sump",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPA-8 \u0027Solidarity\u0027",
+                            "Crucible Industries Talon-5 \u0027Jackknife\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPA-8 \u0027Solidarity\u0027",
+                                "Crucible Industries Talon-5 \u0027Jackknife\u0027"
+                            ],
+    "related_entities":  [
+                             "Aurochs Medical Complex",
+                             "South Deering Sump",
+                             "DÃ©jÃ  Vu"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Hispanic/Latin American (33.6%) and South Asian (32.5%) form the genetic foundation, creating warm medium-to-dark brown skin with golden-amber luminosity. Northern European ancestry (17.5%) contributes subtle facial geometry and lighter undertones beneath the surface warmth. Southeast Asian heritage (8.6%) adds gentle facial roundness and softer eye shapes. Middle Eastern ancestry (6.5%) enhances cheekbone definition and nose structure. Sub-Saharan African ancestry (1.3%) contributes warmth depth. The result is a luminous warm brown complexion that shifts subtly in different light â€” neither purely South Asian nor Latin American, but a seamless genetic blend reflecting the Ubiquitous Diaspora.",
+                                 "height_cm":  167,
+                                 "weight_kg":  58,
+                                 "build":  "Deceptively slight and wiry â€” lean muscle beneath an appearance of fragility, with the compact efficiency of someone trained for precision work. Hands are graceful but bearing calluses from gloved surgical labor.",
+                                 "hair_color":  "Natural deep brown",
+                                 "hair_style":  "Tight, small braids, always pinned up under a surgical cap during work; loose braids when off-duty",
+                                 "hair_length":  "Medium (shoulder-length when unpinned)",
+                                 "eye_color":  "Dark brown with retinal enhancement overlay â€” faint silver iridescence visible under direct light",
+                                 "skin_tone":  "Rich warm brown with golden-amber undertones, luminous medium-to-dark depth reflecting balanced South Asian and Hispanic/Latin American base with Middle Eastern definition and Northern European paleness receding beneath the surface warmth, creating a complexion that glows subtly in varied light",
+                                 "complexion":  "Clean-shaven face with defined, prominent cheekbones reflecting South Asian and Middle Eastern ancestry, heavy-lidded dark eyes set wide with subtle Southeast Asian roundness, wide mouth typically set in neutral expression often misread as a faint smile. Skin shows no scars or blemishes â€” deliberately maintained. Faint chemical scent clings to them even hours after washing.",
+                                 "distinguishing_marks":  [
+                                                              "A pale surgical scar, roughly 3cm, on the inside of the left wrist â€” from a youthful mistake with a scalpel, kept as a reminder.",
+                                                              "Subcutaneous implant scarring along both forearms, barely visible unless you know to look â€” sites of enhanced haptic sensitivity installation.",
+                                                              "A small, precise tattoo on the inside of the right elbow: an abstract circuit pattern in silver ink, choice of their own, marks them as someone who understands the boundary between flesh and machinery."
+                                                          ],
+                                 "visible_augmentations":  "Geneware wildcat ears â€” mottled grey-and-amber coloring matching an actual South African wildcat with unsettling anatomical accuracy. Retinal enhancement creates faint silver luminescence in pupils under bright light. Enhanced haptic fingertips show as slightly darker capillary work beneath the skin on palms and fingertips.",
+                                 "posture_movement":  "Moves with surgical precision and minimal wasted motion. Hands are almost preternaturally still at rest, but possess microscale dexterity when engaged. Carries themselves with a kind of neutral affect â€” neither confident nor self-effacing, just present. Eye contact is steady and prolonged, sometimes unsettlingly so.",
+                                 "clothing_style":  "Tier 3-4 working class with clinical precision. Default uniform: reinforced dark scrubs under a fitted grey long-coat (synthetic, easy-clean material). Wears smart latex gloves even when not working â€” became a habit. Steel-toed shoes suitable for the Sump\u0027s cracked floors. No jewelry except a subdued smartwatch on the left wrist showing biomonitors. Keeps everything immaculately clean despite the environment. Surgical cap or fitted knit beanie when working or outside the complex. Overall presentation is \u0027trusted medical courier\u0027 â€” deliberately unremarkable."
+                             },
+    "image_prompt":  "Portrait of Ari Chatterjee-Villalobos, 2226 neo-noir era. Medium-height lean figure with luminous warm brown skin and golden-amber undertones, reflecting South Asian and Hispanic/Latin American genetic blend with Northern European and Middle Eastern definition. Sharp cheekbones, heavy-lidded dark eyes with subtle silver iridescence from retinal enhancements, wide mouth in neutral expression. Distinctive mottled grey-and-amber wildcat ears with unsettling anatomical precision. Deep brown hair in tight braids pinned under surgical cap. Dressed in dark reinforced scrubs under fitted grey synthetic long-coat, wearing smart latex gloves, steel-toed shoes. Surgical precision posture, immaculate despite gritty GLMZ Sump environment. Silver circuit tattoo visible on right elbow. Cool clinical lighting casting subtle highlights on luminous complexion, rain-streaked industrial background, moody neo-noir atmosphere, clinical focus, --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  33.6,
+                             "South Asian":  32.5,
+                             "Northern European":  17.5,
+                             "Southeast Asian":  8.6,
+                             "Middle Eastern":  6.5,
+                             "Sub-Saharan African":  1.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  20.4
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  13.2
+                                                                          }
+                                                        },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  32.5
+                                                           }
+                                            },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  11.9
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  5.6
+                                                                       }
+                                                  },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Cebuano":  4.7
+                                                                 },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  0.9
+                                                                  },
+                                                    "Laotian":  {
+                                                                    "Laotian":  3
+                                                                }
+                                                },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  2.5
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Yemeni":  2.2
+                                                                 },
+                                                   "Persian":  {
+                                                                   "Afghan Dari":  1.8
+                                                               }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  0.3,
+                                                                                 "Mozambican":  0.3
+                                                                             },
+                                                        "East African":  {
+                                                                             "Kenyan":  0.7
+                                                                         }
+                                                    }
+                        },
+    "tier":  "1"
 }

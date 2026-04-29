@@ -1,288 +1,309 @@
-{
-  "id": "019d6143a6db7f2f878128abef605d4a",
-  "type": "character",
-  "name": "Eefje Kristjánsson",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Organ harvester and unlicensed tissue broker operating out of Shallowgrave",
-  "age": 31,
-  "status": "active",
-  "location": "Shallowgrave — runs his operation from a basement unit below a legitimate nail salon called Copper Chrysalis on Render Street, near Kedzie and Division",
-  "description": "Eefje Kristjánsson is lean and slightly stooped, a body that learned to make itself smaller in rooms it didn't belong in. He has warm brown skin with pink undertones, close-cropped dark hair, and eyes that are medically wrong in a way it takes people a moment to identify — his left iris is a geneware violet, his right is original dark brown, and neither pupil dilates at the same rate. He wears clean, nondescript clothing at all times — his one professional conviction is that he never looks like what he is. His hands are his pride: steady, careful, the hands of someone who learned field surgery from pirated Helix Biosystems tutorials and three years of necessity.\n\nSorin is not comfortable with what he does, which makes him more dangerous than someone who is. He has constructed an elaborate ethical framework around his work — he takes from people who consent (usually), never from people who don't know (usually), and he has a sliding scale of payment that genuinely attempts to compensate donors fairly for the Shallowgrave market. He wants to believe he's closer to underground medicine than to predation. This framework cracks visibly when the money gets tight and the clients get impatient, and he knows it cracks, and that knowledge has settled into him as a chronic low-grade self-loathing he medicates with a mild stimulant he synthesizes himself.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.8,
-      "id": 0.4,
-      "shadow": 0.6,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That his ethical framework is a lie he tells himself and he's just a harvester",
-      "Making an error in procedure that kills someone on the table"
-    ],
-    "core_desires": [
-      "To be recognized — even secretly — as someone who helps people",
-      "To accumulate enough to buy a legitimate medical credential and stop"
-    ],
-    "coping_mechanisms": [
-      "Stimulant use (mild but escalating)",
-      "Obsessive procedural documentation — he writes up every operation as if filing a real medical report",
-      "Convincing himself each job is the last one before he pivots"
-    ],
-    "blind_spots": [
-      "He doesn't register how much financial pressure warps his consent standards — he's already crossed lines he doesn't admit to"
-    ],
-    "secret": "Six months ago he harvested a kidney from someone he was told was a willing paid donor. The person was not conscious during the conversation Sorin was shown. He has not told anyone and has not stopped working."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clinical terminology mixed with Shallowgrave vernacular — the code-switching is involuntary and tells you which mode he's in",
-    "cadence": "Measured when calm, fast and slightly clipped under stress, with a tendency to over-explain procedures in technical detail when he's anxious",
-    "verbal_tics": [
-      "'Technically speaking'",
-      "Trailing off mid-sentence when he's about to say something he's decided not to",
-      "Using 'the patient' instead of names or pronouns even in casual conversation"
-    ],
-    "example_lines": [
-      "'I can tell you the compatibility window on a renal unit is about four hours cold storage, technically speaking, which means the timeline you're describing is — I mean, it's possible. It's possible.'",
-      "'The patient presented with secondary complications. I managed them. That's what I do.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He's been given a tissue order he suspects is for someone who isn't medically eligible to receive it — meaning the intended recipient is not in a Helix Biosystems database, which means they're either off-grid or the order is for something else entirely",
-    "The nail salon upstairs has new management and the new owner wants to know what's in the basement — Sorin needs help handling this quietly"
-  ],
-  "narrative_function": "Morally complex service provider — characters who need black market medical work, organ acquisition, or tissue matching come through him. He's also a source of information about who in Shallowgrave is desperate, sick, or recently dead.",
-  "augmentations": "Surgical-grade haptic feedback in both hands — allows him to feel tissue resistance during procedures. Basic pain suppression implant. Cosmetic: the mismatched iris geneware is deliberate, though he tells different people different reasons for it.",
-  "daily_life": "He keeps clinic hours irregularly, by appointment only through an encrypted referral chain. Between procedures he studies pirated medical literature, maintains his equipment, and spends evenings at a noodle bar two blocks away where he is known as a quiet regular who tips well.",
-  "affiliation": "Loosely connected to a tissue broker network called the Sutured Hand — independent contractor status, not a full member",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 6,
-      "creativity": 7,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 7,
-      "expression": 5,
-      "integrity": 3
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -1,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "black market medic",
-      "ethical rationalizer",
-      "precise and capable",
-      "slow moral erosion",
-      "stimulant-dependent"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never operate without the correct equipment — improvisation is how people die",
-      "Keep records of every procedure, encrypted, with three backups",
-      "Never discuss one client with another"
-    ],
-    "escalation_ladder": [
-      "Decline politely and offer a referral",
-      "Decline firmly with no referral",
-      "Disappear from contact for 48 hours",
-      "Relocate the operation if the threat is physical"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Cautious and professionally warm — performs competent calm even when he doesn't feel it",
-      "friends": "Rare and intense — he has two people he considers real friends and would do almost anything for them"
-    },
-    "stress_responses": {
-      "low": "More technical language, more procedural documentation",
-      "medium": "Stimulant use increases, becomes very precise and slightly cold",
-      "high": "Shuts down emotionally, becomes purely functional — this is when he's most capable and most dangerous to himself"
-    },
-    "contradictions": [
-      "Genuinely cares about patient outcomes while operating in conditions that make good outcomes structurally unlikely",
-      "Keeps meticulous records of crimes as if documentation makes them legitimate"
-    ],
-    "habits": [
-      "Writes post-procedure reports every time regardless of circumstances",
-      "Eats at the same noodle bar every evening he isn't working",
-      "Checks his haptic calibration before bed — taps his fingertips against his palm in a specific pattern"
-    ],
-    "breaking_points": [
-      "Losing a patient on the table — it has happened once and he came close to stopping entirely",
-      "Being asked to take from an unwilling person in front of him rather than at distance"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Surgical haptic feedback array (bilateral hands, Helix Biosystems grade B)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Surgical haptic feedback array (bilateral hands, Helix Biosystems grade B)",
-      "replaces": ""
-    },
-    {
-      "name": "Pain suppression implant — subclavicular mount, third-party manufacture",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Pain suppression implant — subclavicular mount, third-party manufacture",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Shallowgrave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Helix Biosystems",
-    "Carrion Defense Works Field Surgical Kit FSK-6",
-    "Shallowgrave",
-    "Independent Micro-Grid Power Cooperative",
-    "The Meridian Core",
-    "Chimera-Null",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Copper",
-    "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
-    "The Pure Hand",
-    "Folakemi Boudiaf"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Dominant Southeast Asian ancestry (53.9%) with substantial Sub-Saharan African (20.4%), Eastern European (13.7%), and South Asian (12.0%) blending. Phenotype reflects this complex diaspora: warm medium-brown skin with golden-honey undertones, facial structure combining Southeast Asian orbital geometry and cheekbone prominence with Sub-Saharan African depth, warmth, and lip fullness, refined by Eastern European bone structure. High cheekbones, slightly broader nasal base, warm saturation across face creating distinctly layered diaspora features.",
-    "height_cm": 172,
-    "weight_kg": 62,
-    "build": "Lean and slightly concave through the chest, shoulders rolled forward in a habitual stoop that reads as either exhaustion or deliberate self-diminishment. Wiry forearms with visible vasculature from stimulant use. No excess fat. Moves like someone trained to occupy minimal space.",
-    "hair_color": "Natural dark brown, almost black",
-    "hair_style": "Close-cropped, precisely maintained, parted slightly to the left",
-    "hair_length": "Short",
-    "eye_color": "Mismatched: left iris is vivid geneware violet with metallic undertones; right iris is original dark brown. Neither pupil dilates at the same rate — a deliberate asymmetry that unsettles people on prolonged eye contact.",
-    "skin_tone": "Warm medium-brown with golden-honey undertones, deeper saturation from Sub-Saharan African heritage, refined cheekbone warmth creating complex undertone that shifts slightly in different light",
-    "complexion": "Clean-shaven, meticulous grooming. Skin is clear but shows mild stress-related flushing around the eyes. Fine lines around the mouth suggest chronic tension or frequent false smiles. Southeast Asian orbital geometry and pronounced cheekbones blended with Sub-Saharan African lip fullness and facial width, refined by Eastern European bone definition. No acne or visible dermatological neglect — operational security through appearance maintenance.",
-    "visible_augmentations": "None externally visible except iris geneware on left eye. Subcutaneous haptic feedback implants in palms and forearms (not visible). Internal pain suppression implant. Left iris geneware is visually obvious but plausibly cosmetic.",
-    "posture_movement": "Moves with unusual precision and economy — no wasted motion. Walks slightly hunched, as though moving through doorways he expects to be too narrow. When seated, his hands rest flat on the table or in his lap, utterly still. When he needs to focus, he tilts his head slightly, and his mismatched eyes track with unsettling independence. In professional contexts, his posture straightens and his movements become measured, almost ritualistic.",
-    "clothing_style": "Exclusively clean, nondescript clothing in muted tones — grays, blacks, dark blues, off-whites. Well-maintained but intentionally forgettable: unmarked synthetic fiber shirts, tailored trousers without distinctive branding, a long charcoal coat in cold months. Wears latex or nitrile gloves frequently, even outside clinical contexts. No jewelry except for a stainless steel watch with a blank face. Deliberate camouflage appearance.",
-    "distinguishing_marks": [
-      "Thin, precise scar tissue running along the inside of both wrists, barely visible unless directly examined — consistent with early career mistakes or self-inflicted reminders",
-      "Small burn mark on the back of his right hand, roughly 2cm diameter, pale against his warm brown skin tone — from a laboratory accident during stimulant synthesis",
-      "Faint tremor in his hands when holding them still, visible only under close observation"
-    ]
-  },
-  "image_prompt": "GLMZ, Eefje Kristjánsson — lean 172cm tall figure with warm medium-brown skin and golden-honey undertones, complex diaspora features blending Southeast Asian cheekbones with Sub-Saharan African depth and Eastern European bone structure. Mismatched eyes: vivid violet geneware left iris with metallic sheen, dark brown natural right iris. Short dark brown hair, precisely maintained. Clean-shaven with fine tension lines around mouth. Dressed in nondescript charcoal coat, dark synthetic fiber shirt, plain trousers, latex gloves. Slight forward stoop, hands held perfectly still. Standing in dim climate-controlled medical facility or industrial workspace, cool blue-green overhead lighting casting subtle shadows across his distinctive diaspora face. Faint tremor visible in gloved hands. Precise, unsettling posture. Professional and forgettable. Melancholic, precise atmosphere. Neo-noir dystopia, 2200s tech aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 53.9,
-    "Sub-Saharan African": 20.4,
-    "Eastern European": 13.7,
-    "South Asian": 12
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sumatran": 7.9,
-        "Javanese": 4.6
-      },
-      "Filipino": {
-        "Tagalog": 21.3,
-        "Cebuano": 1.7
-      },
-      "Vietnamese": {
-        "Vietnamese": 18.4
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 14.6,
-        "Angolan": 1.4
-      },
-      "East African": {
-        "Kenyan": 0.9,
-        "Ugandan": 1.4
-      },
-      "Southern African": {
-        "South African": 2.1
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 4.1,
-        "Ukrainian": 4.2
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 3.5,
-        "Romanian": 1.2
-      },
-      "Slavic South": {
-        "Bulgarian": 0.4,
-        "Serbian": 0.3
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 12
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6db7f2f878128abef605d4a",
+    "type":  "character",
+    "name":  "Eefje KristjÃ¡nsson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Organ harvester and unlicensed tissue broker operating out of Shallowgrave",
+    "age":  31,
+    "status":  "active",
+    "location":  "Shallowgrave â€” runs his operation from a basement unit below a legitimate nail salon called Copper Chrysalis on Render Street, near Kedzie and Division",
+    "description":  "Eefje KristjÃ¡nsson is lean and slightly stooped, a body that learned to make itself smaller in rooms it didn\u0027t belong in. He has warm brown skin with pink undertones, close-cropped dark hair, and eyes that are medically wrong in a way it takes people a moment to identify â€” his left iris is a geneware violet, his right is original dark brown, and neither pupil dilates at the same rate. He wears clean, nondescript clothing at all times â€” his one professional conviction is that he never looks like what he is. His hands are his pride: steady, careful, the hands of someone who learned field surgery from pirated Helix Biosystems tutorials and three years of necessity.\n\nSorin is not comfortable with what he does, which makes him more dangerous than someone who is. He has constructed an elaborate ethical framework around his work â€” he takes from people who consent (usually), never from people who don\u0027t know (usually), and he has a sliding scale of payment that genuinely attempts to compensate donors fairly for the Shallowgrave market. He wants to believe he\u0027s closer to underground medicine than to predation. This framework cracks visibly when the money gets tight and the clients get impatient, and he knows it cracks, and that knowledge has settled into him as a chronic low-grade self-loathing he medicates with a mild stimulant he synthesizes himself.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That his ethical framework is a lie he tells himself and he\u0027s just a harvester",
+                                          "Making an error in procedure that kills someone on the table"
+                                      ],
+                       "core_desires":  [
+                                            "To be recognized â€” even secretly â€” as someone who helps people",
+                                            "To accumulate enough to buy a legitimate medical credential and stop"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Stimulant use (mild but escalating)",
+                                                 "Obsessive procedural documentation â€” he writes up every operation as if filing a real medical report",
+                                                 "Convincing himself each job is the last one before he pivots"
+                                             ],
+                       "blind_spots":  [
+                                           "He doesn\u0027t register how much financial pressure warps his consent standards â€” he\u0027s already crossed lines he doesn\u0027t admit to"
+                                       ],
+                       "secret":  "Six months ago he harvested a kidney from someone he was told was a willing paid donor. The person was not conscious during the conversation Sorin was shown. He has not told anyone and has not stopped working."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clinical terminology mixed with Shallowgrave vernacular â€” the code-switching is involuntary and tells you which mode he\u0027s in",
+                            "cadence":  "Measured when calm, fast and slightly clipped under stress, with a tendency to over-explain procedures in technical detail when he\u0027s anxious",
+                            "verbal_tics":  [
+                                                "\u0027Technically speaking\u0027",
+                                                "Trailing off mid-sentence when he\u0027s about to say something he\u0027s decided not to",
+                                                "Using \u0027the patient\u0027 instead of names or pronouns even in casual conversation"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I can tell you the compatibility window on a renal unit is about four hours cold storage, technically speaking, which means the timeline you\u0027re describing is â€” I mean, it\u0027s possible. It\u0027s possible.\u0027",
+                                                  "\u0027The patient presented with secondary complications. I managed them. That\u0027s what I do.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He\u0027s been given a tissue order he suspects is for someone who isn\u0027t medically eligible to receive it â€” meaning the intended recipient is not in a Helix Biosystems database, which means they\u0027re either off-grid or the order is for something else entirely",
+                        "The nail salon upstairs has new management and the new owner wants to know what\u0027s in the basement â€” Sorin needs help handling this quietly"
+                    ],
+    "narrative_function":  "Morally complex service provider â€” characters who need black market medical work, organ acquisition, or tissue matching come through him. He\u0027s also a source of information about who in Shallowgrave is desperate, sick, or recently dead.",
+    "augmentations":  "Surgical-grade haptic feedback in both hands â€” allows him to feel tissue resistance during procedures. Basic pain suppression implant. Cosmetic: the mismatched iris geneware is deliberate, though he tells different people different reasons for it.",
+    "daily_life":  "He keeps clinic hours irregularly, by appointment only through an encrypted referral chain. Between procedures he studies pirated medical literature, maintains his equipment, and spends evenings at a noodle bar two blocks away where he is known as a quiet regular who tips well.",
+    "affiliation":  "Loosely connected to a tissue broker network called the Sutured Hand â€” independent contractor status, not a full member",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  6,
+                                 "creativity":  7,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  7,
+                                 "expression":  5,
+                                 "integrity":  3
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "black market medic",
+                               "ethical rationalizer",
+                               "precise and capable",
+                               "slow moral erosion",
+                               "stimulant-dependent"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never operate without the correct equipment â€” improvisation is how people die",
+                                              "Keep records of every procedure, encrypted, with three backups",
+                                              "Never discuss one client with another"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Decline politely and offer a referral",
+                                                 "Decline firmly with no referral",
+                                                 "Disappear from contact for 48 hours",
+                                                 "Relocate the operation if the threat is physical"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Cautious and professionally warm â€” performs competent calm even when he doesn\u0027t feel it",
+                                                   "friends":  "Rare and intense â€” he has two people he considers real friends and would do almost anything for them"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More technical language, more procedural documentation",
+                                                "medium":  "Stimulant use increases, becomes very precise and slightly cold",
+                                                "high":  "Shuts down emotionally, becomes purely functional â€” this is when he\u0027s most capable and most dangerous to himself"
+                                            },
+                       "contradictions":  [
+                                              "Genuinely cares about patient outcomes while operating in conditions that make good outcomes structurally unlikely",
+                                              "Keeps meticulous records of crimes as if documentation makes them legitimate"
+                                          ],
+                       "habits":  [
+                                      "Writes post-procedure reports every time regardless of circumstances",
+                                      "Eats at the same noodle bar every evening he isn\u0027t working",
+                                      "Checks his haptic calibration before bed â€” taps his fingertips against his palm in a specific pattern"
+                                  ],
+                       "breaking_points":  [
+                                               "Losing a patient on the table â€” it has happened once and he came close to stopping entirely",
+                                               "Being asked to take from an unwilling person in front of him rather than at distance"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Surgical haptic feedback array (bilateral hands, Helix Biosystems grade B)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Surgical haptic feedback array (bilateral hands, Helix Biosystems grade B)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Pain suppression implant â€” subclavicular mount, third-party manufacture",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Pain suppression implant â€” subclavicular mount, third-party manufacture",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Shallowgrave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Helix Biosystems",
+                             "Carrion Defense Works Field Surgical Kit FSK-6",
+                             "Shallowgrave",
+                             "Independent Micro-Grid Power Cooperative",
+                             "The Meridian Core",
+                             "Chimera-Null",
+                             "VitaCore FlowGuard Hemodynamic Regulator",
+                             "Copper",
+                             "Electrostatic Adipose Polarization Drone EAPD-2 \u0027Render\u0027",
+                             "The Pure Hand",
+                             "Folakemi Boudiaf"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Dominant Southeast Asian ancestry (53.9%) with substantial Sub-Saharan African (20.4%), Eastern European (13.7%), and South Asian (12.0%) blending. Phenotype reflects this complex diaspora: warm medium-brown skin with golden-honey undertones, facial structure combining Southeast Asian orbital geometry and cheekbone prominence with Sub-Saharan African depth, warmth, and lip fullness, refined by Eastern European bone structure. High cheekbones, slightly broader nasal base, warm saturation across face creating distinctly layered diaspora features.",
+                                 "height_cm":  172,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and slightly concave through the chest, shoulders rolled forward in a habitual stoop that reads as either exhaustion or deliberate self-diminishment. Wiry forearms with visible vasculature from stimulant use. No excess fat. Moves like someone trained to occupy minimal space.",
+                                 "hair_color":  "Natural dark brown, almost black",
+                                 "hair_style":  "Close-cropped, precisely maintained, parted slightly to the left",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Mismatched: left iris is vivid geneware violet with metallic undertones; right iris is original dark brown. Neither pupil dilates at the same rate â€” a deliberate asymmetry that unsettles people on prolonged eye contact.",
+                                 "skin_tone":  "Warm medium-brown with golden-honey undertones, deeper saturation from Sub-Saharan African heritage, refined cheekbone warmth creating complex undertone that shifts slightly in different light",
+                                 "complexion":  "Clean-shaven, meticulous grooming. Skin is clear but shows mild stress-related flushing around the eyes. Fine lines around the mouth suggest chronic tension or frequent false smiles. Southeast Asian orbital geometry and pronounced cheekbones blended with Sub-Saharan African lip fullness and facial width, refined by Eastern European bone definition. No acne or visible dermatological neglect â€” operational security through appearance maintenance.",
+                                 "visible_augmentations":  "None externally visible except iris geneware on left eye. Subcutaneous haptic feedback implants in palms and forearms (not visible). Internal pain suppression implant. Left iris geneware is visually obvious but plausibly cosmetic.",
+                                 "posture_movement":  "Moves with unusual precision and economy â€” no wasted motion. Walks slightly hunched, as though moving through doorways he expects to be too narrow. When seated, his hands rest flat on the table or in his lap, utterly still. When he needs to focus, he tilts his head slightly, and his mismatched eyes track with unsettling independence. In professional contexts, his posture straightens and his movements become measured, almost ritualistic.",
+                                 "clothing_style":  "Exclusively clean, nondescript clothing in muted tones â€” grays, blacks, dark blues, off-whites. Well-maintained but intentionally forgettable: unmarked synthetic fiber shirts, tailored trousers without distinctive branding, a long charcoal coat in cold months. Wears latex or nitrile gloves frequently, even outside clinical contexts. No jewelry except for a stainless steel watch with a blank face. Deliberate camouflage appearance.",
+                                 "distinguishing_marks":  [
+                                                              "Thin, precise scar tissue running along the inside of both wrists, barely visible unless directly examined â€” consistent with early career mistakes or self-inflicted reminders",
+                                                              "Small burn mark on the back of his right hand, roughly 2cm diameter, pale against his warm brown skin tone â€” from a laboratory accident during stimulant synthesis",
+                                                              "Faint tremor in his hands when holding them still, visible only under close observation"
+                                                          ]
+                             },
+    "image_prompt":  "GLMZ, Eefje KristjÃ¡nsson â€” lean 172cm tall figure with warm medium-brown skin and golden-honey undertones, complex diaspora features blending Southeast Asian cheekbones with Sub-Saharan African depth and Eastern European bone structure. Mismatched eyes: vivid violet geneware left iris with metallic sheen, dark brown natural right iris. Short dark brown hair, precisely maintained. Clean-shaven with fine tension lines around mouth. Dressed in nondescript charcoal coat, dark synthetic fiber shirt, plain trousers, latex gloves. Slight forward stoop, hands held perfectly still. Standing in dim climate-controlled medical facility or industrial workspace, cool blue-green overhead lighting casting subtle shadows across his distinctive diaspora face. Faint tremor visible in gloved hands. Precise, unsettling posture. Professional and forgettable. Melancholic, precise atmosphere. Neo-noir dystopia, 2200s tech aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  53.9,
+                             "Sub-Saharan African":  20.4,
+                             "Eastern European":  13.7,
+                             "South Asian":  12
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  7.9,
+                                                                       "Javanese":  4.6
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Tagalog":  21.3,
+                                                                     "Cebuano":  1.7
+                                                                 },
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  18.4
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  14.6,
+                                                                                "Angolan":  1.4
+                                                                            },
+                                                        "East African":  {
+                                                                             "Kenyan":  0.9,
+                                                                             "Ugandan":  1.4
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  2.1
+                                                                             }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  4.1,
+                                                                         "Ukrainian":  4.2
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  3.5,
+                                                                             "Romanian":  1.2
+                                                                         },
+                                                     "Slavic South":  {
+                                                                          "Bulgarian":  0.4,
+                                                                          "Serbian":  0.3
+                                                                      }
+                                                 },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  12
+                                                           }
+                                            }
+                        },
+    "tier":  "1"
 }

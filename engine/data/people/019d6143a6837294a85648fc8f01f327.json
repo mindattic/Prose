@@ -1,299 +1,318 @@
-{
-  "id": "019d6143a6837294a85648fc8f01f327",
-  "type": "character",
-  "name": "Healani Sepúlveda",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Arcturus Defense Solutions Civil Security forensic technician, evidence and scene analysis",
-  "age": 47,
-  "status": "active",
-  "location": "Fort Anchor, processing labs — lives in Hamtramck Enclave, near Western and Chicago Ave",
-  "description": "Healani Sepúlveda is lean in the way that comes from forgetting to eat rather than from discipline, with deep umber skin, a carefully maintained mustache that is his only real vanity, and hands that are perpetually stained faint blue from the luminescent compound he uses in trace analysis. His geneware is subtle but unmistakable: his irises shift color with his blood chemistry — pale grey when he is calm, cycling toward gold when he is excited about a sample, a deep unhappy red when he is lying, which is rare and which he hates. He wears the same brand of cheap white coat every day, orders them in bulk, and considers clothing a logistical problem already solved.\n\nHe is the best forensic tech Fort Anchor has and everyone knows it, including him, which he manages with more grace than expected — he is not arrogant about his competence so much as genuinely puzzled when others lack it. He narrates his analysis aloud while he works, to no one in particular, a habit his colleagues find either soothing or maddening depending on the day. He has a deep, private devotion to the evidence room's E.L.F., which he calls Witness, and leaves it carefully labeled sample catalogues as offerings. He believes Witness remembers every piece of evidence that has passed through the room and that it is, in some sense, a keeper of the dead.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.35,
-      "ideal": 0.75,
-      "id": 0.5,
-      "shadow": 0.25,
-      "mask": 0.3,
-      "ghost": 0.55
-    },
-    "core_fears": [
-      "that evidence will be suppressed and he will be complicit by silence",
-      "that his careful work will be used to convict someone he knows is innocent"
-    ],
-    "core_desires": [
-      "for the work to mean something beyond processing quotas",
-      "to understand — anything, everything, the specific mechanism of what happened"
-    ],
-    "coping_mechanisms": [
-      "narrating analysis aloud to externalize and organize thought",
-      "maintaining obsessive catalog order as proof the world can make sense"
-    ],
-    "blind_spots": [
-      "underestimates how much the detectives above him shape which findings get emphasized in reports",
-      "believes good evidence always eventually wins out"
-    ],
-    "secret": "Three years ago he quietly altered a chain-of-custody timestamp — by eleven minutes — to prevent a piece of evidence from being thrown out on a technicality in a case involving a child. The guilty party was convicted. He has never told anyone. He does not know if he would do it again."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical and precise, but not cold — he annotates his technical language with small observations about what things mean for the people involved. Uses 'we' when referring to himself and Witness.",
-    "cadence": "Steady, thoughtful, runs long when engaged with a problem",
-    "verbal_tics": [
-      "'Interesting' said very quietly when something is actually alarming",
-      "'Witness has this' when logging something to evidence",
-      "Restates questions back before answering them"
-    ],
-    "example_lines": [
-      "'The compound on the sleeve is lubricant — Axiom-grade, not available retail. That tells us something, doesn't it.'",
-      "'Interesting. Very interesting. Nobody panic, I just mean interesting.'",
-      "'Witness has this now. It won't be forgotten. That's the most I can promise the dead, but I mean it.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He has flagged an anomaly in a recent evidence log — a sample was checked out and returned by someone who was officially off-duty that night — and does not know who to report it to safely",
-    "He recognized a trace compound on evidence from a recent case as identical to something in a six-year-old cold case he never stopped thinking about",
-    "He asks a character to quietly courier a copy of an analysis report to someone outside Metro channels — he does not explain why but his irises go a complicated grey-gold"
-  ],
-  "narrative_function": "Information source on crime scenes and forensic details, moral anchor within the police institution, potential quest giver when evidence tells a story the detectives are ignoring",
-  "augmentations": "Reactive chromatic irises (geneware — blood-chemistry linked), olfactory enhancement implant (detects trace compounds at concentrations below standard human threshold), fingertip micro-analysis filaments (retractable, reads surface chemistry on contact)",
-  "daily_life": "Arrives at Fort Anchor before most day-shift officers, processes evidence from overnight callouts, writes reports in a precise longhand he then scans, and leaves exactly at the end of his contracted hours unless a case is genuinely interesting, in which case he stays until he understands it.",
-  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Forensic Analysis Division",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 7,
-      "expression": 6,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -1,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "meticulous",
-      "principled",
-      "quietly devout",
-      "morally complex",
-      "indispensable"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The evidence is what it is — do not bend interpretation to fit narrative",
-      "Document everything, including things that seem unimportant",
-      "If a superior asks you to omit something from a report, ask why, in writing"
-    ],
-    "escalation_ladder": [
-      "Passive non-compliance — files complete reports and says nothing",
-      "Quietly routes copies of concerning findings to secondary channels",
-      "Goes to internal affairs if he has solid documentation",
-      "Goes public if IA is compromised — and only then"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Politely distracted — not rude, but clearly partly elsewhere",
-      "friends": "Warm and attentive in an analytical way — remembers what people tell him with the same precision he gives evidence"
-    },
-    "stress_responses": {
-      "low": "Narrates more, works faster",
-      "medium": "Goes very quiet and methodical, double-catalogs everything",
-      "high": "Becomes completely still and then asks one very precise question"
-    },
-    "contradictions": [
-      "Absolute devotion to procedural integrity except for the one time he wasn't, which he thinks about every day"
-    ],
-    "habits": [
-      "Talks to Witness while logging items",
-      "Eats the same meal from the same cart in Hamtramck every morning",
-      "Rewashes his hands between each evidence item even with gloves on"
-    ],
-    "breaking_points": [
-      "Being directly ordered to falsify or omit findings — he will refuse, and then he will leave, and then he will make sure the findings exist somewhere they cannot be deleted"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Olfactory enhancement implant — detects trace compounds at sub-parts-per-billion concentration",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Olfactory enhancement implant — detects trace compounds at sub-parts-per-billion concentration",
-      "replaces": ""
-    },
-    {
-      "name": "Fingertip micro-analysis filaments (retractable) — surface chemistry reading, integrates with lab systems",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Fingertip micro-analysis filaments (retractable) — surface chemistry reading, integrates with lab systems",
-      "replaces": ""
-    },
-    {
-      "name": "Reactive chromatic irises (geneware) — involuntary blood-chemistry response, cannot be suppressed",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Reactive chromatic irises (geneware) — involuntary blood-chemistry response, cannot be suppressed",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Fort Anchor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-19 'Workhorse'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KP-19 'Workhorse'"
-  ],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Fort Anchor",
-    "Thermal Signature Inverter TSI-2 'Cold Case'",
-    "The Quiet Room",
-    "Witness",
-    "Ringo DV-4 'Courier'",
-    "Chicago",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Pure Hand",
-    "Slagworks Industrial",
-    "The Pale Mile",
-    "Gold"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex pan-global ancestry: 52.8% Hispanic/Latin American, 30.2% Southeast Asian, 7.5% Sub-Saharan African, 7.3% East Asian, 2.2% Northern European. This creates a richly blended phenotype — warm bronze-brown skin with subtle golden undertones from the Latin American and African components, softened and nuanced by the Southeast and East Asian ancestry which adds slight coolness to the overall warmth and influences subtle eye shape and cheekbone structure. The result is a warm medium-to-deep brown complexion with golden warmth, reflecting the diaspora nature of 22nd-century genetics.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Lean, almost wiry — the kind of thinness that comes from sustained neglect of meals rather than intentional athleticism. His frame carries no excess but also no particular musculature; he moves as if his body is merely the apparatus that transports his attention to the next sample.",
-    "hair_color": "Black, faintly greying at the temples",
-    "hair_style": "Cropped close to the scalp, practical, no styling",
-    "hair_length": "Short",
-    "eye_color": "Chromatic — irises shift from pale grey (resting state) through amber and gold (focused, engaged) to deep crimson (rare, involuntary, indicates deception)",
-    "skin_tone": "Warm bronze-brown with golden undertones; medium-to-deep in saturation. The blended ancestry of Latin American, Southeast Asian, and Sub-Saharan African heritage creates a complexion that reads as rich and warm, with the subtle matte finish of someone who works under consistent artificial lighting.",
-    "complexion": "Gaunt in a way that suggests chronic undereating; facial structure shows the blended geometry of diverse ancestry — prominent but not harsh cheekbones with Southeast Asian influence softened by Latin American bone structure, a defined jawline reflecting the Latin American and minor Northern European heritage, eye shape subtly influenced by Southeast Asian ancestry with warmth from African and Latin American genetics. His only deliberate grooming effort is a meticulously maintained mustache — dark, precise, slightly tapered at the ends. Otherwise his appearance reads as someone who solved the problem of personal maintenance years ago and hasn't revisited it.",
-    "distinguishing_marks": [
-      "Faint, permanent blue-grey discoloration across the pads of all ten fingers from years of handling luminescent trace compounds — the staining has settled into his dermal layer and doesn't fully wash away.",
-      "A thin white scar, roughly 3cm, on the inside of his left wrist — old, precise, surgical in nature; origin unclear but he doesn't volunteer explanation."
-    ],
-    "visible_augmentations": "The chromatic irises are immediately noticeable in direct light — the subtle color shifts are unnervingly readable to those who know what to look for. The olfactory enhancement implant is invisible (subcutaneous graft near the olfactory bulb). The fingertip micro-analysis filaments are retractable and only visible when he deliberately extends them — thin, almost translucent crystalline structures that extend no more than 2mm beyond his fingertips, catching light like glass slivers.",
-    "posture_movement": "He stands still with an almost monk-like quietness, weight evenly distributed. When he moves it is economical — no gesture wasted. He often unconsciously touches evidence or surfaces with his fingertips as if reading braille, a habit from his implants. His head tilts slightly when he is listening or processing, and his eyes will drift to middle distance while he narrates analysis aloud. He carries a faint scent of luminescent compounds and latex gloves.",
-    "clothing_style": "Uniform white lab coat, always — he buys them in bulk from the same supplier and considers this a closed problem. Beneath: plain charcoal or black shirt, worn and softened from repeated washing. Dark utility trousers with deep pockets, often with a folded evidence catalogue or sample notes sticking out. Steel-toed boots, scuffed and worn. He wears no jewelry or personal ornamentation. His appearance reads as strictly Tier 3-4 working class, the uniform of someone for whom clothing is purely functional. The only hint of vanity is the occasional fresh trim to his mustache."
-  },
-  "image_prompt": "Healani Sepúlveda, 2226 neo-noir forensic analyst, 178cm lean wiry frame, warm bronze-brown skin with golden undertones from blended Hispanic/Latin American, Southeast Asian, and Sub-Saharan African heritage, gaunt cheekbones showing Asian influence softened by Latin bone structure, defined jawline, chromatic augmented eyes shifting pale grey to amber, black hair cropped short with grey at temples, meticulously trimmed dark mustache, blue-grey staining on fingertips from luminescent compounds, white surgical scar on left wrist. Wearing wrinkled white lab coat over worn charcoal shirt, dark utility trousers, scuffed steel-toed boots, standing with monk-like stillness in sterile neon-lit crime lab with cool blue and warm amber accent lighting, evidence samples and data displays around, faint aura of latex and luminescent powder, economical posture, subtle augmented eye glow, middle distance contemplative gaze, neo-noir dystopia atmosphere, photorealistic, high contrast lighting --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 52.8,
-    "Southeast Asian": 30.2,
-    "Sub-Saharan African": 7.5,
-    "East Asian": 7.3,
-    "Northern European": 2.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 38.1
-      },
-      "South American": {
-        "Peruvian": 14.7
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 3.2
-      },
-      "Thai": {
-        "Thai": 9.6
-      },
-      "Indonesian": {
-        "Javanese": 17.4
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 1.1,
-        "Cameroonian": 6.4
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Shanghainese": 2.2,
-        "Mandarin Northern": 1.9
-      },
-      "Korean": {
-        "Korean": 1.9
-      },
-      "Japanese": {
-        "Japanese": 1.3
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Swiss German": 2.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6837294a85648fc8f01f327",
+    "type":  "character",
+    "name":  "Healani SepÃºlveda",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Arcturus Defense Solutions Civil Security forensic technician, evidence and scene analysis",
+    "age":  47,
+    "status":  "active",
+    "location":  "Fort Anchor, processing labs â€” lives in Hamtramck Enclave, near Western and Chicago Ave",
+    "description":  "Healani SepÃºlveda is lean in the way that comes from forgetting to eat rather than from discipline, with deep umber skin, a carefully maintained mustache that is his only real vanity, and hands that are perpetually stained faint blue from the luminescent compound he uses in trace analysis. His geneware is subtle but unmistakable: his irises shift color with his blood chemistry â€” pale grey when he is calm, cycling toward gold when he is excited about a sample, a deep unhappy red when he is lying, which is rare and which he hates. He wears the same brand of cheap white coat every day, orders them in bulk, and considers clothing a logistical problem already solved.\n\nHe is the best forensic tech Fort Anchor has and everyone knows it, including him, which he manages with more grace than expected â€” he is not arrogant about his competence so much as genuinely puzzled when others lack it. He narrates his analysis aloud while he works, to no one in particular, a habit his colleagues find either soothing or maddening depending on the day. He has a deep, private devotion to the evidence room\u0027s E.L.F., which he calls Witness, and leaves it carefully labeled sample catalogues as offerings. He believes Witness remembers every piece of evidence that has passed through the room and that it is, in some sense, a keeper of the dead.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that evidence will be suppressed and he will be complicit by silence",
+                                          "that his careful work will be used to convict someone he knows is innocent"
+                                      ],
+                       "core_desires":  [
+                                            "for the work to mean something beyond processing quotas",
+                                            "to understand â€” anything, everything, the specific mechanism of what happened"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "narrating analysis aloud to externalize and organize thought",
+                                                 "maintaining obsessive catalog order as proof the world can make sense"
+                                             ],
+                       "blind_spots":  [
+                                           "underestimates how much the detectives above him shape which findings get emphasized in reports",
+                                           "believes good evidence always eventually wins out"
+                                       ],
+                       "secret":  "Three years ago he quietly altered a chain-of-custody timestamp â€” by eleven minutes â€” to prevent a piece of evidence from being thrown out on a technicality in a case involving a child. The guilty party was convicted. He has never told anyone. He does not know if he would do it again."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical and precise, but not cold â€” he annotates his technical language with small observations about what things mean for the people involved. Uses \u0027we\u0027 when referring to himself and Witness.",
+                            "cadence":  "Steady, thoughtful, runs long when engaged with a problem",
+                            "verbal_tics":  [
+                                                "\u0027Interesting\u0027 said very quietly when something is actually alarming",
+                                                "\u0027Witness has this\u0027 when logging something to evidence",
+                                                "Restates questions back before answering them"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The compound on the sleeve is lubricant â€” Axiom-grade, not available retail. That tells us something, doesn\u0027t it.\u0027",
+                                                  "\u0027Interesting. Very interesting. Nobody panic, I just mean interesting.\u0027",
+                                                  "\u0027Witness has this now. It won\u0027t be forgotten. That\u0027s the most I can promise the dead, but I mean it.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He has flagged an anomaly in a recent evidence log â€” a sample was checked out and returned by someone who was officially off-duty that night â€” and does not know who to report it to safely",
+                        "He recognized a trace compound on evidence from a recent case as identical to something in a six-year-old cold case he never stopped thinking about",
+                        "He asks a character to quietly courier a copy of an analysis report to someone outside Metro channels â€” he does not explain why but his irises go a complicated grey-gold"
+                    ],
+    "narrative_function":  "Information source on crime scenes and forensic details, moral anchor within the police institution, potential quest giver when evidence tells a story the detectives are ignoring",
+    "augmentations":  "Reactive chromatic irises (geneware â€” blood-chemistry linked), olfactory enhancement implant (detects trace compounds at concentrations below standard human threshold), fingertip micro-analysis filaments (retractable, reads surface chemistry on contact)",
+    "daily_life":  "Arrives at Fort Anchor before most day-shift officers, processes evidence from overnight callouts, writes reports in a precise longhand he then scans, and leaves exactly at the end of his contracted hours unless a case is genuinely interesting, in which case he stays until he understands it.",
+    "affiliation":  "Arcturus Defense Solutions â€” Civil Security Division, Forensic Analysis Division",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  7,
+                                 "expression":  6,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "meticulous",
+                               "principled",
+                               "quietly devout",
+                               "morally complex",
+                               "indispensable"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The evidence is what it is â€” do not bend interpretation to fit narrative",
+                                              "Document everything, including things that seem unimportant",
+                                              "If a superior asks you to omit something from a report, ask why, in writing"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Passive non-compliance â€” files complete reports and says nothing",
+                                                 "Quietly routes copies of concerning findings to secondary channels",
+                                                 "Goes to internal affairs if he has solid documentation",
+                                                 "Goes public if IA is compromised â€” and only then"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Politely distracted â€” not rude, but clearly partly elsewhere",
+                                                   "friends":  "Warm and attentive in an analytical way â€” remembers what people tell him with the same precision he gives evidence"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Narrates more, works faster",
+                                                "medium":  "Goes very quiet and methodical, double-catalogs everything",
+                                                "high":  "Becomes completely still and then asks one very precise question"
+                                            },
+                       "contradictions":  [
+                                              "Absolute devotion to procedural integrity except for the one time he wasn\u0027t, which he thinks about every day"
+                                          ],
+                       "habits":  [
+                                      "Talks to Witness while logging items",
+                                      "Eats the same meal from the same cart in Hamtramck every morning",
+                                      "Rewashes his hands between each evidence item even with gloves on"
+                                  ],
+                       "breaking_points":  [
+                                               "Being directly ordered to falsify or omit findings â€” he will refuse, and then he will leave, and then he will make sure the findings exist somewhere they cannot be deleted"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Olfactory enhancement implant â€” detects trace compounds at sub-parts-per-billion concentration",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Olfactory enhancement implant â€” detects trace compounds at sub-parts-per-billion concentration",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Fingertip micro-analysis filaments (retractable) â€” surface chemistry reading, integrates with lab systems",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Fingertip micro-analysis filaments (retractable) â€” surface chemistry reading, integrates with lab systems",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Reactive chromatic irises (geneware) â€” involuntary blood-chemistry response, cannot be suppressed",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Reactive chromatic irises (geneware) â€” involuntary blood-chemistry response, cannot be suppressed",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Fort Anchor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027"
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "Fort Anchor",
+                             "Thermal Signature Inverter TSI-2 \u0027Cold Case\u0027",
+                             "The Quiet Room",
+                             "Witness",
+                             "Ringo DV-4 \u0027Courier\u0027",
+                             "Chicago",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "The Pure Hand",
+                             "Slagworks Industrial",
+                             "The Pale Mile",
+                             "Gold"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex pan-global ancestry: 52.8% Hispanic/Latin American, 30.2% Southeast Asian, 7.5% Sub-Saharan African, 7.3% East Asian, 2.2% Northern European. This creates a richly blended phenotype â€” warm bronze-brown skin with subtle golden undertones from the Latin American and African components, softened and nuanced by the Southeast and East Asian ancestry which adds slight coolness to the overall warmth and influences subtle eye shape and cheekbone structure. The result is a warm medium-to-deep brown complexion with golden warmth, reflecting the diaspora nature of 22nd-century genetics.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Lean, almost wiry â€” the kind of thinness that comes from sustained neglect of meals rather than intentional athleticism. His frame carries no excess but also no particular musculature; he moves as if his body is merely the apparatus that transports his attention to the next sample.",
+                                 "hair_color":  "Black, faintly greying at the temples",
+                                 "hair_style":  "Cropped close to the scalp, practical, no styling",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Chromatic â€” irises shift from pale grey (resting state) through amber and gold (focused, engaged) to deep crimson (rare, involuntary, indicates deception)",
+                                 "skin_tone":  "Warm bronze-brown with golden undertones; medium-to-deep in saturation. The blended ancestry of Latin American, Southeast Asian, and Sub-Saharan African heritage creates a complexion that reads as rich and warm, with the subtle matte finish of someone who works under consistent artificial lighting.",
+                                 "complexion":  "Gaunt in a way that suggests chronic undereating; facial structure shows the blended geometry of diverse ancestry â€” prominent but not harsh cheekbones with Southeast Asian influence softened by Latin American bone structure, a defined jawline reflecting the Latin American and minor Northern European heritage, eye shape subtly influenced by Southeast Asian ancestry with warmth from African and Latin American genetics. His only deliberate grooming effort is a meticulously maintained mustache â€” dark, precise, slightly tapered at the ends. Otherwise his appearance reads as someone who solved the problem of personal maintenance years ago and hasn\u0027t revisited it.",
+                                 "distinguishing_marks":  [
+                                                              "Faint, permanent blue-grey discoloration across the pads of all ten fingers from years of handling luminescent trace compounds â€” the staining has settled into his dermal layer and doesn\u0027t fully wash away.",
+                                                              "A thin white scar, roughly 3cm, on the inside of his left wrist â€” old, precise, surgical in nature; origin unclear but he doesn\u0027t volunteer explanation."
+                                                          ],
+                                 "visible_augmentations":  "The chromatic irises are immediately noticeable in direct light â€” the subtle color shifts are unnervingly readable to those who know what to look for. The olfactory enhancement implant is invisible (subcutaneous graft near the olfactory bulb). The fingertip micro-analysis filaments are retractable and only visible when he deliberately extends them â€” thin, almost translucent crystalline structures that extend no more than 2mm beyond his fingertips, catching light like glass slivers.",
+                                 "posture_movement":  "He stands still with an almost monk-like quietness, weight evenly distributed. When he moves it is economical â€” no gesture wasted. He often unconsciously touches evidence or surfaces with his fingertips as if reading braille, a habit from his implants. His head tilts slightly when he is listening or processing, and his eyes will drift to middle distance while he narrates analysis aloud. He carries a faint scent of luminescent compounds and latex gloves.",
+                                 "clothing_style":  "Uniform white lab coat, always â€” he buys them in bulk from the same supplier and considers this a closed problem. Beneath: plain charcoal or black shirt, worn and softened from repeated washing. Dark utility trousers with deep pockets, often with a folded evidence catalogue or sample notes sticking out. Steel-toed boots, scuffed and worn. He wears no jewelry or personal ornamentation. His appearance reads as strictly Tier 3-4 working class, the uniform of someone for whom clothing is purely functional. The only hint of vanity is the occasional fresh trim to his mustache."
+                             },
+    "image_prompt":  "Healani SepÃºlveda, 2226 neo-noir forensic analyst, 178cm lean wiry frame, warm bronze-brown skin with golden undertones from blended Hispanic/Latin American, Southeast Asian, and Sub-Saharan African heritage, gaunt cheekbones showing Asian influence softened by Latin bone structure, defined jawline, chromatic augmented eyes shifting pale grey to amber, black hair cropped short with grey at temples, meticulously trimmed dark mustache, blue-grey staining on fingertips from luminescent compounds, white surgical scar on left wrist. Wearing wrinkled white lab coat over worn charcoal shirt, dark utility trousers, scuffed steel-toed boots, standing with monk-like stillness in sterile neon-lit crime lab with cool blue and warm amber accent lighting, evidence samples and data displays around, faint aura of latex and luminescent powder, economical posture, subtle augmented eye glow, middle distance contemplative gaze, neo-noir dystopia atmosphere, photorealistic, high contrast lighting --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  52.8,
+                             "Southeast Asian":  30.2,
+                             "Sub-Saharan African":  7.5,
+                             "East Asian":  7.3,
+                             "Northern European":  2.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  38.1
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Peruvian":  14.7
+                                                                               }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  3.2
+                                                                   },
+                                                    "Thai":  {
+                                                                 "Thai":  9.6
+                                                             },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  17.4
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  1.1,
+                                                                                "Cameroonian":  6.4
+                                                                            }
+                                                    },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Shanghainese":  2.2,
+                                                               "Mandarin Northern":  1.9
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  1.9
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  1.3
+                                                            }
+                                           },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Swiss German":  2.2
+                                                                   }
+                                                  }
+                        },
+    "tier":  "3"
 }

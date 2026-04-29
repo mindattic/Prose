@@ -1,340 +1,369 @@
-{
-  "id": "019d6143a72d78d998c0a331697e1219",
-  "type": "character",
-  "name": "Gaspar Möller",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Holographic artist and VR experience designer",
-  "age": 31,
-  "status": "active",
-  "location": "The Loft, Edgewater Prism district, near Lincoln and Clark",
-  "description": "Gaspar Möller has the look of someone who spends most of their time inside illuminated spaces — her Ghanaian-Serbian complexion has an indoor pallor she compensates for with chromatic eye mods that shift through the visible spectrum in slow cycles, making her gaze feel like watching a sunset in real time. She's slight, precise in her movements, and habitually overdressed in a corporate-minimalist style that reads as slightly out of place in The Loft's more chaotic aesthetic — she worked a Tessera contract for three years and the wardrobe habits stuck even though she hates that they did. Her fingers are constantly moving, twitching through gestural commands on an AR layer only she can see.\n\nGaspar Möller builds experiences, not art objects — immersive holographic and VR environments commissioned for galleries, underground events, and occasionally for clients she won't name. She is technically brilliant and conversationally anxious, most comfortable when she can communicate through the work rather than through words. She has strong opinions about what holographic art should do — 'not decorate, not distract, but displace, just for a moment' — and will defend them at length if pressed, which is the one topic that makes her forget to be nervous. She left her Tessera contract under circumstances she describes as 'a philosophical disagreement,' which is technically true and also a significant understatement.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.6,
-      "id": 0.5,
-      "shadow": 0.6,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Being found out as having done something she can't undo during the Tessera years",
-      "That her best work is behind her — that the contract dulled something"
-    ],
-    "core_desires": [
-      "To build one experience so precise it changes how someone understands their own memory",
-      "To be forgiven without having to ask"
-    ],
-    "coping_mechanisms": [
-      "Works compulsively when guilty",
-      "Presents a version of herself that is more together than she is — the corporate wardrobe is armor"
-    ],
-    "blind_spots": [
-      "Reads social anxiety as other people's judgment of her, when often they're just neutral",
-      "Cannot ask for help directly; will architect situations where others offer it without being asked"
-    ],
-    "secret": "During her Tessera contract, she was commissioned to design a VR environment used in cognitive restructuring therapy — what she later discovered was a consent-optional loyalty conditioning program for mid-level Tessera employees. She didn't know at the time. She found out. She kept the payment. She still uses some of the techniques in her independent work because they're genuinely effective, and she's not sure what that makes her."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical and precise when on ground she knows; hedged and over-qualified when uncertain; occasional Twi phrases used as filler when she's thinking",
-    "cadence": "Slightly too fast, as if she's worried about being interrupted; slows and deepens when she's talking about the work",
-    "verbal_tics": [
-      "'That's — yeah, that's one way to frame it'",
-      "'The thing about that is—' (then a very long thing)"
-    ],
-    "example_lines": [
-      "'People think holograms are about seeing something. They're not. They're about making the eye believe it's missed something, so the brain reaches forward. That reaching — that's the art.'",
-      "'I left Tessera because of a philosophical disagreement. The philosophy was whether people should know what was being done to them. I disagreed.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former Tessera employee has tracked down the creator of the conditioning program they were subjected to — and they've found Yseult's name in the design credits",
-    "She's been hired to reconstruct a crime scene in VR for what she was told was an insurance dispute; the scene is from the night her Tessera supervisor disappeared"
-  ],
-  "narrative_function": "Information source and skilled contact — her AR and VR design skills make her valuable for surveillance, investigation, or reconstruction of spaces; her Tessera connection is a plot thread; she can design environments that serve narrative purposes.",
-  "augmentations": "Spectrum-cycling chromatic eye mods (geneware, cosmetic); neural AR overlay interface with haptic feedback gloves; retinal display implant for reviewing work in real time",
-  "daily_life": "Works irregular hours driven entirely by project deadlines — can disappear into an installation build for seventy-two hours straight then sleep for eighteen; keeps a hot desk at the Refraction gallery space and a sleeping loft above it.",
-  "affiliation": "Formerly Tessera Entertainment Division; now independent, affiliated loosely with the Edgewater Prism gallery collective Refraction; The Null Ward",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 7,
-      "vitality": 4,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 6,
-      "creativity": 9,
-      "spatial": 10
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "artist",
-      "tech-skilled",
-      "corporate survivor",
-      "guilt-driven",
-      "tier 3"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never take a commission without a written brief — too many verbal agreements have gone wrong",
-      "If the work requires deceiving the audience, that must be declared as part of the piece — she's drawing a line she should have drawn years ago"
-    ],
-    "escalation_ladder": [
-      "Polite deflection",
-      "Technical over-explanation to confuse and delay",
-      "Abrupt withdrawal from the conversation",
-      "Disappearing from contact entirely for days"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally warm, maintains careful distance, watches how they talk about other people before deciding what she thinks of them",
-      "friends": "Deeply loyal, expresses care through practical action rather than words, quietly devastated if trust is broken"
-    },
-    "stress_responses": {
-      "low": "Redesigns elements of current project that don't need redesigning",
-      "medium": "Over-prepares — researches obsessively, plans contingencies for contingencies",
-      "high": "Goes fully dark on comms and builds something furious and unpresentable until she's spent"
-    },
-    "contradictions": [
-      "Believes in radical transparency as a principle and practices almost none of it personally"
-    ],
-    "habits": [
-      "Sketches installation concepts on physical paper that she then destroys before digitalizing a clean version",
-      "Checks her Tessera-era comms archive once a week, reads nothing, closes it",
-      "Names all her AR project files after extinct birds"
-    ],
-    "breaking_points": [
-      "Someone using her work for coercion again",
-      "Being publicly credited for the Tessera conditioning program"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Neural AR overlay interface",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Neural AR overlay interface",
-      "replaces": ""
-    },
-    {
-      "name": "Haptic feedback gesture gloves",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Haptic feedback gesture gloves",
-      "replaces": ""
-    },
-    {
-      "name": "Retinal real-time display implant",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Retinal real-time display implant",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Analyst": 0.9,
-    "Pattern Reader": 0.9,
-    "Sentinel": 0.9,
-    "Crowd Reader": 0.9,
-    "Artist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Loft",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2169: Born in Edgewater Prism to a Ghanaian-British father and Serbian mother, both architects",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2187: First independent installation shown at Refraction gallery, critically noted",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2191: Signed with Tessera Entertainment Division",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2194: Discovered nature of conditioning program; left Tessera",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2194-present: Independent practice, slow rebuilding of reputation and self",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Edgewater Prism",
-    "The Loft",
-    "Tessera Corponation",
-    "Sunset Karaoke & Kitchen"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Complex Ubiquitous Diaspora phenotype: 40.4% Hispanic/Latin American base creates warm undertones and defined cheekbones, layered with 23.6% East Asian ancestry providing sharp facial geometry and eye structure. The 15.5% Indigenous American component adds breadth to facial planes and strengthens cheekbone definition, while 11.7% Southeast Asian ancestry contributes subtle softness to features and eye shape. Minor 4.9% Middle Eastern and 3.9% Eastern European heritage add warmth and complexity to skin undertones. The combined effect is a genuinely pan-global phenotype: high cheekbones from East Asian and Indigenous American ancestry, defined jawline from Hispanic/Latin American genetics, with luminous golden-brown skin that carries warm undertones from the entire ancestry blend. Bone structure reflects sophisticated genetic admixture rather than any single regional tradition.",
-    "height_cm": 163,
-    "weight_kg": 51,
-    "build": "Slight and precise, almost dancer-like in proportion — minimal muscle definition but with the kind of controlled posture that comes from years of fine motor work and extended screen time. Narrow shoulders, fine-boned wrists.",
-    "hair_color": "Black with a subtle warm undertone",
-    "hair_style": "Pulled back in a tight, minimalist bun or twisted knot — functional, never decorative",
-    "hair_length": "Medium (shoulder-length when released, but rarely is)",
-    "eye_color": "Chromatic cycling implant — shifts through spectrum: amber, jade, violet, rose, back to amber in slow 8-second cycles over natural dark brown with warm golden hints",
-    "skin_tone": "Luminous golden-brown with rich warm undertones from blended Hispanic/Latin American, East Asian, and Indigenous American heritage; noticeably pale from indoor living, lacks the sun-darkened quality of outdoor tier residents. The complexion has an almost porcelain-like luminosity despite the warm tones.",
-    "complexion": "Fine-featured with prominent, defined cheekbones reflecting East Asian and Indigenous American ancestry combined with sharp jawline from Hispanic/Latin American genetics. Facial planes show sophisticated blending: slightly higher cheekbones, subtle eye shape suggesting East and Southeast Asian influence, warm-toned skin without visible sun damage. Clear skin with slightly dehydrated quality of someone who forgets to eat during deep work. Minimal makeup except occasional kohl-line enhancement of the cycling eye effect. Expression typically focused inward, mouth set in neutral concentration.",
-    "distinguishing_marks": [
-      "Faint grid-pattern scar tissue on both inner wrists where neural AR interface was calibrated — barely visible unless skin is stretched, looks like small rectangular scars in alignment",
-      "Hairline micro-abrasions on right temple from VR headset prolonged use — appears as a thin, pale line running three inches back from hairline"
-    ],
-    "visible_augmentations": "Chromatic eye implants are the primary visible marker — the slow color cycling is immediately noticeable and disquieting to watch. Occasionally wears sleek haptic feedback gloves (black textile with subtle LED grid on palm surface for AR layer visualization) pushed up to elbows. No visible chrome or subdermal plating; all other augmentations are subcutaneous or internal.",
-    "posture_movement": "Moves with economical precision — no wasted motion, but not rigid. Frequently still except for her hands, which are in constant micromovements: fingers twitching through gestural AR commands, fidgeting with fabric, tracing invisible patterns in the air. When speaking, body goes very still; when working, she's in perpetual micro-adjustment. Tends to lean slightly forward when concentrating, head tilted as if reading text only she can see.",
-    "clothing_style": "Corporate-minimalist holdover from Tessera years — tailored but understated. Favors monochrome or very limited palettes: charcoal, black, off-white. Clean lines, expensive fabrics (synthetic micro-weave blends), almost austere. Typical outfit: fitted black turtle-neck, high-waisted grey tactical pants with discrete tech pockets, matte black ankle boots with subtle LED seams. Occasional piece of jewelry is usually geometric and structural rather than decorative — a stainless steel bangle, a capsule pendant. No logos or tier markers."
-  },
-  "image_prompt": "Gaspar Möller, 2226 GLMZ neo-noir character portrait: 163cm slight-framed individual with luminous golden-brown skin and Pan-Asian-Hispanic heritage features — high defined cheekbones, sharp jawline, fine bone structure. Black hair pulled back in tight bun, pale from indoor living. Most striking feature: chromatic eye implants cycling slowly through amber, jade, violet, rose in 8-second rotation. Wearing tailored black turtleneck, grey tactical pants, matte black ankle boots with LED seams. Hands visible with micro-movement, fingers poised in mid-AR gesture. Posture: slightly forward-leaning concentration, economical precision. Corporate-minimalist aesthetic despite Tier 3-4 neighborhood. Studio neo-noir lighting: cool blue and warm amber accent lights highlighting the color-cycling eye implants, creating disquieting depth. Minimalist geometric jewelry. Background: subtle AR data streams, tech aesthetic, dim corporate-tower lighting. Mood: focused introspection, quiet intensity. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 40.4,
-    "East Asian": 23.6,
-    "Indigenous American": 15.5,
-    "Southeast Asian": 11.7,
-    "Middle Eastern": 4.9,
-    "Eastern European": 3.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 40.4
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 3.2
-      },
-      "Chinese": {
-        "Shanghainese": 16.4,
-        "Mandarin Northern": 2.8
-      },
-      "Korean": {
-        "Korean": 1.2
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Potawatomi": 7.5
-      },
-      "Mesoamerican": {
-        "Nahua": 0.5,
-        "Maya": 0.3
-      },
-      "Andean": {
-        "Quechua": 6.3,
-        "Aymara": 0.9
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 11.7
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Yemeni": 4.2,
-        "Emirati": 0.7
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Czech": 1.1
-      },
-      "Slavic South": {
-        "Serbian": 1,
-        "Slovenian": 0.6
-      },
-      "Slavic East": {
-        "Russian": 1.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a72d78d998c0a331697e1219",
+    "type":  "character",
+    "name":  "Gaspar MÃ¶ller",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Holographic artist and VR experience designer",
+    "age":  31,
+    "status":  "active",
+    "location":  "The Loft, Edgewater Prism district, near Lincoln and Clark",
+    "description":  "Gaspar MÃ¶ller has the look of someone who spends most of their time inside illuminated spaces â€” her Ghanaian-Serbian complexion has an indoor pallor she compensates for with chromatic eye mods that shift through the visible spectrum in slow cycles, making her gaze feel like watching a sunset in real time. She\u0027s slight, precise in her movements, and habitually overdressed in a corporate-minimalist style that reads as slightly out of place in The Loft\u0027s more chaotic aesthetic â€” she worked a Tessera contract for three years and the wardrobe habits stuck even though she hates that they did. Her fingers are constantly moving, twitching through gestural commands on an AR layer only she can see.\n\nGaspar MÃ¶ller builds experiences, not art objects â€” immersive holographic and VR environments commissioned for galleries, underground events, and occasionally for clients she won\u0027t name. She is technically brilliant and conversationally anxious, most comfortable when she can communicate through the work rather than through words. She has strong opinions about what holographic art should do â€” \u0027not decorate, not distract, but displace, just for a moment\u0027 â€” and will defend them at length if pressed, which is the one topic that makes her forget to be nervous. She left her Tessera contract under circumstances she describes as \u0027a philosophical disagreement,\u0027 which is technically true and also a significant understatement.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being found out as having done something she can\u0027t undo during the Tessera years",
+                                          "That her best work is behind her â€” that the contract dulled something"
+                                      ],
+                       "core_desires":  [
+                                            "To build one experience so precise it changes how someone understands their own memory",
+                                            "To be forgiven without having to ask"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Works compulsively when guilty",
+                                                 "Presents a version of herself that is more together than she is â€” the corporate wardrobe is armor"
+                                             ],
+                       "blind_spots":  [
+                                           "Reads social anxiety as other people\u0027s judgment of her, when often they\u0027re just neutral",
+                                           "Cannot ask for help directly; will architect situations where others offer it without being asked"
+                                       ],
+                       "secret":  "During her Tessera contract, she was commissioned to design a VR environment used in cognitive restructuring therapy â€” what she later discovered was a consent-optional loyalty conditioning program for mid-level Tessera employees. She didn\u0027t know at the time. She found out. She kept the payment. She still uses some of the techniques in her independent work because they\u0027re genuinely effective, and she\u0027s not sure what that makes her."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical and precise when on ground she knows; hedged and over-qualified when uncertain; occasional Twi phrases used as filler when she\u0027s thinking",
+                            "cadence":  "Slightly too fast, as if she\u0027s worried about being interrupted; slows and deepens when she\u0027s talking about the work",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s â€” yeah, that\u0027s one way to frame it\u0027",
+                                                "\u0027The thing about that isâ€”\u0027 (then a very long thing)"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027People think holograms are about seeing something. They\u0027re not. They\u0027re about making the eye believe it\u0027s missed something, so the brain reaches forward. That reaching â€” that\u0027s the art.\u0027",
+                                                  "\u0027I left Tessera because of a philosophical disagreement. The philosophy was whether people should know what was being done to them. I disagreed.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former Tessera employee has tracked down the creator of the conditioning program they were subjected to â€” and they\u0027ve found Yseult\u0027s name in the design credits",
+                        "She\u0027s been hired to reconstruct a crime scene in VR for what she was told was an insurance dispute; the scene is from the night her Tessera supervisor disappeared"
+                    ],
+    "narrative_function":  "Information source and skilled contact â€” her AR and VR design skills make her valuable for surveillance, investigation, or reconstruction of spaces; her Tessera connection is a plot thread; she can design environments that serve narrative purposes.",
+    "augmentations":  "Spectrum-cycling chromatic eye mods (geneware, cosmetic); neural AR overlay interface with haptic feedback gloves; retinal display implant for reviewing work in real time",
+    "daily_life":  "Works irregular hours driven entirely by project deadlines â€” can disappear into an installation build for seventy-two hours straight then sleep for eighteen; keeps a hot desk at the Refraction gallery space and a sleeping loft above it.",
+    "affiliation":  "Formerly Tessera Entertainment Division; now independent, affiliated loosely with the Edgewater Prism gallery collective Refraction; The Null Ward",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  7,
+                                   "vitality":  4,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  6,
+                                 "creativity":  9,
+                                 "spatial":  10
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "artist",
+                               "tech-skilled",
+                               "corporate survivor",
+                               "guilt-driven",
+                               "tier 3"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never take a commission without a written brief â€” too many verbal agreements have gone wrong",
+                                              "If the work requires deceiving the audience, that must be declared as part of the piece â€” she\u0027s drawing a line she should have drawn years ago"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite deflection",
+                                                 "Technical over-explanation to confuse and delay",
+                                                 "Abrupt withdrawal from the conversation",
+                                                 "Disappearing from contact entirely for days"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally warm, maintains careful distance, watches how they talk about other people before deciding what she thinks of them",
+                                                   "friends":  "Deeply loyal, expresses care through practical action rather than words, quietly devastated if trust is broken"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Redesigns elements of current project that don\u0027t need redesigning",
+                                                "medium":  "Over-prepares â€” researches obsessively, plans contingencies for contingencies",
+                                                "high":  "Goes fully dark on comms and builds something furious and unpresentable until she\u0027s spent"
+                                            },
+                       "contradictions":  [
+                                              "Believes in radical transparency as a principle and practices almost none of it personally"
+                                          ],
+                       "habits":  [
+                                      "Sketches installation concepts on physical paper that she then destroys before digitalizing a clean version",
+                                      "Checks her Tessera-era comms archive once a week, reads nothing, closes it",
+                                      "Names all her AR project files after extinct birds"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone using her work for coercion again",
+                                               "Being publicly credited for the Tessera conditioning program"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Neural AR overlay interface",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Neural AR overlay interface",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Haptic feedback gesture gloves",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Haptic feedback gesture gloves",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Retinal real-time display implant",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Retinal real-time display implant",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Analyst":  0.9,
+                       "Pattern Reader":  0.9,
+                       "Sentinel":  0.9,
+                       "Crowd Reader":  0.9,
+                       "Artist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Loft",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2169: Born in Edgewater Prism to a Ghanaian-British father and Serbian mother, both architects",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2187: First independent installation shown at Refraction gallery, critically noted",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2191: Signed with Tessera Entertainment Division",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2194: Discovered nature of conditioning program; left Tessera",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2194-present: Independent practice, slow rebuilding of reputation and self",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Edgewater Prism",
+                             "The Loft",
+                             "Tessera Corponation",
+                             "Sunset Karaoke \u0026 Kitchen"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Complex Ubiquitous Diaspora phenotype: 40.4% Hispanic/Latin American base creates warm undertones and defined cheekbones, layered with 23.6% East Asian ancestry providing sharp facial geometry and eye structure. The 15.5% Indigenous American component adds breadth to facial planes and strengthens cheekbone definition, while 11.7% Southeast Asian ancestry contributes subtle softness to features and eye shape. Minor 4.9% Middle Eastern and 3.9% Eastern European heritage add warmth and complexity to skin undertones. The combined effect is a genuinely pan-global phenotype: high cheekbones from East Asian and Indigenous American ancestry, defined jawline from Hispanic/Latin American genetics, with luminous golden-brown skin that carries warm undertones from the entire ancestry blend. Bone structure reflects sophisticated genetic admixture rather than any single regional tradition.",
+                                 "height_cm":  163,
+                                 "weight_kg":  51,
+                                 "build":  "Slight and precise, almost dancer-like in proportion â€” minimal muscle definition but with the kind of controlled posture that comes from years of fine motor work and extended screen time. Narrow shoulders, fine-boned wrists.",
+                                 "hair_color":  "Black with a subtle warm undertone",
+                                 "hair_style":  "Pulled back in a tight, minimalist bun or twisted knot â€” functional, never decorative",
+                                 "hair_length":  "Medium (shoulder-length when released, but rarely is)",
+                                 "eye_color":  "Chromatic cycling implant â€” shifts through spectrum: amber, jade, violet, rose, back to amber in slow 8-second cycles over natural dark brown with warm golden hints",
+                                 "skin_tone":  "Luminous golden-brown with rich warm undertones from blended Hispanic/Latin American, East Asian, and Indigenous American heritage; noticeably pale from indoor living, lacks the sun-darkened quality of outdoor tier residents. The complexion has an almost porcelain-like luminosity despite the warm tones.",
+                                 "complexion":  "Fine-featured with prominent, defined cheekbones reflecting East Asian and Indigenous American ancestry combined with sharp jawline from Hispanic/Latin American genetics. Facial planes show sophisticated blending: slightly higher cheekbones, subtle eye shape suggesting East and Southeast Asian influence, warm-toned skin without visible sun damage. Clear skin with slightly dehydrated quality of someone who forgets to eat during deep work. Minimal makeup except occasional kohl-line enhancement of the cycling eye effect. Expression typically focused inward, mouth set in neutral concentration.",
+                                 "distinguishing_marks":  [
+                                                              "Faint grid-pattern scar tissue on both inner wrists where neural AR interface was calibrated â€” barely visible unless skin is stretched, looks like small rectangular scars in alignment",
+                                                              "Hairline micro-abrasions on right temple from VR headset prolonged use â€” appears as a thin, pale line running three inches back from hairline"
+                                                          ],
+                                 "visible_augmentations":  "Chromatic eye implants are the primary visible marker â€” the slow color cycling is immediately noticeable and disquieting to watch. Occasionally wears sleek haptic feedback gloves (black textile with subtle LED grid on palm surface for AR layer visualization) pushed up to elbows. No visible chrome or subdermal plating; all other augmentations are subcutaneous or internal.",
+                                 "posture_movement":  "Moves with economical precision â€” no wasted motion, but not rigid. Frequently still except for her hands, which are in constant micromovements: fingers twitching through gestural AR commands, fidgeting with fabric, tracing invisible patterns in the air. When speaking, body goes very still; when working, she\u0027s in perpetual micro-adjustment. Tends to lean slightly forward when concentrating, head tilted as if reading text only she can see.",
+                                 "clothing_style":  "Corporate-minimalist holdover from Tessera years â€” tailored but understated. Favors monochrome or very limited palettes: charcoal, black, off-white. Clean lines, expensive fabrics (synthetic micro-weave blends), almost austere. Typical outfit: fitted black turtle-neck, high-waisted grey tactical pants with discrete tech pockets, matte black ankle boots with subtle LED seams. Occasional piece of jewelry is usually geometric and structural rather than decorative â€” a stainless steel bangle, a capsule pendant. No logos or tier markers."
+                             },
+    "image_prompt":  "Gaspar MÃ¶ller, 2226 GLMZ neo-noir character portrait: 163cm slight-framed individual with luminous golden-brown skin and Pan-Asian-Hispanic heritage features â€” high defined cheekbones, sharp jawline, fine bone structure. Black hair pulled back in tight bun, pale from indoor living. Most striking feature: chromatic eye implants cycling slowly through amber, jade, violet, rose in 8-second rotation. Wearing tailored black turtleneck, grey tactical pants, matte black ankle boots with LED seams. Hands visible with micro-movement, fingers poised in mid-AR gesture. Posture: slightly forward-leaning concentration, economical precision. Corporate-minimalist aesthetic despite Tier 3-4 neighborhood. Studio neo-noir lighting: cool blue and warm amber accent lights highlighting the color-cycling eye implants, creating disquieting depth. Minimalist geometric jewelry. Background: subtle AR data streams, tech aesthetic, dim corporate-tower lighting. Mood: focused introspection, quiet intensity. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  40.4,
+                             "East Asian":  23.6,
+                             "Indigenous American":  15.5,
+                             "Southeast Asian":  11.7,
+                             "Middle Eastern":  4.9,
+                             "Eastern European":  3.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  40.4
+                                                                                 }
+                                                        },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  3.2
+                                                            },
+                                               "Chinese":  {
+                                                               "Shanghainese":  16.4,
+                                                               "Mandarin Northern":  2.8
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  1.2
+                                                          }
+                                           },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  7.5
+                                                                                },
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  0.5,
+                                                                             "Maya":  0.3
+                                                                         },
+                                                        "Andean":  {
+                                                                       "Quechua":  6.3,
+                                                                       "Aymara":  0.9
+                                                                   }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  11.7
+                                                             }
+                                                },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Yemeni":  4.2,
+                                                                     "Emirati":  0.7
+                                                                 }
+                                               },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Czech":  1.1
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Serbian":  1,
+                                                                          "Slovenian":  0.6
+                                                                      },
+                                                     "Slavic East":  {
+                                                                         "Russian":  1.2
+                                                                     }
+                                                 }
+                        },
+    "tier":  "3"
 }

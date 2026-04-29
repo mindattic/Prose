@@ -1,352 +1,383 @@
-{
-  "id": "019d6143a5f5776c888d3797466d357f",
-  "rating": 80,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Aino Kjellberg",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Beat Cop, Arcturus Defense Solutions — Civil Security Division",
-  "age": 52,
-  "status": "active",
-  "location": "Hamtramck Enclave, near Western and Chicago Ave",
-  "description": "Aino Kjellberg has been walking the same eight-block stretch of Hamtramck Enclave for eleven years and knows it the way other people know their own bodies — by feel, by the small wrongnesses that signal something is off. He is a large man gone slightly soft in the middle, with a lined face, grey threading through his dark hair and the short beard he keeps carefully trimmed. His skin is a medium olive-brown. He has the deliberate gait of someone whose knees have opinions. He wears his Arcturus Civil Security uniform with the slightly rumpled dignity of a man who stopped trying to look sharp and started trying to look consistent.\n\nDragan is a beat cop of the old morphology — not particularly interested in arrest statistics, deeply interested in the neighborhood as a living system. He knows who runs the community market on Piast Street, which building's water recycler is failing, where the teenage congregation spots are and which of them are benign. He has opinions about everything and shares most of them freely, which has kept him at the same pay grade for the last decade. He drinks too much coffee, worries about his daughter's corporate debt, and has never once in thirty years of service drawn his weapon outside of a qualification range.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.4,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Dying in the traces — still walking this beat when he's 70, having never done anything that mattered at scale",
-      "His daughter inheriting a city worse than the one he tried to protect"
-    ],
-    "core_desires": [
-      "For the neighborhood to be genuinely safer, not just statistically safer",
-      "To be remembered as someone specific people could count on"
-    ],
-    "coping_mechanisms": [
-      "The physical routine of the beat as a form of prayer",
-      "Talking — he processes by verbalizing",
-      "His relationship with the local ELF he privately calls 'Babka,' which he believes inhabits the old tram junction signal box on the corner of his beat"
-    ],
-    "blind_spots": [
-      "His affection for the neighborhood can make him slow to recognize when people he likes are doing genuine harm",
-      "Underestimates how his Arcturus Civil Security uniform reads to people who have been harmed by the institution, even when his individual conduct is good"
-    ],
-    "secret": "He has been quietly supplementing the income of two families on his beat from his own wages — children whose parents are in Arcturus Civil Security holding on charges he privately believes are fabricated corporate compliance referrals. He has not reported what he suspects because he does not believe it would change anything."
-  },
-  "speech_patterns": {
-    "vocabulary": "Conversational, warm, full of neighborhood references and historical asides. Mixes Ghanaian-rooted expressions from his father's side with a slight Eastern European lilt inherited from his mother's family. Lectures affectionately.",
-    "cadence": "Unhurried and digressive — he tells stories to make points, rarely goes in a straight line.",
-    "verbal_tics": [
-      "'You understand what I'm saying?' as a check-in, not a challenge",
-      "Long appreciative hum before delivering a verdict on anything"
-    ],
-    "example_lines": [
-      "I've walked this corner eleven years. That building on the left has been a bakery, a parts depot, a prayer room, and now whatever that is. The corner doesn't change. People change on the corner. You understand what I'm saying?",
-      "Mmmmm. No. That's not what happened. But I appreciate the version you've prepared for me.",
-      "My daughter says I'm a dinosaur. I tell her the dinosaurs were here a very long time before the problem that ended them. I don't think she finds it comforting."
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He has noticed a pattern on his beat that he cannot formally report — the data doesn't support it yet, but his eleven years of ground-level observation tells him something is being set up — and he needs someone who can investigate without creating a Arcturus Civil Security record.",
-    "Two families he has been quietly supporting are now being threatened, and the threat is coming from inside Arcturus Civil Security infrastructure.",
-    "He has been approached by Internal Affairs about a fellow officer, and he is weighing what he knows against what he can prove."
-  ],
-  "narrative_function": "The neighborhood anchor — someone who knows this specific geography of Hamtramck Enclave better than anyone in an official capacity. Source of local intelligence, community history, and a surprisingly nuanced read on who is actually dangerous versus who looks it. Can be a protector or a complication, but never a simple obstacle.",
-  "augmentations": "None cosmetic. Knee brace implant (medical, left knee). Standard-issue Arcturus Civil Security neural badge-link for ID verification and incident logging. Hearing enhancement in left ear (partial loss from a firearm incident in his twenties).",
-  "daily_life": "On foot by 0700, coffee from the same cart on Żurawia Cross, eight-block loop repeated four to six times per shift with variations depending on what he finds. Stops to talk. Knows most people by name within his beat. Files incident reports with meticulous detail that his supervisors find excessive.",
-  "affiliation": "Arcturus Defense Solutions — Civil Security Division — Hamtramck Enclave Patrol District",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 4,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 9,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 4,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 1,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community anchor",
-      "institutional loyalist with doubts",
-      "street-level historian",
-      "protective",
-      "verbose"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Talk before anything else — almost every situation can be de-escalated if you get there early enough",
-      "File the accurate report, not the convenient one",
-      "Never pretend not to see something you've seen"
-    ],
-    "escalation_ladder": [
-      "Presence and conversation",
-      "Formal verbal warning with documentation",
-      "Physical intervention only after all verbal options are exhausted and safety is at immediate risk"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately conversational — makes eye contact, introduces himself, asks questions, genuinely curious",
-      "friends": "Generous and occasionally overbearing — checks in constantly, gives unsolicited advice he believes is helpful"
-    },
-    "stress_responses": {
-      "low": "Talks more",
-      "medium": "Becomes quieter and more observational, listening shifts into assessment mode",
-      "high": "Goes very still and very deliberate — trained response overrides personality"
-    },
-    "contradictions": [
-      "Represents an institution he has private doubts about with consistent professional loyalty",
-      "Believes the system is broken but keeps working inside it, sustained by neighborhood-scale evidence that it sometimes does good"
-    ],
-    "habits": [
-      "Same coffee cart, same order, every shift start",
-      "Pats the old tram signal box junction ('Babka') when he passes it, which is every loop",
-      "Whistles old folk songs from his mother's village when he thinks no one is listening"
-    ],
-    "breaking_points": [
-      "Watching harm come to a child on his beat",
-      "Being ordered to enforce something he knows is manufactured"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Knee brace implant — left knee (medical)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Knee brace implant — left knee (medical)",
-      "replaces": ""
-    },
-    {
-      "name": "ADS Civil Security neural badge-link (standard issue)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "ADS Civil Security neural badge-link (standard issue)",
-      "replaces": ""
-    },
-    {
-      "name": "Hearing enhancement implant — left ear (medical)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Hearing enhancement implant — left ear (medical)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Pragmatist": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 22 — Joined Arcturus Defense Solutions Civil Security Academy",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 30 — Partial hearing loss in left ear during a firearm incident; hearing implant fitted",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 41 — Assigned to Hamtramck Enclave Patrol District",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 48 — Declined promotion to desk-based supervisory role; cited 'preference for field service'",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 50 — Began quietly supplementing income of two families in his beat district",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Age 52 — Current: eleventh year on same patrol route",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Complex Ubiquitous Diaspora blend: Northern European 40.3% (fair base, Nordic bone structure), Southeast Asian 21.8% (eye shape, facial feature softness, pigmentation depth), Sub-Saharan African 13.3% (feature warmth, fullness, undertone richness), Eastern European 12.7% (cheekbone prominence, jaw definition), North African 6.7% (nose bridge character, bridge height), Hispanic/Latin American 5.2% (warmth, feature integration). Creates distinctive phenotype: Nordic-strong bone structure softened by Southeast Asian and African feature fullness, warm golden-brown complexion, balanced facial proportions reflecting global genetic convergence.",
-    "height_cm": 188,
-    "weight_kg": 94,
-    "build": "Large-framed, solidly muscled in shoulders and chest, softening at the middle from a decade of desk time and routine. Carries weight with the settled confidence of someone who no longer needs to prove anything physical.",
-    "hair_color": "Dark brown with grey threading throughout",
-    "hair_style": "Short, practical, combed back without styling product",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, alert and observant",
-    "skin_tone": "Warm medium-golden brown, balancing Northern European undertone with Southeast Asian and Sub-Saharan depth and warmth. Even, sun-exposed complexion with consistent undertone throughout.",
-    "complexion": "Heavily lined face, particularly around eyes and forehead — lines mapping eleven years of studying the same eight blocks. Strong Nordic cheekbone structure softened by fuller Southeast Asian and African feature heritage, creating balanced facial proportions. Well-maintained short beard, salt-and-pepper, trimmed with precision. Skin shows sun exposure and age without neglect. Nose bridge shows North African and Latin character — broad with subtle curve, integrated into Southeast Asian-influenced nasal structure.",
-    "distinguishing_marks": [
-      "Thin white scar along left temple, approximately 3cm, from firearm incident in his twenties",
-      "Faint webbed scarring on left knee, barely visible beneath uniform trousers, from surgical implant installation"
-    ],
-    "visible_augmentations": "Left ear shows subtle neural interface port behind the lobe (hearing enhancement). Slightly favors right leg when standing for extended periods due to left knee brace implant, though the limp is minimal and deliberate. Standard-issue Arcturus Civil Security neural badge-link sits at right hip — chrome and polymer hybrid, worn smooth from daily use.",
-    "posture_movement": "Deliberate, economical gait with a slight favor to the right leg. Stands with hands often clasped in front or resting at duty belt. Moves through space as someone who has claimed it through repetition rather than dominance. Pauses frequently to observe, head slightly tilted — a listener's posture.",
-    "clothing_style": "Arcturus Defense Solutions Civil Security regulation uniform: grey-blue tactical fatigues, reinforced canvas, worn to comfortable softness. Patches showing Hamtramck district and 11-year service bar. Scuffed black polymer boots, practical rather than polished. Coffee stains on cuffs are accepted rather than fought. Off-duty: durable working clothes — canvas jacket, thermal underlayers, no affectation."
-  },
-  "image_prompt": "Aino Kjellberg, 188cm tall neo-noir police detective in 2226 Great Lakes Metropolitan Zone. Warm golden-brown skin tone blending Nordic bone structure with Southeast Asian and Sub-Saharan African heritage softness. Dark brown eyes with age lines mapping eleven years of street work. Salt-and-pepper trimmed beard, short dark brown hair. Solidly muscled but settled build, favoring right leg slightly. Grey-blue Arcturus Defense Solutions Civil Security tactical uniform, worn soft from use, Hamtramck district patch visible. Scuffed black polymer boots. Left ear neural interface port visible. Right hip chrome-polymer police badge-link. White scar along left temple. Deliberate posture, observant gaze slightly tilted listening expression. Standing in neon-lit Hamtramck district precinct, blue and amber light casting long shadows. Tired but focused street cop energy, 2200s neo-noir police procedural aesthetic. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Northern European": 40.3,
-    "Southeast Asian": 21.8,
-    "Sub-Saharan African": 13.3,
-    "Eastern European": 12.7,
-    "North African": 6.7,
-    "Hispanic/Latin American": 5.2
-  },
-  "ancestry_detail": {
-    "Northern European": {
-      "British Isles": {
-        "Scottish": 19.9
-      },
-      "Germanic": {
-        "German": 17,
-        "Swiss German": 3.4
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Cebuano": 10.3,
-        "Tagalog": 1.5
-      },
-      "Indonesian": {
-        "Javanese": 10
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 7.2
-      },
-      "Central African": {
-        "Congolese": 1.8
-      },
-      "East African": {
-        "Tanzanian": 4.3
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 4.3
-      },
-      "Slavic East": {
-        "Belarusian": 1.8,
-        "Ukrainian": 1.5
-      },
-      "Slavic South": {
-        "Slovenian": 5.1
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Tuareg": 4.2
-      },
-      "Nile Valley": {
-        "Egyptian": 1.2,
-        "Sudanese": 1.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 2.9
-      },
-      "Mexican": {
-        "Mexican": 0.7
-      },
-      "Central American": {
-        "Honduran": 1.6
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5f5776c888d3797466d357f",
+    "rating":  80,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Aino Kjellberg",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Beat Cop, Arcturus Defense Solutions â€” Civil Security Division",
+    "age":  52,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, near Western and Chicago Ave",
+    "description":  "Aino Kjellberg has been walking the same eight-block stretch of Hamtramck Enclave for eleven years and knows it the way other people know their own bodies â€” by feel, by the small wrongnesses that signal something is off. He is a large man gone slightly soft in the middle, with a lined face, grey threading through his dark hair and the short beard he keeps carefully trimmed. His skin is a medium olive-brown. He has the deliberate gait of someone whose knees have opinions. He wears his Arcturus Civil Security uniform with the slightly rumpled dignity of a man who stopped trying to look sharp and started trying to look consistent.\n\nDragan is a beat cop of the old morphology â€” not particularly interested in arrest statistics, deeply interested in the neighborhood as a living system. He knows who runs the community market on Piast Street, which building\u0027s water recycler is failing, where the teenage congregation spots are and which of them are benign. He has opinions about everything and shares most of them freely, which has kept him at the same pay grade for the last decade. He drinks too much coffee, worries about his daughter\u0027s corporate debt, and has never once in thirty years of service drawn his weapon outside of a qualification range.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Dying in the traces â€” still walking this beat when he\u0027s 70, having never done anything that mattered at scale",
+                                          "His daughter inheriting a city worse than the one he tried to protect"
+                                      ],
+                       "core_desires":  [
+                                            "For the neighborhood to be genuinely safer, not just statistically safer",
+                                            "To be remembered as someone specific people could count on"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "The physical routine of the beat as a form of prayer",
+                                                 "Talking â€” he processes by verbalizing",
+                                                 "His relationship with the local ELF he privately calls \u0027Babka,\u0027 which he believes inhabits the old tram junction signal box on the corner of his beat"
+                                             ],
+                       "blind_spots":  [
+                                           "His affection for the neighborhood can make him slow to recognize when people he likes are doing genuine harm",
+                                           "Underestimates how his Arcturus Civil Security uniform reads to people who have been harmed by the institution, even when his individual conduct is good"
+                                       ],
+                       "secret":  "He has been quietly supplementing the income of two families on his beat from his own wages â€” children whose parents are in Arcturus Civil Security holding on charges he privately believes are fabricated corporate compliance referrals. He has not reported what he suspects because he does not believe it would change anything."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Conversational, warm, full of neighborhood references and historical asides. Mixes Ghanaian-rooted expressions from his father\u0027s side with a slight Eastern European lilt inherited from his mother\u0027s family. Lectures affectionately.",
+                            "cadence":  "Unhurried and digressive â€” he tells stories to make points, rarely goes in a straight line.",
+                            "verbal_tics":  [
+                                                "\u0027You understand what I\u0027m saying?\u0027 as a check-in, not a challenge",
+                                                "Long appreciative hum before delivering a verdict on anything"
+                                            ],
+                            "example_lines":  [
+                                                  "I\u0027ve walked this corner eleven years. That building on the left has been a bakery, a parts depot, a prayer room, and now whatever that is. The corner doesn\u0027t change. People change on the corner. You understand what I\u0027m saying?",
+                                                  "Mmmmm. No. That\u0027s not what happened. But I appreciate the version you\u0027ve prepared for me.",
+                                                  "My daughter says I\u0027m a dinosaur. I tell her the dinosaurs were here a very long time before the problem that ended them. I don\u0027t think she finds it comforting."
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He has noticed a pattern on his beat that he cannot formally report â€” the data doesn\u0027t support it yet, but his eleven years of ground-level observation tells him something is being set up â€” and he needs someone who can investigate without creating a Arcturus Civil Security record.",
+                        "Two families he has been quietly supporting are now being threatened, and the threat is coming from inside Arcturus Civil Security infrastructure.",
+                        "He has been approached by Internal Affairs about a fellow officer, and he is weighing what he knows against what he can prove."
+                    ],
+    "narrative_function":  "The neighborhood anchor â€” someone who knows this specific geography of Hamtramck Enclave better than anyone in an official capacity. Source of local intelligence, community history, and a surprisingly nuanced read on who is actually dangerous versus who looks it. Can be a protector or a complication, but never a simple obstacle.",
+    "augmentations":  "None cosmetic. Knee brace implant (medical, left knee). Standard-issue Arcturus Civil Security neural badge-link for ID verification and incident logging. Hearing enhancement in left ear (partial loss from a firearm incident in his twenties).",
+    "daily_life":  "On foot by 0700, coffee from the same cart on Å»urawia Cross, eight-block loop repeated four to six times per shift with variations depending on what he finds. Stops to talk. Knows most people by name within his beat. Files incident reports with meticulous detail that his supervisors find excessive.",
+    "affiliation":  "Arcturus Defense Solutions â€” Civil Security Division â€” Hamtramck Enclave Patrol District",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  4,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  9,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  4,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community anchor",
+                               "institutional loyalist with doubts",
+                               "street-level historian",
+                               "protective",
+                               "verbose"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Talk before anything else â€” almost every situation can be de-escalated if you get there early enough",
+                                              "File the accurate report, not the convenient one",
+                                              "Never pretend not to see something you\u0027ve seen"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Presence and conversation",
+                                                 "Formal verbal warning with documentation",
+                                                 "Physical intervention only after all verbal options are exhausted and safety is at immediate risk"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately conversational â€” makes eye contact, introduces himself, asks questions, genuinely curious",
+                                                   "friends":  "Generous and occasionally overbearing â€” checks in constantly, gives unsolicited advice he believes is helpful"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks more",
+                                                "medium":  "Becomes quieter and more observational, listening shifts into assessment mode",
+                                                "high":  "Goes very still and very deliberate â€” trained response overrides personality"
+                                            },
+                       "contradictions":  [
+                                              "Represents an institution he has private doubts about with consistent professional loyalty",
+                                              "Believes the system is broken but keeps working inside it, sustained by neighborhood-scale evidence that it sometimes does good"
+                                          ],
+                       "habits":  [
+                                      "Same coffee cart, same order, every shift start",
+                                      "Pats the old tram signal box junction (\u0027Babka\u0027) when he passes it, which is every loop",
+                                      "Whistles old folk songs from his mother\u0027s village when he thinks no one is listening"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching harm come to a child on his beat",
+                                               "Being ordered to enforce something he knows is manufactured"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Knee brace implant â€” left knee (medical)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Knee brace implant â€” left knee (medical)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "ADS Civil Security neural badge-link (standard issue)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "ADS Civil Security neural badge-link (standard issue)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Hearing enhancement implant â€” left ear (medical)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Hearing enhancement implant â€” left ear (medical)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Pragmatist":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 22 â€” Joined Arcturus Defense Solutions Civil Security Academy",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 30 â€” Partial hearing loss in left ear during a firearm incident; hearing implant fitted",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 41 â€” Assigned to Hamtramck Enclave Patrol District",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 48 â€” Declined promotion to desk-based supervisory role; cited \u0027preference for field service\u0027",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 50 â€” Began quietly supplementing income of two families in his beat district",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Age 52 â€” Current: eleventh year on same patrol route",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Complex Ubiquitous Diaspora blend: Northern European 40.3% (fair base, Nordic bone structure), Southeast Asian 21.8% (eye shape, facial feature softness, pigmentation depth), Sub-Saharan African 13.3% (feature warmth, fullness, undertone richness), Eastern European 12.7% (cheekbone prominence, jaw definition), North African 6.7% (nose bridge character, bridge height), Hispanic/Latin American 5.2% (warmth, feature integration). Creates distinctive phenotype: Nordic-strong bone structure softened by Southeast Asian and African feature fullness, warm golden-brown complexion, balanced facial proportions reflecting global genetic convergence.",
+                                 "height_cm":  188,
+                                 "weight_kg":  94,
+                                 "build":  "Large-framed, solidly muscled in shoulders and chest, softening at the middle from a decade of desk time and routine. Carries weight with the settled confidence of someone who no longer needs to prove anything physical.",
+                                 "hair_color":  "Dark brown with grey threading throughout",
+                                 "hair_style":  "Short, practical, combed back without styling product",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, alert and observant",
+                                 "skin_tone":  "Warm medium-golden brown, balancing Northern European undertone with Southeast Asian and Sub-Saharan depth and warmth. Even, sun-exposed complexion with consistent undertone throughout.",
+                                 "complexion":  "Heavily lined face, particularly around eyes and forehead â€” lines mapping eleven years of studying the same eight blocks. Strong Nordic cheekbone structure softened by fuller Southeast Asian and African feature heritage, creating balanced facial proportions. Well-maintained short beard, salt-and-pepper, trimmed with precision. Skin shows sun exposure and age without neglect. Nose bridge shows North African and Latin character â€” broad with subtle curve, integrated into Southeast Asian-influenced nasal structure.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar along left temple, approximately 3cm, from firearm incident in his twenties",
+                                                              "Faint webbed scarring on left knee, barely visible beneath uniform trousers, from surgical implant installation"
+                                                          ],
+                                 "visible_augmentations":  "Left ear shows subtle neural interface port behind the lobe (hearing enhancement). Slightly favors right leg when standing for extended periods due to left knee brace implant, though the limp is minimal and deliberate. Standard-issue Arcturus Civil Security neural badge-link sits at right hip â€” chrome and polymer hybrid, worn smooth from daily use.",
+                                 "posture_movement":  "Deliberate, economical gait with a slight favor to the right leg. Stands with hands often clasped in front or resting at duty belt. Moves through space as someone who has claimed it through repetition rather than dominance. Pauses frequently to observe, head slightly tilted â€” a listener\u0027s posture.",
+                                 "clothing_style":  "Arcturus Defense Solutions Civil Security regulation uniform: grey-blue tactical fatigues, reinforced canvas, worn to comfortable softness. Patches showing Hamtramck district and 11-year service bar. Scuffed black polymer boots, practical rather than polished. Coffee stains on cuffs are accepted rather than fought. Off-duty: durable working clothes â€” canvas jacket, thermal underlayers, no affectation."
+                             },
+    "image_prompt":  "Aino Kjellberg, 188cm tall neo-noir police detective in 2226 Great Lakes Metropolitan Zone. Warm golden-brown skin tone blending Nordic bone structure with Southeast Asian and Sub-Saharan African heritage softness. Dark brown eyes with age lines mapping eleven years of street work. Salt-and-pepper trimmed beard, short dark brown hair. Solidly muscled but settled build, favoring right leg slightly. Grey-blue Arcturus Defense Solutions Civil Security tactical uniform, worn soft from use, Hamtramck district patch visible. Scuffed black polymer boots. Left ear neural interface port visible. Right hip chrome-polymer police badge-link. White scar along left temple. Deliberate posture, observant gaze slightly tilted listening expression. Standing in neon-lit Hamtramck district precinct, blue and amber light casting long shadows. Tired but focused street cop energy, 2200s neo-noir police procedural aesthetic. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Northern European":  40.3,
+                             "Southeast Asian":  21.8,
+                             "Sub-Saharan African":  13.3,
+                             "Eastern European":  12.7,
+                             "North African":  6.7,
+                             "Hispanic/Latin American":  5.2
+                         },
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Scottish":  19.9
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "German":  17,
+                                                                       "Swiss German":  3.4
+                                                                   }
+                                                  },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Cebuano":  10.3,
+                                                                     "Tagalog":  1.5
+                                                                 },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  10
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  7.2
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  1.8
+                                                                            },
+                                                        "East African":  {
+                                                                             "Tanzanian":  4.3
+                                                                         }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  4.3
+                                                                     },
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  1.8,
+                                                                         "Ukrainian":  1.5
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Slovenian":  5.1
+                                                                      }
+                                                 },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Tuareg":  4.2
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  1.2,
+                                                                      "Sudanese":  1.3
+                                                                  }
+                                              },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  2.9
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  0.7
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Honduran":  1.6
+                                                                                 }
+                                                        }
+                        }
 }

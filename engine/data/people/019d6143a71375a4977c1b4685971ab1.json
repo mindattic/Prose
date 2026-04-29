@@ -1,352 +1,365 @@
-{
-  "id": "019d6143a71375a4977c1b4685971ab1",
-  "rating": 70,
-  "type": "character",
-  "name": "Ignacio Hayashi-Bustamante",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Structural breach and explosive ordnance specialist \u2014 demolitions expert",
-  "age": 25,
-  "status": "active",
-  "location": "Kessler Row \u2014 arms dealers and augmentation clinics, near Kedzie and Division",
-  "description": "Ignacio Hayashi-Bustamante is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 25, he has soft features that belie the chrome underneath \u2014 people underestimate him once, usually only once. The chrome is visible \u2014 cybernetic eyes with thermal overlay and low-light enhancement \u2014 chrome iris rin \u2014 and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they\u0027ll do, Ignacio Hayashi-Bustamante is one of the ones who actually does it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.93,
-      "id": 0.73,
-      "shadow": 0.5,
-      "mask": 0.76,
-      "ghost": 0.33
-    },
-    "core_fears": [
-      "Betrayal by someone they trust \u2014 the only currency that matters",
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Being identified by corporate facial recognition \u2014 living off-grid is survival"
-    ],
-    "core_desires": [
-      "Stability \u2014 a place to sleep that\u0027s the same place two nights running",
-      "Freedom from augmentation debt \u2014 the interest compounds like a tumor",
-      "To matter to someone for who they are, not what they can do"
-    ],
-    "coping_mechanisms": [
-      "Substances \u2014 stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Drinks methodically \u2014 not to get drunk, to maintain a specific level of not-caring",
-      "Connection \u2014 finds someone to talk to, even if it\u0027s a bartender or a cat"
-    ],
-    "blind_spots": [
-      "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care",
-      "Mistakes pattern recognition for wisdom \u2014 sees connections that aren\u0027t there",
-      "Cannot see that their independence is actually isolation wearing a better outfit"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, profane, and vivid. Speaks in images \u2014 everything is a metaphor for violence or weather.",
-    "cadence": "Rhythmic, almost musical \u2014 the sentence structure has a pattern even when the words are brutal.",
-    "verbal_tics": [
-      "Ends statements with \u0027yeah?\u0027 \u2014 not a question, a dare",
-      "Calls everyone \u0027friend\u0027 \u2014 the warmth varies from genuine to threatening"
-    ],
-    "example_lines": [
-      "\u0022Explosives are just engineering with a deadline. Usually a very short deadline.\u0022",
-      "\u0022I don\u0027t blow things up. I perform structural rearrangement.\u0022",
-      "\u0022The blast radius is your problem. My problem is making sure there\u0027s a blast.\u0022"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A crew member from Vesna Ito-Takyi\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
-    "Vesna Ito-Takyi\u0027s augmentations begin malfunctioning in the field \u2014 sabotage or degradation, and either answer is bad",
-    "A dead drop Vesna Ito-Takyi maintains is found and cleaned out \u2014 whoever did it now has leverage"
-  ],
-  "narrative_function": "Vesna Ito-Takyi represents the working professional of the runner world \u2014 competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Cybernetic eyes with thermal overlay and low-light enhancement \u2014 chrome iris rings. Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather \u2014 not for pleasure, but for market intelligence.",
-  "affiliation": "Semi-independent \u2014 recurring contracts with mid-tier fixers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 4
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 10
-      },
-      "reflexes": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 8
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 10
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 10
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 10
-      },
-      "technical": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 6
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 9
-      },
-      "intimidation": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 5
-      },
-      "deception": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 10
-      },
-      "empathy": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 8
-      }
-    },
-    "personality": {
-      "aggression": 0.12,
-      "caution": 0.7,
-      "loyalty": 0.38,
-      "greed": 0.65,
-      "empathy": 0.84
-    },
-    "drives": [
-      "freedom",
-      "protection",
-      "reputation"
-    ],
-    "thresholds": {
-      "pain": 8,
-      "stress": 6,
-      "loyalty_break": 9
-    },
-    "strengths": [
-      "pain tolerance beyond normal limits",
-      "network of reliable contacts",
-      "strategic thinking under pressure"
-    ],
-    "weaknesses": [
-      "physical limitation from incomplete augmentation",
-      "grudge-holding that compromises rational decision-making"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "demolitions expert",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable",
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy",
-      "Always verifies target identity independently before lethal contracts",
-      "Never discusses active contracts with anyone not directly involved"
-    ],
-    "escalation_ladder": [
-      "1. Assess \u2014 read the situation, identify threats and advantages",
-      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
-      "3. Intimidate \u2014 make the cost of conflict clear",
-      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
-      "5. Full engagement \u2014 overwhelming force, no half measures",
-      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation \u2014 checks gear, reviews plans, contacts sources.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Values loyalty intensely but has betrayed someone in the past to survive",
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
-      "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined"
-    ],
-    "habits": [
-      "Eats the same meal before every job \u2014 superstition masquerading as preference",
-      "Maintains a dead drop with emergency supplies in three separate districts",
-      "Takes a specific route home every time, varying only one block per trip \u2014 paranoia as lifestyle",
-      "Counts ammunition obsessively \u2014 knows the exact round count at all times"
-    ],
-    "breaking_points": [
-      "Complete isolation \u2014 cut off from network, contacts, and purpose simultaneously",
-      "Being forced to harm a civilian \u2014 collateral damage that can\u0027t be rationalized"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Cybernetic eyes with thermal overlay and low-light enhancement",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Cybernetic eyes with thermal overlay and low-light enhancement \u2014 chrome iris rings",
-      "replaces": ""
-    },
-    {
-      "name": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Arsonist": 0.9,
-    "Risk Taker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Kessler Row",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Multi-continental blend: 42.1% East Asian, 41.8% Hispanic/Latin American, 11.1% Middle Eastern, 5.0% Sub-Saharan African. Features reflect this complex ancestry \u2014 warm medium-brown skin with golden undertones from the balanced East Asian and Hispanic mix, high cheekbones and subtle monolid eye shape influenced by East Asian genetics, broader jaw structure and fuller lips from Hispanic/Latin American heritage, with warm enriching undertones from Middle Eastern and Sub-Saharan African ancestry creating a striking hybrid phenotype with naturally balanced facial proportions.",
-    "height_cm": 188,
-    "weight_kg": 74,
-    "build": "Lean and angular with visible muscle definition from constant physical training. Long-limbed and economical in frame \u2014 built for precision and endurance rather than power.",
-    "hair_color": "Black with premature silver threading at temples",
-    "hair_style": "Kept short and practical, swept back from forehead",
-    "hair_length": "Short",
-    "eye_color": "Chrome iris rings with warm amber glow beneath \u2014 thermal and low-light augmentation visible as faint luminescence in dim conditions",
-    "skin_tone": "Warm golden-brown, medium depth with subtle olive undertones \u2014 a natural blending of East Asian, Hispanic/Latin American, Middle Eastern, and Sub-Saharan African ancestry creating luminous depth",
-    "complexion": "Angular features with prominent high cheekbones and subtle monolid eye shape (East Asian influence), fuller lips and broader jaw structure (Hispanic/Latin American influence), skin tone enriched by warm undertones from Middle Eastern and African heritage. Skin is clear but marked by the wear of someone who lives in industrial zones \u2014 fine dust scarring visible in close inspection. No facial hair. Expression default is neutral, difficult to read.",
-    "distinguishing_marks": [
-      "Thin radiating scar tissue at left temple extending into hairline \u2014 cortical implant removal site, keloid patterns visible when hair is pulled back",
-      "Pale linear scar running from left collarbone to sternum approximately 12cm \u2014 old injury, healed but prominent against skin tone",
-      "Fine white scarring across knuckles and back of both hands from years of handling volatile materials"
-    ],
-    "visible_augmentations": "Chrome iris rings with faint internal luminescence \u2014 most obvious feature. Eyes scan and focus with inhuman precision. Occasional thermal flare visible in dim light. Cortical bomb scar tissue at left temple. Unknown subcutaneous augmentations, but movement suggests enhanced proprioception or reflex augmentation.",
-    "posture_movement": "Moves with deliberate, economical precision \u2014 every motion calculated and efficient. No wasted energy. Stance is balanced and reactive, as if always ready to shift weight or move quickly. Hands are still and controlled. Eyes track and focus unnaturally fast. Overall impression is coiled potential, not relaxation.",
-    "clothing_style": "Tier 3-4 practical wear. Black reinforced cargo pants with utility webbing and mag-clips for tools. Worn synthetic leather jacket over tech-mesh undershirt in charcoal gray. Steel-toed work boots (Yamakasi brand \u2014 mid-tier industrial). Fingerless gloves with grip-gel palms. No unnecessary ornamentation. Everything serves a function. Clothes show signs of wear and chemical exposure but are meticulously maintained."
-  },
-  "image_prompt": "Ignacio Hayashi-Bustamante, 188cm lean angular neo-noir operative with warm golden-brown skin reflecting East Asian, Hispanic/Latin American, Middle Eastern, and Sub-Saharan African heritage. High prominent cheekbones, subtle monolid eye shape, fuller lips, balanced jaw. Black hair with silver threading at temples swept back. Chrome iris rings with warm amber internal glow and thermal augmentation, unnaturally precise focus. Thin radiating scar at left temple, pale linear scar from collarbone to sternum, fine white scarring on knuckles. Black reinforced cargo pants with utility webbing, worn synthetic leather jacket over charcoal tech-mesh, Yamakasi steel-toed boots, fingerless grip-gel gloves. Coiled posture, calculated movement, neutral expression. Industrial GLMZ, Great Lakes Metropolitan Zone, cool LED industrial lighting with thermal undertones, gritty warehouse or facility setting, evening hours --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "East Asian": 42.1,
-    "Hispanic/Latin American": 41.8,
-    "Middle Eastern": 11.1,
-    "Sub-Saharan African": 5
-  },
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 20.3
-      },
-      "Japanese": {
-        "Japanese": 14.4
-      },
-      "Chinese": {
-        "Cantonese": 7.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 30.7
-      },
-      "Central American": {
-        "Nicaraguan": 0.3
-      },
-      "South American": {
-        "Brazilian": 5,
-        "Colombian": 5.8
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 7.5,
-        "Tajik Persian": 1.9
-      },
-      "Kurdish": {
-        "Kurdish": 1.7
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 2.9
-      },
-      "East African": {
-        "Somali": 0.9
-      },
-      "West African": {
-        "Malian": 0.9,
-        "Nigerian": 0.3
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a71375a4977c1b4685971ab1",
+    "rating":  70,
+    "type":  "character",
+    "name":  "Ignacio Hayashi-Bustamante",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Structural breach and explosive ordnance specialist — demolitions expert",
+    "age":  25,
+    "status":  "active",
+    "location":  "Kessler Row — arms dealers and augmentation clinics, near Kedzie and Division",
+    "description":  "Ignacio Hayashi-Bustamante is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 25, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they\u0027ll do, Ignacio Hayashi-Bustamante is one of the ones who actually does it.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Betrayal by someone they trust — the only currency that matters",
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "Being identified by corporate facial recognition — living off-grid is survival"
+                                      ],
+                       "core_desires":  [
+                                            "Stability — a place to sleep that\u0027s the same place two nights running",
+                                            "Freedom from augmentation debt — the interest compounds like a tumor",
+                                            "To matter to someone for who they are, not what they can do"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+                                                 "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+                                                 "Connection — finds someone to talk to, even if it\u0027s a bartender or a cat"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care",
+                                           "Mistakes pattern recognition for wisdom — sees connections that aren\u0027t there",
+                                           "Cannot see that their independence is actually isolation wearing a better outfit"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
+                            "cadence":  "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+                            "verbal_tics":  [
+                                                "Ends statements with \u0027yeah?\u0027 — not a question, a dare",
+                                                "Calls everyone \u0027friend\u0027 — the warmth varies from genuine to threatening"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Explosives are just engineering with a deadline. Usually a very short deadline.\"",
+                                                  "\"I don\u0027t blow things up. I perform structural rearrangement.\"",
+                                                  "\"The blast radius is your problem. My problem is making sure there\u0027s a blast.\""
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A crew member from Vesna Ito-Takyi\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
+                        "Vesna Ito-Takyi\u0027s augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+                        "A dead drop Vesna Ito-Takyi maintains is found and cleaned out — whoever did it now has leverage"
+                    ],
+    "narrative_function":  "Vesna Ito-Takyi represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+    "augmentations":  "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings. Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+    "daily_life":  "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
+    "affiliation":  "Semi-independent — recurring contracts with mid-tier fixers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  5,
+                                                    "augmented":  0,
+                                                    "effective":  4
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  7,
+                                                     "augmented":  1,
+                                                     "effective":  10
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  3,
+                                                    "augmented":  1,
+                                                    "effective":  8
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  8,
+                                                      "augmented":  1,
+                                                      "effective":  10
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  1,
+                                                    "effective":  10
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                 "technical":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  6
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  6,
+                                                  "augmented":  2,
+                                                  "effective":  9
+                                              },
+                                 "intimidation":  {
+                                                      "base":  5,
+                                                      "augmented":  0,
+                                                      "effective":  5
+                                                  },
+                                 "deception":  {
+                                                   "base":  7,
+                                                   "augmented":  3,
+                                                   "effective":  10
+                                               },
+                                 "empathy":  {
+                                                 "base":  4,
+                                                 "augmented":  1,
+                                                 "effective":  8
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.12,
+                                      "caution":  0.7,
+                                      "loyalty":  0.38,
+                                      "greed":  0.65,
+                                      "empathy":  0.84
+                                  },
+                  "drives":  [
+                                 "freedom",
+                                 "protection",
+                                 "reputation"
+                             ],
+                  "thresholds":  {
+                                     "pain":  8,
+                                     "stress":  6,
+                                     "loyalty_break":  9
+                                 },
+                  "strengths":  [
+                                    "pain tolerance beyond normal limits",
+                                    "network of reliable contacts",
+                                    "strategic thinking under pressure"
+                                ],
+                  "weaknesses":  [
+                                     "physical limitation from incomplete augmentation",
+                                     "grudge-holding that compromises rational decision-making"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "demolitions expert",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not take contracts against children or families — the line is hard and non-negotiable",
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Never discusses active contracts with anyone not directly involved"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess — read the situation, identify threats and advantages",
+                                                 "2. Negotiate — try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate — make the cost of conflict clear",
+                                                 "4. Precision violence — surgical, targeted, minimal collateral",
+                                                 "5. Full engagement — overwhelming force, no half measures",
+                                                 "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Values loyalty intensely but has betrayed someone in the past to survive",
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
+                                              "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined"
+                                          ],
+                       "habits":  [
+                                      "Eats the same meal before every job — superstition masquerading as preference",
+                                      "Maintains a dead drop with emergency supplies in three separate districts",
+                                      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+                                      "Counts ammunition obsessively — knows the exact round count at all times"
+                                  ],
+                       "breaking_points":  [
+                                               "Complete isolation — cut off from network, contacts, and purpose simultaneously",
+                                               "Being forced to harm a civilian — collateral damage that can\u0027t be rationalized"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Cybernetic eyes with thermal overlay and low-light enhancement",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Arsonist":  0.9,
+                       "Risk Taker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Kessler Row",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Multi-continental blend: 42.1% East Asian, 41.8% Hispanic/Latin American, 11.1% Middle Eastern, 5.0% Sub-Saharan African. Features reflect this complex ancestry — warm medium-brown skin with golden undertones from the balanced East Asian and Hispanic mix, high cheekbones and subtle monolid eye shape influenced by East Asian genetics, broader jaw structure and fuller lips from Hispanic/Latin American heritage, with warm enriching undertones from Middle Eastern and Sub-Saharan African ancestry creating a striking hybrid phenotype with naturally balanced facial proportions.",
+                                 "height_cm":  188,
+                                 "weight_kg":  74,
+                                 "build":  "Lean and angular with visible muscle definition from constant physical training. Long-limbed and economical in frame — built for precision and endurance rather than power.",
+                                 "hair_color":  "Black with premature silver threading at temples",
+                                 "hair_style":  "Kept short and practical, swept back from forehead",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Chrome iris rings with warm amber glow beneath — thermal and low-light augmentation visible as faint luminescence in dim conditions",
+                                 "skin_tone":  "Warm golden-brown, medium depth with subtle olive undertones — a natural blending of East Asian, Hispanic/Latin American, Middle Eastern, and Sub-Saharan African ancestry creating luminous depth",
+                                 "complexion":  "Angular features with prominent high cheekbones and subtle monolid eye shape (East Asian influence), fuller lips and broader jaw structure (Hispanic/Latin American influence), skin tone enriched by warm undertones from Middle Eastern and African heritage. Skin is clear but marked by the wear of someone who lives in industrial zones — fine dust scarring visible in close inspection. No facial hair. Expression default is neutral, difficult to read.",
+                                 "distinguishing_marks":  [
+                                                              "Thin radiating scar tissue at left temple extending into hairline — cortical implant removal site, keloid patterns visible when hair is pulled back",
+                                                              "Pale linear scar running from left collarbone to sternum approximately 12cm — old injury, healed but prominent against skin tone",
+                                                              "Fine white scarring across knuckles and back of both hands from years of handling volatile materials"
+                                                          ],
+                                 "visible_augmentations":  "Chrome iris rings with faint internal luminescence — most obvious feature. Eyes scan and focus with inhuman precision. Occasional thermal flare visible in dim light. Cortical bomb scar tissue at left temple. Unknown subcutaneous augmentations, but movement suggests enhanced proprioception or reflex augmentation.",
+                                 "posture_movement":  "Moves with deliberate, economical precision — every motion calculated and efficient. No wasted energy. Stance is balanced and reactive, as if always ready to shift weight or move quickly. Hands are still and controlled. Eyes track and focus unnaturally fast. Overall impression is coiled potential, not relaxation.",
+                                 "clothing_style":  "Tier 3-4 practical wear. Black reinforced cargo pants with utility webbing and mag-clips for tools. Worn synthetic leather jacket over tech-mesh undershirt in charcoal gray. Steel-toed work boots (Yamakasi brand — mid-tier industrial). Fingerless gloves with grip-gel palms. No unnecessary ornamentation. Everything serves a function. Clothes show signs of wear and chemical exposure but are meticulously maintained."
+                             },
+    "image_prompt":  "Ignacio Hayashi-Bustamante, 188cm lean angular neo-noir operative with warm golden-brown skin reflecting East Asian, Hispanic/Latin American, Middle Eastern, and Sub-Saharan African heritage. High prominent cheekbones, subtle monolid eye shape, fuller lips, balanced jaw. Black hair with silver threading at temples swept back. Chrome iris rings with warm amber internal glow and thermal augmentation, unnaturally precise focus. Thin radiating scar at left temple, pale linear scar from collarbone to sternum, fine white scarring on knuckles. Black reinforced cargo pants with utility webbing, worn synthetic leather jacket over charcoal tech-mesh, Yamakasi steel-toed boots, fingerless grip-gel gloves. Coiled posture, calculated movement, neutral expression. Industrial GLMZ, Great Lakes Metropolitan Zone, cool LED industrial lighting with thermal undertones, gritty warehouse or facility setting, evening hours --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "East Asian":  42.1,
+                             "Hispanic/Latin American":  41.8,
+                             "Middle Eastern":  11.1,
+                             "Sub-Saharan African":  5
+                         },
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  20.3
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  14.4
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  7.4
+                                                           }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  30.7
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  0.3
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Brazilian":  5,
+                                                                                   "Colombian":  5.8
+                                                                               }
+                                                        },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  7.5,
+                                                                   "Tajik Persian":  1.9
+                                                               },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  1.7
+                                                               }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  2.9
+                                                                            },
+                                                        "East African":  {
+                                                                             "Somali":  0.9
+                                                                         },
+                                                        "West African":  {
+                                                                             "Malian":  0.9,
+                                                                             "Nigerian":  0.3
+                                                                         }
+                                                    }
+                        }
 }

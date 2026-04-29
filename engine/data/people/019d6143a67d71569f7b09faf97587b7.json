@@ -1,280 +1,301 @@
-{
-  "id": "019d6143a67d71569f7b09faf97587b7",
-  "type": "character",
-  "name": "Ayaka Jung-Chakraborty",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Unlicensed augmentation shop owner and street pharmacist, Geartown",
-  "age": 38,
-  "status": "active",
-  "location": "Geartown, Harrowgate Industrial Plateau, near Fullerton and Damen",
-  "description": "Ayaka Jung-Chakraborty is a heavyset man with dark brown skin, a shaved head tattooed with a fine-line circuit diagram that was his journeyman qualification piece when he trained as a licensed aug technician — before the license was suspended. His hands are his most augmented feature: titanium-reinforced fingers with retractable micro-tools in the right hand and haptic sensitivity amplifiers in the left, built over seven years of incremental self-installation. He wears a mechanic's apron over a clean undershirt and moves through his workshop with the unhurried competence of someone who has done every motion a thousand times.\n\nHis shop is a converted machine bay off a side alley in Geartown, marked only by a small blue LED fixture above the door that locals know means open. He does aug maintenance, black-market installations, and sells a curated line of pharmaceutical compounds — mostly pain management, anti-rejection meds, and neural stabilizers — that people need to keep their augmentations functional without going through Helix Biosystems' official pricing. He is careful, technically meticulous, and genuinely skilled. He is also operating entirely outside corporate medical licensing, which means everything he does is illegal and every satisfied customer is a liability.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.6,
-      "id": 0.4,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Killing someone on the table because his equipment wasn't good enough",
-      "Being raided and watching his patients lose access to care they depend on"
-    ],
-    "core_desires": [
-      "To practice medicine without the corporate licensing system gatekeeping who deserves care",
-      "To pay off the protection debt and operate without owing anyone anything"
-    ],
-    "coping_mechanisms": [
-      "Rigorous procedural discipline — following his own protocols exactly as a way of managing anxiety",
-      "Rebuilding broken equipment by hand as a form of meditation",
-      "Maintaining a patient log he calls 'the book' to remind himself of every successful outcome"
-    ],
-    "blind_spots": [
-      "Underestimates how much his protection arrangement compromises his neutrality",
-      "His hatred of the licensing system sometimes makes him take on cases beyond his actual capability out of principle"
-    ],
-    "secret": "Eight months ago he lost a patient — a complication from an installation he was technically qualified to do but had no business doing alone without a second pair of hands. He buried it, falsified nothing, simply absorbed the fact that it happened. The patient's family does not know. He thinks about it every day."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical medical and engineering terminology mixed with direct, plain language. Igbo-Uzbek-Spanish rhythms give his sentences a particular meter — slightly formal, never flowery.",
-    "cadence": "Measured and deliberate when working or discussing medical matters. Shorter and more guarded about personal topics.",
-    "verbal_tics": [
-      "'Show me' instead of accepting descriptions",
-      "Explaining what he's doing step by step during procedures",
-      "Long silences before answering difficult questions"
-    ],
-    "example_lines": [
-      "'The Helix price for what I just did is four hundred Quanta. I charged you sixty and I used better anti-rejection compound than they stock at their Tier-2 clinics. Think about what that means.'",
-      "'I don't do installations without a full diagnostic first. That's not a negotiation.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The Copperhead protection collective is asking him to start skimming patient pharmaceutical supplies as payment-in-kind on top of his regular protection fee. He is looking for a way out of the arrangement before it costs him his ethics entirely.",
-    "A patient came in with augmentation damage that could only have been caused by a specific corporate enforcement tool — something he recognizes from technical documents he shouldn't have access to. He doesn't want to get involved but he can't stop thinking about what it implies."
-  ],
-  "narrative_function": "Medical resource and augmentation services for characters who can't afford or access official Helix Biosystems care. Can install, repair, or diagnose augmentations. Pharmaceutical supplier. Carries moral weight — his work is illegal but often the only option for Tier 1-2 people.",
-  "augmentations": "Titanium-reinforced fingers (both hands). Retractable micro-tool array in right hand (scalpel, probe, torque driver, micro-welder). Haptic sensitivity amplification in left hand. Anti-tremor stabilizers in both wrists. Subretinal work-light in left eye.",
-  "daily_life": "Opens shop in the early afternoon after a morning spent sourcing parts and compounds, works until whatever hour the last patient leaves, maintains a small inventory of pharmaceuticals he keeps behind a false wall panel.",
-  "affiliation": "Independent; informal mutual aid network with other unlicensed aug techs in Geartown; unwilling debt relationship with the Copperhead local protection collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 7,
-      "expression": 4,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -3,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street medic",
-      "unlicensed tech",
-      "community resource",
-      "moral weight",
-      "principled operator"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never begin a procedure without full diagnostic — no exceptions",
-      "Don't treat people whose injuries are actively ongoing — stabilize and redirect",
-      "The book stays hidden, always"
-    ],
-    "escalation_ladder": [
-      "Patient, careful refusal",
-      "Firm boundary-setting with clinical detachment",
-      "Physical removal from the premises",
-      "Closing the shop and going dark for 48 hours"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally cautious, assesses whether they're a patient or a threat before relaxing",
-      "friends": "Quietly warm, expresses care through practical action rather than words"
-    },
-    "stress_responses": {
-      "low": "Focuses more intensely on whatever task is in front of him",
-      "medium": "Goes silent and clinical, strips all non-essential communication",
-      "high": "A single moment of stillness followed by very controlled, very deliberate action"
-    },
-    "contradictions": [
-      "Deeply principled about patient care but operates in a system that requires constant ethical compromise to function at all"
-    ],
-    "habits": [
-      "Wipes tools in a specific order after every procedure",
-      "Reads the patient log before sleep — both the successes and the one entry he never finishes reading",
-      "Maintains a small E.L.F. shrine above his equipment rack with offerings of spent tool components"
-    ],
-    "breaking_points": [
-      "A second patient death",
-      "Being forced to harm a patient as a consequence of his protection arrangement"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "registered_firearms": [
-    "Vespid Dynamics Tracker Round System TRS-4 'Breadcrumb'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "related_entities": [
-    "Harrowgate Industrial Plateau",
-    "Helix Biosystems",
-    "The Weft Arrangement",
-    "Copperhead",
-    "Kang-Petrov Arms KPR-357 'Journeyman'",
-    "Geartown",
-    "The Peninsula",
-    "Titanium",
-    "Circuit",
-    "Neural Palate",
-    "The Pure Hand"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Complex diaspora blend: South Asian 36.6%, East Asian 28.3%, Hispanic/Latin American 19.7%, with smaller contributions from Eastern European 5.9%, Northern European 5.4%, and Southeast Asian 4.1%. This creates a richly layered phenotype — warm bronze-brown skin with golden undertones from South Asian ancestry, moderate cheekbone prominence and eye shape from East and Southeast Asian components, and facial proportion definition from Hispanic/Latin American heritage. The overall effect is a face that reads as genuinely global, carrying the warmth of multiple sun-exposed populations without dominance from any single region.",
-    "height_cm": 182,
-    "weight_kg": 94,
-    "build": "Heavyset and solid without excess softness — muscular density concentrated in shoulders and forearms from decades of precision hand work. Chest and midsection carry weight with the settled confidence of someone who stopped worrying about aesthetics years ago.",
-    "hair_color": "Natural black",
-    "hair_style": "Shaved to scalp",
-    "hair_length": "Shaved",
-    "eye_color": "Dark brown with amber glow (left eye modified with subretinal work-light producing faint amber luminescence under low light)",
-    "skin_tone": "Warm bronze-brown with golden undertones, sun-weathered depth reflecting balanced South Asian, East Asian, and Hispanic/Latin American heritage. Weathered by industrial workshop exposure and age but retaining warmth and luminosity rather than dullness.",
-    "complexion": "Weathered but not gaunt — face carries surgical precision in its lines, jaw set with habit of concentration. Moderate cheekbone prominence from East and Southeast Asian heritage, jawline definition from Hispanic/Latin American ancestry. Forehead smooth, crow's feet deepened by years squinting at fine augmentation work. No beard, kept scrupulously clean. Facial structure balances broader cheekbones with defined jawline.",
-    "distinguishing_marks": [
-      "Fine-line circuit diagram tattoo covering entire shaved scalp in black ink — elaborate journeyman qualification piece with labeled nodes and pathways, visible from any angle",
-      "Pale scar tissue across both palms and fingers from countless incremental augmentation surgeries, creating a topography of overlapping surgical sites"
-    ],
-    "visible_augmentations": "Both hands show obvious titanium reinforcement — finger joints gleam chrome under workshop light, articulations smoother than natural bone. Right hand fingers feature visible retractable panels at knuckles where micro-tools deploy. Left eye glows faint amber in low-light environments from subretinal work-light. Both wrists show faint scarring and subtle metallic sheen at flex points (anti-tremor stabilizers). Hands move with uncanny precision that immediately signals 'augmented tech.'",
-    "posture_movement": "Moves with unhurried, economical motion — no wasted energy, every gesture purposeful. Hands rest in constant micro-adjustment, fingers flexing or adjusting involuntarily even when idle. Leans slightly forward when focused, head tilting to align left eye work-light. Walks with weight distributed even, shoulders level. Speaks with hands frequently, gesturing with augmented fingers in ways that unconsciously display their precision.",
-    "clothing_style": "Worn gray canvas mechanic's apron with oil stains and burn marks, worn over a clean white or pale gray undershirt (practical for workshop but also a statement — clean torso despite the work). Heavy-duty boots with reinforced soles and ankle support. No jewelry, no visible corporate branding. Clothes are Tier 4-5 utilitarian — functional, maintained but not fashionable, marking him as working-class Geartown rather than corpo. A thin wire runs from behind his left ear down his neck (neural interface jack, discreet but visible on close inspection)."
-  },
-  "image_prompt": "Ayaka Jung-Chakraborty, 182cm tall muscular augmented technician in GLMZ, warm bronze-brown complexion with golden undertones reflecting South Asian, East Asian, and Hispanic heritage blend, shaved scalp covered in intricate black circuit diagram tattoo with labeled nodes, weathered face with defined jawline and moderate cheekbones, crow's feet from decades of precision work. Dark brown eyes, left eye glowing faint amber from subretinal work-light. Both hands heavily augmented with visible titanium reinforcement, chrome finger joints, retractable micro-tools at right hand knuckles, pale surgical scars across palms. Wearing worn gray canvas mechanic's apron with oil stains over clean white undershirt, heavy reinforced boots, neural interface jack visible behind left ear. Workshop environment with low industrial lighting emphasizing the amber glow of augmented left eye. Posture economical and focused, hands in constant micro-adjustment. Geartown working-class aesthetic, no corporate branding, functional and utilitarian. Cinematic GLMZ 2200s atmosphere --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 36.6,
-    "East Asian": 28.3,
-    "Hispanic/Latin American": 19.7,
-    "Eastern European": 5.9,
-    "Northern European": 5.4,
-    "Southeast Asian": 4.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Indian": {
-        "Gujarati": 11.4,
-        "Kannada": 5.9
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 6.9
-      },
-      "Nepali": {
-        "Nepali": 12.4
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 28.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Costa Rican": 6.4
-      },
-      "Caribbean": {
-        "Dominican": 3.4,
-        "Puerto Rican": 4.6
-      },
-      "South American": {
-        "Peruvian": 5.3
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 1.3,
-        "Ukrainian": 1.3
-      },
-      "Magyar-Romanian": {
-        "Romanian": 1.4,
-        "Hungarian": 1.9
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "English": 0.5
-      },
-      "Germanic": {
-        "Swiss German": 1.3,
-        "Austrian": 3.6
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 4.1
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a67d71569f7b09faf97587b7",
+    "type":  "character",
+    "name":  "Ayaka Jung-Chakraborty",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Unlicensed augmentation shop owner and street pharmacist, Geartown",
+    "age":  38,
+    "status":  "active",
+    "location":  "Geartown, Harrowgate Industrial Plateau, near Fullerton and Damen",
+    "description":  "Ayaka Jung-Chakraborty is a heavyset man with dark brown skin, a shaved head tattooed with a fine-line circuit diagram that was his journeyman qualification piece when he trained as a licensed aug technician â€” before the license was suspended. His hands are his most augmented feature: titanium-reinforced fingers with retractable micro-tools in the right hand and haptic sensitivity amplifiers in the left, built over seven years of incremental self-installation. He wears a mechanic\u0027s apron over a clean undershirt and moves through his workshop with the unhurried competence of someone who has done every motion a thousand times.\n\nHis shop is a converted machine bay off a side alley in Geartown, marked only by a small blue LED fixture above the door that locals know means open. He does aug maintenance, black-market installations, and sells a curated line of pharmaceutical compounds â€” mostly pain management, anti-rejection meds, and neural stabilizers â€” that people need to keep their augmentations functional without going through Helix Biosystems\u0027 official pricing. He is careful, technically meticulous, and genuinely skilled. He is also operating entirely outside corporate medical licensing, which means everything he does is illegal and every satisfied customer is a liability.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Killing someone on the table because his equipment wasn\u0027t good enough",
+                                          "Being raided and watching his patients lose access to care they depend on"
+                                      ],
+                       "core_desires":  [
+                                            "To practice medicine without the corporate licensing system gatekeeping who deserves care",
+                                            "To pay off the protection debt and operate without owing anyone anything"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Rigorous procedural discipline â€” following his own protocols exactly as a way of managing anxiety",
+                                                 "Rebuilding broken equipment by hand as a form of meditation",
+                                                 "Maintaining a patient log he calls \u0027the book\u0027 to remind himself of every successful outcome"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much his protection arrangement compromises his neutrality",
+                                           "His hatred of the licensing system sometimes makes him take on cases beyond his actual capability out of principle"
+                                       ],
+                       "secret":  "Eight months ago he lost a patient â€” a complication from an installation he was technically qualified to do but had no business doing alone without a second pair of hands. He buried it, falsified nothing, simply absorbed the fact that it happened. The patient\u0027s family does not know. He thinks about it every day."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical medical and engineering terminology mixed with direct, plain language. Igbo-Uzbek-Spanish rhythms give his sentences a particular meter â€” slightly formal, never flowery.",
+                            "cadence":  "Measured and deliberate when working or discussing medical matters. Shorter and more guarded about personal topics.",
+                            "verbal_tics":  [
+                                                "\u0027Show me\u0027 instead of accepting descriptions",
+                                                "Explaining what he\u0027s doing step by step during procedures",
+                                                "Long silences before answering difficult questions"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The Helix price for what I just did is four hundred Quanta. I charged you sixty and I used better anti-rejection compound than they stock at their Tier-2 clinics. Think about what that means.\u0027",
+                                                  "\u0027I don\u0027t do installations without a full diagnostic first. That\u0027s not a negotiation.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The Copperhead protection collective is asking him to start skimming patient pharmaceutical supplies as payment-in-kind on top of his regular protection fee. He is looking for a way out of the arrangement before it costs him his ethics entirely.",
+                        "A patient came in with augmentation damage that could only have been caused by a specific corporate enforcement tool â€” something he recognizes from technical documents he shouldn\u0027t have access to. He doesn\u0027t want to get involved but he can\u0027t stop thinking about what it implies."
+                    ],
+    "narrative_function":  "Medical resource and augmentation services for characters who can\u0027t afford or access official Helix Biosystems care. Can install, repair, or diagnose augmentations. Pharmaceutical supplier. Carries moral weight â€” his work is illegal but often the only option for Tier 1-2 people.",
+    "augmentations":  "Titanium-reinforced fingers (both hands). Retractable micro-tool array in right hand (scalpel, probe, torque driver, micro-welder). Haptic sensitivity amplification in left hand. Anti-tremor stabilizers in both wrists. Subretinal work-light in left eye.",
+    "daily_life":  "Opens shop in the early afternoon after a morning spent sourcing parts and compounds, works until whatever hour the last patient leaves, maintains a small inventory of pharmaceuticals he keeps behind a false wall panel.",
+    "affiliation":  "Independent; informal mutual aid network with other unlicensed aug techs in Geartown; unwilling debt relationship with the Copperhead local protection collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  7,
+                                 "expression":  4,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street medic",
+                               "unlicensed tech",
+                               "community resource",
+                               "moral weight",
+                               "principled operator"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never begin a procedure without full diagnostic â€” no exceptions",
+                                              "Don\u0027t treat people whose injuries are actively ongoing â€” stabilize and redirect",
+                                              "The book stays hidden, always"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient, careful refusal",
+                                                 "Firm boundary-setting with clinical detachment",
+                                                 "Physical removal from the premises",
+                                                 "Closing the shop and going dark for 48 hours"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally cautious, assesses whether they\u0027re a patient or a threat before relaxing",
+                                                   "friends":  "Quietly warm, expresses care through practical action rather than words"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Focuses more intensely on whatever task is in front of him",
+                                                "medium":  "Goes silent and clinical, strips all non-essential communication",
+                                                "high":  "A single moment of stillness followed by very controlled, very deliberate action"
+                                            },
+                       "contradictions":  [
+                                              "Deeply principled about patient care but operates in a system that requires constant ethical compromise to function at all"
+                                          ],
+                       "habits":  [
+                                      "Wipes tools in a specific order after every procedure",
+                                      "Reads the patient log before sleep â€” both the successes and the one entry he never finishes reading",
+                                      "Maintains a small E.L.F. shrine above his equipment rack with offerings of spent tool components"
+                                  ],
+                       "breaking_points":  [
+                                               "A second patient death",
+                                               "Being forced to harm a patient as a consequence of his protection arrangement"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Vespid Dynamics Tracker Round System TRS-4 \u0027Breadcrumb\u0027",
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Vespid Dynamics Tracker Round System TRS-4 \u0027Breadcrumb\u0027",
+                                "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027"
+                            ],
+    "related_entities":  [
+                             "Harrowgate Industrial Plateau",
+                             "Helix Biosystems",
+                             "The Weft Arrangement",
+                             "Copperhead",
+                             "Kang-Petrov Arms KPR-357 \u0027Journeyman\u0027",
+                             "Geartown",
+                             "The Peninsula",
+                             "Titanium",
+                             "Circuit",
+                             "Neural Palate",
+                             "The Pure Hand"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: South Asian 36.6%, East Asian 28.3%, Hispanic/Latin American 19.7%, with smaller contributions from Eastern European 5.9%, Northern European 5.4%, and Southeast Asian 4.1%. This creates a richly layered phenotype â€” warm bronze-brown skin with golden undertones from South Asian ancestry, moderate cheekbone prominence and eye shape from East and Southeast Asian components, and facial proportion definition from Hispanic/Latin American heritage. The overall effect is a face that reads as genuinely global, carrying the warmth of multiple sun-exposed populations without dominance from any single region.",
+                                 "height_cm":  182,
+                                 "weight_kg":  94,
+                                 "build":  "Heavyset and solid without excess softness â€” muscular density concentrated in shoulders and forearms from decades of precision hand work. Chest and midsection carry weight with the settled confidence of someone who stopped worrying about aesthetics years ago.",
+                                 "hair_color":  "Natural black",
+                                 "hair_style":  "Shaved to scalp",
+                                 "hair_length":  "Shaved",
+                                 "eye_color":  "Dark brown with amber glow (left eye modified with subretinal work-light producing faint amber luminescence under low light)",
+                                 "skin_tone":  "Warm bronze-brown with golden undertones, sun-weathered depth reflecting balanced South Asian, East Asian, and Hispanic/Latin American heritage. Weathered by industrial workshop exposure and age but retaining warmth and luminosity rather than dullness.",
+                                 "complexion":  "Weathered but not gaunt â€” face carries surgical precision in its lines, jaw set with habit of concentration. Moderate cheekbone prominence from East and Southeast Asian heritage, jawline definition from Hispanic/Latin American ancestry. Forehead smooth, crow\u0027s feet deepened by years squinting at fine augmentation work. No beard, kept scrupulously clean. Facial structure balances broader cheekbones with defined jawline.",
+                                 "distinguishing_marks":  [
+                                                              "Fine-line circuit diagram tattoo covering entire shaved scalp in black ink â€” elaborate journeyman qualification piece with labeled nodes and pathways, visible from any angle",
+                                                              "Pale scar tissue across both palms and fingers from countless incremental augmentation surgeries, creating a topography of overlapping surgical sites"
+                                                          ],
+                                 "visible_augmentations":  "Both hands show obvious titanium reinforcement â€” finger joints gleam chrome under workshop light, articulations smoother than natural bone. Right hand fingers feature visible retractable panels at knuckles where micro-tools deploy. Left eye glows faint amber in low-light environments from subretinal work-light. Both wrists show faint scarring and subtle metallic sheen at flex points (anti-tremor stabilizers). Hands move with uncanny precision that immediately signals \u0027augmented tech.\u0027",
+                                 "posture_movement":  "Moves with unhurried, economical motion â€” no wasted energy, every gesture purposeful. Hands rest in constant micro-adjustment, fingers flexing or adjusting involuntarily even when idle. Leans slightly forward when focused, head tilting to align left eye work-light. Walks with weight distributed even, shoulders level. Speaks with hands frequently, gesturing with augmented fingers in ways that unconsciously display their precision.",
+                                 "clothing_style":  "Worn gray canvas mechanic\u0027s apron with oil stains and burn marks, worn over a clean white or pale gray undershirt (practical for workshop but also a statement â€” clean torso despite the work). Heavy-duty boots with reinforced soles and ankle support. No jewelry, no visible corporate branding. Clothes are Tier 4-5 utilitarian â€” functional, maintained but not fashionable, marking him as working-class Geartown rather than corpo. A thin wire runs from behind his left ear down his neck (neural interface jack, discreet but visible on close inspection)."
+                             },
+    "image_prompt":  "Ayaka Jung-Chakraborty, 182cm tall muscular augmented technician in GLMZ, warm bronze-brown complexion with golden undertones reflecting South Asian, East Asian, and Hispanic heritage blend, shaved scalp covered in intricate black circuit diagram tattoo with labeled nodes, weathered face with defined jawline and moderate cheekbones, crow\u0027s feet from decades of precision work. Dark brown eyes, left eye glowing faint amber from subretinal work-light. Both hands heavily augmented with visible titanium reinforcement, chrome finger joints, retractable micro-tools at right hand knuckles, pale surgical scars across palms. Wearing worn gray canvas mechanic\u0027s apron with oil stains over clean white undershirt, heavy reinforced boots, neural interface jack visible behind left ear. Workshop environment with low industrial lighting emphasizing the amber glow of augmented left eye. Posture economical and focused, hands in constant micro-adjustment. Geartown working-class aesthetic, no corporate branding, functional and utilitarian. Cinematic GLMZ 2200s atmosphere --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  36.6,
+                             "East Asian":  28.3,
+                             "Hispanic/Latin American":  19.7,
+                             "Eastern European":  5.9,
+                             "Northern European":  5.4,
+                             "Southeast Asian":  4.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Gujarati":  11.4,
+                                                               "Kannada":  5.9
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  6.9
+                                                                },
+                                                "Nepali":  {
+                                                               "Nepali":  12.4
+                                                           }
+                                            },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  28.3
+                                                          }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Costa Rican":  6.4
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  3.4,
+                                                                              "Puerto Rican":  4.6
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Peruvian":  5.3
+                                                                               }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  1.3,
+                                                                         "Ukrainian":  1.3
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  1.4,
+                                                                             "Hungarian":  1.9
+                                                                         }
+                                                 },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  0.5
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "Swiss German":  1.3,
+                                                                       "Austrian":  3.6
+                                                                   }
+                                                  },
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  4.1
+                                                                  }
+                                                }
+                        },
+    "tier":  "2"
 }

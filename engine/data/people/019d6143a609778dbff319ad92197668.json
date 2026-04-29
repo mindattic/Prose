@@ -1,301 +1,314 @@
-{
-  "id": "019d6143a609778dbff319ad92197668",
-  "rating": 80,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Yasmin Sabbagh-Balogun",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Excluded \u2014 former Circuit data architect, now stateless and living off-grid",
-  "age": 28,
-  "status": "active",
-  "location": "Nomadic between Old Harbor and the underdeck of the Gray Zone, near Wacker and State",
-  "description": "Yasmin Sabbagh-Balogun is a wiry young woman of Catalan-Senegalese heritage with the restless, slightly hollow-eyed look of someone who sleeps in four-hour increments and considers this a feature rather than a problem. She keeps her dark hair in a haphazard knot and dresses in layers that can be shed or added based on which part of the city she needs to move through. She has a habit of mapping her surroundings in her head \u2014 exits, sightlines, power sources \u2014 that makes her seem distracted in conversation when she is actually paying very close attention to everything except the person speaking.\n\nYasmin Sabbagh-Balogun was, until two years ago, a mid-tier data architect employed by a Circuit infrastructure firm, designing the information routing systems that keep GLMZ\u0027s corporate districts legible to themselves. She was twenty-six, overqualified, and beginning to understand the full scope of what her work was being used for. The sequence of events following that understanding resulted in her employment termination, the revocation of her residential registration, the freezing of her financial identity, and what she describes as \u0027a fairly educational few weeks.\u0027 She is now, legally, no one. Her identity exists only in fragments she maintains herself.\n\nShe is not broken by this. She is, if anything, clarified. Yasmin Sabbagh-Balogun operates as a freelance network infiltrator and system saboteur, taking contracts that align with her criteria \u2014 which are specific, non-negotiable, and not primarily financial. She has a gift for understanding systems architecturally, for finding the load-bearing assumption that, removed, causes something large to stop working. She finds this genuinely interesting. The politics are almost secondary. Almost.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.65,
-      "id": 0.8,
-      "shadow": 0.45,
-      "mask": 0.3,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Being absorbed back into a system on its terms rather than hers",
-      "That her work causes harm she cannot trace or account for",
-      "Stagnation \u2014 becoming someone who only reacts rather than builds"
-    ],
-    "core_desires": [
-      "To design something that actively cannot be captured or corrupted by the systems she opposes",
-      "To be in motion \u2014 physically, intellectually, relationally",
-      "To find people who are genuinely interested in the same problems, not just the same enemies"
-    ],
-    "coping_mechanisms": [
-      "Reframing precarity as freedom with genuine success",
-      "Intellectual absorption \u2014 losing herself in a system problem until the emotional noise quiets",
-      "Maintaining a handful of deep, portable relationships rather than community ties"
-    ],
-    "blind_spots": [
-      "Underweights the emotional cost of rootlessness on herself and others",
-      "Assumes that understanding a system fully implies moral clarity about acting on it",
-      "Her low-mask presentation reads as openness but she withholds more than she realizes"
-    ],
-    "secret": "The action that got her excluded was not purely principled \u2014 she had also built and used a personal backdoor in the infrastructure system for months before she decided to act on what she knew. She has told herself the backdoor was reconnaissance. Some nights she believes it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical and precise with a tendency to use infrastructure metaphors for human situations; occasional Catalan expletives and endearments; direct to the point of seeming rude until the warmth underneath becomes apparent",
-    "cadence": "Fast when interested, which is often; skips conversational pleasantries not out of rudeness but genuine impatience with them; thoughts arrive in clusters",
-    "verbal_tics": [
-      "\u0027Structurally\u0027 \u2014 used to mean \u0027at a fundamental level\u0027 about almost any topic",
-      "Completes other people\u0027s technical sentences and is usually right",
-      "Says \u0027okay, yes\u0027 as a processing filler before responding to something complicated"
-    ],
-    "example_lines": [
-      "\u0027Okay, yes \u2014 structurally what you\u0027re describing is a redundancy problem, not a security problem. Those require different solutions and you\u0027re applying the wrong one.\u0027",
-      "\u0027I don\u0027t need a safe house. I need a node. There\u0027s a difference. A safe house is about hiding. A node is about staying connected.\u0027",
-      "\u0027Mare de d\u00E9u, you filed it under compliance? Why would anyone ever find it there? That\u0027s either very stupid or very smart and I need to know which.\u0027",
-      "\u0027I\u0027m not trying to break it. I\u0027m trying to understand what it\u0027s actually doing. Breaking it might happen to be the same thing. That\u0027s not my fault, that\u0027s the system\u0027s design.\u0027"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [
-    {
-      "name": "Nkechi Abara-Veltman",
-      "type": "recent alliance / growing trust",
-      "description": "Eul\u00E0lia arrived at the Parlour with a superficial wound and a fried neural interface. Nkechi fixed one and opined on the other. They have since met four more times, not all medically.",
-      "emotional_core": "Mutual recognition of someone who opted out and kept their integrity \u2014 rare enough to be worth paying attention to",
-      "story_tension": "Eul\u00E0lia has noticed anomalies in the Gray Zone infrastructure data that suggest the Parlour is being quietly surveilled and hasn\u0027t yet decided how to tell Nkechi"
-    },
-    {
-      "name": "Crisanto Dela Torre-\u00C5ngstr\u00F6m",
-      "type": "unknown / potential collision",
-      "description": "Eul\u00E0lia doesn\u0027t know Crisanto exists. Crisanto knows Eul\u00E0lia exists as a threat-vector notation in a Veltris security briefing.",
-      "emotional_core": "N/A \u2014 not yet a relationship, but structurally inevitable",
-      "story_tension": "The infrastructure she is currently mapping for a client is Veltris-adjacent; they will intersect"
-    },
-    {
-      "name": "Zinnia Achterberg-Nwosu",
-      "type": "former colleague / unresolved",
-      "description": "They worked together at the Circuit firm. Zinnia knew something was wrong before Eul\u00E0lia acted and said nothing \u2014 from fear, not complicity. Eul\u00E0lia has not fully separated those.",
-      "emotional_core": "The particular grief of losing someone who was not actually on the wrong side",
-      "story_tension": "Zinnia has recently tried to make contact through an intermediary and Eul\u00E0lia has not responded"
-    }
-  ],
-  "story_hooks": [
-    "She discovers her personal backdoor from the old system is still active \u2014 and someone else has been using it",
-    "A contract requires her to compromise infrastructure she designed herself, which she finds philosophically interesting and practically dangerous",
-    "the Gray Zone surveillance anomaly she\u0027s noticed escalates into something that directly endangers Nkechi",
-    "Zinnia\u0027s message through the intermediary contains a single piece of data that changes Eul\u00E0lia\u0027s understanding of why she was excluded"
-  ],
-  "narrative_function": "Mobile, systems-level disruptor; represents the excluded who retain expertise and agency; provides technical plot access and a perspective that is neither street-level desperation nor corporate complicity; her arc concerns what it means to build versus destroy",
-  "augmentations": "Neural interface (damaged, partially repaired by Nkechi, now running at about seventy percent \u2014 she considers this acceptable),Distributed personal mesh network \u2014 a series of small hardware nodes she wears or carries that maintain a private encrypted network independent of city infrastructure,Retinal overlay, basic model, pre-exclusion; she has refused to upgrade it through any channel that requires identity verification",
-  "daily_life": "Has no fixed location. Rotates between three or four semi-reliable sleeping spots in Old Harbor and the Gray Zone underdeck. Works in long focused bursts followed by periods of deliberate physical movement \u2014 she walks a lot, maps routes, stays observant. Eats irregularly and is aware this is a problem. Maintains three trusted contacts she checks in with weekly to confirm mutual safety. Reads architecture and systems theory for pleasure and considers this a personality trait.",
-  "affiliation": "Unaffiliated; takes selective contracts from vetted clients; loosely networked with other excluded individuals but has no organizational loyalty",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 5,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 4,
-      "expression": 6,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 2,
-      "transparency_guardedness": -1
-    },
-    "drives": [
-      "Design something incorruptible",
-      "Stay in motion",
-      "Understand systems at their foundations"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 6,
-        "response": "Loses herself in a system problem until the emotional noise quiets"
-      },
-      "moral": 7,
-      "trust": 4,
-      "desperation": 5
-    },
-    "strengths": [
-      "Curiosity",
-      "Creativity",
-      "Judgment",
-      "Perseverance",
-      "Perspective"
-    ],
-    "weaknesses": [
-      "Kindness",
-      "Love",
-      "Gratitude",
-      "Humility",
-      "Teamwork"
-    ],
-    "tags": [
-      "data-architect",
-      "excluded",
-      "saboteur",
-      "stateless",
-      "systems-thinker",
-      "nomadic",
-      "mesh-networked",
-      "catalan-senegalese"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will always assess exits, sightlines, and power sources upon entering any space",
-      "Will never take a contract that does not meet her specific, non-negotiable criteria",
-      "Will always complete other people\u0027s technical sentences \u2014 and is usually right",
-      "Will never accept identity verification through any channel she does not control",
-      "Will always find the load-bearing assumption in a system before acting on it",
-      "Will never stay in one location long enough to become predictable",
-      "Will always maintain her distributed personal mesh network above all other equipment"
-    ],
-    "escalation_ladder": [
-      "Reframes the problem technically \u2014 \u0027structurally, what you\u0027re describing is\u2014\u0027",
-      "Processes aloud with \u0027okay, yes\u0027 and rapid-fire analysis that leaves the other party behind",
-      "Catalan expletives surface \u2014 \u0027Mare de deu\u0027 signals genuine frustration",
-      "Activates mesh network countermeasures and goes off-grid within city infrastructure",
-      "Finds the load-bearing assumption in the opposing system and removes it \u2014 not breaking, understanding"
-    ],
-    "interpersonal_modes": {
-      "Nkechi Abara-Veltman": "Mutual recognition of opted-out integrity \u2014 growing trust, potentially her most important relationship",
-      "Crisanto Dela Torre-Angstrom": "Does not know he exists, but collision is structurally inevitable",
-      "Zinnia Achterberg-Nwosu": "Unresolved grief over someone who was not on the wrong side but did nothing"
-    },
-    "stress_responses": {
-      "low": "Walks longer routes, maps infrastructure, reads systems theory for pleasure",
-      "medium": "Eats even less, work sessions extend to dangerous lengths, speech accelerates",
-      "high": "Low-mask presentation breaks \u2014 she withholds more than usual while appearing more open",
-      "critical": "Discovers her personal backdoor is still active and must decide whether to use it or destroy it"
-    },
-    "contradictions": [
-      "Built and used a personal backdoor for months before deciding to act on principle \u2014 reconnaissance or hypocrisy",
-      "Reads as open and direct while withholding more than she realizes",
-      "Reframes precarity as freedom while the emotional cost of rootlessness accumulates invisibly"
-    ],
-    "habits": [
-      "Uses \u0027structurally\u0027 to mean \u0027at a fundamental level\u0027 about almost any topic",
-      "Says \u0027okay, yes\u0027 as processing filler before responding to complexity",
-      "Maps surroundings in her head \u2014 exits, sightlines, power sources \u2014 appears distracted but is hyperaware",
-      "Reads architecture and systems theory for pleasure",
-      "Maintains three trusted contacts she checks in with weekly"
-    ],
-    "breaking_points": [
-      "Her personal backdoor from the old system being discovered and used by someone else",
-      "the Gray Zone surveillance anomaly escalating to directly endanger Nkechi",
-      "Being absorbed back into a system on its terms rather than hers",
-      "Zinnia\u0027s message containing information that reframes why she was excluded"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Ghost": 0.7,
-    "Social Chameleon": 0.7,
-    "Ambusher": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Nomadic between Old Harbor and the underdeck of the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Middle Eastern (53%), Eastern European (24%), and Sub-Saharan African (23%) ancestry. The result is a striking blend: warm, rich deep brown skin tones from the dominant Middle Eastern and African heritage with subtle golden-olive undertones, high and prominent cheekbones characteristic of Eastern European ancestry, and refined angular facial structure reflecting the genetic synthesis of the Ubiquitous Diaspora. The combination yields warm-toned features with strong definition rather than soft curves.",
-    "height_cm": 164,
-    "weight_kg": 52,
-    "build": "Wiry and lean with the taut musculature of someone who walks constantly and eats when remembering to. No excess, no softness \u2014 efficient rather than athletic.",
-    "hair_color": "Dark brown, naturally, with occasional premature silver at the temples from stress or neural interface strain",
-    "hair_style": "Usually gathered into a haphazard knot or bun, sometimes with strands escaping; occasionally tied back with salvaged wire or synthetic cord",
-    "hair_length": "Medium, typically 20-25cm, kept long enough for functionality but not maintenance",
-    "eye_color": "Deep brown with a faint amber tint in the right eye where the retinal overlay circuitry shows through under certain light",
-    "skin_tone": "Warm deep brown complexion with golden and olive undertones from Middle Eastern and Sub-Saharan African heritage, cooled slightly by the blue-grey pallor of someone running on irregular sleep cycles and limited sunlight exposure",
-    "complexion": "High, prominent cheekbones characteristic of Eastern European ancestry, refined and angular features with warm deep brown undertones. Dark circles are permanent fixtures under the eyes. A few scars around the left temple from old implant work. Generally clean but not groomed \u2014 practical rather than cosmetic.",
-    "distinguishing_marks": [
-      "Three thin parallel scars running vertically down the left side of her neck, approximately 8cm total length, from a failed hardware extraction attempt; visibly present, pale and slightly raised",
-      "Faint circular scar tissue on the inner left wrist where an early prototype node was implanted and later removed; barely visible unless specifically examined",
-      "A small burn mark on her right palm, diameter ~2cm, from an electrical discharge during an underdeck salvage operation; pale and well-healed",
-      "Subcutaneous mesh nodes create slight visible bulges under the skin at her collarbone, left hip, and the back of her right ear, visible only when clothing shifts or light hits at specific angles"
-    ],
-    "visible_augmentations": "Retinal overlay creates a faint golden-amber luminescence in the right eye in low-light conditions. Small hardware nodes occasionally visible at the collarbone and hip beneath thin clothing when she moves. The neural interface scar tissue along the left temple and neck is openly visible. No attempt made to conceal any of this.",
-    "posture_movement": "Moves with economical precision \u2014 no wasted motion, but not tense. Walks slightly faster than conversational pace. Tends to position herself with clear sightlines and exit vectors. Often appears distracted because she is simultaneously mapping her environment; eye contact is inconsistent. When focused on technical work, becomes nearly motionless. Her hands are always slightly active, fingers moving as if tracing invisible code or pathways.",
-    "clothing_style": "Tier 4-5 functional nomad aesthetic. Layered: typically a fitted black or dark grey thermal base, over which she wears a salvaged circuit-weave vest (conductive material from a decommissioned piece of infrastructure), a water-resistant outer shell in charcoal or deep blue, and cargo pants with reinforced pockets and cargo loops from which small hardware nodes hang. Worn climbing boots with visible sole reinforcement. No logos or corpo branding. Everything is either salvaged, stolen, or purchased through untraceable channels. She owns approximately two complete outfits and cycles them. Her jacket has seven visible pockets and two hidden ones."
-  },
-  "image_prompt": "Yasmin Sabbagh-Balogun, 164cm lean neo-noir hacker with deep warm brown skin, golden undertones, high cheekbones, dark hair in messy bun with silver at temples. Dark exhausted eyes with faint amber glow in right eye from retinal implant. Visible scars down left neck from implant extraction, small burn on right palm. Wearing salvaged circuit-weave vest over black thermal base, water-resistant charcoal outer shell, reinforced cargo pants with hanging hardware nodes, worn climbing boots. Hands moving with restless energy. Standing in neon-lit underdeck data den, blue and purple ambient light catching the subcutaneous mesh nodes visible at collarbone. Precise, economical posture with clear exit sightlines. Nomadic tech salvager aesthetic, no corpo branding. GLMZ Great Lakes Metropolitan Zone. Moody low-light atmosphere, gritty industrial background. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Middle Eastern": 53,
-    "Eastern European": 24,
-    "Sub-Saharan African": 23
-  },
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Jordanian": 53
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 10.9
-      },
-      "Slavic South": {
-        "Slovenian": 13.1
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 14.4,
-        "Botswanan": 7.7
-      },
-      "West African": {
-        "Nigerian": 0.9
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a609778dbff319ad92197668",
+    "rating":  80,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Yasmin Sabbagh-Balogun",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Excluded — former Circuit data architect, now stateless and living off-grid",
+    "age":  28,
+    "status":  "active",
+    "location":  "Nomadic between Old Harbor and the underdeck of the Gray Zone, near Wacker and State",
+    "description":  "Yasmin Sabbagh-Balogun is a wiry young woman of Catalan-Senegalese heritage with the restless, slightly hollow-eyed look of someone who sleeps in four-hour increments and considers this a feature rather than a problem. She keeps her dark hair in a haphazard knot and dresses in layers that can be shed or added based on which part of the city she needs to move through. She has a habit of mapping her surroundings in her head — exits, sightlines, power sources — that makes her seem distracted in conversation when she is actually paying very close attention to everything except the person speaking.\n\nYasmin Sabbagh-Balogun was, until two years ago, a mid-tier data architect employed by a Circuit infrastructure firm, designing the information routing systems that keep GLMZ\u0027s corporate districts legible to themselves. She was twenty-six, overqualified, and beginning to understand the full scope of what her work was being used for. The sequence of events following that understanding resulted in her employment termination, the revocation of her residential registration, the freezing of her financial identity, and what she describes as \u0027a fairly educational few weeks.\u0027 She is now, legally, no one. Her identity exists only in fragments she maintains herself.\n\nShe is not broken by this. She is, if anything, clarified. Yasmin Sabbagh-Balogun operates as a freelance network infiltrator and system saboteur, taking contracts that align with her criteria — which are specific, non-negotiable, and not primarily financial. She has a gift for understanding systems architecturally, for finding the load-bearing assumption that, removed, causes something large to stop working. She finds this genuinely interesting. The politics are almost secondary. Almost.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being absorbed back into a system on its terms rather than hers",
+                                          "That her work causes harm she cannot trace or account for",
+                                          "Stagnation — becoming someone who only reacts rather than builds"
+                                      ],
+                       "core_desires":  [
+                                            "To design something that actively cannot be captured or corrupted by the systems she opposes",
+                                            "To be in motion — physically, intellectually, relationally",
+                                            "To find people who are genuinely interested in the same problems, not just the same enemies"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Reframing precarity as freedom with genuine success",
+                                                 "Intellectual absorption — losing herself in a system problem until the emotional noise quiets",
+                                                 "Maintaining a handful of deep, portable relationships rather than community ties"
+                                             ],
+                       "blind_spots":  [
+                                           "Underweights the emotional cost of rootlessness on herself and others",
+                                           "Assumes that understanding a system fully implies moral clarity about acting on it",
+                                           "Her low-mask presentation reads as openness but she withholds more than she realizes"
+                                       ],
+                       "secret":  "The action that got her excluded was not purely principled — she had also built and used a personal backdoor in the infrastructure system for months before she decided to act on what she knew. She has told herself the backdoor was reconnaissance. Some nights she believes it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical and precise with a tendency to use infrastructure metaphors for human situations; occasional Catalan expletives and endearments; direct to the point of seeming rude until the warmth underneath becomes apparent",
+                            "cadence":  "Fast when interested, which is often; skips conversational pleasantries not out of rudeness but genuine impatience with them; thoughts arrive in clusters",
+                            "verbal_tics":  [
+                                                "\u0027Structurally\u0027 — used to mean \u0027at a fundamental level\u0027 about almost any topic",
+                                                "Completes other people\u0027s technical sentences and is usually right",
+                                                "Says \u0027okay, yes\u0027 as a processing filler before responding to something complicated"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Okay, yes — structurally what you\u0027re describing is a redundancy problem, not a security problem. Those require different solutions and you\u0027re applying the wrong one.\u0027",
+                                                  "\u0027I don\u0027t need a safe house. I need a node. There\u0027s a difference. A safe house is about hiding. A node is about staying connected.\u0027",
+                                                  "\u0027Mare de déu, you filed it under compliance? Why would anyone ever find it there? That\u0027s either very stupid or very smart and I need to know which.\u0027",
+                                                  "\u0027I\u0027m not trying to break it. I\u0027m trying to understand what it\u0027s actually doing. Breaking it might happen to be the same thing. That\u0027s not my fault, that\u0027s the system\u0027s design.\u0027"
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Nkechi Abara-Veltman",
+                              "type":  "recent alliance / growing trust",
+                              "description":  "Eulàlia arrived at the Parlour with a superficial wound and a fried neural interface. Nkechi fixed one and opined on the other. They have since met four more times, not all medically.",
+                              "emotional_core":  "Mutual recognition of someone who opted out and kept their integrity — rare enough to be worth paying attention to",
+                              "story_tension":  "Eulàlia has noticed anomalies in the Gray Zone infrastructure data that suggest the Parlour is being quietly surveilled and hasn\u0027t yet decided how to tell Nkechi"
+                          },
+                          {
+                              "name":  "Crisanto Dela Torre-Ångström",
+                              "type":  "unknown / potential collision",
+                              "description":  "Eulàlia doesn\u0027t know Crisanto exists. Crisanto knows Eulàlia exists as a threat-vector notation in a Veltris security briefing.",
+                              "emotional_core":  "N/A — not yet a relationship, but structurally inevitable",
+                              "story_tension":  "The infrastructure she is currently mapping for a client is Veltris-adjacent; they will intersect"
+                          },
+                          {
+                              "name":  "Zinnia Achterberg-Nwosu",
+                              "type":  "former colleague / unresolved",
+                              "description":  "They worked together at the Circuit firm. Zinnia knew something was wrong before Eulàlia acted and said nothing — from fear, not complicity. Eulàlia has not fully separated those.",
+                              "emotional_core":  "The particular grief of losing someone who was not actually on the wrong side",
+                              "story_tension":  "Zinnia has recently tried to make contact through an intermediary and Eulàlia has not responded"
+                          }
+                      ],
+    "story_hooks":  [
+                        "She discovers her personal backdoor from the old system is still active — and someone else has been using it",
+                        "A contract requires her to compromise infrastructure she designed herself, which she finds philosophically interesting and practically dangerous",
+                        "the Gray Zone surveillance anomaly she\u0027s noticed escalates into something that directly endangers Nkechi",
+                        "Zinnia\u0027s message through the intermediary contains a single piece of data that changes Eulàlia\u0027s understanding of why she was excluded"
+                    ],
+    "narrative_function":  "Mobile, systems-level disruptor; represents the excluded who retain expertise and agency; provides technical plot access and a perspective that is neither street-level desperation nor corporate complicity; her arc concerns what it means to build versus destroy",
+    "augmentations":  "Neural interface (damaged, partially repaired by Nkechi, now running at about seventy percent — she considers this acceptable),Distributed personal mesh network — a series of small hardware nodes she wears or carries that maintain a private encrypted network independent of city infrastructure,Retinal overlay, basic model, pre-exclusion; she has refused to upgrade it through any channel that requires identity verification",
+    "daily_life":  "Has no fixed location. Rotates between three or four semi-reliable sleeping spots in Old Harbor and the Gray Zone underdeck. Works in long focused bursts followed by periods of deliberate physical movement — she walks a lot, maps routes, stays observant. Eats irregularly and is aware this is a problem. Maintains three trusted contacts she checks in with weekly to confirm mutual safety. Reads architecture and systems theory for pleasure and considers this a personality trait.",
+    "affiliation":  "Unaffiliated; takes selective contracts from vetted clients; loosely networked with other excluded individuals but has no organizational loyalty",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  5,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  4,
+                                 "expression":  6,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+                                 "Design something incorruptible",
+                                 "Stay in motion",
+                                 "Understand systems at their foundations"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  6,
+                                                    "response":  "Loses herself in a system problem until the emotional noise quiets"
+                                                },
+                                     "moral":  7,
+                                     "trust":  4,
+                                     "desperation":  5
+                                 },
+                  "strengths":  [
+                                    "Curiosity",
+                                    "Creativity",
+                                    "Judgment",
+                                    "Perseverance",
+                                    "Perspective"
+                                ],
+                  "weaknesses":  [
+                                     "Kindness",
+                                     "Love",
+                                     "Gratitude",
+                                     "Humility",
+                                     "Teamwork"
+                                 ],
+                  "tags":  [
+                               "data-architect",
+                               "excluded",
+                               "saboteur",
+                               "stateless",
+                               "systems-thinker",
+                               "nomadic",
+                               "mesh-networked",
+                               "catalan-senegalese"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will always assess exits, sightlines, and power sources upon entering any space",
+                                              "Will never take a contract that does not meet her specific, non-negotiable criteria",
+                                              "Will always complete other people\u0027s technical sentences — and is usually right",
+                                              "Will never accept identity verification through any channel she does not control",
+                                              "Will always find the load-bearing assumption in a system before acting on it",
+                                              "Will never stay in one location long enough to become predictable",
+                                              "Will always maintain her distributed personal mesh network above all other equipment"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Reframes the problem technically — \u0027structurally, what you\u0027re describing is—\u0027",
+                                                 "Processes aloud with \u0027okay, yes\u0027 and rapid-fire analysis that leaves the other party behind",
+                                                 "Catalan expletives surface — \u0027Mare de deu\u0027 signals genuine frustration",
+                                                 "Activates mesh network countermeasures and goes off-grid within city infrastructure",
+                                                 "Finds the load-bearing assumption in the opposing system and removes it — not breaking, understanding"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "Nkechi Abara-Veltman":  "Mutual recognition of opted-out integrity — growing trust, potentially her most important relationship",
+                                                   "Crisanto Dela Torre-Angstrom":  "Does not know he exists, but collision is structurally inevitable",
+                                                   "Zinnia Achterberg-Nwosu":  "Unresolved grief over someone who was not on the wrong side but did nothing"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Walks longer routes, maps infrastructure, reads systems theory for pleasure",
+                                                "medium":  "Eats even less, work sessions extend to dangerous lengths, speech accelerates",
+                                                "high":  "Low-mask presentation breaks — she withholds more than usual while appearing more open",
+                                                "critical":  "Discovers her personal backdoor is still active and must decide whether to use it or destroy it"
+                                            },
+                       "contradictions":  [
+                                              "Built and used a personal backdoor for months before deciding to act on principle — reconnaissance or hypocrisy",
+                                              "Reads as open and direct while withholding more than she realizes",
+                                              "Reframes precarity as freedom while the emotional cost of rootlessness accumulates invisibly"
+                                          ],
+                       "habits":  [
+                                      "Uses \u0027structurally\u0027 to mean \u0027at a fundamental level\u0027 about almost any topic",
+                                      "Says \u0027okay, yes\u0027 as processing filler before responding to complexity",
+                                      "Maps surroundings in her head — exits, sightlines, power sources — appears distracted but is hyperaware",
+                                      "Reads architecture and systems theory for pleasure",
+                                      "Maintains three trusted contacts she checks in with weekly"
+                                  ],
+                       "breaking_points":  [
+                                               "Her personal backdoor from the old system being discovered and used by someone else",
+                                               "the Gray Zone surveillance anomaly escalating to directly endanger Nkechi",
+                                               "Being absorbed back into a system on its terms rather than hers",
+                                               "Zinnia\u0027s message containing information that reframes why she was excluded"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Ghost":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Ambusher":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Nomadic between Old Harbor and the underdeck of the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Middle Eastern (53%), Eastern European (24%), and Sub-Saharan African (23%) ancestry. The result is a striking blend: warm, rich deep brown skin tones from the dominant Middle Eastern and African heritage with subtle golden-olive undertones, high and prominent cheekbones characteristic of Eastern European ancestry, and refined angular facial structure reflecting the genetic synthesis of the Ubiquitous Diaspora. The combination yields warm-toned features with strong definition rather than soft curves.",
+                                 "height_cm":  164,
+                                 "weight_kg":  52,
+                                 "build":  "Wiry and lean with the taut musculature of someone who walks constantly and eats when remembering to. No excess, no softness — efficient rather than athletic.",
+                                 "hair_color":  "Dark brown, naturally, with occasional premature silver at the temples from stress or neural interface strain",
+                                 "hair_style":  "Usually gathered into a haphazard knot or bun, sometimes with strands escaping; occasionally tied back with salvaged wire or synthetic cord",
+                                 "hair_length":  "Medium, typically 20-25cm, kept long enough for functionality but not maintenance",
+                                 "eye_color":  "Deep brown with a faint amber tint in the right eye where the retinal overlay circuitry shows through under certain light",
+                                 "skin_tone":  "Warm deep brown complexion with golden and olive undertones from Middle Eastern and Sub-Saharan African heritage, cooled slightly by the blue-grey pallor of someone running on irregular sleep cycles and limited sunlight exposure",
+                                 "complexion":  "High, prominent cheekbones characteristic of Eastern European ancestry, refined and angular features with warm deep brown undertones. Dark circles are permanent fixtures under the eyes. A few scars around the left temple from old implant work. Generally clean but not groomed — practical rather than cosmetic.",
+                                 "distinguishing_marks":  [
+                                                              "Three thin parallel scars running vertically down the left side of her neck, approximately 8cm total length, from a failed hardware extraction attempt; visibly present, pale and slightly raised",
+                                                              "Faint circular scar tissue on the inner left wrist where an early prototype node was implanted and later removed; barely visible unless specifically examined",
+                                                              "A small burn mark on her right palm, diameter ~2cm, from an electrical discharge during an underdeck salvage operation; pale and well-healed",
+                                                              "Subcutaneous mesh nodes create slight visible bulges under the skin at her collarbone, left hip, and the back of her right ear, visible only when clothing shifts or light hits at specific angles"
+                                                          ],
+                                 "visible_augmentations":  "Retinal overlay creates a faint golden-amber luminescence in the right eye in low-light conditions. Small hardware nodes occasionally visible at the collarbone and hip beneath thin clothing when she moves. The neural interface scar tissue along the left temple and neck is openly visible. No attempt made to conceal any of this.",
+                                 "posture_movement":  "Moves with economical precision — no wasted motion, but not tense. Walks slightly faster than conversational pace. Tends to position herself with clear sightlines and exit vectors. Often appears distracted because she is simultaneously mapping her environment; eye contact is inconsistent. When focused on technical work, becomes nearly motionless. Her hands are always slightly active, fingers moving as if tracing invisible code or pathways.",
+                                 "clothing_style":  "Tier 4-5 functional nomad aesthetic. Layered: typically a fitted black or dark grey thermal base, over which she wears a salvaged circuit-weave vest (conductive material from a decommissioned piece of infrastructure), a water-resistant outer shell in charcoal or deep blue, and cargo pants with reinforced pockets and cargo loops from which small hardware nodes hang. Worn climbing boots with visible sole reinforcement. No logos or corpo branding. Everything is either salvaged, stolen, or purchased through untraceable channels. She owns approximately two complete outfits and cycles them. Her jacket has seven visible pockets and two hidden ones."
+                             },
+    "image_prompt":  "Yasmin Sabbagh-Balogun, 164cm lean neo-noir hacker with deep warm brown skin, golden undertones, high cheekbones, dark hair in messy bun with silver at temples. Dark exhausted eyes with faint amber glow in right eye from retinal implant. Visible scars down left neck from implant extraction, small burn on right palm. Wearing salvaged circuit-weave vest over black thermal base, water-resistant charcoal outer shell, reinforced cargo pants with hanging hardware nodes, worn climbing boots. Hands moving with restless energy. Standing in neon-lit underdeck data den, blue and purple ambient light catching the subcutaneous mesh nodes visible at collarbone. Precise, economical posture with clear exit sightlines. Nomadic tech salvager aesthetic, no corpo branding. GLMZ Great Lakes Metropolitan Zone. Moody low-light atmosphere, gritty industrial background. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  53,
+                             "Eastern European":  24,
+                             "Sub-Saharan African":  23
+                         },
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Jordanian":  53
+                                                                      }
+                                               },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  10.9
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Slovenian":  13.1
+                                                                      }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  14.4,
+                                                                                 "Botswanan":  7.7
+                                                                             },
+                                                        "West African":  {
+                                                                             "Nigerian":  0.9
+                                                                         }
+                                                    }
+                        }
 }

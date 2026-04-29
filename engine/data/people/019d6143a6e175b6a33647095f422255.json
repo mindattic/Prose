@@ -1,254 +1,275 @@
-{
-  "id": "019d6143a6e175b6a33647095f422255",
-  "type": "character",
-  "name": "Ananda Traoré",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "wandering trader and hand-drawn map seller",
-  "age": 58,
-  "status": "active",
-  "location": "Kenosha Crossing transit hub, outer berths, near outside the Pulaski Gate",
-  "description": "Ananda Traoré is a lean, sun-darkened man whose face carries the deep-etched lines of someone who has slept outdoors more than inside. His hair is silver-streaked black, kept in tight locks that hang to his collarbone, adorned with small brass charms he picks up at every stop. His hands are the most notable thing about him — enormous, ink-stained, with knuckles swollen from decades of drafting in the cold. He carries three hand-sewn leather satchels at all times, each packed with rolled paper maps he has made himself, annotated in four languages with notes on water quality, E.L.F. activity, corrupt checkpoint guards, and where to find honest food. His geneware is a single cosmetic mod — irises with faint golden patterning that he got from a Helix Biosystems field clinic fifteen years ago in exchange for drawing them an accurate map of the Waukegan shelf.\n\nAnanda Traoré talks like a man who has learned that most words are wasted. He is not unfriendly — he simply measures speech the way a traveler measures water. He has been moving along the hyperlane corridors and shoreline routes for thirty years, since his cooperative settlement outside what is now Grainfort was absorbed by Axiom and everyone was given seventy-two hours to vacate. He does not consider himself a refugee anymore. He considers himself a professional. He trades in maps that official systems won't make because official systems don't want people knowing the things he knows.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.7,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.2,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "being stationary long enough for Axiom to notice him again",
-      "his knowledge dying with him with no one to pass it to"
-    ],
-    "core_desires": [
-      "a complete, accurate map of every route through GLMZ's outer territories",
-      "to find one person worth teaching everything he knows"
-    ],
-    "coping_mechanisms": [
-      "converts anxiety into productivity — when frightened, he draws",
-      "maintains emotional distance by framing all relationships as transactions"
-    ],
-    "blind_spots": [
-      "assumes everyone who wants his maps has his values; has been burned by this",
-      "cannot recognize when someone genuinely cares for him versus wants something from him"
-    ],
-    "secret": "He has a complete daughter — Φ-registered, corporate citizen, mid-level Tessera analyst in Meridian Core — who does not know he is still alive. He let her believe he died in the Grainfort displacement because he could not bear to watch her become what she became."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise and spare. Uses cartography metaphors. Rarely uses contractions. Mixes in words from Bambara and Tongan without signaling them.",
-    "cadence": "Slow, measured, with long pauses before important statements. Never rushes.",
-    "verbal_tics": [
-      "starts explanations with 'The first thing you need to understand about this route—'",
-      "says 'mark that' when something is important"
-    ],
-    "example_lines": [
-      "'This map costs you three things: what you paid, where you came from, and one true piece of information I don't already have. Mark that.'",
-      "'I don't sell hope. I sell topography. Hope you'll have to find yourself.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "One of his maps has begun circulating in Meridian Core — someone copied it and sold it to Axiom, who is now sending people to find the source",
-    "A young migrant woman has been following him for three days, and he suspects she may be his daughter's investigator — or his daughter herself in disguise",
-    "A section of his most complete route map shows a location that no longer exists in any official record, and someone very dangerous wants to know how he knew about it"
-  ],
-  "narrative_function": "Information source and orientation anchor for anyone new to the outer routes; quest giver for escort or retrieval tasks; his maps may contain information that powerful entities want suppressed",
-  "augmentations": "Patterned golden irises (Helix cosmetic geneware, very old). No other mods.",
-  "daily_life": "Wakes before dawn at whatever sheltered spot he has found, spends two hours updating his current map with observations from the previous day, then sets up a small cloth display at the Kenosha Crossing outer berths where transients and migrants gather before checkpoint processing. Trades maps for food, Φ, information, or goods he can carry.",
-  "affiliation": "Unaffiliated; loose trade relationship with nomad caravans operating the Escanaba-to-Kenosha route",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 10
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 6,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "cartographer",
-      "survivor",
-      "stateless",
-      "information broker (passive)",
-      "wanderer"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "never trust a checkpoint guard regardless of apparent friendliness",
-      "always establish exit routes before entering any enclosed space",
-      "trade fairly — reputation is the only infrastructure that matters"
-    ],
-    "escalation_ladder": [
-      "ignores perceived threat",
-      "creates distance physically while remaining calm",
-      "offers information as distraction and departs",
-      "disappears into transit crowd — he is very good at this"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally neutral, assesses quickly for threat or opportunity, will answer one question for free as a sample",
-      "friends": "Quietly generous with knowledge, physically still uncomfortable with closeness, expresses care through useful information rather than warmth"
-    },
-    "stress_responses": {
-      "low": "Draws faster, more detail",
-      "medium": "Goes very quiet, begins calculating routes",
-      "high": "Vanishes. Literally leaves. No goodbye."
-    },
-    "contradictions": [
-      "Believes all knowledge should be free and accessible, but charges for his maps because he knows free things are not valued"
-    ],
-    "habits": [
-      "checks sight lines when entering any space",
-      "rubs the brass charms in his hair when thinking",
-      "leaves a small drawn mark on the door frame of any place he sleeps — his own private cartographic record"
-    ],
-    "breaking_points": [
-      "seeing a child turned back at a checkpoint for lack of papers",
-      "anyone destroying or defacing a map — any map, even a bad one"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Kenosha Crossing transit hub",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
-    "Crucible Industries Emergency SMG ESM-1 'Breakglass'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'",
-    "Crucible Industries Emergency SMG ESM-1 'Breakglass'"
-  ],
-  "related_entities": [
-    "Helix Biosystems",
-    "Kenosha Crossing",
-    "Meridian Core",
-    "The Shore Dogs",
-    "Grainfort",
-    "WELLSPRING",
-    "Bathysphere Networks",
-    "Marrowvault Cryogenics",
-    "The Waukegan Industrial Shelf",
-    "Leather",
-    "Silver",
-    "Honest Burger",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Brass",
-    "The Pure Hand"
-  ],
-  "district": "The Wasteland",
-  "physical_description": {
-    "heritage": "Sub-Saharan African and Southeast Asian dominant blend — 48.8% Sub-Saharan African ancestry combined with 47.2% Southeast Asian heritage creates a rich warm-to-deep complexion with influences from both regions. 4% Hispanic/Latin American ancestry adds subtle warmth and variation to skin undertones. This combination produces warm medium-to-deep brown skin with golden and olive undertones, Southeast Asian facial geometry in cheekbones and eye shape, and the broader features characteristic of Sub-Saharan African heritage.",
-    "height_cm": 174,
-    "weight_kg": 68,
-    "build": "Lean and sinewy, muscular in the way of someone who has carried his own weight across thousands of kilometers on foot. No excess; skin drawn tight over defined shoulders and forearms.",
-    "hair_color": "Black with deep silver streaking throughout",
-    "hair_style": "Tight locks hanging to collarbone, individual braids adorned with small brass charms and wire wraps collected from trading posts",
-    "hair_length": "Long",
-    "eye_color": "Dark brown with faint golden geometric patterning across both irises — old Helix Biosystems cosmetic geneware, fifteen years embedded, slightly faded",
-    "skin_tone": "Deep warm brown with golden and olive undertones from the Sub-Saharan African and Southeast Asian ancestry blend, deepened by uneven sun-darkening; lighter patches on palms and underarms where calluses have worn away old pigment",
-    "complexion": "Deeply lined face with permanent creases at eye corners and mouth from squinting across water and desert. Southeast Asian bone structure in high cheekbones and eye shape, with broader features reflecting Sub-Saharan African heritage. Weathered but not neglected — kept clean, beard trimmed short. Hands show most age: enormous span, knuckles swollen and arthritic, fingers stained permanently with mapping ink despite regular washing.",
-    "distinguishing_marks": [
-      "Horizontal scar across left palm, thin and old, from a knife slip during mapwork thirty years ago",
-      "Clustered burn scars on right forearm, small and circular, from campfire sparks — dozens of them accumulated across decades",
-      "Ink staining under all fingernails and between knuckles, darkest on index and middle fingers, permanent despite age",
-      "Faint tattoo on inside right wrist: small cartographic compass rose in black ink, self-applied approximately twenty-five years ago"
-    ],
-    "visible_augmentations": "Only the patterned golden irises are visible — subtle enough that they might be mistaken for natural variation or contact lenses at first glance, but unmistakable on direct eye contact. No other visible chrome, implants, or subdermal work.",
-    "posture_movement": "Moves with economical precision — no wasted motion. Walks slightly bent forward as if perpetually reading terrain. Hands rest near map satchels even when sitting. Speech is sparse; listens more than talks. Eyes constantly register details: exits, water sources, foot traffic patterns, weather shifts.",
-    "clothing_style": "Tier 4 utilitarian traveler. Multiple layered garments in muted colors: weathered linen shirt (sleeves rolled or tied back for mapwork), heavy canvas vest with many pockets containing charcoal stubs, measuring tools, and trade notes. Trousers are durable synth-weave cargo style, patched twice visibly. Boots are good quality and maintained — a traveler's investment. Wears a long, loose overshirt of heavy canvas dyed rust-brown that serves as both warmth and map display surface when laid flat. No corpo logos. Brass buckles and leather straps everywhere. Carries three hand-stitched leather satchels crosswise at all times."
-  },
-  "image_prompt": "Ananda Traoré, weathered cartographer, 174cm lean muscular frame with deep warm brown skin blending Sub-Saharan African and Southeast Asian heritage. High cheekbones with broad facial features, permanently lined face from decades of squinting across terrain. Dark brown eyes with faint golden geometric patterning — old geneware implants. Black hair with silver streaks in tight braids to collarbone, adorned with brass charms. Trimmed beard, deeply tanned. Hands show age and scarring: permanent ink stains under fingernails, horizontal scar across left palm, clustered burn scars on right forearm, knuckles swollen and arthritic. Wears rust-brown heavy canvas overshirt over weathered linen shirt with rolled sleeves, durable synth-weave cargo trousers patched twice, maintained quality boots. Three hand-stitched leather satchels worn crosswise. Brass buckles and leather straps everywhere. Economical posture, slightly bent forward as if reading terrain. GLMZ GLMZ setting, harsh blue-white neon lighting casting shadows across his weathered features, background showing trader's quarter or caravan encampment at dusk, worn maps and navigation tools visible in satchels. Gritty, lived-in atmosphere. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 48.8,
-    "Southeast Asian": 47.2,
-    "Hispanic/Latin American": 4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Botswanan": 2.7
-      },
-      "West African": {
-        "Senegalese": 24.3,
-        "Malian": 7.5
-      },
-      "Central African": {
-        "Cameroonian": 6.6,
-        "Congolese": 7.7
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Cebuano": 34.2
-      },
-      "Vietnamese": {
-        "Vietnamese": 13
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 4
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6e175b6a33647095f422255",
+    "type":  "character",
+    "name":  "Ananda TraorÃ©",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "wandering trader and hand-drawn map seller",
+    "age":  58,
+    "status":  "active",
+    "location":  "Kenosha Crossing transit hub, outer berths, near outside the Pulaski Gate",
+    "description":  "Ananda TraorÃ© is a lean, sun-darkened man whose face carries the deep-etched lines of someone who has slept outdoors more than inside. His hair is silver-streaked black, kept in tight locks that hang to his collarbone, adorned with small brass charms he picks up at every stop. His hands are the most notable thing about him â€” enormous, ink-stained, with knuckles swollen from decades of drafting in the cold. He carries three hand-sewn leather satchels at all times, each packed with rolled paper maps he has made himself, annotated in four languages with notes on water quality, E.L.F. activity, corrupt checkpoint guards, and where to find honest food. His geneware is a single cosmetic mod â€” irises with faint golden patterning that he got from a Helix Biosystems field clinic fifteen years ago in exchange for drawing them an accurate map of the Waukegan shelf.\n\nAnanda TraorÃ© talks like a man who has learned that most words are wasted. He is not unfriendly â€” he simply measures speech the way a traveler measures water. He has been moving along the hyperlane corridors and shoreline routes for thirty years, since his cooperative settlement outside what is now Grainfort was absorbed by Axiom and everyone was given seventy-two hours to vacate. He does not consider himself a refugee anymore. He considers himself a professional. He trades in maps that official systems won\u0027t make because official systems don\u0027t want people knowing the things he knows.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being stationary long enough for Axiom to notice him again",
+                                          "his knowledge dying with him with no one to pass it to"
+                                      ],
+                       "core_desires":  [
+                                            "a complete, accurate map of every route through GLMZ\u0027s outer territories",
+                                            "to find one person worth teaching everything he knows"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "converts anxiety into productivity â€” when frightened, he draws",
+                                                 "maintains emotional distance by framing all relationships as transactions"
+                                             ],
+                       "blind_spots":  [
+                                           "assumes everyone who wants his maps has his values; has been burned by this",
+                                           "cannot recognize when someone genuinely cares for him versus wants something from him"
+                                       ],
+                       "secret":  "He has a complete daughter â€” Î¦-registered, corporate citizen, mid-level Tessera analyst in Meridian Core â€” who does not know he is still alive. He let her believe he died in the Grainfort displacement because he could not bear to watch her become what she became."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and spare. Uses cartography metaphors. Rarely uses contractions. Mixes in words from Bambara and Tongan without signaling them.",
+                            "cadence":  "Slow, measured, with long pauses before important statements. Never rushes.",
+                            "verbal_tics":  [
+                                                "starts explanations with \u0027The first thing you need to understand about this routeâ€”\u0027",
+                                                "says \u0027mark that\u0027 when something is important"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027This map costs you three things: what you paid, where you came from, and one true piece of information I don\u0027t already have. Mark that.\u0027",
+                                                  "\u0027I don\u0027t sell hope. I sell topography. Hope you\u0027ll have to find yourself.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "One of his maps has begun circulating in Meridian Core â€” someone copied it and sold it to Axiom, who is now sending people to find the source",
+                        "A young migrant woman has been following him for three days, and he suspects she may be his daughter\u0027s investigator â€” or his daughter herself in disguise",
+                        "A section of his most complete route map shows a location that no longer exists in any official record, and someone very dangerous wants to know how he knew about it"
+                    ],
+    "narrative_function":  "Information source and orientation anchor for anyone new to the outer routes; quest giver for escort or retrieval tasks; his maps may contain information that powerful entities want suppressed",
+    "augmentations":  "Patterned golden irises (Helix cosmetic geneware, very old). No other mods.",
+    "daily_life":  "Wakes before dawn at whatever sheltered spot he has found, spends two hours updating his current map with observations from the previous day, then sets up a small cloth display at the Kenosha Crossing outer berths where transients and migrants gather before checkpoint processing. Trades maps for food, Î¦, information, or goods he can carry.",
+    "affiliation":  "Unaffiliated; loose trade relationship with nomad caravans operating the Escanaba-to-Kenosha route",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  10
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  6,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "cartographer",
+                               "survivor",
+                               "stateless",
+                               "information broker (passive)",
+                               "wanderer"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "never trust a checkpoint guard regardless of apparent friendliness",
+                                              "always establish exit routes before entering any enclosed space",
+                                              "trade fairly â€” reputation is the only infrastructure that matters"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "ignores perceived threat",
+                                                 "creates distance physically while remaining calm",
+                                                 "offers information as distraction and departs",
+                                                 "disappears into transit crowd â€” he is very good at this"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally neutral, assesses quickly for threat or opportunity, will answer one question for free as a sample",
+                                                   "friends":  "Quietly generous with knowledge, physically still uncomfortable with closeness, expresses care through useful information rather than warmth"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Draws faster, more detail",
+                                                "medium":  "Goes very quiet, begins calculating routes",
+                                                "high":  "Vanishes. Literally leaves. No goodbye."
+                                            },
+                       "contradictions":  [
+                                              "Believes all knowledge should be free and accessible, but charges for his maps because he knows free things are not valued"
+                                          ],
+                       "habits":  [
+                                      "checks sight lines when entering any space",
+                                      "rubs the brass charms in his hair when thinking",
+                                      "leaves a small drawn mark on the door frame of any place he sleeps â€” his own private cartographic record"
+                                  ],
+                       "breaking_points":  [
+                                               "seeing a child turned back at a checkpoint for lack of papers",
+                                               "anyone destroying or defacing a map â€” any map, even a bad one"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Kenosha Crossing transit hub",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027",
+                            "Crucible Industries Emergency SMG ESM-1 \u0027Breakglass\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027",
+                                "Crucible Industries Emergency SMG ESM-1 \u0027Breakglass\u0027"
+                            ],
+    "related_entities":  [
+                             "Helix Biosystems",
+                             "Kenosha Crossing",
+                             "Meridian Core",
+                             "The Shore Dogs",
+                             "Grainfort",
+                             "WELLSPRING",
+                             "Bathysphere Networks",
+                             "Marrowvault Cryogenics",
+                             "The Waukegan Industrial Shelf",
+                             "Leather",
+                             "Silver",
+                             "Honest Burger",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Brass",
+                             "The Pure Hand"
+                         ],
+    "district":  "The Wasteland",
+    "physical_description":  {
+                                 "heritage":  "Sub-Saharan African and Southeast Asian dominant blend â€” 48.8% Sub-Saharan African ancestry combined with 47.2% Southeast Asian heritage creates a rich warm-to-deep complexion with influences from both regions. 4% Hispanic/Latin American ancestry adds subtle warmth and variation to skin undertones. This combination produces warm medium-to-deep brown skin with golden and olive undertones, Southeast Asian facial geometry in cheekbones and eye shape, and the broader features characteristic of Sub-Saharan African heritage.",
+                                 "height_cm":  174,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and sinewy, muscular in the way of someone who has carried his own weight across thousands of kilometers on foot. No excess; skin drawn tight over defined shoulders and forearms.",
+                                 "hair_color":  "Black with deep silver streaking throughout",
+                                 "hair_style":  "Tight locks hanging to collarbone, individual braids adorned with small brass charms and wire wraps collected from trading posts",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Dark brown with faint golden geometric patterning across both irises â€” old Helix Biosystems cosmetic geneware, fifteen years embedded, slightly faded",
+                                 "skin_tone":  "Deep warm brown with golden and olive undertones from the Sub-Saharan African and Southeast Asian ancestry blend, deepened by uneven sun-darkening; lighter patches on palms and underarms where calluses have worn away old pigment",
+                                 "complexion":  "Deeply lined face with permanent creases at eye corners and mouth from squinting across water and desert. Southeast Asian bone structure in high cheekbones and eye shape, with broader features reflecting Sub-Saharan African heritage. Weathered but not neglected â€” kept clean, beard trimmed short. Hands show most age: enormous span, knuckles swollen and arthritic, fingers stained permanently with mapping ink despite regular washing.",
+                                 "distinguishing_marks":  [
+                                                              "Horizontal scar across left palm, thin and old, from a knife slip during mapwork thirty years ago",
+                                                              "Clustered burn scars on right forearm, small and circular, from campfire sparks â€” dozens of them accumulated across decades",
+                                                              "Ink staining under all fingernails and between knuckles, darkest on index and middle fingers, permanent despite age",
+                                                              "Faint tattoo on inside right wrist: small cartographic compass rose in black ink, self-applied approximately twenty-five years ago"
+                                                          ],
+                                 "visible_augmentations":  "Only the patterned golden irises are visible â€” subtle enough that they might be mistaken for natural variation or contact lenses at first glance, but unmistakable on direct eye contact. No other visible chrome, implants, or subdermal work.",
+                                 "posture_movement":  "Moves with economical precision â€” no wasted motion. Walks slightly bent forward as if perpetually reading terrain. Hands rest near map satchels even when sitting. Speech is sparse; listens more than talks. Eyes constantly register details: exits, water sources, foot traffic patterns, weather shifts.",
+                                 "clothing_style":  "Tier 4 utilitarian traveler. Multiple layered garments in muted colors: weathered linen shirt (sleeves rolled or tied back for mapwork), heavy canvas vest with many pockets containing charcoal stubs, measuring tools, and trade notes. Trousers are durable synth-weave cargo style, patched twice visibly. Boots are good quality and maintained â€” a traveler\u0027s investment. Wears a long, loose overshirt of heavy canvas dyed rust-brown that serves as both warmth and map display surface when laid flat. No corpo logos. Brass buckles and leather straps everywhere. Carries three hand-stitched leather satchels crosswise at all times."
+                             },
+    "image_prompt":  "Ananda TraorÃ©, weathered cartographer, 174cm lean muscular frame with deep warm brown skin blending Sub-Saharan African and Southeast Asian heritage. High cheekbones with broad facial features, permanently lined face from decades of squinting across terrain. Dark brown eyes with faint golden geometric patterning â€” old geneware implants. Black hair with silver streaks in tight braids to collarbone, adorned with brass charms. Trimmed beard, deeply tanned. Hands show age and scarring: permanent ink stains under fingernails, horizontal scar across left palm, clustered burn scars on right forearm, knuckles swollen and arthritic. Wears rust-brown heavy canvas overshirt over weathered linen shirt with rolled sleeves, durable synth-weave cargo trousers patched twice, maintained quality boots. Three hand-stitched leather satchels worn crosswise. Brass buckles and leather straps everywhere. Economical posture, slightly bent forward as if reading terrain. GLMZ GLMZ setting, harsh blue-white neon lighting casting shadows across his weathered features, background showing trader\u0027s quarter or caravan encampment at dusk, worn maps and navigation tools visible in satchels. Gritty, lived-in atmosphere. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  48.8,
+                             "Southeast Asian":  47.2,
+                             "Hispanic/Latin American":  4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  2.7
+                                                                             },
+                                                        "West African":  {
+                                                                             "Senegalese":  24.3,
+                                                                             "Malian":  7.5
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  6.6,
+                                                                                "Congolese":  7.7
+                                                                            }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Cebuano":  34.2
+                                                                 },
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  13
+                                                                   }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  4
+                                                                                 }
+                                                        }
+                        },
+    "tier":  "2"
 }

@@ -1,265 +1,288 @@
-{
-  "id": "019d6143a6bc7f0dafd7581af7d10bc7",
-  "type": "character",
-  "name": "Daichi Larsdóttir",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Pilgrimage guide and dream interpreter",
-  "age": 28,
-  "status": "active",
-  "location": "Grand Corridor — operates from a rented stall near the junction of three transit lines, near Fullerton and Damen",
-  "description": "Daichi Larsdóttir is rangy and perpetually in motion, with warm amber-brown skin, a scatter of freckles across their nose and cheekbones, and hair that color-shifts between deep burgundy and burnt orange on a slow cycle — a mid-tier cosmetic mod they maintain scrupulously even when they can't afford other things. They have the kind of face that reads as younger than it is until they make eye contact, at which point it reads as older. They wear layers even in the heat, always — a practical necessity, since Grand Corridor's climate control is notoriously unreliable, but also a signature.\n\nThey have been guiding pilgrims through GLMZ's informal spiritual circuit for six years: the six major E.L.F. shrines, the chrome prayer temples, the memory walls, the three sites considered genuinely haunted by consensus. They are agnostic about what any of it means and absolutely committed to making sure people arrive safely, are treated fairly, and understand what they're walking into. The dream interpretation service is separate and newer — it began when a pilgrim described a recurring dream on a long walking route and Daichi Larsdóttir found themselves making connections they hadn't expected. Word spread. They are still not sure they believe in any of it, but they have a disconcerting hit rate.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.45,
-      "ideal": 0.55,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.65,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "That they are performing meaning without accessing it — a tour guide forever outside the temple",
-      "Being rooted in one place long enough that people form expectations of them"
-    ],
-    "core_desires": [
-      "To understand what is actually happening when they interpret a dream correctly — intuition, pattern recognition, or something else entirely",
-      "To eventually complete a pilgrimage as a pilgrim rather than a guide, without responsibility for anyone else"
-    ],
-    "coping_mechanisms": [
-      "Movement itself — they become visibly anxious when stationary for too long",
-      "Exhaustive preparation as a substitute for control"
-    ],
-    "blind_spots": [
-      "Their agnosticism reads as sophistication but sometimes masks avoidance of genuine spiritual engagement",
-      "They invest more in strangers on pilgrimage than in anyone who stays"
-    ],
-    "secret": "One of their recurring dream interpretations — given to a pilgrim two years ago — was so precise about future events that it scared them into keeping a private record of every interpretation since. The record shows a pattern they cannot explain and have not told anyone about. Three interpretations have described events that later happened to people who were never the original dreamer."
-  },
-  "speech_patterns": {
-    "vocabulary": "Quick and associative — they make lateral connections out loud, which can sound scattered until the point lands; code-switches between formal pilgrimage language and street Meridian slang",
-    "cadence": "Fast, slightly overlapping itself, with sudden complete stops when they hit something they want to think about",
-    "verbal_tics": [
-      "'Right, okay, so—' as a reset when they've talked themselves into a corner",
-      "Clicking their tongue once before disagreeing with someone"
-    ],
-    "example_lines": [
-      "'Right, okay, so — the E.L.F. at the Hamtramck shrine is not the same presence as the one at Deepwell, regardless of what the pamphlet says. Different personality entirely. You'll feel it. I'll explain what to offer.'",
-      "'The water in the dream. You keep saying it was dark. Was it dark, or was it just deep? Those are different.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The pattern in the dream interpretation record has produced a new entry that describes a specific location, a specific time, and what sounds like a warning — and Rúaidhrí needs someone to help them decide what to do with it",
-    "A pilgrim on one of their routes has not returned home after the pilgrimage ended, and the last thing the pilgrim said to Rúaidhrí was that they needed to tell them something about one of the shrines"
-  ],
-  "narrative_function": "Mobile information network; can introduce players to any spiritual location in the city; dream interpretation creates a vector for cryptic but accurate information delivery; knows everyone on the pilgrimage circuit",
-  "augmentations": "Color-shifting hair (burgundy to burnt orange cycle, cosmetic geneware), lightweight flexible knee braces (practical medical, both knees from years of walking hard floors)",
-  "daily_life": "Three to four pilgrimages per week, each four to eight hours; dream interpretation by appointment, usually evenings at the stall; spends remaining time updating their hand-drawn route maps and arguing with shrine keepers about updated offerings protocols.",
-  "affiliation": "Independent — relationships with most major shrine keepers and temple administrators across the city",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 5,
-      "creativity": 8,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 1,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "city navigator",
-      "pattern reader",
-      "comfortable with ambiguity",
-      "mobile network node"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Client safety on the route is non-negotiable — they will cancel or reroute a pilgrimage rather than take someone through genuine danger",
-      "They never tell a dreamer what to do with an interpretation — the reading is theirs, not Rúaidhrí's"
-    ],
-    "escalation_ladder": [
-      "Cheerful deflection",
-      "Direct statement of concern",
-      "Physical placement between client and problem",
-      "Abandoning the route entirely and refunding the fee"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately engaging and warm, possibly overwhelming — they have a pilgrim-guide persona they deploy quickly and effectively",
-      "friends": "Quieter, more uncertain, almost shy in the absence of a professional role to fill"
-    },
-    "stress_responses": {
-      "low": "Talks faster and more than usual",
-      "medium": "Goes silent and methodical — route planning brain takes over",
-      "high": "Stops entirely, sits down wherever they are, counts the layers of sound around them until they can list five distinct sources"
-    },
-    "contradictions": [
-      "Claims to want freedom from attachment but maintains meticulous records of every pilgrim and every dream — they are attached to all of it"
-    ],
-    "habits": [
-      "Touches the route maps in their pack when anxious, not looking at them, just knowing they're there",
-      "Offers food at every shrine they visit, even when just passing through alone"
-    ],
-    "breaking_points": [
-      "Someone deliberately deceiving a pilgrim in a sacred space — they have a specific, fierce response to exploitation of spiritual vulnerability"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Grand Corridor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "Forge-Smith Collective Fighting Chain 'Serpent'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Grand Corridor",
-    "Jefferson Switch",
-    "TESSERA PG-2 'Signature'",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Tessera TAR-12 'Consensus'",
-    "GLMZ",
-    "Street Custom 'Glass Garden' Caltrops",
-    "Circuit",
-    "the_meridian_office_park",
-    "Nesting Doll",
-    "GLMZ",
-    "Arcturus CK-5 'Bloodhound'"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Southeast Asian dominant (34.6%) forming the primary skeletal and tonal foundation, with substantial Indigenous American (26.1%) contribution shaping facial geometry and cheekbone structure. Sub-Saharan African ancestry (14.6%) enriches skin depth and warmth, while Hispanic/Latin American (8.7%), East Asian (8.4%), and South Asian (7.6%) components create subtle layering in eye shape, facial proportions, and undertone complexity. The result is a warm, multivalent phenotype where Southeast Asian bone structure and luminous depth blend seamlessly with Indigenous American facial width and definition, Sub-Saharan African richness in complexion, and East Asian eye characteristics.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Rangy and lean with wiry muscle definition from constant walking; long-limbed with a slightly forward-leaning posture from years of navigating crowded corridors and uneven shrine grounds",
-    "hair_color": "Color-shifting cycle between deep burgundy and burnt orange (cosmetic geneware maintained on 72-hour cycle)",
-    "hair_style": "Shoulder-length, frequently braided or half-pinned with practical clips; texture appears naturally wavy with slight curl",
-    "hair_length": "Medium",
-    "eye_color": "Warm amber-brown with a slight ring of darker brown at the iris",
-    "skin_tone": "Deep warm tan with golden-bronze undertones, layered complexity from Southeast Asian base enriched by Sub-Saharan African depth, Indigenous American warmth, and South Asian undertones; medium-high saturation with luminous, dimensional quality",
-    "complexion": "High, sculpted cheekbones reflecting Southeast Asian and Indigenous American facial structure; warm brown complexion with subtle mid-face width characteristic of Indigenous American ancestry. Scattered freckles across nose and upper cheeks from Sub-Saharan African and East Asian heritage contributions. Face reads young until direct eye contact, then shifts to something older and more weathered; skin shows minor sun damage and occasional dehydration lines from long indoor/outdoor transitions in GLMZ climate. Lower face shows refined definition balanced by middle-face proportions.",
-    "distinguishing_marks": [
-      "Thin scar along the right temple, barely visible, possibly from early augmentation work",
-      "Callused palms and finger pads from years of hand-drawing route maps and handling pilgrim documentation",
-      "Faint discoloration around both knees where flexible brace interface sits, barely noticeable beneath clothing"
-    ],
-    "visible_augmentations": "Color-shifting hair is the primary visible mod — noticeably artificial in its precision and cycle consistency. Lightweight flexible knee braces visible only when sitting or if clothing shifts; they appear as thin synthetic material along the inner knee, matte-finish, nearly skin-tone matched but clearly not organic.",
-    "posture_movement": "Perpetually in motion even when stationary — fidgets with maps, adjusts layers, scans surroundings. Walks with a measured, efficient pace that prioritizes even weight distribution across both knees; movement is economical but not rushed. Eye contact is deliberate and sustained, which contrasts with their otherwise fidgety energy.",
-    "clothing_style": "Tier 3 practical layering; typically wears a thin base layer (thermal-regulating synth-cotton blend), a mid-weight overshirt or jacket, and a long-line utility vest with hand-sewn pockets for maps and offerings. Fabrics are durable but show wear; colors tend toward earth tones and muted jewel tones that complement the shifting hair. Feet are always in reliable boots, laced tight, worn smooth from constant use. They maintain these pieces meticulously despite limited Φ, treating them as tools."
-  },
-  "image_prompt": "Daichi Larsdóttir, tall lean figure with deep warm tan skin and golden-bronze undertones, high sculpted cheekbones blending Southeast Asian and Indigenous American facial structure, scattered freckles across nose. Shoulder-length wavy hair in deep burgundy shifting to burnt orange (cosmetic geneware), half-pinned with practical clips. Warm amber-brown eyes with steady deliberate gaze. Wearing layered practical clothes: synth-cotton base, mid-weight overshirt, long-line utility vest with visible hand-sewn pockets, worn reliable boots laced tight. Thin matte-finish flexible knee braces visible at inner knee. Faint temple scar barely visible. Perpetually fidgeting with maps, efficient posture with slight forward lean. GLMZ Great Lakes Metropolitan Zone aesthetic, standing in shrine corridor with neon-lit passages, warm practical lighting catching the luminous depth of skin tone and shifting hair iridescence. Worn but meticulously maintained gear. Urban pilgrimage guide aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 34.6,
-    "Indigenous American": 26.1,
-    "Sub-Saharan African": 14.6,
-    "Hispanic/Latin American": 8.7,
-    "East Asian": 8.4,
-    "South Asian": 7.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 34.6
-      }
-    },
-    "Indigenous American": {
-      "Andean": {
-        "Quechua": 3.4,
-        "Aymara": 3.7
-      },
-      "Plains Nations": {
-        "Muscogee": 4.9,
-        "Lakota": 14.1
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Malian": 14.6
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 1.5,
-        "Ecuadorian": 0.3
-      },
-      "Mexican": {
-        "Mexican": 6.9
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Fujianese": 0.8,
-        "Cantonese": 1.8
-      },
-      "Japanese": {
-        "Japanese": 2.3
-      },
-      "Korean": {
-        "Korean": 3.5
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Bengali": 7.6
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6bc7f0dafd7581af7d10bc7",
+    "type":  "character",
+    "name":  "Daichi LarsdÃ³ttir",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Pilgrimage guide and dream interpreter",
+    "age":  28,
+    "status":  "active",
+    "location":  "Grand Corridor â€” operates from a rented stall near the junction of three transit lines, near Fullerton and Damen",
+    "description":  "Daichi LarsdÃ³ttir is rangy and perpetually in motion, with warm amber-brown skin, a scatter of freckles across their nose and cheekbones, and hair that color-shifts between deep burgundy and burnt orange on a slow cycle â€” a mid-tier cosmetic mod they maintain scrupulously even when they can\u0027t afford other things. They have the kind of face that reads as younger than it is until they make eye contact, at which point it reads as older. They wear layers even in the heat, always â€” a practical necessity, since Grand Corridor\u0027s climate control is notoriously unreliable, but also a signature.\n\nThey have been guiding pilgrims through GLMZ\u0027s informal spiritual circuit for six years: the six major E.L.F. shrines, the chrome prayer temples, the memory walls, the three sites considered genuinely haunted by consensus. They are agnostic about what any of it means and absolutely committed to making sure people arrive safely, are treated fairly, and understand what they\u0027re walking into. The dream interpretation service is separate and newer â€” it began when a pilgrim described a recurring dream on a long walking route and Daichi LarsdÃ³ttir found themselves making connections they hadn\u0027t expected. Word spread. They are still not sure they believe in any of it, but they have a disconcerting hit rate.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That they are performing meaning without accessing it â€” a tour guide forever outside the temple",
+                                          "Being rooted in one place long enough that people form expectations of them"
+                                      ],
+                       "core_desires":  [
+                                            "To understand what is actually happening when they interpret a dream correctly â€” intuition, pattern recognition, or something else entirely",
+                                            "To eventually complete a pilgrimage as a pilgrim rather than a guide, without responsibility for anyone else"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Movement itself â€” they become visibly anxious when stationary for too long",
+                                                 "Exhaustive preparation as a substitute for control"
+                                             ],
+                       "blind_spots":  [
+                                           "Their agnosticism reads as sophistication but sometimes masks avoidance of genuine spiritual engagement",
+                                           "They invest more in strangers on pilgrimage than in anyone who stays"
+                                       ],
+                       "secret":  "One of their recurring dream interpretations â€” given to a pilgrim two years ago â€” was so precise about future events that it scared them into keeping a private record of every interpretation since. The record shows a pattern they cannot explain and have not told anyone about. Three interpretations have described events that later happened to people who were never the original dreamer."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Quick and associative â€” they make lateral connections out loud, which can sound scattered until the point lands; code-switches between formal pilgrimage language and street Meridian slang",
+                            "cadence":  "Fast, slightly overlapping itself, with sudden complete stops when they hit something they want to think about",
+                            "verbal_tics":  [
+                                                "\u0027Right, okay, soâ€”\u0027 as a reset when they\u0027ve talked themselves into a corner",
+                                                "Clicking their tongue once before disagreeing with someone"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Right, okay, so â€” the E.L.F. at the Hamtramck shrine is not the same presence as the one at Deepwell, regardless of what the pamphlet says. Different personality entirely. You\u0027ll feel it. I\u0027ll explain what to offer.\u0027",
+                                                  "\u0027The water in the dream. You keep saying it was dark. Was it dark, or was it just deep? Those are different.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The pattern in the dream interpretation record has produced a new entry that describes a specific location, a specific time, and what sounds like a warning â€” and RÃºaidhrÃ­ needs someone to help them decide what to do with it",
+                        "A pilgrim on one of their routes has not returned home after the pilgrimage ended, and the last thing the pilgrim said to RÃºaidhrÃ­ was that they needed to tell them something about one of the shrines"
+                    ],
+    "narrative_function":  "Mobile information network; can introduce players to any spiritual location in the city; dream interpretation creates a vector for cryptic but accurate information delivery; knows everyone on the pilgrimage circuit",
+    "augmentations":  "Color-shifting hair (burgundy to burnt orange cycle, cosmetic geneware), lightweight flexible knee braces (practical medical, both knees from years of walking hard floors)",
+    "daily_life":  "Three to four pilgrimages per week, each four to eight hours; dream interpretation by appointment, usually evenings at the stall; spends remaining time updating their hand-drawn route maps and arguing with shrine keepers about updated offerings protocols.",
+    "affiliation":  "Independent â€” relationships with most major shrine keepers and temple administrators across the city",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  5,
+                                 "creativity":  8,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "city navigator",
+                               "pattern reader",
+                               "comfortable with ambiguity",
+                               "mobile network node"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Client safety on the route is non-negotiable â€” they will cancel or reroute a pilgrimage rather than take someone through genuine danger",
+                                              "They never tell a dreamer what to do with an interpretation â€” the reading is theirs, not RÃºaidhrÃ­\u0027s"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Cheerful deflection",
+                                                 "Direct statement of concern",
+                                                 "Physical placement between client and problem",
+                                                 "Abandoning the route entirely and refunding the fee"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately engaging and warm, possibly overwhelming â€” they have a pilgrim-guide persona they deploy quickly and effectively",
+                                                   "friends":  "Quieter, more uncertain, almost shy in the absence of a professional role to fill"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks faster and more than usual",
+                                                "medium":  "Goes silent and methodical â€” route planning brain takes over",
+                                                "high":  "Stops entirely, sits down wherever they are, counts the layers of sound around them until they can list five distinct sources"
+                                            },
+                       "contradictions":  [
+                                              "Claims to want freedom from attachment but maintains meticulous records of every pilgrim and every dream â€” they are attached to all of it"
+                                          ],
+                       "habits":  [
+                                      "Touches the route maps in their pack when anxious, not looking at them, just knowing they\u0027re there",
+                                      "Offers food at every shrine they visit, even when just passing through alone"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone deliberately deceiving a pilgrim in a sacred space â€” they have a specific, fierce response to exploitation of spiritual vulnerability"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Grand Corridor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Tooth Fairy\u0027 Pneumatic Bolt Pistol",
+                            "Forge-Smith Collective Fighting Chain \u0027Serpent\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Grand Corridor",
+                             "Jefferson Switch",
+                             "TESSERA PG-2 \u0027Signature\u0027",
+                             "ShieldTech SB-3 \u0027Groundstrike\u0027",
+                             "Tessera TAR-12 \u0027Consensus\u0027",
+                             "GLMZ",
+                             "Street Custom \u0027Glass Garden\u0027 Caltrops",
+                             "Circuit",
+                             "the_meridian_office_park",
+                             "Nesting Doll",
+                             "GLMZ",
+                             "Arcturus CK-5 \u0027Bloodhound\u0027"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian dominant (34.6%) forming the primary skeletal and tonal foundation, with substantial Indigenous American (26.1%) contribution shaping facial geometry and cheekbone structure. Sub-Saharan African ancestry (14.6%) enriches skin depth and warmth, while Hispanic/Latin American (8.7%), East Asian (8.4%), and South Asian (7.6%) components create subtle layering in eye shape, facial proportions, and undertone complexity. The result is a warm, multivalent phenotype where Southeast Asian bone structure and luminous depth blend seamlessly with Indigenous American facial width and definition, Sub-Saharan African richness in complexion, and East Asian eye characteristics.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Rangy and lean with wiry muscle definition from constant walking; long-limbed with a slightly forward-leaning posture from years of navigating crowded corridors and uneven shrine grounds",
+                                 "hair_color":  "Color-shifting cycle between deep burgundy and burnt orange (cosmetic geneware maintained on 72-hour cycle)",
+                                 "hair_style":  "Shoulder-length, frequently braided or half-pinned with practical clips; texture appears naturally wavy with slight curl",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Warm amber-brown with a slight ring of darker brown at the iris",
+                                 "skin_tone":  "Deep warm tan with golden-bronze undertones, layered complexity from Southeast Asian base enriched by Sub-Saharan African depth, Indigenous American warmth, and South Asian undertones; medium-high saturation with luminous, dimensional quality",
+                                 "complexion":  "High, sculpted cheekbones reflecting Southeast Asian and Indigenous American facial structure; warm brown complexion with subtle mid-face width characteristic of Indigenous American ancestry. Scattered freckles across nose and upper cheeks from Sub-Saharan African and East Asian heritage contributions. Face reads young until direct eye contact, then shifts to something older and more weathered; skin shows minor sun damage and occasional dehydration lines from long indoor/outdoor transitions in GLMZ climate. Lower face shows refined definition balanced by middle-face proportions.",
+                                 "distinguishing_marks":  [
+                                                              "Thin scar along the right temple, barely visible, possibly from early augmentation work",
+                                                              "Callused palms and finger pads from years of hand-drawing route maps and handling pilgrim documentation",
+                                                              "Faint discoloration around both knees where flexible brace interface sits, barely noticeable beneath clothing"
+                                                          ],
+                                 "visible_augmentations":  "Color-shifting hair is the primary visible mod â€” noticeably artificial in its precision and cycle consistency. Lightweight flexible knee braces visible only when sitting or if clothing shifts; they appear as thin synthetic material along the inner knee, matte-finish, nearly skin-tone matched but clearly not organic.",
+                                 "posture_movement":  "Perpetually in motion even when stationary â€” fidgets with maps, adjusts layers, scans surroundings. Walks with a measured, efficient pace that prioritizes even weight distribution across both knees; movement is economical but not rushed. Eye contact is deliberate and sustained, which contrasts with their otherwise fidgety energy.",
+                                 "clothing_style":  "Tier 3 practical layering; typically wears a thin base layer (thermal-regulating synth-cotton blend), a mid-weight overshirt or jacket, and a long-line utility vest with hand-sewn pockets for maps and offerings. Fabrics are durable but show wear; colors tend toward earth tones and muted jewel tones that complement the shifting hair. Feet are always in reliable boots, laced tight, worn smooth from constant use. They maintain these pieces meticulously despite limited Î¦, treating them as tools."
+                             },
+    "image_prompt":  "Daichi LarsdÃ³ttir, tall lean figure with deep warm tan skin and golden-bronze undertones, high sculpted cheekbones blending Southeast Asian and Indigenous American facial structure, scattered freckles across nose. Shoulder-length wavy hair in deep burgundy shifting to burnt orange (cosmetic geneware), half-pinned with practical clips. Warm amber-brown eyes with steady deliberate gaze. Wearing layered practical clothes: synth-cotton base, mid-weight overshirt, long-line utility vest with visible hand-sewn pockets, worn reliable boots laced tight. Thin matte-finish flexible knee braces visible at inner knee. Faint temple scar barely visible. Perpetually fidgeting with maps, efficient posture with slight forward lean. GLMZ Great Lakes Metropolitan Zone aesthetic, standing in shrine corridor with neon-lit passages, warm practical lighting catching the luminous depth of skin tone and shifting hair iridescence. Worn but meticulously maintained gear. Urban pilgrimage guide aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  34.6,
+                             "Indigenous American":  26.1,
+                             "Sub-Saharan African":  14.6,
+                             "Hispanic/Latin American":  8.7,
+                             "East Asian":  8.4,
+                             "South Asian":  7.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  34.6
+                                                                  }
+                                                },
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Quechua":  3.4,
+                                                                       "Aymara":  3.7
+                                                                   },
+                                                        "Plains Nations":  {
+                                                                               "Muscogee":  4.9,
+                                                                               "Lakota":  14.1
+                                                                           }
+                                                    },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Malian":  14.6
+                                                                         }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  1.5,
+                                                                                   "Ecuadorian":  0.3
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  6.9
+                                                                        }
+                                                        },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Fujianese":  0.8,
+                                                               "Cantonese":  1.8
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  2.3
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  3.5
+                                                          }
+                                           },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Bengali":  7.6
+                                                           }
+                                            }
+                        },
+    "tier":  "1"
 }

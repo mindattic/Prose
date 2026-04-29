@@ -1,348 +1,359 @@
-{
-  "id": "019d6143a62c7574a6f773ee1dedc340",
-  "type": "character",
-  "name": "Andrzej Shirazi",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Forced entry and close-quarters combat specialist — breacher",
-  "age": 63,
-  "status": "active",
-  "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near LaSalle and Congress",
-  "description": "Andrzej Shirazi is average height but with a presence that fills more space than the body accounts for. At 63, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a breacher out of The Underbelly, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAndrzej Shirazi has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.37,
-      "ideal": 0.3,
-      "id": 0.69,
-      "shadow": 0.88,
-      "mask": 0.11,
-      "ghost": 0.59
-    },
-    "core_fears": [
-      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
-      "Losing their edge to age — the body slows before the mind accepts it",
-      "That they're fundamentally alone and connection is just a vulnerability"
-    ],
-    "core_desires": [
-      "Freedom from augmentation debt — the interest compounds like a tumor",
-      "To find the person who burned them and make it educational",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
-    ],
-    "coping_mechanisms": [
-      "Humor — deflects everything serious with jokes until the joke becomes the personality",
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
-    ],
-    "blind_spots": [
-      "Assumes the worst in corporate people, missing the rare ones who could be allies",
-      "Cannot accept help without interpreting it as leverage",
-      "Fails to notice when their own behavior mirrors the people they despise"
-    ],
-    "secret": "Ihaia Nystrom-Keita murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
-    "cadence": "Staccato bursts separated by calculating silences.",
-    "verbal_tics": [
-      "Ends statements with 'yeah?' — not a question, a dare",
-      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
-    ],
-    "example_lines": [
-      "\"Doors are polite suggestions. I'm not polite.\"",
-      "\"First through the door, last to flinch. That's the job description.\"",
-      "\"Close quarters is where plans go to die. I make sure it's their plans, not ours.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Ihaia Nystrom-Keita's reputation — and a price for silence",
-    "Ihaia Nystrom-Keita intercepts intelligence about a threat to their district and must decide between profit and protection",
-    "A high-paying contract turns out to target someone Ihaia Nystrom-Keita owes a personal debt to"
-  ],
-  "narrative_function": "Ihaia Nystrom-Keita is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
-  "augmentations": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters. Subdermal weapon mount — pop-out blade in each forearm",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Independent — loose crew affiliations; The Third Rail",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 10
-      },
-      "agility": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 4
-      },
-      "reflexes": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 10
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 4
-      },
-      "perception": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 6
-      },
-      "willpower": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 4
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 10
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 4
-      },
-      "intimidation": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 7
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 10
-      },
-      "empathy": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 8
-      }
-    },
-    "personality": {
-      "aggression": 0.92,
-      "caution": 0.83,
-      "loyalty": 0.89,
-      "greed": 0.82,
-      "empathy": 0.14
-    },
-    "drives": [
-      "survival",
-      "reputation",
-      "revenge"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 4,
-      "loyalty_break": 10
-    },
-    "strengths": [
-      "encyclopedic knowledge of GLMZ infrastructure",
-      "technical expertise with augmentation systems",
-      "exceptional close-quarters combat"
-    ],
-    "weaknesses": [
-      "inability to delegate — must control everything personally",
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
-      "overconfidence in specialty areas leading to blind spots"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "breacher",
-      "tier-1",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Always verifies target identity independently before lethal contracts",
-      "Will not take contracts against children or families — the line is hard and non-negotiable"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Insists they work alone but performs noticeably better in a team",
-      "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
-    ],
-    "habits": [
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Keeps a physical paper notebook — no digital record of personal thoughts",
-      "Checks exits within 10 seconds of entering any room"
-    ],
-    "breaking_points": [
-      "Being forced to harm a civilian — collateral damage that can't be rationalized",
-      "Running out of options — no contacts, no money, no safe house, no way out",
-      "Losing their primary augmentation — the one that defines their professional identity"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Cyberears with directional microphones and sound dampening",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
-      "replaces": ""
-    },
-    {
-      "name": "Subdermal weapon mount",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Subdermal weapon mount — pop-out blade in each forearm",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Brawler": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Underbelly",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
-    "Tessera TK-11 Specter 'Whisper'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
-    "Tessera TK-11 Specter 'Whisper'"
-  ],
-  "related_entities": [
-    "The Narrows Compact",
-    "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
-    "Felix Roundtree"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Tri-continental blend: 36.3% East Asian, 34.8% Middle Eastern, 28.9% South Asian ancestry creates a striking phenotype. East Asian bone structure provides the foundation — prominent cheekbones and subtle eye shape — while Middle Eastern warmth and South Asian depth layer through skin tone and facial structure. The genetic convergence produces a complexion that speaks to movement across multiple continents, with warmth that defies simple categorization.",
-    "height_cm": 168,
-    "weight_kg": 72,
-    "build": "Lean and wiry with dense musculature earned through decades of close-quarters work. Shoulders broad but not bulky; the kind of compact strength that doesn't announce itself until it moves.",
-    "hair_color": "Steel gray with faded copper undertones",
-    "hair_style": "Pulled back in a tight, practical braid. No vanity in it.",
-    "hair_length": "Medium",
-    "eye_color": "Amber-brown with slight epicanthic fold from East Asian ancestry, slightly yellowed at the whites from age and augmentation feedback",
-    "skin_tone": "Deep golden-bronze with warm undertones — the natural result of East Asian, Middle Eastern, and South Asian genetic convergence. Weathered to a richer patina from decades of work across multiple latitudes, with underlying luminosity that catches light across the cheekbones and brow ridge.",
-    "complexion": "Heavily lined, particularly around the eyes and mouth. Weathered rather than aged poorly. Skin bears the texture of old scar tissue, partially smoothed by time. Prominent East Asian cheekbones complemented by the broader, more angular facial structure suggested by Middle Eastern and South Asian ancestry — a balanced asymmetry. Asymmetrical from an old fracture that healed without surgical correction, creating subtle irregularity in the orbital structure.",
-    "distinguishing_marks": [
-      "Jagged scar running from left temple to left jawline, approximately 8cm, pale and silvery with age.",
-      "Burn scar across the back of both hands — irregular, circa 20% surface area, from an old thermal incident.",
-      "Linear scar bisecting her right eyebrow, thin and white.",
-      "Tattoo on inner left forearm — a minimalist circuit diagram in faded indigo, runner's mark from early 2180s.",
-      "Puncture scar clusters along both inner forearms where the blade mounts were installed, now barely visible beneath the skin."
-    ],
-    "visible_augmentations": "Cyberears — industrial-grade, satin black with chrome contact points, flush-mounted where her natural ears should be. No attempt at organic mimicry; they read as clearly artificial. When she concentrates, the directional microphones visibly swivel. Subdermal weapon mounts along both forearms create subtle ridges under the skin when tensed, and thin vertical scars mark the deployment points.",
-    "posture_movement": "Economical and precise. She doesn't move unless there's a target or a reason. When she does move, it's with the controlled fluidity of someone trained to operate in confined spaces — minimal wasted motion, shoulders low, center of gravity forward. Her head turns before her body does, a habit born from the cyberears' directional input. At rest, she appears coiled rather than relaxed.",
-    "clothing_style": "Tier 5 practical — worn dark synthetics (black, charcoal, deep navy) that don't snag or reflect. Cargo pants with reinforced knees and thighs. A fitted, long-sleeved compression shirt under a gray technical jacket with internal pockets and matte finish. Heavy boots with reinforced ankles and grip soles suitable for vertical surfaces. No logos, no corporate branding, no jewelry. The outfit is designed to be forgettable in poor lighting and invisible in shadows. Everything fits close to the body — nothing loose that could be grabbed in a fight."
-  },
-  "image_prompt": "Andrzej Shirazi, 168cm lean operative with deep golden-bronze skin tone reflecting East Asian, Middle Eastern, and South Asian heritage blend. Steel gray hair braided back, amber-brown eyes with epicanthic fold and yellowed whites. Sharp East Asian cheekbones balanced with broader South Asian-Middle Eastern facial structure, heavily lined face weathered from decades of work. Distinctive jagged silvery scar running left temple to jawline, burn scars on hands, cybernetic black satin ears with chrome contacts flush-mounted where natural ears should be. Coiled posture, economical movement. Wearing fitted dark synthetic compression shirt and gray technical jacket, reinforced cargo pants, heavy ankle boots—all matte black and charcoal, no logos. Industrial sci-fi operative aesthetic. GLMZ, Great Lakes Metropolitan Zone. Moody shadows and neon-filtered lighting, urban dystopian setting, cool color palette with warm skin tone contrast. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 36.3,
-    "Middle Eastern": 34.8,
-    "South Asian": 28.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Chinese": {
-        "Mandarin Northern": 18.8
-      },
-      "Korean": {
-        "Korean": 11.5
-      },
-      "Japanese": {
-        "Japanese": 6
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 34.8
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Gujarati": 19.6
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 3.9,
-        "Pashtun": 2
-      },
-      "Sri Lankan": {
-        "Sinhalese": 3.4
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a62c7574a6f773ee1dedc340",
+    "type":  "character",
+    "name":  "Andrzej Shirazi",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Forced entry and close-quarters combat specialist â€” breacher",
+    "age":  63,
+    "status":  "active",
+    "location":  "The Underbelly â€” sub-street tunnels and maintenance corridors, near sub-level access near LaSalle and Congress",
+    "description":  "Andrzej Shirazi is average height but with a presence that fills more space than the body accounts for. At 63, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible â€” cyberears with directional microphones and sound dampening â€” can hear whispers a â€” and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a breacher out of The Underbelly, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAndrzej Shirazi has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Never being able to stop running â€” the lifestyle is a trap disguised as freedom",
+                                          "Losing their edge to age â€” the body slows before the mind accepts it",
+                                          "That they\u0027re fundamentally alone and connection is just a vulnerability"
+                                      ],
+                       "core_desires":  [
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor",
+                                            "To find the person who burned them and make it educational",
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Humor â€” deflects everything serious with jokes until the joke becomes the personality",
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring",
+                                                 "Art â€” draws, paints, or sculpts in private; the violence goes somewhere constructive"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes the worst in corporate people, missing the rare ones who could be allies",
+                                           "Cannot accept help without interpreting it as leverage",
+                                           "Fails to notice when their own behavior mirrors the people they despise"
+                                       ],
+                       "secret":  "Ihaia Nystrom-Keita murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, profane, and vivid. Speaks in images â€” everything is a metaphor for violence or weather.",
+                            "cadence":  "Staccato bursts separated by calculating silences.",
+                            "verbal_tics":  [
+                                                "Ends statements with \u0027yeah?\u0027 â€” not a question, a dare",
+                                                "Calls everyone \u0027friend\u0027 â€” the warmth varies from genuine to threatening"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Doors are polite suggestions. I\u0027m not polite.\"",
+                                                  "\"First through the door, last to flinch. That\u0027s the job description.\"",
+                                                  "\"Close quarters is where plans go to die. I make sure it\u0027s their plans, not ours.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former associate resurfaces with evidence that could destroy Ihaia Nystrom-Keita\u0027s reputation â€” and a price for silence",
+                        "Ihaia Nystrom-Keita intercepts intelligence about a threat to their district and must decide between profit and protection",
+                        "A high-paying contract turns out to target someone Ihaia Nystrom-Keita owes a personal debt to"
+                    ],
+    "narrative_function":  "Ihaia Nystrom-Keita is a pressure point â€” the kind of character whose choices ripple outward. When she makes a decision, other people\u0027s lives change. That weight is the engine of her stories.",
+    "augmentations":  "Cyberears with directional microphones and sound dampening â€” can hear whispers at 50 meters. Subdermal weapon mount â€” pop-out blade in each forearm",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Independent â€” loose crew affiliations; The Third Rail",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  8,
+                                                    "augmented":  2,
+                                                    "effective":  10
+                                                },
+                                   "agility":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  8
+                                               },
+                                   "endurance":  {
+                                                     "base":  3,
+                                                     "augmented":  2,
+                                                     "effective":  4
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  5,
+                                                    "augmented":  1,
+                                                    "effective":  10
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  3,
+                                                      "augmented":  0,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  7,
+                                                    "augmented":  3,
+                                                    "effective":  6
+                                                },
+                                 "willpower":  {
+                                                   "base":  3,
+                                                   "augmented":  3,
+                                                   "effective":  4
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  7,
+                                                  "augmented":  1,
+                                                  "effective":  4
+                                              },
+                                 "intimidation":  {
+                                                      "base":  8,
+                                                      "augmented":  1,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  3,
+                                                   "effective":  10
+                                               },
+                                 "empathy":  {
+                                                 "base":  5,
+                                                 "augmented":  2,
+                                                 "effective":  8
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.92,
+                                      "caution":  0.83,
+                                      "loyalty":  0.89,
+                                      "greed":  0.82,
+                                      "empathy":  0.14
+                                  },
+                  "drives":  [
+                                 "survival",
+                                 "reputation",
+                                 "revenge"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  4,
+                                     "loyalty_break":  10
+                                 },
+                  "strengths":  [
+                                    "encyclopedic knowledge of GLMZ infrastructure",
+                                    "technical expertise with augmentation systems",
+                                    "exceptional close-quarters combat"
+                                ],
+                  "weaknesses":  [
+                                     "inability to delegate â€” must control everything personally",
+                                     "augmentation dependency â€” performance drops sharply if chrome malfunctions",
+                                     "overconfidence in specialty areas leading to blind spots"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "breacher",
+                               "tier-1",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Professional and transactional. The relationship is defined by the contract and nothing else.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
+                                          ],
+                       "habits":  [
+                                      "Arrives fifteen minutes early to everything â€” late once, nearly died, never again",
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Keeps a physical paper notebook â€” no digital record of personal thoughts",
+                                      "Checks exits within 10 seconds of entering any room"
+                                  ],
+                       "breaking_points":  [
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized",
+                                               "Running out of options â€” no contacts, no money, no safe house, no way out",
+                                               "Losing their primary augmentation â€” the one that defines their professional identity"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Cyberears with directional microphones and sound dampening",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Cyberears with directional microphones and sound dampening â€” can hear whispers at 50 meters",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Subdermal weapon mount",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal weapon mount â€” pop-out blade in each forearm",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Brawler":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Underbelly",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Urban Carbine MUC-6 \u0027Crosswalk\u0027",
+                            "Tessera TK-11 Specter \u0027Whisper\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Urban Carbine MUC-6 \u0027Crosswalk\u0027",
+                                "Tessera TK-11 Specter \u0027Whisper\u0027"
+                            ],
+    "related_entities":  [
+                             "The Narrows Compact",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "Slagworks Industrial",
+                             "Felix Roundtree"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Tri-continental blend: 36.3% East Asian, 34.8% Middle Eastern, 28.9% South Asian ancestry creates a striking phenotype. East Asian bone structure provides the foundation â€” prominent cheekbones and subtle eye shape â€” while Middle Eastern warmth and South Asian depth layer through skin tone and facial structure. The genetic convergence produces a complexion that speaks to movement across multiple continents, with warmth that defies simple categorization.",
+                                 "height_cm":  168,
+                                 "weight_kg":  72,
+                                 "build":  "Lean and wiry with dense musculature earned through decades of close-quarters work. Shoulders broad but not bulky; the kind of compact strength that doesn\u0027t announce itself until it moves.",
+                                 "hair_color":  "Steel gray with faded copper undertones",
+                                 "hair_style":  "Pulled back in a tight, practical braid. No vanity in it.",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Amber-brown with slight epicanthic fold from East Asian ancestry, slightly yellowed at the whites from age and augmentation feedback",
+                                 "skin_tone":  "Deep golden-bronze with warm undertones â€” the natural result of East Asian, Middle Eastern, and South Asian genetic convergence. Weathered to a richer patina from decades of work across multiple latitudes, with underlying luminosity that catches light across the cheekbones and brow ridge.",
+                                 "complexion":  "Heavily lined, particularly around the eyes and mouth. Weathered rather than aged poorly. Skin bears the texture of old scar tissue, partially smoothed by time. Prominent East Asian cheekbones complemented by the broader, more angular facial structure suggested by Middle Eastern and South Asian ancestry â€” a balanced asymmetry. Asymmetrical from an old fracture that healed without surgical correction, creating subtle irregularity in the orbital structure.",
+                                 "distinguishing_marks":  [
+                                                              "Jagged scar running from left temple to left jawline, approximately 8cm, pale and silvery with age.",
+                                                              "Burn scar across the back of both hands â€” irregular, circa 20% surface area, from an old thermal incident.",
+                                                              "Linear scar bisecting her right eyebrow, thin and white.",
+                                                              "Tattoo on inner left forearm â€” a minimalist circuit diagram in faded indigo, runner\u0027s mark from early 2180s.",
+                                                              "Puncture scar clusters along both inner forearms where the blade mounts were installed, now barely visible beneath the skin."
+                                                          ],
+                                 "visible_augmentations":  "Cyberears â€” industrial-grade, satin black with chrome contact points, flush-mounted where her natural ears should be. No attempt at organic mimicry; they read as clearly artificial. When she concentrates, the directional microphones visibly swivel. Subdermal weapon mounts along both forearms create subtle ridges under the skin when tensed, and thin vertical scars mark the deployment points.",
+                                 "posture_movement":  "Economical and precise. She doesn\u0027t move unless there\u0027s a target or a reason. When she does move, it\u0027s with the controlled fluidity of someone trained to operate in confined spaces â€” minimal wasted motion, shoulders low, center of gravity forward. Her head turns before her body does, a habit born from the cyberears\u0027 directional input. At rest, she appears coiled rather than relaxed.",
+                                 "clothing_style":  "Tier 5 practical â€” worn dark synthetics (black, charcoal, deep navy) that don\u0027t snag or reflect. Cargo pants with reinforced knees and thighs. A fitted, long-sleeved compression shirt under a gray technical jacket with internal pockets and matte finish. Heavy boots with reinforced ankles and grip soles suitable for vertical surfaces. No logos, no corporate branding, no jewelry. The outfit is designed to be forgettable in poor lighting and invisible in shadows. Everything fits close to the body â€” nothing loose that could be grabbed in a fight."
+                             },
+    "image_prompt":  "Andrzej Shirazi, 168cm lean operative with deep golden-bronze skin tone reflecting East Asian, Middle Eastern, and South Asian heritage blend. Steel gray hair braided back, amber-brown eyes with epicanthic fold and yellowed whites. Sharp East Asian cheekbones balanced with broader South Asian-Middle Eastern facial structure, heavily lined face weathered from decades of work. Distinctive jagged silvery scar running left temple to jawline, burn scars on hands, cybernetic black satin ears with chrome contacts flush-mounted where natural ears should be. Coiled posture, economical movement. Wearing fitted dark synthetic compression shirt and gray technical jacket, reinforced cargo pants, heavy ankle bootsâ€”all matte black and charcoal, no logos. Industrial sci-fi operative aesthetic. GLMZ, Great Lakes Metropolitan Zone. Moody shadows and neon-filtered lighting, urban dystopian setting, cool color palette with warm skin tone contrast. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  36.3,
+                             "Middle Eastern":  34.8,
+                             "South Asian":  28.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  18.8
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  11.5
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  6
+                                                            }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  34.8
+                                                               }
+                                               },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Gujarati":  19.6
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  3.9,
+                                                                  "Pashtun":  2
+                                                              },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  3.4
+                                                               }
+                                            }
+                        },
+    "tier":  "1"
 }

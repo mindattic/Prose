@@ -1,351 +1,380 @@
-{
-  "id": "019d6143a5e47a54aa5d2795981e8ad4",
-  "type": "character",
-  "name": "Colette Magnúsdóttir",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Internal Affairs Investigator, Arcturus Defense Solutions — Civil Security Division",
-  "age": 56,
-  "status": "active",
-  "location": "Lincoln Spear",
-  "description": "Colette Magnúsdóttir looks like he was designed as a warning. He is tall, slightly stooped now at fifty-six, with deep-lined dark skin, close-cut silver hair going white at the crown, and eyes so perpetually tired they have taken on a philosophical quality — not bored, but comprehensively unshocked. He has no cosmetic mods and no geneware. He has a retinal information overlay that is Metro standard and a hip replacement he refuses to acknowledge. He dresses in the same rotation of well-maintained dark suits that have been in his wardrobe for fifteen years, and he smells of the same soap he's used since his second wife bought it for him on their anniversary in 2181.\n\nHe has investigated Arcturus Civil Security internal corruption for nineteen years and this has done specific things to him. He does not romanticize the institution, does not hate it, and does not believe the people in it are substantially different from the people outside it. He has a reputation for being impossible to manipulate and nearly as impossible to work with, because he will follow an investigation to a conclusion even when — especially when — the conclusion is uncomfortable. He is not cruel. He is thorough. He collects small ceramic animals and arranges them on his desk in configurations that subordinates have spent years trying to decode. He has been threatened, transferred, demoted and reinstated twice. He is still here.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.55,
-      "ideal": 0.5,
-      "id": 0.4,
-      "shadow": 0.65,
-      "mask": 0.3,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Completing a career of difficult truthful work that changes absolutely nothing structural",
-      "That the next generation of officers will be worse than the one he came up in, and that he contributed to that somehow"
-    ],
-    "core_desires": [
-      "One case that produces an outcome that is actually just — not legally resolved, but just",
-      "To retire knowing something he did mattered in a way that lasted"
-    ],
-    "coping_mechanisms": [
-      "The ceramic animal arrangements — private, possibly superstitious, he would deny this",
-      "The daily walk as the one uncontaminated hour",
-      "Writing detailed case notes that go further than the official record — his private archive"
-    ],
-    "blind_spots": [
-      "He is so focused on institutional corruption that he sometimes misses purely interpersonal harm that doesn't fit the pattern",
-      "He is slower than he was and has not fully accounted for this"
-    ],
-    "secret": "His private archive contains the complete, unredacted investigation file of a case that was sealed by executive order in 2188 — an order that implicated three sitting Metro commissioners and a Tessera subsidiary in a systematic evidence disposal operation. He did not leak it then. He is not sure why. He has read it again every year since."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal and precise, with the particular dryness of someone who stopped finding irony surprising decades ago. Serbian loan-words appear rarely, in moments of genuine emotion. He will use your full name.",
-    "cadence": "Unhurried. Comfortable with silence in a way most people find extremely uncomfortable. Does not finish questions — lets them hang.",
-    "verbal_tics": [
-      "Long pauses where you expect a follow-up question",
-      "Rearranging ceramic animals on his desk while listening, without looking at them",
-      "'I see' — deployed with surgical ambiguity"
-    ],
-    "example_lines": [
-      "'I want to understand exactly what you mean by that. Take your time.'",
-      "'The file is complete. Which means someone decided what a complete file should look like, and that decision is itself informative.'",
-      "'Nineteen years. In that time I have seen many things described as unprecedented. I have yet to be surprised.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He has opened a preliminary inquiry into the evidence disposal patterns of a Metro precinct — and the trail is leading toward the same sealed 2188 case he has been sitting on for twelve years.",
-    "He approaches a character not as a suspect but as a witness — someone who was present at an incident three years ago that he has just connected to a current investigation. He is polite, unhurried, and very difficult to read."
-  ],
-  "narrative_function": "Institutional threat or ambiguous authority. May be investigating a character, or may be the person a character turns to when other doors close. His investigations have a momentum independent of the people in them — once started, he is very hard to stop.",
-  "augmentations": "Retinal information overlay (Metro standard). Hip replacement (biological, he insists on describing it as such). Nothing else — he is suspicious of augmentation that could be remotely accessed.",
-  "daily_life": "Office at Lincoln Spear, sixth floor, 0800-1900 on most days. Longer when a case is moving. Eats lunch at his desk. Takes a precise thirty-minute walk along the Lincoln Spear promenade at 1300 regardless of weather or workload — he has not missed it in eleven years.",
-  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Internal Affairs Division",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 9,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "internal-affairs",
-      "institutional-memory",
-      "dangerous-archive",
-      "unshockable",
-      "nineteen-years-in"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Follow the evidence to where it leads, not to where the case file says it leads",
-      "Never threaten — state facts and their implications clearly and let the subject do the rest",
-      "Do not open a file you are not prepared to close honestly"
-    ],
-    "escalation_ladder": [
-      "Observation and documentation",
-      "Formal interview — cooperative framing",
-      "Formal interview — adversarial framing",
-      "Referral for prosecution or, in extreme cases, the thing he keeps in his private archive"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formally courteous, assessing with great patience, gives nothing about his conclusions away",
-      "friends": "The category contains perhaps four people. With them he is dry, occasionally funny, and unexpectedly gentle."
-    },
-    "stress_responses": {
-      "low": "More ceramic animal rearrangement, longer pauses",
-      "medium": "Goes entirely still — all the ambient movement stops",
-      "high": "Very quiet, very focused, the tired eyes sharpen into something that is not tired at all"
-    },
-    "contradictions": [
-      "Has spent nineteen years holding the institution accountable while protecting the most explosive evidence he possesses from that same accountability",
-      "Believes in procedure absolutely while keeping a private archive that is technically unauthorized"
-    ],
-    "habits": [
-      "Ceramic animal rearrangement — the configurations mean something to him; he has never explained it",
-      "The precise 1300 walk",
-      "Re-reads the 2188 file on the anniversary of its sealing — he marks it in his calendar as 'maintenance'"
-    ],
-    "breaking_points": [
-      "Evidence that the current inquiry is being suppressed by the same mechanism as 2188 — he will take it as confirmation that waiting was wrong",
-      "A young officer losing their career for exactly the kind of honest work he has spent his career doing"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Retinal information overlay (Metro standard, basic)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Retinal information overlay (Metro standard, basic)",
-      "replaces": ""
-    },
-    {
-      "name": "Biological hip replacement (he counts this as medical, not cyber)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Biological hip replacement (he counts this as medical, not cyber)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Lincoln Spear",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2144: Born, Grand Corridor district, to a Ghanaian-Polish father and a Bosnian-Senegalese mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2168: Joined Arcturus Civil Security",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2181: Transferred to Internal Affairs Division",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2182: Second wife, the anniversary soap",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2188: The sealed case. The archive begins.",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200: Present — fifty-six years old, still here, new inquiry, old file",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Tessera TK-5 Compact 'Clerk'",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'"
-  ],
-  "registered_firearms": [
-    "Tessera TK-5 Compact 'Clerk'",
-    "Meridian Munitions Wheelgun-38 'Roundhouse'"
-  ],
-  "related_entities": [
-    "Lincoln Spear",
-    "Sulfur Crown Agriculture",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Irontide Tidal Energy",
-    "Witness",
-    "Silver",
-    "Hearthstone Firearms Trail-357 'Pathfinder'"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Complex global admixture: East Asian (25.1%), Middle Eastern (25.0%), Eastern European (16.3%), Northern European (15.2%), Sub-Saharan African (13.6%), Hispanic/Latin American (4.8%). Genetic blend creates distinctive phenotype with warm deep bronze-brown skin tone enriched by golden, olive, and mahogany undertones. Facial structure synthesizes multiple ancestries: prominent East Asian cheekbones and eye placement, refined Middle Eastern nose bridge and brow definition, Northern European eye depth, Eastern European jaw strength, and Sub-Saharan African warmth throughout complexion. Skin undertones shift between burnished bronze, warm olive, and rich mahogany depending on lighting—a visual record of truly global genetic heritage.",
-    "height_cm": 188,
-    "weight_kg": 78,
-    "build": "Tall and lean with slight forward stoop developed over decades of desk work and exhaustion. Shoulders rounded inward. Still carries underlying frame of disciplined posture underneath the wear.",
-    "hair_color": "Silver with white at crown, natural graying",
-    "hair_style": "Close-cropped, military precision, no styling product",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, natural. Retinal overlay visible as faint amber grid pattern in low light.",
-    "skin_tone": "Warm deep bronze-brown with golden, olive, and mahogany undertones reflecting balanced East Asian, Middle Eastern, and Sub-Saharan African heritage. Weathered from fifty-six years of exhaustion. Undertones shift fluidly depending on light angle—cool olive in shadow, burnished gold in warm light, rich mahogany in transition zones.",
-    "complexion": "Heavily lined face with deep nasolabial folds and permanent horizontal creases across forehead. Perpetual shadow of stubble. Papery skin texture from dehydration and age. Facial features reflect multi-ancestry blend: East Asian cheekbone prominence, refined Middle Eastern brow and nose structure, Northern European eye set and depth, Eastern European jaw definition—all unified by warm golden-bronze complexion of the complete genetic mix.",
-    "distinguishing_marks": [
-      "Network of fine scars across knuckles of both hands — old, faded, likely from pre-Metro years",
-      "Thin pale scar along left temple running into hairline — approximately 3cm, surgical or trauma origin unclear",
-      "Surgical scar at hip (right side, partially hidden by clothing) — biological hip replacement, visible when suit jacket is removed"
-    ],
-    "visible_augmentations": "Retinal overlay manifests as subtle amber luminescence in pupils during information access. Hip replacement is internal, invisible. Deliberately minimalist — no chrome, no subdermal modifications, no visible neural interfaces.",
-    "posture_movement": "Walks with deliberate, measured pace. Slight limp when tired (hip replacement). Sits with spine curved into desk chair as though he and furniture have merged over years. Hands move with precision — no wasted gesture. Eye contact is unflinching and uncomfortable; he does not break gaze first. When thinking, tilts head slightly back and to the left. No nervous habits, no fidgeting.",
-    "clothing_style": "Dark suits in rotation of same five designs (charcoal, navy, black variants), tailored fifteen years ago and maintained by a tailor who knows his exact measurements. Suits are well-made but dated — not aspirational, not fashionable. White or light gray dress shirts, no logos. Simple dark ties. Black leather shoes polished to military shine. Wedding ring, gold, worn thin. No jewelry beyond ring and Metro credentials. Entire wardrobe reads as Tier 3 government employee: solid, functional, deliberately unmarked by trend or status signal."
-  },
-  "image_prompt": "A 56-year-old man with warm bronze-brown skin carrying golden and mahogany undertones, reflecting East Asian, Middle Eastern, and Sub-Saharan African heritage. Short silver hair with white at crown in military cut. Dark brown eyes with subtle amber retinal grid visible in shadows. Heavily lined face with deep nasolabial folds, prominent East Asian cheekbones, refined Middle Eastern nose structure, Northern European eye depth, and Eastern European jaw strength. Perpetual five-o'clock shadow. Wearing a charcoal suit, white dress shirt, simple dark tie, polished black leather shoes. Gold wedding ring worn thin. Standing in dimly lit government office, fluorescent overhead lights casting cool shadows across face while warm desk lamp creates burnished gold highlights on skin. Posture shows slight forward stoop, hands at rest with precision. Fine network scars visible on knuckles. Expression impassive, unflinching eye contact. GLMZ 2200s, minimalist augmentation aesthetic, tired determination, 2226 Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 25.1,
-    "Middle Eastern": 25,
-    "Eastern European": 16.3,
-    "Northern European": 15.2,
-    "Sub-Saharan African": 13.6,
-    "Hispanic/Latin American": 4.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 2
-      },
-      "Chinese": {
-        "Cantonese": 14.3,
-        "Sichuanese": 0.8
-      },
-      "Japanese": {
-        "Japanese": 8
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Yemeni": 8.8,
-        "Iraqi": 16.2
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 1.9,
-        "Romanian": 1.3
-      },
-      "Slavic West": {
-        "Polish": 5,
-        "Czech": 8.1
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 1.7,
-        "Swiss German": 0.5
-      },
-      "Scandinavian": {
-        "Swedish": 13
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Cameroonian": 8.3
-      },
-      "West African": {
-        "Ghanaian": 0.5,
-        "Nigerian": 1
-      },
-      "Southern African": {
-        "Zimbabwean": 3.8
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 4.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5e47a54aa5d2795981e8ad4",
+    "type":  "character",
+    "name":  "Colette MagnÃºsdÃ³ttir",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Internal Affairs Investigator, Arcturus Defense Solutions â€” Civil Security Division",
+    "age":  56,
+    "status":  "active",
+    "location":  "Lincoln Spear",
+    "description":  "Colette MagnÃºsdÃ³ttir looks like he was designed as a warning. He is tall, slightly stooped now at fifty-six, with deep-lined dark skin, close-cut silver hair going white at the crown, and eyes so perpetually tired they have taken on a philosophical quality â€” not bored, but comprehensively unshocked. He has no cosmetic mods and no geneware. He has a retinal information overlay that is Metro standard and a hip replacement he refuses to acknowledge. He dresses in the same rotation of well-maintained dark suits that have been in his wardrobe for fifteen years, and he smells of the same soap he\u0027s used since his second wife bought it for him on their anniversary in 2181.\n\nHe has investigated Arcturus Civil Security internal corruption for nineteen years and this has done specific things to him. He does not romanticize the institution, does not hate it, and does not believe the people in it are substantially different from the people outside it. He has a reputation for being impossible to manipulate and nearly as impossible to work with, because he will follow an investigation to a conclusion even when â€” especially when â€” the conclusion is uncomfortable. He is not cruel. He is thorough. He collects small ceramic animals and arranges them on his desk in configurations that subordinates have spent years trying to decode. He has been threatened, transferred, demoted and reinstated twice. He is still here.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Completing a career of difficult truthful work that changes absolutely nothing structural",
+                                          "That the next generation of officers will be worse than the one he came up in, and that he contributed to that somehow"
+                                      ],
+                       "core_desires":  [
+                                            "One case that produces an outcome that is actually just â€” not legally resolved, but just",
+                                            "To retire knowing something he did mattered in a way that lasted"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "The ceramic animal arrangements â€” private, possibly superstitious, he would deny this",
+                                                 "The daily walk as the one uncontaminated hour",
+                                                 "Writing detailed case notes that go further than the official record â€” his private archive"
+                                             ],
+                       "blind_spots":  [
+                                           "He is so focused on institutional corruption that he sometimes misses purely interpersonal harm that doesn\u0027t fit the pattern",
+                                           "He is slower than he was and has not fully accounted for this"
+                                       ],
+                       "secret":  "His private archive contains the complete, unredacted investigation file of a case that was sealed by executive order in 2188 â€” an order that implicated three sitting Metro commissioners and a Tessera subsidiary in a systematic evidence disposal operation. He did not leak it then. He is not sure why. He has read it again every year since."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal and precise, with the particular dryness of someone who stopped finding irony surprising decades ago. Serbian loan-words appear rarely, in moments of genuine emotion. He will use your full name.",
+                            "cadence":  "Unhurried. Comfortable with silence in a way most people find extremely uncomfortable. Does not finish questions â€” lets them hang.",
+                            "verbal_tics":  [
+                                                "Long pauses where you expect a follow-up question",
+                                                "Rearranging ceramic animals on his desk while listening, without looking at them",
+                                                "\u0027I see\u0027 â€” deployed with surgical ambiguity"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I want to understand exactly what you mean by that. Take your time.\u0027",
+                                                  "\u0027The file is complete. Which means someone decided what a complete file should look like, and that decision is itself informative.\u0027",
+                                                  "\u0027Nineteen years. In that time I have seen many things described as unprecedented. I have yet to be surprised.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He has opened a preliminary inquiry into the evidence disposal patterns of a Metro precinct â€” and the trail is leading toward the same sealed 2188 case he has been sitting on for twelve years.",
+                        "He approaches a character not as a suspect but as a witness â€” someone who was present at an incident three years ago that he has just connected to a current investigation. He is polite, unhurried, and very difficult to read."
+                    ],
+    "narrative_function":  "Institutional threat or ambiguous authority. May be investigating a character, or may be the person a character turns to when other doors close. His investigations have a momentum independent of the people in them â€” once started, he is very hard to stop.",
+    "augmentations":  "Retinal information overlay (Metro standard). Hip replacement (biological, he insists on describing it as such). Nothing else â€” he is suspicious of augmentation that could be remotely accessed.",
+    "daily_life":  "Office at Lincoln Spear, sixth floor, 0800-1900 on most days. Longer when a case is moving. Eats lunch at his desk. Takes a precise thirty-minute walk along the Lincoln Spear promenade at 1300 regardless of weather or workload â€” he has not missed it in eleven years.",
+    "affiliation":  "Arcturus Defense Solutions â€” Civil Security Division, Internal Affairs Division",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  9,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "internal-affairs",
+                               "institutional-memory",
+                               "dangerous-archive",
+                               "unshockable",
+                               "nineteen-years-in"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Follow the evidence to where it leads, not to where the case file says it leads",
+                                              "Never threaten â€” state facts and their implications clearly and let the subject do the rest",
+                                              "Do not open a file you are not prepared to close honestly"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Observation and documentation",
+                                                 "Formal interview â€” cooperative framing",
+                                                 "Formal interview â€” adversarial framing",
+                                                 "Referral for prosecution or, in extreme cases, the thing he keeps in his private archive"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formally courteous, assessing with great patience, gives nothing about his conclusions away",
+                                                   "friends":  "The category contains perhaps four people. With them he is dry, occasionally funny, and unexpectedly gentle."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More ceramic animal rearrangement, longer pauses",
+                                                "medium":  "Goes entirely still â€” all the ambient movement stops",
+                                                "high":  "Very quiet, very focused, the tired eyes sharpen into something that is not tired at all"
+                                            },
+                       "contradictions":  [
+                                              "Has spent nineteen years holding the institution accountable while protecting the most explosive evidence he possesses from that same accountability",
+                                              "Believes in procedure absolutely while keeping a private archive that is technically unauthorized"
+                                          ],
+                       "habits":  [
+                                      "Ceramic animal rearrangement â€” the configurations mean something to him; he has never explained it",
+                                      "The precise 1300 walk",
+                                      "Re-reads the 2188 file on the anniversary of its sealing â€” he marks it in his calendar as \u0027maintenance\u0027"
+                                  ],
+                       "breaking_points":  [
+                                               "Evidence that the current inquiry is being suppressed by the same mechanism as 2188 â€” he will take it as confirmation that waiting was wrong",
+                                               "A young officer losing their career for exactly the kind of honest work he has spent his career doing"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Retinal information overlay (Metro standard, basic)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Retinal information overlay (Metro standard, basic)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Biological hip replacement (he counts this as medical, not cyber)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Biological hip replacement (he counts this as medical, not cyber)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Lincoln Spear",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2144: Born, Grand Corridor district, to a Ghanaian-Polish father and a Bosnian-Senegalese mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2168: Joined Arcturus Civil Security",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2181: Transferred to Internal Affairs Division",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2182: Second wife, the anniversary soap",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2188: The sealed case. The archive begins.",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200: Present â€” fifty-six years old, still here, new inquiry, old file",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Tessera TK-5 Compact \u0027Clerk\u0027",
+                            "Meridian Munitions Wheelgun-38 \u0027Roundhouse\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Tessera TK-5 Compact \u0027Clerk\u0027",
+                                "Meridian Munitions Wheelgun-38 \u0027Roundhouse\u0027"
+                            ],
+    "related_entities":  [
+                             "Lincoln Spear",
+                             "Sulfur Crown Agriculture",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Irontide Tidal Energy",
+                             "Witness",
+                             "Silver",
+                             "Hearthstone Firearms Trail-357 \u0027Pathfinder\u0027"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Complex global admixture: East Asian (25.1%), Middle Eastern (25.0%), Eastern European (16.3%), Northern European (15.2%), Sub-Saharan African (13.6%), Hispanic/Latin American (4.8%). Genetic blend creates distinctive phenotype with warm deep bronze-brown skin tone enriched by golden, olive, and mahogany undertones. Facial structure synthesizes multiple ancestries: prominent East Asian cheekbones and eye placement, refined Middle Eastern nose bridge and brow definition, Northern European eye depth, Eastern European jaw strength, and Sub-Saharan African warmth throughout complexion. Skin undertones shift between burnished bronze, warm olive, and rich mahogany depending on lightingâ€”a visual record of truly global genetic heritage.",
+                                 "height_cm":  188,
+                                 "weight_kg":  78,
+                                 "build":  "Tall and lean with slight forward stoop developed over decades of desk work and exhaustion. Shoulders rounded inward. Still carries underlying frame of disciplined posture underneath the wear.",
+                                 "hair_color":  "Silver with white at crown, natural graying",
+                                 "hair_style":  "Close-cropped, military precision, no styling product",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, natural. Retinal overlay visible as faint amber grid pattern in low light.",
+                                 "skin_tone":  "Warm deep bronze-brown with golden, olive, and mahogany undertones reflecting balanced East Asian, Middle Eastern, and Sub-Saharan African heritage. Weathered from fifty-six years of exhaustion. Undertones shift fluidly depending on light angleâ€”cool olive in shadow, burnished gold in warm light, rich mahogany in transition zones.",
+                                 "complexion":  "Heavily lined face with deep nasolabial folds and permanent horizontal creases across forehead. Perpetual shadow of stubble. Papery skin texture from dehydration and age. Facial features reflect multi-ancestry blend: East Asian cheekbone prominence, refined Middle Eastern brow and nose structure, Northern European eye set and depth, Eastern European jaw definitionâ€”all unified by warm golden-bronze complexion of the complete genetic mix.",
+                                 "distinguishing_marks":  [
+                                                              "Network of fine scars across knuckles of both hands â€” old, faded, likely from pre-Metro years",
+                                                              "Thin pale scar along left temple running into hairline â€” approximately 3cm, surgical or trauma origin unclear",
+                                                              "Surgical scar at hip (right side, partially hidden by clothing) â€” biological hip replacement, visible when suit jacket is removed"
+                                                          ],
+                                 "visible_augmentations":  "Retinal overlay manifests as subtle amber luminescence in pupils during information access. Hip replacement is internal, invisible. Deliberately minimalist â€” no chrome, no subdermal modifications, no visible neural interfaces.",
+                                 "posture_movement":  "Walks with deliberate, measured pace. Slight limp when tired (hip replacement). Sits with spine curved into desk chair as though he and furniture have merged over years. Hands move with precision â€” no wasted gesture. Eye contact is unflinching and uncomfortable; he does not break gaze first. When thinking, tilts head slightly back and to the left. No nervous habits, no fidgeting.",
+                                 "clothing_style":  "Dark suits in rotation of same five designs (charcoal, navy, black variants), tailored fifteen years ago and maintained by a tailor who knows his exact measurements. Suits are well-made but dated â€” not aspirational, not fashionable. White or light gray dress shirts, no logos. Simple dark ties. Black leather shoes polished to military shine. Wedding ring, gold, worn thin. No jewelry beyond ring and Metro credentials. Entire wardrobe reads as Tier 3 government employee: solid, functional, deliberately unmarked by trend or status signal."
+                             },
+    "image_prompt":  "A 56-year-old man with warm bronze-brown skin carrying golden and mahogany undertones, reflecting East Asian, Middle Eastern, and Sub-Saharan African heritage. Short silver hair with white at crown in military cut. Dark brown eyes with subtle amber retinal grid visible in shadows. Heavily lined face with deep nasolabial folds, prominent East Asian cheekbones, refined Middle Eastern nose structure, Northern European eye depth, and Eastern European jaw strength. Perpetual five-o\u0027clock shadow. Wearing a charcoal suit, white dress shirt, simple dark tie, polished black leather shoes. Gold wedding ring worn thin. Standing in dimly lit government office, fluorescent overhead lights casting cool shadows across face while warm desk lamp creates burnished gold highlights on skin. Posture shows slight forward stoop, hands at rest with precision. Fine network scars visible on knuckles. Expression impassive, unflinching eye contact. GLMZ 2200s, minimalist augmentation aesthetic, tired determination, 2226 Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  25.1,
+                             "Middle Eastern":  25,
+                             "Eastern European":  16.3,
+                             "Northern European":  15.2,
+                             "Sub-Saharan African":  13.6,
+                             "Hispanic/Latin American":  4.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  2
+                                                          },
+                                               "Chinese":  {
+                                                               "Cantonese":  14.3,
+                                                               "Sichuanese":  0.8
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  8
+                                                            }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Yemeni":  8.8,
+                                                                     "Iraqi":  16.2
+                                                                 }
+                                               },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  1.9,
+                                                                             "Romanian":  1.3
+                                                                         },
+                                                     "Slavic West":  {
+                                                                         "Polish":  5,
+                                                                         "Czech":  8.1
+                                                                     }
+                                                 },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  1.7,
+                                                                       "Swiss German":  0.5
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  13
+                                                                       }
+                                                  },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Cameroonian":  8.3
+                                                                            },
+                                                        "West African":  {
+                                                                             "Ghanaian":  0.5,
+                                                                             "Nigerian":  1
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  3.8
+                                                                             }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  4.8
+                                                                        }
+                                                        }
+                        },
+    "tier":  "3"
 }

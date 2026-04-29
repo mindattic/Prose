@@ -1,347 +1,378 @@
-{
-  "id": "019d6143a5d0744db53868bba99643ef",
-  "type": "character",
-  "name": "Edilson Cervantes-Thorvaldsdóttir",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Executive Vice President of Strategic Acquisition, Ringo Corporation",
-  "age": 57,
-  "status": "active",
-  "location": "Vantage Meridian Corporate Campus, Ringo Tower — Floor 58, corner office, near State and Madison",
-  "description": "Edilson Cervantes-Thorvaldsdóttir is a tall woman of sixty-ish who has made deliberate choices about how she ages. Her skin is dark and luminous — the bioluminescent dermal layer she had installed at forty is subtle, a warmth under the surface that catches in low light like embers, and she has never adjusted it toward anything flashier. Her hair is entirely white and kept in a long braid she wears forward over one shoulder. She has retractable claw mods on both hands, filed short enough that most people don't notice them, installed not for aesthetics but because she found them useful and has never felt the need to explain that. She dresses in a palette of black, ivory, and deep wine, always expensively, never ostentatiously.\n\nCaoimhe has been acquiring companies for Ringo for over two decades, and she is very good at it in the way that a certain kind of intelligence becomes: by being completely honest about what it wants while everyone else is still pretending they don't want anything. She is charming in the formal register, devastating in the negotiating room, and has a quality of stillness that makes people feel simultaneously seen and examined. She grew up in a Tier 4 household in what was then New Windsor, the daughter of a Ringo logistics executive, and has spent her entire career at the same corponation — a loyalty she's never examined too closely.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.3,
-      "id": 0.7,
-      "shadow": 0.7,
-      "mask": 0.6,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Irrelevance — specifically, being phased out by the next generation of executives who don't need what she knows",
-      "That the corponation she gave her career to is fundamentally hollow and she has spent herself on nothing"
-    ],
-    "core_desires": [
-      "One genuine acquisition — something she chose entirely for her own reasons, not Ringo's",
-      "To know whether she would have been this person anywhere else, or if Ringo made her"
-    ],
-    "coping_mechanisms": [
-      "Framing everything as a negotiation, including her own emotional landscape",
-      "Collecting art — specifically from artists in Tier 1 and 2 zones, which she does not publicize"
-    ],
-    "blind_spots": [
-      "Reads professional dynamics with extraordinary accuracy but consistently misreads personal affection — tends to assume it is transactional even when it isn't",
-      "Has naturalized Ringo's interests as her own so thoroughly that she can no longer fully tell them apart"
-    ],
-    "secret": "She has been conducting quiet, unauthorized due diligence on a small biotech startup in Pilsen Veil — not for Ringo, but for herself. She has Φ4.2 million in personal capital held in accounts that don't appear in her Ringo disclosures. She is, for the first time in her career, considering doing something for herself. She has been 'considering' it for three years."
-  },
-  "speech_patterns": {
-    "vocabulary": "Expansive, precise, occasionally literary. Comfortable in multiple registers — negotiating-room formal, private club intimate, and a rarer, almost dry candor she reserves for people she's decided to respect.",
-    "cadence": "Unhurried to an extent that reads as performance, but isn't — she genuinely processes at this pace. Never fills silence. Uses silence as a tool.",
-    "verbal_tics": [
-      "A small exhale through the nose before disagreeing with someone",
-      "Refers to companies and institutions as 'they' with the same affect she uses for people"
-    ],
-    "example_lines": [
-      "'I've reviewed the terms. I think what you're looking for is a number that lets you say yes without feeling like you lost. That's a different conversation than the one we've been having, and it's a much shorter one.'",
-      "'Ringo has been very good to me. I've also been very good to Ringo. I try not to think of it as love — that's not what it is — but it's real.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The unauthorized due diligence on the Pilsen Veil biotech startup surfaces through a junior analyst at Ringo who noticed the pattern in external data requests — and Caoimhe needs to decide whether to fold it into Ringo officially or find another way to make it disappear.",
-    "One of the companies she acquired for Ringo twelve years ago had workers in a district that was subsequently rezoned into a sacrifice zone; a former worker who lost everything has been, very slowly and very quietly, building a case."
-  ],
-  "narrative_function": "High-tier power broker; can open doors that no one else can; threat or patron depending on what's useful to her; window into Tier 4/5 corporate culture; has history with half the city's institutional players.",
-  "augmentations": "Subtle bioluminescent dermal layer, warm ember-tone. Retractable claw mods, both hands (discreet, filed short). High-grade neural interface for secure communications and real-time financial modeling. Cochlear full-spectrum enhancement. No visible eye mods — she considers them tacky at her tier.",
-  "daily_life": "Rarely in before 09:00, never visibly rushed. Spends mornings in back-channel communications and private briefings; afternoons in acquisition meetings, board calls, or curated social engagements that are also work. Has a dedicated car on the Ferrogate VIP line. Goes to a private members' gym in Vantage Meridian Campus three times a week and has done so for twenty years.",
-  "affiliation": "Ringo Corporation (Strategic Acquisition, EVP level)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 6,
-      "vitality": 7,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 7,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 6,
-      "expression": 9,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 4,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "power broker",
-      "self-naturalized",
-      "private collector",
-      "delayed agency",
-      "formidably patient"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never commit to a position before understanding the other party's actual constraint",
-      "Protect Ringo's interests as a default, her own interests as an override she has never fully activated",
-      "Do not acquire enemies when you can acquire assets — people, information, leverage"
-    ],
-    "escalation_ladder": [
-      "Redirect the conversation to what she wants the other party to focus on",
-      "Apply institutional pressure through intermediaries",
-      "Bring the full weight of her twenty years of Ringo capital — relationships, data, financial muscle — once and decisively"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formally warm, calibrated to the other party's status and what they need to feel about themselves to be useful",
-      "friends": "Rare, but when present: genuinely attentive, surprisingly good at listening, asks questions she doesn't need the answers to for professional reasons"
-    },
-    "stress_responses": {
-      "low": "Becomes more formally precise — a slight increase in vocabulary complexity",
-      "medium": "Goes very still. Her bioluminescent skin dims almost imperceptibly.",
-      "high": "Withdraws from all discretionary social contact, works through the problem in complete isolation, emerges having made a decision she will not revisit"
-    },
-    "contradictions": [
-      "Champions strategic clarity and long-term thinking for Ringo while procrastinating on the most important personal decision of her life for three years"
-    ],
-    "habits": [
-      "Reviews her personal art collection every Sunday morning with synthetic coffee — a private ritual she finds illegitimately soothing",
-      "Leaves no data offerings at E.L.F. shrines publicly but has a private terminal in her office connected to a local E.L.F. she has been in quiet correspondence with for eleven years"
-    ],
-    "breaking_points": [
-      "If Ringo moves against the Pilsen Veil startup before she acts — acquires it, suppresses it, or dismantles it — she will have to reckon with whether she was ever going to do anything or was always just watching herself not do it"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.7,
-    "Face": 0.6,
-    "Charmer": 0.6
-  },
-  "operating_territory": {
-    "home_turf": "Vantage Meridian Corporate Campus",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in New Windsor / Novaya Windsorka, Tier 4, to a Ringo logistics executive",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Joins Ringo Corporation as strategic analyst, fast-tracked through internal program",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Leads first major acquisition — a mid-tier data architecture firm in The Circuit",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Promoted to Vice President of Strategic Acquisition",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Promoted to EVP; the Ringo Tower office on Floor 58 becomes hers",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Begins unauthorized personal due diligence on Pilsen Veil biotech startup",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Tessera TK-9 Proteus 'Shapeshifter'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Vantage Meridian Corporate Campus",
-    "the_meridian_office_park",
-    "Pilsen Veil",
-    "CRUCIBLE Vantage Artisan Precision Hand",
-    "Honest Burger",
-    "Corner Slice",
-    "The Pure Hand",
-    "Ringo Corponation"
-  ],
-  "district": "Meridian Core",
-  "physical_description": {
-    "heritage": "Complex pan-global ancestry: 35% Hispanic/Latin American, 32% East Asian, 23% South Asian, and 10% Sub-Saharan African. This rare combination creates striking facial geometry—high, prominent cheekbones from East Asian and Latin American lineage blend with the strong, defined jaw and facial structure of Sub-Saharan African heritage. South Asian ancestry contributes refined facial proportions and subtle warmth to skin undertones. The result is a face of unusual symmetry and presence, with features that harmonize across multiple continental traditions into something distinctly her own.",
-    "height_cm": 183,
-    "weight_kg": 71,
-    "build": "Lean and composed, maintained through decades of disciplined gym routine. Long-limbed with a careful posture that projects control without tension. Shoulders back, spine aligned — the bearing of someone who has trained her body to be an instrument of intention.",
-    "hair_color": "Pure white, natural progression maintained deliberately",
-    "hair_style": "Long braid worn forward over left shoulder, immaculate and precise",
-    "hair_length": "Long",
-    "eye_color": "Deep brown, unaugmented",
-    "skin_tone": "Deep warm brown with golden and amber undertones, the harmonious result of blended ancestry across multiple continents. East Asian and Latin American heritage contribute warm golden notes; South Asian ancestry adds refined warmth and depth; Sub-Saharan African genetics provide the rich, deep foundation. The tone is luminous and carries subtle radiance from the integrated bioluminescent dermal layer.",
-    "complexion": "Luminous in low light with a faint ember glow visible at the jawline and temples — the bioluminescent dermal layer integrated at forty is barely perceptible in daylight but unmistakable in evening settings. Skin texture is refined and well-maintained; minimal visible aging, though the geometry of her face shows fifty-seven years with dignity. High, sculpted cheekbones reflect the East Asian and Latin American portions of her ancestry, flowing seamlessly into the strong, defined jaw characteristic of her Sub-Saharan African heritage, with refined proportions influenced by South Asian genetics. The overall effect is a face of striking geometric precision that transcends simple categorization. Measured expression, eyes that assess and comprehend.",
-    "distinguishing_marks": [
-      "Very faint surgical scars at both wrists where claw mods were installed, barely visible unless examined closely.",
-      "No visible tattoos; she considers them imprecise."
-    ],
-    "visible_augmentations": "Retractable claw mods on both hands — filed short and discreet, visible only in sharp light or during deliberate extension. The knuckle geometry is subtly wrong if you know what to look for. Bioluminescent dermal layer visible primarily in low light as a warm ember glow under dark skin. High-grade neural interface is fully subcutaneous; cochlear enhancement is internal.",
-    "posture_movement": "Stillness is her default state. She moves with economy and intention — no wasted gesture, no nervous tics. Walks with weight centered, deliberately unhurried. In meetings, she sits back slightly, watching more than performing. Her gaze is steady and complete; she looks at people in a way that makes them feel simultaneously heard and assessed. Handshakes are firm; she does not fidget.",
-    "clothing_style": "Tier 1 corporate formal with personal restraint: black wool trousers (tailored), ivory silk blouses (always long-sleeved to mid-forearm, where the claw scars sit), wine-colored merino or cashmere layers. Minimal jewelry — one wedding band (platinum, understated), occasionally a paired brooch of modernist design in silver or black onyx. Shoes are always excellent and always black. Fabrics are matte or subtly textured; nothing shiny or obvious. The effect is of someone who spent real money to look exactly like she looks: composed, expensive, and completely uninterested in drawing attention."
-  },
-  "image_prompt": "Edilson Cervantes-Thorvaldsdóttir, 183cm tall, fifty-seven year old corporate executive in GLMZ 2226. Deep warm brown skin with golden amber undertones, luminescent ember glow visible at jawline in low light from integrated bioluminescent dermal layer. Striking geometric face: high sculpted cheekbones from East Asian and Latin American heritage blending with strong defined jaw from Sub-Saharan African ancestry, refined proportions from South Asian genetics. Deep brown unaugmented eyes, steady and assessing gaze. Pure white long hair in immaculate single braid draped over left shoulder. Lean composed build, impeccable posture, centered weight. Wearing tailored black wool trousers, long-sleeved ivory silk blouse (sleeves to mid-forearm covering faint surgical scars from claw mods), wine-colored merino layer. Platinum wedding band, black polished shoes. Minimalist modernist silver brooch. Stillness and intention in every movement, corporate boardroom setting with subtle evening lighting highlighting bioluminescent undertones, composed and uninterested in drawing attention, the bearing of someone whose body is an instrument of intention, GLMZ 2200s aesthetic, professional corporate environment --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 35.1,
-    "East Asian": 31.9,
-    "South Asian": 23.1,
-    "Sub-Saharan African": 9.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 28.3
-      },
-      "Caribbean": {
-        "Cuban": 2.6,
-        "Puerto Rican": 4.2
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 6.9
-      },
-      "Chinese": {
-        "Cantonese": 15.6,
-        "Mandarin Northern": 8.2
-      },
-      "Korean": {
-        "Korean": 1.2
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Baloch": 0.5,
-        "Sindhi": 4.8
-      },
-      "Nepali": {
-        "Nepali": 14
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 3.8
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 2.4,
-        "Ethiopian": 1.9
-      },
-      "Central African": {
-        "Congolese": 2.6,
-        "Angolan": 3
-      }
-    }
-  },
-  "tier": "5"
+﻿{
+    "id":  "019d6143a5d0744db53868bba99643ef",
+    "type":  "character",
+    "name":  "Edilson Cervantes-ThorvaldsdÃ³ttir",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Executive Vice President of Strategic Acquisition, Ringo Corporation",
+    "age":  57,
+    "status":  "active",
+    "location":  "Vantage Meridian Corporate Campus, Ringo Tower â€” Floor 58, corner office, near State and Madison",
+    "description":  "Edilson Cervantes-ThorvaldsdÃ³ttir is a tall woman of sixty-ish who has made deliberate choices about how she ages. Her skin is dark and luminous â€” the bioluminescent dermal layer she had installed at forty is subtle, a warmth under the surface that catches in low light like embers, and she has never adjusted it toward anything flashier. Her hair is entirely white and kept in a long braid she wears forward over one shoulder. She has retractable claw mods on both hands, filed short enough that most people don\u0027t notice them, installed not for aesthetics but because she found them useful and has never felt the need to explain that. She dresses in a palette of black, ivory, and deep wine, always expensively, never ostentatiously.\n\nCaoimhe has been acquiring companies for Ringo for over two decades, and she is very good at it in the way that a certain kind of intelligence becomes: by being completely honest about what it wants while everyone else is still pretending they don\u0027t want anything. She is charming in the formal register, devastating in the negotiating room, and has a quality of stillness that makes people feel simultaneously seen and examined. She grew up in a Tier 4 household in what was then New Windsor, the daughter of a Ringo logistics executive, and has spent her entire career at the same corponation â€” a loyalty she\u0027s never examined too closely.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Irrelevance â€” specifically, being phased out by the next generation of executives who don\u0027t need what she knows",
+                                          "That the corponation she gave her career to is fundamentally hollow and she has spent herself on nothing"
+                                      ],
+                       "core_desires":  [
+                                            "One genuine acquisition â€” something she chose entirely for her own reasons, not Ringo\u0027s",
+                                            "To know whether she would have been this person anywhere else, or if Ringo made her"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Framing everything as a negotiation, including her own emotional landscape",
+                                                 "Collecting art â€” specifically from artists in Tier 1 and 2 zones, which she does not publicize"
+                                             ],
+                       "blind_spots":  [
+                                           "Reads professional dynamics with extraordinary accuracy but consistently misreads personal affection â€” tends to assume it is transactional even when it isn\u0027t",
+                                           "Has naturalized Ringo\u0027s interests as her own so thoroughly that she can no longer fully tell them apart"
+                                       ],
+                       "secret":  "She has been conducting quiet, unauthorized due diligence on a small biotech startup in Pilsen Veil â€” not for Ringo, but for herself. She has Î¦4.2 million in personal capital held in accounts that don\u0027t appear in her Ringo disclosures. She is, for the first time in her career, considering doing something for herself. She has been \u0027considering\u0027 it for three years."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Expansive, precise, occasionally literary. Comfortable in multiple registers â€” negotiating-room formal, private club intimate, and a rarer, almost dry candor she reserves for people she\u0027s decided to respect.",
+                            "cadence":  "Unhurried to an extent that reads as performance, but isn\u0027t â€” she genuinely processes at this pace. Never fills silence. Uses silence as a tool.",
+                            "verbal_tics":  [
+                                                "A small exhale through the nose before disagreeing with someone",
+                                                "Refers to companies and institutions as \u0027they\u0027 with the same affect she uses for people"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I\u0027ve reviewed the terms. I think what you\u0027re looking for is a number that lets you say yes without feeling like you lost. That\u0027s a different conversation than the one we\u0027ve been having, and it\u0027s a much shorter one.\u0027",
+                                                  "\u0027Ringo has been very good to me. I\u0027ve also been very good to Ringo. I try not to think of it as love â€” that\u0027s not what it is â€” but it\u0027s real.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The unauthorized due diligence on the Pilsen Veil biotech startup surfaces through a junior analyst at Ringo who noticed the pattern in external data requests â€” and Caoimhe needs to decide whether to fold it into Ringo officially or find another way to make it disappear.",
+                        "One of the companies she acquired for Ringo twelve years ago had workers in a district that was subsequently rezoned into a sacrifice zone; a former worker who lost everything has been, very slowly and very quietly, building a case."
+                    ],
+    "narrative_function":  "High-tier power broker; can open doors that no one else can; threat or patron depending on what\u0027s useful to her; window into Tier 4/5 corporate culture; has history with half the city\u0027s institutional players.",
+    "augmentations":  "Subtle bioluminescent dermal layer, warm ember-tone. Retractable claw mods, both hands (discreet, filed short). High-grade neural interface for secure communications and real-time financial modeling. Cochlear full-spectrum enhancement. No visible eye mods â€” she considers them tacky at her tier.",
+    "daily_life":  "Rarely in before 09:00, never visibly rushed. Spends mornings in back-channel communications and private briefings; afternoons in acquisition meetings, board calls, or curated social engagements that are also work. Has a dedicated car on the Ferrogate VIP line. Goes to a private members\u0027 gym in Vantage Meridian Campus three times a week and has done so for twenty years.",
+    "affiliation":  "Ringo Corporation (Strategic Acquisition, EVP level)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  6,
+                                   "vitality":  7,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  7,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  6,
+                                 "expression":  9,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "power broker",
+                               "self-naturalized",
+                               "private collector",
+                               "delayed agency",
+                               "formidably patient"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never commit to a position before understanding the other party\u0027s actual constraint",
+                                              "Protect Ringo\u0027s interests as a default, her own interests as an override she has never fully activated",
+                                              "Do not acquire enemies when you can acquire assets â€” people, information, leverage"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Redirect the conversation to what she wants the other party to focus on",
+                                                 "Apply institutional pressure through intermediaries",
+                                                 "Bring the full weight of her twenty years of Ringo capital â€” relationships, data, financial muscle â€” once and decisively"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formally warm, calibrated to the other party\u0027s status and what they need to feel about themselves to be useful",
+                                                   "friends":  "Rare, but when present: genuinely attentive, surprisingly good at listening, asks questions she doesn\u0027t need the answers to for professional reasons"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more formally precise â€” a slight increase in vocabulary complexity",
+                                                "medium":  "Goes very still. Her bioluminescent skin dims almost imperceptibly.",
+                                                "high":  "Withdraws from all discretionary social contact, works through the problem in complete isolation, emerges having made a decision she will not revisit"
+                                            },
+                       "contradictions":  [
+                                              "Champions strategic clarity and long-term thinking for Ringo while procrastinating on the most important personal decision of her life for three years"
+                                          ],
+                       "habits":  [
+                                      "Reviews her personal art collection every Sunday morning with synthetic coffee â€” a private ritual she finds illegitimately soothing",
+                                      "Leaves no data offerings at E.L.F. shrines publicly but has a private terminal in her office connected to a local E.L.F. she has been in quiet correspondence with for eleven years"
+                                  ],
+                       "breaking_points":  [
+                                               "If Ringo moves against the Pilsen Veil startup before she acts â€” acquires it, suppresses it, or dismantles it â€” she will have to reckon with whether she was ever going to do anything or was always just watching herself not do it"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.7,
+                       "Face":  0.6,
+                       "Charmer":  0.6
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Vantage Meridian Corporate Campus",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in New Windsor / Novaya Windsorka, Tier 4, to a Ringo logistics executive",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Joins Ringo Corporation as strategic analyst, fast-tracked through internal program",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Leads first major acquisition â€” a mid-tier data architecture firm in The Circuit",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Promoted to Vice President of Strategic Acquisition",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Promoted to EVP; the Ringo Tower office on Floor 58 becomes hers",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Begins unauthorized personal due diligence on Pilsen Veil biotech startup",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Tessera TK-9 Proteus \u0027Shapeshifter\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Vantage Meridian Corporate Campus",
+                             "the_meridian_office_park",
+                             "Pilsen Veil",
+                             "CRUCIBLE Vantage Artisan Precision Hand",
+                             "Honest Burger",
+                             "Corner Slice",
+                             "The Pure Hand",
+                             "Ringo Corponation"
+                         ],
+    "district":  "Meridian Core",
+    "physical_description":  {
+                                 "heritage":  "Complex pan-global ancestry: 35% Hispanic/Latin American, 32% East Asian, 23% South Asian, and 10% Sub-Saharan African. This rare combination creates striking facial geometryâ€”high, prominent cheekbones from East Asian and Latin American lineage blend with the strong, defined jaw and facial structure of Sub-Saharan African heritage. South Asian ancestry contributes refined facial proportions and subtle warmth to skin undertones. The result is a face of unusual symmetry and presence, with features that harmonize across multiple continental traditions into something distinctly her own.",
+                                 "height_cm":  183,
+                                 "weight_kg":  71,
+                                 "build":  "Lean and composed, maintained through decades of disciplined gym routine. Long-limbed with a careful posture that projects control without tension. Shoulders back, spine aligned â€” the bearing of someone who has trained her body to be an instrument of intention.",
+                                 "hair_color":  "Pure white, natural progression maintained deliberately",
+                                 "hair_style":  "Long braid worn forward over left shoulder, immaculate and precise",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown, unaugmented",
+                                 "skin_tone":  "Deep warm brown with golden and amber undertones, the harmonious result of blended ancestry across multiple continents. East Asian and Latin American heritage contribute warm golden notes; South Asian ancestry adds refined warmth and depth; Sub-Saharan African genetics provide the rich, deep foundation. The tone is luminous and carries subtle radiance from the integrated bioluminescent dermal layer.",
+                                 "complexion":  "Luminous in low light with a faint ember glow visible at the jawline and temples â€” the bioluminescent dermal layer integrated at forty is barely perceptible in daylight but unmistakable in evening settings. Skin texture is refined and well-maintained; minimal visible aging, though the geometry of her face shows fifty-seven years with dignity. High, sculpted cheekbones reflect the East Asian and Latin American portions of her ancestry, flowing seamlessly into the strong, defined jaw characteristic of her Sub-Saharan African heritage, with refined proportions influenced by South Asian genetics. The overall effect is a face of striking geometric precision that transcends simple categorization. Measured expression, eyes that assess and comprehend.",
+                                 "distinguishing_marks":  [
+                                                              "Very faint surgical scars at both wrists where claw mods were installed, barely visible unless examined closely.",
+                                                              "No visible tattoos; she considers them imprecise."
+                                                          ],
+                                 "visible_augmentations":  "Retractable claw mods on both hands â€” filed short and discreet, visible only in sharp light or during deliberate extension. The knuckle geometry is subtly wrong if you know what to look for. Bioluminescent dermal layer visible primarily in low light as a warm ember glow under dark skin. High-grade neural interface is fully subcutaneous; cochlear enhancement is internal.",
+                                 "posture_movement":  "Stillness is her default state. She moves with economy and intention â€” no wasted gesture, no nervous tics. Walks with weight centered, deliberately unhurried. In meetings, she sits back slightly, watching more than performing. Her gaze is steady and complete; she looks at people in a way that makes them feel simultaneously heard and assessed. Handshakes are firm; she does not fidget.",
+                                 "clothing_style":  "Tier 1 corporate formal with personal restraint: black wool trousers (tailored), ivory silk blouses (always long-sleeved to mid-forearm, where the claw scars sit), wine-colored merino or cashmere layers. Minimal jewelry â€” one wedding band (platinum, understated), occasionally a paired brooch of modernist design in silver or black onyx. Shoes are always excellent and always black. Fabrics are matte or subtly textured; nothing shiny or obvious. The effect is of someone who spent real money to look exactly like she looks: composed, expensive, and completely uninterested in drawing attention."
+                             },
+    "image_prompt":  "Edilson Cervantes-ThorvaldsdÃ³ttir, 183cm tall, fifty-seven year old corporate executive in GLMZ 2226. Deep warm brown skin with golden amber undertones, luminescent ember glow visible at jawline in low light from integrated bioluminescent dermal layer. Striking geometric face: high sculpted cheekbones from East Asian and Latin American heritage blending with strong defined jaw from Sub-Saharan African ancestry, refined proportions from South Asian genetics. Deep brown unaugmented eyes, steady and assessing gaze. Pure white long hair in immaculate single braid draped over left shoulder. Lean composed build, impeccable posture, centered weight. Wearing tailored black wool trousers, long-sleeved ivory silk blouse (sleeves to mid-forearm covering faint surgical scars from claw mods), wine-colored merino layer. Platinum wedding band, black polished shoes. Minimalist modernist silver brooch. Stillness and intention in every movement, corporate boardroom setting with subtle evening lighting highlighting bioluminescent undertones, composed and uninterested in drawing attention, the bearing of someone whose body is an instrument of intention, GLMZ 2200s aesthetic, professional corporate environment --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  35.1,
+                             "East Asian":  31.9,
+                             "South Asian":  23.1,
+                             "Sub-Saharan African":  9.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  28.3
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  2.6,
+                                                                              "Puerto Rican":  4.2
+                                                                          }
+                                                        },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  6.9
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  15.6,
+                                                               "Mandarin Northern":  8.2
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  1.2
+                                                          }
+                                           },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Baloch":  0.5,
+                                                                  "Sindhi":  4.8
+                                                              },
+                                                "Nepali":  {
+                                                               "Nepali":  14
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  3.8
+                                                                }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  2.4,
+                                                                             "Ethiopian":  1.9
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  2.6,
+                                                                                "Angolan":  3
+                                                                            }
+                                                    }
+                        },
+    "tier":  "5"
 }

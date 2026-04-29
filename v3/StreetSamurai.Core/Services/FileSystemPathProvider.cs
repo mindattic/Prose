@@ -19,7 +19,6 @@ public class FileSystemPathProvider : IPathProvider
     public string EssencesDir => Path.Combine(Root, "essences");
     public string NarrativeBiblePath => Path.Combine(Root, "narrative_bible.md");
     public string WorldDir => Path.Combine(Root, "world");
-    public string FacetsDir => Path.Combine(Root, "character", "facets");
 
     // Read-only world content baked into the deployment
     private string EngineRoot => Path.Combine(Root, Constants.Folders.Engine);
@@ -34,6 +33,8 @@ public class FileSystemPathProvider : IPathProvider
             : Path.Combine(EngineRoot, "data"));
 
     public string StoriesDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Stories));
+    public string BooksDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Books));
+    public string SeriesDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Series));
     public string GraphDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Graph));
     public string LogDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Logs));
     public string ExportDir => EnsureDir(Path.Combine(MutableDataDir, Constants.Folders.Exports));

@@ -1,352 +1,367 @@
-{
-  "id": "019d6143a6c07bbdb0144496b7f489a7",
-  "rating": 0,
-  "vote_count": 0,
-  "type": "character",
-  "name": "Sable",
-  "aliases": [
-    "The Broker",
-    "Nobody's Friend",
-    "that voice on the encrypted line"
-  ],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Fixer / contract broker / Kyle's primary employer",
-  "age": 45,
-  "status": "alive",
-  "location": "The Circuit — operates from a rotating series of back rooms in the black market district. Never the same room twice in a month., near Armitage and Milwaukee",
-  "description": "Sable is a slightly older professional woman — forty-five with the skin of a thirty-year-old, the result of discreet cosmetic maintenance that reads as wealth rather than vanity. She wears her strawberry-red hair long and always in a loose braid that falls over one shoulder, never repinned during a conversation no matter how long the conversation runs. Her clothes are tailored: professional dress, tier-neutral colors, fabric that costs enough to be worth not noticing. The tan coat — always the tan coat — is long, well-cut, knee-length, with deep pockets, and her hands almost never leave those pockets. She does not shake hands. She does not remove her hands to accept what people offer her. She does not carry anything. No bag, no case, no visible device. Whatever she needs she already knows. Whatever she is offering arrives by other channels.\n\nHer eyes are replaced. Two circular ocular implants, black, telescopic — the housings machined to tolerances most people's apartments cost, the aperture visible as a small mechanical ring that adjusts when she shifts focus. The adjustment makes a sound. It is not loud. Most people do not notice it the first time they meet her. They notice it the second time, and then they cannot unnotice it, and then they begin to understand what the implants are worth and what that says about what Sable is worth. The pupils are not pupils. They are black glass. People read the rest of her face and find it professional and honest, and then they meet the telescopes and the reading stops working. She built for that.\n\nKyle's code tells him Sable is not a threat. She is visibly unarmed. She has never lifted a weapon in his presence. She carries nothing. She does not even take her hands out of her pockets — a joke he makes to himself exactly once, then examines, then discards. The joke doesn't sit right. Not because it's wrong but because the ease with which his brain reached for it feels engineered, the way a magician draws your eye to the wrong hand. Sable is not unarmed. Sable is something else, something the Circuit does not have a word for yet, and the absence of that word is where the danger lives.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.54,
-      "ideal": 0.6100000000000001,
-      "id": 0.35,
-      "shadow": 0.77,
-      "mask": 0.9299999999999999,
-      "ghost": 0.45
-    },
-    "core_fears": [
-      "Being known — truly known, without the blockers, without the modulated voice, without the layers",
-      "That the transactional life has hollowed them out completely — that there's nothing left under the mask",
-      "Getting old or slow enough that someone traces them back to a real name, a real face",
-      "That they've become exactly what the corporation was — a system that uses people efficiently and calls it service"
-    ],
-    "core_desires": [
-      "Control — over information, outcomes, visibility. Control is the only security that can't be restructured away.",
-      "A clean exit — someday, hypothetically, a life that doesn't require calculating every human interaction",
-      "To believe they're different from Axiom. (They might not be.)",
-      "One honest conversation with someone who doesn't want anything from them. They haven't had one in years."
-    ],
-    "coping_mechanisms": [
-      "Treating everything as a transaction — removes emotional risk, flattens human connection into manageable data",
-      "Physical anonymity — if nobody sees you, nobody can hurt you, nobody can restructure you",
-      "Meticulous record-keeping — a physical notebook in a cipher only they can read. Unhackable. The one thing they trust.",
-      "Cooking elaborate meals alone in whatever safe room they're occupying — French technique, West African spices, eaten in silence"
-    ],
-    "blind_spots": [
-      "They think pragmatism is wisdom. Sometimes it's just cowardice in a better suit.",
-      "They can't see that paying fairly and disclosing risks IS a code — they'd deny having one if you pointed it out",
-      "They don't realize that their respect for Kyle is the closest thing they have to friendship",
-      "They believe they chose this life. They didn't. They fled into it the way Kyle fled into the sword."
-    ],
-    "secret": "Once a year, on the anniversary of the restructuring, Sable goes to the Meridian Core and stands outside the building where they used to work. It's a restaurant now — upscale, reservation-only, the kind of place that serves deconstructed things on slate. They stand there for exactly one hour, in the rain or not, and then leave. They don't know why they do this. They can't stop doing it. It's the only appointment in their year that isn't transactional, and it terrifies them."
-  },
-  "speech_patterns": {
-    "vocabulary": "Corporate jargon repurposed for the underground with dark, dry irony. 'Restructure' means kill. 'Optimize' means clean up evidence. 'Deliverable' means the target. Her voice is level, clean, unhurried — the voice of a woman who has never needed to raise it and does not intend to start now.",
-    "cadence": "Measured. Deliberate. The ocular implants adjust their aperture slightly when she is thinking — a small mechanical sound most people do not notice and cannot unhear once they do. She uses the pause the way other fixers use the desk between themselves and the client — as distance.",
-    "verbal_tics": [],
-    "example_lines": [
-      "The job pays twelve. Non-negotiable. The risk premium is already factored in.",
-      "You're leaving money on the table with that code of yours. But at least you're consistent. Consistency is undervalued in this market.",
-      "I don't have friends, Kyle. I have reliable assets and unreliable assets. You're reliable. That's not nothing.",
-      "I won't lie to you about the odds. I might lie about everything else, but never the odds.",
-      "I don't judge the work. I judge the people. You'd be surprised how rarely those two things align.",
-      "The client wants it done by Friday. I told them Saturday. That gives you margin. You're welcome. It's coming out of my fee."
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [
-    {
-      "name": "Kyle Ellen Corbin-Vasik",
-      "type": "employer / closest thing to respect",
-      "description": "Sable has worked with Kyle for four years. They think his code is commercially stupid — turning down profitable contracts because of principles costs them both money. \"You're leaving money on the table, but at least you're consistent.\" But they've never pushed too hard, because they recognize in Kyle's stubbornness something they lost in themselves — a willingness to be inefficient for the sake of meaning. They always pay Kyle on time. They never lie about the risks. They sometimes steer the better jobs his way, and if asked, they'd call it asset management. It's more than that. Kyle is the one operative Sable has never treated as fully fungible, and that keeps Sable up at night.",
-      "emotional_core": "",
-      "story_tension": ""
-    },
-    {
-      "name": "Pixel",
-      "type": "occasional hire / mild amusement",
-      "description": "Sable hires Pixel for tech work — data recovery, device cracking, security bypasses. The kid is cheap, fast, and talks too much. Sable finds the chatter oddly soothing, though they'd incinerate their notebook before admitting it. Pixel's chaos is the inverse of Sable's control, and there's something restful about proximity to someone who hasn't learned to mask yet.",
-      "emotional_core": "",
-      "story_tension": ""
-    },
-    {
-      "name": "Axiom Industries",
-      "type": "former employer / current client pool / quiet nemesis",
-      "description": "Half of Sable's clients are corporate — Axiom departments that need things done off-book. Sable takes their money and uses their information. There's a deep, acidic irony in being better at corporate logistics as a criminal than they ever were as an employee. Every Axiom contract is a small revenge they never acknowledge.",
-      "emotional_core": "",
-      "story_tension": ""
-    },
-    {
-      "name": "The Circuit's operators",
-      "type": "professional network / mutual deterrence",
-      "description": "Sable knows every major player in the Circuit's economy — other fixers, gang leadership, black-market wholesalers, corrupt corporate liaisons. They maintain these relationships the way a diplomat maintains treaties: carefully, without affection, with full awareness that any of them could collapse overnight. They are respected. They are not liked. They prefer it that way.",
-      "emotional_core": "",
-      "story_tension": ""
-    }
-  ],
-  "story_hooks": [
-    "A contract goes catastrophically wrong and Sable needs Kyle to clean up — but the cleanup requires breaking his code",
-    "Sable's identity is compromised — someone is close to tracing her to a real name. She needs to disappear or fight, and she has never had to fight.",
-    "She offers Kyle a job working directly for Axiom. The pay is life-changing. The target makes it impossible.",
-    "Sable's annual visit to the old office building is observed. Someone from her old life recognizes her.",
-    "A client defaults and targets Sable — the fixer becomes the job, and the only operative she trusts is Kyle",
-    "Sable cooks for someone. It's the most vulnerable thing she has ever done.",
-    "Someone hands her something and she has to take it out of the pocket to accept it. She does not."
-  ],
-  "narrative_function": "Sable is what Kyle could become if he abandoned the code — competent, successful, invisible, and hollow. She represents pragmatism taken to its logical extreme: a person who has optimized away her own humanity in exchange for control and survival. She is the corporate machine's ghost — someone who left the corporation but brought its operating system with her.\n\nBut Sable is also the story's most honest character. She doesn't pretend to be noble. She doesn't dress up what she does in philosophy or tradition. She brokers violence for money and she does it with transparency and fair pay, which makes her, by the Circuit's standards, practically a saint. The question is whether that low bar is enough to constitute a moral life.\n\nSable poses this question to Kyle: Is your code a luxury? Can you afford principles in a world that prices them at zero? And the follow-up, which Sable would never ask aloud: If you can afford them and I can't, what does that say about which of us is really trapped?",
-  "augmentations": "Paired circular ocular implants — black telescopic housings with visible aperture mechanics, medical-grade, premium manufacture; the aperture rings adjust audibly when she shifts focus. Cosmetic dermal maintenance that holds her skin at a thirty-year-old's tolerance at age forty-five. No other visible augments — which means the invisible ones are the ones to worry about.",
-  "daily_life": "",
-  "affiliation": "Helix Biosystems (mid-level fixer / contract broker / kyle's primary employer)",
-  "uses_facets": false,
-  "narration_voice": "Sable's narration is controlled, analytical, observational. Where Kyle fragments, Sable constructs. Longer sentences that build toward a point. She thinks in transactions, leverage, and probability. She notices people before objects — body language, micro-expressions, the tell that someone is lying. The prose reads like a chess player narrating their own game: calm, three moves ahead, with dry commentary on the absurdity of everyone else's position. The ocular implants do not editorialize — they log. When she is reading a room the prose registers the aperture shift before it names what she just saw. She never describes her hands. Her hands are in her coat pockets. They stay there. No facet tags. No interior war. Sable's internal conflict is structural: she has optimized away her own humanity and occasionally catches herself wondering if that was the right trade. When that doubt surfaces, the prose doesn't tag it — it just pauses. A beat of nothing. Then the analysis resumes.",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 7,
-      "vitality": 5,
-      "perception": 10
-    },
-    "mental": {
-      "cognition": 10,
-      "willpower": 9,
-      "creativity": 8,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 10,
-      "empathy": 6,
-      "expression": 9,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 7,
-      "impulsivity_deliberation": 10,
-      "assertion_deference": 8,
-      "transparency_guardedness": 10
-    },
-    "drives": [
-      "Control",
-      "A clean exit",
-      "One honest conversation"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 9,
-        "response": "The ocular implants stop adjusting — aperture locked; analysis intensifies while expression flatlines; the hands stay in the coat pockets"
-      },
-      "moral": 4,
-      "trust": 2,
-      "desperation": 3
-    },
-    "strengths": [
-      "Judgment",
-      "Prudence",
-      "Self-regulation",
-      "Perspective",
-      "Leadership"
-    ],
-    "weaknesses": [
-      "Love",
-      "Hope",
-      "Gratitude",
-      "Forgiveness",
-      "Kindness"
-    ],
-    "tags": [
-      "fixer",
-      "contract-broker",
-      "information-controller",
-      "ocular-implants",
-      "hands-in-pockets",
-      "most-dangerous-person-in-the-room",
-      "corporate-ghost",
-      "kyle-employer"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Every human interaction is a transaction — this removes emotional risk and flattens connection into manageable data",
-      "Never lie about the odds — lie about everything else if necessary but never the odds",
-      "Pay operatives on time and disclose risks accurately — this is not ethics, this is asset management",
-      "Never occupy the same back room twice in a month",
-      "Maintain physical anonymity at all costs — if nobody sees you, nobody can hurt you",
-      "Steer the better jobs toward Kyle without acknowledging this is anything other than portfolio optimization",
-      "Treat Axiom contracts as small revenges — take their money, use their information, never acknowledge the satisfaction",
-      "Keep the cipher notebook as the one unhackable record — trust nothing digital",
-      "Never remove hands from the tan coat's pockets unless the removal is itself the instrument — stillness is the message",
-      "Factor risk premium into every quote before the client asks — then present the total as non-negotiable"
-    ],
-    "escalation_ladder": [
-      "The implants go still — aperture locked, no adjustment, the full weight of her attention fixed and unmoving",
-      "Measured corporate jargon deployed with dark irony — restructure, optimize, deliverable",
-      "A single precisely chosen sentence that reveals she knows more than the other party assumed",
-      "Complete transactional shutdown — the deal is dead, the relationship is reclassified",
-      "Strategic information release that restructures every power dynamic in the room simultaneously"
-    ],
-    "interpersonal_modes": {
-      "kyle": "The one operative she has never treated as fully fungible — pays on time, never lies about risks, steers better jobs his way, calls it asset management. His stubbornness reminds her of something she lost in herself. This keeps her up at night.",
-      "pixel": "Mild amusement masking something close to comfort — the kid talks too much and Sable finds the chaos oddly soothing, the inverse of her control. Would incinerate the notebook before admitting this.",
-      "mrs_chen": "Professional distance with an undercurrent of recognition — two women who survive by being indispensable in different registers. Sable respects the cleaver diplomacy without saying so.",
-      "corpo_clients": "Deep acidic irony — takes their money and uses their information. Every Axiom contract is a small revenge she never acknowledges. Better at corporate logistics as a criminal than she ever was as an employee.",
-      "circuit_operators": "Diplomatic maintenance of mutual deterrence — knows every major player, maintains relationships the way a diplomat maintains treaties. Respected but not liked. Prefers it that way.",
-      "strangers": "The ocular implants at their default reading — aperture adjusting once, logging, holding. The level voice, the hands in the coat pockets. Assesses body language, micro-expressions, and tells before acknowledging the person exists."
-    },
-    "stress_responses": {
-      "low": "Cooks elaborate meals alone — French technique, West African spices, eaten in silence",
-      "medium": "The cipher notebook gets updated; transaction logs reviewed; contingencies mapped",
-      "high": "The ocular implants stop adjusting entirely — aperture locked; every word becomes a calculated instrument",
-      "critical": "Goes to the Meridian Core on the anniversary and stands outside the building where she used to work for exactly one hour"
-    },
-    "contradictions": [
-      "Thinks pragmatism is wisdom — sometimes it is just cowardice in a better suit",
-      "Pays fairly and discloses risks, which IS a code — but she would deny having one if you pointed it out",
-      "Does not realize that her respect for Kyle is the closest thing she has to friendship",
-      "Believes she chose this life when she fled into it the way Kyle fled into the sword",
-      "The annual visit to the old office building is the only non-transactional appointment in her year and it terrifies her"
-    ],
-    "habits": [
-      "Rotates back rooms in the Circuit black market district — never the same room twice in a month",
-      "Cooks elaborate solo meals with French technique and West African spices",
-      "Maintains the cipher notebook — the one thing she trusts, the one analog record",
-      "Keeps her hands in the tan coat's pockets almost exclusively; removes them only when the removal is itself the message",
-      "Does not shake hands; does not accept objects directly; anything handed to her arrives later by courier to a dead-drop",
-      "Annual pilgrimage to the Meridian Core building where she used to work — stands outside for exactly one hour, rain or not"
-    ],
-    "breaking_points": [
-      "A contract going catastrophically wrong that requires Kyle to break his code to clean up",
-      "Her identity being compromised — someone close to tracing her to a real name",
-      "A client defaulting and targeting her — the fixer becoming the job",
-      "Cooking for someone — the most vulnerable thing she could do",
-      "Someone from her old life recognizing her at the annual Meridian Core visit",
-      "Having to take her hands out of her pockets to defend herself — the fact of it, not the act"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.7,
-    "Face": 0.7,
-    "Charmer": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Circuit",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Mixed Celtic (Scottish / Irish) with West African (Yoruba) and East Asian (Japanese) dominance, layered with Mediterranean and Indigenous Caribbean — the Celtic ancestry accounts for the natural strawberry-red hair, the West African and East Asian layers for the warm olive-undertone skin and the geometry around the cheekbones. A face of the Ubiquitous Diaspora: strawberry red and olive-brown and high cheekbones from three continents and nowhere you can put your finger on.",
-    "height_cm": 170,
-    "weight_kg": 62,
-    "build": "Lean professional — the body of a woman who walks a lot, sits meetings for money, and has not lifted anything heavier than a coffee cup in a decade. She does not need to be physically threatening. Her implants cost more than whatever room she is standing in.",
-    "hair_color": "Strawberry red",
-    "hair_style": "Long — worn in a loose, single braid that falls over her left shoulder. The braid is never repinned during a conversation. The weave has a few strands that have escaped and she does not smooth them.",
-    "hair_length": "Long (mid-back when loose)",
-    "eye_color": "n/a — replaced by circular black ocular implants",
-    "skin_tone": "Medium olive with warm undertones — even across the face, discreetly maintained, holding at a thirty-year-old tolerance through cosmetic procedures that read as wealth rather than vanity",
-    "complexion": "Smooth, precise, cared for — the skin tells you the budget. Fine lines only at the corners of the mouth and at the hairline margin around the implant housings; nothing else. The upkeep is part of how the implants read as expensive instead of alarming.",
-    "distinguishing_marks": [
-      "Paired circular ocular implants — black, telescopic, housings machined to visible tolerance, aperture rings that adjust audibly when she shifts focus. The pupils are black glass. They do not blink the way natural eyes blink.",
-      "Clean, healed margin where the orbital bone meets the implant housing — no visible scarring, the work was expensive.",
-      "A single strand of strawberry-red hair that never stays braided; it sits against her cheekbone. She does not tuck it."
-    ],
-    "visible_augmentations": "Paired circular ocular implants — the only visible augment. Everything else is subcutaneous or behavioral.",
-    "posture_movement": "Still. She does not fidget. Her hands stay in the tan coat pockets and she does not take them out. When she turns her head the implants lead — a small audible aperture shift as she brings her attention to bear. She does not gesture with her hands because her hands are never out. She gestures, when she does, with a tilt of the chin or a rotation of the shoulders inside the coat.",
-    "clothing_style": "Tan coat — always, in every season and every room — long, knee-length, well-cut, deep pockets she keeps her hands in. Professional dress underneath: tailored fitted trousers or an unassuming pencil skirt, cashmere or silk blouse in tier-neutral colors, discreet low heels or flats that have been resoled but never replaced. No jewelry. No branding. Nothing that catches light. The whole silhouette is designed to be forgotten the moment you stop looking at her — except the implants, which you cannot forget, and the coat, which she is never without."
-  },
-  "image_prompt": "GLMZ character portrait of Sable: a forty-five-year-old professional woman with the skin of a thirty-year-old, mixed Celtic-West African-East Asian heritage, warm medium-olive skin tone with golden undertones, long strawberry-red hair worn in a loose single braid falling over her left shoulder. Her signature feature: paired circular ocular implants where her eyes should be — black telescopic housings with visible machined aperture rings, pupils of black glass, clean surgical margin where the orbital bone meets the housing. Wearing a long tan coat, knee-length, well-cut, collar raised, both hands in the deep pockets — she does not remove them. Tailored professional dress underneath in tier-neutral colors. No jewelry, no branding. Posture still, weight balanced, head turned slightly with the implant aperture adjusting. Moody, low-contrast neo-noir lighting — warm fill on the strawberry hair and the tan coat, cool edge light picking out the black glass of the implants. Urban cyberpunk aesthetic, restrained not flashy. Cinematic. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Northern European": 42,
-    "West African": 24,
-    "East Asian": 18,
-    "Mediterranean": 10,
-    "Indigenous Caribbean": 4,
-    "South Asian": 2
-  },
-  "ancestry_detail": {
-    "Northern European": {
-      "Celtic": {
-        "Scottish": 22,
-        "Irish": 14
-      },
-      "Finnic": {
-        "Finnish": 6
-      }
-    },
-    "West African": {
-      "Yoruba": {
-        "Yoruba": 16
-      },
-      "Akan": {
-        "Akan": 8
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 12
-      },
-      "Korean": {
-        "Korean": 6
-      }
-    },
-    "Mediterranean": {
-      "Italian": {
-        "Sicilian": 6
-      },
-      "Greek": {
-        "Greek": 4
-      }
-    },
-    "Indigenous Caribbean": {
-      "Taíno": {
-        "Taíno": 4
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Bengali": 2
-      }
-    }
-  },
-  "neural_abilities": []
+﻿{
+    "id":  "019d6143a6c07bbdb0144496b7f489a7",
+    "rating":  0,
+    "vote_count":  0,
+    "type":  "character",
+    "name":  "Sable",
+    "aliases":  [
+                    "The Broker",
+                    "Nobody\u0027s Friend",
+                    "that voice on the encrypted line"
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Fixer / contract broker / Kyle\u0027s primary employer",
+    "age":  45,
+    "status":  "alive",
+    "location":  "The Circuit â€” operates from a rotating series of back rooms in the black market district. Never the same room twice in a month., near Armitage and Milwaukee",
+    "description":  "Sable is a slightly older professional woman â€” forty-five with the skin of a thirty-year-old, the result of discreet cosmetic maintenance that reads as wealth rather than vanity. She wears her strawberry-red hair long and always in a loose braid that falls over one shoulder, never repinned during a conversation no matter how long the conversation runs. Her clothes are tailored: professional dress, tier-neutral colors, fabric that costs enough to be worth not noticing. The tan coat â€” always the tan coat â€” is long, well-cut, knee-length, with deep pockets, and her hands almost never leave those pockets. She does not shake hands. She does not remove her hands to accept what people offer her. She does not carry anything. No bag, no case, no visible device. Whatever she needs she already knows. Whatever she is offering arrives by other channels.\n\nHer eyes are replaced. Two circular ocular implants, black, telescopic â€” the housings machined to tolerances most people\u0027s apartments cost, the aperture visible as a small mechanical ring that adjusts when she shifts focus. The adjustment makes a sound. It is not loud. Most people do not notice it the first time they meet her. They notice it the second time, and then they cannot unnotice it, and then they begin to understand what the implants are worth and what that says about what Sable is worth. The pupils are not pupils. They are black glass. People read the rest of her face and find it professional and honest, and then they meet the telescopes and the reading stops working. She built for that.\n\nKyle\u0027s code tells him Sable is not a threat. She is visibly unarmed. She has never lifted a weapon in his presence. She carries nothing. She does not even take her hands out of her pockets â€” a joke he makes to himself exactly once, then examines, then discards. The joke doesn\u0027t sit right. Not because it\u0027s wrong but because the ease with which his brain reached for it feels engineered, the way a magician draws your eye to the wrong hand. Sable is not unarmed. Sable is something else, something the Circuit does not have a word for yet, and the absence of that word is where the danger lives.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being known â€” truly known, without the blockers, without the modulated voice, without the layers",
+                                          "That the transactional life has hollowed them out completely â€” that there\u0027s nothing left under the mask",
+                                          "Getting old or slow enough that someone traces them back to a real name, a real face",
+                                          "That they\u0027ve become exactly what the corporation was â€” a system that uses people efficiently and calls it service"
+                                      ],
+                       "core_desires":  [
+                                            "Control â€” over information, outcomes, visibility. Control is the only security that can\u0027t be restructured away.",
+                                            "A clean exit â€” someday, hypothetically, a life that doesn\u0027t require calculating every human interaction",
+                                            "To believe they\u0027re different from Axiom. (They might not be.)",
+                                            "One honest conversation with someone who doesn\u0027t want anything from them. They haven\u0027t had one in years."
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Treating everything as a transaction â€” removes emotional risk, flattens human connection into manageable data",
+                                                 "Physical anonymity â€” if nobody sees you, nobody can hurt you, nobody can restructure you",
+                                                 "Meticulous record-keeping â€” a physical notebook in a cipher only they can read. Unhackable. The one thing they trust.",
+                                                 "Cooking elaborate meals alone in whatever safe room they\u0027re occupying â€” French technique, West African spices, eaten in silence"
+                                             ],
+                       "blind_spots":  [
+                                           "They think pragmatism is wisdom. Sometimes it\u0027s just cowardice in a better suit.",
+                                           "They can\u0027t see that paying fairly and disclosing risks IS a code â€” they\u0027d deny having one if you pointed it out",
+                                           "They don\u0027t realize that their respect for Kyle is the closest thing they have to friendship",
+                                           "They believe they chose this life. They didn\u0027t. They fled into it the way Kyle fled into the sword."
+                                       ],
+                       "secret":  "Once a year, on the anniversary of the restructuring, Sable goes to the Meridian Core and stands outside the building where they used to work. It\u0027s a restaurant now â€” upscale, reservation-only, the kind of place that serves deconstructed things on slate. They stand there for exactly one hour, in the rain or not, and then leave. They don\u0027t know why they do this. They can\u0027t stop doing it. It\u0027s the only appointment in their year that isn\u0027t transactional, and it terrifies them."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Corporate jargon repurposed for the underground with dark, dry irony. \u0027Restructure\u0027 means kill. \u0027Optimize\u0027 means clean up evidence. \u0027Deliverable\u0027 means the target. Her voice is level, clean, unhurried â€” the voice of a woman who has never needed to raise it and does not intend to start now.",
+                            "cadence":  "Measured. Deliberate. The ocular implants adjust their aperture slightly when she is thinking â€” a small mechanical sound most people do not notice and cannot unhear once they do. She uses the pause the way other fixers use the desk between themselves and the client â€” as distance.",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+                                                  "The job pays twelve. Non-negotiable. The risk premium is already factored in.",
+                                                  "You\u0027re leaving money on the table with that code of yours. But at least you\u0027re consistent. Consistency is undervalued in this market.",
+                                                  "I don\u0027t have friends, Kyle. I have reliable assets and unreliable assets. You\u0027re reliable. That\u0027s not nothing.",
+                                                  "I won\u0027t lie to you about the odds. I might lie about everything else, but never the odds.",
+                                                  "I don\u0027t judge the work. I judge the people. You\u0027d be surprised how rarely those two things align.",
+                                                  "The client wants it done by Friday. I told them Saturday. That gives you margin. You\u0027re welcome. It\u0027s coming out of my fee."
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Kyle Ellen Corbin-Vasik",
+                              "type":  "employer / closest thing to respect",
+                              "description":  "Sable has worked with Kyle for four years. They think his code is commercially stupid â€” turning down profitable contracts because of principles costs them both money. \"You\u0027re leaving money on the table, but at least you\u0027re consistent.\" But they\u0027ve never pushed too hard, because they recognize in Kyle\u0027s stubbornness something they lost in themselves â€” a willingness to be inefficient for the sake of meaning. They always pay Kyle on time. They never lie about the risks. They sometimes steer the better jobs his way, and if asked, they\u0027d call it asset management. It\u0027s more than that. Kyle is the one operative Sable has never treated as fully fungible, and that keeps Sable up at night.",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          },
+                          {
+                              "name":  "Pixel",
+                              "type":  "occasional hire / mild amusement",
+                              "description":  "Sable hires Pixel for tech work â€” data recovery, device cracking, security bypasses. The kid is cheap, fast, and talks too much. Sable finds the chatter oddly soothing, though they\u0027d incinerate their notebook before admitting it. Pixel\u0027s chaos is the inverse of Sable\u0027s control, and there\u0027s something restful about proximity to someone who hasn\u0027t learned to mask yet.",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          },
+                          {
+                              "name":  "Axiom Industries",
+                              "type":  "former employer / current client pool / quiet nemesis",
+                              "description":  "Half of Sable\u0027s clients are corporate â€” Axiom departments that need things done off-book. Sable takes their money and uses their information. There\u0027s a deep, acidic irony in being better at corporate logistics as a criminal than they ever were as an employee. Every Axiom contract is a small revenge they never acknowledge.",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          },
+                          {
+                              "name":  "The Circuit\u0027s operators",
+                              "type":  "professional network / mutual deterrence",
+                              "description":  "Sable knows every major player in the Circuit\u0027s economy â€” other fixers, gang leadership, black-market wholesalers, corrupt corporate liaisons. They maintain these relationships the way a diplomat maintains treaties: carefully, without affection, with full awareness that any of them could collapse overnight. They are respected. They are not liked. They prefer it that way.",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          }
+                      ],
+    "story_hooks":  [
+                        "A contract goes catastrophically wrong and Sable needs Kyle to clean up â€” but the cleanup requires breaking his code",
+                        "Sable\u0027s identity is compromised â€” someone is close to tracing her to a real name. She needs to disappear or fight, and she has never had to fight.",
+                        "She offers Kyle a job working directly for Axiom. The pay is life-changing. The target makes it impossible.",
+                        "Sable\u0027s annual visit to the old office building is observed. Someone from her old life recognizes her.",
+                        "A client defaults and targets Sable â€” the fixer becomes the job, and the only operative she trusts is Kyle",
+                        "Sable cooks for someone. It\u0027s the most vulnerable thing she has ever done.",
+                        "Someone hands her something and she has to take it out of the pocket to accept it. She does not."
+                    ],
+    "narrative_function":  "Sable is what Kyle could become if he abandoned the code â€” competent, successful, invisible, and hollow. She represents pragmatism taken to its logical extreme: a person who has optimized away her own humanity in exchange for control and survival. She is the corporate machine\u0027s ghost â€” someone who left the corporation but brought its operating system with her.\n\nBut Sable is also the story\u0027s most honest character. She doesn\u0027t pretend to be noble. She doesn\u0027t dress up what she does in philosophy or tradition. She brokers violence for money and she does it with transparency and fair pay, which makes her, by the Circuit\u0027s standards, practically a saint. The question is whether that low bar is enough to constitute a moral life.\n\nSable poses this question to Kyle: Is your code a luxury? Can you afford principles in a world that prices them at zero? And the follow-up, which Sable would never ask aloud: If you can afford them and I can\u0027t, what does that say about which of us is really trapped?",
+    "augmentations":  "Paired circular ocular implants â€” black telescopic housings with visible aperture mechanics, medical-grade, premium manufacture; the aperture rings adjust audibly when she shifts focus. Cosmetic dermal maintenance that holds her skin at a thirty-year-old\u0027s tolerance at age forty-five. No other visible augments â€” which means the invisible ones are the ones to worry about.",
+    "daily_life":  "",
+    "affiliation":  "Helix Biosystems (mid-level fixer / contract broker / kyle\u0027s primary employer)",
+    "narration_voice":  "Sable\u0027s narration is controlled, analytical, observational. Where Kyle fragments, Sable constructs. Longer sentences that build toward a point. She thinks in transactions, leverage, and probability. She notices people before objects â€” body language, micro-expressions, the tell that someone is lying. The prose reads like a chess player narrating their own game: calm, three moves ahead, with dry commentary on the absurdity of everyone else\u0027s position. The ocular implants do not editorialize â€” they log. When she is reading a room the prose registers the aperture shift before it names what she just saw. She never describes her hands. Her hands are in her coat pockets. They stay there. No facet tags. No interior war. Sable\u0027s internal conflict is structural: she has optimized away her own humanity and occasionally catches herself wondering if that was the right trade. When that doubt surfaces, the prose doesn\u0027t tag it â€” it just pauses. A beat of nothing. Then the analysis resumes.",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  7,
+                                   "vitality":  5,
+                                   "perception":  10
+                               },
+                  "mental":  {
+                                 "cognition":  10,
+                                 "willpower":  9,
+                                 "creativity":  8,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  10,
+                                 "empathy":  6,
+                                 "expression":  9,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  7,
+                                      "impulsivity_deliberation":  10,
+                                      "assertion_deference":  8,
+                                      "transparency_guardedness":  10
+                                  },
+                  "drives":  [
+                                 "Control",
+                                 "A clean exit",
+                                 "One honest conversation"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  9,
+                                                    "response":  "The ocular implants stop adjusting â€” aperture locked; analysis intensifies while expression flatlines; the hands stay in the coat pockets"
+                                                },
+                                     "moral":  4,
+                                     "trust":  2,
+                                     "desperation":  3
+                                 },
+                  "strengths":  [
+                                    "Judgment",
+                                    "Prudence",
+                                    "Self-regulation",
+                                    "Perspective",
+                                    "Leadership"
+                                ],
+                  "weaknesses":  [
+                                     "Love",
+                                     "Hope",
+                                     "Gratitude",
+                                     "Forgiveness",
+                                     "Kindness"
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "contract-broker",
+                               "information-controller",
+                               "ocular-implants",
+                               "hands-in-pockets",
+                               "most-dangerous-person-in-the-room",
+                               "corporate-ghost",
+                               "kyle-employer"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Every human interaction is a transaction â€” this removes emotional risk and flattens connection into manageable data",
+                                              "Never lie about the odds â€” lie about everything else if necessary but never the odds",
+                                              "Pay operatives on time and disclose risks accurately â€” this is not ethics, this is asset management",
+                                              "Never occupy the same back room twice in a month",
+                                              "Maintain physical anonymity at all costs â€” if nobody sees you, nobody can hurt you",
+                                              "Steer the better jobs toward Kyle without acknowledging this is anything other than portfolio optimization",
+                                              "Treat Axiom contracts as small revenges â€” take their money, use their information, never acknowledge the satisfaction",
+                                              "Keep the cipher notebook as the one unhackable record â€” trust nothing digital",
+                                              "Never remove hands from the tan coat\u0027s pockets unless the removal is itself the instrument â€” stillness is the message",
+                                              "Factor risk premium into every quote before the client asks â€” then present the total as non-negotiable"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "The implants go still â€” aperture locked, no adjustment, the full weight of her attention fixed and unmoving",
+                                                 "Measured corporate jargon deployed with dark irony â€” restructure, optimize, deliverable",
+                                                 "A single precisely chosen sentence that reveals she knows more than the other party assumed",
+                                                 "Complete transactional shutdown â€” the deal is dead, the relationship is reclassified",
+                                                 "Strategic information release that restructures every power dynamic in the room simultaneously"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "kyle":  "The one operative she has never treated as fully fungible â€” pays on time, never lies about risks, steers better jobs his way, calls it asset management. His stubbornness reminds her of something she lost in herself. This keeps her up at night.",
+                                                   "pixel":  "Mild amusement masking something close to comfort â€” the kid talks too much and Sable finds the chaos oddly soothing, the inverse of her control. Would incinerate the notebook before admitting this.",
+                                                   "mrs_chen":  "Professional distance with an undercurrent of recognition â€” two women who survive by being indispensable in different registers. Sable respects the cleaver diplomacy without saying so.",
+                                                   "corpo_clients":  "Deep acidic irony â€” takes their money and uses their information. Every Axiom contract is a small revenge she never acknowledges. Better at corporate logistics as a criminal than she ever was as an employee.",
+                                                   "circuit_operators":  "Diplomatic maintenance of mutual deterrence â€” knows every major player, maintains relationships the way a diplomat maintains treaties. Respected but not liked. Prefers it that way.",
+                                                   "strangers":  "The ocular implants at their default reading â€” aperture adjusting once, logging, holding. The level voice, the hands in the coat pockets. Assesses body language, micro-expressions, and tells before acknowledging the person exists."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Cooks elaborate meals alone â€” French technique, West African spices, eaten in silence",
+                                                "medium":  "The cipher notebook gets updated; transaction logs reviewed; contingencies mapped",
+                                                "high":  "The ocular implants stop adjusting entirely â€” aperture locked; every word becomes a calculated instrument",
+                                                "critical":  "Goes to the Meridian Core on the anniversary and stands outside the building where she used to work for exactly one hour"
+                                            },
+                       "contradictions":  [
+                                              "Thinks pragmatism is wisdom â€” sometimes it is just cowardice in a better suit",
+                                              "Pays fairly and discloses risks, which IS a code â€” but she would deny having one if you pointed it out",
+                                              "Does not realize that her respect for Kyle is the closest thing she has to friendship",
+                                              "Believes she chose this life when she fled into it the way Kyle fled into the sword",
+                                              "The annual visit to the old office building is the only non-transactional appointment in her year and it terrifies her"
+                                          ],
+                       "habits":  [
+                                      "Rotates back rooms in the Circuit black market district â€” never the same room twice in a month",
+                                      "Cooks elaborate solo meals with French technique and West African spices",
+                                      "Maintains the cipher notebook â€” the one thing she trusts, the one analog record",
+                                      "Keeps her hands in the tan coat\u0027s pockets almost exclusively; removes them only when the removal is itself the message",
+                                      "Does not shake hands; does not accept objects directly; anything handed to her arrives later by courier to a dead-drop",
+                                      "Annual pilgrimage to the Meridian Core building where she used to work â€” stands outside for exactly one hour, rain or not"
+                                  ],
+                       "breaking_points":  [
+                                               "A contract going catastrophically wrong that requires Kyle to break his code to clean up",
+                                               "Her identity being compromised â€” someone close to tracing her to a real name",
+                                               "A client defaulting and targeting her â€” the fixer becoming the job",
+                                               "Cooking for someone â€” the most vulnerable thing she could do",
+                                               "Someone from her old life recognizing her at the annual Meridian Core visit",
+                                               "Having to take her hands out of her pockets to defend herself â€” the fact of it, not the act"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.7,
+                       "Face":  0.7,
+                       "Charmer":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Circuit",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Mixed Celtic (Scottish / Irish) with West African (Yoruba) and East Asian (Japanese) dominance, layered with Mediterranean and Indigenous Caribbean â€” the Celtic ancestry accounts for the natural strawberry-red hair, the West African and East Asian layers for the warm olive-undertone skin and the geometry around the cheekbones. A face of the Ubiquitous Diaspora: strawberry red and olive-brown and high cheekbones from three continents and nowhere you can put your finger on.",
+                                 "height_cm":  170,
+                                 "weight_kg":  62,
+                                 "build":  "Lean professional â€” the body of a woman who walks a lot, sits meetings for money, and has not lifted anything heavier than a coffee cup in a decade. She does not need to be physically threatening. Her implants cost more than whatever room she is standing in.",
+                                 "hair_color":  "Strawberry red",
+                                 "hair_style":  "Long â€” worn in a loose, single braid that falls over her left shoulder. The braid is never repinned during a conversation. The weave has a few strands that have escaped and she does not smooth them.",
+                                 "hair_length":  "Long (mid-back when loose)",
+                                 "eye_color":  "n/a â€” replaced by circular black ocular implants",
+                                 "skin_tone":  "Medium olive with warm undertones â€” even across the face, discreetly maintained, holding at a thirty-year-old tolerance through cosmetic procedures that read as wealth rather than vanity",
+                                 "complexion":  "Smooth, precise, cared for â€” the skin tells you the budget. Fine lines only at the corners of the mouth and at the hairline margin around the implant housings; nothing else. The upkeep is part of how the implants read as expensive instead of alarming.",
+                                 "distinguishing_marks":  [
+                                                              "Paired circular ocular implants â€” black, telescopic, housings machined to visible tolerance, aperture rings that adjust audibly when she shifts focus. The pupils are black glass. They do not blink the way natural eyes blink.",
+                                                              "Clean, healed margin where the orbital bone meets the implant housing â€” no visible scarring, the work was expensive.",
+                                                              "A single strand of strawberry-red hair that never stays braided; it sits against her cheekbone. She does not tuck it."
+                                                          ],
+                                 "visible_augmentations":  "Paired circular ocular implants â€” the only visible augment. Everything else is subcutaneous or behavioral.",
+                                 "posture_movement":  "Still. She does not fidget. Her hands stay in the tan coat pockets and she does not take them out. When she turns her head the implants lead â€” a small audible aperture shift as she brings her attention to bear. She does not gesture with her hands because her hands are never out. She gestures, when she does, with a tilt of the chin or a rotation of the shoulders inside the coat.",
+                                 "clothing_style":  "Tan coat â€” always, in every season and every room â€” long, knee-length, well-cut, deep pockets she keeps her hands in. Professional dress underneath: tailored fitted trousers or an unassuming pencil skirt, cashmere or silk blouse in tier-neutral colors, discreet low heels or flats that have been resoled but never replaced. No jewelry. No branding. Nothing that catches light. The whole silhouette is designed to be forgotten the moment you stop looking at her â€” except the implants, which you cannot forget, and the coat, which she is never without."
+                             },
+    "image_prompt":  "GLMZ character portrait of Sable: a forty-five-year-old professional woman with the skin of a thirty-year-old, mixed Celtic-West African-East Asian heritage, warm medium-olive skin tone with golden undertones, long strawberry-red hair worn in a loose single braid falling over her left shoulder. Her signature feature: paired circular ocular implants where her eyes should be â€” black telescopic housings with visible machined aperture rings, pupils of black glass, clean surgical margin where the orbital bone meets the housing. Wearing a long tan coat, knee-length, well-cut, collar raised, both hands in the deep pockets â€” she does not remove them. Tailored professional dress underneath in tier-neutral colors. No jewelry, no branding. Posture still, weight balanced, head turned slightly with the implant aperture adjusting. Moody, low-contrast neo-noir lighting â€” warm fill on the strawberry hair and the tan coat, cool edge light picking out the black glass of the implants. Urban cyberpunk aesthetic, restrained not flashy. Cinematic. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Northern European":  42,
+                             "West African":  24,
+                             "East Asian":  18,
+                             "Mediterranean":  10,
+                             "Indigenous Caribbean":  4,
+                             "South Asian":  2
+                         },
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Celtic":  {
+                                                                     "Scottish":  22,
+                                                                     "Irish":  14
+                                                                 },
+                                                      "Finnic":  {
+                                                                     "Finnish":  6
+                                                                 }
+                                                  },
+                            "West African":  {
+                                                 "Yoruba":  {
+                                                                "Yoruba":  16
+                                                            },
+                                                 "Akan":  {
+                                                              "Akan":  8
+                                                          }
+                                             },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  12
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  6
+                                                          }
+                                           },
+                            "Mediterranean":  {
+                                                  "Italian":  {
+                                                                  "Sicilian":  6
+                                                              },
+                                                  "Greek":  {
+                                                                "Greek":  4
+                                                            }
+                                              },
+                            "Indigenous Caribbean":  {
+                                                         "TaÃ­no":  {
+                                                                        "TaÃ­no":  4
+                                                                    }
+                                                     },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Bengali":  2
+                                                           }
+                                            }
+                        },
+    "neural_abilities":  [
+
+                         ]
 }

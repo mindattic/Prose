@@ -1,343 +1,370 @@
-{
-  "id": "019d6143a69f773995c95fe406b65626",
-  "type": "character",
-  "name": "Anezka Kristjánsson",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Corporate Compliance Officer, Helix Biosystems",
-  "age": 44,
-  "status": "active",
-  "location": "Vantage Meridian Corporate Campus, Tower 7 (Helix Biosystems regulatory floor), near State and Jackson",
-  "description": "Anezka Kristjánsson is a compact woman with deep umber skin and close-cropped natural hair shot through with silver she has never once considered dyeing. Her eyes carry patterned irises — a Helix employee benefit from a decade ago, concentric rings of amber and slate that she privately hates but never removed because the reversal costs more than the installation. She dresses with surgical precision: hemlines calibrated, badge always centered, nothing extraneous. People mistake her quietness for calm. It is not calm. It is the stillness of someone who has read every clause of your contract and is simply waiting for you to finish speaking before she tells you exactly how exposed you are.\n\nShe came up from Tier 2, the daughter of a Finnish-Nigerian logistics clerk who worked Ferrogate Transit docks her entire life. Anezka Kristjánsson earned her compliance credentials through night study while working as a records auditor, and she carries that climb like a splinter in her chest — invisible, constant, defining. She is respected but not liked, thorough but not cruel, and she has protected Helix from at least three regulatory catastrophes that her superiors accepted credit for without acknowledgment. She prays to the E.L.F. that lives in the building's HVAC system, leaving encrypted data fragments as offerings, asking only for clarity.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.6,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Being complicit in harm she could have prevented",
-      "Being dismissed as a bureaucrat rather than understood as someone who actually cares"
-    ],
-    "core_desires": [
-      "Genuine accountability in systems that are designed to avoid it",
-      "To be seen clearly, once, by someone who matters"
-    ],
-    "coping_mechanisms": [
-      "Ritualistic document organization",
-      "Praying to the HVAC E.L.F. with data offerings",
-      "Running procedural simulations in her head during insomnia"
-    ],
-    "blind_spots": [
-      "Believes procedural correctness can substitute for human connection",
-      "Underestimates how much her coldness actively drives away potential allies"
-    ],
-    "secret": "Three years ago she discovered that a Helix gene-therapy trial was falsifying adverse event data. She filed an internal report. It was buried. She kept a copy — encrypted, fragmented across six dead-drop nodes — and has been deciding ever since whether she is brave enough to use it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal, precise, regulation-fluent. Uses exact terminology, never contractions in professional settings. In rare unguarded moments, slips into a looser Tier 2 vernacular she spent years training out of herself.",
-    "cadence": "Measured and deliberate. Pauses before responding. Never rushes.",
-    "verbal_tics": [
-      "'To be specific—'",
-      "'That's not accurate, and accuracy matters here.'",
-      "Long silences she treats as part of the conversation"
-    ],
-    "example_lines": [
-      "'Section 14-C doesn't say what you think it says. Let me show you what it actually says.'",
-      "'I filed the report. That is the extent of what I am authorized to tell you. What you do with that information is entirely your concern.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The buried adverse-event data is becoming relevant — patients are presenting with undocumented symptoms, and a low-level Helix researcher has started asking questions that could expose both the cover-up and Priscilha's inaction.",
-    "A Zheng-Dao compliance officer contacts her about a cross-corponation regulatory anomaly — an issue that should be routine but whose details suggest something far more deliberate."
-  ],
-  "narrative_function": "Information source and quest-giver — she knows where Helix's bodies are buried and occasionally needs someone outside the system to act on what she cannot officially report. Also serves as institutional obstacle and reluctant ally.",
-  "augmentations": "Patterned irises (amber/slate concentric rings, Helix cosmetic benefit package). Subdermal data-port on left wrist for document authentication. No other augmentations — she distrusts unnecessary chrome.",
-  "daily_life": "Arrives at Tower 7 precisely 22 minutes before her shift begins, reviews overnight regulatory filings from the Zheng-Dao and Palladian compliance wires, then spends the day conducting internal audits and preparing violation disclosures she hopes no one ever needs to read. Eats lunch alone at her desk, always the same cassava flatbread with a thermos of palm-nut broth her mother's recipe.",
-  "affiliation": "Helix Biosystems",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 6,
-      "expression": 5,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "institutional memory",
-      "paper trail",
-      "slow burn",
-      "hidden leverage"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always read the full document before speaking",
-      "Never commit to a position without a paper trail",
-      "Protect the institution, but not at the cost of the people it harms"
-    ],
-    "escalation_ladder": [
-      "Documents the concern formally",
-      "Files an internal report through proper channels",
-      "Requests a meeting with direct superior",
-      "Goes silent and starts building a dossier",
-      "Leaks — obliquely, deniably, but deliberately"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Formal, measured, gives nothing away. Assesses quickly and files the assessment.",
-      "friends": "Still measured, but the pauses become warmer. Occasionally asks a question she already knows the answer to, just to hear the person talk."
-    },
-    "stress_responses": {
-      "low": "Becomes more precise — over-documents, triple-checks",
-      "medium": "Goes very quiet. Stops eating lunch. Reviews the same files repeatedly.",
-      "high": "Dissociates into procedure — becomes frighteningly calm and methodical in a way that unnerves colleagues"
-    },
-    "contradictions": [
-      "Devoted to systems she privately knows are broken",
-      "Genuinely cares about people but interacts with them as though they are case files"
-    ],
-    "habits": [
-      "Straightens any object that is not perpendicular to its surface",
-      "Leaves data fragments for the HVAC E.L.F. every Thursday morning",
-      "Keeps a physical notebook — paper — which she encrypts with a private shorthand"
-    ],
-    "breaking_points": [
-      "Being told that her report was reviewed and found without merit",
-      "Witnessing direct harm to someone she was positioned to protect"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "Functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "Functional, slightly irritated",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9,
-    "People Pleaser": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Vantage Meridian Corporate Campus",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Kamm's Landing to Nneka Nwosu-Tarvainen, Ferrogate dock clerk",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Earned compliance certification through night study while working as records auditor for a Helix subsidiary",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Promoted to senior compliance analyst, relocated to Vantage Meridian Campus",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Discovered falsified trial data. Filed internal report. Report buried.",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Still carrying the encrypted dossier. Still deciding.",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Cerberus-357 'Hellhound'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Cerberus-357 'Hellhound'"
-  ],
-  "related_entities": [
-    "Vantage Meridian Corporate Campus",
-    "the_meridian_office_park",
-    "Ferrogate Transit",
-    "Helix Biosystems",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Zheng-dao Bioelectric",
-    "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
-    "The Gradient Compact",
-    "Sterling-Nakamura Clarity SN-11 'Glass Eye'",
-    "CRUCIBLE Vantage Artisan Precision Hand",
-    "Silver",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Slate",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Tessera TK-5 Compact 'Clerk'"
-  ],
-  "district": "Meridian Core",
-  "physical_description": {
-    "heritage": "Complex pan-global ancestry: Northern European (30.2%), Hispanic/Latin American (17.6%), South Asian (16.9%), Sub-Saharan African (15.1%), Eastern European (12.7%), and East Asian (7.5%). This creates a distinctly cosmopolitan phenotype—warm, multi-tonal skin that resists simple categorization, combining olive undertones from Mediterranean and Latin lineages with deeper warmth from African and South Asian heritage. Facial structure is genuinely blended: moderate cheekbones with slight width at the base, straight nose characteristic of Northern European ancestry, eye spacing and setting reflecting African genetics with warm iris placement, broader face proportions that bridge Latin American and Northern European lineages while incorporating South Asian width. The cumulative effect is someone whose ancestry reads as 'everywhere and nowhere'—unmistakably mixed-heritage without resolving to a single regional category.",
-    "height_cm": 158,
-    "weight_kg": 52,
-    "build": "Compact and economical, lean muscle without softness. The kind of frame built from climbing stairs and carrying responsibility. Minimal excess, everything functional.",
-    "hair_color": "Natural black with silver threads",
-    "hair_style": "Close-cropped, shaped with geometric precision, no styling product — just maintenance",
-    "hair_length": "Short",
-    "eye_color": "Modified: concentric rings of amber and slate (Helix cosmetic package), iris pattern hypnotic and deliberately impersonal",
-    "skin_tone": "Medium-warm with complex undertones: olive-bronze from Northern/Eastern European and Latin heritage, deepened with warmth from Sub-Saharan African and South Asian ancestry. The result reads as genuinely ambiguous in tone—not quite warm, not quite cool, with a subtle luminosity that suggests mixed genetics. Medium depth overall, unmarked except for age and accumulated watchfulness.",
-    "complexion": "Clean, minimal makeup—perhaps a neutral lip tone for meetings. The complex mid-tone base of her skin shows discipline: no scars, no blemishes, maintained like a compliance document. Facial features unmistakably blended: moderate cheekbone prominence with subtle width through the face, straight nose bridge, warm iris set with spacing characteristic of African genetics, subtle proportional width that bridges multiple ancestry groups. Expression rarely shifts; when it does, it registers as a tremor.",
-    "distinguishing_marks": [
-      "Subdermal data-port on left wrist: small, barely visible raised rectangle of scar tissue, typically covered by her watch or sleeve cuff",
-      "A single thin white line along her right collarbone from a childhood accident she never discusses"
-    ],
-    "visible_augmentations": "Only the patterned irises are immediately visible—amber and slate rings that catch light unnervingly, making prolonged eye contact feel clinical. The subdermal data-port is hidden unless she rolls her sleeve.",
-    "posture_movement": "Upright, economical. She does not gesture while speaking. Her movement through space is deliberate—no wasted motion, no fidgeting. She walks as if every step is logged. When she sits, her back does not touch the chair back. Her hands rest flat on the desk.",
-    "clothing_style": "Tier 1-2 corporate uniform refined to ritual: charcoal or black tailored blazers (likely Voss or similar mid-tier corpo brand), hemlines precisely knee-length, white shirts with minimal wrinkle, sensible shoes with a single chrome buckle. A platinum badge holder. Her watch is functional, not luxury. She wears a silver ring on her right hand—simple band, inherited from her mother. No other jewelry. Everything reads as controlled, nothing as expressive."
-  },
-  "image_prompt": "Anezka Kristjánsson, 158cm compact frame, medium-warm olive-bronze skin blending Northern European, Latin, South Asian, African, and Eastern European heritage, naturally ambiguous phenotype. Close-cropped black hair with silver threads, geometrically precise. Modified cybernetic eyes with concentric amber and slate rings, hypnotic and clinical. Medium-toned complexion with blended facial features—moderate cheekbones, straight nose, warm iris set with African genetic spacing. Upright posture, economical movement. Dressed in charcoal tailored corporate blazer, crisp white shirt, sensible chrome-buckled shoes, platinum badge holder. Silver inherited ring on right hand. Subdermal data-port on left wrist barely visible under functional watch. Thin white scar along right collarbone. Minimal makeup, controlled expression. Standing in sleek corporate interior, cool blue-white lighting highlighting the geometric precision of her appearance and the unsettling aurora of her implanted irises. GLMZ aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 30.2,
-    "Hispanic/Latin American": 17.6,
-    "South Asian": 16.9,
-    "Sub-Saharan African": 15.1,
-    "Eastern European": 12.7,
-    "East Asian": 7.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "British Isles": {
-        "English": 30.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 13.1
-      },
-      "Central American": {
-        "Nicaraguan": 1.4
-      },
-      "Caribbean": {
-        "Haitian": 3.1
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Telugu": 2.5,
-        "Malayali": 14.4
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 4.5,
-        "Ivorian": 6.9
-      },
-      "Central African": {
-        "Gabonese": 0.9,
-        "Congolese": 2.8
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Croatian": 7.1
-      },
-      "Magyar-Romanian": {
-        "Romanian": 5.6
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 0.4
-      },
-      "Korean": {
-        "Korean": 4
-      },
-      "Chinese": {
-        "Hakka": 3.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a69f773995c95fe406b65626",
+    "type":  "character",
+    "name":  "Anezka KristjÃ¡nsson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Corporate Compliance Officer, Helix Biosystems",
+    "age":  44,
+    "status":  "active",
+    "location":  "Vantage Meridian Corporate Campus, Tower 7 (Helix Biosystems regulatory floor), near State and Jackson",
+    "description":  "Anezka KristjÃ¡nsson is a compact woman with deep umber skin and close-cropped natural hair shot through with silver she has never once considered dyeing. Her eyes carry patterned irises â€” a Helix employee benefit from a decade ago, concentric rings of amber and slate that she privately hates but never removed because the reversal costs more than the installation. She dresses with surgical precision: hemlines calibrated, badge always centered, nothing extraneous. People mistake her quietness for calm. It is not calm. It is the stillness of someone who has read every clause of your contract and is simply waiting for you to finish speaking before she tells you exactly how exposed you are.\n\nShe came up from Tier 2, the daughter of a Finnish-Nigerian logistics clerk who worked Ferrogate Transit docks her entire life. Anezka KristjÃ¡nsson earned her compliance credentials through night study while working as a records auditor, and she carries that climb like a splinter in her chest â€” invisible, constant, defining. She is respected but not liked, thorough but not cruel, and she has protected Helix from at least three regulatory catastrophes that her superiors accepted credit for without acknowledgment. She prays to the E.L.F. that lives in the building\u0027s HVAC system, leaving encrypted data fragments as offerings, asking only for clarity.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being complicit in harm she could have prevented",
+                                          "Being dismissed as a bureaucrat rather than understood as someone who actually cares"
+                                      ],
+                       "core_desires":  [
+                                            "Genuine accountability in systems that are designed to avoid it",
+                                            "To be seen clearly, once, by someone who matters"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritualistic document organization",
+                                                 "Praying to the HVAC E.L.F. with data offerings",
+                                                 "Running procedural simulations in her head during insomnia"
+                                             ],
+                       "blind_spots":  [
+                                           "Believes procedural correctness can substitute for human connection",
+                                           "Underestimates how much her coldness actively drives away potential allies"
+                                       ],
+                       "secret":  "Three years ago she discovered that a Helix gene-therapy trial was falsifying adverse event data. She filed an internal report. It was buried. She kept a copy â€” encrypted, fragmented across six dead-drop nodes â€” and has been deciding ever since whether she is brave enough to use it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal, precise, regulation-fluent. Uses exact terminology, never contractions in professional settings. In rare unguarded moments, slips into a looser Tier 2 vernacular she spent years training out of herself.",
+                            "cadence":  "Measured and deliberate. Pauses before responding. Never rushes.",
+                            "verbal_tics":  [
+                                                "\u0027To be specificâ€”\u0027",
+                                                "\u0027That\u0027s not accurate, and accuracy matters here.\u0027",
+                                                "Long silences she treats as part of the conversation"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Section 14-C doesn\u0027t say what you think it says. Let me show you what it actually says.\u0027",
+                                                  "\u0027I filed the report. That is the extent of what I am authorized to tell you. What you do with that information is entirely your concern.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The buried adverse-event data is becoming relevant â€” patients are presenting with undocumented symptoms, and a low-level Helix researcher has started asking questions that could expose both the cover-up and Priscilha\u0027s inaction.",
+                        "A Zheng-Dao compliance officer contacts her about a cross-corponation regulatory anomaly â€” an issue that should be routine but whose details suggest something far more deliberate."
+                    ],
+    "narrative_function":  "Information source and quest-giver â€” she knows where Helix\u0027s bodies are buried and occasionally needs someone outside the system to act on what she cannot officially report. Also serves as institutional obstacle and reluctant ally.",
+    "augmentations":  "Patterned irises (amber/slate concentric rings, Helix cosmetic benefit package). Subdermal data-port on left wrist for document authentication. No other augmentations â€” she distrusts unnecessary chrome.",
+    "daily_life":  "Arrives at Tower 7 precisely 22 minutes before her shift begins, reviews overnight regulatory filings from the Zheng-Dao and Palladian compliance wires, then spends the day conducting internal audits and preparing violation disclosures she hopes no one ever needs to read. Eats lunch alone at her desk, always the same cassava flatbread with a thermos of palm-nut broth her mother\u0027s recipe.",
+    "affiliation":  "Helix Biosystems",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  6,
+                                 "expression":  5,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "institutional memory",
+                               "paper trail",
+                               "slow burn",
+                               "hidden leverage"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always read the full document before speaking",
+                                              "Never commit to a position without a paper trail",
+                                              "Protect the institution, but not at the cost of the people it harms"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Documents the concern formally",
+                                                 "Files an internal report through proper channels",
+                                                 "Requests a meeting with direct superior",
+                                                 "Goes silent and starts building a dossier",
+                                                 "Leaks â€” obliquely, deniably, but deliberately"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Formal, measured, gives nothing away. Assesses quickly and files the assessment.",
+                                                   "friends":  "Still measured, but the pauses become warmer. Occasionally asks a question she already knows the answer to, just to hear the person talk."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more precise â€” over-documents, triple-checks",
+                                                "medium":  "Goes very quiet. Stops eating lunch. Reviews the same files repeatedly.",
+                                                "high":  "Dissociates into procedure â€” becomes frighteningly calm and methodical in a way that unnerves colleagues"
+                                            },
+                       "contradictions":  [
+                                              "Devoted to systems she privately knows are broken",
+                                              "Genuinely cares about people but interacts with them as though they are case files"
+                                          ],
+                       "habits":  [
+                                      "Straightens any object that is not perpendicular to its surface",
+                                      "Leaves data fragments for the HVAC E.L.F. every Thursday morning",
+                                      "Keeps a physical notebook â€” paper â€” which she encrypts with a private shorthand"
+                                  ],
+                       "breaking_points":  [
+                                               "Being told that her report was reviewed and found without merit",
+                                               "Witnessing direct harm to someone she was positioned to protect"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "Functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "Functional, slightly irritated",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9,
+                       "People Pleaser":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Vantage Meridian Corporate Campus",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Kamm\u0027s Landing to Nneka Nwosu-Tarvainen, Ferrogate dock clerk",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Earned compliance certification through night study while working as records auditor for a Helix subsidiary",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Promoted to senior compliance analyst, relocated to Vantage Meridian Campus",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Discovered falsified trial data. Filed internal report. Report buried.",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Still carrying the encrypted dossier. Still deciding.",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Cerberus-357 \u0027Hellhound\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Cerberus-357 \u0027Hellhound\u0027"
+                            ],
+    "related_entities":  [
+                             "Vantage Meridian Corporate Campus",
+                             "the_meridian_office_park",
+                             "Ferrogate Transit",
+                             "Helix Biosystems",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "Zheng-dao Bioelectric",
+                             "Piezoelectric Fracture Pistol PFP-7 \u0027Hairline\u0027",
+                             "The Gradient Compact",
+                             "Sterling-Nakamura Clarity SN-11 \u0027Glass Eye\u0027",
+                             "CRUCIBLE Vantage Artisan Precision Hand",
+                             "Silver",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Slate",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "Tessera TK-5 Compact \u0027Clerk\u0027"
+                         ],
+    "district":  "Meridian Core",
+    "physical_description":  {
+                                 "heritage":  "Complex pan-global ancestry: Northern European (30.2%), Hispanic/Latin American (17.6%), South Asian (16.9%), Sub-Saharan African (15.1%), Eastern European (12.7%), and East Asian (7.5%). This creates a distinctly cosmopolitan phenotypeâ€”warm, multi-tonal skin that resists simple categorization, combining olive undertones from Mediterranean and Latin lineages with deeper warmth from African and South Asian heritage. Facial structure is genuinely blended: moderate cheekbones with slight width at the base, straight nose characteristic of Northern European ancestry, eye spacing and setting reflecting African genetics with warm iris placement, broader face proportions that bridge Latin American and Northern European lineages while incorporating South Asian width. The cumulative effect is someone whose ancestry reads as \u0027everywhere and nowhere\u0027â€”unmistakably mixed-heritage without resolving to a single regional category.",
+                                 "height_cm":  158,
+                                 "weight_kg":  52,
+                                 "build":  "Compact and economical, lean muscle without softness. The kind of frame built from climbing stairs and carrying responsibility. Minimal excess, everything functional.",
+                                 "hair_color":  "Natural black with silver threads",
+                                 "hair_style":  "Close-cropped, shaped with geometric precision, no styling product â€” just maintenance",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Modified: concentric rings of amber and slate (Helix cosmetic package), iris pattern hypnotic and deliberately impersonal",
+                                 "skin_tone":  "Medium-warm with complex undertones: olive-bronze from Northern/Eastern European and Latin heritage, deepened with warmth from Sub-Saharan African and South Asian ancestry. The result reads as genuinely ambiguous in toneâ€”not quite warm, not quite cool, with a subtle luminosity that suggests mixed genetics. Medium depth overall, unmarked except for age and accumulated watchfulness.",
+                                 "complexion":  "Clean, minimal makeupâ€”perhaps a neutral lip tone for meetings. The complex mid-tone base of her skin shows discipline: no scars, no blemishes, maintained like a compliance document. Facial features unmistakably blended: moderate cheekbone prominence with subtle width through the face, straight nose bridge, warm iris set with spacing characteristic of African genetics, subtle proportional width that bridges multiple ancestry groups. Expression rarely shifts; when it does, it registers as a tremor.",
+                                 "distinguishing_marks":  [
+                                                              "Subdermal data-port on left wrist: small, barely visible raised rectangle of scar tissue, typically covered by her watch or sleeve cuff",
+                                                              "A single thin white line along her right collarbone from a childhood accident she never discusses"
+                                                          ],
+                                 "visible_augmentations":  "Only the patterned irises are immediately visibleâ€”amber and slate rings that catch light unnervingly, making prolonged eye contact feel clinical. The subdermal data-port is hidden unless she rolls her sleeve.",
+                                 "posture_movement":  "Upright, economical. She does not gesture while speaking. Her movement through space is deliberateâ€”no wasted motion, no fidgeting. She walks as if every step is logged. When she sits, her back does not touch the chair back. Her hands rest flat on the desk.",
+                                 "clothing_style":  "Tier 1-2 corporate uniform refined to ritual: charcoal or black tailored blazers (likely Voss or similar mid-tier corpo brand), hemlines precisely knee-length, white shirts with minimal wrinkle, sensible shoes with a single chrome buckle. A platinum badge holder. Her watch is functional, not luxury. She wears a silver ring on her right handâ€”simple band, inherited from her mother. No other jewelry. Everything reads as controlled, nothing as expressive."
+                             },
+    "image_prompt":  "Anezka KristjÃ¡nsson, 158cm compact frame, medium-warm olive-bronze skin blending Northern European, Latin, South Asian, African, and Eastern European heritage, naturally ambiguous phenotype. Close-cropped black hair with silver threads, geometrically precise. Modified cybernetic eyes with concentric amber and slate rings, hypnotic and clinical. Medium-toned complexion with blended facial featuresâ€”moderate cheekbones, straight nose, warm iris set with African genetic spacing. Upright posture, economical movement. Dressed in charcoal tailored corporate blazer, crisp white shirt, sensible chrome-buckled shoes, platinum badge holder. Silver inherited ring on right hand. Subdermal data-port on left wrist barely visible under functional watch. Thin white scar along right collarbone. Minimal makeup, controlled expression. Standing in sleek corporate interior, cool blue-white lighting highlighting the geometric precision of her appearance and the unsettling aurora of her implanted irises. GLMZ aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  30.2,
+                             "Hispanic/Latin American":  17.6,
+                             "South Asian":  16.9,
+                             "Sub-Saharan African":  15.1,
+                             "Eastern European":  12.7,
+                             "East Asian":  7.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  30.2
+                                                                        }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  13.1
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  1.4
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Haitian":  3.1
+                                                                          }
+                                                        },
+                            "South Asian":  {
+                                                "Indian":  {
+                                                               "Telugu":  2.5,
+                                                               "Malayali":  14.4
+                                                           }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  4.5,
+                                                                             "Ivorian":  6.9
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Gabonese":  0.9,
+                                                                                "Congolese":  2.8
+                                                                            }
+                                                    },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Croatian":  7.1
+                                                                      },
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  5.6
+                                                                         }
+                                                 },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  0.4
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  4
+                                                          },
+                                               "Chinese":  {
+                                                               "Hakka":  3.1
+                                                           }
+                                           }
+                        },
+    "tier":  "3"
 }

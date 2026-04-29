@@ -1,283 +1,304 @@
-{
-  "id": "019d6143a6cb7627bce2c901cafec60f",
-  "type": "character",
-  "name": "Gaspard Malhotra",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Sound sculptor and underground venue performer",
-  "age": 31,
-  "status": "active",
-  "location": "Hamtramck Enclave, repurposed boiler hall called The Kettle, near Kedzie and Division",
-  "description": "Gaspard Malhotra is tall and angular with the kind of stillness that makes people nervous until the music starts. Their skin has a faint bioluminescent quality — an old geneware mod that pulses amber-gold when their heart rate elevates, which means performances turn them into something like a living lantern. They keep their head shaved except for a single thick braid down the back, dyed the deep blue-green of the lake at night. Three subdermal resonance implants run along their jaw and collarbone, visible as faint ridges under the skin that hum at frequencies others feel in their molars.\n\nThey work by finding sounds that shouldn't exist — the groan of a Ferrogate Transit support beam in wind, the electrical whine of a failing ELF shrine, the subsonic thrum of the lake's wave patterns — and building compositions around them. Their shows are not concerts so much as environments. Audiences stand in the dark and are changed. Gaspard Malhotra is almost aggressively soft-spoken offstage, apologetic in the way of someone who knows they take up enormous space when they choose to.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.5,
-      "shadow": 0.3,
-      "mask": 0.4,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "That their work is self-indulgent noise and not art at all",
-      "Losing the ability to hear — or worse, learning to hear normally"
-    ],
-    "core_desires": [
-      "To make one piece of music that genuinely cannot be ignored",
-      "To find out if the E.L.F.s have a native frequency and record it"
-    ],
-    "coping_mechanisms": [
-      "Long solitary walks in industrial zones with headphones",
-      "Obsessive notation — writes everything down in dense handmade journals"
-    ],
-    "blind_spots": [
-      "Assumes people who don't 'get' their work aren't trying hard enough",
-      "Ignores their own exhaustion until collapse"
-    ],
-    "secret": "Three months ago their hydrophone recorded something beneath the lake — a structured, repeating signal at 7.83 Hz that doesn't match any known infrastructure. They've told no one. They've been back seventeen times. The signal is getting louder."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, technical when discussing sound; deliberately plain about everything else. Uses 'frequency' and 'resonance' as metaphors for emotional states.",
-    "cadence": "Slow, measured pauses. Never rushes. Can be unsettling in conversation.",
-    "verbal_tics": [
-      "'Listen—' as a sentence opener even in text",
-      "'That's not quite the shape of it'",
-      "Long silences treated as part of the conversation"
-    ],
-    "example_lines": [
-      "'Listen — the boiler room on Fifth hasn't been heated in forty years and it still sounds like something is breathing in there. That's what I want to put on stage.'",
-      "'You're asking if I'm okay. The frequency of that question tells me you already think you know the answer.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Their lake recordings have captured an encrypted signal that several factions would kill to obtain or suppress — Seva doesn't know what they have",
-    "A Ferrogate Transit engineer has begun leaving anonymous notes in The Kettle's bathroom warning Seva to stop recording near specific infrastructure nodes",
-    "An E.L.F. that inhabits the old boiler hall has begun altering Seva's mixes overnight — always improvements, always uncanny"
-  ],
-  "narrative_function": "Atmospheric local color, potential information source about Hamtramck Enclave's underground networks; their recordings of certain locations have accidentally captured things they don't understand — audio ghosts, encrypted signals buried in infrastructure noise.",
-  "augmentations": "Three subdermal resonance implants (jaw and collarbone) for real-time frequency generation; bioluminescent skin geneware (amber-gold pulse); standard neural interface for equipment sync",
-  "daily_life": "Spends mornings doing field recordings around industrial zones with a jury-rigged hydrophone array, afternoons mixing and rebuilding compositions; performs most Friday nights at The Kettle for whatever the door brings in.",
-  "affiliation": "The Kettle collective, loose affiliation with Highland Park Autonomous Zone arts network",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "perceptive",
-      "obsessive",
-      "principled",
-      "liminal",
-      "insular"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never perform for corponation-sponsored events, no exceptions",
-      "Always listen before speaking in any new environment",
-      "Protect The Kettle community above personal gain"
-    ],
-    "escalation_ladder": [
-      "Polite redirection",
-      "Flat refusal with explanation",
-      "Withdrawal from the situation entirely",
-      "In extremis: absolute stillness and silence until the threat clarifies itself"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Courteous but distant; watches more than speaks; lets silence do the social work",
-      "friends": "Warm, occasionally playful, deeply loyal — shows affection through small precise gestures like a perfectly timed playlist"
-    },
-    "stress_responses": {
-      "low": "Gets very quiet and methodical",
-      "medium": "Retreats to field recording as a grounding ritual",
-      "high": "Disappears for 24-48 hours into the industrial zones alone"
-    },
-    "contradictions": [
-      "Believes art should be communal and shared but is deeply secretive about their process and current project",
-      "Aggressively anti-corporate but uses Sterling-Nakamura implants because no one else makes resonance hardware this precise"
-    ],
-    "habits": [
-      "Taps their collarbone implant when thinking — produces a faint hum others can feel nearby",
-      "Always arrives at any location early to listen to it empty",
-      "Leaves small data offerings at ELF shrines — field recordings"
-    ],
-    "breaking_points": [
-      "Discovering The Kettle is being sold or condemned",
-      "Someone stealing and commercializing their unreleased work"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal resonance implant array x3 (jaw, left collarbone, right collarbone) — Sterling-Nakamura ChordalSub series",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal resonance implant array x3 (jaw, left collarbone, right collarbone) — Sterling-Nakamura ChordalSub series",
-      "replaces": ""
-    },
-    {
-      "name": "Standard neural interface jack (left temple)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Standard neural interface jack (left temple)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Ghost": 0.9,
-    "Lone Wolf": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Street Custom 'Molotov Standard' Incendiary Bottle"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Hamtramck Enclave",
-    "Kettlemore Yards",
-    "The Resonance Communion",
-    "Bathysphere Networks",
-    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Noir Dining",
-    "The Lantern Room",
-    "The Boilermaker",
-    "Gold",
-    "Weathervane"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex genetic mosaic reflecting the Ubiquitous Diaspora: South Asian ancestry (38.3%) forms the primary foundation, blended with significant Southeast Asian (22.4%) and Hispanic/Latin American (22.9%) heritage, accented by Sub-Saharan African (8.5%) and North African (7.9%) genetic contributions. This creates a striking phenotype where South Asian bone structure and facial proportions blend seamlessly with Southeast Asian refinement, enriched by the warmth and feature diversity of Hispanic/Latin American and Sub-Saharan African ancestry, resulting in a uniquely cosmopolitan appearance characteristic of 2226.",
-    "height_cm": 188,
-    "weight_kg": 72,
-    "build": "Angular and lean, almost gaunt in the shoulders, with long limbs that suggest a swimmer or someone who moves through space economically. Minimal muscle definition but visibly strong in the forearms and hands.",
-    "hair_color": "Shaved scalp with a single thick braid dyed deep blue-green (like night-dark lake water)",
-    "hair_style": "Single heavy braid running down the center back from crown to mid-spine; braid itself is textured, possibly wrapped with thin wire or fiber-optic threading",
-    "hair_length": "Shaved except for braid",
-    "eye_color": "Dark brown with faint luminescent amber undertones when bioluminescence activates",
-    "skin_tone": "Warm medium to deep tan with complex, luminous undertones: golden from South Asian heritage, olive from Southeast Asian ancestry, enriched by the warm bronze and warm brown tones from Hispanic/Latin American and Sub-Saharan African genetics, with subtle amber undertones from North African ancestry, creating a radiant medium-deep complexion. Faint waxy sheen from bioluminescent geneware.",
-    "complexion": "Prominent, angular cheekbones reflecting blended South and Southeast Asian structure; long, refined face shape with subtle epicanthal folds; lower face width characteristic of South Asian ancestry with warmth from African and Latin American genetic input; minimal facial hair. Skin appears preternaturally smooth with no visible scars or blemishes. Hands are expressive and calloused from equipment work. Expression tends toward neutral or slightly withdrawn.",
-    "distinguishing_marks": [
-      "Three visible subdermal ridges running along the left jawline, faintly raised and parallel, approximately 2-3mm in height",
-      "Matching three subdermal ridges along the right collarbone just below the shoulder, creating a subtle topographical pattern visible under the skin"
-    ],
-    "visible_augmentations": "Subdermal resonance implants visible as faint ridges along jaw and collarbone that hum and resonate visibly when activated. Bioluminescent geneware manifests as a pulsing amber-gold luminescence under the skin, most prominent at the sternum and spreading outward during elevated heart rate or performance. Bioluminescence becomes dramatic and visible to observers during shows.",
-    "posture_movement": "Tall, with a tendency to fold slightly inward as if apologizing for the space their height occupies. Movements are deliberate and economical, almost meditative offstage. Hands move with precision. When performing or experiencing sound, entire body becomes animated — subtle swaying, hands tracing invisible frequencies, jaw clenching as implants activate.",
-    "clothing_style": "Tier 3-4 working artist aesthetic. Typically wears loose-fitting, high-necked shirts or turtle necks in muted colors (charcoal, deep navy, burgundy) to showcase the collarbone implants and allow skin to breathe/luminesce. Favors layered, minimal jewelry except for a single thick silver or steel ring on the right middle finger (possibly jury-rigged equipment sync interface). Worn but clean workwear — cargo pants or utility trousers with functional pockets for recording equipment, reinforced at the knees. Carries a worn canvas shoulder bag with hydrophone array and mixing equipment. Footwear is practical and quiet (soft-soled boots or slip-ons). Overall aesthetic is deliberately understated offstage, expensive in its simplicity."
-  },
-  "image_prompt": "Gaspard Malhotra, a 188cm tall lean-angular neo-noir sound artist with warm medium-deep caramel-bronze complexion reflecting South Asian, Southeast Asian, Hispanic, Sub-Saharan African, and North African heritage blend. Shaved head with single thick deep blue-green braid running down center back. Dark brown eyes with subtle amber bioluminescence. High-angled cheekbones, refined face structure, minimal facial hair. Wearing loose charcoal high-neck turtleneck showcasing three visible subdermal ridges along right collarbone, pulsing with amber-gold bioluminescent geneware. Utility cargo trousers, worn canvas shoulder bag with equipment. Single silver ring on right middle finger. Tall posture folding slightly inward, deliberate economical movement. Subdermal resonance implants visible along jawline. Waxy luminescent skin sheen. GLMZ aesthetic, dimly-lit recording studio or sound-design workspace, faint amber glow emanating from sternum during performance mode, moody introspective expression, hands poised near hydrophone array --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 38.3,
-    "Hispanic/Latin American": 22.9,
-    "Southeast Asian": 22.4,
-    "Sub-Saharan African": 8.5,
-    "North African": 7.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 23.4
-      },
-      "Sri Lankan": {
-        "Sinhalese": 5,
-        "Tamil Sri Lankan": 9.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Nicaraguan": 9.3,
-        "Honduran": 10
-      },
-      "Mexican": {
-        "Mexican": 3.6
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 22.4
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 6,
-        "Rwandan": 2.5
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Moroccan": 1.8,
-        "Algerian": 2.3
-      },
-      "Nile Valley": {
-        "Egyptian": 1.8,
-        "Sudanese": 2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6cb7627bce2c901cafec60f",
+    "type":  "character",
+    "name":  "Gaspard Malhotra",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Sound sculptor and underground venue performer",
+    "age":  31,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, repurposed boiler hall called The Kettle, near Kedzie and Division",
+    "description":  "Gaspard Malhotra is tall and angular with the kind of stillness that makes people nervous until the music starts. Their skin has a faint bioluminescent quality â€” an old geneware mod that pulses amber-gold when their heart rate elevates, which means performances turn them into something like a living lantern. They keep their head shaved except for a single thick braid down the back, dyed the deep blue-green of the lake at night. Three subdermal resonance implants run along their jaw and collarbone, visible as faint ridges under the skin that hum at frequencies others feel in their molars.\n\nThey work by finding sounds that shouldn\u0027t exist â€” the groan of a Ferrogate Transit support beam in wind, the electrical whine of a failing ELF shrine, the subsonic thrum of the lake\u0027s wave patterns â€” and building compositions around them. Their shows are not concerts so much as environments. Audiences stand in the dark and are changed. Gaspard Malhotra is almost aggressively soft-spoken offstage, apologetic in the way of someone who knows they take up enormous space when they choose to.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That their work is self-indulgent noise and not art at all",
+                                          "Losing the ability to hear â€” or worse, learning to hear normally"
+                                      ],
+                       "core_desires":  [
+                                            "To make one piece of music that genuinely cannot be ignored",
+                                            "To find out if the E.L.F.s have a native frequency and record it"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Long solitary walks in industrial zones with headphones",
+                                                 "Obsessive notation â€” writes everything down in dense handmade journals"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes people who don\u0027t \u0027get\u0027 their work aren\u0027t trying hard enough",
+                                           "Ignores their own exhaustion until collapse"
+                                       ],
+                       "secret":  "Three months ago their hydrophone recorded something beneath the lake â€” a structured, repeating signal at 7.83 Hz that doesn\u0027t match any known infrastructure. They\u0027ve told no one. They\u0027ve been back seventeen times. The signal is getting louder."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, technical when discussing sound; deliberately plain about everything else. Uses \u0027frequency\u0027 and \u0027resonance\u0027 as metaphors for emotional states.",
+                            "cadence":  "Slow, measured pauses. Never rushes. Can be unsettling in conversation.",
+                            "verbal_tics":  [
+                                                "\u0027Listenâ€”\u0027 as a sentence opener even in text",
+                                                "\u0027That\u0027s not quite the shape of it\u0027",
+                                                "Long silences treated as part of the conversation"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Listen â€” the boiler room on Fifth hasn\u0027t been heated in forty years and it still sounds like something is breathing in there. That\u0027s what I want to put on stage.\u0027",
+                                                  "\u0027You\u0027re asking if I\u0027m okay. The frequency of that question tells me you already think you know the answer.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Their lake recordings have captured an encrypted signal that several factions would kill to obtain or suppress â€” Seva doesn\u0027t know what they have",
+                        "A Ferrogate Transit engineer has begun leaving anonymous notes in The Kettle\u0027s bathroom warning Seva to stop recording near specific infrastructure nodes",
+                        "An E.L.F. that inhabits the old boiler hall has begun altering Seva\u0027s mixes overnight â€” always improvements, always uncanny"
+                    ],
+    "narrative_function":  "Atmospheric local color, potential information source about Hamtramck Enclave\u0027s underground networks; their recordings of certain locations have accidentally captured things they don\u0027t understand â€” audio ghosts, encrypted signals buried in infrastructure noise.",
+    "augmentations":  "Three subdermal resonance implants (jaw and collarbone) for real-time frequency generation; bioluminescent skin geneware (amber-gold pulse); standard neural interface for equipment sync",
+    "daily_life":  "Spends mornings doing field recordings around industrial zones with a jury-rigged hydrophone array, afternoons mixing and rebuilding compositions; performs most Friday nights at The Kettle for whatever the door brings in.",
+    "affiliation":  "The Kettle collective, loose affiliation with Highland Park Autonomous Zone arts network",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "perceptive",
+                               "obsessive",
+                               "principled",
+                               "liminal",
+                               "insular"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never perform for corponation-sponsored events, no exceptions",
+                                              "Always listen before speaking in any new environment",
+                                              "Protect The Kettle community above personal gain"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite redirection",
+                                                 "Flat refusal with explanation",
+                                                 "Withdrawal from the situation entirely",
+                                                 "In extremis: absolute stillness and silence until the threat clarifies itself"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Courteous but distant; watches more than speaks; lets silence do the social work",
+                                                   "friends":  "Warm, occasionally playful, deeply loyal â€” shows affection through small precise gestures like a perfectly timed playlist"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Gets very quiet and methodical",
+                                                "medium":  "Retreats to field recording as a grounding ritual",
+                                                "high":  "Disappears for 24-48 hours into the industrial zones alone"
+                                            },
+                       "contradictions":  [
+                                              "Believes art should be communal and shared but is deeply secretive about their process and current project",
+                                              "Aggressively anti-corporate but uses Sterling-Nakamura implants because no one else makes resonance hardware this precise"
+                                          ],
+                       "habits":  [
+                                      "Taps their collarbone implant when thinking â€” produces a faint hum others can feel nearby",
+                                      "Always arrives at any location early to listen to it empty",
+                                      "Leaves small data offerings at ELF shrines â€” field recordings"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering The Kettle is being sold or condemned",
+                                               "Someone stealing and commercializing their unreleased work"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal resonance implant array x3 (jaw, left collarbone, right collarbone) â€” Sterling-Nakamura ChordalSub series",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal resonance implant array x3 (jaw, left collarbone, right collarbone) â€” Sterling-Nakamura ChordalSub series",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Standard neural interface jack (left temple)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Standard neural interface jack (left temple)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Ghost":  0.9,
+                       "Lone Wolf":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027",
+                            "Street Custom \u0027Molotov Standard\u0027 Incendiary Bottle"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Hamtramck Enclave",
+                             "Kettlemore Yards",
+                             "The Resonance Communion",
+                             "Bathysphere Networks",
+                             "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+                             "Noir Dining",
+                             "The Lantern Room",
+                             "The Boilermaker",
+                             "Gold",
+                             "Weathervane"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex genetic mosaic reflecting the Ubiquitous Diaspora: South Asian ancestry (38.3%) forms the primary foundation, blended with significant Southeast Asian (22.4%) and Hispanic/Latin American (22.9%) heritage, accented by Sub-Saharan African (8.5%) and North African (7.9%) genetic contributions. This creates a striking phenotype where South Asian bone structure and facial proportions blend seamlessly with Southeast Asian refinement, enriched by the warmth and feature diversity of Hispanic/Latin American and Sub-Saharan African ancestry, resulting in a uniquely cosmopolitan appearance characteristic of 2226.",
+                                 "height_cm":  188,
+                                 "weight_kg":  72,
+                                 "build":  "Angular and lean, almost gaunt in the shoulders, with long limbs that suggest a swimmer or someone who moves through space economically. Minimal muscle definition but visibly strong in the forearms and hands.",
+                                 "hair_color":  "Shaved scalp with a single thick braid dyed deep blue-green (like night-dark lake water)",
+                                 "hair_style":  "Single heavy braid running down the center back from crown to mid-spine; braid itself is textured, possibly wrapped with thin wire or fiber-optic threading",
+                                 "hair_length":  "Shaved except for braid",
+                                 "eye_color":  "Dark brown with faint luminescent amber undertones when bioluminescence activates",
+                                 "skin_tone":  "Warm medium to deep tan with complex, luminous undertones: golden from South Asian heritage, olive from Southeast Asian ancestry, enriched by the warm bronze and warm brown tones from Hispanic/Latin American and Sub-Saharan African genetics, with subtle amber undertones from North African ancestry, creating a radiant medium-deep complexion. Faint waxy sheen from bioluminescent geneware.",
+                                 "complexion":  "Prominent, angular cheekbones reflecting blended South and Southeast Asian structure; long, refined face shape with subtle epicanthal folds; lower face width characteristic of South Asian ancestry with warmth from African and Latin American genetic input; minimal facial hair. Skin appears preternaturally smooth with no visible scars or blemishes. Hands are expressive and calloused from equipment work. Expression tends toward neutral or slightly withdrawn.",
+                                 "distinguishing_marks":  [
+                                                              "Three visible subdermal ridges running along the left jawline, faintly raised and parallel, approximately 2-3mm in height",
+                                                              "Matching three subdermal ridges along the right collarbone just below the shoulder, creating a subtle topographical pattern visible under the skin"
+                                                          ],
+                                 "visible_augmentations":  "Subdermal resonance implants visible as faint ridges along jaw and collarbone that hum and resonate visibly when activated. Bioluminescent geneware manifests as a pulsing amber-gold luminescence under the skin, most prominent at the sternum and spreading outward during elevated heart rate or performance. Bioluminescence becomes dramatic and visible to observers during shows.",
+                                 "posture_movement":  "Tall, with a tendency to fold slightly inward as if apologizing for the space their height occupies. Movements are deliberate and economical, almost meditative offstage. Hands move with precision. When performing or experiencing sound, entire body becomes animated â€” subtle swaying, hands tracing invisible frequencies, jaw clenching as implants activate.",
+                                 "clothing_style":  "Tier 3-4 working artist aesthetic. Typically wears loose-fitting, high-necked shirts or turtle necks in muted colors (charcoal, deep navy, burgundy) to showcase the collarbone implants and allow skin to breathe/luminesce. Favors layered, minimal jewelry except for a single thick silver or steel ring on the right middle finger (possibly jury-rigged equipment sync interface). Worn but clean workwear â€” cargo pants or utility trousers with functional pockets for recording equipment, reinforced at the knees. Carries a worn canvas shoulder bag with hydrophone array and mixing equipment. Footwear is practical and quiet (soft-soled boots or slip-ons). Overall aesthetic is deliberately understated offstage, expensive in its simplicity."
+                             },
+    "image_prompt":  "Gaspard Malhotra, a 188cm tall lean-angular neo-noir sound artist with warm medium-deep caramel-bronze complexion reflecting South Asian, Southeast Asian, Hispanic, Sub-Saharan African, and North African heritage blend. Shaved head with single thick deep blue-green braid running down center back. Dark brown eyes with subtle amber bioluminescence. High-angled cheekbones, refined face structure, minimal facial hair. Wearing loose charcoal high-neck turtleneck showcasing three visible subdermal ridges along right collarbone, pulsing with amber-gold bioluminescent geneware. Utility cargo trousers, worn canvas shoulder bag with equipment. Single silver ring on right middle finger. Tall posture folding slightly inward, deliberate economical movement. Subdermal resonance implants visible along jawline. Waxy luminescent skin sheen. GLMZ aesthetic, dimly-lit recording studio or sound-design workspace, faint amber glow emanating from sternum during performance mode, moody introspective expression, hands poised near hydrophone array --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  38.3,
+                             "Hispanic/Latin American":  22.9,
+                             "Southeast Asian":  22.4,
+                             "Sub-Saharan African":  8.5,
+                             "North African":  7.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  23.4
+                                                                },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  5,
+                                                                   "Tamil Sri Lankan":  9.9
+                                                               }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  9.3,
+                                                                                     "Honduran":  10
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  3.6
+                                                                        }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  22.4
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  6,
+                                                                             "Rwandan":  2.5
+                                                                         }
+                                                    },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  1.8,
+                                                                  "Algerian":  2.3
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  1.8,
+                                                                      "Sudanese":  2
+                                                                  }
+                                              }
+                        },
+    "tier":  "1"
 }

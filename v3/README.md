@@ -19,6 +19,7 @@ v3/
   StreetSamurai.Core/          Business logic, services, models. No UI. (45 services, 22 models)
   StreetSamurai.Shared/        All Razor pages and components shared by both hosts.
   StreetSamurai.Blazor/        Blazor Server web host (.NET 10).
+  StreetSamurai.Mcp/           Model Context Protocol server — exposes canon as MCP tools.
   StreetSamurai.UnitTests/     200 tests across 17 test classes.
   generate_world.js            Node.js world content generation pipeline.
   RebuildCanon/                Legacy canon migration tooling.
@@ -939,6 +940,71 @@ ResetToDefaults preserves all API keys.
 ### Secure Credentials
 
 `FileSecurePreferences` stores sensitive values in `%LOCALAPPDATA%/MindAttic/StreetSamurai/secure.dat`. AES encrypted with a key derived from `SHA256(MachineName:UserName:StreetSamurai)`. Not portable between machines by design.
+
+---
+
+## MCP Server (StreetSamurai.Mcp)
+
+Exposes the canon as Model Context Protocol tools so Claude (Desktop, Code, or any MCP client) can call into the data without copy-pasting JSON. Lives at `v3/StreetSamurai.Mcp/`. Detailed setup is in `StreetSamurai.Mcp/README.md`.
+
+### Why It Exists
+
+The Quorum-based generation pipeline (`BookReviewService` + `LLMVotingService`) is the right tool for **review** -- multiple voters catch what one misses -- but for **generation** it averages voice toward mediocrity. The MCP server is the alternative path: keep the disciplined data layer (canon, outline, motifs, semantic index, literary rules), drop the multi-voter generator, let one writer (Claude in conversation) call the canon as needed.
+
+### Tool Surface
+
+13 tools in three groups, all read-mostly:
+
+| Group | Tools |
+| --- | --- |
+| `CanonTools` | `list_characters` / `get_character`, `list_places` / `get_place`, `list_factions` / `get_faction`, `list_corponations` / `get_corponation`, `get_literary_rules` |
+| `StoryTools` | `list_books`, `get_book`, `get_chapter`, `get_book_outline`, `get_director_context` |
+| `ContextTools` | `search_semantic`, `get_neighbors`, `get_motifs`, `plant_motif` |
+
+`get_director_context` is the highest-value writing-context tool -- it builds the "WHERE WE ARE" block (prior chapters' content, this chapter's outline, upcoming setup needs, open book-level threads) that the Director uses inside the Blazor host.
+
+### Toggle Model -- One-Time Registration, Not Per-Session
+
+The MCP server only runs when an MCP client launches it. Registration is **one-time** and persists in the client's config; it is *not* a per-session toggle.
+
+**Enable** (Claude Code, from any shell):
+```
+claude mcp add streetsamurai dotnet run --project D:/Projects/MindAttic/StreetSamurai/v3/StreetSamurai.Mcp/StreetSamurai.Mcp.csproj --no-build --configuration Release
+```
+This writes to `~/.claude.json` and persists across sessions. Every new Claude Code conversation reads the config at startup and the tools appear in Claude's inventory automatically as `mcp__streetsamurai__*`.
+
+**Enable** (Claude Desktop): edit `claude_desktop_config.json` per the block in `StreetSamurai.Mcp/README.md`.
+
+**Disable**: `claude mcp remove streetsamurai` (or remove the `streetsamurai` entry from `claude_desktop_config.json`). The next session has no tools and Claude works chat-only -- exactly as it does without the server registered. Toggling off does not affect the Blazor host or CLI.
+
+**Build before first use**: the registered command uses `--no-build` so the client launches the pre-built binary. Run once after registration, and after any code change to the MCP project:
+```
+dotnet build v3/StreetSamurai.Mcp/StreetSamurai.Mcp.csproj -c Release
+```
+
+### Voice Preservation Guarantee
+
+When the MCP server is registered, **Claude writes prose the same way it does without it.** The tools do not:
+
+- Inject prompt fragments into Claude's context
+- Run a Quorum vote
+- Apply a "writing style" template
+- Force a workflow (no "you must call X before writing Y")
+
+Every tool returns *data* (a character record, a motif inventory, a search result list, an outline). Claude reads the data and decides what to do with it -- including how to phrase a sentence, where to break a paragraph, when to use italicized inner monologue. The judgment about voice, sentence rhythm, sensory specificity, dialogue cadence, and structure stays with Claude. The tools just give Claude sharper memory than chat-loaded JSON gives.
+
+Concretely: in a registered session, asking "draft chapter 5 of Bushido Coda" makes Claude call `list_books` -> `get_book` -> `get_book_outline` -> `get_director_context` -> `get_character("Kyle Ellen Corbin-Vasik")` -> `get_motifs` -> `get_literary_rules` -> `search_semantic` for thematic neighbors, *before* writing a sentence. Mid-draft, Claude calls `search_semantic` or `get_place` / `get_faction` to fill gaps. The prose itself comes from Claude, in the same voice you'd get without any tools registered.
+
+### When Claude Should and Shouldn't Pull Context
+
+- **Pull**: drafting a new chapter, extending an existing chapter, validating canon for a scene, scoping a faction or place, surfacing thematic neighbors.
+- **Don't pull**: tightening a paragraph, fixing a typo, rephrasing a single sentence, answering a meta-question about the project.
+
+Claude calibrates this automatically -- request size implies how much context is needed. If Claude over-researches a small request, tell it to dial back; the next response will follow the new bar.
+
+### Stdout Discipline
+
+The MCP wire protocol uses stdout. The MCP server *cannot* write to stdout for any reason except protocol messages -- doing so corrupts the transport. All `Program.cs` logging goes to `engine/data/logs/mcp-{date}.txt` via a file-only Serilog sink. If you add new code paths to the MCP project, never `Console.WriteLine`.
 
 ---
 

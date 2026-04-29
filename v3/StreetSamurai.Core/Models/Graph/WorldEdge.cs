@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using QuikGraph;
 
 namespace StreetSamurai.Core.Models.Graph;
@@ -33,5 +34,6 @@ public record WorldEdge : IEdge<string>
     public DateTime? InvalidatedAt { get; init; }
 
     /// <summary>Is this edge currently valid (not invalidated)?</summary>
+    [JsonIgnore]
     public bool IsCurrent => InvalidatedAt == null && string.IsNullOrEmpty(ValidUntil);
 }

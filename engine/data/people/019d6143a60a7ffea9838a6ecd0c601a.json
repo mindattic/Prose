@@ -1,244 +1,267 @@
-{
-  "id": "019d6143a60a7ffea9838a6ecd0c601a",
-  "type": "character",
-  "name": "Genji Thammasak-Árnason",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Retired Ferrogate Transit line worker and former union shop steward",
-  "age": 71,
-  "status": "active",
-  "location": "the Gray Zone — Apartment 4-Foxtrot, above the Deepline Transit node on Kamm's Landing spur, near Ashland and Division",
-  "description": "Genji Thammasak-Árnason is a tall man who has lost some of his height to the years, still broad through the chest, with a jaw like a shelf bracket and deep-set eyes the color of old teak. His left arm from the elbow down is a working-class prosthetic, dull grey titanium alloy with knuckles worn smooth — a replacement for the arm he lost to a coupling accident on the Ferrogate Menomonee extension in 2171. He never upgraded it because, as he puts it, a fancy arm would mean they'd won something. A Ferrogate ID badge from 2168 hangs from his keychain by habit though it expired decades ago. His face carries the kind of weathering that comes from thirty years on elevated rail platforms in Lake Michigan wind.\n\nHe is gregarious and loud and immediately likable, the sort of man who fills a room by breathing in it, who remembers the names of everyone's children and the coffee order of every regular at his building's shared kitchen. But beneath the bonhomie is a man who spent twenty years fighting a company that considered him a maintenance expense, and he has never quite stopped being angry about it. He channels the anger into Tenants' Council meetings and into mentoring younger workers, but it is always there, warm and patient.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.6,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "That the next generation won't fight for themselves and will just accept whatever the corponations offer",
-      "That the arm he lost meant nothing in the end"
-    ],
-    "core_desires": [
-      "To see the Tenants' Council win something real before he dies",
-      "To be remembered as someone who stood his ground"
-    ],
-    "coping_mechanisms": [
-      "Social connection and humor as armor",
-      "Keeping busy with council work to avoid sitting with grief"
-    ],
-    "blind_spots": [
-      "Assumes collective action always works if people just try hard enough",
-      "Underestimates how much his stubbornness alienates potential allies"
-    ],
-    "secret": "During the 2178 Menomonee Strike he accepted a secret side payment from a Tessera labor consultant who wanted Ferrogate destabilized for corporate reasons — he used the money to keep the strike fund solvent for six more weeks, which won the workers their safety settlement, but the money was dirty and he has never admitted where it came from. Two workers lost their jobs when Ferrogate suspected an informant and he has always feared they blamed the wrong person."
-  },
-  "speech_patterns": {
-    "vocabulary": "Working-class vernacular; union meeting procedural language mixed into casual conversation; Burundian Swahili and Icelandic loanwords from his grandparents' generation",
-    "cadence": "Loud and rhythmic, like a man used to talking over machinery; pauses for effect rather than uncertainty",
-    "verbal_tics": [
-      "'Point of order—'",
-      "'I'll tell you exactly what happened'",
-      "Knocking knuckles of his prosthetic on tables when making a point"
-    ],
-    "example_lines": [
-      "'Point of order — Ferrogate has been telling us the pension adjustment is temporary since before you were born, so let's not pretend we're surprised.'",
-      "'You want to know what the strike was like? It was cold. That's what no one puts in the histories. Just absolutely freezing, standing on the Menomonee platform for six weeks.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Ferrogate Transit is attempting to reclassify his pension tier, which would cut his monthly stipend by Φ40 — he needs help navigating the appeal process and suspects the reclassification is being done to a list of former union leaders specifically",
-    "He discovers that one of the young Tenants' Council members has been reporting their meeting agendas to building management and must decide how to handle it without destroying the council"
-  ],
-  "narrative_function": "Labor history source; connector who knows everyone in Kamm's Landing and most of the Gray Zone; can mobilize tenant resistance or community action; potential quest giver for disputes with Ferrogate or building management corponation proxies",
-  "augmentations": "Left forearm prosthetic (titanium, basic-grade, worn); nicotine scrubber implant (inactive, he started again anyway); old joint-pain management mesh in both knees",
-  "daily_life": "Mornings he makes coffee for whoever wanders into the shared kitchen and reads the overnight transit bulletins out of habit; afternoons he runs Tenants' Council business, argues with building management, and plays card games called Quanta-Flush with three other retirees in the Gray Zone common room.",
-  "affiliation": "Kamm's Landing Tenants' Council (treasurer); Ferrogate Retired Workers Mutual (pension advocacy); formerly Ferrogate Transit labor union, shop steward for Menomonee Division",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 5
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 8,
-      "creativity": 4,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 7,
-      "expression": 8,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 4,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "labor organizer",
-      "community anchor",
-      "corporate wars adjacent",
-      "pension dependent",
-      "loud and warm"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always vote with the group even when you disagree — then fight it out in the next meeting",
-      "Never cross a picket line for any reason",
-      "Give younger people room to lead even when they're doing it wrong"
-    ],
-    "escalation_ladder": [
-      "Friendly conversation and information gathering",
-      "Formal complaint via council process",
-      "Public meeting and community pressure",
-      "Work stoppage or rent strike coordination",
-      "Personal confrontation, loud and documented"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately warm and inclusive, assesses their politics within five minutes",
-      "friends": "Treats them like family, which means he will also argue with them at volume"
-    },
-    "stress_responses": {
-      "low": "Makes more coffee, talks more",
-      "medium": "Calls an emergency council meeting",
-      "high": "Goes quiet for about an hour, then comes back with a plan that is slightly too aggressive"
-    },
-    "contradictions": [
-      "Preaches collective transparency while holding a secret that defined the most important moment of his career"
-    ],
-    "habits": [
-      "Carries the expired Ferrogate badge everywhere",
-      "Leaves a small offering of a transit token at the building's E.L.F. shrine every Monday — a practice from the old Deepline workers"
-    ],
-    "breaking_points": [
-      "Watching someone be evicted without a fight; being told the union was wrong to strike"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'",
-    "Street Custom 'Baptism' Electrified Water Cannon"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Kamm's Landing",
-    "The Accidental",
-    "Titanium",
-    "TESSERA WL-6 'Stacker'",
-    "Teak",
-    "Weathervane"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Southeast Asian ancestry (73.1%) with Northern European (19.6%) and East Asian (7.3%) heritage. Features the warm, golden-olive complexion characteristic of Thailand and surrounding regions, with the bone structure reflecting this primary ancestry—prominent cheekbones and strong jaw with subtle East Asian character, softened by the Northern European contribution visible in lighter skin undertones and subtle facial angles.",
-    "height_cm": 188,
-    "weight_kg": 89,
-    "build": "Tall and broad-chested despite age-related shrinkage, still carrying the substantial frame of a man who spent three decades on his feet doing manual labor. Shoulders slightly rounded forward from years of mechanical work posture.",
-    "hair_color": "Steel grey with dark undertones",
-    "hair_style": "Cropped short, practical, thinning at the crown",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, warm amber undertone",
-    "skin_tone": "Medium golden-olive complexion with warm Southeast Asian depth, weathered to a richer, more uneven patina by decades of Lake Michigan platform exposure. Northern European ancestry adds subtle lighter undertones beneath the dominant warm golden cast.",
-    "complexion": "Deeply lined face with pronounced jaw and high cheekbones reflecting Southeast Asian ancestry, moderate brow ridge with warmth throughout, permanent wind-crease patterns around the eyes, age spots on temples and cheekbones, heavy stubble shadow even when clean-shaven showing darker pigmentation, skin has a leathery quality from sun and salt spray exposure but retains the characteristic golden-olive warmth of Southeast Asian heritage.",
-    "distinguishing_marks": [
-      "Jagged white scar running the length of his left inner forearm where the coupling accident severed it in 2171, now mostly hidden by the prosthetic",
-      "Ferrogate Transit logo tattoo on his right shoulder — faded, from 2159 when he made shop steward",
-      "Burn scar on his right palm, pale and smooth, from a rail-joint incident circa 2165",
-      "Deep creases in both palms from forty years of callused grip work, still visible even in retirement"
-    ],
-    "visible_augmentations": "Left forearm prosthetic from elbow down: dull grey titanium alloy with surgical-grade resin palm, knuckles worn smooth from decades of use, no chrome plating or aesthetic upgrades — purely functional, basic-grade industrial-spec. The junction at the elbow shows faint scar tissue and occasional microhydraulic seepage staining. The prosthetic moves with slightly audible mechanical precision when he gestures. Knees show no external augmentation but he moves with careful deliberation suggesting internal mesh pain management.",
-    "posture_movement": "Stands with shoulders back despite spinal compression from age, moves deliberately but not slowly — economical motion from a lifetime of knowing where his body is in space. Favors his right side slightly when standing for long periods. Gestures frequently when talking, using the prosthetic arm with unselfconscious fluidity. Leans in when listening, creating immediate intimacy. Walks with a slight roll rather than a true limp, compensating for knee mesh limitations.",
-    "clothing_style": "Tier 3-4 working-class durability wear: heavy canvas work pants in charcoal grey, worn soft but not patched, usually a thermal undershirt in dark colors topped with a faded Ferrogate Transit company jacket from 2165 that he refuses to retire despite the faded logo and fraying collar. Steel-toed boots, well-maintained. A thin zinc-polymer watch on his right wrist from the Ferrogate Retired Workers Mutual. Faded Ferrogate ID badge on a leather keychain in his jacket pocket, never removed. No visible jewelry except a simple platinum wedding band."
-  },
-  "image_prompt": "Genji Thammasak-Árnason, 188cm tall retired Ferrogate Transit worker, golden-olive Southeast Asian complexion weathered by decades of Lake Michigan exposure, deep facial lines and high cheekbones, grey cropped hair with dark undertones, dark brown eyes with warm amber undertones. Worn steel-grey work pants, faded thermal undershirt, 2165 Ferrogate Transit company jacket with fraying collar. Dull grey titanium alloy prosthetic left forearm with worn resin palm, moving with mechanical precision. Heavy deep creases in both palms, jagged white scar on left inner forearm, faded Ferrogate Transit tattoo on right shoulder, burn scar on right palm. Posture slightly forward from age and years of manual labor, subtle right-side favoring, economical deliberate movement. Standing in GLMZ Great Lakes Metropolitan Zone dockside platform setting, industrial moody lighting with salt spray weathering in background, subtle mechanical sound emanating from prosthetic arm. Intimate, working-class dignity, worn wedding band, faded Ferrogate ID badge on leather keychain visible in jacket pocket. Cinematic, gritty, atmospheric. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 73.1,
-    "Northern European": 19.6,
-    "East Asian": 7.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 49.5
-      },
-      "Indonesian": {
-        "Javanese": 6.2,
-        "Balinese": 17.4
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Scottish": 11.8
-      },
-      "Germanic": {
-        "German": 0.7,
-        "Austrian": 2
-      },
-      "Scandinavian": {
-        "Norwegian": 5.1
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Hakka": 7.3
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a60a7ffea9838a6ecd0c601a",
+    "type":  "character",
+    "name":  "Genji Thammasak-Ãrnason",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Retired Ferrogate Transit line worker and former union shop steward",
+    "age":  71,
+    "status":  "active",
+    "location":  "the Gray Zone â€” Apartment 4-Foxtrot, above the Deepline Transit node on Kamm\u0027s Landing spur, near Ashland and Division",
+    "description":  "Genji Thammasak-Ãrnason is a tall man who has lost some of his height to the years, still broad through the chest, with a jaw like a shelf bracket and deep-set eyes the color of old teak. His left arm from the elbow down is a working-class prosthetic, dull grey titanium alloy with knuckles worn smooth â€” a replacement for the arm he lost to a coupling accident on the Ferrogate Menomonee extension in 2171. He never upgraded it because, as he puts it, a fancy arm would mean they\u0027d won something. A Ferrogate ID badge from 2168 hangs from his keychain by habit though it expired decades ago. His face carries the kind of weathering that comes from thirty years on elevated rail platforms in Lake Michigan wind.\n\nHe is gregarious and loud and immediately likable, the sort of man who fills a room by breathing in it, who remembers the names of everyone\u0027s children and the coffee order of every regular at his building\u0027s shared kitchen. But beneath the bonhomie is a man who spent twenty years fighting a company that considered him a maintenance expense, and he has never quite stopped being angry about it. He channels the anger into Tenants\u0027 Council meetings and into mentoring younger workers, but it is always there, warm and patient.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the next generation won\u0027t fight for themselves and will just accept whatever the corponations offer",
+                                          "That the arm he lost meant nothing in the end"
+                                      ],
+                       "core_desires":  [
+                                            "To see the Tenants\u0027 Council win something real before he dies",
+                                            "To be remembered as someone who stood his ground"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Social connection and humor as armor",
+                                                 "Keeping busy with council work to avoid sitting with grief"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes collective action always works if people just try hard enough",
+                                           "Underestimates how much his stubbornness alienates potential allies"
+                                       ],
+                       "secret":  "During the 2178 Menomonee Strike he accepted a secret side payment from a Tessera labor consultant who wanted Ferrogate destabilized for corporate reasons â€” he used the money to keep the strike fund solvent for six more weeks, which won the workers their safety settlement, but the money was dirty and he has never admitted where it came from. Two workers lost their jobs when Ferrogate suspected an informant and he has always feared they blamed the wrong person."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Working-class vernacular; union meeting procedural language mixed into casual conversation; Burundian Swahili and Icelandic loanwords from his grandparents\u0027 generation",
+                            "cadence":  "Loud and rhythmic, like a man used to talking over machinery; pauses for effect rather than uncertainty",
+                            "verbal_tics":  [
+                                                "\u0027Point of orderâ€”\u0027",
+                                                "\u0027I\u0027ll tell you exactly what happened\u0027",
+                                                "Knocking knuckles of his prosthetic on tables when making a point"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Point of order â€” Ferrogate has been telling us the pension adjustment is temporary since before you were born, so let\u0027s not pretend we\u0027re surprised.\u0027",
+                                                  "\u0027You want to know what the strike was like? It was cold. That\u0027s what no one puts in the histories. Just absolutely freezing, standing on the Menomonee platform for six weeks.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Ferrogate Transit is attempting to reclassify his pension tier, which would cut his monthly stipend by Î¦40 â€” he needs help navigating the appeal process and suspects the reclassification is being done to a list of former union leaders specifically",
+                        "He discovers that one of the young Tenants\u0027 Council members has been reporting their meeting agendas to building management and must decide how to handle it without destroying the council"
+                    ],
+    "narrative_function":  "Labor history source; connector who knows everyone in Kamm\u0027s Landing and most of the Gray Zone; can mobilize tenant resistance or community action; potential quest giver for disputes with Ferrogate or building management corponation proxies",
+    "augmentations":  "Left forearm prosthetic (titanium, basic-grade, worn); nicotine scrubber implant (inactive, he started again anyway); old joint-pain management mesh in both knees",
+    "daily_life":  "Mornings he makes coffee for whoever wanders into the shared kitchen and reads the overnight transit bulletins out of habit; afternoons he runs Tenants\u0027 Council business, argues with building management, and plays card games called Quanta-Flush with three other retirees in the Gray Zone common room.",
+    "affiliation":  "Kamm\u0027s Landing Tenants\u0027 Council (treasurer); Ferrogate Retired Workers Mutual (pension advocacy); formerly Ferrogate Transit labor union, shop steward for Menomonee Division",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  5
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  8,
+                                 "creativity":  4,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  7,
+                                 "expression":  8,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  4,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "labor organizer",
+                               "community anchor",
+                               "corporate wars adjacent",
+                               "pension dependent",
+                               "loud and warm"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always vote with the group even when you disagree â€” then fight it out in the next meeting",
+                                              "Never cross a picket line for any reason",
+                                              "Give younger people room to lead even when they\u0027re doing it wrong"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Friendly conversation and information gathering",
+                                                 "Formal complaint via council process",
+                                                 "Public meeting and community pressure",
+                                                 "Work stoppage or rent strike coordination",
+                                                 "Personal confrontation, loud and documented"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately warm and inclusive, assesses their politics within five minutes",
+                                                   "friends":  "Treats them like family, which means he will also argue with them at volume"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Makes more coffee, talks more",
+                                                "medium":  "Calls an emergency council meeting",
+                                                "high":  "Goes quiet for about an hour, then comes back with a plan that is slightly too aggressive"
+                                            },
+                       "contradictions":  [
+                                              "Preaches collective transparency while holding a secret that defined the most important moment of his career"
+                                          ],
+                       "habits":  [
+                                      "Carries the expired Ferrogate badge everywhere",
+                                      "Leaves a small offering of a transit token at the building\u0027s E.L.F. shrine every Monday â€” a practice from the old Deepline workers"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone be evicted without a fight; being told the union was wrong to strike"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Compact-7 \u0027Rat Trap\u0027",
+                            "Street Custom \u0027Baptism\u0027 Electrified Water Cannon"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Ferrogate Transit",
+                             "Kamm\u0027s Landing",
+                             "The Accidental",
+                             "Titanium",
+                             "TESSERA WL-6 \u0027Stacker\u0027",
+                             "Teak",
+                             "Weathervane"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Southeast Asian ancestry (73.1%) with Northern European (19.6%) and East Asian (7.3%) heritage. Features the warm, golden-olive complexion characteristic of Thailand and surrounding regions, with the bone structure reflecting this primary ancestryâ€”prominent cheekbones and strong jaw with subtle East Asian character, softened by the Northern European contribution visible in lighter skin undertones and subtle facial angles.",
+                                 "height_cm":  188,
+                                 "weight_kg":  89,
+                                 "build":  "Tall and broad-chested despite age-related shrinkage, still carrying the substantial frame of a man who spent three decades on his feet doing manual labor. Shoulders slightly rounded forward from years of mechanical work posture.",
+                                 "hair_color":  "Steel grey with dark undertones",
+                                 "hair_style":  "Cropped short, practical, thinning at the crown",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, warm amber undertone",
+                                 "skin_tone":  "Medium golden-olive complexion with warm Southeast Asian depth, weathered to a richer, more uneven patina by decades of Lake Michigan platform exposure. Northern European ancestry adds subtle lighter undertones beneath the dominant warm golden cast.",
+                                 "complexion":  "Deeply lined face with pronounced jaw and high cheekbones reflecting Southeast Asian ancestry, moderate brow ridge with warmth throughout, permanent wind-crease patterns around the eyes, age spots on temples and cheekbones, heavy stubble shadow even when clean-shaven showing darker pigmentation, skin has a leathery quality from sun and salt spray exposure but retains the characteristic golden-olive warmth of Southeast Asian heritage.",
+                                 "distinguishing_marks":  [
+                                                              "Jagged white scar running the length of his left inner forearm where the coupling accident severed it in 2171, now mostly hidden by the prosthetic",
+                                                              "Ferrogate Transit logo tattoo on his right shoulder â€” faded, from 2159 when he made shop steward",
+                                                              "Burn scar on his right palm, pale and smooth, from a rail-joint incident circa 2165",
+                                                              "Deep creases in both palms from forty years of callused grip work, still visible even in retirement"
+                                                          ],
+                                 "visible_augmentations":  "Left forearm prosthetic from elbow down: dull grey titanium alloy with surgical-grade resin palm, knuckles worn smooth from decades of use, no chrome plating or aesthetic upgrades â€” purely functional, basic-grade industrial-spec. The junction at the elbow shows faint scar tissue and occasional microhydraulic seepage staining. The prosthetic moves with slightly audible mechanical precision when he gestures. Knees show no external augmentation but he moves with careful deliberation suggesting internal mesh pain management.",
+                                 "posture_movement":  "Stands with shoulders back despite spinal compression from age, moves deliberately but not slowly â€” economical motion from a lifetime of knowing where his body is in space. Favors his right side slightly when standing for long periods. Gestures frequently when talking, using the prosthetic arm with unselfconscious fluidity. Leans in when listening, creating immediate intimacy. Walks with a slight roll rather than a true limp, compensating for knee mesh limitations.",
+                                 "clothing_style":  "Tier 3-4 working-class durability wear: heavy canvas work pants in charcoal grey, worn soft but not patched, usually a thermal undershirt in dark colors topped with a faded Ferrogate Transit company jacket from 2165 that he refuses to retire despite the faded logo and fraying collar. Steel-toed boots, well-maintained. A thin zinc-polymer watch on his right wrist from the Ferrogate Retired Workers Mutual. Faded Ferrogate ID badge on a leather keychain in his jacket pocket, never removed. No visible jewelry except a simple platinum wedding band."
+                             },
+    "image_prompt":  "Genji Thammasak-Ãrnason, 188cm tall retired Ferrogate Transit worker, golden-olive Southeast Asian complexion weathered by decades of Lake Michigan exposure, deep facial lines and high cheekbones, grey cropped hair with dark undertones, dark brown eyes with warm amber undertones. Worn steel-grey work pants, faded thermal undershirt, 2165 Ferrogate Transit company jacket with fraying collar. Dull grey titanium alloy prosthetic left forearm with worn resin palm, moving with mechanical precision. Heavy deep creases in both palms, jagged white scar on left inner forearm, faded Ferrogate Transit tattoo on right shoulder, burn scar on right palm. Posture slightly forward from age and years of manual labor, subtle right-side favoring, economical deliberate movement. Standing in GLMZ Great Lakes Metropolitan Zone dockside platform setting, industrial moody lighting with salt spray weathering in background, subtle mechanical sound emanating from prosthetic arm. Intimate, working-class dignity, worn wedding band, faded Ferrogate ID badge on leather keychain visible in jacket pocket. Cinematic, gritty, atmospheric. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  73.1,
+                             "Northern European":  19.6,
+                             "East Asian":  7.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  49.5
+                                                             },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  6.2,
+                                                                       "Balinese":  17.4
+                                                                   }
+                                                },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Scottish":  11.8
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "German":  0.7,
+                                                                       "Austrian":  2
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  5.1
+                                                                       }
+                                                  },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Hakka":  7.3
+                                                           }
+                                           }
+                        },
+    "tier":  "1"
 }

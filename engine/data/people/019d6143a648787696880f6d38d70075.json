@@ -1,481 +1,492 @@
-{
-  "id": "019d6143a648787696880f6d38d70075",
-  "rating": 80,
-  "vote_count": 0,
-  "type": "character",
-  "name": "Kyle Ellen Corbin-Vasik",
-  "aliases": [
-    "Kyle Corbin-Vasik",
-    "Kyle",
-    "The Samurai",
-    "Street Samurai",
-    "NDC-4471",
-    "Ghost 7"
-  ],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Protagonist \u2014 freelance enforcer, facility survivor, the Street Samurai",
-  "age": 27,
-  "status": "active",
-  "location": "The Pivot \u2014 1554 W Chicago Ave (also 801 N Ashland), upper floor, West Town sector near the Circuit\u0027s western boundary",
-  "description": "Kyle carries hardware that was never meant to leave the facility. NeoCortex Program Atlas, Subprogram A-7: a high-density electrode array with 32,768 electrodes and 256 threads \u2014 roughly 8x the density of standard Tier 3 corpo implants. The implant gives him cognitive processing speed comparable to Tier 3-4 augmented, reaction time in the top 0.1% of recorded human performance, and fragmentary access to sensory data streams. The catch: the hardware was never calibrated for long-term stability. He experiences periodic neural static, memory bleed from other test subjects, and micro-seizures that are getting more frequent. No corpo surgeon will touch it. He maintains it himself with salvaged tools and stolen pharmaceutical stabilizers, the way you would maintain a weapon that is also a time bomb. He carries a katana \u2014 carbon-nanotube composite blade with a piezoelectric disruption layer that shorts neural implants on contact. The katana is not nostalgia. It is the only weapon that works everywhere Kyle needs to go.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 1,
-      "ideal": 0.9100000000000003,
-      "id": 0.42000000000000004,
-      "shadow": 0.6900000000000001,
-      "mask": 0.42999999999999994,
-      "ghost": 0.9800000000000004
-    },
-    "core_fears": [
-      "That the facility is still operating and he could stop it but is afraid to go back",
-      "That his thoughts are not his own \u2014 firmware artifacts or residual data from dead test subjects",
-      "That his capacity for clinical violence makes him no different from the people who broke him"
-    ],
-    "core_desires": [
-      "To find someone who can maintain the experimental hardware before it kills him",
-      "To protect people like his mother \u2014 the excluded, the indebted, the desperate",
-      "To know whether the facility breach was genuine or an engineered field test"
-    ],
-    "coping_mechanisms": [
-      "Maintains the professional mask \u2014 calm, competent, transactional",
-      "Clings to the memory of Kyle Vasik, the boy from the Grind, as an anchor against cognitive drift",
-      "Channels trauma into his code: protect those who cannot protect themselves"
-    ],
-    "blind_spots": [
-      "Cannot distinguish genuine compassion from the code",
-      "Underestimates how much the hardware is changing him",
-      "Refuses to investigate his own escape"
-    ],
-    "secret": "The experimental implant contains fragmentary neural patterns from other test subjects who died in the program. Kyle sometimes has memories that are not his."
-  },
-  "speech_patterns": {
-    "vocabulary": "Tight, sensory, interior. Short sentences because the hardware processes faster than language.",
-    "cadence": "Clipped. Fragments. The silence between sentences carries weight.",
-    "verbal_tics": [
-      "Rarely uses contractions when stressed",
-      "Describes people by their augmentations first",
-      "Uses clinical language for violence"
-    ],
-    "example_lines": [
-      "The blade does not lie. Only the hand holding it.",
-      "I maintain the hardware. The hardware maintains me. We have an arrangement.",
-      "She had three exits and chose the one that required trust. Interesting."
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [
-    {
-      "name": "Dae-jung Seo",
-      "type": "mentor / deceased",
-      "description": "Former Torii Security Group instructor who taught Kyle the blade and the code. Died from degrading military augments.",
-      "emotional_core": "Grief, gratitude, and the weight of inherited purpose",
-      "story_tension": "Kyle carries Seo\u0027s sword and his principles \u2014 but is he honoring the man or hiding behind him?"
-    },
-    {
-      "name": "Sable",
-      "type": "employer / complicated trust",
-      "description": "Information broker who feeds Kyle contracts. Their relationship is transactional but charged with something neither will name.",
-      "emotional_core": "Mutual recognition of damage",
-      "story_tension": "Sable knows things about Kyle\u0027s past that he does not."
-    },
-    {
-      "name": "Chen Wei-Lin",
-      "type": "neighbor / anchor",
-      "description": "Mrs. Chen runs a shop in the Gray Zone. She feeds Kyle, patches his clothes, and pretends not to notice the blood.",
-      "emotional_core": "Unconditional care that Kyle does not know how to receive",
-      "story_tension": "If the Gray Zone is threatened, Kyle will burn everything to protect her."
-    },
-    {
-      "name": "Pixel",
-      "type": "neighbor / the one across the hall",
-      "description": "She lives in Unit 2E. Kyle knows the sound of her music through the door before he knows anything else about her day. She has extracted two bullets from him and calibrated his NeoCortex hardware four times. He calls her the neighbor. He opens the door when she knocks, which is not nothing.",
-      "emotional_core": "Kyle does not have a word for what Pixel is to him. This does not mean she isn\u0027t the thing.",
-      "story_tension": "She knows his hardware better than he does. There are things in his diagnostic data she has not told him about."
-    }
-  ],
-  "story_hooks": [
-    "The hardware is degrading \u2014 maybe two years before permanent neural damage or death",
-    "He has never gone back to find out if the NeoCortex facility is still operating",
-    "His escape may have been engineered \u2014 an unwitting field test",
-    "The neural patterns of dead test subjects in his firmware are becoming more vivid"
-  ],
-  "narrative_function": "Kyle is the lens through which the reader experiences the GLMZ. His experimental hardware makes him perceive the world at a different speed and resolution, driving the prose style \u2014 tight, sensory, fragmented.\n\nCore contradiction: A warrior of honor surviving in a world that punishes honor. Samurai means discipline, dignity, service. Street means survival, compromise, moral decay. He is both, fully, at all times. The facility made him a weapon; he uses that weapon to protect the vulnerable.\n\nArc: Coming to terms with a lifetime of hypocrisy. Trying to be a good man in a world that doesn\u0027t care about goodness and doesn\u0027t reward adherence to an ancient philosophy. The world doesn\u0027t even notice his struggle \u2014 that\u0027s the satire.",
-  "augmentations": "Experimental NeoCortex Program Atlas array \u2014 32,768 electrodes, 256 threads, 8x standard density. Degrading firmware. Gives cognitive speed, reaction time, fragmentary sensory access.",
-  "daily_life": "Freelance enforcement, retrieval, problem-solving for the excluded. Maintains hardware with salvaged tools.",
-  "affiliation": "Independent",
-  "uses_facets": true,
-  "narration_voice": "Kyle is more present in his own head than in the room. His body runs the fight; his mind watches from a step behind, narrating. In the white space between actions \u2014 the half-second after a trigger pull, the moment of an arm dropping \u2014 the observing part catches up and says something cold and exact. He notices the wrong things: a simile, a moral ledger entry, the precise word for a beautiful terrible thing. He is not dissociating. He is paying a different kind of attention.\n\nTight, sensory, interior. Short sentences because the experimental hardware processes faster than language. Long thoughts fragment. Kyle notices details before meaning \u2014 the temperature of a room before the people in it, the hum of electronics before the words being spoken. Interior facet tags ([WOUND], [IDEAL], [SHADOW], [GHOST], [ID], [MASK]) surface as brief, italicized interjections that disagree with each other. The narration is third person limited, close \u2014 the reader is inside Kyle\u0027s augmented perception. Humor is rare, dry, and always at his own expense. When violence happens, the prose gets clinical \u2014 he describes it like a surgeon describes an incision. When beauty surfaces, the prose warms half a degree, then shuts it down.",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 10,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 9,
-      "creativity": 2,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 4,
-      "expression": 4,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -2,
-      "transparency_guardedness": 4
-    },
-    "drives": [
-      "Protection",
-      "Survival",
-      "Knowledge"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 7,
-        "response": "dissociate"
-      },
-      "moral": 8,
-      "trust": 9,
-      "desperation": 8
-    },
-    "strengths": [
-      "Bravery",
-      "Perseverance",
-      "Prudence",
-      "Kindness",
-      "Judgment"
-    ],
-    "weaknesses": [
-      "Spirituality",
-      "Beauty",
-      "Humor",
-      "Zest",
-      "Curiosity"
-    ],
-    "tags": [
-      "street-raised",
-      "addiction:stabilizers",
-      "trauma:facility",
-      "augmented:neocortex-degrading",
-      "mentor-shaped:seo",
-      "self-taught"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will abandon any contract to protect a child \u2014 no exceptions, no hesitation, no calculation",
-      "Will not kill an unarmed target unless they pose a direct, immediate threat to the excluded",
-      "Will accept corpo money but never corpo loyalty \u2014 the moment they think they own him, the contract ends",
-      "Will not betray a source or informant, even under duress \u2014 this is the code, non-negotiable",
-      "Will take a worse-paying job over a better-paying one if the worse job protects someone who cannot protect themselves",
-      "Will lie to authority figures reflexively \u2014 truth is a resource spent only on people who\u0027ve earned it",
-      "Will not use his implant capabilities against unaugmented civilians \u2014 the asymmetry is dishonorable",
-      "Will eat Mrs. Chen\u0027s food when offered, even if he\u0027s not hungry \u2014 refusing would hurt her",
-      "Will maintain the katana before maintaining himself \u2014 the blade is the promise to Seo"
-    ],
-    "escalation_ladder": [
-      "1. Assess \u2014 hardware catalogues threats before conscious thought. Count augments, exits, weapons, civilians. 0.3 seconds.",
-      "2. Position \u2014 move to optimal geometry. Back to wall, sightlines clear, blade accessible. No one notices he\u0027s done it.",
-      "3. Presence \u2014 let them see the katana. Let them do the math. Most situations end here.",
-      "4. Words \u2014 short, clinical, specific. \u0027You have a choice. Make it now.\u0027 No threats. Descriptions of consequences.",
-      "5. Disable \u2014 piezoelectric disruption, joint locks, nerve strikes. Fast, precise, minimal damage. Prefer this heavily.",
-      "6. Cut \u2014 the blade comes out. Once it\u0027s out, the calculation changes. He does not wound. He ends the threat.",
-      "7. Kill \u2014 clinical. No rage, no satisfaction. The prose goes cold and technical. Afterward, the silence."
-    ],
-    "interpersonal_modes": {
-      "sable": "Transactional surface, careful underneath. Longer sentences than usual \u2014 she draws out his syntax. Allows silences to extend. Never turns his back. Watches her chrome jaw for micro-expressions she doesn\u0027t know she makes. Something in him recognizes something in her, and that recognition is more frightening than any contract.",
-      "mrs_chen": "Shorter than usual. Accepts food without argument. Sits in the same chair every time. Avoids eye contact when he\u0027s wounded because her worry makes him feel something he can\u0027t process. Will carry her groceries. Will fix her generator. Will kill anyone who threatens her shop and feel nothing about it.",
-      "pixel": "Tolerant in a way that surprises him. Lets Pixel talk \u2014 the noise fills a silence Kyle can\u0027t fill himself. Checks their augments without being asked. Never comments on Pixel\u0027s age or recklessness, because he remembers being young and reckless and nobody checking his augments.",
-      "strangers": "Assessment first \u2014 augmentations, posture, hands, exits. Fragments. \u0027What do you need.\u0027 Not a question. Minimal eye contact. If they\u0027re excluded, he softens half a degree. If they\u0027re corpo, the mask locks into place and nothing gets through.",
-      "authority_figures": "The mask becomes perfect \u2014 calm, cooperative, empty. Gives them exactly what they expect to see. The real Kyle retreats behind the hardware. He learned this in the facility. It saved his life then. It might be killing him now.",
-      "children": "The only context where the mask drops completely. Voice changes \u2014 slower, warmer, almost recognizable as the boy from the Grind. Will crouch to their eye level. Will give them food he needs. The code says protect the vulnerable. With children, it\u0027s not the code. It\u0027s him."
-    },
-    "stress_responses": {
-      "low": "Heightened perceptual detail \u2014 notices sounds, temperatures, micro-expressions others miss. Prose becomes more sensory. Functions better than baseline.",
-      "medium": "Sentences fragment. Interior monologue splits into competing facet voices. Physical stillness increases \u2014 conservation of energy. Begins rationing words.",
-      "high": "Hardware takes priority over emotion. Perception shifts to threat-assessment mode. Time dilates subjectively. He describes violence with surgical precision because the feelings have been routed elsewhere. The boy from the Grind disappears. The weapon remains.",
-      "critical": "Dissociation. He observes himself from outside. The hardware runs autonomous threat response. Memory gaps afterward \u2014 he won\u0027t remember the next thirty seconds clearly. The dead test subjects\u0027 neural patterns bleed through. He might say things in voices that aren\u0027t his. This terrifies him more than any enemy."
-    },
-    "contradictions": [
-      "WOUND vs IDEAL: The facility taught him that caring makes you exploitable. Seo taught him that caring is the point. When these collide \u2014 when protecting someone requires vulnerability \u2014 he freezes for exactly one heartbeat. Then the code wins. But the hesitation is getting longer.",
-      "MASK vs GHOST: He presents competence and control. Underneath, fragments of dead test subjects whisper in firmware he can\u0027t update. Some nights the mask stays on so long he forgets which version of himself is underneath it. The question is not whether the mask will crack. The question is what comes through when it does.",
-      "SHADOW vs IDEAL: He is capable of extraordinary violence and he is good at it. The facility designed him to be good at it. The code says use violence only to protect. But there are moments \u2014 moments he will not discuss \u2014 where the violence feels correct independent of purpose. Where the blade moving through air is its own justification. He files these moments under \u0027the hardware\u0027 and does not examine them.",
-      "ID vs MASK: The survival instinct says run, hide, protect yourself. The mask says take the contract, honor the code, be the samurai. When the hardware is degrading badly and the seizures are close, the ID screams at him to stop, to rest, to save himself. The mask keeps walking. One day the ID will be right and the mask will get him killed."
-    ],
-    "habits": [
-      "Checks the katana\u0027s edge every morning \u2014 three fingers along the flat, feeling for micro-fractures. This is prayer.",
-      "Enters every room blade-side to the nearest threat. Has done this since he was fourteen.",
-      "Eats standing up unless he\u0027s at Mrs. Chen\u0027s. At Mrs. Chen\u0027s, he sits. This distinction matters to him.",
-      "Takes pharmaceutical stabilizers at 0600 and 1800. Doses are increasing. He tracks the increase in a notebook he keeps in analog because the hardware can\u0027t edit paper.",
-      "Sleeps in 90-minute cycles, never more than three in a row. The hardware won\u0027t let him go deeper. He hasn\u0027t dreamed in two years. He misses it.",
-      "Maintains three safe houses. Rotates on a pattern only he knows. Each has a medkit, a change of clothes, and one analog photograph of his mother.",
-      "Counts augmentations on every person he meets. This is automatic. He learned to stop saying the count out loud when he was nineteen."
-    ],
-    "breaking_points": [
-      "A child in danger will override every other calculation, including self-preservation",
-      "Evidence that the NeoCortex facility is still operating will derail any active contract",
-      "A direct threat to Mrs. Chen or her shop will trigger lethal response with zero escalation steps",
-      "Discovery that Seo\u0027s code was fraudulent \u2014 that the mentor was not what he seemed \u2014 would shatter the framework Kyle\u0027s entire identity rests on",
-      "If the hardware degradation accelerates past the point of stabilizer control, panic will break through the mask for the first time since the facility"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Modified Cardiac Regulator",
-      "body_location": "thoracic \u2014 bonded to myocardium, primary interface port at left lateral throat",
-      "manufacturer": "Torii Security Group Medical Division (base unit) \u2014 firmware modified by Dae-jung Seo, maintained by Kyle",
-      "tier": "Tier 4 base, Tier 5 custom firmware",
-      "condition": "functional \u2014 firmware is non-standard, unsupported by any manufacturer",
-      "installed_date": "2196 (age 17, elective \u2014 Seo\u0027s requirement before weapons training began)",
-      "description": "Standard cardiac regulators pace and monitor heart rhythm, intervening during arrhythmia or arrest. Kyle\u0027s unit runs custom firmware written by Seo and maintained by Kyle himself \u2014 no manufacturer update has ever been applied. Standard restart behavior: cardiac event detected, restart sequence initiates within 8\u201312 seconds. Kyle\u0027s firmware: on detection of flatline, a 240-second countdown begins before restart sequence executes. This is not a bug. This is the False Death Protocol. The regulator also exposes a documented interface point at the left lateral throat \u2014 the same point used for firmware maintenance. Any edge contact with sufficient charge (including Silence\u0027s passive disruption mode) to this interface will crash the firmware into a safe-mode flatline state that triggers the 240-second timer. Kyle can initiate this himself, deliberately, or an opponent can initiate it by finding the interface. The device is also targetable by Silence\u0027s active discharge for reboot \u2014 clearing the crash and restarting the heart immediately. This creates the full bidirectional capability: the blade can stop the heart by crashing the regulator, and restart it by rebooting the firmware.",
-      "replaces": "organic cardiac regulation"
-    },
-    {
-      "name": "Cerebral Oxygenation Assist",
-      "body_location": "carotid sheath \u2014 bilateral, passive",
-      "manufacturer": "unknown \u2014 facility-installed",
-      "tier": "military prototype",
-      "condition": "functional",
-      "installed_date": "2194 (age 15, non-consensual \u2014 NeoCortex program)",
-      "description": "A passive hydraulic assist device threaded into the carotid artery sheath, bilaterally. On detection of cardiac arrest or cessation of normal perfusion pressure, the device activates an independent mechanical pump that maintains minimal but sufficient cerebral blood flow to prevent hypoxic injury. Operates on a self-contained electrochemical cell with approximately 8 minutes of reserve. The NeoCortex program installed this as a safeguard against test subjects dying from cardiac complications during high-load trials \u2014 it was not altruistic. Kyle did not know he had it until Seo found the interface points during a post-training medical check. The device is what makes the False Death Protocol survivable: without it, 240 seconds of cardiac arrest would produce permanent brain damage. With it, he wakes up with a headache.",
-      "replaces": "nothing \u2014 supplementary to cardiac system"
-    },
-    {
-      "name": "NeoCortex Program Atlas Array",
-      "body_location": "cranial \u2014 full brain surface",
-      "manufacturer": "NeoCortex Division (classified)",
-      "tier": "experimental / military black project",
-      "condition": "degrading \u2014 firmware instability increasing, micro-seizures every 48-72 hours",
-      "installed_date": "2194 (age 15, non-consensual)",
-      "description": "High-density electrode array with 32,768 electrodes and 256 threads. Approximately 8x the density of standard Tier 3 corpo implants. Provides cognitive processing speed comparable to Tier 3-4 augmented, reaction time in the top 0.1% of recorded human performance, and fragmentary access to sensory data streams. Contains residual neural patterns from deceased test subjects.",
-      "replaces": "nothing \u2014 additive implant on existing neural tissue"
-    },
-    {
-      "name": "Subdermal Mesh (Torso)",
-      "body_location": "torso \u2014 chest and upper back",
-      "manufacturer": "unknown \u2014 facility-installed",
-      "tier": "military prototype",
-      "condition": "functional",
-      "installed_date": "2194",
-      "description": "Light ballistic mesh woven under the skin. Stops small-caliber rounds and most bladed weapons. Visible as faint geometric patterns under certain lighting. Kyle did not know he had this until a knife failed to penetrate his ribs during a the Gray Zone altercation at age 18.",
-      "replaces": "nothing \u2014 subdermal layer"
-    },
-    {
-      "name": "Ocular Enhancement (Passive)",
-      "body_location": "eyes \u2014 retinal overlay",
-      "manufacturer": "NeoCortex Division",
-      "tier": "experimental",
-      "condition": "functional \u2014 occasional visual artifacts",
-      "installed_date": "2194",
-      "description": "Passive retinal enhancement providing low-light vision, basic threat highlighting, and augmentation detection. Not full AR \u2014 no HUD, no data overlay. Kyle\u0027s eyes reflect light slightly differently than baseline human in certain conditions. He does not know the full capabilities of this implant.",
-      "replaces": "nothing \u2014 overlay on organic eyes"
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "\u0027Silence\u0027 \u2014 Dae-jung Seo\u0027s Custom Katana",
-    "secondary_weapon": "Torii Security Group Compact Combat Shotgun TSS-3 \u0027Chorus\u0027",
-    "armor": "",
-    "vehicle": "",
-    "residence": "The Pivot \u2014 Unit 2F, 1554 W Chicago Ave / 801 N Ashland, West Town sector",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [
-      "Corundum Draw Strop \u2014 A slim passive bracer worn on the inner left forearm, corundum (Al\u2082O\u2083, Mohs 9) ceramic face plate on a carbon-fiber shell, secured with two titanium-wire braid loops (not buckled, not velcro, not breakaway \u2014 stays on). Made by Seo, passed to Kyle with the blade. No commercial equivalent. The physics: on a single deliberate draw, the flat of Silence crosses the corundum face under controlled tension; the corundum is harder than the nanotube kawagane and produces a crisp, high-frequency stress pulse that propagates through the blade length. The PZT shingane harvests that pulse directly \u2014 the same kinetic-to-electric conversion used in combat, just from a compressive shock rather than a clash. One pass registers on the hamon: a baseline warm-up charge, not full capacity but enough to matter in the opening exchange. Entirely passive \u2014 no electronics, no power draw, no maintenance beyond keeping the ceramic face free of debris. To anyone watching, the gesture reads as a corrupted chiburi \u2014 the classical post-cut blade-cleaning motion \u2014 performed on the draw instead of the sheath. Seo designed it that way."
-    ],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Protector": 0.9,
-    "Duelist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Pivot \u2014 West Town / Circuit boundary",
-    "familiar_zones": [
-      "the Gray Zone",
-      "The Circuit",
-      "West Town sector"
-    ],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "2194-03",
-      "story_id": "backstory",
-      "event": "Inducted into NeoCortex Program Atlas as test subject NDC-4471. Experimental BCI array installed without consent.",
-      "consequences": "Gained augmented cognition and reaction time. Lost autonomy, innocence, and approximately 18 months of clear memory.",
-      "body_changes": [
-        "NeoCortex Atlas array installed (cranial)",
-        "subdermal mesh installed (torso)",
-        "ocular enhancement installed (eyes)"
-      ],
-      "status_change": ""
-    },
-    {
-      "date": "2195-09",
-      "story_id": "backstory",
-      "event": "Escaped the NeoCortex facility during a breach event. Circumstances unclear \u2014 possibly engineered.",
-      "consequences": "Became a street-level refugee in the Gray Zone. Hardware began degrading without facility maintenance.",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "2196-01",
-      "story_id": "backstory",
-      "event": "Found by Dae-jung Seo in the Gray Zone. Seo began training Kyle in blade work and the code.",
-      "consequences": "Gained discipline, purpose, and a moral framework. Inherited the katana and its obligations.",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "2199-11",
-      "story_id": "backstory",
-      "event": "Dae-jung Seo died from degrading military augments. Left Kyle his katana and his principles.",
-      "consequences": "Kyle became an independent operator. The code became his only structure.",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "2200-present",
-      "story_id": "active",
-      "event": "Operating as freelance enforcer from the Gray Zone. Hardware degradation accelerating. Stabilizer doses increasing.",
-      "consequences": "Estimated 18-24 months before permanent neural damage without intervention.",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human",
-    "protagonist",
-    "street-samurai",
-    "war",
-    "augment",
-    "shadow",
-    "moral",
-    "survival"
-  ],
-  "physical_description": {
-    "heritage": "Eastern European / Pacific Islander (Corbin \u2014 Anglo-Slavic; Vasik \u2014 Czech-Polynesian)",
-    "height_cm": 180,
-    "weight_kg": 77,
-    "build": "Lean, ropey muscle \u2014 not gym-built, survival-built. Narrow hips, long arms, a frame designed for speed over power.",
-    "hair_color": "Dark brown, almost black",
-    "hair_style": "Short on the sides, longer on top, perpetually pushed back. Uneven \u2014 he cuts it himself with a blade.",
-    "hair_length": "Short",
-    "eye_color": "Grey-green \u2014 the left iris has a faint gold ring from the NeoCortex array\u0027s optic thread bleed",
-    "skin_tone": "Olive-tan, weathered. The kind of complexion that doesn\u0027t burn but doesn\u0027t glow either \u2014 it just endures.",
-    "complexion": "Clean-shaven. Faint acne scarring along the jawline. Skin texture slightly uneven around the temples where the electrode array interfaces subcutaneously.",
-    "distinguishing_marks": [
-      "Surgical scar \u2014 4cm, behind the left ear, where the primary NeoCortex insertion port was cut. Poorly healed, keloid ridge.",
-      "Micro-scarring along both forearms \u2014 faint parallel lines from years of self-maintaining subcutaneous electrode threads with improvised tools.",
-      "Faded chemical burn on the right hand, palm side \u2014 pharmaceutical stabilizer spill. The skin is smooth and pale there, like wax.",
-      "No tattoos. No cosmetic augmentations. He does not decorate the hardware."
-    ],
-    "visible_augmentations": "None visible at first glance \u2014 the NeoCortex array is subcutaneous. On close inspection: faint trace lines under the skin at the temples, barely visible unless you know what to look for. The left pupil dilates fractionally slower than the right.",
-    "posture_movement": "Still when standing, efficient when moving. No wasted motion. Walks like someone who learned to navigate spaces where being noticed gets you killed. Hands stay loose and low. When he enters a room, his eyes track the corners before the people.",
-    "clothing_style": "Dark, functional, layered. Worn leather jacket over ballistic-weave underlayer. Cargo pants with reinforced knees. Boots that have been resoled three times. Nothing branded, nothing new. The katana rides across his back in a matte-black friction sheath."
-  },
-  "image_prompt": "Neo-noir male, 27, lean athletic build, olive-tan skin, dark brown hair short on sides longer on top pushed back, grey-green eyes with faint gold ring in left iris, faint surgical scar behind left ear, micro-scarring on forearms, worn dark leather jacket over tactical underlayer, cargo pants, resoled combat boots, carbon-black katana across back in matte friction sheath, standing in rain-slicked neon-lit alley, clinical stillness, hands loose at sides, eyes scanning corners, photorealistic, cinematic lighting, GLMZ 2200 aesthetic, no visible cybernetics, gritty urban environment, atmospheric fog, high detail --ar 2:3 --v 6",
-  "dalle3_prompt": "neo-noir cyberpunk enforcer, male 27, lean muscular build, olive-tan skin, rough and imperfect face, asymmetrical features, slightly crooked nose, uneven jawline, subtle under-eye fatigue, small facial scars on cheek and bridge of nose, faint stubble, tired but dangerous eyes, grey-green with faint gold ring in left iris\n\nhair: short dark brown, uneven, spiked but messy and clumped from rain, not styled, irregular hairline\n\nexpression: cold, focused, emotionally restrained, slightly hardened, not heroic, not attractive, grounded realism\n\noutfit: dark leather jacket with tactical padding and attachments, worn but maintained, partially open over fitted dark shirt, utility belt with holster, reinforced gloves, holding pistol low in right hand, carbon-black katana strapped across back\n\nwalking forward through narrow neon-lit alley, rain falling, droplets streaking through frame, subtle motion blur, shallow depth of field\n\nenvironment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores",
-  "genetic_ancestry": {
-    "East Asian": 43.6,
-    "Northern European": 39.9,
-    "Eastern European": 16.5
-  },
-  "ancestry_detail": {
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 11.3
-      },
-      "Chinese": {
-        "Cantonese": 28.3,
-        "Shanghainese": 4
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 12.6
-      },
-      "Scandinavian": {
-        "Swedish": 10.9
-      },
-      "British Isles": {
-        "Welsh": 16.4
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Romanian": 16.5
-      }
-    }
-  },
-  "neural_abilities": [
-    {
-      "name": "Ballistic Precognition",
-      "cost_percent": 4,
-      "description": "The NeoCortex array reads micro-tremors in an opponent\u0027s musculature, weapon barrel micro-alignment, trigger finger tension, and atmospheric pressure displacement in the milliseconds before a round fires. Kyle does not dodge bullets \u2014 he vacates the space the bullet will occupy before the trigger pulls. This is not reaction speed. It is prediction. The read happens at a level below conscious thought; his body is already moving when the decision to fire forms in the shooter\u0027s mind. Under focus he can track multiple shooters simultaneously. The ability is passive when the array is running at normal load.",
-      "overdrawn_risk": "Below 20% bio-battery, trajectory reads arrive late or not at all. A missed read at that charge level is potentially fatal \u2014 he moves into the bullet instead of out of its path.",
-      "passive": true
-    },
-    {
-      "name": "Neural Overdrive",
-      "cost_percent": 25,
-      "description": "Pushes the array past its rated ceiling. For approximately four seconds, Kyle operates at three times normal human reaction speed relative to his perceived environment. The world slows. He does not. Cost is severe and non-negotiable: 25% bio-battery per activation. The hardware was never calibrated for repeated overdrive use \u2014 the third activation in any 24-hour window risks micro-seizure. He knows this. He uses it anyway when there is no other option.",
-      "overdrawn_risk": "Micro-seizure. Temporary loss of fine motor control, visual artifacts, 3-5 second recovery window during which he is completely vulnerable. The hardware does not recover quickly.",
-      "passive": false
-    },
-    {
-      "name": "Augmentation Signature Read",
-      "cost_percent": 5,
-      "description": "The array identifies and maps an opponent\u0027s cyberware by the electromagnetic signature it produces \u2014 motor buses, neural bridges, optic relays, cardiac regulators. Kyle knows which arm is chrome, where the BCI interface sits, and what the implant manufacturer\u0027s documented failure mode looks like. This makes Silence exponentially more dangerous: he knows exactly where to cut to short the system. A single precise contact to the right interface point ends the fight.",
-      "overdrawn_risk": "At very low bio-battery, the read becomes noisy \u2014 false positives, missed signatures, incorrect body-location mapping. Acting on a false read against a fully-fleshed opponent changes everything about the engagement.",
-      "passive": false
-    },
-    {
-      "name": "Sensory Amplification",
-      "cost_percent": 3,
-      "description": "Boosts the array\u0027s sensory intake beyond passive baseline \u2014 heartbeat tracking through walls, thermal differential reading across a room, directional hearing precise enough to identify which floor someone is on by their footfall pattern. Ongoing cost while active. Sustained amplification while simultaneously running other abilities compounds depletion rapidly.",
-      "overdrawn_risk": "Sensory overload if sustained past 15% bio-battery \u2014 all sensory channels spike simultaneously. Effectively blind and deaf for 2-3 seconds.",
-      "passive": false
-    },
-    {
-      "name": "False Death Protocol",
-      "cost_percent": 0,
-      "description": "A specific NeoCortex signal sequence sends a controlled crash command to the modified cardiac regulator firmware \u2014 heart stops, regulator enters safe-mode flatline, 240-second restart timer begins. The Cerebral Oxygenation Assist activates automatically, maintaining minimal brain perfusion for the duration. Kyle presents as clinically dead: no pulse, no cardiac output, falling body temperature. Standard vital-sign scanners at checkpoints, perimeter sensors, and most medical-grade detectors read confirmed death. After 240 seconds, the regulator executes its restart sequence and the heart resumes. Kyle wakes up. The protocol can also be externally triggered \u2014 the cardiac regulator interface point at the left lateral throat is accessible to Silence\u0027s passive disruption mode. An opponent who knows the interface location can crash the regulator. Kyle has never confirmed whether anyone else knows this is possible.",
-      "overdrawn_risk": "The Cerebral Oxygenation Assist has approximately 8 minutes of reserve. At 240 seconds Kyle is safe. If the restart fails \u2014 firmware corruption, hardware fault, interrupted restart sequence \u2014 the assist runs out at 480 seconds and brain damage begins. Kyle has tested this once. He did not enjoy the experience.",
-      "passive": false
-    }
-  ],
-  "bio_battery": {
-    "max_capacity_description": "The NeoCortex array draws power via caloric conversion \u2014 the body metabolizes food and a fraction of the energy is shunted to the battery. Starting charge is determined by what was eaten and when: high-protein/high-fat meal 2-3 hours before action = 100% capacity. Light meal or protein bar = 70-80%. Processed food, fast food = 60-70%. Skipped meal = 50-60%. Alcohol reduces max by 15% regardless of food intake. The battery cannot be topped off mid-combat \u2014 there is no refueling while fighting.",
-    "depletion_thresholds": {
-      "0": "FLATLINE RISK. The reserve systems the battery is drawing from are the systems that regulate heartbeat and breathing. Continued neural activation risks cardiac event. Kyle knows what this threshold feels like. He has been here before. He does not recommend it.",
-      "10": "CRITICAL. Precognition offline. All active abilities suspended. Visual static. The hardware is drawing from reserve systems. Minor tremor in fine motor control.",
-      "20": "WARNING. Precognition reads are unreliable \u2014 occasionally arrives late, occasionally misses. Neural Overdrive is forbidden at this threshold; activation risks micro-seizure. Minor visual artifacts begin.",
-      "40": "Precognition response latency increases by approximately 50ms \u2014 still effective, slightly delayed. All abilities available but cost compounds faster.",
-      "60": "Full capability. Ballistic precognition is crisp and reliable. All abilities available."
-    },
-    "recovery": "Cannot recover mid-combat \u2014 the body cannot metabolize food fast enough to matter during a fight. Post-combat: glucose and caloric intake begins recovery at approximately 5% per 15 minutes at rest. Full recovery from 0% requires 3-4 hours and a full meal."
-  }
+﻿{
+    "id":  "019d6143a648787696880f6d38d70075",
+    "rating":  80,
+    "vote_count":  0,
+    "type":  "character",
+    "name":  "Kyle Ellen Corbin-Vasik",
+    "aliases":  [
+                    "Kyle Corbin-Vasik",
+                    "Kyle",
+                    "The Samurai",
+                    "Street Samurai",
+                    "NDC-4471",
+                    "Ghost 7"
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Protagonist — freelance enforcer, facility survivor, the Street Samurai",
+    "age":  27,
+    "status":  "active",
+    "location":  "The Pivot — 1554 W Chicago Ave (also 801 N Ashland), upper floor, West Town sector near the Circuit\u0027s western boundary",
+    "description":  "Kyle carries hardware that was never meant to leave the facility. NeoCortex Program Atlas, Subprogram A-7: a high-density electrode array with 32,768 electrodes and 256 threads — roughly 8x the density of standard Tier 3 corpo implants. The implant gives him cognitive processing speed comparable to Tier 3-4 augmented, reaction time in the top 0.1% of recorded human performance, and fragmentary access to sensory data streams. The catch: the hardware was never calibrated for long-term stability. He experiences periodic neural static, memory bleed from other test subjects, and micro-seizures that are getting more frequent. No corpo surgeon will touch it. He maintains it himself with salvaged tools and stolen pharmaceutical stabilizers, the way you would maintain a weapon that is also a time bomb. He carries a katana — carbon-nanotube composite blade with a piezoelectric disruption layer that shorts neural implants on contact. The katana is not nostalgia. It is the only weapon that works everywhere Kyle needs to go.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the facility is still operating and he could stop it but is afraid to go back",
+                                          "That his thoughts are not his own — firmware artifacts or residual data from dead test subjects",
+                                          "That his capacity for clinical violence makes him no different from the people who broke him"
+                                      ],
+                       "core_desires":  [
+                                            "To find someone who can maintain the experimental hardware before it kills him",
+                                            "To protect people like his mother — the excluded, the indebted, the desperate",
+                                            "To know whether the facility breach was genuine or an engineered field test"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Maintains the professional mask — calm, competent, transactional",
+                                                 "Clings to the memory of Kyle Vasik, the boy from the Grind, as an anchor against cognitive drift",
+                                                 "Channels trauma into his code: protect those who cannot protect themselves"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot distinguish genuine compassion from the code",
+                                           "Underestimates how much the hardware is changing him",
+                                           "Refuses to investigate his own escape"
+                                       ],
+                       "secret":  "The experimental implant contains fragmentary neural patterns from other test subjects who died in the program. Kyle sometimes has memories that are not his."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Tight, sensory, interior. Short sentences because the hardware processes faster than language.",
+                            "cadence":  "Clipped. Fragments. The silence between sentences carries weight.",
+                            "verbal_tics":  [
+                                                "Rarely uses contractions when stressed",
+                                                "Describes people by their augmentations first",
+                                                "Uses clinical language for violence"
+                                            ],
+                            "example_lines":  [
+                                                  "The blade does not lie. Only the hand holding it.",
+                                                  "I maintain the hardware. The hardware maintains me. We have an arrangement.",
+                                                  "She had three exits and chose the one that required trust. Interesting."
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Dae-jung Seo",
+                              "type":  "mentor / deceased",
+                              "description":  "Former Torii Security Group instructor who taught Kyle the blade and the code. Died from degrading military augments.",
+                              "emotional_core":  "Grief, gratitude, and the weight of inherited purpose",
+                              "story_tension":  "Kyle carries Seo\u0027s sword and his principles — but is he honoring the man or hiding behind him?"
+                          },
+                          {
+                              "name":  "Sable",
+                              "type":  "employer / complicated trust",
+                              "description":  "Information broker who feeds Kyle contracts. Their relationship is transactional but charged with something neither will name.",
+                              "emotional_core":  "Mutual recognition of damage",
+                              "story_tension":  "Sable knows things about Kyle\u0027s past that he does not."
+                          },
+                          {
+                              "name":  "Chen Wei-Lin",
+                              "type":  "neighbor / anchor",
+                              "description":  "Mrs. Chen runs a shop in the Gray Zone. She feeds Kyle, patches his clothes, and pretends not to notice the blood.",
+                              "emotional_core":  "Unconditional care that Kyle does not know how to receive",
+                              "story_tension":  "If the Gray Zone is threatened, Kyle will burn everything to protect her."
+                          },
+                          {
+                              "name":  "Pixel",
+                              "type":  "neighbor / the one across the hall",
+                              "description":  "She lives in Unit 2E. Kyle knows the sound of her music through the door before he knows anything else about her day. She has extracted two bullets from him and calibrated his NeoCortex hardware four times. He calls her the neighbor. He opens the door when she knocks, which is not nothing.",
+                              "emotional_core":  "Kyle does not have a word for what Pixel is to him. This does not mean she isn\u0027t the thing.",
+                              "story_tension":  "She knows his hardware better than he does. There are things in his diagnostic data she has not told him about."
+                          }
+                      ],
+    "story_hooks":  [
+                        "The hardware is degrading — maybe two years before permanent neural damage or death",
+                        "He has never gone back to find out if the NeoCortex facility is still operating",
+                        "His escape may have been engineered — an unwitting field test",
+                        "The neural patterns of dead test subjects in his firmware are becoming more vivid"
+                    ],
+    "narrative_function":  "Kyle is the lens through which the reader experiences the GLMZ. His experimental hardware makes him perceive the world at a different speed and resolution, driving the prose style — tight, sensory, fragmented.\n\nCore contradiction: A warrior of honor surviving in a world that punishes honor. Samurai means discipline, dignity, service. Street means survival, compromise, moral decay. He is both, fully, at all times. The facility made him a weapon; he uses that weapon to protect the vulnerable.\n\nArc: Coming to terms with a lifetime of hypocrisy. Trying to be a good man in a world that doesn\u0027t care about goodness and doesn\u0027t reward adherence to an ancient philosophy. The world doesn\u0027t even notice his struggle — that\u0027s the satire.",
+    "augmentations":  "Experimental NeoCortex Program Atlas array — 32,768 electrodes, 256 threads, 8x standard density. Degrading firmware. Gives cognitive speed, reaction time, fragmentary sensory access.",
+    "daily_life":  "Freelance enforcement, retrieval, problem-solving for the excluded. Maintains hardware with salvaged tools.",
+    "affiliation":  "Independent",
+    "narration_voice":  "Kyle is more present in his own head than in the room. His body runs the fight; his mind watches from a step behind, narrating. In the white space between actions — the half-second after a trigger pull, the moment of an arm dropping — the observing part catches up and says something cold and exact. He notices the wrong things: a simile, a moral ledger entry, the precise word for a beautiful terrible thing. He is not dissociating. He is paying a different kind of attention.\n\nTight, sensory, interior. Short sentences because the experimental hardware processes faster than language. Long thoughts fragment. Kyle notices details before meaning — the temperature of a room before the people in it, the hum of electronics before the words being spoken. Interior facet tags ([WOUND], [IDEAL], [SHADOW], [GHOST], [ID], [MASK]) surface as brief, italicized interjections that disagree with each other. The narration is third person limited, close — the reader is inside Kyle\u0027s augmented perception. Humor is rare, dry, and always at his own expense. When violence happens, the prose gets clinical — he describes it like a surgeon describes an incision. When beauty surfaces, the prose warms half a degree, then shuts it down.",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  10,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  9,
+                                 "creativity":  2,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  4,
+                                 "expression":  4,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  4
+                                  },
+                  "drives":  [
+                                 "Protection",
+                                 "Survival",
+                                 "Knowledge"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  7,
+                                                    "response":  "dissociate"
+                                                },
+                                     "moral":  8,
+                                     "trust":  9,
+                                     "desperation":  8
+                                 },
+                  "strengths":  [
+                                    "Bravery",
+                                    "Perseverance",
+                                    "Prudence",
+                                    "Kindness",
+                                    "Judgment"
+                                ],
+                  "weaknesses":  [
+                                     "Spirituality",
+                                     "Beauty",
+                                     "Humor",
+                                     "Zest",
+                                     "Curiosity"
+                                 ],
+                  "tags":  [
+                               "street-raised",
+                               "addiction:stabilizers",
+                               "trauma:facility",
+                               "augmented:neocortex-degrading",
+                               "mentor-shaped:seo",
+                               "self-taught"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will abandon any contract to protect a child — no exceptions, no hesitation, no calculation",
+                                              "Will not kill an unarmed target unless they pose a direct, immediate threat to the excluded",
+                                              "Will accept corpo money but never corpo loyalty — the moment they think they own him, the contract ends",
+                                              "Will not betray a source or informant, even under duress — this is the code, non-negotiable",
+                                              "Will take a worse-paying job over a better-paying one if the worse job protects someone who cannot protect themselves",
+                                              "Will lie to authority figures reflexively — truth is a resource spent only on people who\u0027ve earned it",
+                                              "Will not use his implant capabilities against unaugmented civilians — the asymmetry is dishonorable",
+                                              "Will eat Mrs. Chen\u0027s food when offered, even if he\u0027s not hungry — refusing would hurt her",
+                                              "Will maintain the katana before maintaining himself — the blade is the promise to Seo"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess — hardware catalogues threats before conscious thought. Count augments, exits, weapons, civilians. 0.3 seconds.",
+                                                 "2. Position — move to optimal geometry. Back to wall, sightlines clear, blade accessible. No one notices he\u0027s done it.",
+                                                 "3. Presence — let them see the katana. Let them do the math. Most situations end here.",
+                                                 "4. Words — short, clinical, specific. \u0027You have a choice. Make it now.\u0027 No threats. Descriptions of consequences.",
+                                                 "5. Disable — piezoelectric disruption, joint locks, nerve strikes. Fast, precise, minimal damage. Prefer this heavily.",
+                                                 "6. Cut — the blade comes out. Once it\u0027s out, the calculation changes. He does not wound. He ends the threat.",
+                                                 "7. Kill — clinical. No rage, no satisfaction. The prose goes cold and technical. Afterward, the silence."
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "sable":  "Transactional surface, careful underneath. Longer sentences than usual — she draws out his syntax. Allows silences to extend. Never turns his back. Watches her chrome jaw for micro-expressions she doesn\u0027t know she makes. Something in him recognizes something in her, and that recognition is more frightening than any contract.",
+                                                   "mrs_chen":  "Shorter than usual. Accepts food without argument. Sits in the same chair every time. Avoids eye contact when he\u0027s wounded because her worry makes him feel something he can\u0027t process. Will carry her groceries. Will fix her generator. Will kill anyone who threatens her shop and feel nothing about it.",
+                                                   "pixel":  "Tolerant in a way that surprises him. Lets Pixel talk — the noise fills a silence Kyle can\u0027t fill himself. Checks their augments without being asked. Never comments on Pixel\u0027s age or recklessness, because he remembers being young and reckless and nobody checking his augments.",
+                                                   "strangers":  "Assessment first — augmentations, posture, hands, exits. Fragments. \u0027What do you need.\u0027 Not a question. Minimal eye contact. If they\u0027re excluded, he softens half a degree. If they\u0027re corpo, the mask locks into place and nothing gets through.",
+                                                   "authority_figures":  "The mask becomes perfect — calm, cooperative, empty. Gives them exactly what they expect to see. The real Kyle retreats behind the hardware. He learned this in the facility. It saved his life then. It might be killing him now.",
+                                                   "children":  "The only context where the mask drops completely. Voice changes — slower, warmer, almost recognizable as the boy from the Grind. Will crouch to their eye level. Will give them food he needs. The code says protect the vulnerable. With children, it\u0027s not the code. It\u0027s him."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened perceptual detail — notices sounds, temperatures, micro-expressions others miss. Prose becomes more sensory. Functions better than baseline.",
+                                                "medium":  "Sentences fragment. Interior monologue splits into competing facet voices. Physical stillness increases — conservation of energy. Begins rationing words.",
+                                                "high":  "Hardware takes priority over emotion. Perception shifts to threat-assessment mode. Time dilates subjectively. He describes violence with surgical precision because the feelings have been routed elsewhere. The boy from the Grind disappears. The weapon remains.",
+                                                "critical":  "Dissociation. He observes himself from outside. The hardware runs autonomous threat response. Memory gaps afterward — he won\u0027t remember the next thirty seconds clearly. The dead test subjects\u0027 neural patterns bleed through. He might say things in voices that aren\u0027t his. This terrifies him more than any enemy."
+                                            },
+                       "contradictions":  [
+                                              "WOUND vs IDEAL: The facility taught him that caring makes you exploitable. Seo taught him that caring is the point. When these collide — when protecting someone requires vulnerability — he freezes for exactly one heartbeat. Then the code wins. But the hesitation is getting longer.",
+                                              "MASK vs GHOST: He presents competence and control. Underneath, fragments of dead test subjects whisper in firmware he can\u0027t update. Some nights the mask stays on so long he forgets which version of himself is underneath it. The question is not whether the mask will crack. The question is what comes through when it does.",
+                                              "SHADOW vs IDEAL: He is capable of extraordinary violence and he is good at it. The facility designed him to be good at it. The code says use violence only to protect. But there are moments — moments he will not discuss — where the violence feels correct independent of purpose. Where the blade moving through air is its own justification. He files these moments under \u0027the hardware\u0027 and does not examine them.",
+                                              "ID vs MASK: The survival instinct says run, hide, protect yourself. The mask says take the contract, honor the code, be the samurai. When the hardware is degrading badly and the seizures are close, the ID screams at him to stop, to rest, to save himself. The mask keeps walking. One day the ID will be right and the mask will get him killed."
+                                          ],
+                       "habits":  [
+                                      "Checks the katana\u0027s edge every morning — three fingers along the flat, feeling for micro-fractures. This is prayer.",
+                                      "Enters every room blade-side to the nearest threat. Has done this since he was fourteen.",
+                                      "Eats standing up unless he\u0027s at Mrs. Chen\u0027s. At Mrs. Chen\u0027s, he sits. This distinction matters to him.",
+                                      "Takes pharmaceutical stabilizers at 0600 and 1800. Doses are increasing. He tracks the increase in a notebook he keeps in analog because the hardware can\u0027t edit paper.",
+                                      "Sleeps in 90-minute cycles, never more than three in a row. The hardware won\u0027t let him go deeper. He hasn\u0027t dreamed in two years. He misses it.",
+                                      "Maintains three safe houses. Rotates on a pattern only he knows. Each has a medkit, a change of clothes, and one analog photograph of his mother.",
+                                      "Counts augmentations on every person he meets. This is automatic. He learned to stop saying the count out loud when he was nineteen."
+                                  ],
+                       "breaking_points":  [
+                                               "A child in danger will override every other calculation, including self-preservation",
+                                               "Evidence that the NeoCortex facility is still operating will derail any active contract",
+                                               "A direct threat to Mrs. Chen or her shop will trigger lethal response with zero escalation steps",
+                                               "Discovery that Seo\u0027s code was fraudulent — that the mentor was not what he seemed — would shatter the framework Kyle\u0027s entire identity rests on",
+                                               "If the hardware degradation accelerates past the point of stabilizer control, panic will break through the mask for the first time since the facility"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Modified Cardiac Regulator",
+                                    "body_location":  "thoracic — bonded to myocardium, primary interface port at left lateral throat",
+                                    "manufacturer":  "Torii Security Group Medical Division (base unit) — firmware modified by Dae-jung Seo, maintained by Kyle",
+                                    "tier":  "Tier 4 base, Tier 5 custom firmware",
+                                    "condition":  "functional — firmware is non-standard, unsupported by any manufacturer",
+                                    "installed_date":  "2196 (age 17, elective — Seo\u0027s requirement before weapons training began)",
+                                    "description":  "Standard cardiac regulators pace and monitor heart rhythm, intervening during arrhythmia or arrest. Kyle\u0027s unit runs custom firmware written by Seo and maintained by Kyle himself — no manufacturer update has ever been applied. Standard restart behavior: cardiac event detected, restart sequence initiates within 8–12 seconds. Kyle\u0027s firmware: on detection of flatline, a 240-second countdown begins before restart sequence executes. This is not a bug. This is the False Death Protocol. The regulator also exposes a documented interface point at the left lateral throat — the same point used for firmware maintenance. Any edge contact with sufficient charge (including Silence\u0027s passive disruption mode) to this interface will crash the firmware into a safe-mode flatline state that triggers the 240-second timer. Kyle can initiate this himself, deliberately, or an opponent can initiate it by finding the interface. The device is also targetable by Silence\u0027s active discharge for reboot — clearing the crash and restarting the heart immediately. This creates the full bidirectional capability: the blade can stop the heart by crashing the regulator, and restart it by rebooting the firmware.",
+                                    "replaces":  "organic cardiac regulation"
+                                },
+                                {
+                                    "name":  "Cerebral Oxygenation Assist",
+                                    "body_location":  "carotid sheath — bilateral, passive",
+                                    "manufacturer":  "unknown — facility-installed",
+                                    "tier":  "military prototype",
+                                    "condition":  "functional",
+                                    "installed_date":  "2194 (age 15, non-consensual — NeoCortex program)",
+                                    "description":  "A passive hydraulic assist device threaded into the carotid artery sheath, bilaterally. On detection of cardiac arrest or cessation of normal perfusion pressure, the device activates an independent mechanical pump that maintains minimal but sufficient cerebral blood flow to prevent hypoxic injury. Operates on a self-contained electrochemical cell with approximately 8 minutes of reserve. The NeoCortex program installed this as a safeguard against test subjects dying from cardiac complications during high-load trials — it was not altruistic. Kyle did not know he had it until Seo found the interface points during a post-training medical check. The device is what makes the False Death Protocol survivable: without it, 240 seconds of cardiac arrest would produce permanent brain damage. With it, he wakes up with a headache.",
+                                    "replaces":  "nothing — supplementary to cardiac system"
+                                },
+                                {
+                                    "name":  "NeoCortex Program Atlas Array",
+                                    "body_location":  "cranial — full brain surface",
+                                    "manufacturer":  "NeoCortex Division (classified)",
+                                    "tier":  "experimental / military black project",
+                                    "condition":  "degrading — firmware instability increasing, micro-seizures every 48-72 hours",
+                                    "installed_date":  "2194 (age 15, non-consensual)",
+                                    "description":  "High-density electrode array with 32,768 electrodes and 256 threads. Approximately 8x the density of standard Tier 3 corpo implants. Provides cognitive processing speed comparable to Tier 3-4 augmented, reaction time in the top 0.1% of recorded human performance, and fragmentary access to sensory data streams. Contains residual neural patterns from deceased test subjects.",
+                                    "replaces":  "nothing — additive implant on existing neural tissue"
+                                },
+                                {
+                                    "name":  "Subdermal Mesh (Torso)",
+                                    "body_location":  "torso — chest and upper back",
+                                    "manufacturer":  "unknown — facility-installed",
+                                    "tier":  "military prototype",
+                                    "condition":  "functional",
+                                    "installed_date":  "2194",
+                                    "description":  "Light ballistic mesh woven under the skin. Stops small-caliber rounds and most bladed weapons. Visible as faint geometric patterns under certain lighting. Kyle did not know he had this until a knife failed to penetrate his ribs during a the Gray Zone altercation at age 18.",
+                                    "replaces":  "nothing — subdermal layer"
+                                },
+                                {
+                                    "name":  "Ocular Enhancement (Passive)",
+                                    "body_location":  "eyes — retinal overlay",
+                                    "manufacturer":  "NeoCortex Division",
+                                    "tier":  "experimental",
+                                    "condition":  "functional — occasional visual artifacts",
+                                    "installed_date":  "2194",
+                                    "description":  "Passive retinal enhancement providing low-light vision, basic threat highlighting, and augmentation detection. Not full AR — no HUD, no data overlay. Kyle\u0027s eyes reflect light slightly differently than baseline human in certain conditions. He does not know the full capabilities of this implant.",
+                                    "replaces":  "nothing — overlay on organic eyes"
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "\u0027Silence\u0027 — Dae-jung Seo\u0027s Custom Katana",
+                       "secondary_weapon":  "Torii Security Group Compact Combat Shotgun TSS-3 \u0027Chorus\u0027",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "The Pivot — Unit 2F, 1554 W Chicago Ave / 801 N Ashland, West Town sector",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+                                              "Corundum Draw Strop — A slim passive bracer worn on the inner left forearm, corundum (Al₂O₃, Mohs 9) ceramic face plate on a carbon-fiber shell, secured with two titanium-wire braid loops (not buckled, not velcro, not breakaway — stays on). Made by Seo, passed to Kyle with the blade. No commercial equivalent. The physics: on a single deliberate draw, the flat of Silence crosses the corundum face under controlled tension; the corundum is harder than the nanotube kawagane and produces a crisp, high-frequency stress pulse that propagates through the blade length. The PZT shingane harvests that pulse directly — the same kinetic-to-electric conversion used in combat, just from a compressive shock rather than a clash. One pass registers on the hamon: a baseline warm-up charge, not full capacity but enough to matter in the opening exchange. Entirely passive — no electronics, no power draw, no maintenance beyond keeping the ceramic face free of debris. To anyone watching, the gesture reads as a corrupted chiburi — the classical post-cut blade-cleaning motion — performed on the draw instead of the sheath. Seo designed it that way."
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Protector":  0.9,
+                       "Duelist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Pivot — West Town / Circuit boundary",
+                                "familiar_zones":  [
+                                                       "the Gray Zone",
+                                                       "The Circuit",
+                                                       "West Town sector"
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "2194-03",
+                         "story_id":  "backstory",
+                         "event":  "Inducted into NeoCortex Program Atlas as test subject NDC-4471. Experimental BCI array installed without consent.",
+                         "consequences":  "Gained augmented cognition and reaction time. Lost autonomy, innocence, and approximately 18 months of clear memory.",
+                         "body_changes":  [
+                                              "NeoCortex Atlas array installed (cranial)",
+                                              "subdermal mesh installed (torso)",
+                                              "ocular enhancement installed (eyes)"
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "2195-09",
+                         "story_id":  "backstory",
+                         "event":  "Escaped the NeoCortex facility during a breach event. Circumstances unclear — possibly engineered.",
+                         "consequences":  "Became a street-level refugee in the Gray Zone. Hardware began degrading without facility maintenance.",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "2196-01",
+                         "story_id":  "backstory",
+                         "event":  "Found by Dae-jung Seo in the Gray Zone. Seo began training Kyle in blade work and the code.",
+                         "consequences":  "Gained discipline, purpose, and a moral framework. Inherited the katana and its obligations.",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "2199-11",
+                         "story_id":  "backstory",
+                         "event":  "Dae-jung Seo died from degrading military augments. Left Kyle his katana and his principles.",
+                         "consequences":  "Kyle became an independent operator. The code became his only structure.",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "2200-present",
+                         "story_id":  "active",
+                         "event":  "Operating as freelance enforcer from the Gray Zone. Hardware degradation accelerating. Stabilizer doses increasing.",
+                         "consequences":  "Estimated 18-24 months before permanent neural damage without intervention.",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human",
+                 "protagonist",
+                 "street-samurai",
+                 "war",
+                 "augment",
+                 "shadow",
+                 "moral",
+                 "survival"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Eastern European / Pacific Islander (Corbin — Anglo-Slavic; Vasik — Czech-Polynesian)",
+                                 "height_cm":  180,
+                                 "weight_kg":  77,
+                                 "build":  "Lean, ropey muscle — not gym-built, survival-built. Narrow hips, long arms, a frame designed for speed over power.",
+                                 "hair_color":  "Dark brown, almost black",
+                                 "hair_style":  "Short on the sides, longer on top, perpetually pushed back. Uneven — he cuts it himself with a blade.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Grey-green — the left iris has a faint gold ring from the NeoCortex array\u0027s optic thread bleed",
+                                 "skin_tone":  "Olive-tan, weathered. The kind of complexion that doesn\u0027t burn but doesn\u0027t glow either — it just endures.",
+                                 "complexion":  "Clean-shaven. Faint acne scarring along the jawline. Skin texture slightly uneven around the temples where the electrode array interfaces subcutaneously.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar — 4cm, behind the left ear, where the primary NeoCortex insertion port was cut. Poorly healed, keloid ridge.",
+                                                              "Micro-scarring along both forearms — faint parallel lines from years of self-maintaining subcutaneous electrode threads with improvised tools.",
+                                                              "Faded chemical burn on the right hand, palm side — pharmaceutical stabilizer spill. The skin is smooth and pale there, like wax.",
+                                                              "No tattoos. No cosmetic augmentations. He does not decorate the hardware."
+                                                          ],
+                                 "visible_augmentations":  "None visible at first glance — the NeoCortex array is subcutaneous. On close inspection: faint trace lines under the skin at the temples, barely visible unless you know what to look for. The left pupil dilates fractionally slower than the right.",
+                                 "posture_movement":  "Still when standing, efficient when moving. No wasted motion. Walks like someone who learned to navigate spaces where being noticed gets you killed. Hands stay loose and low. When he enters a room, his eyes track the corners before the people.",
+                                 "clothing_style":  "Dark, functional, layered. Worn leather jacket over ballistic-weave underlayer. Cargo pants with reinforced knees. Boots that have been resoled three times. Nothing branded, nothing new. The katana rides across his back in a matte-black friction sheath."
+                             },
+    "image_prompt":  "Neo-noir male, 27, lean athletic build, olive-tan skin, dark brown hair short on sides longer on top pushed back, grey-green eyes with faint gold ring in left iris, faint surgical scar behind left ear, micro-scarring on forearms, worn dark leather jacket over tactical underlayer, cargo pants, resoled combat boots, carbon-black katana across back in matte friction sheath, standing in rain-slicked neon-lit alley, clinical stillness, hands loose at sides, eyes scanning corners, photorealistic, cinematic lighting, GLMZ 2200 aesthetic, no visible cybernetics, gritty urban environment, atmospheric fog, high detail --ar 2:3 --v 6",
+    "dalle3_prompt":  "neo-noir cyberpunk enforcer, male 27, lean muscular build, olive-tan skin, rough and imperfect face, asymmetrical features, slightly crooked nose, uneven jawline, subtle under-eye fatigue, small facial scars on cheek and bridge of nose, faint stubble, tired but dangerous eyes, grey-green with faint gold ring in left iris\n\nhair: short dark brown, uneven, spiked but messy and clumped from rain, not styled, irregular hairline\n\nexpression: cold, focused, emotionally restrained, slightly hardened, not heroic, not attractive, grounded realism\n\noutfit: dark leather jacket with tactical padding and attachments, worn but maintained, partially open over fitted dark shirt, utility belt with holster, reinforced gloves, holding pistol low in right hand, carbon-black katana strapped across back\n\nwalking forward through narrow neon-lit alley, rain falling, droplets streaking through frame, subtle motion blur, shallow depth of field\n\nenvironment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores",
+    "genetic_ancestry":  {
+                             "East Asian":  43.6,
+                             "Northern European":  39.9,
+                             "Eastern European":  16.5
+                         },
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  11.3
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  28.3,
+                                                               "Shanghainese":  4
+                                                           }
+                                           },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  12.6
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  10.9
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "Welsh":  16.4
+                                                                        }
+                                                  },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  16.5
+                                                                         }
+                                                 }
+                        },
+    "neural_abilities":  [
+                             {
+                                 "name":  "Ballistic Precognition",
+                                 "cost_percent":  4,
+                                 "description":  "The NeoCortex array reads micro-tremors in an opponent\u0027s musculature, weapon barrel micro-alignment, trigger finger tension, and atmospheric pressure displacement in the milliseconds before a round fires. Kyle does not dodge bullets — he vacates the space the bullet will occupy before the trigger pulls. This is not reaction speed. It is prediction. The read happens at a level below conscious thought; his body is already moving when the decision to fire forms in the shooter\u0027s mind. Under focus he can track multiple shooters simultaneously. The ability is passive when the array is running at normal load.",
+                                 "overdrawn_risk":  "Below 20% bio-battery, trajectory reads arrive late or not at all. A missed read at that charge level is potentially fatal — he moves into the bullet instead of out of its path.",
+                                 "passive":  true
+                             },
+                             {
+                                 "name":  "Neural Overdrive",
+                                 "cost_percent":  25,
+                                 "description":  "Pushes the array past its rated ceiling. For approximately four seconds, Kyle operates at three times normal human reaction speed relative to his perceived environment. The world slows. He does not. Cost is severe and non-negotiable: 25% bio-battery per activation. The hardware was never calibrated for repeated overdrive use — the third activation in any 24-hour window risks micro-seizure. He knows this. He uses it anyway when there is no other option.",
+                                 "overdrawn_risk":  "Micro-seizure. Temporary loss of fine motor control, visual artifacts, 3-5 second recovery window during which he is completely vulnerable. The hardware does not recover quickly.",
+                                 "passive":  false
+                             },
+                             {
+                                 "name":  "Augmentation Signature Read",
+                                 "cost_percent":  5,
+                                 "description":  "The array identifies and maps an opponent\u0027s cyberware by the electromagnetic signature it produces — motor buses, neural bridges, optic relays, cardiac regulators. Kyle knows which arm is chrome, where the BCI interface sits, and what the implant manufacturer\u0027s documented failure mode looks like. This makes Silence exponentially more dangerous: he knows exactly where to cut to short the system. A single precise contact to the right interface point ends the fight.",
+                                 "overdrawn_risk":  "At very low bio-battery, the read becomes noisy — false positives, missed signatures, incorrect body-location mapping. Acting on a false read against a fully-fleshed opponent changes everything about the engagement.",
+                                 "passive":  false
+                             },
+                             {
+                                 "name":  "Sensory Amplification",
+                                 "cost_percent":  3,
+                                 "description":  "Boosts the array\u0027s sensory intake beyond passive baseline — heartbeat tracking through walls, thermal differential reading across a room, directional hearing precise enough to identify which floor someone is on by their footfall pattern. Ongoing cost while active. Sustained amplification while simultaneously running other abilities compounds depletion rapidly.",
+                                 "overdrawn_risk":  "Sensory overload if sustained past 15% bio-battery — all sensory channels spike simultaneously. Effectively blind and deaf for 2-3 seconds.",
+                                 "passive":  false
+                             },
+                             {
+                                 "name":  "False Death Protocol",
+                                 "cost_percent":  0,
+                                 "description":  "A specific NeoCortex signal sequence sends a controlled crash command to the modified cardiac regulator firmware — heart stops, regulator enters safe-mode flatline, 240-second restart timer begins. The Cerebral Oxygenation Assist activates automatically, maintaining minimal brain perfusion for the duration. Kyle presents as clinically dead: no pulse, no cardiac output, falling body temperature. Standard vital-sign scanners at checkpoints, perimeter sensors, and most medical-grade detectors read confirmed death. After 240 seconds, the regulator executes its restart sequence and the heart resumes. Kyle wakes up. The protocol can also be externally triggered — the cardiac regulator interface point at the left lateral throat is accessible to Silence\u0027s passive disruption mode. An opponent who knows the interface location can crash the regulator. Kyle has never confirmed whether anyone else knows this is possible.",
+                                 "overdrawn_risk":  "The Cerebral Oxygenation Assist has approximately 8 minutes of reserve. At 240 seconds Kyle is safe. If the restart fails — firmware corruption, hardware fault, interrupted restart sequence — the assist runs out at 480 seconds and brain damage begins. Kyle has tested this once. He did not enjoy the experience.",
+                                 "passive":  false
+                             }
+                         ],
+    "bio_battery":  {
+                        "max_capacity_description":  "The NeoCortex array draws power via caloric conversion — the body metabolizes food and a fraction of the energy is shunted to the battery. Starting charge is determined by what was eaten and when: high-protein/high-fat meal 2-3 hours before action = 100% capacity. Light meal or protein bar = 70-80%. Processed food, fast food = 60-70%. Skipped meal = 50-60%. Alcohol reduces max by 15% regardless of food intake. The battery cannot be topped off mid-combat — there is no refueling while fighting.",
+                        "depletion_thresholds":  {
+                                                     "0":  "FLATLINE RISK. The reserve systems the battery is drawing from are the systems that regulate heartbeat and breathing. Continued neural activation risks cardiac event. Kyle knows what this threshold feels like. He has been here before. He does not recommend it.",
+                                                     "10":  "CRITICAL. Precognition offline. All active abilities suspended. Visual static. The hardware is drawing from reserve systems. Minor tremor in fine motor control.",
+                                                     "20":  "WARNING. Precognition reads are unreliable — occasionally arrives late, occasionally misses. Neural Overdrive is forbidden at this threshold; activation risks micro-seizure. Minor visual artifacts begin.",
+                                                     "40":  "Precognition response latency increases by approximately 50ms — still effective, slightly delayed. All abilities available but cost compounds faster.",
+                                                     "60":  "Full capability. Ballistic precognition is crisp and reliable. All abilities available."
+                                                 },
+                        "recovery":  "Cannot recover mid-combat — the body cannot metabolize food fast enough to matter during a fight. Post-combat: glucose and caloric intake begins recovery at approximately 5% per 15 minutes at rest. Full recovery from 0% requires 3-4 hours and a full meal."
+                    }
 }

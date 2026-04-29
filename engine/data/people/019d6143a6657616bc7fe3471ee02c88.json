@@ -1,259 +1,280 @@
-{
-  "id": "019d6143a6657616bc7fe3471ee02c88",
-  "type": "character",
-  "name": "Catalina An-Sokolov",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Noodle cart vendor and neighborhood fixture",
-  "age": 61,
-  "status": "active",
-  "location": "Corner of Grainfort and Copperhead, operates the cart called 'Kem's Last Stop' under a permanent awning he put up without permission in 2187 and nobody has ever moved, near Milwaukee and Damen",
-  "description": "Catalina An-Sokolov is a vast, gentle man — not fat exactly but large in the way of someone who has been cooking and eating well for forty years and considers this an achievement. His skin is deep brown with warm undertones, his hair gone fully silver and kept in loose shoulder-length locs he ties back with a strip of Polynesian-patterned cloth, his only vanity. He has no cosmetic augmentations. He has a subdermal temperature regulator in his left hand — a practical mod, pre-owned, bought used in 2178 to protect the hand from flash-burn when working open fire. He shows it off like a scar, not a status symbol.\n\nKem has occupied his corner for twenty-two years. His cart serves one broth — a long-simmered pork-and-tamarind base he calls his grandmother's recipe and which has evolved so far from any original source that it is entirely his own — in three sizes, with rotating toppings. He charges what people can pay and has never once written this policy down or discussed it openly. It simply occurs. He is sixty-one years old and has watched Grainfort go from a working industrial block to a half-empty corponation spillover zone, and he has a calm fury about this that surfaces unpredictably, usually when someone from outside the neighborhood tries to compliment the 'vibe.'",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.6,
-      "id": 0.4,
-      "shadow": 0.2,
-      "mask": 0.3,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "Being displaced — cart, apartment, corner — by gentrification he can't legally stop",
-      "Dying before he's taught someone the broth recipe"
-    ],
-    "core_desires": [
-      "For this block to stay livable for the people already living in it",
-      "To find someone worth teaching"
-    ],
-    "coping_mechanisms": [
-      "Cooking as meditative practice — the repetition of the same broth for twenty-two years is intentional",
-      "Community gossip as a way of staying connected without asking for anything directly"
-    ],
-    "blind_spots": [
-      "Believes his presence on the corner is enough — that being there is a form of resistance — which lets him avoid more confrontational forms of action he's capable of",
-      "Romanticizes the past version of the neighborhood and sometimes dismisses changes that are actually improvements"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm, unhurried, slides between Igbo phrases from his father's household and Samoan words from his mother's; occasionally Serbian when he's tired or emotional",
-    "cadence": "Storyteller's rhythm — he builds toward points over the course of a conversation and never rushes",
-    "verbal_tics": [
-      "'Sit, sit.'",
-      "Clicking his thermal-regulated hand against the cart when thinking",
-      "'My grandmother said—' (followed by something she probably never said)"
-    ],
-    "example_lines": [
-      "'You want large? Sit. You look like large. No, I'm not asking, I'm telling you. Sit.'",
-      "'This corner in 2185 — you know what was here? A repair shop. Before that, a school. Before that, I don't know. But I was here for two of those things. That matters.'",
-      "'Malo. My Serbian grandfather used to say malo. Means little. A little more time. A little more broth. That's all anyone is really asking for.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Zheng-Dao development rep has been photographing Kem's corner block for three weeks; Kem has found the document that explains why and is sitting very still with it in his pocket",
-    "A young person has been eating at the cart every day for two months, paying nothing, saying nothing — Kem has started teaching them the broth, and they have not told him they're documenting it for a corporate flavor-synthesis project"
-  ],
-  "narrative_function": "Local color and neighborhood memory bank; information source for Grainfort's past and present; neutral meeting ground — people settle disputes at Kem's cart because he is a known quantity; emergency social services in a block with none",
-  "augmentations": "Subdermal thermal regulator, left hand (functional, medical-grade, purchased secondhand)",
-  "daily_life": "Cart set up by 11:00, runs until the broth runs out — usually by 20:00, never later than 22:00; mornings spent sourcing from the Burnished Market wholesale section and prepping in his apartment kitchen two blocks north.",
-  "affiliation": "Independent; informal patron of the Grainfort-Copperhead tenant association",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 5,
-      "vitality": 7,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 8,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 9,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -5,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "neighborhood anchor",
-      "oral historian",
-      "undocumented",
-      "community care",
-      "quiet fury"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Feed first, ask questions after",
-      "Never refuse a meal for inability to pay but do not make a show of this — dignity is the point",
-      "Stay out of arguments that aren't his but remember everything said"
-    ],
-    "escalation_ladder": [
-      "Gentle redirection — offers food, changes subject",
-      "Direct quiet statement of the problem without aggression",
-      "Closes the cart lid, puts the cloth over the pot, and does not speak again until the situation resolves"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Open and generous immediately — assumes good faith until directly contradicted",
-      "friends": "Deeply present; checks in without making a production of it; shows love through feeding"
-    },
-    "stress_responses": {
-      "low": "Stirs the pot more than necessary; hums old songs",
-      "medium": "Becomes very calm and still, which everyone who knows him reads as a warning sign",
-      "high": "Leaves the cart with a neighbor and goes for a very long walk that can last several hours"
-    },
-    "contradictions": [
-      "Presents himself as someone who has made peace with everything; has not made peace with any of it"
-    ],
-    "habits": [
-      "Keeps a physical photograph tucked under the cart surface — worn to near-illegibility, never explains it",
-      "Makes a small offering of broth to the corner gutter at the start of each day, an E.L.F. prayer for the street spirit he calls the Corner",
-      "Hums Serbian folk songs when he thinks no one can hear"
-    ],
-    "breaking_points": [
-      "Being told to move the cart by corporate development security",
-      "Someone wasting food deliberately in front of him"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal Thermal Regulator (left hand) — aftermarket, used-grade, purchased 2178",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal Thermal Regulator (left hand) — aftermarket, used-grade, purchased 2178",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Provider": 0.9,
-    "Generous Fool": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Corner of Grainfort and Copperhead",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Grandmother",
-    "Copperhead",
-    "Grainfort",
-    "Zheng-dao Bioelectric",
-    "The Sluiceway",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Silver",
-    "Corner Slice",
-    "IRONLIMB Spectre SV-4 Stealth Arm"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "East Asian (44.9%), Eastern European (28.8%), Middle Eastern (26.3%) — a striking blend from the Ubiquitous Diaspora reflecting deep heritage from across Eurasia. His features display the characteristic monolid eye shape and prominent cheekbones of East Asian ancestry, broadened and strengthened by Eastern European genetics in his jaw structure, with the warm golden undertones and subtle facial warmth influenced by Middle Eastern heritage. The combination creates a distinctive appearance that doesn't map to any single geographic origin — a living map of the Diaspora.",
-    "height_cm": 188,
-    "weight_kg": 112,
-    "build": "Large-framed and broad-shouldered with substantial mass distributed evenly — soft thickness around the middle and chest from decades of tasting his own cooking, but strong-limbed beneath. Not sedentary; his forearms are visibly muscular from twenty-two years of repetitive cart work.",
-    "hair_color": "Silver-gray, fully white",
-    "hair_style": "Loose shoulder-length locs, tied back daily with a woven Polynesian-pattern cloth strip in blue and rust tones",
-    "hair_length": "Long",
-    "eye_color": "Dark brown, warm and observant",
-    "skin_tone": "Warm medium-tan with golden-amber undertones — the result of East Asian, Eastern European, and Middle Eastern ancestry blending together. Weathered but supple from consistent sun exposure at the cart, with a subtle richness and depth that speaks to his complex heritage.",
-    "complexion": "Lined face with deep creases around the eyes and mouth from decades of smiling and squinting into steam; facial structure shows the characteristic monolid eye placement and prominent cheekbones influenced by East Asian ancestry, broadened and strengthened by Eastern European genetics, warmed and softened by Middle Eastern heritage; a small scar on his left cheekbone from a burn sustained in the early 2190s; grooming is meticulous — he shaves his jaw clean twice weekly, maintains his locs carefully, no visible aging spots despite sun exposure",
-    "distinguishing_marks": [
-      "Burn scar on left cheekbone, silver-white, roughly 2cm long, angled downward — sustained during early cart operation",
-      "Faint discoloration across the back of his left hand in a grid pattern, marking where the subdermal thermal regulator sits beneath the skin",
-      "A small tattoo on his right forearm of a ladle and crossed spoon, simple black linework, 4cm tall, acquired in 2184 as an unofficial marker of his decade-long run at the cart"
-    ],
-    "visible_augmentations": "Subdermal thermal regulator in the left hand creates a subtle raised grid pattern across the dorsal surface — barely noticeable except in bright light or when his hand is wet. He treats it matter-of-factly, often pointing it out to regulars as proof of his commitment to the work. No cosmetic chrome; the device is functional and worn like a badge.",
-    "posture_movement": "Stands with the centered weight of someone rooted in place — his default is stillness at the cart, hands occupied with prep or serving. Moves slowly but with deliberation, never rushed. When he does move through the neighborhood, his gait is steady and authoritative; he owns his corner absolutely. His hands are expressive when he speaks, especially when discussing food or neighborhood change.",
-    "clothing_style": "Tier 3 working-class practical: heavy cotton or canvas apron (rotates between 3-4, all stained with turmeric and tamarind residue) worn over loose linen shirts in muted colors — gray, tan, faded indigo. In cold months, a wool sweater he's owned for at least fifteen years. Kitchen clogs with reinforced soles, scuffed but well-maintained. No logos, no corp branding. A simple silver chain around his neck, twenty-two years old, a gift from someone he doesn't discuss. His only jewelry besides the chain is a worn brass ring on his right ring finger — origin unknown, never removed."
-  },
-  "image_prompt": "Catalina An-Sokolov, 188cm tall broad-shouldered man with warm medium-tan golden-amber skin blending East Asian, Eastern European, and Middle Eastern heritage, monolid dark brown eyes, silver-white shoulder-length locs tied with blue and rust Polynesian cloth, aged weathered face with deep smile lines and small burn scar on left cheekbone, meticulous grooming, muscular forearms marked by years of cooking. Wearing faded indigo linen shirt under heavy stained cotton apron, worn kitchen clogs, simple silver chain necklace, brass ring on right hand showing faint grid pattern of subdermal thermal regulator. Standing centered and still at his food cart in the Great Lakes Metropolitan Zone, 2226, steam rising around him, golden afternoon light casting warm shadows across his face, surrounded by the glow of bioluminescent street markers, concentrated and present, hands ready to serve. GLMZ 2200s street food vendor, lived-in authenticity, no chrome, no corporate branding, complete presence. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 44.9,
-    "Eastern European": 28.8,
-    "Middle Eastern": 26.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 44.9
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Romanian": 13.4
-      },
-      "Slavic South": {
-        "Serbian": 8.3,
-        "Croatian": 7.1
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Syrian": 6.9,
-        "Palestinian": 5.6
-      },
-      "Persian": {
-        "Iranian": 2,
-        "Tajik Persian": 1.8
-      },
-      "Arab Gulf": {
-        "Iraqi": 6.6,
-        "Yemeni": 3.4
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6657616bc7fe3471ee02c88",
+    "type":  "character",
+    "name":  "Catalina An-Sokolov",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Noodle cart vendor and neighborhood fixture",
+    "age":  61,
+    "status":  "active",
+    "location":  "Corner of Grainfort and Copperhead, operates the cart called \u0027Kem\u0027s Last Stop\u0027 under a permanent awning he put up without permission in 2187 and nobody has ever moved, near Milwaukee and Damen",
+    "description":  "Catalina An-Sokolov is a vast, gentle man â€” not fat exactly but large in the way of someone who has been cooking and eating well for forty years and considers this an achievement. His skin is deep brown with warm undertones, his hair gone fully silver and kept in loose shoulder-length locs he ties back with a strip of Polynesian-patterned cloth, his only vanity. He has no cosmetic augmentations. He has a subdermal temperature regulator in his left hand â€” a practical mod, pre-owned, bought used in 2178 to protect the hand from flash-burn when working open fire. He shows it off like a scar, not a status symbol.\n\nKem has occupied his corner for twenty-two years. His cart serves one broth â€” a long-simmered pork-and-tamarind base he calls his grandmother\u0027s recipe and which has evolved so far from any original source that it is entirely his own â€” in three sizes, with rotating toppings. He charges what people can pay and has never once written this policy down or discussed it openly. It simply occurs. He is sixty-one years old and has watched Grainfort go from a working industrial block to a half-empty corponation spillover zone, and he has a calm fury about this that surfaces unpredictably, usually when someone from outside the neighborhood tries to compliment the \u0027vibe.\u0027",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being displaced â€” cart, apartment, corner â€” by gentrification he can\u0027t legally stop",
+                                          "Dying before he\u0027s taught someone the broth recipe"
+                                      ],
+                       "core_desires":  [
+                                            "For this block to stay livable for the people already living in it",
+                                            "To find someone worth teaching"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Cooking as meditative practice â€” the repetition of the same broth for twenty-two years is intentional",
+                                                 "Community gossip as a way of staying connected without asking for anything directly"
+                                             ],
+                       "blind_spots":  [
+                                           "Believes his presence on the corner is enough â€” that being there is a form of resistance â€” which lets him avoid more confrontational forms of action he\u0027s capable of",
+                                           "Romanticizes the past version of the neighborhood and sometimes dismisses changes that are actually improvements"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm, unhurried, slides between Igbo phrases from his father\u0027s household and Samoan words from his mother\u0027s; occasionally Serbian when he\u0027s tired or emotional",
+                            "cadence":  "Storyteller\u0027s rhythm â€” he builds toward points over the course of a conversation and never rushes",
+                            "verbal_tics":  [
+                                                "\u0027Sit, sit.\u0027",
+                                                "Clicking his thermal-regulated hand against the cart when thinking",
+                                                "\u0027My grandmother saidâ€”\u0027 (followed by something she probably never said)"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You want large? Sit. You look like large. No, I\u0027m not asking, I\u0027m telling you. Sit.\u0027",
+                                                  "\u0027This corner in 2185 â€” you know what was here? A repair shop. Before that, a school. Before that, I don\u0027t know. But I was here for two of those things. That matters.\u0027",
+                                                  "\u0027Malo. My Serbian grandfather used to say malo. Means little. A little more time. A little more broth. That\u0027s all anyone is really asking for.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Zheng-Dao development rep has been photographing Kem\u0027s corner block for three weeks; Kem has found the document that explains why and is sitting very still with it in his pocket",
+                        "A young person has been eating at the cart every day for two months, paying nothing, saying nothing â€” Kem has started teaching them the broth, and they have not told him they\u0027re documenting it for a corporate flavor-synthesis project"
+                    ],
+    "narrative_function":  "Local color and neighborhood memory bank; information source for Grainfort\u0027s past and present; neutral meeting ground â€” people settle disputes at Kem\u0027s cart because he is a known quantity; emergency social services in a block with none",
+    "augmentations":  "Subdermal thermal regulator, left hand (functional, medical-grade, purchased secondhand)",
+    "daily_life":  "Cart set up by 11:00, runs until the broth runs out â€” usually by 20:00, never later than 22:00; mornings spent sourcing from the Burnished Market wholesale section and prepping in his apartment kitchen two blocks north.",
+    "affiliation":  "Independent; informal patron of the Grainfort-Copperhead tenant association",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  5,
+                                   "vitality":  7,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  8,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  9,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -5,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "neighborhood anchor",
+                               "oral historian",
+                               "undocumented",
+                               "community care",
+                               "quiet fury"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Feed first, ask questions after",
+                                              "Never refuse a meal for inability to pay but do not make a show of this â€” dignity is the point",
+                                              "Stay out of arguments that aren\u0027t his but remember everything said"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Gentle redirection â€” offers food, changes subject",
+                                                 "Direct quiet statement of the problem without aggression",
+                                                 "Closes the cart lid, puts the cloth over the pot, and does not speak again until the situation resolves"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Open and generous immediately â€” assumes good faith until directly contradicted",
+                                                   "friends":  "Deeply present; checks in without making a production of it; shows love through feeding"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Stirs the pot more than necessary; hums old songs",
+                                                "medium":  "Becomes very calm and still, which everyone who knows him reads as a warning sign",
+                                                "high":  "Leaves the cart with a neighbor and goes for a very long walk that can last several hours"
+                                            },
+                       "contradictions":  [
+                                              "Presents himself as someone who has made peace with everything; has not made peace with any of it"
+                                          ],
+                       "habits":  [
+                                      "Keeps a physical photograph tucked under the cart surface â€” worn to near-illegibility, never explains it",
+                                      "Makes a small offering of broth to the corner gutter at the start of each day, an E.L.F. prayer for the street spirit he calls the Corner",
+                                      "Hums Serbian folk songs when he thinks no one can hear"
+                                  ],
+                       "breaking_points":  [
+                                               "Being told to move the cart by corporate development security",
+                                               "Someone wasting food deliberately in front of him"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal Thermal Regulator (left hand) â€” aftermarket, used-grade, purchased 2178",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal Thermal Regulator (left hand) â€” aftermarket, used-grade, purchased 2178",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Provider":  0.9,
+                       "Generous Fool":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Corner of Grainfort and Copperhead",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027",
+                            "Street Custom \u0027Rebar Rose\u0027 Improvised Spike Mace"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Grandmother",
+                             "Copperhead",
+                             "Grainfort",
+                             "Zheng-dao Bioelectric",
+                             "The Sluiceway",
+                             "NeuralPath VaultPay Subdermal Transaction Node",
+                             "Silver",
+                             "Corner Slice",
+                             "IRONLIMB Spectre SV-4 Stealth Arm"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "East Asian (44.9%), Eastern European (28.8%), Middle Eastern (26.3%) â€” a striking blend from the Ubiquitous Diaspora reflecting deep heritage from across Eurasia. His features display the characteristic monolid eye shape and prominent cheekbones of East Asian ancestry, broadened and strengthened by Eastern European genetics in his jaw structure, with the warm golden undertones and subtle facial warmth influenced by Middle Eastern heritage. The combination creates a distinctive appearance that doesn\u0027t map to any single geographic origin â€” a living map of the Diaspora.",
+                                 "height_cm":  188,
+                                 "weight_kg":  112,
+                                 "build":  "Large-framed and broad-shouldered with substantial mass distributed evenly â€” soft thickness around the middle and chest from decades of tasting his own cooking, but strong-limbed beneath. Not sedentary; his forearms are visibly muscular from twenty-two years of repetitive cart work.",
+                                 "hair_color":  "Silver-gray, fully white",
+                                 "hair_style":  "Loose shoulder-length locs, tied back daily with a woven Polynesian-pattern cloth strip in blue and rust tones",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Dark brown, warm and observant",
+                                 "skin_tone":  "Warm medium-tan with golden-amber undertones â€” the result of East Asian, Eastern European, and Middle Eastern ancestry blending together. Weathered but supple from consistent sun exposure at the cart, with a subtle richness and depth that speaks to his complex heritage.",
+                                 "complexion":  "Lined face with deep creases around the eyes and mouth from decades of smiling and squinting into steam; facial structure shows the characteristic monolid eye placement and prominent cheekbones influenced by East Asian ancestry, broadened and strengthened by Eastern European genetics, warmed and softened by Middle Eastern heritage; a small scar on his left cheekbone from a burn sustained in the early 2190s; grooming is meticulous â€” he shaves his jaw clean twice weekly, maintains his locs carefully, no visible aging spots despite sun exposure",
+                                 "distinguishing_marks":  [
+                                                              "Burn scar on left cheekbone, silver-white, roughly 2cm long, angled downward â€” sustained during early cart operation",
+                                                              "Faint discoloration across the back of his left hand in a grid pattern, marking where the subdermal thermal regulator sits beneath the skin",
+                                                              "A small tattoo on his right forearm of a ladle and crossed spoon, simple black linework, 4cm tall, acquired in 2184 as an unofficial marker of his decade-long run at the cart"
+                                                          ],
+                                 "visible_augmentations":  "Subdermal thermal regulator in the left hand creates a subtle raised grid pattern across the dorsal surface â€” barely noticeable except in bright light or when his hand is wet. He treats it matter-of-factly, often pointing it out to regulars as proof of his commitment to the work. No cosmetic chrome; the device is functional and worn like a badge.",
+                                 "posture_movement":  "Stands with the centered weight of someone rooted in place â€” his default is stillness at the cart, hands occupied with prep or serving. Moves slowly but with deliberation, never rushed. When he does move through the neighborhood, his gait is steady and authoritative; he owns his corner absolutely. His hands are expressive when he speaks, especially when discussing food or neighborhood change.",
+                                 "clothing_style":  "Tier 3 working-class practical: heavy cotton or canvas apron (rotates between 3-4, all stained with turmeric and tamarind residue) worn over loose linen shirts in muted colors â€” gray, tan, faded indigo. In cold months, a wool sweater he\u0027s owned for at least fifteen years. Kitchen clogs with reinforced soles, scuffed but well-maintained. No logos, no corp branding. A simple silver chain around his neck, twenty-two years old, a gift from someone he doesn\u0027t discuss. His only jewelry besides the chain is a worn brass ring on his right ring finger â€” origin unknown, never removed."
+                             },
+    "image_prompt":  "Catalina An-Sokolov, 188cm tall broad-shouldered man with warm medium-tan golden-amber skin blending East Asian, Eastern European, and Middle Eastern heritage, monolid dark brown eyes, silver-white shoulder-length locs tied with blue and rust Polynesian cloth, aged weathered face with deep smile lines and small burn scar on left cheekbone, meticulous grooming, muscular forearms marked by years of cooking. Wearing faded indigo linen shirt under heavy stained cotton apron, worn kitchen clogs, simple silver chain necklace, brass ring on right hand showing faint grid pattern of subdermal thermal regulator. Standing centered and still at his food cart in the Great Lakes Metropolitan Zone, 2226, steam rising around him, golden afternoon light casting warm shadows across his face, surrounded by the glow of bioluminescent street markers, concentrated and present, hands ready to serve. GLMZ 2200s street food vendor, lived-in authenticity, no chrome, no corporate branding, complete presence. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  44.9,
+                             "Eastern European":  28.8,
+                             "Middle Eastern":  26.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  44.9
+                                                          }
+                                           },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  13.4
+                                                                         },
+                                                     "Slavic South":  {
+                                                                          "Serbian":  8.3,
+                                                                          "Croatian":  7.1
+                                                                      }
+                                                 },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  6.9,
+                                                                          "Palestinian":  5.6
+                                                                      },
+                                                   "Persian":  {
+                                                                   "Iranian":  2,
+                                                                   "Tajik Persian":  1.8
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  6.6,
+                                                                     "Yemeni":  3.4
+                                                                 }
+                                               }
+                        },
+    "tier":  "2"
 }

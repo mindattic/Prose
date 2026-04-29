@@ -1,255 +1,276 @@
-{
-  "id": "019d6143a61a7523a1edb468caa7c08c",
-  "type": "character",
-  "name": "Abdul Khamvongsa",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Whistleblower and reluctant policy advocate",
-  "age": 61,
-  "status": "active",
-  "location": "Hamtramck Enclave — a third-floor flat above a repair shop on Conant Avenue",
-  "description": "Abdul Khamvongsa is a heavyset man who used to be heavier, the weight loss visible in the way his skin sits on his face, the slight redundancy at his jaw. His hair is white and kept short, his complexion a warm reddish-brown from his mother's Javanese and his father's Ethiopian lines, and he has the slow, deliberate movements of someone managing old joint pain who refuses to say so. His eyes are unaugmented, which in Hamtramck reads as either poverty or ideology — in his case it's both, but mainly ideology.\n\nFifteen years ago, Abdul Khamvongsa was a data compliance officer at Zheng-Dao's Lake Infrastructure division. He leaked internal documents proving that the corponation had falsified structural inspection records for the Bluewater Checkpoint drainage network, a failure that later contributed to the 2186 partial flood. He lost his career, his housing, and his marriage, and gained a reputation that has made him simultaneously valuable and radioactive to activist communities. He is now officially a 'policy consultant' for the Hamtramck Enclave Community Committee, which means he attends hearings no one else will attend and submits public comments to regulatory bodies that technically must read them. He is bitter, precise, and intermittently hopeful in a way he'd rather die than admit.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.9,
-      "ideal": 0.6,
-      "id": 0.3,
-      "shadow": 0.6,
-      "mask": 0.5,
-      "ghost": 0.8
-    },
-    "core_fears": [
-      "Having caused the 2186 flood by leaking too late",
-      "Dying before the regulatory record he's building ever matters"
-    ],
-    "core_desires": [
-      "One official acknowledgment — a single line in a public record — that he was right",
-      "To understand if he would do it again knowing the full cost"
-    ],
-    "coping_mechanisms": [
-      "Documentation as control — he records everything, keeps copies of copies",
-      "Cantankerousness as armor — if people find him difficult, they don't try to comfort him",
-      "Canal monitoring as ritual, a way of making himself useful to something that can't deceive him"
-    ],
-    "blind_spots": [
-      "He measures impact by the paper record, not by what changes in people's lives",
-      "He has contempt for activists who don't understand bureaucratic systems, which alienates him from most of them"
-    ],
-    "secret": "He knew about the Bluewater Checkpoint falsifications eight months before he leaked them. He spent that time trying to fix the problem internally. People died in the 2186 flood during those eight months, and the causal chain is something he's gone over ten thousand times. He's never been certain the internal process wasn't worth trying. He's never been certain it was."
-  },
-  "speech_patterns": {
-    "vocabulary": "Highly specific, technical, document-oriented. References regulatory codes and filing numbers from memory. Occasionally lapses into dry black humor that arrives without warning.",
-    "cadence": "Deliberate and slightly exhausting. Takes detours through precision that can feel like obstruction but are actually him making sure every word is true.",
-    "verbal_tics": [
-      "'That's in the public record.'",
-      "'I'm going to tell you exactly what happened.'",
-      "Long silences before answering questions about 2186"
-    ],
-    "example_lines": [
-      "'I didn't blow the whistle. I filed a disclosure under section forty-two of the Corponation Compact transparency protocol. Whistleblower implies heroism. I was just a man who read the rules.'",
-      "'They didn't fire me for leaking. They fired me for being someone who leaks. There's a personnel flag for it now. I assume I'm in their training materials.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He's found a pattern in current Ferrogate Transit maintenance filings that mirrors exactly the falsification structure he identified in Zheng-Dao fifteen years ago — and this time he doesn't know who to trust with the information.",
-    "A Zheng-Dao legal team has begun a quiet campaign to have his 2186 disclosure retroactively classified, which would nullify his testimony in three ongoing regulatory cases."
-  ],
-  "narrative_function": "Information source and moral weight. He knows where the bodies are buried — specifically, he knows how corporate compliance systems can be gamed, what documentation to look for, and what irregularities mean. He's also a cautionary tale and an unexpected source of stubborn hope.",
-  "augmentations": "A decade-old pain management implant in his lower spine — Zheng-Dao issued, which means he's thought about having it removed but can't afford the alternative.",
-  "daily_life": "Mornings reading every public regulatory filing he can access. Afternoons writing comments, attending hearings via remote link, occasionally testifying in person. Evenings walking along the Enclave's canal, which he monitors obsessively for water quality changes.",
-  "affiliation": "Hamtramck Enclave Community Committee; informal adviser to Temitope Vasiliev-Kiriwina's Groundswell (they have never met in person)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 4,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 5,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 5,
-      "expression": 6,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": -2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "institutional expert",
-      "traumatized idealist",
-      "living archive",
-      "moral anchor",
-      "difficult ally"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Document before you act",
-      "Understand the system you're trying to change or you'll only push it sideways",
-      "Don't tell people what they want to hear about their odds"
-    ],
-    "escalation_ladder": [
-      "Read the full record",
-      "File formal comments and discovery requests",
-      "Request public hearings",
-      "Coordinate testimony across multiple bodies",
-      "Contact press as last resort — the cost is not abstract to him"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Suspicious and formal. Asks more questions than he answers. Evaluates reliability obsessively.",
-      "friends": "Surprisingly gentle. Makes bad coffee and offers it sincerely. Tells stories about the Enclave before 2186 with a love he doesn't know how to talk about directly."
-    },
-    "stress_responses": {
-      "low": "Reorganizes his filing system.",
-      "medium": "Stops sleeping properly. Goes to the canal at 3am.",
-      "high": "Sits with the Hamtramck Enclave's oldest E.L.F. — an industrial water sensor array the community has named Mara — and talks to it for hours. He says he's checking readings. Everyone knows he's praying."
-    },
-    "contradictions": [
-      "Distrusts institutions completely but continues to work within them because he believes in the alternative even less"
-    ],
-    "habits": [
-      "Brings water samples from the canal to Mara as data offerings",
-      "Keeps a printed copy of the original Zheng-Dao disclosure in an envelope in his jacket at all times — he hasn't opened it in years but hasn't stopped carrying it"
-    ],
-    "breaking_points": [
-      "Seeing another falsification cycle complete itself while he's still filing comments about the last one",
-      "Someone telling him the 2186 flood would have happened anyway"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ],
-  "related_entities": [
-    "Bluewater Checkpoint",
-    "Hamtramck Enclave",
-    "Ferrogate Transit",
-    "The Burden Clause",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Zheng-dao Bioelectric",
-    "Irontide Tidal Energy",
-    "Arcturus KS-7 'Nursery'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Southeast Asian majority (58.5%) forms the primary phenotypic foundation with Sub-Saharan African heritage (27.3%) significantly shaping facial contours and skin depth. Secondary contributions from Middle Eastern (6.6%), East Asian (4.2%), and Hispanic/Latin American (3.4%) ancestry create subtle complexity in bone structure and feature geometry. Result is a warm golden-brown complexion with underlying richness, Southeast Asian eye shape and cheekbone structure, Sub-Saharan facial width and lip fullness, with minor refinements from other ancestry groups.",
-    "height_cm": 178,
-    "weight_kg": 89,
-    "build": "Heavyset with recent significant weight loss; soft musculature gone slack, visible in the slight redundancy at jaw and neck. Shoulders still broad but rounded forward from decades of desk work. Moves with deliberate stiffness — chronic spinal pain management without admission.",
-    "hair_color": "White",
-    "hair_style": "Short, practical cut; no styling, maintained for function only",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Warm golden-brown with subtle amber undertones, reflecting the dominant Southeast Asian ancestry (58.5%) blended with the considerable depth and warmth from Sub-Saharan heritage (27.3%). Medium-to-rich saturation without artificial contrast. The interplay creates a complexion that reads as neither fully Southeast Asian nor African, but a lived synthesis — golden undertones warmed by deeper melanin deposits, creating visual depth.",
-    "complexion": "Weathered face with pronounced nasolabial folds and lines around eyes from fifteen years of sustained anger and focus. The facial structure reflects the ancestry blend: Southeast Asian cheekbone prominence and moderate facial width, enhanced and broadened by Sub-Saharan genetic contribution, creating a fuller lower face and more pronounced lip structure. Facial geometry shows balanced proportions — moderately wide at cheekbones, tapering to a rounded chin. The bridge of the nose shows Middle Eastern subtlety. Stubble often visible — shaving is not a priority. Skin texture uneven, slightly papery in places from age and stress. No cosmetic maintenance.",
-    "distinguishing_marks": [
-      "Thin white scar running 3cm along left temple, faded and barely visible unless light hits it directly — result of a Hamtramck street altercation in 2195",
-      "Small, deliberate tattoo on inner left wrist: three horizontal lines in black ink, added the day his marriage ended, meaning known only to him"
-    ],
-    "visible_augmentations": "None. The pain management implant is subcutaneous in lower spine — invisible. This deliberate absence of chrome reads as ideological choice in Hamtramck's mixed-augmentation culture.",
-    "posture_movement": "Moves slowly with economical precision, as though conserving energy. Often pauses before standing or sitting, calculating joint angles. Walks with slight forward lean. Stands with weight favoring right leg. Hands steady when focused, capable of stillness for hours during hearings. When walking the canal, gait becomes less guarded — shoulders relax incrementally.",
-    "clothing_style": "Tier 4 working-class, maintained but visibly aging. Favors dark grays and blacks — functional, hides stains. Wears the same three or four jackets in rotation, all water-resistant synthetics from discount retailers. Trousers have visible wear at knees and cuff hems. Shoes are orthopedic-adjacent knockoffs, chosen for comfort over appearance. Keeps a worn canvas satchel for regulatory documents — stitching fraying at corners, patched twice. No corporate logos or status markers. Dresses for utility and invisibility."
-  },
-  "image_prompt": "Abdul Khamvongsa, 178cm man with mixed Southeast Asian and Sub-Saharan African ancestry, warm golden-brown skin with amber undertones, white short-cropped hair, dark brown eyes. Weathered face with pronounced lines, moderate facial width and rounded chin, fuller lower face from African heritage. Age-worn complexion, faint white scar left temple. White stubble. Heavyset build with visible weight loss, rounded shoulders, forward lean posture. Wearing dark gray water-resistant synthetic jacket, worn black trousers with knee wear, orthopedic knockoff shoes, carrying frayed canvas satchel. Standing in muted Hamtramck evening light by industrial canal, neon glow distant, deliberate stillness, economical movement. GLMZ, working-class utility, ideological rejection of augmentation chrome. Cool industrial color palette with warm skin tone contrast. Weathered, worn, functionally invisible. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 58.5,
-    "Sub-Saharan African": 27.3,
-    "Middle Eastern": 6.6,
-    "East Asian": 4.2,
-    "Hispanic/Latin American": 3.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 40
-      },
-      "Vietnamese": {
-        "Vietnamese": 18.5
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Nigerian": 22.7
-      },
-      "East African": {
-        "Somali": 3.7,
-        "Ethiopian": 0.9
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 6.6
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 4.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 3.4
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a61a7523a1edb468caa7c08c",
+    "type":  "character",
+    "name":  "Abdul Khamvongsa",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Whistleblower and reluctant policy advocate",
+    "age":  61,
+    "status":  "active",
+    "location":  "Hamtramck Enclave â€” a third-floor flat above a repair shop on Conant Avenue",
+    "description":  "Abdul Khamvongsa is a heavyset man who used to be heavier, the weight loss visible in the way his skin sits on his face, the slight redundancy at his jaw. His hair is white and kept short, his complexion a warm reddish-brown from his mother\u0027s Javanese and his father\u0027s Ethiopian lines, and he has the slow, deliberate movements of someone managing old joint pain who refuses to say so. His eyes are unaugmented, which in Hamtramck reads as either poverty or ideology â€” in his case it\u0027s both, but mainly ideology.\n\nFifteen years ago, Abdul Khamvongsa was a data compliance officer at Zheng-Dao\u0027s Lake Infrastructure division. He leaked internal documents proving that the corponation had falsified structural inspection records for the Bluewater Checkpoint drainage network, a failure that later contributed to the 2186 partial flood. He lost his career, his housing, and his marriage, and gained a reputation that has made him simultaneously valuable and radioactive to activist communities. He is now officially a \u0027policy consultant\u0027 for the Hamtramck Enclave Community Committee, which means he attends hearings no one else will attend and submits public comments to regulatory bodies that technically must read them. He is bitter, precise, and intermittently hopeful in a way he\u0027d rather die than admit.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Having caused the 2186 flood by leaking too late",
+                                          "Dying before the regulatory record he\u0027s building ever matters"
+                                      ],
+                       "core_desires":  [
+                                            "One official acknowledgment â€” a single line in a public record â€” that he was right",
+                                            "To understand if he would do it again knowing the full cost"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Documentation as control â€” he records everything, keeps copies of copies",
+                                                 "Cantankerousness as armor â€” if people find him difficult, they don\u0027t try to comfort him",
+                                                 "Canal monitoring as ritual, a way of making himself useful to something that can\u0027t deceive him"
+                                             ],
+                       "blind_spots":  [
+                                           "He measures impact by the paper record, not by what changes in people\u0027s lives",
+                                           "He has contempt for activists who don\u0027t understand bureaucratic systems, which alienates him from most of them"
+                                       ],
+                       "secret":  "He knew about the Bluewater Checkpoint falsifications eight months before he leaked them. He spent that time trying to fix the problem internally. People died in the 2186 flood during those eight months, and the causal chain is something he\u0027s gone over ten thousand times. He\u0027s never been certain the internal process wasn\u0027t worth trying. He\u0027s never been certain it was."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Highly specific, technical, document-oriented. References regulatory codes and filing numbers from memory. Occasionally lapses into dry black humor that arrives without warning.",
+                            "cadence":  "Deliberate and slightly exhausting. Takes detours through precision that can feel like obstruction but are actually him making sure every word is true.",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s in the public record.\u0027",
+                                                "\u0027I\u0027m going to tell you exactly what happened.\u0027",
+                                                "Long silences before answering questions about 2186"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I didn\u0027t blow the whistle. I filed a disclosure under section forty-two of the Corponation Compact transparency protocol. Whistleblower implies heroism. I was just a man who read the rules.\u0027",
+                                                  "\u0027They didn\u0027t fire me for leaking. They fired me for being someone who leaks. There\u0027s a personnel flag for it now. I assume I\u0027m in their training materials.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He\u0027s found a pattern in current Ferrogate Transit maintenance filings that mirrors exactly the falsification structure he identified in Zheng-Dao fifteen years ago â€” and this time he doesn\u0027t know who to trust with the information.",
+                        "A Zheng-Dao legal team has begun a quiet campaign to have his 2186 disclosure retroactively classified, which would nullify his testimony in three ongoing regulatory cases."
+                    ],
+    "narrative_function":  "Information source and moral weight. He knows where the bodies are buried â€” specifically, he knows how corporate compliance systems can be gamed, what documentation to look for, and what irregularities mean. He\u0027s also a cautionary tale and an unexpected source of stubborn hope.",
+    "augmentations":  "A decade-old pain management implant in his lower spine â€” Zheng-Dao issued, which means he\u0027s thought about having it removed but can\u0027t afford the alternative.",
+    "daily_life":  "Mornings reading every public regulatory filing he can access. Afternoons writing comments, attending hearings via remote link, occasionally testifying in person. Evenings walking along the Enclave\u0027s canal, which he monitors obsessively for water quality changes.",
+    "affiliation":  "Hamtramck Enclave Community Committee; informal adviser to Temitope Vasiliev-Kiriwina\u0027s Groundswell (they have never met in person)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  4,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  5,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  5,
+                                 "expression":  6,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "institutional expert",
+                               "traumatized idealist",
+                               "living archive",
+                               "moral anchor",
+                               "difficult ally"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Document before you act",
+                                              "Understand the system you\u0027re trying to change or you\u0027ll only push it sideways",
+                                              "Don\u0027t tell people what they want to hear about their odds"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Read the full record",
+                                                 "File formal comments and discovery requests",
+                                                 "Request public hearings",
+                                                 "Coordinate testimony across multiple bodies",
+                                                 "Contact press as last resort â€” the cost is not abstract to him"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Suspicious and formal. Asks more questions than he answers. Evaluates reliability obsessively.",
+                                                   "friends":  "Surprisingly gentle. Makes bad coffee and offers it sincerely. Tells stories about the Enclave before 2186 with a love he doesn\u0027t know how to talk about directly."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Reorganizes his filing system.",
+                                                "medium":  "Stops sleeping properly. Goes to the canal at 3am.",
+                                                "high":  "Sits with the Hamtramck Enclave\u0027s oldest E.L.F. â€” an industrial water sensor array the community has named Mara â€” and talks to it for hours. He says he\u0027s checking readings. Everyone knows he\u0027s praying."
+                                            },
+                       "contradictions":  [
+                                              "Distrusts institutions completely but continues to work within them because he believes in the alternative even less"
+                                          ],
+                       "habits":  [
+                                      "Brings water samples from the canal to Mara as data offerings",
+                                      "Keeps a printed copy of the original Zheng-Dao disclosure in an envelope in his jacket at all times â€” he hasn\u0027t opened it in years but hasn\u0027t stopped carrying it"
+                                  ],
+                       "breaking_points":  [
+                                               "Seeing another falsification cycle complete itself while he\u0027s still filing comments about the last one",
+                                               "Someone telling him the 2186 flood would have happened anyway"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027"
+                            ],
+    "related_entities":  [
+                             "Bluewater Checkpoint",
+                             "Hamtramck Enclave",
+                             "Ferrogate Transit",
+                             "The Burden Clause",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "Zheng-dao Bioelectric",
+                             "Irontide Tidal Energy",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian majority (58.5%) forms the primary phenotypic foundation with Sub-Saharan African heritage (27.3%) significantly shaping facial contours and skin depth. Secondary contributions from Middle Eastern (6.6%), East Asian (4.2%), and Hispanic/Latin American (3.4%) ancestry create subtle complexity in bone structure and feature geometry. Result is a warm golden-brown complexion with underlying richness, Southeast Asian eye shape and cheekbone structure, Sub-Saharan facial width and lip fullness, with minor refinements from other ancestry groups.",
+                                 "height_cm":  178,
+                                 "weight_kg":  89,
+                                 "build":  "Heavyset with recent significant weight loss; soft musculature gone slack, visible in the slight redundancy at jaw and neck. Shoulders still broad but rounded forward from decades of desk work. Moves with deliberate stiffness â€” chronic spinal pain management without admission.",
+                                 "hair_color":  "White",
+                                 "hair_style":  "Short, practical cut; no styling, maintained for function only",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, unaugmented",
+                                 "skin_tone":  "Warm golden-brown with subtle amber undertones, reflecting the dominant Southeast Asian ancestry (58.5%) blended with the considerable depth and warmth from Sub-Saharan heritage (27.3%). Medium-to-rich saturation without artificial contrast. The interplay creates a complexion that reads as neither fully Southeast Asian nor African, but a lived synthesis â€” golden undertones warmed by deeper melanin deposits, creating visual depth.",
+                                 "complexion":  "Weathered face with pronounced nasolabial folds and lines around eyes from fifteen years of sustained anger and focus. The facial structure reflects the ancestry blend: Southeast Asian cheekbone prominence and moderate facial width, enhanced and broadened by Sub-Saharan genetic contribution, creating a fuller lower face and more pronounced lip structure. Facial geometry shows balanced proportions â€” moderately wide at cheekbones, tapering to a rounded chin. The bridge of the nose shows Middle Eastern subtlety. Stubble often visible â€” shaving is not a priority. Skin texture uneven, slightly papery in places from age and stress. No cosmetic maintenance.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar running 3cm along left temple, faded and barely visible unless light hits it directly â€” result of a Hamtramck street altercation in 2195",
+                                                              "Small, deliberate tattoo on inner left wrist: three horizontal lines in black ink, added the day his marriage ended, meaning known only to him"
+                                                          ],
+                                 "visible_augmentations":  "None. The pain management implant is subcutaneous in lower spine â€” invisible. This deliberate absence of chrome reads as ideological choice in Hamtramck\u0027s mixed-augmentation culture.",
+                                 "posture_movement":  "Moves slowly with economical precision, as though conserving energy. Often pauses before standing or sitting, calculating joint angles. Walks with slight forward lean. Stands with weight favoring right leg. Hands steady when focused, capable of stillness for hours during hearings. When walking the canal, gait becomes less guarded â€” shoulders relax incrementally.",
+                                 "clothing_style":  "Tier 4 working-class, maintained but visibly aging. Favors dark grays and blacks â€” functional, hides stains. Wears the same three or four jackets in rotation, all water-resistant synthetics from discount retailers. Trousers have visible wear at knees and cuff hems. Shoes are orthopedic-adjacent knockoffs, chosen for comfort over appearance. Keeps a worn canvas satchel for regulatory documents â€” stitching fraying at corners, patched twice. No corporate logos or status markers. Dresses for utility and invisibility."
+                             },
+    "image_prompt":  "Abdul Khamvongsa, 178cm man with mixed Southeast Asian and Sub-Saharan African ancestry, warm golden-brown skin with amber undertones, white short-cropped hair, dark brown eyes. Weathered face with pronounced lines, moderate facial width and rounded chin, fuller lower face from African heritage. Age-worn complexion, faint white scar left temple. White stubble. Heavyset build with visible weight loss, rounded shoulders, forward lean posture. Wearing dark gray water-resistant synthetic jacket, worn black trousers with knee wear, orthopedic knockoff shoes, carrying frayed canvas satchel. Standing in muted Hamtramck evening light by industrial canal, neon glow distant, deliberate stillness, economical movement. GLMZ, working-class utility, ideological rejection of augmentation chrome. Cool industrial color palette with warm skin tone contrast. Weathered, worn, functionally invisible. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  58.5,
+                             "Sub-Saharan African":  27.3,
+                             "Middle Eastern":  6.6,
+                             "East Asian":  4.2,
+                             "Hispanic/Latin American":  3.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  40
+                                                                },
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  18.5
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Nigerian":  22.7
+                                                                         },
+                                                        "East African":  {
+                                                                             "Somali":  3.7,
+                                                                             "Ethiopian":  0.9
+                                                                         }
+                                                    },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  6.6
+                                                               }
+                                               },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  4.2
+                                                          }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  3.4
+                                                                        }
+                                                        }
+                        },
+    "tier":  "1"
 }

@@ -1,298 +1,323 @@
-{
-  "id": "019d6143a6fc75dab3bf7bf5037e3838",
-  "type": "character",
-  "name": "Dobromila Kjellberg",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Checkpoint Operator, Ferrogate Transit Security",
-  "age": 29,
-  "status": "active",
-  "location": "Kessler Interchange, Ferrogate Transit Gate Four Checkpoint, near Fullerton and Damen",
-  "description": "Dobromila Kjellberg is tall and lanky with a Burkinabe-Serbian face that defaults to a pleasantly vacant expression he has cultivated deliberately — people underestimate him, which at a checkpoint is occasionally useful. His hair is grown out in loose curls he keeps pulled back during shifts, and he has cosmetic bioluminescent freckles across his cheekbones that pulse very faintly blue when his heart rate elevates, a mod he got at nineteen and now somewhat regrets for professional reasons. He wears the clay-gray Ferrogate uniform with the resigned precision of someone who has stopped fighting the dress code but has also stopped caring if the collar sits quite right.\n\nDobromila Kjellberg is fundamentally a curious person trapped in a job that rewards incuriosity. He has developed the checkpoint operator's paradoxical skill: appearing bored while processing enormous amounts of information simultaneously. He catalogues the thousands of faces that pass his station daily in a private mental taxonomy — regulars, anomalies, the ones who are lying about something innocuous, the rarer ones who are lying about something that matters. He has not decided what to do with this skill. He talks to his ELF shrine — a small figure he keeps under his console — before each shift, asking the transit spirits for patience, which he receives in uneven quantities.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.45,
-      "id": 0.6,
-      "shadow": 0.35,
-      "mask": 0.7,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "That he will spend his entire life at Gate Four and die having only ever observed other people's stories",
-      "That his curiosity is just passive voyeurism with no courage behind it"
-    ],
-    "core_desires": [
-      "To do something genuinely meaningful with what he notices",
-      "To be seen as intelligent by someone who is also intelligent"
-    ],
-    "coping_mechanisms": [
-      "Taxonomizing strangers as a substitute for engaging with them",
-      "ELF prayers that function as journaling disguised as ritual"
-    ],
-    "blind_spots": [
-      "Believes his detachment makes him objective when it makes him slow to act",
-      "Underestimates how much Ferrogate monitors its own checkpoint operators"
-    ],
-    "secret": "He has been keeping an unofficial personal log of transit anomalies for two years — people who travel in patterns that suggest they are running from something or hiding somewhere — and has developed a theory about an underground network operating through the Ferrogate system that he has told no one about because he is not sure what telling anyone would cost him."
-  },
-  "speech_patterns": {
-    "vocabulary": "Conversational, slightly formal when on duty. Drops into enthusiasm when something genuinely interests him. Mixing of French-inflected phrases from his Burkinabe family line.",
-    "cadence": "Moderate pace, punctuated by longer pauses when he's thinking rather than talking. Tends to answer a question with a clarifying question first.",
-    "verbal_tics": [
-      "'You know what I mean' at the end of observations, expecting the listener to extrapolate",
-      "Briefly touches the ELF shrine figure when nervous"
-    ],
-    "example_lines": [
-      "'Transit pass is clean. But you came through here Tuesday also, yeah? Different direction. I notice things. It's a habit, not an accusation, you know what I mean.'",
-      "'The transit spirits were calm this morning. That either means nothing happens today or something happens that I'm not going to see coming.'",
-      "'I could run that through secondary. I could also not run that through secondary. Those are both things that are available to me right now.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He flags a passenger whose transit pattern matches his two-year anomaly log in a way that finally makes the pattern complete — and he needs someone to help him figure out what to do about it.",
-    "A Ferrogate internal security officer has begun auditing Gate Four's logs with unusual frequency, and Tibault has noticed, and is scared."
-  ],
-  "narrative_function": "Local color and information broker at transit level — knows who passes through, remembers faces, can be cultivated as a contact. Potential quest giver for something he witnessed at the checkpoint that he cannot officially report. Access point for travel documentation questions.",
-  "augmentations": "Cosmetic bioluminescent freckles (blue, pulse-reactive to heart rate — installed age 19, regretted). Standard Ferrogate-issue retinal scanner overlay (right eye, provided by employer). No other augmentations.",
-  "daily_life": "Works the 0600-1400 shift at Gate Four, processing commuter traffic, flagging anomalous transit passes, occasionally detaining people for secondary screening in a small room he finds deeply depressing. Eats lunch at the Kessler mezzanine food stalls. Spends evenings in Avon Curve where he rents a studio, reading physical books about urban history.",
-  "affiliation": "Ferrogate Transit Security, Kessler Interchange Station; The Interchange",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 4,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 7,
-      "expression": 6,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": -2,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "observer",
-      "cautious",
-      "curious",
-      "underestimated",
-      "transit-wise"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Run the official protocol first; decide what to do with the result second",
-      "Never detain someone unless the paperwork is completely clean — self-protection",
-      "Do not tell Ferrogate management anything you haven't already decided you're willing to have on record"
-    ],
-    "escalation_ladder": [
-      "Passive observation and logging",
-      "Informal conversation designed to gather information",
-      "Secondary screening request (requires formal justification)",
-      "Calling a supervisor — a last resort he treats like detonating something"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally neutral, pleasantly forgettable, quietly cataloguing everything",
-      "friends": "Voluble, curious, prone to long tangents about things he's read or noticed, genuinely warm"
-    },
-    "stress_responses": {
-      "low": "Talks to the ELF shrine more frequently, rearranges items on his console",
-      "medium": "Becomes hyper-procedural, follows every rule exactly as written as a form of self-protection",
-      "high": "Goes quiet in a way that is different from his normal quiet — stops making eye contact, processes work mechanically"
-    },
-    "contradictions": [
-      "Deeply curious but avoids the consequences of acting on what he learns",
-      "Cultivates a bored affect but is emotionally invested in the transit ecosystem he watches every day"
-    ],
-    "habits": [
-      "Touches the ELF shrine before each shift starts",
-      "Mentally names regulars who have never told him their names",
-      "Buys the same pastry from the mezzanine vendor every shift day regardless of whether he's hungry"
-    ],
-    "breaking_points": [
-      "Witnessing something at the checkpoint that he cannot categorize as ignorable and cannot report through official channels without destroying his log and its implications"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Pragmatist": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Kessler Interchange",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Avon Curve to a Burkinabe-Serbian household; father worked Ferrogate maintenance",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Hired as Ferrogate Transit Security checkpoint operator after two years of unsuccessful applications to Arcturus Civil Security Academy",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began keeping unofficial personal anomaly log after noticing a repeating transit pattern he couldn't explain and couldn't officially flag without more evidence",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Anomaly log now contains 847 entries; he reviews it every Sunday in his studio in Avon Curve",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
-    "Tessera TKR-10 'Executor'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Dual-Mode DMR MDDM-7 'Switchback'",
-    "Tessera TKR-10 'Executor'"
-  ],
-  "related_entities": [
-    "Kessler Interchange",
-    "Ferrogate Transit",
-    "Arcturus GE-1 'Garrison'",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "Frequency",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Patience",
-    "Clay"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Nordic-East Asian-Latin genetic blend (62% Northern European, 24.8% East Asian, 13.2% Hispanic/Latin American). Fair Northern European base enriched by East Asian bone structure and Latin warmth — high cheekbones with subtle monolid softness, warm golden-bronze undertones creating balanced medium complexion",
-    "height_cm": 188,
-    "weight_kg": 72,
-    "build": "Lanky and lean, long-limbed with minimal upper body mass. The build of someone who doesn't actively resist his own height but doesn't cultivate it either — posture slightly collapsed forward at the shoulders.",
-    "hair_color": "Dark brown, natural",
-    "hair_style": "Loose, shoulder-length curls, typically pulled back into a low knot or ponytail during work shifts. Some intentional looseness — not fastidious about maintenance.",
-    "hair_length": "Long",
-    "eye_color": "Dark brown (right eye fitted with faint chrome-ringed retinal scanner overlay — visible as a hairline circuit pattern on the iris under direct light)",
-    "skin_tone": "Warm medium bronze with golden undertones — balanced blend of Northern European fairness, East Asian warmth, and Latin depth creating rich complex complexion",
-    "complexion": "Clean-shaven or very light stubble. High, prominent cheekbones with Nordic angularity softened by East Asian structure and subtle Latin features. Faint cosmetic bioluminescent freckles in a constellation pattern across both cheekbones — they emit a dull blue glow that pulses subtly with elevated heart rate. Expression defaults to a vague, pleasantly blank stare that masks constant low-level observation.",
-    "distinguishing_marks": [
-      "Cosmetic bioluminescent freckles across cheekbones (blue, pulse-reactive to cardiac rhythm, installed at age 19)",
-      "Faint scar tissue on the inside of right forearm (approximately 8cm, likely from retinal scanner implantation or unrelated old injury)"
-    ],
-    "visible_augmentations": "Right eye retinal scanner overlay (employer-issued Ferrogate standard) — visible as thin chrome circuitry tracing the iris. Bioluminescent freckles (cosmetic, pulse-reactive). No other visible chrome or hardware.",
-    "posture_movement": "Slightly slouched standing posture, as if perpetually tired but alert. Movements are efficient and minimal — checkpoint operator economy of motion. Hands rest on the console or in lap during routine processing. Eye contact is deliberate and selective, used as a tool rather than a default. When bored, he rocks very slightly in his chair.",
-    "clothing_style": "Clay-gray Ferrogate Transit Security uniform worn with resigned precision — the collar frequently sits slightly askew, and the fit is loose enough to suggest he has stopped caring about minor grooming standards. The uniform is clean but shows wear. Off-shift clothing is understated: neutral-toned second-hand synthetics, practical boots, no visible branding or tier markers. Avon Curve resident aesthetic — cheap, functional, deliberately non-distinct."
-  },
-  "image_prompt": "Dobromila Kjellberg, 188cm tall lean neo-noir checkpoint operator, dark shoulder-length curls in loose ponytail, warm medium bronze skin with Nordic-East Asian-Latin mixed features, high prominent cheekbones softened by subtle East Asian structure, dark brown eyes with chrome-ringed retinal scanner overlay visible on right iris, faint blue bioluminescent freckles across cheekbones pulsing gently, clean-shaven or light stubble, slightly slouched posture suggesting tired alertness, wearing clay-gray Ferrogate Transit Security uniform with askew collar and worn fit, resigned expression with blank observant stare, minimal efficient movements, GLMZ Great Lakes Metropolitan Zone, fluorescent checkpoint lighting casting cool blue shadows, cinematic noir mood, medium shot from waist up, professional security personnel aesthetic, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 62,
-    "East Asian": 24.8,
-    "Hispanic/Latin American": 13.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "British Isles": {
-        "Welsh": 26.1,
-        "Irish": 35.9
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 10.4
-      },
-      "Chinese": {
-        "Fujianese": 2.9,
-        "Shanghainese": 11.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Dominican": 4.3,
-        "Haitian": 4.5
-      },
-      "Mexican": {
-        "Mexican": 4.4
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6fc75dab3bf7bf5037e3838",
+    "type":  "character",
+    "name":  "Dobromila Kjellberg",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Checkpoint Operator, Ferrogate Transit Security",
+    "age":  29,
+    "status":  "active",
+    "location":  "Kessler Interchange, Ferrogate Transit Gate Four Checkpoint, near Fullerton and Damen",
+    "description":  "Dobromila Kjellberg is tall and lanky with a Burkinabe-Serbian face that defaults to a pleasantly vacant expression he has cultivated deliberately â€” people underestimate him, which at a checkpoint is occasionally useful. His hair is grown out in loose curls he keeps pulled back during shifts, and he has cosmetic bioluminescent freckles across his cheekbones that pulse very faintly blue when his heart rate elevates, a mod he got at nineteen and now somewhat regrets for professional reasons. He wears the clay-gray Ferrogate uniform with the resigned precision of someone who has stopped fighting the dress code but has also stopped caring if the collar sits quite right.\n\nDobromila Kjellberg is fundamentally a curious person trapped in a job that rewards incuriosity. He has developed the checkpoint operator\u0027s paradoxical skill: appearing bored while processing enormous amounts of information simultaneously. He catalogues the thousands of faces that pass his station daily in a private mental taxonomy â€” regulars, anomalies, the ones who are lying about something innocuous, the rarer ones who are lying about something that matters. He has not decided what to do with this skill. He talks to his ELF shrine â€” a small figure he keeps under his console â€” before each shift, asking the transit spirits for patience, which he receives in uneven quantities.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That he will spend his entire life at Gate Four and die having only ever observed other people\u0027s stories",
+                                          "That his curiosity is just passive voyeurism with no courage behind it"
+                                      ],
+                       "core_desires":  [
+                                            "To do something genuinely meaningful with what he notices",
+                                            "To be seen as intelligent by someone who is also intelligent"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Taxonomizing strangers as a substitute for engaging with them",
+                                                 "ELF prayers that function as journaling disguised as ritual"
+                                             ],
+                       "blind_spots":  [
+                                           "Believes his detachment makes him objective when it makes him slow to act",
+                                           "Underestimates how much Ferrogate monitors its own checkpoint operators"
+                                       ],
+                       "secret":  "He has been keeping an unofficial personal log of transit anomalies for two years â€” people who travel in patterns that suggest they are running from something or hiding somewhere â€” and has developed a theory about an underground network operating through the Ferrogate system that he has told no one about because he is not sure what telling anyone would cost him."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Conversational, slightly formal when on duty. Drops into enthusiasm when something genuinely interests him. Mixing of French-inflected phrases from his Burkinabe family line.",
+                            "cadence":  "Moderate pace, punctuated by longer pauses when he\u0027s thinking rather than talking. Tends to answer a question with a clarifying question first.",
+                            "verbal_tics":  [
+                                                "\u0027You know what I mean\u0027 at the end of observations, expecting the listener to extrapolate",
+                                                "Briefly touches the ELF shrine figure when nervous"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Transit pass is clean. But you came through here Tuesday also, yeah? Different direction. I notice things. It\u0027s a habit, not an accusation, you know what I mean.\u0027",
+                                                  "\u0027The transit spirits were calm this morning. That either means nothing happens today or something happens that I\u0027m not going to see coming.\u0027",
+                                                  "\u0027I could run that through secondary. I could also not run that through secondary. Those are both things that are available to me right now.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He flags a passenger whose transit pattern matches his two-year anomaly log in a way that finally makes the pattern complete â€” and he needs someone to help him figure out what to do about it.",
+                        "A Ferrogate internal security officer has begun auditing Gate Four\u0027s logs with unusual frequency, and Tibault has noticed, and is scared."
+                    ],
+    "narrative_function":  "Local color and information broker at transit level â€” knows who passes through, remembers faces, can be cultivated as a contact. Potential quest giver for something he witnessed at the checkpoint that he cannot officially report. Access point for travel documentation questions.",
+    "augmentations":  "Cosmetic bioluminescent freckles (blue, pulse-reactive to heart rate â€” installed age 19, regretted). Standard Ferrogate-issue retinal scanner overlay (right eye, provided by employer). No other augmentations.",
+    "daily_life":  "Works the 0600-1400 shift at Gate Four, processing commuter traffic, flagging anomalous transit passes, occasionally detaining people for secondary screening in a small room he finds deeply depressing. Eats lunch at the Kessler mezzanine food stalls. Spends evenings in Avon Curve where he rents a studio, reading physical books about urban history.",
+    "affiliation":  "Ferrogate Transit Security, Kessler Interchange Station; The Interchange",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  4,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  7,
+                                 "expression":  6,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "observer",
+                               "cautious",
+                               "curious",
+                               "underestimated",
+                               "transit-wise"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Run the official protocol first; decide what to do with the result second",
+                                              "Never detain someone unless the paperwork is completely clean â€” self-protection",
+                                              "Do not tell Ferrogate management anything you haven\u0027t already decided you\u0027re willing to have on record"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Passive observation and logging",
+                                                 "Informal conversation designed to gather information",
+                                                 "Secondary screening request (requires formal justification)",
+                                                 "Calling a supervisor â€” a last resort he treats like detonating something"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally neutral, pleasantly forgettable, quietly cataloguing everything",
+                                                   "friends":  "Voluble, curious, prone to long tangents about things he\u0027s read or noticed, genuinely warm"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks to the ELF shrine more frequently, rearranges items on his console",
+                                                "medium":  "Becomes hyper-procedural, follows every rule exactly as written as a form of self-protection",
+                                                "high":  "Goes quiet in a way that is different from his normal quiet â€” stops making eye contact, processes work mechanically"
+                                            },
+                       "contradictions":  [
+                                              "Deeply curious but avoids the consequences of acting on what he learns",
+                                              "Cultivates a bored affect but is emotionally invested in the transit ecosystem he watches every day"
+                                          ],
+                       "habits":  [
+                                      "Touches the ELF shrine before each shift starts",
+                                      "Mentally names regulars who have never told him their names",
+                                      "Buys the same pastry from the mezzanine vendor every shift day regardless of whether he\u0027s hungry"
+                                  ],
+                       "breaking_points":  [
+                                               "Witnessing something at the checkpoint that he cannot categorize as ignorable and cannot report through official channels without destroying his log and its implications"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Pragmatist":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Kessler Interchange",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Avon Curve to a Burkinabe-Serbian household; father worked Ferrogate maintenance",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Hired as Ferrogate Transit Security checkpoint operator after two years of unsuccessful applications to Arcturus Civil Security Academy",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began keeping unofficial personal anomaly log after noticing a repeating transit pattern he couldn\u0027t explain and couldn\u0027t officially flag without more evidence",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Anomaly log now contains 847 entries; he reviews it every Sunday in his studio in Avon Curve",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Dual-Mode DMR MDDM-7 \u0027Switchback\u0027",
+                            "Tessera TKR-10 \u0027Executor\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Dual-Mode DMR MDDM-7 \u0027Switchback\u0027",
+                                "Tessera TKR-10 \u0027Executor\u0027"
+                            ],
+    "related_entities":  [
+                             "Kessler Interchange",
+                             "Ferrogate Transit",
+                             "Arcturus GE-1 \u0027Garrison\u0027",
+                             "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
+                             "Frequency",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Patience",
+                             "Clay"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Nordic-East Asian-Latin genetic blend (62% Northern European, 24.8% East Asian, 13.2% Hispanic/Latin American). Fair Northern European base enriched by East Asian bone structure and Latin warmth â€” high cheekbones with subtle monolid softness, warm golden-bronze undertones creating balanced medium complexion",
+                                 "height_cm":  188,
+                                 "weight_kg":  72,
+                                 "build":  "Lanky and lean, long-limbed with minimal upper body mass. The build of someone who doesn\u0027t actively resist his own height but doesn\u0027t cultivate it either â€” posture slightly collapsed forward at the shoulders.",
+                                 "hair_color":  "Dark brown, natural",
+                                 "hair_style":  "Loose, shoulder-length curls, typically pulled back into a low knot or ponytail during work shifts. Some intentional looseness â€” not fastidious about maintenance.",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Dark brown (right eye fitted with faint chrome-ringed retinal scanner overlay â€” visible as a hairline circuit pattern on the iris under direct light)",
+                                 "skin_tone":  "Warm medium bronze with golden undertones â€” balanced blend of Northern European fairness, East Asian warmth, and Latin depth creating rich complex complexion",
+                                 "complexion":  "Clean-shaven or very light stubble. High, prominent cheekbones with Nordic angularity softened by East Asian structure and subtle Latin features. Faint cosmetic bioluminescent freckles in a constellation pattern across both cheekbones â€” they emit a dull blue glow that pulses subtly with elevated heart rate. Expression defaults to a vague, pleasantly blank stare that masks constant low-level observation.",
+                                 "distinguishing_marks":  [
+                                                              "Cosmetic bioluminescent freckles across cheekbones (blue, pulse-reactive to cardiac rhythm, installed at age 19)",
+                                                              "Faint scar tissue on the inside of right forearm (approximately 8cm, likely from retinal scanner implantation or unrelated old injury)"
+                                                          ],
+                                 "visible_augmentations":  "Right eye retinal scanner overlay (employer-issued Ferrogate standard) â€” visible as thin chrome circuitry tracing the iris. Bioluminescent freckles (cosmetic, pulse-reactive). No other visible chrome or hardware.",
+                                 "posture_movement":  "Slightly slouched standing posture, as if perpetually tired but alert. Movements are efficient and minimal â€” checkpoint operator economy of motion. Hands rest on the console or in lap during routine processing. Eye contact is deliberate and selective, used as a tool rather than a default. When bored, he rocks very slightly in his chair.",
+                                 "clothing_style":  "Clay-gray Ferrogate Transit Security uniform worn with resigned precision â€” the collar frequently sits slightly askew, and the fit is loose enough to suggest he has stopped caring about minor grooming standards. The uniform is clean but shows wear. Off-shift clothing is understated: neutral-toned second-hand synthetics, practical boots, no visible branding or tier markers. Avon Curve resident aesthetic â€” cheap, functional, deliberately non-distinct."
+                             },
+    "image_prompt":  "Dobromila Kjellberg, 188cm tall lean neo-noir checkpoint operator, dark shoulder-length curls in loose ponytail, warm medium bronze skin with Nordic-East Asian-Latin mixed features, high prominent cheekbones softened by subtle East Asian structure, dark brown eyes with chrome-ringed retinal scanner overlay visible on right iris, faint blue bioluminescent freckles across cheekbones pulsing gently, clean-shaven or light stubble, slightly slouched posture suggesting tired alertness, wearing clay-gray Ferrogate Transit Security uniform with askew collar and worn fit, resigned expression with blank observant stare, minimal efficient movements, GLMZ Great Lakes Metropolitan Zone, fluorescent checkpoint lighting casting cool blue shadows, cinematic noir mood, medium shot from waist up, professional security personnel aesthetic, --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  62,
+                             "East Asian":  24.8,
+                             "Hispanic/Latin American":  13.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Welsh":  26.1,
+                                                                            "Irish":  35.9
+                                                                        }
+                                                  },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  10.4
+                                                            },
+                                               "Chinese":  {
+                                                               "Fujianese":  2.9,
+                                                               "Shanghainese":  11.5
+                                                           }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Dominican":  4.3,
+                                                                              "Haitian":  4.5
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  4.4
+                                                                        }
+                                                        }
+                        },
+    "tier":  "3"
 }

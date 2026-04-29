@@ -27,6 +27,32 @@
 
 <div class="home-sections">
 
+    @* ── Writing ────────────────────────────────────────────────────── *@
+    @if (Access.CanWrite)
+    {
+        <div class="board-section">
+            <div class="board-section-label">Writing</div>
+            <div class="board-grid">
+                <a href="/books" class="board-tile board-tile-tool">
+                    <i class="bi bi-book board-tile-icon"></i>
+                    <div class="board-tile-name">Bookshelf</div>
+                </a>
+                <a href="/series" class="board-tile board-tile-tool">
+                    <i class="bi bi-collection board-tile-icon"></i>
+                    <div class="board-tile-name">Series</div>
+                </a>
+                <a href="/facts" class="board-tile board-tile-tool">
+                    <i class="bi bi-lightbulb board-tile-icon"></i>
+                    <div class="board-tile-name">Fact Discovery</div>
+                </a>
+                <a href="/atlas" class="board-tile board-tile-tool">
+                    <i class="bi bi-book-half board-tile-icon"></i>
+                    <div class="board-tile-name">Encyclopedia</div>
+                </a>
+            </div>
+        </div>
+    }
+
     @* ── Repositories ──────────────────────────────────────────────── *@
     <div class="board-section">
         <div class="board-section-label">Repositories</div>
@@ -125,17 +151,7 @@
                 <i class="bi bi-book-half board-tile-icon"></i>
                 <div class="board-tile-name">World Oracle</div>
             </a>
-            @if (Access.CanWrite)
-            {
-                <a href="stories" class="board-tile board-tile-tool">
-                    <i class="bi bi-journal-richtext board-tile-icon"></i>
-                    <div class="board-tile-name">Stories</div>
-                </a>
-                <a href="facts" class="board-tile board-tile-tool">
-                    <i class="bi bi-lightbulb board-tile-icon"></i>
-                    <div class="board-tile-name">Fact Discovery</div>
-                </a>
-            }
+            @* Stories / Bookshelf / Fact Discovery moved to the Writing section above. *@
         </div>
     </div>
 

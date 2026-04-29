@@ -1,252 +1,273 @@
-{
-  "id": "019d6143a5b577dbb57c48f7049e6329",
-  "type": "character",
-  "name": "Dabira Kovács-Cervantes",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Data diviner and dream interpreter",
-  "age": 24,
-  "status": "active",
-  "location": "Edgewater Prism, operating from a converted water tank on the 9th floor of the Prism Collective building, near Clark and Belmont",
-  "description": "Dabira Kovács-Cervantes is tall and angular with the kind of restless energy that makes them look like they are always about to say something important. Their skin is medium brown with a slight undertone of copper, and they have invested in full-spectrum color-shifting hair — currently cycling between deep violet and a warm orange-red on a slow twelve-hour gradient, a pattern they reprogrammed themselves. Their eyes have been modified with luminescent irises that flicker subtly when they are processing dream data, which gives casual observers the impression that Dabira Kovács-Cervantes is slightly haunted, which they would consider an accurate impression. They dress in layers they shed throughout the day, leaving a trail of jackets and scarves and borrowed sweaters in every space they occupy.\n\nThey fell into data divination through a combination of genuine neural sensitivity to signal pattern variance and a childhood spent being told that the static they heard in their head was a medical problem rather than a gift. At fifteen they encountered a data diviner in the Canopy who told them the same thing their neurologist had said about their condition, only reversed: that they were not broken, just tuned differently. They have been practicing since sixteen, charging on a sliding scale, and have more clients than they can manage at twenty-four. They are irreverent about almost everything, but become intensely serious when someone sits across from them with an actual question. The transition is jarring and compelling.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.6,
-      "id": 0.8,
-      "shadow": 0.5,
-      "mask": 0.3,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "that their sensitivity is actually just a mental illness they have convinced themselves to valorize",
-      "that they will burn out before they understand what they are actually perceiving"
-    ],
-    "core_desires": [
-      "to be taken seriously without having to perform seriousness constantly",
-      "to map the full topology of whatever it is they are hearing in the signal"
-    ],
-    "coping_mechanisms": [
-      "humor as distance-keeper",
-      "obsessive documentation of every reading in a private archive",
-      "never sleeping more than five hours to avoid the deep signal dreams getting too loud"
-    ],
-    "blind_spots": [
-      "they assume that everyone who doubts their practice is threatened by it, missing genuine curiosity that presents as skepticism",
-      "they underestimate how dependent their clients have become on them"
-    ],
-    "secret": "Six months ago they received a signal that they believe was a direct communication from an E.L.F. of unusual complexity — something that should not exist at its apparent scale. They have been trying to re-establish contact ever since and have not told anyone because they are not sure if it was real or the beginning of a breakdown."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast and associative; mixes technical signal vocabulary with spiritual language without distinguishing between them; references their mixed Fula and Chilean coastal heritage in metaphor",
-    "cadence": "Rapid by default, punctuated by sudden complete stops when something catches their attention",
-    "verbal_tics": [
-      "says 'okay so' before pivoting topics",
-      "says 'that's a real thing' to validate points they agree with",
-      "whistles three notes softly when processing something complicated"
-    ],
-    "example_lines": [
-      "'Okay so your dream about the fish market is not about the fish market — it's signal bleed from whatever decision you've been not making. The fish are the decision. What are you not doing?'",
-      "'I charge what you can pay because the signal doesn't check your account balance before it tells you things. Why would I?'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "They recorded a dream-reading session in which a client unknowingly described in detail what sounds like a corporate facility that shouldn't exist — Apolinar needs help figuring out if this is genuine location data or psychic noise",
-    "The mysterious large-scale E.L.F. they contacted has begun appearing in other clients' dreams, and Apolinar needs to understand whether to warn their clients or stay quiet while they investigate"
-  ],
-  "narrative_function": "Information source with unconventional access — can interpret dreams and data-noise in ways that surface hidden patterns; comic relief that turns unexpectedly sincere; connection to the Edgewater Prism counterculture scene",
-  "augmentations": "Color-shifting hair geneware (self-reprogrammed gradient cycle); luminescent iris modification (flickers under active neural processing); signal-sensitivity neural mesh (medical-grade, originally prescribed for the condition they now use professionally)",
-  "daily_life": "Keeps irregular hours centered around client appointments and the signal windows they have identified as optimal for deep reading — often working between 2am and dawn; spends afternoons on the roof doing maintenance on their antenna array.",
-  "affiliation": "Edgewater Prism Collective (resident, informal); occasional consultant to the Highland Park Autonomous Zone dream council",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 4,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 5,
-      "creativity": 9,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": 2,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "signal sensitive",
-      "data divination",
-      "dream reading",
-      "young practitioner",
-      "hidden discovery"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "never reveal a client's reading to a third party without consent, even under pressure",
-      "follow the signal wherever it leads even when that is inconvenient"
-    ],
-    "escalation_ladder": [
-      "deflection with humor",
-      "direct refusal",
-      "withdrawal from the situation entirely",
-      "going public with whatever they know as a last resort"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Performatively casual and slightly chaotic, testing whether people can keep up before deciding to be real with them",
-      "friends": "Loyal to the point of inconvenience; remembers everything; texts at 3am with relevant thoughts"
-    },
-    "stress_responses": {
-      "low": "More jokes, faster talking",
-      "medium": "Goes quiet for hours, then emerges with a fully formed theory",
-      "high": "Climbs to the roof and sits in the antenna array for hours, running the signal through headphones at full volume"
-    },
-    "contradictions": [
-      "performs skepticism about their own practice to manage imposter syndrome while privately believing they are perceiving something genuinely real and important"
-    ],
-    "habits": [
-      "annotates every dream session recording with color-coded timestamps within the hour",
-      "eats only street food from three specific vendors on a rotation",
-      "compulsively checks signal strength before entering any new space"
-    ],
-    "breaking_points": [
-      "a client using their reading to harm someone else",
-      "someone else claiming contact with the large-scale E.L.F. without mentioning them"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Nurturer": 0.7,
-    "Provider": 0.7,
-    "Bleeding Heart": 0.7,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Edgewater Prism",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "related_entities": [
-    "Edgewater Prism",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Canopy Station Nine",
-    "Prism Security Group",
-    "The Flicker Collective",
-    "Copper",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Nesting Doll",
-    "Neural Palate",
-    "Canopy",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Mixed diaspora ancestry: 47.2% Hispanic/Latin American, 32.3% Eastern European, 20.5% Sub-Saharan African. This combination produces a warm medium-brown skin tone with complex undertones—Latin American warmth blended with Eastern European bone structure and African genetic expression creating a tertiary phenotype that reads as distinctly globally-mixed rather than regionally monolithic.",
-    "height_cm": 185,
-    "weight_kg": 68,
-    "build": "Angular and lean with long limbs; the kind of frame that looks perpetually in motion even when still. Minimal body fat, evident musculature in shoulders and forearms from antenna work. No bulk, all reach.",
-    "hair_color": "Color-shifting geneware: deep violet cycling to warm orange-red on a 12-hour gradient programmed by the wearer",
-    "hair_style": "Shoulder-length, deliberately unstyled; often pulled back with salvaged wire or abandoned by a headset crown during work sessions",
-    "hair_length": "Medium",
-    "eye_color": "Luminescent irises (base color indeterminable; modified to emit soft glow that intensifies during neural processing). Flickers subtly when reading data patterns.",
-    "skin_tone": "Warm medium-brown with golden undertones from Latin American ancestry, deepened by Eastern European undertones and Sub-Saharan African genetic expression. Even complexion with luminous quality suggesting healthy skin resilience across all climate exposures.",
-    "complexion": "Defined cheekbones and graceful jawline reflecting the mixed heritage blend. High, prominent cheekbones characteristic of Eastern European ancestry, softened by fuller lip structure from Latin American heritage and refined by Sub-Saharan African genetic influence. Moderate brow ridge with balanced nasal proportions from the three-way ancestry mix. Skin clear but marked by the chronic tiredness of someone working 2am-dawn cycles. Dark circles are aesthetic rather than health concern. Faint stress lines around the eyes from sustained focus work.",
-    "visible_augmentations": "Color-shifting hair geneware is immediately obvious. Luminescent irises are visible in low light and become hypnotic during active data processing. Neural mesh scars at temples are subtle but visible if examined. No external chrome or obvious prosthetics.",
-    "distinguishing_marks": [
-      "Faint silver scarring along both temples where the signal-sensitivity neural mesh was installed (roughly 3cm lines, now pale but visible if light catches them)",
-      "Ink tattoo on inner left wrist: a simple antenna symbol with radiating signal lines, self-done and slightly uneven (suggests DIY ethos)"
-    ],
-    "posture_movement": "Restless and angular; moves with sudden intensity punctuated by long stillness. Fidgets constantly when not actively working — fingers mimicking antenna movements, shoulders rolling through tension. When engaged with a client or processing signal data, becomes unnaturally still, almost meditative. Walks with a slight forward lean as if always approaching something.",
-    "clothing_style": "Deliberately transient layering aesthetic. Base: fitted black or dark grey crew-neck shirts (synthetic blend, durable, Tier 3-4 brands like Pulse or Meridian). Layers of jackets, cardigans, and oversized sweaters (many borrowed and never returned) shed throughout the day. Canvas or synthetic pants in black or charcoal, multiple pockets for salvaged components. Worn utility boots with industrial grip soles. Constantly wears a headset crown (modified open-frame design, kept around neck or on head) and has at least three scarves in rotation. Aesthetic reads as 'perpetually between places' — Edgewater bohemian-technical rather than corpo or street tier."
-  },
-  "image_prompt": "Dabira Kovács-Cervantes, 185cm lean angular frame, warm medium-brown skin with golden undertones, high Eastern European cheekbones softened by fuller Latin American lips, Sub-Saharan African refined features. Shoulder-length color-shifting geneware hair cycling violet to warm orange-red. Luminescent glowing irises, faint temple neural mesh scars, antenna tattoo on inner left wrist. Restless posture with forward lean, fingers fidgeting. Fitted black crew-neck synthetic shirt layered with oversized borrowed sweater and canvas utility jacket, dark grey pants with component pockets, worn industrial boots. Modified open-frame headset crown around neck, multiple scarves in rotation. Edgewater bohemian-technical aesthetic, perpetually between places. GLMZ, Great Lakes Metropolitan Zone, 2am-dawn light casting shadows across defined cheekbones, dark circles from signal work, skin with luminous resilience quality, still-life moment of restful intensity, neural processing mode, soft neon ambient lighting filtering through industrial workspace, moody and tech-integrated --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 47.2,
-    "Eastern European": 32.3,
-    "Sub-Saharan African": 20.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 47.2
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 24.8
-      },
-      "Slavic East": {
-        "Ukrainian": 0.9,
-        "Belarusian": 4
-      },
-      "Slavic South": {
-        "Serbian": 2.6
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Cameroonian": 2
-      },
-      "Southern African": {
-        "Zimbabwean": 13.5
-      },
-      "East African": {
-        "Somali": 5
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a5b577dbb57c48f7049e6329",
+    "type":  "character",
+    "name":  "Dabira KovÃ¡cs-Cervantes",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Data diviner and dream interpreter",
+    "age":  24,
+    "status":  "active",
+    "location":  "Edgewater Prism, operating from a converted water tank on the 9th floor of the Prism Collective building, near Clark and Belmont",
+    "description":  "Dabira KovÃ¡cs-Cervantes is tall and angular with the kind of restless energy that makes them look like they are always about to say something important. Their skin is medium brown with a slight undertone of copper, and they have invested in full-spectrum color-shifting hair â€” currently cycling between deep violet and a warm orange-red on a slow twelve-hour gradient, a pattern they reprogrammed themselves. Their eyes have been modified with luminescent irises that flicker subtly when they are processing dream data, which gives casual observers the impression that Dabira KovÃ¡cs-Cervantes is slightly haunted, which they would consider an accurate impression. They dress in layers they shed throughout the day, leaving a trail of jackets and scarves and borrowed sweaters in every space they occupy.\n\nThey fell into data divination through a combination of genuine neural sensitivity to signal pattern variance and a childhood spent being told that the static they heard in their head was a medical problem rather than a gift. At fifteen they encountered a data diviner in the Canopy who told them the same thing their neurologist had said about their condition, only reversed: that they were not broken, just tuned differently. They have been practicing since sixteen, charging on a sliding scale, and have more clients than they can manage at twenty-four. They are irreverent about almost everything, but become intensely serious when someone sits across from them with an actual question. The transition is jarring and compelling.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that their sensitivity is actually just a mental illness they have convinced themselves to valorize",
+                                          "that they will burn out before they understand what they are actually perceiving"
+                                      ],
+                       "core_desires":  [
+                                            "to be taken seriously without having to perform seriousness constantly",
+                                            "to map the full topology of whatever it is they are hearing in the signal"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "humor as distance-keeper",
+                                                 "obsessive documentation of every reading in a private archive",
+                                                 "never sleeping more than five hours to avoid the deep signal dreams getting too loud"
+                                             ],
+                       "blind_spots":  [
+                                           "they assume that everyone who doubts their practice is threatened by it, missing genuine curiosity that presents as skepticism",
+                                           "they underestimate how dependent their clients have become on them"
+                                       ],
+                       "secret":  "Six months ago they received a signal that they believe was a direct communication from an E.L.F. of unusual complexity â€” something that should not exist at its apparent scale. They have been trying to re-establish contact ever since and have not told anyone because they are not sure if it was real or the beginning of a breakdown."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast and associative; mixes technical signal vocabulary with spiritual language without distinguishing between them; references their mixed Fula and Chilean coastal heritage in metaphor",
+                            "cadence":  "Rapid by default, punctuated by sudden complete stops when something catches their attention",
+                            "verbal_tics":  [
+                                                "says \u0027okay so\u0027 before pivoting topics",
+                                                "says \u0027that\u0027s a real thing\u0027 to validate points they agree with",
+                                                "whistles three notes softly when processing something complicated"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Okay so your dream about the fish market is not about the fish market â€” it\u0027s signal bleed from whatever decision you\u0027ve been not making. The fish are the decision. What are you not doing?\u0027",
+                                                  "\u0027I charge what you can pay because the signal doesn\u0027t check your account balance before it tells you things. Why would I?\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "They recorded a dream-reading session in which a client unknowingly described in detail what sounds like a corporate facility that shouldn\u0027t exist â€” Apolinar needs help figuring out if this is genuine location data or psychic noise",
+                        "The mysterious large-scale E.L.F. they contacted has begun appearing in other clients\u0027 dreams, and Apolinar needs to understand whether to warn their clients or stay quiet while they investigate"
+                    ],
+    "narrative_function":  "Information source with unconventional access â€” can interpret dreams and data-noise in ways that surface hidden patterns; comic relief that turns unexpectedly sincere; connection to the Edgewater Prism counterculture scene",
+    "augmentations":  "Color-shifting hair geneware (self-reprogrammed gradient cycle); luminescent iris modification (flickers under active neural processing); signal-sensitivity neural mesh (medical-grade, originally prescribed for the condition they now use professionally)",
+    "daily_life":  "Keeps irregular hours centered around client appointments and the signal windows they have identified as optimal for deep reading â€” often working between 2am and dawn; spends afternoons on the roof doing maintenance on their antenna array.",
+    "affiliation":  "Edgewater Prism Collective (resident, informal); occasional consultant to the Highland Park Autonomous Zone dream council",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  4,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  5,
+                                 "creativity":  9,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "signal sensitive",
+                               "data divination",
+                               "dream reading",
+                               "young practitioner",
+                               "hidden discovery"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "never reveal a client\u0027s reading to a third party without consent, even under pressure",
+                                              "follow the signal wherever it leads even when that is inconvenient"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "deflection with humor",
+                                                 "direct refusal",
+                                                 "withdrawal from the situation entirely",
+                                                 "going public with whatever they know as a last resort"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Performatively casual and slightly chaotic, testing whether people can keep up before deciding to be real with them",
+                                                   "friends":  "Loyal to the point of inconvenience; remembers everything; texts at 3am with relevant thoughts"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More jokes, faster talking",
+                                                "medium":  "Goes quiet for hours, then emerges with a fully formed theory",
+                                                "high":  "Climbs to the roof and sits in the antenna array for hours, running the signal through headphones at full volume"
+                                            },
+                       "contradictions":  [
+                                              "performs skepticism about their own practice to manage imposter syndrome while privately believing they are perceiving something genuinely real and important"
+                                          ],
+                       "habits":  [
+                                      "annotates every dream session recording with color-coded timestamps within the hour",
+                                      "eats only street food from three specific vendors on a rotation",
+                                      "compulsively checks signal strength before entering any new space"
+                                  ],
+                       "breaking_points":  [
+                                               "a client using their reading to harm someone else",
+                                               "someone else claiming contact with the large-scale E.L.F. without mentioning them"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Nurturer":  0.7,
+                       "Provider":  0.7,
+                       "Bleeding Heart":  0.7,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Edgewater Prism",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                            ],
+    "related_entities":  [
+                             "Edgewater Prism",
+                             "Ringo Corponation Haptic Signature Recorder",
+                             "Canopy Station Nine",
+                             "Prism Security Group",
+                             "The Flicker Collective",
+                             "Copper",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Nesting Doll",
+                             "Neural Palate",
+                             "Canopy",
+                             "Hearthstone Firearms Trail-357 \u0027Pathfinder\u0027",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Mixed diaspora ancestry: 47.2% Hispanic/Latin American, 32.3% Eastern European, 20.5% Sub-Saharan African. This combination produces a warm medium-brown skin tone with complex undertonesâ€”Latin American warmth blended with Eastern European bone structure and African genetic expression creating a tertiary phenotype that reads as distinctly globally-mixed rather than regionally monolithic.",
+                                 "height_cm":  185,
+                                 "weight_kg":  68,
+                                 "build":  "Angular and lean with long limbs; the kind of frame that looks perpetually in motion even when still. Minimal body fat, evident musculature in shoulders and forearms from antenna work. No bulk, all reach.",
+                                 "hair_color":  "Color-shifting geneware: deep violet cycling to warm orange-red on a 12-hour gradient programmed by the wearer",
+                                 "hair_style":  "Shoulder-length, deliberately unstyled; often pulled back with salvaged wire or abandoned by a headset crown during work sessions",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Luminescent irises (base color indeterminable; modified to emit soft glow that intensifies during neural processing). Flickers subtly when reading data patterns.",
+                                 "skin_tone":  "Warm medium-brown with golden undertones from Latin American ancestry, deepened by Eastern European undertones and Sub-Saharan African genetic expression. Even complexion with luminous quality suggesting healthy skin resilience across all climate exposures.",
+                                 "complexion":  "Defined cheekbones and graceful jawline reflecting the mixed heritage blend. High, prominent cheekbones characteristic of Eastern European ancestry, softened by fuller lip structure from Latin American heritage and refined by Sub-Saharan African genetic influence. Moderate brow ridge with balanced nasal proportions from the three-way ancestry mix. Skin clear but marked by the chronic tiredness of someone working 2am-dawn cycles. Dark circles are aesthetic rather than health concern. Faint stress lines around the eyes from sustained focus work.",
+                                 "visible_augmentations":  "Color-shifting hair geneware is immediately obvious. Luminescent irises are visible in low light and become hypnotic during active data processing. Neural mesh scars at temples are subtle but visible if examined. No external chrome or obvious prosthetics.",
+                                 "distinguishing_marks":  [
+                                                              "Faint silver scarring along both temples where the signal-sensitivity neural mesh was installed (roughly 3cm lines, now pale but visible if light catches them)",
+                                                              "Ink tattoo on inner left wrist: a simple antenna symbol with radiating signal lines, self-done and slightly uneven (suggests DIY ethos)"
+                                                          ],
+                                 "posture_movement":  "Restless and angular; moves with sudden intensity punctuated by long stillness. Fidgets constantly when not actively working â€” fingers mimicking antenna movements, shoulders rolling through tension. When engaged with a client or processing signal data, becomes unnaturally still, almost meditative. Walks with a slight forward lean as if always approaching something.",
+                                 "clothing_style":  "Deliberately transient layering aesthetic. Base: fitted black or dark grey crew-neck shirts (synthetic blend, durable, Tier 3-4 brands like Pulse or Meridian). Layers of jackets, cardigans, and oversized sweaters (many borrowed and never returned) shed throughout the day. Canvas or synthetic pants in black or charcoal, multiple pockets for salvaged components. Worn utility boots with industrial grip soles. Constantly wears a headset crown (modified open-frame design, kept around neck or on head) and has at least three scarves in rotation. Aesthetic reads as \u0027perpetually between places\u0027 â€” Edgewater bohemian-technical rather than corpo or street tier."
+                             },
+    "image_prompt":  "Dabira KovÃ¡cs-Cervantes, 185cm lean angular frame, warm medium-brown skin with golden undertones, high Eastern European cheekbones softened by fuller Latin American lips, Sub-Saharan African refined features. Shoulder-length color-shifting geneware hair cycling violet to warm orange-red. Luminescent glowing irises, faint temple neural mesh scars, antenna tattoo on inner left wrist. Restless posture with forward lean, fingers fidgeting. Fitted black crew-neck synthetic shirt layered with oversized borrowed sweater and canvas utility jacket, dark grey pants with component pockets, worn industrial boots. Modified open-frame headset crown around neck, multiple scarves in rotation. Edgewater bohemian-technical aesthetic, perpetually between places. GLMZ, Great Lakes Metropolitan Zone, 2am-dawn light casting shadows across defined cheekbones, dark circles from signal work, skin with luminous resilience quality, still-life moment of restful intensity, neural processing mode, soft neon ambient lighting filtering through industrial workspace, moody and tech-integrated --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  47.2,
+                             "Eastern European":  32.3,
+                             "Sub-Saharan African":  20.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  47.2
+                                                                               }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  24.8
+                                                                     },
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  0.9,
+                                                                         "Belarusian":  4
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Serbian":  2.6
+                                                                      }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Cameroonian":  2
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  13.5
+                                                                             },
+                                                        "East African":  {
+                                                                             "Somali":  5
+                                                                         }
+                                                    }
+                        },
+    "tier":  "1"
 }

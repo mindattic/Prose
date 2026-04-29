@@ -133,8 +133,16 @@ public static class ServiceCollectionExtensions
         // services.AddSingleton<FtpPublishService>(); // disabled — deploying via Azure CI/CD
         services.AddSingleton<HtmlExportService>();
         services.AddSingleton<StoryService>();
-        services.AddSingleton<IStoryBlockRepository, JsonStoryBlockRepository>();
-        services.AddSingleton<FacetService>();
+        services.AddSingleton<IChapterRepository, JsonChapterRepository>();
+        services.AddSingleton<IBookRepository, JsonBookRepository>();
+        services.AddSingleton<ISeriesRepository, JsonSeriesRepository>();
+        services.AddSingleton<IBookReviewService, BookReviewService>();
+        services.AddSingleton<BookExportService>();
+        services.AddSingleton<WritingQualityService>();
+        services.AddSingleton<MotifService>();
+        services.AddSingleton<BookOutlineService>();
+        services.AddSingleton<CoWriterService>();
+        services.AddSingleton<LastPromptStore>();
         // Graph builds from canon.json on first access
         services.AddSingleton<WorldGraphService>(sp =>
         {
@@ -202,6 +210,7 @@ public static class ServiceCollectionExtensions
             sp.GetRequiredService<ClaudeService>(),
             sp.GetRequiredService<OpenAiService>(),
             sp.GetRequiredService<SettingsService>(),
+            sp.GetRequiredService<LastPromptStore>(),
             sp.GetRequiredService<ILogger<LlmRouter>>()));
         services.AddSingleton<ILlmService>(sp => sp.GetRequiredService<LlmRouter>());
 
@@ -281,7 +290,7 @@ public static class ServiceCollectionExtensions
         // Writer operator — interactive chat partner that drives StreetSamurai services
         // via Anthropic tool-use, replacing per-message CLI spawn. Scoped per Blazor circuit
         // so each writing session has its own chat history.
-        services.AddHttpClient<Services.Operator.AnthropicToolClient>();
+        services.AddHttpClient<Services.Operator.AnthropicToolClient>(c => c.Timeout = TimeSpan.FromMinutes(15));
         services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.QueryWorldGraphTool>();
         services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.ValidateCanonTool>();
         services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.DraftCombatSceneTool>();
@@ -314,7 +323,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ArcTrackerService>();
         services.AddSingleton<ContinuityValidatorService>();
         services.AddSingleton<SuggestionEngineService>();
-        services.AddSingleton<FacetEvolutionService>();
 
         // Pacing — static helper, registered for completeness
         services.AddSingleton<PacingService>();
@@ -325,8 +333,18 @@ public static class ServiceCollectionExtensions
         // MindAttic.Legion — universal LLM-call client (LegionClient) and the
         // multi-provider voting machinery. Both LlmVotingProvider and the
         // standalone MultiLlmService delegate wire transport here.
+        //
+        // The default HttpClient timeout (100s) is too short for outline / book
+        // generation, which can ask Claude for ~16k tokens at temperature 0.8 and
+        // routinely takes 2–3 minutes. A timeout there cancels the call and the
+        // pipeline writes "Outline generation failed" into the story file.
+        // 15 minutes covers Sonnet 4.6's worst case for a 16k-token completion
+        // including any backend backoff/retry, while still detecting a truly
+        // stuck connection. Earlier 5-minute setting hit the wall on dense
+        // outline-review prompts; 15 gives ample headroom.
         services.AddLegionClient();
-        services.AddHttpClient<LlmVotingProvider>();
+        services.AddHttpClient<LegionClient>(c => c.Timeout = TimeSpan.FromMinutes(15));
+        services.AddHttpClient<LlmVotingProvider>(c => c.Timeout = TimeSpan.FromMinutes(15));
         services.AddSingleton<VotingConfiguration>(sp =>
         {
             var s = sp.GetRequiredService<SettingsService>();

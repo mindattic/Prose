@@ -1,299 +1,318 @@
-{
-  "id": "019d6143a6a8762e9510f3806f7396b2",
-  "type": "character",
-  "name": "Diyaa Lindström-Zidane-Banerjee",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Private investigator, licensed bounty compliance and debt recovery, operates out of Edgewater Prism",
-  "age": 51,
-  "status": "active",
-  "location": "Edgewater Prism — office above a bioluminescent algae bar called Photikar, near Lincoln and Addison",
-  "description": "Diyaa Lindström-Zidane-Banerjee is a big man going soft in the middle, with dark olive-bronze skin, heavy grey-salted hair he keeps pulled back with a rubber band, and the kind of face that has been patient for so long it has settled permanently into patience. He dresses in the same rotation of rumpled linen jackets in muted terracotta and grey, never quite formal and never quite casual, and he has a geneware tail — a long, unhurried thing in rust-brown fur — that he got in his thirties when tails were newly fashionable and has kept because he grew fond of it. It curls around chair legs when he's thinking and goes very still when he's alarmed.\n\nHe has been a licensed PI for nineteen years. He started as Arcturus Civil Security, left without drama, and built his solo practice from debt-recovery cases so dull that most investigators wouldn't touch them. He is extraordinarily good at finding people who do not want to be found, not because he is relentless but because he is patient and because he understands that almost everyone leaves one thread they don't notice. He charges fairly, keeps meticulous case notes, and has a long-standing rule against working cases that involve children. His office has a dedicated E.L.F. shrine — a small mahogany cabinet, always open — that he calls Ledger and which he believes keeps running tallies of debts, moral and financial, across the city. He consults it before taking unusual cases.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.45,
-      "ideal": 0.55,
-      "id": 0.4,
-      "shadow": 0.5,
-      "mask": 0.35,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "being responsible for an outcome he couldn't have prevented but should have",
-      "losing the distinction between recovery work and something uglier"
-    ],
-    "core_desires": [
-      "cases that are actually interesting",
-      "to believe that the work he does balances out more than it exploits"
-    ],
-    "coping_mechanisms": [
-      "rigid personal ethics as a substitute for the institutional ones he no longer trusts",
-      "consulting Ledger before decisions as a way of externalizing moral deliberation"
-    ],
-    "blind_spots": [
-      "believes his own ethical framework is more consistent than it actually is",
-      "has developed a comfortable cynicism that sometimes stops him from seeing genuine hope"
-    ],
-    "secret": "Eight years ago he found a man he was contracted to locate for a debt recovery firm. He found him and called in the location and the man was dead within seventy-two hours. The official verdict was unrelated — an accident. Rafaelo doesn't believe it. He kept the case file. He still checks on the debt firm occasionally, not knowing what he's looking for or what he'd do if he found it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Economical and dry, with occasional unexpected precision — he will use a very exact word where most people would approximate",
-    "cadence": "Unhurried, slightly formal without being stiff",
-    "verbal_tics": [
-      "Refers to Ledger as 'she' — 'she says this one's worth looking at'",
-      "'Hm' as a complete sentence when processing",
-      "Ends negotiations with 'so we're clear, then' even when things are not entirely clear"
-    ],
-    "example_lines": [
-      "'I find people. Occasionally I find things. I don't do anything with what I find except report it — what happens after is your business, not mine, and I need to believe that.'",
-      "'Ledger says this one's interesting. I've learned to trust her on interesting.'",
-      "'You'd be surprised how many people leave a thread. Usually it's something they love. People stop hiding when they miss something enough.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He has been hired to locate someone whose description matches a character's contact — he approaches them, not to threaten, but because he thinks something is wrong with the case he's been handed",
-    "He shows up at the scene of something that wasn't supposed to be a crime and starts asking questions that are too specific to be casual",
-    "He offers a character a job: he has identified the thread in an eight-year-old case but following it requires someone who doesn't exist in any database he can access"
-  ],
-  "narrative_function": "Quest giver, information broker for hire, guide to the city's grey-zone legal mechanics, morally grounded private sector alternative to Metro",
-  "augmentations": "Geneware tail (rust-brown, expressive), memory-assist implant (searchable recall of case notes and conversations — passive, no recording), low-grade stress-response suppressor (keeps him calm in confrontational situations)",
-  "daily_life": "Opens the office at 0900, reviews any overnight messages, spends the middle of the day in the field or running database searches, returns to write up notes by evening; has dinner at Photikar downstairs three nights a week and knows the bartender well enough that she refills his water without being asked.",
-  "affiliation": "Self-employed, licensed through GLMZ Metro PI registration; occasional contracted work for Tessera Compliance Bureau",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 7,
-      "expression": 6,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -1,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "patient",
-      "principled",
-      "haunted",
-      "experienced",
-      "ethically anchored"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never take a case you can't afford to finish honestly",
-      "No children, no exceptions",
-      "If Ledger says don't, sleep on it"
-    ],
-    "escalation_ladder": [
-      "Patient observation and documentation",
-      "Direct, quiet confrontation with documented evidence",
-      "Formal report to relevant authority (Metro or licensing board)",
-      "Walk away from the case and refund the client — this is the nuclear option"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally measured — assesses before committing to any register",
-      "friends": "Drily warm, remembers everything, shows care through small reliable consistencies rather than demonstrative acts"
-    },
-    "stress_responses": {
-      "low": "Tail curls tighter, he gets quieter",
-      "medium": "Becomes very precise and methodical, strips emotion from speech entirely",
-      "high": "Goes absolutely still, makes one decision, and executes it"
-    },
-    "contradictions": [
-      "Professes that what clients do with his findings is their business, but has walked away from two paying cases because he didn't like what the findings would enable"
-    ],
-    "habits": [
-      "Opens the Ledger cabinet at the start and end of every workday",
-      "Never takes case calls before his first coffee",
-      "Writes case notes longhand first, digitalizes second"
-    ],
-    "breaking_points": [
-      "Evidence that a recovery case is actually a murder-location contract — he will burn the case file, refund the advance, and make sure someone appropriate knows"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Memory-assist implant — searchable passive recall, 15-year indexed archive of case conversations and notes",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Memory-assist implant — searchable passive recall, 15-year indexed archive of case conversations and notes",
-      "replaces": ""
-    },
-    {
-      "name": "Stress-response suppressor (low-grade) — blunts acute adrenaline spike in confrontational situations",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Stress-response suppressor (low-grade) — blunts acute adrenaline spike in confrontational situations",
-      "replaces": ""
-    },
-    {
-      "name": "Geneware tail — rust-brown, full motor control, expressive",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Geneware tail — rust-brown, full motor control, expressive",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Edgewater Prism",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-SL40 'Partisan'",
-    "Crucible Industries Viper Mk.III 'Copperhead'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-SL40 'Partisan'",
-    "Crucible Industries Viper Mk.III 'Copperhead'"
-  ],
-  "related_entities": [
-    "Edgewater Prism",
-    "Patience",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Mahogany",
-    "Bronze",
-    "Akosua Johansson",
-    "Handed"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Complex genetic blend of South Asian (28.7%), Hispanic/Latin American (27.2%), Indigenous American (18.9%), North African (15.0%), and Northern European (10.2%) ancestry. The combination manifests in warm, earthy skin tones with golden and amber undertones, facial structure showing the broader planes and full features characteristic of Indigenous American and South Asian lineages, balanced with North African bone structure and subtle Northern European undertones. Rich melanin expression with nuanced warm depth.",
-    "height_cm": 188,
-    "weight_kg": 94,
-    "build": "Heavy-set, broad-shouldered, carrying visible weight in the midsection from decades of desk work and coffee. Still carries the frame of someone who was once more muscular; age and patience have softened him rather than diminished him.",
-    "hair_color": "Dark brown with heavy grey salting throughout",
-    "hair_style": "Long, pulled back tightly into a rubber band at the nape of the neck; some grey strands escape regularly",
-    "hair_length": "Long",
-    "eye_color": "Dark brown, warm",
-    "skin_tone": "Warm golden-bronze with amber and honey undertones; the result of South Asian warmth blended with Hispanic/Latin American and Indigenous American depth, grounded by North African richness and subtle Northern European undertones",
-    "complexion": "Weathered, lined face with deep crow's feet and forehead creases that speak to nineteen years of concentration. Broad nose with full bridge reflecting South Asian and Indigenous American heritage. Jaw heavy and slightly softened by age, with warm fullness in the cheeks and temples. Rounded facial planes with the characteristic breadth of Indigenous American ancestry, blended with South Asian fullness and North African structure. Cheekbones set at moderate height, creating gentle facial tapering common to Hispanic/Latin American heritage. Skin has the texture of someone who spends time outdoors and indoors in equal measure, with the natural depth and resilience that comes from this genetic combination. Clean-shaven most days, occasionally a day or two of grey stubble.",
-    "distinguishing_marks": [
-      "Rust-brown geneware tail, approximately 1.2 meters long, with dense fur and full articulation; visible at all times, curls reflexively around furniture or his own leg when seated",
-      "Long, thin scar running down the inside of his left forearm from wrist to elbow — pale silver against bronze skin, likely from a sharp implement, approximately 15cm in length, sustained roughly 20+ years ago"
-    ],
-    "visible_augmentations": "Geneware tail is the only immediately visible augmentation. The memory-assist implant and stress-response suppressor are entirely subcutaneous; no visible ports, LED indicators, or scarring.",
-    "posture_movement": "Deliberate and economical. Moves with a patient, unhurried gait — no wasted motion. Often sits with his weight distributed across both sides of a chair, tail curling around the leg or draped across his lap. His default expression is patient, almost meditative. Eyes tend to rest on people or objects for longer than is typical, as if cataloging. Rarely gestures expansively; most communication happens in the set of his shoulders or the tilt of his head.",
-    "clothing_style": "Consistent rotation of rumpled linen jackets in muted terracotta, grey, or taupe over plain t-shirts in charcoal or cream. Dark trousers, usually cotton or linen blend, showing wear at the cuffs. Worn leather shoes — oxfords or brogues in dark brown, maintained but not polished to shine. No jewelry beyond a single worn silver ring on his left middle finger. Belongs to Tier 3–4 working professional; functional, modest, not concerned with fashion."
-  },
-  "image_prompt": "Diyaa Lindström-Zidane-Banerjee, 188cm tall neo-noir professional in 2226, golden-bronze skin with warm honey undertones blending South Asian, Hispanic, Indigenous American, North African and Northern European heritage. Broad facial planes, full bridge nose, rounded cheeks, weathered lines from decades of concentration. Dark brown eyes. Long dark brown hair heavily salted with grey, pulled back tight at nape with escaping strands. Heavy-set, broad-shouldered frame in rumpled terracotta linen jacket over cream t-shirt. Dark worn cotton trousers and weathered dark brown oxfords. A striking 1.2-meter rust-brown geneware tail with dense fur coils around his leg. Silver scar visible on left forearm. Worn silver ring on left middle finger. Patient, meditative expression. Seated deliberately in office chair, tail curled around leg. Warm indoor lighting, neo-noir workspace setting with subtle neon accents casting gentle light on his golden-bronze complexion. Quiet dignity in modest, functional clothing --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 28.7,
-    "Hispanic/Latin American": 27.2,
-    "Indigenous American": 18.9,
-    "North African": 15,
-    "Northern European": 10.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 18.3
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 7.5
-      },
-      "Indian": {
-        "Malayali": 2.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 8.7,
-        "Nicaraguan": 1.8
-      },
-      "South American": {
-        "Venezuelan": 8.1
-      },
-      "Caribbean": {
-        "Dominican": 7.1,
-        "Puerto Rican": 1.5
-      }
-    },
-    "Indigenous American": {
-      "Plains Nations": {
-        "Cherokee": 7,
-        "Lakota": 7
-      },
-      "Great Lakes Nations": {
-        "Potawatomi": 4.9
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Moroccan": 11.8,
-        "Algerian": 3.2
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 8.2
-      },
-      "British Isles": {
-        "Welsh": 2
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a6a8762e9510f3806f7396b2",
+    "type":  "character",
+    "name":  "Diyaa LindstrÃ¶m-Zidane-Banerjee",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Private investigator, licensed bounty compliance and debt recovery, operates out of Edgewater Prism",
+    "age":  51,
+    "status":  "active",
+    "location":  "Edgewater Prism â€” office above a bioluminescent algae bar called Photikar, near Lincoln and Addison",
+    "description":  "Diyaa LindstrÃ¶m-Zidane-Banerjee is a big man going soft in the middle, with dark olive-bronze skin, heavy grey-salted hair he keeps pulled back with a rubber band, and the kind of face that has been patient for so long it has settled permanently into patience. He dresses in the same rotation of rumpled linen jackets in muted terracotta and grey, never quite formal and never quite casual, and he has a geneware tail â€” a long, unhurried thing in rust-brown fur â€” that he got in his thirties when tails were newly fashionable and has kept because he grew fond of it. It curls around chair legs when he\u0027s thinking and goes very still when he\u0027s alarmed.\n\nHe has been a licensed PI for nineteen years. He started as Arcturus Civil Security, left without drama, and built his solo practice from debt-recovery cases so dull that most investigators wouldn\u0027t touch them. He is extraordinarily good at finding people who do not want to be found, not because he is relentless but because he is patient and because he understands that almost everyone leaves one thread they don\u0027t notice. He charges fairly, keeps meticulous case notes, and has a long-standing rule against working cases that involve children. His office has a dedicated E.L.F. shrine â€” a small mahogany cabinet, always open â€” that he calls Ledger and which he believes keeps running tallies of debts, moral and financial, across the city. He consults it before taking unusual cases.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being responsible for an outcome he couldn\u0027t have prevented but should have",
+                                          "losing the distinction between recovery work and something uglier"
+                                      ],
+                       "core_desires":  [
+                                            "cases that are actually interesting",
+                                            "to believe that the work he does balances out more than it exploits"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "rigid personal ethics as a substitute for the institutional ones he no longer trusts",
+                                                 "consulting Ledger before decisions as a way of externalizing moral deliberation"
+                                             ],
+                       "blind_spots":  [
+                                           "believes his own ethical framework is more consistent than it actually is",
+                                           "has developed a comfortable cynicism that sometimes stops him from seeing genuine hope"
+                                       ],
+                       "secret":  "Eight years ago he found a man he was contracted to locate for a debt recovery firm. He found him and called in the location and the man was dead within seventy-two hours. The official verdict was unrelated â€” an accident. Rafaelo doesn\u0027t believe it. He kept the case file. He still checks on the debt firm occasionally, not knowing what he\u0027s looking for or what he\u0027d do if he found it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Economical and dry, with occasional unexpected precision â€” he will use a very exact word where most people would approximate",
+                            "cadence":  "Unhurried, slightly formal without being stiff",
+                            "verbal_tics":  [
+                                                "Refers to Ledger as \u0027she\u0027 â€” \u0027she says this one\u0027s worth looking at\u0027",
+                                                "\u0027Hm\u0027 as a complete sentence when processing",
+                                                "Ends negotiations with \u0027so we\u0027re clear, then\u0027 even when things are not entirely clear"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I find people. Occasionally I find things. I don\u0027t do anything with what I find except report it â€” what happens after is your business, not mine, and I need to believe that.\u0027",
+                                                  "\u0027Ledger says this one\u0027s interesting. I\u0027ve learned to trust her on interesting.\u0027",
+                                                  "\u0027You\u0027d be surprised how many people leave a thread. Usually it\u0027s something they love. People stop hiding when they miss something enough.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He has been hired to locate someone whose description matches a character\u0027s contact â€” he approaches them, not to threaten, but because he thinks something is wrong with the case he\u0027s been handed",
+                        "He shows up at the scene of something that wasn\u0027t supposed to be a crime and starts asking questions that are too specific to be casual",
+                        "He offers a character a job: he has identified the thread in an eight-year-old case but following it requires someone who doesn\u0027t exist in any database he can access"
+                    ],
+    "narrative_function":  "Quest giver, information broker for hire, guide to the city\u0027s grey-zone legal mechanics, morally grounded private sector alternative to Metro",
+    "augmentations":  "Geneware tail (rust-brown, expressive), memory-assist implant (searchable recall of case notes and conversations â€” passive, no recording), low-grade stress-response suppressor (keeps him calm in confrontational situations)",
+    "daily_life":  "Opens the office at 0900, reviews any overnight messages, spends the middle of the day in the field or running database searches, returns to write up notes by evening; has dinner at Photikar downstairs three nights a week and knows the bartender well enough that she refills his water without being asked.",
+    "affiliation":  "Self-employed, licensed through GLMZ Metro PI registration; occasional contracted work for Tessera Compliance Bureau",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  7,
+                                 "expression":  6,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -1,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "patient",
+                               "principled",
+                               "haunted",
+                               "experienced",
+                               "ethically anchored"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never take a case you can\u0027t afford to finish honestly",
+                                              "No children, no exceptions",
+                                              "If Ledger says don\u0027t, sleep on it"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient observation and documentation",
+                                                 "Direct, quiet confrontation with documented evidence",
+                                                 "Formal report to relevant authority (Metro or licensing board)",
+                                                 "Walk away from the case and refund the client â€” this is the nuclear option"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally measured â€” assesses before committing to any register",
+                                                   "friends":  "Drily warm, remembers everything, shows care through small reliable consistencies rather than demonstrative acts"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Tail curls tighter, he gets quieter",
+                                                "medium":  "Becomes very precise and methodical, strips emotion from speech entirely",
+                                                "high":  "Goes absolutely still, makes one decision, and executes it"
+                                            },
+                       "contradictions":  [
+                                              "Professes that what clients do with his findings is their business, but has walked away from two paying cases because he didn\u0027t like what the findings would enable"
+                                          ],
+                       "habits":  [
+                                      "Opens the Ledger cabinet at the start and end of every workday",
+                                      "Never takes case calls before his first coffee",
+                                      "Writes case notes longhand first, digitalizes second"
+                                  ],
+                       "breaking_points":  [
+                                               "Evidence that a recovery case is actually a murder-location contract â€” he will burn the case file, refund the advance, and make sure someone appropriate knows"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Memory-assist implant â€” searchable passive recall, 15-year indexed archive of case conversations and notes",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Memory-assist implant â€” searchable passive recall, 15-year indexed archive of case conversations and notes",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Stress-response suppressor (low-grade) â€” blunts acute adrenaline spike in confrontational situations",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Stress-response suppressor (low-grade) â€” blunts acute adrenaline spike in confrontational situations",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Geneware tail â€” rust-brown, full motor control, expressive",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Geneware tail â€” rust-brown, full motor control, expressive",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Edgewater Prism",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-SL40 \u0027Partisan\u0027",
+                            "Crucible Industries Viper Mk.III \u0027Copperhead\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-SL40 \u0027Partisan\u0027",
+                                "Crucible Industries Viper Mk.III \u0027Copperhead\u0027"
+                            ],
+    "related_entities":  [
+                             "Edgewater Prism",
+                             "Patience",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "Mahogany",
+                             "Bronze",
+                             "Akosua Johansson",
+                             "Handed"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Complex genetic blend of South Asian (28.7%), Hispanic/Latin American (27.2%), Indigenous American (18.9%), North African (15.0%), and Northern European (10.2%) ancestry. The combination manifests in warm, earthy skin tones with golden and amber undertones, facial structure showing the broader planes and full features characteristic of Indigenous American and South Asian lineages, balanced with North African bone structure and subtle Northern European undertones. Rich melanin expression with nuanced warm depth.",
+                                 "height_cm":  188,
+                                 "weight_kg":  94,
+                                 "build":  "Heavy-set, broad-shouldered, carrying visible weight in the midsection from decades of desk work and coffee. Still carries the frame of someone who was once more muscular; age and patience have softened him rather than diminished him.",
+                                 "hair_color":  "Dark brown with heavy grey salting throughout",
+                                 "hair_style":  "Long, pulled back tightly into a rubber band at the nape of the neck; some grey strands escape regularly",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Dark brown, warm",
+                                 "skin_tone":  "Warm golden-bronze with amber and honey undertones; the result of South Asian warmth blended with Hispanic/Latin American and Indigenous American depth, grounded by North African richness and subtle Northern European undertones",
+                                 "complexion":  "Weathered, lined face with deep crow\u0027s feet and forehead creases that speak to nineteen years of concentration. Broad nose with full bridge reflecting South Asian and Indigenous American heritage. Jaw heavy and slightly softened by age, with warm fullness in the cheeks and temples. Rounded facial planes with the characteristic breadth of Indigenous American ancestry, blended with South Asian fullness and North African structure. Cheekbones set at moderate height, creating gentle facial tapering common to Hispanic/Latin American heritage. Skin has the texture of someone who spends time outdoors and indoors in equal measure, with the natural depth and resilience that comes from this genetic combination. Clean-shaven most days, occasionally a day or two of grey stubble.",
+                                 "distinguishing_marks":  [
+                                                              "Rust-brown geneware tail, approximately 1.2 meters long, with dense fur and full articulation; visible at all times, curls reflexively around furniture or his own leg when seated",
+                                                              "Long, thin scar running down the inside of his left forearm from wrist to elbow â€” pale silver against bronze skin, likely from a sharp implement, approximately 15cm in length, sustained roughly 20+ years ago"
+                                                          ],
+                                 "visible_augmentations":  "Geneware tail is the only immediately visible augmentation. The memory-assist implant and stress-response suppressor are entirely subcutaneous; no visible ports, LED indicators, or scarring.",
+                                 "posture_movement":  "Deliberate and economical. Moves with a patient, unhurried gait â€” no wasted motion. Often sits with his weight distributed across both sides of a chair, tail curling around the leg or draped across his lap. His default expression is patient, almost meditative. Eyes tend to rest on people or objects for longer than is typical, as if cataloging. Rarely gestures expansively; most communication happens in the set of his shoulders or the tilt of his head.",
+                                 "clothing_style":  "Consistent rotation of rumpled linen jackets in muted terracotta, grey, or taupe over plain t-shirts in charcoal or cream. Dark trousers, usually cotton or linen blend, showing wear at the cuffs. Worn leather shoes â€” oxfords or brogues in dark brown, maintained but not polished to shine. No jewelry beyond a single worn silver ring on his left middle finger. Belongs to Tier 3â€“4 working professional; functional, modest, not concerned with fashion."
+                             },
+    "image_prompt":  "Diyaa LindstrÃ¶m-Zidane-Banerjee, 188cm tall neo-noir professional in 2226, golden-bronze skin with warm honey undertones blending South Asian, Hispanic, Indigenous American, North African and Northern European heritage. Broad facial planes, full bridge nose, rounded cheeks, weathered lines from decades of concentration. Dark brown eyes. Long dark brown hair heavily salted with grey, pulled back tight at nape with escaping strands. Heavy-set, broad-shouldered frame in rumpled terracotta linen jacket over cream t-shirt. Dark worn cotton trousers and weathered dark brown oxfords. A striking 1.2-meter rust-brown geneware tail with dense fur coils around his leg. Silver scar visible on left forearm. Worn silver ring on left middle finger. Patient, meditative expression. Seated deliberately in office chair, tail curled around leg. Warm indoor lighting, neo-noir workspace setting with subtle neon accents casting gentle light on his golden-bronze complexion. Quiet dignity in modest, functional clothing --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  28.7,
+                             "Hispanic/Latin American":  27.2,
+                             "Indigenous American":  18.9,
+                             "North African":  15,
+                             "Northern European":  10.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  18.3
+                                                               },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  7.5
+                                                                },
+                                                "Indian":  {
+                                                               "Malayali":  2.9
+                                                           }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  8.7,
+                                                                                     "Nicaraguan":  1.8
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Venezuelan":  8.1
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  7.1,
+                                                                              "Puerto Rican":  1.5
+                                                                          }
+                                                        },
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Cherokee":  7,
+                                                                               "Lakota":  7
+                                                                           },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  4.9
+                                                                                }
+                                                    },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  11.8,
+                                                                  "Algerian":  3.2
+                                                              }
+                                              },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  8.2
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Welsh":  2
+                                                                        }
+                                                  }
+                        },
+    "tier":  "4"
 }

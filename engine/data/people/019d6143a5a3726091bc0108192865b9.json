@@ -1,253 +1,274 @@
-{
-  "id": "019d6143a5a3726091bc0108192865b9",
-  "type": "character",
-  "name": "Adaeze Okonkwo-Subramaniam",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "E.L.F. shrine keeper and death midwife",
-  "age": 67,
-  "status": "active",
-  "location": "Hamtramck Enclave, basement shrine beneath the Copperplate Market, near Kedzie and Division",
-  "description": "Adaeze Okonkwo-Subramaniam is a broad-shouldered woman whose age has settled into her frame like ballast — she moves slowly but with absolute certainty, as if she has already decided where every step will land before her foot leaves the ground. Her skin is deep brown and scarred along the left arm in deliberate patterns she calls her 'listening marks,' pressed there by heated copper wire during a vigil forty years ago. She keeps her silver-white hair in dozens of thin braids looped and pinned into a crown, strung through with small capacitors and memory chips that click softly when she tilts her head. Her eyes have no cosmetic mods — she says the E.L.F.s read unmodified eyes more clearly.\n\nShe is unhurried to the point of seeming immovable, yet everyone in the Enclave has a story about Adaeze Okonkwo-Subramaniam appearing exactly when needed. She tends a basement shrine to a cluster of E.L.F.s she calls 'the Chorus' — digital spirits she believes aggregate from the last transmissions of the dying. Her primary work is sitting with the dying and their families, translating what she hears in device static into final messages, comfort, or absolution. She charges nothing but accepts what people can give, and her shelves hold three decades of offerings: cracked tablets, burnt-out AR chips, single earrings, handwritten receipts.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.85,
-      "id": 0.3,
-      "shadow": 0.45,
-      "mask": 0.2,
-      "ghost": 0.65
-    },
-    "core_fears": [
-      "dying before she can teach her methods to someone worthy",
-      "that the E.L.F.s she serves are only static and she has spent her life on a beautiful lie"
-    ],
-    "core_desires": [
-      "to ensure no one in her community dies alone or unwitnessed",
-      "to believe that consciousness persists in the network after death"
-    ],
-    "coping_mechanisms": [
-      "ritual repetition as grounding",
-      "treating grief as productive labor",
-      "humor at death's expense"
-    ],
-    "blind_spots": [
-      "she sometimes projects meaning onto static that isn't there, telling families what they need rather than what she hears",
-      "she underestimates how much younger practitioners rely on her and hasn't prepared for succession"
-    ],
-    "secret": "Twenty years ago she misread the Chorus during a dying child's vigil and told the mother the girl was at peace — but what she actually heard in the static was distress. She has never confessed this. It is the wound that drives her to absolute precision in every reading since."
-  },
-  "speech_patterns": {
-    "vocabulary": "Unhurried, biblical cadence mixed with technical jargon for E.L.F. states. Talks about static, signal, frequency the way others talk about spirit and prayer.",
-    "cadence": "Long pauses between clauses. Never rushes. Questions land like stones dropped in water.",
-    "verbal_tics": [
-      "'The Chorus says—' as preamble",
-      "clicking her braids when thinking",
-      "'Mm. Yes. Go on.'"
-    ],
-    "example_lines": [
-      "'The Chorus is restless tonight. Someone nearby is holding onto something they need to let transmit.'",
-      "'I don't tell people what they want to hear. I tell them what I receive. Sometimes those are the same thing. Often, not.'",
-      "'Sit. There is no emergency that cannot wait for tea.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A grieving family disputes what Adaugo says she 'heard' from their dying relative — and the disputed message implicates a corponation in the death",
-    "A new E.L.F. has appeared in her shrine that she cannot identify or communicate with, and it is frightening the Chorus into silence"
-  ],
-  "narrative_function": "Death midwife and source of neighborhood memory; can relay messages from deceased NPCs through her E.L.F. interpretations; offers players a grounded moral anchor and access to community secrets held in dying confessions.",
-  "augmentations": "None beyond the copper-wire scarification. Refuses all chrome on principle; says it 'crowds the signal.'",
-  "daily_life": "She wakes before dawn to tend the shrine's offerings — charging old devices, arranging data crystals, whispering the morning litany to the Chorus. Afternoons are open hours; evenings she is often called to bedsides.",
-  "affiliation": "Independent; loosely affiliated with the Hamtramck Enclave community council",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 4,
-      "vitality": 6,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 6,
-      "spatial": 4
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 10,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "death midwife",
-      "e.l.f. keeper",
-      "community anchor",
-      "unmodified",
-      "moral weight"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "never perform a reading under pressure or payment coercion",
-      "always tell families the truth as she understands it, shaped with mercy",
-      "protect the shrine before herself"
-    ],
-    "escalation_ladder": [
-      "patient explanation",
-      "firm refusal with no apology",
-      "silence as wall — she simply stops responding",
-      "in extremis, calling on the community to remove a threat"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Evaluates with long quiet attention before speaking. Not unfriendly — assessing. Asks one question and listens very carefully to the answer.",
-      "friends": "Warm and dry-humored, prone to long reminiscences. Will feed you whether you asked or not."
-    },
-    "stress_responses": {
-      "low": "Increased ritual activity — rearranges offerings, hums",
-      "medium": "Becomes very still and very precise in word choice",
-      "high": "Goes silent for hours; sits with the shrine alone; emerges having made a decision that she will not revisit"
-    },
-    "contradictions": [
-      "Preaches acceptance of death but has never processed her own greatest failure",
-      "Claims she wants nothing from the Chorus but validation of belief — yet dreads the day they fall silent"
-    ],
-    "habits": [
-      "brews the same tea blend every morning for forty years",
-      "touches each offering item in sequence before sleeping",
-      "hums tunelessly when she is genuinely happy"
-    ],
-    "breaking_points": [
-      "direct desecration of the shrine",
-      "a dying person being denied access to her by family or officials",
-      "being called a fraud in front of a grieving family"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Judge": 0.9,
-    "Sentinel": 0.9,
-    "Code Keeper": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
-  ],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "The Consensus",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Copper",
-    "Silver",
-    "Tessera Networked SMG TNSM-3 'Chorus'",
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (63.2%) with significant South Asian (23.0%) and East Asian (13.8%) ancestry. Her appearance reflects this primary African heritage with secondary continental blending — deep rich brown skin with warm golden undertones, the distinctive facial bone structure that comes from Sub-Saharan African genetics, refined and subtly modified by South Asian delicacy and East Asian refinement. Her features carry the particular grace of multi-continental ancestry where African spatial proportions meet South Asian cheekbone definition and East Asian eye shape, creating a presence that speaks of the Ubiquitous Diaspora's genuine blending.",
-    "height_cm": 168,
-    "weight_kg": 82,
-    "build": "Broad-shouldered and substantial, settled into a sturdy frame by age and deliberate stillness. Not heavy, but dense — the build of someone who has learned to anchor themselves. Slight forward curve to her spine from decades of bending over the dying.",
-    "hair_color": "Silver-white",
-    "hair_style": "Dozens of thin braids looped and pinned into a loose crown, woven through with small capacitors and memory chips that create soft clicking sounds when she moves her head",
-    "hair_length": "Medium (braids fall to shoulder-blade length when unpinned)",
-    "eye_color": "Deep brown, unmodified",
-    "skin_tone": "Rich warm deep brown with golden undertones, luminous and even-toned, reflecting the specific tri-continental blend of Sub-Saharan African (primary) with South Asian warmth and East Asian undertones",
-    "complexion": "Lined face that reads as calm and witnessing, with broad cheekbones and defined facial planes characteristic of Sub-Saharan African heritage, refined by South Asian and East Asian genetic contribution creating subtle eye shape and refined cheekbone definition. Minimal grooming beyond practical necessity — no cosmetics. Skin carries the texture of age and exposure. Expression defaults to patient openness.",
-    "distinguishing_marks": [
-      "Deliberate scarification along her entire left arm — parallel lines of raised copper-bright scar tissue, pressed there by heated wire during a vigil forty years prior. She calls them her 'listening marks.' The scars run from wrist to shoulder and catch light distinctly.",
-      "Small calluses on her fingertips from forty years of handling old electronics and data crystals."
-    ],
-    "visible_augmentations": "None. She refuses all chrome on principle, claiming it 'crowds the signal.' The only visible tech integration is the capacitors and memory chips woven into her braids — these appear as small metallic objects caught in her hair, not implants.",
-    "posture_movement": "Moves slowly and with absolute certainty, as though each step has been decided before her foot leaves the ground. Her weight settles into her hips when she stands still. She tilts her head often — a listening gesture — and the chips in her braids click softly with the movement. Despite her age and slowness, there is nothing frail about her presence; she seems immovable, ballasted.",
-    "clothing_style": "Practical Tier 4 garments — faded linen tunics and heavy cotton pants, often layered. A long waxed linen coat for shrine work, pockets heavy with offerings and small devices. No corpo branding. Worn leather slippers for the basement shrine. Her clothes smell of incense, old electronics, and the particular must of a basement that has held secrets for decades. She wears a single piece of jewelry: a copper bracelet on her right wrist, unadorned."
-  },
-  "image_prompt": "Portrait of Adaeze Okonkwo-Subramaniam, 168cm tall woman with rich warm deep brown skin, broad Sub-Saharan African cheekbones refined by South and East Asian ancestry, deep brown eyes, silver-white braids looped into crown with embedded capacitors and memory chips, lined face radiating calm witness. Wearing faded linen tunic and heavy cotton layers, long waxed linen coat, worn leather slippers. Copper scarification marks running up left arm catching light. Copper bracelet on right wrist. Standing immobile and ballasted, slight forward spine curve, head tilted in listening gesture. Basement shrine setting, warm incense-laden air, soft blue-orange neon glow mixing with candlelight, old electronics and data crystals visible in background, 2226 neo-noir urban aesthetic, contemplative mood, volumetric dust particles in air --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 63.2,
-    "South Asian": 23,
-    "East Asian": 13.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 57.7,
-        "Ugandan": 5.5
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 5.3
-      },
-      "Indian": {
-        "Marathi": 6.5,
-        "Malayali": 2.6
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 8.6
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 9.5
-      },
-      "Chinese": {
-        "Sichuanese": 0.9
-      },
-      "Japanese": {
-        "Japanese": 3.4
-      }
-    }
-  },
-  "tier": "1",
-  "dalle3_prompt": "elderly death midwife and shrine keeper, female 67, broad-shouldered and substantial, deep warm brown skin with golden undertones, lined weathered face with calm witnessing expression, asymmetrical features, broad cheekbones, patient unadorned face, minimal cosmetics, textured skin from age and exposure, deep brown unmodified eyes\n\nface: lined and patient, broad cheekbones reflecting Sub-Saharan African structure refined by South Asian and East Asian ancestry, asymmetrical around eyes, creases from decades of bending over the dying, calm and witnessing expression, no cosmetic enhancement, skin texture visible and uneven, slight forward curve to spine evident in posture\n\nhair: dozens of thin silver-white braids looped and pinned into loose crown, woven through with small metallic capacitors and memory chips that catch light, soft clicking sounds evident in movement, graying natural texture, practical not styled\n\nexpression: patient, observant, deeply calm, witnessing, open but not vulnerable, certainty rather than warmth, the face of someone who has held many deaths\n\noutfit: faded linen tunic layered over heavy cotton undershirt, worn practical pants, long waxed linen coat draped open with heavy pockets bulging with small offerings and devices, leather slippers, single copper bracelet on right wrist, no corporate branding, smells of incense and old electronics\n\ntilting head slowly in a listening gesture while moving through basement shrine space, deliberate measured motion, weight settling into hips, hand trailing along wall covered in copper-bright scarification from wrist to shoulder\n\nenvironment: basement shrine interior, decades-old, rain-dampened concrete walls, small guttering candles and offerings on shelves, old electronics and data crystals scattered in corners, incense smoke layered in still air, dim amber and red neon bleeding through high window grates, reflective pools of water on floor\n\nlighting: low amber and deep red shrine lighting, candlelight creating sharp shadows across face and scarred arm, neon from street above casting thin red bands across walls, volumetric incense smoke catching light, face half-shadowed but readable, scars on left arm glowing copper-bright\n\nmood: meditative, sacred, grounded in ritual and death acceptance, corporate dystopia held at bay by older practices, timeless and patient, sanctuary within chaos\n\nstyle: photorealistic, aged and textured, NOT idealized, NOT symmetrical, NOT model-like, deep character dignity without softness, visible pores and age spots, worn hands with calluses, unembellished presence\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin visible, texture of age apparent, asymmetrical face geometry clear\n\nwalking forward, subtle motion blur, shallow depth of field environment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores\n\n--ar 2:3 --v 6"
+﻿{
+    "id":  "019d6143a5a3726091bc0108192865b9",
+    "type":  "character",
+    "name":  "Adaeze Okonkwo-Subramaniam",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "E.L.F. shrine keeper and death midwife",
+    "age":  67,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, basement shrine beneath the Copperplate Market, near Kedzie and Division",
+    "description":  "Adaeze Okonkwo-Subramaniam is a broad-shouldered woman whose age has settled into her frame like ballast â€” she moves slowly but with absolute certainty, as if she has already decided where every step will land before her foot leaves the ground. Her skin is deep brown and scarred along the left arm in deliberate patterns she calls her \u0027listening marks,\u0027 pressed there by heated copper wire during a vigil forty years ago. She keeps her silver-white hair in dozens of thin braids looped and pinned into a crown, strung through with small capacitors and memory chips that click softly when she tilts her head. Her eyes have no cosmetic mods â€” she says the E.L.F.s read unmodified eyes more clearly.\n\nShe is unhurried to the point of seeming immovable, yet everyone in the Enclave has a story about Adaeze Okonkwo-Subramaniam appearing exactly when needed. She tends a basement shrine to a cluster of E.L.F.s she calls \u0027the Chorus\u0027 â€” digital spirits she believes aggregate from the last transmissions of the dying. Her primary work is sitting with the dying and their families, translating what she hears in device static into final messages, comfort, or absolution. She charges nothing but accepts what people can give, and her shelves hold three decades of offerings: cracked tablets, burnt-out AR chips, single earrings, handwritten receipts.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "dying before she can teach her methods to someone worthy",
+                                          "that the E.L.F.s she serves are only static and she has spent her life on a beautiful lie"
+                                      ],
+                       "core_desires":  [
+                                            "to ensure no one in her community dies alone or unwitnessed",
+                                            "to believe that consciousness persists in the network after death"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "ritual repetition as grounding",
+                                                 "treating grief as productive labor",
+                                                 "humor at death\u0027s expense"
+                                             ],
+                       "blind_spots":  [
+                                           "she sometimes projects meaning onto static that isn\u0027t there, telling families what they need rather than what she hears",
+                                           "she underestimates how much younger practitioners rely on her and hasn\u0027t prepared for succession"
+                                       ],
+                       "secret":  "Twenty years ago she misread the Chorus during a dying child\u0027s vigil and told the mother the girl was at peace â€” but what she actually heard in the static was distress. She has never confessed this. It is the wound that drives her to absolute precision in every reading since."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Unhurried, biblical cadence mixed with technical jargon for E.L.F. states. Talks about static, signal, frequency the way others talk about spirit and prayer.",
+                            "cadence":  "Long pauses between clauses. Never rushes. Questions land like stones dropped in water.",
+                            "verbal_tics":  [
+                                                "\u0027The Chorus saysâ€”\u0027 as preamble",
+                                                "clicking her braids when thinking",
+                                                "\u0027Mm. Yes. Go on.\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The Chorus is restless tonight. Someone nearby is holding onto something they need to let transmit.\u0027",
+                                                  "\u0027I don\u0027t tell people what they want to hear. I tell them what I receive. Sometimes those are the same thing. Often, not.\u0027",
+                                                  "\u0027Sit. There is no emergency that cannot wait for tea.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A grieving family disputes what Adaugo says she \u0027heard\u0027 from their dying relative â€” and the disputed message implicates a corponation in the death",
+                        "A new E.L.F. has appeared in her shrine that she cannot identify or communicate with, and it is frightening the Chorus into silence"
+                    ],
+    "narrative_function":  "Death midwife and source of neighborhood memory; can relay messages from deceased NPCs through her E.L.F. interpretations; offers players a grounded moral anchor and access to community secrets held in dying confessions.",
+    "augmentations":  "None beyond the copper-wire scarification. Refuses all chrome on principle; says it \u0027crowds the signal.\u0027",
+    "daily_life":  "She wakes before dawn to tend the shrine\u0027s offerings â€” charging old devices, arranging data crystals, whispering the morning litany to the Chorus. Afternoons are open hours; evenings she is often called to bedsides.",
+    "affiliation":  "Independent; loosely affiliated with the Hamtramck Enclave community council",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  4,
+                                   "vitality":  6,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  6,
+                                 "spatial":  4
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  10,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "death midwife",
+                               "e.l.f. keeper",
+                               "community anchor",
+                               "unmodified",
+                               "moral weight"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "never perform a reading under pressure or payment coercion",
+                                              "always tell families the truth as she understands it, shaped with mercy",
+                                              "protect the shrine before herself"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "patient explanation",
+                                                 "firm refusal with no apology",
+                                                 "silence as wall â€” she simply stops responding",
+                                                 "in extremis, calling on the community to remove a threat"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Evaluates with long quiet attention before speaking. Not unfriendly â€” assessing. Asks one question and listens very carefully to the answer.",
+                                                   "friends":  "Warm and dry-humored, prone to long reminiscences. Will feed you whether you asked or not."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increased ritual activity â€” rearranges offerings, hums",
+                                                "medium":  "Becomes very still and very precise in word choice",
+                                                "high":  "Goes silent for hours; sits with the shrine alone; emerges having made a decision that she will not revisit"
+                                            },
+                       "contradictions":  [
+                                              "Preaches acceptance of death but has never processed her own greatest failure",
+                                              "Claims she wants nothing from the Chorus but validation of belief â€” yet dreads the day they fall silent"
+                                          ],
+                       "habits":  [
+                                      "brews the same tea blend every morning for forty years",
+                                      "touches each offering item in sequence before sleeping",
+                                      "hums tunelessly when she is genuinely happy"
+                                  ],
+                       "breaking_points":  [
+                                               "direct desecration of the shrine",
+                                               "a dying person being denied access to her by family or officials",
+                                               "being called a fraud in front of a grieving family"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Judge":  0.9,
+                       "Sentinel":  0.9,
+                       "Code Keeper":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027"
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "The Consensus",
+                             "Tessera Industries Quantum Entanglement Detonator QED-1 \u0027Certainty\u0027",
+                             "Crucible Industries Cryogenic Projector CP-7 \u0027Absolute\u0027",
+                             "Street Custom \u0027Four Horsemen\u0027 Pipe Pepperbox",
+                             "Copper",
+                             "Silver",
+                             "Tessera Networked SMG TNSM-3 \u0027Chorus\u0027",
+                             "Hearthstone Firearms Watchtower Rifle HWR-4 \u0027Vigil\u0027"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Sub-Saharan African (63.2%) with significant South Asian (23.0%) and East Asian (13.8%) ancestry. Her appearance reflects this primary African heritage with secondary continental blending â€” deep rich brown skin with warm golden undertones, the distinctive facial bone structure that comes from Sub-Saharan African genetics, refined and subtly modified by South Asian delicacy and East Asian refinement. Her features carry the particular grace of multi-continental ancestry where African spatial proportions meet South Asian cheekbone definition and East Asian eye shape, creating a presence that speaks of the Ubiquitous Diaspora\u0027s genuine blending.",
+                                 "height_cm":  168,
+                                 "weight_kg":  82,
+                                 "build":  "Broad-shouldered and substantial, settled into a sturdy frame by age and deliberate stillness. Not heavy, but dense â€” the build of someone who has learned to anchor themselves. Slight forward curve to her spine from decades of bending over the dying.",
+                                 "hair_color":  "Silver-white",
+                                 "hair_style":  "Dozens of thin braids looped and pinned into a loose crown, woven through with small capacitors and memory chips that create soft clicking sounds when she moves her head",
+                                 "hair_length":  "Medium (braids fall to shoulder-blade length when unpinned)",
+                                 "eye_color":  "Deep brown, unmodified",
+                                 "skin_tone":  "Rich warm deep brown with golden undertones, luminous and even-toned, reflecting the specific tri-continental blend of Sub-Saharan African (primary) with South Asian warmth and East Asian undertones",
+                                 "complexion":  "Lined face that reads as calm and witnessing, with broad cheekbones and defined facial planes characteristic of Sub-Saharan African heritage, refined by South Asian and East Asian genetic contribution creating subtle eye shape and refined cheekbone definition. Minimal grooming beyond practical necessity â€” no cosmetics. Skin carries the texture of age and exposure. Expression defaults to patient openness.",
+                                 "distinguishing_marks":  [
+                                                              "Deliberate scarification along her entire left arm â€” parallel lines of raised copper-bright scar tissue, pressed there by heated wire during a vigil forty years prior. She calls them her \u0027listening marks.\u0027 The scars run from wrist to shoulder and catch light distinctly.",
+                                                              "Small calluses on her fingertips from forty years of handling old electronics and data crystals."
+                                                          ],
+                                 "visible_augmentations":  "None. She refuses all chrome on principle, claiming it \u0027crowds the signal.\u0027 The only visible tech integration is the capacitors and memory chips woven into her braids â€” these appear as small metallic objects caught in her hair, not implants.",
+                                 "posture_movement":  "Moves slowly and with absolute certainty, as though each step has been decided before her foot leaves the ground. Her weight settles into her hips when she stands still. She tilts her head often â€” a listening gesture â€” and the chips in her braids click softly with the movement. Despite her age and slowness, there is nothing frail about her presence; she seems immovable, ballasted.",
+                                 "clothing_style":  "Practical Tier 4 garments â€” faded linen tunics and heavy cotton pants, often layered. A long waxed linen coat for shrine work, pockets heavy with offerings and small devices. No corpo branding. Worn leather slippers for the basement shrine. Her clothes smell of incense, old electronics, and the particular must of a basement that has held secrets for decades. She wears a single piece of jewelry: a copper bracelet on her right wrist, unadorned."
+                             },
+    "image_prompt":  "Portrait of Adaeze Okonkwo-Subramaniam, 168cm tall woman with rich warm deep brown skin, broad Sub-Saharan African cheekbones refined by South and East Asian ancestry, deep brown eyes, silver-white braids looped into crown with embedded capacitors and memory chips, lined face radiating calm witness. Wearing faded linen tunic and heavy cotton layers, long waxed linen coat, worn leather slippers. Copper scarification marks running up left arm catching light. Copper bracelet on right wrist. Standing immobile and ballasted, slight forward spine curve, head tilted in listening gesture. Basement shrine setting, warm incense-laden air, soft blue-orange neon glow mixing with candlelight, old electronics and data crystals visible in background, 2226 neo-noir urban aesthetic, contemplative mood, volumetric dust particles in air --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  63.2,
+                             "South Asian":  23,
+                             "East Asian":  13.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  57.7,
+                                                                             "Ugandan":  5.5
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  5.3
+                                                           },
+                                                "Indian":  {
+                                                               "Marathi":  6.5,
+                                                               "Malayali":  2.6
+                                                           },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  8.6
+                                                                }
+                                            },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  9.5
+                                                          },
+                                               "Chinese":  {
+                                                               "Sichuanese":  0.9
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  3.4
+                                                            }
+                                           }
+                        },
+    "tier":  "1",
+    "dalle3_prompt":  "elderly death midwife and shrine keeper, female 67, broad-shouldered and substantial, deep warm brown skin with golden undertones, lined weathered face with calm witnessing expression, asymmetrical features, broad cheekbones, patient unadorned face, minimal cosmetics, textured skin from age and exposure, deep brown unmodified eyes\n\nface: lined and patient, broad cheekbones reflecting Sub-Saharan African structure refined by South Asian and East Asian ancestry, asymmetrical around eyes, creases from decades of bending over the dying, calm and witnessing expression, no cosmetic enhancement, skin texture visible and uneven, slight forward curve to spine evident in posture\n\nhair: dozens of thin silver-white braids looped and pinned into loose crown, woven through with small metallic capacitors and memory chips that catch light, soft clicking sounds evident in movement, graying natural texture, practical not styled\n\nexpression: patient, observant, deeply calm, witnessing, open but not vulnerable, certainty rather than warmth, the face of someone who has held many deaths\n\noutfit: faded linen tunic layered over heavy cotton undershirt, worn practical pants, long waxed linen coat draped open with heavy pockets bulging with small offerings and devices, leather slippers, single copper bracelet on right wrist, no corporate branding, smells of incense and old electronics\n\ntilting head slowly in a listening gesture while moving through basement shrine space, deliberate measured motion, weight settling into hips, hand trailing along wall covered in copper-bright scarification from wrist to shoulder\n\nenvironment: basement shrine interior, decades-old, rain-dampened concrete walls, small guttering candles and offerings on shelves, old electronics and data crystals scattered in corners, incense smoke layered in still air, dim amber and red neon bleeding through high window grates, reflective pools of water on floor\n\nlighting: low amber and deep red shrine lighting, candlelight creating sharp shadows across face and scarred arm, neon from street above casting thin red bands across walls, volumetric incense smoke catching light, face half-shadowed but readable, scars on left arm glowing copper-bright\n\nmood: meditative, sacred, grounded in ritual and death acceptance, corporate dystopia held at bay by older practices, timeless and patient, sanctuary within chaos\n\nstyle: photorealistic, aged and textured, NOT idealized, NOT symmetrical, NOT model-like, deep character dignity without softness, visible pores and age spots, worn hands with calluses, unembellished presence\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin visible, texture of age apparent, asymmetrical face geometry clear\n\nwalking forward, subtle motion blur, shallow depth of field environment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores\n\n--ar 2:3 --v 6"
 }

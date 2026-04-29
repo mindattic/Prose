@@ -1,306 +1,333 @@
-{
-  "id": "019d6143a6b27fbdb715a2e3aa67ea20",
-  "rating": 80,
-  "type": "character",
-  "name": "Sekou Kovalenko",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "protection racket enforcer and occasional numbers runner for the Gray Zone lower levels",
-  "age": 22,
-  "status": "active",
-  "location": "the Gray Zone lower levels, Tier 2 commercial rows between Blackpipe Corridor and Iron Bend, near Halsted and Division",
-  "description": "Sekou Kovalenko is young enough that his face still hasn't fully settled into what it's going to be — there's something unfinished about his jaw, a softness around the eyes that the hardened set of his mouth hasn't caught up to yet. He's broad across the chest in the way of someone who started lifting weights in a small room at fifteen and has never stopped. His Ghanaian-Osei heritage gives him deep brown skin and a wide nose; his Kazakh-Russian grandfather passed down high cheekbones and light eyes that are an unsettling grey-green. He has retractable claws — a practical geneware mod he paid for himself at twenty, black-tipped, filed to functional sharpness — and wears them half-extended at rest as a casual signal. His clothes are cheap but kept neat. He is extremely aware of his clothes.\n\nSekou Kovalenko is in the phase of his criminal life where he is still deciding whether to become the person he is pretending to be. He does this job with professional dedication, collects the Φ from the Gray Zone vendors on behalf of his crew boss with no unnecessary roughness, and brings the numbers in on time. He is respected on the row, which he confuses with being liked. At home — a cube rental above a noodle counter — he reads Zheng-Dao corporate management theory, not because he wants to work for Zheng-Dao but because he is trying to reverse-engineer how power organizes itself. He has a plan. The plan changes every three months. He's not sure any version of it ends well.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.6,
-      "id": 0.7,
-      "shadow": 0.4,
-      "mask": 0.6,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "becoming old and locked in this role without having moved",
-      "that the plan he keeps revising doesn't exist — that he's just rationalizing stasis"
-    ],
-    "core_desires": [
-      "structural power — not just to hurt people but to be the kind of person decisions flow through",
-      "to be respected rather than feared, and to understand the difference"
-    ],
-    "coping_mechanisms": [
-      "the management theory reading gives him a feeling of forward motion even on static days",
-      "physical training as a way to feel like he is building something"
-    ],
-    "blind_spots": [
-      "cannot see that his boss Osaro is actively stunting his growth to keep him useful",
-      "overestimates how much his restraint distinguishes him from the crew members he looks down on"
-    ],
-    "secret": "He has been quietly documenting the Copperhead Collective's full operational structure — names, routes, collection schedules, buyer contacts — in an encrypted file he tells himself is for 'understanding the system.' He does not let himself think clearly about what he would do with it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Code-switching constantly — corporate register when he's thinking in strategy mode, the Gray Zone slang when in character on the row; hates being caught in the transition",
-    "cadence": "Measured and slightly too formal for his age — he is performing competence and occasionally overcorrects",
-    "verbal_tics": [
-      "'That's not how this works' when something violates his personal code",
-      "Long pauses before answering questions he finds interesting rather than threatening"
-    ],
-    "example_lines": [
-      "'Osaro gets his Φ on Friday. I come back on Friday. What happens between now and Friday is your concern, not mine. That's fair, right? I think that's fair.'",
-      "'I'm not — look, I don't enjoy this. I want to be clear that I don't enjoy this. It doesn't change what happens, but I want to be clear.'"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A vendor on his collection route is a Zheng-Dao mid-manager in deep cover — and they have made Reyvaldo a carefully worded offer that could mean very different things",
-    "The encrypted file he's been building has been accessed by someone else on the network — and he doesn't know if it's Osaro, law enforcement, or a rival crew"
-  ],
-  "narrative_function": "Street-level color and friction for any scene in the Gray Zone lower levels; represents the aspirational criminal — someone not yet calcified into their role; potential informant or reluctant contact if approached correctly",
-  "augmentations": "Retractable claws (geneware, black-tipped, filed sharp); skeletal density weave in forearms (grey market, impact resistance)",
-  "daily_life": "Makes collection rounds on the commercial row Tuesdays and Fridays, runs numbers for the bookmaking operation Monday and Thursday evenings, spends his off hours reading or watching underground Ferrogate logistics feeds trying to understand supply chain vulnerabilities.",
-  "affiliation": "the Gray Zone crew called the Copperhead Collective, answers to a mid-level boss named Osaro (a stocky man in his forties who he simultaneously admires and fears)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 6,
-      "vitality": 7,
-      "perception": 6
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 5,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 6,
-      "expression": 5,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": -2,
-      "assertion_deference": 2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "aspirational",
-      "restrained",
-      "strategic thinker",
-      "in transition",
-      "observer"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "No roughness on the first visit — show is almost always enough and keeps the row functional",
-      "Never go off-route without telling Osaro — unauthorized initiative is what gets young crew members disappeared"
-    ],
-    "escalation_ladder": [
-      "Professional reminder — 'Friday's the day, you know how this works'",
-      "Returns Friday, accepts partial payment with a noted shortfall and a reset deadline",
-      "Third visit with a colleague present — visible but not loud",
-      "Reports to Osaro and lets the boss decide the escalation — removes himself from the decision",
-      "If forced into direct physical confrontation, acts fast and controlled — ends it quickly, does not prolong it"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Watchful, calibrated, projects calm competence and lets people fill in the implied threat",
-      "friends": "Drops the performance entirely, becomes younger-seeming and earnest, talks too much about theory"
-    },
-    "stress_responses": {
-      "low": "Trains longer, reads later into the night",
-      "medium": "Becomes hyper-professional on the row — more formal, more correct, zero deviation",
-      "high": "Goes completely internal — stops talking, processes alone, makes a decision and commits to it"
-    },
-    "contradictions": [
-      "Aspires to power while genuinely disliking the mechanisms of power he currently operates",
-      "Considers himself more ethical than the crew while building a potential betrayal file on all of them"
-    ],
-    "habits": [
-      "Straightens his collar before knocking on any door — collection or otherwise",
-      "Marks the date on his encrypted file entry every time he adds to it"
-    ],
-    "breaking_points": [
-      "Osaro giving a direct order to hurt someone who has been cooperative and on time — the specific injustice, not violence in general"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "People Pleaser": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in the Gray Zone lower levels to a Ghanaian-Osei mother (Ferrogate freight handler) and a Kazakh-Russian father who left when Rey was four",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Joined the Copperhead Collective at sixteen as a lookout",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Promoted to collector route — Blackpipe Corridor to Iron Bend",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began the encrypted documentation file; purchased corporate management theory texts from a salvage data market",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Predominantly Eastern European (51.0%) with substantial Sub-Saharan African (21.7%) ancestry, blended with South Asian (15.9%), Northern European (8.5%), and North African (2.9%) heritage. This creates a complex Eurasian-African phenotype: Slavic bone structure and angular facial geometry softened and deepened by Sub-Saharan African features, with South Asian geometric influence in eye set and nose structure, and North African warmth in overall tone. The result is a warm golden-brown complexion with exceptional depth and definition — neither purely European nor African, but a striking synthesis that reads as unmistakably cosmopolitan.",
-    "height_cm": 183,
-    "weight_kg": 89,
-    "build": "Broad-chested and muscular from disciplined weight training since adolescence, but with the lean efficiency of someone who lifts for function rather than aesthetics. Shoulders wide, forearms visibly dense beneath the skin.",
-    "hair_color": "Black",
-    "hair_style": "Short, neat fade cut — maintained with precision, likely every two weeks",
-    "hair_length": "Short",
-    "eye_color": "Dark brown with subtle amber undertones, reflecting the warmth of his mixed ancestry",
-    "skin_tone": "Warm golden-brown medium tone, the result of Eastern European baseline deepened and enriched by Sub-Saharan, South Asian, and North African ancestry. Even consistency across the body with slightly warmer golden tones on inner surfaces and under the jaw. The depth is unmistakable — neither light nor dark, but burnished and complex.",
-    "complexion": "Angular face with prominent Slavic cheekbones blended with Sub-Saharan African jaw definition and structure — mature, powerful mandible. Eyes set with South Asian geometric influence, creating subtle almond-shaped depth. Nose broad and defined, characteristic of Sub-Saharan and South Asian heritage blend. Full lips with good definition. Clean-shaven, skin shows minor scars from street friction but otherwise well-maintained. Expression often guarded.",
-    "distinguishing_marks": [
-      "Faint scar tissue across the backs of both hands, consistent with street altercations",
-      "Thin white line running from left eyebrow toward temple — old blade work, poorly stitched",
-      "Network of fine scars on both forearms where the skeletal density weave was installed subcutaneously"
-    ],
-    "visible_augmentations": "Retractable black-tipped claws on both hands, typically held half-extended at rest as a deliberate signal. The claws are filed to sharp functionality, not cosmetic. Forearms show subtle grey undertones beneath skin where the skeletal density weave sits just beneath the dermis, most visible when flexed under harsh lighting.",
-    "posture_movement": "Stands with weight slightly forward, ready — a collector's posture. Moves with economical precision, no wasted motion. Hands often rest on tabletops or at sides with claws visible. When walking the commercial row, his gait is deliberate and measured, designed to be noticed without seeming aggressive. Eye contact is direct and held slightly too long.",
-    "clothing_style": "Cheap but immaculately maintained. Typically wears synthetic-blend shirts (black, grey, dark blue) tucked into grey cargo pants with reinforced pockets. Boots are generic work-issue, polished. A thin reflective jacket in charcoal for the rows — practical, unremarkable, the uniform of someone who doesn't want to stand out except for his presence itself. No visible gang colors, but the precision of his grooming reads as crew discipline. Everything fits correctly; he is extremely aware of how clothing sits on his body."
-  },
-  "image_prompt": "Sekou Kovalenko, 183cm tall, muscular frame, warm golden-brown complexion mixing Eastern European and Sub-Saharan African features with South Asian geometry in striking angular face with prominent cheekbones and strong jaw, dark brown eyes with amber undertones, black short fade haircut, clean-shaven with faint scars across hands and thin white scar from left eyebrow to temple. Retractable black claws half-extended on both hands at rest, grey subcutaneous weave visible in forearms. Wearing precisely-fitted grey cargo pants with reinforced pockets, black synthetic-blend shirt tucked in, polished work boots, thin charcoal reflective jacket. Standing with deliberate forward weight in GLMZ 2200s commercial row at night, neon glow reflecting off wet pavement, harsh LED lighting cutting across his face, economical posture radiating controlled presence and street discipline. Moody, guarded expression. Ultra-detailed neo-noir noir aesthetic, high contrast lighting, cinematic depth --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Eastern European": 51,
-    "Sub-Saharan African": 21.7,
-    "South Asian": 15.9,
-    "Northern European": 8.5,
-    "North African": 2.9
-  },
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 27.6
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 8.8
-      },
-      "Slavic West": {
-        "Czech": 14.6
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 13,
-        "Zimbabwean": 5
-      },
-      "Central African": {
-        "Congolese": 1.3,
-        "Gabonese": 2.4
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 5.7
-      },
-      "Indian": {
-        "Telugu": 0.5,
-        "Tamil": 3.4
-      },
-      "Sri Lankan": {
-        "Sinhalese": 4.1,
-        "Tamil Sri Lankan": 2.2
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 8.5
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Algerian": 1.9,
-        "Mauritanian": 1
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6b27fbdb715a2e3aa67ea20",
+    "rating":  80,
+    "type":  "character",
+    "name":  "Sekou Kovalenko",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "protection racket enforcer and occasional numbers runner for the Gray Zone lower levels",
+    "age":  22,
+    "status":  "active",
+    "location":  "the Gray Zone lower levels, Tier 2 commercial rows between Blackpipe Corridor and Iron Bend, near Halsted and Division",
+    "description":  "Sekou Kovalenko is young enough that his face still hasn\u0027t fully settled into what it\u0027s going to be â€” there\u0027s something unfinished about his jaw, a softness around the eyes that the hardened set of his mouth hasn\u0027t caught up to yet. He\u0027s broad across the chest in the way of someone who started lifting weights in a small room at fifteen and has never stopped. His Ghanaian-Osei heritage gives him deep brown skin and a wide nose; his Kazakh-Russian grandfather passed down high cheekbones and light eyes that are an unsettling grey-green. He has retractable claws â€” a practical geneware mod he paid for himself at twenty, black-tipped, filed to functional sharpness â€” and wears them half-extended at rest as a casual signal. His clothes are cheap but kept neat. He is extremely aware of his clothes.\n\nSekou Kovalenko is in the phase of his criminal life where he is still deciding whether to become the person he is pretending to be. He does this job with professional dedication, collects the Î¦ from the Gray Zone vendors on behalf of his crew boss with no unnecessary roughness, and brings the numbers in on time. He is respected on the row, which he confuses with being liked. At home â€” a cube rental above a noodle counter â€” he reads Zheng-Dao corporate management theory, not because he wants to work for Zheng-Dao but because he is trying to reverse-engineer how power organizes itself. He has a plan. The plan changes every three months. He\u0027s not sure any version of it ends well.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "becoming old and locked in this role without having moved",
+                                          "that the plan he keeps revising doesn\u0027t exist â€” that he\u0027s just rationalizing stasis"
+                                      ],
+                       "core_desires":  [
+                                            "structural power â€” not just to hurt people but to be the kind of person decisions flow through",
+                                            "to be respected rather than feared, and to understand the difference"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "the management theory reading gives him a feeling of forward motion even on static days",
+                                                 "physical training as a way to feel like he is building something"
+                                             ],
+                       "blind_spots":  [
+                                           "cannot see that his boss Osaro is actively stunting his growth to keep him useful",
+                                           "overestimates how much his restraint distinguishes him from the crew members he looks down on"
+                                       ],
+                       "secret":  "He has been quietly documenting the Copperhead Collective\u0027s full operational structure â€” names, routes, collection schedules, buyer contacts â€” in an encrypted file he tells himself is for \u0027understanding the system.\u0027 He does not let himself think clearly about what he would do with it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Code-switching constantly â€” corporate register when he\u0027s thinking in strategy mode, the Gray Zone slang when in character on the row; hates being caught in the transition",
+                            "cadence":  "Measured and slightly too formal for his age â€” he is performing competence and occasionally overcorrects",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s not how this works\u0027 when something violates his personal code",
+                                                "Long pauses before answering questions he finds interesting rather than threatening"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Osaro gets his Î¦ on Friday. I come back on Friday. What happens between now and Friday is your concern, not mine. That\u0027s fair, right? I think that\u0027s fair.\u0027",
+                                                  "\u0027I\u0027m not â€” look, I don\u0027t enjoy this. I want to be clear that I don\u0027t enjoy this. It doesn\u0027t change what happens, but I want to be clear.\u0027"
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A vendor on his collection route is a Zheng-Dao mid-manager in deep cover â€” and they have made Reyvaldo a carefully worded offer that could mean very different things",
+                        "The encrypted file he\u0027s been building has been accessed by someone else on the network â€” and he doesn\u0027t know if it\u0027s Osaro, law enforcement, or a rival crew"
+                    ],
+    "narrative_function":  "Street-level color and friction for any scene in the Gray Zone lower levels; represents the aspirational criminal â€” someone not yet calcified into their role; potential informant or reluctant contact if approached correctly",
+    "augmentations":  "Retractable claws (geneware, black-tipped, filed sharp); skeletal density weave in forearms (grey market, impact resistance)",
+    "daily_life":  "Makes collection rounds on the commercial row Tuesdays and Fridays, runs numbers for the bookmaking operation Monday and Thursday evenings, spends his off hours reading or watching underground Ferrogate logistics feeds trying to understand supply chain vulnerabilities.",
+    "affiliation":  "the Gray Zone crew called the Copperhead Collective, answers to a mid-level boss named Osaro (a stocky man in his forties who he simultaneously admires and fears)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  6,
+                                   "vitality":  7,
+                                   "perception":  6
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  5,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  6,
+                                 "expression":  5,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  -2,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "aspirational",
+                               "restrained",
+                               "strategic thinker",
+                               "in transition",
+                               "observer"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "No roughness on the first visit â€” show is almost always enough and keeps the row functional",
+                                              "Never go off-route without telling Osaro â€” unauthorized initiative is what gets young crew members disappeared"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Professional reminder â€” \u0027Friday\u0027s the day, you know how this works\u0027",
+                                                 "Returns Friday, accepts partial payment with a noted shortfall and a reset deadline",
+                                                 "Third visit with a colleague present â€” visible but not loud",
+                                                 "Reports to Osaro and lets the boss decide the escalation â€” removes himself from the decision",
+                                                 "If forced into direct physical confrontation, acts fast and controlled â€” ends it quickly, does not prolong it"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Watchful, calibrated, projects calm competence and lets people fill in the implied threat",
+                                                   "friends":  "Drops the performance entirely, becomes younger-seeming and earnest, talks too much about theory"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Trains longer, reads later into the night",
+                                                "medium":  "Becomes hyper-professional on the row â€” more formal, more correct, zero deviation",
+                                                "high":  "Goes completely internal â€” stops talking, processes alone, makes a decision and commits to it"
+                                            },
+                       "contradictions":  [
+                                              "Aspires to power while genuinely disliking the mechanisms of power he currently operates",
+                                              "Considers himself more ethical than the crew while building a potential betrayal file on all of them"
+                                          ],
+                       "habits":  [
+                                      "Straightens his collar before knocking on any door â€” collection or otherwise",
+                                      "Marks the date on his encrypted file entry every time he adds to it"
+                                  ],
+                       "breaking_points":  [
+                                               "Osaro giving a direct order to hurt someone who has been cooperative and on time â€” the specific injustice, not violence in general"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "People Pleaser":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in the Gray Zone lower levels to a Ghanaian-Osei mother (Ferrogate freight handler) and a Kazakh-Russian father who left when Rey was four",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Joined the Copperhead Collective at sixteen as a lookout",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Promoted to collector route â€” Blackpipe Corridor to Iron Bend",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began the encrypted documentation file; purchased corporate management theory texts from a salvage data market",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Predominantly Eastern European (51.0%) with substantial Sub-Saharan African (21.7%) ancestry, blended with South Asian (15.9%), Northern European (8.5%), and North African (2.9%) heritage. This creates a complex Eurasian-African phenotype: Slavic bone structure and angular facial geometry softened and deepened by Sub-Saharan African features, with South Asian geometric influence in eye set and nose structure, and North African warmth in overall tone. The result is a warm golden-brown complexion with exceptional depth and definition â€” neither purely European nor African, but a striking synthesis that reads as unmistakably cosmopolitan.",
+                                 "height_cm":  183,
+                                 "weight_kg":  89,
+                                 "build":  "Broad-chested and muscular from disciplined weight training since adolescence, but with the lean efficiency of someone who lifts for function rather than aesthetics. Shoulders wide, forearms visibly dense beneath the skin.",
+                                 "hair_color":  "Black",
+                                 "hair_style":  "Short, neat fade cut â€” maintained with precision, likely every two weeks",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown with subtle amber undertones, reflecting the warmth of his mixed ancestry",
+                                 "skin_tone":  "Warm golden-brown medium tone, the result of Eastern European baseline deepened and enriched by Sub-Saharan, South Asian, and North African ancestry. Even consistency across the body with slightly warmer golden tones on inner surfaces and under the jaw. The depth is unmistakable â€” neither light nor dark, but burnished and complex.",
+                                 "complexion":  "Angular face with prominent Slavic cheekbones blended with Sub-Saharan African jaw definition and structure â€” mature, powerful mandible. Eyes set with South Asian geometric influence, creating subtle almond-shaped depth. Nose broad and defined, characteristic of Sub-Saharan and South Asian heritage blend. Full lips with good definition. Clean-shaven, skin shows minor scars from street friction but otherwise well-maintained. Expression often guarded.",
+                                 "distinguishing_marks":  [
+                                                              "Faint scar tissue across the backs of both hands, consistent with street altercations",
+                                                              "Thin white line running from left eyebrow toward temple â€” old blade work, poorly stitched",
+                                                              "Network of fine scars on both forearms where the skeletal density weave was installed subcutaneously"
+                                                          ],
+                                 "visible_augmentations":  "Retractable black-tipped claws on both hands, typically held half-extended at rest as a deliberate signal. The claws are filed to sharp functionality, not cosmetic. Forearms show subtle grey undertones beneath skin where the skeletal density weave sits just beneath the dermis, most visible when flexed under harsh lighting.",
+                                 "posture_movement":  "Stands with weight slightly forward, ready â€” a collector\u0027s posture. Moves with economical precision, no wasted motion. Hands often rest on tabletops or at sides with claws visible. When walking the commercial row, his gait is deliberate and measured, designed to be noticed without seeming aggressive. Eye contact is direct and held slightly too long.",
+                                 "clothing_style":  "Cheap but immaculately maintained. Typically wears synthetic-blend shirts (black, grey, dark blue) tucked into grey cargo pants with reinforced pockets. Boots are generic work-issue, polished. A thin reflective jacket in charcoal for the rows â€” practical, unremarkable, the uniform of someone who doesn\u0027t want to stand out except for his presence itself. No visible gang colors, but the precision of his grooming reads as crew discipline. Everything fits correctly; he is extremely aware of how clothing sits on his body."
+                             },
+    "image_prompt":  "Sekou Kovalenko, 183cm tall, muscular frame, warm golden-brown complexion mixing Eastern European and Sub-Saharan African features with South Asian geometry in striking angular face with prominent cheekbones and strong jaw, dark brown eyes with amber undertones, black short fade haircut, clean-shaven with faint scars across hands and thin white scar from left eyebrow to temple. Retractable black claws half-extended on both hands at rest, grey subcutaneous weave visible in forearms. Wearing precisely-fitted grey cargo pants with reinforced pockets, black synthetic-blend shirt tucked in, polished work boots, thin charcoal reflective jacket. Standing with deliberate forward weight in GLMZ 2200s commercial row at night, neon glow reflecting off wet pavement, harsh LED lighting cutting across his face, economical posture radiating controlled presence and street discipline. Moody, guarded expression. Ultra-detailed neo-noir noir aesthetic, high contrast lighting, cinematic depth --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Eastern European":  51,
+                             "Sub-Saharan African":  21.7,
+                             "South Asian":  15.9,
+                             "Northern European":  8.5,
+                             "North African":  2.9
+                         },
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  27.6
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  8.8
+                                                                         },
+                                                     "Slavic West":  {
+                                                                         "Czech":  14.6
+                                                                     }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  13,
+                                                                                 "Zimbabwean":  5
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Congolese":  1.3,
+                                                                                "Gabonese":  2.4
+                                                                            }
+                                                    },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  5.7
+                                                                },
+                                                "Indian":  {
+                                                               "Telugu":  0.5,
+                                                               "Tamil":  3.4
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  4.1,
+                                                                   "Tamil Sri Lankan":  2.2
+                                                               }
+                                            },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  8.5
+                                                                   }
+                                                  },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Algerian":  1.9,
+                                                                  "Mauritanian":  1
+                                                              }
+                                              }
+                        }
 }

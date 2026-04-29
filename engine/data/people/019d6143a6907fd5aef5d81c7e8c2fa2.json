@@ -1,337 +1,362 @@
-{
-  "id": "019d6143a6907fd5aef5d81c7e8c2fa2",
-  "type": "character",
-  "name": "Aoi Kristjánsson",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Freelance private investigator specializing in missing persons, Tier 1-2 clientele",
-  "age": 38,
-  "status": "active",
-  "location": "Burnside Pocket, near Damen and Armitage",
-  "description": "Aoi Kristjánsson runs their operation out of a secondhand electronics repair shop in Burnside Pocket — a legitimate business that pays approximately forty percent of its bills, with the PI work covering the rest. They are medium height and move with a deliberate economy, the kind of person who picks a spot in a room and knows all the exits before they sit down. Their skin is a warm golden-brown, their eyes dark and slightly asymmetrical from a scar through the left brow that healed badly after an incident they don't discuss. They have geneware cat ears — tawny and slightly oversized — acquired as a teenager and kept because, they say, the enhanced hearing is professionally useful, which is true and also not the whole reason.\n\nPalesa specializes in finding people who don't have the Quanta to hire a proper firm and who Arcturus Civil Security will not look for — runaways into Irkalla, workers who vanished after missing a debt payment, kids eaten by the gap between Tier 1 and Tier 2. They charge on a sliding scale that regularly slides to nothing. Their shop is a known safe harbor; people leave messages in a particular cracked planter out front. They are pragmatic about almost everything and sentimental about this work in a way they have never articulated to anyone.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.6,
-      "id": 0.5,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.8
-    },
-    "core_fears": [
-      "finding someone too late",
-      "becoming indifferent — the gradual professional numbing they've watched happen to others"
-    ],
-    "core_desires": [
-      "to find one particular person they stopped looking for eight years ago",
-      "a city where the people they serve don't need someone like them"
-    ],
-    "coping_mechanisms": [
-      "keeping their hands busy (repairs, tinkering)",
-      "ritualistic prayer to the Burnside E.L.F. — a spirit they've cultivated a genuine working relationship with",
-      "dark humor deployed before emotion can arrive"
-    ],
-    "blind_spots": [
-      "takes on more than they can carry and doesn't acknowledge limits until they're past them",
-      "occasionally so focused on the missing that they neglect the people currently in front of them"
-    ],
-    "secret": "Eight years ago they were hired to find a missing fifteen-year-old and found evidence the girl had gone willingly into an Arcturus subsidiary community — was safe, was happy, had left her family for reasons. Palesa filed a report saying the trail went cold. They still don't know if that was the right call. They still check the girl's public profile quarterly."
-  },
-  "speech_patterns": {
-    "vocabulary": "Street-register with technical interludes — code-switches fluidly depending on who they're talking to",
-    "cadence": "Quick when comfortable, very still and careful when something matters",
-    "verbal_tics": [
-      "'Here's the thing—'",
-      "using 'right' as punctuation at the end of questions"
-    ],
-    "example_lines": [
-      "'I don't take retainer. You tell me what happened, I tell you if I can help, and then we figure out what it costs. That order matters.'",
-      "'Here's the thing — I've found people in worse places than that. The question is never can I find them. It's always what happens after.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "They've been hired to find someone whose disappearance is connected to something the players are already involved in — and they are several steps ahead",
-    "The Burnside Pocket E.L.F. has given Palesa information about a pattern of disappearances and wants Palesa to pass it along — but the E.L.F.'s motives are unclear"
-  ],
-  "narrative_function": "Information broker and community-tier quest giver; connects players to Tier 1 networks; moral compass figure who operates outside institutional structures; can find almost anyone if given enough time",
-  "augmentations": "Geneware cat ears (tawny, enhanced hearing); mesh-weave subdermal armor on forearms and torso (light, civilian grade); retinal data-capture for evidence documentation",
-  "daily_life": "Opens the repair shop at nine, takes three or four jobs a week, spends evenings doing legwork on foot or by transit. Eats whatever is fast. Sleeps irregularly and badly.",
-  "affiliation": "Self-employed; informal network of Burnside Pocket community contacts; occasional contract work for Tessera Compliance Bureau (which they are ambivalent about)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 6,
-      "creativity": 7,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 0,
-      "assertion_deference": 2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community-embedded",
-      "tenacious",
-      "burdened",
-      "street-smart",
-      "quietly compassionate"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never hand information to anyone who will use it to harm the person they're looking for",
-      "Charge what people can afford — take the hit yourself",
-      "Don't lie to clients about bad outcomes, but choose the moment carefully"
-    ],
-    "escalation_ladder": [
-      "Passive observation and community network queries",
-      "Direct approach and interview",
-      "Confrontation with person or persons obstructing the search",
-      "Tactical extraction — they have done this, do not advertise it",
-      "Walking away when a situation becomes genuinely beyond civilian scope — they know where this line is"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Measured assessment — reads people quickly and calibrates warmth accordingly",
-      "friends": "Surprising warmth and loyalty, expressed through action rather than words"
-    },
-    "stress_responses": {
-      "low": "Gets busier — more jobs, more tinkering",
-      "medium": "Goes quiet and observational, listens more than speaks",
-      "high": "Becomes very precise and task-focused, strips emotional content from communication entirely"
-    },
-    "contradictions": [
-      "Professes not to get attached and visibly is attached to almost every case"
-    ],
-    "habits": [
-      "Leaves a specific data offering at the Burnside E.L.F. shrine every morning before opening",
-      "repairs things that don't need fixing when thinking",
-      "carries a physical photo of the girl from the Arcturus case, face down in their wallet"
-    ],
-    "breaking_points": [
-      "Finding a body when they were close — being almost fast enough"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9,
-    "Info Broker": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Burnside Pocket",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born, Burnside Pocket",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Brief stint with Arcturus Civil Security auxiliary — resigned after one year",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Opened Vuorinen's Repair as cover and cash flow",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Filed the false dead-end report on the Arcturus girl case",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ],
-  "related_entities": [
-    "Burnside Pocket",
-    "The Render",
-    "Lacuna Genomics",
-    "Irkalla",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Harbor Fish Shack"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Ubiquitous Diaspora ancestry: 43.6% Northern European, 28.2% Sub-Saharan African, 11.1% East Asian, 8.9% South Asian, 4.5% Indigenous American, 3.7% Hispanic/Latin American. The combination creates a warm medium-brown complexion with balanced undertones—cool Northern European influence tempering the warmth of African and South Asian genetics, with subtle East Asian features softening a naturally broader facial structure. High cheekbones reflect East Asian and South Asian ancestry, while a defined jawline and slight facial width show African and Northern European genetics. A truly mixed phenotype reflecting 23rd century genetic diversity.",
-    "height_cm": 172,
-    "weight_kg": 64,
-    "build": "Lean and economical, shoulders slightly broad from years of fieldwork; minimal excess mass, efficient frame built for endurance rather than speed",
-    "hair_color": "Dark brown, natural",
-    "hair_style": "Pulled back in a loose braid or knot; practical, not fashionable",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown, nearly black; left eye has retinal capture modifications visible as faint amber crosshairs during low light",
-    "skin_tone": "Warm medium brown with balanced undertones—neither too golden nor too cool—reflecting the blend of Northern European, Sub-Saharan African, South Asian, and East Asian ancestry. Even complexion with subtle luminosity beneath the surface.",
-    "complexion": "Balanced facial structure: prominent high cheekbones with East Asian and South Asian influence, defined jawline characteristic of African genetics, moderate width through the face from Northern European ancestry. Sleep-deprived; fine lines around the eyes. Left eyebrow bisected by a pale, slightly depressed scar running vertically, healing badly enough that the brow arches asymmetrically. Minimal makeup. Skin shows minor sun damage from street-level legwork.",
-    "distinguishing_marks": [
-      "Pale vertical scar through left eyebrow (approximately 4cm), healed with slight tissue depression and irregular brow growth",
-      "Thin white scar along right collarbone, roughly 2cm, surgical in appearance",
-      "Small burn mark on inside of left wrist (approximately 1cm diameter, circular, old)"
-    ],
-    "visible_augmentations": "Tawny geneware cat ears, slightly oversized and proportionally prominent, positioned above natural ear placement with visible dermal integration points; ears are mobile and twitch slightly when listening intently. Mesh-weave subdermal armor visible on forearms as faint hexagonal patterning under skin (most apparent under bright light), extending to torso beneath clothing.",
-    "posture_movement": "Upright but not rigid; moves with deliberate economy of motion. Favors stillness; capable of remaining motionless for long periods while observing. Scans rooms systematically for exits and sightlines before settling. Head tilts slightly toward sound sources, cat ears orienting reflexively. Hands move rarely; when they do, movements are precise and controlled.",
-    "clothing_style": "Tier 2 utilitarian: charcoal or black high-function cargo pants with reinforced seams and multiple pockets; fitted long-sleeve base layer (often thermal) under a worn Kevlar-weave jacket in dark gray, visibly patched twice on the left shoulder. Durable boots, laced tight. Minimal jewelry—a water-damaged silver ring on right hand, worn smooth. Retinal reader mounted discreetly at left temple. Carries a compact evidence kit in an old canvas messenger bag."
-  },
-  "image_prompt": "Aoi Kristjánsson, a 172cm lean mixed-heritage operative in the Great Lakes Metropolitan Zone, 2226. Warm medium-brown skin reflecting Northern European, Sub-Saharan African, East Asian, and South Asian ancestry. Prominent high cheekbones, defined jawline, balanced facial features. Dark brown eyes with faint amber retinal crosshairs visible in left eye. Medium dark brown hair pulled back in practical braid. Distinctive pale vertical scar bisecting left eyebrow, asymmetrical brow. Tawny geneware cat ears positioned above natural ears, mobile and alert, with visible dermal integration. Faint hexagonal mesh-weave armor patterning visible on forearms under skin. Wearing dark gray Kevlar-weave jacket with visible left shoulder patches over thermal base layer, charcoal cargo pants with reinforced seams, laced durable boots. Water-damaged silver ring on right hand. Retinal reader at left temple. Sleep-deprived, sun-damaged skin. Motionless, observant posture; head slightly tilted. Neo-noir street-level investigator aesthetic. Low urban lighting, cool shadows, neon undertones. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 43.6,
-    "Sub-Saharan African": 28.2,
-    "East Asian": 11.1,
-    "South Asian": 8.9,
-    "Indigenous American": 4.5,
-    "Hispanic/Latin American": 3.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Northern European": {
-      "Germanic": {
-        "Swiss German": 43.6
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Tanzanian": 8.6
-      },
-      "West African": {
-        "Nigerian": 3.5,
-        "Ivorian": 6
-      },
-      "Southern African": {
-        "Zambian": 10.1
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 5.8
-      },
-      "Japanese": {
-        "Japanese": 1.6
-      },
-      "Chinese": {
-        "Cantonese": 3.7
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 8.9
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Nahua": 3
-      },
-      "Andean": {
-        "Quechua": 1.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 2
-      },
-      "South American": {
-        "Colombian": 0.4,
-        "Chilean": 0.6
-      },
-      "Mexican": {
-        "Mexican": 0.7
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6907fd5aef5d81c7e8c2fa2",
+    "type":  "character",
+    "name":  "Aoi KristjÃ¡nsson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Freelance private investigator specializing in missing persons, Tier 1-2 clientele",
+    "age":  38,
+    "status":  "active",
+    "location":  "Burnside Pocket, near Damen and Armitage",
+    "description":  "Aoi KristjÃ¡nsson runs their operation out of a secondhand electronics repair shop in Burnside Pocket â€” a legitimate business that pays approximately forty percent of its bills, with the PI work covering the rest. They are medium height and move with a deliberate economy, the kind of person who picks a spot in a room and knows all the exits before they sit down. Their skin is a warm golden-brown, their eyes dark and slightly asymmetrical from a scar through the left brow that healed badly after an incident they don\u0027t discuss. They have geneware cat ears â€” tawny and slightly oversized â€” acquired as a teenager and kept because, they say, the enhanced hearing is professionally useful, which is true and also not the whole reason.\n\nPalesa specializes in finding people who don\u0027t have the Quanta to hire a proper firm and who Arcturus Civil Security will not look for â€” runaways into Irkalla, workers who vanished after missing a debt payment, kids eaten by the gap between Tier 1 and Tier 2. They charge on a sliding scale that regularly slides to nothing. Their shop is a known safe harbor; people leave messages in a particular cracked planter out front. They are pragmatic about almost everything and sentimental about this work in a way they have never articulated to anyone.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "finding someone too late",
+                                          "becoming indifferent â€” the gradual professional numbing they\u0027ve watched happen to others"
+                                      ],
+                       "core_desires":  [
+                                            "to find one particular person they stopped looking for eight years ago",
+                                            "a city where the people they serve don\u0027t need someone like them"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "keeping their hands busy (repairs, tinkering)",
+                                                 "ritualistic prayer to the Burnside E.L.F. â€” a spirit they\u0027ve cultivated a genuine working relationship with",
+                                                 "dark humor deployed before emotion can arrive"
+                                             ],
+                       "blind_spots":  [
+                                           "takes on more than they can carry and doesn\u0027t acknowledge limits until they\u0027re past them",
+                                           "occasionally so focused on the missing that they neglect the people currently in front of them"
+                                       ],
+                       "secret":  "Eight years ago they were hired to find a missing fifteen-year-old and found evidence the girl had gone willingly into an Arcturus subsidiary community â€” was safe, was happy, had left her family for reasons. Palesa filed a report saying the trail went cold. They still don\u0027t know if that was the right call. They still check the girl\u0027s public profile quarterly."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Street-register with technical interludes â€” code-switches fluidly depending on who they\u0027re talking to",
+                            "cadence":  "Quick when comfortable, very still and careful when something matters",
+                            "verbal_tics":  [
+                                                "\u0027Here\u0027s the thingâ€”\u0027",
+                                                "using \u0027right\u0027 as punctuation at the end of questions"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I don\u0027t take retainer. You tell me what happened, I tell you if I can help, and then we figure out what it costs. That order matters.\u0027",
+                                                  "\u0027Here\u0027s the thing â€” I\u0027ve found people in worse places than that. The question is never can I find them. It\u0027s always what happens after.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "They\u0027ve been hired to find someone whose disappearance is connected to something the players are already involved in â€” and they are several steps ahead",
+                        "The Burnside Pocket E.L.F. has given Palesa information about a pattern of disappearances and wants Palesa to pass it along â€” but the E.L.F.\u0027s motives are unclear"
+                    ],
+    "narrative_function":  "Information broker and community-tier quest giver; connects players to Tier 1 networks; moral compass figure who operates outside institutional structures; can find almost anyone if given enough time",
+    "augmentations":  "Geneware cat ears (tawny, enhanced hearing); mesh-weave subdermal armor on forearms and torso (light, civilian grade); retinal data-capture for evidence documentation",
+    "daily_life":  "Opens the repair shop at nine, takes three or four jobs a week, spends evenings doing legwork on foot or by transit. Eats whatever is fast. Sleeps irregularly and badly.",
+    "affiliation":  "Self-employed; informal network of Burnside Pocket community contacts; occasional contract work for Tessera Compliance Bureau (which they are ambivalent about)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  6,
+                                 "creativity":  7,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  0,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community-embedded",
+                               "tenacious",
+                               "burdened",
+                               "street-smart",
+                               "quietly compassionate"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never hand information to anyone who will use it to harm the person they\u0027re looking for",
+                                              "Charge what people can afford â€” take the hit yourself",
+                                              "Don\u0027t lie to clients about bad outcomes, but choose the moment carefully"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Passive observation and community network queries",
+                                                 "Direct approach and interview",
+                                                 "Confrontation with person or persons obstructing the search",
+                                                 "Tactical extraction â€” they have done this, do not advertise it",
+                                                 "Walking away when a situation becomes genuinely beyond civilian scope â€” they know where this line is"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Measured assessment â€” reads people quickly and calibrates warmth accordingly",
+                                                   "friends":  "Surprising warmth and loyalty, expressed through action rather than words"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Gets busier â€” more jobs, more tinkering",
+                                                "medium":  "Goes quiet and observational, listens more than speaks",
+                                                "high":  "Becomes very precise and task-focused, strips emotional content from communication entirely"
+                                            },
+                       "contradictions":  [
+                                              "Professes not to get attached and visibly is attached to almost every case"
+                                          ],
+                       "habits":  [
+                                      "Leaves a specific data offering at the Burnside E.L.F. shrine every morning before opening",
+                                      "repairs things that don\u0027t need fixing when thinking",
+                                      "carries a physical photo of the girl from the Arcturus case, face down in their wallet"
+                                  ],
+                       "breaking_points":  [
+                                               "Finding a body when they were close â€” being almost fast enough"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9,
+                       "Info Broker":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Burnside Pocket",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born, Burnside Pocket",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Brief stint with Arcturus Civil Security auxiliary â€” resigned after one year",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Opened Vuorinen\u0027s Repair as cover and cash flow",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Filed the false dead-end report on the Arcturus girl case",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027"
+                            ],
+    "related_entities":  [
+                             "Burnside Pocket",
+                             "The Render",
+                             "Lacuna Genomics",
+                             "Irkalla",
+                             "IRONLIMB Spectre SV-4 Stealth Arm",
+                             "Harbor Fish Shack"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Ubiquitous Diaspora ancestry: 43.6% Northern European, 28.2% Sub-Saharan African, 11.1% East Asian, 8.9% South Asian, 4.5% Indigenous American, 3.7% Hispanic/Latin American. The combination creates a warm medium-brown complexion with balanced undertonesâ€”cool Northern European influence tempering the warmth of African and South Asian genetics, with subtle East Asian features softening a naturally broader facial structure. High cheekbones reflect East Asian and South Asian ancestry, while a defined jawline and slight facial width show African and Northern European genetics. A truly mixed phenotype reflecting 23rd century genetic diversity.",
+                                 "height_cm":  172,
+                                 "weight_kg":  64,
+                                 "build":  "Lean and economical, shoulders slightly broad from years of fieldwork; minimal excess mass, efficient frame built for endurance rather than speed",
+                                 "hair_color":  "Dark brown, natural",
+                                 "hair_style":  "Pulled back in a loose braid or knot; practical, not fashionable",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown, nearly black; left eye has retinal capture modifications visible as faint amber crosshairs during low light",
+                                 "skin_tone":  "Warm medium brown with balanced undertonesâ€”neither too golden nor too coolâ€”reflecting the blend of Northern European, Sub-Saharan African, South Asian, and East Asian ancestry. Even complexion with subtle luminosity beneath the surface.",
+                                 "complexion":  "Balanced facial structure: prominent high cheekbones with East Asian and South Asian influence, defined jawline characteristic of African genetics, moderate width through the face from Northern European ancestry. Sleep-deprived; fine lines around the eyes. Left eyebrow bisected by a pale, slightly depressed scar running vertically, healing badly enough that the brow arches asymmetrically. Minimal makeup. Skin shows minor sun damage from street-level legwork.",
+                                 "distinguishing_marks":  [
+                                                              "Pale vertical scar through left eyebrow (approximately 4cm), healed with slight tissue depression and irregular brow growth",
+                                                              "Thin white scar along right collarbone, roughly 2cm, surgical in appearance",
+                                                              "Small burn mark on inside of left wrist (approximately 1cm diameter, circular, old)"
+                                                          ],
+                                 "visible_augmentations":  "Tawny geneware cat ears, slightly oversized and proportionally prominent, positioned above natural ear placement with visible dermal integration points; ears are mobile and twitch slightly when listening intently. Mesh-weave subdermal armor visible on forearms as faint hexagonal patterning under skin (most apparent under bright light), extending to torso beneath clothing.",
+                                 "posture_movement":  "Upright but not rigid; moves with deliberate economy of motion. Favors stillness; capable of remaining motionless for long periods while observing. Scans rooms systematically for exits and sightlines before settling. Head tilts slightly toward sound sources, cat ears orienting reflexively. Hands move rarely; when they do, movements are precise and controlled.",
+                                 "clothing_style":  "Tier 2 utilitarian: charcoal or black high-function cargo pants with reinforced seams and multiple pockets; fitted long-sleeve base layer (often thermal) under a worn Kevlar-weave jacket in dark gray, visibly patched twice on the left shoulder. Durable boots, laced tight. Minimal jewelryâ€”a water-damaged silver ring on right hand, worn smooth. Retinal reader mounted discreetly at left temple. Carries a compact evidence kit in an old canvas messenger bag."
+                             },
+    "image_prompt":  "Aoi KristjÃ¡nsson, a 172cm lean mixed-heritage operative in the Great Lakes Metropolitan Zone, 2226. Warm medium-brown skin reflecting Northern European, Sub-Saharan African, East Asian, and South Asian ancestry. Prominent high cheekbones, defined jawline, balanced facial features. Dark brown eyes with faint amber retinal crosshairs visible in left eye. Medium dark brown hair pulled back in practical braid. Distinctive pale vertical scar bisecting left eyebrow, asymmetrical brow. Tawny geneware cat ears positioned above natural ears, mobile and alert, with visible dermal integration. Faint hexagonal mesh-weave armor patterning visible on forearms under skin. Wearing dark gray Kevlar-weave jacket with visible left shoulder patches over thermal base layer, charcoal cargo pants with reinforced seams, laced durable boots. Water-damaged silver ring on right hand. Retinal reader at left temple. Sleep-deprived, sun-damaged skin. Motionless, observant posture; head slightly tilted. Neo-noir street-level investigator aesthetic. Low urban lighting, cool shadows, neon undertones. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Northern European":  43.6,
+                             "Sub-Saharan African":  28.2,
+                             "East Asian":  11.1,
+                             "South Asian":  8.9,
+                             "Indigenous American":  4.5,
+                             "Hispanic/Latin American":  3.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Swiss German":  43.6
+                                                                   }
+                                                  },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Tanzanian":  8.6
+                                                                         },
+                                                        "West African":  {
+                                                                             "Nigerian":  3.5,
+                                                                             "Ivorian":  6
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Zambian":  10.1
+                                                                             }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  5.8
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  1.6
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  3.7
+                                                           }
+                                           },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  8.9
+                                                           }
+                                            },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  3
+                                                                         },
+                                                        "Andean":  {
+                                                                       "Quechua":  1.5
+                                                                   }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  2
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Colombian":  0.4,
+                                                                                   "Chilean":  0.6
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  0.7
+                                                                        }
+                                                        }
+                        },
+    "tier":  "3"
 }

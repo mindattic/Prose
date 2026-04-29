@@ -1,172 +1,231 @@
-{
-  "id": "019d6143a6697ff2a3b48b3f7a95fdc7",
-  "rating": 30,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Arden Olofsson-Magnúsdóttir",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Fixer - Social engineering",
-  "age": 33,
-  "status": "active",
-  "location": "The Narrows, near Milwaukee and North Ave",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9,
-    "Face": 0.9,
-    "Problem Solver": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Predominantly Southeast Asian (64.1%) with significant Sub-Saharan African (19.2%) and Northern European (13.5%) ancestry, creating a striking pan-continental blend. Southeast Asian bone structure dominates with warm Sub-Saharan African undertones deepening the overall warmth, while Northern European genetics provide subtle cool counterpoints in skin undertones and eye geometry.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Athletic and lean with defined shoulders; moves with deliberate economy. No wasted motion.",
-    "hair_color": "Natural black with silver threading at temples",
-    "hair_style": "Box braids pulled into a high crown knot, practical and intimidating",
-    "hair_length": "Medium (braids fall to mid-back when loose)",
-    "eye_color": "Deep brown with natural monolid geometry from Southeast Asian ancestry, alert and analytical",
-    "skin_tone": "Deep warm golden-brown with rich mahogany undertones from the Southeast Asian-Sub-Saharan African blend, cooled subtly by Northern European genetics creating complex depth",
-    "complexion": "Clear skin with high, defined cheekbones reflecting Southeast Asian and Sub-Saharan African ancestry, full lips set in a neutral expression. Deep warm golden-mahogany undertones across warm-toned features. A thin scar traces from left jaw to ear—old, deliberate, never regretted.",
-    "distinguishing_marks": [
-      "Thin diagonal scar running from lower left jawline to behind left ear, approximately 8cm, pale and precise",
-      "Small geometric tattoo on inner right wrist: three interlocking circles in matte black ink",
-      "Faint burn marks on palms (both hands) in concentric circles, consistent with controlled exposure—subcutaneous conditioning evidence"
-    ],
-    "visible_augmentations": "None visible. Her augmentations are deep—subcutaneous neural array for lie detection and microexpression reading, internal subvocal mic, distributed haptic feedback nodes. Only the faint telltale palmar scarring suggests enhancement.",
-    "posture_movement": "Sits with spine straight, always positioned to see exits. Hands rest visible on table or lap—never hidden. Moves between stillness and sudden precision; no fidgeting. Speaks from a centered diaphragm. Eyes track micro-movements in conversation partners.",
-    "clothing_style": "Tier 3 refined casual: fitted dark turtleneck (Sekitani brand, brushed synthetic), tailored charcoal cargo pants with hidden pockets, matte black reinforced shoes (non-descript, practical). A worn leather jacket over everything—buffalo leather, pre-2200s, patina that speaks of real use. No jewelry except a simple stainless steel chronometer on her left wrist. Aesthetic is 'professional operative who doesn't need to advertise.'"
-  },
-  "image_prompt": "GLMZ operative portrait: Brisa Olofsson-Magnúsdóttir, 168cm lean athletic woman with deep warm golden-mahogany skin tone, Southeast Asian facial structure with high cheekbones and natural monolids, full lips. Black box braids pulled into high crown knot with silver threading at temples. Deep brown analytical eyes. Thin precise scar running left jawline to ear. Wearing fitted dark Sekitani turtleneck, tailored charcoal cargo pants, matte black reinforced shoes, vintage buffalo leather jacket with real patina. Simple stainless steel chronometer on left wrist. Subtle faint burn marks visible on palms suggesting subcutaneous neural augmentation. Seated with perfect posture, hands visible on table, monitoring expression. Professional operative aesthetic. Cool industrial lighting with warm accent on face highlighting skin undertones, moody Great Lakes Metropolitan Zone interior, neon reflection off leather jacket. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Southeast Asian": 64.1,
-    "Sub-Saharan African": 19.2,
-    "Northern European": 13.5,
-    "Hispanic/Latin American": 3.2
-  },
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 30.8
-      },
-      "Filipino": {
-        "Cebuano": 1.6,
-        "Tagalog": 7.5
-      },
-      "Indonesian": {
-        "Sumatran": 24.2
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ugandan": 8.9,
-        "Somali": 10.3
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Dutch": 13.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 0.9,
-        "Venezuelan": 1.1
-      },
-      "Central American": {
-        "Guatemalan": 1.2
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a6697ff2a3b48b3f7a95fdc7",
+    "rating":  30,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Arden Olofsson-MagnÃºsdÃ³ttir",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Fixer - Social engineering",
+    "age":  33,
+    "status":  "active",
+    "location":  "The Narrows, near Milwaukee and North Ave",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9,
+                       "Face":  0.9,
+                       "Problem Solver":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Predominantly Southeast Asian (64.1%) with significant Sub-Saharan African (19.2%) and Northern European (13.5%) ancestry, creating a striking pan-continental blend. Southeast Asian bone structure dominates with warm Sub-Saharan African undertones deepening the overall warmth, while Northern European genetics provide subtle cool counterpoints in skin undertones and eye geometry.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Athletic and lean with defined shoulders; moves with deliberate economy. No wasted motion.",
+                                 "hair_color":  "Natural black with silver threading at temples",
+                                 "hair_style":  "Box braids pulled into a high crown knot, practical and intimidating",
+                                 "hair_length":  "Medium (braids fall to mid-back when loose)",
+                                 "eye_color":  "Deep brown with natural monolid geometry from Southeast Asian ancestry, alert and analytical",
+                                 "skin_tone":  "Deep warm golden-brown with rich mahogany undertones from the Southeast Asian-Sub-Saharan African blend, cooled subtly by Northern European genetics creating complex depth",
+                                 "complexion":  "Clear skin with high, defined cheekbones reflecting Southeast Asian and Sub-Saharan African ancestry, full lips set in a neutral expression. Deep warm golden-mahogany undertones across warm-toned features. A thin scar traces from left jaw to earâ€”old, deliberate, never regretted.",
+                                 "distinguishing_marks":  [
+                                                              "Thin diagonal scar running from lower left jawline to behind left ear, approximately 8cm, pale and precise",
+                                                              "Small geometric tattoo on inner right wrist: three interlocking circles in matte black ink",
+                                                              "Faint burn marks on palms (both hands) in concentric circles, consistent with controlled exposureâ€”subcutaneous conditioning evidence"
+                                                          ],
+                                 "visible_augmentations":  "None visible. Her augmentations are deepâ€”subcutaneous neural array for lie detection and microexpression reading, internal subvocal mic, distributed haptic feedback nodes. Only the faint telltale palmar scarring suggests enhancement.",
+                                 "posture_movement":  "Sits with spine straight, always positioned to see exits. Hands rest visible on table or lapâ€”never hidden. Moves between stillness and sudden precision; no fidgeting. Speaks from a centered diaphragm. Eyes track micro-movements in conversation partners.",
+                                 "clothing_style":  "Tier 3 refined casual: fitted dark turtleneck (Sekitani brand, brushed synthetic), tailored charcoal cargo pants with hidden pockets, matte black reinforced shoes (non-descript, practical). A worn leather jacket over everythingâ€”buffalo leather, pre-2200s, patina that speaks of real use. No jewelry except a simple stainless steel chronometer on her left wrist. Aesthetic is \u0027professional operative who doesn\u0027t need to advertise.\u0027"
+                             },
+    "image_prompt":  "GLMZ operative portrait: Brisa Olofsson-MagnÃºsdÃ³ttir, 168cm lean athletic woman with deep warm golden-mahogany skin tone, Southeast Asian facial structure with high cheekbones and natural monolids, full lips. Black box braids pulled into high crown knot with silver threading at temples. Deep brown analytical eyes. Thin precise scar running left jawline to ear. Wearing fitted dark Sekitani turtleneck, tailored charcoal cargo pants, matte black reinforced shoes, vintage buffalo leather jacket with real patina. Simple stainless steel chronometer on left wrist. Subtle faint burn marks visible on palms suggesting subcutaneous neural augmentation. Seated with perfect posture, hands visible on table, monitoring expression. Professional operative aesthetic. Cool industrial lighting with warm accent on face highlighting skin undertones, moody Great Lakes Metropolitan Zone interior, neon reflection off leather jacket. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  64.1,
+                             "Sub-Saharan African":  19.2,
+                             "Northern European":  13.5,
+                             "Hispanic/Latin American":  3.2
+                         },
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  30.8
+                                                                  },
+                                                    "Filipino":  {
+                                                                     "Cebuano":  1.6,
+                                                                     "Tagalog":  7.5
+                                                                 },
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  24.2
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ugandan":  8.9,
+                                                                             "Somali":  10.3
+                                                                         }
+                                                    },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Dutch":  13.5
+                                                                   }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  0.9,
+                                                                                   "Venezuelan":  1.1
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  1.2
+                                                                                 }
+                                                        }
+                        }
 }

@@ -1,199 +1,258 @@
-{
-  "id": "019d6143a5b27f1c8745e494eafad270",
-  "rating": 20,
-  "vote_count": 3,
-  "type": "character",
-  "name": "Cornelis Trujillo-Asomaning",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Fixer - Info brokerage",
-  "age": 29,
-  "status": "active",
-  "location": "The Circuit, near North Ave and Milwaukee",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "The Collective",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Circuit",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Pacific Islander (31.9%) dominant with substantial Sub-Saharan African (20.1%) and Hispanic/Latin American (23.2%) ancestry, enriched by Central Asian (13.4%) with minor Northern European (7.8%) and Eastern European (3.6%) contributions. This creates a striking, warm-toned phenotype where Pacific Islander facial structure and fullness blend with Sub-Saharan African bone definition and dimensional depth, warmed throughout by Hispanic/Latin American golden undertones, with Central Asian influences sharpening cheekbones and jawline. The result is a complex, high-contrast face with warm bronze-undertoned deep brown skin and pronounced, well-defined facial architecture that bridges tropical and continental ancestry.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Lean and angular with defined musculature; moves with economical precision. Carries herself like someone who has learned to take up minimal space in rooms where she controls the narrative.",
-    "hair_color": "Jet black with a subtle iridescent sheen (likely treated with a subdermal pigment mod)",
-    "hair_style": "Pulled back in a tight, functional braid that wraps around her crown; two small braids frame her face with thin silver wire woven through them",
-    "hair_length": "Long (shoulder-blade length when unbound)",
-    "eye_color": "Dark brown with faint amber undertone, sharp and calculating",
-    "skin_tone": "Deep warm brown with rich bronze, golden, and copper undertones, the dimensional result of Pacific Islander warmth and fullness layered over Sub-Saharan African depth and definition, brightened by Hispanic/Latin American golden richness, with subtle Central Asian influence adding refined angularity to the overall warm palette",
-    "complexion": "Clear, angular face with high, pronounced cheekbones and a sharp, defined jawline reflecting the blend of Pacific Islander fullness, Central Asian definition, and Sub-Saharan African structure. The facial planes show remarkable dimensional warmth and depth—warm bronze catching light across the cheekbones, darker undertones in the hollows, golden highlights at the temples. Minimal visible scarring but hints of precise surgical work around her temples. Grooming is deliberate and expensive—no affectation, pure maintenance.",
-    "distinguishing_marks": [
-      "Thin, nearly invisible scar running along her left temple to cheekbone, consistent with neural interface installation or similar surgical procedure",
-      "Small tattoo of a circuit-board pattern (Φ symbol integrated into the design) on the inside of her right wrist, marking her allegiance to The Collective",
-      "Faint burn marks across the knuckles of both hands—old, pale, suggesting either industrial accident or deliberate initiation ritual"
-    ],
-    "visible_augmentations": "None immediately obvious. Likely carries subcutaneous neural arrays and data-jacking ports hidden beneath standard clothing. Her silver wire-woven braids may contain RFID tracking or signal-boosting threads, but this reads as aesthetic rather than overtly augmented.",
-    "posture_movement": "Stands with a balanced, neutral stance; moves with deliberate economy, never wasting motion. Hands are frequently still, resting in her lap or pockets. When she gestures, it's minimal and precise. Her gaze lingers—she listens more than she speaks, and watches people like she's reading code.",
-    "clothing_style": "Tier 3-4 professional fixer aesthetic: fitted dark grey or charcoal technical wear (moisture-wicking, reinforced seams). Sleek black long-coat with internal pockets (Collective-standard issue or high-quality knockoff). Functional boots with grip soles. No flashy branding—her clothes are tools, not statements. A single piece of expensive jewelry: a simple bracelet with what might be a data-chip embedded in the clasp. Carries a small slate-grey satchel with encrypted access panels."
-  },
-  "image_prompt": "Cornelis Trujillo-Asomaning, 2226 neo-noir fixer, 168cm lean angular frame with defined musculature. Deep warm bronze-brown skin with golden and copper undertones, blending Pacific Islander warmth with Sub-Saharan African depth and Central Asian definition. Sharp high cheekbones and defined jawline with dimensional facial planes catching warm light. Dark brown eyes with amber undertone, sharp and calculating. Jet black hair with iridescent sheen, pulled back in tight crown braid with two smaller braids framing face, thin silver wire woven through braids. Faint surgical scar along left temple to cheekbone. Small circuit-board Φ tattoo on right inner wrist. Faint old pale burn marks on knuckles of both hands. Wearing fitted charcoal technical wear with sleek black long-coat, functional grip-sole boots, slate-grey encrypted satchel. Minimalist elegant bracelet with embedded data-chip. Neutral balanced posture, economical precise movement. Professional fixer aesthetic, no flashy branding. Cool moody lighting in GLMZ corporate district, shadows accentuating bone structure, amber accent lights reflecting off skin tone and silver wire. Deliberate, controlled atmosphere. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Pacific Islander": 31.9,
-    "Hispanic/Latin American": 23.2,
-    "Sub-Saharan African": 20.1,
-    "Central Asian": 13.4,
-    "Northern European": 7.8,
-    "Eastern European": 3.6
-  },
-  "ancestry_detail": {
-    "Pacific Islander": {
-      "Polynesian": {
-        "Tongan": 10.5,
-        "Samoan": 1.8
-      },
-      "Melanesian": {
-        "Fijian": 11.7,
-        "Ni-Vanuatu": 7.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 7.2
-      },
-      "South American": {
-        "Brazilian": 16
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zambian": 8.8
-      },
-      "West African": {
-        "Ghanaian": 11.3
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Mongolian": 2.4
-      },
-      "Turkic": {
-        "Turkmen": 11
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 2.4
-      },
-      "British Isles": {
-        "Scottish": 0.4
-      },
-      "Scandinavian": {
-        "Swedish": 1.4,
-        "Danish": 3.6
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Croatian": 0.9,
-        "Bulgarian": 0.9
-      },
-      "Slavic West": {
-        "Sorbian": 0.6,
-        "Polish": 0.6
-      },
-      "Magyar-Romanian": {
-        "Romanian": 0.4,
-        "Hungarian": 0.2
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5b27f1c8745e494eafad270",
+    "rating":  20,
+    "vote_count":  3,
+    "type":  "character",
+    "name":  "Cornelis Trujillo-Asomaning",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Fixer - Info brokerage",
+    "age":  29,
+    "status":  "active",
+    "location":  "The Circuit, near North Ave and Milwaukee",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "The Collective",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Circuit",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Pacific Islander (31.9%) dominant with substantial Sub-Saharan African (20.1%) and Hispanic/Latin American (23.2%) ancestry, enriched by Central Asian (13.4%) with minor Northern European (7.8%) and Eastern European (3.6%) contributions. This creates a striking, warm-toned phenotype where Pacific Islander facial structure and fullness blend with Sub-Saharan African bone definition and dimensional depth, warmed throughout by Hispanic/Latin American golden undertones, with Central Asian influences sharpening cheekbones and jawline. The result is a complex, high-contrast face with warm bronze-undertoned deep brown skin and pronounced, well-defined facial architecture that bridges tropical and continental ancestry.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and angular with defined musculature; moves with economical precision. Carries herself like someone who has learned to take up minimal space in rooms where she controls the narrative.",
+                                 "hair_color":  "Jet black with a subtle iridescent sheen (likely treated with a subdermal pigment mod)",
+                                 "hair_style":  "Pulled back in a tight, functional braid that wraps around her crown; two small braids frame her face with thin silver wire woven through them",
+                                 "hair_length":  "Long (shoulder-blade length when unbound)",
+                                 "eye_color":  "Dark brown with faint amber undertone, sharp and calculating",
+                                 "skin_tone":  "Deep warm brown with rich bronze, golden, and copper undertones, the dimensional result of Pacific Islander warmth and fullness layered over Sub-Saharan African depth and definition, brightened by Hispanic/Latin American golden richness, with subtle Central Asian influence adding refined angularity to the overall warm palette",
+                                 "complexion":  "Clear, angular face with high, pronounced cheekbones and a sharp, defined jawline reflecting the blend of Pacific Islander fullness, Central Asian definition, and Sub-Saharan African structure. The facial planes show remarkable dimensional warmth and depthâ€”warm bronze catching light across the cheekbones, darker undertones in the hollows, golden highlights at the temples. Minimal visible scarring but hints of precise surgical work around her temples. Grooming is deliberate and expensiveâ€”no affectation, pure maintenance.",
+                                 "distinguishing_marks":  [
+                                                              "Thin, nearly invisible scar running along her left temple to cheekbone, consistent with neural interface installation or similar surgical procedure",
+                                                              "Small tattoo of a circuit-board pattern (Î¦ symbol integrated into the design) on the inside of her right wrist, marking her allegiance to The Collective",
+                                                              "Faint burn marks across the knuckles of both handsâ€”old, pale, suggesting either industrial accident or deliberate initiation ritual"
+                                                          ],
+                                 "visible_augmentations":  "None immediately obvious. Likely carries subcutaneous neural arrays and data-jacking ports hidden beneath standard clothing. Her silver wire-woven braids may contain RFID tracking or signal-boosting threads, but this reads as aesthetic rather than overtly augmented.",
+                                 "posture_movement":  "Stands with a balanced, neutral stance; moves with deliberate economy, never wasting motion. Hands are frequently still, resting in her lap or pockets. When she gestures, it\u0027s minimal and precise. Her gaze lingersâ€”she listens more than she speaks, and watches people like she\u0027s reading code.",
+                                 "clothing_style":  "Tier 3-4 professional fixer aesthetic: fitted dark grey or charcoal technical wear (moisture-wicking, reinforced seams). Sleek black long-coat with internal pockets (Collective-standard issue or high-quality knockoff). Functional boots with grip soles. No flashy brandingâ€”her clothes are tools, not statements. A single piece of expensive jewelry: a simple bracelet with what might be a data-chip embedded in the clasp. Carries a small slate-grey satchel with encrypted access panels."
+                             },
+    "image_prompt":  "Cornelis Trujillo-Asomaning, 2226 neo-noir fixer, 168cm lean angular frame with defined musculature. Deep warm bronze-brown skin with golden and copper undertones, blending Pacific Islander warmth with Sub-Saharan African depth and Central Asian definition. Sharp high cheekbones and defined jawline with dimensional facial planes catching warm light. Dark brown eyes with amber undertone, sharp and calculating. Jet black hair with iridescent sheen, pulled back in tight crown braid with two smaller braids framing face, thin silver wire woven through braids. Faint surgical scar along left temple to cheekbone. Small circuit-board Î¦ tattoo on right inner wrist. Faint old pale burn marks on knuckles of both hands. Wearing fitted charcoal technical wear with sleek black long-coat, functional grip-sole boots, slate-grey encrypted satchel. Minimalist elegant bracelet with embedded data-chip. Neutral balanced posture, economical precise movement. Professional fixer aesthetic, no flashy branding. Cool moody lighting in GLMZ corporate district, shadows accentuating bone structure, amber accent lights reflecting off skin tone and silver wire. Deliberate, controlled atmosphere. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Pacific Islander":  31.9,
+                             "Hispanic/Latin American":  23.2,
+                             "Sub-Saharan African":  20.1,
+                             "Central Asian":  13.4,
+                             "Northern European":  7.8,
+                             "Eastern European":  3.6
+                         },
+    "ancestry_detail":  {
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Tongan":  10.5,
+                                                                        "Samoan":  1.8
+                                                                    },
+                                                     "Melanesian":  {
+                                                                        "Fijian":  11.7,
+                                                                        "Ni-Vanuatu":  7.9
+                                                                    }
+                                                 },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  7.2
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Brazilian":  16
+                                                                               }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zambian":  8.8
+                                                                             },
+                                                        "West African":  {
+                                                                             "Ghanaian":  11.3
+                                                                         }
+                                                    },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  2.4
+                                                               },
+                                                  "Turkic":  {
+                                                                 "Turkmen":  11
+                                                             }
+                                              },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  2.4
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "Scottish":  0.4
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  1.4,
+                                                                           "Danish":  3.6
+                                                                       }
+                                                  },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Croatian":  0.9,
+                                                                          "Bulgarian":  0.9
+                                                                      },
+                                                     "Slavic West":  {
+                                                                         "Sorbian":  0.6,
+                                                                         "Polish":  0.6
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  0.4,
+                                                                             "Hungarian":  0.2
+                                                                         }
+                                                 }
+                        }
 }

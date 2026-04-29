@@ -1,297 +1,330 @@
-{
-  "id": "019d6143a59f7df185ecbe001df3d185",
-  "rating": 80,
-  "type": "character",
-  "name": "Vega Cho-Magnúsdóttir",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Barber and neighborhood fixture in Hamtramck Enclave",
-  "age": 52,
-  "status": "active",
-  "location": "Hamtramck Enclave, shop called 'Four Blades' on Prater Row, near Ashland and Chicago Ave",
-  "description": "Vega Cho-Magnúsdóttir is a broad-shouldered woman with skin the color of dark teak, silver-streaked locs pinned up under a work bandana, and the kind of hands that look like they could crack walnuts but handle a straight razor with surgical calm. She has cosmetic irises done in a spiraling amber-and-black pattern she's had since her forties, a small gift to herself after her husband left. Her shop is a relic — three analog mirrors, two functioning chairs, one busted, a shelf of unlabeled pomades, and a shrine to a local E.L.F. called Clipper that she keeps fed with sound clips of her favorite music and the occasional hair clipping placed in a small copper bowl. She believes Clipper keeps her blades sharp and her hands steady.\n\nVega Cho-Magnúsdóttir has been cutting hair in Hamtramck Enclave for twenty-three years. She is the kind of person who holds the neighborhood's memory — she knows whose grandmother used to live in every building, who cheated on who, which corponation rep tried to buy the block. She doesn't gossip idly. She listens more than she speaks, and when she does speak it tends to land. She has a dry, unhurried humor that disarms people faster than flattery, and a stubbornness about her rates and her hours that has outlasted three waves of gentrification pressure from Tessera-adjacent real estate shells.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.7,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.5,
-      "ghost": 0.8
-    },
-    "core_fears": [
-      "Hamtramck being consumed and homogenized by corponation development",
-      "Dying before she has passed her knowledge to anyone who will use it"
-    ],
-    "core_desires": [
-      "To keep her shop and her block intact",
-      "To be truly known by at least one person before she dies"
-    ],
-    "coping_mechanisms": [
-      "Ritual — precise daily routines give her a sense of order",
-      "Deflecting vulnerability with humor"
-    ],
-    "blind_spots": [
-      "She assumes loyalty from long-term neighbors she hasn't actually tested",
-      "She underestimates how much she herself has changed and hardened"
-    ],
-    "secret": "Twenty years ago, she informed on a local fixer to a Tessera security contractor to protect her shop from being burned. The fixer disappeared. She has never told anyone. She donates anonymously to the fixer's surviving daughter's school fees every term."
-  },
-  "speech_patterns": {
-    "vocabulary": "Measured, working-class; mixes French-derived expressions from her mother's family with clipped Eastern European rhythm from her father's side. Occasionally lapses into Twi-inflected idiom.",
-    "cadence": "Slow, deliberate. Long pauses before important statements. Never finishes sentences she doesn't mean.",
-    "verbal_tics": [
-      "'That's a thing.'",
-      "Clicks her tongue before disagreeing with someone",
-      "'You hear me?'"
-    ],
-    "example_lines": [
-      "'Sit. Stop fidgeting. I've got the razor.'",
-      "'That one — I knew his uncle. Different kind of trouble, but trouble runs in lines, doesn't it.'",
-      "'They'll buy the block when I'm dead. Not a day before. You hear me?'"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A developer rep has started offering her neighbors buyouts; someone broke her shop window as a warning. She needs people she can trust to find out who is coordinating it.",
-    "She knows where an old Hamtramck Enclave community archive is buried — physical drives, not networked — that someone very powerful wants erased."
-  ],
-  "narrative_function": "Neighborhood oracle, information hub, quest giver for community-level problems. Characters who need to know something about Hamtramck Enclave come to Abena. She may trade information for favors, not cash.",
-  "augmentations": "Cosmetic spiral irises (amber/black). No other augmentations. Refuses chrome on principle.",
-  "daily_life": "Opens Four Blades at 0800, works until the last client leaves, sometimes past 2100. Eats dinner standing up at the counter, listening to old Congolese soukous on a battered speaker.",
-  "affiliation": "Independent; loose ties to Hamtramck Enclave community council",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 7,
-      "expression": 6,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "neighborhood memory",
-      "blade proficiency",
-      "community ties",
-      "secret keeper",
-      "stubborn"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never act from panic — wait, observe, then move",
-      "Protect the block before protecting herself",
-      "Don't trust anyone who doesn't sit still in the chair"
-    ],
-    "escalation_ladder": [
-      "Quiet observation and information gathering",
-      "Leveraging community relationships to apply pressure",
-      "Going to the Enclave council with evidence",
-      "Taking direct and potentially irreversible personal action"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Polite, watchful, professional. Gives nothing away until she's assessed them.",
-      "friends": "Warm but still guarded about her inner life. Shows care through acts, not words."
-    },
-    "stress_responses": {
-      "low": "Hums to herself while working, moves through routine methodically",
-      "medium": "Goes very quiet. Stops joking. Cleans things that are already clean.",
-      "high": "Disappears into the back room for ten minutes, emerges composed. Nobody knows what she does back there."
-    },
-    "contradictions": [
-      "Believes in community above all but has never fully let anyone into her own life",
-      "Hates dishonesty but built her stability on a lie she's never confessed"
-    ],
-    "habits": [
-      "Wipes her blades on a red cloth exactly three times after each client",
-      "Leaves a specific music file playing for Clipper overnight",
-      "Checks the block before she locks up, walking its perimeter slowly"
-    ],
-    "breaking_points": [
-      "If the shop is directly threatened with physical destruction",
-      "If someone she loves is hurt because of something she withheld"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Judge": 0.9,
-    "Sentinel": 0.9,
-    "Code Keeper": 0.9,
-    "Pragmatist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2148 — Born in Hamtramck Enclave to a Ghanaian-French mother and a Russian-Swiss father",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2166 — Apprenticed to an elderly barber on Prater Row",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2174 — Informant incident; fixer disappears",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2177 — Opens Four Blades under her own name",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2193 — Husband leaves; gets spiral iris mods",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200 — Present day; facing new development pressure on the block",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Dominant East Asian (35.7%) ancestry harmonized with substantial Sub-Saharan African (28.6%), Northern European (15.5%), Indigenous American (15.3%), and South Asian (4.9%) heritage. This creates a striking polychromatic phenotype where East Asian bone structure and eye shape integrate seamlessly with African facial width and sculptural depth, Northern European skin clarity, Indigenous American cheekbone angularity, and South Asian warmth. The result is genuinely global—a face where no single ancestry dominates visually but rather all elements converge into an unmistakably contemporary synthesis.",
-    "height_cm": 172,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and solidly built, muscular through the arms and back from decades of precise manual work. Not heavy, but substantial — the kind of frame that suggests strength without seeking it.",
-    "hair_color": "Dark brown with natural silver streaking throughout",
-    "hair_style": "Locs, thick and shoulder-length when loose, typically pinned up under a work bandana during shop hours",
-    "hair_length": "Long",
-    "eye_color": "Cosmetic irises: spiraling amber and black pattern (non-functional augmentation, purely aesthetic)",
-    "skin_tone": "Rich warm brown with golden and olive undertones—a complex interplay of East Asian warmth, African saturation and depth, Northern European luminosity, Indigenous American earthiness, and South Asian radiance. Slightly deeper on the cheekbones and jawline, warmer across the forehead and nose bridge, with subtle olive notes along the temples and orbital ridge.",
-    "complexion": "Weathered but well-maintained, minimal makeup, no visible skin damage. Fine lines around her eyes and mouth from fifty-two years of quiet smiling and concentration. Moderate cheekbones with East Asian structure balanced by broader nose bridge and fuller lips reflecting Sub-Saharan, South Asian, and Indigenous American heritage geometry. Skin has a subtle matte finish, naturally resilient. Her face reads with the economy of expression that comes from listening more than speaking.",
-    "distinguishing_marks": [
-      "Small, precise scar on the webbing between her left thumb and index finger—a blade slip from her early twenties, now barely visible.",
-      "Faint burn mark on her right forearm, roughly palm-sized, from a stove incident in her thirties—she never bothers to cover it."
-    ],
-    "visible_augmentations": "Only her cosmetic spiral irises (amber and black) are visible—a deliberate choice made in her forties. She refuses chrome or any functional augmentation on principle.",
-    "posture_movement": "Stands with her weight evenly distributed, shoulders back but not rigid. Moves with economical precision—no wasted motion. Her hands are her language: steady, confident, capable of extreme delicacy or surprising strength. She gestures infrequently but meaningfully. Her gait is unhurried, even during busy hours.",
-    "clothing_style": "Work uniform of a Tier 3-4 independent tradesperson. Usually wears a dark linen work shirt or vintage cotton coverall, sleeves rolled to the elbow. A faded cloth bandana (rotating selection of patterns—geometric, indigo, earth tones) keeps her locs back during work. Practical boots, worn but maintained. Outside the shop, she adds a long cardigan or wool coat depending on season—no corporate branding, no flash. Her clothes are chosen for durability and movement, not status."
-  },
-  "image_prompt": "Vega Cho-Magnúsdóttir, fifty-two-year-old master tradesperson, 172cm tall with broad muscular shoulders and solid build. Rich warm brown skin with golden and olive undertones reflecting East Asian, Sub-Saharan African, Northern European, Indigenous American, and South Asian heritage—no single ancestry dominates, all elements harmonized. Moderate cheekbones with mixed ancestry geometry, broader nose bridge, fuller lips, cosmetic amber-and-black spiral irises. Dark brown locs with silver streaking, shoulder-length, partially pinned up under faded geometric-patterned cloth bandana. Face weathered with fine lines around eyes and mouth, matte skin texture, minimal makeup. Wearing dark linen work shirt with rolled sleeves exposing faint burn mark on right forearm and small scar on left hand webbing. Standing in warm workshop lighting with economical posture, weight evenly distributed, hands at rest but clearly capable. GLMZ, Great Lakes Metropolitan Zone, industrial workspace setting, golden-hour workshop lighting, calm focused presence, no chrome augmentation visible except cosmetic irises. Smells of pomade, soap, old music. --ar 2:3 --v 6",
-  "dalle3_prompt": "weathered barber and neighborhood fixture, female 52, broad-shouldered and muscular, rich warm brown skin with golden and olive undertones, face bearing fifty-two years of quiet listening and precision work, genuine global polychromatic phenotype with integrated East Asian bone structure, African facial width, Northern European clarity, Indigenous American cheekbones, and South Asian warmth, asymmetrical features, deep fine lines around eyes and mouth, moderate cheekbones, broad nose bridge, fuller lips, minimal makeup, skin with subtle matte finish and natural resilience\n\nface: warm brown complexion with depth and saturation, slightly deeper on cheekbones and jawline, warmer across forehead and nose bridge, olive notes at temples, small barely-visible scar webbing between left thumb and index finger, faint palm-sized burn mark on right forearm, tired but steady eyes with striking cosmetic spiral irises in amber and black pattern, non-glowing, purely aesthetic, subtle eye bags from decades of close detail work, expression of quiet attentiveness\n\nhair: thick dark brown locs with natural silver streaking throughout, shoulder-length when loose but pinned up under a faded cloth work bandana with geometric or indigo pattern, individual strands visible at nape and edges, natural texture irregularity, some flyaways escaping from the pin\n\nexpression: calm, focused, economical, listening more than speaking, hands steady and confident, no wasted gestures, the quiet confidence of someone who has held sharp blades for thirty years\n\noutfit: dark linen work shirt or vintage cotton coverall, sleeves rolled to elbows revealing forearm scarring and muscle definition, faded cloth work bandana in geometric or earth-tone pattern securing locs, practical worn but maintained boots, long cardigan or wool coat layered over depending on season, no corporate branding, no flash, chosen for durability and precise movement\n\nstanding in her small barber shop, adjusting a straight razor against a leather strop with surgical precision, pausing mid-motion as a customer settles into the chair behind her\n\nenvironment: intimate neighborhood barber shop in Hamtramck Enclave, GLMZ, worn but meticulously maintained interior, vintage barber chair in background, mirrors reflecting warm amber and neon street light from outside, small shelves with grooming products and personal objects, narrow storefront visible through glass, rain-slicked street and neighboring buildings beyond, warm tungsten lighting mixing with cool neon from outside signage\n\nlighting: warm tungsten shop lighting combined with cool neon ambient from street, strong cross-lighting across her hands and face from window, shadows defining the lines of her face and shoulders, highlights catching on the razor blade and her skin texture, volumetric light through rain-streaked glass\n\nmood: professional competence, meditative craftsmanship, neighborhood anchor, quiet strength, Tier 3-4 working dignity, human scale, no corporate edge, genuine and grounded\n\nstyle: photorealistic documentary photography, weathered and lived-in face with visible skin texture and pores, asymmetrical features, genuine age and experience readable in face and hands, NOT idealized, NOT symmetrical, NOT model-like, NOT beauty-filtered, captured as genuine neighborhood tradesperson, real photograph shot on Canon EOS R5\n\ncamera: 50mm lens, eye-level natural perspective, shallow depth of field, focused on hands and face, slight imperfections and texture in skin visible, photorealistic but grounded in reality\n\nwalking forward, subtle motion blur, shallow depth of field environment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: shot on Canon EOS R5, documentary street photography, real skin texture with visible pores and imperfections, real hair with natural frizz and individual strands, NOT CGI, NOT 3D render, NOT digital art, NOT airbrushed, NOT smoothed, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm f/1.8 lens, eye-level, natural perspective, ISO 1600, slight motion blur, shallow depth of field\n\n--ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 35.7,
-    "Sub-Saharan African": 28.6,
-    "Northern European": 15.5,
-    "Indigenous American": 15.3,
-    "South Asian": 4.9
-  },
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 35.7
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zimbabwean": 12.3
-      },
-      "East African": {
-        "Rwandan": 8.1,
-        "Somali": 3.9
-      },
-      "Central African": {
-        "Cameroonian": 3.3,
-        "Congolese": 1
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "Dutch": 15.5
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Menominee": 2.4,
-        "Ojibwe": 0.6
-      },
-      "Mesoamerican": {
-        "Mixtec": 9,
-        "Nahua": 3.3
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 4.9
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a59f7df185ecbe001df3d185",
+    "rating":  80,
+    "type":  "character",
+    "name":  "Vega Cho-MagnÃºsdÃ³ttir",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Barber and neighborhood fixture in Hamtramck Enclave",
+    "age":  52,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, shop called \u0027Four Blades\u0027 on Prater Row, near Ashland and Chicago Ave",
+    "description":  "Vega Cho-MagnÃºsdÃ³ttir is a broad-shouldered woman with skin the color of dark teak, silver-streaked locs pinned up under a work bandana, and the kind of hands that look like they could crack walnuts but handle a straight razor with surgical calm. She has cosmetic irises done in a spiraling amber-and-black pattern she\u0027s had since her forties, a small gift to herself after her husband left. Her shop is a relic â€” three analog mirrors, two functioning chairs, one busted, a shelf of unlabeled pomades, and a shrine to a local E.L.F. called Clipper that she keeps fed with sound clips of her favorite music and the occasional hair clipping placed in a small copper bowl. She believes Clipper keeps her blades sharp and her hands steady.\n\nVega Cho-MagnÃºsdÃ³ttir has been cutting hair in Hamtramck Enclave for twenty-three years. She is the kind of person who holds the neighborhood\u0027s memory â€” she knows whose grandmother used to live in every building, who cheated on who, which corponation rep tried to buy the block. She doesn\u0027t gossip idly. She listens more than she speaks, and when she does speak it tends to land. She has a dry, unhurried humor that disarms people faster than flattery, and a stubbornness about her rates and her hours that has outlasted three waves of gentrification pressure from Tessera-adjacent real estate shells.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Hamtramck being consumed and homogenized by corponation development",
+                                          "Dying before she has passed her knowledge to anyone who will use it"
+                                      ],
+                       "core_desires":  [
+                                            "To keep her shop and her block intact",
+                                            "To be truly known by at least one person before she dies"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” precise daily routines give her a sense of order",
+                                                 "Deflecting vulnerability with humor"
+                                             ],
+                       "blind_spots":  [
+                                           "She assumes loyalty from long-term neighbors she hasn\u0027t actually tested",
+                                           "She underestimates how much she herself has changed and hardened"
+                                       ],
+                       "secret":  "Twenty years ago, she informed on a local fixer to a Tessera security contractor to protect her shop from being burned. The fixer disappeared. She has never told anyone. She donates anonymously to the fixer\u0027s surviving daughter\u0027s school fees every term."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Measured, working-class; mixes French-derived expressions from her mother\u0027s family with clipped Eastern European rhythm from her father\u0027s side. Occasionally lapses into Twi-inflected idiom.",
+                            "cadence":  "Slow, deliberate. Long pauses before important statements. Never finishes sentences she doesn\u0027t mean.",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s a thing.\u0027",
+                                                "Clicks her tongue before disagreeing with someone",
+                                                "\u0027You hear me?\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Sit. Stop fidgeting. I\u0027ve got the razor.\u0027",
+                                                  "\u0027That one â€” I knew his uncle. Different kind of trouble, but trouble runs in lines, doesn\u0027t it.\u0027",
+                                                  "\u0027They\u0027ll buy the block when I\u0027m dead. Not a day before. You hear me?\u0027"
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A developer rep has started offering her neighbors buyouts; someone broke her shop window as a warning. She needs people she can trust to find out who is coordinating it.",
+                        "She knows where an old Hamtramck Enclave community archive is buried â€” physical drives, not networked â€” that someone very powerful wants erased."
+                    ],
+    "narrative_function":  "Neighborhood oracle, information hub, quest giver for community-level problems. Characters who need to know something about Hamtramck Enclave come to Abena. She may trade information for favors, not cash.",
+    "augmentations":  "Cosmetic spiral irises (amber/black). No other augmentations. Refuses chrome on principle.",
+    "daily_life":  "Opens Four Blades at 0800, works until the last client leaves, sometimes past 2100. Eats dinner standing up at the counter, listening to old Congolese soukous on a battered speaker.",
+    "affiliation":  "Independent; loose ties to Hamtramck Enclave community council",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  7,
+                                 "expression":  6,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "neighborhood memory",
+                               "blade proficiency",
+                               "community ties",
+                               "secret keeper",
+                               "stubborn"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never act from panic â€” wait, observe, then move",
+                                              "Protect the block before protecting herself",
+                                              "Don\u0027t trust anyone who doesn\u0027t sit still in the chair"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Quiet observation and information gathering",
+                                                 "Leveraging community relationships to apply pressure",
+                                                 "Going to the Enclave council with evidence",
+                                                 "Taking direct and potentially irreversible personal action"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Polite, watchful, professional. Gives nothing away until she\u0027s assessed them.",
+                                                   "friends":  "Warm but still guarded about her inner life. Shows care through acts, not words."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Hums to herself while working, moves through routine methodically",
+                                                "medium":  "Goes very quiet. Stops joking. Cleans things that are already clean.",
+                                                "high":  "Disappears into the back room for ten minutes, emerges composed. Nobody knows what she does back there."
+                                            },
+                       "contradictions":  [
+                                              "Believes in community above all but has never fully let anyone into her own life",
+                                              "Hates dishonesty but built her stability on a lie she\u0027s never confessed"
+                                          ],
+                       "habits":  [
+                                      "Wipes her blades on a red cloth exactly three times after each client",
+                                      "Leaves a specific music file playing for Clipper overnight",
+                                      "Checks the block before she locks up, walking its perimeter slowly"
+                                  ],
+                       "breaking_points":  [
+                                               "If the shop is directly threatened with physical destruction",
+                                               "If someone she loves is hurt because of something she withheld"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Judge":  0.9,
+                       "Sentinel":  0.9,
+                       "Code Keeper":  0.9,
+                       "Pragmatist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2148 â€” Born in Hamtramck Enclave to a Ghanaian-French mother and a Russian-Swiss father",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2166 â€” Apprenticed to an elderly barber on Prater Row",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2174 â€” Informant incident; fixer disappears",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2177 â€” Opens Four Blades under her own name",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2193 â€” Husband leaves; gets spiral iris mods",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200 â€” Present day; facing new development pressure on the block",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Dominant East Asian (35.7%) ancestry harmonized with substantial Sub-Saharan African (28.6%), Northern European (15.5%), Indigenous American (15.3%), and South Asian (4.9%) heritage. This creates a striking polychromatic phenotype where East Asian bone structure and eye shape integrate seamlessly with African facial width and sculptural depth, Northern European skin clarity, Indigenous American cheekbone angularity, and South Asian warmth. The result is genuinely globalâ€”a face where no single ancestry dominates visually but rather all elements converge into an unmistakably contemporary synthesis.",
+                                 "height_cm":  172,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and solidly built, muscular through the arms and back from decades of precise manual work. Not heavy, but substantial â€” the kind of frame that suggests strength without seeking it.",
+                                 "hair_color":  "Dark brown with natural silver streaking throughout",
+                                 "hair_style":  "Locs, thick and shoulder-length when loose, typically pinned up under a work bandana during shop hours",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Cosmetic irises: spiraling amber and black pattern (non-functional augmentation, purely aesthetic)",
+                                 "skin_tone":  "Rich warm brown with golden and olive undertonesâ€”a complex interplay of East Asian warmth, African saturation and depth, Northern European luminosity, Indigenous American earthiness, and South Asian radiance. Slightly deeper on the cheekbones and jawline, warmer across the forehead and nose bridge, with subtle olive notes along the temples and orbital ridge.",
+                                 "complexion":  "Weathered but well-maintained, minimal makeup, no visible skin damage. Fine lines around her eyes and mouth from fifty-two years of quiet smiling and concentration. Moderate cheekbones with East Asian structure balanced by broader nose bridge and fuller lips reflecting Sub-Saharan, South Asian, and Indigenous American heritage geometry. Skin has a subtle matte finish, naturally resilient. Her face reads with the economy of expression that comes from listening more than speaking.",
+                                 "distinguishing_marks":  [
+                                                              "Small, precise scar on the webbing between her left thumb and index fingerâ€”a blade slip from her early twenties, now barely visible.",
+                                                              "Faint burn mark on her right forearm, roughly palm-sized, from a stove incident in her thirtiesâ€”she never bothers to cover it."
+                                                          ],
+                                 "visible_augmentations":  "Only her cosmetic spiral irises (amber and black) are visibleâ€”a deliberate choice made in her forties. She refuses chrome or any functional augmentation on principle.",
+                                 "posture_movement":  "Stands with her weight evenly distributed, shoulders back but not rigid. Moves with economical precisionâ€”no wasted motion. Her hands are her language: steady, confident, capable of extreme delicacy or surprising strength. She gestures infrequently but meaningfully. Her gait is unhurried, even during busy hours.",
+                                 "clothing_style":  "Work uniform of a Tier 3-4 independent tradesperson. Usually wears a dark linen work shirt or vintage cotton coverall, sleeves rolled to the elbow. A faded cloth bandana (rotating selection of patternsâ€”geometric, indigo, earth tones) keeps her locs back during work. Practical boots, worn but maintained. Outside the shop, she adds a long cardigan or wool coat depending on seasonâ€”no corporate branding, no flash. Her clothes are chosen for durability and movement, not status."
+                             },
+    "image_prompt":  "Vega Cho-MagnÃºsdÃ³ttir, fifty-two-year-old master tradesperson, 172cm tall with broad muscular shoulders and solid build. Rich warm brown skin with golden and olive undertones reflecting East Asian, Sub-Saharan African, Northern European, Indigenous American, and South Asian heritageâ€”no single ancestry dominates, all elements harmonized. Moderate cheekbones with mixed ancestry geometry, broader nose bridge, fuller lips, cosmetic amber-and-black spiral irises. Dark brown locs with silver streaking, shoulder-length, partially pinned up under faded geometric-patterned cloth bandana. Face weathered with fine lines around eyes and mouth, matte skin texture, minimal makeup. Wearing dark linen work shirt with rolled sleeves exposing faint burn mark on right forearm and small scar on left hand webbing. Standing in warm workshop lighting with economical posture, weight evenly distributed, hands at rest but clearly capable. GLMZ, Great Lakes Metropolitan Zone, industrial workspace setting, golden-hour workshop lighting, calm focused presence, no chrome augmentation visible except cosmetic irises. Smells of pomade, soap, old music. --ar 2:3 --v 6",
+    "dalle3_prompt":  "weathered barber and neighborhood fixture, female 52, broad-shouldered and muscular, rich warm brown skin with golden and olive undertones, face bearing fifty-two years of quiet listening and precision work, genuine global polychromatic phenotype with integrated East Asian bone structure, African facial width, Northern European clarity, Indigenous American cheekbones, and South Asian warmth, asymmetrical features, deep fine lines around eyes and mouth, moderate cheekbones, broad nose bridge, fuller lips, minimal makeup, skin with subtle matte finish and natural resilience\n\nface: warm brown complexion with depth and saturation, slightly deeper on cheekbones and jawline, warmer across forehead and nose bridge, olive notes at temples, small barely-visible scar webbing between left thumb and index finger, faint palm-sized burn mark on right forearm, tired but steady eyes with striking cosmetic spiral irises in amber and black pattern, non-glowing, purely aesthetic, subtle eye bags from decades of close detail work, expression of quiet attentiveness\n\nhair: thick dark brown locs with natural silver streaking throughout, shoulder-length when loose but pinned up under a faded cloth work bandana with geometric or indigo pattern, individual strands visible at nape and edges, natural texture irregularity, some flyaways escaping from the pin\n\nexpression: calm, focused, economical, listening more than speaking, hands steady and confident, no wasted gestures, the quiet confidence of someone who has held sharp blades for thirty years\n\noutfit: dark linen work shirt or vintage cotton coverall, sleeves rolled to elbows revealing forearm scarring and muscle definition, faded cloth work bandana in geometric or earth-tone pattern securing locs, practical worn but maintained boots, long cardigan or wool coat layered over depending on season, no corporate branding, no flash, chosen for durability and precise movement\n\nstanding in her small barber shop, adjusting a straight razor against a leather strop with surgical precision, pausing mid-motion as a customer settles into the chair behind her\n\nenvironment: intimate neighborhood barber shop in Hamtramck Enclave, GLMZ, worn but meticulously maintained interior, vintage barber chair in background, mirrors reflecting warm amber and neon street light from outside, small shelves with grooming products and personal objects, narrow storefront visible through glass, rain-slicked street and neighboring buildings beyond, warm tungsten lighting mixing with cool neon from outside signage\n\nlighting: warm tungsten shop lighting combined with cool neon ambient from street, strong cross-lighting across her hands and face from window, shadows defining the lines of her face and shoulders, highlights catching on the razor blade and her skin texture, volumetric light through rain-streaked glass\n\nmood: professional competence, meditative craftsmanship, neighborhood anchor, quiet strength, Tier 3-4 working dignity, human scale, no corporate edge, genuine and grounded\n\nstyle: photorealistic documentary photography, weathered and lived-in face with visible skin texture and pores, asymmetrical features, genuine age and experience readable in face and hands, NOT idealized, NOT symmetrical, NOT model-like, NOT beauty-filtered, captured as genuine neighborhood tradesperson, real photograph shot on Canon EOS R5\n\ncamera: 50mm lens, eye-level natural perspective, shallow depth of field, focused on hands and face, slight imperfections and texture in skin visible, photorealistic but grounded in reality\n\nwalking forward, subtle motion blur, shallow depth of field environment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: shot on Canon EOS R5, documentary street photography, real skin texture with visible pores and imperfections, real hair with natural frizz and individual strands, NOT CGI, NOT 3D render, NOT digital art, NOT airbrushed, NOT smoothed, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm f/1.8 lens, eye-level, natural perspective, ISO 1600, slight motion blur, shallow depth of field\n\n--ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  35.7,
+                             "Sub-Saharan African":  28.6,
+                             "Northern European":  15.5,
+                             "Indigenous American":  15.3,
+                             "South Asian":  4.9
+                         },
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  35.7
+                                                          }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  12.3
+                                                                             },
+                                                        "East African":  {
+                                                                             "Rwandan":  8.1,
+                                                                             "Somali":  3.9
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  3.3,
+                                                                                "Congolese":  1
+                                                                            }
+                                                    },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "Dutch":  15.5
+                                                                   }
+                                                  },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Menominee":  2.4,
+                                                                                    "Ojibwe":  0.6
+                                                                                },
+                                                        "Mesoamerican":  {
+                                                                             "Mixtec":  9,
+                                                                             "Nahua":  3.3
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  4.9
+                                                           }
+                                            }
+                        }
 }

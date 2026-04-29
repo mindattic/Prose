@@ -1,361 +1,374 @@
-{
-  "id": "019d6143a5a974d5979a1358e070f5d1",
-  "type": "character",
-  "name": "Akinwale Arakawa-Horváth",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Remote drone and vehicle operations specialist — rigger",
-  "age": 23,
-  "status": "active",
-  "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Armitage and Milwaukee",
-  "description": "Akinwale Arakawa-Horváth are average height but with a presence that fills more space than the body accounts for. At 23, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a rigger out of Glassway, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Akinwale Arakawa-Horváth lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.36,
-      "ideal": 0.34,
-      "id": 0.12,
-      "shadow": 0.89,
-      "mask": 0.48,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Their past catching up — debts, enemies, broken promises",
-      "Being identified by corporate facial recognition — living off-grid is survival"
-    ],
-    "core_desires": [
-      "Control — over their body, their schedule, their future",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "The perfect run — one job so clean it becomes legend"
-    ],
-    "coping_mechanisms": [
-      "Compartmentalization — work feelings and personal feelings exist in separate boxes",
-      "Isolates — retreats into their space when overwhelmed, emerges only for work",
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
-    ],
-    "blind_spots": [
-      "Trusts technology more than people — machines don't betray",
-      "Fails to notice when their own behavior mirrors the people they despise",
-      "Overestimates their own abilities in situations outside their specialty"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
-    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
-    "verbal_tics": [
-      "Calls everyone 'friend' — the warmth varies from genuine to threatening",
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation"
-    ],
-    "example_lines": [
-      "\"I have eyes in every district. Most of them are on wings.\"",
-      "\"The drone doesn't care about your feelings. Neither do I.\"",
-      "\"Remote operation means I'm everywhere and nowhere. It's very convenient.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A corporate black site Altan Lindqvist-Okafor once infiltrated is being reopened, and the people inside know their face",
-    "A former associate resurfaces with evidence that could destroy Altan Lindqvist-Okafor's reputation — and a price for silence",
-    "The fixer who handles Altan Lindqvist-Okafor's contracts goes silent — dead, disappeared, or turned"
-  ],
-  "narrative_function": "Altan Lindqvist-Okafor represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster. Enhanced tendons — geneware upgrade, jump height and grip strength tripled",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Independent — Dockside connections",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 8
-      },
-      "agility": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 5
-      },
-      "endurance": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 7
-      },
-      "reflexes": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 7
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 4
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 7
-      },
-      "willpower": {
-        "base": 7,
-        "augmented": 3,
-        "effective": 5
-      },
-      "technical": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 10
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 7
-      },
-      "intimidation": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 9
-      },
-      "deception": {
-        "base": 8,
-        "augmented": 2,
-        "effective": 7
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 5
-      }
-    },
-    "personality": {
-      "aggression": 0.18,
-      "caution": 0.42,
-      "loyalty": 0.5,
-      "greed": 0.87,
-      "empathy": 0.52
-    },
-    "drives": [
-      "revenge",
-      "money",
-      "protection"
-    ],
-    "thresholds": {
-      "pain": 6,
-      "stress": 8,
-      "loyalty_break": 5
-    },
-    "strengths": [
-      "natural leadership presence",
-      "strategic thinking under pressure"
-    ],
-    "weaknesses": [
-      "inability to delegate — must control everything personally",
-      "risk-averse to the point of missed opportunities",
-      "substance dependency — functional but fragile"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "rigger",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Always verifies target identity independently before lethal contracts",
-      "Will not take contracts against children or families — the line is hard and non-negotiable"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Projects confidence but makes decisions from a foundation of fear they've never examined",
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
-    ],
-    "habits": [
-      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say",
-      "Practices a kata or fighting form every morning regardless of circumstances",
-      "Never drinks anything they didn't see poured or open themselves",
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots"
-    ],
-    "breaking_points": [
-      "Losing their primary augmentation — the one that defines their professional identity",
-      "Learning that a job they completed resulted in mass casualties they weren't told about"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Synthetic blood with oxygen-carrying nanites",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
-      "replaces": ""
-    },
-    {
-      "name": "Enhanced tendons",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Enhanced tendons — geneware upgrade, jump height and grip strength tripled",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Glassway",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Unfinished Theorem",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly Eastern European (62.3%) with significant South Asian (17.7%) and East Asian (14.3%) admixture, rounded by Hispanic/Latin American (4.0%) and Sub-Saharan African (1.7%) ancestry. The result is a distinctly Eurasian phenotype with warmth and refinement across all features—high, angular cheekbones and strong bone structure from Eastern European genetics softened by South Asian facial proportions and fullness, with subtle eye shape refinement from East Asian heritage. The minor Hispanic and African components add subtle warmth and dimensionality to skin tone without altering the fundamental architecture.",
-    "height_cm": 172,
-    "weight_kg": 68,
-    "build": "Lean and efficient, muscular without bulk—built for precision and endurance rather than raw power. Enhanced tendons visible as subtle cord-like definition under the skin of forearms and calves.",
-    "hair_color": "Dark brown with subtle auburn undertones in direct light",
-    "hair_style": "Short, undercut fade with slightly longer crown—clean and utilitarian, styled with practiced casualness",
-    "hair_length": "Short",
-    "eye_color": "Amber-brown, naturally warm but capable of an unsettling flatness when focused",
-    "skin_tone": "Fair to medium with warm golden undertones—a luminous complexion that blends Eastern European fairness with South Asian warmth and East Asian refinement. Subtle peachy-amber glow deepens along circulation points where synthetic blood runs closest to the surface (collarbones, wrists, neck), creating an iridescent quality under certain lighting. No harsh contrast; the warmth is integral rather than overlay.",
-    "complexion": "Angular facial structure with high, prominent cheekbones and refined nose bridge reflecting the Eastern European-East Asian dominant ancestry, softened by South Asian influence through slightly fuller lower face and naturally warm undertones. Sharp jawline with defined structure. Skin is clear with a faint luminescent sheen along the collarbones, neck, and wrists where synthetic blood circulates closest to the surface. Minimal scarring visible—most damage repaired by accelerated healing. Expression is controlled, revealing little by default.",
-    "distinguishing_marks": [
-      "Thin vertical scar along the left temple, faded to white—approximately 3cm, clean cut from old trauma",
-      "Faint subcutaneous tracery visible under the skin of both wrists—luminescent pathways of synthetic blood nanite networks, glowing faintly amber under UV or direct LED light",
-      "Barely visible port scar behind the left ear, healed clean but slightly raised—neural interface legacy"
-    ],
-    "visible_augmentations": "Synthetic blood system is the signature modification—the amber-tinged luminescence is visible beneath translucent skin at the wrists, collarbones, and base of the neck. The circulation network becomes more apparent when exerted or under stress. Enhanced tendons show as subtle but pronounced cording in forearms. No obvious chrome plating or mechanical limbs, but augmentations give uncanny precision in movement.",
-    "posture_movement": "Moves with calculated efficiency—no wasted motion, every gesture purposeful. When at rest, maintains a relaxed but alert baseline, weight slightly forward on the balls of their feet. Capable of explosive movement despite the languid default. Makes direct eye contact during negotiations or confrontation; avoids it during cover-identity mundane interactions. Hands are always visible—a trust signal that reads as either confidence or threat depending on context.",
-    "clothing_style": "Tier 3-4 hybrid—expensive technical wear worn with deliberate casualness. Favors modular cargo pants with reinforced seams (grey or black), fitted compression tops or sleeveless technical vests that display the augmentations without apology. Waterproof jacket with internal pockets for hardware. Worn but well-maintained steel-toed boots. Minimal jewelry—a single ring on the left hand (function unclear: controller, marker, or personal anchor). During cover-identity periods, dresses down to blending beige and grey, deliberately unremarkable. Always has some form of low-profile neural interface controller accessible—wrist-mounted, watch face, or pocket device."
-  },
-  "image_prompt": "Akinwale Arakawa-Horváth, GLMZ, androgynous figure with high angular cheekbones and refined facial structure blending Eastern European and East Asian ancestry with South Asian warmth, fair-to-medium skin tone with luminescent peachy-amber undertones, particularly visible along collarbones and wrists. Amber-brown eyes with cold focus. Short dark brown hair with auburn highlights, undercut fade style. Lean muscular build, enhanced tendons visible in forearms. Faint white temple scar, barely visible neural port scar behind left ear. Wearing sleeveless black compression technical vest over modular grey cargo pants, displaying iridescent synthetic blood circulation beneath translucent skin at wrists and neck. Steel-toed boots, minimal jewelry. Synthetic blood nanite networks glow faintly amber under neon lighting. Alert posture, hands visible, calculating expression. Dark urban GLMZ setting with harsh LED strips and soft ambient glow reflecting off wet surfaces. Mood: efficient, dangerous precision. Professional operative at rest. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 62.3,
-    "South Asian": 17.7,
-    "East Asian": 14.3,
-    "Hispanic/Latin American": 4,
-    "Sub-Saharan African": 1.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Slavic East": {
-        "Ukrainian": 53
-      },
-      "Slavic West": {
-        "Slovak": 3.3
-      },
-      "Slavic South": {
-        "Croatian": 4.2,
-        "Serbian": 1.8
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Baloch": 7.6,
-        "Punjabi Pakistani": 10.1
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 11.3
-      },
-      "Korean": {
-        "Korean": 3
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Guatemalan": 1.5,
-        "Costa Rican": 2.5
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 0.3,
-        "Congolese": 0.5
-      },
-      "East African": {
-        "Kenyan": 0.4
-      },
-      "West African": {
-        "Ivorian": 0.3,
-        "Senegalese": 0.2
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5a974d5979a1358e070f5d1",
+    "type":  "character",
+    "name":  "Akinwale Arakawa-HorvÃ¡th",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Remote drone and vehicle operations specialist â€” rigger",
+    "age":  23,
+    "status":  "active",
+    "location":  "Glassway â€” corporate-adjacent retail district, heavy surveillance, near Armitage and Milwaukee",
+    "description":  "Akinwale Arakawa-HorvÃ¡th are average height but with a presence that fills more space than the body accounts for. At 23, they have the kind of face that changes depending on the light â€” trustworthy in daylight, dangerous after dark. The chrome is visible â€” synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster â€” and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a rigger out of Glassway, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Akinwale Arakawa-HorvÃ¡th lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "Their past catching up â€” debts, enemies, broken promises",
+                                          "Being identified by corporate facial recognition â€” living off-grid is survival"
+                                      ],
+                       "core_desires":  [
+                                            "Control â€” over their body, their schedule, their future",
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail",
+                                            "The perfect run â€” one job so clean it becomes legend"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Compartmentalization â€” work feelings and personal feelings exist in separate boxes",
+                                                 "Isolates â€” retreats into their space when overwhelmed, emerges only for work",
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope"
+                                             ],
+                       "blind_spots":  [
+                                           "Trusts technology more than people â€” machines don\u0027t betray",
+                                           "Fails to notice when their own behavior mirrors the people they despise",
+                                           "Overestimates their own abilities in situations outside their specialty"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, profane, and vivid. Speaks in images â€” everything is a metaphor for violence or weather.",
+                            "cadence":  "Measured and deliberate â€” pauses before important words for emphasis.",
+                            "verbal_tics":  [
+                                                "Calls everyone \u0027friend\u0027 â€” the warmth varies from genuine to threatening",
+                                                "Pauses mid-sentence to listen â€” combat habit that bleeds into conversation"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I have eyes in every district. Most of them are on wings.\"",
+                                                  "\"The drone doesn\u0027t care about your feelings. Neither do I.\"",
+                                                  "\"Remote operation means I\u0027m everywhere and nowhere. It\u0027s very convenient.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A corporate black site Altan Lindqvist-Okafor once infiltrated is being reopened, and the people inside know their face",
+                        "A former associate resurfaces with evidence that could destroy Altan Lindqvist-Okafor\u0027s reputation â€” and a price for silence",
+                        "The fixer who handles Altan Lindqvist-Okafor\u0027s contracts goes silent â€” dead, disappeared, or turned"
+                    ],
+    "narrative_function":  "Altan Lindqvist-Okafor represents the working professional of the runner world â€” competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+    "augmentations":  "Synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster. Enhanced tendons â€” geneware upgrade, jump height and grip strength tripled",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Independent â€” Dockside connections",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  4,
+                                                    "augmented":  1,
+                                                    "effective":  8
+                                                },
+                                   "agility":  {
+                                                   "base":  7,
+                                                   "augmented":  1,
+                                                   "effective":  5
+                                               },
+                                   "endurance":  {
+                                                     "base":  7,
+                                                     "augmented":  0,
+                                                     "effective":  7
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  4,
+                                                    "augmented":  0,
+                                                    "effective":  7
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  7,
+                                                      "augmented":  2,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  2,
+                                                    "effective":  7
+                                                },
+                                 "willpower":  {
+                                                   "base":  7,
+                                                   "augmented":  3,
+                                                   "effective":  5
+                                               },
+                                 "technical":  {
+                                                   "base":  7,
+                                                   "augmented":  0,
+                                                   "effective":  10
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  3,
+                                                  "augmented":  0,
+                                                  "effective":  7
+                                              },
+                                 "intimidation":  {
+                                                      "base":  6,
+                                                      "augmented":  1,
+                                                      "effective":  9
+                                                  },
+                                 "deception":  {
+                                                   "base":  8,
+                                                   "augmented":  2,
+                                                   "effective":  7
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  1,
+                                                 "effective":  5
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.18,
+                                      "caution":  0.42,
+                                      "loyalty":  0.5,
+                                      "greed":  0.87,
+                                      "empathy":  0.52
+                                  },
+                  "drives":  [
+                                 "revenge",
+                                 "money",
+                                 "protection"
+                             ],
+                  "thresholds":  {
+                                     "pain":  6,
+                                     "stress":  8,
+                                     "loyalty_break":  5
+                                 },
+                  "strengths":  [
+                                    "natural leadership presence",
+                                    "strategic thinking under pressure"
+                                ],
+                  "weaknesses":  [
+                                     "inability to delegate â€” must control everything personally",
+                                     "risk-averse to the point of missed opportunities",
+                                     "substance dependency â€” functional but fragile"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "rigger",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined",
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+                                          ],
+                       "habits":  [
+                                      "Taps a specific rhythm on hard surfaces when thinking â€” Morse code for a word they won\u0027t say",
+                                      "Practices a kata or fighting form every morning regardless of circumstances",
+                                      "Never drinks anything they didn\u0027t see poured or open themselves",
+                                      "Wears the same item of clothing for luck â€” a scarf, a glove, a specific pair of boots"
+                                  ],
+                       "breaking_points":  [
+                                               "Losing their primary augmentation â€” the one that defines their professional identity",
+                                               "Learning that a job they completed resulted in mass casualties they weren\u0027t told about"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Synthetic blood with oxygen-carrying nanites",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Synthetic blood with oxygen-carrying nanites â€” doesn\u0027t tire, heals faster",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Enhanced tendons",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Enhanced tendons â€” geneware upgrade, jump height and grip strength tripled",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Glassway",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Unfinished Theorem",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Eastern European (62.3%) with significant South Asian (17.7%) and East Asian (14.3%) admixture, rounded by Hispanic/Latin American (4.0%) and Sub-Saharan African (1.7%) ancestry. The result is a distinctly Eurasian phenotype with warmth and refinement across all featuresâ€”high, angular cheekbones and strong bone structure from Eastern European genetics softened by South Asian facial proportions and fullness, with subtle eye shape refinement from East Asian heritage. The minor Hispanic and African components add subtle warmth and dimensionality to skin tone without altering the fundamental architecture.",
+                                 "height_cm":  172,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and efficient, muscular without bulkâ€”built for precision and endurance rather than raw power. Enhanced tendons visible as subtle cord-like definition under the skin of forearms and calves.",
+                                 "hair_color":  "Dark brown with subtle auburn undertones in direct light",
+                                 "hair_style":  "Short, undercut fade with slightly longer crownâ€”clean and utilitarian, styled with practiced casualness",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Amber-brown, naturally warm but capable of an unsettling flatness when focused",
+                                 "skin_tone":  "Fair to medium with warm golden undertonesâ€”a luminous complexion that blends Eastern European fairness with South Asian warmth and East Asian refinement. Subtle peachy-amber glow deepens along circulation points where synthetic blood runs closest to the surface (collarbones, wrists, neck), creating an iridescent quality under certain lighting. No harsh contrast; the warmth is integral rather than overlay.",
+                                 "complexion":  "Angular facial structure with high, prominent cheekbones and refined nose bridge reflecting the Eastern European-East Asian dominant ancestry, softened by South Asian influence through slightly fuller lower face and naturally warm undertones. Sharp jawline with defined structure. Skin is clear with a faint luminescent sheen along the collarbones, neck, and wrists where synthetic blood circulates closest to the surface. Minimal scarring visibleâ€”most damage repaired by accelerated healing. Expression is controlled, revealing little by default.",
+                                 "distinguishing_marks":  [
+                                                              "Thin vertical scar along the left temple, faded to whiteâ€”approximately 3cm, clean cut from old trauma",
+                                                              "Faint subcutaneous tracery visible under the skin of both wristsâ€”luminescent pathways of synthetic blood nanite networks, glowing faintly amber under UV or direct LED light",
+                                                              "Barely visible port scar behind the left ear, healed clean but slightly raisedâ€”neural interface legacy"
+                                                          ],
+                                 "visible_augmentations":  "Synthetic blood system is the signature modificationâ€”the amber-tinged luminescence is visible beneath translucent skin at the wrists, collarbones, and base of the neck. The circulation network becomes more apparent when exerted or under stress. Enhanced tendons show as subtle but pronounced cording in forearms. No obvious chrome plating or mechanical limbs, but augmentations give uncanny precision in movement.",
+                                 "posture_movement":  "Moves with calculated efficiencyâ€”no wasted motion, every gesture purposeful. When at rest, maintains a relaxed but alert baseline, weight slightly forward on the balls of their feet. Capable of explosive movement despite the languid default. Makes direct eye contact during negotiations or confrontation; avoids it during cover-identity mundane interactions. Hands are always visibleâ€”a trust signal that reads as either confidence or threat depending on context.",
+                                 "clothing_style":  "Tier 3-4 hybridâ€”expensive technical wear worn with deliberate casualness. Favors modular cargo pants with reinforced seams (grey or black), fitted compression tops or sleeveless technical vests that display the augmentations without apology. Waterproof jacket with internal pockets for hardware. Worn but well-maintained steel-toed boots. Minimal jewelryâ€”a single ring on the left hand (function unclear: controller, marker, or personal anchor). During cover-identity periods, dresses down to blending beige and grey, deliberately unremarkable. Always has some form of low-profile neural interface controller accessibleâ€”wrist-mounted, watch face, or pocket device."
+                             },
+    "image_prompt":  "Akinwale Arakawa-HorvÃ¡th, GLMZ, androgynous figure with high angular cheekbones and refined facial structure blending Eastern European and East Asian ancestry with South Asian warmth, fair-to-medium skin tone with luminescent peachy-amber undertones, particularly visible along collarbones and wrists. Amber-brown eyes with cold focus. Short dark brown hair with auburn highlights, undercut fade style. Lean muscular build, enhanced tendons visible in forearms. Faint white temple scar, barely visible neural port scar behind left ear. Wearing sleeveless black compression technical vest over modular grey cargo pants, displaying iridescent synthetic blood circulation beneath translucent skin at wrists and neck. Steel-toed boots, minimal jewelry. Synthetic blood nanite networks glow faintly amber under neon lighting. Alert posture, hands visible, calculating expression. Dark urban GLMZ setting with harsh LED strips and soft ambient glow reflecting off wet surfaces. Mood: efficient, dangerous precision. Professional operative at rest. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  62.3,
+                             "South Asian":  17.7,
+                             "East Asian":  14.3,
+                             "Hispanic/Latin American":  4,
+                             "Sub-Saharan African":  1.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  53
+                                                                     },
+                                                     "Slavic West":  {
+                                                                         "Slovak":  3.3
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Croatian":  4.2,
+                                                                          "Serbian":  1.8
+                                                                      }
+                                                 },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Baloch":  7.6,
+                                                                  "Punjabi Pakistani":  10.1
+                                                              }
+                                            },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  11.3
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  3
+                                                          }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Guatemalan":  1.5,
+                                                                                     "Costa Rican":  2.5
+                                                                                 }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  0.3,
+                                                                                "Congolese":  0.5
+                                                                            },
+                                                        "East African":  {
+                                                                             "Kenyan":  0.4
+                                                                         },
+                                                        "West African":  {
+                                                                             "Ivorian":  0.3,
+                                                                             "Senegalese":  0.2
+                                                                         }
+                                                    }
+                        },
+    "tier":  "3"
 }

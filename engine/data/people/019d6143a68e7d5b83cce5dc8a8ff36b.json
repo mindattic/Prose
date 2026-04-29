@@ -1,249 +1,270 @@
-{
-  "id": "019d6143a68e7d5b83cce5dc8a8ff36b",
-  "type": "character",
-  "name": "Dilnoza Echeverría-Ekwensi-Tovar",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Pawn shop owner and discreet secondhand goods trader",
-  "age": 47,
-  "status": "active",
-  "location": "The Burnished Market, Calumet Rise, near North Ave and Damen",
-  "description": "Dilnoza Echeverría-Ekwensi-Tovar is a compact, precise woman with medium-dark skin, silver-shot black hair she keeps cropped close, and a pair of cat ears — slate grey, slightly large for her head — that she got at thirty-five as a birthday gift to herself and has never once regretted. Her shop, Ferreira & Found, occupies a permanent stall reinforced with welded security grating and smells of machine oil, old fabric, and the faintly sweet incense she burns for the E.L.F. she calls the Assessor, which she believes governs fair exchange and the honest weighing of value. The Assessor's shrine is a polished scale bolted to the back wall with small offerings of old coins and broken jewelry hanging from it.\n\nDilnoza Echeverría-Ekwensi-Tovar is sharp, unhurried, and constitutionally impossible to rush or charm. She has a talent for appraising objects that borders on uncanny — she can hold a piece of chrome for thirty seconds and tell you where it came from, how old it is, and what its street value is within a few percent. She is not unkind but she is precise, and she runs her shop on a code of scrupulous fairness that has made her one of the most trusted figures in Calumet Rise. She is also one of the best-informed people in the district, because people tell you things when they are desperate to sell.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.6,
-      "id": 0.5,
-      "shadow": 0.4,
-      "mask": 0.7,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Having her reputation for fair dealing destroyed by one bad transaction she could not control",
-      "The slow erasure of the Burnished Market by corporate redevelopment"
-    ],
-    "core_desires": [
-      "To maintain a space where people can get honest value — buying and selling",
-      "To eventually retire with enough to live modestly and read"
-    ],
-    "coping_mechanisms": [
-      "Rigorous routine as an anchor",
-      "Compartmentalizing the moral complexity of her work by focusing on process fairness"
-    ],
-    "blind_spots": [
-      "Tells herself she has no emotional investment in the objects that pass through her shop; is lying to herself about at least six of them"
-    ],
-    "secret": "She has been quietly purchasing and storing specific categories of items — old family photographs, handmade children's toys, personal journals — that nobody ever came back to reclaim. She has a locked cabinet full of them. She cannot bring herself to resell them and cannot explain why she keeps them."
-  },
-  "speech_patterns": {
-    "vocabulary": "Measured, economical, specific. Uses precise numbers. Avoids hedging language — says what she means.",
-    "cadence": "Deliberate and unhurried; comfortable with silence in a way that unnerves people who are not.",
-    "verbal_tics": [
-      "Repeats the last number spoken back when confirming a price",
-      "A very small, very flat 'Mm.' that functions as disagreement, skepticism, or reluctant acknowledgment depending on context"
-    ],
-    "example_lines": [
-      "This is tier-two Sterling-Nakamura chrome, second generation. It is worth Φ340 on the street and I will give you Φ190. That is a fair price. You can tell me why it is not.",
-      "Mm. That is not what happened to this before it came to me, but I am not asking."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "An item pawned last week has triggered a quiet alert on her appraisal monocle she has never seen before — the object's composition is listed as classified under a Helix Biosystems patent flag.",
-    "The person who sold her a large lot of personal effects three weeks ago has come back, panicked and changed their story about where the items came from — and there is now a third party looking for the same lot."
-  ],
-  "narrative_function": "Reliable fence and appraisal source; keeper of provenance — she can often tell where stolen or mysterious objects came from. Quest-giver for items that have come into her shop trailing obvious trouble.",
-  "augmentations": "Cosmetic cat ears (slate grey). A worn but functional appraisal monocle — a secondhand optical aug that lets her see material composition overlays; the UI is in a language she does not fully read but she has learned to interpret the color coding.",
-  "daily_life": "Opens at 0900 sharp, closes at 2000 sharp — no exceptions. Spends her lunch hour cataloguing new inventory in a paper ledger she refuses to digitize, and her evenings doing minor repair work on items she plans to resell.",
-  "affiliation": "Independent; Oxidian Market Vendors Guild associate member; informal fence for two district-level street associations",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 6,
-      "vitality": 6,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 8,
-      "creativity": 5,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 6,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -3,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "expert appraiser",
-      "fence",
-      "community institution",
-      "cat ears",
-      "compressed emotional life"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never appraise something she is not willing to buy, because appraisal is a promise",
-      "Will not purchase items she is certain are connected to personal violence — she does not explain this rule, she simply declines"
-    ],
-    "escalation_ladder": [
-      "States her position flatly and does not repeat herself",
-      "Closes the transaction and thanks the person for their time in a tone that ends the conversation",
-      "Reaches under the counter — she has a taser and is not frightened to use it, and the street association knows her shop"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional, neutral, attentive — assesses fast and shows nothing",
-      "friends": "Warmer but still economical; expresses care through practical action rather than words"
-    },
-    "stress_responses": {
-      "low": "Becomes more precise and methodical",
-      "medium": "Goes silent and finishes what she is doing before addressing the stressor",
-      "high": "Closes the shop, locks the grating, and does not come out until she has thought through every angle"
-    },
-    "contradictions": [
-      "Preaches unsentimental practicality about objects and ownership but has a locked cabinet of things she cannot let go of"
-    ],
-    "habits": [
-      "Polishes the Assessor's scale every morning before opening",
-      "Writes every transaction in her paper ledger in two colors — black for the facts, red for her private notes on the person"
-    ],
-    "breaking_points": [
-      "Being accused of dishonesty in her valuations in front of her regulars"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Sentinel": 0.9,
-    "Protector": 0.9,
-    "Pragmatist": 0.9,
-    "Code Keeper": 0.9,
-    "Con Artist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Burnished Market",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "related_entities": [
-    "The Burnished Market",
-    "Helix Biosystems",
-    "Calumet Rise",
-    "The Gradient Compact",
-    "Silver",
-    "Honest Burger",
-    "Slate",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Compass Rose",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Hispanic/Latin American (73.0%) with significant Sub-Saharan African (23.7%) and South Asian (3.3%) ancestry; a rich blend of Iberian, Indigenous, African, and minor South Asian lineages creating warm, complex skin tones with golden and earthy undertones",
-    "height_cm": 158,
-    "weight_kg": 52,
-    "build": "Compact and lean, economical in movement; the build of someone who has never wasted an ounce of effort or flesh",
-    "hair_color": "Black with silver threading",
-    "hair_style": "Cropped close to the scalp in a practical, no-nonsense cut",
-    "hair_length": "Short",
-    "eye_color": "Deep brown, left eye with faint scarring around the orbital ridge where the appraisal monocle mounts",
-    "skin_tone": "Warm golden-bronze with earthy undertones; the golden warmth of Hispanic/Latin heritage blended with the deeper richness of Sub-Saharan African ancestry, creating a complex medium-warm complexion evident across face and hands; forearms and hands show deep callusing from decades of handling metal and rough goods",
-    "complexion": "Balanced facial structure with defined cheekbones and slightly rounded jawline reflecting the blend of Indigenous and African lineages; warm-toned skin with subtle earthy richness; unlined face despite her age, suggesting either good genetics or quality skincare; minimal makeup; expression defaults to neutral assessment rather than warmth",
-    "distinguishing_marks": [
-      "Pair of cosmetic cat ears, slate grey, slightly oversized for her head, mounted on modified auricular cartilage (installed at age 35)",
-      "Faint burn scar along the inside of her right wrist from old workshop accident, roughly 3cm long",
-      "Small tattoo on her inner left wrist: a balance scale in simple black line work, tribute to her E.L.F. belief system"
-    ],
-    "visible_augmentations": "Slate grey cosmetic cat ears with subtle LED accommodation ports at the base (rarely used). A worn secondhand optical monocle mounted on her left eye with a visible brass and polymer mount; the lens shows faint optical distortion and is visibly well-used. The monocle's UI occasionally casts faint color-coded overlays across her iris that are visible to close observers.",
-    "posture_movement": "Upright, economical, deliberate. Moves through her shop with the precision of someone who knows where every object is; never hurries, never fumbles. Hands are steady and purposeful. Eye contact is direct and held slightly longer than is comfortable for most people — the assessment gaze of someone appraising value.",
-    "clothing_style": "Tier 3-4 workwear: reinforced canvas apron over layered long-sleeved shirts in muted colors (grey, black, deep green), worn for durability rather than fashion. Practical work pants with tool pockets. Oil-stained leather gloves, often hanging from her apron. Boots with good grip and ankle support, scuffed from years of shop floors. A thin silver chain with a key — probably to her shop safe — worn visible at her throat. No jewelry beyond functional items."
-  },
-  "image_prompt": "Dilnoza Echeverría-Ekwensi-Tovar, 158cm compact lean frame, GLMZ, warm golden-bronze skin with earthy undertones blending Hispanic, African, and South Asian heritage. Close-cropped black hair with silver threading. Deep brown eyes, left eye with scarring around optical monocle mount—brass and polymer mounted monocle with faint color-coded UI overlays visible across iris. Slate grey cosmetic cat ears oversized on head with subtle LED ports. Direct, assessing gaze. Standing in worn tech-salvage shop surrounded by metal parts and tools. Wearing reinforced canvas apron over layered grey and black long-sleeved shirts, practical work pants, oil-stained leather gloves hanging from apron, scuffed ankle-support boots. Thin silver chain with key visible at throat. Small balance-scale tattoo on inner left wrist visible. Faint burn scar on inside right wrist. Hands show deep callusing from metalwork. Upright, economical posture. Ambient shop lighting with warm overhead floods casting subtle shadows. Mood: serious, focused, evaluating. Neo-noir utilitarian aesthetic, function over form --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 73,
-    "Sub-Saharan African": 23.7,
-    "South Asian": 3.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 53.4
-      },
-      "Caribbean": {
-        "Puerto Rican": 8.3,
-        "Cuban": 11.3
-      }
-    },
-    "Sub-Saharan African": {
-      "West African": {
-        "Ghanaian": 8.7
-      },
-      "Central African": {
-        "Congolese": 4.7
-      },
-      "Southern African": {
-        "Zimbabwean": 10.3
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 1
-      },
-      "Pakistani": {
-        "Pashtun": 0.6
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 1.1,
-        "Sinhalese": 0.6
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a68e7d5b83cce5dc8a8ff36b",
+    "type":  "character",
+    "name":  "Dilnoza EcheverrÃ­a-Ekwensi-Tovar",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Pawn shop owner and discreet secondhand goods trader",
+    "age":  47,
+    "status":  "active",
+    "location":  "The Burnished Market, Calumet Rise, near North Ave and Damen",
+    "description":  "Dilnoza EcheverrÃ­a-Ekwensi-Tovar is a compact, precise woman with medium-dark skin, silver-shot black hair she keeps cropped close, and a pair of cat ears â€” slate grey, slightly large for her head â€” that she got at thirty-five as a birthday gift to herself and has never once regretted. Her shop, Ferreira \u0026 Found, occupies a permanent stall reinforced with welded security grating and smells of machine oil, old fabric, and the faintly sweet incense she burns for the E.L.F. she calls the Assessor, which she believes governs fair exchange and the honest weighing of value. The Assessor\u0027s shrine is a polished scale bolted to the back wall with small offerings of old coins and broken jewelry hanging from it.\n\nDilnoza EcheverrÃ­a-Ekwensi-Tovar is sharp, unhurried, and constitutionally impossible to rush or charm. She has a talent for appraising objects that borders on uncanny â€” she can hold a piece of chrome for thirty seconds and tell you where it came from, how old it is, and what its street value is within a few percent. She is not unkind but she is precise, and she runs her shop on a code of scrupulous fairness that has made her one of the most trusted figures in Calumet Rise. She is also one of the best-informed people in the district, because people tell you things when they are desperate to sell.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Having her reputation for fair dealing destroyed by one bad transaction she could not control",
+                                          "The slow erasure of the Burnished Market by corporate redevelopment"
+                                      ],
+                       "core_desires":  [
+                                            "To maintain a space where people can get honest value â€” buying and selling",
+                                            "To eventually retire with enough to live modestly and read"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Rigorous routine as an anchor",
+                                                 "Compartmentalizing the moral complexity of her work by focusing on process fairness"
+                                             ],
+                       "blind_spots":  [
+                                           "Tells herself she has no emotional investment in the objects that pass through her shop; is lying to herself about at least six of them"
+                                       ],
+                       "secret":  "She has been quietly purchasing and storing specific categories of items â€” old family photographs, handmade children\u0027s toys, personal journals â€” that nobody ever came back to reclaim. She has a locked cabinet full of them. She cannot bring herself to resell them and cannot explain why she keeps them."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Measured, economical, specific. Uses precise numbers. Avoids hedging language â€” says what she means.",
+                            "cadence":  "Deliberate and unhurried; comfortable with silence in a way that unnerves people who are not.",
+                            "verbal_tics":  [
+                                                "Repeats the last number spoken back when confirming a price",
+                                                "A very small, very flat \u0027Mm.\u0027 that functions as disagreement, skepticism, or reluctant acknowledgment depending on context"
+                                            ],
+                            "example_lines":  [
+                                                  "This is tier-two Sterling-Nakamura chrome, second generation. It is worth Î¦340 on the street and I will give you Î¦190. That is a fair price. You can tell me why it is not.",
+                                                  "Mm. That is not what happened to this before it came to me, but I am not asking."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "An item pawned last week has triggered a quiet alert on her appraisal monocle she has never seen before â€” the object\u0027s composition is listed as classified under a Helix Biosystems patent flag.",
+                        "The person who sold her a large lot of personal effects three weeks ago has come back, panicked and changed their story about where the items came from â€” and there is now a third party looking for the same lot."
+                    ],
+    "narrative_function":  "Reliable fence and appraisal source; keeper of provenance â€” she can often tell where stolen or mysterious objects came from. Quest-giver for items that have come into her shop trailing obvious trouble.",
+    "augmentations":  "Cosmetic cat ears (slate grey). A worn but functional appraisal monocle â€” a secondhand optical aug that lets her see material composition overlays; the UI is in a language she does not fully read but she has learned to interpret the color coding.",
+    "daily_life":  "Opens at 0900 sharp, closes at 2000 sharp â€” no exceptions. Spends her lunch hour cataloguing new inventory in a paper ledger she refuses to digitize, and her evenings doing minor repair work on items she plans to resell.",
+    "affiliation":  "Independent; Oxidian Market Vendors Guild associate member; informal fence for two district-level street associations",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  6,
+                                   "vitality":  6,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  8,
+                                 "creativity":  5,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  6,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "expert appraiser",
+                               "fence",
+                               "community institution",
+                               "cat ears",
+                               "compressed emotional life"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never appraise something she is not willing to buy, because appraisal is a promise",
+                                              "Will not purchase items she is certain are connected to personal violence â€” she does not explain this rule, she simply declines"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "States her position flatly and does not repeat herself",
+                                                 "Closes the transaction and thanks the person for their time in a tone that ends the conversation",
+                                                 "Reaches under the counter â€” she has a taser and is not frightened to use it, and the street association knows her shop"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional, neutral, attentive â€” assesses fast and shows nothing",
+                                                   "friends":  "Warmer but still economical; expresses care through practical action rather than words"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more precise and methodical",
+                                                "medium":  "Goes silent and finishes what she is doing before addressing the stressor",
+                                                "high":  "Closes the shop, locks the grating, and does not come out until she has thought through every angle"
+                                            },
+                       "contradictions":  [
+                                              "Preaches unsentimental practicality about objects and ownership but has a locked cabinet of things she cannot let go of"
+                                          ],
+                       "habits":  [
+                                      "Polishes the Assessor\u0027s scale every morning before opening",
+                                      "Writes every transaction in her paper ledger in two colors â€” black for the facts, red for her private notes on the person"
+                                  ],
+                       "breaking_points":  [
+                                               "Being accused of dishonesty in her valuations in front of her regulars"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Sentinel":  0.9,
+                       "Protector":  0.9,
+                       "Pragmatist":  0.9,
+                       "Code Keeper":  0.9,
+                       "Con Artist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Burnished Market",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                            ],
+    "related_entities":  [
+                             "The Burnished Market",
+                             "Helix Biosystems",
+                             "Calumet Rise",
+                             "The Gradient Compact",
+                             "Silver",
+                             "Honest Burger",
+                             "Slate",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Compass Rose",
+                             "Sterling-Nakamura PersonalAegis PA-7 \u0027Rampart\u0027"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Hispanic/Latin American (73.0%) with significant Sub-Saharan African (23.7%) and South Asian (3.3%) ancestry; a rich blend of Iberian, Indigenous, African, and minor South Asian lineages creating warm, complex skin tones with golden and earthy undertones",
+                                 "height_cm":  158,
+                                 "weight_kg":  52,
+                                 "build":  "Compact and lean, economical in movement; the build of someone who has never wasted an ounce of effort or flesh",
+                                 "hair_color":  "Black with silver threading",
+                                 "hair_style":  "Cropped close to the scalp in a practical, no-nonsense cut",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown, left eye with faint scarring around the orbital ridge where the appraisal monocle mounts",
+                                 "skin_tone":  "Warm golden-bronze with earthy undertones; the golden warmth of Hispanic/Latin heritage blended with the deeper richness of Sub-Saharan African ancestry, creating a complex medium-warm complexion evident across face and hands; forearms and hands show deep callusing from decades of handling metal and rough goods",
+                                 "complexion":  "Balanced facial structure with defined cheekbones and slightly rounded jawline reflecting the blend of Indigenous and African lineages; warm-toned skin with subtle earthy richness; unlined face despite her age, suggesting either good genetics or quality skincare; minimal makeup; expression defaults to neutral assessment rather than warmth",
+                                 "distinguishing_marks":  [
+                                                              "Pair of cosmetic cat ears, slate grey, slightly oversized for her head, mounted on modified auricular cartilage (installed at age 35)",
+                                                              "Faint burn scar along the inside of her right wrist from old workshop accident, roughly 3cm long",
+                                                              "Small tattoo on her inner left wrist: a balance scale in simple black line work, tribute to her E.L.F. belief system"
+                                                          ],
+                                 "visible_augmentations":  "Slate grey cosmetic cat ears with subtle LED accommodation ports at the base (rarely used). A worn secondhand optical monocle mounted on her left eye with a visible brass and polymer mount; the lens shows faint optical distortion and is visibly well-used. The monocle\u0027s UI occasionally casts faint color-coded overlays across her iris that are visible to close observers.",
+                                 "posture_movement":  "Upright, economical, deliberate. Moves through her shop with the precision of someone who knows where every object is; never hurries, never fumbles. Hands are steady and purposeful. Eye contact is direct and held slightly longer than is comfortable for most people â€” the assessment gaze of someone appraising value.",
+                                 "clothing_style":  "Tier 3-4 workwear: reinforced canvas apron over layered long-sleeved shirts in muted colors (grey, black, deep green), worn for durability rather than fashion. Practical work pants with tool pockets. Oil-stained leather gloves, often hanging from her apron. Boots with good grip and ankle support, scuffed from years of shop floors. A thin silver chain with a key â€” probably to her shop safe â€” worn visible at her throat. No jewelry beyond functional items."
+                             },
+    "image_prompt":  "Dilnoza EcheverrÃ­a-Ekwensi-Tovar, 158cm compact lean frame, GLMZ, warm golden-bronze skin with earthy undertones blending Hispanic, African, and South Asian heritage. Close-cropped black hair with silver threading. Deep brown eyes, left eye with scarring around optical monocle mountâ€”brass and polymer mounted monocle with faint color-coded UI overlays visible across iris. Slate grey cosmetic cat ears oversized on head with subtle LED ports. Direct, assessing gaze. Standing in worn tech-salvage shop surrounded by metal parts and tools. Wearing reinforced canvas apron over layered grey and black long-sleeved shirts, practical work pants, oil-stained leather gloves hanging from apron, scuffed ankle-support boots. Thin silver chain with key visible at throat. Small balance-scale tattoo on inner left wrist visible. Faint burn scar on inside right wrist. Hands show deep callusing from metalwork. Upright, economical posture. Ambient shop lighting with warm overhead floods casting subtle shadows. Mood: serious, focused, evaluating. Neo-noir utilitarian aesthetic, function over form --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  73,
+                             "Sub-Saharan African":  23.7,
+                             "South Asian":  3.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  53.4
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  8.3,
+                                                                              "Cuban":  11.3
+                                                                          }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "West African":  {
+                                                                             "Ghanaian":  8.7
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  4.7
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  10.3
+                                                                             }
+                                                    },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  1
+                                                                },
+                                                "Pakistani":  {
+                                                                  "Pashtun":  0.6
+                                                              },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  1.1,
+                                                                   "Sinhalese":  0.6
+                                                               }
+                                            }
+                        },
+    "tier":  "2"
 }

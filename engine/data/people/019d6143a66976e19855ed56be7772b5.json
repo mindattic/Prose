@@ -1,276 +1,297 @@
-{
-  "id": "019d6143a66976e19855ed56be7772b5",
-  "type": "character",
-  "name": "Gonzalo Faalele",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Neighborhood council chair and mutual aid organizer",
-  "age": 52,
-  "status": "active",
-  "location": "Highland Park Autonomous Zone, near Michigan Ave and Walton",
-  "description": "Gonzalo Faalele is a broad-shouldered woman with deep umber skin mapped by decades of worry and laughter in equal measure, her natural hair silver-streaked and pinned in elaborate wrapped fabric that she changes every morning like a ritual. She moves through the Highland Park Autonomous Zone with the unhurried confidence of someone who built the room she's walking into. Her left forearm carries a faded Ferrogate Transit union tattoo from her twenties, half-obscured by a bioluminescent vine pattern she had inked over it after the strike of '74 ended badly. She is warm to an almost disarming degree, the kind of warm that makes people confess things they didn't mean to. Under that warmth is a spine of corroded iron.\n\nGonzalo Faalele has spent thirty years converting abandoned infrastructure into community resources — hydroponic halls, childcare collectives, emergency medical co-ops — and she has learned that the most dangerous thing a poor person can do is build something worth stealing. She distrusts anyone who arrives with money and a plan. She trusts almost no one who hasn't been hungry at least once. She runs council meetings with a quiet authority that makes shouting seem embarrassing, and she will cut someone off mid-sentence with a single raised finger and a look that ends careers.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.9,
-      "id": 0.3,
-      "shadow": 0.5,
-      "mask": 0.4,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Watching what she built get dismantled after she's gone",
-      "Becoming so pragmatic she stops being kind"
-    ],
-    "core_desires": [
-      "A Zone that outlasts her",
-      "To believe again that institutions can be trusted"
-    ],
-    "coping_mechanisms": [
-      "Ritual — fixed morning routines that anchor her",
-      "Redirecting anxiety into logistics and planning"
-    ],
-    "blind_spots": [
-      "Underestimates how much younger organizers resent her control",
-      "Mistakes loyalty to the Zone for loyalty to her personally"
-    ],
-    "secret": "She negotiated a secret zoning concession with a mid-level Axiom facilities manager twelve years ago — one that gave the Zone legal buffer space but required her to quietly discourage a tenants' strike that would have benefited hundreds of families. She still believes she made the right call. She is not sure."
-  },
-  "speech_patterns": {
-    "vocabulary": "Deliberate and precise, draws on labor organizing vocabulary, occasional Igbo phrases when emotional, avoids jargon unless teaching",
-    "cadence": "Slow and measured; long pauses before important points; never raises her voice",
-    "verbal_tics": [
-      "'Let me ask you something'",
-      "'That's not the question'"
-    ],
-    "example_lines": [
-      "'You want to help? Sit down. Tell me what you actually have, not what you think we need.'",
-      "'Thirty years ago someone told me the same thing you're telling me now. I want you to think about why I'm still here and they're not.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Tessera subsidiary has filed an infrastructure claim on three Zone buildings using a legal loophole — Nneka needs someone to find the original incorporation documents buried in a corrupted city archive",
-    "A young organizer she mentored has started a splinter group using tactics she considers reckless, and asks for help mediating before it turns violent",
-    "The secret Axiom concession is about to surface — Nneka needs to decide whether to get ahead of it or let it destroy her"
-  ],
-  "narrative_function": "Central hub of community knowledge; quest giver for neighborhood-level crises; moral compass character who challenges player assumptions about what 'helping' looks like; can open or close doors to Zone resources and trust networks.",
-  "augmentations": "Basic subdermal thermal regulator (medical necessity, old joint damage from construction work). No cosmetic mods — she views them as an expense her community needs more than she does.",
-  "daily_life": "Rises before dawn to check on the Zone's three food distribution points, spends mornings in mediation between residents and afternoons in planning sessions for infrastructure projects. Evenings are for council meetings or quiet document review at her kitchen table.",
-  "affiliation": "Highland Park Autonomous Zone Community Council; loose affiliation with the Meridian Labor Solidarity Network",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 4,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 9,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 8,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -3,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "veteran organizer",
-      "community anchor",
-      "institutional memory",
-      "morally complex",
-      "slow burn"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Protect the Zone's continuity above personal reputation",
-      "Never make promises she cannot keep",
-      "Always ask who benefits before agreeing to anything"
-    ],
-    "escalation_ladder": [
-      "Patient listening and clarifying questions",
-      "Direct naming of the problem without blame",
-      "Withdrawal of cooperation and public silence",
-      "Mobilizing the council against the threat"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm but observational; lets them talk while she assesses; offers food or tea as a pacing mechanism",
-      "friends": "Direct, occasionally blunt, deeply loyal; will tell friends hard truths with more care than she shows strangers"
-    },
-    "stress_responses": {
-      "low": "Becomes more procedural, schedules extra meetings",
-      "medium": "Goes quiet and cooks elaborate meals alone",
-      "high": "Retreats into pure logistics, cuts off emotional processing entirely"
-    },
-    "contradictions": [
-      "Preaches collective leadership but struggles to actually share power",
-      "Believes deeply in forgiveness but carries specific grudges for decades"
-    ],
-    "habits": [
-      "Rewraps her head covering twice every morning",
-      "Annotates every document she reads in three colors of ink",
-      "Leaves small data offerings at the Zone's E.L.F. shrine every Thursday"
-    ],
-    "breaking_points": [
-      "Direct harm to a Zone child",
-      "Betrayal by someone she personally vouched for"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Highland Park Autonomous Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VS-44 'Fenris'",
-    "Kang-Petrov Arms KP-19 'Workhorse'"
-  ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VS-44 'Fenris'",
-    "Kang-Petrov Arms KP-19 'Workhorse'"
-  ],
-  "related_entities": [
-    "Highland Park Autonomous Zone",
-    "Ferrogate Transit",
-    "The Quiet Room",
-    "Piezoelectric Fracture Pistol PFP-7 'Hairline'",
-    "Tessera Corponation",
-    "Silver",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Iron"
-  ],
-  "district": "The Spires",
-  "physical_description": {
-    "heritage": "Southeast Asian (32.9%), Pacific Islander (18.7%), Northern European (15.3%), East Asian (13.9%), Eastern European (12.0%), and Middle Eastern (7.2%) ancestry. The dominant Southeast and Pacific Islander heritage creates warm, sun-kissed undertones across broad facial planes, while Northern European and Eastern European ancestry contributes subtle bone structure definition. East Asian features blend with Middle Eastern characteristics to create a phenotype that reads as distinctly multicultural and regionally ambiguous—features that don't resolve into single-origin categories",
-    "height_cm": 173,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and solid, muscular through the arms and core from decades of construction and manual labor, neither lean nor heavy—a body built for work and endurance rather than aesthetics",
-    "hair_color": "Natural black with silver streaking",
-    "hair_style": "Wrapped in elaborate fabric patterns that rotate daily, pinned close to the scalp",
-    "hair_length": "Medium (shoulder-length beneath wraps)",
-    "eye_color": "Deep brown",
-    "skin_tone": "Warm golden-bronze mid-to-deep tone with rich amber and honey undertones in natural light. The coloration reflects the equal influence of Southeast Asian warmth and Pacific Islander sun-soaked richness, modulated by Northern and Eastern European ancestry into a complexion that appears sun-weathered and alive rather than uniformly dark",
-    "complexion": "Face lined with expression—forehead creases from concentration, laugh lines around the eyes and mouth. Facial structure shows broader, slightly rounded cheekbones and softer lower face contours from Southeast and East Asian ancestry, balanced against the more angular cheekbone prominence and jaw definition from Northern European and Eastern European heritage. Middle Eastern influence visible in the bridge of the nose and eyebrow positioning. Scar along the left jawline from an old workplace accident. Skin shows the weathering of someone who has spent her life outdoors and in unregulated spaces, but well-maintained and cared for. No cosmetic smoothing or rejuvenation treatments. Slight freckling across the nose and upper cheeks from mixed heritage sun exposure",
-    "distinguishing_marks": [
-      "Left forearm bears a faded Ferrogate Transit union tattoo (a circle with a stylized rail line) from her twenties, now partially obscured by a bioluminescent vine pattern inked in soft cyan and green that glows faintly under UV light, added after the '74 strike",
-      "Thin scar running 4cm along the left jawline from a construction site incident in her thirties",
-      "Callused palms and scarred knuckles from three decades of hands-on infrastructure work"
-    ],
-    "visible_augmentations": "None visible. The subdermal thermal regulator is completely internal, undetectable without medical scanning",
-    "posture_movement": "Moves with unhurried confidence and economy of motion—no wasted gestures. Stands with weight evenly distributed, shoulders back, chin level. When speaking in groups, she uses stillness as authority; when listening, she leans slightly forward. Her presence fills rooms without effort",
-    "clothing_style": "Practical Tier 4 workwear: durable hemp-blend cargo pants, reinforced linen shirts in earth tones, a long vest made from repurposed industrial fabric with deep pockets. Worn boots that have been resoled multiple times. A heavy canvas coat in winter. No logos, no status markers, no unnecessary decoration. Everything is functional, well-maintained, and chosen for longevity. She wears a simple wooden bracelet carved by a Zone resident and a thin silver chain (a gift from her partner) around her wrist"
-  },
-  "image_prompt": "Gonzalo Faalele, 173cm tall, warm golden-bronze skin with honey undertones, deep brown eyes, natural black hair with silver streaks wrapped in colorful fabric patterns, lined face with laugh lines and a 4cm scar on left jawline. Broad shoulders, muscular build from decades of manual labor, weathered hands with calluses and scars. Wearing practical Tier 4 workwear: reinforced linen shirt in earth tones, durable hemp-blend cargo pants, long repurposed industrial fabric vest with deep pockets, worn and resoled boots. Simple wooden bracelet and thin silver chain on wrist. Faded transit union tattoo on left forearm with glowing cyan-green bioluminescent vine pattern overlay. Standing with unhurried confidence, shoulders back, neutral expression. Urban neo-noir Great Lakes Metropolitan Zone setting, 2226, neon-lit warehouse or transit hub in background, cool LED lighting mixing with warm sodium glow, gritty industrial aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 32.9,
-    "Pacific Islander": 18.7,
-    "Northern European": 15.3,
-    "East Asian": 13.9,
-    "Eastern European": 12,
-    "Middle Eastern": 7.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 21.6
-      },
-      "Thai": {
-        "Thai": 11.3
-      }
-    },
-    "Pacific Islander": {
-      "Polynesian": {
-        "Tuvaluan": 13.4
-      },
-      "Melanesian": {
-        "Ni-Vanuatu": 0.1
-      },
-      "Micronesian": {
-        "Marshallese": 5.2
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Finnish": 7.1
-      },
-      "British Isles": {
-        "Scottish": 7.5,
-        "English": 0.7
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 10.5
-      },
-      "Chinese": {
-        "Cantonese": 3.4
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Sorbian": 3,
-        "Slovak": 3.6
-      },
-      "Slavic South": {
-        "Serbian": 0.8,
-        "Croatian": 4.6
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Jordanian": 7.2
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a66976e19855ed56be7772b5",
+    "type":  "character",
+    "name":  "Gonzalo Faalele",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Neighborhood council chair and mutual aid organizer",
+    "age":  52,
+    "status":  "active",
+    "location":  "Highland Park Autonomous Zone, near Michigan Ave and Walton",
+    "description":  "Gonzalo Faalele is a broad-shouldered woman with deep umber skin mapped by decades of worry and laughter in equal measure, her natural hair silver-streaked and pinned in elaborate wrapped fabric that she changes every morning like a ritual. She moves through the Highland Park Autonomous Zone with the unhurried confidence of someone who built the room she\u0027s walking into. Her left forearm carries a faded Ferrogate Transit union tattoo from her twenties, half-obscured by a bioluminescent vine pattern she had inked over it after the strike of \u002774 ended badly. She is warm to an almost disarming degree, the kind of warm that makes people confess things they didn\u0027t mean to. Under that warmth is a spine of corroded iron.\n\nGonzalo Faalele has spent thirty years converting abandoned infrastructure into community resources â€” hydroponic halls, childcare collectives, emergency medical co-ops â€” and she has learned that the most dangerous thing a poor person can do is build something worth stealing. She distrusts anyone who arrives with money and a plan. She trusts almost no one who hasn\u0027t been hungry at least once. She runs council meetings with a quiet authority that makes shouting seem embarrassing, and she will cut someone off mid-sentence with a single raised finger and a look that ends careers.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Watching what she built get dismantled after she\u0027s gone",
+                                          "Becoming so pragmatic she stops being kind"
+                                      ],
+                       "core_desires":  [
+                                            "A Zone that outlasts her",
+                                            "To believe again that institutions can be trusted"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” fixed morning routines that anchor her",
+                                                 "Redirecting anxiety into logistics and planning"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much younger organizers resent her control",
+                                           "Mistakes loyalty to the Zone for loyalty to her personally"
+                                       ],
+                       "secret":  "She negotiated a secret zoning concession with a mid-level Axiom facilities manager twelve years ago â€” one that gave the Zone legal buffer space but required her to quietly discourage a tenants\u0027 strike that would have benefited hundreds of families. She still believes she made the right call. She is not sure."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Deliberate and precise, draws on labor organizing vocabulary, occasional Igbo phrases when emotional, avoids jargon unless teaching",
+                            "cadence":  "Slow and measured; long pauses before important points; never raises her voice",
+                            "verbal_tics":  [
+                                                "\u0027Let me ask you something\u0027",
+                                                "\u0027That\u0027s not the question\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You want to help? Sit down. Tell me what you actually have, not what you think we need.\u0027",
+                                                  "\u0027Thirty years ago someone told me the same thing you\u0027re telling me now. I want you to think about why I\u0027m still here and they\u0027re not.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Tessera subsidiary has filed an infrastructure claim on three Zone buildings using a legal loophole â€” Nneka needs someone to find the original incorporation documents buried in a corrupted city archive",
+                        "A young organizer she mentored has started a splinter group using tactics she considers reckless, and asks for help mediating before it turns violent",
+                        "The secret Axiom concession is about to surface â€” Nneka needs to decide whether to get ahead of it or let it destroy her"
+                    ],
+    "narrative_function":  "Central hub of community knowledge; quest giver for neighborhood-level crises; moral compass character who challenges player assumptions about what \u0027helping\u0027 looks like; can open or close doors to Zone resources and trust networks.",
+    "augmentations":  "Basic subdermal thermal regulator (medical necessity, old joint damage from construction work). No cosmetic mods â€” she views them as an expense her community needs more than she does.",
+    "daily_life":  "Rises before dawn to check on the Zone\u0027s three food distribution points, spends mornings in mediation between residents and afternoons in planning sessions for infrastructure projects. Evenings are for council meetings or quiet document review at her kitchen table.",
+    "affiliation":  "Highland Park Autonomous Zone Community Council; loose affiliation with the Meridian Labor Solidarity Network",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  4,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  9,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  8,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "veteran organizer",
+                               "community anchor",
+                               "institutional memory",
+                               "morally complex",
+                               "slow burn"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Protect the Zone\u0027s continuity above personal reputation",
+                                              "Never make promises she cannot keep",
+                                              "Always ask who benefits before agreeing to anything"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient listening and clarifying questions",
+                                                 "Direct naming of the problem without blame",
+                                                 "Withdrawal of cooperation and public silence",
+                                                 "Mobilizing the council against the threat"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm but observational; lets them talk while she assesses; offers food or tea as a pacing mechanism",
+                                                   "friends":  "Direct, occasionally blunt, deeply loyal; will tell friends hard truths with more care than she shows strangers"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more procedural, schedules extra meetings",
+                                                "medium":  "Goes quiet and cooks elaborate meals alone",
+                                                "high":  "Retreats into pure logistics, cuts off emotional processing entirely"
+                                            },
+                       "contradictions":  [
+                                              "Preaches collective leadership but struggles to actually share power",
+                                              "Believes deeply in forgiveness but carries specific grudges for decades"
+                                          ],
+                       "habits":  [
+                                      "Rewraps her head covering twice every morning",
+                                      "Annotates every document she reads in three colors of ink",
+                                      "Leaves small data offerings at the Zone\u0027s E.L.F. shrine every Thursday"
+                                  ],
+                       "breaking_points":  [
+                                               "Direct harm to a Zone child",
+                                               "Betrayal by someone she personally vouched for"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Highland Park Autonomous Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Volkov-Saito Precision VS-44 \u0027Fenris\u0027",
+                            "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Volkov-Saito Precision VS-44 \u0027Fenris\u0027",
+                                "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027"
+                            ],
+    "related_entities":  [
+                             "Highland Park Autonomous Zone",
+                             "Ferrogate Transit",
+                             "The Quiet Room",
+                             "Piezoelectric Fracture Pistol PFP-7 \u0027Hairline\u0027",
+                             "Tessera Corponation",
+                             "Silver",
+                             "Iron Meridian Cooperative Backbone IMC-3 \u0027Spine\u0027",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Iron"
+                         ],
+    "district":  "The Spires",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian (32.9%), Pacific Islander (18.7%), Northern European (15.3%), East Asian (13.9%), Eastern European (12.0%), and Middle Eastern (7.2%) ancestry. The dominant Southeast and Pacific Islander heritage creates warm, sun-kissed undertones across broad facial planes, while Northern European and Eastern European ancestry contributes subtle bone structure definition. East Asian features blend with Middle Eastern characteristics to create a phenotype that reads as distinctly multicultural and regionally ambiguousâ€”features that don\u0027t resolve into single-origin categories",
+                                 "height_cm":  173,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and solid, muscular through the arms and core from decades of construction and manual labor, neither lean nor heavyâ€”a body built for work and endurance rather than aesthetics",
+                                 "hair_color":  "Natural black with silver streaking",
+                                 "hair_style":  "Wrapped in elaborate fabric patterns that rotate daily, pinned close to the scalp",
+                                 "hair_length":  "Medium (shoulder-length beneath wraps)",
+                                 "eye_color":  "Deep brown",
+                                 "skin_tone":  "Warm golden-bronze mid-to-deep tone with rich amber and honey undertones in natural light. The coloration reflects the equal influence of Southeast Asian warmth and Pacific Islander sun-soaked richness, modulated by Northern and Eastern European ancestry into a complexion that appears sun-weathered and alive rather than uniformly dark",
+                                 "complexion":  "Face lined with expressionâ€”forehead creases from concentration, laugh lines around the eyes and mouth. Facial structure shows broader, slightly rounded cheekbones and softer lower face contours from Southeast and East Asian ancestry, balanced against the more angular cheekbone prominence and jaw definition from Northern European and Eastern European heritage. Middle Eastern influence visible in the bridge of the nose and eyebrow positioning. Scar along the left jawline from an old workplace accident. Skin shows the weathering of someone who has spent her life outdoors and in unregulated spaces, but well-maintained and cared for. No cosmetic smoothing or rejuvenation treatments. Slight freckling across the nose and upper cheeks from mixed heritage sun exposure",
+                                 "distinguishing_marks":  [
+                                                              "Left forearm bears a faded Ferrogate Transit union tattoo (a circle with a stylized rail line) from her twenties, now partially obscured by a bioluminescent vine pattern inked in soft cyan and green that glows faintly under UV light, added after the \u002774 strike",
+                                                              "Thin scar running 4cm along the left jawline from a construction site incident in her thirties",
+                                                              "Callused palms and scarred knuckles from three decades of hands-on infrastructure work"
+                                                          ],
+                                 "visible_augmentations":  "None visible. The subdermal thermal regulator is completely internal, undetectable without medical scanning",
+                                 "posture_movement":  "Moves with unhurried confidence and economy of motionâ€”no wasted gestures. Stands with weight evenly distributed, shoulders back, chin level. When speaking in groups, she uses stillness as authority; when listening, she leans slightly forward. Her presence fills rooms without effort",
+                                 "clothing_style":  "Practical Tier 4 workwear: durable hemp-blend cargo pants, reinforced linen shirts in earth tones, a long vest made from repurposed industrial fabric with deep pockets. Worn boots that have been resoled multiple times. A heavy canvas coat in winter. No logos, no status markers, no unnecessary decoration. Everything is functional, well-maintained, and chosen for longevity. She wears a simple wooden bracelet carved by a Zone resident and a thin silver chain (a gift from her partner) around her wrist"
+                             },
+    "image_prompt":  "Gonzalo Faalele, 173cm tall, warm golden-bronze skin with honey undertones, deep brown eyes, natural black hair with silver streaks wrapped in colorful fabric patterns, lined face with laugh lines and a 4cm scar on left jawline. Broad shoulders, muscular build from decades of manual labor, weathered hands with calluses and scars. Wearing practical Tier 4 workwear: reinforced linen shirt in earth tones, durable hemp-blend cargo pants, long repurposed industrial fabric vest with deep pockets, worn and resoled boots. Simple wooden bracelet and thin silver chain on wrist. Faded transit union tattoo on left forearm with glowing cyan-green bioluminescent vine pattern overlay. Standing with unhurried confidence, shoulders back, neutral expression. Urban neo-noir Great Lakes Metropolitan Zone setting, 2226, neon-lit warehouse or transit hub in background, cool LED lighting mixing with warm sodium glow, gritty industrial aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  32.9,
+                             "Pacific Islander":  18.7,
+                             "Northern European":  15.3,
+                             "East Asian":  13.9,
+                             "Eastern European":  12,
+                             "Middle Eastern":  7.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  21.6
+                                                                   },
+                                                    "Thai":  {
+                                                                 "Thai":  11.3
+                                                             }
+                                                },
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Tuvaluan":  13.4
+                                                                    },
+                                                     "Melanesian":  {
+                                                                        "Ni-Vanuatu":  0.1
+                                                                    },
+                                                     "Micronesian":  {
+                                                                         "Marshallese":  5.2
+                                                                     }
+                                                 },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Finnish":  7.1
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "Scottish":  7.5,
+                                                                            "English":  0.7
+                                                                        }
+                                                  },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  10.5
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  3.4
+                                                           }
+                                           },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Sorbian":  3,
+                                                                         "Slovak":  3.6
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Serbian":  0.8,
+                                                                          "Croatian":  4.6
+                                                                      }
+                                                 },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Jordanian":  7.2
+                                                                      }
+                                               }
+                        },
+    "tier":  "2"
 }

@@ -1,330 +1,355 @@
-{
-  "id": "019d6143a67d79f5913b66cd0efe49d1",
-  "type": "character",
-  "name": "Lakshmi Subramaniam-Sengupta",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Gene-mod body artist and tattoo artist",
-  "age": 35,
-  "status": "active",
-  "location": "The Garret, studio called Secondskin above a noodle bar on the Edgewater Prism level, near Clark and Addison",
-  "description": "Lakshmi Subramaniam-Sengupta is compact and precise-looking, with light ochre skin, narrow-set dark eyes, and a body that is itself their most elaborate portfolio piece: bioluminescent freckle-constellations across their shoulders and throat, color-shifting scale-pattern geneware covering both forearms from wrist to elbow in teal and copper, and cat ears — small, dark-furred, fully expressive — perched on their head as their most remarked-upon feature, though they consider it their most boring one. Their hands are almost uncannily steady. They speak softly and move with the deliberate economy of someone who works in millimeters.\n\nTheir specialty is integrating traditional tattoo and scarification methods with geneware modification — they design pieces that are part pigment, part living tissue, partly responsive to the wearer's own biochemistry so that the work changes with the body over years. They are particularly sought out for memorial work, pieces made to commemorate lost people or mark major transitions, and they have developed a reputation for drawing out a client's full story before ever picking up a tool. They are not cheap, they have a two-month waiting list, and they do not take clients whose reasons they distrust. They are also, quietly, one of the most technically skilled unlicensed geneware applicators in The Garret.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.6,
-      "id": 0.3,
-      "shadow": 0.6,
-      "mask": 0.7,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Losing the steadiness in their hands — to age, damage, or neural drift",
-      "Being truly known by someone who then leaves anyway"
-    ],
-    "core_desires": [
-      "To make work that outlasts both the artist and the client",
-      "A relationship where they do not have to perform calm"
-    ],
-    "coping_mechanisms": [
-      "Extreme professional ritual — the precise setup of tools, the intake consultation — as a way of controlling anxiety",
-      "Deflection through attentive listening: keeping focus entirely on the other person"
-    ],
-    "blind_spots": [
-      "Their reputation for emotional availability in the studio does not translate to personal relationships, and they cannot see the gap",
-      "They screen clients for worthiness but apply no such rigor to people they let into their personal life"
-    ],
-    "secret": "They have been slowly, over five years, tattooing a complete map of GLMZ's grey-market medical supply network onto the inner surfaces of a set of custom jacket panels — encoded in a pattern that reads as abstract art. They intend it as insurance. They have not decided against whom."
-  },
-  "speech_patterns": {
-    "vocabulary": "Professional and warm in the studio, measured and slightly formal outside it; uses the body as metaphor naturally ('what does that feel like, structurally?')",
-    "cadence": "Unhurried, with deliberate pauses that invite the other person to fill them — a practised interviewer's rhythm",
-    "verbal_tics": [
-      "'Tell me more about that' deployed as genuine curiosity and also as deflection from personal questions",
-      "Hums very softly when concentrating"
-    ],
-    "example_lines": [
-      "'The piece will grow with you. In ten years it'll tell a story neither of us can read yet.'",
-      "'I don't ask why someone wants what they want. I ask what they need to feel when they see it.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client died three days after a session, and the death is being called natural causes, but Oksana noticed something in the client's tissue during the work that suggested it wasn't — and now they are trying to decide whether being right is worth the danger of saying so",
-    "Someone is counterfeiting their work — applying crude imitations of their distinctive integration technique under their name — and the fake pieces are failing biologically, causing the wearers harm"
-  ],
-  "narrative_function": "Information nexus — clients talk during long sessions and Oksana listens; they know secrets from every tier of The Garret's social world; also a practical resource for characters needing cosmetic cover work, unlicensed geneware application, or access to Helix grey-market medical supplies",
-  "augmentations": "Bioluminescent freckle-constellations (cosmetic geneware); color-shifting scale-pattern geneware on both forearms; geneware cat ears (fully expressive); sub-dermal hand stabilizers (occupational implants for precision work)",
-  "daily_life": "Opens the studio at noon, spends the first hour reviewing client files and correspondence, works on bodies until late evening with carefully scheduled appointments, closes alone and spends an hour doing maintenance on their own modifications.",
-  "affiliation": "Independent (Secondskin studio); loose professional relationship with Helix Biosystems grey-market suppliers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 10,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 9,
-      "expression": 6,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 4,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 0,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "body artist",
-      "geneware specialist",
-      "information broker (passive)",
-      "precise and guarded",
-      "grey market connections"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never touch a client's body without explaining exactly what you are doing and why",
-      "A client's story belongs to them — it stays in the studio"
-    ],
-    "escalation_ladder": [
-      "Calm professional redirection",
-      "A single direct statement of boundary, delivered without apology",
-      "Ends the session, refunds the deposit, closes the door"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally warm, curious, gently probing — gives the impression of great openness while revealing almost nothing",
-      "friends": "Rarely initiates but responds with full attention; affection shown through remembering small details over time"
-    },
-    "stress_responses": {
-      "low": "Becomes more methodical and ritualistic in studio setup",
-      "medium": "Slight increase in professional distance; warmer to clients, cooler to people who know them well",
-      "high": "Shuts down socially, works longer hours; their cat ears flatten and go still, which people who know them learn to read as a warning sign"
-    },
-    "contradictions": [
-      "Built their career on drawing out others' vulnerability while engineering total personal opacity"
-    ],
-    "habits": [
-      "Washes hands in an exact three-stage sequence before every session",
-      "Never eats in the studio"
-    ],
-    "breaking_points": [
-      "A client being harmed by someone exploiting trust they built in this space",
-      "Being told their precision is 'just technique' without acknowledgment of the care underneath it"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Nurturer": 0.9,
-    "Provider": 0.9,
-    "Bleeding Heart": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Garret",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in the Edgewater Prism district to a Ukrainian-Senegalese father and a Bengali-Kazakh mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed apprenticeship under a retiring Garret tattoo artist; inherited client list and studio lease",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Developed the biosynchronous integration technique that made their reputation",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Opened Secondskin; two-month waiting list established within a year",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Crucible Industries Boarding SMG BSM-6 'Cutlass'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Crucible Industries Boarding SMG BSM-6 'Cutlass'"
-  ],
-  "related_entities": [
-    "Edgewater Prism",
-    "The Garret",
-    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
-    "The Gradient Compact",
-    "Copper",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "The Pure Hand",
-    "Slagworks Industrial"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Deeply cosmopolitan South Asian-rooted ancestry (44.9%) with substantial Middle Eastern (22.2%), Southeast Asian (17.3%), Northern European (10.5%), and Eastern European (5.1%) genetic contributions. This creates a striking global blend: South Asian structural depth and warmth as the foundation, enriched by Middle Eastern luminosity and refinement, softened by Southeast Asian delicacy, and lightened by Northern European fairness. The result is a uniquely balanced phenotype—warm yet luminous, angular yet refined, commanding yet approachable.",
-    "height_cm": 162,
-    "weight_kg": 52,
-    "build": "Compact and wiry, with defined lean musculature in the shoulders and forearms from years of precision work. No excess fat; every line suggests economical movement.",
-    "hair_color": "Dark brown, naturally black with threads of premature silver at the temples",
-    "hair_style": "Pulled back in a tight, functional braid or undercut fade; always secured to keep it away from work surfaces",
-    "hair_length": "Short to medium, varying by styling preference",
-    "eye_color": "Very dark brown, almost black, narrow-set and alert",
-    "skin_tone": "Warm golden-medium with balanced luminosity—the depth of South Asian complexion elevated by Middle Eastern radiance and Southeast Asian luminescence, with subtle cool undertones from Northern European heritage. In natural light, the skin appears to glow with warm amber; in artificial light, this shifts to reveal cooler golden tones, creating an almost iridescent quality.",
-    "complexion": "Smooth, even-toned skin combining South Asian warmth with Middle Eastern refinement and Southeast Asian delicate structure. High, defined cheekbones reflect Southeast Asian and Northern European heritage. Angular jaw with subtle strength shows South Asian and Middle Eastern influence. Facial structure is refined and precise—no excess softness, all structure. Minimal grooming beyond practical necessity. No visible facial hair. Expression is calm and focused; they rarely smile broadly.",
-    "distinguishing_marks": [
-      "Bioluminescent freckle-constellations across both shoulders and extending down the throat in soft cyan-white patterns that glow faintly in low light—mapped to resemble actual star charts",
-      "Color-shifting scale-pattern geneware covering both forearms from wrist to elbow, predominantly teal and copper that shifts subtly with temperature and emotion",
-      "Thin scarification lines along the inner wrists in deliberate geometric patterns, self-done as apprenticeship marks"
-    ],
-    "visible_augmentations": "Fully expressive geneware cat ears—small, dark-furred, mobile atop their head; pupils dilate and rotate independently of human eye movement. Bioluminescent freckles glow faintly in darkness. Scale-pattern forearms shimmer and shift color gradually. Hands show no visible augmentation but move with inhuman steadiness and precision; sub-dermal hand stabilizers are not visually apparent but make tremor virtually impossible.",
-    "posture_movement": "Stands with minimal excess motion, spine straight but not rigid. Moves with deliberate economy—no wasted gestures. Hands rest in their lap or on work surfaces when still. When working, enters a state of near-perfect stillness except for microscopic adjustments. Eyes track movement; cat ears swivel toward sound sources. Their presence is quiet but commanding in a studio context.",
-    "clothing_style": "Tier 3 utilitarian-aesthetic. Typically wears fitted black or dark gray work shirts (often sleeveless or with rolled sleeves to display forearm geneware) made from durable synth-cotton blends. High-waisted, dark trousers with multiple thigh pockets for tools and supplies. Worn leather apron during active work. Footwear is practical—dark slip-on boots with good grip. Minimal jewelry except for a thin silver wire bracelet on the left wrist (a client memorial piece). No corporate branding. Clothing is always impeccably clean but well-used, bearing small stains and marks from their work. Studio presence is austere—the body is the art, not the garments."
-  },
-  "image_prompt": "Lakshmi Subramaniam-Sengupta, 162cm tall, compact wiry frame, warm golden-medium skin with iridescent undertones blending South Asian depth with Middle Eastern luminosity and Southeast Asian delicacy. Very dark alert eyes, narrow-set. Dark brown hair with silver threads, pulled back in tight braid. Mobile geneware cat ears atop head. Bioluminescent cyan-white freckle constellations glowing softly across shoulders and throat mapping star charts. Forearms covered in color-shifting teal-copper scale-pattern geneware. Thin geometric scarification marks on inner wrists. Sleeveless black synth-cotton work shirt displaying forearm augmentations. High-waisted dark trousers with tool pockets. Dark slip-on boots. Silver wire memorial bracelet on left wrist. Calm, focused expression, minimal smiling. Standing with perfect economy of posture, hands steady and precise. Studio workshop setting with cool blue-white LED lighting that makes bioluminescent markings glow. Austere, professional atmosphere. GLMZ aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 44.9,
-    "Middle Eastern": 22.2,
-    "Southeast Asian": 17.3,
-    "Northern European": 10.5,
-    "Eastern European": 5.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 7.7,
-        "Sinhalese": 14.5
-      },
-      "Pakistani": {
-        "Sindhi": 15.1
-      },
-      "Indian": {
-        "Bengali": 7.6
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 21.1,
-        "Tajik Persian": 1.1
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 7.2
-      },
-      "Cambodian": {
-        "Khmer": 10.1
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Norwegian": 10.5
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Russian": 2.7,
-        "Ukrainian": 2.4
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a67d79f5913b66cd0efe49d1",
+    "type":  "character",
+    "name":  "Lakshmi Subramaniam-Sengupta",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Gene-mod body artist and tattoo artist",
+    "age":  35,
+    "status":  "active",
+    "location":  "The Garret, studio called Secondskin above a noodle bar on the Edgewater Prism level, near Clark and Addison",
+    "description":  "Lakshmi Subramaniam-Sengupta is compact and precise-looking, with light ochre skin, narrow-set dark eyes, and a body that is itself their most elaborate portfolio piece: bioluminescent freckle-constellations across their shoulders and throat, color-shifting scale-pattern geneware covering both forearms from wrist to elbow in teal and copper, and cat ears â€” small, dark-furred, fully expressive â€” perched on their head as their most remarked-upon feature, though they consider it their most boring one. Their hands are almost uncannily steady. They speak softly and move with the deliberate economy of someone who works in millimeters.\n\nTheir specialty is integrating traditional tattoo and scarification methods with geneware modification â€” they design pieces that are part pigment, part living tissue, partly responsive to the wearer\u0027s own biochemistry so that the work changes with the body over years. They are particularly sought out for memorial work, pieces made to commemorate lost people or mark major transitions, and they have developed a reputation for drawing out a client\u0027s full story before ever picking up a tool. They are not cheap, they have a two-month waiting list, and they do not take clients whose reasons they distrust. They are also, quietly, one of the most technically skilled unlicensed geneware applicators in The Garret.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing the steadiness in their hands â€” to age, damage, or neural drift",
+                                          "Being truly known by someone who then leaves anyway"
+                                      ],
+                       "core_desires":  [
+                                            "To make work that outlasts both the artist and the client",
+                                            "A relationship where they do not have to perform calm"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Extreme professional ritual â€” the precise setup of tools, the intake consultation â€” as a way of controlling anxiety",
+                                                 "Deflection through attentive listening: keeping focus entirely on the other person"
+                                             ],
+                       "blind_spots":  [
+                                           "Their reputation for emotional availability in the studio does not translate to personal relationships, and they cannot see the gap",
+                                           "They screen clients for worthiness but apply no such rigor to people they let into their personal life"
+                                       ],
+                       "secret":  "They have been slowly, over five years, tattooing a complete map of GLMZ\u0027s grey-market medical supply network onto the inner surfaces of a set of custom jacket panels â€” encoded in a pattern that reads as abstract art. They intend it as insurance. They have not decided against whom."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Professional and warm in the studio, measured and slightly formal outside it; uses the body as metaphor naturally (\u0027what does that feel like, structurally?\u0027)",
+                            "cadence":  "Unhurried, with deliberate pauses that invite the other person to fill them â€” a practised interviewer\u0027s rhythm",
+                            "verbal_tics":  [
+                                                "\u0027Tell me more about that\u0027 deployed as genuine curiosity and also as deflection from personal questions",
+                                                "Hums very softly when concentrating"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The piece will grow with you. In ten years it\u0027ll tell a story neither of us can read yet.\u0027",
+                                                  "\u0027I don\u0027t ask why someone wants what they want. I ask what they need to feel when they see it.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client died three days after a session, and the death is being called natural causes, but Oksana noticed something in the client\u0027s tissue during the work that suggested it wasn\u0027t â€” and now they are trying to decide whether being right is worth the danger of saying so",
+                        "Someone is counterfeiting their work â€” applying crude imitations of their distinctive integration technique under their name â€” and the fake pieces are failing biologically, causing the wearers harm"
+                    ],
+    "narrative_function":  "Information nexus â€” clients talk during long sessions and Oksana listens; they know secrets from every tier of The Garret\u0027s social world; also a practical resource for characters needing cosmetic cover work, unlicensed geneware application, or access to Helix grey-market medical supplies",
+    "augmentations":  "Bioluminescent freckle-constellations (cosmetic geneware); color-shifting scale-pattern geneware on both forearms; geneware cat ears (fully expressive); sub-dermal hand stabilizers (occupational implants for precision work)",
+    "daily_life":  "Opens the studio at noon, spends the first hour reviewing client files and correspondence, works on bodies until late evening with carefully scheduled appointments, closes alone and spends an hour doing maintenance on their own modifications.",
+    "affiliation":  "Independent (Secondskin studio); loose professional relationship with Helix Biosystems grey-market suppliers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  10,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  9,
+                                 "expression":  6,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  4,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  0,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "body artist",
+                               "geneware specialist",
+                               "information broker (passive)",
+                               "precise and guarded",
+                               "grey market connections"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never touch a client\u0027s body without explaining exactly what you are doing and why",
+                                              "A client\u0027s story belongs to them â€” it stays in the studio"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Calm professional redirection",
+                                                 "A single direct statement of boundary, delivered without apology",
+                                                 "Ends the session, refunds the deposit, closes the door"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally warm, curious, gently probing â€” gives the impression of great openness while revealing almost nothing",
+                                                   "friends":  "Rarely initiates but responds with full attention; affection shown through remembering small details over time"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more methodical and ritualistic in studio setup",
+                                                "medium":  "Slight increase in professional distance; warmer to clients, cooler to people who know them well",
+                                                "high":  "Shuts down socially, works longer hours; their cat ears flatten and go still, which people who know them learn to read as a warning sign"
+                                            },
+                       "contradictions":  [
+                                              "Built their career on drawing out others\u0027 vulnerability while engineering total personal opacity"
+                                          ],
+                       "habits":  [
+                                      "Washes hands in an exact three-stage sequence before every session",
+                                      "Never eats in the studio"
+                                  ],
+                       "breaking_points":  [
+                                               "A client being harmed by someone exploiting trust they built in this space",
+                                               "Being told their precision is \u0027just technique\u0027 without acknowledgment of the care underneath it"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Nurturer":  0.9,
+                       "Provider":  0.9,
+                       "Bleeding Heart":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Garret",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in the Edgewater Prism district to a Ukrainian-Senegalese father and a Bengali-Kazakh mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed apprenticeship under a retiring Garret tattoo artist; inherited client list and studio lease",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Developed the biosynchronous integration technique that made their reputation",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Opened Secondskin; two-month waiting list established within a year",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Fang-9 \u0027Switchblade\u0027",
+                            "Crucible Industries Boarding SMG BSM-6 \u0027Cutlass\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Fang-9 \u0027Switchblade\u0027",
+                                "Crucible Industries Boarding SMG BSM-6 \u0027Cutlass\u0027"
+                            ],
+    "related_entities":  [
+                             "Edgewater Prism",
+                             "The Garret",
+                             "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
+                             "The Gradient Compact",
+                             "Copper",
+                             "VitaCore FlowGuard Hemodynamic Regulator",
+                             "The Pure Hand",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Deeply cosmopolitan South Asian-rooted ancestry (44.9%) with substantial Middle Eastern (22.2%), Southeast Asian (17.3%), Northern European (10.5%), and Eastern European (5.1%) genetic contributions. This creates a striking global blend: South Asian structural depth and warmth as the foundation, enriched by Middle Eastern luminosity and refinement, softened by Southeast Asian delicacy, and lightened by Northern European fairness. The result is a uniquely balanced phenotypeâ€”warm yet luminous, angular yet refined, commanding yet approachable.",
+                                 "height_cm":  162,
+                                 "weight_kg":  52,
+                                 "build":  "Compact and wiry, with defined lean musculature in the shoulders and forearms from years of precision work. No excess fat; every line suggests economical movement.",
+                                 "hair_color":  "Dark brown, naturally black with threads of premature silver at the temples",
+                                 "hair_style":  "Pulled back in a tight, functional braid or undercut fade; always secured to keep it away from work surfaces",
+                                 "hair_length":  "Short to medium, varying by styling preference",
+                                 "eye_color":  "Very dark brown, almost black, narrow-set and alert",
+                                 "skin_tone":  "Warm golden-medium with balanced luminosityâ€”the depth of South Asian complexion elevated by Middle Eastern radiance and Southeast Asian luminescence, with subtle cool undertones from Northern European heritage. In natural light, the skin appears to glow with warm amber; in artificial light, this shifts to reveal cooler golden tones, creating an almost iridescent quality.",
+                                 "complexion":  "Smooth, even-toned skin combining South Asian warmth with Middle Eastern refinement and Southeast Asian delicate structure. High, defined cheekbones reflect Southeast Asian and Northern European heritage. Angular jaw with subtle strength shows South Asian and Middle Eastern influence. Facial structure is refined and preciseâ€”no excess softness, all structure. Minimal grooming beyond practical necessity. No visible facial hair. Expression is calm and focused; they rarely smile broadly.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent freckle-constellations across both shoulders and extending down the throat in soft cyan-white patterns that glow faintly in low lightâ€”mapped to resemble actual star charts",
+                                                              "Color-shifting scale-pattern geneware covering both forearms from wrist to elbow, predominantly teal and copper that shifts subtly with temperature and emotion",
+                                                              "Thin scarification lines along the inner wrists in deliberate geometric patterns, self-done as apprenticeship marks"
+                                                          ],
+                                 "visible_augmentations":  "Fully expressive geneware cat earsâ€”small, dark-furred, mobile atop their head; pupils dilate and rotate independently of human eye movement. Bioluminescent freckles glow faintly in darkness. Scale-pattern forearms shimmer and shift color gradually. Hands show no visible augmentation but move with inhuman steadiness and precision; sub-dermal hand stabilizers are not visually apparent but make tremor virtually impossible.",
+                                 "posture_movement":  "Stands with minimal excess motion, spine straight but not rigid. Moves with deliberate economyâ€”no wasted gestures. Hands rest in their lap or on work surfaces when still. When working, enters a state of near-perfect stillness except for microscopic adjustments. Eyes track movement; cat ears swivel toward sound sources. Their presence is quiet but commanding in a studio context.",
+                                 "clothing_style":  "Tier 3 utilitarian-aesthetic. Typically wears fitted black or dark gray work shirts (often sleeveless or with rolled sleeves to display forearm geneware) made from durable synth-cotton blends. High-waisted, dark trousers with multiple thigh pockets for tools and supplies. Worn leather apron during active work. Footwear is practicalâ€”dark slip-on boots with good grip. Minimal jewelry except for a thin silver wire bracelet on the left wrist (a client memorial piece). No corporate branding. Clothing is always impeccably clean but well-used, bearing small stains and marks from their work. Studio presence is austereâ€”the body is the art, not the garments."
+                             },
+    "image_prompt":  "Lakshmi Subramaniam-Sengupta, 162cm tall, compact wiry frame, warm golden-medium skin with iridescent undertones blending South Asian depth with Middle Eastern luminosity and Southeast Asian delicacy. Very dark alert eyes, narrow-set. Dark brown hair with silver threads, pulled back in tight braid. Mobile geneware cat ears atop head. Bioluminescent cyan-white freckle constellations glowing softly across shoulders and throat mapping star charts. Forearms covered in color-shifting teal-copper scale-pattern geneware. Thin geometric scarification marks on inner wrists. Sleeveless black synth-cotton work shirt displaying forearm augmentations. High-waisted dark trousers with tool pockets. Dark slip-on boots. Silver wire memorial bracelet on left wrist. Calm, focused expression, minimal smiling. Standing with perfect economy of posture, hands steady and precise. Studio workshop setting with cool blue-white LED lighting that makes bioluminescent markings glow. Austere, professional atmosphere. GLMZ aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  44.9,
+                             "Middle Eastern":  22.2,
+                             "Southeast Asian":  17.3,
+                             "Northern European":  10.5,
+                             "Eastern European":  5.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  7.7,
+                                                                   "Sinhalese":  14.5
+                                                               },
+                                                "Pakistani":  {
+                                                                  "Sindhi":  15.1
+                                                              },
+                                                "Indian":  {
+                                                               "Bengali":  7.6
+                                                           }
+                                            },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  21.1,
+                                                                   "Tajik Persian":  1.1
+                                                               }
+                                               },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  7.2
+                                                             },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  10.1
+                                                                  }
+                                                },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  10.5
+                                                                       }
+                                                  },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Russian":  2.7,
+                                                                         "Ukrainian":  2.4
+                                                                     }
+                                                 }
+                        },
+    "tier":  "3"
 }

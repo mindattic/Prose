@@ -1,290 +1,317 @@
-{
-  "id": "019d6143a6d47d9e8f34b66fff0e4b3b",
-  "type": "character",
-  "name": "Do-yun Huitzil",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "loan shark and bookmaker operating out of Gravesend Basin",
-  "age": 44,
-  "status": "active",
-  "location": "Gravesend Basin, specifically a converted shipping office above the Tideline Brokerage pawn front, near Ashland and Division",
-  "description": "Do-yun Huitzil is a broad-shouldered woman with deep brown skin and the pale silver hair that runs in her Norwegian grandmother's line, kept in a severe bun pinned with a data-spike she uses as a stylus. Her face is heavy-featured and composed, the kind of face that has absorbed a great deal of information without letting any of it back out. She wears reading lenses with ledger overlays almost always active, giving her irises a faint amber glow when she's calculating — which is nearly always. A small tattoo on her left wrist reads 'Φ+Φ=Φ' in the old symbolic script, her personal joke about compound interest.\n\nDo-yun Huitzil runs her loan operation with the temperament of an extremely patient accountant who happens to employ two large men with ceramic-reinforced knuckles. She is not cruel; she is precise. Late payments are met first with reminders, then with restructured terms, then with consequences calibrated to the debtor's ability to absorb them. She considers gratuitous violence wasteful and unprofessional. She genuinely believes she provides a service to people the corponation banks won't touch, and this belief is not entirely wrong, which is what makes her dangerous. She prays to the E.L.F. Φ-Mater every Thursday, leaving small interest-accruing data packages as offerings.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.6,
-      "id": 0.3,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "becoming the ruthless predator people assume she already is",
-      "her operation collapsing and proving the corponation banks right about people like her"
-    ],
-    "core_desires": [
-      "to be seen as a legitimate institution someday",
-      "to die with her books balanced"
-    ],
-    "coping_mechanisms": [
-      "meticulous record-keeping as a form of control",
-      "ritual prayer to Φ-Mater to externalize anxiety about uncertainty"
-    ],
-    "blind_spots": [
-      "genuinely cannot see how the debt cycle she perpetuates traps people even when she is 'fair'",
-      "assumes everyone operates with her level of rational self-interest"
-    ],
-    "secret": "Three years ago she forgave a Tier 1 family's entire debt after their child died — then fabricated fake repayment records so no one would think her soft. She has done it twice more since."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal, precise, financial metaphors for everything; mixes Norwegian loan-words with Nigerian Pidgin-derived slang from her father's side",
-    "cadence": "Measured and unhurried, with deliberate pauses before key numbers or terms as if letting them settle",
-    "verbal_tics": [
-      "'Let us be clear about the numbers'",
-      "'That is not a figure I work with'"
-    ],
-    "example_lines": [
-      "'You are Φ340 over the threshold, which means we are no longer talking about interest — we are talking about structure. Sit down and let me show you the structure.'",
-      "'I do not threaten. Threatening is for people who are not certain of the outcome. I am always certain of the outcome.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A debtor she was about to write off as a loss has turned up dead — and the circumstances suggest someone used her books to find them",
-    "A Tessera mid-manager has come to her for a loan they cannot get through corporate channels, and the amount they need implies something catastrophic is happening inside the corponation"
-  ],
-  "narrative_function": "Quest giver (a debtor has gone missing with her money and she wants them found, not harmed — yet), information source about Basin finances and who owes whom, moral grey zone NPC who can become ally or antagonist depending on player behavior",
-  "augmentations": "Retinal ledger overlay (commercial grade, heavily customized); subdermal vibration sensor in fingertips for detecting nervous tells; no cosmetic geneware",
-  "daily_life": "Opens the office at 10:00, reviews accounts and overnight data feeds until noon, receives clients in the afternoon, sends her collectors out in the evening, and reconciles the books after midnight with a glass of palm wine.",
-  "affiliation": "Independent operator; loose arrangement with the Gravesend Basin crew known as the Inkfish",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 4,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 5,
-      "expression": 6,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 3,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "numbers person",
-      "grey morality",
-      "patient",
-      "networked",
-      "devout"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never lend more than 40% of what a person can realistically repay — bad debt is bad business",
-      "Always offer restructuring before enforcement; it preserves the relationship and the principal"
-    ],
-    "escalation_ladder": [
-      "Written reminder with revised repayment schedule",
-      "Personal visit from Solveig herself — calm, tea offered, terms re-explained",
-      "Collectors visit the debtor's workplace, not their home — public but not violent",
-      "Asset seizure through the Inkfish's grey-market legal contacts",
-      "Final option: the debt is sold to someone with fewer scruples, and she washes her hands"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally pleasant, assessing — she is always calculating creditworthiness",
-      "friends": "Drily warm, will share the good palm wine, asks after family by name"
-    },
-    "stress_responses": {
-      "low": "Rechecks her ledger entries twice instead of once",
-      "medium": "Goes quiet and very still, speaks only in short declarative sentences",
-      "high": "Retreats to her back office and performs her Φ-Mater ritual until calm returns; emerges with a plan"
-    },
-    "contradictions": [
-      "Preaches that emotion has no place in finance while secretly forgiving debts out of compassion"
-    ],
-    "habits": [
-      "Taps the data-spike against her teeth when thinking",
-      "Leaves a single Φ1 coin on her desk as a tactile anchor during difficult conversations"
-    ],
-    "breaking_points": [
-      "Someone harming one of her collectors who followed her rules to the letter �� she views them as her responsibility"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Con Artist": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Gravesend Basin",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Gravesend Basin to a Nigerian-Igbo dockworker father and a Chilean-Norwegian mother who ran a currency exchange",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began lending small amounts to neighbors after the local Ferrogate credit union collapsed",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Formalized operation, rented the current office, hired first collector",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First secret debt forgiveness — the Aboríge-Hakkarainen family after their infant died",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Dispatch-45 'Last Word'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Gravesend Basin",
-    "Grandmother",
-    "Tessera Corponation",
-    "Silver",
-    "Akosua Johansson",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "The Pale Mile",
-    "Nightlight"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Indigenous American (76.1%) with significant East Asian (13.0%) and Sub-Saharan African (10.9%) ancestry. Strong Indigenous American bone structure—broad cheekbones and pronounced nose—enhanced by Sub-Saharan African definition in facial geometry. East Asian ancestry subtly influences eye shape and upper eyelid structure. The blending creates a distinctive angular face with warm, equatorial skin tones and the geometric precision of multiple continental heritages converging.",
-    "height_cm": 178,
-    "weight_kg": 82,
-    "build": "Broad-shouldered and substantial without excess softness; a frame built for stability and presence rather than speed. Muscular through the chest and upper back, thickening slightly at the midline—a body that suggests physical capability gone a bit complacent with middle age and office work.",
-    "hair_color": "Pale silver with faint platinum undertones",
-    "hair_style": "Severe bun, pinned with a customized data-spike stylus",
-    "hair_length": "Long (gathered up)",
-    "eye_color": "Deep brown, with a faint amber glow when retinal overlay is active (ledger mode)",
-    "skin_tone": "Warm bronze-brown with golden undertones; complexion carries the even tone of someone who works indoors under controlled lighting, with the luminosity from ancestry spanning equatorial and Indigenous American regions.",
-    "complexion": "Angular face with strong Indigenous American structure: broad nose with refined definition from Sub-Saharan African ancestry, prominent high cheekbones characteristic of Indigenous genetics, eye shape showing subtle East Asian influence creating a distinctive upper-lid geometry. Skin condition is immaculate and well-maintained, suggesting disciplined skincare and possible subtle geneware maintenance. No visible wrinkles despite her age. Expression typically neutral, jaw often set in calculation.",
-    "distinguishing_marks": [
-      "Small tattoo on inner left wrist reading 'Φ+Φ=Φ' in old symbolic mathematical script, approximately 2cm tall, black ink with faint silver undertone from subdermal augmentation beneath the skin",
-      "Faint white scar along the right temple, barely visible, approximately 3cm long—old injury, cleanly healed"
-    ],
-    "visible_augmentations": "Reading lenses with active ledger overlay sitting on her cheekbones (commercial-grade frames with bespoke modifications, faint green tint to the glass); a polished chrome data-spike serving as her hair pin, approximately 8cm long with circuit tracings etched down its length. When she flexes her fingers, the faintest shimmer of subdermal tech is visible beneath the skin of her fingertips (vibration sensors), though only under close inspection.",
-    "posture_movement": "Sits with perfect spine alignment; moves with deliberate economy of motion—no wasted gestures. Her hands move with precision when working, hovering over surfaces as if calculating weight and balance. When standing, she settles her weight evenly on both feet, giving the impression of immobility. Her fingers occasionally vibrate slightly at the tips when she's reading a nervous client—a tell she's reading their tells.",
-    "clothing_style": "Tier 3-4 professional: tailored but practical. Favors long-sleeved shirts in muted grays and blacks to minimize distraction; high-quality synthetic blends that don't wrinkle. A charcoal wool vest, custom-fitted, worn over everything in the office. Flat black shoes with reinforced soles. A simple platinum bracelet on her right wrist—no visible branding, but the weight and finish suggest genuine pre-Collapse manufacture or high-end corpo reproduction. A leather ledger folio in weathered charcoal, always within arm's reach. Jewelry is minimal: a plain gold ring on her left ring finger (professional habit, not romantic statement)."
-  },
-  "image_prompt": "Do-yun Huitzil, professional fixer in GLMZ Great Lakes zone. Stern Indigenous American-East Asian-African blend woman with angular high cheekbones, broad nose, deep brown eyes with subtle upturned lids, pale silver hair in severe bun pinned with chrome data-spike. Warm bronze-brown immaculate skin. Wearing tailored charcoal gray shirt and custom wool vest, reading lenses with green-tinted active overlay on cheekbones, platinum bracelet catching light. Seated at desk in dim cool-lit office with vertical blinds casting hard shadows, hands poised over surface with faint subdermal shimmer visible in fingertips. Neutral cold expression, perfect posture, ledger folio within reach. Neo-noir noir lighting, sharp focus, intricate detail on augmentations, professional atmosphere --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 76.1,
-    "East Asian": 13,
-    "Sub-Saharan African": 10.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Potawatomi": 5.1,
-        "Ojibwe": 2.1
-      },
-      "Plains Nations": {
-        "Lakota": 20.3,
-        "Choctaw": 48.6
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 13
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 3.7,
-        "Cameroonian": 7.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6d47d9e8f34b66fff0e4b3b",
+    "type":  "character",
+    "name":  "Do-yun Huitzil",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "loan shark and bookmaker operating out of Gravesend Basin",
+    "age":  44,
+    "status":  "active",
+    "location":  "Gravesend Basin, specifically a converted shipping office above the Tideline Brokerage pawn front, near Ashland and Division",
+    "description":  "Do-yun Huitzil is a broad-shouldered woman with deep brown skin and the pale silver hair that runs in her Norwegian grandmother\u0027s line, kept in a severe bun pinned with a data-spike she uses as a stylus. Her face is heavy-featured and composed, the kind of face that has absorbed a great deal of information without letting any of it back out. She wears reading lenses with ledger overlays almost always active, giving her irises a faint amber glow when she\u0027s calculating â€” which is nearly always. A small tattoo on her left wrist reads \u0027Î¦+Î¦=Î¦\u0027 in the old symbolic script, her personal joke about compound interest.\n\nDo-yun Huitzil runs her loan operation with the temperament of an extremely patient accountant who happens to employ two large men with ceramic-reinforced knuckles. She is not cruel; she is precise. Late payments are met first with reminders, then with restructured terms, then with consequences calibrated to the debtor\u0027s ability to absorb them. She considers gratuitous violence wasteful and unprofessional. She genuinely believes she provides a service to people the corponation banks won\u0027t touch, and this belief is not entirely wrong, which is what makes her dangerous. She prays to the E.L.F. Î¦-Mater every Thursday, leaving small interest-accruing data packages as offerings.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "becoming the ruthless predator people assume she already is",
+                                          "her operation collapsing and proving the corponation banks right about people like her"
+                                      ],
+                       "core_desires":  [
+                                            "to be seen as a legitimate institution someday",
+                                            "to die with her books balanced"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "meticulous record-keeping as a form of control",
+                                                 "ritual prayer to Î¦-Mater to externalize anxiety about uncertainty"
+                                             ],
+                       "blind_spots":  [
+                                           "genuinely cannot see how the debt cycle she perpetuates traps people even when she is \u0027fair\u0027",
+                                           "assumes everyone operates with her level of rational self-interest"
+                                       ],
+                       "secret":  "Three years ago she forgave a Tier 1 family\u0027s entire debt after their child died â€” then fabricated fake repayment records so no one would think her soft. She has done it twice more since."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal, precise, financial metaphors for everything; mixes Norwegian loan-words with Nigerian Pidgin-derived slang from her father\u0027s side",
+                            "cadence":  "Measured and unhurried, with deliberate pauses before key numbers or terms as if letting them settle",
+                            "verbal_tics":  [
+                                                "\u0027Let us be clear about the numbers\u0027",
+                                                "\u0027That is not a figure I work with\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You are Î¦340 over the threshold, which means we are no longer talking about interest â€” we are talking about structure. Sit down and let me show you the structure.\u0027",
+                                                  "\u0027I do not threaten. Threatening is for people who are not certain of the outcome. I am always certain of the outcome.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A debtor she was about to write off as a loss has turned up dead â€” and the circumstances suggest someone used her books to find them",
+                        "A Tessera mid-manager has come to her for a loan they cannot get through corporate channels, and the amount they need implies something catastrophic is happening inside the corponation"
+                    ],
+    "narrative_function":  "Quest giver (a debtor has gone missing with her money and she wants them found, not harmed â€” yet), information source about Basin finances and who owes whom, moral grey zone NPC who can become ally or antagonist depending on player behavior",
+    "augmentations":  "Retinal ledger overlay (commercial grade, heavily customized); subdermal vibration sensor in fingertips for detecting nervous tells; no cosmetic geneware",
+    "daily_life":  "Opens the office at 10:00, reviews accounts and overnight data feeds until noon, receives clients in the afternoon, sends her collectors out in the evening, and reconciles the books after midnight with a glass of palm wine.",
+    "affiliation":  "Independent operator; loose arrangement with the Gravesend Basin crew known as the Inkfish",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  4,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  5,
+                                 "expression":  6,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "numbers person",
+                               "grey morality",
+                               "patient",
+                               "networked",
+                               "devout"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never lend more than 40% of what a person can realistically repay â€” bad debt is bad business",
+                                              "Always offer restructuring before enforcement; it preserves the relationship and the principal"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Written reminder with revised repayment schedule",
+                                                 "Personal visit from Solveig herself â€” calm, tea offered, terms re-explained",
+                                                 "Collectors visit the debtor\u0027s workplace, not their home â€” public but not violent",
+                                                 "Asset seizure through the Inkfish\u0027s grey-market legal contacts",
+                                                 "Final option: the debt is sold to someone with fewer scruples, and she washes her hands"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally pleasant, assessing â€” she is always calculating creditworthiness",
+                                                   "friends":  "Drily warm, will share the good palm wine, asks after family by name"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Rechecks her ledger entries twice instead of once",
+                                                "medium":  "Goes quiet and very still, speaks only in short declarative sentences",
+                                                "high":  "Retreats to her back office and performs her Î¦-Mater ritual until calm returns; emerges with a plan"
+                                            },
+                       "contradictions":  [
+                                              "Preaches that emotion has no place in finance while secretly forgiving debts out of compassion"
+                                          ],
+                       "habits":  [
+                                      "Taps the data-spike against her teeth when thinking",
+                                      "Leaves a single Î¦1 coin on her desk as a tactile anchor during difficult conversations"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone harming one of her collectors who followed her rules to the letter ï¿½ï¿½ she views them as her responsibility"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Con Artist":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Gravesend Basin",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Gravesend Basin to a Nigerian-Igbo dockworker father and a Chilean-Norwegian mother who ran a currency exchange",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began lending small amounts to neighbors after the local Ferrogate credit union collapsed",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Formalized operation, rented the current office, hired first collector",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First secret debt forgiveness â€” the AborÃ­ge-Hakkarainen family after their infant died",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Dispatch-45 \u0027Last Word\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Gravesend Basin",
+                             "Grandmother",
+                             "Tessera Corponation",
+                             "Silver",
+                             "Akosua Johansson",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "The Pale Mile",
+                             "Nightlight"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Indigenous American (76.1%) with significant East Asian (13.0%) and Sub-Saharan African (10.9%) ancestry. Strong Indigenous American bone structureâ€”broad cheekbones and pronounced noseâ€”enhanced by Sub-Saharan African definition in facial geometry. East Asian ancestry subtly influences eye shape and upper eyelid structure. The blending creates a distinctive angular face with warm, equatorial skin tones and the geometric precision of multiple continental heritages converging.",
+                                 "height_cm":  178,
+                                 "weight_kg":  82,
+                                 "build":  "Broad-shouldered and substantial without excess softness; a frame built for stability and presence rather than speed. Muscular through the chest and upper back, thickening slightly at the midlineâ€”a body that suggests physical capability gone a bit complacent with middle age and office work.",
+                                 "hair_color":  "Pale silver with faint platinum undertones",
+                                 "hair_style":  "Severe bun, pinned with a customized data-spike stylus",
+                                 "hair_length":  "Long (gathered up)",
+                                 "eye_color":  "Deep brown, with a faint amber glow when retinal overlay is active (ledger mode)",
+                                 "skin_tone":  "Warm bronze-brown with golden undertones; complexion carries the even tone of someone who works indoors under controlled lighting, with the luminosity from ancestry spanning equatorial and Indigenous American regions.",
+                                 "complexion":  "Angular face with strong Indigenous American structure: broad nose with refined definition from Sub-Saharan African ancestry, prominent high cheekbones characteristic of Indigenous genetics, eye shape showing subtle East Asian influence creating a distinctive upper-lid geometry. Skin condition is immaculate and well-maintained, suggesting disciplined skincare and possible subtle geneware maintenance. No visible wrinkles despite her age. Expression typically neutral, jaw often set in calculation.",
+                                 "distinguishing_marks":  [
+                                                              "Small tattoo on inner left wrist reading \u0027Î¦+Î¦=Î¦\u0027 in old symbolic mathematical script, approximately 2cm tall, black ink with faint silver undertone from subdermal augmentation beneath the skin",
+                                                              "Faint white scar along the right temple, barely visible, approximately 3cm longâ€”old injury, cleanly healed"
+                                                          ],
+                                 "visible_augmentations":  "Reading lenses with active ledger overlay sitting on her cheekbones (commercial-grade frames with bespoke modifications, faint green tint to the glass); a polished chrome data-spike serving as her hair pin, approximately 8cm long with circuit tracings etched down its length. When she flexes her fingers, the faintest shimmer of subdermal tech is visible beneath the skin of her fingertips (vibration sensors), though only under close inspection.",
+                                 "posture_movement":  "Sits with perfect spine alignment; moves with deliberate economy of motionâ€”no wasted gestures. Her hands move with precision when working, hovering over surfaces as if calculating weight and balance. When standing, she settles her weight evenly on both feet, giving the impression of immobility. Her fingers occasionally vibrate slightly at the tips when she\u0027s reading a nervous clientâ€”a tell she\u0027s reading their tells.",
+                                 "clothing_style":  "Tier 3-4 professional: tailored but practical. Favors long-sleeved shirts in muted grays and blacks to minimize distraction; high-quality synthetic blends that don\u0027t wrinkle. A charcoal wool vest, custom-fitted, worn over everything in the office. Flat black shoes with reinforced soles. A simple platinum bracelet on her right wristâ€”no visible branding, but the weight and finish suggest genuine pre-Collapse manufacture or high-end corpo reproduction. A leather ledger folio in weathered charcoal, always within arm\u0027s reach. Jewelry is minimal: a plain gold ring on her left ring finger (professional habit, not romantic statement)."
+                             },
+    "image_prompt":  "Do-yun Huitzil, professional fixer in GLMZ Great Lakes zone. Stern Indigenous American-East Asian-African blend woman with angular high cheekbones, broad nose, deep brown eyes with subtle upturned lids, pale silver hair in severe bun pinned with chrome data-spike. Warm bronze-brown immaculate skin. Wearing tailored charcoal gray shirt and custom wool vest, reading lenses with green-tinted active overlay on cheekbones, platinum bracelet catching light. Seated at desk in dim cool-lit office with vertical blinds casting hard shadows, hands poised over surface with faint subdermal shimmer visible in fingertips. Neutral cold expression, perfect posture, ledger folio within reach. Neo-noir noir lighting, sharp focus, intricate detail on augmentations, professional atmosphere --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Indigenous American":  76.1,
+                             "East Asian":  13,
+                             "Sub-Saharan African":  10.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  5.1,
+                                                                                    "Ojibwe":  2.1
+                                                                                },
+                                                        "Plains Nations":  {
+                                                                               "Lakota":  20.3,
+                                                                               "Choctaw":  48.6
+                                                                           }
+                                                    },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  13
+                                                            }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  3.7,
+                                                                                "Cameroonian":  7.2
+                                                                            }
+                                                    }
+                        },
+    "tier":  "1"
 }

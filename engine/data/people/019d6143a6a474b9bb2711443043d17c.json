@@ -1,299 +1,330 @@
-{
-  "id": "019d6143a6a474b9bb2711443043d17c",
-  "type": "character",
-  "name": "Arne Saechao",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Route planner and backup courier — Switchback",
-  "age": 23,
-  "status": "active",
-  "location": "the Gray Zone — rents a room in a co-op housing block four buildings from Jinx's squat, near Halsted and Chicago Ave",
-  "description": "Arne Saechao is the steady hand in a crew built on velocity. Where Jinx is instinct and adrenaline, Puck is preparation and endurance. He can't match Jinx's raw speed — nobody in the Gray Zone can — but he can run longer, plan better, and carry heavier packages without slowing down. He is the reason Switchback has a backup plan for every route, a dead drop on every block, and a reputation for reliability that extends beyond the Gray Zone.\n\nHe grew up three blocks from Jinx, in a co-op housing block held together by community labor and bureaucratic neglect. His mother was a the Gray Zone seamstress who paid for his first augmentation — a basic reflex enhancer — by taking double shifts for eight months. He started running with Jinx at fifteen because the alternative was stacking crates in a warehouse for wages that wouldn't cover food. The running was better. The running was freedom. Seven years later, the freedom is starting to feel like a different kind of cage.\n\nPuck is tall for a courier — six-one, broad-shouldered, built more for endurance than acrobatics. He compensates with route knowledge that borders on encyclopedic. He knows every alley, every service tunnel, every timing gap in every surveillance grid in the Gray Zone and into Milwaukee Core. His face is open, honest, and perpetually a little worried — the face of someone who sees the problems that the enthusiastic people don't.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.35,
-      "ideal": 0.6,
-      "id": 0.5,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.25
-    },
-    "core_fears": [
-      "That Jinx will die on a run he planned — that the route will be the thing that kills her",
-      "That he's already past his peak and the body won't hold up for another two years of this",
-      "That leaving Switchback would be the smart decision and he'll make it and never forgive himself"
-    ],
-    "core_desires": [
-      "To see Jinx and Dash survive long enough to build a life that doesn't require running",
-      "To use what he knows — routes, logistics, infrastructure — to build something legitimate",
-      "To stop feeling guilty about wanting more than the Gray Zone can offer"
-    ],
-    "coping_mechanisms": [
-      "Plans obsessively — if every route is mapped and every contingency prepared, the illusion of control holds",
-      "Cooks for the crew because feeding people is the most tangible form of care he can offer",
-      "Reads history because other people's past is less frightening than his own future"
-    ],
-    "blind_spots": [
-      "His caution reads as doubt to Jinx and resentment to Dash, and he doesn't see how it's eroding trust",
-      "Thinks his pragmatism is wisdom when it's increasingly just fear",
-      "Cannot accept that some of his exhaustion is emotional, not physical"
-    ],
-    "secret": "He's been quietly saving money for two years. Not to leave — to buy the co-op housing block his mother lives in, so the residents can't be evicted. He is approximately 40% of the way there. Every dangerous run he takes is another deposit."
-  },
-  "speech_patterns": {
-    "vocabulary": "Thoughtful, grounded. Uses spatial language — routes, paths, distances. More articulate than people expect from a the Gray Zone courier.",
-    "cadence": "Steady, measured. He talks the way he runs — consistent pace, no wasted energy. Gets quieter when he disagrees.",
-    "verbal_tics": [
-      "Says 'Look—' when he's about to deliver an uncomfortable truth",
-      "Refers to distances in block counts, not meters — Shelf habit",
-      "Pauses before answering questions, which people mistake for slowness rather than care"
-    ],
-    "example_lines": [
-      "Look — the route works on paper. Paper doesn't have patrol drones.",
-      "I run because she runs. When she stops, I stop. It's not complicated.",
-      "You can't build a future on something that needs you to never slow down."
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Jinx Alvarado",
-      "type": "crewmate / best friend / co-founder",
-      "description": "They've been running together since fifteen. Puck's loyalty to Jinx is absolute, but it's no longer uncritical. He sees the recklessness she calls courage, and the exhaustion she won't acknowledge. He stays because leaving would break something in both of them.",
-      "emotional_core": "Love that has matured past admiration into worried responsibility",
-      "story_tension": "Puck wants to have the conversation about what comes next. Jinx cannot hear that conversation without interpreting it as betrayal."
-    },
-    {
-      "name": "Dash Okonkwo",
-      "type": "crewmate / youngest member",
-      "description": "Puck likes Dash and worries about Dash in equal measure. He supplements Jinx's route assignments by quietly feeding Dash the training runs that build real skill, not just courage.",
-      "emotional_core": "The older brother trying to give the younger one what he didn't have — time to learn safely",
-      "story_tension": "Dash sees Puck's caution as cowardice. The misread hurts more than Puck shows."
-    },
-    {
-      "name": "His mother (Else Nygaard)",
-      "type": "family / motivation",
-      "description": "Else works as a seamstress in the co-op block. She knows what Puck does for a living and worries silently. She made the financial sacrifice that gave him his first augmentation. He is trying to repay that debt by saving the building she lives in.",
-      "emotional_core": "Obligation, love, and the weight of being someone's investment",
-      "story_tension": "If Else knew the risks Puck takes to fund his savings, the knowledge would destroy her."
-    }
-  ],
-  "story_hooks": [
-    "The co-op block faces imminent sale to a developer — Puck's timeline collapses and he needs money fast",
-    "A route Puck planned goes catastrophically wrong and Dash is caught by corporate security",
-    "A legitimate logistics company offers Puck a management position — the exit he's been too guilty to pursue",
-    "Jinx discovers Puck's savings and misinterprets it as preparation to leave"
-  ],
-  "narrative_function": "Puck is the voice of pragmatism and growing doubt in Switchback. He loves Jinx, loves the crew, and is increasingly certain that the life will kill them. His stories explore the tension between loyalty and self-preservation, between the adrenaline of the run and the exhaustion that follows. He is the character who asks: what comes after this?",
-  "augmentations": "Basic reflex enhancer (the Gray Zone-installed, civilian grade). Cardiopulmonary optimizer — increases oxygen efficiency and endurance by roughly 30%. Subdermal route-mapping display on his left forearm — low-res but reliable, shows jurisdiction lines and camera positions. Reinforced knee joints (both legs) — necessary after three years of high-impact running.",
-  "daily_life": "Wakes before Jinx. Checks route conditions — weather, surveillance changes, construction that alters paths. Updates the crew's route database. Runs contracts during the day, usually the longer, steadier deliveries that require endurance rather than speed. Evenings he cooks in the co-op kitchen and brings food to Jinx's squat because she won't eat otherwise. Falls asleep reading — usually history, usually about people who built things that lasted.",
-  "affiliation": "Switchback",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": []
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will always run the route himself before assigning it to crew — every path is tested personally",
-      "Will not take contracts with less than 48 hours of planning time unless Jinx overrides",
-      "Will prioritize crew safety over package delivery — the package is replaceable, the people aren't",
-      "Will maintain dead drops on every route — escape infrastructure is non-negotiable",
-      "Will send money to his mother's account every week, even if it means eating less",
-      "Will not argue with Jinx in front of Dash — crew disagreements happen in private"
-    ],
-    "escalation_ladder": [
-      "1. Reroute — hit the backup path. Adjust in real-time based on pursuit patterns.",
-      "2. Drop and hold — stash the package in a dead drop and lead pursuit away. Recover later.",
-      "3. Split — separate from crew to divide pursuit resources. Puck draws attention because he's bigger and slower.",
-      "4. Stand — Puck is the only Switchback member who will physically confront pursuers. He's big enough to delay them while the others run.",
-      "5. Surrender — if caught alone with no package, Puck will surrender rather than risk escalation. He knows the processing time for a Shelf courier arrest — six hours, no charges if the package isn't on you."
-    ],
-    "interpersonal_modes": {
-      "jinx": "Direct, honest, occasionally exasperated. He is the only person who talks back to Jinx and the only person she listens to, even when she pretends not to. Their arguments sound like fights to outsiders but function as collaborative planning.",
-      "dash": "Patient, instructive, slightly guarded. He teaches by example rather than lecture. Checks Dash's gear before every run. The care is obvious; the emotional distance is protective.",
-      "shelf_community": "Quiet, reliable. He fixes things — generators, plumbing, structural problems in the co-op. People know him as the courier who also knows how things work. This dual identity is deliberate.",
-      "clients": "More communicative than Jinx. He manages client expectations, explains timelines, negotiates pricing. The business side of Switchback is mostly Puck."
-    },
-    "stress_responses": {
-      "low": "Increased planning. He adds contingencies, checks dead drops, updates routes. The response is productive and invisible.",
-      "medium": "Becomes noticeably quieter. Cooks more — larger meals, more complex recipes. Feeding people is his stress response.",
-      "high": "Insomnia. He lies awake running routes in his head, optimizing paths he's already optimized. The body is tired; the mind won't stop.",
-      "critical": "Confrontation. At the breaking point, Puck's measured calm cracks and he says everything he's been holding back. It has happened twice — once with Jinx about route safety, once with a client who shorted the crew's pay. Both times he was articulate, furious, and devastating."
-    },
-    "contradictions": [
-      "He plans routes for a reckless crew and resents that his planning enables the recklessness",
-      "He wants to leave the Gray Zone but is saving money to anchor his family to it permanently",
-      "He is the steadiest member of Switchback and the one most likely to leave",
-      "His caution has kept the crew alive but also prevented them from growing — safety and stagnation share a border"
-    ],
-    "habits": [
-      "Checks weather reports three times daily — wind, rain, and temperature all affect rooftop routes",
-      "Cooks the same three meals in rotation unless he's stressed, in which case the menu gets ambitious",
-      "Stretches his knee joints every morning — the reinforcement helps but the original damage reminds him",
-      "Carries a physical map of the Gray Zone in his back pocket — analog backup for when the subdermal display glitches",
-      "Walks the co-op perimeter every night before sleep — checking, always checking"
-    ],
-    "breaking_points": [
-      "Dash getting hurt on a route Puck approved would shatter his ability to plan — every route would become too dangerous",
-      "Jinx dying would end Switchback and possibly end the version of Puck that believes in anything",
-      "His mother losing the co-op would prove that all the running, all the risk, was for nothing",
-      "Being forced to choose between the crew and his mother — the loyalty split that has no good outcome"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Cockroach": 0.9,
-    "Safety First": 0.9,
-    "Improviser": 0.9,
-    "Lone Wolf": 0.9,
-    "Face": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Angry Mary' Aerosol Flamethrower"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Lazarus Pharmaceuticals NeuroPrecision Surgical BCI",
-    "Switchback",
-    "VitaCore SteadyField Precision Motor Implant",
-    "Ringo DV-4 'Courier'",
-    "Chicago",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Arcturus KS-7 'Nursery'",
-    "Neuromorphic Pressure Cestus",
-    "Honest Burger"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Southeast Asian ancestry (70.8%) with significant Sub-Saharan African (12.2%) and smaller Northern European (6.8%), Middle Eastern (5.7%), Hispanic/Latin American (3.2%), and Eastern European (1.3%) admixture. The genetic combination creates warm medium-to-deep brown skin tones with subtle golden and reddish undertones reflecting the diverse ancestry mix. Southeast Asian facial structure dominates with defined cheekbones and jawline, enhanced by the Sub-Saharan African contribution which adds fullness to the lips and cheeks, warmth and richness to complexion. Northern European ancestry contributes subtle refinement to bone structure. Middle Eastern heritage adds depth to eye placement and brow definition. The overall phenotype is distinctly cosmopolitan, reflecting the Ubiquitous Diaspora rather than any single regional type.",
-    "height_cm": 185,
-    "weight_kg": 82,
-    "build": "Tall and broad-shouldered with a runner's lean musculature. Chest and shoulders are developed from years of courier work; legs are particularly defined from high-impact running. Not bulky — built for endurance and distance rather than raw strength.",
-    "hair_color": "Dark brown to nearly black, with subtle warm undertones, naturally lighter at the tips from sun exposure",
-    "hair_style": "Kept short and practical — swept back from his face, low maintenance. Often has a slight tousle from helmet wear.",
-    "hair_length": "Short",
-    "eye_color": "Deep warm brown with an alert, attentive quality",
-    "skin_tone": "Warm medium-to-deep brown base with golden and reddish undertones reflecting Southeast Asian, Sub-Saharan African, and Middle Eastern ancestry; sun-darkened on face and forearms from outdoor running routes. Complexion has rich, warm undertones with subtle depth variation from layered genetic heritage.",
-    "complexion": "Angular face with pronounced cheekbones and full, defined jawline — Southeast Asian structure dominant with Sub-Saharan African fullness in cheeks and lip definition, creating warm, expressive features. Slight perpetual furrow between his eyebrows — the look of someone who worries about details others miss. Clean-shaven or with a day or two of stubble. Minimal scarring on the face; skin shows minor abrasions and healing marks from contact work.",
-    "distinguishing_marks": [
-      "Linear scar along his left temple, approximately 2cm long — impact wound from a surveillance pole during a route miscalculation at age 19",
-      "Network of thin scars across both knees, clustered and radiating from the joint — surgical scarring from reinforcement installation and accumulated impact trauma",
-      "Faint burn marks across the knuckles of his right hand (three fingers) — old thermal exposure, pre-augmentation, likely from warehouse work in his early teens",
-      "Subdermal route-mapping display on left forearm — visible as a faint blue-green rectangular grid beneath the skin, approximately 12cm x 8cm, illuminates slightly when active"
-    ],
-    "visible_augmentations": "Subdermal route-mapping display on left forearm (faintly visible when inactive; glows soft blue-green when active). Knee joint reinforcement is not externally visible but his stride shows slight mechanical precision in high-impact movements. Reflex enhancer and cardiopulmonary optimizer are entirely subcutaneous.",
-    "posture_movement": "Stands with weight slightly forward, ready to move. Walks with economy of motion — no wasted energy. When running, his gait is rhythmic and measured rather than explosive; he moves like someone counting breaths. Hands are usually occupied — checking a device, reviewing routes, or fidgeting slightly. Makes direct eye contact but often glances away to think through logistics. Shoulders carry visible tension; jaw often slightly clenched.",
-    "clothing_style": "Tier 4 working-class practicality. Wears reinforced cargo pants (usually dark gray or black synthetic blend) with multiple pockets for tools, route notes, and equipment. Base layers are durable — moisture-wicking synthetics in muted colors. Over-layers vary: lightweight running jacket with reflective trim for daytime runs; heavier insulated jacket for night work. Worn but maintained boots with good ankle support — scuffed leather or synthetic, well-broken-in. His gear is functional and replaced based on wear, not style. No corporate branding. A faded fabric band around his left wrist — possibly a crew identifier or personal keepsake."
-  },
-  "image_prompt": "Arne Saechao, lean tall courier with warm medium-deep brown skin, Southeast Asian and Sub-Saharan African features, defined cheekbones and jawline, deep warm brown alert eyes, short dark tousled hair with sun-lightened tips. Linear temple scar, faint burn marks on right knuckles, subdermal blue-green route-mapping grid glowing faintly on left forearm. Wearing dark reinforced cargo pants, moisture-wicking base layer, lightweight reflective running jacket, scuffed ankle boots. Standing forward-ready posture with visible shoulder tension, slight jaw clench. GLMZ Great Lakes Metropolitan Zone, neon-lit nighttime urban route, rain-slicked pavement, soft blue-green biolume accent lighting reflecting off wet surfaces, running between towering data-centers and transit infrastructure, motion blur suggesting speed, gritty realism --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 70.8,
-    "Sub-Saharan African": 12.2,
-    "Northern European": 6.8,
-    "Middle Eastern": 5.7,
-    "Hispanic/Latin American": 3.2,
-    "Eastern European": 1.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 70.8
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zimbabwean": 7.7,
-        "South African": 0.6
-      },
-      "East African": {
-        "Ethiopian": 0.7,
-        "Rwandan": 2.4
-      },
-      "Central African": {
-        "Congolese": 0.5,
-        "Cameroonian": 0.3
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Irish": 3.6,
-        "Welsh": 0.9
-      },
-      "Scandinavian": {
-        "Swedish": 1.6
-      },
-      "Germanic": {
-        "German": 0.7
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 5.7
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 0.4
-      },
-      "South American": {
-        "Colombian": 1.3
-      },
-      "Mexican": {
-        "Mexican": 1.5
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 0.8
-      },
-      "Slavic East": {
-        "Russian": 0.1,
-        "Ukrainian": 0.1
-      },
-      "Slavic West": {
-        "Polish": 0.3
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6a474b9bb2711443043d17c",
+    "type":  "character",
+    "name":  "Arne Saechao",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Route planner and backup courier â€” Switchback",
+    "age":  23,
+    "status":  "active",
+    "location":  "the Gray Zone â€” rents a room in a co-op housing block four buildings from Jinx\u0027s squat, near Halsted and Chicago Ave",
+    "description":  "Arne Saechao is the steady hand in a crew built on velocity. Where Jinx is instinct and adrenaline, Puck is preparation and endurance. He can\u0027t match Jinx\u0027s raw speed â€” nobody in the Gray Zone can â€” but he can run longer, plan better, and carry heavier packages without slowing down. He is the reason Switchback has a backup plan for every route, a dead drop on every block, and a reputation for reliability that extends beyond the Gray Zone.\n\nHe grew up three blocks from Jinx, in a co-op housing block held together by community labor and bureaucratic neglect. His mother was a the Gray Zone seamstress who paid for his first augmentation â€” a basic reflex enhancer â€” by taking double shifts for eight months. He started running with Jinx at fifteen because the alternative was stacking crates in a warehouse for wages that wouldn\u0027t cover food. The running was better. The running was freedom. Seven years later, the freedom is starting to feel like a different kind of cage.\n\nPuck is tall for a courier â€” six-one, broad-shouldered, built more for endurance than acrobatics. He compensates with route knowledge that borders on encyclopedic. He knows every alley, every service tunnel, every timing gap in every surveillance grid in the Gray Zone and into Milwaukee Core. His face is open, honest, and perpetually a little worried â€” the face of someone who sees the problems that the enthusiastic people don\u0027t.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That Jinx will die on a run he planned â€” that the route will be the thing that kills her",
+                                          "That he\u0027s already past his peak and the body won\u0027t hold up for another two years of this",
+                                          "That leaving Switchback would be the smart decision and he\u0027ll make it and never forgive himself"
+                                      ],
+                       "core_desires":  [
+                                            "To see Jinx and Dash survive long enough to build a life that doesn\u0027t require running",
+                                            "To use what he knows â€” routes, logistics, infrastructure â€” to build something legitimate",
+                                            "To stop feeling guilty about wanting more than the Gray Zone can offer"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Plans obsessively â€” if every route is mapped and every contingency prepared, the illusion of control holds",
+                                                 "Cooks for the crew because feeding people is the most tangible form of care he can offer",
+                                                 "Reads history because other people\u0027s past is less frightening than his own future"
+                                             ],
+                       "blind_spots":  [
+                                           "His caution reads as doubt to Jinx and resentment to Dash, and he doesn\u0027t see how it\u0027s eroding trust",
+                                           "Thinks his pragmatism is wisdom when it\u0027s increasingly just fear",
+                                           "Cannot accept that some of his exhaustion is emotional, not physical"
+                                       ],
+                       "secret":  "He\u0027s been quietly saving money for two years. Not to leave â€” to buy the co-op housing block his mother lives in, so the residents can\u0027t be evicted. He is approximately 40% of the way there. Every dangerous run he takes is another deposit."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Thoughtful, grounded. Uses spatial language â€” routes, paths, distances. More articulate than people expect from a the Gray Zone courier.",
+                            "cadence":  "Steady, measured. He talks the way he runs â€” consistent pace, no wasted energy. Gets quieter when he disagrees.",
+                            "verbal_tics":  [
+                                                "Says \u0027Lookâ€”\u0027 when he\u0027s about to deliver an uncomfortable truth",
+                                                "Refers to distances in block counts, not meters â€” Shelf habit",
+                                                "Pauses before answering questions, which people mistake for slowness rather than care"
+                                            ],
+                            "example_lines":  [
+                                                  "Look â€” the route works on paper. Paper doesn\u0027t have patrol drones.",
+                                                  "I run because she runs. When she stops, I stop. It\u0027s not complicated.",
+                                                  "You can\u0027t build a future on something that needs you to never slow down."
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Jinx Alvarado",
+                              "type":  "crewmate / best friend / co-founder",
+                              "description":  "They\u0027ve been running together since fifteen. Puck\u0027s loyalty to Jinx is absolute, but it\u0027s no longer uncritical. He sees the recklessness she calls courage, and the exhaustion she won\u0027t acknowledge. He stays because leaving would break something in both of them.",
+                              "emotional_core":  "Love that has matured past admiration into worried responsibility",
+                              "story_tension":  "Puck wants to have the conversation about what comes next. Jinx cannot hear that conversation without interpreting it as betrayal."
+                          },
+                          {
+                              "name":  "Dash Okonkwo",
+                              "type":  "crewmate / youngest member",
+                              "description":  "Puck likes Dash and worries about Dash in equal measure. He supplements Jinx\u0027s route assignments by quietly feeding Dash the training runs that build real skill, not just courage.",
+                              "emotional_core":  "The older brother trying to give the younger one what he didn\u0027t have â€” time to learn safely",
+                              "story_tension":  "Dash sees Puck\u0027s caution as cowardice. The misread hurts more than Puck shows."
+                          },
+                          {
+                              "name":  "His mother (Else Nygaard)",
+                              "type":  "family / motivation",
+                              "description":  "Else works as a seamstress in the co-op block. She knows what Puck does for a living and worries silently. She made the financial sacrifice that gave him his first augmentation. He is trying to repay that debt by saving the building she lives in.",
+                              "emotional_core":  "Obligation, love, and the weight of being someone\u0027s investment",
+                              "story_tension":  "If Else knew the risks Puck takes to fund his savings, the knowledge would destroy her."
+                          }
+                      ],
+    "story_hooks":  [
+                        "The co-op block faces imminent sale to a developer â€” Puck\u0027s timeline collapses and he needs money fast",
+                        "A route Puck planned goes catastrophically wrong and Dash is caught by corporate security",
+                        "A legitimate logistics company offers Puck a management position â€” the exit he\u0027s been too guilty to pursue",
+                        "Jinx discovers Puck\u0027s savings and misinterprets it as preparation to leave"
+                    ],
+    "narrative_function":  "Puck is the voice of pragmatism and growing doubt in Switchback. He loves Jinx, loves the crew, and is increasingly certain that the life will kill them. His stories explore the tension between loyalty and self-preservation, between the adrenaline of the run and the exhaustion that follows. He is the character who asks: what comes after this?",
+    "augmentations":  "Basic reflex enhancer (the Gray Zone-installed, civilian grade). Cardiopulmonary optimizer â€” increases oxygen efficiency and endurance by roughly 30%. Subdermal route-mapping display on his left forearm â€” low-res but reliable, shows jurisdiction lines and camera positions. Reinforced knee joints (both legs) â€” necessary after three years of high-impact running.",
+    "daily_life":  "Wakes before Jinx. Checks route conditions â€” weather, surveillance changes, construction that alters paths. Updates the crew\u0027s route database. Runs contracts during the day, usually the longer, steadier deliveries that require endurance rather than speed. Evenings he cooks in the co-op kitchen and brings food to Jinx\u0027s squat because she won\u0027t eat otherwise. Falls asleep reading â€” usually history, usually about people who built things that lasted.",
+    "affiliation":  "Switchback",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will always run the route himself before assigning it to crew â€” every path is tested personally",
+                                              "Will not take contracts with less than 48 hours of planning time unless Jinx overrides",
+                                              "Will prioritize crew safety over package delivery â€” the package is replaceable, the people aren\u0027t",
+                                              "Will maintain dead drops on every route â€” escape infrastructure is non-negotiable",
+                                              "Will send money to his mother\u0027s account every week, even if it means eating less",
+                                              "Will not argue with Jinx in front of Dash â€” crew disagreements happen in private"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Reroute â€” hit the backup path. Adjust in real-time based on pursuit patterns.",
+                                                 "2. Drop and hold â€” stash the package in a dead drop and lead pursuit away. Recover later.",
+                                                 "3. Split â€” separate from crew to divide pursuit resources. Puck draws attention because he\u0027s bigger and slower.",
+                                                 "4. Stand â€” Puck is the only Switchback member who will physically confront pursuers. He\u0027s big enough to delay them while the others run.",
+                                                 "5. Surrender â€” if caught alone with no package, Puck will surrender rather than risk escalation. He knows the processing time for a Shelf courier arrest â€” six hours, no charges if the package isn\u0027t on you."
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "jinx":  "Direct, honest, occasionally exasperated. He is the only person who talks back to Jinx and the only person she listens to, even when she pretends not to. Their arguments sound like fights to outsiders but function as collaborative planning.",
+                                                   "dash":  "Patient, instructive, slightly guarded. He teaches by example rather than lecture. Checks Dash\u0027s gear before every run. The care is obvious; the emotional distance is protective.",
+                                                   "shelf_community":  "Quiet, reliable. He fixes things â€” generators, plumbing, structural problems in the co-op. People know him as the courier who also knows how things work. This dual identity is deliberate.",
+                                                   "clients":  "More communicative than Jinx. He manages client expectations, explains timelines, negotiates pricing. The business side of Switchback is mostly Puck."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increased planning. He adds contingencies, checks dead drops, updates routes. The response is productive and invisible.",
+                                                "medium":  "Becomes noticeably quieter. Cooks more â€” larger meals, more complex recipes. Feeding people is his stress response.",
+                                                "high":  "Insomnia. He lies awake running routes in his head, optimizing paths he\u0027s already optimized. The body is tired; the mind won\u0027t stop.",
+                                                "critical":  "Confrontation. At the breaking point, Puck\u0027s measured calm cracks and he says everything he\u0027s been holding back. It has happened twice â€” once with Jinx about route safety, once with a client who shorted the crew\u0027s pay. Both times he was articulate, furious, and devastating."
+                                            },
+                       "contradictions":  [
+                                              "He plans routes for a reckless crew and resents that his planning enables the recklessness",
+                                              "He wants to leave the Gray Zone but is saving money to anchor his family to it permanently",
+                                              "He is the steadiest member of Switchback and the one most likely to leave",
+                                              "His caution has kept the crew alive but also prevented them from growing â€” safety and stagnation share a border"
+                                          ],
+                       "habits":  [
+                                      "Checks weather reports three times daily â€” wind, rain, and temperature all affect rooftop routes",
+                                      "Cooks the same three meals in rotation unless he\u0027s stressed, in which case the menu gets ambitious",
+                                      "Stretches his knee joints every morning â€” the reinforcement helps but the original damage reminds him",
+                                      "Carries a physical map of the Gray Zone in his back pocket â€” analog backup for when the subdermal display glitches",
+                                      "Walks the co-op perimeter every night before sleep â€” checking, always checking"
+                                  ],
+                       "breaking_points":  [
+                                               "Dash getting hurt on a route Puck approved would shatter his ability to plan â€” every route would become too dangerous",
+                                               "Jinx dying would end Switchback and possibly end the version of Puck that believes in anything",
+                                               "His mother losing the co-op would prove that all the running, all the risk, was for nothing",
+                                               "Being forced to choose between the crew and his mother â€” the loyalty split that has no good outcome"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Cockroach":  0.9,
+                       "Safety First":  0.9,
+                       "Improviser":  0.9,
+                       "Lone Wolf":  0.9,
+                       "Face":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Angry Mary\u0027 Aerosol Flamethrower"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Lazarus Pharmaceuticals NeuroPrecision Surgical BCI",
+                             "Switchback",
+                             "VitaCore SteadyField Precision Motor Implant",
+                             "Ringo DV-4 \u0027Courier\u0027",
+                             "Chicago",
+                             "VitaCore FlowGuard Hemodynamic Regulator",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "Neuromorphic Pressure Cestus",
+                             "Honest Burger"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Southeast Asian ancestry (70.8%) with significant Sub-Saharan African (12.2%) and smaller Northern European (6.8%), Middle Eastern (5.7%), Hispanic/Latin American (3.2%), and Eastern European (1.3%) admixture. The genetic combination creates warm medium-to-deep brown skin tones with subtle golden and reddish undertones reflecting the diverse ancestry mix. Southeast Asian facial structure dominates with defined cheekbones and jawline, enhanced by the Sub-Saharan African contribution which adds fullness to the lips and cheeks, warmth and richness to complexion. Northern European ancestry contributes subtle refinement to bone structure. Middle Eastern heritage adds depth to eye placement and brow definition. The overall phenotype is distinctly cosmopolitan, reflecting the Ubiquitous Diaspora rather than any single regional type.",
+                                 "height_cm":  185,
+                                 "weight_kg":  82,
+                                 "build":  "Tall and broad-shouldered with a runner\u0027s lean musculature. Chest and shoulders are developed from years of courier work; legs are particularly defined from high-impact running. Not bulky â€” built for endurance and distance rather than raw strength.",
+                                 "hair_color":  "Dark brown to nearly black, with subtle warm undertones, naturally lighter at the tips from sun exposure",
+                                 "hair_style":  "Kept short and practical â€” swept back from his face, low maintenance. Often has a slight tousle from helmet wear.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep warm brown with an alert, attentive quality",
+                                 "skin_tone":  "Warm medium-to-deep brown base with golden and reddish undertones reflecting Southeast Asian, Sub-Saharan African, and Middle Eastern ancestry; sun-darkened on face and forearms from outdoor running routes. Complexion has rich, warm undertones with subtle depth variation from layered genetic heritage.",
+                                 "complexion":  "Angular face with pronounced cheekbones and full, defined jawline â€” Southeast Asian structure dominant with Sub-Saharan African fullness in cheeks and lip definition, creating warm, expressive features. Slight perpetual furrow between his eyebrows â€” the look of someone who worries about details others miss. Clean-shaven or with a day or two of stubble. Minimal scarring on the face; skin shows minor abrasions and healing marks from contact work.",
+                                 "distinguishing_marks":  [
+                                                              "Linear scar along his left temple, approximately 2cm long â€” impact wound from a surveillance pole during a route miscalculation at age 19",
+                                                              "Network of thin scars across both knees, clustered and radiating from the joint â€” surgical scarring from reinforcement installation and accumulated impact trauma",
+                                                              "Faint burn marks across the knuckles of his right hand (three fingers) â€” old thermal exposure, pre-augmentation, likely from warehouse work in his early teens",
+                                                              "Subdermal route-mapping display on left forearm â€” visible as a faint blue-green rectangular grid beneath the skin, approximately 12cm x 8cm, illuminates slightly when active"
+                                                          ],
+                                 "visible_augmentations":  "Subdermal route-mapping display on left forearm (faintly visible when inactive; glows soft blue-green when active). Knee joint reinforcement is not externally visible but his stride shows slight mechanical precision in high-impact movements. Reflex enhancer and cardiopulmonary optimizer are entirely subcutaneous.",
+                                 "posture_movement":  "Stands with weight slightly forward, ready to move. Walks with economy of motion â€” no wasted energy. When running, his gait is rhythmic and measured rather than explosive; he moves like someone counting breaths. Hands are usually occupied â€” checking a device, reviewing routes, or fidgeting slightly. Makes direct eye contact but often glances away to think through logistics. Shoulders carry visible tension; jaw often slightly clenched.",
+                                 "clothing_style":  "Tier 4 working-class practicality. Wears reinforced cargo pants (usually dark gray or black synthetic blend) with multiple pockets for tools, route notes, and equipment. Base layers are durable â€” moisture-wicking synthetics in muted colors. Over-layers vary: lightweight running jacket with reflective trim for daytime runs; heavier insulated jacket for night work. Worn but maintained boots with good ankle support â€” scuffed leather or synthetic, well-broken-in. His gear is functional and replaced based on wear, not style. No corporate branding. A faded fabric band around his left wrist â€” possibly a crew identifier or personal keepsake."
+                             },
+    "image_prompt":  "Arne Saechao, lean tall courier with warm medium-deep brown skin, Southeast Asian and Sub-Saharan African features, defined cheekbones and jawline, deep warm brown alert eyes, short dark tousled hair with sun-lightened tips. Linear temple scar, faint burn marks on right knuckles, subdermal blue-green route-mapping grid glowing faintly on left forearm. Wearing dark reinforced cargo pants, moisture-wicking base layer, lightweight reflective running jacket, scuffed ankle boots. Standing forward-ready posture with visible shoulder tension, slight jaw clench. GLMZ Great Lakes Metropolitan Zone, neon-lit nighttime urban route, rain-slicked pavement, soft blue-green biolume accent lighting reflecting off wet surfaces, running between towering data-centers and transit infrastructure, motion blur suggesting speed, gritty realism --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  70.8,
+                             "Sub-Saharan African":  12.2,
+                             "Northern European":  6.8,
+                             "Middle Eastern":  5.7,
+                             "Hispanic/Latin American":  3.2,
+                             "Eastern European":  1.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  70.8
+                                                                }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  7.7,
+                                                                                 "South African":  0.6
+                                                                             },
+                                                        "East African":  {
+                                                                             "Ethiopian":  0.7,
+                                                                             "Rwandan":  2.4
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  0.5,
+                                                                                "Cameroonian":  0.3
+                                                                            }
+                                                    },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  3.6,
+                                                                            "Welsh":  0.9
+                                                                        },
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  1.6
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "German":  0.7
+                                                                   }
+                                                  },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  5.7
+                                                               }
+                                               },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  0.4
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Colombian":  1.3
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  1.5
+                                                                        }
+                                                        },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  0.8
+                                                                         },
+                                                     "Slavic East":  {
+                                                                         "Russian":  0.1,
+                                                                         "Ukrainian":  0.1
+                                                                     },
+                                                     "Slavic West":  {
+                                                                         "Polish":  0.3
+                                                                     }
+                                                 }
+                        },
+    "tier":  "1"
 }

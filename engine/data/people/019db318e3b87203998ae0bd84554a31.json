@@ -1,156 +1,225 @@
-{
-  "id": "019db318e3b87203998ae0bd84554a31",
-  "rating": 0,
-  "vote_count": 0,
-  "type": "character",
-  "name": "Emeka",
-  "aliases": [],
-  "species": "human",
-  "gender": "",
-  "pronouns": "",
-  "role": "",
-  "age": 0,
-  "status": "alive",
-  "location": "",
-  "description": "Auto-scaffolded. First mentioned: \"He has still not seen Emeka. What he has seen is the drone, and the relay light blinking amber at Brisa's neural jack\"",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0,
-      "ideal": 0,
-      "id": 0,
-      "shadow": 0,
-      "mask": 0,
-      "ghost": 0
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [
-    {
-      "name": "Brisa and Ash",
-      "type": "operates drones remotely in support",
-      "description": "operates drones remotely in support of Brisa and Ash",
-      "emotional_core": "",
-      "story_tension": ""
-    },
-    {
-      "name": "",
-      "type": "communicates through Brisa's neural jack relay",
-      "description": "communicates through Brisa's neural jack relay",
-      "emotional_core": "",
-      "story_tension": ""
-    },
-    {
-      "name": "",
-      "type": "has an intelligence network that was compromised from inside",
-      "description": "has an intelligence network that was compromised from inside",
-      "emotional_core": "",
-      "story_tension": ""
-    },
-    {
-      "name": "",
-      "type": "cross-references residential registries and ACS contractor data",
-      "description": "cross-references residential registries and ACS contractor data",
-      "emotional_core": "",
-      "story_tension": ""
-    },
-    {
-      "name": "",
-      "type": "pulls drone net north toward Escanaba to cover the block",
-      "description": "pulls drone net north toward Escanaba to cover the block",
-      "emotional_core": "",
-      "story_tension": ""
-    }
-  ],
-  "story_hooks": [],
-  "narrative_function": "",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": []
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {},
-  "operating_territory": {
-    "home_turf": "",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "auto-scaffolded",
-    "needs-review"
-  ],
-  "physical_description": {
-    "heritage": "",
-    "height_cm": 0,
-    "weight_kg": 0,
-    "build": "",
-    "hair_color": "",
-    "hair_style": "",
-    "hair_length": "",
-    "eye_color": "",
-    "skin_tone": "",
-    "complexion": "",
-    "distinguishing_marks": [],
-    "visible_augmentations": "",
-    "posture_movement": "",
-    "clothing_style": ""
-  },
-  "image_prompt": "",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {},
-  "ancestry_detail": {},
-  "neural_abilities": []
+﻿{
+    "id":  "019db318e3b87203998ae0bd84554a31",
+    "rating":  0,
+    "vote_count":  0,
+    "type":  "character",
+    "name":  "Emeka",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "",
+    "pronouns":  "",
+    "role":  "",
+    "age":  0,
+    "status":  "alive",
+    "location":  "",
+    "description":  "Auto-scaffolded. First mentioned: \"He has still not seen Emeka. What he has seen is the drone, and the relay light blinking amber at Brisa\u0027s neural jack\"",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Brisa and Ash",
+                              "type":  "operates drones remotely in support",
+                              "description":  "operates drones remotely in support of Brisa and Ash",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          },
+                          {
+                              "name":  "",
+                              "type":  "communicates through Brisa\u0027s neural jack relay",
+                              "description":  "communicates through Brisa\u0027s neural jack relay",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          },
+                          {
+                              "name":  "",
+                              "type":  "has an intelligence network that was compromised from inside",
+                              "description":  "has an intelligence network that was compromised from inside",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          },
+                          {
+                              "name":  "",
+                              "type":  "cross-references residential registries and ACS contractor data",
+                              "description":  "cross-references residential registries and ACS contractor data",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          },
+                          {
+                              "name":  "",
+                              "type":  "pulls drone net north toward Escanaba to cover the block",
+                              "description":  "pulls drone net north toward Escanaba to cover the block",
+                              "emotional_core":  "",
+                              "story_tension":  ""
+                          }
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+
+                   },
+    "operating_territory":  {
+                                "home_turf":  "",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "auto-scaffolded",
+                 "needs-review"
+             ],
+    "physical_description":  {
+                                 "heritage":  "",
+                                 "height_cm":  0,
+                                 "weight_kg":  0,
+                                 "build":  "",
+                                 "hair_color":  "",
+                                 "hair_style":  "",
+                                 "hair_length":  "",
+                                 "eye_color":  "",
+                                 "skin_tone":  "",
+                                 "complexion":  "",
+                                 "distinguishing_marks":  [
+
+                                                          ],
+                                 "visible_augmentations":  "",
+                                 "posture_movement":  "",
+                                 "clothing_style":  ""
+                             },
+    "image_prompt":  "",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+
+                         },
+    "ancestry_detail":  {
+
+                        },
+    "neural_abilities":  [
+
+                         ]
 }

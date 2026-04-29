@@ -1,345 +1,358 @@
-{
-  "id": "019d6143a5a9709f9cacfd9193c0b7dc",
-  "type": "character",
-  "name": "Aaliya Árnason-Sengupta",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Long-range precision fire specialist — sniper",
-  "age": 58,
-  "status": "active",
-  "location": "The Overhang — residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
-  "description": "Aaliya Árnason-Sengupta is lean and angular, all sharp edges and visible tension. At 58, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a sniper out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Aaliya Árnason-Sengupta describe her as a precision instrument — point her at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.17,
-      "ideal": 0.86,
-      "id": 0.93,
-      "shadow": 0.33,
-      "mask": 0.91,
-      "ghost": 0.57
-    },
-    "core_fears": [
-      "That they're fundamentally alone and connection is just a vulnerability",
-      "Being captured alive — death is preferable to corporate interrogation",
-      "Becoming obsolete as augmentation technology outpaces their chrome"
-    ],
-    "core_desires": [
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "To matter to someone for who they are, not what they can do"
-    ],
-    "coping_mechanisms": [
-      "Maintains weapons obsessively — cleaning guns is meditation",
-      "Isolates — retreats into their space when overwhelmed, emerges only for work",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat"
-    ],
-    "blind_spots": [
-      "Cannot accept help without interpreting it as leverage",
-      "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
-      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
-    ],
-    "secret": "Alper Vega-Acheampong murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
-  },
-  "speech_patterns": {
-    "vocabulary": "the Gray Zone street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
-    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
-    "verbal_tics": [
-      "Ends statements with 'yeah?' — not a question, a dare",
-      "Calls everyone 'friend' — the warmth varies from genuine to threatening"
-    ],
-    "example_lines": [
-      "\"Patience is the weapon. The rifle is just the delivery system.\"",
-      "\"At this distance, the target is already dead. They just don't know it yet.\"",
-      "\"One shot, one outcome. Everything else is theater.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Alper Vega-Acheampong's reputation — and a price for silence",
-    "A dead drop Alper Vega-Acheampong maintains is found and cleaned out — whoever did it now has leverage",
-    "Alper Vega-Acheampong intercepts intelligence about a threat to their district and must decide between profit and protection"
-  ],
-  "narrative_function": "Alper Vega-Acheampong is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
-  "augmentations": "Smartgun link in right forearm — interfaces directly with compatible weapons. Smartgun link in right forearm — interfaces directly with compatible weapons",
-  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Independent — known in Old Harbor circles",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 9
-      },
-      "agility": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 6
-      },
-      "endurance": {
-        "base": 3,
-        "augmented": 1,
-        "effective": 8
-      },
-      "reflexes": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 10
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 9
-      },
-      "perception": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 10
-      },
-      "willpower": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 6
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 6
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 9
-      },
-      "intimidation": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 7
-      },
-      "deception": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 8
-      },
-      "empathy": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.26,
-      "caution": 0.98,
-      "loyalty": 0.71,
-      "greed": 0.29,
-      "empathy": 0.43
-    },
-    "drives": [
-      "survival",
-      "loyalty",
-      "money"
-    ],
-    "thresholds": {
-      "pain": 6,
-      "stress": 3,
-      "loyalty_break": 9
-    },
-    "strengths": [
-      "technical expertise with augmentation systems",
-      "strategic thinking under pressure",
-      "multilingual — speaks 4+ languages fluently"
-    ],
-    "weaknesses": [
-      "poor impulse control in specific triggers",
-      "grudge-holding that compromises rational decision-making"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "sniper",
-      "tier-2",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Always verifies target identity independently before lethal contracts"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
-    },
-    "contradictions": [
-      "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
-      "Preaches independence but is desperate for approval from people they respect",
-      "Projects confidence but makes decisions from a foundation of fear they've never examined"
-    ],
-    "habits": [
-      "Never drinks anything they didn't see poured or open themselves",
-      "Maintains a dead drop with emergency supplies in three separate districts",
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
-    ],
-    "breaking_points": [
-      "Discovering their employer deliberately sent them into a death trap",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized",
-      "Losing their primary augmentation — the one that defines their professional identity"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Smartgun link in right forearm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
-      "replaces": ""
-    },
-    {
-      "name": "Smartgun link in right forearm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Sniper Mind": 0.7,
-    "Ghost": 0.7,
-    "Analyst": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Overhang",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Baptism' Electrified Water Cannon"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ironveil Canopy",
-    "Chicago",
-    "Slagworks Industrial"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Southeast Asian dominant (48.8%) blended with South Asian (44.2%) and Central Asian (7.0%) ancestry. The genetic combination creates refined intermediate phenotypic features — high, defined cheekbones and subtle eye shape from Southeast Asian genetics, warmed by the deeper skin tones and facial structure of South Asian heritage, with Central Asian bone structure adding subtle angularity to the jaw and face.",
-    "height_cm": 172,
-    "weight_kg": 58,
-    "build": "Lean and angular with visible musculature from decades of weapon handling and sustained physical discipline. No excess body fat. Shoulders slightly narrower than average, but corded with functional strength.",
-    "hair_color": "Dark brown with silver streaking at temples and along the left side",
-    "hair_style": "Pulled back in a functional braid, often wrapped with synthetic cord for field work",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown, naturally warm but hardened by professional distance",
-    "skin_tone": "Warm medium to medium-deep brown with golden undertones — the rich, even tone characteristic of Southeast and South Asian heritage. Sun damage from rooftop work creates irregular bronze freckling across cheekbones and shoulders, giving the skin a textured, lived-in appearance.",
-    "complexion": "Weathered face with deep lines around the eyes and mouth from squinting through scopes and years of stress. Jaw is strong and prominent with subtle Central Asian angularity. High, defined cheekbones show Southeast Asian influence. Subtle facial structure reflects South Asian heritage in the bridge of the nose and overall facial proportions. Minimal grooming beyond functional necessity — no cosmetics, no jewelry.",
-    "distinguishing_marks": [
-      "Burn scar along the inside of her left forearm, pale and textured, approximately 8cm long — old weapons accident",
-      "Thin scar tissue tracing her right collarbone, barely visible but sensitive to pressure — shrapnel from a contract gone wrong",
-      "Calluses on her right hand are severe, especially on the trigger finger and index finger knuckle — decades of weapon use"
-    ],
-    "visible_augmentations": "Chrome smartgun link interface embedded in right forearm, running from wrist to mid-forearm. The integration is clean but deliberately visible — brushed titanium faceplate with thin LED status indicators (amber/red when active). No attempt to conceal it. The chrome contrasts sharply with her natural skin tone.",
-    "posture_movement": "Economical and deliberate. She doesn't waste motion. When at rest, her right arm rests naturally at her side with the augmented forearm slightly forward — a habit from weapon readiness. Eyes constantly scanning environments. Tense baseline, but controlled. Moves like someone who has learned that hesitation dies first.",
-    "clothing_style": "Tier 4 utilitarian — function over aesthetics. Weathered black tactical jacket with reinforced shoulders and multiple chest pockets (Resilience brand, modular). Matte gray undershirt, long-sleeved to minimize the visibility of the smartgun link when she chooses discretion. Cargo pants in dark charcoal with thigh and calf pockets (ammunition, tools, dead drops). Steel-toed boots, scuffed and re-soled twice. A thin synthwool scarf worn loose around the neck — part camouflage, part utility. No visible insignia or gang markers; anonymity is the brand."
-  },
-  "image_prompt": "Aaliya Árnason-Sengupta, lean Southeast and South Asian woman, 172cm tall with defined high cheekbones and angular Central Asian jaw structure, warm medium-deep brown skin with bronze freckling from sun damage. Dark brown eyes with professional hardness, silver-streaked dark brown hair pulled back in functional braid. Severe facial weathering from decades of weapons work, deep lines around eyes and mouth. Dark tactical outfit: black reinforced jacket, gray long-sleeved undershirt, dark charcoal cargo pants, steel-toed scuffed boots, loose synthwool scarf. Chrome smartgun link interface embedded in right forearm — brushed titanium faceplate with LED indicators. Pale burn scar on left inner forearm, thin scar tissue on right collarbone, severe calluses on right hand. Economical posture, tense baseline, eyes scanning. Rooftop night setting, amber and red LED glow from augmentation, GLMZ Great Lakes Metropolitan Zone, cinematic lighting, documentary realism --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 48.8,
-    "South Asian": 44.2,
-    "Central Asian": 7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Indonesian": {
-        "Javanese": 19.7
-      },
-      "Cambodian": {
-        "Khmer": 29.1
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 8.9
-      },
-      "Nepali": {
-        "Nepali": 35.3
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Mongolian": 3.1,
-        "Buryat": 0.5
-      },
-      "Turkic": {
-        "Uzbek": 1.6
-      },
-      "Iranian Central": {
-        "Hazara": 1.8
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5a9709f9cacfd9193c0b7dc",
+    "type":  "character",
+    "name":  "Aaliya Ãrnason-Sengupta",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Long-range precision fire specialist â€” sniper",
+    "age":  58,
+    "status":  "active",
+    "location":  "The Overhang â€” residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
+    "description":  "Aaliya Ãrnason-Sengupta is lean and angular, all sharp edges and visible tension. At 58, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible â€” smartgun link in right forearm â€” interfaces directly with compatible weapons â€” and she makes no effort to hide it.\n\nShe came up through the Gray Zone\u0027s informal apprentice system, learning the trade from runners who didn\u0027t survive long enough to see her surpass them. She works as a sniper out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Aaliya Ãrnason-Sengupta describe her as a precision instrument â€” point her at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That they\u0027re fundamentally alone and connection is just a vulnerability",
+                                          "Being captured alive â€” death is preferable to corporate interrogation",
+                                          "Becoming obsolete as augmentation technology outpaces their chrome"
+                                      ],
+                       "core_desires":  [
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail",
+                                            "To matter to someone for who they are, not what they can do"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Maintains weapons obsessively â€” cleaning guns is meditation",
+                                                 "Isolates â€” retreats into their space when overwhelmed, emerges only for work",
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat"
+                                             ],
+                       "blind_spots":  [
+                                           "Cannot accept help without interpreting it as leverage",
+                                           "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
+                                           "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care"
+                                       ],
+                       "secret":  "Alper Vega-Acheampong murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "the Gray Zone street dialect â€” layered slang, rhythm-heavy, half the meaning is in the cadence.",
+                            "cadence":  "Flowing and unhurried â€” talks like someone who has never been interrupted and doesn\u0027t expect to be.",
+                            "verbal_tics":  [
+                                                "Ends statements with \u0027yeah?\u0027 â€” not a question, a dare",
+                                                "Calls everyone \u0027friend\u0027 â€” the warmth varies from genuine to threatening"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Patience is the weapon. The rifle is just the delivery system.\"",
+                                                  "\"At this distance, the target is already dead. They just don\u0027t know it yet.\"",
+                                                  "\"One shot, one outcome. Everything else is theater.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former associate resurfaces with evidence that could destroy Alper Vega-Acheampong\u0027s reputation â€” and a price for silence",
+                        "A dead drop Alper Vega-Acheampong maintains is found and cleaned out â€” whoever did it now has leverage",
+                        "Alper Vega-Acheampong intercepts intelligence about a threat to their district and must decide between profit and protection"
+                    ],
+    "narrative_function":  "Alper Vega-Acheampong is a pressure point â€” the kind of character whose choices ripple outward. When she makes a decision, other people\u0027s lives change. That weight is the engine of her stories.",
+    "augmentations":  "Smartgun link in right forearm â€” interfaces directly with compatible weapons. Smartgun link in right forearm â€” interfaces directly with compatible weapons",
+    "daily_life":  "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+    "affiliation":  "Independent â€” known in Old Harbor circles",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  6,
+                                                    "augmented":  3,
+                                                    "effective":  9
+                                                },
+                                   "agility":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  6
+                                               },
+                                   "endurance":  {
+                                                     "base":  3,
+                                                     "augmented":  1,
+                                                     "effective":  8
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  5,
+                                                    "augmented":  2,
+                                                    "effective":  10
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  5,
+                                                      "augmented":  2,
+                                                      "effective":  9
+                                                  },
+                                 "perception":  {
+                                                    "base":  7,
+                                                    "augmented":  0,
+                                                    "effective":  10
+                                                },
+                                 "willpower":  {
+                                                   "base":  3,
+                                                   "augmented":  3,
+                                                   "effective":  6
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  6
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  6,
+                                                  "augmented":  1,
+                                                  "effective":  9
+                                              },
+                                 "intimidation":  {
+                                                      "base":  5,
+                                                      "augmented":  0,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  4,
+                                                   "augmented":  3,
+                                                   "effective":  8
+                                               },
+                                 "empathy":  {
+                                                 "base":  4,
+                                                 "augmented":  3,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.26,
+                                      "caution":  0.98,
+                                      "loyalty":  0.71,
+                                      "greed":  0.29,
+                                      "empathy":  0.43
+                                  },
+                  "drives":  [
+                                 "survival",
+                                 "loyalty",
+                                 "money"
+                             ],
+                  "thresholds":  {
+                                     "pain":  6,
+                                     "stress":  3,
+                                     "loyalty_break":  9
+                                 },
+                  "strengths":  [
+                                    "technical expertise with augmentation systems",
+                                    "strategic thinking under pressure",
+                                    "multilingual â€” speaks 4+ languages fluently"
+                                ],
+                  "weaknesses":  [
+                                     "poor impulse control in specific triggers",
+                                     "grudge-holding that compromises rational decision-making"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "sniper",
+                               "tier-2",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Always verifies target identity independently before lethal contracts"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more talkative, working through scenarios verbally.",
+                                                "medium":  "Physical agitation â€” pacing, fidgeting, compulsive equipment checks.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
+                                            },
+                       "contradictions":  [
+                                              "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined"
+                                          ],
+                       "habits":  [
+                                      "Never drinks anything they didn\u0027t see poured or open themselves",
+                                      "Maintains a dead drop with emergency supplies in three separate districts",
+                                      "Wears the same item of clothing for luck â€” a scarf, a glove, a specific pair of boots",
+                                      "Arrives fifteen minutes early to everything â€” late once, nearly died, never again"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering their employer deliberately sent them into a death trap",
+                                               "Being forced to harm a civilian â€” collateral damage that can\u0027t be rationalized",
+                                               "Losing their primary augmentation â€” the one that defines their professional identity"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Smartgun link in right forearm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Smartgun link in right forearm â€” interfaces directly with compatible weapons",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Smartgun link in right forearm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "Smartgun link in right forearm â€” interfaces directly with compatible weapons",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Sniper Mind":  0.7,
+                       "Ghost":  0.7,
+                       "Analyst":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Overhang",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Baptism\u0027 Electrified Water Cannon"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Ironveil Canopy",
+                             "Chicago",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian dominant (48.8%) blended with South Asian (44.2%) and Central Asian (7.0%) ancestry. The genetic combination creates refined intermediate phenotypic features â€” high, defined cheekbones and subtle eye shape from Southeast Asian genetics, warmed by the deeper skin tones and facial structure of South Asian heritage, with Central Asian bone structure adding subtle angularity to the jaw and face.",
+                                 "height_cm":  172,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and angular with visible musculature from decades of weapon handling and sustained physical discipline. No excess body fat. Shoulders slightly narrower than average, but corded with functional strength.",
+                                 "hair_color":  "Dark brown with silver streaking at temples and along the left side",
+                                 "hair_style":  "Pulled back in a functional braid, often wrapped with synthetic cord for field work",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown, naturally warm but hardened by professional distance",
+                                 "skin_tone":  "Warm medium to medium-deep brown with golden undertones â€” the rich, even tone characteristic of Southeast and South Asian heritage. Sun damage from rooftop work creates irregular bronze freckling across cheekbones and shoulders, giving the skin a textured, lived-in appearance.",
+                                 "complexion":  "Weathered face with deep lines around the eyes and mouth from squinting through scopes and years of stress. Jaw is strong and prominent with subtle Central Asian angularity. High, defined cheekbones show Southeast Asian influence. Subtle facial structure reflects South Asian heritage in the bridge of the nose and overall facial proportions. Minimal grooming beyond functional necessity â€” no cosmetics, no jewelry.",
+                                 "distinguishing_marks":  [
+                                                              "Burn scar along the inside of her left forearm, pale and textured, approximately 8cm long â€” old weapons accident",
+                                                              "Thin scar tissue tracing her right collarbone, barely visible but sensitive to pressure â€” shrapnel from a contract gone wrong",
+                                                              "Calluses on her right hand are severe, especially on the trigger finger and index finger knuckle â€” decades of weapon use"
+                                                          ],
+                                 "visible_augmentations":  "Chrome smartgun link interface embedded in right forearm, running from wrist to mid-forearm. The integration is clean but deliberately visible â€” brushed titanium faceplate with thin LED status indicators (amber/red when active). No attempt to conceal it. The chrome contrasts sharply with her natural skin tone.",
+                                 "posture_movement":  "Economical and deliberate. She doesn\u0027t waste motion. When at rest, her right arm rests naturally at her side with the augmented forearm slightly forward â€” a habit from weapon readiness. Eyes constantly scanning environments. Tense baseline, but controlled. Moves like someone who has learned that hesitation dies first.",
+                                 "clothing_style":  "Tier 4 utilitarian â€” function over aesthetics. Weathered black tactical jacket with reinforced shoulders and multiple chest pockets (Resilience brand, modular). Matte gray undershirt, long-sleeved to minimize the visibility of the smartgun link when she chooses discretion. Cargo pants in dark charcoal with thigh and calf pockets (ammunition, tools, dead drops). Steel-toed boots, scuffed and re-soled twice. A thin synthwool scarf worn loose around the neck â€” part camouflage, part utility. No visible insignia or gang markers; anonymity is the brand."
+                             },
+    "image_prompt":  "Aaliya Ãrnason-Sengupta, lean Southeast and South Asian woman, 172cm tall with defined high cheekbones and angular Central Asian jaw structure, warm medium-deep brown skin with bronze freckling from sun damage. Dark brown eyes with professional hardness, silver-streaked dark brown hair pulled back in functional braid. Severe facial weathering from decades of weapons work, deep lines around eyes and mouth. Dark tactical outfit: black reinforced jacket, gray long-sleeved undershirt, dark charcoal cargo pants, steel-toed scuffed boots, loose synthwool scarf. Chrome smartgun link interface embedded in right forearm â€” brushed titanium faceplate with LED indicators. Pale burn scar on left inner forearm, thin scar tissue on right collarbone, severe calluses on right hand. Economical posture, tense baseline, eyes scanning. Rooftop night setting, amber and red LED glow from augmentation, GLMZ Great Lakes Metropolitan Zone, cinematic lighting, documentary realism --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  48.8,
+                             "South Asian":  44.2,
+                             "Central Asian":  7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Javanese":  19.7
+                                                                   },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  29.1
+                                                                  }
+                                                },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  8.9
+                                                                },
+                                                "Nepali":  {
+                                                               "Nepali":  35.3
+                                                           }
+                                            },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  3.1,
+                                                                   "Buryat":  0.5
+                                                               },
+                                                  "Turkic":  {
+                                                                 "Uzbek":  1.6
+                                                             },
+                                                  "Iranian Central":  {
+                                                                          "Hazara":  1.8
+                                                                      }
+                                              }
+                        },
+    "tier":  "2"
 }

@@ -1,352 +1,365 @@
-{
-  "id": "019d6143a6227868890bfb995233b364",
-  "type": "character",
-  "name": "Cassandra Jung",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "High-risk package and data transport — courier",
-  "age": 35,
-  "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures, near Milwaukee and North Ave",
-  "description": "Cassandra Jung are slight and easy to overlook, which is exactly the point. At 35, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a courier out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nCassandra Jung operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.24,
-      "ideal": 0.75,
-      "id": 0.37,
-      "shadow": 0.69,
-      "mask": 0.82,
-      "ghost": 0.21
-    },
-    "core_fears": [
-      "Dying alone in some alley and nobody noticing for weeks",
-      "Going cyberpsycho — losing the boundary between human and machine",
-      "Being replaced — younger, faster, cheaper runners coming up behind them"
-    ],
-    "core_desires": [
-      "The perfect run — one job so clean it becomes legend",
-      "A crew worth trusting — people who stay when the shooting starts",
-      "To prove everyone who dismissed them catastrophically wrong"
-    ],
-    "coping_mechanisms": [
-      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
-      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Exercises compulsively — the body must be ready, always"
-    ],
-    "blind_spots": [
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
-      "Overestimates their own abilities in situations outside their specialty",
-      "Cannot recognize when they're being manipulated by someone who genuinely seems to care"
-    ],
-    "secret": "Hadiya Karlsen-Sow betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
-  },
-  "speech_patterns": {
-    "vocabulary": "the Gray Zone street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
-    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
-    "verbal_tics": [
-      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks",
-      "Uses technical jargon for everything, including emotions"
-    ],
-    "example_lines": [
-      "\"I don't look inside the package. I don't ask about the package. I deliver the package.\"",
-      "\"Speed is a skill. Knowing when to slow down is wisdom. I sell both.\"",
-      "\"This route has three checkpoints and a kill zone. I'll be there in twenty minutes.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Hadiya Karlsen-Sow's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
-    "A Tier 4 executive offers Hadiya Karlsen-Sow a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "Hadiya Karlsen-Sow intercepts intelligence about a threat to their district and must decide between profit and protection"
-  ],
-  "narrative_function": "Hadiya Karlsen-Sow functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes. Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Freelance — multi-district operator; The Undertow",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 4
-      },
-      "agility": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 4
-      },
-      "reflexes": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 7
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 4
-      },
-      "perception": {
-        "base": 7,
-        "augmented": 0,
-        "effective": 8
-      },
-      "willpower": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 8
-      },
-      "technical": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 6
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 9
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 5
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 4
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 7
-      }
-    },
-    "personality": {
-      "aggression": 0.88,
-      "caution": 0.13,
-      "loyalty": 0.57,
-      "greed": 0.44,
-      "empathy": 0.2
-    },
-    "drives": [
-      "freedom",
-      "survival",
-      "money"
-    ],
-    "thresholds": {
-      "pain": 9,
-      "stress": 5,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "encyclopedic knowledge of GLMZ infrastructure",
-      "pain tolerance beyond normal limits",
-      "expert marksman"
-    ],
-    "weaknesses": [
-      "poor impulse control in specific triggers",
-      "grudge-holding that compromises rational decision-making",
-      "old injury that flares under specific conditions"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "courier",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Values loyalty intensely but has betrayed someone in the past to survive",
-      "Insists they work alone but performs noticeably better in a team",
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
-    ],
-    "habits": [
-      "Checks exits within 10 seconds of entering any room",
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Carries a specific caliber round as a lucky charm — has never fired it"
-    ],
-    "breaking_points": [
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
-      "Being forced to choose between a crew member and the mission — and choosing wrong",
-      "Being publicly exposed — name, face, address, all of it blown"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Hydraulic joints in knees and elbows",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
-      "replaces": ""
-    },
-    {
-      "name": "Bone lacing",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Bone lacing — titanium mesh throughout skeleton, increases durability and striking power",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9,
-    "Networker": 0.7,
-    "Manipulator": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Street Custom 'Molotov Standard' Incendiary Bottle"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Narrows Compact",
-    "The Nearfield",
-    "Ringo DV-4 'Courier'",
-    "Compass Rose",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Pan-Asian ancestry with dominant Southeast Asian (40.1%) and East Asian (39.3%) genetics, complemented by South Asian (10.4%) and Middle Eastern (10.2%) components. This blend creates a distinctive phenotype: Southeast Asian facial structure with moderate, well-defined cheekbones and a naturally tapered jawline, refined by East Asian angularity. South Asian and Middle Eastern ancestry adds warmth and subtle fullness to the lower face and lips, creating a balanced fusion of soft and angular features. The orbital structure shows the characteristic width of Southeast Asian genetics, while the nasal bridge reflects East Asian refinement with a slight broadening from South Asian heritage.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean and wiry with functional muscle density concentrated in shoulders and core — built for endurance and rapid movement rather than bulk. The titanium bone lacing adds structural rigidity without visible mass.",
-    "hair_color": "Dark brown with ash-gray streaking at temples",
-    "hair_style": "Pulled back in a tight, utilitarian braid or topknot",
-    "hair_length": "Medium",
-    "eye_color": "Amber-brown, alert and calculating",
-    "skin_tone": "Warm medium-deep bronze — characteristic of the Southeast and East Asian genetic blend with enriched depth from South Asian and Middle Eastern components. Sun-weathered from years of outdoor courier work, with natural warmth that deepens in shadows and highlights the complexity of the ancestral mix.",
-    "complexion": "Moderate, well-defined cheekbones with Southeast Asian prominence, refined by East Asian influence creating subtle geometric definition. The jawline is angular yet softened by the natural fullness contributed by South Asian and Middle Eastern ancestry, particularly around the lower jaw and chin. Orbital structure shows Southeast Asian width with East Asian refinement. Skin shows the wear of someone who prioritizes function over grooming — clean but not pampered. A thin scar traces the right temple, barely visible unless light catches it directly. Natural facial planes display enhanced definition across cheekbones and jawline, with warm undertones throughout.",
-    "distinguishing_marks": [
-      "Surgical scar along the right collarbone where hydraulic elbow joint was installed — thin white line, roughly 8cm",
-      "Impact bruising across knuckles and forearms in various stages of healing — occupational hazard",
-      "Faint tattoo on inner left wrist: a circuit pattern in matte black ink, minimalist design, approximately 3cm across",
-      "Old burn scar across left shoulder blade, roughly 5cm diameter — circular, predates GLMZ arrival"
-    ],
-    "visible_augmentations": "Chrome hydraulic joints visible at elbows and knees — polished steel with functional pistons, deliberately exposed rather than concealed. The chrome bears micro-scratches and toolmarks suggesting field maintenance. Bone lacing is not externally visible but creates subtle geometric definition under skin, particularly across forearms and shins when tensed.",
-    "posture_movement": "Moves with economic precision — no wasted motion. Stance is naturally grounded and balanced, weight distributed for quick directional shifts. When at rest, maintains situational awareness; eyes track movement peripherally. Transitions between 'civilian mode' and 'operational mode' are subtle but complete — the former involving deliberate slouch and disengagement, the latter a tensile readiness that radiates threat.",
-    "clothing_style": "Tier 3-4 practical hybrid: reinforced cargo pants in charcoal with articulated knee panels, form-fitting compression shirt under a weathered synthetic leather jacket with asymmetric pockets. Low-profile runner boots with grip soles and ankle support. Minimalist accessories — a wrist-mounted data pad with cracked screen protector, a pair of tactical gloves usually tucked in back pocket. No branding or corporate affiliation markers. Clothing shows regular maintenance but deliberate lack of newness — designed for function and anonymity, not status."
-  },
-  "image_prompt": "Cassandra Jung, neo-noir courier, year 2226. Portrait of a 168cm lean courier with warm medium-deep bronze skin blending Southeast Asian, East Asian, South Asian and Middle Eastern ancestry. Moderate prominent cheekbones, angular yet softened jawline, amber-brown calculating eyes. Dark brown hair with ash-gray temples pulled back in tight braid. Visible chrome hydraulic joints at elbows and knees with micro-scratches. Surgical scar on right collarbone, thin scar on right temple. Form-fitting compression shirt under weathered synthetic leather jacket, charcoal cargo pants, runner boots. Circuit tattoo on inner left wrist. Posture radiates tensile readiness. Neon-lit industrial setting, cool blue and amber lighting catching chrome augmentations and facial planes. Atmospheric megacityscape background. Alert, calculating expression. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 40.1,
-    "East Asian": 39.3,
-    "South Asian": 10.4,
-    "Middle Eastern": 10.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Filipino": {
-        "Cebuano": 23.8,
-        "Waray": 16.3
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Hakka": 13.5,
-        "Shanghainese": 7.8
-      },
-      "Korean": {
-        "Korean": 18
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 5.1
-      },
-      "Pakistani": {
-        "Pashtun": 4.1
-      },
-      "Sri Lankan": {
-        "Sinhalese": 1.2
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Palestinian": 5.7,
-        "Lebanese": 4.5
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6227868890bfb995233b364",
+    "type":  "character",
+    "name":  "Cassandra Jung",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "High-risk package and data transport â€” courier",
+    "age":  35,
+    "status":  "active",
+    "location":  "The Narrows â€” cramped residential corridors between megastructures, near Milwaukee and North Ave",
+    "description":  "Cassandra Jung are slight and easy to overlook, which is exactly the point. At 35, they have the kind of face that changes depending on the light â€” trustworthy in daylight, dangerous after dark. The chrome is visible â€” hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes â€” and they make no effort to hide it.\n\nThey arrived in GLMZ six years ago with nothing but chrome and debts, and have been working off both ever since. They work as a courier out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nCassandra Jung operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Dying alone in some alley and nobody noticing for weeks",
+                                          "Going cyberpsycho â€” losing the boundary between human and machine",
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them"
+                                      ],
+                       "core_desires":  [
+                                            "The perfect run â€” one job so clean it becomes legend",
+                                            "A crew worth trusting â€” people who stay when the shooting starts",
+                                            "To prove everyone who dismissed them catastrophically wrong"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Denial â€” nothing is wrong, everything is fine, they are fine, shut up",
+                                                 "Substances â€” stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+                                                 "Exercises compulsively â€” the body must be ready, always"
+                                             ],
+                       "blind_spots":  [
+                                           "Mistakes pattern recognition for wisdom â€” sees connections that aren\u0027t there",
+                                           "Overestimates their own abilities in situations outside their specialty",
+                                           "Cannot recognize when they\u0027re being manipulated by someone who genuinely seems to care"
+                                       ],
+                       "secret":  "Hadiya Karlsen-Sow betrayed their previous crew to survive a corporate raid. The crew didn\u0027t survive. Nobody in GLMZ knows this."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "the Gray Zone street dialect â€” layered slang, rhythm-heavy, half the meaning is in the cadence.",
+                            "cadence":  "Measured and deliberate â€” pauses before important words for emphasis.",
+                            "verbal_tics":  [
+                                                "Uses \u0027we\u0027 instead of \u0027I\u0027 â€” either royal or dissociative, nobody asks",
+                                                "Uses technical jargon for everything, including emotions"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I don\u0027t look inside the package. I don\u0027t ask about the package. I deliver the package.\"",
+                                                  "\"Speed is a skill. Knowing when to slow down is wisdom. I sell both.\"",
+                                                  "\"This route has three checkpoints and a kill zone. I\u0027ll be there in twenty minutes.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Hadiya Karlsen-Sow\u0027s augmentations begin malfunctioning in the field â€” sabotage or degradation, and either answer is bad",
+                        "A Tier 4 executive offers Hadiya Karlsen-Sow a permanent position â€” the pay is obscene and the strings are invisible until they tighten",
+                        "Hadiya Karlsen-Sow intercepts intelligence about a threat to their district and must decide between profit and protection"
+                    ],
+    "narrative_function":  "Hadiya Karlsen-Sow functions as a connector â€” their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+    "augmentations":  "Hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes. Bone lacing â€” titanium mesh throughout skeleton, increases durability and striking power",
+    "daily_life":  "Between contracts, maintains a cover identity â€” mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+    "affiliation":  "Freelance â€” multi-district operator; The Undertow",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  5,
+                                                    "augmented":  3,
+                                                    "effective":  4
+                                                },
+                                   "agility":  {
+                                                   "base":  6,
+                                                   "augmented":  1,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  4,
+                                                     "augmented":  3,
+                                                     "effective":  4
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  5,
+                                                    "augmented":  1,
+                                                    "effective":  7
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  6,
+                                                      "augmented":  0,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  7,
+                                                    "augmented":  0,
+                                                    "effective":  8
+                                                },
+                                 "willpower":  {
+                                                   "base":  7,
+                                                   "augmented":  1,
+                                                   "effective":  8
+                                               },
+                                 "technical":  {
+                                                   "base":  3,
+                                                   "augmented":  2,
+                                                   "effective":  6
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  0,
+                                                  "effective":  9
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  2,
+                                                      "effective":  5
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  4
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  2,
+                                                 "effective":  7
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.88,
+                                      "caution":  0.13,
+                                      "loyalty":  0.57,
+                                      "greed":  0.44,
+                                      "empathy":  0.2
+                                  },
+                  "drives":  [
+                                 "freedom",
+                                 "survival",
+                                 "money"
+                             ],
+                  "thresholds":  {
+                                     "pain":  9,
+                                     "stress":  5,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "encyclopedic knowledge of GLMZ infrastructure",
+                                    "pain tolerance beyond normal limits",
+                                    "expert marksman"
+                                ],
+                  "weaknesses":  [
+                                     "poor impulse control in specific triggers",
+                                     "grudge-holding that compromises rational decision-making",
+                                     "old injury that flares under specific conditions"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "courier",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Values loyalty intensely but has betrayed someone in the past to survive",
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+                                          ],
+                       "habits":  [
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Carries a specific caliber round as a lucky charm â€” has never fired it"
+                                  ],
+                       "breaking_points":  [
+                                               "Complete isolation â€” cut off from network, contacts, and purpose simultaneously",
+                                               "Being forced to choose between a crew member and the mission â€” and choosing wrong",
+                                               "Being publicly exposed â€” name, face, address, all of it blown"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Hydraulic joints in knees and elbows",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Hydraulic joints in knees and elbows â€” absorbs falls, amplifies strikes",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Bone lacing",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Bone lacing â€” titanium mesh throughout skeleton, increases durability and striking power",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9,
+                       "Networker":  0.7,
+                       "Manipulator":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027",
+                            "Street Custom \u0027Molotov Standard\u0027 Incendiary Bottle"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Narrows Compact",
+                             "The Nearfield",
+                             "Ringo DV-4 \u0027Courier\u0027",
+                             "Compass Rose",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Pan-Asian ancestry with dominant Southeast Asian (40.1%) and East Asian (39.3%) genetics, complemented by South Asian (10.4%) and Middle Eastern (10.2%) components. This blend creates a distinctive phenotype: Southeast Asian facial structure with moderate, well-defined cheekbones and a naturally tapered jawline, refined by East Asian angularity. South Asian and Middle Eastern ancestry adds warmth and subtle fullness to the lower face and lips, creating a balanced fusion of soft and angular features. The orbital structure shows the characteristic width of Southeast Asian genetics, while the nasal bridge reflects East Asian refinement with a slight broadening from South Asian heritage.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and wiry with functional muscle density concentrated in shoulders and core â€” built for endurance and rapid movement rather than bulk. The titanium bone lacing adds structural rigidity without visible mass.",
+                                 "hair_color":  "Dark brown with ash-gray streaking at temples",
+                                 "hair_style":  "Pulled back in a tight, utilitarian braid or topknot",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Amber-brown, alert and calculating",
+                                 "skin_tone":  "Warm medium-deep bronze â€” characteristic of the Southeast and East Asian genetic blend with enriched depth from South Asian and Middle Eastern components. Sun-weathered from years of outdoor courier work, with natural warmth that deepens in shadows and highlights the complexity of the ancestral mix.",
+                                 "complexion":  "Moderate, well-defined cheekbones with Southeast Asian prominence, refined by East Asian influence creating subtle geometric definition. The jawline is angular yet softened by the natural fullness contributed by South Asian and Middle Eastern ancestry, particularly around the lower jaw and chin. Orbital structure shows Southeast Asian width with East Asian refinement. Skin shows the wear of someone who prioritizes function over grooming â€” clean but not pampered. A thin scar traces the right temple, barely visible unless light catches it directly. Natural facial planes display enhanced definition across cheekbones and jawline, with warm undertones throughout.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar along the right collarbone where hydraulic elbow joint was installed â€” thin white line, roughly 8cm",
+                                                              "Impact bruising across knuckles and forearms in various stages of healing â€” occupational hazard",
+                                                              "Faint tattoo on inner left wrist: a circuit pattern in matte black ink, minimalist design, approximately 3cm across",
+                                                              "Old burn scar across left shoulder blade, roughly 5cm diameter â€” circular, predates GLMZ arrival"
+                                                          ],
+                                 "visible_augmentations":  "Chrome hydraulic joints visible at elbows and knees â€” polished steel with functional pistons, deliberately exposed rather than concealed. The chrome bears micro-scratches and toolmarks suggesting field maintenance. Bone lacing is not externally visible but creates subtle geometric definition under skin, particularly across forearms and shins when tensed.",
+                                 "posture_movement":  "Moves with economic precision â€” no wasted motion. Stance is naturally grounded and balanced, weight distributed for quick directional shifts. When at rest, maintains situational awareness; eyes track movement peripherally. Transitions between \u0027civilian mode\u0027 and \u0027operational mode\u0027 are subtle but complete â€” the former involving deliberate slouch and disengagement, the latter a tensile readiness that radiates threat.",
+                                 "clothing_style":  "Tier 3-4 practical hybrid: reinforced cargo pants in charcoal with articulated knee panels, form-fitting compression shirt under a weathered synthetic leather jacket with asymmetric pockets. Low-profile runner boots with grip soles and ankle support. Minimalist accessories â€” a wrist-mounted data pad with cracked screen protector, a pair of tactical gloves usually tucked in back pocket. No branding or corporate affiliation markers. Clothing shows regular maintenance but deliberate lack of newness â€” designed for function and anonymity, not status."
+                             },
+    "image_prompt":  "Cassandra Jung, neo-noir courier, year 2226. Portrait of a 168cm lean courier with warm medium-deep bronze skin blending Southeast Asian, East Asian, South Asian and Middle Eastern ancestry. Moderate prominent cheekbones, angular yet softened jawline, amber-brown calculating eyes. Dark brown hair with ash-gray temples pulled back in tight braid. Visible chrome hydraulic joints at elbows and knees with micro-scratches. Surgical scar on right collarbone, thin scar on right temple. Form-fitting compression shirt under weathered synthetic leather jacket, charcoal cargo pants, runner boots. Circuit tattoo on inner left wrist. Posture radiates tensile readiness. Neon-lit industrial setting, cool blue and amber lighting catching chrome augmentations and facial planes. Atmospheric megacityscape background. Alert, calculating expression. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  40.1,
+                             "East Asian":  39.3,
+                             "South Asian":  10.4,
+                             "Middle Eastern":  10.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Cebuano":  23.8,
+                                                                     "Waray":  16.3
+                                                                 }
+                                                },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Hakka":  13.5,
+                                                               "Shanghainese":  7.8
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  18
+                                                          }
+                                           },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  5.1
+                                                                },
+                                                "Pakistani":  {
+                                                                  "Pashtun":  4.1
+                                                              },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  1.2
+                                                               }
+                                            },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Palestinian":  5.7,
+                                                                          "Lebanese":  4.5
+                                                                      }
+                                               }
+                        },
+    "tier":  "3"
 }

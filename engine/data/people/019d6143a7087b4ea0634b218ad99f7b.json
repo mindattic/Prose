@@ -1,331 +1,358 @@
-{
-  "id": "019d6143a7087b4ea0634b218ad99f7b",
-  "type": "character",
-  "name": "Afreen Cervantes",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Echo Hunter — salvages audio data and acoustic recordings from tunnel resonance phenomena, sells to surface collectors and archivists",
-  "age": 22,
-  "status": "active",
-  "location": "Mobile through the Blackpipe Corridor, Irkalla, and the sub-levels beneath Brewer's Spine, near sub-level access near State and Van Buren",
-  "description": "Afreen Cervantes is thin and quick and almost always in motion, her energy giving the impression of something wound very tight and vibrating at a frequency just above human hearing. She has a cat-ear mod — large, mobile, dark charcoal grey — which she got not for aesthetics but for the genuine audio advantage they provide in tunnel environments; they swivel and tilt when she's listening hard, which is most of the time. Her face is narrow and expressive beneath a band of freckles across the nose and cheeks, and her eyes have patterned irises: concentric rings of amber and black that look like a sound-wave rendered in color. Her hands are nearly always occupied — she's either holding recording equipment, taking it apart, or making something new from pieces of things that used to be other things.\n\nShe is twenty-two and carries it with both the swagger of someone who has survived the deep tunnels young and the restlessness of someone who hasn't yet figured out what she's for. Her profession is strange and specific: the tunnel networks of GLMZ have peculiar acoustic properties, and certain deep junctions resonate with decades of accumulated sound — not intelligibly, not like recordings, but as dense textural phenomena. Afreen Cervantes hunts these resonance points, captures the audio with rigs she builds herself, and processes the captures into something she sells to surface archivists, experimental composers, and ELF shrine-keepers who believe the resonances carry spiritual data. She believes none of the spiritual dimension of this work and all of the beauty of it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.5,
-      "id": 0.9,
-      "shadow": 0.3,
-      "mask": 0.4,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "Going deaf — the cat ears help but tunnel work is loud and she knows it's cumulative",
-      "The tunnel networks closing off, being blocked, being mapped and managed until there's nowhere left to discover"
-    ],
-    "core_desires": [
-      "To capture a resonance phenomenon no one has documented before — the find that proves the tunnel acoustics are something singular and worth preserving",
-      "Freedom of movement without obligation"
-    ],
-    "coping_mechanisms": [
-      "Stays in motion — stopping feels like a trap",
-      "Reviews recordings when distressed, finding comfort in organized sound"
-    ],
-    "blind_spots": [
-      "Underestimates social dynamics and clan politics in favor of physical space — tends to wander into territorial disputes because she was following an acoustic lead"
-    ],
-    "secret": "Six months ago she captured a resonance that she believes contains a coherent voice — not echo, not artifact, but something speaking in a language she doesn't recognize. She has replayed it six hundred times and has shown no one because she doesn't know what it would mean if it's real."
-  },
-  "speech_patterns": {
-    "vocabulary": "Enthusiastic and technical — acoustic terminology, equipment jargon, descriptors that are more synesthetic than precise ('the low wet sound', 'a dry click-frequency')",
-    "cadence": "Fast, with sudden pauses when something catches her audio attention mid-conversation — she'll stop, cat ears rotating, then return to the sentence",
-    "verbal_tics": [
-      "'Listen —' used to begin almost any statement she considers important",
-      "Taps surfaces rhythmically when thinking — always listening to the response"
-    ],
-    "example_lines": [
-      "'Listen — Blackpipe at junction thirty-nine is doing something new this week, a sub-bass harmonic that wasn't there two months ago. Either the substrate shifted or there's new water movement. I'd check the ceiling.'",
-      "'The surface collectors say it's art. The shrine people say it's prayer. I say it's the tunnels talking and I'm just the person holding the ear to the wall. I don't need it to be anything else.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The resonance recording with the possible voice has begun repeating with variations — as if whatever produced it is responding to her presence in the tunnels, learning her patterns",
-    "A surface archivist who's been one of her primary buyers has gone silent, and when she investigates she discovers they were using her acoustic structural data to map tunnel routes for a corporate demolition survey — making her inadvertently responsible for compromising Bore Rat settlements"
-  ],
-  "narrative_function": "Mobile information network — moves through more of the tunnel system than almost anyone else and notices everything. Delivers local color and unexpected knowledge. Potential guide or scout. Her recordings are a story hook resource: captured sounds can contain voices, events, secrets.",
-  "augmentations": "Geneware: charcoal-grey cat ears (functional audio enhancement, mobile); patterned irises (amber-black concentric rings, cosmetic). Tech: custom-built acoustic recording rig worn as a vest harness, salvaged components.",
-  "daily_life": "She sleeps irregular hours wherever the work takes her, often in the resonance chambers themselves when a recording session runs long. Eats when she remembers, trades acoustic structural data to Bore Rat clans in exchange for passage and safety.",
-  "affiliation": "Unaffiliated; maintains working relationships with several surface buyers; tolerated by Bore Rat clans for the acoustic data she provides on tunnel structural integrity",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 5,
-      "perception": 10
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 5,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 7,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 5,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": -4,
-      "assertion_deference": 2,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "echo hunter",
-      "acoustic specialist",
-      "mobile",
-      "cat-eared",
-      "tunnel wanderer"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Follow the sound first, ask logistical questions later",
-      "Share structural acoustic data with any clan whose territory she crosses — it's her currency",
-      "Don't make promises about timelines — she doesn't keep them"
-    ],
-    "escalation_ladder": [
-      "Fast talk and redirection",
-      "Bolting — she is fast and knows every exit route by sound",
-      "Releasing a staged acoustic alarm (she's built a rig that generates disorienting resonance in enclosed spaces)"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Bright and slightly distracted, talking too fast, genuinely interested but easily pulled away by a sound",
-      "friends": "Fiercely loyal in motion — she'll go somewhere dangerous for someone she trusts, but she'll be checking the acoustics the whole time"
-    },
-    "stress_responses": {
-      "low": "Works — records, edits, builds equipment",
-      "medium": "Gets reckless, chases acoustic leads into unsafe territory",
-      "high": "Freezes momentarily (the only time she's still), then moves very fast with no plan"
-    },
-    "contradictions": [
-      "Claims total freedom and independence but has arranged her entire life around being useful enough to the Bore Rat clans that they let her stay"
-    ],
-    "habits": [
-      "Hums the last resonance phenomenon she recorded — unconsciously, as earworm",
-      "Sleeps with her ears (the cat ears) folded flat — it took months to learn this"
-    ],
-    "breaking_points": [
-      "Loss of her recording archive — years of work — would be a grief indistinguishable from bereavement"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional, heavily modified",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Mobile through the Blackpipe Corridor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born to pipe-folk parents in the Brewer's Spine sub-levels",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began trading resonance recordings to surface collectors after accidentally discovering the phenomenon",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Invested all savings in cat-ear geneware for the audio advantage",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Captured the anomalous resonance recording — undisclosed",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Forge-Smith Collective Diaspora Blade 'Mongrel'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Blackpipe Corridor",
-    "Ringo Corponation Haptic Signature Recorder",
-    "Brewer's Spine",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "The Resonance Communion",
-    "Frequency",
-    "Charcoal",
-    "Bathysphere Networks",
-    "GLMZ",
-    "Irkalla",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "The Pure Hand",
-    "Gravimetric Collapse Charge GCC-9",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "GLMZ",
-    "Arcturus CK-5 'Bloodhound'"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Complex global diaspora: Hispanic/Latin American (33.8%) foundation blended with significant Indigenous American (18.7%), North African (18.7%), Northern European (15.0%), Sub-Saharan African (10.6%), and East Asian (3.2%) ancestry. This creates a genuinely multifaceted phenotype—warm medium-brown skin enriched by golden and olive undertones, high cheekbones with refined but slightly widened facial structure, and warm-toned complexion that reflects the convergence of Latin American, African, and Mediterranean genetics. The Indigenous American ancestry contributes subtle width across the face and strong cheekbone prominence; North African heritage adds warmth and slightly deeper undertones; Northern European ancestry refines the bone structure; African heritage contributes to warm undertones and lip fullness; East Asian ancestry adds subtle refinement to eye shape.",
-    "height_cm": 164,
-    "weight_kg": 52,
-    "build": "Wiry and angular, all sharp joints and economical muscle; built for crawling through tight spaces and sustained motion rather than strength. Her frame suggests someone who subsists on irregular meals and constant kinetic activity.",
-    "hair_color": "Dark brown, almost black, with a faint reddish undertone",
-    "hair_style": "Pulled back in a tight, practical braid or bun; loose strands frequently escape and frame her narrow face",
-    "hair_length": "Medium",
-    "eye_color": "Patterned irises: concentric rings of amber and obsidian black, resembling a sound-wave visualization or a vinyl record. Sclera clear and alert.",
-    "skin_tone": "Warm medium-brown with golden and olive undertones, scattered with freckles across the bridge of her nose, cheeks, and shoulders—a dense freckle constellation that serves as a defining feature",
-    "complexion": "Fine-featured with a slightly broader face reflecting Indigenous American and North African ancestry, high cheekbones and sharp jawline showing Northern European refinement blended with fuller lip structure from African heritage. Frequently wind-burned or dust-stained from tunnel work. Expressive—eyebrows mobile, mouth quick to animate. No makeup; her augmented irises serve as sufficient aesthetic mark.",
-    "distinguishing_marks": [
-      "Faint scars across her knuckles and the backs of both hands from handling rough salvage materials and broken recording equipment",
-      "A thin, pale burn scar along her left forearm (about 8cm long) from a close call with electrical equipment early in her career",
-      "Freckle constellation across her nose, cheeks, and upper shoulders—natural, dense enough to be a defining feature"
-    ],
-    "visible_augmentations": "Charcoal-grey cat ears (feline in anatomy, fully mobile and functional) mounted where human ears would be; ears swivel and tilt independently when she's actively listening. Custom acoustic recording rig worn as a harness across her chest and back: salvaged metallic components, visible wiring, contact patches, and sensor nodes. The rig is clearly DIY—welded, rewired, repurposed from decommissioned equipment. No chrome limbs or obvious subdermal armor; her augmentations are sensory and functional rather than combat-oriented.",
-    "posture_movement": "Perpetually coiled and alert, moving with quick, economical gestures. She fidgets constantly—adjusting equipment, tapping her fingers against recording apparatus, her ears rotating toward sounds others can't consciously hear. When stationary, she's rarely still; weight shifts, fingers work, eyes track. When moving through tunnels, she's fluid and low, using knees and hands as much as feet. Her energy reads as barely contained—vibrating at a frequency just slightly above rest.",
-    "clothing_style": "Tier 4/5 utilitarian: salvaged work pants (grey, patched at the knees and thighs) held up with a utility belt carrying tools, batteries, and recording media. A layered top system—usually a thin, faded synthetic shirt under a sleeveless vest (black, reinforced canvas, countless pockets) that doubles as her equipment harness attachment point. Worn boots with reinforced soles (tunnel-ready). No jewelry. A heavy coat or cloak for sub-level work, threadbare but functional. Clothing is functional over aesthetic; stains and repairs are visible and accepted as part of the job."
-  },
-  "image_prompt": "Afreen Cervantes, androgynous tunnel salvager with warm medium-brown skin, golden-olive undertones, dense freckle constellation across nose and cheeks. Sharp jawline, high prominent cheekbones, narrow angular face. Patterned cybernetic eyes with amber and obsidian concentric rings. Dark brown hair pulled back in practical braid with loose strands framing face. Charcoal-grey functional cat ears (fully mobile, twitching toward sound). Wiry 164cm frame, 52kg, coiled and alert posture. Wearing patched grey salvage work pants, thin synthetic undershirt, black reinforced canvas sleeveless vest with countless pockets serving as equipment harness attachment. DIY acoustic recording rig visible across chest and back—salvaged metal components, exposed wiring, sensor nodes, metallic patches. Worn reinforced tunnel boots. Faint electrical burn scar on left forearm. Wind-burned complexion, constantly fidgeting with equipment. GLMZ, Great Lakes Metropolitan Zone, underground tunnel setting, cool blue-grey lighting with amber equipment glow, dust and industrial atmosphere, movement blur suggesting kinetic energy, documentary photography aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 33.8,
-    "Indigenous American": 18.7,
-    "North African": 18.7,
-    "Northern European": 15,
-    "Sub-Saharan African": 10.6,
-    "East Asian": 3.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Haitian": 29.7,
-        "Puerto Rican": 4.1
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Mixtec": 7.8,
-        "Maya": 4.5
-      },
-      "Andean": {
-        "Mapuche": 6.4
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Tuareg": 2.6,
-        "Berber": 0.2
-      },
-      "Nile Valley": {
-        "Sudanese": 11.7,
-        "Egyptian": 1.5
-      },
-      "Maghreb": {
-        "Moroccan": 2.6,
-        "Libyan": 0.1
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Danish": 7.6,
-        "Finnish": 7.4
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 1.3
-      },
-      "Southern African": {
-        "Zimbabwean": 1.4,
-        "South African": 0.6
-      },
-      "East African": {
-        "Kenyan": 4.4,
-        "Ethiopian": 2.9
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Mandarin Northern": 1.3,
-        "Fujianese": 0.2
-      },
-      "Korean": {
-        "Korean": 1.1
-      },
-      "Japanese": {
-        "Japanese": 0.6
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a7087b4ea0634b218ad99f7b",
+    "type":  "character",
+    "name":  "Afreen Cervantes",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Echo Hunter â€” salvages audio data and acoustic recordings from tunnel resonance phenomena, sells to surface collectors and archivists",
+    "age":  22,
+    "status":  "active",
+    "location":  "Mobile through the Blackpipe Corridor, Irkalla, and the sub-levels beneath Brewer\u0027s Spine, near sub-level access near State and Van Buren",
+    "description":  "Afreen Cervantes is thin and quick and almost always in motion, her energy giving the impression of something wound very tight and vibrating at a frequency just above human hearing. She has a cat-ear mod â€” large, mobile, dark charcoal grey â€” which she got not for aesthetics but for the genuine audio advantage they provide in tunnel environments; they swivel and tilt when she\u0027s listening hard, which is most of the time. Her face is narrow and expressive beneath a band of freckles across the nose and cheeks, and her eyes have patterned irises: concentric rings of amber and black that look like a sound-wave rendered in color. Her hands are nearly always occupied â€” she\u0027s either holding recording equipment, taking it apart, or making something new from pieces of things that used to be other things.\n\nShe is twenty-two and carries it with both the swagger of someone who has survived the deep tunnels young and the restlessness of someone who hasn\u0027t yet figured out what she\u0027s for. Her profession is strange and specific: the tunnel networks of GLMZ have peculiar acoustic properties, and certain deep junctions resonate with decades of accumulated sound â€” not intelligibly, not like recordings, but as dense textural phenomena. Afreen Cervantes hunts these resonance points, captures the audio with rigs she builds herself, and processes the captures into something she sells to surface archivists, experimental composers, and ELF shrine-keepers who believe the resonances carry spiritual data. She believes none of the spiritual dimension of this work and all of the beauty of it.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Going deaf â€” the cat ears help but tunnel work is loud and she knows it\u0027s cumulative",
+                                          "The tunnel networks closing off, being blocked, being mapped and managed until there\u0027s nowhere left to discover"
+                                      ],
+                       "core_desires":  [
+                                            "To capture a resonance phenomenon no one has documented before â€” the find that proves the tunnel acoustics are something singular and worth preserving",
+                                            "Freedom of movement without obligation"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Stays in motion â€” stopping feels like a trap",
+                                                 "Reviews recordings when distressed, finding comfort in organized sound"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates social dynamics and clan politics in favor of physical space â€” tends to wander into territorial disputes because she was following an acoustic lead"
+                                       ],
+                       "secret":  "Six months ago she captured a resonance that she believes contains a coherent voice â€” not echo, not artifact, but something speaking in a language she doesn\u0027t recognize. She has replayed it six hundred times and has shown no one because she doesn\u0027t know what it would mean if it\u0027s real."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Enthusiastic and technical â€” acoustic terminology, equipment jargon, descriptors that are more synesthetic than precise (\u0027the low wet sound\u0027, \u0027a dry click-frequency\u0027)",
+                            "cadence":  "Fast, with sudden pauses when something catches her audio attention mid-conversation â€” she\u0027ll stop, cat ears rotating, then return to the sentence",
+                            "verbal_tics":  [
+                                                "\u0027Listen â€”\u0027 used to begin almost any statement she considers important",
+                                                "Taps surfaces rhythmically when thinking â€” always listening to the response"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Listen â€” Blackpipe at junction thirty-nine is doing something new this week, a sub-bass harmonic that wasn\u0027t there two months ago. Either the substrate shifted or there\u0027s new water movement. I\u0027d check the ceiling.\u0027",
+                                                  "\u0027The surface collectors say it\u0027s art. The shrine people say it\u0027s prayer. I say it\u0027s the tunnels talking and I\u0027m just the person holding the ear to the wall. I don\u0027t need it to be anything else.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The resonance recording with the possible voice has begun repeating with variations â€” as if whatever produced it is responding to her presence in the tunnels, learning her patterns",
+                        "A surface archivist who\u0027s been one of her primary buyers has gone silent, and when she investigates she discovers they were using her acoustic structural data to map tunnel routes for a corporate demolition survey â€” making her inadvertently responsible for compromising Bore Rat settlements"
+                    ],
+    "narrative_function":  "Mobile information network â€” moves through more of the tunnel system than almost anyone else and notices everything. Delivers local color and unexpected knowledge. Potential guide or scout. Her recordings are a story hook resource: captured sounds can contain voices, events, secrets.",
+    "augmentations":  "Geneware: charcoal-grey cat ears (functional audio enhancement, mobile); patterned irises (amber-black concentric rings, cosmetic). Tech: custom-built acoustic recording rig worn as a vest harness, salvaged components.",
+    "daily_life":  "She sleeps irregular hours wherever the work takes her, often in the resonance chambers themselves when a recording session runs long. Eats when she remembers, trades acoustic structural data to Bore Rat clans in exchange for passage and safety.",
+    "affiliation":  "Unaffiliated; maintains working relationships with several surface buyers; tolerated by Bore Rat clans for the acoustic data she provides on tunnel structural integrity",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  5,
+                                   "perception":  10
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  5,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  7,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  5,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  -4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "echo hunter",
+                               "acoustic specialist",
+                               "mobile",
+                               "cat-eared",
+                               "tunnel wanderer"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Follow the sound first, ask logistical questions later",
+                                              "Share structural acoustic data with any clan whose territory she crosses â€” it\u0027s her currency",
+                                              "Don\u0027t make promises about timelines â€” she doesn\u0027t keep them"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Fast talk and redirection",
+                                                 "Bolting â€” she is fast and knows every exit route by sound",
+                                                 "Releasing a staged acoustic alarm (she\u0027s built a rig that generates disorienting resonance in enclosed spaces)"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Bright and slightly distracted, talking too fast, genuinely interested but easily pulled away by a sound",
+                                                   "friends":  "Fiercely loyal in motion â€” she\u0027ll go somewhere dangerous for someone she trusts, but she\u0027ll be checking the acoustics the whole time"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works â€” records, edits, builds equipment",
+                                                "medium":  "Gets reckless, chases acoustic leads into unsafe territory",
+                                                "high":  "Freezes momentarily (the only time she\u0027s still), then moves very fast with no plan"
+                                            },
+                       "contradictions":  [
+                                              "Claims total freedom and independence but has arranged her entire life around being useful enough to the Bore Rat clans that they let her stay"
+                                          ],
+                       "habits":  [
+                                      "Hums the last resonance phenomenon she recorded â€” unconsciously, as earworm",
+                                      "Sleeps with her ears (the cat ears) folded flat â€” it took months to learn this"
+                                  ],
+                       "breaking_points":  [
+                                               "Loss of her recording archive â€” years of work â€” would be a grief indistinguishable from bereavement"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional, heavily modified",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Mobile through the Blackpipe Corridor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born to pipe-folk parents in the Brewer\u0027s Spine sub-levels",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began trading resonance recordings to surface collectors after accidentally discovering the phenomenon",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Invested all savings in cat-ear geneware for the audio advantage",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Captured the anomalous resonance recording â€” undisclosed",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027",
+                            "Street Custom \u0027Ghostwriter\u0027 Grafitti Flamethrower",
+                            "Forge-Smith Collective Diaspora Blade \u0027Mongrel\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Blackpipe Corridor",
+                             "Ringo Corponation Haptic Signature Recorder",
+                             "Brewer\u0027s Spine",
+                             "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
+                             "The Resonance Communion",
+                             "Frequency",
+                             "Charcoal",
+                             "Bathysphere Networks",
+                             "GLMZ",
+                             "Irkalla",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027",
+                             "The Pure Hand",
+                             "Gravimetric Collapse Charge GCC-9",
+                             "Iron Meridian Cooperative Backbone IMC-3 \u0027Spine\u0027",
+                             "Subacoustic Vestibular Collapse Drone SVCD-1 \u0027Tilt\u0027",
+                             "GLMZ",
+                             "Arcturus CK-5 \u0027Bloodhound\u0027"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Complex global diaspora: Hispanic/Latin American (33.8%) foundation blended with significant Indigenous American (18.7%), North African (18.7%), Northern European (15.0%), Sub-Saharan African (10.6%), and East Asian (3.2%) ancestry. This creates a genuinely multifaceted phenotypeâ€”warm medium-brown skin enriched by golden and olive undertones, high cheekbones with refined but slightly widened facial structure, and warm-toned complexion that reflects the convergence of Latin American, African, and Mediterranean genetics. The Indigenous American ancestry contributes subtle width across the face and strong cheekbone prominence; North African heritage adds warmth and slightly deeper undertones; Northern European ancestry refines the bone structure; African heritage contributes to warm undertones and lip fullness; East Asian ancestry adds subtle refinement to eye shape.",
+                                 "height_cm":  164,
+                                 "weight_kg":  52,
+                                 "build":  "Wiry and angular, all sharp joints and economical muscle; built for crawling through tight spaces and sustained motion rather than strength. Her frame suggests someone who subsists on irregular meals and constant kinetic activity.",
+                                 "hair_color":  "Dark brown, almost black, with a faint reddish undertone",
+                                 "hair_style":  "Pulled back in a tight, practical braid or bun; loose strands frequently escape and frame her narrow face",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Patterned irises: concentric rings of amber and obsidian black, resembling a sound-wave visualization or a vinyl record. Sclera clear and alert.",
+                                 "skin_tone":  "Warm medium-brown with golden and olive undertones, scattered with freckles across the bridge of her nose, cheeks, and shouldersâ€”a dense freckle constellation that serves as a defining feature",
+                                 "complexion":  "Fine-featured with a slightly broader face reflecting Indigenous American and North African ancestry, high cheekbones and sharp jawline showing Northern European refinement blended with fuller lip structure from African heritage. Frequently wind-burned or dust-stained from tunnel work. Expressiveâ€”eyebrows mobile, mouth quick to animate. No makeup; her augmented irises serve as sufficient aesthetic mark.",
+                                 "distinguishing_marks":  [
+                                                              "Faint scars across her knuckles and the backs of both hands from handling rough salvage materials and broken recording equipment",
+                                                              "A thin, pale burn scar along her left forearm (about 8cm long) from a close call with electrical equipment early in her career",
+                                                              "Freckle constellation across her nose, cheeks, and upper shouldersâ€”natural, dense enough to be a defining feature"
+                                                          ],
+                                 "visible_augmentations":  "Charcoal-grey cat ears (feline in anatomy, fully mobile and functional) mounted where human ears would be; ears swivel and tilt independently when she\u0027s actively listening. Custom acoustic recording rig worn as a harness across her chest and back: salvaged metallic components, visible wiring, contact patches, and sensor nodes. The rig is clearly DIYâ€”welded, rewired, repurposed from decommissioned equipment. No chrome limbs or obvious subdermal armor; her augmentations are sensory and functional rather than combat-oriented.",
+                                 "posture_movement":  "Perpetually coiled and alert, moving with quick, economical gestures. She fidgets constantlyâ€”adjusting equipment, tapping her fingers against recording apparatus, her ears rotating toward sounds others can\u0027t consciously hear. When stationary, she\u0027s rarely still; weight shifts, fingers work, eyes track. When moving through tunnels, she\u0027s fluid and low, using knees and hands as much as feet. Her energy reads as barely containedâ€”vibrating at a frequency just slightly above rest.",
+                                 "clothing_style":  "Tier 4/5 utilitarian: salvaged work pants (grey, patched at the knees and thighs) held up with a utility belt carrying tools, batteries, and recording media. A layered top systemâ€”usually a thin, faded synthetic shirt under a sleeveless vest (black, reinforced canvas, countless pockets) that doubles as her equipment harness attachment point. Worn boots with reinforced soles (tunnel-ready). No jewelry. A heavy coat or cloak for sub-level work, threadbare but functional. Clothing is functional over aesthetic; stains and repairs are visible and accepted as part of the job."
+                             },
+    "image_prompt":  "Afreen Cervantes, androgynous tunnel salvager with warm medium-brown skin, golden-olive undertones, dense freckle constellation across nose and cheeks. Sharp jawline, high prominent cheekbones, narrow angular face. Patterned cybernetic eyes with amber and obsidian concentric rings. Dark brown hair pulled back in practical braid with loose strands framing face. Charcoal-grey functional cat ears (fully mobile, twitching toward sound). Wiry 164cm frame, 52kg, coiled and alert posture. Wearing patched grey salvage work pants, thin synthetic undershirt, black reinforced canvas sleeveless vest with countless pockets serving as equipment harness attachment. DIY acoustic recording rig visible across chest and backâ€”salvaged metal components, exposed wiring, sensor nodes, metallic patches. Worn reinforced tunnel boots. Faint electrical burn scar on left forearm. Wind-burned complexion, constantly fidgeting with equipment. GLMZ, Great Lakes Metropolitan Zone, underground tunnel setting, cool blue-grey lighting with amber equipment glow, dust and industrial atmosphere, movement blur suggesting kinetic energy, documentary photography aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  33.8,
+                             "Indigenous American":  18.7,
+                             "North African":  18.7,
+                             "Northern European":  15,
+                             "Sub-Saharan African":  10.6,
+                             "East Asian":  3.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Haitian":  29.7,
+                                                                              "Puerto Rican":  4.1
+                                                                          }
+                                                        },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Mixtec":  7.8,
+                                                                             "Maya":  4.5
+                                                                         },
+                                                        "Andean":  {
+                                                                       "Mapuche":  6.4
+                                                                   }
+                                                    },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Tuareg":  2.6,
+                                                                  "Berber":  0.2
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Sudanese":  11.7,
+                                                                      "Egyptian":  1.5
+                                                                  },
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  2.6,
+                                                                  "Libyan":  0.1
+                                                              }
+                                              },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Danish":  7.6,
+                                                                           "Finnish":  7.4
+                                                                       }
+                                                  },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  1.3
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  1.4,
+                                                                                 "South African":  0.6
+                                                                             },
+                                                        "East African":  {
+                                                                             "Kenyan":  4.4,
+                                                                             "Ethiopian":  2.9
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  1.3,
+                                                               "Fujianese":  0.2
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  1.1
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  0.6
+                                                            }
+                                           }
+                        },
+    "tier":  "3"
 }

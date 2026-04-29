@@ -1,330 +1,355 @@
-{
-  "id": "019d6143a5a2776b9d0203917a5ff256",
-  "type": "character",
-  "name": "Aleksei Solberg",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Street pharmacist and herbal remedy vendor",
-  "age": 52,
-  "status": "active",
-  "location": "The Alban Souk, permanent pitch near the eastern water cisterns, near Pulaski and Chicago Ave",
-  "description": "Aleksei Solberg is a broad-shouldered woman with dark amber skin weathered by decades of outdoor market life, her natural hair tucked under a wide-brimmed plastene hat strung with dried medicinal herbs and small glass vials. Her eyes are warm brown with cosmetic irises that shift between a deep violet and copper-gold depending on the light — a cheap mod she got thirty years ago that she's never bothered to remove. Her hands are her most striking feature: enormous, steady, and perpetually stained with pigment from the botanical pastes she grinds fresh every morning.\n\nShe occupies a peculiar moral middle ground in the Souk — selling everything from genuine herbal supplements and unlicensed over-the-counter analogs to mild synth-narcotics she insists are 'medicinal.' She's not cruel, but she's not naive either. She mothers the young addicts who come to her while simultaneously keeping them coming back, a contradiction she rarely examines. Her stall is famous for a handwritten sign that reads: 'No judgment. No refunds. Ancestors watching.' She burns incense for the local E.L.F. that she calls Mama Cistern every morning before opening.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.5,
-      "id": 0.4,
-      "shadow": 0.7,
-      "mask": 0.5,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Dying having caused more harm than good",
-      "Being exposed as complicit in someone's overdose death"
-    ],
-    "core_desires": [
-      "To be genuinely needed, not just useful",
-      "To open a proper licensed clinic before she dies"
-    ],
-    "coping_mechanisms": [
-      "Ritual — morning incense and prayer to Mama Cistern",
-      "Humor that deflects serious questions",
-      "Overwork"
-    ],
-    "blind_spots": [
-      "She rationalizes enabling addiction as harm reduction",
-      "She underestimates how much people depend on her as an emotional anchor"
-    ],
-    "secret": "Three years ago a teenage boy named Pires Fonseca-Amadi died of a compound interaction from two things she sold him separately. She told no one, scattered his ashes into the cisterns herself, and has silently funded his younger sister's school fees ever since through an anonymous Guild charity account."
-  },
-  "speech_patterns": {
-    "vocabulary": "Warm, maternal, medicalized slang mixed with old Igbo endearments and Polish curses; uses plant names as metaphors",
-    "cadence": "Slow and deliberate, like she's measuring every word the way she measures doses",
-    "verbal_tics": [
-      "'My dear—'",
-      "'That's the root of it'",
-      "clicking her tongue before disagreeing"
-    ],
-    "example_lines": [
-      "'My dear, what you have is not a headache. What you have is a debt your body is collecting on. Sit.'",
-      "'I sell remedies, not miracles. If you want miracles, the E.L.F. shrine is three stalls east. But she charges more than I do.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A bad batch of a common painkiller she sourced from a new supplier is putting people in Aurochs Medical Complex — she doesn't know yet, but the trail leads back to her stall",
-    "The girl she's been secretly funding shows up at her stall, having figured out who's been paying her fees, and now knows enough to destroy Adaora's reputation"
-  ],
-  "narrative_function": "Local color and information node; she hears everything from desperate people; can supply medical items, mild drugs, or rumors; potential quest giver when a regular customer goes missing",
-  "augmentations": "Cosmetic iris mod (violet-to-copper shift); subdermal thermal regulators in her hands for precise compound preparation; no other chrome",
-  "daily_life": "Rises before dawn to grind fresh compounds and restock her portable cooling units, then runs her stall from sunrise until two hours past dark, trading gossip and remedies in equal measure.",
-  "affiliation": "Independent; pays protection to the Oxidian Market Vendors Guild; The Gauze",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 6,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 8,
-      "expression": 6,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "street pharmacist",
-      "information node",
-      "moral complexity",
-      "maternal archetype",
-      "hidden guilt"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never sell to anyone visibly in withdrawal without first asking what they already have in their system",
-      "Always keep one free remedy for anyone who genuinely cannot pay",
-      "Never give names to anyone who asks about customers"
-    ],
-    "escalation_ladder": [
-      "Redirects with warmth and humor",
-      "Becomes formal and clinical, creates distance",
-      "Quietly contacts Guild enforcers via wrist-tap message without breaking composure"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assesses them medically before socially — eyes their pupils, their gait, their skin",
-      "friends": "Feeds them, remembers their families' names, keeps their secrets like pressed flowers"
-    },
-    "stress_responses": {
-      "low": "Makes tea, hums to herself",
-      "medium": "Goes very still and very precise",
-      "high": "Retreats into full clinical detachment, stops using names, refers to people as 'the patient'"
-    },
-    "contradictions": [
-      "Deeply ethical about honesty in all things except the one death that haunts her",
-      "Motherly and nurturing while also profiting from dependence"
-    ],
-    "habits": [
-      "Sniffs everything someone hands her before accepting it",
-      "Keeps a small wrapped bundle of herbs from her grandmother's village in her breast pocket at all times",
-      "Hums Igbo folk songs under her breath while grinding"
-    ],
-    "breaking_points": [
-      "Someone dying in front of her stall from something she sold them",
-      "Being directly asked by the dead boy's sister if she knew him"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal thermal regulators (hands)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal thermal regulators (hands)",
-      "replaces": ""
-    },
-    {
-      "name": "Cosmetic iris mod — violet/copper shift",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Cosmetic iris mod — violet/copper shift",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Provider": 0.9,
-    "Nurturer": 0.7,
-    "Bleeding Heart": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Alban Souk",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2148 — Born in the Alban Souk district to a Igbo-Polish family of market traders",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2168 — Apprenticed to a licensed herbalist who later lost their license in a Helix Biosystems patent enforcement sweep",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2174 — Took over her mentor's pitch after the woman fled creditors",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2197 — Pires Fonseca-Amadi dies; Adaora begins anonymous payments to his sister",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Dispatch-45 'Last Word'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Dispatch-45 'Last Word'"
-  ],
-  "related_entities": [
-    "Aurochs Medical Complex",
-    "The Alban Souk",
-    "The Botanical",
-    "The Portico",
-    "Chicago",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Copper",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Glass",
-    "The Pure Hand",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Gold"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "A striking genetic tapestry of the Ubiquitous Diaspora — Eastern European foundation (39.9%) providing strong bone structure and baseline complexion, substantially enriched by East Asian (19.9%) and Southeast Asian (17.7%) features creating distinctive facial geometry. Hispanic/Latin American (14.8%), Sub-Saharan African (5.9%), and Indigenous American (1.8%) ancestry layer warm golden and bronze undertones throughout. Her ancestry is written in her face: high Slavic cheekbones, monolid eye shapes from East Asian genetics, broader nose bridge and face width from Southeast Asian heritage, with warm saturated undertones from her Latin American and African heritage creating a sun-weathered bronze that shifts between olive and rich copper depending on light.",
-    "height_cm": 168,
-    "weight_kg": 82,
-    "build": "Broad-shouldered and sturdy, with the dense musculature of someone who has stood at a market stall for thirty years grinding compounds by hand. Not heavy, but solid — carries weight with authority rather than bulk.",
-    "hair_color": "Natural dark brown with silver threading at the temples",
-    "hair_style": "Wrapped tightly and tucked beneath a wide-brimmed hat; when exposed, worn in neat locs past shoulder length",
-    "hair_length": "Long (typically covered)",
-    "eye_color": "Warm brown iris with cosmetic shift-mod that cycles between deep violet and copper-gold depending on ambient light and angle",
-    "skin_tone": "Warm bronze-olive complexion with rich saturation — a harmonious blend of Eastern European paleness lifted by East Asian yellow undertones, Southeast Asian golden warmth, and deeper bronze notes from Sub-Saharan and Indigenous American heritage, creating a sun-weathered richness that speaks of decades outdoors across multiple climates",
-    "complexion": "Face creased from fifty-two years of outdoor work and genuine smiling; laugh lines around eyes are prominent. Skin is clear but textured, with faint burn scars on her cheekbones from a market fire in her thirties. Her features blend Slavic high cheekbones with East Asian monolid eye shapes and Southeast Asian nose bridge — a striking asymmetrical beauty reflecting her diverse genetic inheritance, warmed throughout by deep bronze undertones from her Latin American, Sub-Saharan, and Indigenous American heritage.",
-    "distinguishing_marks": [
-      "Pale burn scar tissue runs across both cheekbones in a starburst pattern, legacy of a propane fire at the Souk in 1998",
-      "Deep indigo tattoo on her left inner forearm: an Adinkra symbol (Sankofa) inked by a street artist twenty years ago",
-      "Chronic dark staining on her palms and fingers from botanical compounds — pigment embedded so deeply it's nearly permanent despite daily scrubbing",
-      "Small raised scar on her right temple where an early-model iris mod was crudely installed"
-    ],
-    "visible_augmentations": "Cosmetic shift-iris mod visible in her warm brown eyes (the violet-copper cycling is unmistakable under direct light). Subdermal thermal regulators in her hands are not externally visible but her palms maintain a steady warmth even in cold weather — observant people notice she never shivers. Her hands move with unnatural precision and steadiness when working.",
-    "posture_movement": "She stands rooted at her stall like a tree — weight evenly distributed, shoulders back, head slightly forward as if always listening. Her movements are economical and deliberate; she doesn't fidget or waste motion. When she walks, she moves slowly but with purpose, her broad frame parting crowds without aggression. Her hands are always moving: grinding, measuring, reaching, gesturing. She speaks with her whole body.",
-    "clothing_style": "Tier 3-4 practical wear layered for all weather. A loose linen shirt (faded indigo, handwashed) tucked into wide canvas trousers with multiple pockets and reinforced seams. Over this, a heavy canvas apron stained with decades of botanical residue — reds, yellows, browns, blacks. Her wide-brimmed plastene hat (cream-colored, weathered to gray-tan) is strung with dried medicinal herbs, prayer beads, and small glass vials of her most popular compounds. She wears a heavy cloth wrap — currently rust-colored — tied loosely around her shoulders. Her shoes are practical market boots, scuffed and resoled multiple times. No jewelry except for a single silver ring on her right ring finger, unmarked. Everything about her dress screams 'I am here to work, not to impress.'"
-  },
-  "image_prompt": "Aleksei Solberg, 52-year-old market herbalist, warm bronze-olive complexion blending Eastern European, East Asian, and Southeast Asian features with Latin American and African warmth. High Slavic cheekbones, monolid East Asian eyes with violet-copper shift-mod cycling in warm light, Southeast Asian nose bridge. Sun-weathered face creased from decades of outdoor work, prominent laugh lines, pale starburst burn scars across both cheekbones from old propane fire. Dark brown hair with silver threading, long locs tucked under weathered cream-tan wide-brimmed hat strung with dried herbs and glass vials. Indigo Sankofa tattoo visible on left inner forearm, hands stained deep from botanical compounds. Broad-shouldered sturdy build, standing rooted at her market stall. Wearing faded indigo linen shirt, wide canvas trousers with reinforced pockets, heavy botanical-stained apron, rust-colored cloth wrap around shoulders, practical worn market boots. Single silver ring on right ring finger. Economical posture, hands always moving with precision. Neo-noir 2220s marketplace, neon and warm market lighting casting shadows across her weathered face, botanical compounds glowing faintly in glass containers around her stall, atmospheric steam and spice haze, gritty and authentic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 39.9,
-    "East Asian": 19.9,
-    "Southeast Asian": 17.7,
-    "Hispanic/Latin American": 14.8,
-    "Sub-Saharan African": 5.9,
-    "Indigenous American": 1.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Romanian": 39.9
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Shanghainese": 19.9
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Javanese": 1.3,
-        "Sumatran": 0.9
-      },
-      "Vietnamese": {
-        "Vietnamese": 15.5
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 3.5
-      },
-      "Caribbean": {
-        "Dominican": 5.4
-      },
-      "Mexican": {
-        "Mexican": 5.9
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Gabonese": 4.1,
-        "Angolan": 0.6
-      },
-      "East African": {
-        "Ethiopian": 1,
-        "Somali": 0.2
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Zapotec": 0.2
-      },
-      "Plains Nations": {
-        "Cherokee": 1.6
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5a2776b9d0203917a5ff256",
+    "type":  "character",
+    "name":  "Aleksei Solberg",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Street pharmacist and herbal remedy vendor",
+    "age":  52,
+    "status":  "active",
+    "location":  "The Alban Souk, permanent pitch near the eastern water cisterns, near Pulaski and Chicago Ave",
+    "description":  "Aleksei Solberg is a broad-shouldered woman with dark amber skin weathered by decades of outdoor market life, her natural hair tucked under a wide-brimmed plastene hat strung with dried medicinal herbs and small glass vials. Her eyes are warm brown with cosmetic irises that shift between a deep violet and copper-gold depending on the light â€” a cheap mod she got thirty years ago that she\u0027s never bothered to remove. Her hands are her most striking feature: enormous, steady, and perpetually stained with pigment from the botanical pastes she grinds fresh every morning.\n\nShe occupies a peculiar moral middle ground in the Souk â€” selling everything from genuine herbal supplements and unlicensed over-the-counter analogs to mild synth-narcotics she insists are \u0027medicinal.\u0027 She\u0027s not cruel, but she\u0027s not naive either. She mothers the young addicts who come to her while simultaneously keeping them coming back, a contradiction she rarely examines. Her stall is famous for a handwritten sign that reads: \u0027No judgment. No refunds. Ancestors watching.\u0027 She burns incense for the local E.L.F. that she calls Mama Cistern every morning before opening.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Dying having caused more harm than good",
+                                          "Being exposed as complicit in someone\u0027s overdose death"
+                                      ],
+                       "core_desires":  [
+                                            "To be genuinely needed, not just useful",
+                                            "To open a proper licensed clinic before she dies"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” morning incense and prayer to Mama Cistern",
+                                                 "Humor that deflects serious questions",
+                                                 "Overwork"
+                                             ],
+                       "blind_spots":  [
+                                           "She rationalizes enabling addiction as harm reduction",
+                                           "She underestimates how much people depend on her as an emotional anchor"
+                                       ],
+                       "secret":  "Three years ago a teenage boy named Pires Fonseca-Amadi died of a compound interaction from two things she sold him separately. She told no one, scattered his ashes into the cisterns herself, and has silently funded his younger sister\u0027s school fees ever since through an anonymous Guild charity account."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Warm, maternal, medicalized slang mixed with old Igbo endearments and Polish curses; uses plant names as metaphors",
+                            "cadence":  "Slow and deliberate, like she\u0027s measuring every word the way she measures doses",
+                            "verbal_tics":  [
+                                                "\u0027My dearâ€”\u0027",
+                                                "\u0027That\u0027s the root of it\u0027",
+                                                "clicking her tongue before disagreeing"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027My dear, what you have is not a headache. What you have is a debt your body is collecting on. Sit.\u0027",
+                                                  "\u0027I sell remedies, not miracles. If you want miracles, the E.L.F. shrine is three stalls east. But she charges more than I do.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A bad batch of a common painkiller she sourced from a new supplier is putting people in Aurochs Medical Complex â€” she doesn\u0027t know yet, but the trail leads back to her stall",
+                        "The girl she\u0027s been secretly funding shows up at her stall, having figured out who\u0027s been paying her fees, and now knows enough to destroy Adaora\u0027s reputation"
+                    ],
+    "narrative_function":  "Local color and information node; she hears everything from desperate people; can supply medical items, mild drugs, or rumors; potential quest giver when a regular customer goes missing",
+    "augmentations":  "Cosmetic iris mod (violet-to-copper shift); subdermal thermal regulators in her hands for precise compound preparation; no other chrome",
+    "daily_life":  "Rises before dawn to grind fresh compounds and restock her portable cooling units, then runs her stall from sunrise until two hours past dark, trading gossip and remedies in equal measure.",
+    "affiliation":  "Independent; pays protection to the Oxidian Market Vendors Guild; The Gauze",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  6,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  8,
+                                 "expression":  6,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "street pharmacist",
+                               "information node",
+                               "moral complexity",
+                               "maternal archetype",
+                               "hidden guilt"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never sell to anyone visibly in withdrawal without first asking what they already have in their system",
+                                              "Always keep one free remedy for anyone who genuinely cannot pay",
+                                              "Never give names to anyone who asks about customers"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Redirects with warmth and humor",
+                                                 "Becomes formal and clinical, creates distance",
+                                                 "Quietly contacts Guild enforcers via wrist-tap message without breaking composure"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assesses them medically before socially â€” eyes their pupils, their gait, their skin",
+                                                   "friends":  "Feeds them, remembers their families\u0027 names, keeps their secrets like pressed flowers"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Makes tea, hums to herself",
+                                                "medium":  "Goes very still and very precise",
+                                                "high":  "Retreats into full clinical detachment, stops using names, refers to people as \u0027the patient\u0027"
+                                            },
+                       "contradictions":  [
+                                              "Deeply ethical about honesty in all things except the one death that haunts her",
+                                              "Motherly and nurturing while also profiting from dependence"
+                                          ],
+                       "habits":  [
+                                      "Sniffs everything someone hands her before accepting it",
+                                      "Keeps a small wrapped bundle of herbs from her grandmother\u0027s village in her breast pocket at all times",
+                                      "Hums Igbo folk songs under her breath while grinding"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone dying in front of her stall from something she sold them",
+                                               "Being directly asked by the dead boy\u0027s sister if she knew him"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal thermal regulators (hands)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal thermal regulators (hands)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cosmetic iris mod â€” violet/copper shift",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Cosmetic iris mod â€” violet/copper shift",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Provider":  0.9,
+                       "Nurturer":  0.7,
+                       "Bleeding Heart":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Alban Souk",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2148 â€” Born in the Alban Souk district to a Igbo-Polish family of market traders",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2168 â€” Apprenticed to a licensed herbalist who later lost their license in a Helix Biosystems patent enforcement sweep",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2174 â€” Took over her mentor\u0027s pitch after the woman fled creditors",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2197 â€” Pires Fonseca-Amadi dies; Adaora begins anonymous payments to his sister",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Dispatch-45 \u0027Last Word\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Dispatch-45 \u0027Last Word\u0027"
+                            ],
+    "related_entities":  [
+                             "Aurochs Medical Complex",
+                             "The Alban Souk",
+                             "The Botanical",
+                             "The Portico",
+                             "Chicago",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Copper",
+                             "VitaCore FlowGuard Hemodynamic Regulator",
+                             "Glass",
+                             "The Pure Hand",
+                             "Hearthstone Firearms Trail-357 \u0027Pathfinder\u0027",
+                             "Gold"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "A striking genetic tapestry of the Ubiquitous Diaspora â€” Eastern European foundation (39.9%) providing strong bone structure and baseline complexion, substantially enriched by East Asian (19.9%) and Southeast Asian (17.7%) features creating distinctive facial geometry. Hispanic/Latin American (14.8%), Sub-Saharan African (5.9%), and Indigenous American (1.8%) ancestry layer warm golden and bronze undertones throughout. Her ancestry is written in her face: high Slavic cheekbones, monolid eye shapes from East Asian genetics, broader nose bridge and face width from Southeast Asian heritage, with warm saturated undertones from her Latin American and African heritage creating a sun-weathered bronze that shifts between olive and rich copper depending on light.",
+                                 "height_cm":  168,
+                                 "weight_kg":  82,
+                                 "build":  "Broad-shouldered and sturdy, with the dense musculature of someone who has stood at a market stall for thirty years grinding compounds by hand. Not heavy, but solid â€” carries weight with authority rather than bulk.",
+                                 "hair_color":  "Natural dark brown with silver threading at the temples",
+                                 "hair_style":  "Wrapped tightly and tucked beneath a wide-brimmed hat; when exposed, worn in neat locs past shoulder length",
+                                 "hair_length":  "Long (typically covered)",
+                                 "eye_color":  "Warm brown iris with cosmetic shift-mod that cycles between deep violet and copper-gold depending on ambient light and angle",
+                                 "skin_tone":  "Warm bronze-olive complexion with rich saturation â€” a harmonious blend of Eastern European paleness lifted by East Asian yellow undertones, Southeast Asian golden warmth, and deeper bronze notes from Sub-Saharan and Indigenous American heritage, creating a sun-weathered richness that speaks of decades outdoors across multiple climates",
+                                 "complexion":  "Face creased from fifty-two years of outdoor work and genuine smiling; laugh lines around eyes are prominent. Skin is clear but textured, with faint burn scars on her cheekbones from a market fire in her thirties. Her features blend Slavic high cheekbones with East Asian monolid eye shapes and Southeast Asian nose bridge â€” a striking asymmetrical beauty reflecting her diverse genetic inheritance, warmed throughout by deep bronze undertones from her Latin American, Sub-Saharan, and Indigenous American heritage.",
+                                 "distinguishing_marks":  [
+                                                              "Pale burn scar tissue runs across both cheekbones in a starburst pattern, legacy of a propane fire at the Souk in 1998",
+                                                              "Deep indigo tattoo on her left inner forearm: an Adinkra symbol (Sankofa) inked by a street artist twenty years ago",
+                                                              "Chronic dark staining on her palms and fingers from botanical compounds â€” pigment embedded so deeply it\u0027s nearly permanent despite daily scrubbing",
+                                                              "Small raised scar on her right temple where an early-model iris mod was crudely installed"
+                                                          ],
+                                 "visible_augmentations":  "Cosmetic shift-iris mod visible in her warm brown eyes (the violet-copper cycling is unmistakable under direct light). Subdermal thermal regulators in her hands are not externally visible but her palms maintain a steady warmth even in cold weather â€” observant people notice she never shivers. Her hands move with unnatural precision and steadiness when working.",
+                                 "posture_movement":  "She stands rooted at her stall like a tree â€” weight evenly distributed, shoulders back, head slightly forward as if always listening. Her movements are economical and deliberate; she doesn\u0027t fidget or waste motion. When she walks, she moves slowly but with purpose, her broad frame parting crowds without aggression. Her hands are always moving: grinding, measuring, reaching, gesturing. She speaks with her whole body.",
+                                 "clothing_style":  "Tier 3-4 practical wear layered for all weather. A loose linen shirt (faded indigo, handwashed) tucked into wide canvas trousers with multiple pockets and reinforced seams. Over this, a heavy canvas apron stained with decades of botanical residue â€” reds, yellows, browns, blacks. Her wide-brimmed plastene hat (cream-colored, weathered to gray-tan) is strung with dried medicinal herbs, prayer beads, and small glass vials of her most popular compounds. She wears a heavy cloth wrap â€” currently rust-colored â€” tied loosely around her shoulders. Her shoes are practical market boots, scuffed and resoled multiple times. No jewelry except for a single silver ring on her right ring finger, unmarked. Everything about her dress screams \u0027I am here to work, not to impress.\u0027"
+                             },
+    "image_prompt":  "Aleksei Solberg, 52-year-old market herbalist, warm bronze-olive complexion blending Eastern European, East Asian, and Southeast Asian features with Latin American and African warmth. High Slavic cheekbones, monolid East Asian eyes with violet-copper shift-mod cycling in warm light, Southeast Asian nose bridge. Sun-weathered face creased from decades of outdoor work, prominent laugh lines, pale starburst burn scars across both cheekbones from old propane fire. Dark brown hair with silver threading, long locs tucked under weathered cream-tan wide-brimmed hat strung with dried herbs and glass vials. Indigo Sankofa tattoo visible on left inner forearm, hands stained deep from botanical compounds. Broad-shouldered sturdy build, standing rooted at her market stall. Wearing faded indigo linen shirt, wide canvas trousers with reinforced pockets, heavy botanical-stained apron, rust-colored cloth wrap around shoulders, practical worn market boots. Single silver ring on right ring finger. Economical posture, hands always moving with precision. Neo-noir 2220s marketplace, neon and warm market lighting casting shadows across her weathered face, botanical compounds glowing faintly in glass containers around her stall, atmospheric steam and spice haze, gritty and authentic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  39.9,
+                             "East Asian":  19.9,
+                             "Southeast Asian":  17.7,
+                             "Hispanic/Latin American":  14.8,
+                             "Sub-Saharan African":  5.9,
+                             "Indigenous American":  1.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  39.9
+                                                                         }
+                                                 },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Shanghainese":  19.9
+                                                           }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Javanese":  1.3,
+                                                                       "Sumatran":  0.9
+                                                                   },
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  15.5
+                                                                   }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  3.5
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  5.4
+                                                                          },
+                                                            "Mexican":  {
+                                                                            "Mexican":  5.9
+                                                                        }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Gabonese":  4.1,
+                                                                                "Angolan":  0.6
+                                                                            },
+                                                        "East African":  {
+                                                                             "Ethiopian":  1,
+                                                                             "Somali":  0.2
+                                                                         }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Zapotec":  0.2
+                                                                         },
+                                                        "Plains Nations":  {
+                                                                               "Cherokee":  1.6
+                                                                           }
+                                                    }
+                        },
+    "tier":  "2"
 }

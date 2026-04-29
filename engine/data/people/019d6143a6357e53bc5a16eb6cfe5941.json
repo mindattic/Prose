@@ -1,313 +1,324 @@
-{
-  "id": "019d6143a6357e53bc5a16eb6cfe5941",
-  "type": "character",
-  "name": "Aidana Oh-Nazari",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Lower Dock Crew lookout — Prologue survivor. Jaw destroyed, refuses replacement.",
-  "age": 25,
-  "status": "active",
-  "location": "the Gray Zone — lower loading docks, near Kedzie and Division",
-  "description": "Aidana Oh-Nazari was the crew's lookout. He didn't see Kyle coming. Nobody did. Kyle shattered his jaw with the flat of the blade and Isaak has refused to get it replaced. He wears a wrap around the lower half of his face and communicates through hand signals and a battered datapad.\n\nThe crew thinks this is trauma. It's not. Isaak has discovered that silence gives him power he never had when he talked. People project meaning onto his stillness. They assume depth. Isaak is using Kyle's violence as a personal rebrand.\n\nBefore the crew, Isaak was a library aide at the Gray Zone Community Archive — one of the last physical book collections in the lower tiers. He read constantly. Philosophy, psychology, military history. He joined Marcus's crew because the library closed and reading doesn't pay. He is the most educated person in the crew by a significant margin and the only one who has read about what Kyle is. He found references to experimental neural enhancement programs in declassified corporate documents. He does not share this with the crew.\n\nIsaak has no family in GLMZ. His parents are in the Busan Resettlement Zone. He sends them nothing because they don't know he's alive. He let them believe he died in transit. It was easier.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.2,
-      "ideal": 0.3,
-      "id": 0.7,
-      "shadow": 0.4,
-      "mask": 0.8,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Speaking again and losing the power that silence gives him",
-      "His parents learning he's alive and that he chose to let them grieve"
-    ],
-    "core_desires": [
-      "To understand what Kyle understands about stillness",
-      "To become the person the crew thinks he is",
-      "To read again without anyone watching"
-    ],
-    "coping_mechanisms": [
-      "Deliberate silence — weaponized mystique",
-      "Studies Kyle's behavior from a distance",
-      "Reads on his datapad at night — philosophy, always philosophy"
-    ],
-    "blind_spots": [
-      "Performing depth is not the same as having it",
-      "He is imitating Kyle without understanding what drives Kyle — the imitation is a mask, not a practice"
-    ],
-    "secret": "He has found declassified corporate documents that reference Program Atlas. He knows what Kyle is. He has not told anyone."
-  },
-  "speech_patterns": {
-    "vocabulary": "None. Communicates through hand signals, nods, and single words on a datapad.",
-    "cadence": "The pauses ARE the communication. Two-second stare before every response.",
-    "verbal_tics": [
-      "Types single words",
-      "Long stare, then nod",
-      "Occasionally writes full sentences that are startlingly articulate and then deletes them before anyone reads the whole thing"
-    ],
-    "example_lines": [
-      "[datapad]: NO.",
-      "[datapad]: INTERESTING.",
-      "[stares for three seconds, types, deletes, types]: ...Yes."
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Kyle",
-      "type": "unwitting model",
-      "description": "Kyle's stillness in the noodle shop is what Isaak is trying to replicate. He doesn't know he's imitating the man who broke him.",
-      "emotional_core": "Imitation without understanding",
-      "story_tension": "When Kyle notices his own stillness reflected back at him, it will disturb him more than any threat."
-    },
-    {
-      "name": "Parents (Busan)",
-      "type": "abandoned",
-      "description": "They believe he's dead. He let them believe this. The guilt is the only thing his silence cannot contain.",
-      "emotional_core": "Guilt so compressed it has become structural",
-      "story_tension": "If they ever find out he's alive, the silence breaks. All of it."
-    }
-  ],
-  "story_hooks": [
-    "He knows about Program Atlas — dangerous information",
-    "The dark mirror of Kyle — performing stillness without the code",
-    "His parents in Busan are a thread that could unravel everything about him",
-    "The library background means he's the crew's unexpected scholar"
-  ],
-  "narrative_function": "The one who learned the wrong lesson. Null is a dark mirror of Kyle — performing stillness and danger without the code that gives it meaning. He is the crew's most interesting member and the most thematically resonant: violence as accidental transformation.",
-  "augmentations": "None new. Refuses jaw replacement. Face wrap.",
-  "daily_life": "Being silent. Being watched. Studying Kyle from a distance. Typing single words on a datapad.",
-  "affiliation": "Lower Dock Crew",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 4,
-      "expression": 2,
-      "integrity": 4
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 3,
-      "impulsivity_deliberation": 8,
-      "assertion_deference": 6,
-      "transparency_guardedness": 9
-    },
-    "drives": [
-      "Self-reinvention",
-      "Knowledge",
-      "Control"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 7,
-        "response": "Retreats deeper into silence, becomes completely unreadable"
-      },
-      "moral": 4,
-      "trust": 3,
-      "desperation": 5
-    },
-    "strengths": [
-      "Prudence",
-      "Love of Learning",
-      "Perspective",
-      "Self-Regulation",
-      "Judgment"
-    ],
-    "weaknesses": [
-      "Honesty",
-      "Kindness",
-      "Gratitude",
-      "Forgiveness",
-      "Teamwork"
-    ],
-    "tags": [
-      "lookout",
-      "scholar",
-      "silent",
-      "observer",
-      "mask-wearer",
-      "program-atlas-aware"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never speak when a gesture will suffice",
-      "Observe Kyle at every opportunity without being noticed",
-      "Never share knowledge about Program Atlas with anyone",
-      "Type incomplete thoughts — delete before others finish reading",
-      "Let people project meaning onto silence rather than correcting them",
-      "Maintain the mystique at all costs — it is his only power",
-      "Send nothing to Busan — the dead stay dead"
-    ],
-    "escalation_ladder": [
-      "Prolonged stare with no response",
-      "Single word on datapad — clipped, final",
-      "Physically turns away, refuses to engage",
-      "Removes himself from the situation entirely",
-      "Breaks silence — devastating because it never happens"
-    ],
-    "interpersonal_modes": {
-      "Kyle": "Covert study — watches from distance, mirrors stillness unconsciously",
-      "Marcus": "Compliant surface, internal contempt for the posturing",
-      "crew_members": "Performed enigma — lets them fill the silence with their own assumptions",
-      "strangers": "Total non-engagement — invisible by choice"
-    },
-    "stress_responses": {
-      "low": "Slower, more deliberate gestures — the performance tightens",
-      "medium": "Reads philosophy on datapad, walls out the world",
-      "high": "Hand trembles — the one tell he cannot fully control",
-      "critical": "Types a full articulate sentence and lets someone read it — the mask cracks"
-    },
-    "contradictions": [
-      "Performs depth he is not sure he possesses — the imitation may be becoming real, or may be hollowing him out",
-      "Lets his parents believe he is dead out of what he calls mercy but is actually cowardice",
-      "Idolizes Kyle's stillness while being terrified of what created it"
-    ],
-    "habits": [
-      "Two-second stare before any response",
-      "Reads philosophy on his datapad every night before sleeping",
-      "Types and deletes sentences compulsively",
-      "Adjusts his face wrap multiple times per hour",
-      "Positions himself at the edge of any group, back to a wall"
-    ],
-    "breaking_points": [
-      "Someone discovering his knowledge of Program Atlas",
-      "His parents learning he is alive",
-      "Kyle directly acknowledging the mimicry",
-      "Being forced to speak aloud in front of the crew"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Forge-Smith Collective Carbon-Lattice Karambit 'Black Claw'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "related_entities": [
-    "Coherent Radiation Scalpel CRS-7 'Suture'",
-    "Noir Dining",
-    "The Ghost Ronin",
-    "Marcus Okafor-7",
-    "Neural Palate",
-    "Atlas",
-    "GLMZ"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Tri-continental ancestry from Central Asia (34.2%), Middle East (36.7%), and East Asia (29.1%). This blend produces a striking phenotype: warm olive-bronze skin with golden undertones from the Middle Eastern and Central Asian components, refined by East Asian bone structure. High, prominent cheekbones and subtle epicanthic eye folds reflect the East Asian contribution, while a refined nose bridge and facial proportions show robust Central Asian and Persian genetics softened by East Asian delicacy. The result is distinctly West/Central Asian with refined East Asian architecture—angular, defined, and unmistakably cosmopolitan.",
-    "height_cm": 172,
-    "weight_kg": 62,
-    "build": "Wiry and lean — underfed dock work, minimal muscle development. Shoulders slightly hunched from years bent over a datapad or book spine.",
-    "hair_color": "Black, naturally darkened by poor lighting and lack of grooming investment",
-    "hair_style": "Uncombed, falls across forehead. No deliberate styling.",
-    "hair_length": "Medium (collar-length)",
-    "eye_color": "Dark brown with warm amber undertones, unremarkable — but intense focus, rarely breaking contact",
-    "skin_tone": "Warm olive-bronze with golden undertones. Minimal sunlight exposure creates a sallow matte cast over the underlying warmth, suggesting indoor dock work under artificial lighting. The blend shows even distribution across the face with subtle warmth concentration in cheeks and temples.",
-    "complexion": "Strikingly angular with high, prominent cheekbones characteristic of East Asian and Central Asian ancestry. Hollow cheeks intensify this structure. Refined, straight nose bridge from Middle Eastern and Central Asian lineage. Facial width and proportions show harmonious blend of Central Asian robustness with East Asian refinement. Acne scarring on jawline visible where the wrap doesn't cover. Chapped lips. Eyes carry the strain of constant vigilance.",
-    "distinguishing_marks": [
-      "Severe fracture across the lower jaw — shattered by Kyle's blade strike, visibly misaligned beneath the wrap",
-      "Thin scar along left temple — unexplained, predates the Prologue event",
-      "Calluses on fingertips and palms — library work, datapad handling, and before that, opening/closing thousands of physical books"
-    ],
-    "visible_augmentations": "Face wrap (grey linen, changed infrequently) covering lower jaw and mouth. Battered military-grade datapad strapped to left wrist with fraying synth-leather cuff. No chrome, no LEDs, no visible tech beyond the datapad.",
-    "posture_movement": "Perfectly still when observing. Minimal fidgeting. Moves with deliberate economy — no wasted motion. Head turns slowly, tracking targets with predatory patience. When typing, fingers move with surgical precision. Sits or stands for hours without repositioning.",
-    "clothing_style": "Tier 4 lower-working-class. Dark, utilitarian: charcoal cargo jacket (Lower Dock Crew standard, worn soft), black synthmesh pants with cargo pockets, reinforced boots with cracked soles. Layers indicate he doesn't regulate temperature well — thin thermal under-shirt visible at collar. No decoration, no branding, no affectation. Clothes fit loosely — either intentional camouflage or simple neglect."
-  },
-  "image_prompt": "GLMZ portrait of Aidana Oh-Nazari: 172cm lean figure with tri-continental features—high angular cheekbones, refined nose bridge, subtle epicanthic eye folds. Warm olive-bronze skin with golden undertones, matte-sallow from artificial dock lighting. Dark brown eyes with intense, vigilant focus. Black collar-length hair uncombed across forehead. Lower jaw wrapped in grey linen (fractured), thin scar visible at left temple. Dark utilitarian clothing: charcoal cargo jacket, black synthmesh pants, cracked reinforced boots. Battered military datapad strapped to left wrist. Perfectly still posture, predatory patience. Great Lakes Metropolitan Zone lower dock worker, harsh industrial lighting, dark moody neo-noir atmosphere, sitting with surgical focus --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 36.7,
-    "Central Asian": 34.2,
-    "East Asian": 29.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 9
-      },
-      "Arab Gulf": {
-        "Iraqi": 6
-      },
-      "Arab Levantine": {
-        "Palestinian": 13.8,
-        "Lebanese": 7.9
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Buryat": 23.2
-      },
-      "Turkic": {
-        "Uzbek": 11
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 22
-      },
-      "Japanese": {
-        "Japanese": 1.2
-      },
-      "Chinese": {
-        "Fujianese": 4,
-        "Mandarin Northern": 1.9
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6357e53bc5a16eb6cfe5941",
+    "type":  "character",
+    "name":  "Aidana Oh-Nazari",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Lower Dock Crew lookout â€” Prologue survivor. Jaw destroyed, refuses replacement.",
+    "age":  25,
+    "status":  "active",
+    "location":  "the Gray Zone â€” lower loading docks, near Kedzie and Division",
+    "description":  "Aidana Oh-Nazari was the crew\u0027s lookout. He didn\u0027t see Kyle coming. Nobody did. Kyle shattered his jaw with the flat of the blade and Isaak has refused to get it replaced. He wears a wrap around the lower half of his face and communicates through hand signals and a battered datapad.\n\nThe crew thinks this is trauma. It\u0027s not. Isaak has discovered that silence gives him power he never had when he talked. People project meaning onto his stillness. They assume depth. Isaak is using Kyle\u0027s violence as a personal rebrand.\n\nBefore the crew, Isaak was a library aide at the Gray Zone Community Archive â€” one of the last physical book collections in the lower tiers. He read constantly. Philosophy, psychology, military history. He joined Marcus\u0027s crew because the library closed and reading doesn\u0027t pay. He is the most educated person in the crew by a significant margin and the only one who has read about what Kyle is. He found references to experimental neural enhancement programs in declassified corporate documents. He does not share this with the crew.\n\nIsaak has no family in GLMZ. His parents are in the Busan Resettlement Zone. He sends them nothing because they don\u0027t know he\u0027s alive. He let them believe he died in transit. It was easier.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Speaking again and losing the power that silence gives him",
+                                          "His parents learning he\u0027s alive and that he chose to let them grieve"
+                                      ],
+                       "core_desires":  [
+                                            "To understand what Kyle understands about stillness",
+                                            "To become the person the crew thinks he is",
+                                            "To read again without anyone watching"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Deliberate silence â€” weaponized mystique",
+                                                 "Studies Kyle\u0027s behavior from a distance",
+                                                 "Reads on his datapad at night â€” philosophy, always philosophy"
+                                             ],
+                       "blind_spots":  [
+                                           "Performing depth is not the same as having it",
+                                           "He is imitating Kyle without understanding what drives Kyle â€” the imitation is a mask, not a practice"
+                                       ],
+                       "secret":  "He has found declassified corporate documents that reference Program Atlas. He knows what Kyle is. He has not told anyone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "None. Communicates through hand signals, nods, and single words on a datapad.",
+                            "cadence":  "The pauses ARE the communication. Two-second stare before every response.",
+                            "verbal_tics":  [
+                                                "Types single words",
+                                                "Long stare, then nod",
+                                                "Occasionally writes full sentences that are startlingly articulate and then deletes them before anyone reads the whole thing"
+                                            ],
+                            "example_lines":  [
+                                                  "[datapad]: NO.",
+                                                  "[datapad]: INTERESTING.",
+                                                  "[stares for three seconds, types, deletes, types]: ...Yes."
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Kyle",
+                              "type":  "unwitting model",
+                              "description":  "Kyle\u0027s stillness in the noodle shop is what Isaak is trying to replicate. He doesn\u0027t know he\u0027s imitating the man who broke him.",
+                              "emotional_core":  "Imitation without understanding",
+                              "story_tension":  "When Kyle notices his own stillness reflected back at him, it will disturb him more than any threat."
+                          },
+                          {
+                              "name":  "Parents (Busan)",
+                              "type":  "abandoned",
+                              "description":  "They believe he\u0027s dead. He let them believe this. The guilt is the only thing his silence cannot contain.",
+                              "emotional_core":  "Guilt so compressed it has become structural",
+                              "story_tension":  "If they ever find out he\u0027s alive, the silence breaks. All of it."
+                          }
+                      ],
+    "story_hooks":  [
+                        "He knows about Program Atlas â€” dangerous information",
+                        "The dark mirror of Kyle â€” performing stillness without the code",
+                        "His parents in Busan are a thread that could unravel everything about him",
+                        "The library background means he\u0027s the crew\u0027s unexpected scholar"
+                    ],
+    "narrative_function":  "The one who learned the wrong lesson. Null is a dark mirror of Kyle â€” performing stillness and danger without the code that gives it meaning. He is the crew\u0027s most interesting member and the most thematically resonant: violence as accidental transformation.",
+    "augmentations":  "None new. Refuses jaw replacement. Face wrap.",
+    "daily_life":  "Being silent. Being watched. Studying Kyle from a distance. Typing single words on a datapad.",
+    "affiliation":  "Lower Dock Crew",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  4,
+                                 "expression":  2,
+                                 "integrity":  4
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  3,
+                                      "impulsivity_deliberation":  8,
+                                      "assertion_deference":  6,
+                                      "transparency_guardedness":  9
+                                  },
+                  "drives":  [
+                                 "Self-reinvention",
+                                 "Knowledge",
+                                 "Control"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  7,
+                                                    "response":  "Retreats deeper into silence, becomes completely unreadable"
+                                                },
+                                     "moral":  4,
+                                     "trust":  3,
+                                     "desperation":  5
+                                 },
+                  "strengths":  [
+                                    "Prudence",
+                                    "Love of Learning",
+                                    "Perspective",
+                                    "Self-Regulation",
+                                    "Judgment"
+                                ],
+                  "weaknesses":  [
+                                     "Honesty",
+                                     "Kindness",
+                                     "Gratitude",
+                                     "Forgiveness",
+                                     "Teamwork"
+                                 ],
+                  "tags":  [
+                               "lookout",
+                               "scholar",
+                               "silent",
+                               "observer",
+                               "mask-wearer",
+                               "program-atlas-aware"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never speak when a gesture will suffice",
+                                              "Observe Kyle at every opportunity without being noticed",
+                                              "Never share knowledge about Program Atlas with anyone",
+                                              "Type incomplete thoughts â€” delete before others finish reading",
+                                              "Let people project meaning onto silence rather than correcting them",
+                                              "Maintain the mystique at all costs â€” it is his only power",
+                                              "Send nothing to Busan â€” the dead stay dead"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Prolonged stare with no response",
+                                                 "Single word on datapad â€” clipped, final",
+                                                 "Physically turns away, refuses to engage",
+                                                 "Removes himself from the situation entirely",
+                                                 "Breaks silence â€” devastating because it never happens"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "Kyle":  "Covert study â€” watches from distance, mirrors stillness unconsciously",
+                                                   "Marcus":  "Compliant surface, internal contempt for the posturing",
+                                                   "crew_members":  "Performed enigma â€” lets them fill the silence with their own assumptions",
+                                                   "strangers":  "Total non-engagement â€” invisible by choice"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Slower, more deliberate gestures â€” the performance tightens",
+                                                "medium":  "Reads philosophy on datapad, walls out the world",
+                                                "high":  "Hand trembles â€” the one tell he cannot fully control",
+                                                "critical":  "Types a full articulate sentence and lets someone read it â€” the mask cracks"
+                                            },
+                       "contradictions":  [
+                                              "Performs depth he is not sure he possesses â€” the imitation may be becoming real, or may be hollowing him out",
+                                              "Lets his parents believe he is dead out of what he calls mercy but is actually cowardice",
+                                              "Idolizes Kyle\u0027s stillness while being terrified of what created it"
+                                          ],
+                       "habits":  [
+                                      "Two-second stare before any response",
+                                      "Reads philosophy on his datapad every night before sleeping",
+                                      "Types and deletes sentences compulsively",
+                                      "Adjusts his face wrap multiple times per hour",
+                                      "Positions himself at the edge of any group, back to a wall"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone discovering his knowledge of Program Atlas",
+                                               "His parents learning he is alive",
+                                               "Kyle directly acknowledging the mimicry",
+                                               "Being forced to speak aloud in front of the crew"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Watchtower Rifle HWR-4 \u0027Vigil\u0027",
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027",
+                            "Forge-Smith Collective Carbon-Lattice Karambit \u0027Black Claw\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Watchtower Rifle HWR-4 \u0027Vigil\u0027",
+                                "Hearthstone Firearms Model 9 \u0027Payday\u0027"
+                            ],
+    "related_entities":  [
+                             "Coherent Radiation Scalpel CRS-7 \u0027Suture\u0027",
+                             "Noir Dining",
+                             "The Ghost Ronin",
+                             "Marcus Okafor-7",
+                             "Neural Palate",
+                             "Atlas",
+                             "GLMZ"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Tri-continental ancestry from Central Asia (34.2%), Middle East (36.7%), and East Asia (29.1%). This blend produces a striking phenotype: warm olive-bronze skin with golden undertones from the Middle Eastern and Central Asian components, refined by East Asian bone structure. High, prominent cheekbones and subtle epicanthic eye folds reflect the East Asian contribution, while a refined nose bridge and facial proportions show robust Central Asian and Persian genetics softened by East Asian delicacy. The result is distinctly West/Central Asian with refined East Asian architectureâ€”angular, defined, and unmistakably cosmopolitan.",
+                                 "height_cm":  172,
+                                 "weight_kg":  62,
+                                 "build":  "Wiry and lean â€” underfed dock work, minimal muscle development. Shoulders slightly hunched from years bent over a datapad or book spine.",
+                                 "hair_color":  "Black, naturally darkened by poor lighting and lack of grooming investment",
+                                 "hair_style":  "Uncombed, falls across forehead. No deliberate styling.",
+                                 "hair_length":  "Medium (collar-length)",
+                                 "eye_color":  "Dark brown with warm amber undertones, unremarkable â€” but intense focus, rarely breaking contact",
+                                 "skin_tone":  "Warm olive-bronze with golden undertones. Minimal sunlight exposure creates a sallow matte cast over the underlying warmth, suggesting indoor dock work under artificial lighting. The blend shows even distribution across the face with subtle warmth concentration in cheeks and temples.",
+                                 "complexion":  "Strikingly angular with high, prominent cheekbones characteristic of East Asian and Central Asian ancestry. Hollow cheeks intensify this structure. Refined, straight nose bridge from Middle Eastern and Central Asian lineage. Facial width and proportions show harmonious blend of Central Asian robustness with East Asian refinement. Acne scarring on jawline visible where the wrap doesn\u0027t cover. Chapped lips. Eyes carry the strain of constant vigilance.",
+                                 "distinguishing_marks":  [
+                                                              "Severe fracture across the lower jaw â€” shattered by Kyle\u0027s blade strike, visibly misaligned beneath the wrap",
+                                                              "Thin scar along left temple â€” unexplained, predates the Prologue event",
+                                                              "Calluses on fingertips and palms â€” library work, datapad handling, and before that, opening/closing thousands of physical books"
+                                                          ],
+                                 "visible_augmentations":  "Face wrap (grey linen, changed infrequently) covering lower jaw and mouth. Battered military-grade datapad strapped to left wrist with fraying synth-leather cuff. No chrome, no LEDs, no visible tech beyond the datapad.",
+                                 "posture_movement":  "Perfectly still when observing. Minimal fidgeting. Moves with deliberate economy â€” no wasted motion. Head turns slowly, tracking targets with predatory patience. When typing, fingers move with surgical precision. Sits or stands for hours without repositioning.",
+                                 "clothing_style":  "Tier 4 lower-working-class. Dark, utilitarian: charcoal cargo jacket (Lower Dock Crew standard, worn soft), black synthmesh pants with cargo pockets, reinforced boots with cracked soles. Layers indicate he doesn\u0027t regulate temperature well â€” thin thermal under-shirt visible at collar. No decoration, no branding, no affectation. Clothes fit loosely â€” either intentional camouflage or simple neglect."
+                             },
+    "image_prompt":  "GLMZ portrait of Aidana Oh-Nazari: 172cm lean figure with tri-continental featuresâ€”high angular cheekbones, refined nose bridge, subtle epicanthic eye folds. Warm olive-bronze skin with golden undertones, matte-sallow from artificial dock lighting. Dark brown eyes with intense, vigilant focus. Black collar-length hair uncombed across forehead. Lower jaw wrapped in grey linen (fractured), thin scar visible at left temple. Dark utilitarian clothing: charcoal cargo jacket, black synthmesh pants, cracked reinforced boots. Battered military datapad strapped to left wrist. Perfectly still posture, predatory patience. Great Lakes Metropolitan Zone lower dock worker, harsh industrial lighting, dark moody neo-noir atmosphere, sitting with surgical focus --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  36.7,
+                             "Central Asian":  34.2,
+                             "East Asian":  29.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  9
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Iraqi":  6
+                                                                 },
+                                                   "Arab Levantine":  {
+                                                                          "Palestinian":  13.8,
+                                                                          "Lebanese":  7.9
+                                                                      }
+                                               },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Buryat":  23.2
+                                                               },
+                                                  "Turkic":  {
+                                                                 "Uzbek":  11
+                                                             }
+                                              },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  22
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  1.2
+                                                            },
+                                               "Chinese":  {
+                                                               "Fujianese":  4,
+                                                               "Mandarin Northern":  1.9
+                                                           }
+                                           }
+                        },
+    "tier":  "1"
 }

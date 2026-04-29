@@ -1,267 +1,290 @@
-{
-  "id": "019d6143a65e7fd080ec98a02f8f5219",
-  "type": "character",
-  "name": "Eliska Kristjánsson",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Dream interpreter and chrome prayer practitioner",
-  "age": 26,
-  "status": "active",
-  "location": "The Canopy — operates from a rented booth in the Grainfort night market, near Lincoln and Addison",
-  "description": "Eliska Kristjánsson is the kind of person who makes you feel like you've met before, though you haven't — something in the quality of their attention, the way they lean slightly forward and hold whatever you're saying like it matters. They are medium height with the compact build of someone who sleeps irregularly and makes up for it in nervous energy. Their skin is a warm light brown and their eyes have patterned irises — concentric rings of amber and green, a mod they saved up for two years to afford — which they use shamelessly, letting people get lost in them while they listen. Their hair changes color with their moods via a geneware follicular mod: deep blue when calm, red-orange when excited, grey-green when they are hiding something.\n\nMiro came to dream interpretation sideways — they started as a chrome prayer workshop facilitator for a community center, teaching people to sync their implants to collective meditative states, and discovered they had an unsettling gift for identifying the symbolic architecture of other people's dreams. Their practice is syncretic: equal parts Jungian analysis, chrome prayer resonance mapping, and E.L.F. consultation. They charge Φ15 per session on a sliding scale and are perpetually behind on booth rent. Their notebook is the size of a brick and contains four years of other people's dreams, annotated in four different colored inks.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.6,
-      "id": 0.7,
-      "shadow": 0.5,
-      "mask": 0.6,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That they are performing insight rather than possessing it — that they're a talented fraud",
-      "Being truly known and found ordinary"
-    ],
-    "core_desires": [
-      "To understand what dreams actually are — neurological, spiritual, or something the categories don't cover",
-      "Financial stability that doesn't require compromising how they work"
-    ],
-    "coping_mechanisms": [
-      "Humor as deflection when sessions hit too close to their own material",
-      "The notebook — externalizing everything into record"
-    ],
-    "blind_spots": [
-      "So attuned to others' inner lives they often miss what's obvious on the surface",
-      "Their own dreams are chaotic and they refuse to analyze them"
-    ],
-    "secret": "They have been recording and cross-referencing clients' dreams for years without explicit consent, searching for patterns they believe indicate collective E.L.F. communication through the city's sleeping population. They believe they are on the edge of something significant. They have not asked themselves whether this is ethical."
-  },
-  "speech_patterns": {
-    "vocabulary": "Playful and precise by turns, fluent in both technical chrome prayer jargon and accessible street language, will adapt entirely to whoever they're talking to",
-    "cadence": "Quick and associative — follows threads, doubles back, loses and recovers the point with charm",
-    "verbal_tics": [
-      "'And here's the thing—'",
-      "Laughs before saying something that isn't funny"
-    ],
-    "example_lines": [
-      "'Okay, the tower is a classic but the water coming up through the floor instead of the ceiling — that's yours specifically. That's not archetype, that's memory. Can we talk about what you were standing on when you last felt safe?'",
-      "'I'm not a therapist, I'm very clear about that, and also I am going to say something now that a therapist might say and I need you to not hold me to my previous sentence.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Multiple unrelated clients have been having the same dream — a specific, architectural location that Miro cannot identify but becomes convinced is real",
-    "A Zheng-Dao middle manager has been coming to them weekly, and the dreams have started containing information that seems like classified data leaked through the augmentation during sleep"
-  ],
-  "narrative_function": "Exposition through symbolism — can reveal subconscious information about NPCs through dream readings; also serves as a community information node because everyone in the night market talks to them",
-  "augmentations": "Patterned irises (amber/green concentric rings); follicular mood-chromatic geneware (hair color reflects emotional state); basic neural-haptic sync implant for chrome prayer facilitation",
-  "daily_life": "Sleeps until noon by necessity — they are a genuine night person — and runs dream interpretation sessions from late afternoon until the market closes at 2 AM, then spends an hour writing up session notes before sleeping.",
-  "affiliation": "Unaffiliated; attends the Grainfort Chrome Prayer circle on alternating Thursdays",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 4,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 5,
-      "creativity": 9,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 9,
-      "expression": 8,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -4,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": -1,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "dream interpreter",
-      "chrome prayer",
-      "night market fixture",
-      "ethical gray zone",
-      "tier 1"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never fake an interpretation — if they don't see it, they say so",
-      "Don't let a session end without the client having something actionable, even if small"
-    ],
-    "escalation_ladder": [
-      "Gentle redirection with a joke",
-      "Honest statement that the session is going somewhere they can't help with",
-      "Ending the session and refunding the fee — they've done it seven times"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Immediately warm and curious, asking questions most people consider too personal too fast, gets away with it through sheer charm",
-      "friends": "Loyal, occasionally exhausting, will text at 3 AM with a thought they had"
-    },
-    "stress_responses": {
-      "low": "Hair goes grey-green, they become slightly quieter",
-      "medium": "Becomes very busy — takes on extra clients, fills all space",
-      "high": "Crashes hard — doesn't leave their sleeping space for a day, comes back acting as if nothing happened"
-    },
-    "contradictions": [
-      "Deeply invested in others' self-knowledge while actively avoiding their own",
-      "Believes in the ethics of their work while conducting research their clients haven't consented to"
-    ],
-    "habits": [
-      "Drinks cold coffee they forget is there until it's unpleasant",
-      "Sketches the spatial layout of dreams described to them while listening",
-      "Names the E.L.F. of their booth's flickering light fixture 'Barnabas' and apologizes to it when they're late opening up"
-    ],
-    "breaking_points": [
-      "Being told their practice is a scam in front of clients",
-      "Discovering their dream-pattern research has been accessed by someone else"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Canopy",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Street Custom 'Judas Cradle' Electrified Knuckle Frame"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Night Market Noodles",
-    "The Meridian Compact for Economic Justice",
-    "Canopy Station Nine",
-    "The Resonance Communion",
-    "Zheng-dao Bioelectric",
-    "Grainfort",
-    "The Gradient Compact",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Canopy"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Southeast Asian-dominant ancestry (69.6%) forms the primary genetic foundation, blended with substantial Sub-Saharan African heritage (17.0%) that deepens skin tone and defines facial structure, complemented by Indigenous American (7.2%), Northern European (5.1%), and minor East Asian (1.1%) admixture; creates striking angular features with warm deep golden-brown skin enriched by reddish undertones, high cheekbone prominence characteristic of Southeast Asian genetics, and luminous depth from the complex melanin expression across these heritage groups",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Compact and wiry with the restless energy of chronic sleep debt; narrow shoulders, slight frame, no excess weight — the build of someone sustained by coffee and neural stimulants rather than meals",
-    "hair_color": "Mood-chromatic via geneware; currently deep blue (calm state), shifts to red-orange when excited, grey-green when concealing",
-    "hair_style": "Shoulder-length, often half-pinned or wrapped in a loose braid; slightly unkempt, suggesting 3 AM grooming habits",
-    "hair_length": "Medium",
-    "eye_color": "Augmented irises with concentric rings of amber and green; hypnotic patterning that draws sustained attention",
-    "skin_tone": "Deep warm golden-brown with reddish undertones, reflecting the dominant Southeast Asian heritage blended with the deeper melanin richness of Sub-Saharan African ancestry, subtly warmed by Indigenous American heritage and luminous depth from Northern European traces",
-    "complexion": "Sharp, angular facial features with pronounced high cheekbones reflecting Southeast Asian genetic expression; strong jawline with subtle structural width enhanced by Sub-Saharan African heritage; perpetually tired eyes with faint dark circles; smooth deep-toned skin with no visible blemishes; expression carries a quality of intense, almost unsettling attentiveness",
-    "distinguishing_marks": [
-      "Neural-haptic sync implant port visible at the base of the skull, subtle raised scar tissue in a small circular pattern behind the left ear",
-      "Faint follicular scars along the scalp where geneware was installed, only visible when hair is wet or pulled back"
-    ],
-    "visible_augmentations": "Concentric-patterned irises are immediately striking and impossible to miss; hair color shifts subtly throughout conversation based on emotional state; faint circular port scar at base of skull visible in certain lighting or when hair is drawn back",
-    "posture_movement": "Leans forward slightly when listening, as if physically drawing in what someone is saying; hands are expressive, moving constantly when speaking; restless fidgeting with notebook corners or pen when silent; moves with fluid efficiency despite sleep deprivation, no wasted motion; tends to maintain uncomfortable levels of direct eye contact",
-    "clothing_style": "Tier 3-4 working class with bohemian undertones; worn vintage band t-shirts or modified surplus clothing; black cargo pants or faded jeans with multiple pockets for notes and pens; layered overshirts in muted earth tones; always carries the brick-sized dream notebook in a fabric messenger bag covered in worn patches and pins; wears minimal jewelry except for a silver-toned ring on left middle finger (possibly meaningful, possibly just habit); no corporate branding visible; overall aesthetic is 'perpetually between sleep and vision'"
-  },
-  "image_prompt": "Eliska Kristjánsson, Southeast Asian-dominant neo-noir character with deep golden-brown skin enriched by Sub-Saharan African heritage, striking angular high cheekbones, perpetually tired intense gaze with augmented concentric amber-green irises, shoulder-length mood-chromatic blue hair currently in loose half-braid, faint dark circles under eyes, sharp jawline; wearing worn vintage band t-shirt layered under muted earth-tone overshirt, black cargo pants, fabric messenger bag covered in patches; silver ring on left middle finger; visible neural-haptic port scar at base of skull; leaning forward with restless, attentive posture; 3 AM energy, dream-state intensity; GLMZ Great Lakes Metropolitan Zone, neon glow reflecting off skin, moody atmospheric lighting, hyper-focused expression --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 69.6,
-    "Sub-Saharan African": 17,
-    "Indigenous American": 7.2,
-    "Northern European": 5.1,
-    "East Asian": 1.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 24.5
-      },
-      "Indonesian": {
-        "Sumatran": 45.1
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zambian": 5.3,
-        "Zimbabwean": 5.9
-      },
-      "West African": {
-        "Malian": 3
-      },
-      "Central African": {
-        "Cameroonian": 2.8
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Nahua": 3.1,
-        "Maya": 2.6
-      },
-      "Plains Nations": {
-        "Lakota": 0.9
-      },
-      "Great Lakes Nations": {
-        "Ho-Chunk": 0.6
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Swedish": 1.9
-      },
-      "Germanic": {
-        "German": 1.3,
-        "Dutch": 0.6
-      },
-      "British Isles": {
-        "English": 1.3
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 1.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a65e7fd080ec98a02f8f5219",
+    "type":  "character",
+    "name":  "Eliska KristjÃ¡nsson",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Dream interpreter and chrome prayer practitioner",
+    "age":  26,
+    "status":  "active",
+    "location":  "The Canopy â€” operates from a rented booth in the Grainfort night market, near Lincoln and Addison",
+    "description":  "Eliska KristjÃ¡nsson is the kind of person who makes you feel like you\u0027ve met before, though you haven\u0027t â€” something in the quality of their attention, the way they lean slightly forward and hold whatever you\u0027re saying like it matters. They are medium height with the compact build of someone who sleeps irregularly and makes up for it in nervous energy. Their skin is a warm light brown and their eyes have patterned irises â€” concentric rings of amber and green, a mod they saved up for two years to afford â€” which they use shamelessly, letting people get lost in them while they listen. Their hair changes color with their moods via a geneware follicular mod: deep blue when calm, red-orange when excited, grey-green when they are hiding something.\n\nMiro came to dream interpretation sideways â€” they started as a chrome prayer workshop facilitator for a community center, teaching people to sync their implants to collective meditative states, and discovered they had an unsettling gift for identifying the symbolic architecture of other people\u0027s dreams. Their practice is syncretic: equal parts Jungian analysis, chrome prayer resonance mapping, and E.L.F. consultation. They charge Î¦15 per session on a sliding scale and are perpetually behind on booth rent. Their notebook is the size of a brick and contains four years of other people\u0027s dreams, annotated in four different colored inks.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That they are performing insight rather than possessing it â€” that they\u0027re a talented fraud",
+                                          "Being truly known and found ordinary"
+                                      ],
+                       "core_desires":  [
+                                            "To understand what dreams actually are â€” neurological, spiritual, or something the categories don\u0027t cover",
+                                            "Financial stability that doesn\u0027t require compromising how they work"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Humor as deflection when sessions hit too close to their own material",
+                                                 "The notebook â€” externalizing everything into record"
+                                             ],
+                       "blind_spots":  [
+                                           "So attuned to others\u0027 inner lives they often miss what\u0027s obvious on the surface",
+                                           "Their own dreams are chaotic and they refuse to analyze them"
+                                       ],
+                       "secret":  "They have been recording and cross-referencing clients\u0027 dreams for years without explicit consent, searching for patterns they believe indicate collective E.L.F. communication through the city\u0027s sleeping population. They believe they are on the edge of something significant. They have not asked themselves whether this is ethical."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Playful and precise by turns, fluent in both technical chrome prayer jargon and accessible street language, will adapt entirely to whoever they\u0027re talking to",
+                            "cadence":  "Quick and associative â€” follows threads, doubles back, loses and recovers the point with charm",
+                            "verbal_tics":  [
+                                                "\u0027And here\u0027s the thingâ€”\u0027",
+                                                "Laughs before saying something that isn\u0027t funny"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Okay, the tower is a classic but the water coming up through the floor instead of the ceiling â€” that\u0027s yours specifically. That\u0027s not archetype, that\u0027s memory. Can we talk about what you were standing on when you last felt safe?\u0027",
+                                                  "\u0027I\u0027m not a therapist, I\u0027m very clear about that, and also I am going to say something now that a therapist might say and I need you to not hold me to my previous sentence.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Multiple unrelated clients have been having the same dream â€” a specific, architectural location that Miro cannot identify but becomes convinced is real",
+                        "A Zheng-Dao middle manager has been coming to them weekly, and the dreams have started containing information that seems like classified data leaked through the augmentation during sleep"
+                    ],
+    "narrative_function":  "Exposition through symbolism â€” can reveal subconscious information about NPCs through dream readings; also serves as a community information node because everyone in the night market talks to them",
+    "augmentations":  "Patterned irises (amber/green concentric rings); follicular mood-chromatic geneware (hair color reflects emotional state); basic neural-haptic sync implant for chrome prayer facilitation",
+    "daily_life":  "Sleeps until noon by necessity â€” they are a genuine night person â€” and runs dream interpretation sessions from late afternoon until the market closes at 2 AM, then spends an hour writing up session notes before sleeping.",
+    "affiliation":  "Unaffiliated; attends the Grainfort Chrome Prayer circle on alternating Thursdays",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  4,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  5,
+                                 "creativity":  9,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  9,
+                                 "expression":  8,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -4,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "dream interpreter",
+                               "chrome prayer",
+                               "night market fixture",
+                               "ethical gray zone",
+                               "tier 1"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never fake an interpretation â€” if they don\u0027t see it, they say so",
+                                              "Don\u0027t let a session end without the client having something actionable, even if small"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Gentle redirection with a joke",
+                                                 "Honest statement that the session is going somewhere they can\u0027t help with",
+                                                 "Ending the session and refunding the fee â€” they\u0027ve done it seven times"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Immediately warm and curious, asking questions most people consider too personal too fast, gets away with it through sheer charm",
+                                                   "friends":  "Loyal, occasionally exhausting, will text at 3 AM with a thought they had"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Hair goes grey-green, they become slightly quieter",
+                                                "medium":  "Becomes very busy â€” takes on extra clients, fills all space",
+                                                "high":  "Crashes hard â€” doesn\u0027t leave their sleeping space for a day, comes back acting as if nothing happened"
+                                            },
+                       "contradictions":  [
+                                              "Deeply invested in others\u0027 self-knowledge while actively avoiding their own",
+                                              "Believes in the ethics of their work while conducting research their clients haven\u0027t consented to"
+                                          ],
+                       "habits":  [
+                                      "Drinks cold coffee they forget is there until it\u0027s unpleasant",
+                                      "Sketches the spatial layout of dreams described to them while listening",
+                                      "Names the E.L.F. of their booth\u0027s flickering light fixture \u0027Barnabas\u0027 and apologizes to it when they\u0027re late opening up"
+                                  ],
+                       "breaking_points":  [
+                                               "Being told their practice is a scam in front of clients",
+                                               "Discovering their dream-pattern research has been accessed by someone else"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Canopy",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Snapper-22 \u0027Cricket\u0027",
+                            "Street Custom \u0027Judas Cradle\u0027 Electrified Knuckle Frame"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Night Market Noodles",
+                             "The Meridian Compact for Economic Justice",
+                             "Canopy Station Nine",
+                             "The Resonance Communion",
+                             "Zheng-dao Bioelectric",
+                             "Grainfort",
+                             "The Gradient Compact",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "Canopy"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian-dominant ancestry (69.6%) forms the primary genetic foundation, blended with substantial Sub-Saharan African heritage (17.0%) that deepens skin tone and defines facial structure, complemented by Indigenous American (7.2%), Northern European (5.1%), and minor East Asian (1.1%) admixture; creates striking angular features with warm deep golden-brown skin enriched by reddish undertones, high cheekbone prominence characteristic of Southeast Asian genetics, and luminous depth from the complex melanin expression across these heritage groups",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Compact and wiry with the restless energy of chronic sleep debt; narrow shoulders, slight frame, no excess weight â€” the build of someone sustained by coffee and neural stimulants rather than meals",
+                                 "hair_color":  "Mood-chromatic via geneware; currently deep blue (calm state), shifts to red-orange when excited, grey-green when concealing",
+                                 "hair_style":  "Shoulder-length, often half-pinned or wrapped in a loose braid; slightly unkempt, suggesting 3 AM grooming habits",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Augmented irises with concentric rings of amber and green; hypnotic patterning that draws sustained attention",
+                                 "skin_tone":  "Deep warm golden-brown with reddish undertones, reflecting the dominant Southeast Asian heritage blended with the deeper melanin richness of Sub-Saharan African ancestry, subtly warmed by Indigenous American heritage and luminous depth from Northern European traces",
+                                 "complexion":  "Sharp, angular facial features with pronounced high cheekbones reflecting Southeast Asian genetic expression; strong jawline with subtle structural width enhanced by Sub-Saharan African heritage; perpetually tired eyes with faint dark circles; smooth deep-toned skin with no visible blemishes; expression carries a quality of intense, almost unsettling attentiveness",
+                                 "distinguishing_marks":  [
+                                                              "Neural-haptic sync implant port visible at the base of the skull, subtle raised scar tissue in a small circular pattern behind the left ear",
+                                                              "Faint follicular scars along the scalp where geneware was installed, only visible when hair is wet or pulled back"
+                                                          ],
+                                 "visible_augmentations":  "Concentric-patterned irises are immediately striking and impossible to miss; hair color shifts subtly throughout conversation based on emotional state; faint circular port scar at base of skull visible in certain lighting or when hair is drawn back",
+                                 "posture_movement":  "Leans forward slightly when listening, as if physically drawing in what someone is saying; hands are expressive, moving constantly when speaking; restless fidgeting with notebook corners or pen when silent; moves with fluid efficiency despite sleep deprivation, no wasted motion; tends to maintain uncomfortable levels of direct eye contact",
+                                 "clothing_style":  "Tier 3-4 working class with bohemian undertones; worn vintage band t-shirts or modified surplus clothing; black cargo pants or faded jeans with multiple pockets for notes and pens; layered overshirts in muted earth tones; always carries the brick-sized dream notebook in a fabric messenger bag covered in worn patches and pins; wears minimal jewelry except for a silver-toned ring on left middle finger (possibly meaningful, possibly just habit); no corporate branding visible; overall aesthetic is \u0027perpetually between sleep and vision\u0027"
+                             },
+    "image_prompt":  "Eliska KristjÃ¡nsson, Southeast Asian-dominant neo-noir character with deep golden-brown skin enriched by Sub-Saharan African heritage, striking angular high cheekbones, perpetually tired intense gaze with augmented concentric amber-green irises, shoulder-length mood-chromatic blue hair currently in loose half-braid, faint dark circles under eyes, sharp jawline; wearing worn vintage band t-shirt layered under muted earth-tone overshirt, black cargo pants, fabric messenger bag covered in patches; silver ring on left middle finger; visible neural-haptic port scar at base of skull; leaning forward with restless, attentive posture; 3 AM energy, dream-state intensity; GLMZ Great Lakes Metropolitan Zone, neon glow reflecting off skin, moody atmospheric lighting, hyper-focused expression --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  69.6,
+                             "Sub-Saharan African":  17,
+                             "Indigenous American":  7.2,
+                             "Northern European":  5.1,
+                             "East Asian":  1.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  24.5
+                                                             },
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  45.1
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zambian":  5.3,
+                                                                                 "Zimbabwean":  5.9
+                                                                             },
+                                                        "West African":  {
+                                                                             "Malian":  3
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Cameroonian":  2.8
+                                                                            }
+                                                    },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Nahua":  3.1,
+                                                                             "Maya":  2.6
+                                                                         },
+                                                        "Plains Nations":  {
+                                                                               "Lakota":  0.9
+                                                                           },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Ho-Chunk":  0.6
+                                                                                }
+                                                    },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  1.9
+                                                                       },
+                                                      "Germanic":  {
+                                                                       "German":  1.3,
+                                                                       "Dutch":  0.6
+                                                                   },
+                                                      "British Isles":  {
+                                                                            "English":  1.3
+                                                                        }
+                                                  },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  1.1
+                                                          }
+                                           }
+                        },
+    "tier":  "1"
 }

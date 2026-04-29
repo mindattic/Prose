@@ -6,10 +6,17 @@
 // unpinAll / destroy. Same JSInvokable callbacks: OnNodeClicked,
 // OnNodeExpand, OnBackgroundClicked.
 //
+// Style alignment with the 2D graph (graph-interop.js):
+//   • Cubes (3D) ↔ rounded squares (2D) — same typeColors palette
+//   • Edges drawn undirected (no cone arrows) — graph relationships
+//     are treated as bidirectional in the visual layer
+//   • No transient hover tooltip — clicking a cube opens a sticky popover
+//     anchored above it. Click the popover entry to load the entity into
+//     the side panel and dismiss the popover. Click the canvas to dismiss.
+//
 // Controls:
-//   Left-click node    = select (shows detail in Blazor)
-//   Right-click node   = expand neighbors (dblclick is reserved for
-//                        the camera-focus gesture by the library)
+//   Left-click node    = open popover (loads side panel via popover entry)
+//   Right-click node   = expand neighbors
 //   Left-drag canvas   = orbit
 //   Right-drag canvas  = pan
 //   Scroll             = zoom
@@ -23,7 +30,9 @@ window.graph3dInterop = {
     selectedId: null,
     containerId: null,
     resizeHandler: null,
-    nodeColorFn: null,
+    popover: null,
+    popoverNode: null,
+    makeCube: null,
 
     typeColors: {
         character:    '#17a2b8',
@@ -50,9 +59,15 @@ window.graph3dInterop = {
         const container = document.getElementById(containerId);
         if (!container) return;
         container.innerHTML = '';
+        // Popover overlay needs absolute positioning relative to the canvas wrapper.
+        if (getComputedStyle(container).position === 'static') container.style.position = 'relative';
 
         if (typeof ForceGraph3D !== 'function') {
             container.innerHTML = '<div style="color:#dc3545; padding:1rem; font-family: monospace;">3d-force-graph library not loaded. Check &lt;script&gt; tag in App.razor.</div>';
+            return;
+        }
+        if (typeof THREE === 'undefined') {
+            container.innerHTML = '<div style="color:#dc3545; padding:1rem; font-family: monospace;">THREE.js not loaded. Check &lt;script&gt; tag in App.razor.</div>';
             return;
         }
 
@@ -60,9 +75,17 @@ window.graph3dInterop = {
         const width = container.clientWidth || 900;
         const height = container.clientHeight || 600;
 
-        self.nodeColorFn = (n) => {
-            if (n.id === self.selectedId) return '#ffffff';
-            return self.typeColors[n.nodeType] || '#6c757d';
+        // Cubes instead of spheres — each node is a BoxGeometry sized by edge count.
+        // Side ≈ 2·∛(val) keeps small nodes legible and scales sublinearly.
+        // The closure reads self.selectedId so re-applying nodeThreeObject re-tints
+        // the selected cube white without rebuilding the simulation.
+        self.makeCube = (n) => {
+            const val = Math.max(1, (n.edgeCount || 0) * 0.5 + 2);
+            const side = Math.max(3, 2 * Math.cbrt(val) * 1.6);
+            const isSelected = (n.id === self.selectedId);
+            const color = isSelected ? '#ffffff' : (self.typeColors[n.nodeType] || '#6c757d');
+            const mat = new THREE.MeshLambertMaterial({ color, transparent: true, opacity: 0.92 });
+            return new THREE.Mesh(new THREE.BoxGeometry(side, side, side), mat);
         };
 
         const graph = ForceGraph3D()(container)
@@ -72,11 +95,10 @@ window.graph3dInterop = {
             .showNavInfo(false)
             .graphData({ nodes: self.nodes, links: self.edges })
             .nodeId('id')
-            .nodeLabel(n => `<div style="background:#111;padding:4px 8px;border:1px solid #333;border-radius:3px;color:#ddd;font-family:system-ui;font-size:12px;"><strong>${n.name}</strong> <span style="color:#888;">(${n.nodeType})</span></div>`)
-            .nodeColor(self.nodeColorFn)
-            .nodeVal(n => Math.max(1, (n.edgeCount || 0) * 0.5 + 2))
+            // No hover tooltip — replaced by the click-anchored popover (see showPopover).
+            .nodeLabel(() => '')
+            .nodeThreeObject(self.makeCube)
             .nodeOpacity(0.92)
-            .nodeResolution(8)
             .linkSource('source')
             .linkTarget('target')
             .linkColor(e => {
@@ -86,12 +108,11 @@ window.graph3dInterop = {
             })
             .linkOpacity(0.4)
             .linkWidth(e => Math.max(0.4, (e.weight || 1) * 0.4))
-            .linkDirectionalArrowLength(3)
-            .linkDirectionalArrowRelPos(0.95)
+            // Edges are bidirectional — no directional cone arrows.
+            .linkDirectionalArrowLength(0)
             .onNodeClick(n => {
                 self.selectedId = n.id;
-                graph.nodeColor(self.nodeColorFn); // re-evaluate accessor
-                if (self.ref) self.ref.invokeMethodAsync('OnNodeClicked', n.id);
+                self.graph.nodeThreeObject(self.makeCube); // refresh cube tints
 
                 // Smooth camera focus on the clicked node
                 const distance = 100;
@@ -102,13 +123,16 @@ window.graph3dInterop = {
                     { x: n.x || 0, y: n.y || 0, z: n.z || 0 },
                     800
                 );
+
+                self.showPopover(n);
             })
             .onNodeRightClick(n => {
                 if (self.ref) self.ref.invokeMethodAsync('OnNodeExpand', n.id);
             })
             .onBackgroundClick(() => {
                 self.selectedId = null;
-                graph.nodeColor(self.nodeColorFn);
+                self.hidePopover();
+                if (self.graph) self.graph.nodeThreeObject(self.makeCube); // refresh cube tints
                 if (self.ref) self.ref.invokeMethodAsync('OnBackgroundClicked');
             });
 
@@ -118,6 +142,10 @@ window.graph3dInterop = {
 
         self.graph = graph;
 
+        // Reposition the popover every simulation tick so it tracks the cube
+        // as the camera or the node moves. Cheap — one element transform.
+        graph.onEngineTick(() => self.repositionPopover());
+
         self.resizeHandler = () => {
             if (!self.graph || !container) return;
             self.graph.width(container.clientWidth);
@@ -126,9 +154,89 @@ window.graph3dInterop = {
         window.addEventListener('resize', self.resizeHandler);
     },
 
+    // ── Sticky popover ─────────────────────────────────────────────────
+    // Anchored above the selected cube. Stays open until the user clicks
+    // the entry (which loads the entity in the side panel and closes the
+    // popover) or clicks the canvas background.
+    showPopover: function (node) {
+        const container = document.getElementById(this.containerId);
+        if (!container) return;
+        const self = this;
+
+        if (!this.popover) {
+            const el = document.createElement('div');
+            el.className = 'graph3d-popover';
+            // Inline styles match the 2D graph's labelling palette and the dark theme.
+            el.style.cssText = [
+                'position: absolute',
+                'pointer-events: auto',
+                'background: #111',
+                'border: 1px solid #333',
+                'border-radius: 4px',
+                'padding: 6px 10px',
+                'color: #ddd',
+                'font-family: system-ui, sans-serif',
+                'font-size: 12px',
+                'line-height: 1.3',
+                'box-shadow: 0 4px 12px rgba(0,0,0,0.6)',
+                'z-index: 50',
+                'white-space: nowrap',
+                'transform: translate(-50%, calc(-100% - 12px))',
+            ].join(';');
+            container.appendChild(el);
+            this.popover = el;
+        }
+
+        const typeColor = this.typeColors[node.nodeType] || '#6c757d';
+        const safeName = (node.name || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const safeType = (node.nodeType || 'unknown').replace(/[<>&]/g, '');
+        this.popover.innerHTML = `
+            <div style="display:flex; align-items:center; gap:6px;">
+                <span style="display:inline-block; width:9px; height:9px; background:${typeColor}; border-radius:1px;"></span>
+                <span style="color:#888; font-size:0.7rem; text-transform:uppercase; letter-spacing:0.06em;">${safeType}</span>
+            </div>
+            <a href="#" class="graph3d-popover-link" style="color:#0dcaf0; font-weight:600; text-decoration:none; cursor:pointer; display:block; margin-top:2px;">${safeName}</a>
+        `;
+
+        const link = this.popover.querySelector('.graph3d-popover-link');
+        link.onclick = (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            if (self.ref) self.ref.invokeMethodAsync('OnNodeClicked', node.id);
+            self.hidePopover();
+        };
+
+        this.popoverNode = node;
+        this.repositionPopover();
+    },
+
+    hidePopover: function () {
+        if (this.popover) {
+            this.popover.style.display = 'none';
+        }
+        this.popoverNode = null;
+    },
+
+    repositionPopover: function () {
+        if (!this.popover || !this.popoverNode || !this.graph) return;
+        const n = this.popoverNode;
+        if (typeof n.x !== 'number') return;
+        // graph2ScreenCoords gives client-relative coords; subtract the container's
+        // bounding rect to get container-relative for the absolute-positioned popover.
+        const screen = this.graph.graph2ScreenCoords(n.x, n.y, n.z);
+        if (!screen) return;
+        const container = document.getElementById(this.containerId);
+        if (!container) return;
+        // The 3d-force-graph renderer's screen coords are already canvas-relative
+        // (origin at the canvas top-left), so apply directly.
+        this.popover.style.display = 'block';
+        this.popover.style.left = `${screen.x}px`;
+        this.popover.style.top = `${screen.y}px`;
+    },
+
     highlight: function (nodeId) {
         this.selectedId = nodeId;
-        if (this.graph && this.nodeColorFn) this.graph.nodeColor(this.nodeColorFn);
+        if (this.graph) this.graph.nodeThreeObject(this.makeCube);
     },
 
     unpinAll: function () {
@@ -162,6 +270,11 @@ window.graph3dInterop = {
             window.removeEventListener('resize', this.resizeHandler);
             this.resizeHandler = null;
         }
+        if (this.popover && this.popover.parentNode) {
+            this.popover.parentNode.removeChild(this.popover);
+        }
+        this.popover = null;
+        this.popoverNode = null;
         if (this.graph) {
             try { this.graph._destructor && this.graph._destructor(); } catch (e) {}
         }
@@ -175,6 +288,6 @@ window.graph3dInterop = {
         this.edges = [];
         this.selectedId = null;
         this.containerId = null;
-        this.nodeColorFn = null;
+        this.makeCube = null;
     }
 };

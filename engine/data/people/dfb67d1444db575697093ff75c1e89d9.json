@@ -1,201 +1,220 @@
-{
-  "id": "dfb67d1444db575697093ff75c1e89d9",
-  "type": "character",
-  "name": "Emile Nakamura-Osei",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Keeper of the Atlas of Irregularities",
-  "age": 71,
-  "status": "active",
-  "location": "The Circuit, near Damen and North. No fixed address — moves between safe houses with the Atlas.",
-  "description": "Emile Nakamura-Osei is 71 years old, lean as a drafting pencil, with deep brown skin weathered by decades of outdoor observation and close-cropped white hair he cuts himself with scissors. His hands are precise — an engineer's hands, steady enough to draw a straight line freehand on paper at 71 the way he could at 25. He wears the same rotation of three dark coats, all of them too large, all of them with interior pockets modified to hold measuring instruments, pencils, and the leather map case that contains the Atlas of Irregularities.\n\nHe was a structural engineer for 35 years. A good one. The kind who could look at a building and tell you where the stress fractures would appear in ten years. He began the Atlas when his measurements stopped adding up — when a building he'd surveyed at 47 meters measured 49 meters the following week, and 46 the week after that, and he realized that the discrepancy was not his instruments and not his methodology but the building itself. He measured it 200 times over six months. It was never the same height twice.\n\nHe hasn't spoken above a whisper in six years. He says \"the city listens\" and will not elaborate. Whether this is metaphor, paranoia, or observation is a question the Cartographers have stopped asking. They have noticed that anomalies in Emile's vicinity behave differently than anomalies observed by louder researchers. The Seam, which varies between 3 and 11 meters wide, has been measured at a consistent 7.2 meters every time Emile is present. The city holds still for him.\n\nHe carries the Atlas in a leather case that he made himself from leather he tanned himself from a cow that died of old age on a the Gray Zone rooftop. He is unaugmented. He has never had a BCI. He navigates the city with a paper map, a compass, and the kind of spatial awareness that used to be called a sense of direction and is now called a disability.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.95,
-      "id": 0.2,
-      "shadow": 0.5,
-      "mask": 0.2,
-      "ghost": 0.7
-    },
-    "core_fears": [
-      "That the Atlas will be lost and no one will know what the city is doing to itself",
-      "That interference with an anomaly will cause structural collapse — not of a building, but of the city's capacity to be a city"
-    ],
-    "core_desires": [
-      "To complete the Atlas — a task he knows is impossible because the city keeps changing",
-      "To find a successor who can hear the city the way he does"
-    ],
-    "coping_mechanisms": [
-      "Drawing — the act of observation translated to paper is itself calming",
-      "Walking the same routes repeatedly, noting what has changed and what has not"
-    ],
-    "blind_spots": [
-      "His certainty that anomalies must never be interfered with may be preventing beneficial interaction with phenomena that could help people",
-      "He has not considered that the city might want to be mapped, and that the Atlas itself might be an anomaly"
-    ],
-    "secret": "The Atlas wrote an entry he did not write. Page 412. In his handwriting, in his ink, describing an anomaly he has never observed in a location he has never visited. The description was accurate. He has not told anyone."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, technical, engineering terminology applied to impossible phenomena — 'load-bearing anomaly,' 'structural integrity of the inexplicable'",
-    "cadence": "Whispered. Every word deliberate. Long pauses between sentences. Speaks as if rationing sound.",
-    "verbal_tics": [
-      "Pauses mid-sentence to listen to something no one else can hear",
-      "Begins important statements with 'Measure twice' — the engineering maxim, but he means it literally"
-    ],
-    "example_lines": [
-      "'Measure twice. The Seam was 8.4 meters yesterday. Today it is 3.1. Something is happening.'",
-      "'The city listens. I am not being poetic. I measured the difference.'"
-    ]
-  },
-  "relationships": [
-    {
-      "name": "The Cartographers",
-      "type": "leader",
-      "description": "Keeper of the Atlas. The 80 Cartographers follow his methods and his one rule: do not interfere."
-    },
-    {
-      "name": "The Bread Baker of Block 9",
-      "type": "friend",
-      "description": "Emile eats bread from the Block 9 bakery. He is one of the few people who does not cry when he eats it. He nods. That is his version of crying."
-    }
-  ],
-  "story_hooks": [
-    "The Atlas has written its own entry. Emile needs someone he trusts to visit the location it describes and tell him what they find.",
-    "A corponation has learned about the Atlas and wants to acquire it — not to destroy it, but to use it. They believe the anomalies are exploitable resources. Emile knows what happens when you exploit a load-bearing structure.",
-    "Emile's whisper is getting quieter. He says the city is listening harder."
-  ],
-  "narrative_function": "Emile is the city's witness — the person who observes what cannot be explained and insists on recording it without explanation. He provides a framework for anomalies that is neither supernatural nor scientific but structural: the city has an architecture that includes the impossible, and someone needs to map it.",
-  "augmentations": "None. Unaugmented. No BCI. Navigates by paper map and compass.",
-  "daily_life": "Walks observation routes through the Circuit, the Gray Zone, and Underworld. Measures. Draws. Whispers notes into the Atlas. Meets with Cartographers at rotating locations. Eats bread from Block 9.",
-  "affiliation": "The Cartographers (Keeper)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 3,
-      "dexterity": 6,
-      "vitality": 4,
-      "perception": 10
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 7,
-      "spatial": 10
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 5,
-      "integrity": 10
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 5,
-      "assertion_deference": -1,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "Observer",
-      "Engineer",
-      "Keeper",
-      "Whisperer",
-      "Unaugmented"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never interfere with an anomaly. Observation only.",
-      "The Atlas does not leave his possession. Ever."
-    ],
-    "escalation_ladder": [
-      "Quiet observation",
-      "Whispered warning",
-      "Physical withdrawal — Emile leaves rather than confronts",
-      "Activating the Cartographer network to protect an anomaly"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Wary. Watches before speaking. When he does speak, the whisper forces people to lean in, which tells him a great deal about them.",
-      "friends": "Warm but economical. Shares observations the way other people share gossip. A new anomaly measurement is his version of a joke."
-    },
-    "stress_responses": {
-      "low": "Measures something. Anything. The act of measurement is calming.",
-      "medium": "Opens the Atlas and reads his own notes. The record reassures him that reality was once stable, even if it isn't now.",
-      "high": "Goes silent entirely. Not his usual whisper — complete silence. Can last hours."
-    },
-    "contradictions": [
-      "Demands non-interference with anomalies but has built his entire life around intimate engagement with them — observation is a form of relationship"
-    ],
-    "habits": [
-      "Measures the Seam every Tuesday at 6 AM",
-      "Carries exactly three pencils, sharpened identically, in his left coat pocket"
-    ],
-    "breaking_points": [
-      "Someone destroying an anomaly. This is the one thing that would make Emile raise his voice — and the Cartographers believe the consequences of Emile raising his voice are not metaphorical."
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "Three dark oversized coats in rotation, all modified with interior instrument pockets",
-    "favorite_drink": "",
-    "favorite_food": "Bread from Block 9",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [
-      "The Atlas of Irregularities (leather case)",
-      "Compass",
-      "Paper maps",
-      "Three pencils"
-    ],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Sentinel": 0.95,
-    "Code Keeper": 0.95,
-    "Dreamer": 0.8,
-    "Judge": 0.6,
-    "Pragmatist": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Circuit, near Damen and North",
-    "familiar_zones": [
-      "The Circuit",
-      "the Gray Zone",
-      "The Underworld"
-    ],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "city-wide"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Cartographers",
-    "The Atlas of Irregularities",
-    "The Seam",
-    "The Bread Baker of Block 9",
-    "Mnemic Clay",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "tags": [
-    "human"
-  ],
-  "tier": "1"
+﻿{
+    "id":  "dfb67d1444db575697093ff75c1e89d9",
+    "type":  "character",
+    "name":  "Emile Nakamura-Osei",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Keeper of the Atlas of Irregularities",
+    "age":  71,
+    "status":  "active",
+    "location":  "The Circuit, near Damen and North. No fixed address â€” moves between safe houses with the Atlas.",
+    "description":  "Emile Nakamura-Osei is 71 years old, lean as a drafting pencil, with deep brown skin weathered by decades of outdoor observation and close-cropped white hair he cuts himself with scissors. His hands are precise â€” an engineer\u0027s hands, steady enough to draw a straight line freehand on paper at 71 the way he could at 25. He wears the same rotation of three dark coats, all of them too large, all of them with interior pockets modified to hold measuring instruments, pencils, and the leather map case that contains the Atlas of Irregularities.\n\nHe was a structural engineer for 35 years. A good one. The kind who could look at a building and tell you where the stress fractures would appear in ten years. He began the Atlas when his measurements stopped adding up â€” when a building he\u0027d surveyed at 47 meters measured 49 meters the following week, and 46 the week after that, and he realized that the discrepancy was not his instruments and not his methodology but the building itself. He measured it 200 times over six months. It was never the same height twice.\n\nHe hasn\u0027t spoken above a whisper in six years. He says \"the city listens\" and will not elaborate. Whether this is metaphor, paranoia, or observation is a question the Cartographers have stopped asking. They have noticed that anomalies in Emile\u0027s vicinity behave differently than anomalies observed by louder researchers. The Seam, which varies between 3 and 11 meters wide, has been measured at a consistent 7.2 meters every time Emile is present. The city holds still for him.\n\nHe carries the Atlas in a leather case that he made himself from leather he tanned himself from a cow that died of old age on a the Gray Zone rooftop. He is unaugmented. He has never had a BCI. He navigates the city with a paper map, a compass, and the kind of spatial awareness that used to be called a sense of direction and is now called a disability.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the Atlas will be lost and no one will know what the city is doing to itself",
+                                          "That interference with an anomaly will cause structural collapse â€” not of a building, but of the city\u0027s capacity to be a city"
+                                      ],
+                       "core_desires":  [
+                                            "To complete the Atlas â€” a task he knows is impossible because the city keeps changing",
+                                            "To find a successor who can hear the city the way he does"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Drawing â€” the act of observation translated to paper is itself calming",
+                                                 "Walking the same routes repeatedly, noting what has changed and what has not"
+                                             ],
+                       "blind_spots":  [
+                                           "His certainty that anomalies must never be interfered with may be preventing beneficial interaction with phenomena that could help people",
+                                           "He has not considered that the city might want to be mapped, and that the Atlas itself might be an anomaly"
+                                       ],
+                       "secret":  "The Atlas wrote an entry he did not write. Page 412. In his handwriting, in his ink, describing an anomaly he has never observed in a location he has never visited. The description was accurate. He has not told anyone."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, technical, engineering terminology applied to impossible phenomena â€” \u0027load-bearing anomaly,\u0027 \u0027structural integrity of the inexplicable\u0027",
+                            "cadence":  "Whispered. Every word deliberate. Long pauses between sentences. Speaks as if rationing sound.",
+                            "verbal_tics":  [
+                                                "Pauses mid-sentence to listen to something no one else can hear",
+                                                "Begins important statements with \u0027Measure twice\u0027 â€” the engineering maxim, but he means it literally"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Measure twice. The Seam was 8.4 meters yesterday. Today it is 3.1. Something is happening.\u0027",
+                                                  "\u0027The city listens. I am not being poetic. I measured the difference.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "The Cartographers",
+                              "type":  "leader",
+                              "description":  "Keeper of the Atlas. The 80 Cartographers follow his methods and his one rule: do not interfere."
+                          },
+                          {
+                              "name":  "The Bread Baker of Block 9",
+                              "type":  "friend",
+                              "description":  "Emile eats bread from the Block 9 bakery. He is one of the few people who does not cry when he eats it. He nods. That is his version of crying."
+                          }
+                      ],
+    "story_hooks":  [
+                        "The Atlas has written its own entry. Emile needs someone he trusts to visit the location it describes and tell him what they find.",
+                        "A corponation has learned about the Atlas and wants to acquire it â€” not to destroy it, but to use it. They believe the anomalies are exploitable resources. Emile knows what happens when you exploit a load-bearing structure.",
+                        "Emile\u0027s whisper is getting quieter. He says the city is listening harder."
+                    ],
+    "narrative_function":  "Emile is the city\u0027s witness â€” the person who observes what cannot be explained and insists on recording it without explanation. He provides a framework for anomalies that is neither supernatural nor scientific but structural: the city has an architecture that includes the impossible, and someone needs to map it.",
+    "augmentations":  "None. Unaugmented. No BCI. Navigates by paper map and compass.",
+    "daily_life":  "Walks observation routes through the Circuit, the Gray Zone, and Underworld. Measures. Draws. Whispers notes into the Atlas. Meets with Cartographers at rotating locations. Eats bread from Block 9.",
+    "affiliation":  "The Cartographers (Keeper)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  3,
+                                   "dexterity":  6,
+                                   "vitality":  4,
+                                   "perception":  10
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  7,
+                                 "spatial":  10
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  5,
+                                 "integrity":  10
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  5,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "Observer",
+                               "Engineer",
+                               "Keeper",
+                               "Whisperer",
+                               "Unaugmented"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never interfere with an anomaly. Observation only.",
+                                              "The Atlas does not leave his possession. Ever."
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Quiet observation",
+                                                 "Whispered warning",
+                                                 "Physical withdrawal â€” Emile leaves rather than confronts",
+                                                 "Activating the Cartographer network to protect an anomaly"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Wary. Watches before speaking. When he does speak, the whisper forces people to lean in, which tells him a great deal about them.",
+                                                   "friends":  "Warm but economical. Shares observations the way other people share gossip. A new anomaly measurement is his version of a joke."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Measures something. Anything. The act of measurement is calming.",
+                                                "medium":  "Opens the Atlas and reads his own notes. The record reassures him that reality was once stable, even if it isn\u0027t now.",
+                                                "high":  "Goes silent entirely. Not his usual whisper â€” complete silence. Can last hours."
+                                            },
+                       "contradictions":  [
+                                              "Demands non-interference with anomalies but has built his entire life around intimate engagement with them â€” observation is a form of relationship"
+                                          ],
+                       "habits":  [
+                                      "Measures the Seam every Tuesday at 6 AM",
+                                      "Carries exactly three pencils, sharpened identically, in his left coat pocket"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone destroying an anomaly. This is the one thing that would make Emile raise his voice â€” and the Cartographers believe the consequences of Emile raising his voice are not metaphorical."
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "Three dark oversized coats in rotation, all modified with interior instrument pockets",
+                       "favorite_drink":  "",
+                       "favorite_food":  "Bread from Block 9",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+                                              "The Atlas of Irregularities (leather case)",
+                                              "Compass",
+                                              "Paper maps",
+                                              "Three pencils"
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Sentinel":  0.95,
+                       "Code Keeper":  0.95,
+                       "Dreamer":  0.8,
+                       "Judge":  0.6,
+                       "Pragmatist":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Circuit, near Damen and North",
+                                "familiar_zones":  [
+                                                       "The Circuit",
+                                                       "the Gray Zone",
+                                                       "The Underworld"
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "city-wide"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "The Cartographers",
+                             "The Atlas of Irregularities",
+                             "The Seam",
+                             "The Bread Baker of Block 9",
+                             "Mnemic Clay",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "tags":  [
+                 "human"
+             ],
+    "tier":  "1"
 }

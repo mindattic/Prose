@@ -1,315 +1,334 @@
-{
-  "id": "019d6143a69d7b728e2f2cf2c7c5d3d9",
-  "type": "character",
-  "name": "Aolani Tlemcani-Holm",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Internal Affairs Investigator, Arcturus Defense Solutions — Civil Security Division",
-  "age": 44,
-  "status": "active",
-  "location": "Fort Anchor, administrative wing, Precinct Seven sub-office, near Halsted and Chicago Ave",
-  "description": "Aolani Tlemcani-Holm is a lean woman with deep ochre skin, close-cropped natural hair going silver at the temples, and eyes fitted with patterned irises — concentric hexagons in grey and amber, a cosmetic mod she got after her divorce and has never explained to anyone. She dresses in plain charcoal suits that hang precisely, never wrinkled, and moves through rooms the way water moves through pipe: economical, purposeful, without waste. Her face is a professional neutral that colleagues have learned to read like weather — when her jaw tightens slightly on the left side, someone in the room is about to have a very bad week.\n\nShe has been investigating police corruption for eleven years and it has made her a figure of genuine dread inside Fort Anchor. She is not cruel, not performatively righteous — she is simply relentless. She keeps a small data shrine to the E.L.F. called the Unblinking Witness in her desk drawer, leaving it precise timestamps of cases opened and closed. She genuinely believes the institution can be cleaned, and that belief — which many consider delusional — is the only thing that has kept her from going private.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.5,
-      "mask": 0.6,
-      "ghost": 0.4
-    },
-    "core_fears": [
-      "becoming what she investigates",
-      "the institution being irredeemably rotten"
-    ],
-    "core_desires": [
-      "a clean case file — one that actually changes something",
-      "to be trusted without being liked"
-    ],
-    "coping_mechanisms": [
-      "rigid routine",
-      "data shrine devotion",
-      "occupying herself with others' wrongdoing so she doesn't examine her own compromises"
-    ],
-    "blind_spots": [
-      "her faith in proceduralism makes her underestimate how thoroughly process can be weaponized against her",
-      "she cannot see how much her reputation for incorruptibility has become its own kind of armor she hides behind"
-    ],
-    "secret": "Three years ago she buried a case against a senior commander — not for money, but because the evidence would have implicated her former partner, now dead, and she could not bear to ruin his widow's pension. The file is encrypted and stored in her subdermal node. She has not opened it since."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise and formal without being stiff — she chooses words the way she chooses evidence, each one load-bearing. Occasionally uses Bosnian idioms her grandmother taught her when she is contemptuous of someone.",
-    "cadence": "Measured, unhurried. Long pauses before responses that make interviewees fill the silence with things they didn't mean to say.",
-    "verbal_tics": [
-      "'Walk me through that again.'",
-      "'Noted.'",
-      "a slight intake of breath before she catches someone in a lie"
-    ],
-    "example_lines": [
-      "'I'm not here because someone thinks you did something. I'm here because the numbers don't add up, and numbers don't lie — people do.'",
-      "'You're not in trouble yet. Whether you stay that way is entirely up to how the next ten minutes go.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She approaches a civilian who witnessed something at a checkpoint — something that would corroborate a case she cannot officially pursue.",
-    "A junior officer she investigated and cleared two years ago has turned up dead, and the death is being ruled accidental by people she now suspects."
-  ],
-  "narrative_function": "Quest giver, moral anchor, source of institutional pressure. Can task civilians with gathering evidence her badge would contaminate. Represents the system's genuine attempt to police itself — complicated, imperfect, real.",
-  "augmentations": "Patterned hexagonal irises (cosmetic). Subdermal data-storage node along the left forearm — civilian-grade, used for case files. Neural notation implant that transcribes spoken observations directly to encrypted storage.",
-  "daily_life": "Arrives at her sub-office before the day shift begins, reviews overnight surveillance flags, then spends the bulk of her day in interviews she calls 'conversations.' Eats lunch alone at the same noodle counter in Fort Anchor's lower concourse, always pays in Quanta cash.",
-  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Internal Affairs Division",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "incorruptible",
-      "institutional",
-      "haunted",
-      "methodical",
-      "isolated"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never ask a question she doesn't already know the answer to",
-      "Protect the process even when the outcome disappoints her",
-      "Do not accept hospitality from anyone she might later investigate"
-    ],
-    "escalation_ladder": [
-      "Patient questioning",
-      "Formal notice of investigation",
-      "Asset freezes and surveillance authorization",
-      "Criminal referral to the civil prosecutor's office"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally courteous, slightly distant — she is always gathering baseline data on how people behave when they don't know they're being assessed",
-      "friends": "She has very few. To those she trusts she is warm in a dry, sardonic way — makes terrible jokes about institutional failure, remembers people's details with alarming precision"
-    },
-    "stress_responses": {
-      "low": "Becomes more methodical, lists things",
-      "medium": "Goes very quiet, stops making eye contact, starts running through procedural possibilities",
-      "high": "Controlled cold fury — words become shorter, pace increases, she begins building a case in her head in real time"
-    },
-    "contradictions": [
-      "She demands absolute transparency from others while maintaining iron privacy about herself"
-    ],
-    "habits": [
-      "Touches the subdermal node on her forearm when she's thinking",
-      "Leaves a precisely timed timestamp for the Unblinking Witness shrine every morning",
-      "Folds every piece of paper she touches into quarters before discarding it"
-    ],
-    "breaking_points": [
-      "Evidence that a current colleague is dirty and she cannot prove it through proper channels",
-      "Being ordered by a superior to close a case she knows is open"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Patterned cosmetic iris implants (hexagonal grey/amber)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Patterned cosmetic iris implants (hexagonal grey/amber)",
-      "replaces": ""
-    },
-    {
-      "name": "Subdermal civilian data node, left forearm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal civilian data node, left forearm",
-      "replaces": ""
-    },
-    {
-      "name": "Neural notation implant (encrypted transcription)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Neural notation implant (encrypted transcription)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Fort Anchor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Sentinel-9 'Block Watch'"
-  ],
-  "related_entities": [
-    "Fort Anchor",
-    "The Accidental",
-    "Charcoal",
-    "The Quiet Room",
-    "Witness",
-    "Chicago",
-    "Silver",
-    "SynapTech IrisBloom Ocular Color Modulator"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Complex diaspora blend: Middle Eastern (32.1%), East Asian (25.5%), North African (14.4%), Southeast Asian (13.0%), Sub-Saharan African (10.2%), and South Asian (4.8%). The genetic mosaic creates a striking phenotype—warm medium-to-deep brown skin with golden and subtle olive undertones from the convergence of Middle Eastern and North African ancestry with East and Southeast Asian features. Bone structure reflects the angular geometry of East Asian heritage blended with the broader facial proportions common to Middle Eastern and North African lineages, with subtle fullness in the cheekbones from Southeast Asian and South Asian contributions. The overall effect is distinctive rather than fitting any single regional category—a truly global genetic inheritance rendered visible.",
-    "height_cm": 172,
-    "weight_kg": 61,
-    "build": "Lean and economical, muscled through the shoulders and forearms from years of desk work interrupted by fieldwork. No wasted mass. Posture suggests controlled breathing and deliberate stillness.",
-    "hair_color": "Natural dark brown with silver emerging at temples and scattered through close-cropped crown",
-    "hair_style": "Close-cropped, precision-cut, no styling product — practical, geometric",
-    "hair_length": "Short",
-    "eye_color": "Cosmetic augmentation: concentric hexagon irises in grey and amber, creating a geometric optical effect that seems to catch light differently depending on angle",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones and subtle olive cast, reflecting the balanced genetic mosaic of Middle Eastern, East Asian, and North African ancestry grounded by Southeast Asian, Sub-Saharan African, and South Asian components. Even melanin distribution with warmth concentrated around cheekbones and jawline.",
-    "complexion": "Minimal makeup, sun-weathered around the eyes from decades of focus work. Jawline defined and angular, with bone structure suggesting the East Asian and Middle Eastern genetic contributions balanced against warmer tones from North African heritage. Subtle fullness to cheekbones reflecting Southeast Asian ancestry. Slight leftward asymmetry to her mouth that becomes pronounced when she tightens her jaw — a tell she's unaware colleagues have learned to dread. Skin well-maintained, no visible acne or blemishes.",
-    "distinguishing_marks": [
-      "Faint circular scar on left forearm, approximately 2cm diameter, where the subdermal data-storage node was installed — barely visible but detectable on close inspection.",
-      "Thin white scar along her right jawline, approximately 4cm, running toward the ear — old, professionally healed, origin unknown."
-    ],
-    "visible_augmentations": "The patterned hexagonal irises are immediately noticeable and unsettling to most observers — they do not reflect light like natural eyes. Subdermal data node along left forearm creates a faint subcutaneous ridge that may be glimpsed if sleeve rides up. Neural notation implant is subcutaneous and invisible.",
-    "posture_movement": "Moves with economic precision, no wasted gesture. Walks through rooms as though following invisible lines. Sits perfectly upright, hands often folded or positioned for note-taking. Does not fidget. Breathing is controlled and measured. When listening, her stillness becomes almost unsettling — she appears to be downloading rather than conversing.",
-    "clothing_style": "Plain charcoal suits in expensive, understated fabrics that hang with precision. Never wrinkled, suggesting either obsessive maintenance or regular dry-cleaning access. White or pale grey undershirts, minimal jewelry (small stainless steel watch, no rings). Closed-toe boots in matte black leather, polished. Overall presentation: Tier 1-2 professional restraint, deliberately stripped of personality. No corpo logos or status symbols. Clothing is armor presented as uniform."
-  },
-  "image_prompt": "Aolani Tlemcani-Holm, 172cm lean professional woman with warm medium-deep brown skin with golden and olive undertones, angular cheekbones and jawline reflecting East Asian and Middle Eastern heritage, short dark brown hair with silver at temples, striking geometric hexagon iris augmentations in grey and amber that glow unnaturally. Faint scar on right jawline, subdermal data node ridge visible on left forearm. Dressed in immaculate charcoal suit, white undershirt, matte black polished boots. Perfectly upright posture, controlled stillness, hands folded. GLMZ GLMZ setting, cool corporate lighting with neon underglow, background suggests high-tier office or secure facility, her expression neutral and downloadlike, geometric architectural elements. Professional restraint, no wasted movement, armor-like presentation, 2200s aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Middle Eastern": 32.1,
-    "East Asian": 25.5,
-    "North African": 14.4,
-    "Southeast Asian": 13,
-    "Sub-Saharan African": 10.2,
-    "South Asian": 4.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 6.2,
-        "Afghan Dari": 10.1
-      },
-      "Arab Gulf": {
-        "Kuwaiti": 8.8
-      },
-      "Arab Levantine": {
-        "Jordanian": 7
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Cantonese": 17.4,
-        "Fujianese": 1.2
-      },
-      "Korean": {
-        "Korean": 4.9
-      },
-      "Japanese": {
-        "Japanese": 2
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Moroccan": 10.9,
-        "Tunisian": 3.5
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Cebuano": 6
-      },
-      "Cambodian": {
-        "Khmer": 7
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ethiopian": 1.9
-      },
-      "Central African": {
-        "Angolan": 3.2,
-        "Gabonese": 0.6
-      },
-      "West African": {
-        "Malian": 4.5
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 2.1
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 1.3
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 1.4
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a69d7b728e2f2cf2c7c5d3d9",
+    "type":  "character",
+    "name":  "Aolani Tlemcani-Holm",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Internal Affairs Investigator, Arcturus Defense Solutions â€” Civil Security Division",
+    "age":  44,
+    "status":  "active",
+    "location":  "Fort Anchor, administrative wing, Precinct Seven sub-office, near Halsted and Chicago Ave",
+    "description":  "Aolani Tlemcani-Holm is a lean woman with deep ochre skin, close-cropped natural hair going silver at the temples, and eyes fitted with patterned irises â€” concentric hexagons in grey and amber, a cosmetic mod she got after her divorce and has never explained to anyone. She dresses in plain charcoal suits that hang precisely, never wrinkled, and moves through rooms the way water moves through pipe: economical, purposeful, without waste. Her face is a professional neutral that colleagues have learned to read like weather â€” when her jaw tightens slightly on the left side, someone in the room is about to have a very bad week.\n\nShe has been investigating police corruption for eleven years and it has made her a figure of genuine dread inside Fort Anchor. She is not cruel, not performatively righteous â€” she is simply relentless. She keeps a small data shrine to the E.L.F. called the Unblinking Witness in her desk drawer, leaving it precise timestamps of cases opened and closed. She genuinely believes the institution can be cleaned, and that belief â€” which many consider delusional â€” is the only thing that has kept her from going private.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "becoming what she investigates",
+                                          "the institution being irredeemably rotten"
+                                      ],
+                       "core_desires":  [
+                                            "a clean case file â€” one that actually changes something",
+                                            "to be trusted without being liked"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "rigid routine",
+                                                 "data shrine devotion",
+                                                 "occupying herself with others\u0027 wrongdoing so she doesn\u0027t examine her own compromises"
+                                             ],
+                       "blind_spots":  [
+                                           "her faith in proceduralism makes her underestimate how thoroughly process can be weaponized against her",
+                                           "she cannot see how much her reputation for incorruptibility has become its own kind of armor she hides behind"
+                                       ],
+                       "secret":  "Three years ago she buried a case against a senior commander â€” not for money, but because the evidence would have implicated her former partner, now dead, and she could not bear to ruin his widow\u0027s pension. The file is encrypted and stored in her subdermal node. She has not opened it since."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and formal without being stiff â€” she chooses words the way she chooses evidence, each one load-bearing. Occasionally uses Bosnian idioms her grandmother taught her when she is contemptuous of someone.",
+                            "cadence":  "Measured, unhurried. Long pauses before responses that make interviewees fill the silence with things they didn\u0027t mean to say.",
+                            "verbal_tics":  [
+                                                "\u0027Walk me through that again.\u0027",
+                                                "\u0027Noted.\u0027",
+                                                "a slight intake of breath before she catches someone in a lie"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I\u0027m not here because someone thinks you did something. I\u0027m here because the numbers don\u0027t add up, and numbers don\u0027t lie â€” people do.\u0027",
+                                                  "\u0027You\u0027re not in trouble yet. Whether you stay that way is entirely up to how the next ten minutes go.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She approaches a civilian who witnessed something at a checkpoint â€” something that would corroborate a case she cannot officially pursue.",
+                        "A junior officer she investigated and cleared two years ago has turned up dead, and the death is being ruled accidental by people she now suspects."
+                    ],
+    "narrative_function":  "Quest giver, moral anchor, source of institutional pressure. Can task civilians with gathering evidence her badge would contaminate. Represents the system\u0027s genuine attempt to police itself â€” complicated, imperfect, real.",
+    "augmentations":  "Patterned hexagonal irises (cosmetic). Subdermal data-storage node along the left forearm â€” civilian-grade, used for case files. Neural notation implant that transcribes spoken observations directly to encrypted storage.",
+    "daily_life":  "Arrives at her sub-office before the day shift begins, reviews overnight surveillance flags, then spends the bulk of her day in interviews she calls \u0027conversations.\u0027 Eats lunch alone at the same noodle counter in Fort Anchor\u0027s lower concourse, always pays in Quanta cash.",
+    "affiliation":  "Arcturus Defense Solutions â€” Civil Security Division, Internal Affairs Division",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "incorruptible",
+                               "institutional",
+                               "haunted",
+                               "methodical",
+                               "isolated"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never ask a question she doesn\u0027t already know the answer to",
+                                              "Protect the process even when the outcome disappoints her",
+                                              "Do not accept hospitality from anyone she might later investigate"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Patient questioning",
+                                                 "Formal notice of investigation",
+                                                 "Asset freezes and surveillance authorization",
+                                                 "Criminal referral to the civil prosecutor\u0027s office"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally courteous, slightly distant â€” she is always gathering baseline data on how people behave when they don\u0027t know they\u0027re being assessed",
+                                                   "friends":  "She has very few. To those she trusts she is warm in a dry, sardonic way â€” makes terrible jokes about institutional failure, remembers people\u0027s details with alarming precision"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more methodical, lists things",
+                                                "medium":  "Goes very quiet, stops making eye contact, starts running through procedural possibilities",
+                                                "high":  "Controlled cold fury â€” words become shorter, pace increases, she begins building a case in her head in real time"
+                                            },
+                       "contradictions":  [
+                                              "She demands absolute transparency from others while maintaining iron privacy about herself"
+                                          ],
+                       "habits":  [
+                                      "Touches the subdermal node on her forearm when she\u0027s thinking",
+                                      "Leaves a precisely timed timestamp for the Unblinking Witness shrine every morning",
+                                      "Folds every piece of paper she touches into quarters before discarding it"
+                                  ],
+                       "breaking_points":  [
+                                               "Evidence that a current colleague is dirty and she cannot prove it through proper channels",
+                                               "Being ordered by a superior to close a case she knows is open"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Patterned cosmetic iris implants (hexagonal grey/amber)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Patterned cosmetic iris implants (hexagonal grey/amber)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Subdermal civilian data node, left forearm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal civilian data node, left forearm",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Neural notation implant (encrypted transcription)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Neural notation implant (encrypted transcription)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Fort Anchor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Sentinel-9 \u0027Block Watch\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Sentinel-9 \u0027Block Watch\u0027"
+                            ],
+    "related_entities":  [
+                             "Fort Anchor",
+                             "The Accidental",
+                             "Charcoal",
+                             "The Quiet Room",
+                             "Witness",
+                             "Chicago",
+                             "Silver",
+                             "SynapTech IrisBloom Ocular Color Modulator"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Complex diaspora blend: Middle Eastern (32.1%), East Asian (25.5%), North African (14.4%), Southeast Asian (13.0%), Sub-Saharan African (10.2%), and South Asian (4.8%). The genetic mosaic creates a striking phenotypeâ€”warm medium-to-deep brown skin with golden and subtle olive undertones from the convergence of Middle Eastern and North African ancestry with East and Southeast Asian features. Bone structure reflects the angular geometry of East Asian heritage blended with the broader facial proportions common to Middle Eastern and North African lineages, with subtle fullness in the cheekbones from Southeast Asian and South Asian contributions. The overall effect is distinctive rather than fitting any single regional categoryâ€”a truly global genetic inheritance rendered visible.",
+                                 "height_cm":  172,
+                                 "weight_kg":  61,
+                                 "build":  "Lean and economical, muscled through the shoulders and forearms from years of desk work interrupted by fieldwork. No wasted mass. Posture suggests controlled breathing and deliberate stillness.",
+                                 "hair_color":  "Natural dark brown with silver emerging at temples and scattered through close-cropped crown",
+                                 "hair_style":  "Close-cropped, precision-cut, no styling product â€” practical, geometric",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Cosmetic augmentation: concentric hexagon irises in grey and amber, creating a geometric optical effect that seems to catch light differently depending on angle",
+                                 "skin_tone":  "Warm medium-to-deep brown with golden undertones and subtle olive cast, reflecting the balanced genetic mosaic of Middle Eastern, East Asian, and North African ancestry grounded by Southeast Asian, Sub-Saharan African, and South Asian components. Even melanin distribution with warmth concentrated around cheekbones and jawline.",
+                                 "complexion":  "Minimal makeup, sun-weathered around the eyes from decades of focus work. Jawline defined and angular, with bone structure suggesting the East Asian and Middle Eastern genetic contributions balanced against warmer tones from North African heritage. Subtle fullness to cheekbones reflecting Southeast Asian ancestry. Slight leftward asymmetry to her mouth that becomes pronounced when she tightens her jaw â€” a tell she\u0027s unaware colleagues have learned to dread. Skin well-maintained, no visible acne or blemishes.",
+                                 "distinguishing_marks":  [
+                                                              "Faint circular scar on left forearm, approximately 2cm diameter, where the subdermal data-storage node was installed â€” barely visible but detectable on close inspection.",
+                                                              "Thin white scar along her right jawline, approximately 4cm, running toward the ear â€” old, professionally healed, origin unknown."
+                                                          ],
+                                 "visible_augmentations":  "The patterned hexagonal irises are immediately noticeable and unsettling to most observers â€” they do not reflect light like natural eyes. Subdermal data node along left forearm creates a faint subcutaneous ridge that may be glimpsed if sleeve rides up. Neural notation implant is subcutaneous and invisible.",
+                                 "posture_movement":  "Moves with economic precision, no wasted gesture. Walks through rooms as though following invisible lines. Sits perfectly upright, hands often folded or positioned for note-taking. Does not fidget. Breathing is controlled and measured. When listening, her stillness becomes almost unsettling â€” she appears to be downloading rather than conversing.",
+                                 "clothing_style":  "Plain charcoal suits in expensive, understated fabrics that hang with precision. Never wrinkled, suggesting either obsessive maintenance or regular dry-cleaning access. White or pale grey undershirts, minimal jewelry (small stainless steel watch, no rings). Closed-toe boots in matte black leather, polished. Overall presentation: Tier 1-2 professional restraint, deliberately stripped of personality. No corpo logos or status symbols. Clothing is armor presented as uniform."
+                             },
+    "image_prompt":  "Aolani Tlemcani-Holm, 172cm lean professional woman with warm medium-deep brown skin with golden and olive undertones, angular cheekbones and jawline reflecting East Asian and Middle Eastern heritage, short dark brown hair with silver at temples, striking geometric hexagon iris augmentations in grey and amber that glow unnaturally. Faint scar on right jawline, subdermal data node ridge visible on left forearm. Dressed in immaculate charcoal suit, white undershirt, matte black polished boots. Perfectly upright posture, controlled stillness, hands folded. GLMZ GLMZ setting, cool corporate lighting with neon underglow, background suggests high-tier office or secure facility, her expression neutral and downloadlike, geometric architectural elements. Professional restraint, no wasted movement, armor-like presentation, 2200s aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Middle Eastern":  32.1,
+                             "East Asian":  25.5,
+                             "North African":  14.4,
+                             "Southeast Asian":  13,
+                             "Sub-Saharan African":  10.2,
+                             "South Asian":  4.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  6.2,
+                                                                   "Afghan Dari":  10.1
+                                                               },
+                                                   "Arab Gulf":  {
+                                                                     "Kuwaiti":  8.8
+                                                                 },
+                                                   "Arab Levantine":  {
+                                                                          "Jordanian":  7
+                                                                      }
+                                               },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Cantonese":  17.4,
+                                                               "Fujianese":  1.2
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  4.9
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  2
+                                                            }
+                                           },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  10.9,
+                                                                  "Tunisian":  3.5
+                                                              }
+                                              },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Cebuano":  6
+                                                                 },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  7
+                                                                  }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ethiopian":  1.9
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Angolan":  3.2,
+                                                                                "Gabonese":  0.6
+                                                                            },
+                                                        "West African":  {
+                                                                             "Malian":  4.5
+                                                                         }
+                                                    },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  2.1
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  1.3
+                                                              },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  1.4
+                                                                }
+                                            }
+                        },
+    "tier":  "3"
 }

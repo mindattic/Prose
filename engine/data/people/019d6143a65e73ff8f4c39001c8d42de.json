@@ -1,343 +1,354 @@
-{
-  "id": "019d6143a65e73ff8f4c39001c8d42de",
-  "type": "character",
-  "name": "Leszek Nurzhanov",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Underground Data Broker / Informal District Mapper",
-  "age": 34,
-  "status": "active",
-  "location": "Old Harbor, occasionally the Gray Zone, near Michigan Ave and Roosevelt",
-  "description": "Leszek Nurzhanov is a broad-shouldered man with deep umber skin, close-cropped natural hair going prematurely silver at the temples, and eyes that never quite settle on any single point in a room—always cataloguing, always measuring distances. His left arm from elbow to fingertip is a salvaged industrial prosthetic, mismatched plating in gunmetal grey and corroded copper that he has never bothered to cosmetically upgrade, wearing the patchwork as a kind of credential. He dresses in layered thermals and a faded orange dockworker's vest covered in hand-stitched pockets, each one holding something specific he could name without looking.\n\nHe grew up in Old Harbor when it still had functioning fish processing infrastructure, the child of a Kenyan maritime engineer father and a Norwegian logistics coordinator mother who both disappeared into the corporate restructuring that gutted the district's working economy. Leszek Nurzhanov survived by learning what the city planners never published: the actual geography of GLMZ, the tunnels under the Gray Zone that don't appear on any civic map, the blind spots in The Circuit's surveillance grid, the forgotten loading bays along the Harbor that still connect to the Meridian Core's service infrastructure. He sells this knowledge in careful, calibrated portions.\n\nHis reputation is for scrupulous neutrality—he will sell maps and routing data to almost anyone, and almost everyone in the mid-tier underworld knows it, which means he has accumulated a precarious kind of protection through mutual dependency. He lives in a converted cold-storage unit he has made surprisingly livable, its walls covered in hand-drawn maps that are more accurate than anything in any city database, and he trusts almost no one completely, including himself.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.72,
-      "ideal": 0.41,
-      "id": 0.38,
-      "shadow": 0.55,
-      "mask": 0.63,
-      "ghost": 0.67
-    },
-    "core_fears": [
-      "Being rendered obsolete by a technology or faction that can map the city better than he can",
-      "That his neutrality is a moral cowardice he has dressed up as pragmatism",
-      "Losing the prosthetic arm and with it the sensation of limitation that keeps him grounded"
-    ],
-    "core_desires": [
-      "To possess a complete, perfect, living map of GLMZ that no one can take from him",
-      "To find out what actually happened to his parents",
-      "To be known as someone whose word means something absolute"
-    ],
-    "coping_mechanisms": [
-      "Obsessive cartographic documentation, including mapping spaces he will never sell",
-      "Ritualistic maintenance and cleaning of the prosthetic arm",
-      "Keeping every transaction meticulously recorded in an encrypted personal ledger as proof of his fairness"
-    ],
-    "blind_spots": [
-      "Believes his neutrality protects people from consequences when it often simply delays them",
-      "Underestimates how much his presence in a transaction implicates him in its outcome",
-      "Has convinced himself he feels nothing sentimental about Old Harbor"
-    ],
-    "secret": "He found evidence two years ago suggesting his mother did not disappear but defected voluntarily to a Spire-adjacent corporate security firm. He has not followed up on it. The map to that truth hangs on his wall with a blank space where the destination should be."
-  },
-  "speech_patterns": {
-    "vocabulary": "Practical, spatial, navigational metaphors; mixes English with occasional Swahili phrases when tired or caught off-guard; avoids abstractions, prefers concrete nouns",
-    "cadence": "Measured and even, speaks in complete sentences, pauses before answering questions as if running a route check",
-    "verbal_tics": [
-      "Taps the prosthetic fingers against his thigh when thinking",
-      "Says 'that's a different map' when declining to discuss something",
-      "Begins refusals with 'I don't carry that'"
-    ],
-    "example_lines": [
-      "'Three ways in, two ways out, one of those is conditional on tide timing. That's the package. What you do at the destination is your business.'",
-      "'Ndio—yes. I know that corridor. I don't carry that route anymore. That's a different map.'",
-      "'Neutrality isn't a position. It's a service. You're paying for the service, not the position.'",
-      "'My arm cost me nothing. Everything that replaced it cost me everything. That's the math you should understand before we talk price.'"
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Fenwick Oduya-Marsh",
-      "type": "professional contact, uneasy",
-      "description": "Fenwick has purchased routing data from Mwangi more than once, and Mwangi has noted the pattern of destinations without comment. There is mutual professional respect and mutual wariness.",
-      "emotional_core": "Mwangi suspects Fenwick knows something about the corporate restructuring that took his parents; he has never asked",
-      "story_tension": "Fenwick may eventually need a map Mwangi refuses to sell"
-    },
-    {
-      "name": "Zinnia Achterberg-Nwosu",
-      "type": "old acquaintance, complicated",
-      "description": "They grew up in adjacent blocks in Old Harbor and parted ways when their survival strategies diverged. They still exchange information occasionally, circling each other with the wariness of people who remember each other too clearly.",
-      "emotional_core": "Shared grief for a version of Old Harbor that no longer exists",
-      "story_tension": "Zinnia once used one of his maps in a job that got someone killed; he knows it; she knows he knows"
-    },
-    {
-      "name": "Unknown contact in The Spire",
-      "type": "anonymous buyer, unsettling",
-      "description": "Someone in The Spire has been purchasing his maps through three layers of intermediary for over a year, always paying above asking price, never requesting the same district twice.",
-      "emotional_core": "Mwangi is professionally flattered and personally terrified",
-      "story_tension": "He suspects the buyer may be connected to his mother's disappearance"
-    }
-  ],
-  "story_hooks": [
-    "A map he sold years ago resurfaces as evidence in a corporate tribunal, and he is subpoenaed as a witness with no legal identity protection",
-    "He discovers a district that is not on any of his maps—a section of infrastructure beneath the Gray Zone that appears to have been deliberately erased from civic records",
-    "The anonymous Spire buyer requests a map of Mwangi's own cold-storage building, down to the interior dimensions",
-    "Someone begins selling maps with his markings and his errors—either a copy of his work or proof that someone has been inside his home"
-  ],
-  "narrative_function": "Information broker and moral compass by negative space—his neutrality forces other characters to confront what they are actually asking for; also functions as a living record of Old Harbor's lost history",
-  "augmentations": "Salvaged industrial prosthetic left arm (elbow to fingertips), mismatched plating, has subtle haptic feedback modifications he installed himself,Subdermal encrypted data storage along the right forearm, capacity modest but air-gapped from all networks,Ocular overlay in left eye only, mapping-grade, no biometric capture",
-  "daily_life": "Rises before dawn to walk the Harbor and update his physical maps with overnight changes—new barricades, closed passages, altered lighting. Eats once in the morning, usually something he has prepared in bulk. Receives clients by appointment only, never more than three per day. Spends evenings drawing. Does not own a functioning communication device that is tied to his name.",
-  "affiliation": "Unaffiliated; sells to all parties; maintains careful records of who has bought what to ensure no single faction gains navigational advantage over the others",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 6,
-      "vitality": 6,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 10
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 4,
-      "expression": 5,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": 4,
-      "impulsivity_deliberation": 8,
-      "assertion_deference": 5,
-      "transparency_guardedness": 7
-    },
-    "drives": [
-      "Complete the map",
-      "Discover what happened to his parents",
-      "Absolute reliability of his word"
-    ],
-    "thresholds": {
-      "stress": {
-        "score": 7,
-        "response": "Taps prosthetic fingers against his thigh, retreats into spatial thinking"
-      },
-      "moral": 5,
-      "trust": 3,
-      "desperation": 6
-    },
-    "strengths": [
-      "Prudence",
-      "Fairness",
-      "Perseverance",
-      "Judgment",
-      "Self-Regulation"
-    ],
-    "weaknesses": [
-      "Kindness",
-      "Hope",
-      "Love",
-      "Playfulness",
-      "Gratitude"
-    ],
-    "tags": [
-      "data-broker",
-      "cartographer",
-      "neutral",
-      "old-harbor",
-      "spatial-genius",
-      "prosthetic-arm"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Sell maps in calibrated portions — no single faction gets navigational advantage",
-      "Maintain scrupulous neutrality as a professional and survival strategy",
-      "Record every transaction in the encrypted personal ledger",
-      "Never sell a route he has stopped carrying — 'that's a different map'",
-      "Walk the Harbor before dawn to update physical maps with overnight changes",
-      "Never more than three clients per day",
-      "Keep the blank space on the wall where his mother's map should be"
-    ],
-    "escalation_ladder": [
-      "'That's a different map' — polite refusal, no further discussion",
-      "'I don't carry that' — firmer closure",
-      "Taps prosthetic fingers in accelerating rhythm — visible agitation",
-      "Refuses the transaction entirely and terminates the meeting",
-      "Relocates temporarily — disappears from the known geography"
-    ],
-    "interpersonal_modes": {
-      "Fenwick Oduya-Marsh": "Professional respect and wariness — suspects Fenwick knows about his parents",
-      "Zinnia Achterberg-Nwosu": "Circling wariness of people who remember each other too clearly",
-      "anonymous Spire buyer": "Professionally flattered and personally terrified",
-      "clients": "Transaction-focused — the service is neutral, the position is not for sale"
-    },
-    "stress_responses": {
-      "low": "Maps obsessively — documents spaces he will never sell",
-      "medium": "Ritualistic cleaning of the prosthetic arm — careful, methodical",
-      "high": "Swahili phrases surface unbidden — guard is slipping",
-      "critical": "Stares at the blank space on the wall where his mother's destination should be"
-    },
-    "contradictions": [
-      "Sells neutrality as a service while believing neutrality might be moral cowardice dressed as pragmatism",
-      "Has convinced himself he feels nothing sentimental about Old Harbor while refusing to leave it",
-      "Found evidence his mother defected voluntarily — has not followed up because the truth might destroy the map he has of her"
-    ],
-    "habits": [
-      "Rises before dawn to walk the Harbor and update maps",
-      "Eats once in the morning, prepared in bulk",
-      "Receives clients by appointment only, maximum three per day",
-      "Spends evenings drawing — cartography as meditation",
-      "Taps prosthetic fingers against his thigh when thinking"
-    ],
-    "breaking_points": [
-      "The anonymous Spire buyer requesting a map of his own home",
-      "A sold map surfacing as evidence in a corporate tribunal",
-      "Discovering the erased district beneath the Gray Zone",
-      "Confirmation about his mother's defection"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Old Harbor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Volkov-Saito Precision VSK-8 'Rapier'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Viper Mk.III 'Copperhead'",
-    "Volkov-Saito Precision VSK-8 'Rapier'"
-  ],
-  "related_entities": [
-    "The Meridian Core",
-    "Folakemi Boudiaf",
-    "Meridian Core",
-    "The Circuit",
-    "The Blind",
-    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
-    "Stratum",
-    "Circuit",
-    "Witness",
-    "Silver",
-    "Copper",
-    "Harbor Fish Shack",
-    "Arcturus KS-7 'Nursery'",
-    "GLMZ"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Central Asian (29.5%), Eastern European (20.8%), Sub-Saharan African (18.4%), North African (16.0%), and Northern European (15.3%) ancestry creates a striking multifaceted phenotype. The Central Asian heritage dominates facial structure with high, prominent cheekbones and angular features. Sub-Saharan and North African ancestry contribute to fuller lips and warm undertones. Eastern European and Northern European heritage add definition to the jawline and eye shape. The overall effect is powerfully cosmopolitan—a face that embodies the Ubiquitous Diaspora without clear singular origin.",
-    "height_cm": 188,
-    "weight_kg": 94,
-    "build": "Broad-shouldered and densely muscled through manual labor, tapering slightly at the waist—the build of someone accustomed to precise, sustained physical work rather than explosiveness",
-    "hair_color": "Natural black with premature silver at the temples",
-    "hair_style": "Close-cropped, neat, shaped by habit rather than vanity",
-    "hair_length": "Short",
-    "eye_color": "Dark brown (natural); left eye contains subtle amber-tinted ocular overlay",
-    "skin_tone": "Warm medium-to-deep brown with golden undertones—the result of Central Asian warmth mixed with Sub-Saharan and North African melanin, brightened by Eastern European and Northern European ancestry. Weathered by constant outdoor exposure, showing deep creasing from years of concentrated work.",
-    "complexion": "Weathered but maintained—lines radiating from the corners of dark brown eyes from constant squinting at distances and reading maps, deep concentration creases across the forehead. High, defined cheekbones with Central Asian structure. Fuller lips characteristic of Sub-Saharan and North African heritage. Moderate-width nose reflecting the blend of ancestry. Angular jaw from Eastern European heritage. No facial hair, clean-shaven daily. Skin shows the patina of constant outdoor work but careful maintenance.",
-    "distinguishing_marks": [
-      "Thin white scar running from left temple down to jawline, approximately 8cm, origin unclear but old",
-      "Callused palms and fingers on right hand, particularly pronounced on index and middle fingers from years of drawing and writing",
-      "Faded tattoo on right inner forearm: a simplified map grid in dark blue ink, deliberately vague, no recognizable landmarks"
-    ],
-    "visible_augmentations": "Left arm prosthetic from elbow to fingertips: industrial-grade salvaged hardware with mismatched plating in gunmetal grey and oxidized copper, deliberately unupgraded and weathered. The joint work is visible and functional rather than aesthetic. Left eye contains a faint amber shimmer when light catches it—the ocular overlay's edge visible only in profile. Subdermal data storage along right forearm visible as a faint series of geometric scars forming a grid pattern beneath the skin, always covered but occasionally glimpsed when clothing shifts.",
-    "posture_movement": "Stillness is his default state—when standing, weight centered, shoulders back but not rigid. Eyes in constant, unconscious motion even when his body is motionless, cataloguing angles and distances. When moving, economical: no wasted motion, footfalls deliberate and quiet. Hands remain occupied—adjusting clothing, touching wall surfaces as he passes, checking pocket contents through fabric. When engaged in conversation, he maintains direct eye contact but his gaze occasionally drifts to measure doorways, sightlines, exit proximity.",
-    "clothing_style": "Tier 4 working-class utility: layered thermals in muted greys and blacks beneath a faded orange dockworker's vest (genuine vintage, not reproduced) with dozens of hand-stitched pockets, each one containing something specific—tools, samples, rolled papers. Lightweight cargo trousers in weathered grey canvas, reinforced at knees and thighs. Heavy boots, practical rather than fashionable, resoled multiple times. A long fieldcoat in dark green canvas, treated for water resistance, multiple interior pockets. No visible branding or corpo affiliations; clothing chosen for function and repairability. Everything shows wear but nothing shows neglect."
-  },
-  "image_prompt": "Leszek Nurzhanov, 188cm tall, weathered and muscular, GLMZ GLMZ. Warm deep brown skin with golden undertones reflecting Central Asian, Eastern European, Sub-Saharan African, North African, and Northern European heritage. High angular cheekbones, fuller lips, dark eyes with amber ocular overlay glinting in light. Black hair with silver at temples, close-cropped. Thin 8cm scar running left temple to jawline. Left arm salvaged prosthetic hardware—gunmetal grey and oxidized copper from elbow down, weathered industrial aesthetic. Wearing faded orange vintage dockworker's vest over grey thermals, weathered grey cargo trousers, practical heavy boots. Long dark green canvas fieldcoat. Subdermal data grid scars visible on right forearm. Posture economical and alert—weight centered, eyes constantly measuring distances and sightlines. Urban industrial setting, cool neon and concrete ambiance, natural weathered lighting, contemplative mood, hands near pocket or wall surface, measuring everything. Neo-noir utilitarian aesthetic, no corpo branding. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Central Asian": 29.5,
-    "Eastern European": 20.8,
-    "Sub-Saharan African": 18.4,
-    "North African": 16,
-    "Northern European": 15.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Central Asian": {
-      "Mongolic": {
-        "Mongolian": 29.5
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Polish": 5.3,
-        "Czech": 1.1
-      },
-      "Slavic East": {
-        "Belarusian": 11.4
-      },
-      "Magyar-Romanian": {
-        "Hungarian": 3
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 4.5,
-        "Zimbabwean": 1.8
-      },
-      "East African": {
-        "Rwandan": 3.2,
-        "Ethiopian": 1.1
-      },
-      "Central African": {
-        "Congolese": 3.2,
-        "Cameroonian": 4.6
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Algerian": 2.7,
-        "Mauritanian": 7.7
-      },
-      "Amazigh": {
-        "Berber": 5.6
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "English": 13.3,
-        "Welsh": 2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a65e73ff8f4c39001c8d42de",
+    "type":  "character",
+    "name":  "Leszek Nurzhanov",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Underground Data Broker / Informal District Mapper",
+    "age":  34,
+    "status":  "active",
+    "location":  "Old Harbor, occasionally the Gray Zone, near Michigan Ave and Roosevelt",
+    "description":  "Leszek Nurzhanov is a broad-shouldered man with deep umber skin, close-cropped natural hair going prematurely silver at the temples, and eyes that never quite settle on any single point in a roomâ€”always cataloguing, always measuring distances. His left arm from elbow to fingertip is a salvaged industrial prosthetic, mismatched plating in gunmetal grey and corroded copper that he has never bothered to cosmetically upgrade, wearing the patchwork as a kind of credential. He dresses in layered thermals and a faded orange dockworker\u0027s vest covered in hand-stitched pockets, each one holding something specific he could name without looking.\n\nHe grew up in Old Harbor when it still had functioning fish processing infrastructure, the child of a Kenyan maritime engineer father and a Norwegian logistics coordinator mother who both disappeared into the corporate restructuring that gutted the district\u0027s working economy. Leszek Nurzhanov survived by learning what the city planners never published: the actual geography of GLMZ, the tunnels under the Gray Zone that don\u0027t appear on any civic map, the blind spots in The Circuit\u0027s surveillance grid, the forgotten loading bays along the Harbor that still connect to the Meridian Core\u0027s service infrastructure. He sells this knowledge in careful, calibrated portions.\n\nHis reputation is for scrupulous neutralityâ€”he will sell maps and routing data to almost anyone, and almost everyone in the mid-tier underworld knows it, which means he has accumulated a precarious kind of protection through mutual dependency. He lives in a converted cold-storage unit he has made surprisingly livable, its walls covered in hand-drawn maps that are more accurate than anything in any city database, and he trusts almost no one completely, including himself.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being rendered obsolete by a technology or faction that can map the city better than he can",
+                                          "That his neutrality is a moral cowardice he has dressed up as pragmatism",
+                                          "Losing the prosthetic arm and with it the sensation of limitation that keeps him grounded"
+                                      ],
+                       "core_desires":  [
+                                            "To possess a complete, perfect, living map of GLMZ that no one can take from him",
+                                            "To find out what actually happened to his parents",
+                                            "To be known as someone whose word means something absolute"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Obsessive cartographic documentation, including mapping spaces he will never sell",
+                                                 "Ritualistic maintenance and cleaning of the prosthetic arm",
+                                                 "Keeping every transaction meticulously recorded in an encrypted personal ledger as proof of his fairness"
+                                             ],
+                       "blind_spots":  [
+                                           "Believes his neutrality protects people from consequences when it often simply delays them",
+                                           "Underestimates how much his presence in a transaction implicates him in its outcome",
+                                           "Has convinced himself he feels nothing sentimental about Old Harbor"
+                                       ],
+                       "secret":  "He found evidence two years ago suggesting his mother did not disappear but defected voluntarily to a Spire-adjacent corporate security firm. He has not followed up on it. The map to that truth hangs on his wall with a blank space where the destination should be."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Practical, spatial, navigational metaphors; mixes English with occasional Swahili phrases when tired or caught off-guard; avoids abstractions, prefers concrete nouns",
+                            "cadence":  "Measured and even, speaks in complete sentences, pauses before answering questions as if running a route check",
+                            "verbal_tics":  [
+                                                "Taps the prosthetic fingers against his thigh when thinking",
+                                                "Says \u0027that\u0027s a different map\u0027 when declining to discuss something",
+                                                "Begins refusals with \u0027I don\u0027t carry that\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Three ways in, two ways out, one of those is conditional on tide timing. That\u0027s the package. What you do at the destination is your business.\u0027",
+                                                  "\u0027Ndioâ€”yes. I know that corridor. I don\u0027t carry that route anymore. That\u0027s a different map.\u0027",
+                                                  "\u0027Neutrality isn\u0027t a position. It\u0027s a service. You\u0027re paying for the service, not the position.\u0027",
+                                                  "\u0027My arm cost me nothing. Everything that replaced it cost me everything. That\u0027s the math you should understand before we talk price.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Fenwick Oduya-Marsh",
+                              "type":  "professional contact, uneasy",
+                              "description":  "Fenwick has purchased routing data from Mwangi more than once, and Mwangi has noted the pattern of destinations without comment. There is mutual professional respect and mutual wariness.",
+                              "emotional_core":  "Mwangi suspects Fenwick knows something about the corporate restructuring that took his parents; he has never asked",
+                              "story_tension":  "Fenwick may eventually need a map Mwangi refuses to sell"
+                          },
+                          {
+                              "name":  "Zinnia Achterberg-Nwosu",
+                              "type":  "old acquaintance, complicated",
+                              "description":  "They grew up in adjacent blocks in Old Harbor and parted ways when their survival strategies diverged. They still exchange information occasionally, circling each other with the wariness of people who remember each other too clearly.",
+                              "emotional_core":  "Shared grief for a version of Old Harbor that no longer exists",
+                              "story_tension":  "Zinnia once used one of his maps in a job that got someone killed; he knows it; she knows he knows"
+                          },
+                          {
+                              "name":  "Unknown contact in The Spire",
+                              "type":  "anonymous buyer, unsettling",
+                              "description":  "Someone in The Spire has been purchasing his maps through three layers of intermediary for over a year, always paying above asking price, never requesting the same district twice.",
+                              "emotional_core":  "Mwangi is professionally flattered and personally terrified",
+                              "story_tension":  "He suspects the buyer may be connected to his mother\u0027s disappearance"
+                          }
+                      ],
+    "story_hooks":  [
+                        "A map he sold years ago resurfaces as evidence in a corporate tribunal, and he is subpoenaed as a witness with no legal identity protection",
+                        "He discovers a district that is not on any of his mapsâ€”a section of infrastructure beneath the Gray Zone that appears to have been deliberately erased from civic records",
+                        "The anonymous Spire buyer requests a map of Mwangi\u0027s own cold-storage building, down to the interior dimensions",
+                        "Someone begins selling maps with his markings and his errorsâ€”either a copy of his work or proof that someone has been inside his home"
+                    ],
+    "narrative_function":  "Information broker and moral compass by negative spaceâ€”his neutrality forces other characters to confront what they are actually asking for; also functions as a living record of Old Harbor\u0027s lost history",
+    "augmentations":  "Salvaged industrial prosthetic left arm (elbow to fingertips), mismatched plating, has subtle haptic feedback modifications he installed himself,Subdermal encrypted data storage along the right forearm, capacity modest but air-gapped from all networks,Ocular overlay in left eye only, mapping-grade, no biometric capture",
+    "daily_life":  "Rises before dawn to walk the Harbor and update his physical maps with overnight changesâ€”new barricades, closed passages, altered lighting. Eats once in the morning, usually something he has prepared in bulk. Receives clients by appointment only, never more than three per day. Spends evenings drawing. Does not own a functioning communication device that is tied to his name.",
+    "affiliation":  "Unaffiliated; sells to all parties; maintains careful records of who has bought what to ensure no single faction gains navigational advantage over the others",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  6,
+                                   "vitality":  6,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  10
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  4,
+                                 "expression":  5,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  4,
+                                      "impulsivity_deliberation":  8,
+                                      "assertion_deference":  5,
+                                      "transparency_guardedness":  7
+                                  },
+                  "drives":  [
+                                 "Complete the map",
+                                 "Discover what happened to his parents",
+                                 "Absolute reliability of his word"
+                             ],
+                  "thresholds":  {
+                                     "stress":  {
+                                                    "score":  7,
+                                                    "response":  "Taps prosthetic fingers against his thigh, retreats into spatial thinking"
+                                                },
+                                     "moral":  5,
+                                     "trust":  3,
+                                     "desperation":  6
+                                 },
+                  "strengths":  [
+                                    "Prudence",
+                                    "Fairness",
+                                    "Perseverance",
+                                    "Judgment",
+                                    "Self-Regulation"
+                                ],
+                  "weaknesses":  [
+                                     "Kindness",
+                                     "Hope",
+                                     "Love",
+                                     "Playfulness",
+                                     "Gratitude"
+                                 ],
+                  "tags":  [
+                               "data-broker",
+                               "cartographer",
+                               "neutral",
+                               "old-harbor",
+                               "spatial-genius",
+                               "prosthetic-arm"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Sell maps in calibrated portions â€” no single faction gets navigational advantage",
+                                              "Maintain scrupulous neutrality as a professional and survival strategy",
+                                              "Record every transaction in the encrypted personal ledger",
+                                              "Never sell a route he has stopped carrying â€” \u0027that\u0027s a different map\u0027",
+                                              "Walk the Harbor before dawn to update physical maps with overnight changes",
+                                              "Never more than three clients per day",
+                                              "Keep the blank space on the wall where his mother\u0027s map should be"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "\u0027That\u0027s a different map\u0027 â€” polite refusal, no further discussion",
+                                                 "\u0027I don\u0027t carry that\u0027 â€” firmer closure",
+                                                 "Taps prosthetic fingers in accelerating rhythm â€” visible agitation",
+                                                 "Refuses the transaction entirely and terminates the meeting",
+                                                 "Relocates temporarily â€” disappears from the known geography"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "Fenwick Oduya-Marsh":  "Professional respect and wariness â€” suspects Fenwick knows about his parents",
+                                                   "Zinnia Achterberg-Nwosu":  "Circling wariness of people who remember each other too clearly",
+                                                   "anonymous Spire buyer":  "Professionally flattered and personally terrified",
+                                                   "clients":  "Transaction-focused â€” the service is neutral, the position is not for sale"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Maps obsessively â€” documents spaces he will never sell",
+                                                "medium":  "Ritualistic cleaning of the prosthetic arm â€” careful, methodical",
+                                                "high":  "Swahili phrases surface unbidden â€” guard is slipping",
+                                                "critical":  "Stares at the blank space on the wall where his mother\u0027s destination should be"
+                                            },
+                       "contradictions":  [
+                                              "Sells neutrality as a service while believing neutrality might be moral cowardice dressed as pragmatism",
+                                              "Has convinced himself he feels nothing sentimental about Old Harbor while refusing to leave it",
+                                              "Found evidence his mother defected voluntarily â€” has not followed up because the truth might destroy the map he has of her"
+                                          ],
+                       "habits":  [
+                                      "Rises before dawn to walk the Harbor and update maps",
+                                      "Eats once in the morning, prepared in bulk",
+                                      "Receives clients by appointment only, maximum three per day",
+                                      "Spends evenings drawing â€” cartography as meditation",
+                                      "Taps prosthetic fingers against his thigh when thinking"
+                                  ],
+                       "breaking_points":  [
+                                               "The anonymous Spire buyer requesting a map of his own home",
+                                               "A sold map surfacing as evidence in a corporate tribunal",
+                                               "Discovering the erased district beneath the Gray Zone",
+                                               "Confirmation about his mother\u0027s defection"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Old Harbor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Viper Mk.III \u0027Copperhead\u0027",
+                            "Volkov-Saito Precision VSK-8 \u0027Rapier\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Viper Mk.III \u0027Copperhead\u0027",
+                                "Volkov-Saito Precision VSK-8 \u0027Rapier\u0027"
+                            ],
+    "related_entities":  [
+                             "The Meridian Core",
+                             "Folakemi Boudiaf",
+                             "Meridian Core",
+                             "The Circuit",
+                             "The Blind",
+                             "Crucible Industries Battle Rifle BR-11 \u0027Tribunal\u0027",
+                             "Stratum",
+                             "Circuit",
+                             "Witness",
+                             "Silver",
+                             "Copper",
+                             "Harbor Fish Shack",
+                             "Arcturus KS-7 \u0027Nursery\u0027",
+                             "GLMZ"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Central Asian (29.5%), Eastern European (20.8%), Sub-Saharan African (18.4%), North African (16.0%), and Northern European (15.3%) ancestry creates a striking multifaceted phenotype. The Central Asian heritage dominates facial structure with high, prominent cheekbones and angular features. Sub-Saharan and North African ancestry contribute to fuller lips and warm undertones. Eastern European and Northern European heritage add definition to the jawline and eye shape. The overall effect is powerfully cosmopolitanâ€”a face that embodies the Ubiquitous Diaspora without clear singular origin.",
+                                 "height_cm":  188,
+                                 "weight_kg":  94,
+                                 "build":  "Broad-shouldered and densely muscled through manual labor, tapering slightly at the waistâ€”the build of someone accustomed to precise, sustained physical work rather than explosiveness",
+                                 "hair_color":  "Natural black with premature silver at the temples",
+                                 "hair_style":  "Close-cropped, neat, shaped by habit rather than vanity",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown (natural); left eye contains subtle amber-tinted ocular overlay",
+                                 "skin_tone":  "Warm medium-to-deep brown with golden undertonesâ€”the result of Central Asian warmth mixed with Sub-Saharan and North African melanin, brightened by Eastern European and Northern European ancestry. Weathered by constant outdoor exposure, showing deep creasing from years of concentrated work.",
+                                 "complexion":  "Weathered but maintainedâ€”lines radiating from the corners of dark brown eyes from constant squinting at distances and reading maps, deep concentration creases across the forehead. High, defined cheekbones with Central Asian structure. Fuller lips characteristic of Sub-Saharan and North African heritage. Moderate-width nose reflecting the blend of ancestry. Angular jaw from Eastern European heritage. No facial hair, clean-shaven daily. Skin shows the patina of constant outdoor work but careful maintenance.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar running from left temple down to jawline, approximately 8cm, origin unclear but old",
+                                                              "Callused palms and fingers on right hand, particularly pronounced on index and middle fingers from years of drawing and writing",
+                                                              "Faded tattoo on right inner forearm: a simplified map grid in dark blue ink, deliberately vague, no recognizable landmarks"
+                                                          ],
+                                 "visible_augmentations":  "Left arm prosthetic from elbow to fingertips: industrial-grade salvaged hardware with mismatched plating in gunmetal grey and oxidized copper, deliberately unupgraded and weathered. The joint work is visible and functional rather than aesthetic. Left eye contains a faint amber shimmer when light catches itâ€”the ocular overlay\u0027s edge visible only in profile. Subdermal data storage along right forearm visible as a faint series of geometric scars forming a grid pattern beneath the skin, always covered but occasionally glimpsed when clothing shifts.",
+                                 "posture_movement":  "Stillness is his default stateâ€”when standing, weight centered, shoulders back but not rigid. Eyes in constant, unconscious motion even when his body is motionless, cataloguing angles and distances. When moving, economical: no wasted motion, footfalls deliberate and quiet. Hands remain occupiedâ€”adjusting clothing, touching wall surfaces as he passes, checking pocket contents through fabric. When engaged in conversation, he maintains direct eye contact but his gaze occasionally drifts to measure doorways, sightlines, exit proximity.",
+                                 "clothing_style":  "Tier 4 working-class utility: layered thermals in muted greys and blacks beneath a faded orange dockworker\u0027s vest (genuine vintage, not reproduced) with dozens of hand-stitched pockets, each one containing something specificâ€”tools, samples, rolled papers. Lightweight cargo trousers in weathered grey canvas, reinforced at knees and thighs. Heavy boots, practical rather than fashionable, resoled multiple times. A long fieldcoat in dark green canvas, treated for water resistance, multiple interior pockets. No visible branding or corpo affiliations; clothing chosen for function and repairability. Everything shows wear but nothing shows neglect."
+                             },
+    "image_prompt":  "Leszek Nurzhanov, 188cm tall, weathered and muscular, GLMZ GLMZ. Warm deep brown skin with golden undertones reflecting Central Asian, Eastern European, Sub-Saharan African, North African, and Northern European heritage. High angular cheekbones, fuller lips, dark eyes with amber ocular overlay glinting in light. Black hair with silver at temples, close-cropped. Thin 8cm scar running left temple to jawline. Left arm salvaged prosthetic hardwareâ€”gunmetal grey and oxidized copper from elbow down, weathered industrial aesthetic. Wearing faded orange vintage dockworker\u0027s vest over grey thermals, weathered grey cargo trousers, practical heavy boots. Long dark green canvas fieldcoat. Subdermal data grid scars visible on right forearm. Posture economical and alertâ€”weight centered, eyes constantly measuring distances and sightlines. Urban industrial setting, cool neon and concrete ambiance, natural weathered lighting, contemplative mood, hands near pocket or wall surface, measuring everything. Neo-noir utilitarian aesthetic, no corpo branding. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Central Asian":  29.5,
+                             "Eastern European":  20.8,
+                             "Sub-Saharan African":  18.4,
+                             "North African":  16,
+                             "Northern European":  15.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  29.5
+                                                               }
+                                              },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Polish":  5.3,
+                                                                         "Czech":  1.1
+                                                                     },
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  11.4
+                                                                     },
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  3
+                                                                         }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  4.5,
+                                                                                 "Zimbabwean":  1.8
+                                                                             },
+                                                        "East African":  {
+                                                                             "Rwandan":  3.2,
+                                                                             "Ethiopian":  1.1
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  3.2,
+                                                                                "Cameroonian":  4.6
+                                                                            }
+                                                    },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Algerian":  2.7,
+                                                                  "Mauritanian":  7.7
+                                                              },
+                                                  "Amazigh":  {
+                                                                  "Berber":  5.6
+                                                              }
+                                              },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "English":  13.3,
+                                                                            "Welsh":  2
+                                                                        }
+                                                  }
+                        },
+    "tier":  "1"
 }

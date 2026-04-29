@@ -1,339 +1,366 @@
-{
-  "id": "019d6143a7317d7c8ab965b7b771c1dd",
-  "type": "character",
-  "name": "Ayesha Charoenphol-Haraldsen",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Riot Suppression Specialist, Arcturus Defense Solutions — Civil Security Division",
-  "age": 34,
-  "status": "active",
-  "location": "Fort Anchor, near Pulaski and Chicago Ave",
-  "description": "Ayesha Charoenphol-Haraldsen is built like a load-bearing column — broad-shouldered, thick-necked, with the kind of deliberate stillness that makes crowds unconsciously part around her. Her skin is a deep warm brown, cropped natural hair faded at the sides, and her left forearm carries a geometric tattoo in Amazigh style from a grandmother she never met. She has subdermal armor plating along her forearms and collar that gives her silhouette a slightly unnatural angularity. Her eyes are standard-issue grey with Arcturus Civil Security LIDAR rings — rings that glow faint amber when she's actively scanning. Off-duty she has a surprisingly gentle voice and laughs easily, but on the line she goes perfectly, eerie quiet.\n\nShe believes in the idea of Arcturus Civil Security more than its current reality, which is a distinction she holds onto by her fingernails. After eleven years of crowd control in the Gray Zone and the Circuit she has developed a precise internal calibration for when a crowd is curious, when it is afraid, and when it is about to become something else entirely. She treats rookie officers with patient firmness and street kids with cautious kindness. She is very good at her job and she knows it, which is the only thing keeping her from questioning why her job so often lands her between hungry people and corporate property.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.75,
-      "id": 0.35,
-      "shadow": 0.4,
-      "mask": 0.55,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Being complicit in something she cannot rationalize away",
-      "Losing the distinction between enforcing law and enforcing power"
-    ],
-    "core_desires": [
-      "To do this job in a way she can be proud of",
-      "To protect her mother from the economic slide without abandoning her principles"
-    ],
-    "coping_mechanisms": [
-      "Hyper-focus on procedure and craft",
-      "Compartmentalization — she does not think about the big picture during a shift",
-      "Cooking elaborate meals on days off"
-    ],
-    "blind_spots": [
-      "She underestimates how much her presence alone intimidates people who've been hurt by Metro before",
-      "She has convinced herself the system is reformable from inside because the alternative is unbearable"
-    ],
-    "secret": "Three years ago during the Hough Reclamation protests she destroyed body-cam footage of a fellow officer striking a restrained teenager. She told herself the kid was fine. She still checks the community boards to see if that name ever appears."
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, professional on-duty. Off-duty she relaxes into Meridian street creole with Maghrebi-inflected phrasing inherited from her father's side — elongated vowels, occasional Arabic loan-words.",
-    "cadence": "On-duty: measured, slow, deliberate. Off-duty: warm, faster, punctuated by genuine laughter.",
-    "verbal_tics": [
-      "'Clear?' at the end of instructions",
-      "Long pause before she says something she doesn't want to say",
-      "Refers to the crowd as 'people' rather than 'civilians' or 'targets' — a deliberate habit"
-    ],
-    "example_lines": [
-      "'I'm going to ask you once. Step back from the line. Clear?'",
-      "'You want to know what I actually think? You sure? Because once I tell you, I can't un-tell you.'",
-      "'She's a good kid. Scared kid. That's not the same thing as a dangerous one.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She has evidence of ongoing evidence tampering by a superior officer and is running out of reasons not to act on it.",
-    "A teenager she arrested twice is now missing — officially listed as relocated, but no relocation order exists in the system."
-  ],
-  "narrative_function": "Recurring authority figure who is neither villain nor pushover — a moral friction point. Can be a reluctant information source, a character who arrests PCs for things that are technically illegal, or someone who quietly looks the other way when she decides it matters.",
-  "augmentations": "Subdermal forearm and clavicle plating (standard Metro issue). LIDAR-ring ocular overlay. Bone-density reinforcement in knees and shins. No geneware — she considers it a personal line she hasn't crossed yet.",
-  "daily_life": "Shifts at Fort Anchor start at 0500 — gear check, briefing, deployment to whatever district is running hot. Evenings she trains in Metro's combat gym or visits her mother in Ironvein, bringing groceries and pretending not to notice the UBC stipend notices on the counter.",
-  "affiliation": "",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 8,
-      "dexterity": 6,
-      "vitality": 8,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 8,
-      "creativity": 4,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 5,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "riot-trained",
-      "veteran",
-      "moral-friction",
-      "community-roots",
-      "compromised-integrity"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Exhaust de-escalation options before using force — always",
-      "Do not lie to civilians directly; omit when necessary, never fabricate",
-      "Protect her unit even when she disagrees with them, up to a hard line she hasn't clearly defined"
-    ],
-    "escalation_ladder": [
-      "Verbal warning, calm and unambiguous",
-      "Physical positioning — body block, not touch",
-      "Single firm physical directive",
-      "Restraint only as last resort"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally neutral, assessing, gives people the benefit of the doubt for about sixty seconds",
-      "friends": "Warm, loyal, occasionally blunt to the point of rudeness — she doesn't coddle people she respects"
-    },
-    "stress_responses": {
-      "low": "Goes quiet, jaw tightens, zones in",
-      "medium": "Becomes hyper-procedural, almost robotic",
-      "high": "A terrifying stillness — then either decisive action or a controlled retreat to regroup"
-    },
-    "contradictions": [
-      "Believes deeply in community and simultaneously enforces systems that extract from it",
-      "Prides herself on honesty while carrying a secret that would end her career"
-    ],
-    "habits": [
-      "Checks her gear three times before every shift",
-      "Leaves small data-offerings at the Fort Anchor ELF shrine before night deployments",
-      "Buys coffee from the same Ironvein cart every morning and knows the vendor's kids' names"
-    ],
-    "breaking_points": [
-      "Watching a child get hurt by police action she could have stopped",
-      "Being ordered to suppress a protest she privately believes is justified"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Subdermal forearm plating (Metro Standard)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal forearm plating (Metro Standard)",
-      "replaces": ""
-    },
-    {
-      "name": "Clavicle reinforcement (Metro Standard)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Clavicle reinforcement (Metro Standard)",
-      "replaces": ""
-    },
-    {
-      "name": "LIDAR ocular overlay (Metro Standard)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "LIDAR ocular overlay (Metro Standard)",
-      "replaces": ""
-    },
-    {
-      "name": "Tibia/knee bone-density scaffold (Metro Standard)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Tibia/knee bone-density scaffold (Metro Standard)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.9,
-    "People Pleaser": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Fort Anchor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2166: Born, Ironvein district, to a Moroccan-Cameroonian father and a Congolese-Norwegian mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2184: Graduated Arcturus Civil Security Academy, top quarter of her class",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2189: Promoted to Riot Suppression Unit 7 after the Edison Grid disturbances",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2197: Destroyed body-cam footage of a fellow officer's assault — her secret",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2200: Present day, eleven-year veteran, quietly watching her unit change around her",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
-  ],
-  "registered_firearms": [
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "related_entities": [
-    "The Circuit",
-    "Fort Anchor",
-    "Grandmother",
-    "The Fathom Line",
-    "Irontide Tidal Energy",
-    "Circuit",
-    "Chicago",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Nightlight"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Southeast Asian (54.8%) with significant Eastern European (43.0%) and minor South Asian (2.2%) ancestry. This creates a striking phenotype blending Southeast Asian facial structure with Eastern European bone structure and pale undertones, enriched by South Asian subtle warmth. The result is a unique cosmopolitan appearance reflecting the Ubiquitous Diaspora—high cheekbones and defined facial planes from Southeast Asian genetics, balanced by the broader facial proportions and cooler undertones of Eastern European heritage, with minimal golden warmth from South Asian ancestry.",
-    "height_cm": 183,
-    "weight_kg": 89,
-    "build": "Powerfully built with exceptional upper body mass — broad shoulders and thick neck that taper to a solid waist. Deliberate posture of controlled presence; carries herself like ballast in motion.",
-    "hair_color": "Natural black with grey undertones at temples",
-    "hair_style": "Cropped close to scalp with geometric fade lines on sides — practical, minimal maintenance",
-    "hair_length": "Short",
-    "eye_color": "Grey (augmented) with visible LIDAR ring overlay — amber luminescence when active",
-    "skin_tone": "Warm olive-bronze complexion — Southeast Asian base melanin creating warmth and depth, tempered by Eastern European coolness, with subtle golden undertones from minor South Asian genetics. Even-toned with natural warmth that shifts between golden and neutral depending on lighting.",
-    "complexion": "Strong facial structure combining Southeast Asian high cheekbone definition and bone prominence with Eastern European broader facial proportions. Minimal scarring on face, well-maintained despite work strain. Slight creasing around eyes from eleven years of squinting into crowd noise. No visible cosmetic grooming beyond functional grooming.",
-    "distinguishing_marks": [
-      "Left forearm carries a geometric Amazigh-style tattoo in dark indigo — a personal talisman from maternal lineage, spans from wrist to elbow with angular, interlocking patterns",
-      "Subdermal armor plating along both forearms creates subtle ridge-lines visible beneath skin when she flexes or moves — gives her silhouette unnaturally sharp angles at the wrists and lower forearms",
-      "Clavicle plating creates faint geometric ridge structure across upper chest and shoulders, visible as slight textural discontinuity in skin tone under harsh lighting"
-    ],
-    "visible_augmentations": "LIDAR-ring ocular overlay visible as faint circular amber-tinted rings around iris when active; subdermal plating creates visible geometric ridging along forearms and clavicle — most apparent under direct light or when she flexes. No visible external chrome or prosthetics; reinforcement is internal and subtle but unmistakable to trained eye.",
-    "posture_movement": "Economy of motion — every gesture is deliberate and measured. She stands with weight distributed evenly, shoulders back, creating an impression of immobile stability. When moving through crowds, she parts people by presence alone before physical contact becomes necessary. Off-duty, posture loosens slightly but never fully; muscle memory of tactical readiness is permanent.",
-    "clothing_style": "On-duty: Arcturus Defense Solutions Civil Security Riot Suppression kit — reinforced polymer bodysuit in slate grey with reflective striping, ceramic-composite armor panels, weighted utility belt with restraint loops and gas dispersal equipment. Boots are heavy-duty tactical with ankle reinforcement. Off-duty: practical Tier 3 clothing — fitted black synthetic-blend shirts, cargo pants with secure pockets, unmarked grey jacket with internal organization. No visible personal styling or affectation; functional over aesthetic. Occasionally wears an older Amazigh-pattern scarf around her neck when off-duty, gift from mother."
-  },
-  "image_prompt": "Ayesha Charoenphol-Haraldsen, 183cm tall powerfully built Arcturus Defense Solutions Civil Security officer in 2226, warm olive-bronze skin tone blending Southeast Asian, Eastern European, and South Asian ancestry. High cheekbones with strong Southeast Asian facial definition, tempered by broader Eastern European facial proportions. Short black hair with grey at temples, cropped geometric fade sides. Augmented grey eyes with subtle amber LIDAR rings faintly visible. Visible subdermal geometric plating along forearms and clavicle creating subtle ridge-lines beneath skin, most apparent under harsh light. Dark indigo Amazigh tattoo covering left forearm in angular interlocking patterns. On-duty: slate grey reinforced polymer riot suppression bodysuit with reflective striping and ceramic armor panels, tactical boots, utility belt. Posture of immobile stability, weight distributed evenly, shoulders back. Standing in neon-lit GLMZ Metro station corridor, cool blue and amber neo-noir lighting, slight motion blur suggesting tactical readiness, crowd parting around her by presence alone. GLMZ 2200s aesthetic, gritty urban environment, professional and dangerous. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 54.8,
-    "Eastern European": 43,
-    "South Asian": 2.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 23
-      },
-      "Cambodian": {
-        "Khmer": 22.1
-      },
-      "Indonesian": {
-        "Javanese": 9.7
-      }
-    },
-    "Eastern European": {
-      "Slavic East": {
-        "Belarusian": 21.9,
-        "Russian": 13.1
-      },
-      "Slavic West": {
-        "Sorbian": 8
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 0.1
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 1.5
-      },
-      "Nepali": {
-        "Nepali": 0.6
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a7317d7c8ab965b7b771c1dd",
+    "type":  "character",
+    "name":  "Ayesha Charoenphol-Haraldsen",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Riot Suppression Specialist, Arcturus Defense Solutions â€” Civil Security Division",
+    "age":  34,
+    "status":  "active",
+    "location":  "Fort Anchor, near Pulaski and Chicago Ave",
+    "description":  "Ayesha Charoenphol-Haraldsen is built like a load-bearing column â€” broad-shouldered, thick-necked, with the kind of deliberate stillness that makes crowds unconsciously part around her. Her skin is a deep warm brown, cropped natural hair faded at the sides, and her left forearm carries a geometric tattoo in Amazigh style from a grandmother she never met. She has subdermal armor plating along her forearms and collar that gives her silhouette a slightly unnatural angularity. Her eyes are standard-issue grey with Arcturus Civil Security LIDAR rings â€” rings that glow faint amber when she\u0027s actively scanning. Off-duty she has a surprisingly gentle voice and laughs easily, but on the line she goes perfectly, eerie quiet.\n\nShe believes in the idea of Arcturus Civil Security more than its current reality, which is a distinction she holds onto by her fingernails. After eleven years of crowd control in the Gray Zone and the Circuit she has developed a precise internal calibration for when a crowd is curious, when it is afraid, and when it is about to become something else entirely. She treats rookie officers with patient firmness and street kids with cautious kindness. She is very good at her job and she knows it, which is the only thing keeping her from questioning why her job so often lands her between hungry people and corporate property.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being complicit in something she cannot rationalize away",
+                                          "Losing the distinction between enforcing law and enforcing power"
+                                      ],
+                       "core_desires":  [
+                                            "To do this job in a way she can be proud of",
+                                            "To protect her mother from the economic slide without abandoning her principles"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Hyper-focus on procedure and craft",
+                                                 "Compartmentalization â€” she does not think about the big picture during a shift",
+                                                 "Cooking elaborate meals on days off"
+                                             ],
+                       "blind_spots":  [
+                                           "She underestimates how much her presence alone intimidates people who\u0027ve been hurt by Metro before",
+                                           "She has convinced herself the system is reformable from inside because the alternative is unbearable"
+                                       ],
+                       "secret":  "Three years ago during the Hough Reclamation protests she destroyed body-cam footage of a fellow officer striking a restrained teenager. She told herself the kid was fine. She still checks the community boards to see if that name ever appears."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, professional on-duty. Off-duty she relaxes into Meridian street creole with Maghrebi-inflected phrasing inherited from her father\u0027s side â€” elongated vowels, occasional Arabic loan-words.",
+                            "cadence":  "On-duty: measured, slow, deliberate. Off-duty: warm, faster, punctuated by genuine laughter.",
+                            "verbal_tics":  [
+                                                "\u0027Clear?\u0027 at the end of instructions",
+                                                "Long pause before she says something she doesn\u0027t want to say",
+                                                "Refers to the crowd as \u0027people\u0027 rather than \u0027civilians\u0027 or \u0027targets\u0027 â€” a deliberate habit"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I\u0027m going to ask you once. Step back from the line. Clear?\u0027",
+                                                  "\u0027You want to know what I actually think? You sure? Because once I tell you, I can\u0027t un-tell you.\u0027",
+                                                  "\u0027She\u0027s a good kid. Scared kid. That\u0027s not the same thing as a dangerous one.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She has evidence of ongoing evidence tampering by a superior officer and is running out of reasons not to act on it.",
+                        "A teenager she arrested twice is now missing â€” officially listed as relocated, but no relocation order exists in the system."
+                    ],
+    "narrative_function":  "Recurring authority figure who is neither villain nor pushover â€” a moral friction point. Can be a reluctant information source, a character who arrests PCs for things that are technically illegal, or someone who quietly looks the other way when she decides it matters.",
+    "augmentations":  "Subdermal forearm and clavicle plating (standard Metro issue). LIDAR-ring ocular overlay. Bone-density reinforcement in knees and shins. No geneware â€” she considers it a personal line she hasn\u0027t crossed yet.",
+    "daily_life":  "Shifts at Fort Anchor start at 0500 â€” gear check, briefing, deployment to whatever district is running hot. Evenings she trains in Metro\u0027s combat gym or visits her mother in Ironvein, bringing groceries and pretending not to notice the UBC stipend notices on the counter.",
+    "affiliation":  "",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  8,
+                                   "dexterity":  6,
+                                   "vitality":  8,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  8,
+                                 "creativity":  4,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  5,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "riot-trained",
+                               "veteran",
+                               "moral-friction",
+                               "community-roots",
+                               "compromised-integrity"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Exhaust de-escalation options before using force â€” always",
+                                              "Do not lie to civilians directly; omit when necessary, never fabricate",
+                                              "Protect her unit even when she disagrees with them, up to a hard line she hasn\u0027t clearly defined"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Verbal warning, calm and unambiguous",
+                                                 "Physical positioning â€” body block, not touch",
+                                                 "Single firm physical directive",
+                                                 "Restraint only as last resort"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally neutral, assessing, gives people the benefit of the doubt for about sixty seconds",
+                                                   "friends":  "Warm, loyal, occasionally blunt to the point of rudeness â€” she doesn\u0027t coddle people she respects"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Goes quiet, jaw tightens, zones in",
+                                                "medium":  "Becomes hyper-procedural, almost robotic",
+                                                "high":  "A terrifying stillness â€” then either decisive action or a controlled retreat to regroup"
+                                            },
+                       "contradictions":  [
+                                              "Believes deeply in community and simultaneously enforces systems that extract from it",
+                                              "Prides herself on honesty while carrying a secret that would end her career"
+                                          ],
+                       "habits":  [
+                                      "Checks her gear three times before every shift",
+                                      "Leaves small data-offerings at the Fort Anchor ELF shrine before night deployments",
+                                      "Buys coffee from the same Ironvein cart every morning and knows the vendor\u0027s kids\u0027 names"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching a child get hurt by police action she could have stopped",
+                                               "Being ordered to suppress a protest she privately believes is justified"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Subdermal forearm plating (Metro Standard)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal forearm plating (Metro Standard)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Clavicle reinforcement (Metro Standard)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Clavicle reinforcement (Metro Standard)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "LIDAR ocular overlay (Metro Standard)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "LIDAR ocular overlay (Metro Standard)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Tibia/knee bone-density scaffold (Metro Standard)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Tibia/knee bone-density scaffold (Metro Standard)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.9,
+                       "People Pleaser":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Fort Anchor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2166: Born, Ironvein district, to a Moroccan-Cameroonian father and a Congolese-Norwegian mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2184: Graduated Arcturus Civil Security Academy, top quarter of her class",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2189: Promoted to Riot Suppression Unit 7 after the Edison Grid disturbances",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2197: Destroyed body-cam footage of a fellow officer\u0027s assault â€” her secret",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2200: Present day, eleven-year veteran, quietly watching her unit change around her",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Arcturus Defense Solutions AR-7 \u0027Mandate\u0027",
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027",
+                            "Forge-Smith Collective Ablonite Push Dagger \u0027Bone Key\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Arcturus Defense Solutions AR-7 \u0027Mandate\u0027",
+                                "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                            ],
+    "related_entities":  [
+                             "The Circuit",
+                             "Fort Anchor",
+                             "Grandmother",
+                             "The Fathom Line",
+                             "Irontide Tidal Energy",
+                             "Circuit",
+                             "Chicago",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Nightlight"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Southeast Asian (54.8%) with significant Eastern European (43.0%) and minor South Asian (2.2%) ancestry. This creates a striking phenotype blending Southeast Asian facial structure with Eastern European bone structure and pale undertones, enriched by South Asian subtle warmth. The result is a unique cosmopolitan appearance reflecting the Ubiquitous Diasporaâ€”high cheekbones and defined facial planes from Southeast Asian genetics, balanced by the broader facial proportions and cooler undertones of Eastern European heritage, with minimal golden warmth from South Asian ancestry.",
+                                 "height_cm":  183,
+                                 "weight_kg":  89,
+                                 "build":  "Powerfully built with exceptional upper body mass â€” broad shoulders and thick neck that taper to a solid waist. Deliberate posture of controlled presence; carries herself like ballast in motion.",
+                                 "hair_color":  "Natural black with grey undertones at temples",
+                                 "hair_style":  "Cropped close to scalp with geometric fade lines on sides â€” practical, minimal maintenance",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Grey (augmented) with visible LIDAR ring overlay â€” amber luminescence when active",
+                                 "skin_tone":  "Warm olive-bronze complexion â€” Southeast Asian base melanin creating warmth and depth, tempered by Eastern European coolness, with subtle golden undertones from minor South Asian genetics. Even-toned with natural warmth that shifts between golden and neutral depending on lighting.",
+                                 "complexion":  "Strong facial structure combining Southeast Asian high cheekbone definition and bone prominence with Eastern European broader facial proportions. Minimal scarring on face, well-maintained despite work strain. Slight creasing around eyes from eleven years of squinting into crowd noise. No visible cosmetic grooming beyond functional grooming.",
+                                 "distinguishing_marks":  [
+                                                              "Left forearm carries a geometric Amazigh-style tattoo in dark indigo â€” a personal talisman from maternal lineage, spans from wrist to elbow with angular, interlocking patterns",
+                                                              "Subdermal armor plating along both forearms creates subtle ridge-lines visible beneath skin when she flexes or moves â€” gives her silhouette unnaturally sharp angles at the wrists and lower forearms",
+                                                              "Clavicle plating creates faint geometric ridge structure across upper chest and shoulders, visible as slight textural discontinuity in skin tone under harsh lighting"
+                                                          ],
+                                 "visible_augmentations":  "LIDAR-ring ocular overlay visible as faint circular amber-tinted rings around iris when active; subdermal plating creates visible geometric ridging along forearms and clavicle â€” most apparent under direct light or when she flexes. No visible external chrome or prosthetics; reinforcement is internal and subtle but unmistakable to trained eye.",
+                                 "posture_movement":  "Economy of motion â€” every gesture is deliberate and measured. She stands with weight distributed evenly, shoulders back, creating an impression of immobile stability. When moving through crowds, she parts people by presence alone before physical contact becomes necessary. Off-duty, posture loosens slightly but never fully; muscle memory of tactical readiness is permanent.",
+                                 "clothing_style":  "On-duty: Arcturus Defense Solutions Civil Security Riot Suppression kit â€” reinforced polymer bodysuit in slate grey with reflective striping, ceramic-composite armor panels, weighted utility belt with restraint loops and gas dispersal equipment. Boots are heavy-duty tactical with ankle reinforcement. Off-duty: practical Tier 3 clothing â€” fitted black synthetic-blend shirts, cargo pants with secure pockets, unmarked grey jacket with internal organization. No visible personal styling or affectation; functional over aesthetic. Occasionally wears an older Amazigh-pattern scarf around her neck when off-duty, gift from mother."
+                             },
+    "image_prompt":  "Ayesha Charoenphol-Haraldsen, 183cm tall powerfully built Arcturus Defense Solutions Civil Security officer in 2226, warm olive-bronze skin tone blending Southeast Asian, Eastern European, and South Asian ancestry. High cheekbones with strong Southeast Asian facial definition, tempered by broader Eastern European facial proportions. Short black hair with grey at temples, cropped geometric fade sides. Augmented grey eyes with subtle amber LIDAR rings faintly visible. Visible subdermal geometric plating along forearms and clavicle creating subtle ridge-lines beneath skin, most apparent under harsh light. Dark indigo Amazigh tattoo covering left forearm in angular interlocking patterns. On-duty: slate grey reinforced polymer riot suppression bodysuit with reflective striping and ceramic armor panels, tactical boots, utility belt. Posture of immobile stability, weight distributed evenly, shoulders back. Standing in neon-lit GLMZ Metro station corridor, cool blue and amber neo-noir lighting, slight motion blur suggesting tactical readiness, crowd parting around her by presence alone. GLMZ 2200s aesthetic, gritty urban environment, professional and dangerous. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  54.8,
+                             "Eastern European":  43,
+                             "South Asian":  2.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  23
+                                                             },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  22.1
+                                                                  },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  9.7
+                                                                   }
+                                                },
+                            "Eastern European":  {
+                                                     "Slavic East":  {
+                                                                         "Belarusian":  21.9,
+                                                                         "Russian":  13.1
+                                                                     },
+                                                     "Slavic West":  {
+                                                                         "Sorbian":  8
+                                                                     }
+                                                 },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  0.1
+                                                                },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  1.5
+                                                              },
+                                                "Nepali":  {
+                                                               "Nepali":  0.6
+                                                           }
+                                            }
+                        },
+    "tier":  "1"
 }

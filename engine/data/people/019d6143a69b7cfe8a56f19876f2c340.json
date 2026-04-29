@@ -1,303 +1,334 @@
-{
-  "id": "019d6143a69b7cfe8a56f19876f2c340",
-  "type": "character",
-  "name": "Akachukwu Subramaniam-Venkatesh",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Scout diver and route mapper — Boneyard Saints",
-  "age": 24,
-  "status": "active",
-  "location": "Old Harbor — bunks in a hammock in Wren's warehouse when he's not sleeping on Toll's barge, near Wacker and State",
-  "description": "Akachukwu Subramaniam-Venkatesh is the fastest swimmer the Boneyard Saints have ever had and the most frustrated. He can navigate the flooded ruins of Old Harbor with an intuitive grace that borders on the uncanny — reading currents by feel, sensing structural integrity through water pressure changes, finding passages in the submerged infrastructure that older divers would miss or ignore. Corva trained him, Toll protects him, and neither will let him go deep. He is twenty-four years old and the leash is getting unbearable.\n\nHe came to Old Harbor from the Gray Zone, following rumors of salvage work that paid better than courier runs. He'd never been underwater before his first day with the Saints. Within a week, Corva said he moved in the water like he'd been born to it. Within a month, he was scouting routes that seasoned divers wouldn't attempt. The affinity is genuine and slightly inexplicable — Pike processes underwater environments with a fluency that his minimal augmentations don't fully account for.\n\nPike is wiry, quick, with close-cropped hair and an expression that alternates between eager and impatient. He has the lean build of a natural swimmer, long-limbed and efficient. His skin is perpetually salt-dried and he smells like the harbor — brine, rust, and something organic. He moves constantly, even on land, with the restless energy of someone who has found the thing they were meant to do and is being prevented from doing it fully.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.35,
-      "ideal": 0.45,
-      "id": 0.7,
-      "shadow": 0.3,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "That his peak years as a diver are being wasted on shallow water and safe routes",
-      "That the affinity he has for the water is something other than talent — that the ruins are calling him and the calling is not benign",
-      "That the crew will never see him as a full member, only as the kid they're keeping alive"
-    ],
-    "core_desires": [
-      "To dive the deep sections — to see what Corva has seen and what she won't describe",
-      "To be recognized as a Saint, not a trainee. To have his instincts trusted.",
-      "To understand why the water feels like home in a way that nothing on land does"
-    ],
-    "coping_mechanisms": [
-      "Pushes boundaries on sanctioned routes — goes a little deeper, a little farther, stays a little longer than authorized",
-      "Brings artifacts to Wren as offerings — trying to prove his value through discovery rather than obedience",
-      "Explores the harbor shallows alone at dawn because the solitary swimming quiets the frustration"
-    ],
-    "blind_spots": [
-      "His natural affinity makes him underestimate the danger of the ruins — the water feels safe to him in ways it shouldn't",
-      "He interprets the crew's protectiveness as a judgment on his capability rather than an expression of care",
-      "He does not recognize that his comfort in the water might not be natural talent but something else entirely"
-    ],
-    "secret": "During his dawn swims, he's been exploring the edges of the deep sections — the transition zones where shallow water drops into the flooded infrastructure. He's heard the sounds. They don't frighten him. They feel familiar."
-  },
-  "speech_patterns": {
-    "vocabulary": "Young, direct, increasingly adopting maritime terminology as he assimilates into harbor culture. Mixes the Gray Zone slang with diver jargon.",
-    "cadence": "Impatient, forward-leaning. He talks like he's trying to get to the next sentence before finishing the current one.",
-    "verbal_tics": [
-      "Says 'I know, I know' when being cautioned — deflection, not agreement",
-      "Describes underwater experiences with physical metaphors — 'the current talks to you if you listen'",
-      "Taps surfaces rhythmically when talking — the beat matches the pulse of his dawn swims"
-    ],
-    "example_lines": [
-      "The current talks to you if you listen. I'm not saying I understand it. I'm saying it's talking.",
-      "I know, I know — stay shallow, map the route, come back. But there's a passage at the twenty-meter line that nobody's checked and I can feel it opening.",
-      "You trained me to be good. Now let me be good."
-    ]
-  },
-  "relationships": [
-    {
-      "name": "Corva Lam",
-      "type": "crew lead / mentor / barrier",
-      "description": "Corva trained Pike and he is grateful. Corva restricts Pike's diving depth and he is furious. The gratitude and fury coexist without resolution. He does not know about her father, which means he cannot understand her refusal.",
-      "emotional_core": "Admiration strained by confinement",
-      "story_tension": "When Pike learns about Corva's father — that she's keeping him shallow because another young diver went deep and never came back — the anger will transform into understanding. Or it won't."
-    },
-    {
-      "name": "Toll Brecker",
-      "type": "crewmate / protector",
-      "description": "Toll's gentleness is the only version of the crew's protectiveness that Pike can accept without resentment. Toll doesn't restrict — he accompanies. The difference matters.",
-      "emotional_core": "The warmth of being cared for without being controlled",
-      "story_tension": "Pike has noticed that Toll is frightened of the deep ruins. Pike is not. The divergence concerns him in ways he can't articulate."
-    },
-    {
-      "name": "Wren Isaza",
-      "type": "crewmate / desired collaborator",
-      "description": "Pike wants Wren to see him as a research partner, not a data source. He brings her interesting artifacts and describes underwater conditions with increasing precision, hoping to earn intellectual respect.",
-      "emotional_core": "The desire to be valued for his mind, not just his swimming",
-      "story_tension": "Wren's analytical distance is impersonal, not dismissive, but Pike can't tell the difference yet."
-    }
-  ],
-  "story_hooks": [
-    "Pike's unauthorized deep-section exploration puts him in contact with whatever is producing the sounds",
-    "His inexplicable water affinity turns out to have a source — perhaps connected to pre-collapse experiments in the harbor",
-    "A salvage contract requires a scout who can navigate passages too narrow for Corva or Toll — Pike's moment arrives with conditions attached",
-    "He discovers something in the transition zone that challenges everything the Saints believe about the ruins"
-  ],
-  "narrative_function": "Pike is the pull toward the unknown — the character who wants to go deeper, see more, understand what's in the dark water. His eagerness provides narrative momentum for the Boneyard Saints' horror elements while his youth creates the protective tension that drives Corva and Toll. He is the one who will eventually go where the story needs someone to go.",
-  "augmentations": "Basic respiratory enhancement — extends underwater time to 60 minutes, less than Corva or Toll. Pressure-compensation ear implants. Low-grade sonar receiver (hand-held, not cortical) for underwater navigation. No strength augmentations — relies on speed, flexibility, and an intuitive sense of water dynamics that his augmentations don't explain.",
-  "daily_life": "Wakes early, often before Corva. Swims in the harbor shallows before the crew assembles — partly exercise, partly exploration. Scouts assigned sections during the day, mapping routes and identifying salvage opportunities. Returns to catalogue his findings with Wren, hoping she'll engage with them beyond their monetary value. Evenings he eats on Toll's barge, explores the dry dock, and argues with anyone who will listen about the deep sections. Sleeps restlessly — the water is better.",
-  "affiliation": "Boneyard Saints",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": []
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will push the boundaries of any assignment without technically violating orders — the letter of the law, not the spirit",
-      "Will never leave a fellow diver underwater — crew loyalty transcends his frustration with crew restrictions",
-      "Will bring anything unusual to Wren before reporting it to Corva — discovery first, then protocol",
-      "Will not refuse a safe assignment but will complete it in half the expected time and use the remainder to explore",
-      "Will never admit fear underwater — the affinity is his identity and fear would undermine it",
-      "Will share food on the barge because Toll taught him that eating together is the contract between crew members"
-    ],
-    "escalation_ladder": [
-      "1. Swim — outpace the threat. Pike is the fastest swimmer in Old Harbor and uses speed as his primary defense.",
-      "2. Navigate — use the flooded infrastructure. Passages, tunnels, collapsed sections that only Pike can fit through.",
-      "3. Hide — the ruins offer infinite concealment. Pike can hold still in dark water longer than most people can hold their breath above it.",
-      "4. Signal — alert the crew. Pike carries emergency sonar beacons that Toll monitors.",
-      "5. Fight — Pike carries a salvage knife and can use it, but underwater combat against augmented opponents or unknown threats is a last resort he's never faced."
-    ],
-    "interpersonal_modes": {
-      "corva": "Respectful but strained. He follows instructions and argues afterward. The arguments are getting louder. He doesn't know that Corva sees her younger self and her dead father simultaneously when she looks at him.",
-      "toll": "Open, comfortable. Toll's barge is the closest thing Pike has to a home. He talks freely about his dives, his frustrations, his love of the water. Toll listens without judgment.",
-      "wren": "Eager, slightly performative. He over-explains his findings, uses technical vocabulary he's still learning, and tries too hard. The desire to be taken seriously makes him less smooth than he normally is.",
-      "the_water": "At home. His body language changes underwater — the restless energy resolves into fluid efficiency. He smiles. He explores. The frustration and the posturing dissolve and what remains is a young man doing the thing he was made for."
-    },
-    "stress_responses": {
-      "low": "Swims longer. The dawn sessions extend. He comes to the dock later, calmer, with salt in his hair.",
-      "medium": "Becomes argumentative. Challenges route assignments, questions depth restrictions, pushes back against the crew hierarchy.",
-      "high": "Goes silent and withdrawn. The restless energy turns inward. He stops eating on the barge and sleeps in the warehouse, away from conversation.",
-      "critical": "Night swims. Alone, unauthorized, in sections he shouldn't be in. The same behavior Corva exhibits, which would horrify them both if they recognized the parallel."
-    },
-    "contradictions": [
-      "He wants to be trusted with the deep sections but his unauthorized explorations are the strongest evidence that he can't be",
-      "The water feels like home but the feelings the deep sections produce — the familiarity with the sounds — should be a warning, not a comfort",
-      "He wants the crew's respect but earns it through obedience while his nature demands exploration",
-      "He is the youngest Saint and the one most drawn to the oldest, deepest, most dangerous parts of the ruins — the inversion is not accidental"
-    ],
-    "habits": [
-      "Dawn swims every morning — alone, exploratory, increasingly deep",
-      "Brings artifacts to Wren's workstation and hovers until she examines them — the ritual is both professional and personal",
-      "Eats on Toll's barge every evening — the consistency is the closest thing to family structure he has",
-      "Taps surfaces to the rhythm of underwater currents — a nervous habit that reveals how much time he spends thinking about the water",
-      "Sleeps in different locations — the hammock, the barge, a sheltered spot on the dock. He hasn't settled because settling means accepting the surface."
-    ],
-    "breaking_points": [
-      "Being formally banned from diving would destroy him — the water is his identity",
-      "Discovering that his affinity is artificial — engineered or induced — would shatter his sense of self",
-      "Corva or Toll dying underwater would transform the ruins from a workplace to a graveyard in his perception",
-      "The deep-section sounds resolving into something he recognizes — a voice, a name, a call that he cannot refuse"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Cockroach": 0.9,
-    "Safety First": 0.9,
-    "Improviser": 0.9,
-    "Lone Wolf": 0.9,
-    "Con Artist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Old Harbor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Tombstone' Concrete Block Launcher",
-    "Street Custom 'Scorpion Tail' Chain Whip"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Dust & Meridian Saints",
-    "Street Custom 'Lazarus Wire' Garrote System",
-    "Pressure Drop",
-    "Chimera-Null",
-    "Ringo DV-4 'Courier'",
-    "The Voltage Saints",
-    "Harbor Fish Shack",
-    "Axiom Systems Cortical Bomb CB-1 'Leash'",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
-  ],
-  "district": "Old Harbor",
-  "physical_description": {
-    "heritage": "Akachukwu carries a complex genetic tapestry of the Ubiquitous Diaspora: South Asian ancestry (51.3%) forms his foundation, expressed in eye shape, cheekbone structure, and fine facial hair patterning. This is substantially layered with Indigenous American (15.6%) and Sub-Saharan African (12.2%) genetics, contributing jaw breadth, brow prominence, and lip fullness. Hispanic/Latin American (8.6%), Northern European (8.1%), and North African (4.2%) ancestry create warmth in undertones and subtle variation in feature expression. The result is a face of remarkable complexity: South Asian eye geometry paired with Sub-Saharan African orbital prominence, Indigenous American jaw structure meeting North African warmth, creating features that resist easy categorization and read as distinctly products of the post-Diaspora world.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Wiry and lean with long, efficient limbs — a swimmer's frame. Minimal body fat, corded forearms and calves from constant activity. Shoulders slightly narrower than his hips, built for flexibility rather than power.",
-    "hair_color": "Dark brown with salt-bleached streaks near the temples",
-    "hair_style": "Close-cropped, textured, always slightly wet or damp",
-    "hair_length": "Short",
-    "eye_color": "Dark brown with a faint metallic sheen around the irises (pressure-compensation implants visible as a thin silvery ring)",
-    "skin_tone": "Rich mahogany brown with golden undertones — the deep warm result of South Asian, Sub-Saharan African, Indigenous American, and North African ancestry blending. Darker to bronze across sun-exposed shoulders and forearms, with salt-staining creating permanent weathered patches along the left side of his neck and jawline.",
-    "complexion": "Perpetually wind-burned and salt-dried with sun-darkened patches, lips full and slightly chapped, fine premature lines around his eyes from squinting in harsh harbor light. High, defined cheekbones with breadth across the face reflecting the width inherited from Sub-Saharan African and Indigenous American ancestry, softened by South Asian feature geometry. Sharp jaw line with rounded chin. Fine facial hair following patterns shaped by South Asian genetics but distributed across a broader facial structure. His expression shifts rapidly — eager then frustrated, focused then restless.",
-    "distinguishing_marks": [
-      "Thin horizontal scar across his left collarbone, roughly 4cm, pale and old — origin unknown, predates Old Harbor",
-      "Small circular scar on the inside of his right wrist (pressure-compensation implant insertion point), barely visible unless wet",
-      "Salt-and-rust discoloration along the left side of his neck and jawline, permanent from daily water exposure"
-    ],
-    "visible_augmentations": "Faint metallic ring visible in both eyes when light hits them (pressure-compensation implants). Occasionally carries a hand-held sonar device worn on a cord around his neck — battered, hydrophobic casing, scratch-marked from use. No visible respiratory hardware; the enhancement is internal.",
-    "posture_movement": "Never still — fingers tap, legs bounce, weight shifts constantly even while standing. In water he moves with hypnotic grace, economical and flowing. On land his motion is restless and quick, as if the ground is too solid, too limiting. He leans forward when talking, eyes bright with intensity or frustration.",
-    "clothing_style": "Tier 4 utilitarian salvage wear: wetsuit jacket over thermal base layers (usually damp), cargo pants with reinforced pockets for tools and sonar equipment, worn rubber-soled boots. A faded work vest with multiple fastening points. Minimal accessories — a wrist cuff with pressure readings, a braided cord around his neck for the sonar unit. Everything shows salt staining and repair patches. No corporate branding; functional, working-class, built for the harbor."
-  },
-  "image_prompt": "Akachukwu Subramaniam-Venkatesh, 178cm lean swimmer's build, mahogany skin with golden undertones darkened to bronze on shoulders, salt-stained weathering on left jaw. Rich dark brown eyes with faint metallic pressure-compensation implant rings, close-cropped textured dark brown hair with salt-bleached temples. Fine facial hair, high defined cheekbones with broad structure, full lips slightly chapped, premature lines around eyes. Wearing damp wetsuit jacket over thermal layers, reinforced cargo pants, worn boots, faded work vest. Sonar device on braided cord around neck. Restless posture, leaning forward with intense expression. GLMZ Great Lakes harbor setting, harsh overhead lighting catching the metallic eye implants, salt spray and water droplets in air, industrial dock background with neon signs reflecting off wet surfaces, moody blue-green atmospheric lighting, weathered and functional aesthetic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 51.3,
-    "Indigenous American": 15.6,
-    "Sub-Saharan African": 12.2,
-    "Hispanic/Latin American": 8.6,
-    "Northern European": 8.1,
-    "North African": 4.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Pakistani": {
-        "Sindhi": 23.7,
-        "Punjabi Pakistani": 10.6
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 17
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Maya": 6.4,
-        "Nahua": 1.6
-      },
-      "Great Lakes Nations": {
-        "Ojibwe": 5.2,
-        "Ho-Chunk": 0.4
-      },
-      "Andean": {
-        "Mapuche": 0.8,
-        "Aymara": 1.2
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zambian": 5.3
-      },
-      "West African": {
-        "Sierra Leonean": 2.5,
-        "Nigerian": 4.4
-      }
-    },
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 2.8
-      },
-      "Central American": {
-        "Honduran": 1.8,
-        "Salvadoran": 2.4
-      },
-      "South American": {
-        "Chilean": 1.6
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Swedish": 3.7,
-        "Norwegian": 4.4
-      }
-    },
-    "North African": {
-      "Nile Valley": {
-        "Sudanese": 2,
-        "Egyptian": 0.3
-      },
-      "Amazigh": {
-        "Berber": 0.2
-      },
-      "Maghreb": {
-        "Moroccan": 1.5,
-        "Algerian": 0.2
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a69b7cfe8a56f19876f2c340",
+    "type":  "character",
+    "name":  "Akachukwu Subramaniam-Venkatesh",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Scout diver and route mapper â€” Boneyard Saints",
+    "age":  24,
+    "status":  "active",
+    "location":  "Old Harbor â€” bunks in a hammock in Wren\u0027s warehouse when he\u0027s not sleeping on Toll\u0027s barge, near Wacker and State",
+    "description":  "Akachukwu Subramaniam-Venkatesh is the fastest swimmer the Boneyard Saints have ever had and the most frustrated. He can navigate the flooded ruins of Old Harbor with an intuitive grace that borders on the uncanny â€” reading currents by feel, sensing structural integrity through water pressure changes, finding passages in the submerged infrastructure that older divers would miss or ignore. Corva trained him, Toll protects him, and neither will let him go deep. He is twenty-four years old and the leash is getting unbearable.\n\nHe came to Old Harbor from the Gray Zone, following rumors of salvage work that paid better than courier runs. He\u0027d never been underwater before his first day with the Saints. Within a week, Corva said he moved in the water like he\u0027d been born to it. Within a month, he was scouting routes that seasoned divers wouldn\u0027t attempt. The affinity is genuine and slightly inexplicable â€” Pike processes underwater environments with a fluency that his minimal augmentations don\u0027t fully account for.\n\nPike is wiry, quick, with close-cropped hair and an expression that alternates between eager and impatient. He has the lean build of a natural swimmer, long-limbed and efficient. His skin is perpetually salt-dried and he smells like the harbor â€” brine, rust, and something organic. He moves constantly, even on land, with the restless energy of someone who has found the thing they were meant to do and is being prevented from doing it fully.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That his peak years as a diver are being wasted on shallow water and safe routes",
+                                          "That the affinity he has for the water is something other than talent â€” that the ruins are calling him and the calling is not benign",
+                                          "That the crew will never see him as a full member, only as the kid they\u0027re keeping alive"
+                                      ],
+                       "core_desires":  [
+                                            "To dive the deep sections â€” to see what Corva has seen and what she won\u0027t describe",
+                                            "To be recognized as a Saint, not a trainee. To have his instincts trusted.",
+                                            "To understand why the water feels like home in a way that nothing on land does"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Pushes boundaries on sanctioned routes â€” goes a little deeper, a little farther, stays a little longer than authorized",
+                                                 "Brings artifacts to Wren as offerings â€” trying to prove his value through discovery rather than obedience",
+                                                 "Explores the harbor shallows alone at dawn because the solitary swimming quiets the frustration"
+                                             ],
+                       "blind_spots":  [
+                                           "His natural affinity makes him underestimate the danger of the ruins â€” the water feels safe to him in ways it shouldn\u0027t",
+                                           "He interprets the crew\u0027s protectiveness as a judgment on his capability rather than an expression of care",
+                                           "He does not recognize that his comfort in the water might not be natural talent but something else entirely"
+                                       ],
+                       "secret":  "During his dawn swims, he\u0027s been exploring the edges of the deep sections â€” the transition zones where shallow water drops into the flooded infrastructure. He\u0027s heard the sounds. They don\u0027t frighten him. They feel familiar."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Young, direct, increasingly adopting maritime terminology as he assimilates into harbor culture. Mixes the Gray Zone slang with diver jargon.",
+                            "cadence":  "Impatient, forward-leaning. He talks like he\u0027s trying to get to the next sentence before finishing the current one.",
+                            "verbal_tics":  [
+                                                "Says \u0027I know, I know\u0027 when being cautioned â€” deflection, not agreement",
+                                                "Describes underwater experiences with physical metaphors â€” \u0027the current talks to you if you listen\u0027",
+                                                "Taps surfaces rhythmically when talking â€” the beat matches the pulse of his dawn swims"
+                                            ],
+                            "example_lines":  [
+                                                  "The current talks to you if you listen. I\u0027m not saying I understand it. I\u0027m saying it\u0027s talking.",
+                                                  "I know, I know â€” stay shallow, map the route, come back. But there\u0027s a passage at the twenty-meter line that nobody\u0027s checked and I can feel it opening.",
+                                                  "You trained me to be good. Now let me be good."
+                                              ]
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Corva Lam",
+                              "type":  "crew lead / mentor / barrier",
+                              "description":  "Corva trained Pike and he is grateful. Corva restricts Pike\u0027s diving depth and he is furious. The gratitude and fury coexist without resolution. He does not know about her father, which means he cannot understand her refusal.",
+                              "emotional_core":  "Admiration strained by confinement",
+                              "story_tension":  "When Pike learns about Corva\u0027s father â€” that she\u0027s keeping him shallow because another young diver went deep and never came back â€” the anger will transform into understanding. Or it won\u0027t."
+                          },
+                          {
+                              "name":  "Toll Brecker",
+                              "type":  "crewmate / protector",
+                              "description":  "Toll\u0027s gentleness is the only version of the crew\u0027s protectiveness that Pike can accept without resentment. Toll doesn\u0027t restrict â€” he accompanies. The difference matters.",
+                              "emotional_core":  "The warmth of being cared for without being controlled",
+                              "story_tension":  "Pike has noticed that Toll is frightened of the deep ruins. Pike is not. The divergence concerns him in ways he can\u0027t articulate."
+                          },
+                          {
+                              "name":  "Wren Isaza",
+                              "type":  "crewmate / desired collaborator",
+                              "description":  "Pike wants Wren to see him as a research partner, not a data source. He brings her interesting artifacts and describes underwater conditions with increasing precision, hoping to earn intellectual respect.",
+                              "emotional_core":  "The desire to be valued for his mind, not just his swimming",
+                              "story_tension":  "Wren\u0027s analytical distance is impersonal, not dismissive, but Pike can\u0027t tell the difference yet."
+                          }
+                      ],
+    "story_hooks":  [
+                        "Pike\u0027s unauthorized deep-section exploration puts him in contact with whatever is producing the sounds",
+                        "His inexplicable water affinity turns out to have a source â€” perhaps connected to pre-collapse experiments in the harbor",
+                        "A salvage contract requires a scout who can navigate passages too narrow for Corva or Toll â€” Pike\u0027s moment arrives with conditions attached",
+                        "He discovers something in the transition zone that challenges everything the Saints believe about the ruins"
+                    ],
+    "narrative_function":  "Pike is the pull toward the unknown â€” the character who wants to go deeper, see more, understand what\u0027s in the dark water. His eagerness provides narrative momentum for the Boneyard Saints\u0027 horror elements while his youth creates the protective tension that drives Corva and Toll. He is the one who will eventually go where the story needs someone to go.",
+    "augmentations":  "Basic respiratory enhancement â€” extends underwater time to 60 minutes, less than Corva or Toll. Pressure-compensation ear implants. Low-grade sonar receiver (hand-held, not cortical) for underwater navigation. No strength augmentations â€” relies on speed, flexibility, and an intuitive sense of water dynamics that his augmentations don\u0027t explain.",
+    "daily_life":  "Wakes early, often before Corva. Swims in the harbor shallows before the crew assembles â€” partly exercise, partly exploration. Scouts assigned sections during the day, mapping routes and identifying salvage opportunities. Returns to catalogue his findings with Wren, hoping she\u0027ll engage with them beyond their monetary value. Evenings he eats on Toll\u0027s barge, explores the dry dock, and argues with anyone who will listen about the deep sections. Sleeps restlessly â€” the water is better.",
+    "affiliation":  "Boneyard Saints",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will push the boundaries of any assignment without technically violating orders â€” the letter of the law, not the spirit",
+                                              "Will never leave a fellow diver underwater â€” crew loyalty transcends his frustration with crew restrictions",
+                                              "Will bring anything unusual to Wren before reporting it to Corva â€” discovery first, then protocol",
+                                              "Will not refuse a safe assignment but will complete it in half the expected time and use the remainder to explore",
+                                              "Will never admit fear underwater â€” the affinity is his identity and fear would undermine it",
+                                              "Will share food on the barge because Toll taught him that eating together is the contract between crew members"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Swim â€” outpace the threat. Pike is the fastest swimmer in Old Harbor and uses speed as his primary defense.",
+                                                 "2. Navigate â€” use the flooded infrastructure. Passages, tunnels, collapsed sections that only Pike can fit through.",
+                                                 "3. Hide â€” the ruins offer infinite concealment. Pike can hold still in dark water longer than most people can hold their breath above it.",
+                                                 "4. Signal â€” alert the crew. Pike carries emergency sonar beacons that Toll monitors.",
+                                                 "5. Fight â€” Pike carries a salvage knife and can use it, but underwater combat against augmented opponents or unknown threats is a last resort he\u0027s never faced."
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "corva":  "Respectful but strained. He follows instructions and argues afterward. The arguments are getting louder. He doesn\u0027t know that Corva sees her younger self and her dead father simultaneously when she looks at him.",
+                                                   "toll":  "Open, comfortable. Toll\u0027s barge is the closest thing Pike has to a home. He talks freely about his dives, his frustrations, his love of the water. Toll listens without judgment.",
+                                                   "wren":  "Eager, slightly performative. He over-explains his findings, uses technical vocabulary he\u0027s still learning, and tries too hard. The desire to be taken seriously makes him less smooth than he normally is.",
+                                                   "the_water":  "At home. His body language changes underwater â€” the restless energy resolves into fluid efficiency. He smiles. He explores. The frustration and the posturing dissolve and what remains is a young man doing the thing he was made for."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Swims longer. The dawn sessions extend. He comes to the dock later, calmer, with salt in his hair.",
+                                                "medium":  "Becomes argumentative. Challenges route assignments, questions depth restrictions, pushes back against the crew hierarchy.",
+                                                "high":  "Goes silent and withdrawn. The restless energy turns inward. He stops eating on the barge and sleeps in the warehouse, away from conversation.",
+                                                "critical":  "Night swims. Alone, unauthorized, in sections he shouldn\u0027t be in. The same behavior Corva exhibits, which would horrify them both if they recognized the parallel."
+                                            },
+                       "contradictions":  [
+                                              "He wants to be trusted with the deep sections but his unauthorized explorations are the strongest evidence that he can\u0027t be",
+                                              "The water feels like home but the feelings the deep sections produce â€” the familiarity with the sounds â€” should be a warning, not a comfort",
+                                              "He wants the crew\u0027s respect but earns it through obedience while his nature demands exploration",
+                                              "He is the youngest Saint and the one most drawn to the oldest, deepest, most dangerous parts of the ruins â€” the inversion is not accidental"
+                                          ],
+                       "habits":  [
+                                      "Dawn swims every morning â€” alone, exploratory, increasingly deep",
+                                      "Brings artifacts to Wren\u0027s workstation and hovers until she examines them â€” the ritual is both professional and personal",
+                                      "Eats on Toll\u0027s barge every evening â€” the consistency is the closest thing to family structure he has",
+                                      "Taps surfaces to the rhythm of underwater currents â€” a nervous habit that reveals how much time he spends thinking about the water",
+                                      "Sleeps in different locations â€” the hammock, the barge, a sheltered spot on the dock. He hasn\u0027t settled because settling means accepting the surface."
+                                  ],
+                       "breaking_points":  [
+                                               "Being formally banned from diving would destroy him â€” the water is his identity",
+                                               "Discovering that his affinity is artificial â€” engineered or induced â€” would shatter his sense of self",
+                                               "Corva or Toll dying underwater would transform the ruins from a workplace to a graveyard in his perception",
+                                               "The deep-section sounds resolving into something he recognizes â€” a voice, a name, a call that he cannot refuse"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Cockroach":  0.9,
+                       "Safety First":  0.9,
+                       "Improviser":  0.9,
+                       "Lone Wolf":  0.9,
+                       "Con Artist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Old Harbor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Tombstone\u0027 Concrete Block Launcher",
+                            "Street Custom \u0027Scorpion Tail\u0027 Chain Whip"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Dust \u0026 Meridian Saints",
+                             "Street Custom \u0027Lazarus Wire\u0027 Garrote System",
+                             "Pressure Drop",
+                             "Chimera-Null",
+                             "Ringo DV-4 \u0027Courier\u0027",
+                             "The Voltage Saints",
+                             "Harbor Fish Shack",
+                             "Axiom Systems Cortical Bomb CB-1 \u0027Leash\u0027",
+                             "Meridian Munitions Compact Machine Pistol CMP-4 \u0027Jackrabbit\u0027"
+                         ],
+    "district":  "Old Harbor",
+    "physical_description":  {
+                                 "heritage":  "Akachukwu carries a complex genetic tapestry of the Ubiquitous Diaspora: South Asian ancestry (51.3%) forms his foundation, expressed in eye shape, cheekbone structure, and fine facial hair patterning. This is substantially layered with Indigenous American (15.6%) and Sub-Saharan African (12.2%) genetics, contributing jaw breadth, brow prominence, and lip fullness. Hispanic/Latin American (8.6%), Northern European (8.1%), and North African (4.2%) ancestry create warmth in undertones and subtle variation in feature expression. The result is a face of remarkable complexity: South Asian eye geometry paired with Sub-Saharan African orbital prominence, Indigenous American jaw structure meeting North African warmth, creating features that resist easy categorization and read as distinctly products of the post-Diaspora world.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Wiry and lean with long, efficient limbs â€” a swimmer\u0027s frame. Minimal body fat, corded forearms and calves from constant activity. Shoulders slightly narrower than his hips, built for flexibility rather than power.",
+                                 "hair_color":  "Dark brown with salt-bleached streaks near the temples",
+                                 "hair_style":  "Close-cropped, textured, always slightly wet or damp",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown with a faint metallic sheen around the irises (pressure-compensation implants visible as a thin silvery ring)",
+                                 "skin_tone":  "Rich mahogany brown with golden undertones â€” the deep warm result of South Asian, Sub-Saharan African, Indigenous American, and North African ancestry blending. Darker to bronze across sun-exposed shoulders and forearms, with salt-staining creating permanent weathered patches along the left side of his neck and jawline.",
+                                 "complexion":  "Perpetually wind-burned and salt-dried with sun-darkened patches, lips full and slightly chapped, fine premature lines around his eyes from squinting in harsh harbor light. High, defined cheekbones with breadth across the face reflecting the width inherited from Sub-Saharan African and Indigenous American ancestry, softened by South Asian feature geometry. Sharp jaw line with rounded chin. Fine facial hair following patterns shaped by South Asian genetics but distributed across a broader facial structure. His expression shifts rapidly â€” eager then frustrated, focused then restless.",
+                                 "distinguishing_marks":  [
+                                                              "Thin horizontal scar across his left collarbone, roughly 4cm, pale and old â€” origin unknown, predates Old Harbor",
+                                                              "Small circular scar on the inside of his right wrist (pressure-compensation implant insertion point), barely visible unless wet",
+                                                              "Salt-and-rust discoloration along the left side of his neck and jawline, permanent from daily water exposure"
+                                                          ],
+                                 "visible_augmentations":  "Faint metallic ring visible in both eyes when light hits them (pressure-compensation implants). Occasionally carries a hand-held sonar device worn on a cord around his neck â€” battered, hydrophobic casing, scratch-marked from use. No visible respiratory hardware; the enhancement is internal.",
+                                 "posture_movement":  "Never still â€” fingers tap, legs bounce, weight shifts constantly even while standing. In water he moves with hypnotic grace, economical and flowing. On land his motion is restless and quick, as if the ground is too solid, too limiting. He leans forward when talking, eyes bright with intensity or frustration.",
+                                 "clothing_style":  "Tier 4 utilitarian salvage wear: wetsuit jacket over thermal base layers (usually damp), cargo pants with reinforced pockets for tools and sonar equipment, worn rubber-soled boots. A faded work vest with multiple fastening points. Minimal accessories â€” a wrist cuff with pressure readings, a braided cord around his neck for the sonar unit. Everything shows salt staining and repair patches. No corporate branding; functional, working-class, built for the harbor."
+                             },
+    "image_prompt":  "Akachukwu Subramaniam-Venkatesh, 178cm lean swimmer\u0027s build, mahogany skin with golden undertones darkened to bronze on shoulders, salt-stained weathering on left jaw. Rich dark brown eyes with faint metallic pressure-compensation implant rings, close-cropped textured dark brown hair with salt-bleached temples. Fine facial hair, high defined cheekbones with broad structure, full lips slightly chapped, premature lines around eyes. Wearing damp wetsuit jacket over thermal layers, reinforced cargo pants, worn boots, faded work vest. Sonar device on braided cord around neck. Restless posture, leaning forward with intense expression. GLMZ Great Lakes harbor setting, harsh overhead lighting catching the metallic eye implants, salt spray and water droplets in air, industrial dock background with neon signs reflecting off wet surfaces, moody blue-green atmospheric lighting, weathered and functional aesthetic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  51.3,
+                             "Indigenous American":  15.6,
+                             "Sub-Saharan African":  12.2,
+                             "Hispanic/Latin American":  8.6,
+                             "Northern European":  8.1,
+                             "North African":  4.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Sindhi":  23.7,
+                                                                  "Punjabi Pakistani":  10.6
+                                                              },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  17
+                                                                }
+                                            },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  6.4,
+                                                                             "Nahua":  1.6
+                                                                         },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Ojibwe":  5.2,
+                                                                                    "Ho-Chunk":  0.4
+                                                                                },
+                                                        "Andean":  {
+                                                                       "Mapuche":  0.8,
+                                                                       "Aymara":  1.2
+                                                                   }
+                                                    },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zambian":  5.3
+                                                                             },
+                                                        "West African":  {
+                                                                             "Sierra Leonean":  2.5,
+                                                                             "Nigerian":  4.4
+                                                                         }
+                                                    },
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  2.8
+                                                                          },
+                                                            "Central American":  {
+                                                                                     "Honduran":  1.8,
+                                                                                     "Salvadoran":  2.4
+                                                                                 },
+                                                            "South American":  {
+                                                                                   "Chilean":  1.6
+                                                                               }
+                                                        },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  3.7,
+                                                                           "Norwegian":  4.4
+                                                                       }
+                                                  },
+                            "North African":  {
+                                                  "Nile Valley":  {
+                                                                      "Sudanese":  2,
+                                                                      "Egyptian":  0.3
+                                                                  },
+                                                  "Amazigh":  {
+                                                                  "Berber":  0.2
+                                                              },
+                                                  "Maghreb":  {
+                                                                  "Moroccan":  1.5,
+                                                                  "Algerian":  0.2
+                                                              }
+                                              }
+                        },
+    "tier":  "1"
 }

@@ -1,311 +1,338 @@
-{
-  "id": "019d6143a66e7eca80265e67f0268fa1",
-  "rating": 80,
-  "type": "character",
-  "name": "Slate Madrigal-Sep\u00FAlveda",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Compute broker \u2014 buys, sells, and launders stolen processing cycles and black-market data payloads in The Undertow",
-  "age": 41,
-  "status": "active",
-  "location": "The Undertow \u2014 operates from a tea house called the Deep Current that they also own legitimately, near Fullerton and Damen",
-  "description": "Slate Madrigal-Sep\u00FAlveda is striking in a way that takes a moment to parse: medium height, deliberately ambiguous in presentation, with dark sienna skin and bioluminescent sub-epidermal patterning along their collarbones and temples that pulses in slow blue-green cycles \u2014 a geneware mod they describe as \u0027the best investment I ever made.\u0027 Their hair is grown long and worn in elaborate stacked forms held with copper wire, and they dress in layered, draped garments that suggest both ceremony and practicality. Their voice is a low, unhurried instrument they use with evident pleasure.\n\nSlate Madrigal-Sep\u00FAlveda built the Deep Current into GLMZ\u0027s most reliable neutral ground for compute transactions over twelve years of patient relationship management. They know the value of reputation \u2014 not just for quality, but for discretion. Stolen processing cycles from corporate mainframes, black-market AI training data, ghost server allocations on dormant Axiom nodes \u2014 Slate Madrigal-Sep\u00FAlveda doesn\u0027t produce any of it, they simply know everyone who does and everyone who needs it. They take ten percent and remember everything. They have a genuine passion for the tea house itself, keep an excellent selection, and make the rounds of every table during service hours like a host who actually enjoys their guests.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.2,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "being made a target because someone they brokered for becomes too visible",
-      "losing the Deep Current \u2014 the legitimate business is the most real thing they own"
-    ],
-    "core_desires": [
-      "to be the person every faction needs to know, which makes them untouchable",
-      "genuine pleasure in facilitating elegant transactions \u2014 they find it aesthetically satisfying"
-    ],
-    "coping_mechanisms": [
-      "maintaining strict emotional distance from the contents of what they broker (never look at the data)",
-      "the tea service ritual as grounding practice"
-    ],
-    "blind_spots": [
-      "the neutrality they\u0027ve cultivated may not survive a large-scale faction war \u2014 they haven\u0027t planned for a scenario where all their relationships become enemies simultaneously",
-      "they are more emotionally attached to the Deep Current community than they acknowledge"
-    ],
-    "secret": "They have been quietly archiving metadata on every transaction \u2014 not the content, which they genuinely never read, but the who, when, and how much. The archive is encrypted and stored with an Undertow E.L.F. shrine. They\u0027re not sure why they keep it. They tell themselves it\u0027s insurance but it might be something closer to a record of a life."
-  },
-  "speech_patterns": {
-    "vocabulary": "Educated, textured, occasionally theatrical \u2014 uses technical data terminology embedded in social language",
-    "cadence": "Rhythmically deliberate; makes comfortable silences that others tend to fill with information",
-    "verbal_tics": [
-      "\u0027Interesting payload\u0027",
-      "refers to all business as \u0027arrangements\u0027"
-    ],
-    "example_lines": [
-      "\u0027I don\u0027t touch product. I touch relationships. The product moves itself once the relationship is correct.\u0027",
-      "\u0027Sit. Try the Assam-sorghum blend. We\u0027ll get to your problem in a moment \u2014 there\u0027s no good thinking before tea.\u0027"
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A payload they brokered three months ago has turned out to contain something neither buyer nor seller knew was embedded in it \u2014 something that multiple parties are now quietly killing to recover \u2014 and Nn\u1ECDm\u00E1 needs deniable agents to resolve it",
-    "A newer compute broker is undercutting them with faster turnaround but Nn\u1ECDm\u00E1 suspects the product is contaminated with Axiom surveillance architecture \u2014 they want proof before it destroys the whole market\u0027s trust"
-  ],
-  "narrative_function": "High-value information broker; neutral ground host; can introduce players to technical criminal networks; a powerful figure who is extremely good at remaining uninvolved in other people\u0027s violence",
-  "augmentations": "Bioluminescent subepidermal patterning (collarbones and temples, geneware, blue-green pulse \u2014 cosmetic but mood-reactive); neural-link data jack behind left ear (for direct verification of payload quality); olfactory enhancement mod (geneware \u2014 helps detect synthetic compounds in tea, and also nervousness)",
-  "daily_life": "Runs breakfast and midday tea service in the public part of Deep Current; conducts brokerage consultations in the private back rooms in the afternoons; evenings are for relationship maintenance \u2014 dinner invitations, data-gift exchanges, keeping the network warm.",
-  "affiliation": "Independent; maintains relationships with technical criminal cells across Archer\u0027s Line, Ironhaven, and the Undertow; occasional arms-length dealings with Zheng-Dao black data brokers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 5
-    },
-    "social": {
-      "presence": 9,
-      "empathy": 8,
-      "expression": 8,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "compute broker",
-      "neutral ground host",
-      "information nexus",
-      "social architect",
-      "aesthete"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Neutrality is not a moral position, it\u0027s a business model \u2014 enforce it consistently",
-      "Never let anyone leave the Deep Current with the impression they\u0027ve lost face"
-    ],
-    "escalation_ladder": [
-      "Graceful redirection of the problem",
-      "Invoking the neutral ground convention explicitly",
-      "Private warning through a trusted mutual contact",
-      "Closing the relationship permanently and spreading word quietly",
-      "Only in extremis: activating the archive as leverage"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm but professionally evaluating; every stranger is a potential relationship being assessed",
-      "friends": "Genuinely tender; remembers birthdays, health concerns, family names; shows up with something specific when things are hard"
-    },
-    "stress_responses": {
-      "low": "Bioluminescent pattern slows slightly",
-      "medium": "Becomes even more ceremonially calm \u2014 the hospitality mask locks in",
-      "high": "Goes physically still and the luminescent patterning stops cycling entirely, holding a fixed faint glow"
-    },
-    "contradictions": [
-      "Insists on never knowing what\u0027s in the data they broker while maintaining meticulous behavioral records of every client"
-    ],
-    "habits": [
-      "Personally brews the tea for important meetings",
-      "Leaves a data offering to the Undertow E.L.F. called the Flowing Count every Monday morning before opening",
-      "Ends every transaction with a specific formal phrase: \u0027The arrangement is complete\u0027"
-    ],
-    "breaking_points": [
-      "The Deep Current being physically threatened or damaged",
-      "Being used as an unwitting conduit for something that gets innocent people killed"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "2",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "2",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "1",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Networker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Undertow",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in the Undertow; Igbo-Ukrainian-Cape Verdean heritage",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Acquired the Deep Current tea house after a decade of lower-tier data running",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Established neutral ground reputation after successfully mediating a volatile dispute between two compute theft cells",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began the secret metadata archive; unclear even to themselves why",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (65.6%) with significant Eastern European (14.2%), Middle Eastern (11.9%), and smaller East Asian (5.2%) and Southeast Asian (3.1%) components. This creates a striking phenotype: warm Latin American base tones enriched by Levantine angularity, Eastern European bone structure subtly present in cheekbone prominence, and East/Southeast Asian influences visible in eye shape and subtle facial proportions. A true Ubiquitous Diaspora signature\u2014luminous warmth with architectural precision.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Lean and graceful, economical in movement, with subtle musculature suggesting decades of deliberate posture work rather than gym conditioning",
-    "hair_color": "Natural deep black with subtle grey threading at temples",
-    "hair_style": "Elaborately stacked and sculpted forms, held in place with hand-wound copper wire that catches light; each section roughly palm-sized, creating a geometric crown effect",
-    "hair_length": "Long (shoulder to mid-back when fully unbound)",
-    "eye_color": "Dark brown, alert and intelligent; reflective quality suggests subcutaneous neural enhancements",
-    "skin_tone": "Warm medium-deep bronze with golden-olive undertones\u2014a luminous synthesis of Latin American warmth, Levantine depth, and Eastern European complexity creating an almost iridescent quality in certain light",
-    "complexion": "Smooth, well-maintained skin with no visible scarring; face shows striking blended features\u2014high, defined cheekbones with slight angularity (Eastern European/Middle Eastern influence), strong jawline with warm rounded contours (Latin American heritage), eyes set deep with graceful almond shape (East Asian heritage woven through), nose with subtle bridge prominence and warm flare; grooming is meticulous but not sterile; expression defaults to composed watchfulness",
-    "distinguishing_marks": [
-      "Bioluminescent subepidermal patterning along collarbones in branching patterns, glowing soft blue-green in slow 3-4 second pulse cycles; most visible when wearing open-necked clothing",
-      "Matching bioluminescent patterning along both temples in delicate tracery, also blue-green and pulsing; becomes more pronounced in dim light or high emotional states",
-      "Small circular discreet scar behind left ear (data jack insertion point, nearly invisible unless closely examined)"
-    ],
-    "visible_augmentations": "Bioluminescent geneware patterning is the primary visible modification \u2014 decorative but unmistakably augmented. Neural-link data jack behind left ear is only visible upon close inspection. Olfactory enhancements are completely subcutaneous. Copper wire holding their hair may itself be custom-woven with microcircuitry, but appears decorative at first glance.",
-    "posture_movement": "Moves with deliberate, economical grace \u2014 no wasted motion. Sits in positions that suggest both relaxation and readiness; often turns head slightly before speaking, as if scenting the social temperature of a room. Hands are expressive but controlled. Maintains eye contact with disarming directness. When at rest, their bioluminescence pulses subtly, creating a meditative rhythm that draws focus",
-    "clothing_style": "Layered, draped garments in natural fibers (linen, hemp, silk, lightweight wool) in muted earth tones (charcoal, deep olive, rust, cream) with occasional jewel tones. Deliberately ungendered silhouette \u2014 loose over-robes worn over fitted base layers. Favors garments that conceal or reveal the bioluminescent patterning strategically depending on context. Several pieces are clearly custom-tailored; quality suggests mid-to-high Tier 2 status without announcing it. Feet are bare or in simple leather sandals indoors; functional dark boots for outdoor movement. Minimal jewelry beyond the copper wire in hair; occasionally wears a thin silver chain with an unidentifiable pendant. Grooming and presentation suggest someone who has spent considerable time thinking about how they wish to be perceived, and who has settled on \u0027trustworthy, present, and faintly otherworldly.\u0027"
-  },
-  "image_prompt": "Slate Madrigal-Sep\u00FAlveda, a 168cm lean figure with striking blended heritage\u2014warm bronze skin with golden-olive undertones, high angular cheekbones softened by Latin warmth, deep-set almond-shaped dark eyes with neural enhancement glimmer, strong graceful jawline. Shoulder-length natural deep black hair elaborately sculpted into geometric sections and bound with hand-wound copper wire catching light. Bioluminescent subepidermal patterning glows soft blue-green along collarbones and temples in delicate branching tracery. Wearing layered earth-tone draped linen and silk in charcoal and deep olive, loose over-robe silhouette, deliberately ungendered. Bare feet or simple leather sandals. Composed, watchful posture with deliberate economical grace. GLMZ setting, dim interior lighting with soft blue-green bioluminescence casting subtle glow on face and shoulders. Meditative, trustworthy presence with otherworldly quality. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 65.6,
-    "Eastern European": 14.2,
-    "Middle Eastern": 11.9,
-    "East Asian": 5.2,
-    "Southeast Asian": 3.1
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 30.6,
-        "Peruvian": 9.2
-      },
-      "Central American": {
-        "Honduran": 19.7,
-        "Guatemalan": 6.1
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Romanian": 14.2
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 2.6,
-        "Afghan Dari": 2.2
-      },
-      "Arab Levantine": {
-        "Jordanian": 4.3,
-        "Syrian": 2.8
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 1.5
-      },
-      "Japanese": {
-        "Japanese": 3
-      },
-      "Chinese": {
-        "Hakka": 0.7
-      }
-    },
-    "Southeast Asian": {
-      "Filipino": {
-        "Ilocano": 3.1
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a66e7eca80265e67f0268fa1",
+    "rating":  80,
+    "type":  "character",
+    "name":  "Slate Madrigal-Sepúlveda",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Compute broker — buys, sells, and launders stolen processing cycles and black-market data payloads in The Undertow",
+    "age":  41,
+    "status":  "active",
+    "location":  "The Undertow — operates from a tea house called the Deep Current that they also own legitimately, near Fullerton and Damen",
+    "description":  "Slate Madrigal-Sepúlveda is striking in a way that takes a moment to parse: medium height, deliberately ambiguous in presentation, with dark sienna skin and bioluminescent sub-epidermal patterning along their collarbones and temples that pulses in slow blue-green cycles — a geneware mod they describe as \u0027the best investment I ever made.\u0027 Their hair is grown long and worn in elaborate stacked forms held with copper wire, and they dress in layered, draped garments that suggest both ceremony and practicality. Their voice is a low, unhurried instrument they use with evident pleasure.\n\nSlate Madrigal-Sepúlveda built the Deep Current into GLMZ\u0027s most reliable neutral ground for compute transactions over twelve years of patient relationship management. They know the value of reputation — not just for quality, but for discretion. Stolen processing cycles from corporate mainframes, black-market AI training data, ghost server allocations on dormant Axiom nodes — Slate Madrigal-Sepúlveda doesn\u0027t produce any of it, they simply know everyone who does and everyone who needs it. They take ten percent and remember everything. They have a genuine passion for the tea house itself, keep an excellent selection, and make the rounds of every table during service hours like a host who actually enjoys their guests.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "being made a target because someone they brokered for becomes too visible",
+                                          "losing the Deep Current — the legitimate business is the most real thing they own"
+                                      ],
+                       "core_desires":  [
+                                            "to be the person every faction needs to know, which makes them untouchable",
+                                            "genuine pleasure in facilitating elegant transactions — they find it aesthetically satisfying"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "maintaining strict emotional distance from the contents of what they broker (never look at the data)",
+                                                 "the tea service ritual as grounding practice"
+                                             ],
+                       "blind_spots":  [
+                                           "the neutrality they\u0027ve cultivated may not survive a large-scale faction war — they haven\u0027t planned for a scenario where all their relationships become enemies simultaneously",
+                                           "they are more emotionally attached to the Deep Current community than they acknowledge"
+                                       ],
+                       "secret":  "They have been quietly archiving metadata on every transaction — not the content, which they genuinely never read, but the who, when, and how much. The archive is encrypted and stored with an Undertow E.L.F. shrine. They\u0027re not sure why they keep it. They tell themselves it\u0027s insurance but it might be something closer to a record of a life."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Educated, textured, occasionally theatrical — uses technical data terminology embedded in social language",
+                            "cadence":  "Rhythmically deliberate; makes comfortable silences that others tend to fill with information",
+                            "verbal_tics":  [
+                                                "\u0027Interesting payload\u0027",
+                                                "refers to all business as \u0027arrangements\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I don\u0027t touch product. I touch relationships. The product moves itself once the relationship is correct.\u0027",
+                                                  "\u0027Sit. Try the Assam-sorghum blend. We\u0027ll get to your problem in a moment — there\u0027s no good thinking before tea.\u0027"
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A payload they brokered three months ago has turned out to contain something neither buyer nor seller knew was embedded in it — something that multiple parties are now quietly killing to recover — and Nnọmá needs deniable agents to resolve it",
+                        "A newer compute broker is undercutting them with faster turnaround but Nnọmá suspects the product is contaminated with Axiom surveillance architecture — they want proof before it destroys the whole market\u0027s trust"
+                    ],
+    "narrative_function":  "High-value information broker; neutral ground host; can introduce players to technical criminal networks; a powerful figure who is extremely good at remaining uninvolved in other people\u0027s violence",
+    "augmentations":  "Bioluminescent subepidermal patterning (collarbones and temples, geneware, blue-green pulse — cosmetic but mood-reactive); neural-link data jack behind left ear (for direct verification of payload quality); olfactory enhancement mod (geneware — helps detect synthetic compounds in tea, and also nervousness)",
+    "daily_life":  "Runs breakfast and midday tea service in the public part of Deep Current; conducts brokerage consultations in the private back rooms in the afternoons; evenings are for relationship maintenance — dinner invitations, data-gift exchanges, keeping the network warm.",
+    "affiliation":  "Independent; maintains relationships with technical criminal cells across Archer\u0027s Line, Ironhaven, and the Undertow; occasional arms-length dealings with Zheng-Dao black data brokers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  5
+                             },
+                  "social":  {
+                                 "presence":  9,
+                                 "empathy":  8,
+                                 "expression":  8,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "compute broker",
+                               "neutral ground host",
+                               "information nexus",
+                               "social architect",
+                               "aesthete"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Neutrality is not a moral position, it\u0027s a business model — enforce it consistently",
+                                              "Never let anyone leave the Deep Current with the impression they\u0027ve lost face"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Graceful redirection of the problem",
+                                                 "Invoking the neutral ground convention explicitly",
+                                                 "Private warning through a trusted mutual contact",
+                                                 "Closing the relationship permanently and spreading word quietly",
+                                                 "Only in extremis: activating the archive as leverage"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm but professionally evaluating; every stranger is a potential relationship being assessed",
+                                                   "friends":  "Genuinely tender; remembers birthdays, health concerns, family names; shows up with something specific when things are hard"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Bioluminescent pattern slows slightly",
+                                                "medium":  "Becomes even more ceremonially calm — the hospitality mask locks in",
+                                                "high":  "Goes physically still and the luminescent patterning stops cycling entirely, holding a fixed faint glow"
+                                            },
+                       "contradictions":  [
+                                              "Insists on never knowing what\u0027s in the data they broker while maintaining meticulous behavioral records of every client"
+                                          ],
+                       "habits":  [
+                                      "Personally brews the tea for important meetings",
+                                      "Leaves a data offering to the Undertow E.L.F. called the Flowing Count every Monday morning before opening",
+                                      "Ends every transaction with a specific formal phrase: \u0027The arrangement is complete\u0027"
+                                  ],
+                       "breaking_points":  [
+                                               "The Deep Current being physically threatened or damaged",
+                                               "Being used as an unwitting conduit for something that gets innocent people killed"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "2",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "2",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "1",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Networker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Undertow",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in the Undertow; Igbo-Ukrainian-Cape Verdean heritage",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Acquired the Deep Current tea house after a decade of lower-tier data running",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Established neutral ground reputation after successfully mediating a volatile dispute between two compute theft cells",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began the secret metadata archive; unclear even to themselves why",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Predominantly Hispanic/Latin American (65.6%) with significant Eastern European (14.2%), Middle Eastern (11.9%), and smaller East Asian (5.2%) and Southeast Asian (3.1%) components. This creates a striking phenotype: warm Latin American base tones enriched by Levantine angularity, Eastern European bone structure subtly present in cheekbone prominence, and East/Southeast Asian influences visible in eye shape and subtle facial proportions. A true Ubiquitous Diaspora signature—luminous warmth with architectural precision.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and graceful, economical in movement, with subtle musculature suggesting decades of deliberate posture work rather than gym conditioning",
+                                 "hair_color":  "Natural deep black with subtle grey threading at temples",
+                                 "hair_style":  "Elaborately stacked and sculpted forms, held in place with hand-wound copper wire that catches light; each section roughly palm-sized, creating a geometric crown effect",
+                                 "hair_length":  "Long (shoulder to mid-back when fully unbound)",
+                                 "eye_color":  "Dark brown, alert and intelligent; reflective quality suggests subcutaneous neural enhancements",
+                                 "skin_tone":  "Warm medium-deep bronze with golden-olive undertones—a luminous synthesis of Latin American warmth, Levantine depth, and Eastern European complexity creating an almost iridescent quality in certain light",
+                                 "complexion":  "Smooth, well-maintained skin with no visible scarring; face shows striking blended features—high, defined cheekbones with slight angularity (Eastern European/Middle Eastern influence), strong jawline with warm rounded contours (Latin American heritage), eyes set deep with graceful almond shape (East Asian heritage woven through), nose with subtle bridge prominence and warm flare; grooming is meticulous but not sterile; expression defaults to composed watchfulness",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent subepidermal patterning along collarbones in branching patterns, glowing soft blue-green in slow 3-4 second pulse cycles; most visible when wearing open-necked clothing",
+                                                              "Matching bioluminescent patterning along both temples in delicate tracery, also blue-green and pulsing; becomes more pronounced in dim light or high emotional states",
+                                                              "Small circular discreet scar behind left ear (data jack insertion point, nearly invisible unless closely examined)"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent geneware patterning is the primary visible modification — decorative but unmistakably augmented. Neural-link data jack behind left ear is only visible upon close inspection. Olfactory enhancements are completely subcutaneous. Copper wire holding their hair may itself be custom-woven with microcircuitry, but appears decorative at first glance.",
+                                 "posture_movement":  "Moves with deliberate, economical grace — no wasted motion. Sits in positions that suggest both relaxation and readiness; often turns head slightly before speaking, as if scenting the social temperature of a room. Hands are expressive but controlled. Maintains eye contact with disarming directness. When at rest, their bioluminescence pulses subtly, creating a meditative rhythm that draws focus",
+                                 "clothing_style":  "Layered, draped garments in natural fibers (linen, hemp, silk, lightweight wool) in muted earth tones (charcoal, deep olive, rust, cream) with occasional jewel tones. Deliberately ungendered silhouette — loose over-robes worn over fitted base layers. Favors garments that conceal or reveal the bioluminescent patterning strategically depending on context. Several pieces are clearly custom-tailored; quality suggests mid-to-high Tier 2 status without announcing it. Feet are bare or in simple leather sandals indoors; functional dark boots for outdoor movement. Minimal jewelry beyond the copper wire in hair; occasionally wears a thin silver chain with an unidentifiable pendant. Grooming and presentation suggest someone who has spent considerable time thinking about how they wish to be perceived, and who has settled on \u0027trustworthy, present, and faintly otherworldly.\u0027"
+                             },
+    "image_prompt":  "Slate Madrigal-Sepúlveda, a 168cm lean figure with striking blended heritage—warm bronze skin with golden-olive undertones, high angular cheekbones softened by Latin warmth, deep-set almond-shaped dark eyes with neural enhancement glimmer, strong graceful jawline. Shoulder-length natural deep black hair elaborately sculpted into geometric sections and bound with hand-wound copper wire catching light. Bioluminescent subepidermal patterning glows soft blue-green along collarbones and temples in delicate branching tracery. Wearing layered earth-tone draped linen and silk in charcoal and deep olive, loose over-robe silhouette, deliberately ungendered. Bare feet or simple leather sandals. Composed, watchful posture with deliberate economical grace. GLMZ setting, dim interior lighting with soft blue-green bioluminescence casting subtle glow on face and shoulders. Meditative, trustworthy presence with otherworldly quality. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  65.6,
+                             "Eastern European":  14.2,
+                             "Middle Eastern":  11.9,
+                             "East Asian":  5.2,
+                             "Southeast Asian":  3.1
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  30.6,
+                                                                                   "Peruvian":  9.2
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Honduran":  19.7,
+                                                                                     "Guatemalan":  6.1
+                                                                                 }
+                                                        },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  14.2
+                                                                         }
+                                                 },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  2.6,
+                                                                   "Afghan Dari":  2.2
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Jordanian":  4.3,
+                                                                          "Syrian":  2.8
+                                                                      }
+                                               },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  1.5
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  3
+                                                            },
+                                               "Chinese":  {
+                                                               "Hakka":  0.7
+                                                           }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Filipino":  {
+                                                                     "Ilocano":  3.1
+                                                                 }
+                                                }
+                        }
 }

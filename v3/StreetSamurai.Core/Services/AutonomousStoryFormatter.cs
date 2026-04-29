@@ -4,7 +4,7 @@ using System.Web;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Serializes an AutonomousStory to Markdown or HTML for persistence as a StoryProject body.
+/// Serializes an AutonomousStory to Markdown or HTML for persistence as a Chapter body.
 /// Used by both the UI (Stories.razor) and the CLI so generated output is byte-identical
 /// regardless of entry point.
 /// </summary>
@@ -36,7 +36,7 @@ public static class AutonomousStoryFormatter
         return sb.ToString();
     }
 
-    // Markdown is the preferred format. The WriteStory editor treats StoryProject.Html as
+    // Markdown is the preferred format. The WriteStory editor treats Chapter.Html as
     // Markdown source, so emitting Markdown here keeps the round-trip lossless: inline
     // *italics*, em-dashes, and section breaks survive unchanged instead of being
     // HtmlEncoded into literal asterisks on save.

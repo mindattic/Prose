@@ -1,268 +1,289 @@
-{
-  "id": "019d6143a6867028bb1741e40afa2510",
-  "type": "character",
-  "name": "Felisa Rattanakorn",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Barber and informal community mediator, Hamtramck Enclave",
-  "age": 61,
-  "status": "active",
-  "location": "Hamtramck Enclave — his shop, 'Sefa's Cut', occupies the ground floor of a residential stack on Corrugated Row, near Kedzie and Division",
-  "description": "Felisa Rattanakorn is a lean, compact man whose age shows mainly in the white that has taken over his close-cropped hair and the deep creases around his eyes — the rest of him is surprisingly wiry, and he moves with the unhurried precision of someone who has been practicing fine motor skills for four decades. His skin is a warm olive that shifts toward bronze under the shop's fluorescent strips. His geneware is a single concession to the era: his fingertips emit a faint blue-white bioluminescence that he had installed purely for practical reasons, so he can work in the dark during power brownouts without disturbing a client mid-cut. He keeps his shop small and deliberately cluttered — photographs pinned to every wall, a secondhand shrine to the Razor ELF in the corner hung with clippings of hair and old razor blades, a samovar that has not been turned off since 2181.\n\nHe has the manner of a confessor without the religion: people tell him things. He does not seek information, he simply creates the conditions in which information cannot help but flow — the warmth of the shop, the meditative rhythm of scissors, the way he asks questions and then waits, genuinely, for the answer. He has outlasted three landlords, two Enclave council administrations, and one attempted Axiom buyout of the block. He considers his continued presence an act of political resistance, though he would never use those words.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.8,
-      "id": 0.2,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.65
-    },
-    "core_fears": [
-      "The Enclave being absorbed into a corponation service zone and losing its character",
-      "Dying without having passed his craft to someone who deserves it"
-    ],
-    "core_desires": [
-      "For the neighborhood to remain a place where ordinary people can afford to live",
-      "To be remembered as someone who held something together"
-    ],
-    "coping_mechanisms": [
-      "Ritual: the shop's routines are sacred to him",
-      "Deflecting his own emotional needs by focusing entirely on others"
-    ],
-    "blind_spots": [
-      "Underestimates how much influence he actually has, and therefore underestimates his responsibility for outcomes when he shares information",
-      "Has convinced himself he is neutral when he is not"
-    ],
-    "secret": "His shop functions as an informal message-drop for three separate parties who do not know about each other: a labor organizer, a local ELF cult, and a man he suspects is running a small-scale identity forgery operation. He has enabled all of them because he likes them personally and has never examined this too closely."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise and formal in a way that suggests he learned his primary language from books as much as from people. Peppers speech with Azerbaijani phrases when emotional or amused, usually untranslated.",
-    "cadence": "Slow and even, with long comfortable pauses. Never seems to be in a hurry to get to his point.",
-    "verbal_tics": [
-      "'You understand?'",
-      "Repeating a question back slightly reworded before answering it",
-      "Saying 'hm' for several seconds while he thinks"
-    ],
-    "example_lines": [
-      "'A man comes in angry, he leaves with a good haircut and a slightly less angry. This is not nothing. Over forty years, this is quite a lot.'",
-      "'I hear many things in this chair. Most of them I forget immediately. The ones I remember — those I keep.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A regular client has stopped coming in after thirty years without explanation and Orkhan is quietly, privately worried — he asks someone passing through to check on them without making a fuss",
-    "An Axiom real estate agent has been coming by the Enclave asking questions, and Orkhan has started compiling what he hears into a record he doesn't know what to do with"
-  ],
-  "narrative_function": "Information hub and community anchor — the shop is a neutral space where people from different factions of Hamtramck Enclave speak freely. He is an ideal source of local history, rumor, and introductions to people who do not otherwise meet strangers.",
-  "augmentations": "Bioluminescent fingertips, pale blue-white (practical installation, not cosmetic). No other augmentations — he has a mild principled objection to unnecessary modification and a practical objection to the cost.",
-  "daily_life": "Opens the shop at 08:00, closes when the last client leaves, which is rarely before 21:00. Takes no appointments — first come, first seated. Spends his evenings listening to Azerbaijani folk recordings from his grandfather's archive and sharpening blades by hand.",
-  "affiliation": "Independent (Sefa's Cut); informal ties to the Hamtramck Enclave Community Council",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 9,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 7,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 8,
-      "empathy": 9,
-      "expression": 7,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": -4,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 1,
-      "transparency_guardedness": 3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community elder",
-      "information node",
-      "ritualist",
-      "neutral ground keeper"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "The shop is neutral ground — no fight starts here that he does not allow to start",
-      "He will not give a name to someone who means the named person harm",
-      "He will help anyone who is genuinely in need regardless of who they are"
-    ],
-    "escalation_ladder": [
-      "Subtle redirection of conversation",
-      "A story that makes the point indirectly",
-      "Direct quiet statement of what he will and will not do",
-      "Asking someone to leave, which he has done exactly four times in forty years"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Warm but observant — asks them where they're from and actually listens to the answer",
-      "friends": "Teasing and generous, remembers everything they've ever told him"
-    },
-    "stress_responses": {
-      "low": "Becomes more deliberate in his movements, slower with the scissors",
-      "medium": "Talks less, listens more, his eyes move differently",
-      "high": "Becomes very still and very polite, which his regulars know means something is wrong"
-    },
-    "contradictions": [
-      "Believes deeply in people's right to privacy while maintaining a mental archive of everything he's heard"
-    ],
-    "habits": [
-      "Burns a small data-offering at the Razor ELF shrine each morning before opening",
-      "Refills the samovar at exactly 14:00 regardless of who is in the chair"
-    ],
-    "breaking_points": [
-      "Someone threatening a client while they are in his chair"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Bioluminescent fingertip geneware (blue-white, low intensity)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bioluminescent fingertip geneware (blue-white, low intensity)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Confession' Modified Industrial Nail Gun"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Riverbottom",
-    "Cinderblock Ai",
-    "Vantablack Media Confessor Tap — 'The Booth'",
-    "Bathysphere Networks",
-    "Noir Dining",
-    "The Gradient Compact",
-    "Bronze",
-    "Corner Slice",
-    "Switchblade Alley",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Southeast Asian (45.5%), East Asian (22.3%), Eastern European (17.1%), and Northern European (15.1%) ancestry — a striking convergence visible in warm medium-brown skin with golden undertones, defined cheekbones with balanced facial structure, and dark eyes reflecting the blend of multiple continental lineages",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Lean and compact, wiry muscle beneath loose skin — the frame of someone who has maintained consistent fine motor discipline and light physical labor across decades without bulk",
-    "hair_color": "White with traces of original dark brown at the temples",
-    "hair_style": "Close-cropped, precise, slightly longer on top with clean faded sides — a walking advertisement for his own craftsmanship",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Warm medium-brown with golden and subtle peachy undertones — melanin-rich but lighter than deep brown, reflecting the Southeast Asian and East Asian dominant heritage with Northern and Eastern European moderation. Shifts warmly under light, luminous quality",
-    "complexion": "Deep creases radiating from the corners of his eyes and across his forehead — not from frowning but from decades of focused work and genuine attention. Fine laugh lines. Skin weathered but well-maintained, warm medium-brown throughout with subtle golden luminescence, minimal stubble, grooming precise but not vain. Facial structure shows defined cheekbones and moderate nose bridge reflecting Southeast and East Asian heritage tempered by European ancestry",
-    "distinguishing_marks": [
-      "Pale scar tissue across the back of his left hand, thin and straight — old blade accident from early in his career, faded lighter against warm brown skin",
-      "Calluses on the inner sides of his fingers and thumbs, pronounced from forty years of scissor work"
-    ],
-    "visible_augmentations": "Fingertips emit a faint pale blue-white bioluminescence when activated — visible as a subtle glow at the nail beds and cuticle line, most noticeable in dim light or darkness. No other visible chrome or subdermal modifications",
-    "posture_movement": "Stands with economical posture, weight balanced evenly. Moves with deliberate, unhurried precision — no wasted motion. When working, his hands move with meditative rhythm and surgical accuracy. In conversation, he has the stillness of someone comfortable with silence; he does not fidget",
-    "clothing_style": "Tier 3-4 practical: dark gray or charcoal wool trousers, pressed but worn at the cuff; simple cotton or linen long-sleeve shirts in cream, white, or muted blue — sleeves rolled past the forearm for work. A thin leather apron, creased and darkened with decades of use, draped across his chest. Footwear is functional — scuffed work shoes or slip-ons with good grip on the shop floor. No jewelry except an old stainless steel watch with a worn leather band. A faded cardigan for cooler evenings"
-  },
-  "image_prompt": "Felisa Rattanakorn, 168cm lean-framed man with warm medium-brown skin and golden undertones, Southeast Asian and East Asian heritage with Northern European undertones visible in facial structure. White hair with dark brown traces at temples, close-cropped with longer top and faded sides. Dark unaugmented brown eyes with deep creases from decades of focused work. Defined cheekbones, moderate nose bridge. Pale scar tissue on left hand, visible calluses on fingers. Wearing cream long-sleeve shirt with rolled forearms, dark charcoal wool trousers, thin weathered leather apron darkened from decades of use. Stainless steel watch with worn leather band. Standing in GLMZ Great Lakes Metropolitan Zone barber shop, warm shop lighting casting subtle glow across his skin. Precise, meditative stillness. Fingertips showing faint pale blue-white bioluminescence at nail beds. High-detail character portrait, moody warm lighting, cinematic neo-noir urban aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 45.5,
-    "East Asian": 22.3,
-    "Eastern European": 17.1,
-    "Northern European": 15.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 20.2
-      },
-      "Thai": {
-        "Thai": 25.3
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 15.7
-      },
-      "Chinese": {
-        "Mandarin Northern": 0.8
-      },
-      "Japanese": {
-        "Japanese": 5.8
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Slovak": 10.3,
-        "Polish": 6.8
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Welsh": 4,
-        "English": 1
-      },
-      "Germanic": {
-        "German": 2.6,
-        "Dutch": 1.5
-      },
-      "Scandinavian": {
-        "Norwegian": 4.3,
-        "Icelandic": 1.7
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6867028bb1741e40afa2510",
+    "type":  "character",
+    "name":  "Felisa Rattanakorn",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Barber and informal community mediator, Hamtramck Enclave",
+    "age":  61,
+    "status":  "active",
+    "location":  "Hamtramck Enclave â€” his shop, \u0027Sefa\u0027s Cut\u0027, occupies the ground floor of a residential stack on Corrugated Row, near Kedzie and Division",
+    "description":  "Felisa Rattanakorn is a lean, compact man whose age shows mainly in the white that has taken over his close-cropped hair and the deep creases around his eyes â€” the rest of him is surprisingly wiry, and he moves with the unhurried precision of someone who has been practicing fine motor skills for four decades. His skin is a warm olive that shifts toward bronze under the shop\u0027s fluorescent strips. His geneware is a single concession to the era: his fingertips emit a faint blue-white bioluminescence that he had installed purely for practical reasons, so he can work in the dark during power brownouts without disturbing a client mid-cut. He keeps his shop small and deliberately cluttered â€” photographs pinned to every wall, a secondhand shrine to the Razor ELF in the corner hung with clippings of hair and old razor blades, a samovar that has not been turned off since 2181.\n\nHe has the manner of a confessor without the religion: people tell him things. He does not seek information, he simply creates the conditions in which information cannot help but flow â€” the warmth of the shop, the meditative rhythm of scissors, the way he asks questions and then waits, genuinely, for the answer. He has outlasted three landlords, two Enclave council administrations, and one attempted Axiom buyout of the block. He considers his continued presence an act of political resistance, though he would never use those words.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "The Enclave being absorbed into a corponation service zone and losing its character",
+                                          "Dying without having passed his craft to someone who deserves it"
+                                      ],
+                       "core_desires":  [
+                                            "For the neighborhood to remain a place where ordinary people can afford to live",
+                                            "To be remembered as someone who held something together"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual: the shop\u0027s routines are sacred to him",
+                                                 "Deflecting his own emotional needs by focusing entirely on others"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates how much influence he actually has, and therefore underestimates his responsibility for outcomes when he shares information",
+                                           "Has convinced himself he is neutral when he is not"
+                                       ],
+                       "secret":  "His shop functions as an informal message-drop for three separate parties who do not know about each other: a labor organizer, a local ELF cult, and a man he suspects is running a small-scale identity forgery operation. He has enabled all of them because he likes them personally and has never examined this too closely."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise and formal in a way that suggests he learned his primary language from books as much as from people. Peppers speech with Azerbaijani phrases when emotional or amused, usually untranslated.",
+                            "cadence":  "Slow and even, with long comfortable pauses. Never seems to be in a hurry to get to his point.",
+                            "verbal_tics":  [
+                                                "\u0027You understand?\u0027",
+                                                "Repeating a question back slightly reworded before answering it",
+                                                "Saying \u0027hm\u0027 for several seconds while he thinks"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027A man comes in angry, he leaves with a good haircut and a slightly less angry. This is not nothing. Over forty years, this is quite a lot.\u0027",
+                                                  "\u0027I hear many things in this chair. Most of them I forget immediately. The ones I remember â€” those I keep.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A regular client has stopped coming in after thirty years without explanation and Orkhan is quietly, privately worried â€” he asks someone passing through to check on them without making a fuss",
+                        "An Axiom real estate agent has been coming by the Enclave asking questions, and Orkhan has started compiling what he hears into a record he doesn\u0027t know what to do with"
+                    ],
+    "narrative_function":  "Information hub and community anchor â€” the shop is a neutral space where people from different factions of Hamtramck Enclave speak freely. He is an ideal source of local history, rumor, and introductions to people who do not otherwise meet strangers.",
+    "augmentations":  "Bioluminescent fingertips, pale blue-white (practical installation, not cosmetic). No other augmentations â€” he has a mild principled objection to unnecessary modification and a practical objection to the cost.",
+    "daily_life":  "Opens the shop at 08:00, closes when the last client leaves, which is rarely before 21:00. Takes no appointments â€” first come, first seated. Spends his evenings listening to Azerbaijani folk recordings from his grandfather\u0027s archive and sharpening blades by hand.",
+    "affiliation":  "Independent (Sefa\u0027s Cut); informal ties to the Hamtramck Enclave Community Council",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  9,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  7,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  8,
+                                 "empathy":  9,
+                                 "expression":  7,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  -4,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  1,
+                                      "transparency_guardedness":  3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community elder",
+                               "information node",
+                               "ritualist",
+                               "neutral ground keeper"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "The shop is neutral ground â€” no fight starts here that he does not allow to start",
+                                              "He will not give a name to someone who means the named person harm",
+                                              "He will help anyone who is genuinely in need regardless of who they are"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Subtle redirection of conversation",
+                                                 "A story that makes the point indirectly",
+                                                 "Direct quiet statement of what he will and will not do",
+                                                 "Asking someone to leave, which he has done exactly four times in forty years"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Warm but observant â€” asks them where they\u0027re from and actually listens to the answer",
+                                                   "friends":  "Teasing and generous, remembers everything they\u0027ve ever told him"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more deliberate in his movements, slower with the scissors",
+                                                "medium":  "Talks less, listens more, his eyes move differently",
+                                                "high":  "Becomes very still and very polite, which his regulars know means something is wrong"
+                                            },
+                       "contradictions":  [
+                                              "Believes deeply in people\u0027s right to privacy while maintaining a mental archive of everything he\u0027s heard"
+                                          ],
+                       "habits":  [
+                                      "Burns a small data-offering at the Razor ELF shrine each morning before opening",
+                                      "Refills the samovar at exactly 14:00 regardless of who is in the chair"
+                                  ],
+                       "breaking_points":  [
+                                               "Someone threatening a client while they are in his chair"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Bioluminescent fingertip geneware (blue-white, low intensity)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bioluminescent fingertip geneware (blue-white, low intensity)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Street Custom \u0027Confession\u0027 Modified Industrial Nail Gun"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "Riverbottom",
+                             "Cinderblock Ai",
+                             "Vantablack Media Confessor Tap â€” \u0027The Booth\u0027",
+                             "Bathysphere Networks",
+                             "Noir Dining",
+                             "The Gradient Compact",
+                             "Bronze",
+                             "Corner Slice",
+                             "Switchblade Alley",
+                             "Sterling-Nakamura PersonalAegis PA-7 \u0027Rampart\u0027"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian (45.5%), East Asian (22.3%), Eastern European (17.1%), and Northern European (15.1%) ancestry â€” a striking convergence visible in warm medium-brown skin with golden undertones, defined cheekbones with balanced facial structure, and dark eyes reflecting the blend of multiple continental lineages",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and compact, wiry muscle beneath loose skin â€” the frame of someone who has maintained consistent fine motor discipline and light physical labor across decades without bulk",
+                                 "hair_color":  "White with traces of original dark brown at the temples",
+                                 "hair_style":  "Close-cropped, precise, slightly longer on top with clean faded sides â€” a walking advertisement for his own craftsmanship",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown, unaugmented",
+                                 "skin_tone":  "Warm medium-brown with golden and subtle peachy undertones â€” melanin-rich but lighter than deep brown, reflecting the Southeast Asian and East Asian dominant heritage with Northern and Eastern European moderation. Shifts warmly under light, luminous quality",
+                                 "complexion":  "Deep creases radiating from the corners of his eyes and across his forehead â€” not from frowning but from decades of focused work and genuine attention. Fine laugh lines. Skin weathered but well-maintained, warm medium-brown throughout with subtle golden luminescence, minimal stubble, grooming precise but not vain. Facial structure shows defined cheekbones and moderate nose bridge reflecting Southeast and East Asian heritage tempered by European ancestry",
+                                 "distinguishing_marks":  [
+                                                              "Pale scar tissue across the back of his left hand, thin and straight â€” old blade accident from early in his career, faded lighter against warm brown skin",
+                                                              "Calluses on the inner sides of his fingers and thumbs, pronounced from forty years of scissor work"
+                                                          ],
+                                 "visible_augmentations":  "Fingertips emit a faint pale blue-white bioluminescence when activated â€” visible as a subtle glow at the nail beds and cuticle line, most noticeable in dim light or darkness. No other visible chrome or subdermal modifications",
+                                 "posture_movement":  "Stands with economical posture, weight balanced evenly. Moves with deliberate, unhurried precision â€” no wasted motion. When working, his hands move with meditative rhythm and surgical accuracy. In conversation, he has the stillness of someone comfortable with silence; he does not fidget",
+                                 "clothing_style":  "Tier 3-4 practical: dark gray or charcoal wool trousers, pressed but worn at the cuff; simple cotton or linen long-sleeve shirts in cream, white, or muted blue â€” sleeves rolled past the forearm for work. A thin leather apron, creased and darkened with decades of use, draped across his chest. Footwear is functional â€” scuffed work shoes or slip-ons with good grip on the shop floor. No jewelry except an old stainless steel watch with a worn leather band. A faded cardigan for cooler evenings"
+                             },
+    "image_prompt":  "Felisa Rattanakorn, 168cm lean-framed man with warm medium-brown skin and golden undertones, Southeast Asian and East Asian heritage with Northern European undertones visible in facial structure. White hair with dark brown traces at temples, close-cropped with longer top and faded sides. Dark unaugmented brown eyes with deep creases from decades of focused work. Defined cheekbones, moderate nose bridge. Pale scar tissue on left hand, visible calluses on fingers. Wearing cream long-sleeve shirt with rolled forearms, dark charcoal wool trousers, thin weathered leather apron darkened from decades of use. Stainless steel watch with worn leather band. Standing in GLMZ Great Lakes Metropolitan Zone barber shop, warm shop lighting casting subtle glow across his skin. Precise, meditative stillness. Fingertips showing faint pale blue-white bioluminescence at nail beds. High-detail character portrait, moody warm lighting, cinematic neo-noir urban aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  45.5,
+                             "East Asian":  22.3,
+                             "Eastern European":  17.1,
+                             "Northern European":  15.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  20.2
+                                                                },
+                                                    "Thai":  {
+                                                                 "Thai":  25.3
+                                                             }
+                                                },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  15.7
+                                                          },
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  0.8
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  5.8
+                                                            }
+                                           },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Slovak":  10.3,
+                                                                         "Polish":  6.8
+                                                                     }
+                                                 },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Welsh":  4,
+                                                                            "English":  1
+                                                                        },
+                                                      "Germanic":  {
+                                                                       "German":  2.6,
+                                                                       "Dutch":  1.5
+                                                                   },
+                                                      "Scandinavian":  {
+                                                                           "Norwegian":  4.3,
+                                                                           "Icelandic":  1.7
+                                                                       }
+                                                  }
+                        },
+    "tier":  "1"
 }

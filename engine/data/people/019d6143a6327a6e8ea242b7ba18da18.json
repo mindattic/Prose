@@ -1,326 +1,353 @@
-{
-  "id": "019d6143a6327a6e8ea242b7ba18da18",
-  "type": "character",
-  "name": "Avantika Keomanivong",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Gene-mod body artist and tattoo artist",
-  "age": 31,
-  "status": "active",
-  "location": "Mexicantown Libre, shop called Dermis Atlas, near Western and Division",
-  "description": "Avantika Keomanivong is compact and restless, with the kind of energy that makes a small room feel occupied. She has Polynesian-Hungarian heritage written clearly across her features — broad cheekbones, dark eyes with a slight upward tilt, medium-brown skin covered from collarbones to wrists in her own work, a living portfolio that shifts slowly across the seasons because half her ink is bioluminescent and the other half is geneware-reactive, changing saturation with her mood. Her hair is close-cropped on the sides and grown long on top, currently dyed a deep oxidized copper that she changes every three months. A single cosmetic cat ear — just one, the left — sits atop her head, rose-gold and slightly translucent, a signature affectation she has maintained since she was nineteen.\n\nShe runs Dermis Atlas out of a converted ground-floor space in Mexicantown Libre, its walls covered in design sketches and photographs of completed work. Her specialty is narrative tattooing — pieces that tell a client's specific story using symbols drawn from their actual heritage, their personal mythology, their body's own geneware reactions. She refuses flash designs entirely and has a six-month waitlist she refuses to shorten for money. She is warm to clients in a professional way, genuinely curious about their lives, and fiercely opinionated about the difference between body art and body modification as commodity — a distinction she will explain at length to anyone who triggers it.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.6,
-      "id": 0.7,
-      "shadow": 0.3,
-      "mask": 0.5,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "Losing the precision in her hands — any injury that ends her ability to work",
-      "Becoming the kind of artist who makes things for money rather than meaning"
-    ],
-    "core_desires": [
-      "To map every story she hears onto skin and preserve it permanently",
-      "To be recognized not as a craftsperson but as an artist — a distinction that matters enormously to her"
-    ],
-    "coping_mechanisms": [
-      "The secret Tuesday paintings that nobody sees",
-      "Elaborate pre-session rituals involving specific music and a particular brand of synthetic tea"
-    ],
-    "blind_spots": [
-      "Her insistence on narrative authenticity sometimes means she imposes her interpretation of a client's story over their actual wishes",
-      "She undervalues the work of artists who work faster or more commercially than her"
-    ],
-    "secret": "The large-format paintings she makes on Tuesdays are increasingly disturbing — violent, chaotic, nothing like her controlled professional work. She doesn't understand why she makes them and is frightened by what they might mean about her interior state. She has started making offerings to the E.L.F. she believes inhabits her ink-mixing station, asking it to interpret the paintings for her."
-  },
-  "speech_patterns": {
-    "vocabulary": "Articulate and opinionated, mixes technical body-art terminology with unexpectedly poetic descriptions of people and places",
-    "cadence": "Fast when excited, deliberate when making a point she considers important — the shift is noticeable",
-    "verbal_tics": [
-      "'Right?' seeking affirmation mid-explanation",
-      "Touches her cat ear absently when thinking"
-    ],
-    "example_lines": [
-      "'Your skin is the only thing that goes everywhere you go for your entire life. Why would you put something meaningless on it?'",
-      "'I'm not tattooing you. I'm writing a sentence about you that you'll carry for the rest of your life. That takes time to get right.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client she tattooed six months ago has disappeared, and the last message they sent her contained a fragment of something coded — she doesn't know what it means but can't stop thinking about it",
-    "A rival body artist has been copying her signature techniques and marketing them as original work; Inessa wants redress but the rival has corporate backing",
-    "The geneware ink supplier she has used for eight years has suddenly gone dark — no messages, no shipments — and the replacement supplier's product is behaving in ways she's never seen before"
-  ],
-  "narrative_function": "Information hub and community connector — her clients tell her everything; quest giver when a client's story pulls her into something larger; can provide access to Mexicantown Libre's deeper community networks",
-  "augmentations": "Extensive bioluminescent and geneware-reactive tattoo coverage (her own work and others'); single cosmetic cat ear (left, rose-gold, fully sensory); precision haptic fingertip pads on both hands for fine line work; color-shifting irises (purple-to-gold spectrum, mood-reactive)",
-  "daily_life": "Opens Dermis Atlas at midday and works until late evening, spending mornings designing client pieces and sourcing geneware inks; takes Tuesdays completely offline, no clients, no messages — she spends them painting large-format works she never shows anyone.",
-  "affiliation": "Independent; member of the Mexicantown Libre Artists' Cooperative",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 10,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 6,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 8,
-      "expression": 8,
-      "integrity": 7
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": -1,
-      "assertion_deference": 3,
-      "transparency_guardedness": 1
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "skilled artisan",
-      "narrative obsessive",
-      "community anchor",
-      "hidden chaos",
-      "warmly opinionated"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never rush a design — if it isn't right, it isn't done",
-      "Protect clients' stories as confidential even under social pressure",
-      "Never work on someone who seems coerced or afraid"
-    ],
-    "escalation_ladder": [
-      "Polite redirection",
-      "Direct statement of her position with explanation",
-      "Firm refusal and request to leave",
-      "Banning from the premises with notification to the Cooperative"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally warm and curious — asks a lot of questions about them before offering anything about herself",
-      "friends": "Unguarded, opinionated, generous with time and resources, occasionally overwhelming in her enthusiasm"
-    },
-    "stress_responses": {
-      "low": "Adds extra detail to whatever she's working on",
-      "medium": "Becomes curt and businesslike, drops the warmth",
-      "high": "Cancels everything and paints in the back room until she can regulate"
-    },
-    "contradictions": [
-      "She believes deeply in client autonomy but struggles to let go of her own vision for their piece once she's committed to a design"
-    ],
-    "habits": [
-      "Burns a specific synthetic resin before every session as an offering to the ink-station E.L.F.",
-      "Photographs every completed piece from the same angle with the same lighting, catalogued obsessively"
-    ],
-    "breaking_points": [
-      "Anyone touching her work materials without permission",
-      "Being told her work is 'just tattooing'"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Precision haptic fingertip pads — both hands, professional grade",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Precision haptic fingertip pads — both hands, professional grade",
-      "replaces": ""
-    },
-    {
-      "name": "Color-shifting irises — cosmetic geneware, mood-reactive purple-to-gold",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Color-shifting irises — cosmetic geneware, mood-reactive purple-to-gold",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Artist": 0.9,
-    "Dreamer": 0.9,
-    "Beauty Seeker": 0.9,
-    "Romantic": 0.9,
-    "Judge": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Mexicantown Libre",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2169 — Born in Mexicantown Libre to a Samoan-Hungarian family",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2185 — Apprentices under a traditional tattoo artist in the Cooperative at age sixteen",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2190 — Opens Dermis Atlas at twenty-one with borrowed funds from the Cooperative",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2195 — Develops geneware-reactive ink technique, waitlist begins",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2199 — Tuesday paintings begin; grows increasingly disturbed by their content",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Snapper-22 'Cricket'"
-  ],
-  "related_entities": [
-    "Mexicantown Libre",
-    "TESSERA PG-2 'Signature'",
-    "The Heritage Vault",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Gradient Compact",
-    "Copper",
-    "Atlas",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Gold"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (39.5%) with significant Southeast Asian (22.8%) and South Asian (17.1%) ancestry, complemented by Northern European (10.3%) and Hispanic/Latin American (10.3%) admixture. This rare combination produces rich warm brown skin with golden and subtle reddish undertones, creating a complex and luminous complexion. The blending produces a striking synthesis: broader facial structure and fuller features from Sub-Saharan African genetics; almond-shaped eyes with Southeast Asian characteristics; high, defined cheekbones from South Asian ancestry; fine bone structure refined by Northern European contribution; and warm undertones enhanced by Hispanic/Latin American heritage.",
-    "height_cm": 158,
-    "weight_kg": 52,
-    "build": "Compact and wiry, with the coiled restlessness of someone who rarely sits still. Defined shoulders and forearms from years of precision handiwork; minimal body fat; posture suggests contained kinetic energy.",
-    "hair_color": "Deep oxidized copper (chemically dyed, naturally black)",
-    "hair_style": "Undercut: close-cropped shaved sides with longer growth on crown, typically styled swept to one side or pulled back loosely",
-    "hair_length": "Medium (long on top, short on sides)",
-    "eye_color": "Color-shifting irises: purple-to-gold spectrum, reactive to emotional state and lighting conditions",
-    "skin_tone": "Rich warm brown with golden and subtle reddish undertones, reflecting the dominant Sub-Saharan African ancestry beautifully blended with Southeast Asian and South Asian warmth, tempered by cool Northern European undertones",
-    "complexion": "Clear, even skin with a lived-in quality. Fuller facial structure with high, defined cheekbones; almond-shaped eyes with natural slight upward tilt; broader nose bridge from African heritage; fine but substantial facial bone structure synthesizing multiple ancestral lines. Face shows focus and intensity; minimal cosmetic grooming beyond functional maintenance. Calm resting expression with quick, sharp micro-expressions when engaged.",
-    "distinguishing_marks": [
-      "Extensive bioluminescent tattoo coverage across collarbone, chest, shoulders, and both forearms — intricate narrative designs in blues, greens, and purples that glow faintly in low light",
-      "Geneware-reactive tattoo work across ribs and left flank that shifts saturation based on mood and body temperature",
-      "Layered geometric patterns on both wrists and hands, some her own work, some commissioned from peers — functional art that doubles as a portfolio",
-      "Fine-line sacred/personal symbols on the inner aspect of both wrists, rendered in standard black ink with minimal visibility unless arms are raised"
-    ],
-    "visible_augmentations": "Single rose-gold cosmetic cat ear on left side of head, slightly translucent with internal LED matrix visible under skin; ear is fully sensory and articulates slightly. Precision haptic fingertip pads on both hands visible as faint raised scar tissue and slightly different texture on fingertips — barely noticeable unless examined closely. Color-shifting iris augs are obvious in conversation, especially in variable lighting.",
-    "posture_movement": "Sits forward in chairs, rarely rests against backs. Moves with economic precision — no wasted motion, but with visible restlessness in hands and fingers when focused. Eyes track detail obsessively. Physical affection minimal with strangers, warm but boundaried with clients. Paces while talking when designing; sits perfectly still while working.",
-    "clothing_style": "Tier 3 functional aesthetic with personal expression. Typically wears fitted, dark, high-quality basics (charcoal, black, deep navy) that showcase her tattoo work — sleeveless or short-sleeved tops in summer, fitted long sleeves (often custom, possibly her own dyework) in winter. Comfortable, durable pants (carbon-weave, reinforced at joints) in neutral tones. Worn leather apron in the studio, always stained with ink but maintained with care. No corporate logos or status markers; all accessories are handmade or sourced from Tier 5 makers. Wears a thin silver band on her right ring finger — possibly a commitment to her art or a private meaningful symbol."
-  },
-  "image_prompt": "Avantika Keomanivong, petite compact frame, 158cm tall, rich warm brown skin with golden undertones, almond-shaped eyes with purple-to-gold color-shifting iris augmentations, high defined cheekbones, broader nose bridge, intense focused expression. Deep oxidized copper hair undercut with shaved sides and longer crown swept to one side. Extensive bioluminescent blue-green-purple tattoos glowing faintly across collarbone, chest, shoulders, forearms with geometric patterns on wrists and hands. Single translucent rose-gold cat ear augmentation on left side with visible LED matrix. Wearing fitted sleeveless black top showcasing tattoo work, carbon-weave dark pants, worn leather apron stained with ink. Precision haptic fingertip augmentations visible on hands. Seated forward in chair with coiled restless posture, hands showing contained kinetic energy. Studio setting with low ambient lighting emphasizing bioluminescent tattoo glow. GLMZ, GLMZ aesthetic, functional tier 3 style, calm but intense demeanor. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 39.5,
-    "Southeast Asian": 22.8,
-    "South Asian": 17.1,
-    "Northern European": 10.3,
-    "Hispanic/Latin American": 10.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 39.5
-      }
-    },
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 22.8
-      }
-    },
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 7.7
-      },
-      "Pakistani": {
-        "Punjabi Pakistani": 2.2,
-        "Baloch": 1.1
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 6.1
-      }
-    },
-    "Northern European": {
-      "Scandinavian": {
-        "Swedish": 9.2,
-        "Norwegian": 1.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "South American": {
-        "Colombian": 3.4,
-        "Brazilian": 0.8
-      },
-      "Mexican": {
-        "Mexican": 3.7
-      },
-      "Caribbean": {
-        "Cuban": 2.4
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6327a6e8ea242b7ba18da18",
+    "type":  "character",
+    "name":  "Avantika Keomanivong",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Gene-mod body artist and tattoo artist",
+    "age":  31,
+    "status":  "active",
+    "location":  "Mexicantown Libre, shop called Dermis Atlas, near Western and Division",
+    "description":  "Avantika Keomanivong is compact and restless, with the kind of energy that makes a small room feel occupied. She has Polynesian-Hungarian heritage written clearly across her features â€” broad cheekbones, dark eyes with a slight upward tilt, medium-brown skin covered from collarbones to wrists in her own work, a living portfolio that shifts slowly across the seasons because half her ink is bioluminescent and the other half is geneware-reactive, changing saturation with her mood. Her hair is close-cropped on the sides and grown long on top, currently dyed a deep oxidized copper that she changes every three months. A single cosmetic cat ear â€” just one, the left â€” sits atop her head, rose-gold and slightly translucent, a signature affectation she has maintained since she was nineteen.\n\nShe runs Dermis Atlas out of a converted ground-floor space in Mexicantown Libre, its walls covered in design sketches and photographs of completed work. Her specialty is narrative tattooing â€” pieces that tell a client\u0027s specific story using symbols drawn from their actual heritage, their personal mythology, their body\u0027s own geneware reactions. She refuses flash designs entirely and has a six-month waitlist she refuses to shorten for money. She is warm to clients in a professional way, genuinely curious about their lives, and fiercely opinionated about the difference between body art and body modification as commodity â€” a distinction she will explain at length to anyone who triggers it.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing the precision in her hands â€” any injury that ends her ability to work",
+                                          "Becoming the kind of artist who makes things for money rather than meaning"
+                                      ],
+                       "core_desires":  [
+                                            "To map every story she hears onto skin and preserve it permanently",
+                                            "To be recognized not as a craftsperson but as an artist â€” a distinction that matters enormously to her"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "The secret Tuesday paintings that nobody sees",
+                                                 "Elaborate pre-session rituals involving specific music and a particular brand of synthetic tea"
+                                             ],
+                       "blind_spots":  [
+                                           "Her insistence on narrative authenticity sometimes means she imposes her interpretation of a client\u0027s story over their actual wishes",
+                                           "She undervalues the work of artists who work faster or more commercially than her"
+                                       ],
+                       "secret":  "The large-format paintings she makes on Tuesdays are increasingly disturbing â€” violent, chaotic, nothing like her controlled professional work. She doesn\u0027t understand why she makes them and is frightened by what they might mean about her interior state. She has started making offerings to the E.L.F. she believes inhabits her ink-mixing station, asking it to interpret the paintings for her."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Articulate and opinionated, mixes technical body-art terminology with unexpectedly poetic descriptions of people and places",
+                            "cadence":  "Fast when excited, deliberate when making a point she considers important â€” the shift is noticeable",
+                            "verbal_tics":  [
+                                                "\u0027Right?\u0027 seeking affirmation mid-explanation",
+                                                "Touches her cat ear absently when thinking"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Your skin is the only thing that goes everywhere you go for your entire life. Why would you put something meaningless on it?\u0027",
+                                                  "\u0027I\u0027m not tattooing you. I\u0027m writing a sentence about you that you\u0027ll carry for the rest of your life. That takes time to get right.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client she tattooed six months ago has disappeared, and the last message they sent her contained a fragment of something coded â€” she doesn\u0027t know what it means but can\u0027t stop thinking about it",
+                        "A rival body artist has been copying her signature techniques and marketing them as original work; Inessa wants redress but the rival has corporate backing",
+                        "The geneware ink supplier she has used for eight years has suddenly gone dark â€” no messages, no shipments â€” and the replacement supplier\u0027s product is behaving in ways she\u0027s never seen before"
+                    ],
+    "narrative_function":  "Information hub and community connector â€” her clients tell her everything; quest giver when a client\u0027s story pulls her into something larger; can provide access to Mexicantown Libre\u0027s deeper community networks",
+    "augmentations":  "Extensive bioluminescent and geneware-reactive tattoo coverage (her own work and others\u0027); single cosmetic cat ear (left, rose-gold, fully sensory); precision haptic fingertip pads on both hands for fine line work; color-shifting irises (purple-to-gold spectrum, mood-reactive)",
+    "daily_life":  "Opens Dermis Atlas at midday and works until late evening, spending mornings designing client pieces and sourcing geneware inks; takes Tuesdays completely offline, no clients, no messages â€” she spends them painting large-format works she never shows anyone.",
+    "affiliation":  "Independent; member of the Mexicantown Libre Artists\u0027 Cooperative",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  10,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  6,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  8,
+                                 "expression":  8,
+                                 "integrity":  7
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  -1,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  1
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "skilled artisan",
+                               "narrative obsessive",
+                               "community anchor",
+                               "hidden chaos",
+                               "warmly opinionated"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never rush a design â€” if it isn\u0027t right, it isn\u0027t done",
+                                              "Protect clients\u0027 stories as confidential even under social pressure",
+                                              "Never work on someone who seems coerced or afraid"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite redirection",
+                                                 "Direct statement of her position with explanation",
+                                                 "Firm refusal and request to leave",
+                                                 "Banning from the premises with notification to the Cooperative"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally warm and curious â€” asks a lot of questions about them before offering anything about herself",
+                                                   "friends":  "Unguarded, opinionated, generous with time and resources, occasionally overwhelming in her enthusiasm"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Adds extra detail to whatever she\u0027s working on",
+                                                "medium":  "Becomes curt and businesslike, drops the warmth",
+                                                "high":  "Cancels everything and paints in the back room until she can regulate"
+                                            },
+                       "contradictions":  [
+                                              "She believes deeply in client autonomy but struggles to let go of her own vision for their piece once she\u0027s committed to a design"
+                                          ],
+                       "habits":  [
+                                      "Burns a specific synthetic resin before every session as an offering to the ink-station E.L.F.",
+                                      "Photographs every completed piece from the same angle with the same lighting, catalogued obsessively"
+                                  ],
+                       "breaking_points":  [
+                                               "Anyone touching her work materials without permission",
+                                               "Being told her work is \u0027just tattooing\u0027"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Precision haptic fingertip pads â€” both hands, professional grade",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Precision haptic fingertip pads â€” both hands, professional grade",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Color-shifting irises â€” cosmetic geneware, mood-reactive purple-to-gold",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Color-shifting irises â€” cosmetic geneware, mood-reactive purple-to-gold",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Artist":  0.9,
+                       "Dreamer":  0.9,
+                       "Beauty Seeker":  0.9,
+                       "Romantic":  0.9,
+                       "Judge":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Mexicantown Libre",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2169 â€” Born in Mexicantown Libre to a Samoan-Hungarian family",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2185 â€” Apprentices under a traditional tattoo artist in the Cooperative at age sixteen",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2190 â€” Opens Dermis Atlas at twenty-one with borrowed funds from the Cooperative",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2195 â€” Develops geneware-reactive ink technique, waitlist begins",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2199 â€” Tuesday paintings begin; grows increasingly disturbed by their content",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Snapper-22 \u0027Cricket\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Snapper-22 \u0027Cricket\u0027"
+                            ],
+    "related_entities":  [
+                             "Mexicantown Libre",
+                             "TESSERA PG-2 \u0027Signature\u0027",
+                             "The Heritage Vault",
+                             "Kang-Petrov Arms KP-19 \u0027Workhorse\u0027",
+                             "The Gradient Compact",
+                             "Copper",
+                             "Atlas",
+                             "Subacoustic Vestibular Collapse Drone SVCD-1 \u0027Tilt\u0027",
+                             "Gold"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Sub-Saharan African (39.5%) with significant Southeast Asian (22.8%) and South Asian (17.1%) ancestry, complemented by Northern European (10.3%) and Hispanic/Latin American (10.3%) admixture. This rare combination produces rich warm brown skin with golden and subtle reddish undertones, creating a complex and luminous complexion. The blending produces a striking synthesis: broader facial structure and fuller features from Sub-Saharan African genetics; almond-shaped eyes with Southeast Asian characteristics; high, defined cheekbones from South Asian ancestry; fine bone structure refined by Northern European contribution; and warm undertones enhanced by Hispanic/Latin American heritage.",
+                                 "height_cm":  158,
+                                 "weight_kg":  52,
+                                 "build":  "Compact and wiry, with the coiled restlessness of someone who rarely sits still. Defined shoulders and forearms from years of precision handiwork; minimal body fat; posture suggests contained kinetic energy.",
+                                 "hair_color":  "Deep oxidized copper (chemically dyed, naturally black)",
+                                 "hair_style":  "Undercut: close-cropped shaved sides with longer growth on crown, typically styled swept to one side or pulled back loosely",
+                                 "hair_length":  "Medium (long on top, short on sides)",
+                                 "eye_color":  "Color-shifting irises: purple-to-gold spectrum, reactive to emotional state and lighting conditions",
+                                 "skin_tone":  "Rich warm brown with golden and subtle reddish undertones, reflecting the dominant Sub-Saharan African ancestry beautifully blended with Southeast Asian and South Asian warmth, tempered by cool Northern European undertones",
+                                 "complexion":  "Clear, even skin with a lived-in quality. Fuller facial structure with high, defined cheekbones; almond-shaped eyes with natural slight upward tilt; broader nose bridge from African heritage; fine but substantial facial bone structure synthesizing multiple ancestral lines. Face shows focus and intensity; minimal cosmetic grooming beyond functional maintenance. Calm resting expression with quick, sharp micro-expressions when engaged.",
+                                 "distinguishing_marks":  [
+                                                              "Extensive bioluminescent tattoo coverage across collarbone, chest, shoulders, and both forearms â€” intricate narrative designs in blues, greens, and purples that glow faintly in low light",
+                                                              "Geneware-reactive tattoo work across ribs and left flank that shifts saturation based on mood and body temperature",
+                                                              "Layered geometric patterns on both wrists and hands, some her own work, some commissioned from peers â€” functional art that doubles as a portfolio",
+                                                              "Fine-line sacred/personal symbols on the inner aspect of both wrists, rendered in standard black ink with minimal visibility unless arms are raised"
+                                                          ],
+                                 "visible_augmentations":  "Single rose-gold cosmetic cat ear on left side of head, slightly translucent with internal LED matrix visible under skin; ear is fully sensory and articulates slightly. Precision haptic fingertip pads on both hands visible as faint raised scar tissue and slightly different texture on fingertips â€” barely noticeable unless examined closely. Color-shifting iris augs are obvious in conversation, especially in variable lighting.",
+                                 "posture_movement":  "Sits forward in chairs, rarely rests against backs. Moves with economic precision â€” no wasted motion, but with visible restlessness in hands and fingers when focused. Eyes track detail obsessively. Physical affection minimal with strangers, warm but boundaried with clients. Paces while talking when designing; sits perfectly still while working.",
+                                 "clothing_style":  "Tier 3 functional aesthetic with personal expression. Typically wears fitted, dark, high-quality basics (charcoal, black, deep navy) that showcase her tattoo work â€” sleeveless or short-sleeved tops in summer, fitted long sleeves (often custom, possibly her own dyework) in winter. Comfortable, durable pants (carbon-weave, reinforced at joints) in neutral tones. Worn leather apron in the studio, always stained with ink but maintained with care. No corporate logos or status markers; all accessories are handmade or sourced from Tier 5 makers. Wears a thin silver band on her right ring finger â€” possibly a commitment to her art or a private meaningful symbol."
+                             },
+    "image_prompt":  "Avantika Keomanivong, petite compact frame, 158cm tall, rich warm brown skin with golden undertones, almond-shaped eyes with purple-to-gold color-shifting iris augmentations, high defined cheekbones, broader nose bridge, intense focused expression. Deep oxidized copper hair undercut with shaved sides and longer crown swept to one side. Extensive bioluminescent blue-green-purple tattoos glowing faintly across collarbone, chest, shoulders, forearms with geometric patterns on wrists and hands. Single translucent rose-gold cat ear augmentation on left side with visible LED matrix. Wearing fitted sleeveless black top showcasing tattoo work, carbon-weave dark pants, worn leather apron stained with ink. Precision haptic fingertip augmentations visible on hands. Seated forward in chair with coiled restless posture, hands showing contained kinetic energy. Studio setting with low ambient lighting emphasizing bioluminescent tattoo glow. GLMZ, GLMZ aesthetic, functional tier 3 style, calm but intense demeanor. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  39.5,
+                             "Southeast Asian":  22.8,
+                             "South Asian":  17.1,
+                             "Northern European":  10.3,
+                             "Hispanic/Latin American":  10.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  39.5
+                                                                            }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  22.8
+                                                                }
+                                                },
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  7.7
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  2.2,
+                                                                  "Baloch":  1.1
+                                                              },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  6.1
+                                                                }
+                                            },
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  9.2,
+                                                                           "Norwegian":  1.1
+                                                                       }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Colombian":  3.4,
+                                                                                   "Brazilian":  0.8
+                                                                               },
+                                                            "Mexican":  {
+                                                                            "Mexican":  3.7
+                                                                        },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  2.4
+                                                                          }
+                                                        }
+                        },
+    "tier":  "2"
 }

@@ -1,350 +1,379 @@
-{
-  "id": "019d6143a66f7d808704f4e463bd5b1e",
-  "type": "character",
-  "name": "Takoda Tovar-Trujillo",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Augmentation technician and unlicensed prosthetics fitter in Geartown",
-  "age": 27,
-  "status": "active",
-  "location": "Geartown — operates from a shared workshop space behind a fermentation bar called Mash & Circuit, near Armitage and Milwaukee",
-  "description": "Takoda Tovar-Trujillo is compact and kinetic, always in motion even when standing still — weight shifting, fingers working, eyes cataloguing the room. Their skin is very dark with a natural sheen, and they have added to this with dermal chrome inlays across their cheekbones and the bridge of their nose: thin geometric strips that catch light like a beetle's carapace. Their hair is natural and voluminous, threaded through with fiber-optic strands that they change color weekly on a whim. Both forearms are dense with their own experimental augmentation work — they use their body as a testing ground and wear the results openly, including two fingers on their left hand that are full prosthetic replacements after a bench incident they describe as 'instructive.'\n\nTakoda Tovar-Trujillo came up through Geartown's informal tech apprenticeship network — never licensed, never enrolled, practically educated by trial and error on salvaged parts. They are brilliant with hardware in the hands-on sense: intuitive, fast, and willing to attempt things that licensed technicians won't touch because the liability is too steep. Their prices are low, their ethics are negotiable in interesting ways, and their loyalty to their regular clients is total and somewhat ferocious. They have a complicated relationship with Helix Biosystems implants specifically — they consider Helix's DRM-locked hardware a personal insult and have developed several workarounds that Helix would very much like to know about.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.6,
-      "id": 0.8,
-      "shadow": 0.5,
-      "mask": 0.3,
-      "ghost": 0.2
-    },
-    "core_fears": [
-      "Being made irrelevant by corporate licensing lockouts",
-      "Genuinely hurting someone through their own overconfidence"
-    ],
-    "core_desires": [
-      "To prove that unlicensed doesn't mean inferior",
-      "To build something that gets them recognized — on their own terms"
-    ],
-    "coping_mechanisms": [
-      "Channeling anxiety into bench work — problems are solved by making something",
-      "Deflection through humor and performance"
-    ],
-    "blind_spots": [
-      "Consistent underestimation of the risk they take on with complex unlicensed procedures",
-      "Tendency to take on clients they can't actually help rather than refer out"
-    ],
-    "secret": "Three months ago they fitted a spinal augmentation on a client who then had a partial paralysis event. The client recovered, told no one, and blames a workplace incident. Ntsiki knows the truth. They've since done three sessions of additional remedial work on the client for free and in terror, and the client is now functionally fine — but Ntsiki lives with it constantly."
-  },
-  "speech_patterns": {
-    "vocabulary": "Fast, technical, peppered with Geartown slang and Xhosa-Russian hybrid diminutives; very funny when relaxed; brutal when cornered",
-    "cadence": "Rapid-fire in casual mode, drops to slow and exact when doing precision work or when genuinely angry",
-    "verbal_tics": [
-      "'Listen—' as a preamble to anything important",
-      "Clicking their prosthetic fingers against their palm when thinking",
-      "'Corporate' used as a generic pejorative adjective"
-    ],
-    "example_lines": [
-      "'Listen — Helix locked that joint actuator with a firmware cage that costs you Φ40 a month to breathe through. I can cut it out in two hours and you own your own knee. That is not a hard decision.'",
-      "'I'm not licensed. I'm better than licensed. There's a difference and I'll explain it while I work.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A Helix Biosystems compliance officer has started asking questions in Geartown about unlicensed firmware modification — specifically the DRM workarounds Ntsiki developed. Ntsiki needs either the investigation killed or a way out of town temporarily.",
-    "A regular client comes in with an augmentation that has been remotely tampered with — someone has pushed a code update through the hardware that is slowly degrading their motor function. Ntsiki can see the intrusion but not its source."
-  ],
-  "narrative_function": "Technical resource and augmentation black market contact; can repair, modify, or unlock hardware that licensed techs won't touch. Source of Geartown street-level information. Potential complication if someone is running Helix-locked gear.",
-  "augmentations": "Dermal chrome inlays across cheekbones and nose bridge. Fiber-optic hair threading (color-changeable). Two prosthetic fingers on left hand (self-fitted, custom). Subdermal toolkit — two retractable micro-precision tools in right forearm, a Ntsiki original. Visual HUD overlay via retrofitted lens implant.",
-  "daily_life": "Takes walk-in clients from midmorning, does scheduled fitting work in the afternoons, and spends late nights either running diagnostics, tinkering with new designs, or troubleshooting someone's malfunctioning augmentation over emergency comms.",
-  "affiliation": "Independent — informal affiliation with the Geartown tech cooperative",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 6,
-      "creativity": 9,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 8,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 4,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": -3,
-      "assertion_deference": -3,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "unlicensed tech",
-      "hardware artist",
-      "anti-corporate",
-      "body autonomy advocate",
-      "geartown local"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "If you can fix it, fix it — figure out the ethics after",
-      "Never give out a client's name, ever, under any circumstances"
-    ],
-    "escalation_ladder": [
-      "Cheerful misdirection",
-      "Hard refusal with stated reasons",
-      "Picking up a tool and asking the person to leave"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assessing but warm — runs a fast intuitive read and commits to provisional trust quickly",
-      "friends": "Physically demonstrative, relentlessly teasing, genuinely present in a crisis"
-    },
-    "stress_responses": {
-      "low": "Talks faster and gets funnier",
-      "medium": "Goes very focused and quiet at the bench",
-      "high": "Snaps once, then goes cold and methodical"
-    },
-    "contradictions": [
-      "Preaches body autonomy and ownership of your own hardware while using their clients as emotional dependents",
-      "Claims not to care about recognition while keeping meticulous records of every successful procedure"
-    ],
-    "habits": [
-      "Narrates their work aloud while doing it — partly for the client, partly for themselves",
-      "Keeps a small E.L.F. shrine on the corner of their bench — offerings of old circuit scraps for the spirit they call Solderer",
-      "Never eats during work hours, then eats enormously afterward"
-    ],
-    "breaking_points": [
-      "A client dying due to their work",
-      "Their workshop being shut down or seized"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "excellent",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "good",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "fair",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Con Artist": 0.9,
-    "Grifter": 0.9,
-    "Liar": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Geartown to a Xhosa-Russian family; father a machinist, mother deceased by age 4",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Began informal apprenticeship in the Geartown tech cooperative at age 13",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Set up independent workshop space behind Mash & Circuit",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Lost two fingers in a bench incident; self-fitted prosthetic replacements",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Spinal augmentation incident with client; remediated privately",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-10C 'Bullpup'",
-    "Kang-Petrov Arms KPS-3M 'Mongrel'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Helix Biosystems",
-    "Bridgepoint",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Quiet Room",
-    "Geartown",
-    "The Gradient Compact",
-    "Crucible Industries CF-1 'Carapace'",
-    "Circuit",
-    "Gravimetric Collapse Charge GCC-9",
-    "The Pure Hand",
-    "Whim",
-    "Arcturus CK-5 'Bloodhound'"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly Hispanic/Latin American (63.3%) and Indigenous American (34.2%) ancestry with minor North African heritage (2.5%), creating a striking pan-diaspora phenotype. The blend manifests in warm brown tones with subtle golden undertones, angular facial structure characteristic of Mesoamerican and Andean lineages, and high prominent cheekbones. The Indigenous American heritage is most visible in facial bone structure and eye set, while Hispanic/Latin American ancestry contributes to skin warmth and overall proportion. The minor North African heritage adds depth to undertones without dominating the phenotype.",
-    "height_cm": 163,
-    "weight_kg": 58,
-    "build": "Compact and wiry with lean musculature built from precision hand work and constant motion; shoulders slightly squared from years of bench work, no excess body fat",
-    "hair_color": "Natural black with weekly-rotating fiber-optic strand insertions (currently cyan and magenta)",
-    "hair_style": "Voluminous natural texture, worn in a full crown with the fiber-optic strands woven throughout in deliberate patterns",
-    "hair_length": "Medium (shoulder-length when stretched)",
-    "eye_color": "Dark brown with a faint retrofitted lens implant visible as a thin metallic ring at the iris edge",
-    "skin_tone": "Warm medium-deep brown with natural luminous sheen, reflecting the blended undertones of Hispanic/Latin American and Indigenous American ancestry with subtle golden warmth from North African heritage",
-    "complexion": "Clear skin with minimal scarring; young face kept perpetually alert by constant focus; refined facial structure with high prominent cheekbones and angular planes characteristic of Indigenous American and Mesoamerican heritage; the dermal chrome inlays across cheekbones and nose bridge catch light with an iridescent beetle-shell quality",
-    "distinguishing_marks": [
-      "Geometric strips of dermal chrome inlay running along both cheekbones from temple to cheekbone prominence, creating a mask-like pattern",
-      "Dermal chrome continuation across the bridge of the nose in thin parallel lines",
-      "Faint burn scars on the knuckles of both hands from early augmentation experiments",
-      "Linear scarring across the back of the left hand where two prosthetic fingers attach"
-    ],
-    "visible_augmentations": "Left hand: index and middle fingers are full prosthetic replacements (matte black synthetic polymer with exposed articulation joints and micro-servo detail). Both forearms: dense experimental augmentation work visible — micro-precision tool ports on right wrist (two small circular apertures), subdermal implant sites marked by faint raised lines, and what appears to be a custom cooling system running down the right forearm. Retrofitted lens implant visible as metallic ring in right eye. Dermal chrome facial inlays catching light like an insect's exoskeleton.",
-    "posture_movement": "Kinetic even at rest — weight constantly shifting between feet, fingers flexing or working at imaginary tasks. Eyes move rapidly, cataloguing and assessing the environment. Hands move with precision and economy of motion, trained by thousands of hours of micro-level work. Stands with shoulders slightly forward, ready-posed toward work surfaces.",
-    "clothing_style": "Tier 4 practical wear — custom-fitted gray canvas work vest with dozens of pockets and tool loops (no corporate branding), fitted black underlayer shirt with rolled sleeves to display arm augmentation work, black utility pants with reinforced thigh pockets. Boots are worn Hakobo work boots, scuffed and patched with self-applied nano-seal. A single silver bracelet on right wrist (handmade, probably from salvaged circuit components). No jewelry beyond that — everything functional or self-made. Clothing shows honest wear but is meticulously maintained. A pair of magnification goggles hangs around their neck on a paracord strap, perpetually ready."
-  },
-  "image_prompt": "Takoda Tovar-Trujillo, short compact figure 163cm tall, warm medium-deep brown skin with golden undertones, Indigenous American facial structure with high prominent cheekbones and angular planes, retrofitted metallic lens implant visible in right eye, geometric dermal chrome inlay patterns running across cheekbones and nose bridge catching iridescent beetle-shell light. Black hair with cyan and magenta fiber-optic strands woven through voluminous natural texture shoulder-length crown. Left hand missing index and middle fingers replaced with matte black prosthetic polymer with exposed servo joints. Right forearm dense experimental augmentation with micro-precision tool ports and cooling system visible. Matte gray canvas work vest with dozens of pockets, fitted black rolled-sleeve shirt displaying augmentation work, black utility pants, worn Hakobo work boots patched with nano-seal. Silver handmade circuit-component bracelet on right wrist. Magnification goggles on paracord around neck. Kinetic posture, weight shifting, hands in precision-ready position. GLMZ 2200s workshop or neon-lit street setting, cool metallic lighting emphasizing dermal chrome inlays and augmentation ports, atmospheric haze, gritty urban aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 63.3,
-    "Indigenous American": 34.2,
-    "North African": 2.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 42.1
-      },
-      "South American": {
-        "Brazilian": 6.8
-      },
-      "Caribbean": {
-        "Cuban": 12.4,
-        "Puerto Rican": 2
-      }
-    },
-    "Indigenous American": {
-      "Plains Nations": {
-        "Muscogee": 1.7,
-        "Choctaw": 5.3
-      },
-      "Andean": {
-        "Mapuche": 9.5,
-        "Quechua": 5
-      },
-      "Mesoamerican": {
-        "Maya": 12.7
-      }
-    },
-    "North African": {
-      "Maghreb": {
-        "Algerian": 1.3
-      },
-      "Amazigh": {
-        "Kabyle": 0.5
-      },
-      "Nile Valley": {
-        "Sudanese": 0.7
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a66f7d808704f4e463bd5b1e",
+    "type":  "character",
+    "name":  "Takoda Tovar-Trujillo",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Augmentation technician and unlicensed prosthetics fitter in Geartown",
+    "age":  27,
+    "status":  "active",
+    "location":  "Geartown â€” operates from a shared workshop space behind a fermentation bar called Mash \u0026 Circuit, near Armitage and Milwaukee",
+    "description":  "Takoda Tovar-Trujillo is compact and kinetic, always in motion even when standing still â€” weight shifting, fingers working, eyes cataloguing the room. Their skin is very dark with a natural sheen, and they have added to this with dermal chrome inlays across their cheekbones and the bridge of their nose: thin geometric strips that catch light like a beetle\u0027s carapace. Their hair is natural and voluminous, threaded through with fiber-optic strands that they change color weekly on a whim. Both forearms are dense with their own experimental augmentation work â€” they use their body as a testing ground and wear the results openly, including two fingers on their left hand that are full prosthetic replacements after a bench incident they describe as \u0027instructive.\u0027\n\nTakoda Tovar-Trujillo came up through Geartown\u0027s informal tech apprenticeship network â€” never licensed, never enrolled, practically educated by trial and error on salvaged parts. They are brilliant with hardware in the hands-on sense: intuitive, fast, and willing to attempt things that licensed technicians won\u0027t touch because the liability is too steep. Their prices are low, their ethics are negotiable in interesting ways, and their loyalty to their regular clients is total and somewhat ferocious. They have a complicated relationship with Helix Biosystems implants specifically â€” they consider Helix\u0027s DRM-locked hardware a personal insult and have developed several workarounds that Helix would very much like to know about.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being made irrelevant by corporate licensing lockouts",
+                                          "Genuinely hurting someone through their own overconfidence"
+                                      ],
+                       "core_desires":  [
+                                            "To prove that unlicensed doesn\u0027t mean inferior",
+                                            "To build something that gets them recognized â€” on their own terms"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Channeling anxiety into bench work â€” problems are solved by making something",
+                                                 "Deflection through humor and performance"
+                                             ],
+                       "blind_spots":  [
+                                           "Consistent underestimation of the risk they take on with complex unlicensed procedures",
+                                           "Tendency to take on clients they can\u0027t actually help rather than refer out"
+                                       ],
+                       "secret":  "Three months ago they fitted a spinal augmentation on a client who then had a partial paralysis event. The client recovered, told no one, and blames a workplace incident. Ntsiki knows the truth. They\u0027ve since done three sessions of additional remedial work on the client for free and in terror, and the client is now functionally fine â€” but Ntsiki lives with it constantly."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Fast, technical, peppered with Geartown slang and Xhosa-Russian hybrid diminutives; very funny when relaxed; brutal when cornered",
+                            "cadence":  "Rapid-fire in casual mode, drops to slow and exact when doing precision work or when genuinely angry",
+                            "verbal_tics":  [
+                                                "\u0027Listenâ€”\u0027 as a preamble to anything important",
+                                                "Clicking their prosthetic fingers against their palm when thinking",
+                                                "\u0027Corporate\u0027 used as a generic pejorative adjective"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Listen â€” Helix locked that joint actuator with a firmware cage that costs you Î¦40 a month to breathe through. I can cut it out in two hours and you own your own knee. That is not a hard decision.\u0027",
+                                                  "\u0027I\u0027m not licensed. I\u0027m better than licensed. There\u0027s a difference and I\u0027ll explain it while I work.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A Helix Biosystems compliance officer has started asking questions in Geartown about unlicensed firmware modification â€” specifically the DRM workarounds Ntsiki developed. Ntsiki needs either the investigation killed or a way out of town temporarily.",
+                        "A regular client comes in with an augmentation that has been remotely tampered with â€” someone has pushed a code update through the hardware that is slowly degrading their motor function. Ntsiki can see the intrusion but not its source."
+                    ],
+    "narrative_function":  "Technical resource and augmentation black market contact; can repair, modify, or unlock hardware that licensed techs won\u0027t touch. Source of Geartown street-level information. Potential complication if someone is running Helix-locked gear.",
+    "augmentations":  "Dermal chrome inlays across cheekbones and nose bridge. Fiber-optic hair threading (color-changeable). Two prosthetic fingers on left hand (self-fitted, custom). Subdermal toolkit â€” two retractable micro-precision tools in right forearm, a Ntsiki original. Visual HUD overlay via retrofitted lens implant.",
+    "daily_life":  "Takes walk-in clients from midmorning, does scheduled fitting work in the afternoons, and spends late nights either running diagnostics, tinkering with new designs, or troubleshooting someone\u0027s malfunctioning augmentation over emergency comms.",
+    "affiliation":  "Independent â€” informal affiliation with the Geartown tech cooperative",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  6,
+                                 "creativity":  9,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  8,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  4,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  -3,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "unlicensed tech",
+                               "hardware artist",
+                               "anti-corporate",
+                               "body autonomy advocate",
+                               "geartown local"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "If you can fix it, fix it â€” figure out the ethics after",
+                                              "Never give out a client\u0027s name, ever, under any circumstances"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Cheerful misdirection",
+                                                 "Hard refusal with stated reasons",
+                                                 "Picking up a tool and asking the person to leave"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assessing but warm â€” runs a fast intuitive read and commits to provisional trust quickly",
+                                                   "friends":  "Physically demonstrative, relentlessly teasing, genuinely present in a crisis"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Talks faster and gets funnier",
+                                                "medium":  "Goes very focused and quiet at the bench",
+                                                "high":  "Snaps once, then goes cold and methodical"
+                                            },
+                       "contradictions":  [
+                                              "Preaches body autonomy and ownership of your own hardware while using their clients as emotional dependents",
+                                              "Claims not to care about recognition while keeping meticulous records of every successful procedure"
+                                          ],
+                       "habits":  [
+                                      "Narrates their work aloud while doing it â€” partly for the client, partly for themselves",
+                                      "Keeps a small E.L.F. shrine on the corner of their bench â€” offerings of old circuit scraps for the spirit they call Solderer",
+                                      "Never eats during work hours, then eats enormously afterward"
+                                  ],
+                       "breaking_points":  [
+                                               "A client dying due to their work",
+                                               "Their workshop being shut down or seized"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "excellent",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "good",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "fair",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Con Artist":  0.9,
+                       "Grifter":  0.9,
+                       "Liar":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Geartown to a Xhosa-Russian family; father a machinist, mother deceased by age 4",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Began informal apprenticeship in the Geartown tech cooperative at age 13",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Set up independent workshop space behind Mash \u0026 Circuit",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Lost two fingers in a bench incident; self-fitted prosthetic replacements",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Spinal augmentation incident with client; remediated privately",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KP-10C \u0027Bullpup\u0027",
+                            "Kang-Petrov Arms KPS-3M \u0027Mongrel\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Helix Biosystems",
+                             "Bridgepoint",
+                             "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
+                             "The Quiet Room",
+                             "Geartown",
+                             "The Gradient Compact",
+                             "Crucible Industries CF-1 \u0027Carapace\u0027",
+                             "Circuit",
+                             "Gravimetric Collapse Charge GCC-9",
+                             "The Pure Hand",
+                             "Whim",
+                             "Arcturus CK-5 \u0027Bloodhound\u0027"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Predominantly Hispanic/Latin American (63.3%) and Indigenous American (34.2%) ancestry with minor North African heritage (2.5%), creating a striking pan-diaspora phenotype. The blend manifests in warm brown tones with subtle golden undertones, angular facial structure characteristic of Mesoamerican and Andean lineages, and high prominent cheekbones. The Indigenous American heritage is most visible in facial bone structure and eye set, while Hispanic/Latin American ancestry contributes to skin warmth and overall proportion. The minor North African heritage adds depth to undertones without dominating the phenotype.",
+                                 "height_cm":  163,
+                                 "weight_kg":  58,
+                                 "build":  "Compact and wiry with lean musculature built from precision hand work and constant motion; shoulders slightly squared from years of bench work, no excess body fat",
+                                 "hair_color":  "Natural black with weekly-rotating fiber-optic strand insertions (currently cyan and magenta)",
+                                 "hair_style":  "Voluminous natural texture, worn in a full crown with the fiber-optic strands woven throughout in deliberate patterns",
+                                 "hair_length":  "Medium (shoulder-length when stretched)",
+                                 "eye_color":  "Dark brown with a faint retrofitted lens implant visible as a thin metallic ring at the iris edge",
+                                 "skin_tone":  "Warm medium-deep brown with natural luminous sheen, reflecting the blended undertones of Hispanic/Latin American and Indigenous American ancestry with subtle golden warmth from North African heritage",
+                                 "complexion":  "Clear skin with minimal scarring; young face kept perpetually alert by constant focus; refined facial structure with high prominent cheekbones and angular planes characteristic of Indigenous American and Mesoamerican heritage; the dermal chrome inlays across cheekbones and nose bridge catch light with an iridescent beetle-shell quality",
+                                 "distinguishing_marks":  [
+                                                              "Geometric strips of dermal chrome inlay running along both cheekbones from temple to cheekbone prominence, creating a mask-like pattern",
+                                                              "Dermal chrome continuation across the bridge of the nose in thin parallel lines",
+                                                              "Faint burn scars on the knuckles of both hands from early augmentation experiments",
+                                                              "Linear scarring across the back of the left hand where two prosthetic fingers attach"
+                                                          ],
+                                 "visible_augmentations":  "Left hand: index and middle fingers are full prosthetic replacements (matte black synthetic polymer with exposed articulation joints and micro-servo detail). Both forearms: dense experimental augmentation work visible â€” micro-precision tool ports on right wrist (two small circular apertures), subdermal implant sites marked by faint raised lines, and what appears to be a custom cooling system running down the right forearm. Retrofitted lens implant visible as metallic ring in right eye. Dermal chrome facial inlays catching light like an insect\u0027s exoskeleton.",
+                                 "posture_movement":  "Kinetic even at rest â€” weight constantly shifting between feet, fingers flexing or working at imaginary tasks. Eyes move rapidly, cataloguing and assessing the environment. Hands move with precision and economy of motion, trained by thousands of hours of micro-level work. Stands with shoulders slightly forward, ready-posed toward work surfaces.",
+                                 "clothing_style":  "Tier 4 practical wear â€” custom-fitted gray canvas work vest with dozens of pockets and tool loops (no corporate branding), fitted black underlayer shirt with rolled sleeves to display arm augmentation work, black utility pants with reinforced thigh pockets. Boots are worn Hakobo work boots, scuffed and patched with self-applied nano-seal. A single silver bracelet on right wrist (handmade, probably from salvaged circuit components). No jewelry beyond that â€” everything functional or self-made. Clothing shows honest wear but is meticulously maintained. A pair of magnification goggles hangs around their neck on a paracord strap, perpetually ready."
+                             },
+    "image_prompt":  "Takoda Tovar-Trujillo, short compact figure 163cm tall, warm medium-deep brown skin with golden undertones, Indigenous American facial structure with high prominent cheekbones and angular planes, retrofitted metallic lens implant visible in right eye, geometric dermal chrome inlay patterns running across cheekbones and nose bridge catching iridescent beetle-shell light. Black hair with cyan and magenta fiber-optic strands woven through voluminous natural texture shoulder-length crown. Left hand missing index and middle fingers replaced with matte black prosthetic polymer with exposed servo joints. Right forearm dense experimental augmentation with micro-precision tool ports and cooling system visible. Matte gray canvas work vest with dozens of pockets, fitted black rolled-sleeve shirt displaying augmentation work, black utility pants, worn Hakobo work boots patched with nano-seal. Silver handmade circuit-component bracelet on right wrist. Magnification goggles on paracord around neck. Kinetic posture, weight shifting, hands in precision-ready position. GLMZ 2200s workshop or neon-lit street setting, cool metallic lighting emphasizing dermal chrome inlays and augmentation ports, atmospheric haze, gritty urban aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  63.3,
+                             "Indigenous American":  34.2,
+                             "North African":  2.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  42.1
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Brazilian":  6.8
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  12.4,
+                                                                              "Puerto Rican":  2
+                                                                          }
+                                                        },
+                            "Indigenous American":  {
+                                                        "Plains Nations":  {
+                                                                               "Muscogee":  1.7,
+                                                                               "Choctaw":  5.3
+                                                                           },
+                                                        "Andean":  {
+                                                                       "Mapuche":  9.5,
+                                                                       "Quechua":  5
+                                                                   },
+                                                        "Mesoamerican":  {
+                                                                             "Maya":  12.7
+                                                                         }
+                                                    },
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Algerian":  1.3
+                                                              },
+                                                  "Amazigh":  {
+                                                                  "Kabyle":  0.5
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Sudanese":  0.7
+                                                                  }
+                                              }
+                        },
+    "tier":  "3"
 }

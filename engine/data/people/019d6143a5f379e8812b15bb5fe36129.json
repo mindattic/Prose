@@ -1,360 +1,373 @@
-{
-  "id": "019d6143a5f379e8812b15bb5fe36129",
-  "type": "character",
-  "name": "Chin-hwa Chakraborty",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Infrastructure disruption and industrial sabotage — saboteur",
-  "age": 37,
-  "status": "active",
-  "location": "The Rookery — dense vertical housing, gang-controlled, near Pulaski and Chicago Ave",
-  "description": "Chin-hwa Chakraborty is lean and angular, all sharp edges and visible tension. At 37, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a saboteur out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nChin-hwa Chakraborty has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.47,
-      "ideal": 0.21,
-      "id": 0.96,
-      "shadow": 0.31,
-      "mask": 0.3,
-      "ghost": 0.81
-    },
-    "core_fears": [
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Being identified by corporate facial recognition — living off-grid is survival",
-      "Losing their edge to age — the body slows before the mind accepts it"
-    ],
-    "core_desires": [
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Freedom from augmentation debt — the interest compounds like a tumor",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
-    ],
-    "coping_mechanisms": [
-      "Violence — hits something when they can't process emotions, preferably something that deserves it",
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
-    ],
-    "blind_spots": [
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
-      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
-      "Assumes everyone has an angle because they always have an angle"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
-    "cadence": "Staccato bursts separated by calculating silences.",
-    "verbal_tics": [
-      "Ends statements with 'yeah?' — not a question, a dare",
-      "Swears in three languages, often in the same sentence"
-    ],
-    "example_lines": [
-      "\"I don't break things. I introduce structural critiques.\"",
-      "\"The most effective sabotage looks like bad luck.\"",
-      "\"Everything has a weakness. Infrastructure has thousands.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Djeneba Orlov-Obeng discovers a job they completed last year was a setup for something much larger and much worse",
-    "A former associate resurfaces with evidence that could destroy Djeneba Orlov-Obeng's reputation — and a price for silence",
-    "A high-paying contract turns out to target someone Djeneba Orlov-Obeng owes a personal debt to"
-  ],
-  "narrative_function": "As a saboteur, Djeneba Orlov-Obeng embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Geneware muscle density treatment — looks natural, hits like chrome. Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
-  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Unaffiliated — too volatile for permanent crews",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 6
-      },
-      "agility": {
-        "base": 3,
-        "augmented": 3,
-        "effective": 9
-      },
-      "endurance": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 9
-      },
-      "reflexes": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 10
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 5,
-        "augmented": 1,
-        "effective": 9
-      },
-      "perception": {
-        "base": 3,
-        "augmented": 0,
-        "effective": 6
-      },
-      "willpower": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 8
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 7
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 6
-      },
-      "intimidation": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 9
-      },
-      "deception": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 10
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 4
-      }
-    },
-    "personality": {
-      "aggression": 0.57,
-      "caution": 0.85,
-      "loyalty": 0.74,
-      "greed": 0.64,
-      "empathy": 0.98
-    },
-    "drives": [
-      "power",
-      "money",
-      "survival"
-    ],
-    "thresholds": {
-      "pain": 8,
-      "stress": 5,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "exceptional close-quarters combat",
-      "mechanical aptitude — can repair or modify almost anything",
-      "strategic thinking under pressure"
-    ],
-    "weaknesses": [
-      "old injury that flares under specific conditions",
-      "poor impulse control in specific triggers"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "saboteur",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always has an exit route planned before agreeing to any meeting",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Will not betray a client who paid in full, regardless of better offers",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
-    ],
-    "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Presents as emotionless professional but is deeply affected by collateral damage",
-      "Insists they work alone but performs noticeably better in a team",
-      "Values loyalty intensely but has betrayed someone in the past to survive"
-    ],
-    "habits": [
-      "Checks exits within 10 seconds of entering any room",
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
-      "Keeps a physical paper notebook — no digital record of personal thoughts",
-      "Carries a specific caliber round as a lucky charm — has never fired it"
-    ],
-    "breaking_points": [
-      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
-      "Discovering their employer deliberately sent them into a death trap"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Geneware muscle density treatment",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Geneware muscle density treatment — looks natural, hits like chrome",
-      "replaces": ""
-    },
-    {
-      "name": "Internal air filtration system",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Rookery",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Chicago",
-    "Slagworks Industrial",
-    "Gravimetric Collapse Charge GCC-9"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Mixed global ancestry with South Asian plurality (40.3%), significant Northern European admixture (32.5%), complemented by Sub-Saharan African (14.3%), Middle Eastern (7.3%), and East Asian (5.6%) heritage. This genetic mosaic creates a phenotype of considerable complexity: warm medium-deep brown skin with golden undertones from the South Asian-Sub-Saharan foundation, enriched by Northern European influence that deepens rather than cools the overall tone. Facial structure reflects the angular definition of South Asian and East Asian bone geometry—high, prominent cheekbones, defined nasal bridge, eye-set that speaks to multiple continental sources—softened by the fuller features inherited from Sub-Saharan and Middle Eastern ancestry. The overall effect is a face that resists easy categorization, bearing the genetic signature of the Ubiquitous Diaspora.",
-    "height_cm": 178,
-    "weight_kg": 72,
-    "build": "Lean and angular with visible muscle definition from geneware enhancement; low body fat, wiry strength rather than bulk. Chest and shoulders show the telltale density of chrome muscle treatment — they move with inhuman precision.",
-    "hair_color": "Dark brown, naturally textured",
-    "hair_style": "Kept short and tight, minimal styling. Pragmatic cut for his line of work.",
-    "hair_length": "Short",
-    "eye_color": "Warm brown with faint amber undertone",
-    "skin_tone": "Warm medium-deep brown with golden undertones, slightly muted by nocturnal lifestyle but retaining the richness of South Asian-Sub-Saharan heritage blended with Northern European influence. The nocturnal pallor sits beneath rather than displacing the natural warmth.",
-    "complexion": "Angular jawline and high, prominent cheekbones reflecting the South Asian-East Asian-Sub-Saharan ancestry blend, with subtle fullness in the lower face from Middle Eastern and Sub-Saharan heritage. Skin shows the strain of night-cycle living—faint dark circles beneath warm brown eyes—but is clear and scar-free on the face. Grooming is meticulous and functional; no jewelry, no flash.",
-    "distinguishing_marks": [
-      "Faint linear scarring along left collarbone and down the sternum — surgical markers from lung replacement procedure, visible when shirtless",
-      "Pale burn marks across the inner right forearm in a grid pattern — old electrical accident, deliberate choice not to correct",
-      "Small tool-mark tattoos on the inside of both wrists in minimalist script — contract confirmation marks in the saboteur underground"
-    ],
-    "visible_augmentations": "Chrome geneware musculature visible under the skin of forearms, shoulders, and upper chest — not bulky, but with an unnatural density and subtle metallic sheen under certain lighting. The musculature moves with mechanical precision that betrays its artificial nature. No visible neural ports, optical implants, or external chrome.",
-    "posture_movement": "Moves with economical precision — no wasted motion. Stands with slight forward lean, shoulders loose but alert. Natural state appears to be coiled tension; even at rest, his body reads as ready to move. Eyes track exits and structural weak points instinctively.",
-    "clothing_style": "Tier 4-5 utilitarian. Dark-colored cargo pants with reinforced panels and hidden pockets for tools. Black or charcoal synthetic jacket with asymmetrical chest pockets and articulated shoulders — brands like Cerberus Tactical or unmarked knockoffs from the Gray Zone. Steel-toed work boots, scuffed and worn. No corpo branding, no gang colors. Clothing is chosen for function: durability, mobility, pockets for equipment. Everything fits close enough to move but loose enough to hide things."
-  },
-  "image_prompt": "Chin-hwa Chakraborty, mixed-heritage saboteur, GLMZ. Warm medium-deep brown skin with golden undertones, angular South Asian-East Asian cheekbones softened by Sub-Saharan fullness, warm brown eyes tracking exits. Dark textured hair cropped short, sharp jawline. Lean 178cm frame with inhuman chrome geneware muscle definition visible under forearms and shoulders—metallic density betraying augmentation. Wearing black Cerberus Tactical cargo jacket with asymmetrical pockets, reinforced dark pants, scuffed steel-toed boots. Visible pale burn scars in grid pattern on inner right forearm, surgical scarring on sternum. Coiled posture, economical movement, alert stance. Great Lakes Metropolitan Zone neon-lit parking structure or rooftop at night, cool blue and amber lighting casting shadows across his face. Geneware musculature catching light with subtle metallic sheen. Mood: focused, dangerous precision, ready to move. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 40.3,
-    "Northern European": 32.5,
-    "Sub-Saharan African": 14.3,
-    "Middle Eastern": 7.3,
-    "East Asian": 5.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 16
-      },
-      "Nepali": {
-        "Nepali": 13
-      },
-      "Pakistani": {
-        "Sindhi": 11.3
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 15.2,
-        "Swiss German": 17.3
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 11.4
-      },
-      "East African": {
-        "Tanzanian": 1.8
-      },
-      "Southern African": {
-        "South African": 1.1
-      }
-    },
-    "Middle Eastern": {
-      "Persian": {
-        "Iranian": 7.3
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 1
-      },
-      "Korean": {
-        "Korean": 1.5
-      },
-      "Chinese": {
-        "Hakka": 3.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a5f379e8812b15bb5fe36129",
+    "type":  "character",
+    "name":  "Chin-hwa Chakraborty",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Infrastructure disruption and industrial sabotage â€” saboteur",
+    "age":  37,
+    "status":  "active",
+    "location":  "The Rookery â€” dense vertical housing, gang-controlled, near Pulaski and Chicago Ave",
+    "description":  "Chin-hwa Chakraborty is lean and angular, all sharp edges and visible tension. At 37, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible â€” geneware muscle density treatment â€” looks natural, hits like chrome â€” and he makes no effort to hide it.\n\nHe came up through the Gray Zone\u0027s informal apprentice system, learning the trade from runners who didn\u0027t survive long enough to see him surpass them. He works as a saboteur out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nChin-hwa Chakraborty has built a reputation on reliability rather than flash â€” he shows up, he delivers, he collects.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "Being identified by corporate facial recognition â€” living off-grid is survival",
+                                          "Losing their edge to age â€” the body slows before the mind accepts it"
+                                      ],
+                       "core_desires":  [
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail",
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor",
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Violence â€” hits something when they can\u0027t process emotions, preferably something that deserves it",
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring",
+                                                 "Art â€” draws, paints, or sculpts in private; the violence goes somewhere constructive"
+                                             ],
+                       "blind_spots":  [
+                                           "Mistakes pattern recognition for wisdom â€” sees connections that aren\u0027t there",
+                                           "Refuses to update their mental model of people â€” first impressions calcify into permanent judgments",
+                                           "Assumes everyone has an angle because they always have an angle"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Clipped, technical, stripped of ornament. Speaks like a mission briefing.",
+                            "cadence":  "Staccato bursts separated by calculating silences.",
+                            "verbal_tics":  [
+                                                "Ends statements with \u0027yeah?\u0027 â€” not a question, a dare",
+                                                "Swears in three languages, often in the same sentence"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I don\u0027t break things. I introduce structural critiques.\"",
+                                                  "\"The most effective sabotage looks like bad luck.\"",
+                                                  "\"Everything has a weakness. Infrastructure has thousands.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Djeneba Orlov-Obeng discovers a job they completed last year was a setup for something much larger and much worse",
+                        "A former associate resurfaces with evidence that could destroy Djeneba Orlov-Obeng\u0027s reputation â€” and a price for silence",
+                        "A high-paying contract turns out to target someone Djeneba Orlov-Obeng owes a personal debt to"
+                    ],
+    "narrative_function":  "As a saboteur, Djeneba Orlov-Obeng embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+    "augmentations":  "Geneware muscle density treatment â€” looks natural, hits like chrome. Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks",
+    "daily_life":  "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+    "affiliation":  "Unaffiliated â€” too volatile for permanent crews",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  7,
+                                                    "augmented":  2,
+                                                    "effective":  6
+                                                },
+                                   "agility":  {
+                                                   "base":  3,
+                                                   "augmented":  3,
+                                                   "effective":  9
+                                               },
+                                   "endurance":  {
+                                                     "base":  4,
+                                                     "augmented":  1,
+                                                     "effective":  9
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  8,
+                                                    "augmented":  0,
+                                                    "effective":  10
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  5,
+                                                      "augmented":  1,
+                                                      "effective":  9
+                                                  },
+                                 "perception":  {
+                                                    "base":  3,
+                                                    "augmented":  0,
+                                                    "effective":  6
+                                                },
+                                 "willpower":  {
+                                                   "base":  7,
+                                                   "augmented":  2,
+                                                   "effective":  8
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  3,
+                                                   "effective":  7
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  5,
+                                                  "augmented":  3,
+                                                  "effective":  6
+                                              },
+                                 "intimidation":  {
+                                                      "base":  6,
+                                                      "augmented":  2,
+                                                      "effective":  9
+                                                  },
+                                 "deception":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  10
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  2,
+                                                 "effective":  4
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.57,
+                                      "caution":  0.85,
+                                      "loyalty":  0.74,
+                                      "greed":  0.64,
+                                      "empathy":  0.98
+                                  },
+                  "drives":  [
+                                 "power",
+                                 "money",
+                                 "survival"
+                             ],
+                  "thresholds":  {
+                                     "pain":  8,
+                                     "stress":  5,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "exceptional close-quarters combat",
+                                    "mechanical aptitude â€” can repair or modify almost anything",
+                                    "strategic thinking under pressure"
+                                ],
+                  "weaknesses":  [
+                                     "old injury that flares under specific conditions",
+                                     "poor impulse control in specific triggers"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "saboteur",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Never works with the same crew twice in a row â€” pattern avoidance as survival strategy",
+                                              "Will not betray a client who paid in full, regardless of better offers",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Assess â€” read the situation, identify threats and advantages",
+                                                 "2. Negotiate â€” try to find a solution that doesn\u0027t cost ammunition",
+                                                 "3. Intimidate â€” make the cost of conflict clear",
+                                                 "4. Precision violence â€” surgical, targeted, minimal collateral",
+                                                 "5. Full engagement â€” overwhelming force, no half measures",
+                                                 "6. Emergency protocol â€” abort mission, survival priority, deal with consequences later"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Presents as emotionless professional but is deeply affected by collateral damage",
+                                              "Insists they work alone but performs noticeably better in a team",
+                                              "Values loyalty intensely but has betrayed someone in the past to survive"
+                                          ],
+                       "habits":  [
+                                      "Checks exits within 10 seconds of entering any room",
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle",
+                                      "Keeps a physical paper notebook â€” no digital record of personal thoughts",
+                                      "Carries a specific caliber round as a lucky charm â€” has never fired it"
+                                  ],
+                       "breaking_points":  [
+                                               "Betrayal by the one person they actually trust â€” the single point of failure in their emotional architecture",
+                                               "Discovering their employer deliberately sent them into a death trap"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Geneware muscle density treatment",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Geneware muscle density treatment â€” looks natural, hits like chrome",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Internal air filtration system",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Internal air filtration system â€” lungs replaced with synthetic equivalents, immune to gas attacks",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Rookery",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Chicago",
+                             "Slagworks Industrial",
+                             "Gravimetric Collapse Charge GCC-9"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Mixed global ancestry with South Asian plurality (40.3%), significant Northern European admixture (32.5%), complemented by Sub-Saharan African (14.3%), Middle Eastern (7.3%), and East Asian (5.6%) heritage. This genetic mosaic creates a phenotype of considerable complexity: warm medium-deep brown skin with golden undertones from the South Asian-Sub-Saharan foundation, enriched by Northern European influence that deepens rather than cools the overall tone. Facial structure reflects the angular definition of South Asian and East Asian bone geometryâ€”high, prominent cheekbones, defined nasal bridge, eye-set that speaks to multiple continental sourcesâ€”softened by the fuller features inherited from Sub-Saharan and Middle Eastern ancestry. The overall effect is a face that resists easy categorization, bearing the genetic signature of the Ubiquitous Diaspora.",
+                                 "height_cm":  178,
+                                 "weight_kg":  72,
+                                 "build":  "Lean and angular with visible muscle definition from geneware enhancement; low body fat, wiry strength rather than bulk. Chest and shoulders show the telltale density of chrome muscle treatment â€” they move with inhuman precision.",
+                                 "hair_color":  "Dark brown, naturally textured",
+                                 "hair_style":  "Kept short and tight, minimal styling. Pragmatic cut for his line of work.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Warm brown with faint amber undertone",
+                                 "skin_tone":  "Warm medium-deep brown with golden undertones, slightly muted by nocturnal lifestyle but retaining the richness of South Asian-Sub-Saharan heritage blended with Northern European influence. The nocturnal pallor sits beneath rather than displacing the natural warmth.",
+                                 "complexion":  "Angular jawline and high, prominent cheekbones reflecting the South Asian-East Asian-Sub-Saharan ancestry blend, with subtle fullness in the lower face from Middle Eastern and Sub-Saharan heritage. Skin shows the strain of night-cycle livingâ€”faint dark circles beneath warm brown eyesâ€”but is clear and scar-free on the face. Grooming is meticulous and functional; no jewelry, no flash.",
+                                 "distinguishing_marks":  [
+                                                              "Faint linear scarring along left collarbone and down the sternum â€” surgical markers from lung replacement procedure, visible when shirtless",
+                                                              "Pale burn marks across the inner right forearm in a grid pattern â€” old electrical accident, deliberate choice not to correct",
+                                                              "Small tool-mark tattoos on the inside of both wrists in minimalist script â€” contract confirmation marks in the saboteur underground"
+                                                          ],
+                                 "visible_augmentations":  "Chrome geneware musculature visible under the skin of forearms, shoulders, and upper chest â€” not bulky, but with an unnatural density and subtle metallic sheen under certain lighting. The musculature moves with mechanical precision that betrays its artificial nature. No visible neural ports, optical implants, or external chrome.",
+                                 "posture_movement":  "Moves with economical precision â€” no wasted motion. Stands with slight forward lean, shoulders loose but alert. Natural state appears to be coiled tension; even at rest, his body reads as ready to move. Eyes track exits and structural weak points instinctively.",
+                                 "clothing_style":  "Tier 4-5 utilitarian. Dark-colored cargo pants with reinforced panels and hidden pockets for tools. Black or charcoal synthetic jacket with asymmetrical chest pockets and articulated shoulders â€” brands like Cerberus Tactical or unmarked knockoffs from the Gray Zone. Steel-toed work boots, scuffed and worn. No corpo branding, no gang colors. Clothing is chosen for function: durability, mobility, pockets for equipment. Everything fits close enough to move but loose enough to hide things."
+                             },
+    "image_prompt":  "Chin-hwa Chakraborty, mixed-heritage saboteur, GLMZ. Warm medium-deep brown skin with golden undertones, angular South Asian-East Asian cheekbones softened by Sub-Saharan fullness, warm brown eyes tracking exits. Dark textured hair cropped short, sharp jawline. Lean 178cm frame with inhuman chrome geneware muscle definition visible under forearms and shouldersâ€”metallic density betraying augmentation. Wearing black Cerberus Tactical cargo jacket with asymmetrical pockets, reinforced dark pants, scuffed steel-toed boots. Visible pale burn scars in grid pattern on inner right forearm, surgical scarring on sternum. Coiled posture, economical movement, alert stance. Great Lakes Metropolitan Zone neon-lit parking structure or rooftop at night, cool blue and amber lighting casting shadows across his face. Geneware musculature catching light with subtle metallic sheen. Mood: focused, dangerous precision, ready to move. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  40.3,
+                             "Northern European":  32.5,
+                             "Sub-Saharan African":  14.3,
+                             "Middle Eastern":  7.3,
+                             "East Asian":  5.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  16
+                                                                },
+                                                "Nepali":  {
+                                                               "Nepali":  13
+                                                           },
+                                                "Pakistani":  {
+                                                                  "Sindhi":  11.3
+                                                              }
+                                            },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  15.2,
+                                                                       "Swiss German":  17.3
+                                                                   }
+                                                  },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  11.4
+                                                                            },
+                                                        "East African":  {
+                                                                             "Tanzanian":  1.8
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "South African":  1.1
+                                                                             }
+                                                    },
+                            "Middle Eastern":  {
+                                                   "Persian":  {
+                                                                   "Iranian":  7.3
+                                                               }
+                                               },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  1
+                                                            },
+                                               "Korean":  {
+                                                              "Korean":  1.5
+                                                          },
+                                               "Chinese":  {
+                                                               "Hakka":  3.1
+                                                           }
+                                           }
+                        },
+    "tier":  "3"
 }

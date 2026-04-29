@@ -1,247 +1,270 @@
-{
-  "id": "019d6143a5be7f2dbcf96b990ac54b22",
-  "type": "character",
-  "name": "Diop Hachemi-Strömqvist-Kettani",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Junk merchant and scrap reseller — specializes in salvaged augmentation components and tech scrap",
-  "age": 63,
-  "status": "active",
-  "location": "Geartown, permanent pitch under the Kessler Interchange overpass, near North Ave and Milwaukee",
-  "description": "Diop Hachemi-Strömqvist-Kettani is the kind of man who looks like he was assembled from spare parts — which, in a meaningful sense, he was. His left arm from the elbow down is a mismatched stack of salvaged cyberware components that he has maintained, replaced, and modified over forty years: the hand is Axiom manufacture circa 2160, the wrist joint is something he stripped from a Ferrogate maintenance bot, and the forearm housing is a custom shell he hammered out himself from transit-grade aluminum. His face is weathered to the texture of old boot leather, his right eye is natural and sharp, his left eye is a salvage-market optical he bought from Zibby Ousséni-Palakiko three years ago and only mostly trusts.\n\nHis pitch under the Kessler Interchange overpass is a cathedral of beautiful junk: sorted bins of neural connectors, towers of chassis plating, a refrigerated unit full of organic-synthetic interface components that need to stay cold, hand-lettered signs advertising prices in chalk on a board he updates daily. He has a dog — a large, scruffy animal with bioluminescent patches along its spine from some backyard genemod experiment — named Inventory. Diop Hachemi-Strömqvist-Kettani has a scholar's knowledge of two generations of augmentation hardware, can identify a component by touch in the dark, and has opinions about manufacturing tolerances that can fill an evening if you let him. He is also missing significant chunks of his past that he doesn't discuss.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.8,
-      "ideal": 0.4,
-      "id": 0.5,
-      "shadow": 0.6,
-      "mask": 0.4,
-      "ghost": 0.9
-    },
-    "core_fears": [
-      "Losing his hands — the ability to work, to identify, to repair",
-      "Being found by someone he owes a debt to from a period he refuses to name"
-    ],
-    "core_desires": [
-      "To be left alone in his work",
-      "To pass his knowledge to someone who deserves it before his body finally refuses"
-    ],
-    "coping_mechanisms": [
-      "Maintenance — he compulsively cleans and repairs components, including his own arm, as a grounding behavior",
-      "Inventory the dog's company as emotional anchor"
-    ],
-    "blind_spots": [
-      "Assumes bad faith from anyone connected to Sterling-Nakamura specifically, for reasons he won't explain",
-      "His pride in self-sufficiency makes him delay asking for help until situations are critical"
-    ],
-    "secret": "Thirty-one years ago he was a licensed augmentation technician working for a Helix Biosystems subsidiary. He was the person who certified a batch of defective spinal interfaces as safe. Twelve people were paralyzed. He falsified a second set of records to redirect blame to a supply chain error, walked away from his license, and has been Bako the Bone in Geartown ever since. He tells himself the system was the one that pressured him into the sign-off. He's not entirely wrong. He's not entirely right."
-  },
-  "speech_patterns": {
-    "vocabulary": "Dense technical vocabulary for hardware, crude and simple for everything else. Speaks in fragments when comfortable, complete sentences when agitated.",
-    "cadence": "Unhurried, with long pauses while he works with his hands — he talks better when his hands are busy.",
-    "verbal_tics": [
-      "Refers to all augmentation components as 'she' regardless of origin",
-      "'Back when she was made right—' as preamble to any hardware complaint"
-    ],
-    "example_lines": [
-      "'She's a 2158 Axiom haptic interface. Pre-recall batch. I know because she's got the original flux tolerances and they stopped making her right in 2160.'",
-      "'Don't know. Don't need to know. She works or she doesn't.'",
-      "'I've been here long enough to know what moves under this overpass at night. That's not a question I expected to hear today.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Someone has brought him a component he recognizes — it's from the defective batch he certified thirty years ago, and it was removed from someone recently, which means someone has been living with it all this time and he has no idea how",
-    "Inventory the dog found something buried in the debris field under the overpass: a sealed container of augmentation components that haven't been manufactured since 2171 and show signs of Axiom research-division provenance",
-    "A young apprentice he took on informally is showing signs of real talent — and has begun asking questions about who Bako used to be that are getting uncomfortably close to accurate"
-  ],
-  "narrative_function": "Technical expert and parts source for augmentation-related needs. Deep institutional knowledge of hardware makes him invaluable for identifying strange tech, vintage aug components, or modified cyberware. Also carries significant history from an earlier era of GLMZ.",
-  "augmentations": "Extensive salvage-assembled left arm (mismatched components, functional if unusual). Salvage-market optical left eye. Spinal brace — internal, medical-grade, installed after a workplace injury thirty years ago. Subdermal toolkit storage in right forearm — several small retractable tools he's incorporated over the years.",
-  "daily_life": "He's at the pitch before sunrise to sort new acquisitions, opens for business at seven, and runs until the light fails or he runs out of energy — increasingly the latter. Inventory the dog runs the perimeter and barks at anyone who tries to pocket merchandise. Two evenings a week Bako attends an informal aug-repair social at a Geartown community hall, where people bring broken cyberware and he helps diagnose it.",
-  "affiliation": "Independent. Informal arrangement with Geartown's dominant crew, the Kessler Jackets, who take a small percentage in exchange for pitch security. Known to aug clinics in the Geartown area as a reliable parts source.; The Interchange",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 7,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 7,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 5,
-      "expression": 4,
-      "integrity": 6
-    },
-    "personality": {
-      "openness_conviction": 2,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -2,
-      "transparency_guardedness": 4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "technical expert",
-      "salvage specialist",
-      "hidden past",
-      "geartown fixture",
-      "reluctant mentor"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not sell components he believes will be used for non-consensual augmentation of another person",
-      "Keeps a reserve stock he won't sell at any price — parts he might need himself when his own hardware fails"
-    ],
-    "escalation_ladder": [
-      "Ignores the problem and continues working",
-      "Addresses it directly without heat: 'That's not going to happen here'",
-      "Stands up — which takes visible effort — and whistles for Inventory",
-      "Calls the Kessler Jackets and steps back"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Gruff and transactional, warms only if they demonstrate genuine hardware knowledge",
-      "friends": "Quietly generous — lends tools, gives better prices, remembers what they told him three years ago"
-    },
-    "stress_responses": {
-      "low": "Increases the complexity of whatever he's working on",
-      "medium": "Goes quiet and works faster, more precisely",
-      "high": "Sets down his tools and sits very still with Inventory until he can think clearly"
-    },
-    "contradictions": [
-      "Refuses to accept that what he did thirty years ago was unforgivable while structuring his entire life as an act of low-grade penance"
-    ],
-    "habits": [
-      "Runs a maintenance check on his left arm every morning before he opens — takes forty-five minutes and he considers it non-negotiable",
-      "Feeds Inventory before himself, always"
-    ],
-    "breaking_points": [
-      "Encountering a survivor of the defective interface incident",
-      "Someone threatening Inventory"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Kessler Interchange",
-    "Ferrogate Transit",
-    "Iowan Behemoth — 'Cathedral'",
-    "Backyard BBQ",
-    "Noir Dining",
-    "Geartown",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Aluminum",
-    "Leather",
-    "Neural Palate",
-    "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Compass Rose"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "North African (64.1%), East Asian (20.5%), and Southeast Asian (15.4%) ancestry. The dominant North African genetics establish deep warm brown undertones and broader facial structure, while East Asian ancestry contributes high, defined cheekbones and a refined nasal bridge. Southeast Asian influence adds warmth to midtones and subtle facial angularity. The combination creates a distinctly warm-toned complexion with North African depth, sharpened by East and Southeast Asian bone structure.",
-    "height_cm": 178,
-    "weight_kg": 89,
-    "build": "Heavyset and broad-shouldered despite age, with a slight forward stoop from decades of bench work. Thick through the torso, calloused hands, the musculature of someone who has done manual labor his entire life but is now running on momentum and habit rather than strength.",
-    "hair_color": "Steel gray with patches of white",
-    "hair_style": "Short, brushed back, slightly unkempt. Hasn't been to a proper barber in years.",
-    "hair_length": "Short",
-    "eye_color": "Right eye: dark brown, sharp and calculating. Left eye: LED-modified salvage-market optical with a faint amber glow, the pupil sometimes drifting slightly out of sync.",
-    "skin_tone": "Deep warm brown with rich golden undertones from North African and Southeast Asian heritage, enhanced by East Asian ancestry. Further weathered by sixty-three years of sun exposure and industrial work throughout the GLMZ, creating a lived-in patina across bronzed skin.",
-    "complexion": "Deeply lined face like cracked leather, jaw dusted with silver stubble, a prominent nose with high bridge and slightly flared nostrils reflecting East and Southeast Asian ancestry, broken at least twice. Permanent squint lines around the eyes. A few old chemical burns on the right side of his neck, faded to white scars. Deep facial bone structure emphasizes high cheekbones and strong jaw, characteristic of the ancestral blend.",
-    "distinguishing_marks": [
-      "Burn scar running from right collarbone to mid-chest, pale and flat, approximately 12cm long — from a circuit fire in 2187",
-      "Ragged scar across the back of right hand, webbed and puckered, circa 2190",
-      "Network of thin scars crisscrossing both forearms from countless small cuts incurred during thirty years of component handling",
-      "A faded, amateurish tattoo on left shoulder of what might be coordinates or a circuit diagram, barely legible, probably self-applied decades ago"
-    ],
-    "visible_augmentations": "Left arm from elbow down is visibly augmented: a frankenstein assembly of mismatched cyberware. The forearm is a dull aluminum shell hammered smooth with visible seam lines and a few deliberately hammered dents. The wrist joint is clearly repurposed Ferrogate heavy machinery — industrial-grade and overbuilt. The hand is older Axiom manufacture, palm-side showing worn contact pads and a faintly visible serial number. The left eye has a faint amber LED glow at the edge of the iris. When he flexes his right forearm, barely-visible seams appear where subdermal toolkit storage has been integrated under the skin.",
-    "posture_movement": "Moves with the careful deliberation of someone managing chronic pain from old injuries. Favors his right side slightly. Stands with hands often occupied — sorting, gesturing, demonstrating components. His movements are economical and practiced, no wasted motion. Speaks with his hands, especially when explaining augmentation tolerances or component lineage. Often adjusts his left eye manually, like an old habit.",
-    "clothing_style": "Tier 3-4 Geartown worker aesthetic, deeply functional and worn. Heavy canvas work pants with a dozen cargo pockets, all visibly utilized. A faded company shirt from some defunct shipping corporation, sleeves rolled or cut off to accommodate his left arm. A thick gray insulated vest over top, patched in multiple places. Steel-toed work boots, scuffed and re-resoled at least twice. A pair of cut-off leather gloves hanging from his back pocket. No jewelry except a pale band of skin on his ring finger where something used to be. Everything smells of mineral oil, solder flux, and the dust of a thousand disassembled machines."
-  },
-  "image_prompt": "Weathered North African-East Asian-Southeast Asian man, 63 years old, deep warm bronze skin with golden undertones, high cheekbones, prominent broken nose, steel gray short hair brushed back unkempt. Right eye dark brown and sharp, left eye amber LED optical implant with faint glow. Deeply lined face, silver stubble, permanent squint lines. Left arm prosthetic from elbow down—mismatched aluminum and industrial cyberware with visible seams and dents, Axiom hand with worn contact pads. Burn scar across right collarbone-chest, network of thin scars on forearms. 178cm tall, heavyset broad-shouldered build, slight forward stoop. Wearing faded defunct corporation shirt with rolled sleeves, thick gray patched insulation vest, heavy canvas cargo work pants, scuffed steel-toed boots. Geartown mechanic in industrial workshop, warm tungsten lighting casting shadows on weathered features and augmented limb, GLMZ, hands gesturing over scattered components, mood: experienced, worn, deliberate, practical --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "North African": 64.1,
-    "East Asian": 20.5,
-    "Southeast Asian": 15.4
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "North African": {
-      "Maghreb": {
-        "Tunisian": 29.6,
-        "Moroccan": 33.4
-      },
-      "Nile Valley": {
-        "Egyptian": 0.9,
-        "Sudanese": 0.2
-      }
-    },
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 6.3
-      },
-      "Chinese": {
-        "Shanghainese": 9.8
-      },
-      "Korean": {
-        "Korean": 4.4
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 15.4
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5be7f2dbcf96b990ac54b22",
+    "type":  "character",
+    "name":  "Diop Hachemi-StrÃ¶mqvist-Kettani",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Junk merchant and scrap reseller â€” specializes in salvaged augmentation components and tech scrap",
+    "age":  63,
+    "status":  "active",
+    "location":  "Geartown, permanent pitch under the Kessler Interchange overpass, near North Ave and Milwaukee",
+    "description":  "Diop Hachemi-StrÃ¶mqvist-Kettani is the kind of man who looks like he was assembled from spare parts â€” which, in a meaningful sense, he was. His left arm from the elbow down is a mismatched stack of salvaged cyberware components that he has maintained, replaced, and modified over forty years: the hand is Axiom manufacture circa 2160, the wrist joint is something he stripped from a Ferrogate maintenance bot, and the forearm housing is a custom shell he hammered out himself from transit-grade aluminum. His face is weathered to the texture of old boot leather, his right eye is natural and sharp, his left eye is a salvage-market optical he bought from Zibby OussÃ©ni-Palakiko three years ago and only mostly trusts.\n\nHis pitch under the Kessler Interchange overpass is a cathedral of beautiful junk: sorted bins of neural connectors, towers of chassis plating, a refrigerated unit full of organic-synthetic interface components that need to stay cold, hand-lettered signs advertising prices in chalk on a board he updates daily. He has a dog â€” a large, scruffy animal with bioluminescent patches along its spine from some backyard genemod experiment â€” named Inventory. Diop Hachemi-StrÃ¶mqvist-Kettani has a scholar\u0027s knowledge of two generations of augmentation hardware, can identify a component by touch in the dark, and has opinions about manufacturing tolerances that can fill an evening if you let him. He is also missing significant chunks of his past that he doesn\u0027t discuss.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Losing his hands â€” the ability to work, to identify, to repair",
+                                          "Being found by someone he owes a debt to from a period he refuses to name"
+                                      ],
+                       "core_desires":  [
+                                            "To be left alone in his work",
+                                            "To pass his knowledge to someone who deserves it before his body finally refuses"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Maintenance â€” he compulsively cleans and repairs components, including his own arm, as a grounding behavior",
+                                                 "Inventory the dog\u0027s company as emotional anchor"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes bad faith from anyone connected to Sterling-Nakamura specifically, for reasons he won\u0027t explain",
+                                           "His pride in self-sufficiency makes him delay asking for help until situations are critical"
+                                       ],
+                       "secret":  "Thirty-one years ago he was a licensed augmentation technician working for a Helix Biosystems subsidiary. He was the person who certified a batch of defective spinal interfaces as safe. Twelve people were paralyzed. He falsified a second set of records to redirect blame to a supply chain error, walked away from his license, and has been Bako the Bone in Geartown ever since. He tells himself the system was the one that pressured him into the sign-off. He\u0027s not entirely wrong. He\u0027s not entirely right."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Dense technical vocabulary for hardware, crude and simple for everything else. Speaks in fragments when comfortable, complete sentences when agitated.",
+                            "cadence":  "Unhurried, with long pauses while he works with his hands â€” he talks better when his hands are busy.",
+                            "verbal_tics":  [
+                                                "Refers to all augmentation components as \u0027she\u0027 regardless of origin",
+                                                "\u0027Back when she was made rightâ€”\u0027 as preamble to any hardware complaint"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027She\u0027s a 2158 Axiom haptic interface. Pre-recall batch. I know because she\u0027s got the original flux tolerances and they stopped making her right in 2160.\u0027",
+                                                  "\u0027Don\u0027t know. Don\u0027t need to know. She works or she doesn\u0027t.\u0027",
+                                                  "\u0027I\u0027ve been here long enough to know what moves under this overpass at night. That\u0027s not a question I expected to hear today.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Someone has brought him a component he recognizes â€” it\u0027s from the defective batch he certified thirty years ago, and it was removed from someone recently, which means someone has been living with it all this time and he has no idea how",
+                        "Inventory the dog found something buried in the debris field under the overpass: a sealed container of augmentation components that haven\u0027t been manufactured since 2171 and show signs of Axiom research-division provenance",
+                        "A young apprentice he took on informally is showing signs of real talent â€” and has begun asking questions about who Bako used to be that are getting uncomfortably close to accurate"
+                    ],
+    "narrative_function":  "Technical expert and parts source for augmentation-related needs. Deep institutional knowledge of hardware makes him invaluable for identifying strange tech, vintage aug components, or modified cyberware. Also carries significant history from an earlier era of GLMZ.",
+    "augmentations":  "Extensive salvage-assembled left arm (mismatched components, functional if unusual). Salvage-market optical left eye. Spinal brace â€” internal, medical-grade, installed after a workplace injury thirty years ago. Subdermal toolkit storage in right forearm â€” several small retractable tools he\u0027s incorporated over the years.",
+    "daily_life":  "He\u0027s at the pitch before sunrise to sort new acquisitions, opens for business at seven, and runs until the light fails or he runs out of energy â€” increasingly the latter. Inventory the dog runs the perimeter and barks at anyone who tries to pocket merchandise. Two evenings a week Bako attends an informal aug-repair social at a Geartown community hall, where people bring broken cyberware and he helps diagnose it.",
+    "affiliation":  "Independent. Informal arrangement with Geartown\u0027s dominant crew, the Kessler Jackets, who take a small percentage in exchange for pitch security. Known to aug clinics in the Geartown area as a reliable parts source.; The Interchange",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  7,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  7,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  5,
+                                 "expression":  4,
+                                 "integrity":  6
+                             },
+                  "personality":  {
+                                      "openness_conviction":  2,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -2,
+                                      "transparency_guardedness":  4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "technical expert",
+                               "salvage specialist",
+                               "hidden past",
+                               "geartown fixture",
+                               "reluctant mentor"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not sell components he believes will be used for non-consensual augmentation of another person",
+                                              "Keeps a reserve stock he won\u0027t sell at any price â€” parts he might need himself when his own hardware fails"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Ignores the problem and continues working",
+                                                 "Addresses it directly without heat: \u0027That\u0027s not going to happen here\u0027",
+                                                 "Stands up â€” which takes visible effort â€” and whistles for Inventory",
+                                                 "Calls the Kessler Jackets and steps back"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Gruff and transactional, warms only if they demonstrate genuine hardware knowledge",
+                                                   "friends":  "Quietly generous â€” lends tools, gives better prices, remembers what they told him three years ago"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increases the complexity of whatever he\u0027s working on",
+                                                "medium":  "Goes quiet and works faster, more precisely",
+                                                "high":  "Sets down his tools and sits very still with Inventory until he can think clearly"
+                                            },
+                       "contradictions":  [
+                                              "Refuses to accept that what he did thirty years ago was unforgivable while structuring his entire life as an act of low-grade penance"
+                                          ],
+                       "habits":  [
+                                      "Runs a maintenance check on his left arm every morning before he opens â€” takes forty-five minutes and he considers it non-negotiable",
+                                      "Feeds Inventory before himself, always"
+                                  ],
+                       "breaking_points":  [
+                                               "Encountering a survivor of the defective interface incident",
+                                               "Someone threatening Inventory"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Kessler Interchange",
+                             "Ferrogate Transit",
+                             "Iowan Behemoth â€” \u0027Cathedral\u0027",
+                             "Backyard BBQ",
+                             "Noir Dining",
+                             "Geartown",
+                             "NeuralPath VaultPay Subdermal Transaction Node",
+                             "Aluminum",
+                             "Leather",
+                             "Neural Palate",
+                             "Electrolytic Bone Density Projector EBDP-4 \u0027Chalk\u0027",
+                             "Iron Meridian Cooperative Backbone IMC-3 \u0027Spine\u0027",
+                             "Compass Rose"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "North African (64.1%), East Asian (20.5%), and Southeast Asian (15.4%) ancestry. The dominant North African genetics establish deep warm brown undertones and broader facial structure, while East Asian ancestry contributes high, defined cheekbones and a refined nasal bridge. Southeast Asian influence adds warmth to midtones and subtle facial angularity. The combination creates a distinctly warm-toned complexion with North African depth, sharpened by East and Southeast Asian bone structure.",
+                                 "height_cm":  178,
+                                 "weight_kg":  89,
+                                 "build":  "Heavyset and broad-shouldered despite age, with a slight forward stoop from decades of bench work. Thick through the torso, calloused hands, the musculature of someone who has done manual labor his entire life but is now running on momentum and habit rather than strength.",
+                                 "hair_color":  "Steel gray with patches of white",
+                                 "hair_style":  "Short, brushed back, slightly unkempt. Hasn\u0027t been to a proper barber in years.",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Right eye: dark brown, sharp and calculating. Left eye: LED-modified salvage-market optical with a faint amber glow, the pupil sometimes drifting slightly out of sync.",
+                                 "skin_tone":  "Deep warm brown with rich golden undertones from North African and Southeast Asian heritage, enhanced by East Asian ancestry. Further weathered by sixty-three years of sun exposure and industrial work throughout the GLMZ, creating a lived-in patina across bronzed skin.",
+                                 "complexion":  "Deeply lined face like cracked leather, jaw dusted with silver stubble, a prominent nose with high bridge and slightly flared nostrils reflecting East and Southeast Asian ancestry, broken at least twice. Permanent squint lines around the eyes. A few old chemical burns on the right side of his neck, faded to white scars. Deep facial bone structure emphasizes high cheekbones and strong jaw, characteristic of the ancestral blend.",
+                                 "distinguishing_marks":  [
+                                                              "Burn scar running from right collarbone to mid-chest, pale and flat, approximately 12cm long â€” from a circuit fire in 2187",
+                                                              "Ragged scar across the back of right hand, webbed and puckered, circa 2190",
+                                                              "Network of thin scars crisscrossing both forearms from countless small cuts incurred during thirty years of component handling",
+                                                              "A faded, amateurish tattoo on left shoulder of what might be coordinates or a circuit diagram, barely legible, probably self-applied decades ago"
+                                                          ],
+                                 "visible_augmentations":  "Left arm from elbow down is visibly augmented: a frankenstein assembly of mismatched cyberware. The forearm is a dull aluminum shell hammered smooth with visible seam lines and a few deliberately hammered dents. The wrist joint is clearly repurposed Ferrogate heavy machinery â€” industrial-grade and overbuilt. The hand is older Axiom manufacture, palm-side showing worn contact pads and a faintly visible serial number. The left eye has a faint amber LED glow at the edge of the iris. When he flexes his right forearm, barely-visible seams appear where subdermal toolkit storage has been integrated under the skin.",
+                                 "posture_movement":  "Moves with the careful deliberation of someone managing chronic pain from old injuries. Favors his right side slightly. Stands with hands often occupied â€” sorting, gesturing, demonstrating components. His movements are economical and practiced, no wasted motion. Speaks with his hands, especially when explaining augmentation tolerances or component lineage. Often adjusts his left eye manually, like an old habit.",
+                                 "clothing_style":  "Tier 3-4 Geartown worker aesthetic, deeply functional and worn. Heavy canvas work pants with a dozen cargo pockets, all visibly utilized. A faded company shirt from some defunct shipping corporation, sleeves rolled or cut off to accommodate his left arm. A thick gray insulated vest over top, patched in multiple places. Steel-toed work boots, scuffed and re-resoled at least twice. A pair of cut-off leather gloves hanging from his back pocket. No jewelry except a pale band of skin on his ring finger where something used to be. Everything smells of mineral oil, solder flux, and the dust of a thousand disassembled machines."
+                             },
+    "image_prompt":  "Weathered North African-East Asian-Southeast Asian man, 63 years old, deep warm bronze skin with golden undertones, high cheekbones, prominent broken nose, steel gray short hair brushed back unkempt. Right eye dark brown and sharp, left eye amber LED optical implant with faint glow. Deeply lined face, silver stubble, permanent squint lines. Left arm prosthetic from elbow downâ€”mismatched aluminum and industrial cyberware with visible seams and dents, Axiom hand with worn contact pads. Burn scar across right collarbone-chest, network of thin scars on forearms. 178cm tall, heavyset broad-shouldered build, slight forward stoop. Wearing faded defunct corporation shirt with rolled sleeves, thick gray patched insulation vest, heavy canvas cargo work pants, scuffed steel-toed boots. Geartown mechanic in industrial workshop, warm tungsten lighting casting shadows on weathered features and augmented limb, GLMZ, hands gesturing over scattered components, mood: experienced, worn, deliberate, practical --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "North African":  64.1,
+                             "East Asian":  20.5,
+                             "Southeast Asian":  15.4
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "North African":  {
+                                                  "Maghreb":  {
+                                                                  "Tunisian":  29.6,
+                                                                  "Moroccan":  33.4
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  0.9,
+                                                                      "Sudanese":  0.2
+                                                                  }
+                                              },
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  6.3
+                                                            },
+                                               "Chinese":  {
+                                                               "Shanghainese":  9.8
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  4.4
+                                                          }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  15.4
+                                                             }
+                                                }
+                        },
+    "tier":  "2"
 }

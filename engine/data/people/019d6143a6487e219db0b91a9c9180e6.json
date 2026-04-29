@@ -1,290 +1,311 @@
-{
-  "id": "019d6143a6487e219db0b91a9c9180e6",
-  "type": "character",
-  "name": "Ah-lam Ibarra-Ixchel",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Freelance mechanic specializing in personal mobility rigs and modified transit vehicles, operates from a rented bay in Geartown",
-  "age": 23,
-  "status": "active",
-  "location": "Geartown — rents Bay 7 in the Corrigan's Collective workshop block, near Milwaukee and North Ave",
-  "description": "Ah-lam Ibarra-Ixchel is a young man who looks like he was built for a different era — wide shoulders, large hands, a face that defaults to an expression of calm concentration that people sometimes mistake for slowness until they watch him work. His skin is a medium brown with warm undertones, his black hair cut close on the sides and longer on top, usually pushed back with a stripe of grease he hasn't noticed. His most striking feature is a patterned iris geneware mod: his eyes display a geometric repeating motif in amber and dark brown that he chose at twenty-one to mirror a pattern from his Fula grandmother's weaving. He has retractable claw fingertip implants — not geneware, hard chrome — that he uses as impromptu tools when he doesn't have the right implement to hand, which is more often than he'd like.\n\nHe is good at his job in the instinctive way that some people are, the kind of mechanic who listens to an engine before he looks at it. He is also twenty-three and running a one-person operation on a borrowed reputation and a rented bay, which means he is perpetually overextended, slightly too eager to please, and deeply anxious about money in the specific way of someone who grew up without it and is terrified of returning to that. He is honest to the point of commercial self-sabotage — he will tell you if the repair you want isn't the repair you need, even if the repair you need costs less.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.55,
-      "id": 0.65,
-      "shadow": 0.4,
-      "mask": 0.45,
-      "ghost": 0.25
-    },
-    "core_fears": [
-      "Failing publicly and losing the bay — being back to nothing with a reputation attached to the nothing",
-      "Discovering he is not actually as good as he thinks he is"
-    ],
-    "core_desires": [
-      "A legitimate contract — something that proves the business is real and not just provisional",
-      "To be taken seriously by people who have been doing this longer than he has been alive"
-    ],
-    "coping_mechanisms": [
-      "Throws himself into the technical problem in front of him when anxious about larger ones",
-      "Compulsive honesty as a form of self-protection — if he's always honest he can never be accused of the thing he fears most, which is being a fraud"
-    ],
-    "blind_spots": [
-      "Consistently undercharges for his labor because he doesn't feel entitled to charge what he's worth",
-      "Doesn't recognize when clients are testing him versus genuinely asking for advice"
-    ],
-    "secret": "The mentor who taught him — the retired mechanic in Ironvein — left him one thing when he retired: a handwritten manual covering modifications to Ferrogate vehicles that Ferrogate's own engineers don't know about, based on thirty years of unauthorized observation. Lautaro hasn't decided what to do with it. He knows it's valuable. He knows it might be dangerous."
-  },
-  "speech_patterns": {
-    "vocabulary": "Technical precision about anything mechanical; vague and slightly fumbling about everything else. Spanish words surface when he's excited about something. Uses 'like' as a filler when he's not in his area of expertise.",
-    "cadence": "Slow and deliberate when explaining something, speeds up when he's in the middle of a job and someone is asking him questions he doesn't have time for",
-    "verbal_tics": [
-      "'So what's happening is —'",
-      "Wiping his hands on his coveralls mid-sentence",
-      "'Which is fine. That's fixable.'"
-    ],
-    "example_lines": [
-      "'Okay, so what you told me is wrong, and I don't mean that badly — whoever told you that just didn't know. What's actually wrong is the coupling on the secondary drive. Which is fine. Cheaper, actually. You want me to show you?'",
-      "'I charge honest prices. Which means I charge less than I should. My mentor said that would change when I grew up. I'm working on it.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client brought in a vehicle with a hidden compartment he wasn't told about; whatever was in it is gone but the compartment is still there and someone has been asking around Geartown whether anyone has seen the vehicle",
-    "He has quietly begun decoding the inherited manual and has found a modification that would make any Ferrogate tram capable of running on a completely separate unmonitored power grid — and he does not know what to do with this information"
-  ],
-  "narrative_function": "Practical resource — can repair, modify, or assess vehicles and mechanical systems. Can serve as an entry point into Geartown's working community, a quest giver when a client's vehicle holds something unexpected, or a character study in precarious early-adult ambition.",
-  "augmentations": "Patterned iris geneware (amber/dark brown geometric, Fula textile-inspired). Chrome retractable claw fingertips (both hands, tool-grade, not combat-optimized — thinner and more precise than fighting claws). Subdermal haptic feedback layer in both hands (allows him to feel vibration and heat differential in machinery more precisely — his most important professional tool).",
-  "daily_life": "In the bay by 07:00, takes whatever work comes through by word of mouth and via a listing on the Geartown local mesh. Eats one meal a day at Benedita's cart. Studies Ferrogate Transit vehicle schematics at night because he wants to bid for transit maintenance contracts but doesn't have the certification yet.",
-  "affiliation": "Independent (freelance); informal apprenticeship-era ties to a retired mechanic in Ironvein who taught him the trade",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 8,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 5,
-      "creativity": 7,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 4,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": -1,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 2,
-      "assertion_deference": 3,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "gifted tradesperson",
-      "anxious ambitious",
-      "radical honesty",
-      "inherited secret"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always tell the client the truth about what their vehicle needs, even when it costs him the larger job",
-      "Don't touch anything in a vehicle he wasn't asked to touch",
-      "If someone seems afraid, ask if they need him to not record the work order — he's done it before"
-    ],
-    "escalation_ladder": [
-      "Polite clarification of what he can and can't do",
-      "Transparent statement of his concern",
-      "Refuses the job and refunds any deposit",
-      "In genuine danger: freezes, then runs — he is not a fighter"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professional and slightly formal, warms up fast if they show any interest in the work itself",
-      "friends": "Relaxed and surprisingly funny, generous with his time and knowledge"
-    },
-    "stress_responses": {
-      "low": "Focuses intensely on whatever is in front of him",
-      "medium": "Talks through the problem aloud even if no one is listening",
-      "high": "Goes completely silent and either solves the problem or shuts down entirely"
-    },
-    "contradictions": [
-      "Deeply afraid of being seen as a fraud while being constitutionally incapable of being dishonest"
-    ],
-    "habits": [
-      "Tests every tool before he uses it even if he used it an hour ago",
-      "Says 'good morning' to the bay itself when he opens it up, which he would deny if asked"
-    ],
-    "breaking_points": [
-      "Being accused of deliberately overcharging or doing unnecessary work"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Patterned iris geneware (amber/dark brown geometric)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Patterned iris geneware (amber/dark brown geometric)",
-      "replaces": ""
-    },
-    {
-      "name": "Chrome retractable claw fingertips, tool-grade (both hands)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Chrome retractable claw fingertips, tool-grade (both hands)",
-      "replaces": ""
-    },
-    {
-      "name": "Subdermal haptic feedback layer, both hands (professional installation)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Subdermal haptic feedback layer, both hands (professional installation)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Forge-Smith Collective Ablonite Push Dagger 'Bone Key'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Grandmother",
-    "Ouroboros Energy Power Distribution Trunk Network",
-    "Ferrogate Transit",
-    "Geartown",
-    "Honest Burger",
-    "The Pure Hand",
-    "Compass Rose"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Mixed ancestry: Hispanic/Latin American (28.8%), Southeast Asian (26.8%), Indigenous American (26.2%), Central Asian (9.2%), and Sub-Saharan African (9.0%). This global combination produces warm medium-brown skin with golden undertones and subtle complexity, with facial features reflecting the multifaceted genetic blend—wider nose structure, fuller lips, and eye shape influenced by both Southeast Asian and Indigenous American ancestry, combined with the warm tone palette from the African and Latin American heritage.",
-    "height_cm": 188,
-    "weight_kg": 82,
-    "build": "Wide-shouldered and solidly built with working muscle definition through the chest and forearms; physique shaped by hands-on mechanical labor rather than gym work. Large hands with callused palms.",
-    "hair_color": "Black, natural",
-    "hair_style": "Undercut — close-cropped on sides, longer on top (approximately 5cm), usually pushed back; frequently has a streak of engine grease through it",
-    "hair_length": "Medium",
-    "eye_color": "Amber and dark brown with geometric repeating pattern (geneware); iris displays interlocking angular motifs inspired by Fula textile weaving",
-    "skin_tone": "Warm medium brown with golden undertones, reflecting the blended ancestry of Hispanic/Latin American, Southeast Asian, Indigenous American, Central Asian, and Sub-Saharan African heritage; sun-exposed from outdoor work",
-    "complexion": "Clean-shaven or light stubble; sun-exposed face with the weathered look of someone who works outdoors under shop lights, with ancestry-informed features including wider nose structure and fuller lips; no significant scarring on face. Expression defaults to calm concentration, sometimes read as pensiveness.",
-    "distinguishing_marks": [
-      "Patterned geometric irises in amber and dark brown (both eyes) — distinctive geneware mod chosen at age 21",
-      "Chrome retractable claw fingertips at all ten fingertip positions — visible as small metallic caps when retracted, metallic shine at the cuticle line",
-      "Callused hands throughout palm and fingertips from years of mechanical work",
-      "Oil stains on knuckles and under fingernails (chronic, not fully cleanable)"
-    ],
-    "visible_augmentations": "Geometric patterned iris geneware is immediately striking and distinctive. Chrome claw fingertip implants visible as metallic caps at fingertips when retracted; the junction between flesh and chrome visible under shop lighting. Subdermal haptic feedback layer in hands is not visibly apparent but may be inferred from the precision of his hand movements and occasional micro-tremors when he's concentrating intensely on vibration feedback from machinery.",
-    "posture_movement": "Carries himself with the relaxed confidence of someone comfortable in his own body and more comfortable around machines than people. Stands with weight balanced, shoulders back but not stiff. Moves deliberately and precisely; tends to remain still while listening or observing before acting. Hands are rarely completely at rest — fidgets with tools, wrenches, or small objects. When working, movements are economical and fluid; when socially uncomfortable, becomes hyperaware of his hands.",
-    "clothing_style": "Tier 4 working-class utilitarian. Standard uniform: reinforced canvas work pants (dark gray or black, multiple cargo pockets, engine-stained), steel-toed boots (practical, worn but maintained), tight-fit compression shirt under a sleeveless work vest or loose overshirt (usually automotive-branded or generic gray/black, patches from tool suppliers or small local businesses). Carries a canvas tool bag across his body when moving between bays. No jewelry except occasionally a woven cord bracelet (Fula pattern, possibly a gift from his grandmother). Grooming is functional rather than fashionable — he washes his hands obsessively but doesn't spend money on appearance beyond basic maintenance."
-  },
-  "image_prompt": "Ah-lam Ibarra-Ixchel, 188cm tall mechanic with warm medium-brown skin with golden undertones, blended Hispanic/Latin American, Southeast Asian, Indigenous American, Central Asian and Sub-Saharan African heritage. Black undercut hair with engine grease streaks, pushed back. Striking geometric patterned irises in amber and dark brown with interlocking angular Fula textile-inspired motifs. Wider nose structure, fuller lips, sun-exposed weathered face with light stubble. Chrome retractable claw fingertip implants visible as metallic caps at fingertips, callused oil-stained hands. Solidly muscular build from mechanical labor. Wearing reinforced dark gray canvas work pants with cargo pockets, tight-fit compression shirt under gray automotive work vest, steel-toed boots. Woven Fula pattern bracelet on wrist. Standing in neon-lit GLMZ garage bay with shop lights casting cool fluorescent glow, relaxed confident posture, hands at rest but visibly augmented, calm concentrated expression, surrounded by machinery and chrome. Film noir mechanical workshop atmosphere, neo-noir urban aesthetic --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 28.8,
-    "Southeast Asian": 26.8,
-    "Indigenous American": 26.2,
-    "Central Asian": 9.2,
-    "Sub-Saharan African": 9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "Caribbean": {
-        "Puerto Rican": 3.2,
-        "Dominican": 3.5
-      },
-      "South American": {
-        "Argentine": 7.5
-      },
-      "Central American": {
-        "Salvadoran": 14.6
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 10.5
-      },
-      "Indonesian": {
-        "Javanese": 3.5
-      },
-      "Thai": {
-        "Thai": 12.8
-      }
-    },
-    "Indigenous American": {
-      "Great Lakes Nations": {
-        "Ojibwe": 23.2,
-        "Ho-Chunk": 3
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Kalmyk": 5.6,
-        "Mongolian": 3.6
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Cameroonian": 6.9,
-        "Gabonese": 2.1
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6487e219db0b91a9c9180e6",
+    "type":  "character",
+    "name":  "Ah-lam Ibarra-Ixchel",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Freelance mechanic specializing in personal mobility rigs and modified transit vehicles, operates from a rented bay in Geartown",
+    "age":  23,
+    "status":  "active",
+    "location":  "Geartown â€” rents Bay 7 in the Corrigan\u0027s Collective workshop block, near Milwaukee and North Ave",
+    "description":  "Ah-lam Ibarra-Ixchel is a young man who looks like he was built for a different era â€” wide shoulders, large hands, a face that defaults to an expression of calm concentration that people sometimes mistake for slowness until they watch him work. His skin is a medium brown with warm undertones, his black hair cut close on the sides and longer on top, usually pushed back with a stripe of grease he hasn\u0027t noticed. His most striking feature is a patterned iris geneware mod: his eyes display a geometric repeating motif in amber and dark brown that he chose at twenty-one to mirror a pattern from his Fula grandmother\u0027s weaving. He has retractable claw fingertip implants â€” not geneware, hard chrome â€” that he uses as impromptu tools when he doesn\u0027t have the right implement to hand, which is more often than he\u0027d like.\n\nHe is good at his job in the instinctive way that some people are, the kind of mechanic who listens to an engine before he looks at it. He is also twenty-three and running a one-person operation on a borrowed reputation and a rented bay, which means he is perpetually overextended, slightly too eager to please, and deeply anxious about money in the specific way of someone who grew up without it and is terrified of returning to that. He is honest to the point of commercial self-sabotage â€” he will tell you if the repair you want isn\u0027t the repair you need, even if the repair you need costs less.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Failing publicly and losing the bay â€” being back to nothing with a reputation attached to the nothing",
+                                          "Discovering he is not actually as good as he thinks he is"
+                                      ],
+                       "core_desires":  [
+                                            "A legitimate contract â€” something that proves the business is real and not just provisional",
+                                            "To be taken seriously by people who have been doing this longer than he has been alive"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Throws himself into the technical problem in front of him when anxious about larger ones",
+                                                 "Compulsive honesty as a form of self-protection â€” if he\u0027s always honest he can never be accused of the thing he fears most, which is being a fraud"
+                                             ],
+                       "blind_spots":  [
+                                           "Consistently undercharges for his labor because he doesn\u0027t feel entitled to charge what he\u0027s worth",
+                                           "Doesn\u0027t recognize when clients are testing him versus genuinely asking for advice"
+                                       ],
+                       "secret":  "The mentor who taught him â€” the retired mechanic in Ironvein â€” left him one thing when he retired: a handwritten manual covering modifications to Ferrogate vehicles that Ferrogate\u0027s own engineers don\u0027t know about, based on thirty years of unauthorized observation. Lautaro hasn\u0027t decided what to do with it. He knows it\u0027s valuable. He knows it might be dangerous."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Technical precision about anything mechanical; vague and slightly fumbling about everything else. Spanish words surface when he\u0027s excited about something. Uses \u0027like\u0027 as a filler when he\u0027s not in his area of expertise.",
+                            "cadence":  "Slow and deliberate when explaining something, speeds up when he\u0027s in the middle of a job and someone is asking him questions he doesn\u0027t have time for",
+                            "verbal_tics":  [
+                                                "\u0027So what\u0027s happening is â€”\u0027",
+                                                "Wiping his hands on his coveralls mid-sentence",
+                                                "\u0027Which is fine. That\u0027s fixable.\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Okay, so what you told me is wrong, and I don\u0027t mean that badly â€” whoever told you that just didn\u0027t know. What\u0027s actually wrong is the coupling on the secondary drive. Which is fine. Cheaper, actually. You want me to show you?\u0027",
+                                                  "\u0027I charge honest prices. Which means I charge less than I should. My mentor said that would change when I grew up. I\u0027m working on it.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client brought in a vehicle with a hidden compartment he wasn\u0027t told about; whatever was in it is gone but the compartment is still there and someone has been asking around Geartown whether anyone has seen the vehicle",
+                        "He has quietly begun decoding the inherited manual and has found a modification that would make any Ferrogate tram capable of running on a completely separate unmonitored power grid â€” and he does not know what to do with this information"
+                    ],
+    "narrative_function":  "Practical resource â€” can repair, modify, or assess vehicles and mechanical systems. Can serve as an entry point into Geartown\u0027s working community, a quest giver when a client\u0027s vehicle holds something unexpected, or a character study in precarious early-adult ambition.",
+    "augmentations":  "Patterned iris geneware (amber/dark brown geometric, Fula textile-inspired). Chrome retractable claw fingertips (both hands, tool-grade, not combat-optimized â€” thinner and more precise than fighting claws). Subdermal haptic feedback layer in both hands (allows him to feel vibration and heat differential in machinery more precisely â€” his most important professional tool).",
+    "daily_life":  "In the bay by 07:00, takes whatever work comes through by word of mouth and via a listing on the Geartown local mesh. Eats one meal a day at Benedita\u0027s cart. Studies Ferrogate Transit vehicle schematics at night because he wants to bid for transit maintenance contracts but doesn\u0027t have the certification yet.",
+    "affiliation":  "Independent (freelance); informal apprenticeship-era ties to a retired mechanic in Ironvein who taught him the trade",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  8,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  5,
+                                 "creativity":  7,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  4,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -1,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  2,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "gifted tradesperson",
+                               "anxious ambitious",
+                               "radical honesty",
+                               "inherited secret"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always tell the client the truth about what their vehicle needs, even when it costs him the larger job",
+                                              "Don\u0027t touch anything in a vehicle he wasn\u0027t asked to touch",
+                                              "If someone seems afraid, ask if they need him to not record the work order â€” he\u0027s done it before"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite clarification of what he can and can\u0027t do",
+                                                 "Transparent statement of his concern",
+                                                 "Refuses the job and refunds any deposit",
+                                                 "In genuine danger: freezes, then runs â€” he is not a fighter"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professional and slightly formal, warms up fast if they show any interest in the work itself",
+                                                   "friends":  "Relaxed and surprisingly funny, generous with his time and knowledge"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Focuses intensely on whatever is in front of him",
+                                                "medium":  "Talks through the problem aloud even if no one is listening",
+                                                "high":  "Goes completely silent and either solves the problem or shuts down entirely"
+                                            },
+                       "contradictions":  [
+                                              "Deeply afraid of being seen as a fraud while being constitutionally incapable of being dishonest"
+                                          ],
+                       "habits":  [
+                                      "Tests every tool before he uses it even if he used it an hour ago",
+                                      "Says \u0027good morning\u0027 to the bay itself when he opens it up, which he would deny if asked"
+                                  ],
+                       "breaking_points":  [
+                                               "Being accused of deliberately overcharging or doing unnecessary work"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Patterned iris geneware (amber/dark brown geometric)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Patterned iris geneware (amber/dark brown geometric)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Chrome retractable claw fingertips, tool-grade (both hands)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Chrome retractable claw fingertips, tool-grade (both hands)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Subdermal haptic feedback layer, both hands (professional installation)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Subdermal haptic feedback layer, both hands (professional installation)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Snapper-22 \u0027Cricket\u0027",
+                            "Forge-Smith Collective Ablonite Push Dagger \u0027Bone Key\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Grandmother",
+                             "Ouroboros Energy Power Distribution Trunk Network",
+                             "Ferrogate Transit",
+                             "Geartown",
+                             "Honest Burger",
+                             "The Pure Hand",
+                             "Compass Rose"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Mixed ancestry: Hispanic/Latin American (28.8%), Southeast Asian (26.8%), Indigenous American (26.2%), Central Asian (9.2%), and Sub-Saharan African (9.0%). This global combination produces warm medium-brown skin with golden undertones and subtle complexity, with facial features reflecting the multifaceted genetic blendâ€”wider nose structure, fuller lips, and eye shape influenced by both Southeast Asian and Indigenous American ancestry, combined with the warm tone palette from the African and Latin American heritage.",
+                                 "height_cm":  188,
+                                 "weight_kg":  82,
+                                 "build":  "Wide-shouldered and solidly built with working muscle definition through the chest and forearms; physique shaped by hands-on mechanical labor rather than gym work. Large hands with callused palms.",
+                                 "hair_color":  "Black, natural",
+                                 "hair_style":  "Undercut â€” close-cropped on sides, longer on top (approximately 5cm), usually pushed back; frequently has a streak of engine grease through it",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Amber and dark brown with geometric repeating pattern (geneware); iris displays interlocking angular motifs inspired by Fula textile weaving",
+                                 "skin_tone":  "Warm medium brown with golden undertones, reflecting the blended ancestry of Hispanic/Latin American, Southeast Asian, Indigenous American, Central Asian, and Sub-Saharan African heritage; sun-exposed from outdoor work",
+                                 "complexion":  "Clean-shaven or light stubble; sun-exposed face with the weathered look of someone who works outdoors under shop lights, with ancestry-informed features including wider nose structure and fuller lips; no significant scarring on face. Expression defaults to calm concentration, sometimes read as pensiveness.",
+                                 "distinguishing_marks":  [
+                                                              "Patterned geometric irises in amber and dark brown (both eyes) â€” distinctive geneware mod chosen at age 21",
+                                                              "Chrome retractable claw fingertips at all ten fingertip positions â€” visible as small metallic caps when retracted, metallic shine at the cuticle line",
+                                                              "Callused hands throughout palm and fingertips from years of mechanical work",
+                                                              "Oil stains on knuckles and under fingernails (chronic, not fully cleanable)"
+                                                          ],
+                                 "visible_augmentations":  "Geometric patterned iris geneware is immediately striking and distinctive. Chrome claw fingertip implants visible as metallic caps at fingertips when retracted; the junction between flesh and chrome visible under shop lighting. Subdermal haptic feedback layer in hands is not visibly apparent but may be inferred from the precision of his hand movements and occasional micro-tremors when he\u0027s concentrating intensely on vibration feedback from machinery.",
+                                 "posture_movement":  "Carries himself with the relaxed confidence of someone comfortable in his own body and more comfortable around machines than people. Stands with weight balanced, shoulders back but not stiff. Moves deliberately and precisely; tends to remain still while listening or observing before acting. Hands are rarely completely at rest â€” fidgets with tools, wrenches, or small objects. When working, movements are economical and fluid; when socially uncomfortable, becomes hyperaware of his hands.",
+                                 "clothing_style":  "Tier 4 working-class utilitarian. Standard uniform: reinforced canvas work pants (dark gray or black, multiple cargo pockets, engine-stained), steel-toed boots (practical, worn but maintained), tight-fit compression shirt under a sleeveless work vest or loose overshirt (usually automotive-branded or generic gray/black, patches from tool suppliers or small local businesses). Carries a canvas tool bag across his body when moving between bays. No jewelry except occasionally a woven cord bracelet (Fula pattern, possibly a gift from his grandmother). Grooming is functional rather than fashionable â€” he washes his hands obsessively but doesn\u0027t spend money on appearance beyond basic maintenance."
+                             },
+    "image_prompt":  "Ah-lam Ibarra-Ixchel, 188cm tall mechanic with warm medium-brown skin with golden undertones, blended Hispanic/Latin American, Southeast Asian, Indigenous American, Central Asian and Sub-Saharan African heritage. Black undercut hair with engine grease streaks, pushed back. Striking geometric patterned irises in amber and dark brown with interlocking angular Fula textile-inspired motifs. Wider nose structure, fuller lips, sun-exposed weathered face with light stubble. Chrome retractable claw fingertip implants visible as metallic caps at fingertips, callused oil-stained hands. Solidly muscular build from mechanical labor. Wearing reinforced dark gray canvas work pants with cargo pockets, tight-fit compression shirt under gray automotive work vest, steel-toed boots. Woven Fula pattern bracelet on wrist. Standing in neon-lit GLMZ garage bay with shop lights casting cool fluorescent glow, relaxed confident posture, hands at rest but visibly augmented, calm concentrated expression, surrounded by machinery and chrome. Film noir mechanical workshop atmosphere, neo-noir urban aesthetic --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  28.8,
+                             "Southeast Asian":  26.8,
+                             "Indigenous American":  26.2,
+                             "Central Asian":  9.2,
+                             "Sub-Saharan African":  9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "Caribbean":  {
+                                                                              "Puerto Rican":  3.2,
+                                                                              "Dominican":  3.5
+                                                                          },
+                                                            "South American":  {
+                                                                                   "Argentine":  7.5
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  14.6
+                                                                                 }
+                                                        },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  10.5
+                                                                   },
+                                                    "Indonesian":  {
+                                                                       "Javanese":  3.5
+                                                                   },
+                                                    "Thai":  {
+                                                                 "Thai":  12.8
+                                                             }
+                                                },
+                            "Indigenous American":  {
+                                                        "Great Lakes Nations":  {
+                                                                                    "Ojibwe":  23.2,
+                                                                                    "Ho-Chunk":  3
+                                                                                }
+                                                    },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Kalmyk":  5.6,
+                                                                   "Mongolian":  3.6
+                                                               }
+                                              },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Cameroonian":  6.9,
+                                                                                "Gabonese":  2.1
+                                                                            }
+                                                    }
+                        },
+    "tier":  "2"
 }

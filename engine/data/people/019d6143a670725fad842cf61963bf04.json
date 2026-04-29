@@ -1,372 +1,383 @@
-{
-  "id": "019d6143a670725fad842cf61963bf04",
-  "type": "character",
-  "name": "Akachi Subramaniam",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Forced entry and close-quarters combat specialist — breacher",
-  "age": 45,
-  "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures, near Fullerton and Damen",
-  "description": "Akachi Subramaniam is average height but with a presence that fills more space than the body accounts for. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a breacher out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Akachi Subramaniam describe him as a precision instrument — point him at a problem and get out of the way.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.33,
-      "ideal": 0.65,
-      "id": 0.61,
-      "shadow": 0.48,
-      "mask": 0.21,
-      "ghost": 0.48
-    },
-    "core_fears": [
-      "Going cyberpsycho — losing the boundary between human and machine",
-      "Becoming obsolete as augmentation technology outpaces their chrome",
-      "That their reputation is built on luck, not skill, and the luck is finite"
-    ],
-    "core_desires": [
-      "To find the person who burned them and make it educational",
-      "Stability — a place to sleep that's the same place two nights running",
-      "To build something that outlasts the next contract cycle"
-    ],
-    "coping_mechanisms": [
-      "Maintains weapons obsessively — cleaning guns is meditation",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat",
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
-    ],
-    "blind_spots": [
-      "Assumes everyone has an angle because they always have an angle",
-      "Cannot accept help without interpreting it as leverage",
-      "Trusts technology more than people — machines don't betray"
-    ],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
-    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
-    "verbal_tics": [
-      "Whispers when angry — the quieter the voice, the worse the situation",
-      "Uses old pre-collapse slang that nobody else remembers"
-    ],
-    "example_lines": [
-      "\"Doors are polite suggestions. I'm not polite.\"",
-      "\"First through the door, last to flinch. That's the job description.\"",
-      "\"Close quarters is where plans go to die. I make sure it's their plans, not ours.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Nurlan Holmberg-Dembele is offered a contract that would clear all their debts — the target is someone they respect",
-    "A crew member from Nurlan Holmberg-Dembele's past shows up in GLMZ, carrying old grievances and new chrome",
-    "A dead drop Nurlan Holmberg-Dembele maintains is found and cleaned out — whoever did it now has leverage"
-  ],
-  "narrative_function": "Nurlan Holmberg-Dembele is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
-  "augmentations": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces. Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
-  "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Semi-independent — has standing arrangements with several crews; The Third Rail",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 7
-      },
-      "agility": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 8
-      },
-      "endurance": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 9
-      },
-      "reflexes": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 8
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 6,
-        "augmented": 2,
-        "effective": 4
-      },
-      "perception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 8
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 1,
-        "effective": 5
-      },
-      "technical": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 10
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 8
-      },
-      "intimidation": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 6
-      },
-      "deception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 8
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 0,
-        "effective": 9
-      }
-    },
-    "personality": {
-      "aggression": 0.84,
-      "caution": 0.77,
-      "loyalty": 0.52,
-      "greed": 0.5,
-      "empathy": 0.48
-    },
-    "drives": [
-      "power",
-      "money",
-      "reputation"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 8,
-      "loyalty_break": 10
-    },
-    "strengths": [
-      "pain tolerance beyond normal limits",
-      "mechanical aptitude — can repair or modify almost anything"
-    ],
-    "weaknesses": [
-      "emotional volatility under extreme stress",
-      "chronic insomnia affecting long-term performance"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "breacher",
-      "tier-3",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Refuses contracts that require operating inside The Spires — too much surveillance"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Advocates caution to others but takes insane risks personally — double standard they can't see",
-      "Values loyalty intensely but has betrayed someone in the past to survive"
-    ],
-    "habits": [
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
-    ],
-    "breaking_points": [
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Running out of options — no contacts, no money, no safe house, no way out",
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Gecko-grip fingertip implants and toe pads",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "refurbished",
-      "installed_date": "",
-      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
-      "replaces": ""
-    },
-    {
-      "name": "Bioware adrenaline regulator",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Face": 0.9,
-    "Charmer": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Narrows",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "registered_firearms": [
-    "Meridian Munitions Urban Carbine MUC-6 'Crosswalk'",
-    "Kang-Petrov Arms KPR-410 Judge 'Bailiff'"
-  ],
-  "related_entities": [
-    "The Narrows Compact",
-    "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
-    "Slagworks Industrial",
-    "Pellucid Systems",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Genetically balanced across six ancestry groups with nearly equal distribution: East Asian (21.9%), Hispanic/Latin American (21.7%), South Asian (21.7%), Sub-Saharan African (18.4%), Northern European (10.2%), and Southeast Asian (6.1%). This rare diaspora blend creates warm deep brown skin with golden undertones, a sophisticated integration of East and South Asian facial structure combined with African cheekbone and jaw prominence, with subtle Northern European and Southeast Asian features creating a uniquely multifaceted phenotype.",
-    "height_cm": 178,
-    "weight_kg": 82,
-    "build": "Compact and dense — lean muscle with functional bulk through the shoulders and forearms. The build of someone who moves through tight spaces and uses their body as a tool. No excess weight, all angles.",
-    "hair_color": "Dark brown with silver threading at the temples",
-    "hair_style": "Cropped close to the scalp, practical and severe",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with slight amber undertone, alert and dark-adapted from nocturnal living",
-    "skin_tone": "Warm deep brown with golden undertones — melanin-rich complexion reflecting the balanced ancestry mix. Golden warmth visible at the temples, jawline, and cheekbones from the combined East Asian, South Asian, Hispanic, and African genetic contributions.",
-    "complexion": "Weathered and mapped with old scars across deep brown canvas. The face reads as someone who has taken impacts and kept moving. Facial structure integrates East and South Asian cheekbone prominence with broader African jaw characteristics and slight Southeast Asian angularity. Slightly hooded eyes with visible epicanthic fold. High, prominent cheekbones with warm undertones. Stubble is permanent fixture — a day or two of growth, never clean-shaven, never a full beard. Stress lines around the eyes from squinting in low light and high focus.",
-    "distinguishing_marks": [
-      "Diagonal scar across the left cheekbone, approximately 8cm long, pale silver against deep brown skin — blunt-force trauma from early twenties",
-      "Thin scar running from the corner of his left eye down toward the jaw line, about 5cm — blade work, healed well",
-      "Collection of smaller scars across his knuckles and the back of both hands — accumulated impact damage, some recent",
-      "Burn scar on the inside of his right forearm, roughly 4cm diameter, darker than surrounding skin — thermal weapon contact or explosive blowback",
-      "Faint tattoo on his left inner wrist: three vertical lines in black, barely visible unless light catches it at an angle — Narrows marker, origin uncertain even to him"
-    ],
-    "visible_augmentations": "Chrome fingertip implants visible on both hands — the fingertips and portions of the first knuckle display polished titanium-colored synthetic material with fine grip texture visible under the skin. Matching augmentation across the ball of each foot, sometimes visible when wearing minimal footwear. No effort made to conceal either. The implants have a worn, matte finish from constant contact with climbing surfaces.",
-    "posture_movement": "Compact and economical. Doesn't waste motion — shoulders stay slightly forward, weight balanced on the balls of his feet even when stationary. Eyes track movement in his peripheral constantly, a habit from tight-quarters work. When he moves through doorways or narrow spaces, he moves sideways or at angles, a learned efficiency. In conversation, he is still — minimal hand movement, minimal facial expression, all attention concentrated. The bioware adrenaline regulator shows as an absence of fidgeting, a deliberate calmness that reads as practiced rather than natural.",
-    "clothing_style": "Tier 4 working-class pragmatism with Tier 3 aspiration. Black matte combat pants with reinforced thigh pockets and drop-leg rig points — worn but maintained. Fitted tactical shirt in dark gray or charcoal, usually long-sleeve despite warmth to conceal the forearm augmentation and scars. Unbuttoned overshirt in black Cordura-composite, sleeveless or removable, branded with faint wear patterns where gear harnesses have rubbed. Ankle boots with reinforced toecaps — practical climbing footwear. No visible corporate branding. Minimal jewelry except a worn steel cuff on his left wrist, dented but functional. Carries himself like the gear is not a costume but an extension of his body."
-  },
-  "image_prompt": "Akachi Subramaniam, GLMZ, portrait of a mixed-heritage operative with warm deep brown skin and golden undertones. South Asian and East Asian cheekbone structure balanced with African jaw prominence, creating striking angular features. Slightly hooded eyes with amber-brown depth, day-old stubble across strong jaw. Diagonal scar across left cheekbone, thin blade scar from eye toward jaw. Short dark brown hair with silver temples. Chrome titanium fingertip implants visible on both hands showing wear from climbing work. Wearing dark charcoal tactical long-sleeve shirt under sleeveless black Cordura overshirt, black reinforced combat pants. Worn steel cuff on left wrist. Posture compact and economical, shoulders slightly forward, alert and controlled. Nocturnal lighting casting sharp shadows across scarred, determined features. Urban rooftop or narrow corridor setting, Great Lakes Metropolitan Zone night aesthetic. Tense, professional, lethal efficiency. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 21.9,
-    "Hispanic/Latin American": 21.7,
-    "South Asian": 21.7,
-    "Sub-Saharan African": 18.4,
-    "Northern European": 10.2,
-    "Southeast Asian": 6.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Japanese": {
-        "Japanese": 7.1
-      },
-      "Chinese": {
-        "Fujianese": 8.8,
-        "Mandarin Northern": 1
-      },
-      "Korean": {
-        "Korean": 5
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 13.6
-      },
-      "South American": {
-        "Peruvian": 6.1,
-        "Ecuadorian": 0.6
-      },
-      "Central American": {
-        "Honduran": 0.7,
-        "Salvadoran": 0.7
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 21.7
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 12.1
-      },
-      "West African": {
-        "Senegalese": 3.9
-      },
-      "Southern African": {
-        "Zimbabwean": 2.4
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Welsh": 10.2
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Sumatran": 6.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a670725fad842cf61963bf04",
+    "type":  "character",
+    "name":  "Akachi Subramaniam",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Forced entry and close-quarters combat specialist â€” breacher",
+    "age":  45,
+    "status":  "active",
+    "location":  "The Narrows â€” cramped residential corridors between megastructures, near Fullerton and Damen",
+    "description":  "Akachi Subramaniam is average height but with a presence that fills more space than the body accounts for. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible â€” gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces â€” and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a breacher out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Akachi Subramaniam describe him as a precision instrument â€” point him at a problem and get out of the way.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Going cyberpsycho â€” losing the boundary between human and machine",
+                                          "Becoming obsolete as augmentation technology outpaces their chrome",
+                                          "That their reputation is built on luck, not skill, and the luck is finite"
+                                      ],
+                       "core_desires":  [
+                                            "To find the person who burned them and make it educational",
+                                            "Stability â€” a place to sleep that\u0027s the same place two nights running",
+                                            "To build something that outlasts the next contract cycle"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Maintains weapons obsessively â€” cleaning guns is meditation",
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat",
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Cannot accept help without interpreting it as leverage",
+                                           "Trusts technology more than people â€” machines don\u0027t betray"
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Terse to the point of rudeness. Treats words like ammunition â€” expensive and not to be wasted.",
+                            "cadence":  "Rapid and dense â€” information-heavy sentences that demand attention.",
+                            "verbal_tics":  [
+                                                "Whispers when angry â€” the quieter the voice, the worse the situation",
+                                                "Uses old pre-collapse slang that nobody else remembers"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Doors are polite suggestions. I\u0027m not polite.\"",
+                                                  "\"First through the door, last to flinch. That\u0027s the job description.\"",
+                                                  "\"Close quarters is where plans go to die. I make sure it\u0027s their plans, not ours.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Nurlan Holmberg-Dembele is offered a contract that would clear all their debts â€” the target is someone they respect",
+                        "A crew member from Nurlan Holmberg-Dembele\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
+                        "A dead drop Nurlan Holmberg-Dembele maintains is found and cleaned out â€” whoever did it now has leverage"
+                    ],
+    "narrative_function":  "Nurlan Holmberg-Dembele is a pressure point â€” the kind of character whose choices ripple outward. When he makes a decision, other people\u0027s lives change. That weight is the engine of his stories.",
+    "augmentations":  "Gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces. Bioware adrenaline regulator â€” keeps calm under fire, controlled hormone release",
+    "daily_life":  "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
+    "affiliation":  "Semi-independent â€” has standing arrangements with several crews; The Third Rail",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  4,
+                                                    "augmented":  2,
+                                                    "effective":  7
+                                                },
+                                   "agility":  {
+                                                   "base":  8,
+                                                   "augmented":  3,
+                                                   "effective":  8
+                                               },
+                                   "endurance":  {
+                                                     "base":  4,
+                                                     "augmented":  3,
+                                                     "effective":  9
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  5,
+                                                    "augmented":  0,
+                                                    "effective":  8
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  6,
+                                                      "augmented":  2,
+                                                      "effective":  4
+                                                  },
+                                 "perception":  {
+                                                    "base":  5,
+                                                    "augmented":  2,
+                                                    "effective":  8
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  1,
+                                                   "effective":  5
+                                               },
+                                 "technical":  {
+                                                   "base":  6,
+                                                   "augmented":  0,
+                                                   "effective":  10
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  6,
+                                                  "augmented":  0,
+                                                  "effective":  8
+                                              },
+                                 "intimidation":  {
+                                                      "base":  6,
+                                                      "augmented":  3,
+                                                      "effective":  6
+                                                  },
+                                 "deception":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  8
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  0,
+                                                 "effective":  9
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.84,
+                                      "caution":  0.77,
+                                      "loyalty":  0.52,
+                                      "greed":  0.5,
+                                      "empathy":  0.48
+                                  },
+                  "drives":  [
+                                 "power",
+                                 "money",
+                                 "reputation"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  8,
+                                     "loyalty_break":  10
+                                 },
+                  "strengths":  [
+                                    "pain tolerance beyond normal limits",
+                                    "mechanical aptitude â€” can repair or modify almost anything"
+                                ],
+                  "weaknesses":  [
+                                     "emotional volatility under extreme stress",
+                                     "chronic insomnia affecting long-term performance"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "breacher",
+                               "tier-3",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Will work with anyone once. Second time requires vouching from someone trusted.",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Competitive but reliable. Will challenge decisions but never abandon the team.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Advocates caution to others but takes insane risks personally â€” double standard they can\u0027t see",
+                                              "Values loyalty intensely but has betrayed someone in the past to survive"
+                                          ],
+                       "habits":  [
+                                      "Takes a specific route home every time, varying only one block per trip â€” paranoia as lifestyle",
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Sleeps with one hand on a weapon â€” has done this for so long it\u0027s not deliberate anymore"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Running out of options â€” no contacts, no money, no safe house, no way out",
+                                               "Complete isolation â€” cut off from network, contacts, and purpose simultaneously"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Gecko-grip fingertip implants and toe pads",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "refurbished",
+                                    "installed_date":  "",
+                                    "description":  "Gecko-grip fingertip implants and toe pads â€” can climb smooth surfaces",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Bioware adrenaline regulator",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Bioware adrenaline regulator â€” keeps calm under fire, controlled hormone release",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Face":  0.9,
+                       "Charmer":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Narrows",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Meridian Munitions Urban Carbine MUC-6 \u0027Crosswalk\u0027",
+                            "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Meridian Munitions Urban Carbine MUC-6 \u0027Crosswalk\u0027",
+                                "Kang-Petrov Arms KPR-410 Judge \u0027Bailiff\u0027"
+                            ],
+    "related_entities":  [
+                             "The Narrows Compact",
+                             "Zheng-Dao Heavy Industries Gecko Ascender GA-4",
+                             "Slagworks Industrial",
+                             "Pellucid Systems",
+                             "GLMZ"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Genetically balanced across six ancestry groups with nearly equal distribution: East Asian (21.9%), Hispanic/Latin American (21.7%), South Asian (21.7%), Sub-Saharan African (18.4%), Northern European (10.2%), and Southeast Asian (6.1%). This rare diaspora blend creates warm deep brown skin with golden undertones, a sophisticated integration of East and South Asian facial structure combined with African cheekbone and jaw prominence, with subtle Northern European and Southeast Asian features creating a uniquely multifaceted phenotype.",
+                                 "height_cm":  178,
+                                 "weight_kg":  82,
+                                 "build":  "Compact and dense â€” lean muscle with functional bulk through the shoulders and forearms. The build of someone who moves through tight spaces and uses their body as a tool. No excess weight, all angles.",
+                                 "hair_color":  "Dark brown with silver threading at the temples",
+                                 "hair_style":  "Cropped close to the scalp, practical and severe",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with slight amber undertone, alert and dark-adapted from nocturnal living",
+                                 "skin_tone":  "Warm deep brown with golden undertones â€” melanin-rich complexion reflecting the balanced ancestry mix. Golden warmth visible at the temples, jawline, and cheekbones from the combined East Asian, South Asian, Hispanic, and African genetic contributions.",
+                                 "complexion":  "Weathered and mapped with old scars across deep brown canvas. The face reads as someone who has taken impacts and kept moving. Facial structure integrates East and South Asian cheekbone prominence with broader African jaw characteristics and slight Southeast Asian angularity. Slightly hooded eyes with visible epicanthic fold. High, prominent cheekbones with warm undertones. Stubble is permanent fixture â€” a day or two of growth, never clean-shaven, never a full beard. Stress lines around the eyes from squinting in low light and high focus.",
+                                 "distinguishing_marks":  [
+                                                              "Diagonal scar across the left cheekbone, approximately 8cm long, pale silver against deep brown skin â€” blunt-force trauma from early twenties",
+                                                              "Thin scar running from the corner of his left eye down toward the jaw line, about 5cm â€” blade work, healed well",
+                                                              "Collection of smaller scars across his knuckles and the back of both hands â€” accumulated impact damage, some recent",
+                                                              "Burn scar on the inside of his right forearm, roughly 4cm diameter, darker than surrounding skin â€” thermal weapon contact or explosive blowback",
+                                                              "Faint tattoo on his left inner wrist: three vertical lines in black, barely visible unless light catches it at an angle â€” Narrows marker, origin uncertain even to him"
+                                                          ],
+                                 "visible_augmentations":  "Chrome fingertip implants visible on both hands â€” the fingertips and portions of the first knuckle display polished titanium-colored synthetic material with fine grip texture visible under the skin. Matching augmentation across the ball of each foot, sometimes visible when wearing minimal footwear. No effort made to conceal either. The implants have a worn, matte finish from constant contact with climbing surfaces.",
+                                 "posture_movement":  "Compact and economical. Doesn\u0027t waste motion â€” shoulders stay slightly forward, weight balanced on the balls of his feet even when stationary. Eyes track movement in his peripheral constantly, a habit from tight-quarters work. When he moves through doorways or narrow spaces, he moves sideways or at angles, a learned efficiency. In conversation, he is still â€” minimal hand movement, minimal facial expression, all attention concentrated. The bioware adrenaline regulator shows as an absence of fidgeting, a deliberate calmness that reads as practiced rather than natural.",
+                                 "clothing_style":  "Tier 4 working-class pragmatism with Tier 3 aspiration. Black matte combat pants with reinforced thigh pockets and drop-leg rig points â€” worn but maintained. Fitted tactical shirt in dark gray or charcoal, usually long-sleeve despite warmth to conceal the forearm augmentation and scars. Unbuttoned overshirt in black Cordura-composite, sleeveless or removable, branded with faint wear patterns where gear harnesses have rubbed. Ankle boots with reinforced toecaps â€” practical climbing footwear. No visible corporate branding. Minimal jewelry except a worn steel cuff on his left wrist, dented but functional. Carries himself like the gear is not a costume but an extension of his body."
+                             },
+    "image_prompt":  "Akachi Subramaniam, GLMZ, portrait of a mixed-heritage operative with warm deep brown skin and golden undertones. South Asian and East Asian cheekbone structure balanced with African jaw prominence, creating striking angular features. Slightly hooded eyes with amber-brown depth, day-old stubble across strong jaw. Diagonal scar across left cheekbone, thin blade scar from eye toward jaw. Short dark brown hair with silver temples. Chrome titanium fingertip implants visible on both hands showing wear from climbing work. Wearing dark charcoal tactical long-sleeve shirt under sleeveless black Cordura overshirt, black reinforced combat pants. Worn steel cuff on left wrist. Posture compact and economical, shoulders slightly forward, alert and controlled. Nocturnal lighting casting sharp shadows across scarred, determined features. Urban rooftop or narrow corridor setting, Great Lakes Metropolitan Zone night aesthetic. Tense, professional, lethal efficiency. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  21.9,
+                             "Hispanic/Latin American":  21.7,
+                             "South Asian":  21.7,
+                             "Sub-Saharan African":  18.4,
+                             "Northern European":  10.2,
+                             "Southeast Asian":  6.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Japanese":  {
+                                                                "Japanese":  7.1
+                                                            },
+                                               "Chinese":  {
+                                                               "Fujianese":  8.8,
+                                                               "Mandarin Northern":  1
+                                                           },
+                                               "Korean":  {
+                                                              "Korean":  5
+                                                          }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  13.6
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Peruvian":  6.1,
+                                                                                   "Ecuadorian":  0.6
+                                                                               },
+                                                            "Central American":  {
+                                                                                     "Honduran":  0.7,
+                                                                                     "Salvadoran":  0.7
+                                                                                 }
+                                                        },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  21.7
+                                                               }
+                                            },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  12.1
+                                                                            },
+                                                        "West African":  {
+                                                                             "Senegalese":  3.9
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  2.4
+                                                                             }
+                                                    },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Welsh":  10.2
+                                                                        }
+                                                  },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Sumatran":  6.1
+                                                                   }
+                                                }
+                        },
+    "tier":  "3"
 }

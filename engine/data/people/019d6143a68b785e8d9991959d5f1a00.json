@@ -1,159 +1,218 @@
-{
-  "id": "019d6143a68b785e8d9991959d5f1a00",
-  "rating": 35,
-  "vote_count": 2,
-  "type": "character",
-  "name": "Sigrid Larsd\u00F3ttir-Khoury",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Fixer - Smuggling specialist",
-  "age": 51,
-  "status": "active",
-  "location": "Old Harbor, near Lake Shore and Wacker",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Independent",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Old Harbor",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Predominantly Northern European (85.1%) with Middle Eastern (8.3%) and South Asian (6.6%) ancestry. This blend produces fair to light skin with warm undertones and a subtle olive cast. Facial structure reflects strong Nordic heritage\u2014defined jawline and prominent cheekbones\u2014refined by Middle Eastern and South Asian influences that add warmth, slight cheekbone sharpening, and gentle definition to eye shape.",
-    "height_cm": 178,
-    "weight_kg": 82,
-    "build": "Solid, compact frame with developed shoulders from decades of manual labor and lifting cargo. Not muscular, but dense\u2014the kind of physique that comes from working, not training.",
-    "hair_color": "Salt-and-pepper gray with darker roots",
-    "hair_style": "Closely cropped, practical, minimal maintenance",
-    "hair_length": "Short",
-    "eye_color": "Light blue-gray with faint amber undertone",
-    "skin_tone": "Fair to light complexion with warm undertones and subtle olive cast, reflecting Northern European majority blended with Middle Eastern and South Asian ancestry. Weathered and lined from age and stress.",
-    "complexion": "Weathered face with deep forehead creases and laugh lines around the eyes. Sparse stubble, usually a day or two of growth. Facial structure shows strong Northern European foundation\u2014defined jawline, prominent cheekbones\u2014with subtle warmth and refined definition from Middle Eastern and South Asian ancestry creating gentle sharpening across the face. A thin scar runs from left cheekbone to jaw\u2014old injury, well-healed but visible.",
-    "distinguishing_marks": [
-      "Linear scar along left cheekbone to jawline, approximately 8cm long, pale tissue",
-      "Small burn mark on right forearm, roughly coin-sized, from old industrial accident",
-      "Faded tattoo on inner left wrist\u2014Cyrillic letters, barely legible after decades"
-    ],
-    "visible_augmentations": "None visible. Likely carries subcutaneous implants for secure comms and data storage, but presents as fully organic.",
-    "posture_movement": "Deliberate, economical movements. Stands with slight forward lean as if always ready to move. Eyes constantly scanning\u2014checking exits, assessing people. Handshake firm but measured. Rarely makes sudden gestures.",
-    "clothing_style": "Tier 3 practical wear: worn synthetic jacket (dark gray, corporate-adjacent but generic), unbranded cargo pants with reinforced pockets, scuffed boots suitable for dock work. No jewelry. A faded \u03A6-conversion watch on left wrist. Dresses for function over appearance\u2014clothes are tools, not statements."
-  },
-  "image_prompt": "Sigrid Larsd\u00F3ttir-Khoury, 178cm tall weathered dock worker in GLMZ, fair skin with warm olive undertones reflecting Nordic-Middle Eastern-South Asian heritage blend, salt-and-pepper cropped hair, light blue-gray eyes with amber flecks, defined Nordic jawline with subtle Middle Eastern sharpening, prominent weathered cheekbones, deep forehead creases and laugh lines, pale scar running left cheekbone to jaw, sparse stubble, wearing dark gray worn synthetic jacket and reinforced cargo pants, scuffed work boots, faded \u03A6-conversion watch on wrist, solid compact frame, deliberate economical posture with slight forward lean, eyes scanning surroundings, industrial dock setting with neon signage and cargo containers, moody night lighting with cyan and amber accents, gritty neo-noir atmosphere, photorealistic character portrait --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Northern European": 85.1,
-    "Middle Eastern": 8.3,
-    "South Asian": 6.6
-  },
-  "ancestry_detail": {
-    "Northern European": {
-      "Germanic": {
-        "German": 85.1
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 5.5
-      },
-      "Persian": {
-        "Iranian": 2.8
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Baloch": 1.6,
-        "Sindhi": 1.9
-      },
-      "Sri Lankan": {
-        "Sinhalese": 3.1
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a68b785e8d9991959d5f1a00",
+    "rating":  35,
+    "vote_count":  2,
+    "type":  "character",
+    "name":  "Sigrid Larsdóttir-Khoury",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Fixer - Smuggling specialist",
+    "age":  51,
+    "status":  "active",
+    "location":  "Old Harbor, near Lake Shore and Wacker",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Independent",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Old Harbor",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Predominantly Northern European (85.1%) with Middle Eastern (8.3%) and South Asian (6.6%) ancestry. This blend produces fair to light skin with warm undertones and a subtle olive cast. Facial structure reflects strong Nordic heritage—defined jawline and prominent cheekbones—refined by Middle Eastern and South Asian influences that add warmth, slight cheekbone sharpening, and gentle definition to eye shape.",
+                                 "height_cm":  178,
+                                 "weight_kg":  82,
+                                 "build":  "Solid, compact frame with developed shoulders from decades of manual labor and lifting cargo. Not muscular, but dense—the kind of physique that comes from working, not training.",
+                                 "hair_color":  "Salt-and-pepper gray with darker roots",
+                                 "hair_style":  "Closely cropped, practical, minimal maintenance",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Light blue-gray with faint amber undertone",
+                                 "skin_tone":  "Fair to light complexion with warm undertones and subtle olive cast, reflecting Northern European majority blended with Middle Eastern and South Asian ancestry. Weathered and lined from age and stress.",
+                                 "complexion":  "Weathered face with deep forehead creases and laugh lines around the eyes. Sparse stubble, usually a day or two of growth. Facial structure shows strong Northern European foundation—defined jawline, prominent cheekbones—with subtle warmth and refined definition from Middle Eastern and South Asian ancestry creating gentle sharpening across the face. A thin scar runs from left cheekbone to jaw—old injury, well-healed but visible.",
+                                 "distinguishing_marks":  [
+                                                              "Linear scar along left cheekbone to jawline, approximately 8cm long, pale tissue",
+                                                              "Small burn mark on right forearm, roughly coin-sized, from old industrial accident",
+                                                              "Faded tattoo on inner left wrist—Cyrillic letters, barely legible after decades"
+                                                          ],
+                                 "visible_augmentations":  "None visible. Likely carries subcutaneous implants for secure comms and data storage, but presents as fully organic.",
+                                 "posture_movement":  "Deliberate, economical movements. Stands with slight forward lean as if always ready to move. Eyes constantly scanning—checking exits, assessing people. Handshake firm but measured. Rarely makes sudden gestures.",
+                                 "clothing_style":  "Tier 3 practical wear: worn synthetic jacket (dark gray, corporate-adjacent but generic), unbranded cargo pants with reinforced pockets, scuffed boots suitable for dock work. No jewelry. A faded Φ-conversion watch on left wrist. Dresses for function over appearance—clothes are tools, not statements."
+                             },
+    "image_prompt":  "Sigrid Larsdóttir-Khoury, 178cm tall weathered dock worker in GLMZ, fair skin with warm olive undertones reflecting Nordic-Middle Eastern-South Asian heritage blend, salt-and-pepper cropped hair, light blue-gray eyes with amber flecks, defined Nordic jawline with subtle Middle Eastern sharpening, prominent weathered cheekbones, deep forehead creases and laugh lines, pale scar running left cheekbone to jaw, sparse stubble, wearing dark gray worn synthetic jacket and reinforced cargo pants, scuffed work boots, faded Φ-conversion watch on wrist, solid compact frame, deliberate economical posture with slight forward lean, eyes scanning surroundings, industrial dock setting with neon signage and cargo containers, moody night lighting with cyan and amber accents, gritty neo-noir atmosphere, photorealistic character portrait --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Northern European":  85.1,
+                             "Middle Eastern":  8.3,
+                             "South Asian":  6.6
+                         },
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  85.1
+                                                                   }
+                                                  },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  5.5
+                                                               },
+                                                   "Persian":  {
+                                                                   "Iranian":  2.8
+                                                               }
+                                               },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Baloch":  1.6,
+                                                                  "Sindhi":  1.9
+                                                              },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  3.1
+                                                               }
+                                            }
+                        }
 }

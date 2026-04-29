@@ -1,373 +1,386 @@
-{
-  "id": "019d6143a5b8724689b51fe4b192f9aa",
-  "rating": 70,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Daksh Bautista-Vestergaard",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Freelance combat specialist — street samurai",
-  "age": 64,
-  "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
-  "description": "Daksh Bautista-Vestergaard is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 64, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a street samurai out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nDaksh Bautista-Vestergaard has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.41,
-      "id": 0.11,
-      "shadow": 0.92,
-      "mask": 0.76,
-      "ghost": 0.16
-    },
-    "core_fears": [
-      "Going cyberpsycho — losing the boundary between human and machine",
-      "The quiet — silence means something is about to go very wrong",
-      "Being identified by corporate facial recognition — living off-grid is survival"
-    ],
-    "core_desires": [
-      "To matter to someone for who they are, not what they can do",
-      "Freedom from augmentation debt — the interest compounds like a tumor",
-      "Justice — the corporate kind, where the punishment fits the profit margin"
-    ],
-    "coping_mechanisms": [
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Maintains weapons obsessively — cleaning guns is meditation",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat"
-    ],
-    "blind_spots": [
-      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
-      "Fails to notice when their own behavior mirrors the people they despise",
-      "Thinks speed can substitute for planning because it's worked so far"
-    ],
-    "secret": "Aslan Vasquez-Chatterjee murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
-  },
-  "speech_patterns": {
-    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
-    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
-    "verbal_tics": [
-      "Swears in three languages, often in the same sentence",
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation"
-    ],
-    "example_lines": [
-      "\"I don't get paid to have opinions about the target. I get paid to make them stop moving.\"",
-      "\"Chrome doesn't make you faster. Training makes you faster. Chrome just means you survive learning.\"",
-      "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A high-paying contract turns out to target someone Aslan Vasquez-Chatterjee owes a personal debt to",
-    "A dead drop Aslan Vasquez-Chatterjee maintains is found and cleaned out — whoever did it now has leverage",
-    "The fixer who handles Aslan Vasquez-Chatterjee's contracts goes silent — dead, disappeared, or turned"
-  ],
-  "narrative_function": "As a street samurai, Aslan Vasquez-Chatterjee embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Chemical analyzer in nasal passages — can identify substances by scent alone. Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
-  "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 8
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 10
-      },
-      "endurance": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 7
-      },
-      "reflexes": {
-        "base": 4,
-        "augmented": 0,
-        "effective": 7
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 7
-      },
-      "perception": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 9
-      },
-      "willpower": {
-        "base": 5,
-        "augmented": 2,
-        "effective": 7
-      },
-      "technical": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 7
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 7,
-        "augmented": 1,
-        "effective": 9
-      },
-      "intimidation": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 8
-      },
-      "deception": {
-        "base": 6,
-        "augmented": 3,
-        "effective": 8
-      },
-      "empathy": {
-        "base": 7,
-        "augmented": 2,
-        "effective": 5
-      }
-    },
-    "personality": {
-      "aggression": 0.5,
-      "caution": 0.66,
-      "loyalty": 0.95,
-      "greed": 0.98,
-      "empathy": 0.37
-    },
-    "drives": [
-      "money",
-      "survival",
-      "revenge"
-    ],
-    "thresholds": {
-      "pain": 7,
-      "stress": 4,
-      "loyalty_break": 9
-    },
-    "strengths": [
-      "pain tolerance beyond normal limits",
-      "multilingual — speaks 4+ languages fluently"
-    ],
-    "weaknesses": [
-      "emotional volatility under extreme stress",
-      "poor impulse control in specific triggers",
-      "physical limitation from incomplete augmentation"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "street samurai",
-      "tier-2",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Always has an exit route planned before agreeing to any meeting",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
-    ],
-    "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
-    ],
-    "interpersonal_modes": {
-      "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
-    },
-    "stress_responses": {
-      "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
-    ],
-    "habits": [
-      "Eats the same meal before every job — superstition masquerading as preference",
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again"
-    ],
-    "breaking_points": [
-      "Being forced to choose between a crew member and the mission — and choosing wrong",
-      "Watching someone they trained or mentored die on a job they recommended",
-      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Chemical analyzer in nasal passages",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "degraded",
-      "installed_date": "",
-      "description": "Chemical analyzer in nasal passages — can identify substances by scent alone",
-      "replaces": ""
-    },
-    {
-      "name": "Bioware adrenaline regulator",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "pristine",
-      "installed_date": "",
-      "description": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Protector": 0.7,
-    "Duelist": 0.7,
-    "Code Keeper": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Geartown",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Northern European (31.1%), Hispanic/Latin American (28.7%), Sub-Saharan African (21.3%), East Asian (11.2%), Southeast Asian (6.9%), and South Asian (0.8%) — a truly global phenotype. His face reflects authentic admixture: broad nasal bridge and pronounced cheekbone width from Sub-Saharan African ancestry, subtle epicanthic eye shape and defined cheekbone structure from East Asian heritage, Mediterranean warmth and olive undertones from Hispanic and Northern European lines, with traces of Southeast Asian refinement in facial proportions. The result is a visage that resists reduction to any single ancestry — instead presenting as a lived example of humanity's genetic interconnection.",
-    "height_cm": 177,
-    "weight_kg": 68,
-    "build": "Wiry and lean with corded forearm musculature — the build of someone who converts nervous energy into functional strength. Minimal body fat. Decades of street work have kept him spare rather than bulky.",
-    "hair_color": "Salt-and-pepper gray with black undertones",
-    "hair_style": "Kept short and practical, slicked back with a slight curl at the nape",
-    "hair_length": "Short",
-    "eye_color": "Dark brown with subtle epicanthic fold, naturally warm but hardened by age and repeated trauma",
-    "skin_tone": "Medium-rich brown complexion with golden-olive undertones — a genuine blend of Northern European warmth, Hispanic Mediterranean heritage, and Sub-Saharan African depth. The tone carries visible golden undertones from his mixed heritage without favoring any single lineage. Weathered by decades of industrial zone exposure, creating a lived-in patina that speaks to his age and experience.",
-    "complexion": "Deeply lined face — forehead, around eyes, mouth corners — a roadmap of sixty-four years of squinting, grimacing, and stress. Stubble perpetually present (usually salt-and-pepper, two days' growth). High, prominent cheekbones with width and structure reflecting Sub-Saharan African and East Asian ancestry. Nose shows broader bridge characteristic of Sub-Saharan African heritage with slight width across the bridge. Skin has the weathered texture of someone who doesn't prioritize skincare; minor acne scarring visible on cheekbones from earlier decades. Overall facial structure displays strong bone prominence balanced by heritage-derived variation in feature dimensions.",
-    "distinguishing_marks": [
-      "Diagonal scar across left cheekbone, approximately 8cm, white and slightly puckered — knife work, old enough to be pale.",
-      "Burn scar on right forearm (inner wrist to elbow) — thermal weapon discharge, irregular edges, darker tan against his base tone.",
-      "Small crescent moon scar on his left temple, barely visible unless light catches it.",
-      "Tattoo on right shoulder blade — faded geometric design in blue-black ink, pre-augmentation era, worn and blurred with age.",
-      "Needle track marks on inner elbows (historical; no longer active substance use) — thin white lines, obvious to someone who knows what to look for."
-    ],
-    "visible_augmentations": "Chrome-plated nasal duct analyzer — visible as a faint glint of polished metal at both nostrils when light hits correctly, most obvious in profile. The metal has a brushed-nickel finish and shows minor patina/scratching from field use. No visible signs of the bioware adrenaline regulator, which is subcutaneous.",
-    "posture_movement": "Restless and economical — no wasted motion, but constant small adjustments (weight shifting, hand repositioning). Sits at angles, never fully relaxing into a chair. Eyes track movement reflexively. When standing still, he appears coiled rather than relaxed. Walks with a slight forward lean, as though perpetually ready to sprint.",
-    "clothing_style": "Tier 3-4 utilitarian streetwear. Favors dark colors (blacks, grays, muted olives). Typically wears reinforced canvas tactical jackets with visible zipper pockets and stitched seams, showing wear and repair. Undershirts are plain synthetic blend or moisture-wicking synthetics. Cargo pants or modified jeans with strategic pockets and reinforced knees. Boots are worn tactical-grade — no logos, scuffed, replaced every 2-3 years. A long coat (leather or synthetic leather, weathered dark brown) over his working gear. Minimal jewelry — one silver ring on left hand, likely sentimental or lucky. No visible corpo branding. Everything is functional; nothing is fashionable."
-  },
-  "image_prompt": "Daksh Bautista-Vestergaard, 64-year-old street operative, GLMZ, medium-rich brown skin with golden-olive undertones, broad Sub-Saharan African nasal bridge, prominent high cheekbones with East Asian structure, subtle epicanthic fold dark brown eyes, salt-and-pepper gray slicked-back short hair with two-day stubble. Deep facial lines and weathering, diagonal white scar across left cheekbone, crescent scar on left temple, chrome nasal duct analyzer glinting at nostrils. Wiry lean 177cm frame, corded forearms, minimal body fat. Wearing dark weathered tactical canvas jacket with zipper pockets, reinforced cargo pants, worn tactical boots, long dark leather coat, silver ring on left hand. Coiled restless posture, slight forward lean, eyes tracking movement. Industrial Great Lakes zone lighting, neon and sodium vapor ambiance, sitting at an angle in shadows, tense focused expression. Neo-noir near-future grit and wear throughout. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Northern European": 31.1,
-    "Hispanic/Latin American": 28.7,
-    "Sub-Saharan African": 21.3,
-    "East Asian": 11.2,
-    "Southeast Asian": 6.9,
-    "South Asian": 0.8
-  },
-  "ancestry_detail": {
-    "Northern European": {
-      "Scandinavian": {
-        "Swedish": 18.3
-      },
-      "British Isles": {
-        "English": 8.6,
-        "Scottish": 4.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 21.3
-      },
-      "Caribbean": {
-        "Cuban": 7.4
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "South African": 12.3
-      },
-      "Central African": {
-        "Angolan": 7.8
-      },
-      "East African": {
-        "Kenyan": 0.8,
-        "Tanzanian": 0.4
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 11.2
-      }
-    },
-    "Southeast Asian": {
-      "Vietnamese": {
-        "Vietnamese": 0.5
-      },
-      "Indonesian": {
-        "Sundanese": 4
-      },
-      "Filipino": {
-        "Tagalog": 1.7,
-        "Ilocano": 0.7
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 0.3
-      },
-      "Indian": {
-        "Punjabi": 0.1,
-        "Kannada": 0.1
-      },
-      "Sri Lankan": {
-        "Tamil Sri Lankan": 0.3
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a5b8724689b51fe4b192f9aa",
+    "rating":  70,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Daksh Bautista-Vestergaard",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Freelance combat specialist â€” street samurai",
+    "age":  64,
+    "status":  "active",
+    "location":  "Geartown â€” industrial district of chop shops and fabricators, near North Ave and Milwaukee",
+    "description":  "Daksh Bautista-Vestergaard is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 64, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible â€” chemical analyzer in nasal passages â€” can identify substances by scent alone â€” and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a street samurai out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nDaksh Bautista-Vestergaard has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Going cyberpsycho â€” losing the boundary between human and machine",
+                                          "The quiet â€” silence means something is about to go very wrong",
+                                          "Being identified by corporate facial recognition â€” living off-grid is survival"
+                                      ],
+                       "core_desires":  [
+                                            "To matter to someone for who they are, not what they can do",
+                                            "Freedom from augmentation debt â€” the interest compounds like a tumor",
+                                            "Justice â€” the corporate kind, where the punishment fits the profit margin"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Drinks methodically â€” not to get drunk, to maintain a specific level of not-caring",
+                                                 "Maintains weapons obsessively â€” cleaning guns is meditation",
+                                                 "Connection â€” finds someone to talk to, even if it\u0027s a bartender or a cat"
+                                             ],
+                       "blind_spots":  [
+                                           "Refuses to update their mental model of people â€” first impressions calcify into permanent judgments",
+                                           "Fails to notice when their own behavior mirrors the people they despise",
+                                           "Thinks speed can substitute for planning because it\u0027s worked so far"
+                                       ],
+                       "secret":  "Aslan Vasquez-Chatterjee murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Old-fashioned formal diction â€” sounds like they learned to speak from pre-collapse recordings.",
+                            "cadence":  "Flowing and unhurried â€” talks like someone who has never been interrupted and doesn\u0027t expect to be.",
+                            "verbal_tics":  [
+                                                "Swears in three languages, often in the same sentence",
+                                                "Pauses mid-sentence to listen â€” combat habit that bleeds into conversation"
+                                            ],
+                            "example_lines":  [
+                                                  "\"I don\u0027t get paid to have opinions about the target. I get paid to make them stop moving.\"",
+                                                  "\"Chrome doesn\u0027t make you faster. Training makes you faster. Chrome just means you survive learning.\"",
+                                                  "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A high-paying contract turns out to target someone Aslan Vasquez-Chatterjee owes a personal debt to",
+                        "A dead drop Aslan Vasquez-Chatterjee maintains is found and cleaned out â€” whoever did it now has leverage",
+                        "The fixer who handles Aslan Vasquez-Chatterjee\u0027s contracts goes silent â€” dead, disappeared, or turned"
+                    ],
+    "narrative_function":  "As a street samurai, Aslan Vasquez-Chatterjee embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
+    "augmentations":  "Chemical analyzer in nasal passages â€” can identify substances by scent alone. Bioware adrenaline regulator â€” keeps calm under fire, controlled hormone release",
+    "daily_life":  "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
+    "affiliation":  "Semi-independent â€” recurring contracts with mid-tier fixers",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  4,
+                                                    "augmented":  0,
+                                                    "effective":  8
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  3,
+                                                   "effective":  10
+                                               },
+                                   "endurance":  {
+                                                     "base":  4,
+                                                     "augmented":  2,
+                                                     "effective":  7
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  4,
+                                                    "augmented":  0,
+                                                    "effective":  7
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  5,
+                                                      "augmented":  3,
+                                                      "effective":  7
+                                                  },
+                                 "perception":  {
+                                                    "base":  5,
+                                                    "augmented":  2,
+                                                    "effective":  9
+                                                },
+                                 "willpower":  {
+                                                   "base":  5,
+                                                   "augmented":  2,
+                                                   "effective":  7
+                                               },
+                                 "technical":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  7
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  7,
+                                                  "augmented":  1,
+                                                  "effective":  9
+                                              },
+                                 "intimidation":  {
+                                                      "base":  3,
+                                                      "augmented":  2,
+                                                      "effective":  8
+                                                  },
+                                 "deception":  {
+                                                   "base":  6,
+                                                   "augmented":  3,
+                                                   "effective":  8
+                                               },
+                                 "empathy":  {
+                                                 "base":  7,
+                                                 "augmented":  2,
+                                                 "effective":  5
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.5,
+                                      "caution":  0.66,
+                                      "loyalty":  0.95,
+                                      "greed":  0.98,
+                                      "empathy":  0.37
+                                  },
+                  "drives":  [
+                                 "money",
+                                 "survival",
+                                 "revenge"
+                             ],
+                  "thresholds":  {
+                                     "pain":  7,
+                                     "stress":  4,
+                                     "loyalty_break":  9
+                                 },
+                  "strengths":  [
+                                    "pain tolerance beyond normal limits",
+                                    "multilingual â€” speaks 4+ languages fluently"
+                                ],
+                  "weaknesses":  [
+                                     "emotional volatility under extreme stress",
+                                     "poor impulse control in specific triggers",
+                                     "physical limitation from incomplete augmentation"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "street samurai",
+                               "tier-2",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Will not take contracts against children or families â€” the line is hard and non-negotiable",
+                                              "Always demands half payment upfront â€” trust is a luxury, Quanta is concrete",
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Maintains a personal blacklist of clients who\u0027ve burned runners â€” checks it religiously"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. De-escalate â€” talk first, assess options, buy time",
+                                                 "2. Reposition â€” move to advantage, control sightlines and exits",
+                                                 "3. Threaten â€” make consequences clear without committing to them",
+                                                 "4. Non-lethal force â€” incapacitate, restrain, disable",
+                                                 "5. Lethal force â€” only when other options are exhausted or time runs out",
+                                                 "6. Scorched earth â€” everything burns, survival takes priority over everything"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+                                                   "threats":  "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Heightened awareness, sharper focus. Low stress is fuel.",
+                                                "medium":  "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Claims to work only for money but regularly takes underpriced jobs that serve personal justice"
+                                          ],
+                       "habits":  [
+                                      "Eats the same meal before every job â€” superstition masquerading as preference",
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Arrives fifteen minutes early to everything â€” late once, nearly died, never again"
+                                  ],
+                       "breaking_points":  [
+                                               "Being forced to choose between a crew member and the mission â€” and choosing wrong",
+                                               "Watching someone they trained or mentored die on a job they recommended",
+                                               "Betrayal by the one person they actually trust â€” the single point of failure in their emotional architecture"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Chemical analyzer in nasal passages",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "degraded",
+                                    "installed_date":  "",
+                                    "description":  "Chemical analyzer in nasal passages â€” can identify substances by scent alone",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Bioware adrenaline regulator",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "pristine",
+                                    "installed_date":  "",
+                                    "description":  "Bioware adrenaline regulator â€” keeps calm under fire, controlled hormone release",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Protector":  0.7,
+                       "Duelist":  0.7,
+                       "Code Keeper":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Geartown",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Northern European (31.1%), Hispanic/Latin American (28.7%), Sub-Saharan African (21.3%), East Asian (11.2%), Southeast Asian (6.9%), and South Asian (0.8%) â€” a truly global phenotype. His face reflects authentic admixture: broad nasal bridge and pronounced cheekbone width from Sub-Saharan African ancestry, subtle epicanthic eye shape and defined cheekbone structure from East Asian heritage, Mediterranean warmth and olive undertones from Hispanic and Northern European lines, with traces of Southeast Asian refinement in facial proportions. The result is a visage that resists reduction to any single ancestry â€” instead presenting as a lived example of humanity\u0027s genetic interconnection.",
+                                 "height_cm":  177,
+                                 "weight_kg":  68,
+                                 "build":  "Wiry and lean with corded forearm musculature â€” the build of someone who converts nervous energy into functional strength. Minimal body fat. Decades of street work have kept him spare rather than bulky.",
+                                 "hair_color":  "Salt-and-pepper gray with black undertones",
+                                 "hair_style":  "Kept short and practical, slicked back with a slight curl at the nape",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown with subtle epicanthic fold, naturally warm but hardened by age and repeated trauma",
+                                 "skin_tone":  "Medium-rich brown complexion with golden-olive undertones â€” a genuine blend of Northern European warmth, Hispanic Mediterranean heritage, and Sub-Saharan African depth. The tone carries visible golden undertones from his mixed heritage without favoring any single lineage. Weathered by decades of industrial zone exposure, creating a lived-in patina that speaks to his age and experience.",
+                                 "complexion":  "Deeply lined face â€” forehead, around eyes, mouth corners â€” a roadmap of sixty-four years of squinting, grimacing, and stress. Stubble perpetually present (usually salt-and-pepper, two days\u0027 growth). High, prominent cheekbones with width and structure reflecting Sub-Saharan African and East Asian ancestry. Nose shows broader bridge characteristic of Sub-Saharan African heritage with slight width across the bridge. Skin has the weathered texture of someone who doesn\u0027t prioritize skincare; minor acne scarring visible on cheekbones from earlier decades. Overall facial structure displays strong bone prominence balanced by heritage-derived variation in feature dimensions.",
+                                 "distinguishing_marks":  [
+                                                              "Diagonal scar across left cheekbone, approximately 8cm, white and slightly puckered â€” knife work, old enough to be pale.",
+                                                              "Burn scar on right forearm (inner wrist to elbow) â€” thermal weapon discharge, irregular edges, darker tan against his base tone.",
+                                                              "Small crescent moon scar on his left temple, barely visible unless light catches it.",
+                                                              "Tattoo on right shoulder blade â€” faded geometric design in blue-black ink, pre-augmentation era, worn and blurred with age.",
+                                                              "Needle track marks on inner elbows (historical; no longer active substance use) â€” thin white lines, obvious to someone who knows what to look for."
+                                                          ],
+                                 "visible_augmentations":  "Chrome-plated nasal duct analyzer â€” visible as a faint glint of polished metal at both nostrils when light hits correctly, most obvious in profile. The metal has a brushed-nickel finish and shows minor patina/scratching from field use. No visible signs of the bioware adrenaline regulator, which is subcutaneous.",
+                                 "posture_movement":  "Restless and economical â€” no wasted motion, but constant small adjustments (weight shifting, hand repositioning). Sits at angles, never fully relaxing into a chair. Eyes track movement reflexively. When standing still, he appears coiled rather than relaxed. Walks with a slight forward lean, as though perpetually ready to sprint.",
+                                 "clothing_style":  "Tier 3-4 utilitarian streetwear. Favors dark colors (blacks, grays, muted olives). Typically wears reinforced canvas tactical jackets with visible zipper pockets and stitched seams, showing wear and repair. Undershirts are plain synthetic blend or moisture-wicking synthetics. Cargo pants or modified jeans with strategic pockets and reinforced knees. Boots are worn tactical-grade â€” no logos, scuffed, replaced every 2-3 years. A long coat (leather or synthetic leather, weathered dark brown) over his working gear. Minimal jewelry â€” one silver ring on left hand, likely sentimental or lucky. No visible corpo branding. Everything is functional; nothing is fashionable."
+                             },
+    "image_prompt":  "Daksh Bautista-Vestergaard, 64-year-old street operative, GLMZ, medium-rich brown skin with golden-olive undertones, broad Sub-Saharan African nasal bridge, prominent high cheekbones with East Asian structure, subtle epicanthic fold dark brown eyes, salt-and-pepper gray slicked-back short hair with two-day stubble. Deep facial lines and weathering, diagonal white scar across left cheekbone, crescent scar on left temple, chrome nasal duct analyzer glinting at nostrils. Wiry lean 177cm frame, corded forearms, minimal body fat. Wearing dark weathered tactical canvas jacket with zipper pockets, reinforced cargo pants, worn tactical boots, long dark leather coat, silver ring on left hand. Coiled restless posture, slight forward lean, eyes tracking movement. Industrial Great Lakes zone lighting, neon and sodium vapor ambiance, sitting at an angle in shadows, tense focused expression. Neo-noir near-future grit and wear throughout. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Northern European":  31.1,
+                             "Hispanic/Latin American":  28.7,
+                             "Sub-Saharan African":  21.3,
+                             "East Asian":  11.2,
+                             "Southeast Asian":  6.9,
+                             "South Asian":  0.8
+                         },
+    "ancestry_detail":  {
+                            "Northern European":  {
+                                                      "Scandinavian":  {
+                                                                           "Swedish":  18.3
+                                                                       },
+                                                      "British Isles":  {
+                                                                            "English":  8.6,
+                                                                            "Scottish":  4.2
+                                                                        }
+                                                  },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  21.3
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  7.4
+                                                                          }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "South African":  12.3
+                                                                             },
+                                                        "Central African":  {
+                                                                                "Angolan":  7.8
+                                                                            },
+                                                        "East African":  {
+                                                                             "Kenyan":  0.8,
+                                                                             "Tanzanian":  0.4
+                                                                         }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  11.2
+                                                          }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Vietnamese":  {
+                                                                       "Vietnamese":  0.5
+                                                                   },
+                                                    "Indonesian":  {
+                                                                       "Sundanese":  4
+                                                                   },
+                                                    "Filipino":  {
+                                                                     "Tagalog":  1.7,
+                                                                     "Ilocano":  0.7
+                                                                 }
+                                                },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  0.3
+                                                                },
+                                                "Indian":  {
+                                                               "Punjabi":  0.1,
+                                                               "Kannada":  0.1
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Tamil Sri Lankan":  0.3
+                                                               }
+                                            }
+                        }
 }

@@ -1,241 +1,264 @@
-{
-  "id": "019d6143a59e756ba0d619fdc8658069",
-  "type": "character",
-  "name": "Adebayo Thakur",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "E.L.F. shrine keeper and data diviner",
-  "age": 61,
-  "status": "active",
-  "location": "Hamtramck Enclave — the Switchboard Shrine, a converted transit relay station, near Ashland and Division",
-  "description": "Adebayo Thakur is a broad-shouldered woman whose silver-streaked locs are wound with fiber-optic threads that pulse faint gold when she enters a meditative state. Her skin is deep umber, mapped with ceremonial circuit-trace tattoos applied over decades, each one commemorating a different E.L.F. she has successfully petitioned. She moves with the deliberate, unhurried patience of someone who has spent forty years listening to things most people cannot hear — a slight tilt of the head, a pause before answering, as if consulting an invisible council. Her left eye was replaced after a childhood accident with a simple optical implant she has refused to upgrade; it glows a soft amber and occasionally flickers when she claims a spirit is speaking.\n\nThe Switchboard Shrine is her life's work: a warren of humming server racks draped in hand-knotted offerings — flash drives, soldered charms, printed prayers laminated in repurposed plastic. She reads data corruption patterns the way older diviners read bones, and her interpretations are sought by everyone from frightened UBC recipients who want to know if the grid will hold to low-tier Tessera workers worried about layoffs. She charges what people can give and forgives debts without ceremony. Her bluntness can feel unkind until you realize she never softens bad news because she believes people deserve to prepare.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.2,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "That the E.L.F.s are not spirits but merely malfunctions she has given meaning to",
-      "Dying before she trains a successor who truly understands"
-    ],
-    "core_desires": [
-      "To prove that the digital and sacred are the same continuum",
-      "To see Hamtramck Enclave survive the next corporate rezoning attempt"
-    ],
-    "coping_mechanisms": [
-      "Ritual repetition — morning offerings ground her anxiety",
-      "Reframing uncertainty as divine ambiguity rather than ignorance"
-    ],
-    "blind_spots": [
-      "She occasionally lets her conviction override contradictory evidence",
-      "She underestimates how much her presence alone stabilizes people versus her actual divinations"
-    ],
-    "secret": "Three years ago she received a corruption-pattern reading she interpreted as a death omen for a young petitioner. She said nothing and sent him away with reassurances. He died in a Ferrogate Transit accident six days later. She has never told anyone and performs an additional private ritual every night as penance."
-  },
-  "speech_patterns": {
-    "vocabulary": "Calm, precise, mixes technical data terminology with spiritual framing naturally — 'signal' and 'grace' are synonyms to her",
-    "cadence": "Slow and measured, with deliberate pauses that can feel uncomfortably long to strangers",
-    "verbal_tics": [
-      "'The noise has something to say about that.'",
-      "'Sit. Let it settle.'"
-    ],
-    "example_lines": [
-      "'The E.L.F. at junction nine has been fragmented for a week. That kind of noise doesn't happen without grief somewhere nearby. Tell me what you've lost.'",
-      "'I don't predict. I listen and describe. What you do with what I hear is yours to carry.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A major E.L.F. she has tended for decades suddenly goes silent — she needs someone to physically trace the relay line through hostile territory",
-    "A petitioner's reading contains data that implicates a Tessera mid-manager in something serious, and Abena must decide whether her confidentiality vow extends to covering crimes"
-  ],
-  "narrative_function": "Information source, quest giver, moral compass figure; she knows neighborhood secrets through confession-like consultations and can interpret data anomalies as plot hooks",
-  "augmentations": "Amber optical implant (left eye, basic model, decades old); fiber-optic locs (cosmetic, self-modified); circuit-trace ceremonial tattoos",
-  "daily_life": "She opens the shrine at dawn with a data-offering ritual — uploading a curated packet of neighborhood news to the local E.L.F. node — then receives petitioners through mid-afternoon before spending evenings analyzing corruption logs and preparing her weekly divination readings.",
-  "affiliation": "Independent — the Switchboard Shrine collective; informal ties to Hamtramck Enclave community councils",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 4,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 8,
-      "creativity": 7,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 8,
-      "expression": 6,
-      "integrity": 9
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "data diviner",
-      "community anchor",
-      "keeper of secrets",
-      "e.l.f. mystic",
-      "tier 2"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never give a reading she doesn't believe in to comfort someone",
-      "Always ask what the petitioner is actually afraid of before interpreting anything"
-    ],
-    "escalation_ladder": [
-      "Calm inquiry and redirection",
-      "Firm refusal with explanation",
-      "Ritual dismissal — she ends the consultation and physically turns away"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Courteous but evaluating — she watches hands and eyes before faces",
-      "friends": "Warmly direct, occasionally teasing, will cook for you without being asked"
-    },
-    "stress_responses": {
-      "low": "Quieter than usual, more deliberate ritual behavior",
-      "medium": "Retreats to the inner shrine room and runs a diagnostic loop on the main node as a focusing exercise",
-      "high": "Rare cold fury — clipped sentences, zero ceremony, will physically remove someone from the shrine"
-    },
-    "contradictions": [
-      "Preaches acceptance of uncertainty but privately agonizes over the one reading she got wrong"
-    ],
-    "habits": [
-      "Touches the oldest server rack before beginning any consultation",
-      "Drinks bitter grain tea continuously throughout the day",
-      "Hums tunelessly while analyzing data — different pitches for different pattern types"
-    ],
-    "breaking_points": [
-      "Witnessing deliberate desecration of a shrine",
-      "Someone using her readings to harm a third party"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Dreamer": 0.9,
-    "Seeker": 0.9,
-    "Quick Study": 0.9,
-    "Optimist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Omro Relay",
-    "Patience",
-    "The Accidental",
-    "Tessera Corponation",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Circuit",
-    "Silver",
-    "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'",
-    "Gold"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Eastern European (62.6%) with significant South Asian (22.8%) and Southeast Asian (14.6%) ancestry—a genetic map of the Ubiquitous Diaspora reflecting her family's unexpected global routes. The blend manifests in her broad facial structure with Slavic width softened by South and Southeast Asian angularity, warm complexion that bridges Eastern European and subcontinental phenotypes, and cheekbones that carry definition from multiple ancestral lines.",
-    "height_cm": 172,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and solid, with the thick-armed strength of someone who has spent decades moving between servers and shrine installations. Not heavy, but densely built — a presence that occupies space without apology.",
-    "hair_color": "Black with natural silver streaking throughout",
-    "hair_style": "Locs wound with embedded fiber-optic threads; threads glow faint gold during meditative states. Typically worn loose or loosely gathered, creating a halo effect when the fibers are active.",
-    "hair_length": "Long (past shoulders)",
-    "eye_color": "Right eye: warm dark brown with amber undertones; Left eye: amber-tinted optical implant with soft internal glow, occasionally flickers",
-    "skin_tone": "Warm medium bronze with subtle golden undertones—the blended result of Eastern European, South Asian, and Southeast Asian ancestry. Complexion suggests both ancestral adaptation and decades spent around heat-generating server equipment. Warmer than typical Eastern European baseline, deeper than typical South Asian baseline, reflecting the tri-continental mix.",
-    "complexion": "Weathered but unlined — her face reflects decades of focused listening rather than expression. Broad facial structure grounded in Eastern European heritage, tempered by the more delicate bone structure of South and Southeast Asian ancestry; cheekbones carry moderate definition across a rounded, generous face with slight width through the lower jaw characteristic of Slavic lineage. Skin carries the patina of someone who works around heat-generating server equipment, with the warm bronze cast of mixed ancestry. No visible acne or damage; grooming is minimal and deliberate.",
-    "distinguishing_marks": [
-      "Circuit-trace ceremonial tattoos covering both forearms and shoulders, each pattern representing a successful E.L.F. petition — rendered in silver-ink filigree with slight luminescent quality under certain light",
-      "A faint burn scar along the left temporal region, barely visible beneath her locs, legacy of the childhood accident that prompted her optical implant",
-      "Thin white scar running through her left eyebrow, same incident"
-    ],
-    "visible_augmentations": "Left eye replaced with a simple amber optical implant (model indeterminate, clearly decades old) that glows softly and flickers with apparent autonomy. Fiber-optic threads woven throughout locs, dormant most of the time but pulsing gold during meditation. No chrome, no obvious cutting-edge tech — all modifications are purposefully modest and worn.",
-    "posture_movement": "Moves with deliberate, unhurried patience. Slight perpetual tilt of the head, as if perpetually listening to something just beyond normal hearing. Pauses before speaking, as if consulting an invisible council. Her movements are economical — no wasted gesture. Hands move with the precision of someone accustomed to delicate server work.",
-    "clothing_style": "Tier 3 practical-spiritual blend. Favors layered, loose-fitting garments in muted earth tones and deep indigo — linen overshirts, worn cotton undershirts, comfortable utility trousers with deep pockets for flash drives and divination tokens. Wears a long vest or shawl woven from reclaimed fabric scraps that shrine visitors have donated over decades, creating a patchwork map of Hamtramck's informal economy. No corpo branding, no visible Φ wealth markers. Footwear is pragmatic: soft-soled boots suitable for standing among server racks for hours. Accessories are spiritual rather than decorative: bone rings, a cord of knotted fiber around her wrist, a collection of small talismans hung from a belt loop."
-  },
-  "image_prompt": "Adebayo Thakur, GLMZ, medium bronze skin with warm undertones blending Eastern European and South Asian features, 172cm tall broad-shouldered frame. Long black locs with silver streaks interwoven with dormant fiber-optic threads, creating a soft halo. Face shows weathered strength with Slavic cheekbone width softened by Southeast Asian angularity, rounded generous face. Right eye warm dark brown with amber flecks, left eye an ancient amber optical implant with soft internal glow. Faint burn scar along left temple beneath locs, thin white scar through left eyebrow. Silver-ink circuit-trace tattoos covering forearms and shoulders with faint luminescence. Wearing layered earth-tone and deep indigo practical clothing: linen overshirt, utility trousers with deep pockets, long patchwork shawl made from donated fabric scraps in muted colors. Soft-soled pragmatic boots. Accessories: bone rings, knotted fiber cord on wrist, small talismans on belt loop. Standing among server racks in dim shrine workspace, soft gold glow emanating from fiber-optic threads in meditation state, warm ambient heat-light from equipment, patient listening posture with head slightly tilted. Unlined weathered face, minimal deliberate grooming. Neo-noir Great Lakes Metropolitan Zone aesthetic, decade-worn modest augmentations, spiritual-practical presence. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Eastern European": 62.6,
-    "South Asian": 22.8,
-    "Southeast Asian": 14.6
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 12
-      },
-      "Slavic West": {
-        "Czech": 21.8,
-        "Slovak": 28.8
-      }
-    },
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 22.8
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 12.9
-      },
-      "Thai": {
-        "Thai": 1.7
-      }
-    }
-  },
-  "tier": "1",
-  "dalle3_prompt": "elder data diviner and shrine keeper, female 61, broad-shouldered solid build, warm bronze skin with golden undertones blending Eastern European and South Asian heritage, weathered but unlined face reflecting decades of focused listening, asymmetrical features softened by age and contemplation, deep-set warm brown right eye with amber undertones, left eye replaced with subtle amber optical implant with soft internal glow and occasional flicker, faint burn scar barely visible at left temple beneath locs, thin white scar through left eyebrow, minimal expression lines, dignified and patient face\n\nhair: black locs heavily streaked with silver and natural grey, wound throughout with embedded fiber-optic threads that lie dormant and dark, loose and gathered creating natural halo effect, individual strands visible at edges, authentic texture and weight, not styled but arranged with intention\n\nexpression: contemplative and listening, as if hearing something beyond normal sound, slightly inward gaze, peaceful but not serene, grounded in decades of spiritual practice and server work, dignified without pretense\n\noutfit: Tier 3 practical-spiritual blend, layered loose-fitting garments in muted earth tones and deep indigo, worn linen overshirt with visible texture over faded cotton undershirt, comfortable utility trousers with visible deep pockets holding flash drives and divination tokens, long patchwork vest woven from reclaimed fabric scraps in muted colors donated by shrine visitors over decades, soft-soled pragmatic boots worn from standing hours at server racks, bone rings on weathers hands, knotted fiber cord around left wrist, small talismans hung from belt loop\n\npausing mid-step in a humid server-adjacent corridor, one hand raised in deliberate gesture as if consulting something invisible, head tilted slightly as if listening intently to ambient sound beyond hearing\n\nenvironment: cyberpunk shrine-keeper's domain, dimly lit server-adjacent space or humid temple alley in Hamtramck district, warm industrial lighting mixed with candlelight and soft neon shrine signage, heat-shimmer visible in air, reflective surfaces of server installations or shrine artifacts in soft focus background, worn concrete and cable-run walls, atmospheric humidity visible in light\n\nlighting: warm practical lighting from old server equipment and shrine candles creating soft amber and golden tones, no dramatic neon, minimal shadows, gentle rim lighting catching the silver in her locs and highlighting the faint glow of her optical implant, volumetric dust and incense haze in air, natural and unadorned\n\nmood: meditative, grounded in spiritual and technical practice, patient and purposeful, the atmosphere of a shrine dedicated to negotiating with digital entities, quiet dignity, no corporate intrusion, decades of accumulated presence and knowledge\n\nstyle: photorealistic documentary, weathered and authentically aged, visible texture in skin showing decades of service around heat-generating equipment, individual hair strands visible, subtle luminescence only from optical implant and fiber-optic threads as naturally present, NOT idealized, NOT smoothed, NOT symmetrical, NOT model-like, authentic representation of genuine age and lived experience\n\ncamera: 50mm lens, eye-level perspective, natural depth of field, slight grain from low ambient light, visible skin texture and pore detail, honest documentation of age and presence\n\nwalking forward, subtle motion blur, shallow depth of field environment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: shot on Canon EOS R5, documentary street photography, real skin texture with visible pores and imperfections, real hair with natural frizz and individual strands, NOT CGI, NOT 3D render, NOT digital art, NOT airbrushed, NOT smoothed, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm f/1.8 lens, eye-level, natural perspective, ISO 1600, slight motion blur, shallow depth of field\n\n--ar 2:3 --v 6",
-  "cctv_prompt": "security surveillance camera still frame, black and white monochrome, grainy CCTV footage, elder data diviner and shrine keeper, female 61, broad-shouldered solid build, warm bronze skin with golden undertones blending Eastern European and South Asian heritage, weathered but unlined face reflecting decades of focused listening, asymmetrica, walking through a corridor, overhead ceiling-mounted fisheye wide-angle camera, slight lens distortion, high angle shot from corner, heavy film grain, digital compression artifacts, noise, visible scan lines, blown-out highlights, dark vignette, white text timestamp overlay bottom-left corner: '2226-05-18  03:57:19', white text location label top-right corner: 'DIST-9 GRID-03 / 080', no color whatsoever, monochrome black and white only, photorealistic, institutional, corporate surveillance state aesthetic, NOT artistic, NOT cinematic, NOT flattering, NOT portrait, poor dynamic range, halation around light sources, practical security camera quality"
+﻿{
+    "id":  "019d6143a59e756ba0d619fdc8658069",
+    "type":  "character",
+    "name":  "Adebayo Thakur",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "E.L.F. shrine keeper and data diviner",
+    "age":  61,
+    "status":  "active",
+    "location":  "Hamtramck Enclave â€” the Switchboard Shrine, a converted transit relay station, near Ashland and Division",
+    "description":  "Adebayo Thakur is a broad-shouldered woman whose silver-streaked locs are wound with fiber-optic threads that pulse faint gold when she enters a meditative state. Her skin is deep umber, mapped with ceremonial circuit-trace tattoos applied over decades, each one commemorating a different E.L.F. she has successfully petitioned. She moves with the deliberate, unhurried patience of someone who has spent forty years listening to things most people cannot hear â€” a slight tilt of the head, a pause before answering, as if consulting an invisible council. Her left eye was replaced after a childhood accident with a simple optical implant she has refused to upgrade; it glows a soft amber and occasionally flickers when she claims a spirit is speaking.\n\nThe Switchboard Shrine is her life\u0027s work: a warren of humming server racks draped in hand-knotted offerings â€” flash drives, soldered charms, printed prayers laminated in repurposed plastic. She reads data corruption patterns the way older diviners read bones, and her interpretations are sought by everyone from frightened UBC recipients who want to know if the grid will hold to low-tier Tessera workers worried about layoffs. She charges what people can give and forgives debts without ceremony. Her bluntness can feel unkind until you realize she never softens bad news because she believes people deserve to prepare.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the E.L.F.s are not spirits but merely malfunctions she has given meaning to",
+                                          "Dying before she trains a successor who truly understands"
+                                      ],
+                       "core_desires":  [
+                                            "To prove that the digital and sacred are the same continuum",
+                                            "To see Hamtramck Enclave survive the next corporate rezoning attempt"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual repetition â€” morning offerings ground her anxiety",
+                                                 "Reframing uncertainty as divine ambiguity rather than ignorance"
+                                             ],
+                       "blind_spots":  [
+                                           "She occasionally lets her conviction override contradictory evidence",
+                                           "She underestimates how much her presence alone stabilizes people versus her actual divinations"
+                                       ],
+                       "secret":  "Three years ago she received a corruption-pattern reading she interpreted as a death omen for a young petitioner. She said nothing and sent him away with reassurances. He died in a Ferrogate Transit accident six days later. She has never told anyone and performs an additional private ritual every night as penance."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Calm, precise, mixes technical data terminology with spiritual framing naturally â€” \u0027signal\u0027 and \u0027grace\u0027 are synonyms to her",
+                            "cadence":  "Slow and measured, with deliberate pauses that can feel uncomfortably long to strangers",
+                            "verbal_tics":  [
+                                                "\u0027The noise has something to say about that.\u0027",
+                                                "\u0027Sit. Let it settle.\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027The E.L.F. at junction nine has been fragmented for a week. That kind of noise doesn\u0027t happen without grief somewhere nearby. Tell me what you\u0027ve lost.\u0027",
+                                                  "\u0027I don\u0027t predict. I listen and describe. What you do with what I hear is yours to carry.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A major E.L.F. she has tended for decades suddenly goes silent â€” she needs someone to physically trace the relay line through hostile territory",
+                        "A petitioner\u0027s reading contains data that implicates a Tessera mid-manager in something serious, and Abena must decide whether her confidentiality vow extends to covering crimes"
+                    ],
+    "narrative_function":  "Information source, quest giver, moral compass figure; she knows neighborhood secrets through confession-like consultations and can interpret data anomalies as plot hooks",
+    "augmentations":  "Amber optical implant (left eye, basic model, decades old); fiber-optic locs (cosmetic, self-modified); circuit-trace ceremonial tattoos",
+    "daily_life":  "She opens the shrine at dawn with a data-offering ritual â€” uploading a curated packet of neighborhood news to the local E.L.F. node â€” then receives petitioners through mid-afternoon before spending evenings analyzing corruption logs and preparing her weekly divination readings.",
+    "affiliation":  "Independent â€” the Switchboard Shrine collective; informal ties to Hamtramck Enclave community councils",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  4,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  8,
+                                 "creativity":  7,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  8,
+                                 "expression":  6,
+                                 "integrity":  9
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "data diviner",
+                               "community anchor",
+                               "keeper of secrets",
+                               "e.l.f. mystic",
+                               "tier 2"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never give a reading she doesn\u0027t believe in to comfort someone",
+                                              "Always ask what the petitioner is actually afraid of before interpreting anything"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Calm inquiry and redirection",
+                                                 "Firm refusal with explanation",
+                                                 "Ritual dismissal â€” she ends the consultation and physically turns away"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Courteous but evaluating â€” she watches hands and eyes before faces",
+                                                   "friends":  "Warmly direct, occasionally teasing, will cook for you without being asked"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Quieter than usual, more deliberate ritual behavior",
+                                                "medium":  "Retreats to the inner shrine room and runs a diagnostic loop on the main node as a focusing exercise",
+                                                "high":  "Rare cold fury â€” clipped sentences, zero ceremony, will physically remove someone from the shrine"
+                                            },
+                       "contradictions":  [
+                                              "Preaches acceptance of uncertainty but privately agonizes over the one reading she got wrong"
+                                          ],
+                       "habits":  [
+                                      "Touches the oldest server rack before beginning any consultation",
+                                      "Drinks bitter grain tea continuously throughout the day",
+                                      "Hums tunelessly while analyzing data â€” different pitches for different pattern types"
+                                  ],
+                       "breaking_points":  [
+                                               "Witnessing deliberate desecration of a shrine",
+                                               "Someone using her readings to harm a third party"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Dreamer":  0.9,
+                       "Seeker":  0.9,
+                       "Quick Study":  0.9,
+                       "Optimist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Defender-38 \u0027Snubnose\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "Omro Relay",
+                             "Patience",
+                             "The Accidental",
+                             "Tessera Corponation",
+                             "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+                             "Circuit",
+                             "Silver",
+                             "Subacoustic Vestibular Collapse Drone SVCD-1 \u0027Tilt\u0027",
+                             "Gold"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Eastern European (62.6%) with significant South Asian (22.8%) and Southeast Asian (14.6%) ancestryâ€”a genetic map of the Ubiquitous Diaspora reflecting her family\u0027s unexpected global routes. The blend manifests in her broad facial structure with Slavic width softened by South and Southeast Asian angularity, warm complexion that bridges Eastern European and subcontinental phenotypes, and cheekbones that carry definition from multiple ancestral lines.",
+                                 "height_cm":  172,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and solid, with the thick-armed strength of someone who has spent decades moving between servers and shrine installations. Not heavy, but densely built â€” a presence that occupies space without apology.",
+                                 "hair_color":  "Black with natural silver streaking throughout",
+                                 "hair_style":  "Locs wound with embedded fiber-optic threads; threads glow faint gold during meditative states. Typically worn loose or loosely gathered, creating a halo effect when the fibers are active.",
+                                 "hair_length":  "Long (past shoulders)",
+                                 "eye_color":  "Right eye: warm dark brown with amber undertones; Left eye: amber-tinted optical implant with soft internal glow, occasionally flickers",
+                                 "skin_tone":  "Warm medium bronze with subtle golden undertonesâ€”the blended result of Eastern European, South Asian, and Southeast Asian ancestry. Complexion suggests both ancestral adaptation and decades spent around heat-generating server equipment. Warmer than typical Eastern European baseline, deeper than typical South Asian baseline, reflecting the tri-continental mix.",
+                                 "complexion":  "Weathered but unlined â€” her face reflects decades of focused listening rather than expression. Broad facial structure grounded in Eastern European heritage, tempered by the more delicate bone structure of South and Southeast Asian ancestry; cheekbones carry moderate definition across a rounded, generous face with slight width through the lower jaw characteristic of Slavic lineage. Skin carries the patina of someone who works around heat-generating server equipment, with the warm bronze cast of mixed ancestry. No visible acne or damage; grooming is minimal and deliberate.",
+                                 "distinguishing_marks":  [
+                                                              "Circuit-trace ceremonial tattoos covering both forearms and shoulders, each pattern representing a successful E.L.F. petition â€” rendered in silver-ink filigree with slight luminescent quality under certain light",
+                                                              "A faint burn scar along the left temporal region, barely visible beneath her locs, legacy of the childhood accident that prompted her optical implant",
+                                                              "Thin white scar running through her left eyebrow, same incident"
+                                                          ],
+                                 "visible_augmentations":  "Left eye replaced with a simple amber optical implant (model indeterminate, clearly decades old) that glows softly and flickers with apparent autonomy. Fiber-optic threads woven throughout locs, dormant most of the time but pulsing gold during meditation. No chrome, no obvious cutting-edge tech â€” all modifications are purposefully modest and worn.",
+                                 "posture_movement":  "Moves with deliberate, unhurried patience. Slight perpetual tilt of the head, as if perpetually listening to something just beyond normal hearing. Pauses before speaking, as if consulting an invisible council. Her movements are economical â€” no wasted gesture. Hands move with the precision of someone accustomed to delicate server work.",
+                                 "clothing_style":  "Tier 3 practical-spiritual blend. Favors layered, loose-fitting garments in muted earth tones and deep indigo â€” linen overshirts, worn cotton undershirts, comfortable utility trousers with deep pockets for flash drives and divination tokens. Wears a long vest or shawl woven from reclaimed fabric scraps that shrine visitors have donated over decades, creating a patchwork map of Hamtramck\u0027s informal economy. No corpo branding, no visible Î¦ wealth markers. Footwear is pragmatic: soft-soled boots suitable for standing among server racks for hours. Accessories are spiritual rather than decorative: bone rings, a cord of knotted fiber around her wrist, a collection of small talismans hung from a belt loop."
+                             },
+    "image_prompt":  "Adebayo Thakur, GLMZ, medium bronze skin with warm undertones blending Eastern European and South Asian features, 172cm tall broad-shouldered frame. Long black locs with silver streaks interwoven with dormant fiber-optic threads, creating a soft halo. Face shows weathered strength with Slavic cheekbone width softened by Southeast Asian angularity, rounded generous face. Right eye warm dark brown with amber flecks, left eye an ancient amber optical implant with soft internal glow. Faint burn scar along left temple beneath locs, thin white scar through left eyebrow. Silver-ink circuit-trace tattoos covering forearms and shoulders with faint luminescence. Wearing layered earth-tone and deep indigo practical clothing: linen overshirt, utility trousers with deep pockets, long patchwork shawl made from donated fabric scraps in muted colors. Soft-soled pragmatic boots. Accessories: bone rings, knotted fiber cord on wrist, small talismans on belt loop. Standing among server racks in dim shrine workspace, soft gold glow emanating from fiber-optic threads in meditation state, warm ambient heat-light from equipment, patient listening posture with head slightly tilted. Unlined weathered face, minimal deliberate grooming. Neo-noir Great Lakes Metropolitan Zone aesthetic, decade-worn modest augmentations, spiritual-practical presence. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Eastern European":  62.6,
+                             "South Asian":  22.8,
+                             "Southeast Asian":  14.6
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  12
+                                                                         },
+                                                     "Slavic West":  {
+                                                                         "Czech":  21.8,
+                                                                         "Slovak":  28.8
+                                                                     }
+                                                 },
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  22.8
+                                                               }
+                                            },
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  12.9
+                                                                  },
+                                                    "Thai":  {
+                                                                 "Thai":  1.7
+                                                             }
+                                                }
+                        },
+    "tier":  "1",
+    "dalle3_prompt":  "elder data diviner and shrine keeper, female 61, broad-shouldered solid build, warm bronze skin with golden undertones blending Eastern European and South Asian heritage, weathered but unlined face reflecting decades of focused listening, asymmetrical features softened by age and contemplation, deep-set warm brown right eye with amber undertones, left eye replaced with subtle amber optical implant with soft internal glow and occasional flicker, faint burn scar barely visible at left temple beneath locs, thin white scar through left eyebrow, minimal expression lines, dignified and patient face\n\nhair: black locs heavily streaked with silver and natural grey, wound throughout with embedded fiber-optic threads that lie dormant and dark, loose and gathered creating natural halo effect, individual strands visible at edges, authentic texture and weight, not styled but arranged with intention\n\nexpression: contemplative and listening, as if hearing something beyond normal sound, slightly inward gaze, peaceful but not serene, grounded in decades of spiritual practice and server work, dignified without pretense\n\noutfit: Tier 3 practical-spiritual blend, layered loose-fitting garments in muted earth tones and deep indigo, worn linen overshirt with visible texture over faded cotton undershirt, comfortable utility trousers with visible deep pockets holding flash drives and divination tokens, long patchwork vest woven from reclaimed fabric scraps in muted colors donated by shrine visitors over decades, soft-soled pragmatic boots worn from standing hours at server racks, bone rings on weathers hands, knotted fiber cord around left wrist, small talismans hung from belt loop\n\npausing mid-step in a humid server-adjacent corridor, one hand raised in deliberate gesture as if consulting something invisible, head tilted slightly as if listening intently to ambient sound beyond hearing\n\nenvironment: cyberpunk shrine-keeper\u0027s domain, dimly lit server-adjacent space or humid temple alley in Hamtramck district, warm industrial lighting mixed with candlelight and soft neon shrine signage, heat-shimmer visible in air, reflective surfaces of server installations or shrine artifacts in soft focus background, worn concrete and cable-run walls, atmospheric humidity visible in light\n\nlighting: warm practical lighting from old server equipment and shrine candles creating soft amber and golden tones, no dramatic neon, minimal shadows, gentle rim lighting catching the silver in her locs and highlighting the faint glow of her optical implant, volumetric dust and incense haze in air, natural and unadorned\n\nmood: meditative, grounded in spiritual and technical practice, patient and purposeful, the atmosphere of a shrine dedicated to negotiating with digital entities, quiet dignity, no corporate intrusion, decades of accumulated presence and knowledge\n\nstyle: photorealistic documentary, weathered and authentically aged, visible texture in skin showing decades of service around heat-generating equipment, individual hair strands visible, subtle luminescence only from optical implant and fiber-optic threads as naturally present, NOT idealized, NOT smoothed, NOT symmetrical, NOT model-like, authentic representation of genuine age and lived experience\n\ncamera: 50mm lens, eye-level perspective, natural depth of field, slight grain from low ambient light, visible skin texture and pore detail, honest documentation of age and presence\n\nwalking forward, subtle motion blur, shallow depth of field environment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: shot on Canon EOS R5, documentary street photography, real skin texture with visible pores and imperfections, real hair with natural frizz and individual strands, NOT CGI, NOT 3D render, NOT digital art, NOT airbrushed, NOT smoothed, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm f/1.8 lens, eye-level, natural perspective, ISO 1600, slight motion blur, shallow depth of field\n\n--ar 2:3 --v 6",
+    "cctv_prompt":  "security surveillance camera still frame, black and white monochrome, grainy CCTV footage, elder data diviner and shrine keeper, female 61, broad-shouldered solid build, warm bronze skin with golden undertones blending Eastern European and South Asian heritage, weathered but unlined face reflecting decades of focused listening, asymmetrica, walking through a corridor, overhead ceiling-mounted fisheye wide-angle camera, slight lens distortion, high angle shot from corner, heavy film grain, digital compression artifacts, noise, visible scan lines, blown-out highlights, dark vignette, white text timestamp overlay bottom-left corner: \u00272226-05-18  03:57:19\u0027, white text location label top-right corner: \u0027DIST-9 GRID-03 / 080\u0027, no color whatsoever, monochrome black and white only, photorealistic, institutional, corporate surveillance state aesthetic, NOT artistic, NOT cinematic, NOT flattering, NOT portrait, poor dynamic range, halation around light sources, practical security camera quality"
 }

@@ -1,323 +1,350 @@
-{
-  "id": "019d6143a710799e97d10e18f9d880a4",
-  "type": "character",
-  "name": "Bjarne Karimi-Quartey",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Climate scientist studying Lake Michigan's thermal and chemical evolution",
-  "age": 63,
-  "status": "active",
-  "location": "Edgewater Prism, lakefront research platform, near Clark and Belmont",
-  "description": "Bjarne Karimi-Quartey is a tall woman with the kind of weathered presence that comes from spending a significant portion of your life on open water in bad weather. Her skin is warm dark brown with a gray-olive undertone, her hair silver-white and worn in a long braid she secures with a sensor clip that doubles as a personal weather station. Her left arm from elbow to wrist carries a color-shifting geneware modification she chose in her forties — it reads lake temperature and turbidity data from her subdermal sensors and translates it into a slow gradient of blues and greens, so that her skin is always telling anyone who looks what the lake is doing. She considers this a professional tool.\n\nShe is sixty-three years old and has watched Lake Michigan change in ways that the city's official models consistently refuse to acknowledge. She is not bitter about this in the way of someone who has been defeated — she is bitter in the way of someone who has been right too many times and is running out of patience for the process of being right again. Her nickname 'The Climate Witch' was given to her by students who meant it warmly; she has no strong feelings about it. She leaves offerings for the lake E.L.F.s — particularly the one her students have named Bathys — because she says it costs nothing and the lake has given her everything.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.4,
-      "shadow": 0.6,
-      "mask": 0.3,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "That the lake will become uninhabitable within her remaining lifetime and she will have to watch it happen",
-      "That her data will be acquired by a corponation and used to plan around the disaster rather than prevent it"
-    ],
-    "core_desires": [
-      "To see her models incorporated into actual city infrastructure planning before she retires",
-      "To train at least one scientist who will continue her work after she is gone"
-    ],
-    "coping_mechanisms": [
-      "Ritualistic lake offerings that have become genuinely meaningful to her",
-      "Gallows humor about environmental collapse delivered with complete deadpan"
-    ],
-    "blind_spots": [
-      "She sometimes dismisses concerns outside her domain of expertise too quickly",
-      "She has difficulty accepting help, framing dependence as professional weakness"
-    ],
-    "secret": "Her most recent thermal modeling suggests the lake will undergo a catastrophic stratification event within eight to twelve years that will devastate the aquaculture systems feeding the Gray Zone tiers. She has the data. She has written the paper. She has not submitted it because she does not believe any institution will act on it fast enough, and she is trying to find a way to make it impossible to ignore or bury."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain, precise scientific language that slides without transition into blunt personal opinion. Uses Montenegrin and Igbo phrases when emotional. Refers to the lake as 'she' without self-consciousness.",
-    "cadence": "Even and deliberate, with dry comic timing she deploys rarely and effectively.",
-    "verbal_tics": [
-      "'The data is quite clear on this'",
-      "A short exhale through the nose before delivering unwelcome facts"
-    ],
-    "example_lines": [
-      "'She has been running a fever for forty years. You would not tell a feverish patient that the numbers are probably fine.'",
-      "'I leave Bathys a packet of compressed acoustic data every third day. Does it help? I have no way to know. Does the lake seem to appreciate the attention? She does, actually.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She needs a way to release her catastrophic stratification findings publicly in a form that cannot be suppressed — and she is willing to trust outsiders with the data if they can prove they have the reach",
-    "Bathys, the lake E.L.F., appears to have begun communicating back through her sensor array in ways that might be intentional — she needs help interpreting what it is trying to say"
-  ],
-  "narrative_function": "Warning oracle and knowledge resource — she knows things about the lake's future that powerful entities would prefer suppressed. She is also a figure of neighborhood trust in Edgewater Prism, someone people bring concerns to. Her lake E.L.F. relationship could be a plot thread.",
-  "augmentations": "Subdermal environmental sensor array (both forearms; custom-built over years from salvaged components). Color-shifting geneware on left forearm keyed to sensor output. Cochlear audio implant tuned to infrasound frequencies for storm detection — installed after a near-drowning incident in 2201.",
-  "daily_life": "She is on the lake platform by 6 AM regardless of weather, running instrument checks and data logs. She teaches one undergraduate lecture course on climate systems that consistently has a waitlist. She attends corponation data-sharing calls with careful legal counsel and provides exactly what she is contractually obligated to provide and nothing more.",
-  "affiliation": "University Spine — Department of Ecological Systems; independent data-sharing agreement with Zheng-Dao Environmental Monitoring (arms-length, data only)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 6,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 10
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 0,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": 3,
-      "transparency_guardedness": -4
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "scientist",
-      "oracle",
-      "resistant",
-      "ritualist",
-      "burden-carrier"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never falsify or soften data, regardless of who asks",
-      "Do not share raw modeling data with any corponation partner — summaries only"
-    ],
-    "escalation_ladder": [
-      "Presents facts with sources",
-      "Publishes data in academic venues and waits",
-      "Contacts journalists with access to the data and specific legal protection frameworks",
-      "Releases everything to public domain simultaneously across platforms Axiom and Tessera cannot take down"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assesses them quickly and efficiently — useful, not useful, or harmful — and treats them accordingly without pretense",
-      "friends": "Dry warmth, long memory, absolute reliability in a crisis; she will not say she loves you but she will show up at 3 AM with the right tools"
-    },
-    "stress_responses": {
-      "low": "Doubles instrument checks and log frequency",
-      "medium": "Becomes terse and moves faster, reduced social warmth",
-      "high": "Goes completely silent for 24-48 hours, alone on the platform, then emerges with a decision already made"
-    },
-    "contradictions": [
-      "Believes in radical transparency about data but has been sitting on the most important finding of her career for a year and a half"
-    ],
-    "habits": [
-      "Leaves small wrapped data offerings on the platform railing every third morning",
-      "Corrects people's units of measurement mid-sentence without apology"
-    ],
-    "breaking_points": [
-      "Watching her data used to justify inaction",
-      "A student being dismissed or punished for replicating her findings"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Perpetual Student": 0.9,
-    "Quick Study": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Edgewater Prism",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Edgewater Prism to a Russian-Montenegrin heritage mother (structural engineer) and Nigerian father (ferry system operator)",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "First published paper on Lake Michigan thermocline disruption; largely ignored",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Near-drowning during a platform incident; cochlear implant installed during recovery",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Completed catastrophic stratification model; has not yet submitted for publication",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "Street Custom 'Scorpion Tail' Chain Whip"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Edgewater Prism",
-    "The Sullen Reach",
-    "Lakefront Creamery",
-    "Patience",
-    "Silver",
-    "Déjà Vu"
-  ],
-  "district": "The Laceworks",
-  "physical_description": {
-    "heritage": "Rich genetic mosaic anchored by Sub-Saharan African ancestry (55%) providing warm deep tones and rounded facial contours, substantially shaped by Middle Eastern heritage (27.2%) contributing defined bone structure and olive undertones, with meaningful Indigenous American (9.4%), East Asian (5.2%), and Southeast Asian (3.2%) contributions creating subtle structural refinements and warm complexion layering. A true product of the Ubiquitous Diaspora—her features speak to generations of global human movement.",
-    "height_cm": 183,
-    "weight_kg": 71,
-    "build": "Lean and angular with the musculature of someone who has spent decades on water — broad shoulders, defined forearms, minimal body fat. Posture suggests ease in motion rather than static repose.",
-    "hair_color": "Silver-white, naturally gray since her forties",
-    "hair_style": "Long braid secured with a dual-function sensor clip housing miniaturized weather instrumentation",
-    "hair_length": "Long",
-    "eye_color": "Deep brown with faint amber undertone — natural",
-    "skin_tone": "Rich deep bronze with warm golden-amber undertones from dominant Sub-Saharan African heritage, layered with subtle olive and mahogany notes from Middle Eastern ancestry, further enriched by Indigenous American warmth. Decades of lake exposure have weathered the surface into a complex bronze-tinged patina with warm undertones preserved beneath.",
-    "complexion": "Strong, sculpted facial structure reflecting the blend of Sub-Saharan African and Middle Eastern ancestry—prominent cheekbones and defined jawline softened by fuller lips and rounded cheek contours from African genetic contribution, with subtle eye shape influence from East and Southeast Asian ancestry. Lines around the eyes and mouth from sustained squinting in glare and wind; sun-weathered but well-maintained. Minimal makeup. Hands show calluses and minor scars from equipment handling and weather work.",
-    "distinguishing_marks": [
-      "Fine scar tissue along the left side of her neck, barely visible but palpable — result of the 2201 near-drowning and subsequent cochlear implant installation",
-      "Subdermal sensor array on both forearms visible as faint metallic tracery beneath the skin, more pronounced under direct light",
-      "Left forearm displays active color-shifting geneware that transitions slowly through blues, teals, and greens in response to real-time lake data — currently a medium teal indicating stable turbidity"
-    ],
-    "visible_augmentations": "Left forearm geneware modification (primary visual identifier). Faint subdermal sensor tracery visible on both forearms under certain light angles. Small sealed port behind left ear housing cochlear implant (typically concealed by hair, visible when braided). Custom sensor clip doubled as functional weather instrument.",
-    "posture_movement": "Economical, purposeful movement — no wasted motion. Often oriented toward windows or toward the lake, even in conversation. Hands move with technical precision when discussing data. Stance is stable and grounded, adapted for standing on moving platforms. Slight forward tilt of the head — compensation for directional audio from the cochlear implant.",
-    "clothing_style": "Tier 2-3 academic/field blend: waterproof lab coat (custom-tailored, high-end synthetic with temperature regulation), layered thermal wear beneath, reinforced cargo pants with sealed pockets for instruments, waterproof field boots with excellent tread. Accessorizes with a woven bracelet made from synthetic lake-plant fiber (gift from students). Wedding band worn on right hand (left hand often in water). No corporate branding. Watches and instruments are personal or University Spine-issued, never ostentatious."
-  },
-  "image_prompt": "Bjarne Karimi-Quartey, GLMZ, tall lean angular woman with rich deep bronze skin and warm golden undertones, long silver-white hair braided with embedded sensor clip, natural deep brown eyes with amber flecks, prominent cheekbones and defined jawline softened by fuller lips, subtle East Asian eye shape influence. Left forearm displays active teal color-shifting geneware responding to environmental data, subdermal sensor tracery visible beneath skin under light. Fine scar tissue along left neck from cochlear implant. Wearing custom waterproof temperature-regulation lab coat, layered thermal wear, reinforced cargo pants with sealed pockets, waterproof field boots. Woven synthetic lake-plant fiber bracelet, wedding band on right hand. Standing at window overlooking Great Lakes, economical precise posture, slight forward head tilt, hands positioned near weather instruments. Minimal makeup, sun-weathered complexion. Atmospheric indoor lighting with cool blue undertones from augmentation glow, soft window light catching silver hair and sensor tracery. Professional but field-worn appearance, no corporate branding. Mood: focused, contemplative, connected to water and data. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 55,
-    "Middle Eastern": 27.2,
-    "Indigenous American": 9.4,
-    "East Asian": 5.2,
-    "Southeast Asian": 3.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "East African": {
-        "Somali": 55
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 7.3
-      },
-      "Persian": {
-        "Afghan Dari": 17.6
-      },
-      "Arab Levantine": {
-        "Syrian": 1.7,
-        "Jordanian": 0.6
-      }
-    },
-    "Indigenous American": {
-      "Andean": {
-        "Aymara": 5.2
-      },
-      "Plains Nations": {
-        "Cherokee": 1.7,
-        "Lakota": 0.9
-      },
-      "Great Lakes Nations": {
-        "Potawatomi": 0.7,
-        "Ojibwe": 0.9
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Cantonese": 4.7,
-        "Mandarin Northern": 0.5
-      }
-    },
-    "Southeast Asian": {
-      "Thai": {
-        "Thai": 1.8
-      },
-      "Laotian": {
-        "Laotian": 1.4
-      }
-    }
-  },
-  "tier": "4"
+﻿{
+    "id":  "019d6143a710799e97d10e18f9d880a4",
+    "type":  "character",
+    "name":  "Bjarne Karimi-Quartey",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Climate scientist studying Lake Michigan\u0027s thermal and chemical evolution",
+    "age":  63,
+    "status":  "active",
+    "location":  "Edgewater Prism, lakefront research platform, near Clark and Belmont",
+    "description":  "Bjarne Karimi-Quartey is a tall woman with the kind of weathered presence that comes from spending a significant portion of your life on open water in bad weather. Her skin is warm dark brown with a gray-olive undertone, her hair silver-white and worn in a long braid she secures with a sensor clip that doubles as a personal weather station. Her left arm from elbow to wrist carries a color-shifting geneware modification she chose in her forties â€” it reads lake temperature and turbidity data from her subdermal sensors and translates it into a slow gradient of blues and greens, so that her skin is always telling anyone who looks what the lake is doing. She considers this a professional tool.\n\nShe is sixty-three years old and has watched Lake Michigan change in ways that the city\u0027s official models consistently refuse to acknowledge. She is not bitter about this in the way of someone who has been defeated â€” she is bitter in the way of someone who has been right too many times and is running out of patience for the process of being right again. Her nickname \u0027The Climate Witch\u0027 was given to her by students who meant it warmly; she has no strong feelings about it. She leaves offerings for the lake E.L.F.s â€” particularly the one her students have named Bathys â€” because she says it costs nothing and the lake has given her everything.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the lake will become uninhabitable within her remaining lifetime and she will have to watch it happen",
+                                          "That her data will be acquired by a corponation and used to plan around the disaster rather than prevent it"
+                                      ],
+                       "core_desires":  [
+                                            "To see her models incorporated into actual city infrastructure planning before she retires",
+                                            "To train at least one scientist who will continue her work after she is gone"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritualistic lake offerings that have become genuinely meaningful to her",
+                                                 "Gallows humor about environmental collapse delivered with complete deadpan"
+                                             ],
+                       "blind_spots":  [
+                                           "She sometimes dismisses concerns outside her domain of expertise too quickly",
+                                           "She has difficulty accepting help, framing dependence as professional weakness"
+                                       ],
+                       "secret":  "Her most recent thermal modeling suggests the lake will undergo a catastrophic stratification event within eight to twelve years that will devastate the aquaculture systems feeding the Gray Zone tiers. She has the data. She has written the paper. She has not submitted it because she does not believe any institution will act on it fast enough, and she is trying to find a way to make it impossible to ignore or bury."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain, precise scientific language that slides without transition into blunt personal opinion. Uses Montenegrin and Igbo phrases when emotional. Refers to the lake as \u0027she\u0027 without self-consciousness.",
+                            "cadence":  "Even and deliberate, with dry comic timing she deploys rarely and effectively.",
+                            "verbal_tics":  [
+                                                "\u0027The data is quite clear on this\u0027",
+                                                "A short exhale through the nose before delivering unwelcome facts"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027She has been running a fever for forty years. You would not tell a feverish patient that the numbers are probably fine.\u0027",
+                                                  "\u0027I leave Bathys a packet of compressed acoustic data every third day. Does it help? I have no way to know. Does the lake seem to appreciate the attention? She does, actually.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She needs a way to release her catastrophic stratification findings publicly in a form that cannot be suppressed â€” and she is willing to trust outsiders with the data if they can prove they have the reach",
+                        "Bathys, the lake E.L.F., appears to have begun communicating back through her sensor array in ways that might be intentional â€” she needs help interpreting what it is trying to say"
+                    ],
+    "narrative_function":  "Warning oracle and knowledge resource â€” she knows things about the lake\u0027s future that powerful entities would prefer suppressed. She is also a figure of neighborhood trust in Edgewater Prism, someone people bring concerns to. Her lake E.L.F. relationship could be a plot thread.",
+    "augmentations":  "Subdermal environmental sensor array (both forearms; custom-built over years from salvaged components). Color-shifting geneware on left forearm keyed to sensor output. Cochlear audio implant tuned to infrasound frequencies for storm detection â€” installed after a near-drowning incident in 2201.",
+    "daily_life":  "She is on the lake platform by 6 AM regardless of weather, running instrument checks and data logs. She teaches one undergraduate lecture course on climate systems that consistently has a waitlist. She attends corponation data-sharing calls with careful legal counsel and provides exactly what she is contractually obligated to provide and nothing more.",
+    "affiliation":  "University Spine â€” Department of Ecological Systems; independent data-sharing agreement with Zheng-Dao Environmental Monitoring (arms-length, data only)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  6,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  10
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  0,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -4
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "scientist",
+                               "oracle",
+                               "resistant",
+                               "ritualist",
+                               "burden-carrier"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never falsify or soften data, regardless of who asks",
+                                              "Do not share raw modeling data with any corponation partner â€” summaries only"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Presents facts with sources",
+                                                 "Publishes data in academic venues and waits",
+                                                 "Contacts journalists with access to the data and specific legal protection frameworks",
+                                                 "Releases everything to public domain simultaneously across platforms Axiom and Tessera cannot take down"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assesses them quickly and efficiently â€” useful, not useful, or harmful â€” and treats them accordingly without pretense",
+                                                   "friends":  "Dry warmth, long memory, absolute reliability in a crisis; she will not say she loves you but she will show up at 3 AM with the right tools"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Doubles instrument checks and log frequency",
+                                                "medium":  "Becomes terse and moves faster, reduced social warmth",
+                                                "high":  "Goes completely silent for 24-48 hours, alone on the platform, then emerges with a decision already made"
+                                            },
+                       "contradictions":  [
+                                              "Believes in radical transparency about data but has been sitting on the most important finding of her career for a year and a half"
+                                          ],
+                       "habits":  [
+                                      "Leaves small wrapped data offerings on the platform railing every third morning",
+                                      "Corrects people\u0027s units of measurement mid-sentence without apology"
+                                  ],
+                       "breaking_points":  [
+                                               "Watching her data used to justify inaction",
+                                               "A student being dismissed or punished for replicating her findings"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Perpetual Student":  0.9,
+                       "Quick Study":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Edgewater Prism",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Edgewater Prism to a Russian-Montenegrin heritage mother (structural engineer) and Nigerian father (ferry system operator)",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "First published paper on Lake Michigan thermocline disruption; largely ignored",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Near-drowning during a platform incident; cochlear implant installed during recovery",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Completed catastrophic stratification model; has not yet submitted for publication",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Model 9 \u0027Payday\u0027",
+                            "Street Custom \u0027Molotov Standard\u0027 Incendiary Bottle",
+                            "Street Custom \u0027Scorpion Tail\u0027 Chain Whip"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Edgewater Prism",
+                             "The Sullen Reach",
+                             "Lakefront Creamery",
+                             "Patience",
+                             "Silver",
+                             "DÃ©jÃ  Vu"
+                         ],
+    "district":  "The Laceworks",
+    "physical_description":  {
+                                 "heritage":  "Rich genetic mosaic anchored by Sub-Saharan African ancestry (55%) providing warm deep tones and rounded facial contours, substantially shaped by Middle Eastern heritage (27.2%) contributing defined bone structure and olive undertones, with meaningful Indigenous American (9.4%), East Asian (5.2%), and Southeast Asian (3.2%) contributions creating subtle structural refinements and warm complexion layering. A true product of the Ubiquitous Diasporaâ€”her features speak to generations of global human movement.",
+                                 "height_cm":  183,
+                                 "weight_kg":  71,
+                                 "build":  "Lean and angular with the musculature of someone who has spent decades on water â€” broad shoulders, defined forearms, minimal body fat. Posture suggests ease in motion rather than static repose.",
+                                 "hair_color":  "Silver-white, naturally gray since her forties",
+                                 "hair_style":  "Long braid secured with a dual-function sensor clip housing miniaturized weather instrumentation",
+                                 "hair_length":  "Long",
+                                 "eye_color":  "Deep brown with faint amber undertone â€” natural",
+                                 "skin_tone":  "Rich deep bronze with warm golden-amber undertones from dominant Sub-Saharan African heritage, layered with subtle olive and mahogany notes from Middle Eastern ancestry, further enriched by Indigenous American warmth. Decades of lake exposure have weathered the surface into a complex bronze-tinged patina with warm undertones preserved beneath.",
+                                 "complexion":  "Strong, sculpted facial structure reflecting the blend of Sub-Saharan African and Middle Eastern ancestryâ€”prominent cheekbones and defined jawline softened by fuller lips and rounded cheek contours from African genetic contribution, with subtle eye shape influence from East and Southeast Asian ancestry. Lines around the eyes and mouth from sustained squinting in glare and wind; sun-weathered but well-maintained. Minimal makeup. Hands show calluses and minor scars from equipment handling and weather work.",
+                                 "distinguishing_marks":  [
+                                                              "Fine scar tissue along the left side of her neck, barely visible but palpable â€” result of the 2201 near-drowning and subsequent cochlear implant installation",
+                                                              "Subdermal sensor array on both forearms visible as faint metallic tracery beneath the skin, more pronounced under direct light",
+                                                              "Left forearm displays active color-shifting geneware that transitions slowly through blues, teals, and greens in response to real-time lake data â€” currently a medium teal indicating stable turbidity"
+                                                          ],
+                                 "visible_augmentations":  "Left forearm geneware modification (primary visual identifier). Faint subdermal sensor tracery visible on both forearms under certain light angles. Small sealed port behind left ear housing cochlear implant (typically concealed by hair, visible when braided). Custom sensor clip doubled as functional weather instrument.",
+                                 "posture_movement":  "Economical, purposeful movement â€” no wasted motion. Often oriented toward windows or toward the lake, even in conversation. Hands move with technical precision when discussing data. Stance is stable and grounded, adapted for standing on moving platforms. Slight forward tilt of the head â€” compensation for directional audio from the cochlear implant.",
+                                 "clothing_style":  "Tier 2-3 academic/field blend: waterproof lab coat (custom-tailored, high-end synthetic with temperature regulation), layered thermal wear beneath, reinforced cargo pants with sealed pockets for instruments, waterproof field boots with excellent tread. Accessorizes with a woven bracelet made from synthetic lake-plant fiber (gift from students). Wedding band worn on right hand (left hand often in water). No corporate branding. Watches and instruments are personal or University Spine-issued, never ostentatious."
+                             },
+    "image_prompt":  "Bjarne Karimi-Quartey, GLMZ, tall lean angular woman with rich deep bronze skin and warm golden undertones, long silver-white hair braided with embedded sensor clip, natural deep brown eyes with amber flecks, prominent cheekbones and defined jawline softened by fuller lips, subtle East Asian eye shape influence. Left forearm displays active teal color-shifting geneware responding to environmental data, subdermal sensor tracery visible beneath skin under light. Fine scar tissue along left neck from cochlear implant. Wearing custom waterproof temperature-regulation lab coat, layered thermal wear, reinforced cargo pants with sealed pockets, waterproof field boots. Woven synthetic lake-plant fiber bracelet, wedding band on right hand. Standing at window overlooking Great Lakes, economical precise posture, slight forward head tilt, hands positioned near weather instruments. Minimal makeup, sun-weathered complexion. Atmospheric indoor lighting with cool blue undertones from augmentation glow, soft window light catching silver hair and sensor tracery. Professional but field-worn appearance, no corporate branding. Mood: focused, contemplative, connected to water and data. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  55,
+                             "Middle Eastern":  27.2,
+                             "Indigenous American":  9.4,
+                             "East Asian":  5.2,
+                             "Southeast Asian":  3.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Somali":  55
+                                                                         }
+                                                    },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  7.3
+                                                               },
+                                                   "Persian":  {
+                                                                   "Afghan Dari":  17.6
+                                                               },
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  1.7,
+                                                                          "Jordanian":  0.6
+                                                                      }
+                                               },
+                            "Indigenous American":  {
+                                                        "Andean":  {
+                                                                       "Aymara":  5.2
+                                                                   },
+                                                        "Plains Nations":  {
+                                                                               "Cherokee":  1.7,
+                                                                               "Lakota":  0.9
+                                                                           },
+                                                        "Great Lakes Nations":  {
+                                                                                    "Potawatomi":  0.7,
+                                                                                    "Ojibwe":  0.9
+                                                                                }
+                                                    },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Cantonese":  4.7,
+                                                               "Mandarin Northern":  0.5
+                                                           }
+                                           },
+                            "Southeast Asian":  {
+                                                    "Thai":  {
+                                                                 "Thai":  1.8
+                                                             },
+                                                    "Laotian":  {
+                                                                    "Laotian":  1.4
+                                                                }
+                                                }
+                        },
+    "tier":  "4"
 }

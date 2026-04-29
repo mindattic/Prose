@@ -80,22 +80,8 @@
                         <div style="flex: 1; min-width: 200px;"><div class="field-label">Verbal Tics (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editVerbalTics"></textarea></div>
                         <div style="flex: 1; min-width: 200px;"><div class="field-label">Example Lines (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editExampleLines"></textarea></div>
                     </div>
-                    <div class="form-check mb-3">
-                        <input type="checkbox" class="form-check-input" id="usesFacets" @bind="editing.UsesFacets" />
-                        <label class="form-check-label text-muted small" for="usesFacets">Uses facet tags in narration</label>
-                    </div>
-
                     @* ── Psychology ───────────────────────────── *@
                     <div class="field-label text-danger mt-3">Psychology</div>
-                    <div class="field-label">Facet Weights</div>
-                    <div class="d-flex flex-wrap gap-2 mb-3">
-                        <div style="min-width: 70px;"><small class="text-muted">Wound</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editWound" /></div>
-                        <div style="min-width: 70px;"><small class="text-muted">Ideal</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editIdeal" /></div>
-                        <div style="min-width: 70px;"><small class="text-muted">Id</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editId" /></div>
-                        <div style="min-width: 70px;"><small class="text-muted">Shadow</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editShadow" /></div>
-                        <div style="min-width: 70px;"><small class="text-muted">Mask</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editMask" /></div>
-                        <div style="min-width: 70px;"><small class="text-muted">Ghost</small><input type="number" step="0.05" min="0" max="1" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="_editGhost" /></div>
-                    </div>
                     <div class="d-flex flex-wrap gap-2 mb-3">
                         <div style="flex: 1; min-width: 200px;"><div class="field-label">Core Fears</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editCoreFears"></textarea></div>
                         <div style="flex: 1; min-width: 200px;"><div class="field-label">Core Desires</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="_editCoreDesires"></textarea></div>
@@ -156,9 +142,6 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
 
-    // Facet weights
-    private double editWound, _editIdeal, _editId, _editShadow, _editMask, _editGhost;
-
     // List fields edited as newline-separated strings
     private string editCoreFears = "", _editCoreDesires = "", _editCopingMechanisms = "", _editBlindSpots = "";
     private string editVerbalTics = "", _editExampleLines = "";
@@ -203,8 +186,6 @@
     {
         editing = new CharacterData();
         isNew = true; _confirmDelete = false;
-        editWound = 0.5; _editIdeal = 0.5; _editId = 0.5;
-        _editShadow = 0.5; _editMask = 0.5; _editGhost = 0.5;
         ClearListFields();
     }
 
@@ -212,9 +193,6 @@
     {
         _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_people", c.Id);
         editing = c; originalName = c.Name; isNew = false; _confirmDelete = false;
-        var fw = c.Psychology.FacetWeights;
-        editWound = fw.Wound; _editIdeal = fw.Ideal; _editId = fw.Id;
-        _editShadow = fw.Shadow; _editMask = fw.Mask; _editGhost = fw.Ghost;
 
         // Psychology lists
         editCoreFears = string.Join("\n", c.Psychology.CoreFears);
@@ -247,17 +225,14 @@
     private void GenerateStory()
     {
         if (editing == null) return;
-        Nav.NavigateTo("/stories?protagonist=" + Uri.EscapeDataString(editing.Name));
+        // Generation is now book-scoped — drop the user on the bookshelf and let them pick a book.
+        // The chapters page in that book has the Surprise Me / Guide Me buttons.
+        Nav.NavigateTo("/books");
     }
 
     private void SaveEdit()
     {
         if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return;
-
-        // Facet weights
-        editing.Psychology.FacetWeights.Wound = editWound; editing.Psychology.FacetWeights.Ideal = _editIdeal;
-        editing.Psychology.FacetWeights.Id = _editId; editing.Psychology.FacetWeights.Shadow = _editShadow;
-        editing.Psychology.FacetWeights.Mask = _editMask; editing.Psychology.FacetWeights.Ghost = _editGhost;
 
         // Psychology lists
         editing.Psychology.CoreFears = SplitLines(editCoreFears);

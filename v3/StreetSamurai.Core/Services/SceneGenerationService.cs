@@ -5,7 +5,6 @@ namespace StreetSamurai.Core.Services;
 
 public class SceneGenerationService
 {
-    private readonly FacetService facets;
     private readonly ContextAnalyzerService analyzer;
     private readonly BeatGeneratorService beatGen;
     private readonly WorldGraphService graph;
@@ -24,14 +23,13 @@ public class SceneGenerationService
     public event Action<GeneratedBeat>? OnBeatCompleted;
 
     public SceneGenerationService(
-        FacetService facets, ContextAnalyzerService analyzer, BeatGeneratorService beatGen,
+        ContextAnalyzerService analyzer, BeatGeneratorService beatGen,
         WorldGraphService graph, DatabaseService canonDb, ValidationService validator,
         IPathProvider paths, SemanticIndexService semanticIndex, InferenceService inference,
         SceneContextBuilder contextBuilder, ConsequenceService consequences,
         AmbientAnomalyService anomalies, NarrativeSummaryService summaries,
         DialogueService dialogue)
     {
-        this.facets = facets;
         this.analyzer = analyzer;
         this.beatGen = beatGen;
         this.graph = graph;
@@ -47,10 +45,9 @@ public class SceneGenerationService
         this.dialogue = dialogue;
     }
 
-    public async Task<GeneratedScene> GenerateSceneAsync(SceneRequest request, FacetState characterWeights, CancellationToken ct = default)
+    public async Task<GeneratedScene> GenerateSceneAsync(SceneRequest request, CancellationToken ct = default)
     {
         graph.EnsureLoaded();
-        var allFacets = facets.LoadAllFacets();
         var storyBible = canonDb.GetLiteraryRulesPrompt();
 
         // Build dialogue voice profiles once for the whole scene — all characters, all relationships
@@ -71,7 +68,6 @@ public class SceneGenerationService
 
         var scene = new GeneratedScene { Request = request };
         var beats = new List<GeneratedBeat>();
-        var recentLeads = new List<string>();
         var sceneSoFar = "";
 
         for (int i = 0; i < request.NumBeats; i++)
@@ -94,14 +90,10 @@ public class SceneGenerationService
                 request.Characters.Select(WorldGraphService.Slugify).ToList(),
                 ct);
 
-            var (lead, supporting) = facets.SelectFacets(
-                characterWeights, analysis.PsychologicalTriggers, recentLeads);
-
             OnBeatProgress?.Invoke(new BeatGenerationProgress
             {
                 BeatIndex = i + 1,
                 TotalBeats = request.NumBeats,
-                LeadFacet = lead.Name,
                 Status = "generating",
             });
 
@@ -115,7 +107,7 @@ public class SceneGenerationService
                 BeatGoal = beatGoal,
             };
 
-            var text = await beatGen.GenerateBeatAsync(beatContext, lead, supporting, ct);
+            var text = await beatGen.GenerateBeatAsync(beatContext, ct);
 
             // Validate against canon — catch pronoun errors, dead characters, etc.
             var issues = validator.ValidateQuick(text);
@@ -128,15 +120,12 @@ public class SceneGenerationService
             {
                 Index = i,
                 Goal = beatContext.BeatGoal,
-                LeadFacet = lead.Name,
-                SupportingFacets = supporting.Select(f => f.Name).ToList(),
                 Text = text,
                 ContextTags = analysis.PsychologicalTriggers,
                 ValidationIssues = issues.Select(iss => $"[{iss.Category}] {iss.EntityName}: {iss.Description}").ToList(),
             };
 
             beats.Add(beat);
-            recentLeads.Add(lead.Name);
             sceneSoFar += "\n\n" + text;
 
             OnBeatCompleted?.Invoke(beat);

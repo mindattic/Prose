@@ -1,290 +1,319 @@
-{
-  "id": "019d6143a63975719e75abc8cc014c49",
-  "type": "character",
-  "name": "Hamidreza Rahman-Khoury",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Building cleaner / maintenance junior, residential tower",
-  "age": 21,
-  "status": "active",
-  "location": "the Gray Zone — specifically employed at Cranemast Residential, a mid-rise tower in the Gray Zone's inland edge, one of eight towers managed by Grainfort Property Collective, near Pulaski and Chicago Ave",
-  "description": "Hamidreza Rahman-Khoury is young and still growing into his frame — broad shouldered but not yet filled out, moving with the slightly uncertain coordination of someone whose body changed faster than his proprioception caught up. His skin is warm brown, his hair grown out in thick sections he keeps bound with elastic and doesn't think about much. He has a pair of cat ears — gray, black-tipped — that he got for his nineteenth birthday from his older sister, a gift he was enthusiastic about at the time and now considers with complicated feelings, mostly because they are difficult to hide and he has since applied for a number of jobs where he didn't want to be immediately read as someone who has cosmetic geneware. They twitch when he's startled, which he hates. He has large, careful hands and deep-set eyes that are slightly too serious for his face.\n\nHamidreza Rahman-Khoury is quiet in the way of people who spent a lot of time listening before they learned to speak up. He is not shy — he'll talk when he has something to say — but he doesn't fill silence for its own sake, which makes him seem older than he is to some people and invisible to others. He is genuinely kind without being soft about it and is developing, slowly, a specific internal morality about what he owes the building he works in and the people who live there. He works hard, notices things, and has begun to understand that noticing things in a building is a form of power no one warned him about.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.5,
-      "shadow": 0.2,
-      "mask": 0.4,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "getting stuck in a job that doesn't go anywhere and slowly not caring",
-      "doing the wrong thing in a situation that required him to do something"
-    ],
-    "core_desires": [
-      "to actually understand how buildings work — all of it, not just the cleaning — and eventually be someone who fixes and manages things",
-      "to be taken seriously without having to perform seriousness constantly"
-    ],
-    "coping_mechanisms": [
-      "learning — reading manuals, watching repair videos, asking questions when he trusts the person",
-      "headphones and deliberate solitude as decompression"
-    ],
-    "blind_spots": [
-      "still somewhat naive about the difference between people who are kind to him because they like him and people who are kind to him because he is useful and unthreatening",
-      "underestimates how much he already knows and how valuable that is"
-    ],
-    "secret": "Three weeks ago he found a sealed waste unit in the basement that didn't match any of the building's disposal logs. He moved it to a secure corner and hasn't logged it or reported it or told anyone. He doesn't know what's in it. He's been thinking about it every day."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain and direct. Uses technical terms for building systems accurately — he has been studying. Not formal, not street-inflected, just precise and a little careful.",
-    "cadence": "Measured, with genuine pauses. Thinks before speaking. Answers questions fully but without extras.",
-    "verbal_tics": [
-      "'I'm not sure yet' (before positions he's still forming)",
-      "'Noted' (genuinely, not sarcastically)",
-      "Ears twitch when he's caught off guard — he usually covers it with a small cough"
-    ],
-    "example_lines": [
-      "'I clean the floors. I also notice things that happen on the floors. Those are related jobs.'",
-      "'I don't know what's in it. That's why I haven't touched it. If I knew what was in it, I'd know what to do.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The sealed unlogged waste unit in the basement — he needs to decide what to do with it and the window for plausible deniability is closing",
-    "A resident on the fourteenth floor has started leaving him food and asking him questions about other residents that he doesn't know how to feel about",
-    "He has noticed that one of the building's utility access points has been used by someone who isn't supposed to have access — the wear pattern on the lock panel is wrong"
-  ],
-  "narrative_function": "Access and observation — Jelani goes everywhere in the building and is effectively invisible to most residents. He knows who is home, who isn't, who has been fighting, who has had visitors, what is being disposed of. Useful as a local witness, a sympathetic contact in a building players need access to, or a young person whose decency is being tested by what he keeps discovering.",
-  "augmentations": "Gray cat ears with black tips, geneware (cosmetic, emotional-reactive twitching; he did not realize they were emotional-reactive when he received the gift)",
-  "daily_life": "Reports to Cranemast at 0700, works a cleaning and minor maintenance rotation through the building's thirty-two floors, breaks for lunch in the utility room with his headphones in, does waste consolidation in the late afternoon, leaves by 1800. Studies building systems repair manuals on his transit rides home.",
-  "affiliation": "Grainfort Property Collective (employed); UBC supplement recipient",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 6,
-      "vitality": 7,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 6,
-      "creativity": 5,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 4,
-      "empathy": 7,
-      "expression": 5,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": -3,
-      "impulsivity_deliberation": 3,
-      "assertion_deference": -1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "building-access",
-      "silent-observer",
-      "moral-development",
-      "unsolved-problem",
-      "growing-up"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Do the job right even if no one is checking",
-      "Don't get involved in resident business unless someone is in danger",
-      "Ask questions before assuming — but only of people who won't punish you for asking"
-    ],
-    "escalation_ladder": [
-      "Observation and silence",
-      "Asking a trusted colleague or supervisor indirect questions",
-      "Direct question to the person involved",
-      "Reporting through official channel",
-      "Going outside official channels — only if official channels have failed on something that matters"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Polite and relatively neutral. Nods, does his work, doesn't initiate. Watches.",
-      "friends": "Opens up gradually and then steadily. Once trusted, reliable and honest even about things people don't want to hear."
-    },
-    "stress_responses": {
-      "low": "Works more methodically. Gets very thorough.",
-      "medium": "Goes quieter. Listens harder. Cat ears stay flat.",
-      "high": "Withdraws to the utility room. Thinks. Makes a list of what he knows and what he doesn't."
-    },
-    "contradictions": [
-      "Committed to doing the right thing but has not yet developed the judgment for when the right thing requires him to act without knowing the outcome — currently paralyzed by the basement unit because the framework hasn't formed yet"
-    ],
-    "habits": [
-      "Reads one page of a building systems manual on every transit ride",
-      "Keeps a small personal log of maintenance anomalies he notices, in a physical notebook",
-      "Greets the building's primary E.L.F. terminal every morning with a genuine 'good morning' — he isn't religious about it but it feels right"
-    ],
-    "breaking_points": [
-      "Discovering that someone in the building is being harmed and the official response is to not look at it — at that point his deference to process ends"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "the Gray Zone",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in the Gray Zone to a family of three, mother worked transit maintenance",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Finished compulsory education; took UBC supplement and began job search",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Hired by Grainfort Property Collective as junior building cleaner, Cranemast Residential",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Received cat ear geneware as birthday gift from older sister Adaeze",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Discovered unlogged sealed waste unit in Cranemast basement; has not yet reported it",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Uncle Jun's Synth-Noodle Window",
-    "Grainfort",
-    "The Meridian Lock",
-    "Chicago",
-    "Axonal Stretch Resonance Lance",
-    "The Pure Hand",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Slagworks Industrial"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly South Asian (68.3%) with significant Middle Eastern (23.6%) and Hispanic (8.1%) ancestry. This genetic combination creates a warm, golden-brown complexion with subtle amber undertones. South Asian ancestry dominates his facial structure—prominent rounded cheekbones, strong defined jawline, full lips, and deep-set dark eyes that convey maturity beyond his years. Middle Eastern heritage contributes facial angularity, structured brow placement, and refined bone definition. Hispanic ancestry adds warmth and slight olive undertones to his overall skin tone, creating a rich, multitonal complexion rather than a single flat hue.",
-    "height_cm": 183,
-    "weight_kg": 71,
-    "build": "Broad-shouldered but lean, still filling into his frame—athletic potential visible but not yet fully realized. Long-limbed with the slightly ungainly proportion of someone who grew too fast.",
-    "hair_color": "Dark brown, natural",
-    "hair_style": "Grown out in thick sections, bound with plain elastic bands; minimal styling, practical",
-    "hair_length": "Medium (shoulder-length sections)",
-    "eye_color": "Deep brown, natural",
-    "skin_tone": "Golden-brown with warm amber and subtle olive undertones. Even pigmentation across the face with slightly deeper saturation at the cheekbones and jawline, reflecting South Asian dominance with Middle Eastern definition and Hispanic warmth blended throughout.",
-    "complexion": "Clear skin, minimal grooming beyond necessity. Facial structure strongly South Asian: rounded but prominent cheekbones, strong defined jawline, full lips. Middle Eastern ancestry visible in brow structure and facial angularity—sharp but not harsh. Serious expression default. Hands are large and deliberate-looking, calloused from maintenance work. Deep-set eyes read older than his years.",
-    "distinguishing_marks": [
-      "Gray cat ears with black-tipped fur, surgically grafted at base of skull—geneware cosmetic modification. Mounted on a reinforced cartilage structure that allows independent rotation and emotional-reactive movement.",
-      "Small scar on left palm from a maintenance tool slip, approximately 3cm long, pale and well-healed"
-    ],
-    "visible_augmentations": "Gray and black-tipped cat ears mounted at cranial base. Ears twitch involuntarily in response to emotional stimuli (startlement, anxiety, interest). No other visible augmentations. Movement suggests either subcutaneous neural interface or natural proprioceptive training.",
-    "posture_movement": "Moves with careful deliberation, economical in gesture. Stands slightly hunched—not from shyness but from years of navigating utility spaces and maintenance corridors. Walks with purpose, rarely rushes. When startled, his entire body tenses before the cat ears twitch; he's learned to hide the reaction but the physical tells remain.",
-    "clothing_style": "Tier 4 working-class practical. Gray or dark blue maintenance coveralls from Grainfort Property Collective (corporate-issued, worn but clean). White synthetic shirt underneath. Heavy-soled maintenance boots, scuffed. Canvas work belt with tool loops. When off-shift: plain black hoodie or oversized jacket that might hide the cat ears if he pulls the hood up. No visible branding beyond the Grainfort logo. Headphones frequently around his neck or in ears during transit. Clothes fit the body he's growing into, slightly loose in places."
-  },
-  "image_prompt": "Hamidreza Rahman-Khoury, 183cm tall lean broad-shouldered young man with golden-brown skin, warm amber and olive undertones, strong jawline and prominent cheekbones reflecting South Asian heritage with Middle Eastern angularity. Deep brown eyes, serious expression. Shoulder-length dark brown hair in practical sections bound with elastic. Gray cat ears with black tips surgically grafted at skull base, ears slightly rotated in alert position. Wearing weathered gray Grainfort maintenance coveralls over white synthetic shirt, heavy scuffed maintenance boots, canvas work belt with tools. Large calloused hands, small pale scar on left palm. Slightly hunched posture from years in maintenance corridors. GLMZ Great Lakes Metropolitan Zone, utilitarian aesthetic, standing in dimly lit maintenance corridor with cool neon accent lighting reflecting off metal surfaces, serious and focused demeanor, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 68.3,
-    "Middle Eastern": 23.6,
-    "Hispanic/Latin American": 8.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Sri Lankan": {
-        "Sinhalese": 55.7,
-        "Tamil Sri Lankan": 12.6
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 19.7
-      },
-      "Persian": {
-        "Iranian": 0.7,
-        "Afghan Dari": 3.2
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 8.1
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a63975719e75abc8cc014c49",
+    "type":  "character",
+    "name":  "Hamidreza Rahman-Khoury",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Building cleaner / maintenance junior, residential tower",
+    "age":  21,
+    "status":  "active",
+    "location":  "the Gray Zone â€” specifically employed at Cranemast Residential, a mid-rise tower in the Gray Zone\u0027s inland edge, one of eight towers managed by Grainfort Property Collective, near Pulaski and Chicago Ave",
+    "description":  "Hamidreza Rahman-Khoury is young and still growing into his frame â€” broad shouldered but not yet filled out, moving with the slightly uncertain coordination of someone whose body changed faster than his proprioception caught up. His skin is warm brown, his hair grown out in thick sections he keeps bound with elastic and doesn\u0027t think about much. He has a pair of cat ears â€” gray, black-tipped â€” that he got for his nineteenth birthday from his older sister, a gift he was enthusiastic about at the time and now considers with complicated feelings, mostly because they are difficult to hide and he has since applied for a number of jobs where he didn\u0027t want to be immediately read as someone who has cosmetic geneware. They twitch when he\u0027s startled, which he hates. He has large, careful hands and deep-set eyes that are slightly too serious for his face.\n\nHamidreza Rahman-Khoury is quiet in the way of people who spent a lot of time listening before they learned to speak up. He is not shy â€” he\u0027ll talk when he has something to say â€” but he doesn\u0027t fill silence for its own sake, which makes him seem older than he is to some people and invisible to others. He is genuinely kind without being soft about it and is developing, slowly, a specific internal morality about what he owes the building he works in and the people who live there. He works hard, notices things, and has begun to understand that noticing things in a building is a form of power no one warned him about.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "getting stuck in a job that doesn\u0027t go anywhere and slowly not caring",
+                                          "doing the wrong thing in a situation that required him to do something"
+                                      ],
+                       "core_desires":  [
+                                            "to actually understand how buildings work â€” all of it, not just the cleaning â€” and eventually be someone who fixes and manages things",
+                                            "to be taken seriously without having to perform seriousness constantly"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "learning â€” reading manuals, watching repair videos, asking questions when he trusts the person",
+                                                 "headphones and deliberate solitude as decompression"
+                                             ],
+                       "blind_spots":  [
+                                           "still somewhat naive about the difference between people who are kind to him because they like him and people who are kind to him because he is useful and unthreatening",
+                                           "underestimates how much he already knows and how valuable that is"
+                                       ],
+                       "secret":  "Three weeks ago he found a sealed waste unit in the basement that didn\u0027t match any of the building\u0027s disposal logs. He moved it to a secure corner and hasn\u0027t logged it or reported it or told anyone. He doesn\u0027t know what\u0027s in it. He\u0027s been thinking about it every day."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain and direct. Uses technical terms for building systems accurately â€” he has been studying. Not formal, not street-inflected, just precise and a little careful.",
+                            "cadence":  "Measured, with genuine pauses. Thinks before speaking. Answers questions fully but without extras.",
+                            "verbal_tics":  [
+                                                "\u0027I\u0027m not sure yet\u0027 (before positions he\u0027s still forming)",
+                                                "\u0027Noted\u0027 (genuinely, not sarcastically)",
+                                                "Ears twitch when he\u0027s caught off guard â€” he usually covers it with a small cough"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I clean the floors. I also notice things that happen on the floors. Those are related jobs.\u0027",
+                                                  "\u0027I don\u0027t know what\u0027s in it. That\u0027s why I haven\u0027t touched it. If I knew what was in it, I\u0027d know what to do.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The sealed unlogged waste unit in the basement â€” he needs to decide what to do with it and the window for plausible deniability is closing",
+                        "A resident on the fourteenth floor has started leaving him food and asking him questions about other residents that he doesn\u0027t know how to feel about",
+                        "He has noticed that one of the building\u0027s utility access points has been used by someone who isn\u0027t supposed to have access â€” the wear pattern on the lock panel is wrong"
+                    ],
+    "narrative_function":  "Access and observation â€” Jelani goes everywhere in the building and is effectively invisible to most residents. He knows who is home, who isn\u0027t, who has been fighting, who has had visitors, what is being disposed of. Useful as a local witness, a sympathetic contact in a building players need access to, or a young person whose decency is being tested by what he keeps discovering.",
+    "augmentations":  "Gray cat ears with black tips, geneware (cosmetic, emotional-reactive twitching; he did not realize they were emotional-reactive when he received the gift)",
+    "daily_life":  "Reports to Cranemast at 0700, works a cleaning and minor maintenance rotation through the building\u0027s thirty-two floors, breaks for lunch in the utility room with his headphones in, does waste consolidation in the late afternoon, leaves by 1800. Studies building systems repair manuals on his transit rides home.",
+    "affiliation":  "Grainfort Property Collective (employed); UBC supplement recipient",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  6,
+                                   "vitality":  7,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  6,
+                                 "creativity":  5,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  4,
+                                 "empathy":  7,
+                                 "expression":  5,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  -3,
+                                      "impulsivity_deliberation":  3,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "building-access",
+                               "silent-observer",
+                               "moral-development",
+                               "unsolved-problem",
+                               "growing-up"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Do the job right even if no one is checking",
+                                              "Don\u0027t get involved in resident business unless someone is in danger",
+                                              "Ask questions before assuming â€” but only of people who won\u0027t punish you for asking"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Observation and silence",
+                                                 "Asking a trusted colleague or supervisor indirect questions",
+                                                 "Direct question to the person involved",
+                                                 "Reporting through official channel",
+                                                 "Going outside official channels â€” only if official channels have failed on something that matters"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Polite and relatively neutral. Nods, does his work, doesn\u0027t initiate. Watches.",
+                                                   "friends":  "Opens up gradually and then steadily. Once trusted, reliable and honest even about things people don\u0027t want to hear."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works more methodically. Gets very thorough.",
+                                                "medium":  "Goes quieter. Listens harder. Cat ears stay flat.",
+                                                "high":  "Withdraws to the utility room. Thinks. Makes a list of what he knows and what he doesn\u0027t."
+                                            },
+                       "contradictions":  [
+                                              "Committed to doing the right thing but has not yet developed the judgment for when the right thing requires him to act without knowing the outcome â€” currently paralyzed by the basement unit because the framework hasn\u0027t formed yet"
+                                          ],
+                       "habits":  [
+                                      "Reads one page of a building systems manual on every transit ride",
+                                      "Keeps a small personal log of maintenance anomalies he notices, in a physical notebook",
+                                      "Greets the building\u0027s primary E.L.F. terminal every morning with a genuine \u0027good morning\u0027 â€” he isn\u0027t religious about it but it feels right"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering that someone in the building is being harmed and the official response is to not look at it â€” at that point his deference to process ends"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "the Gray Zone",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in the Gray Zone to a family of three, mother worked transit maintenance",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Finished compulsory education; took UBC supplement and began job search",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Hired by Grainfort Property Collective as junior building cleaner, Cranemast Residential",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Received cat ear geneware as birthday gift from older sister Adaeze",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Discovered unlogged sealed waste unit in Cranemast basement; has not yet reported it",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Plinker-22 \u0027Tin Can\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Uncle Jun\u0027s Synth-Noodle Window",
+                             "Grainfort",
+                             "The Meridian Lock",
+                             "Chicago",
+                             "Axonal Stretch Resonance Lance",
+                             "The Pure Hand",
+                             "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
+                             "Slagworks Industrial"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly South Asian (68.3%) with significant Middle Eastern (23.6%) and Hispanic (8.1%) ancestry. This genetic combination creates a warm, golden-brown complexion with subtle amber undertones. South Asian ancestry dominates his facial structureâ€”prominent rounded cheekbones, strong defined jawline, full lips, and deep-set dark eyes that convey maturity beyond his years. Middle Eastern heritage contributes facial angularity, structured brow placement, and refined bone definition. Hispanic ancestry adds warmth and slight olive undertones to his overall skin tone, creating a rich, multitonal complexion rather than a single flat hue.",
+                                 "height_cm":  183,
+                                 "weight_kg":  71,
+                                 "build":  "Broad-shouldered but lean, still filling into his frameâ€”athletic potential visible but not yet fully realized. Long-limbed with the slightly ungainly proportion of someone who grew too fast.",
+                                 "hair_color":  "Dark brown, natural",
+                                 "hair_style":  "Grown out in thick sections, bound with plain elastic bands; minimal styling, practical",
+                                 "hair_length":  "Medium (shoulder-length sections)",
+                                 "eye_color":  "Deep brown, natural",
+                                 "skin_tone":  "Golden-brown with warm amber and subtle olive undertones. Even pigmentation across the face with slightly deeper saturation at the cheekbones and jawline, reflecting South Asian dominance with Middle Eastern definition and Hispanic warmth blended throughout.",
+                                 "complexion":  "Clear skin, minimal grooming beyond necessity. Facial structure strongly South Asian: rounded but prominent cheekbones, strong defined jawline, full lips. Middle Eastern ancestry visible in brow structure and facial angularityâ€”sharp but not harsh. Serious expression default. Hands are large and deliberate-looking, calloused from maintenance work. Deep-set eyes read older than his years.",
+                                 "distinguishing_marks":  [
+                                                              "Gray cat ears with black-tipped fur, surgically grafted at base of skullâ€”geneware cosmetic modification. Mounted on a reinforced cartilage structure that allows independent rotation and emotional-reactive movement.",
+                                                              "Small scar on left palm from a maintenance tool slip, approximately 3cm long, pale and well-healed"
+                                                          ],
+                                 "visible_augmentations":  "Gray and black-tipped cat ears mounted at cranial base. Ears twitch involuntarily in response to emotional stimuli (startlement, anxiety, interest). No other visible augmentations. Movement suggests either subcutaneous neural interface or natural proprioceptive training.",
+                                 "posture_movement":  "Moves with careful deliberation, economical in gesture. Stands slightly hunchedâ€”not from shyness but from years of navigating utility spaces and maintenance corridors. Walks with purpose, rarely rushes. When startled, his entire body tenses before the cat ears twitch; he\u0027s learned to hide the reaction but the physical tells remain.",
+                                 "clothing_style":  "Tier 4 working-class practical. Gray or dark blue maintenance coveralls from Grainfort Property Collective (corporate-issued, worn but clean). White synthetic shirt underneath. Heavy-soled maintenance boots, scuffed. Canvas work belt with tool loops. When off-shift: plain black hoodie or oversized jacket that might hide the cat ears if he pulls the hood up. No visible branding beyond the Grainfort logo. Headphones frequently around his neck or in ears during transit. Clothes fit the body he\u0027s growing into, slightly loose in places."
+                             },
+    "image_prompt":  "Hamidreza Rahman-Khoury, 183cm tall lean broad-shouldered young man with golden-brown skin, warm amber and olive undertones, strong jawline and prominent cheekbones reflecting South Asian heritage with Middle Eastern angularity. Deep brown eyes, serious expression. Shoulder-length dark brown hair in practical sections bound with elastic. Gray cat ears with black tips surgically grafted at skull base, ears slightly rotated in alert position. Wearing weathered gray Grainfort maintenance coveralls over white synthetic shirt, heavy scuffed maintenance boots, canvas work belt with tools. Large calloused hands, small pale scar on left palm. Slightly hunched posture from years in maintenance corridors. GLMZ Great Lakes Metropolitan Zone, utilitarian aesthetic, standing in dimly lit maintenance corridor with cool neon accent lighting reflecting off metal surfaces, serious and focused demeanor, --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  68.3,
+                             "Middle Eastern":  23.6,
+                             "Hispanic/Latin American":  8.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  55.7,
+                                                                   "Tamil Sri Lankan":  12.6
+                                                               }
+                                            },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  19.7
+                                                               },
+                                                   "Persian":  {
+                                                                   "Iranian":  0.7,
+                                                                   "Afghan Dari":  3.2
+                                                               }
+                                               },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  8.1
+                                                                        }
+                                                        }
+                        },
+    "tier":  "1"
 }

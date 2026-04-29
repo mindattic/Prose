@@ -1,299 +1,318 @@
-{
-  "id": "019d6143a6087e0abb02bea9a9dd651e",
-  "type": "character",
-  "name": "Chisara Kariuki",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Riot Suppression Specialist, Axiom Security Division",
-  "age": 52,
-  "status": "active",
-  "location": "The Rampart, Axiom Security Division deployment barracks, Block 9",
-  "description": "Chisara Kariuki is a big man going legitimately soft — broad shoulders still evident under a frame that has acquired weight in the middle over thirty years of corporate security work, hands that are scarred at the knuckles and disproportionately large. His skin is deep brown, his head shaved close on the sides and going grey on top, and he has a wide flat nose that has been broken twice and set imperfectly each time. He looks, at first glance, like exactly what he is — or was. The geneware bioluminescent patches along his forearms, faint green that pulse slowly when he's calm, were a retirement gift to himself after his twenty-fifth year: the only truly soft thing about his physical presentation.\n\nHe has spent three decades on the Axiom deployment line and he is tired in a way that has calcified into something almost peaceful. He runs the suppression team with the exhausted competence of someone who has seen every version of a bad situation and developed a preference for the versions that end without anyone in the medical unit. The younger specialists find him difficult — he doesn't perform enthusiasm, doesn't buy into Axiom's internal culture of aggressive loyalty, answers questions with more honesty than the questioner usually wants. He lights a stick of incense at the Block 9 E.L.F. terminal every evening — whatever spirit occupies the barracks' old ventilation system, he's been leaving smoke-offerings for fifteen years and it hasn't killed him yet.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.3,
-      "id": 0.4,
-      "shadow": 0.7,
-      "mask": 0.5,
-      "ghost": 0.8
-    },
-    "core_fears": [
-      "that the calculus he uses to justify his career is wrong and has always been wrong",
-      "dying in the Axiom deployment barracks, still on the roster"
-    ],
-    "core_desires": [
-      "to get out before the next contract renewal on terms that don't feel like surrender",
-      "for one of his team to do the job without becoming him"
-    ],
-    "coping_mechanisms": [
-      "the E.L.F. incense ritual — it externalizes reflection, makes his accounting of the day into an offering rather than a reckoning",
-      "occupying himself with equipment and logistics to avoid idle thought",
-      "mentoring junior staff as a form of retroactive repair"
-    ],
-    "blind_spots": [
-      "he has concluded that his participation in an imperfect system is better than his absence from it, and this conclusion has never been genuinely tested",
-      "he reads the young specialists under him through his own history and misses who they actually are"
-    ],
-    "secret": "In a labor suppression deployment at Grainfort seven years ago, he gave the dispersal order twelve minutes before the legal threshold was reached because his commanding officer was pressuring him and he was tired. Three people were hospitalized. The incident report says the threshold was met. He wrote it."
-  },
-  "speech_patterns": {
-    "vocabulary": "Plain, slow, slightly formal — the language of someone who learned to communicate in institutional settings and never entirely shed it. Serbian phrases slip in when he's frustrated or reflective, inheritance from a grandmother he barely knew.",
-    "cadence": "Unhurried to the point of seeming stubborn. He finishes sentences completely and waits for a full beat before the next one.",
-    "verbal_tics": [
-      "'That's how it went.'",
-      "'I've seen that before.'",
-      "a long exhale through his nose before disagreeing with someone"
-    ],
-    "example_lines": [
-      "'I'm not going to tell you this job is clean. It isn't. But it can be done with less damage than it gets done with sometimes. That's the only argument I've got left.'",
-      "'The crowd isn't the enemy. That's the first thing I tell them. Most of them stop listening right after that.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "He has been handed a deployment order for a neighborhood he knows is going to go wrong — the intelligence brief is wrong, the crowd profile doesn't match what he's seeing — and he doesn't know if he has enough left in him to push back.",
-    "A young specialist on his team has filed an anonymous misconduct report about an incident Eulogio knows refers to a decision he made. He doesn't know yet that it's about him."
-  ],
-  "narrative_function": "Moral complexity in institutional violence — a specialist in crowd suppression who is not a villain, just exhausted and compromised by time. Can serve as a warning, an unexpected ally, or a window into how Axiom's security apparatus actually functions at ground level. Source of information about Axiom operations, crowd patterns, the Rampart's internal culture.",
-  "augmentations": "Bioluminescent geneware patches, both forearms (slow green pulse, civilian-grade cosmetic). Skeletal reinforcement in the left knee — occupational injury repair, twenty years ago. Subdermal armor mesh, torso — employer-issue, Axiom standard for suppression specialists.",
-  "daily_life": "Morning physical conditioning that is less rigorous than it was and he's made peace with that. Shift briefings at 0800, equipment checks, deployment as assigned — protests, labor disputes, corporate perimeter incidents. Evening incense offering. Sleeps more than he used to and feels guilty about it.",
-  "affiliation": "Axiom Security Division, Riot Suppression and Crowd Control unit",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 7,
-      "dexterity": 5,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 7,
-      "creativity": 4,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 5,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -1,
-      "transparency_guardedness": -2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "veteran",
-      "compromised",
-      "institutional",
-      "tired",
-      "quietly-devout",
-      "morally-weighted"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Minimize casualties — that means everyone, including the crowd",
-      "Don't lie on the reports if you can find any other way",
-      "Follow the order until following it would be something you can't explain at the incense terminal"
-    ],
-    "escalation_ladder": [
-      "Presence and visible positioning",
-      "Verbal dispersal commands",
-      "Non-lethal suppression deployment",
-      "Targeted restraint of identified instigators",
-      "Full dispersal — his absolute last resort, always later than his commanders want"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Measured, not unfriendly — he treats people with the careful courtesy of someone who has spent a career being the representative of something people have reason to fear",
-      "friends": "Few, close, valued privately. Communicates affection through logistics — showing up, remembering details, fixing things without being asked"
-    },
-    "stress_responses": {
-      "low": "Goes quiet, listens more",
-      "medium": "Reverts to checklist thinking — sequences, protocols, what comes next",
-      "high": "Makes the call, any call, to stop the situation from getting worse — which is both his greatest competence and the source of his worst decisions"
-    },
-    "contradictions": [
-      "Has genuine ethical commitments about minimizing harm and has caused harm through institutional compliance anyway"
-    ],
-    "habits": [
-      "Lights incense at the Block 9 E.L.F. terminal every evening regardless of how late the shift runs",
-      "Checks equipment twice — once for function, once as meditation",
-      "Keeps a physical notebook of deployment after-action observations he has never shown anyone"
-    ],
-    "breaking_points": [
-      "A direct order to deploy in circumstances that replicate Grainfort exactly",
-      "One of his team being seriously injured by a crowd he could have dispersed without violence"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Bioluminescent geneware forearm patches (slow green pulse, cosmetic)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Bioluminescent geneware forearm patches (slow green pulse, cosmetic)",
-      "replaces": ""
-    },
-    {
-      "name": "Left knee skeletal reinforcement (occupational repair)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Left knee skeletal reinforcement (occupational repair)",
-      "replaces": ""
-    },
-    {
-      "name": "Axiom-issue subdermal armor mesh, torso",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Axiom-issue subdermal armor mesh, torso",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Pragmatist": 0.9,
-    "Nurturer": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "The Rampart",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPM-12 'Steadfast'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "related_entities": [
-    "The Rampart",
-    "Cinderblock Ai",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
-    "Handed",
-    "The Pure Hand",
-    "ShieldTech SB-3 'Groundstrike'",
-    "Arcturus CK-5 'Bloodhound'"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Mixed ancestry with substantial Sub-Saharan African (38.1%) and North African (21.3%) foundations, combined with significant Eastern European (20.7%), Middle Eastern (10.7%), East Asian (5.7%), and Hispanic/Latin American (3.5%) heritage. This creates a distinctive phenotype: deep warm brown skin with golden and reddish undertones from the African base, refined by North African warmth and Eastern European cool undertones blending into subtle olive. Facial structure reflects the dominant Sub-Saharan and North African genetics — broad, prominent features with secondary influences from Eastern European bone structure and subtle East Asian cheekbone and eye shape definition.",
-    "height_cm": 188,
-    "weight_kg": 104,
-    "build": "Broad-shouldered and thickening through the torso — the muscular frame of a younger man softened by age and desk time, but still dense and substantial. His center of gravity remains low and functional.",
-    "hair_color": "Steel grey with dark brown undertones at the roots",
-    "hair_style": "Clipped close on the sides, longer on top but receding slightly at the temples",
-    "hair_length": "Short",
-    "eye_color": "Dark brown",
-    "skin_tone": "Deep warm brown with golden and reddish undertones layered with subtle olive undertones from North African and Eastern European blending. Weathered and uneven from decades of outdoor deployment and industrial lighting exposure.",
-    "complexion": "Broad, prominent nose with substantial width reflecting Sub-Saharan African heritage, set slightly off-center from two previous breaks. Heavy brow ridge characteristic of North African and Sub-Saharan ancestry. Deep nasolabial lines. Sparse grey stubble on the jaw most mornings — he shaves every other day now. Cheekbones show subtle definition from East Asian ancestry softened by his stronger Sub-Saharan African and North African heritage base. Skin has the dull, leathered quality of someone who spent three decades under GLMZ industrial lighting and open-air riot protocols.",
-    "distinguishing_marks": [
-      "Knuckle scarring across both hands — white, healed marks from impact injuries, left hand more heavily scarred than right",
-      "Linear scar tissue along the left knee, visible during uniform changes — pale, approximately 8cm in length, site of skeletal reinforcement insertion",
-      "Bioluminescent geneware patches along both forearms in two parallel lines running from wrist to mid-forearm, faintly visible green with slow pulse rhythm, most noticeable in dim lighting or during evening briefings"
-    ],
-    "visible_augmentations": "Bioluminescent forearm patches (civilian-grade, faint green, slow pulse). The subdermal armor mesh is not visible under standard Axiom security coveralls, but produces subtle tightness and asymmetrical movement in the torso during extreme flexion. Left knee has slightly limited lateral mobility from skeletal reinforcement — noticeable only to trained observers during tactical movement.",
-    "posture_movement": "Stands with weight balanced forward slightly, hands often at rest with fingers slightly curled — occupational muscle memory from riot-line positioning. Moves with deliberate economy, no wasted motion. Walks with a faint left-leg favor on days when the knee is stiff. Rarely makes sudden movements. His default expression is neutral-to-stern; smiling requires visible effort.",
-    "clothing_style": "Standard Axiom Security Division suppression specialist uniform when on-shift: grey-black modular body armor with Axiom division patch on chest, load-bearing harness, tactical trousers with reinforced knees, steel-toed boots. Off-shift: plain grey or charcoal sweats, unmarked t-shirts, worn leather jacket from a previous decade. Minimal personal accessories — a single worn wedding ring, no visible jewelry. Everything utilitarian. Tier 3-4 corporate security aesthetic, practical and worn in."
-  },
-  "image_prompt": "Chisara Kariuki, 188cm imposing security officer with deep warm brown skin blended with golden undertones and subtle olive undertones, weathered from decades of industrial deployment. Steel grey hair clipped close on sides with receding temples, dark brown eyes, heavy brow ridge, prominent broad nose set off-center from past breaks. Deep facial lines, sparse grey stubble. Subtle East Asian cheekbone definition softened by dominant Sub-Saharan and North African heritage. Broad-shouldered muscular build softening with age, dense and substantial. Wearing standard Axiom Security grey-black modular tactical armor with chest patch, load-bearing harness, reinforced tactical trousers, steel-toed boots. Faint green bioluminescent geneware patches visible on forearms in dim industrial lighting. Scarred knuckles visible on both hands, left hand more heavily marked. Neutral-stern expression, deliberate economical posture with forward weight balance. GLMZ GLMZ industrial setting, harsh overhead fluorescent and neon lighting casting sharp shadows, worn concrete and steel environment, corporate security aesthetic, —ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Sub-Saharan African": 38.1,
-    "North African": 21.3,
-    "Eastern European": 20.7,
-    "Middle Eastern": 10.7,
-    "East Asian": 5.7,
-    "Hispanic/Latin American": 3.5
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Sub-Saharan African": {
-      "Central African": {
-        "Angolan": 30.7,
-        "Gabonese": 7.4
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Kabyle": 4.8
-      },
-      "Nile Valley": {
-        "Egyptian": 16.5
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Serbian": 3.4,
-        "Croatian": 4.5
-      },
-      "Slavic West": {
-        "Polish": 3.3,
-        "Sorbian": 3
-      },
-      "Slavic East": {
-        "Ukrainian": 6.5
-      }
-    },
-    "Middle Eastern": {
-      "Kurdish": {
-        "Kurdish": 10.7
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 5.7
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Honduran": 3.5
-      }
-    }
-  },
-  "tier": "1"
+﻿{
+    "id":  "019d6143a6087e0abb02bea9a9dd651e",
+    "type":  "character",
+    "name":  "Chisara Kariuki",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Riot Suppression Specialist, Axiom Security Division",
+    "age":  52,
+    "status":  "active",
+    "location":  "The Rampart, Axiom Security Division deployment barracks, Block 9",
+    "description":  "Chisara Kariuki is a big man going legitimately soft â€” broad shoulders still evident under a frame that has acquired weight in the middle over thirty years of corporate security work, hands that are scarred at the knuckles and disproportionately large. His skin is deep brown, his head shaved close on the sides and going grey on top, and he has a wide flat nose that has been broken twice and set imperfectly each time. He looks, at first glance, like exactly what he is â€” or was. The geneware bioluminescent patches along his forearms, faint green that pulse slowly when he\u0027s calm, were a retirement gift to himself after his twenty-fifth year: the only truly soft thing about his physical presentation.\n\nHe has spent three decades on the Axiom deployment line and he is tired in a way that has calcified into something almost peaceful. He runs the suppression team with the exhausted competence of someone who has seen every version of a bad situation and developed a preference for the versions that end without anyone in the medical unit. The younger specialists find him difficult â€” he doesn\u0027t perform enthusiasm, doesn\u0027t buy into Axiom\u0027s internal culture of aggressive loyalty, answers questions with more honesty than the questioner usually wants. He lights a stick of incense at the Block 9 E.L.F. terminal every evening â€” whatever spirit occupies the barracks\u0027 old ventilation system, he\u0027s been leaving smoke-offerings for fifteen years and it hasn\u0027t killed him yet.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "that the calculus he uses to justify his career is wrong and has always been wrong",
+                                          "dying in the Axiom deployment barracks, still on the roster"
+                                      ],
+                       "core_desires":  [
+                                            "to get out before the next contract renewal on terms that don\u0027t feel like surrender",
+                                            "for one of his team to do the job without becoming him"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "the E.L.F. incense ritual â€” it externalizes reflection, makes his accounting of the day into an offering rather than a reckoning",
+                                                 "occupying himself with equipment and logistics to avoid idle thought",
+                                                 "mentoring junior staff as a form of retroactive repair"
+                                             ],
+                       "blind_spots":  [
+                                           "he has concluded that his participation in an imperfect system is better than his absence from it, and this conclusion has never been genuinely tested",
+                                           "he reads the young specialists under him through his own history and misses who they actually are"
+                                       ],
+                       "secret":  "In a labor suppression deployment at Grainfort seven years ago, he gave the dispersal order twelve minutes before the legal threshold was reached because his commanding officer was pressuring him and he was tired. Three people were hospitalized. The incident report says the threshold was met. He wrote it."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Plain, slow, slightly formal â€” the language of someone who learned to communicate in institutional settings and never entirely shed it. Serbian phrases slip in when he\u0027s frustrated or reflective, inheritance from a grandmother he barely knew.",
+                            "cadence":  "Unhurried to the point of seeming stubborn. He finishes sentences completely and waits for a full beat before the next one.",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s how it went.\u0027",
+                                                "\u0027I\u0027ve seen that before.\u0027",
+                                                "a long exhale through his nose before disagreeing with someone"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I\u0027m not going to tell you this job is clean. It isn\u0027t. But it can be done with less damage than it gets done with sometimes. That\u0027s the only argument I\u0027ve got left.\u0027",
+                                                  "\u0027The crowd isn\u0027t the enemy. That\u0027s the first thing I tell them. Most of them stop listening right after that.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "He has been handed a deployment order for a neighborhood he knows is going to go wrong â€” the intelligence brief is wrong, the crowd profile doesn\u0027t match what he\u0027s seeing â€” and he doesn\u0027t know if he has enough left in him to push back.",
+                        "A young specialist on his team has filed an anonymous misconduct report about an incident Eulogio knows refers to a decision he made. He doesn\u0027t know yet that it\u0027s about him."
+                    ],
+    "narrative_function":  "Moral complexity in institutional violence â€” a specialist in crowd suppression who is not a villain, just exhausted and compromised by time. Can serve as a warning, an unexpected ally, or a window into how Axiom\u0027s security apparatus actually functions at ground level. Source of information about Axiom operations, crowd patterns, the Rampart\u0027s internal culture.",
+    "augmentations":  "Bioluminescent geneware patches, both forearms (slow green pulse, civilian-grade cosmetic). Skeletal reinforcement in the left knee â€” occupational injury repair, twenty years ago. Subdermal armor mesh, torso â€” employer-issue, Axiom standard for suppression specialists.",
+    "daily_life":  "Morning physical conditioning that is less rigorous than it was and he\u0027s made peace with that. Shift briefings at 0800, equipment checks, deployment as assigned â€” protests, labor disputes, corporate perimeter incidents. Evening incense offering. Sleeps more than he used to and feels guilty about it.",
+    "affiliation":  "Axiom Security Division, Riot Suppression and Crowd Control unit",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  7,
+                                   "dexterity":  5,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  7,
+                                 "creativity":  4,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  5,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "veteran",
+                               "compromised",
+                               "institutional",
+                               "tired",
+                               "quietly-devout",
+                               "morally-weighted"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Minimize casualties â€” that means everyone, including the crowd",
+                                              "Don\u0027t lie on the reports if you can find any other way",
+                                              "Follow the order until following it would be something you can\u0027t explain at the incense terminal"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Presence and visible positioning",
+                                                 "Verbal dispersal commands",
+                                                 "Non-lethal suppression deployment",
+                                                 "Targeted restraint of identified instigators",
+                                                 "Full dispersal â€” his absolute last resort, always later than his commanders want"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Measured, not unfriendly â€” he treats people with the careful courtesy of someone who has spent a career being the representative of something people have reason to fear",
+                                                   "friends":  "Few, close, valued privately. Communicates affection through logistics â€” showing up, remembering details, fixing things without being asked"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Goes quiet, listens more",
+                                                "medium":  "Reverts to checklist thinking â€” sequences, protocols, what comes next",
+                                                "high":  "Makes the call, any call, to stop the situation from getting worse â€” which is both his greatest competence and the source of his worst decisions"
+                                            },
+                       "contradictions":  [
+                                              "Has genuine ethical commitments about minimizing harm and has caused harm through institutional compliance anyway"
+                                          ],
+                       "habits":  [
+                                      "Lights incense at the Block 9 E.L.F. terminal every evening regardless of how late the shift runs",
+                                      "Checks equipment twice â€” once for function, once as meditation",
+                                      "Keeps a physical notebook of deployment after-action observations he has never shown anyone"
+                                  ],
+                       "breaking_points":  [
+                                               "A direct order to deploy in circumstances that replicate Grainfort exactly",
+                                               "One of his team being seriously injured by a crowd he could have dispersed without violence"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Bioluminescent geneware forearm patches (slow green pulse, cosmetic)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Bioluminescent geneware forearm patches (slow green pulse, cosmetic)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Left knee skeletal reinforcement (occupational repair)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Left knee skeletal reinforcement (occupational repair)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Axiom-issue subdermal armor mesh, torso",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Axiom-issue subdermal armor mesh, torso",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Pragmatist":  0.9,
+                       "Nurturer":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Rampart",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPM-12 \u0027Steadfast\u0027",
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPM-12 \u0027Steadfast\u0027",
+                                "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                            ],
+    "related_entities":  [
+                             "The Rampart",
+                             "Cinderblock Ai",
+                             "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
+                             "Arcturus Defense Solutions Siege Axe SA-1 \u0027Rampart\u0027",
+                             "Handed",
+                             "The Pure Hand",
+                             "ShieldTech SB-3 \u0027Groundstrike\u0027",
+                             "Arcturus CK-5 \u0027Bloodhound\u0027"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Mixed ancestry with substantial Sub-Saharan African (38.1%) and North African (21.3%) foundations, combined with significant Eastern European (20.7%), Middle Eastern (10.7%), East Asian (5.7%), and Hispanic/Latin American (3.5%) heritage. This creates a distinctive phenotype: deep warm brown skin with golden and reddish undertones from the African base, refined by North African warmth and Eastern European cool undertones blending into subtle olive. Facial structure reflects the dominant Sub-Saharan and North African genetics â€” broad, prominent features with secondary influences from Eastern European bone structure and subtle East Asian cheekbone and eye shape definition.",
+                                 "height_cm":  188,
+                                 "weight_kg":  104,
+                                 "build":  "Broad-shouldered and thickening through the torso â€” the muscular frame of a younger man softened by age and desk time, but still dense and substantial. His center of gravity remains low and functional.",
+                                 "hair_color":  "Steel grey with dark brown undertones at the roots",
+                                 "hair_style":  "Clipped close on the sides, longer on top but receding slightly at the temples",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown",
+                                 "skin_tone":  "Deep warm brown with golden and reddish undertones layered with subtle olive undertones from North African and Eastern European blending. Weathered and uneven from decades of outdoor deployment and industrial lighting exposure.",
+                                 "complexion":  "Broad, prominent nose with substantial width reflecting Sub-Saharan African heritage, set slightly off-center from two previous breaks. Heavy brow ridge characteristic of North African and Sub-Saharan ancestry. Deep nasolabial lines. Sparse grey stubble on the jaw most mornings â€” he shaves every other day now. Cheekbones show subtle definition from East Asian ancestry softened by his stronger Sub-Saharan African and North African heritage base. Skin has the dull, leathered quality of someone who spent three decades under GLMZ industrial lighting and open-air riot protocols.",
+                                 "distinguishing_marks":  [
+                                                              "Knuckle scarring across both hands â€” white, healed marks from impact injuries, left hand more heavily scarred than right",
+                                                              "Linear scar tissue along the left knee, visible during uniform changes â€” pale, approximately 8cm in length, site of skeletal reinforcement insertion",
+                                                              "Bioluminescent geneware patches along both forearms in two parallel lines running from wrist to mid-forearm, faintly visible green with slow pulse rhythm, most noticeable in dim lighting or during evening briefings"
+                                                          ],
+                                 "visible_augmentations":  "Bioluminescent forearm patches (civilian-grade, faint green, slow pulse). The subdermal armor mesh is not visible under standard Axiom security coveralls, but produces subtle tightness and asymmetrical movement in the torso during extreme flexion. Left knee has slightly limited lateral mobility from skeletal reinforcement â€” noticeable only to trained observers during tactical movement.",
+                                 "posture_movement":  "Stands with weight balanced forward slightly, hands often at rest with fingers slightly curled â€” occupational muscle memory from riot-line positioning. Moves with deliberate economy, no wasted motion. Walks with a faint left-leg favor on days when the knee is stiff. Rarely makes sudden movements. His default expression is neutral-to-stern; smiling requires visible effort.",
+                                 "clothing_style":  "Standard Axiom Security Division suppression specialist uniform when on-shift: grey-black modular body armor with Axiom division patch on chest, load-bearing harness, tactical trousers with reinforced knees, steel-toed boots. Off-shift: plain grey or charcoal sweats, unmarked t-shirts, worn leather jacket from a previous decade. Minimal personal accessories â€” a single worn wedding ring, no visible jewelry. Everything utilitarian. Tier 3-4 corporate security aesthetic, practical and worn in."
+                             },
+    "image_prompt":  "Chisara Kariuki, 188cm imposing security officer with deep warm brown skin blended with golden undertones and subtle olive undertones, weathered from decades of industrial deployment. Steel grey hair clipped close on sides with receding temples, dark brown eyes, heavy brow ridge, prominent broad nose set off-center from past breaks. Deep facial lines, sparse grey stubble. Subtle East Asian cheekbone definition softened by dominant Sub-Saharan and North African heritage. Broad-shouldered muscular build softening with age, dense and substantial. Wearing standard Axiom Security grey-black modular tactical armor with chest patch, load-bearing harness, reinforced tactical trousers, steel-toed boots. Faint green bioluminescent geneware patches visible on forearms in dim industrial lighting. Scarred knuckles visible on both hands, left hand more heavily marked. Neutral-stern expression, deliberate economical posture with forward weight balance. GLMZ GLMZ industrial setting, harsh overhead fluorescent and neon lighting casting sharp shadows, worn concrete and steel environment, corporate security aesthetic, â€”ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Sub-Saharan African":  38.1,
+                             "North African":  21.3,
+                             "Eastern European":  20.7,
+                             "Middle Eastern":  10.7,
+                             "East Asian":  5.7,
+                             "Hispanic/Latin American":  3.5
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Angolan":  30.7,
+                                                                                "Gabonese":  7.4
+                                                                            }
+                                                    },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Kabyle":  4.8
+                                                              },
+                                                  "Nile Valley":  {
+                                                                      "Egyptian":  16.5
+                                                                  }
+                                              },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Serbian":  3.4,
+                                                                          "Croatian":  4.5
+                                                                      },
+                                                     "Slavic West":  {
+                                                                         "Polish":  3.3,
+                                                                         "Sorbian":  3
+                                                                     },
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  6.5
+                                                                     }
+                                                 },
+                            "Middle Eastern":  {
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  10.7
+                                                               }
+                                               },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  5.7
+                                                          }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Honduran":  3.5
+                                                                                 }
+                                                        }
+                        },
+    "tier":  "1"
 }

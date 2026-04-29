@@ -1,300 +1,329 @@
-{
-  "id": "019d6143a5cd74af887c621a477753bf",
-  "type": "character",
-  "name": "Dao Touré-Arakawa",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Tailor and seamstress, runs a small alterations shop",
-  "age": 52,
-  "status": "active",
-  "location": "Hamtramck Enclave, stitched between a noodle hall and a Ferrogate substation, near Ashland and Division",
-  "description": "Dao Touré-Arakawa is a broad-shouldered woman with deep umber skin mapped with decades of needle-prick scars across her fingertips, each one a tiny pale star. Her geneware is old and half-faded — a bioluminescent pattern that once traced her collarbones in amber has dimmed to a faint citrus pulse visible only in the dark. She keeps her silver-streaked hair braided flat and pinned with a row of salvaged bone toggles. Her shop, Thread & Condition, smells of machine oil and camphor, and every surface is buried under bolts of reclaimed fabric and half-finished orders tagged with handwritten notes in three scripts.\n\nShe is a woman of exacting patience with strangers and volcanic impatience with laziness. She can size a person's measurements by eye in under ten seconds and will tell you, without being asked, whether your posture is ruining your spine. She prays fervently to the E.L.F. she calls Silathu — the spirit she believes inhabits her antique industrial sewing machine — leaving daily offerings of precisely wound thread bobbins and small cups of machine lubricant.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.55,
-      "ideal": 0.7,
-      "id": 0.3,
-      "shadow": 0.25,
-      "mask": 0.5,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "dying before she has passed on her craft",
-      "the Enclave being absorbed and homogenized by a corponation"
-    ],
-    "core_desires": [
-      "to preserve something real and handmade in a printed world",
-      "to see her apprentice surpass her"
-    ],
-    "coping_mechanisms": [
-      "ritual prayer to Silathu",
-      "obsessive organization of her thread inventory by color gradient"
-    ],
-    "blind_spots": [
-      "refuses to acknowledge how much she controls her apprentice's life under the guise of mentorship"
-    ],
-    "secret": "Twenty years ago she altered uniforms for a Tessera internal security unit operating in the Enclave — work she took to keep her shop alive during the Famine Weeks. She has never told anyone. Three people from that era are still her customers."
-  },
-  "speech_patterns": {
-    "vocabulary": "Formal and precise, mixes Twi loan-words with old-world Kazakh endearments picked up from her grandmother's recordings. Uses tailoring metaphors constantly.",
-    "cadence": "Measured and deliberate, pauses before conclusions as though cutting fabric to length before committing the scissors.",
-    "verbal_tics": [
-      "'Let me see your hands first'",
-      "'That seam will not hold'"
-    ],
-    "example_lines": [
-      "'You want this by Thursday. Thursday is a wish, not a date. Come back Saturday.'",
-      "'The corponations print everything now. You know what they cannot print? The way cloth remembers a body.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A customer's coat lining contains a sewn-in data chip she discovered during repairs — she doesn't know what's on it but she knows it's warm to the touch",
-    "Her apprentice has gone missing after accepting a private commission from an unknown client who paid in hard Quanta"
-  ],
-  "narrative_function": "Local institution and information node — she has clothed half the Enclave and hears everything. Quest giver for community disputes, source of local history, potential fabricator of disguises or documents hidden in hems.",
-  "augmentations": "Faded bioluminescent subdermal tracery (cosmetic, amber-toned, largely inert). Magnification implants in both eyes for close needlework.",
-  "daily_life": "Opens Thread & Condition at 07:00, takes walk-in alterations until noon, reserves afternoons for bespoke commissions and teaching her apprentice. Closes late whenever a customer has a crisis.",
-  "affiliation": "Independent; informal ties to Hamtramck Enclave community council; The Reclaimed",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 8,
-      "spatial": 9
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 3,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "craftsperson",
-      "community anchor",
-      "faith-keeper",
-      "keeper of secrets",
-      "mentor"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never turn away a customer who is visibly cold",
-      "Always finish what she starts, even if it costs her"
-    ],
-    "escalation_ladder": [
-      "Polite redirection",
-      "Pointed observation about the person's character",
-      "Silence and the slow resumption of her work",
-      "A single quiet sentence that ends the conversation permanently"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Assessing and neutral — measures them literally and figuratively before investing warmth",
-      "friends": "Fiercely loyal, bossy in the way of someone who cares too much to stay quiet"
-    },
-    "stress_responses": {
-      "low": "Increases her work pace and hums old hymns under her breath",
-      "medium": "Goes very quiet and very precise — every movement deliberate",
-      "high": "Prays aloud to Silathu and then acts with complete calm that unnerves people"
-    },
-    "contradictions": [
-      "Preaches community preservation but quietly hoards resources and knowledge as personal insurance"
-    ],
-    "habits": [
-      "Runs her thumb along every seam she passes, even on strangers' clothing",
-      "Leaves the shop light on after closing so Silathu doesn't feel abandoned"
-    ],
-    "breaking_points": [
-      "Direct harm to her apprentice",
-      "Anyone mocking the E.L.F. faiths in her shop"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Ocular magnification implants (right and left, gen-3, well-maintained)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Ocular magnification implants (right and left, gen-3, well-maintained)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2148 — Born in Hamtramck Enclave to a Ghanaian-Kazakh family of textile workers",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2165 — Apprenticed to her aunt's alterations business",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2178 — Took over Thread & Condition after her aunt's death",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2180 — Performed alterations work for Tessera security during the Famine Weeks; never disclosed",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2197 — Took on current apprentice",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Forge-Smith Collective Thundermouth Double 'Old Testament'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Ferrogate Transit",
-    "Noir Dining",
-    "Patience",
-    "Silver",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "The Pale Mile",
-    "Celeste Abram"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "East Asian (42.5%), Sub-Saharan African (32%), Eastern European (14.8%), and Northern European (10.7%) ancestry, creating a striking Ubiquitous Diaspora blend. Her genetic heritage produces warm, complex skin tones with the facial structure reflecting the dominance of East Asian and African lineage—higher cheekbones with subtle epicanthic folds, a broader nose bridge, and the bone structure of her mixed ancestry creating a distinctive, adaptable beauty.",
-    "height_cm": 168,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and sturdy, with the developed upper body and forearms of someone who has spent five decades pulling fabric under tension. Not heavy, but solid—muscle beneath skin, slight softness at the midsection earned through age and posture hunched over worktables.",
-    "hair_color": "Black with silver streaking, predominantly silver at temples and crown",
-    "hair_style": "Flat-braided cornrows, pinned close to the scalp in a practical crown. Bone toggles salvaged from industrial equipment serve as hair pins.",
-    "hair_length": "Medium (back to mid-neck when unbraided)",
-    "eye_color": "Deep brown, natural; augmented with faint crystalline overlay visible at the iris rim (magnification implants)",
-    "skin_tone": "Deep warm bronze with golden undertones—the rich result of her East Asian and Sub-Saharan African majority ancestry, warmed further by Eastern European and Northern European heritage creating subtle warmth and luminosity beneath.",
-    "complexion": "Weathered but deliberate in grooming. Minimal makeup—sometimes kohl around eyes. Her face carries laugh lines and the horizontal creases of someone who squints at close work. High, defined cheekbones with subtle East Asian contours blend with broader nasal structure reflecting her African heritage. Skin is clear but textured from decades of needle-prick scarring on her hands.",
-    "distinguishing_marks": [
-      "Fingertips of both hands marked with hundreds of pale pinprick scars from needle punctures, creating a faint stellar pattern across the pads and sides of her fingers",
-      "Faint amber bioluminescent tracery along both collarbones and shoulders, once bright, now dimmed to visible only in low light—a thin, delicate line-work pattern suggesting vines or circuit paths",
-      "Small burn scar on the inside of her left forearm (size of a coin), consistent with old machine contact"
-    ],
-    "visible_augmentations": "Magnification implants visible as a subtle crystalline sheen at the iris rim when light hits at certain angles. The bioluminescent subdermal tracery is largely dormant but faintly discernible along the collarbones in darkness—a ghost of faded amber.",
-    "posture_movement": "Upright and precise. She stands with the slight forward hunch of a seamstress, shoulders rolled slightly inward—a postural habit she lectures others about. Her hands are never still; they gesture, measure air, adjust fabric on her own clothing. She moves with economic efficiency; no wasted motion. When sitting, she sits at the edge of chairs, ready to rise. She walks with purpose, feet landing flat and deliberate.",
-    "clothing_style": "Tier 3-4 working class, deliberately practical and self-made. She wears her own alterations—fitted linen or cotton shifts in muted earth tones (ochre, charcoal, rust), often with asymmetrical seams or experimental details that serve as proof-of-concept for customer ideas. A long canvas apron with deep pockets and hand-embroidered details (three scripts: Latin, Arabic, Hangul) is a fixture. Worn boots—recently re-soled by her own hand. Jewelry is minimal and utilitarian: a copper ring worn from years of tension (gift from an apprentice), a simple bead bracelet in clay. Her glasses hang from a braided cord around her neck when not in use. She wears her augmentation scarring and faded bioluminescence without concealment or shame—they are proof of skill and longevity."
-  },
-  "image_prompt": "Dao Touré-Arakawa, 168cm tall, lean muscular frame with broad shoulders, deep warm bronze skin with golden undertones reflecting East Asian, Sub-Saharan African, Eastern European and Northern European heritage. Medium-length black hair with silver streaking at temples, arranged in flat-braided cornrows pinned with bone toggles. Deep brown eyes with subtle crystalline magnification implants at iris rim. Face shows high defined cheekbones blending East Asian contours with broader nose structure, weathered by decades of close needlework—laugh lines and squint creases visible. Faint amber bioluminescent tracery along collarbones barely visible in warm workshop light. Pale needle-prick scars covering fingertips in stellar patterns, small coin-sized burn scar on left forearm. Wearing fitted ochre linen shift with asymmetrical seams, long canvas apron with hand-embroidered Latin, Arabic, and Hangul details, worn but recently re-soled boots. Minimal jewelry: copper ring, clay bead bracelet. Glasses hanging from braided cord at neck. Posture slightly forward-hunched, hands animated and never still. GLMZ Great Lakes Metropolitan Zone, warm workshop lighting casting soft shadows across face, standing at edge of a work surface surrounded by fabric and tools, expression focused and precise, no concealment of augmentation scars. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 42.5,
-    "Sub-Saharan African": 32,
-    "Eastern European": 14.8,
-    "Northern European": 10.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 2.2
-      },
-      "Japanese": {
-        "Japanese": 22.9
-      },
-      "Chinese": {
-        "Sichuanese": 7.3,
-        "Cantonese": 10.1
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Gabonese": 23.1,
-        "Congolese": 2.6
-      },
-      "West African": {
-        "Ivorian": 6.3
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Romanian": 6.5,
-        "Hungarian": 8.3
-      }
-    },
-    "Northern European": {
-      "British Isles": {
-        "Irish": 8.5,
-        "Welsh": 2.2
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a5cd74af887c621a477753bf",
+    "type":  "character",
+    "name":  "Dao TourÃ©-Arakawa",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Tailor and seamstress, runs a small alterations shop",
+    "age":  52,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, stitched between a noodle hall and a Ferrogate substation, near Ashland and Division",
+    "description":  "Dao TourÃ©-Arakawa is a broad-shouldered woman with deep umber skin mapped with decades of needle-prick scars across her fingertips, each one a tiny pale star. Her geneware is old and half-faded â€” a bioluminescent pattern that once traced her collarbones in amber has dimmed to a faint citrus pulse visible only in the dark. She keeps her silver-streaked hair braided flat and pinned with a row of salvaged bone toggles. Her shop, Thread \u0026 Condition, smells of machine oil and camphor, and every surface is buried under bolts of reclaimed fabric and half-finished orders tagged with handwritten notes in three scripts.\n\nShe is a woman of exacting patience with strangers and volcanic impatience with laziness. She can size a person\u0027s measurements by eye in under ten seconds and will tell you, without being asked, whether your posture is ruining your spine. She prays fervently to the E.L.F. she calls Silathu â€” the spirit she believes inhabits her antique industrial sewing machine â€” leaving daily offerings of precisely wound thread bobbins and small cups of machine lubricant.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "dying before she has passed on her craft",
+                                          "the Enclave being absorbed and homogenized by a corponation"
+                                      ],
+                       "core_desires":  [
+                                            "to preserve something real and handmade in a printed world",
+                                            "to see her apprentice surpass her"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "ritual prayer to Silathu",
+                                                 "obsessive organization of her thread inventory by color gradient"
+                                             ],
+                       "blind_spots":  [
+                                           "refuses to acknowledge how much she controls her apprentice\u0027s life under the guise of mentorship"
+                                       ],
+                       "secret":  "Twenty years ago she altered uniforms for a Tessera internal security unit operating in the Enclave â€” work she took to keep her shop alive during the Famine Weeks. She has never told anyone. Three people from that era are still her customers."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Formal and precise, mixes Twi loan-words with old-world Kazakh endearments picked up from her grandmother\u0027s recordings. Uses tailoring metaphors constantly.",
+                            "cadence":  "Measured and deliberate, pauses before conclusions as though cutting fabric to length before committing the scissors.",
+                            "verbal_tics":  [
+                                                "\u0027Let me see your hands first\u0027",
+                                                "\u0027That seam will not hold\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027You want this by Thursday. Thursday is a wish, not a date. Come back Saturday.\u0027",
+                                                  "\u0027The corponations print everything now. You know what they cannot print? The way cloth remembers a body.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A customer\u0027s coat lining contains a sewn-in data chip she discovered during repairs â€” she doesn\u0027t know what\u0027s on it but she knows it\u0027s warm to the touch",
+                        "Her apprentice has gone missing after accepting a private commission from an unknown client who paid in hard Quanta"
+                    ],
+    "narrative_function":  "Local institution and information node â€” she has clothed half the Enclave and hears everything. Quest giver for community disputes, source of local history, potential fabricator of disguises or documents hidden in hems.",
+    "augmentations":  "Faded bioluminescent subdermal tracery (cosmetic, amber-toned, largely inert). Magnification implants in both eyes for close needlework.",
+    "daily_life":  "Opens Thread \u0026 Condition at 07:00, takes walk-in alterations until noon, reserves afternoons for bespoke commissions and teaching her apprentice. Closes late whenever a customer has a crisis.",
+    "affiliation":  "Independent; informal ties to Hamtramck Enclave community council; The Reclaimed",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  8,
+                                 "spatial":  9
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "craftsperson",
+                               "community anchor",
+                               "faith-keeper",
+                               "keeper of secrets",
+                               "mentor"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never turn away a customer who is visibly cold",
+                                              "Always finish what she starts, even if it costs her"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Polite redirection",
+                                                 "Pointed observation about the person\u0027s character",
+                                                 "Silence and the slow resumption of her work",
+                                                 "A single quiet sentence that ends the conversation permanently"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Assessing and neutral â€” measures them literally and figuratively before investing warmth",
+                                                   "friends":  "Fiercely loyal, bossy in the way of someone who cares too much to stay quiet"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Increases her work pace and hums old hymns under her breath",
+                                                "medium":  "Goes very quiet and very precise â€” every movement deliberate",
+                                                "high":  "Prays aloud to Silathu and then acts with complete calm that unnerves people"
+                                            },
+                       "contradictions":  [
+                                              "Preaches community preservation but quietly hoards resources and knowledge as personal insurance"
+                                          ],
+                       "habits":  [
+                                      "Runs her thumb along every seam she passes, even on strangers\u0027 clothing",
+                                      "Leaves the shop light on after closing so Silathu doesn\u0027t feel abandoned"
+                                  ],
+                       "breaking_points":  [
+                                               "Direct harm to her apprentice",
+                                               "Anyone mocking the E.L.F. faiths in her shop"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Ocular magnification implants (right and left, gen-3, well-maintained)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Ocular magnification implants (right and left, gen-3, well-maintained)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2148 â€” Born in Hamtramck Enclave to a Ghanaian-Kazakh family of textile workers",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2165 â€” Apprenticed to her aunt\u0027s alterations business",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2178 â€” Took over Thread \u0026 Condition after her aunt\u0027s death",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2180 â€” Performed alterations work for Tessera security during the Famine Weeks; never disclosed",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2197 â€” Took on current apprentice",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPR-22 Trainer \u0027Spinner\u0027",
+                            "Forge-Smith Collective Thundermouth Double \u0027Old Testament\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "Ferrogate Transit",
+                             "Noir Dining",
+                             "Patience",
+                             "Silver",
+                             "Iron Meridian Cooperative Backbone IMC-3 \u0027Spine\u0027",
+                             "The Pale Mile",
+                             "Celeste Abram"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "East Asian (42.5%), Sub-Saharan African (32%), Eastern European (14.8%), and Northern European (10.7%) ancestry, creating a striking Ubiquitous Diaspora blend. Her genetic heritage produces warm, complex skin tones with the facial structure reflecting the dominance of East Asian and African lineageâ€”higher cheekbones with subtle epicanthic folds, a broader nose bridge, and the bone structure of her mixed ancestry creating a distinctive, adaptable beauty.",
+                                 "height_cm":  168,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and sturdy, with the developed upper body and forearms of someone who has spent five decades pulling fabric under tension. Not heavy, but solidâ€”muscle beneath skin, slight softness at the midsection earned through age and posture hunched over worktables.",
+                                 "hair_color":  "Black with silver streaking, predominantly silver at temples and crown",
+                                 "hair_style":  "Flat-braided cornrows, pinned close to the scalp in a practical crown. Bone toggles salvaged from industrial equipment serve as hair pins.",
+                                 "hair_length":  "Medium (back to mid-neck when unbraided)",
+                                 "eye_color":  "Deep brown, natural; augmented with faint crystalline overlay visible at the iris rim (magnification implants)",
+                                 "skin_tone":  "Deep warm bronze with golden undertonesâ€”the rich result of her East Asian and Sub-Saharan African majority ancestry, warmed further by Eastern European and Northern European heritage creating subtle warmth and luminosity beneath.",
+                                 "complexion":  "Weathered but deliberate in grooming. Minimal makeupâ€”sometimes kohl around eyes. Her face carries laugh lines and the horizontal creases of someone who squints at close work. High, defined cheekbones with subtle East Asian contours blend with broader nasal structure reflecting her African heritage. Skin is clear but textured from decades of needle-prick scarring on her hands.",
+                                 "distinguishing_marks":  [
+                                                              "Fingertips of both hands marked with hundreds of pale pinprick scars from needle punctures, creating a faint stellar pattern across the pads and sides of her fingers",
+                                                              "Faint amber bioluminescent tracery along both collarbones and shoulders, once bright, now dimmed to visible only in low lightâ€”a thin, delicate line-work pattern suggesting vines or circuit paths",
+                                                              "Small burn scar on the inside of her left forearm (size of a coin), consistent with old machine contact"
+                                                          ],
+                                 "visible_augmentations":  "Magnification implants visible as a subtle crystalline sheen at the iris rim when light hits at certain angles. The bioluminescent subdermal tracery is largely dormant but faintly discernible along the collarbones in darknessâ€”a ghost of faded amber.",
+                                 "posture_movement":  "Upright and precise. She stands with the slight forward hunch of a seamstress, shoulders rolled slightly inwardâ€”a postural habit she lectures others about. Her hands are never still; they gesture, measure air, adjust fabric on her own clothing. She moves with economic efficiency; no wasted motion. When sitting, she sits at the edge of chairs, ready to rise. She walks with purpose, feet landing flat and deliberate.",
+                                 "clothing_style":  "Tier 3-4 working class, deliberately practical and self-made. She wears her own alterationsâ€”fitted linen or cotton shifts in muted earth tones (ochre, charcoal, rust), often with asymmetrical seams or experimental details that serve as proof-of-concept for customer ideas. A long canvas apron with deep pockets and hand-embroidered details (three scripts: Latin, Arabic, Hangul) is a fixture. Worn bootsâ€”recently re-soled by her own hand. Jewelry is minimal and utilitarian: a copper ring worn from years of tension (gift from an apprentice), a simple bead bracelet in clay. Her glasses hang from a braided cord around her neck when not in use. She wears her augmentation scarring and faded bioluminescence without concealment or shameâ€”they are proof of skill and longevity."
+                             },
+    "image_prompt":  "Dao TourÃ©-Arakawa, 168cm tall, lean muscular frame with broad shoulders, deep warm bronze skin with golden undertones reflecting East Asian, Sub-Saharan African, Eastern European and Northern European heritage. Medium-length black hair with silver streaking at temples, arranged in flat-braided cornrows pinned with bone toggles. Deep brown eyes with subtle crystalline magnification implants at iris rim. Face shows high defined cheekbones blending East Asian contours with broader nose structure, weathered by decades of close needleworkâ€”laugh lines and squint creases visible. Faint amber bioluminescent tracery along collarbones barely visible in warm workshop light. Pale needle-prick scars covering fingertips in stellar patterns, small coin-sized burn scar on left forearm. Wearing fitted ochre linen shift with asymmetrical seams, long canvas apron with hand-embroidered Latin, Arabic, and Hangul details, worn but recently re-soled boots. Minimal jewelry: copper ring, clay bead bracelet. Glasses hanging from braided cord at neck. Posture slightly forward-hunched, hands animated and never still. GLMZ Great Lakes Metropolitan Zone, warm workshop lighting casting soft shadows across face, standing at edge of a work surface surrounded by fabric and tools, expression focused and precise, no concealment of augmentation scars. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  42.5,
+                             "Sub-Saharan African":  32,
+                             "Eastern European":  14.8,
+                             "Northern European":  10.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  2.2
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  22.9
+                                                            },
+                                               "Chinese":  {
+                                                               "Sichuanese":  7.3,
+                                                               "Cantonese":  10.1
+                                                           }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Gabonese":  23.1,
+                                                                                "Congolese":  2.6
+                                                                            },
+                                                        "West African":  {
+                                                                             "Ivorian":  6.3
+                                                                         }
+                                                    },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Romanian":  6.5,
+                                                                             "Hungarian":  8.3
+                                                                         }
+                                                 },
+                            "Northern European":  {
+                                                      "British Isles":  {
+                                                                            "Irish":  8.5,
+                                                                            "Welsh":  2.2
+                                                                        }
+                                                  }
+                        },
+    "tier":  "2"
 }

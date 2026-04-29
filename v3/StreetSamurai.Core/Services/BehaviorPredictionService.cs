@@ -59,8 +59,9 @@ public class BehaviorPredictionService
             CurrentLocation = charState?.Location ?? sceneLocation,
         };
 
-        // Determine dominant facet based on situation
-        prediction.DominantFacet = PredictDominantFacet(character, tensionLevel, recentCharEvents);
+        // What's foregrounded in their psychology right now (no longer a 6-archetype facet —
+        // surfaces from coping_mechanisms / core_fears / core_desires).
+        prediction.DominantState = PredictDominantPsychState(character, tensionLevel, recentCharEvents);
 
         // Predict action type based on psychology + situation
         prediction.LikelyActions = PredictActions(character, tensionLevel, otherCharactersPresent, beatGoal, recentCharEvents);
@@ -240,7 +241,7 @@ public class BehaviorPredictionService
 
         foreach (var p in predictions)
         {
-            lines.Add($"\n  {p.CharacterName.ToUpperInvariant()} [{p.DominantFacet}] — feeling {p.CurrentEmotionalState}:");
+            lines.Add($"\n  {p.CharacterName.ToUpperInvariant()} [{p.DominantState}] — feeling {p.CurrentEmotionalState}:");
 
             if (p.LikelyActions.Count > 0)
                 lines.Add($"    LIKELY TO: {string.Join("; ", p.LikelyActions)}");
@@ -276,24 +277,23 @@ public class BehaviorPredictionService
         return string.Join("\n", lines);
     }
 
-    private string PredictDominantFacet(CharacterData character, int tension, List<StoryEvent> recentEvents)
+    /// <summary>
+    /// Returns a one-word label hinting at what's foregrounded for this character at this tension.
+    /// Sourced from documented psychology — coping_mechanisms / core_fears / blind_spots — rather
+    /// than a six-archetype schema. Empty if the character has no documented psychology.
+    /// </summary>
+    private string PredictDominantPsychState(CharacterData character, int tension, List<StoryEvent> recentEvents)
     {
-        var w = character.Psychology.FacetWeights;
-
-        // High tension activates id (survival instinct) and shadow (dark impulses)
-        if (tension >= 8) return w.Id > w.Shadow ? "id" : "shadow";
-        if (tension >= 6) return w.Wound > w.Mask ? "wound" : "mask";
-
-        // Recent loss activates wound and ghost
-        if (recentEvents.Any(e => e.Type is "death" or "loss" or "injury"))
-            return w.Wound > w.Ghost ? "wound" : "ghost";
-
-        // Social situations activate mask
-        if (tension <= 3) return w.Mask > w.Ideal ? "mask" : "ideal";
-
-        // Default: highest weight
-        var facets = new[] { ("wound", w.Wound), ("ideal", w.Ideal), ("id", w.Id), ("shadow", w.Shadow), ("mask", w.Mask), ("ghost", w.Ghost) };
-        return facets.OrderByDescending(f => f.Item2).First().Item1;
+        var psy = character.Psychology;
+        if (recentEvents.Any(e => e.Type is "death" or "loss" or "injury") && psy.CoreFears.Count > 0)
+            return "wound resurfacing";
+        if (tension >= 8 && psy.CoreFears.Count > 0)
+            return "fear-driven";
+        if (tension >= 6 && psy.CopingMechanisms.Count > 0)
+            return "coping mechanism active";
+        if (tension <= 3 && psy.CoreDesires.Count > 0)
+            return "desire foregrounded";
+        return "settled";
     }
 
     private List<string> PredictActions(CharacterData character, int tension,
@@ -480,12 +480,8 @@ public class BehaviorPredictionService
         var responses = character.Behavioral.StressResponses;
         if (responses.Count == 0)
         {
-            // Generic stress responses based on facet weights
-            var w = character.Psychology.FacetWeights;
-            if (w.Id > 0.7) return "fight-or-flight instinct dominant — acts before thinking";
-            if (w.Mask > 0.7) return "performing calm they don't feel — the mask holds but barely";
-            if (w.Wound > 0.7) return "old pain surfacing — current stress triggers historical trauma";
-            if (w.Shadow > 0.7) return "darker impulses rising — the line they won't cross is closer";
+            // No documented stress responses — fall back to a generic line.
+            // Documented coping_mechanisms / blind_spots are the source-of-truth when present.
             return "stressed but functional";
         }
 
@@ -613,7 +609,7 @@ public class CharacterBehaviorPrediction
     public string CharacterName { get; set; } = "";
     public string CurrentEmotionalState { get; set; } = "neutral";
     public string CurrentLocation { get; set; } = "";
-    public string DominantFacet { get; set; } = "";
+    public string DominantState { get; set; } = "";
     public List<string> LikelyActions { get; set; } = [];
     public string DialogueMode { get; set; } = "";
     public List<string> Concealing { get; set; } = [];

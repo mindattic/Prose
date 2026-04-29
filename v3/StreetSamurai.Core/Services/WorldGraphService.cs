@@ -18,6 +18,7 @@ public class WorldGraphService : IWorldGraphService
     // Index: territory/location -> set of node IDs for spatial queries
     private readonly Dictionary<string, HashSet<string>> territoryIndex = new(StringComparer.OrdinalIgnoreCase);
     private bool loaded;
+    private bool loading;
 
     public WorldGraphService(IPathProvider paths, DatabaseService db)
     {
@@ -31,10 +32,81 @@ public class WorldGraphService : IWorldGraphService
     public void EnsureLoaded()
     {
         if (loaded) return;
-        Load();
-        if (_nodes.Count == 0) Rebuild();
+        // Reentrance guard: Rebuild() invokes builders that read back through query
+        // methods (e.g. GetRelationshipsBetween → EnsureLoaded). Without this, those
+        // calls re-enter Rebuild and recurse until the stack overflows.
+        if (loading) return;
+        loading = true;
+        try
+        {
+            Load();
+            if (_nodes.Count == 0) Rebuild();
+            else if (IsStale()) Rebuild();
+            RebuildIndexes();
+            loaded = true;
+        }
+        finally
+        {
+            loading = false;
+        }
+    }
+
+    /// <summary>
+    /// Force a freshness check now — useful after the user edits canon during a writing
+    /// session and wants the graph re-aligned without restarting. Cheap when graph is fresh
+    /// (just compares mtimes); rebuilds when drift is detected.
+    /// </summary>
+    public bool EnsureFresh()
+    {
+        if (!loaded) { EnsureLoaded(); return true; }
+        if (!IsStale()) return false;
+        Rebuild();
         RebuildIndexes();
-        loaded = true;
+        return true;
+    }
+
+    /// <summary>
+    /// Returns true when any canon data file has been modified more recently than the
+    /// persisted graph snapshot. The graph keeps an LastSaved timestamp; if any people /
+    /// places / factions / corponations / world data file is newer, the graph is stale
+    /// and should be rebuilt.
+    /// </summary>
+    private bool IsStale()
+    {
+        try
+        {
+            var graphPath = Path.Combine(paths.GraphDir, "world_graph.json");
+            if (!File.Exists(graphPath)) return true;
+            var graphTime = File.GetLastWriteTimeUtc(graphPath);
+
+            // Canon data dirs that feed the graph. If any file inside is newer, the graph
+            // doesn't reflect current canon. Cheap walk — directory enumeration only.
+            string[] canonDirs =
+            [
+                paths.CharactersDir,
+                Path.Combine(paths.EngineDataDir, "places"),
+                Path.Combine(paths.EngineDataDir, "factions"),
+                Path.Combine(paths.EngineDataDir, "corponations"),
+                Path.Combine(paths.EngineDataDir, "subsidiaries"),
+                Path.Combine(paths.EngineDataDir, "synthetics"),
+                Path.Combine(paths.EngineDataDir, "automata"),
+            ];
+
+            foreach (var d in canonDirs)
+            {
+                if (!Directory.Exists(d)) continue;
+                foreach (var f in Directory.EnumerateFiles(d, "*.json"))
+                {
+                    if (File.GetLastWriteTimeUtc(f) > graphTime) return true;
+                }
+            }
+            return false;
+        }
+        catch (Exception ex)
+        {
+            Serilog.Log.Warning(ex, "Graph staleness check failed — assuming stale to be safe");
+            return true;
+        }
     }
 
     // ── Queries (current edges only by default) ───────────────
@@ -693,8 +765,23 @@ public class WorldGraphService : IWorldGraphService
             Edges = _graph.Edges.ToList(),
             LastSaved = DateTime.UtcNow,
         };
-        var json = JsonSerializer.Serialize(snapshot, JsonDefaults.Indented);
-        File.WriteAllText(Path.Combine(paths.GraphDir, "world_graph.json"), json);
+
+        // Mirror the Load() workaround: STJ recurses through Nodes/Edges/Properties
+        // and blows the default 1 MB thread stack on the fully-built graph. Serialize
+        // on a thread with a generous stack so Rebuild() can persist.
+        Exception? error = null;
+        var writer = new Thread(() =>
+        {
+            try
+            {
+                var json = JsonSerializer.Serialize(snapshot, JsonDefaults.Indented);
+                File.WriteAllText(Path.Combine(paths.GraphDir, "world_graph.json"), json);
+            }
+            catch (Exception ex) { error = ex; }
+        }, maxStackSize: 16 * 1024 * 1024);
+        writer.Start();
+        writer.Join();
+        if (error != null) throw error;
     }
 
     public void Load()
@@ -702,21 +789,38 @@ public class WorldGraphService : IWorldGraphService
         var path = Path.Combine(paths.GraphDir, "world_graph.json");
         if (!File.Exists(path)) return;
 
-        try
+        GraphSnapshot? snapshot = null;
+        Exception? error = null;
+
+        // STJ recurses through Nodes/Edges/Properties and can blow the default 1 MB
+        // thread stack on a fully-built world graph (~24 MB snapshot). StackOverflow
+        // is uncatchable, so isolate the deserialize on a thread with a generous stack.
+        var loader = new Thread(() =>
         {
-            var json = File.ReadAllText(path);
-            var snapshot = JsonSerializer.Deserialize<GraphSnapshot>(json);
-            if (snapshot == null) return;
+            try
+            {
+                using var stream = File.OpenRead(path);
+                snapshot = JsonSerializer.Deserialize<GraphSnapshot>(stream);
+            }
+            catch (Exception ex) { error = ex; }
+        }, maxStackSize: 16 * 1024 * 1024);
+        loader.Start();
+        loader.Join();
 
-            _graph.Clear();
-            _nodes.Clear();
-
-            foreach (var node in snapshot.Nodes)
-                AddNode(node);
-            foreach (var edge in snapshot.Edges)
-                AddEdge(edge);
+        if (error != null)
+        {
+            Serilog.Log.Warning(error, "Corrupt graph file, will be rebuilt");
+            return;
         }
-        catch (Exception ex) { Serilog.Log.Warning(ex, "Corrupt graph file, will be rebuilt"); }
+        if (snapshot == null) return;
+
+        _graph.Clear();
+        _nodes.Clear();
+
+        foreach (var node in snapshot.Nodes)
+            AddNode(node);
+        foreach (var edge in snapshot.Edges)
+            AddEdge(edge);
     }
 
     public void Rebuild()
@@ -779,9 +883,6 @@ public class WorldGraphService : IWorldGraphService
             if (c.SpeechPatterns.Vocabulary.Length > 0) props["vocabulary"] = c.SpeechPatterns.Vocabulary;
             if (c.SpeechPatterns.Cadence.Length > 0) props["cadence"] = c.SpeechPatterns.Cadence;
             if (c.SpeechPatterns.ExampleLines.Any()) props["example_dialogue"] = string.Join(" | ", c.SpeechPatterns.ExampleLines);
-
-            var fw = c.Psychology.FacetWeights;
-            props["facet_weights"] = $"wound={fw.Wound:F2} ideal={fw.Ideal:F2} id={fw.Id:F2} shadow={fw.Shadow:F2} mask={fw.Mask:F2} ghost={fw.Ghost:F2}";
 
             AddNode(new WorldNode { Id = id, Name = c.Name, NodeType = EntityTypes.Character, Properties = props, SourceFile = "characters.json" });
 

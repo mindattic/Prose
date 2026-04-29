@@ -1,273 +1,294 @@
-{
-  "id": "019d6143a5a17359b3990d0ac7e50434",
-  "type": "character",
-  "name": "Alhassan Zidane-Phommasack",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Laundry operator and alterations mender",
-  "age": 52,
-  "status": "active",
-  "location": "Hamtramck Enclave, Unit 7 of the Pressed & Clean cooperative on Bogdanow Street, near Ashland and Division",
-  "description": "Alhassan Zidane-Phommasack is a broad-shouldered woman with deep umber skin that has gone leathery at the knuckles from decades of hot water and chemical detergents. Her natural hair is gathered into a high wrap of faded indigo cloth, shot through with actual silver thread she stitched in herself for her fiftieth birthday. Her eyes are a watery hazel that turns almost gold under fluorescent light — a cosmetic iris mod she saved for six months to afford — and she wears no other augmentation. She moves with the unhurried authority of someone who has already decided she will not be rushed today or any other day.\n\nShe is known in the Enclave for two things: the sharpest crease in GLMZ and a bluntness that borders on prophecy. She will tell you exactly what is wrong with your relationship, your posture, and your collar stay in the same breath, and she will be correct on all three counts. She keeps a small shrine to the ELF she calls Grandma Rinse above her industrial press — offerings of fabric swatches and tiny bottles of softener — and she genuinely believes the old machine runs quieter when the shrine is tended.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.8,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.2,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Watching the Enclave get bought out and scattered",
-      "Becoming useless to the people who depend on her"
-    ],
-    "core_desires": [
-      "To see her cooperative outlast her",
-      "To restore a particular embroidered tablecloth her mother left behind when the family fled Vladivostok — she knows it ended up in a secondhand market somewhere in Old Harbor"
-    ],
-    "coping_mechanisms": [
-      "Channeling anxiety into physical labor",
-      "Performing certainty even when she doubts herself",
-      "Tending the ELF shrine as a ritual of control"
-    ],
-    "blind_spots": [
-      "She mistakes stubbornness for strength and sometimes refuses help she genuinely needs",
-      "She underestimates how much her bluntness wounds people who cannot tell her so"
-    ],
-    "secret": "Fifteen years ago she reported a neighbor to a Tessera compliance officer for running an unlicensed med-clinic in the building. The clinic was shut down, the neighbor was deported to a labor contract in the Kenosha Crossing dredge yards, and two children lost access to the only affordable insulin source in the block. She has never told anyone and has spent every year since trying to quietly make up for it in ways she cannot name."
-  },
-  "speech_patterns": {
-    "vocabulary": "Direct and idiomatic, mixing Igbo-inflected English with a few Russian loan-words absorbed from her Volkov grandparents. Speaks in complete sentences, rarely uses filler.",
-    "cadence": "Slow and deliberate, like she is ironing out each word before it leaves her mouth.",
-    "verbal_tics": [
-      "calls people 'you-hear-me' at the end of a serious point",
-      "says 'mmh' as a full sentence of disapproval"
-    ],
-    "example_lines": [
-      "This collar has been pressed wrong for two years. Whoever taught you that is not your friend, you-hear-me.",
-      "Mmh. You came here for advice or you came here to hear yourself already decided?"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A piece of unclaimed laundry contains a data chip sewn into the lining — the owner never came back for it and it has been sitting in lost-and-found for three weeks.",
-    "Tessera has offered to buy the Pressed & Clean cooperative building and Adaeze needs people she can trust to find out why a corponation wants a laundry on Bogdanow Street.",
-    "She asks quietly, carefully, if anyone knows the secondhand markets of Old Harbor well enough to find a specific tablecloth — Igbo geometric pattern, red and cream, last seen circa 2171."
-  ],
-  "narrative_function": "Community anchor and information hub — she washes clothes for half the Enclave and hears everything. Can serve as a quest giver for neighborhood disputes, a source of local intelligence, or a moral voice that reframes a problem the players think they understand.",
-  "augmentations": "Cosmetic iris mod (hazel-gold). No chrome. Compression sleeves on both forearms from an old wrist injury.",
-  "daily_life": "Opens the cooperative at 05:30, runs three loads before most customers arrive, spends midday doing hand-alterations and mending while her apprentice handles the front counter, closes at 20:00 and attends the residents' council every second Thursday.",
-  "affiliation": "Pressed & Clean Cooperative (independent), Hamtramck Enclave residents' council",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 6,
-      "dexterity": 7,
-      "vitality": 6,
-      "perception": 7
-    },
-    "mental": {
-      "cognition": 6,
-      "willpower": 8,
-      "creativity": 6,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 3,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "community pillar",
-      "information node",
-      "moral weight",
-      "stubborn",
-      "skilled tradesperson"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never extend credit to someone who has not paid their previous tab",
-      "Always finish a job once started, regardless of what happens during it",
-      "Protect Enclave residents before protecting herself"
-    ],
-    "escalation_ladder": [
-      "Ignores minor disrespect entirely",
-      "Delivers a single flat correction",
-      "Refuses service and explains why once, calmly",
-      "Removes the person from the premises without drama"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Businesslike and assessing — sizes them up before committing to warmth",
-      "friends": "Loud, affectionate, freely opinionated, will feed you even if you say you are not hungry"
-    },
-    "stress_responses": {
-      "low": "Works faster and more precisely",
-      "medium": "Goes very quiet and very focused",
-      "high": "Issues a short declaration of what she is going to do next and then does it without further discussion"
-    },
-    "contradictions": [
-      "Preaches community above all but carried a private guilt alone for fifteen years rather than trust anyone with it"
-    ],
-    "habits": [
-      "Checks the ELF shrine first thing every morning before switching the machines on",
-      "Folds her own apron with military precision at the end of each shift",
-      "Hums a Faleolo hymn-melody when she is concentrating on difficult mending"
-    ],
-    "breaking_points": [
-      "Discovering someone is exploiting a vulnerable Enclave resident",
-      "Being asked to stay silent about something that will hurt people the way her silence once did"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Idealist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPM-15R 'Reclaim'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPM-15R 'Reclaim'",
-    "Meridian Munitions Holdout-380 'Ankle Biter'"
-  ],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Tessera Corponation",
-    "Underground Alhassan",
-    "Indigo",
-    "Silver",
-    "Harbor Fish Shack",
-    "Hazel Brink",
-    "GLMZ",
-    "Gold"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Southeast Asian (44.1%) forms the foundation with warm golden undertones and angular cheekbone definition, substantially enriched by Sub-Saharan African ancestry (23.5%) that deepens skin richness and adds fullness through the mid-face, North African heritage (20.3%) contributing amber warmth and geometric cheekbone refinement, with smaller contributions from Hispanic/Latin American (6.9%) and Eastern European (5.2%) ancestry creating subtle complexity in undertone and facial structure.",
-    "height_cm": 168,
-    "weight_kg": 78,
-    "build": "Broad-shouldered and solid, muscular through the back and arms from decades of pressing and wringing. Not heavy, but densely built—the kind of frame that fills a doorway without apology.",
-    "hair_color": "Natural black with silver-grey at the temples",
-    "hair_style": "Gathered into a high wrap using faded indigo cloth with silver thread hand-stitched throughout",
-    "hair_length": "Long, wrapped",
-    "eye_color": "Hazel-gold with cosmetic iris mod; turns nearly golden under fluorescent light",
-    "skin_tone": "Deep warm brown with golden-amber undertones—luminous fusion of Southeast Asian warmth, North African amber richness, and Sub-Saharan African depth. Weathered but radiant despite Tier 4 enclave living, with visible sun-exposure patina that speaks to a life lived without apology.",
-    "complexion": "Leathery texture at the knuckles and inner wrists from chronic exposure to hot water and chemical detergents; creased around the eyes and mouth from fifty years of squinting at seams and smiling rarely but meaningfully. Angular cheekbones with Southeast Asian definition refined by North African geometry and softened by Sub-Saharan African fullness through the mid-face. Clean but not delicate—a face built for work.",
-    "distinguishing_marks": [
-      "Callused ridge across both palms from needle work and pressing handles",
-      "Faded chemical burn scars on the inner left wrist, partially obscured by compression sleeve",
-      "Pale line scar along the right knuckle from a press accident in her thirties"
-    ],
-    "visible_augmentations": "Fitted compression sleeves on both forearms in dark grey technical fabric, worn for wrist support. Cosmetic hazel-gold iris mod visible only under direct light or when she removes her safety glasses. No chrome visible.",
-    "posture_movement": "Moves with deliberate slowness, never hurried—shoulders back, head level. She walks like someone who has already decided the world will wait for her. Stands with weight evenly distributed, ready to lean into a pressing motion at any moment. Hands rarely still; fingers often air-pressing seams or adjusting invisible wrinkles.",
-    "clothing_style": "Tier 4 workwear: heavy cotton apron in faded navy over a plain long-sleeved shirt (always with sleeves rolled to mid-forearm to show compression sleeves), dark work trousers with reinforced pockets, sturdy non-slip shoes worn smooth at the heel. She owns three identical aprons and rotates them. No jewelry except a thin silver band on her right ring finger—handmade, dented slightly, older than her marriage."
-  },
-  "image_prompt": "Alhassan Zidane-Phommasack, 168cm tall, dense muscular build, deep warm brown skin with golden-amber undertones from blended Southeast Asian, Sub-Saharan African, and North African heritage. Angular cheekbones softened by fullness through mid-face, weathered complexion creased around eyes and mouth. Natural black hair with silver-grey temples, wrapped high in faded indigo cloth with silver thread. Hazel-gold cosmetic iris mod. Wearing faded navy cotton apron over plain long-sleeved shirt with dark grey compression sleeves visible at forearms, dark work trousers, worn non-slip shoes. Silver handmade band on right ring finger. Deliberate posture, shoulders back, fingers subtly air-pressing invisible seams. Tier 4 enclave industrial setting, warm amber and cool fluorescent lighting mixing over work station, GLMZ 2200s aesthetic, worn fabric textures, documentary realism, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Southeast Asian": 44.1,
-    "Sub-Saharan African": 23.5,
-    "North African": 20.3,
-    "Hispanic/Latin American": 6.9,
-    "Eastern European": 5.2
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Southeast Asian": {
-      "Laotian": {
-        "Laotian": 30.4
-      },
-      "Indonesian": {
-        "Sundanese": 13.7
-      }
-    },
-    "Sub-Saharan African": {
-      "Central African": {
-        "Congolese": 9.5,
-        "Angolan": 3.7
-      },
-      "East African": {
-        "Somali": 2.3,
-        "Ethiopian": 1.2
-      },
-      "West African": {
-        "Malian": 5.2,
-        "Senegalese": 1.6
-      }
-    },
-    "North African": {
-      "Amazigh": {
-        "Tuareg": 4.4
-      },
-      "Maghreb": {
-        "Algerian": 15.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 1.5
-      },
-      "South American": {
-        "Brazilian": 1.6
-      },
-      "Caribbean": {
-        "Dominican": 3.8
-      }
-    },
-    "Eastern European": {
-      "Magyar-Romanian": {
-        "Hungarian": 5
-      },
-      "Slavic East": {
-        "Ukrainian": 0.2
-      }
-    }
-  },
-  "tier": "1",
-  "dalle3_prompt": "weathered Tier 4 laundry operator, female 52, broad-shouldered and densely muscular, deep warm brown skin with golden-amber undertones, face built for work not beauty, angular cheekbones softened by fullness through mid-face, asymmetrical and lived-in, creased around eyes and mouth from decades of squinting at seams, leathery texture at knuckles and inner wrists, faded chemical burn scars on left wrist, pale scar line on right knuckle, watery hazel-gold eyes with subtle cosmetic iris mod\n\nhair: natural black with silver-grey at temples, gathered into high wrap using faded indigo cloth hand-stitched with actual silver thread, fabric slightly frayed at edges, practical and dignified\n\nexpression: focused and deliberate, not warm but not cold, the expression of someone who has decided the world will wait for her, quiet competence, economical with emotion, tired but present\n\noutfit: heavy faded navy cotton apron worn smooth at the edges over plain long-sleeved shirt with sleeves rolled to mid-forearm revealing dark grey compression sleeves on both forearms, dark work trousers with reinforced pockets, sturdy non-slip shoes worn smooth at heel, thin dented silver wedding band on right ring finger\n\nadjusting the wrap of her head cloth with one hand while walking through the laundry facility corridor, fingers unconsciously air-pressing invisible wrinkles as she moves, weight distributed evenly, shoulders back, moving with deliberate unhurried pace\n\nenvironment: industrial laundry facility interior, fluorescent overhead lighting reflecting off tiled walls, stainless steel pressing tables and equipment visible in soft focus background, steam rising faintly, wet concrete floor with drainage channels, utilitarian and functional\n\nlighting: harsh fluorescent overhead creating strong shadows under cheekbones and brow, hazel-gold eyes catching cool white light, skin luminosity emphasized by overhead glare, practical work lighting not flattering\n\nmood: grounded dignity, quiet strength, decades of labor worn into posture and hands, corporate dystopia filtered through essential service work, no glamour no pretense just competence\n\nstyle: photorealistic and unflinching, NOT idealized, NOT symmetrical, NOT model-like, visible skin texture weathering and work-wear, authentic aging, hands tell story of labor\n\ncamera: 50mm lens, eye-level, natural perspective, skin texture and calluses visible, asymmetrical face composition, imperfect and present\n\nwalking forward, subtle motion blur, shallow depth of field environment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores\n\n--ar 2:3 --v 6"
+﻿{
+    "id":  "019d6143a5a17359b3990d0ac7e50434",
+    "type":  "character",
+    "name":  "Alhassan Zidane-Phommasack",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Laundry operator and alterations mender",
+    "age":  52,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, Unit 7 of the Pressed \u0026 Clean cooperative on Bogdanow Street, near Ashland and Division",
+    "description":  "Alhassan Zidane-Phommasack is a broad-shouldered woman with deep umber skin that has gone leathery at the knuckles from decades of hot water and chemical detergents. Her natural hair is gathered into a high wrap of faded indigo cloth, shot through with actual silver thread she stitched in herself for her fiftieth birthday. Her eyes are a watery hazel that turns almost gold under fluorescent light â€” a cosmetic iris mod she saved for six months to afford â€” and she wears no other augmentation. She moves with the unhurried authority of someone who has already decided she will not be rushed today or any other day.\n\nShe is known in the Enclave for two things: the sharpest crease in GLMZ and a bluntness that borders on prophecy. She will tell you exactly what is wrong with your relationship, your posture, and your collar stay in the same breath, and she will be correct on all three counts. She keeps a small shrine to the ELF she calls Grandma Rinse above her industrial press â€” offerings of fabric swatches and tiny bottles of softener â€” and she genuinely believes the old machine runs quieter when the shrine is tended.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Watching the Enclave get bought out and scattered",
+                                          "Becoming useless to the people who depend on her"
+                                      ],
+                       "core_desires":  [
+                                            "To see her cooperative outlast her",
+                                            "To restore a particular embroidered tablecloth her mother left behind when the family fled Vladivostok â€” she knows it ended up in a secondhand market somewhere in Old Harbor"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Channeling anxiety into physical labor",
+                                                 "Performing certainty even when she doubts herself",
+                                                 "Tending the ELF shrine as a ritual of control"
+                                             ],
+                       "blind_spots":  [
+                                           "She mistakes stubbornness for strength and sometimes refuses help she genuinely needs",
+                                           "She underestimates how much her bluntness wounds people who cannot tell her so"
+                                       ],
+                       "secret":  "Fifteen years ago she reported a neighbor to a Tessera compliance officer for running an unlicensed med-clinic in the building. The clinic was shut down, the neighbor was deported to a labor contract in the Kenosha Crossing dredge yards, and two children lost access to the only affordable insulin source in the block. She has never told anyone and has spent every year since trying to quietly make up for it in ways she cannot name."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Direct and idiomatic, mixing Igbo-inflected English with a few Russian loan-words absorbed from her Volkov grandparents. Speaks in complete sentences, rarely uses filler.",
+                            "cadence":  "Slow and deliberate, like she is ironing out each word before it leaves her mouth.",
+                            "verbal_tics":  [
+                                                "calls people \u0027you-hear-me\u0027 at the end of a serious point",
+                                                "says \u0027mmh\u0027 as a full sentence of disapproval"
+                                            ],
+                            "example_lines":  [
+                                                  "This collar has been pressed wrong for two years. Whoever taught you that is not your friend, you-hear-me.",
+                                                  "Mmh. You came here for advice or you came here to hear yourself already decided?"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A piece of unclaimed laundry contains a data chip sewn into the lining â€” the owner never came back for it and it has been sitting in lost-and-found for three weeks.",
+                        "Tessera has offered to buy the Pressed \u0026 Clean cooperative building and Adaeze needs people she can trust to find out why a corponation wants a laundry on Bogdanow Street.",
+                        "She asks quietly, carefully, if anyone knows the secondhand markets of Old Harbor well enough to find a specific tablecloth â€” Igbo geometric pattern, red and cream, last seen circa 2171."
+                    ],
+    "narrative_function":  "Community anchor and information hub â€” she washes clothes for half the Enclave and hears everything. Can serve as a quest giver for neighborhood disputes, a source of local intelligence, or a moral voice that reframes a problem the players think they understand.",
+    "augmentations":  "Cosmetic iris mod (hazel-gold). No chrome. Compression sleeves on both forearms from an old wrist injury.",
+    "daily_life":  "Opens the cooperative at 05:30, runs three loads before most customers arrive, spends midday doing hand-alterations and mending while her apprentice handles the front counter, closes at 20:00 and attends the residents\u0027 council every second Thursday.",
+    "affiliation":  "Pressed \u0026 Clean Cooperative (independent), Hamtramck Enclave residents\u0027 council",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  6,
+                                   "dexterity":  7,
+                                   "vitality":  6,
+                                   "perception":  7
+                               },
+                  "mental":  {
+                                 "cognition":  6,
+                                 "willpower":  8,
+                                 "creativity":  6,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  3,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "community pillar",
+                               "information node",
+                               "moral weight",
+                               "stubborn",
+                               "skilled tradesperson"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never extend credit to someone who has not paid their previous tab",
+                                              "Always finish a job once started, regardless of what happens during it",
+                                              "Protect Enclave residents before protecting herself"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Ignores minor disrespect entirely",
+                                                 "Delivers a single flat correction",
+                                                 "Refuses service and explains why once, calmly",
+                                                 "Removes the person from the premises without drama"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Businesslike and assessing â€” sizes them up before committing to warmth",
+                                                   "friends":  "Loud, affectionate, freely opinionated, will feed you even if you say you are not hungry"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Works faster and more precisely",
+                                                "medium":  "Goes very quiet and very focused",
+                                                "high":  "Issues a short declaration of what she is going to do next and then does it without further discussion"
+                                            },
+                       "contradictions":  [
+                                              "Preaches community above all but carried a private guilt alone for fifteen years rather than trust anyone with it"
+                                          ],
+                       "habits":  [
+                                      "Checks the ELF shrine first thing every morning before switching the machines on",
+                                      "Folds her own apron with military precision at the end of each shift",
+                                      "Hums a Faleolo hymn-melody when she is concentrating on difficult mending"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering someone is exploiting a vulnerable Enclave resident",
+                                               "Being asked to stay silent about something that will hurt people the way her silence once did"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Idealist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPM-15R \u0027Reclaim\u0027",
+                            "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPM-15R \u0027Reclaim\u0027",
+                                "Meridian Munitions Holdout-380 \u0027Ankle Biter\u0027"
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "Tessera Corponation",
+                             "Underground Alhassan",
+                             "Indigo",
+                             "Silver",
+                             "Harbor Fish Shack",
+                             "Hazel Brink",
+                             "GLMZ",
+                             "Gold"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Southeast Asian (44.1%) forms the foundation with warm golden undertones and angular cheekbone definition, substantially enriched by Sub-Saharan African ancestry (23.5%) that deepens skin richness and adds fullness through the mid-face, North African heritage (20.3%) contributing amber warmth and geometric cheekbone refinement, with smaller contributions from Hispanic/Latin American (6.9%) and Eastern European (5.2%) ancestry creating subtle complexity in undertone and facial structure.",
+                                 "height_cm":  168,
+                                 "weight_kg":  78,
+                                 "build":  "Broad-shouldered and solid, muscular through the back and arms from decades of pressing and wringing. Not heavy, but densely builtâ€”the kind of frame that fills a doorway without apology.",
+                                 "hair_color":  "Natural black with silver-grey at the temples",
+                                 "hair_style":  "Gathered into a high wrap using faded indigo cloth with silver thread hand-stitched throughout",
+                                 "hair_length":  "Long, wrapped",
+                                 "eye_color":  "Hazel-gold with cosmetic iris mod; turns nearly golden under fluorescent light",
+                                 "skin_tone":  "Deep warm brown with golden-amber undertonesâ€”luminous fusion of Southeast Asian warmth, North African amber richness, and Sub-Saharan African depth. Weathered but radiant despite Tier 4 enclave living, with visible sun-exposure patina that speaks to a life lived without apology.",
+                                 "complexion":  "Leathery texture at the knuckles and inner wrists from chronic exposure to hot water and chemical detergents; creased around the eyes and mouth from fifty years of squinting at seams and smiling rarely but meaningfully. Angular cheekbones with Southeast Asian definition refined by North African geometry and softened by Sub-Saharan African fullness through the mid-face. Clean but not delicateâ€”a face built for work.",
+                                 "distinguishing_marks":  [
+                                                              "Callused ridge across both palms from needle work and pressing handles",
+                                                              "Faded chemical burn scars on the inner left wrist, partially obscured by compression sleeve",
+                                                              "Pale line scar along the right knuckle from a press accident in her thirties"
+                                                          ],
+                                 "visible_augmentations":  "Fitted compression sleeves on both forearms in dark grey technical fabric, worn for wrist support. Cosmetic hazel-gold iris mod visible only under direct light or when she removes her safety glasses. No chrome visible.",
+                                 "posture_movement":  "Moves with deliberate slowness, never hurriedâ€”shoulders back, head level. She walks like someone who has already decided the world will wait for her. Stands with weight evenly distributed, ready to lean into a pressing motion at any moment. Hands rarely still; fingers often air-pressing seams or adjusting invisible wrinkles.",
+                                 "clothing_style":  "Tier 4 workwear: heavy cotton apron in faded navy over a plain long-sleeved shirt (always with sleeves rolled to mid-forearm to show compression sleeves), dark work trousers with reinforced pockets, sturdy non-slip shoes worn smooth at the heel. She owns three identical aprons and rotates them. No jewelry except a thin silver band on her right ring fingerâ€”handmade, dented slightly, older than her marriage."
+                             },
+    "image_prompt":  "Alhassan Zidane-Phommasack, 168cm tall, dense muscular build, deep warm brown skin with golden-amber undertones from blended Southeast Asian, Sub-Saharan African, and North African heritage. Angular cheekbones softened by fullness through mid-face, weathered complexion creased around eyes and mouth. Natural black hair with silver-grey temples, wrapped high in faded indigo cloth with silver thread. Hazel-gold cosmetic iris mod. Wearing faded navy cotton apron over plain long-sleeved shirt with dark grey compression sleeves visible at forearms, dark work trousers, worn non-slip shoes. Silver handmade band on right ring finger. Deliberate posture, shoulders back, fingers subtly air-pressing invisible seams. Tier 4 enclave industrial setting, warm amber and cool fluorescent lighting mixing over work station, GLMZ 2200s aesthetic, worn fabric textures, documentary realism, --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Southeast Asian":  44.1,
+                             "Sub-Saharan African":  23.5,
+                             "North African":  20.3,
+                             "Hispanic/Latin American":  6.9,
+                             "Eastern European":  5.2
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Southeast Asian":  {
+                                                    "Laotian":  {
+                                                                    "Laotian":  30.4
+                                                                },
+                                                    "Indonesian":  {
+                                                                       "Sundanese":  13.7
+                                                                   }
+                                                },
+                            "Sub-Saharan African":  {
+                                                        "Central African":  {
+                                                                                "Congolese":  9.5,
+                                                                                "Angolan":  3.7
+                                                                            },
+                                                        "East African":  {
+                                                                             "Somali":  2.3,
+                                                                             "Ethiopian":  1.2
+                                                                         },
+                                                        "West African":  {
+                                                                             "Malian":  5.2,
+                                                                             "Senegalese":  1.6
+                                                                         }
+                                                    },
+                            "North African":  {
+                                                  "Amazigh":  {
+                                                                  "Tuareg":  4.4
+                                                              },
+                                                  "Maghreb":  {
+                                                                  "Algerian":  15.9
+                                                              }
+                                              },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  1.5
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Brazilian":  1.6
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Dominican":  3.8
+                                                                          }
+                                                        },
+                            "Eastern European":  {
+                                                     "Magyar-Romanian":  {
+                                                                             "Hungarian":  5
+                                                                         },
+                                                     "Slavic East":  {
+                                                                         "Ukrainian":  0.2
+                                                                     }
+                                                 }
+                        },
+    "tier":  "1",
+    "dalle3_prompt":  "weathered Tier 4 laundry operator, female 52, broad-shouldered and densely muscular, deep warm brown skin with golden-amber undertones, face built for work not beauty, angular cheekbones softened by fullness through mid-face, asymmetrical and lived-in, creased around eyes and mouth from decades of squinting at seams, leathery texture at knuckles and inner wrists, faded chemical burn scars on left wrist, pale scar line on right knuckle, watery hazel-gold eyes with subtle cosmetic iris mod\n\nhair: natural black with silver-grey at temples, gathered into high wrap using faded indigo cloth hand-stitched with actual silver thread, fabric slightly frayed at edges, practical and dignified\n\nexpression: focused and deliberate, not warm but not cold, the expression of someone who has decided the world will wait for her, quiet competence, economical with emotion, tired but present\n\noutfit: heavy faded navy cotton apron worn smooth at the edges over plain long-sleeved shirt with sleeves rolled to mid-forearm revealing dark grey compression sleeves on both forearms, dark work trousers with reinforced pockets, sturdy non-slip shoes worn smooth at heel, thin dented silver wedding band on right ring finger\n\nadjusting the wrap of her head cloth with one hand while walking through the laundry facility corridor, fingers unconsciously air-pressing invisible wrinkles as she moves, weight distributed evenly, shoulders back, moving with deliberate unhurried pace\n\nenvironment: industrial laundry facility interior, fluorescent overhead lighting reflecting off tiled walls, stainless steel pressing tables and equipment visible in soft focus background, steam rising faintly, wet concrete floor with drainage channels, utilitarian and functional\n\nlighting: harsh fluorescent overhead creating strong shadows under cheekbones and brow, hazel-gold eyes catching cool white light, skin luminosity emphasized by overhead glare, practical work lighting not flattering\n\nmood: grounded dignity, quiet strength, decades of labor worn into posture and hands, corporate dystopia filtered through essential service work, no glamour no pretense just competence\n\nstyle: photorealistic and unflinching, NOT idealized, NOT symmetrical, NOT model-like, visible skin texture weathering and work-wear, authentic aging, hands tell story of labor\n\ncamera: 50mm lens, eye-level, natural perspective, skin texture and calluses visible, asymmetrical face composition, imperfect and present\n\nwalking forward, subtle motion blur, shallow depth of field environment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores\n\n--ar 2:3 --v 6"
 }

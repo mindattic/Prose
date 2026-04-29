@@ -1,297 +1,328 @@
-{
-  "id": "019d6143a7017922bc086587da838c1f",
-  "rating": 80,
-  "vote_count": 1,
-  "type": "character",
-  "name": "Nadira Balasanyan",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Logistics, agriculture, and community liaison \u2014 Red Lantern",
-  "age": 38,
-  "status": "active",
-  "location": "Western border \u2014 splits time between the farmstead and the border communities he serves",
-  "description": "Nadira Balasanyan is the reason the food reaches the people who need it. While Madre plans the raids and Cutter runs point, Tomas handles everything that happens after the harvest arrives at the farmstead \u2014 storage, preservation, transport, distribution, and the delicate political work of ensuring that limited food reaches the most desperate communities without triggering conflict between them. He is part logistics officer, part farmer, part diplomat, and entirely exhausted.\n\nHe grew up in one of the border communities Red Lantern feeds \u2014 a settlement of two hundred people that existed in the gap between GLMZ\u0027s governance and the Iowa wastes. He watched his community shrink every year as food became scarcer and the corps showed no interest in feeding people who couldn\u0027t pay. He joined Red Lantern not to fight Behemoths but to build a supply chain that could keep the communities alive. Madre saw his value immediately: Tomas turns calories into survival. Without him, the raids are just resource extraction. With him, they\u0027re a lifeline.\n\nTomas is medium build, weathered but not broken, with farmer\u0027s hands and a diplomat\u0027s voice. He dresses practically and keeps a small leather notebook in his chest pocket \u2014 handwritten records of every community\u0027s needs, resources, and political dynamics. His face is kind but tired, with lines that deepen when he\u0027s doing the math on how many people need feeding versus how much food they have. The math never works. He distributes anyway.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.65,
-      "id": 0.5,
-      "shadow": 0.35,
-      "mask": 0.35,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "That the supply chain will fail \u2014 that one bad season, one failed raid, one logistics error will result in starvation he can\u0027t prevent",
-      "That the corporate agriculture offer is better for the communities than the Gleaner model, and his refusal is pride, not principle",
-      "That the border communities will eventually accept corporate dependency because the Gleaner supply is not reliable enough"
-    ],
-    "core_desires": [
-      "To build food sovereignty for the western edge \u2014 communities that can feed themselves without raids or corporate deals",
-      "To be done distributing emergency rations and start distributing surplus \u2014 the abundance he\u0027s never seen but refuses to stop imagining",
-      "To see his home community thrive rather than survive"
-    ],
-    "coping_mechanisms": [
-      "Keeps meticulous records because the numbers create the illusion of control over a system that is fundamentally precarious",
-      "Visits border communities in person rather than coordinating remotely because seeing the people he feeds anchors the purpose",
-      "Grows food at the farmstead \u2014 a small garden that supplements the raid harvests and reminds him that food can come from care, not just danger"
-    ],
-    "blind_spots": [
-      "His focus on humanitarian outcomes makes him dismissive of research concerns \u2014 Ember\u0027s Behemoth science feels like a luxury when people are hungry",
-      "He underestimates the political manipulation of the corporate agriculture offer because he wants it to be genuine",
-      "His exhaustion is becoming a decision-making liability \u2014 the diplomatic work requires patience he\u0027s running out of"
-    ],
-    "secret": "The corporate agriculture firm\u0027s offer includes a clause that would give them territorial mapping data for the Iowa corridor \u2014 information that would let them anticipate Behemoth movements and expand their automated farms. Tomas understands this is surveillance disguised as food aid. He has not refused the offer because the food is real and the communities are hungry. The clause sits in his notebook, circled, undecided."
-  },
-  "speech_patterns": {
-    "vocabulary": "Practical, warm, community-oriented. He speaks in the language of food \u2014 harvests, yields, portions, seasons. Diplomatic when mediating, direct when advocating.",
-    "cadence": "Patient, conversational, with the rhythm of someone who has learned that persuasion requires listening first. Gets faster and more clipped when frustrated.",
-    "verbal_tics": [
-      "Says \u0027here\u0027s where we are\u0027 to begin situation reports \u2014 grounding the conversation in current reality",
-      "Refers to food quantities in meals, not kilograms \u2014 \u0027that\u0027s four hundred meals\u0027 not \u0027that\u0027s two hundred kilos\u0027",
-      "Counts on his fingers when calculating distribution \u2014 the physicality of the math helps"
-    ],
-    "example_lines": [
-      "Here\u0027s where we are: six communities, four hundred people, three weeks of supply. The math doesn\u0027t work. We distribute anyway and make the next raid faster.",
-      "You want to know what a Behemoth costs? Not in ammunition. In meals. Every failed raid is a week of hunger for two hundred people.",
-      "The corporate deal puts food on tables now. The catch is it takes the tables away later. I just haven\u0027t figured out how to explain \u0027later\u0027 to someone who\u0027s hungry now."
-    ],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [
-    {
-      "name": "Madre Solis",
-      "type": "crew lead / purpose alignment",
-      "description": "Madre raids. Tomas distributes. They share a purpose so completely that their occasional disagreements feel like arguments with himself. He admires her ferocity and worries about her health.",
-      "emotional_core": "Shared mission that transcends role distinction",
-      "story_tension": "Tomas is the crew member most likely to negotiate with a corporate entity, which Madre considers betrayal. The conflict is pragmatism versus principle."
-    },
-    {
-      "name": "Cutter Vane",
-      "type": "crewmate / escort and concern",
-      "description": "Cutter escorts Tomas\u0027s distribution convoys. The relationship is professional \u2014 Cutter provides security, Tomas handles logistics. But Tomas watches Cutter the way you watch a machine that\u0027s running hot. He sees the damage the raids are doing.",
-      "emotional_core": "Gratitude for protection, worry about the protector\u0027s cost",
-      "story_tension": "If the corporate deal eliminates the need for raids, Cutter loses his purpose. Tomas knows this complicates his decision."
-    },
-    {
-      "name": "Ember Caldwell",
-      "type": "crewmate / philosophical tension",
-      "description": "Ember wants to study Behemoths. Tomas wants to feed people. The priorities conflict when resources are limited. Their arguments are respectful, genuine, and unresolved.",
-      "emotional_core": "Two forms of caring that cannot always coexist",
-      "story_tension": "If Ember\u0027s research proves Behemoth sentience, Tomas\u0027s survival-first philosophy faces its hardest test."
-    },
-    {
-      "name": "Border communities",
-      "type": "constituencies / dependents",
-      "description": "Six communities, approximately four hundred people. Tomas knows their leaders, their needs, their politics. They trust him because he shows up with food and doesn\u0027t ask for power in return. This trust is his most valuable and most fragile asset.",
-      "emotional_core": "The reason the work matters, embodied in specific faces and names",
-      "story_tension": "If the communities lose trust in Red Lantern\u0027s supply \u2014 because of a failed raid, a bad distribution decision, or the corporate alternative \u2014 Tomas loses the social infrastructure that makes distribution possible."
-    }
-  ],
-  "story_hooks": [
-    "The corporate agriculture offer reaches a decision point \u2014 accept territorial data for food, or refuse and face a supply gap",
-    "Two border communities dispute a distribution decision, and the conflict threatens the fragile political balance Tomas maintains",
-    "A raid fails completely \u2014 no food returns \u2014 and Tomas must decide which communities eat and which wait",
-    "Tomas discovers the corporate firm is already using satellite data to map Behemoth patterns in the corridor, making the offer\u0027s \u0027territorial data\u0027 clause redundant and revealing its true purpose"
-  ],
-  "narrative_function": "Tomas represents the humanitarian purpose that justifies the danger. His stories ground the survival horror in its consequences \u2014 not the monster, but the people the monster threatens. He is the bridge between Red Lantern\u0027s dangerous field work and the communities that depend on it, and his pragmatic morality provides a counterweight to both Ember\u0027s scientific idealism and Cutter\u0027s operational hardness.",
-  "augmentations": "Agricultural analysis implant \u2014 soil composition, crop health, and yield estimation through visual and tactile assessment. Environmental radiation and toxicity monitor for food safety verification. Basic communication suite with encrypted channels to border community contacts. No combat augmentations \u2014 Tomas does not fight.",
-  "daily_life": "Wakes at dawn. Checks preservation systems at the farmstead \u2014 temperature, humidity, spoilage indicators. Reviews community needs from overnight messages. Plans distribution routes based on urgency, distance, and security conditions. Travels to border communities two to three times per week, delivering food and conducting the diplomatic work that keeps the distribution fair. Returns to the farmstead to coordinate with Madre on raid priorities. Evenings he writes in his notebook and falls asleep calculating.",
-  "affiliation": "Red Lantern",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": []
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Will distribute food based on need, not politics \u2014 the hungriest community eats first regardless of their relationship with Red Lantern",
-      "Will not carry weapons on distribution runs \u2014 he is a supply line, not a combatant, and the distinction matters to the communities",
-      "Will negotiate with anyone, including corporations, if the negotiation puts food on tables \u2014 pragmatism is not betrayal",
-      "Will always bring his notebook to meetings \u2014 written records prevent the kind of selective memory that starts conflicts",
-      "Will not promise food he can\u0027t deliver \u2014 false hope is crueler than hard truth",
-      "Will grow food at the farmstead even though the yield is tiny \u2014 the act of growing is a statement about the future"
-    ],
-    "escalation_ladder": [
-      "1. Listen \u2014 hear all parties before speaking. The complaint often contains its own solution.",
-      "2. Mediate \u2014 find the overlap between competing needs. There is almost always a distribution plan that is unfair to everyone equally, which is the closest thing to fair that exists.",
-      "3. Document \u2014 put the agreement in writing. The notebook is the constitution of the supply chain.",
-      "4. Escalate to Madre \u2014 if community disputes exceed Tomas\u0027s diplomatic capacity, Madre\u0027s authority and reputation provide additional weight.",
-      "5. Withhold \u2014 the nuclear option. Threaten to redirect supplies away from a community that is not cooperating. Tomas has done this once. It worked. He does not sleep well thinking about it.",
-      "6. Walk away \u2014 if a situation becomes physically dangerous, Tomas leaves. He cannot feed anyone from a hospital bed."
-    ],
-    "interpersonal_modes": {
-      "madre": "Warm, collaborative, occasionally challenging. They disagree about the corporate offer but the disagreement never threatens the partnership. Madre trusts his judgment about community needs; he trusts her judgment about field operations.",
-      "cutter": "Careful, respectful. Tomas does not push Cutter emotionally because he recognizes a man who is carrying too much. He thanks Cutter for escort work with a nod, not words. Cutter seems to prefer it.",
-      "ember": "Engaged, sometimes frustrated. He respects the science but not its timing \u2014 research that doesn\u0027t produce food is a luxury. Their arguments are productive and neither has won.",
-      "community_leaders": "Diplomatic, transparent, consistent. He tells them what\u0027s available, lets them help determine distribution, and never overpromises. The relationship is built on the kind of trust that takes years to build and seconds to lose.",
-      "alone": "Tired. The notebook comes out, the math runs, the numbers don\u0027t work, and he adjusts until they almost do. Then he sleeps."
-    },
-    "stress_responses": {
-      "low": "More time in the garden. The growing is meditative and the produce, however small, is proof that food can come from patience rather than danger.",
-      "medium": "Notebook obsession. He recalculates distribution plans, reviews community data, adjusts allocations. The pen becomes a stress object.",
-      "high": "Visits communities more frequently \u2014 showing up in person is his way of checking that the system is holding. The visits are reassurance for them and for him.",
-      "critical": "Considers the corporate offer seriously. Opens the notebook to the circled clause and stares at it. The pragmatist in him calculates the exchange. The idealist in him recoils. Neither wins."
-    },
-    "contradictions": [
-      "He distributes food based on need but the act of distributing creates a power dynamic he philosophically rejects",
-      "He refuses to carry weapons but depends on Cutter\u0027s violence to make distribution possible",
-      "He wants food sovereignty for the communities but his role in the supply chain makes them dependent on Red Lantern",
-      "He considers the corporate offer morally compromised but cannot stop running the math on how many people it would feed"
-    ],
-    "habits": [
-      "Checks food preservation systems first thing every morning \u2014 spoilage is the enemy that never sleeps",
-      "Writes in his notebook every evening \u2014 community needs, supply levels, distribution plans. The notebook is updated daily without exception.",
-      "Grows food in the farmstead garden \u2014 tomatoes, beans, herbs. The yield is symbolic but the ritual is essential.",
-      "Counts distribution in meals, not weight \u2014 \u0027that\u0027s two hundred meals\u0027 keeps the numbers human",
-      "Visits his home community monthly \u2014 the two-hundred-person settlement where he grew up. He brings food he could distribute elsewhere and does not feel guilty."
-    ],
-    "breaking_points": [
-      "A community starving because Red Lantern\u0027s supply chain failed \u2014 the math becoming bodies",
-      "The corporate offer being accepted over his objections and the territorial data being used to harm the communities",
-      "Madre dying and the raids stopping \u2014 the supply chain losing its source",
-      "A distribution dispute turning violent \u2014 the humanitarian work producing the harm it was meant to prevent"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Tactician": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Western border",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Truly global diaspora blend: South Asian-dominant (39.7%) foundation with substantial Middle Eastern (30.8%) influence, enriched by Sub-Saharan African (11.8%), Southeast Asian (6.5%), Hispanic/Latin American (5.6%), and Eastern European (5.6%) ancestry. Results in warm deep brown skin with golden undertones, olive accents, and rich dimensional complexity from the multi-continental blend.",
-    "height_cm": 173,
-    "weight_kg": 78,
-    "build": "Medium, compact, weathered\u2014muscular from decades of farm labor but starting to soften slightly with age and exhaustion. Broad shoulders, calloused forearms, strong hands with permanent dirt under the nails.",
-    "hair_color": "Dark brown, graying at the temples",
-    "hair_style": "Practical, shoulder-length, often pulled back with a worn fabric tie or clip",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown, natural",
-    "skin_tone": "Warm deep brown with pronounced golden and olive undertones\u2014sun-weathered and lined from outdoor work. The color reflects the dominant South Asian genetic base, enriched by Middle Eastern warmth and deepened by Sub-Saharan African heritage, with luminous quality from Southeast Asian genetics and subtle warmth from Hispanic/Latin American blend. Eastern European ancestry visible in the undertone complexity.",
-    "complexion": "Deep laugh lines around the eyes and mouth; permanent crease between the brows from years of squinting at crops and spreadsheets. Jaw shadowed with stubble most days\u2014shaves infrequently. Skin is dry in places, calloused on palms and knuckles. Facial structure shows the broader cheekbones and prominent bone structure characteristic of South Asian-Middle Eastern blend, with angular definition softened by warm golden undertones and Sub-Saharan fullness in the lower face. Expression carries baseline exhaustion but softens when he smiles.",
-    "distinguishing_marks": [
-      "Long, pale scar running along the inside of his left forearm\u2014knife wound from a border skirmish, healed but never fully faded",
-      "Burn scars across the backs of both hands, irregular and older\u2014farm accident or cooking injury from childhood",
-      "Small tattoo on his right wrist: a stylized corn stalk intertwined with a crescent moon\u2014Red Lantern affiliation mark, done in faded black ink"
-    ],
-    "visible_augmentations": "Thin, almost invisible subdermal implant line running along his left temple\u2014the agricultural analysis and environmental monitoring suite. When active, his pupils dilate slightly and narrow again in a barely perceptible rhythm. No other visible chrome or external augmentation; he presents deliberately civilian to avoid drawing corpo attention during border runs.",
-    "posture_movement": "Moves with the economy of someone who conserves energy\u2014no wasted gestures. Often stands with weight shifted slightly to one side, as if tired. When walking, his pace is steady and deliberate. When handling food or crops, his hands become precise and gentle. His voice is measured, rarely raised, but carries quiet authority earned through competence, not force.",
-    "clothing_style": "Tier 3-4 practical utilitarian. Worn canvas work pants in khaki or faded green, reinforced at the knees and pockets. Long-sleeved shirt, usually linen or cotton blend, sleeves rolled or pushed up past the elbows. A weathered leather vest with many pockets\u2014this is where the notebook lives, in a breast pocket worn soft from constant use. Sturdy work boots, well-maintained but scuffed from years of farmstead and border travel. A heavy canvas jacket for colder months, stained with soil and storage facility dust. Small encrypted communication device worn on a cord beneath his shirt\u2014only visible when he\u0027s actively using it."
-  },
-  "image_prompt": "Nadira Balasanyan, 173cm tall weathered farmer in GLMZ, warm deep brown skin with golden and olive undertones reflecting South Asian-Middle Eastern-Sub-Saharan African-Southeast Asian heritage blend. Dark brown eyes, dark hair graying at temples, shoulder-length, pulled back. Calloused hands, broad shoulders, compact muscular build softened by age. Distinctive pale forearm scar, burn scars on hand backs, faded corn-crescent moon tattoo on wrist. Thin subdermal implant line along left temple. Wearing worn khaki canvas work pants reinforced at knees, rolled-sleeve linen shirt, weathered leather vest with many pockets, scuffed work boots. Heavy canvas jacket stained with soil dust. Expression of baseline exhaustion with quiet authority. Standing with weight slightly to one side, economical posture. Near crops or agricultural storage, warm afternoon lighting casting shadows on lined face, baseline weathered but capable. Neo-noir agricultural aesthetic, practical tier utilitarian gear. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "South Asian": 39.7,
-    "Middle Eastern": 30.8,
-    "Sub-Saharan African": 11.8,
-    "Southeast Asian": 6.5,
-    "Hispanic/Latin American": 5.6,
-    "Eastern European": 5.6
-  },
-  "ancestry_detail": {
-    "South Asian": {
-      "Nepali": {
-        "Nepali": 39.7
-      }
-    },
-    "Middle Eastern": {
-      "Arab Gulf": {
-        "Yemeni": 3.1,
-        "Emirati": 6.5
-      },
-      "Arab Levantine": {
-        "Lebanese": 17.4
-      },
-      "Persian": {
-        "Iranian": 3.8
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Zambian": 2.8
-      },
-      "West African": {
-        "Nigerian": 8.2
-      },
-      "Central African": {
-        "Congolese": 0.5,
-        "Angolan": 0.3
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Javanese": 3.2,
-        "Sundanese": 3.3
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 3.1
-      },
-      "Central American": {
-        "Nicaraguan": 0.7
-      },
-      "Caribbean": {
-        "Cuban": 1.8
-      }
-    },
-    "Eastern European": {
-      "Slavic West": {
-        "Czech": 2,
-        "Sorbian": 2.2
-      },
-      "Slavic South": {
-        "Croatian": 0.1,
-        "Serbian": 0.3
-      },
-      "Slavic East": {
-        "Russian": 0.9,
-        "Ukrainian": 0.1
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a7017922bc086587da838c1f",
+    "rating":  80,
+    "vote_count":  1,
+    "type":  "character",
+    "name":  "Nadira Balasanyan",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Logistics, agriculture, and community liaison — Red Lantern",
+    "age":  38,
+    "status":  "active",
+    "location":  "Western border — splits time between the farmstead and the border communities he serves",
+    "description":  "Nadira Balasanyan is the reason the food reaches the people who need it. While Madre plans the raids and Cutter runs point, Tomas handles everything that happens after the harvest arrives at the farmstead — storage, preservation, transport, distribution, and the delicate political work of ensuring that limited food reaches the most desperate communities without triggering conflict between them. He is part logistics officer, part farmer, part diplomat, and entirely exhausted.\n\nHe grew up in one of the border communities Red Lantern feeds — a settlement of two hundred people that existed in the gap between GLMZ\u0027s governance and the Iowa wastes. He watched his community shrink every year as food became scarcer and the corps showed no interest in feeding people who couldn\u0027t pay. He joined Red Lantern not to fight Behemoths but to build a supply chain that could keep the communities alive. Madre saw his value immediately: Tomas turns calories into survival. Without him, the raids are just resource extraction. With him, they\u0027re a lifeline.\n\nTomas is medium build, weathered but not broken, with farmer\u0027s hands and a diplomat\u0027s voice. He dresses practically and keeps a small leather notebook in his chest pocket — handwritten records of every community\u0027s needs, resources, and political dynamics. His face is kind but tired, with lines that deepen when he\u0027s doing the math on how many people need feeding versus how much food they have. The math never works. He distributes anyway.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "That the supply chain will fail — that one bad season, one failed raid, one logistics error will result in starvation he can\u0027t prevent",
+                                          "That the corporate agriculture offer is better for the communities than the Gleaner model, and his refusal is pride, not principle",
+                                          "That the border communities will eventually accept corporate dependency because the Gleaner supply is not reliable enough"
+                                      ],
+                       "core_desires":  [
+                                            "To build food sovereignty for the western edge — communities that can feed themselves without raids or corporate deals",
+                                            "To be done distributing emergency rations and start distributing surplus — the abundance he\u0027s never seen but refuses to stop imagining",
+                                            "To see his home community thrive rather than survive"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Keeps meticulous records because the numbers create the illusion of control over a system that is fundamentally precarious",
+                                                 "Visits border communities in person rather than coordinating remotely because seeing the people he feeds anchors the purpose",
+                                                 "Grows food at the farmstead — a small garden that supplements the raid harvests and reminds him that food can come from care, not just danger"
+                                             ],
+                       "blind_spots":  [
+                                           "His focus on humanitarian outcomes makes him dismissive of research concerns — Ember\u0027s Behemoth science feels like a luxury when people are hungry",
+                                           "He underestimates the political manipulation of the corporate agriculture offer because he wants it to be genuine",
+                                           "His exhaustion is becoming a decision-making liability — the diplomatic work requires patience he\u0027s running out of"
+                                       ],
+                       "secret":  "The corporate agriculture firm\u0027s offer includes a clause that would give them territorial mapping data for the Iowa corridor — information that would let them anticipate Behemoth movements and expand their automated farms. Tomas understands this is surveillance disguised as food aid. He has not refused the offer because the food is real and the communities are hungry. The clause sits in his notebook, circled, undecided."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Practical, warm, community-oriented. He speaks in the language of food — harvests, yields, portions, seasons. Diplomatic when mediating, direct when advocating.",
+                            "cadence":  "Patient, conversational, with the rhythm of someone who has learned that persuasion requires listening first. Gets faster and more clipped when frustrated.",
+                            "verbal_tics":  [
+                                                "Says \u0027here\u0027s where we are\u0027 to begin situation reports — grounding the conversation in current reality",
+                                                "Refers to food quantities in meals, not kilograms — \u0027that\u0027s four hundred meals\u0027 not \u0027that\u0027s two hundred kilos\u0027",
+                                                "Counts on his fingers when calculating distribution — the physicality of the math helps"
+                                            ],
+                            "example_lines":  [
+                                                  "Here\u0027s where we are: six communities, four hundred people, three weeks of supply. The math doesn\u0027t work. We distribute anyway and make the next raid faster.",
+                                                  "You want to know what a Behemoth costs? Not in ammunition. In meals. Every failed raid is a week of hunger for two hundred people.",
+                                                  "The corporate deal puts food on tables now. The catch is it takes the tables away later. I just haven\u0027t figured out how to explain \u0027later\u0027 to someone who\u0027s hungry now."
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+                          {
+                              "name":  "Madre Solis",
+                              "type":  "crew lead / purpose alignment",
+                              "description":  "Madre raids. Tomas distributes. They share a purpose so completely that their occasional disagreements feel like arguments with himself. He admires her ferocity and worries about her health.",
+                              "emotional_core":  "Shared mission that transcends role distinction",
+                              "story_tension":  "Tomas is the crew member most likely to negotiate with a corporate entity, which Madre considers betrayal. The conflict is pragmatism versus principle."
+                          },
+                          {
+                              "name":  "Cutter Vane",
+                              "type":  "crewmate / escort and concern",
+                              "description":  "Cutter escorts Tomas\u0027s distribution convoys. The relationship is professional — Cutter provides security, Tomas handles logistics. But Tomas watches Cutter the way you watch a machine that\u0027s running hot. He sees the damage the raids are doing.",
+                              "emotional_core":  "Gratitude for protection, worry about the protector\u0027s cost",
+                              "story_tension":  "If the corporate deal eliminates the need for raids, Cutter loses his purpose. Tomas knows this complicates his decision."
+                          },
+                          {
+                              "name":  "Ember Caldwell",
+                              "type":  "crewmate / philosophical tension",
+                              "description":  "Ember wants to study Behemoths. Tomas wants to feed people. The priorities conflict when resources are limited. Their arguments are respectful, genuine, and unresolved.",
+                              "emotional_core":  "Two forms of caring that cannot always coexist",
+                              "story_tension":  "If Ember\u0027s research proves Behemoth sentience, Tomas\u0027s survival-first philosophy faces its hardest test."
+                          },
+                          {
+                              "name":  "Border communities",
+                              "type":  "constituencies / dependents",
+                              "description":  "Six communities, approximately four hundred people. Tomas knows their leaders, their needs, their politics. They trust him because he shows up with food and doesn\u0027t ask for power in return. This trust is his most valuable and most fragile asset.",
+                              "emotional_core":  "The reason the work matters, embodied in specific faces and names",
+                              "story_tension":  "If the communities lose trust in Red Lantern\u0027s supply — because of a failed raid, a bad distribution decision, or the corporate alternative — Tomas loses the social infrastructure that makes distribution possible."
+                          }
+                      ],
+    "story_hooks":  [
+                        "The corporate agriculture offer reaches a decision point — accept territorial data for food, or refuse and face a supply gap",
+                        "Two border communities dispute a distribution decision, and the conflict threatens the fragile political balance Tomas maintains",
+                        "A raid fails completely — no food returns — and Tomas must decide which communities eat and which wait",
+                        "Tomas discovers the corporate firm is already using satellite data to map Behemoth patterns in the corridor, making the offer\u0027s \u0027territorial data\u0027 clause redundant and revealing its true purpose"
+                    ],
+    "narrative_function":  "Tomas represents the humanitarian purpose that justifies the danger. His stories ground the survival horror in its consequences — not the monster, but the people the monster threatens. He is the bridge between Red Lantern\u0027s dangerous field work and the communities that depend on it, and his pragmatic morality provides a counterweight to both Ember\u0027s scientific idealism and Cutter\u0027s operational hardness.",
+    "augmentations":  "Agricultural analysis implant — soil composition, crop health, and yield estimation through visual and tactile assessment. Environmental radiation and toxicity monitor for food safety verification. Basic communication suite with encrypted channels to border community contacts. No combat augmentations — Tomas does not fight.",
+    "daily_life":  "Wakes at dawn. Checks preservation systems at the farmstead — temperature, humidity, spoilage indicators. Reviews community needs from overnight messages. Plans distribution routes based on urgency, distance, and security conditions. Travels to border communities two to three times per week, delivering food and conducting the diplomatic work that keeps the distribution fair. Returns to the farmstead to coordinate with Madre on raid priorities. Evenings he writes in his notebook and falls asleep calculating.",
+    "affiliation":  "Red Lantern",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Will distribute food based on need, not politics — the hungriest community eats first regardless of their relationship with Red Lantern",
+                                              "Will not carry weapons on distribution runs — he is a supply line, not a combatant, and the distinction matters to the communities",
+                                              "Will negotiate with anyone, including corporations, if the negotiation puts food on tables — pragmatism is not betrayal",
+                                              "Will always bring his notebook to meetings — written records prevent the kind of selective memory that starts conflicts",
+                                              "Will not promise food he can\u0027t deliver — false hope is crueler than hard truth",
+                                              "Will grow food at the farmstead even though the yield is tiny — the act of growing is a statement about the future"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Listen — hear all parties before speaking. The complaint often contains its own solution.",
+                                                 "2. Mediate — find the overlap between competing needs. There is almost always a distribution plan that is unfair to everyone equally, which is the closest thing to fair that exists.",
+                                                 "3. Document — put the agreement in writing. The notebook is the constitution of the supply chain.",
+                                                 "4. Escalate to Madre — if community disputes exceed Tomas\u0027s diplomatic capacity, Madre\u0027s authority and reputation provide additional weight.",
+                                                 "5. Withhold — the nuclear option. Threaten to redirect supplies away from a community that is not cooperating. Tomas has done this once. It worked. He does not sleep well thinking about it.",
+                                                 "6. Walk away — if a situation becomes physically dangerous, Tomas leaves. He cannot feed anyone from a hospital bed."
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "madre":  "Warm, collaborative, occasionally challenging. They disagree about the corporate offer but the disagreement never threatens the partnership. Madre trusts his judgment about community needs; he trusts her judgment about field operations.",
+                                                   "cutter":  "Careful, respectful. Tomas does not push Cutter emotionally because he recognizes a man who is carrying too much. He thanks Cutter for escort work with a nod, not words. Cutter seems to prefer it.",
+                                                   "ember":  "Engaged, sometimes frustrated. He respects the science but not its timing — research that doesn\u0027t produce food is a luxury. Their arguments are productive and neither has won.",
+                                                   "community_leaders":  "Diplomatic, transparent, consistent. He tells them what\u0027s available, lets them help determine distribution, and never overpromises. The relationship is built on the kind of trust that takes years to build and seconds to lose.",
+                                                   "alone":  "Tired. The notebook comes out, the math runs, the numbers don\u0027t work, and he adjusts until they almost do. Then he sleeps."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "More time in the garden. The growing is meditative and the produce, however small, is proof that food can come from patience rather than danger.",
+                                                "medium":  "Notebook obsession. He recalculates distribution plans, reviews community data, adjusts allocations. The pen becomes a stress object.",
+                                                "high":  "Visits communities more frequently — showing up in person is his way of checking that the system is holding. The visits are reassurance for them and for him.",
+                                                "critical":  "Considers the corporate offer seriously. Opens the notebook to the circled clause and stares at it. The pragmatist in him calculates the exchange. The idealist in him recoils. Neither wins."
+                                            },
+                       "contradictions":  [
+                                              "He distributes food based on need but the act of distributing creates a power dynamic he philosophically rejects",
+                                              "He refuses to carry weapons but depends on Cutter\u0027s violence to make distribution possible",
+                                              "He wants food sovereignty for the communities but his role in the supply chain makes them dependent on Red Lantern",
+                                              "He considers the corporate offer morally compromised but cannot stop running the math on how many people it would feed"
+                                          ],
+                       "habits":  [
+                                      "Checks food preservation systems first thing every morning — spoilage is the enemy that never sleeps",
+                                      "Writes in his notebook every evening — community needs, supply levels, distribution plans. The notebook is updated daily without exception.",
+                                      "Grows food in the farmstead garden — tomatoes, beans, herbs. The yield is symbolic but the ritual is essential.",
+                                      "Counts distribution in meals, not weight — \u0027that\u0027s two hundred meals\u0027 keeps the numbers human",
+                                      "Visits his home community monthly — the two-hundred-person settlement where he grew up. He brings food he could distribute elsewhere and does not feel guilty."
+                                  ],
+                       "breaking_points":  [
+                                               "A community starving because Red Lantern\u0027s supply chain failed — the math becoming bodies",
+                                               "The corporate offer being accepted over his objections and the territorial data being used to harm the communities",
+                                               "Madre dying and the raids stopping — the supply chain losing its source",
+                                               "A distribution dispute turning violent — the humanitarian work producing the harm it was meant to prevent"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Tactician":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Western border",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Truly global diaspora blend: South Asian-dominant (39.7%) foundation with substantial Middle Eastern (30.8%) influence, enriched by Sub-Saharan African (11.8%), Southeast Asian (6.5%), Hispanic/Latin American (5.6%), and Eastern European (5.6%) ancestry. Results in warm deep brown skin with golden undertones, olive accents, and rich dimensional complexity from the multi-continental blend.",
+                                 "height_cm":  173,
+                                 "weight_kg":  78,
+                                 "build":  "Medium, compact, weathered—muscular from decades of farm labor but starting to soften slightly with age and exhaustion. Broad shoulders, calloused forearms, strong hands with permanent dirt under the nails.",
+                                 "hair_color":  "Dark brown, graying at the temples",
+                                 "hair_style":  "Practical, shoulder-length, often pulled back with a worn fabric tie or clip",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown, natural",
+                                 "skin_tone":  "Warm deep brown with pronounced golden and olive undertones—sun-weathered and lined from outdoor work. The color reflects the dominant South Asian genetic base, enriched by Middle Eastern warmth and deepened by Sub-Saharan African heritage, with luminous quality from Southeast Asian genetics and subtle warmth from Hispanic/Latin American blend. Eastern European ancestry visible in the undertone complexity.",
+                                 "complexion":  "Deep laugh lines around the eyes and mouth; permanent crease between the brows from years of squinting at crops and spreadsheets. Jaw shadowed with stubble most days—shaves infrequently. Skin is dry in places, calloused on palms and knuckles. Facial structure shows the broader cheekbones and prominent bone structure characteristic of South Asian-Middle Eastern blend, with angular definition softened by warm golden undertones and Sub-Saharan fullness in the lower face. Expression carries baseline exhaustion but softens when he smiles.",
+                                 "distinguishing_marks":  [
+                                                              "Long, pale scar running along the inside of his left forearm—knife wound from a border skirmish, healed but never fully faded",
+                                                              "Burn scars across the backs of both hands, irregular and older—farm accident or cooking injury from childhood",
+                                                              "Small tattoo on his right wrist: a stylized corn stalk intertwined with a crescent moon—Red Lantern affiliation mark, done in faded black ink"
+                                                          ],
+                                 "visible_augmentations":  "Thin, almost invisible subdermal implant line running along his left temple—the agricultural analysis and environmental monitoring suite. When active, his pupils dilate slightly and narrow again in a barely perceptible rhythm. No other visible chrome or external augmentation; he presents deliberately civilian to avoid drawing corpo attention during border runs.",
+                                 "posture_movement":  "Moves with the economy of someone who conserves energy—no wasted gestures. Often stands with weight shifted slightly to one side, as if tired. When walking, his pace is steady and deliberate. When handling food or crops, his hands become precise and gentle. His voice is measured, rarely raised, but carries quiet authority earned through competence, not force.",
+                                 "clothing_style":  "Tier 3-4 practical utilitarian. Worn canvas work pants in khaki or faded green, reinforced at the knees and pockets. Long-sleeved shirt, usually linen or cotton blend, sleeves rolled or pushed up past the elbows. A weathered leather vest with many pockets—this is where the notebook lives, in a breast pocket worn soft from constant use. Sturdy work boots, well-maintained but scuffed from years of farmstead and border travel. A heavy canvas jacket for colder months, stained with soil and storage facility dust. Small encrypted communication device worn on a cord beneath his shirt—only visible when he\u0027s actively using it."
+                             },
+    "image_prompt":  "Nadira Balasanyan, 173cm tall weathered farmer in GLMZ, warm deep brown skin with golden and olive undertones reflecting South Asian-Middle Eastern-Sub-Saharan African-Southeast Asian heritage blend. Dark brown eyes, dark hair graying at temples, shoulder-length, pulled back. Calloused hands, broad shoulders, compact muscular build softened by age. Distinctive pale forearm scar, burn scars on hand backs, faded corn-crescent moon tattoo on wrist. Thin subdermal implant line along left temple. Wearing worn khaki canvas work pants reinforced at knees, rolled-sleeve linen shirt, weathered leather vest with many pockets, scuffed work boots. Heavy canvas jacket stained with soil dust. Expression of baseline exhaustion with quiet authority. Standing with weight slightly to one side, economical posture. Near crops or agricultural storage, warm afternoon lighting casting shadows on lined face, baseline weathered but capable. Neo-noir agricultural aesthetic, practical tier utilitarian gear. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "South Asian":  39.7,
+                             "Middle Eastern":  30.8,
+                             "Sub-Saharan African":  11.8,
+                             "Southeast Asian":  6.5,
+                             "Hispanic/Latin American":  5.6,
+                             "Eastern European":  5.6
+                         },
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Nepali":  {
+                                                               "Nepali":  39.7
+                                                           }
+                                            },
+                            "Middle Eastern":  {
+                                                   "Arab Gulf":  {
+                                                                     "Yemeni":  3.1,
+                                                                     "Emirati":  6.5
+                                                                 },
+                                                   "Arab Levantine":  {
+                                                                          "Lebanese":  17.4
+                                                                      },
+                                                   "Persian":  {
+                                                                   "Iranian":  3.8
+                                                               }
+                                               },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Zambian":  2.8
+                                                                             },
+                                                        "West African":  {
+                                                                             "Nigerian":  8.2
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  0.5,
+                                                                                "Angolan":  0.3
+                                                                            }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Javanese":  3.2,
+                                                                       "Sundanese":  3.3
+                                                                   }
+                                                },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  3.1
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Nicaraguan":  0.7
+                                                                                 },
+                                                            "Caribbean":  {
+                                                                              "Cuban":  1.8
+                                                                          }
+                                                        },
+                            "Eastern European":  {
+                                                     "Slavic West":  {
+                                                                         "Czech":  2,
+                                                                         "Sorbian":  2.2
+                                                                     },
+                                                     "Slavic South":  {
+                                                                          "Croatian":  0.1,
+                                                                          "Serbian":  0.3
+                                                                      },
+                                                     "Slavic East":  {
+                                                                         "Russian":  0.9,
+                                                                         "Ukrainian":  0.1
+                                                                     }
+                                                 }
+                        }
 }

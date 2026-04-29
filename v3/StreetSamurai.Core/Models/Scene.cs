@@ -20,8 +20,6 @@ public record Beat
 {
     public int Index { get; init; }
     public string Goal { get; init; } = "";
-    public string LeadFacet { get; init; } = "";
-    public List<string> SupportingFacets { get; init; } = [];
     public string Text { get; init; } = "";
     public List<string> ContextTags { get; init; } = [];
 }

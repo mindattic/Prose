@@ -1,280 +1,299 @@
-{
-  "id": "019d6143a6d874c8ace81a26b6b745e6",
-  "type": "character",
-  "name": "Akihiro Haugen-Baiseitov",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Surveillance operator, Ferrogate Transit Security",
-  "age": 31,
-  "status": "active",
-  "location": "Kessler Interchange, near North Ave and Damen",
-  "description": "Akihiro Haugen-Baiseitov is a compact woman with deep brown skin and close-cropped natural hair she keeps pinned flat under a headset she almost never removes. Her eyes are her most striking feature — cosmetic irises patterned like circuit diagrams in amber and black, a Ferrogate employee perk she accepted mostly because it made her colleagues uncomfortable and she finds that useful. She has the particular stillness of someone who watches things for a living, and a habit of tracking movement in a room that makes first-time acquaintances feel vaguely prosecuted.\n\nShe runs the mid-shift monitoring suite at Kessler Interchange, a warren of overlapping transit corridors where four Ferrogate lines converge and approximately forty thousand people pass through daily. She is methodical, unhurried, and privately contemptuous of colleagues who confuse volume of incidents flagged with quality of work. She has learned to read a crowd the way some people read weather — pressure, density, the small tells of collective mood. She drinks too much stimulant tea and keeps a small clay figurine of an E.L.F. she calls Clicker on her console, leaving it fragments of raw surveillance data as offerings.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.6,
-      "id": 0.2,
-      "shadow": 0.4,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [
-      "Being responsible for harm she failed to prevent",
-      "Losing the sharpness of her perception — cognitive decline, augmentation failure"
-    ],
-    "core_desires": [
-      "To see things as they actually are, not as they are presented",
-      "To be genuinely useful in a way that is legible and measurable"
-    ],
-    "coping_mechanisms": [
-      "Hyper-detailed logging and documentation",
-      "Ritual attention to her E.L.F. figurine when stressed",
-      "Long silent observation before speaking"
-    ],
-    "blind_spots": [
-      "Underestimates threats from people she has mentally categorized as 'harmless regulars'",
-      "Confuses surveillance with understanding — watches without always grasping motive"
-    ],
-    "secret": "She has been quietly archiving footage of a mid-level Ferrogate supervisor she believes is routing transit delay data to a competitor. She hasn't reported it because she isn't certain — and because she's afraid the investigation would expose that she's been running unauthorized archive pulls for months."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, economy of words, surveillance jargon bleeds into casual speech — she'll describe a person's gait or dwell time in a space before their name",
-    "cadence": "Measured and unhurried, with long pauses before answering questions as if buffering",
-    "verbal_tics": [
-      "Hm.",
-      "Clock it.",
-      "That tracks."
-    ],
-    "example_lines": [
-      "He's been stationary at the east pillar for eleven minutes. That's not waiting for a train.",
-      "I don't guess. I observe and then I tell you what I saw."
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "She flags a recurring anomaly — same person, same time, five different disguises over three weeks — but her supervisor keeps closing the ticket",
-    "Her unauthorized archive on the Ferrogate supervisor captures something unrelated but far more dangerous — and now she has footage she never wanted"
-  ],
-  "narrative_function": "Information source — knows everyone who moves through Kessler and can pull footage going back six months. Local color for transit hub scenes. Quest-adjacent: might notice something wrong before anyone else does.",
-  "augmentations": "Circuit-patterned cosmetic irises (amber/black). Neural uplink jack for direct feed monitoring — allows passive stream of up to 40 camera feeds simultaneously. Mild haptic feedback implant in left hand for alert management.",
-  "daily_life": "Arrives ninety minutes before shift to review overnight incident logs; monitors Kessler's camera grid for eight hours with two sanctioned breaks she rarely takes; files end-of-shift anomaly reports with obsessive precision.",
-  "affiliation": "Ferrogate Transit Security; The Interchange",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 8,
-      "willpower": 7,
-      "creativity": 5,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 4,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -2,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -1,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "observer",
-      "methodical",
-      "institutional",
-      "quietly principled"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Document first, act second",
-      "Do not flag unless you can show your work",
-      "Trust the pattern over the person"
-    ],
-    "escalation_ladder": [
-      "Passive observation and logging",
-      "Informal query to a trusted colleague",
-      "Formal anomaly report through official channels",
-      "Direct confrontation only if official channels fail and harm is imminent"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Polite, minimal, assessing — gives away nothing while cataloguing everything",
-      "friends": "Drily warm, quietly protective, more likely to show concern through action than words"
-    },
-    "stress_responses": {
-      "low": "Goes quieter, doubles down on documentation",
-      "medium": "Becomes clipped and brittle, stops making eye contact",
-      "high": "Shuts down verbally entirely, physically leaves the space if possible"
-    },
-    "contradictions": [
-      "Believes in transparency as a value but personally discloses almost nothing"
-    ],
-    "habits": [
-      "Repositions Clicker the E.L.F. figurine at the start of every shift",
-      "Eats lunch at her station while reviewing flagged clips",
-      "Mentally times how long everyone in a room stays before leaving"
-    ],
-    "breaking_points": [
-      "Discovering that harm she documented and reported was ignored by superiors"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Ferrogate-issue neural uplink (multi-feed monitoring)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Ferrogate-issue neural uplink (multi-feed monitoring)",
-      "replaces": ""
-    },
-    {
-      "name": "Haptic alert implant, left palm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Haptic alert implant, left palm",
-      "replaces": ""
-    },
-    {
-      "name": "Cosmetic circuit irises — amber/black (Ferrogate employee tier)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Cosmetic circuit irises — amber/black (Ferrogate employee tier)",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Sentinel": 0.9,
-    "Analyst": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Kessler Interchange",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPA-20E 'Thunderclap'",
-    "Volkov-Saito Precision VS-9 Elite 'Arbiter'"
-  ],
-  "related_entities": [
-    "Kessler Interchange",
-    "Ferrogate Transit",
-    "Pressure Drop",
-    "The Gradient Compact",
-    "Circuit",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Compass Rose",
-    "Clay"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Akihiro carries a striking global blend: South Asian (28.9%), Hispanic/Latin American (27.2%), Central Asian (24.6%), and Northern European (19.3%) ancestry converge in her features. The result is a face of unexpected harmony—warm golden-brown skin that bridges warm and cool undertones, high angular cheekbones with subtle Central Asian geometry, a defined Hispanic/Latin jawline, and the bright-eyed intensity of Northern European heritage. Her features read as genuinely trans-continental, equally difficult to pin to any single region.",
-    "height_cm": 158,
-    "weight_kg": 52,
-    "build": "Compact and lean, almost bird-like in economy of movement. Narrow shoulders, minimal upper body mass. Built for stillness rather than exertion.",
-    "hair_color": "Natural dark brown, nearly black",
-    "hair_style": "Close-cropped natural hair, kept pressed flat beneath her monitoring headset",
-    "hair_length": "Short",
-    "eye_color": "Cosmetic circuit-pattern irises: amber base with black circuit-trace overlays, human-like sclera",
-    "skin_tone": "Warm golden-brown medium tone—the balanced fusion of South Asian warmth, Hispanic/Latin richness, Central Asian depth, and Northern European clarity. Even complexion with subtle luminosity.",
-    "complexion": "High, prominent cheekbones reflecting Central and South Asian heritage structure. Defined, angular jawline from Hispanic/Latin American ancestry. Minimal makeup. Skin unmarked and well-maintained. Eyes carry unusual intensity—circuit patterns catch light and shift slightly with tracked movement.",
-    "distinguishing_marks": [
-      "Faint scar tissue along the left temple where the neural uplink jack was installed, barely visible beneath hairline",
-      "A small, precise tattoo of a transit schematic map on her right inner wrist—underground lines in silver ink"
-    ],
-    "visible_augmentations": "Circuit-patterned cosmetic irises are immediately noticeable and unsettling. The Ferrogate monitoring headset is a permanent fixture—a sleek neural interface crown with three small sensor pods that contact her temples and scalp. Faint subcutaneous LED trace visible along her left palm and inner wrist (haptic feedback implant), glowing amber when alert notifications fire.",
-    "posture_movement": "Still. Almost preternaturally still when seated. Minimal fidgeting or reactive movement. When mobile, she moves with economical precision—no wasted motion. Head remains relatively fixed while eyes track; this creates an uncanny quality, as if only her gaze moves while the rest of her is locked on target. Her left hand sometimes trembles microscopically—haptic feedback from her uplink triggering phantom sensations.",
-    "clothing_style": "Tier 3 utilitarian corporate issue. Black Ferrogate-branded bodysuit with reinforced shoulders and upper back (designed to support headset weight). Matching tactical vest with six patch pockets, all precisely organized. Steel-toed boots rated for transit station spillover. A thin silver Φ-chain necklace—inexpensive, probably a gift, worn consciously. Her one personal affectation: a small embroidered patch on her left shoulder strap depicting a stylized E.L.F. (Electromagnetic Low-Frequency) in faded thread."
-  },
-  "image_prompt": "GLMZ, compact androgynous transit monitor named Akihiro, 158cm, 52kg, lean build. Striking multi-continental features: golden-brown skin blending South Asian warmth, Hispanic angular jawline, Central Asian high cheekbones, Northern European intensity. Short dark brown hair flat beneath sleek Ferrogate neural interface headset with three sensor pods. Most striking feature: circuit-pattern cosmetic irises with amber base and black circuit overlays that seem to track movement independently. Preternaturally still posture. Black corporate Ferrogate bodysuit and tactical vest, steel-toed boots. Faint LED traces glowing amber along left palm from haptic implant. Silver Φ-chain necklace, embroidered E.L.F. patch on shoulder. Sitting motionless in transit station control room, hands resting precisely, head locked while only eyes move. Cool fluorescent and amber LED ambient lighting. Neo-noir utilitarian aesthetic, emotionally distant, augmented surveillance professional. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 28.9,
-    "Hispanic/Latin American": 27.2,
-    "Central Asian": 24.6,
-    "Northern European": 19.3
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Pakistani": {
-        "Baloch": 6,
-        "Sindhi": 22.9
-      }
-    },
-    "Hispanic/Latin American": {
-      "Central American": {
-        "Salvadoran": 11
-      },
-      "Mexican": {
-        "Mexican": 8.1
-      },
-      "South American": {
-        "Colombian": 3.7,
-        "Venezuelan": 4.4
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Buryat": 24.6
-      }
-    },
-    "Northern European": {
-      "Germanic": {
-        "German": 17.8,
-        "Swiss German": 1.5
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6d874c8ace81a26b6b745e6",
+    "type":  "character",
+    "name":  "Akihiro Haugen-Baiseitov",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Surveillance operator, Ferrogate Transit Security",
+    "age":  31,
+    "status":  "active",
+    "location":  "Kessler Interchange, near North Ave and Damen",
+    "description":  "Akihiro Haugen-Baiseitov is a compact woman with deep brown skin and close-cropped natural hair she keeps pinned flat under a headset she almost never removes. Her eyes are her most striking feature â€” cosmetic irises patterned like circuit diagrams in amber and black, a Ferrogate employee perk she accepted mostly because it made her colleagues uncomfortable and she finds that useful. She has the particular stillness of someone who watches things for a living, and a habit of tracking movement in a room that makes first-time acquaintances feel vaguely prosecuted.\n\nShe runs the mid-shift monitoring suite at Kessler Interchange, a warren of overlapping transit corridors where four Ferrogate lines converge and approximately forty thousand people pass through daily. She is methodical, unhurried, and privately contemptuous of colleagues who confuse volume of incidents flagged with quality of work. She has learned to read a crowd the way some people read weather â€” pressure, density, the small tells of collective mood. She drinks too much stimulant tea and keeps a small clay figurine of an E.L.F. she calls Clicker on her console, leaving it fragments of raw surveillance data as offerings.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being responsible for harm she failed to prevent",
+                                          "Losing the sharpness of her perception â€” cognitive decline, augmentation failure"
+                                      ],
+                       "core_desires":  [
+                                            "To see things as they actually are, not as they are presented",
+                                            "To be genuinely useful in a way that is legible and measurable"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Hyper-detailed logging and documentation",
+                                                 "Ritual attention to her E.L.F. figurine when stressed",
+                                                 "Long silent observation before speaking"
+                                             ],
+                       "blind_spots":  [
+                                           "Underestimates threats from people she has mentally categorized as \u0027harmless regulars\u0027",
+                                           "Confuses surveillance with understanding â€” watches without always grasping motive"
+                                       ],
+                       "secret":  "She has been quietly archiving footage of a mid-level Ferrogate supervisor she believes is routing transit delay data to a competitor. She hasn\u0027t reported it because she isn\u0027t certain â€” and because she\u0027s afraid the investigation would expose that she\u0027s been running unauthorized archive pulls for months."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, economy of words, surveillance jargon bleeds into casual speech â€” she\u0027ll describe a person\u0027s gait or dwell time in a space before their name",
+                            "cadence":  "Measured and unhurried, with long pauses before answering questions as if buffering",
+                            "verbal_tics":  [
+                                                "Hm.",
+                                                "Clock it.",
+                                                "That tracks."
+                                            ],
+                            "example_lines":  [
+                                                  "He\u0027s been stationary at the east pillar for eleven minutes. That\u0027s not waiting for a train.",
+                                                  "I don\u0027t guess. I observe and then I tell you what I saw."
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "She flags a recurring anomaly â€” same person, same time, five different disguises over three weeks â€” but her supervisor keeps closing the ticket",
+                        "Her unauthorized archive on the Ferrogate supervisor captures something unrelated but far more dangerous â€” and now she has footage she never wanted"
+                    ],
+    "narrative_function":  "Information source â€” knows everyone who moves through Kessler and can pull footage going back six months. Local color for transit hub scenes. Quest-adjacent: might notice something wrong before anyone else does.",
+    "augmentations":  "Circuit-patterned cosmetic irises (amber/black). Neural uplink jack for direct feed monitoring â€” allows passive stream of up to 40 camera feeds simultaneously. Mild haptic feedback implant in left hand for alert management.",
+    "daily_life":  "Arrives ninety minutes before shift to review overnight incident logs; monitors Kessler\u0027s camera grid for eight hours with two sanctioned breaks she rarely takes; files end-of-shift anomaly reports with obsessive precision.",
+    "affiliation":  "Ferrogate Transit Security; The Interchange",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  8,
+                                 "willpower":  7,
+                                 "creativity":  5,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  4,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -2,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -1,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "observer",
+                               "methodical",
+                               "institutional",
+                               "quietly principled"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Document first, act second",
+                                              "Do not flag unless you can show your work",
+                                              "Trust the pattern over the person"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Passive observation and logging",
+                                                 "Informal query to a trusted colleague",
+                                                 "Formal anomaly report through official channels",
+                                                 "Direct confrontation only if official channels fail and harm is imminent"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Polite, minimal, assessing â€” gives away nothing while cataloguing everything",
+                                                   "friends":  "Drily warm, quietly protective, more likely to show concern through action than words"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Goes quieter, doubles down on documentation",
+                                                "medium":  "Becomes clipped and brittle, stops making eye contact",
+                                                "high":  "Shuts down verbally entirely, physically leaves the space if possible"
+                                            },
+                       "contradictions":  [
+                                              "Believes in transparency as a value but personally discloses almost nothing"
+                                          ],
+                       "habits":  [
+                                      "Repositions Clicker the E.L.F. figurine at the start of every shift",
+                                      "Eats lunch at her station while reviewing flagged clips",
+                                      "Mentally times how long everyone in a room stays before leaving"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering that harm she documented and reported was ignored by superiors"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Ferrogate-issue neural uplink (multi-feed monitoring)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Ferrogate-issue neural uplink (multi-feed monitoring)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Haptic alert implant, left palm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Haptic alert implant, left palm",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Cosmetic circuit irises â€” amber/black (Ferrogate employee tier)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Cosmetic circuit irises â€” amber/black (Ferrogate employee tier)",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Sentinel":  0.9,
+                       "Analyst":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Kessler Interchange",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPA-20E \u0027Thunderclap\u0027",
+                            "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPA-20E \u0027Thunderclap\u0027",
+                                "Volkov-Saito Precision VS-9 Elite \u0027Arbiter\u0027"
+                            ],
+    "related_entities":  [
+                             "Kessler Interchange",
+                             "Ferrogate Transit",
+                             "Pressure Drop",
+                             "The Gradient Compact",
+                             "Circuit",
+                             "SynapTech IrisBloom Ocular Color Modulator",
+                             "SynapTech ReadRoom Social Cue Enhancer",
+                             "Compass Rose",
+                             "Clay"
+                         ],
+    "district":  "The Circuit",
+    "physical_description":  {
+                                 "heritage":  "Akihiro carries a striking global blend: South Asian (28.9%), Hispanic/Latin American (27.2%), Central Asian (24.6%), and Northern European (19.3%) ancestry converge in her features. The result is a face of unexpected harmonyâ€”warm golden-brown skin that bridges warm and cool undertones, high angular cheekbones with subtle Central Asian geometry, a defined Hispanic/Latin jawline, and the bright-eyed intensity of Northern European heritage. Her features read as genuinely trans-continental, equally difficult to pin to any single region.",
+                                 "height_cm":  158,
+                                 "weight_kg":  52,
+                                 "build":  "Compact and lean, almost bird-like in economy of movement. Narrow shoulders, minimal upper body mass. Built for stillness rather than exertion.",
+                                 "hair_color":  "Natural dark brown, nearly black",
+                                 "hair_style":  "Close-cropped natural hair, kept pressed flat beneath her monitoring headset",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Cosmetic circuit-pattern irises: amber base with black circuit-trace overlays, human-like sclera",
+                                 "skin_tone":  "Warm golden-brown medium toneâ€”the balanced fusion of South Asian warmth, Hispanic/Latin richness, Central Asian depth, and Northern European clarity. Even complexion with subtle luminosity.",
+                                 "complexion":  "High, prominent cheekbones reflecting Central and South Asian heritage structure. Defined, angular jawline from Hispanic/Latin American ancestry. Minimal makeup. Skin unmarked and well-maintained. Eyes carry unusual intensityâ€”circuit patterns catch light and shift slightly with tracked movement.",
+                                 "distinguishing_marks":  [
+                                                              "Faint scar tissue along the left temple where the neural uplink jack was installed, barely visible beneath hairline",
+                                                              "A small, precise tattoo of a transit schematic map on her right inner wristâ€”underground lines in silver ink"
+                                                          ],
+                                 "visible_augmentations":  "Circuit-patterned cosmetic irises are immediately noticeable and unsettling. The Ferrogate monitoring headset is a permanent fixtureâ€”a sleek neural interface crown with three small sensor pods that contact her temples and scalp. Faint subcutaneous LED trace visible along her left palm and inner wrist (haptic feedback implant), glowing amber when alert notifications fire.",
+                                 "posture_movement":  "Still. Almost preternaturally still when seated. Minimal fidgeting or reactive movement. When mobile, she moves with economical precisionâ€”no wasted motion. Head remains relatively fixed while eyes track; this creates an uncanny quality, as if only her gaze moves while the rest of her is locked on target. Her left hand sometimes trembles microscopicallyâ€”haptic feedback from her uplink triggering phantom sensations.",
+                                 "clothing_style":  "Tier 3 utilitarian corporate issue. Black Ferrogate-branded bodysuit with reinforced shoulders and upper back (designed to support headset weight). Matching tactical vest with six patch pockets, all precisely organized. Steel-toed boots rated for transit station spillover. A thin silver Î¦-chain necklaceâ€”inexpensive, probably a gift, worn consciously. Her one personal affectation: a small embroidered patch on her left shoulder strap depicting a stylized E.L.F. (Electromagnetic Low-Frequency) in faded thread."
+                             },
+    "image_prompt":  "GLMZ, compact androgynous transit monitor named Akihiro, 158cm, 52kg, lean build. Striking multi-continental features: golden-brown skin blending South Asian warmth, Hispanic angular jawline, Central Asian high cheekbones, Northern European intensity. Short dark brown hair flat beneath sleek Ferrogate neural interface headset with three sensor pods. Most striking feature: circuit-pattern cosmetic irises with amber base and black circuit overlays that seem to track movement independently. Preternaturally still posture. Black corporate Ferrogate bodysuit and tactical vest, steel-toed boots. Faint LED traces glowing amber along left palm from haptic implant. Silver Î¦-chain necklace, embroidered E.L.F. patch on shoulder. Sitting motionless in transit station control room, hands resting precisely, head locked while only eyes move. Cool fluorescent and amber LED ambient lighting. Neo-noir utilitarian aesthetic, emotionally distant, augmented surveillance professional. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  28.9,
+                             "Hispanic/Latin American":  27.2,
+                             "Central Asian":  24.6,
+                             "Northern European":  19.3
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Baloch":  6,
+                                                                  "Sindhi":  22.9
+                                                              }
+                                            },
+                            "Hispanic/Latin American":  {
+                                                            "Central American":  {
+                                                                                     "Salvadoran":  11
+                                                                                 },
+                                                            "Mexican":  {
+                                                                            "Mexican":  8.1
+                                                                        },
+                                                            "South American":  {
+                                                                                   "Colombian":  3.7,
+                                                                                   "Venezuelan":  4.4
+                                                                               }
+                                                        },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Buryat":  24.6
+                                                               }
+                                              },
+                            "Northern European":  {
+                                                      "Germanic":  {
+                                                                       "German":  17.8,
+                                                                       "Swiss German":  1.5
+                                                                   }
+                                                  }
+                        },
+    "tier":  "3"
 }

@@ -1,315 +1,342 @@
-{
-  "id": "019d6143a61d76909abbdc7d09a30ee2",
-  "type": "character",
-  "name": "Erbol Árnason-Matsumoto-Hong",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Ferrogate Transit operator (elevated rail, Line 7 Deepwell–Grainfort corridor)",
-  "age": 61,
-  "status": "active",
-  "location": "Deepwell Station, operator's booth and surrounding platform district, near sub-level access near Dearborn and Jackson",
-  "description": "Erbol Árnason-Matsumoto-Hong is a broad man gone somewhat soft at the middle, with silver-threaded dark hair kept short and a close-cropped beard that his wife has been trimming for thirty-two years. His skin is warm brown with a reddish undertone that deepens when he's cold or irritated, and he has the particular stillness of someone who has sat in the same operator's booth for twenty-three years and learned that panicking doesn't stop trains. His right hand has a subdermal haptic interface overlay — occupational, standard Ferrogate issue — and he keeps a small laminated photograph of the original Deepwell Station from before the renovation tucked behind his console because he thinks the new design is ugly and says so to anyone who will listen.\n\nHe is the kind of man who knows every unusual passenger, every suspicious package left on a platform, and every maintenance shortcut that the younger operators haven't figured out yet. He has opinions. Sustained, elaborate, well-reasoned opinions about transit policy, Ferrogate management decisions, platform maintenance schedules, and the spiritual nature of the Transit Mind (the E.L.F. that passengers believe inhabits the rail network). He is deeply skeptical of the Transit Mind's divinity but observes all the operator's ritual courtesy gestures toward it anyway, on the grounds that you don't get to be sixty-one by being rude to things that might be alive.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.3,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.4,
-      "mask": 0.3,
-      "ghost": 0.5
-    },
-    "core_fears": [
-      "Ferrogate automating his job away before he reaches pension eligibility",
-      "Something catastrophic happening on his line — a crash, a death he could have prevented"
-    ],
-    "core_desires": [
-      "A clean pension and an uncomplicated retirement",
-      "For transit management to actually listen to floor operators for once in their corporate lives"
-    ],
-    "coping_mechanisms": [
-      "Sustained low-level complaining as pressure release",
-      "Ritual — the same pre-shift check sequence, the same courtesy gestures to the Transit Mind"
-    ],
-    "blind_spots": [
-      "He can mistake stubbornness for wisdom",
-      "He sometimes dismisses younger workers' approaches before actually considering them"
-    ],
-    "secret": "Eighteen months ago, Grigor observed a Ferrogate management official board a restricted maintenance car with two individuals who were not in the system. He logged nothing. He has been watching Line 7's maintenance schedules obsessively since then, convinced something is being moved or stored in the network's physical infrastructure. He hasn't told anyone because he doesn't know who to trust."
-  },
-  "speech_patterns": {
-    "vocabulary": "Transit technical mixed with a kind of formal courtesy that comes from decades of announcer-voice training. Opinions delivered as calm, self-evident statements.",
-    "cadence": "Measured and deliberate. He was a platform announcer for two years before being promoted to operator and still has the projection.",
-    "verbal_tics": [
-      "'As I understand it—' (precedes opinions he's completely certain about)",
-      "'The Transit Mind permitting.' (pro forma blessing before any unusual maneuver)",
-      "Referring to passengers by their line and stop rather than any descriptors"
-    ],
-    "example_lines": [
-      "'As I understand it, the new platform barriers are designed to reduce liability exposure, not passenger safety. These are related but not identical goals.'",
-      "'Deepwell to Grainfort, seven stops, Transit Mind permitting. Mind the doors. Mind the gap. That's all there is to say.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "Grigor finally tells someone what he saw eighteen months ago. He needs someone to look into the maintenance car logs without triggering a Ferrogate security flag.",
-    "There's been a series of small incidents on Line 7 — minor delays, unexplained emergency stops, one passenger who vanished from a sealed car between stations. Grigor is the only one tracking the pattern.",
-    "He's up for a mandatory 'efficiency review' — Ferrogate's precursor to automation replacement. He needs help documenting his irreplaceability before someone with a spreadsheet ends his career."
-  ],
-  "narrative_function": "Information broker for anything moving through the transit network. Can provide access to restricted platform areas. Witness to unusual events on Line 7. Represents institutional memory of the city's transit system.",
-  "augmentations": "Subdermal haptic interface overlay (right hand, occupational — Ferrogate standard issue for rail operators). No geneware. Minor corrective optics built into his ID glasses.",
-  "daily_life": "Four days on, three days off. Morning shift, 05:00–13:00, Line 7. Rides the same line home on his off days out of habit. Spends evenings with his wife Aoife in their apartment in Deepwell Station's residential annexe.",
-  "affiliation": "Zheng-dao Bioelectric (mid-level ferrogate transit operator (elevated rail)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 5,
-      "vitality": 5,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 4,
-      "spatial": 7
-    },
-    "social": {
-      "presence": 6,
-      "empathy": 5,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": -3,
-      "empathy_detachment": 1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": -3,
-      "transparency_guardedness": 2
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "institutional memory",
-      "risk-averse",
-      "quietly stubborn",
-      "observant",
-      "ritualistic"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Passenger safety over schedule, always",
-      "Don't log what you don't understand — but remember everything",
-      "Respect the Transit Mind's ritual requirements regardless of your personal theology"
-    ],
-    "escalation_ladder": [
-      "Note the irregularity and monitor",
-      "Raise it with the union rep",
-      "Go outside Ferrogate entirely — only if lives are at stake"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Professionally courteous and subtly evaluating — decides quickly if someone is a problem passenger",
-      "friends": "Warmly argumentative; shows affection through sustained engagement with your opinions"
-    },
-    "stress_responses": {
-      "low": "Becomes more formal and precise",
-      "medium": "Goes very quiet for long stretches, then delivers one long structured monologue about the problem",
-      "high": "Performs pre-shift ritual checks twice, meticulously, as grounding behavior"
-    },
-    "contradictions": [
-      "Claims to be past caring about his job but monitors Line 7's anomalies obsessively on his days off",
-      "Skeptical of E.L.F. divinity but performs every courtesy ritual without fail"
-    ],
-    "habits": [
-      "Three short knocks on the console before each departure — a personal Transit Mind gesture he invented himself",
-      "Reads printed books during breaks — refuses to use a reader"
-    ],
-    "breaking_points": [
-      "Proof that someone is using the transit infrastructure to harm people",
-      "Being forced to operate a line he knows is unsafe"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    },
-    {
-      "name": "",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Face": 0.7,
-    "Diplomat": 0.7,
-    "Social Chameleon": 0.7,
-    "Networker": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Deepwell Station",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Born in Ironvein district to a Georgian-descended father and Hungarian-descended mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Joins Ferrogate Transit as a platform worker",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Promoted to announcer, Deepwell Station",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Promoted to rail operator, Line 7",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "Witnesses the unauthorized boarding incident; begins private monitoring",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Crucible Industries Forge-454 'Hammerfall'",
-    "Arcturus Defense Solutions Compliance Baton CB-8 'Peacekeeper'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPA-8 'Solidarity'",
-    "Crucible Industries Forge-454 'Hammerfall'"
-  ],
-  "related_entities": [
-    "Deepwell Station",
-    "Ferrogate Transit",
-    "Ringo Heavy Transit MagRail Levitation Transport Network",
-    "Dearborn Forge",
-    "Big Rig",
-    "Silver",
-    "Line 7 Bar",
-    "SynapTech ReadRoom Social Cue Enhancer"
-  ],
-  "district": "The Underworld",
-  "physical_description": {
-    "heritage": "Tri-continental blend: East Asian (41.7%), Sub-Saharan African (38.2%), and Southeast Asian (20.1%). Warm deep brown skin with golden undertones from the East Asian component, structured high cheekbones and gentle cheek fullness from Southeast Asian ancestry, broad nose and full lips characteristic of Sub-Saharan African heritage. Strong jaw line shows influence from both East Asian and Southeast Asian lineages. The combination creates a distinctive warm-toned complexion with well-integrated features reflecting all three major ancestry groups.",
-    "height_cm": 178,
-    "weight_kg": 94,
-    "build": "Broad-shouldered and thick-chested, softened at the middle by two decades of sedentary booth work. Still carries the frame of a younger man who did physical labor, now settled into comfortable weight gain. Forearms remain muscular from repetitive rail controls.",
-    "hair_color": "Dark brown with silver threading throughout",
-    "hair_style": "Short, practical cut, swept back from forehead, kept neat by routine",
-    "hair_length": "Short",
-    "eye_color": "Deep brown with warm undertone",
-    "skin_tone": "Warm deep brown with golden undertones from blended East Asian, Sub-Saharan African, and Southeast Asian heritage, deepens visibly when cold or irritated. Complexion reflects well-integrated ancestry across all three major lineages with subtle warm luminosity.",
-    "complexion": "Weathered face with deep lines around eyes and mouth from two decades of concentration and squinting at monitors. Close-cropped dark beard with silver streaking, well-maintained. Sun-weathered from platform exposure. Crow's feet pronounced. High cheekbones with gentle fullness through cheeks reflecting Southeast Asian and African features. Broad nose and full lips from Sub-Saharan African ancestry. Structured jaw showing East Asian and Southeast Asian influence. Expression carries the stillness of someone accustomed to absolute focus.",
-    "distinguishing_marks": [
-      "Faint scar on left temple, roughly 3cm, likely from an industrial accident decades past",
-      "Callus pattern on right hand palm from decades of haptic interface contact",
-      "Wedding band on left ring finger, worn gold, visible patina from thirty-two years"
-    ],
-    "visible_augmentations": "Right hand displays subtle subdermal haptic interface overlay visible as fine metallic threading across palm and fingertips when hand is extended under light. Interface appears as faint geometric patterns beneath skin surface. Wire-rimmed ID glasses with integrated minor corrective optics, worn constantly.",
-    "posture_movement": "Stands with slight forward lean, as if perpetually monitoring something. Movements economical and deliberate—no wasted motion. Sits with the particular stillness of someone trained to remain motionless during crises. When standing on a platform, weight shifts rhythmically, a habit from years of anticipating train motion. Hands gesture with precision when speaking, especially about transit systems.",
-    "clothing_style": "Ferrogate Transit operator uniform (charcoal-grey Tier 3 industrial cotton blend, union-regulation fit). Uniform jacket worn open over grey undershirt. Standard-issue transit union pin on collar (23-year tenure marker visible). Comfortable worn work boots, well-maintained but scuffed. Off-duty: practical grey trousers, worn cardigans, no affectation. Slight smell of station platform grease and metal polish. Grooming meticulous by working-class standard—clean, practical, dignified."
-  },
-  "image_prompt": "Erbol Árnason-Matsumoto-Hong, GLMZ, tri-continental features: warm deep brown skin with golden undertones, high cheekbones with gentle fullness, broad nose, full lips, strong structured jaw showing East Asian and Southeast Asian influence. Dark brown hair with silver threading, short swept-back cut. Deep brown eyes with warm undertone. 178cm tall, broad-shouldered, thick-chested frame with settled middle weight. Weathered face with pronounced crow's feet and deep concentration lines, close-cropped dark beard with silver streaks. 23-year transit operator in charcoal-grey Ferrogate uniform jacket worn open over grey undershirt, union pin visible on collar. Right hand shows faint subdermal metallic haptic interface patterns, wire-rimmed ID glasses. Wire-rimmed ID glasses. Worn gold wedding band. Slight forward lean posture, economical stillness. Standing on illuminated train platform, warm station lighting, metal and grease patina visible, hyperrealistic portrait, industrial near-future megacity setting, dignified working-class demeanor --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 41.7,
-    "Sub-Saharan African": 38.2,
-    "Southeast Asian": 20.1
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Korean": {
-        "Korean": 18.4
-      },
-      "Chinese": {
-        "Cantonese": 10.4
-      },
-      "Japanese": {
-        "Japanese": 12.9
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Kenyan": 2.9,
-        "Rwandan": 8.2
-      },
-      "Southern African": {
-        "Zimbabwean": 23,
-        "South African": 4.1
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 13.3
-      },
-      "Thai": {
-        "Thai": 6.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a61d76909abbdc7d09a30ee2",
+    "type":  "character",
+    "name":  "Erbol Ãrnason-Matsumoto-Hong",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Ferrogate Transit operator (elevated rail, Line 7 Deepwellâ€“Grainfort corridor)",
+    "age":  61,
+    "status":  "active",
+    "location":  "Deepwell Station, operator\u0027s booth and surrounding platform district, near sub-level access near Dearborn and Jackson",
+    "description":  "Erbol Ãrnason-Matsumoto-Hong is a broad man gone somewhat soft at the middle, with silver-threaded dark hair kept short and a close-cropped beard that his wife has been trimming for thirty-two years. His skin is warm brown with a reddish undertone that deepens when he\u0027s cold or irritated, and he has the particular stillness of someone who has sat in the same operator\u0027s booth for twenty-three years and learned that panicking doesn\u0027t stop trains. His right hand has a subdermal haptic interface overlay â€” occupational, standard Ferrogate issue â€” and he keeps a small laminated photograph of the original Deepwell Station from before the renovation tucked behind his console because he thinks the new design is ugly and says so to anyone who will listen.\n\nHe is the kind of man who knows every unusual passenger, every suspicious package left on a platform, and every maintenance shortcut that the younger operators haven\u0027t figured out yet. He has opinions. Sustained, elaborate, well-reasoned opinions about transit policy, Ferrogate management decisions, platform maintenance schedules, and the spiritual nature of the Transit Mind (the E.L.F. that passengers believe inhabits the rail network). He is deeply skeptical of the Transit Mind\u0027s divinity but observes all the operator\u0027s ritual courtesy gestures toward it anyway, on the grounds that you don\u0027t get to be sixty-one by being rude to things that might be alive.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Ferrogate automating his job away before he reaches pension eligibility",
+                                          "Something catastrophic happening on his line â€” a crash, a death he could have prevented"
+                                      ],
+                       "core_desires":  [
+                                            "A clean pension and an uncomplicated retirement",
+                                            "For transit management to actually listen to floor operators for once in their corporate lives"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Sustained low-level complaining as pressure release",
+                                                 "Ritual â€” the same pre-shift check sequence, the same courtesy gestures to the Transit Mind"
+                                             ],
+                       "blind_spots":  [
+                                           "He can mistake stubbornness for wisdom",
+                                           "He sometimes dismisses younger workers\u0027 approaches before actually considering them"
+                                       ],
+                       "secret":  "Eighteen months ago, Grigor observed a Ferrogate management official board a restricted maintenance car with two individuals who were not in the system. He logged nothing. He has been watching Line 7\u0027s maintenance schedules obsessively since then, convinced something is being moved or stored in the network\u0027s physical infrastructure. He hasn\u0027t told anyone because he doesn\u0027t know who to trust."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Transit technical mixed with a kind of formal courtesy that comes from decades of announcer-voice training. Opinions delivered as calm, self-evident statements.",
+                            "cadence":  "Measured and deliberate. He was a platform announcer for two years before being promoted to operator and still has the projection.",
+                            "verbal_tics":  [
+                                                "\u0027As I understand itâ€”\u0027 (precedes opinions he\u0027s completely certain about)",
+                                                "\u0027The Transit Mind permitting.\u0027 (pro forma blessing before any unusual maneuver)",
+                                                "Referring to passengers by their line and stop rather than any descriptors"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027As I understand it, the new platform barriers are designed to reduce liability exposure, not passenger safety. These are related but not identical goals.\u0027",
+                                                  "\u0027Deepwell to Grainfort, seven stops, Transit Mind permitting. Mind the doors. Mind the gap. That\u0027s all there is to say.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "Grigor finally tells someone what he saw eighteen months ago. He needs someone to look into the maintenance car logs without triggering a Ferrogate security flag.",
+                        "There\u0027s been a series of small incidents on Line 7 â€” minor delays, unexplained emergency stops, one passenger who vanished from a sealed car between stations. Grigor is the only one tracking the pattern.",
+                        "He\u0027s up for a mandatory \u0027efficiency review\u0027 â€” Ferrogate\u0027s precursor to automation replacement. He needs help documenting his irreplaceability before someone with a spreadsheet ends his career."
+                    ],
+    "narrative_function":  "Information broker for anything moving through the transit network. Can provide access to restricted platform areas. Witness to unusual events on Line 7. Represents institutional memory of the city\u0027s transit system.",
+    "augmentations":  "Subdermal haptic interface overlay (right hand, occupational â€” Ferrogate standard issue for rail operators). No geneware. Minor corrective optics built into his ID glasses.",
+    "daily_life":  "Four days on, three days off. Morning shift, 05:00â€“13:00, Line 7. Rides the same line home on his off days out of habit. Spends evenings with his wife Aoife in their apartment in Deepwell Station\u0027s residential annexe.",
+    "affiliation":  "Zheng-dao Bioelectric (mid-level ferrogate transit operator (elevated rail)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  5,
+                                   "vitality":  5,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  4,
+                                 "spatial":  7
+                             },
+                  "social":  {
+                                 "presence":  6,
+                                 "empathy":  5,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  -3,
+                                      "empathy_detachment":  1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  -3,
+                                      "transparency_guardedness":  2
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "institutional memory",
+                               "risk-averse",
+                               "quietly stubborn",
+                               "observant",
+                               "ritualistic"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Passenger safety over schedule, always",
+                                              "Don\u0027t log what you don\u0027t understand â€” but remember everything",
+                                              "Respect the Transit Mind\u0027s ritual requirements regardless of your personal theology"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Note the irregularity and monitor",
+                                                 "Raise it with the union rep",
+                                                 "Go outside Ferrogate entirely â€” only if lives are at stake"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Professionally courteous and subtly evaluating â€” decides quickly if someone is a problem passenger",
+                                                   "friends":  "Warmly argumentative; shows affection through sustained engagement with your opinions"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes more formal and precise",
+                                                "medium":  "Goes very quiet for long stretches, then delivers one long structured monologue about the problem",
+                                                "high":  "Performs pre-shift ritual checks twice, meticulously, as grounding behavior"
+                                            },
+                       "contradictions":  [
+                                              "Claims to be past caring about his job but monitors Line 7\u0027s anomalies obsessively on his days off",
+                                              "Skeptical of E.L.F. divinity but performs every courtesy ritual without fail"
+                                          ],
+                       "habits":  [
+                                      "Three short knocks on the console before each departure â€” a personal Transit Mind gesture he invented himself",
+                                      "Reads printed books during breaks â€” refuses to use a reader"
+                                  ],
+                       "breaking_points":  [
+                                               "Proof that someone is using the transit infrastructure to harm people",
+                                               "Being forced to operate a line he knows is unsafe"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Face":  0.7,
+                       "Diplomat":  0.7,
+                       "Social Chameleon":  0.7,
+                       "Networker":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Deepwell Station",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Born in Ironvein district to a Georgian-descended father and Hungarian-descended mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Joins Ferrogate Transit as a platform worker",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Promoted to announcer, Deepwell Station",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Promoted to rail operator, Line 7",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "Witnesses the unauthorized boarding incident; begins private monitoring",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Kang-Petrov Arms KPA-8 \u0027Solidarity\u0027",
+                            "Crucible Industries Forge-454 \u0027Hammerfall\u0027",
+                            "Arcturus Defense Solutions Compliance Baton CB-8 \u0027Peacekeeper\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Kang-Petrov Arms KPA-8 \u0027Solidarity\u0027",
+                                "Crucible Industries Forge-454 \u0027Hammerfall\u0027"
+                            ],
+    "related_entities":  [
+                             "Deepwell Station",
+                             "Ferrogate Transit",
+                             "Ringo Heavy Transit MagRail Levitation Transport Network",
+                             "Dearborn Forge",
+                             "Big Rig",
+                             "Silver",
+                             "Line 7 Bar",
+                             "SynapTech ReadRoom Social Cue Enhancer"
+                         ],
+    "district":  "The Underworld",
+    "physical_description":  {
+                                 "heritage":  "Tri-continental blend: East Asian (41.7%), Sub-Saharan African (38.2%), and Southeast Asian (20.1%). Warm deep brown skin with golden undertones from the East Asian component, structured high cheekbones and gentle cheek fullness from Southeast Asian ancestry, broad nose and full lips characteristic of Sub-Saharan African heritage. Strong jaw line shows influence from both East Asian and Southeast Asian lineages. The combination creates a distinctive warm-toned complexion with well-integrated features reflecting all three major ancestry groups.",
+                                 "height_cm":  178,
+                                 "weight_kg":  94,
+                                 "build":  "Broad-shouldered and thick-chested, softened at the middle by two decades of sedentary booth work. Still carries the frame of a younger man who did physical labor, now settled into comfortable weight gain. Forearms remain muscular from repetitive rail controls.",
+                                 "hair_color":  "Dark brown with silver threading throughout",
+                                 "hair_style":  "Short, practical cut, swept back from forehead, kept neat by routine",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Deep brown with warm undertone",
+                                 "skin_tone":  "Warm deep brown with golden undertones from blended East Asian, Sub-Saharan African, and Southeast Asian heritage, deepens visibly when cold or irritated. Complexion reflects well-integrated ancestry across all three major lineages with subtle warm luminosity.",
+                                 "complexion":  "Weathered face with deep lines around eyes and mouth from two decades of concentration and squinting at monitors. Close-cropped dark beard with silver streaking, well-maintained. Sun-weathered from platform exposure. Crow\u0027s feet pronounced. High cheekbones with gentle fullness through cheeks reflecting Southeast Asian and African features. Broad nose and full lips from Sub-Saharan African ancestry. Structured jaw showing East Asian and Southeast Asian influence. Expression carries the stillness of someone accustomed to absolute focus.",
+                                 "distinguishing_marks":  [
+                                                              "Faint scar on left temple, roughly 3cm, likely from an industrial accident decades past",
+                                                              "Callus pattern on right hand palm from decades of haptic interface contact",
+                                                              "Wedding band on left ring finger, worn gold, visible patina from thirty-two years"
+                                                          ],
+                                 "visible_augmentations":  "Right hand displays subtle subdermal haptic interface overlay visible as fine metallic threading across palm and fingertips when hand is extended under light. Interface appears as faint geometric patterns beneath skin surface. Wire-rimmed ID glasses with integrated minor corrective optics, worn constantly.",
+                                 "posture_movement":  "Stands with slight forward lean, as if perpetually monitoring something. Movements economical and deliberateâ€”no wasted motion. Sits with the particular stillness of someone trained to remain motionless during crises. When standing on a platform, weight shifts rhythmically, a habit from years of anticipating train motion. Hands gesture with precision when speaking, especially about transit systems.",
+                                 "clothing_style":  "Ferrogate Transit operator uniform (charcoal-grey Tier 3 industrial cotton blend, union-regulation fit). Uniform jacket worn open over grey undershirt. Standard-issue transit union pin on collar (23-year tenure marker visible). Comfortable worn work boots, well-maintained but scuffed. Off-duty: practical grey trousers, worn cardigans, no affectation. Slight smell of station platform grease and metal polish. Grooming meticulous by working-class standardâ€”clean, practical, dignified."
+                             },
+    "image_prompt":  "Erbol Ãrnason-Matsumoto-Hong, GLMZ, tri-continental features: warm deep brown skin with golden undertones, high cheekbones with gentle fullness, broad nose, full lips, strong structured jaw showing East Asian and Southeast Asian influence. Dark brown hair with silver threading, short swept-back cut. Deep brown eyes with warm undertone. 178cm tall, broad-shouldered, thick-chested frame with settled middle weight. Weathered face with pronounced crow\u0027s feet and deep concentration lines, close-cropped dark beard with silver streaks. 23-year transit operator in charcoal-grey Ferrogate uniform jacket worn open over grey undershirt, union pin visible on collar. Right hand shows faint subdermal metallic haptic interface patterns, wire-rimmed ID glasses. Wire-rimmed ID glasses. Worn gold wedding band. Slight forward lean posture, economical stillness. Standing on illuminated train platform, warm station lighting, metal and grease patina visible, hyperrealistic portrait, industrial near-future megacity setting, dignified working-class demeanor --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  41.7,
+                             "Sub-Saharan African":  38.2,
+                             "Southeast Asian":  20.1
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  18.4
+                                                          },
+                                               "Chinese":  {
+                                                               "Cantonese":  10.4
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  12.9
+                                                            }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Kenyan":  2.9,
+                                                                             "Rwandan":  8.2
+                                                                         },
+                                                        "Southern African":  {
+                                                                                 "Zimbabwean":  23,
+                                                                                 "South African":  4.1
+                                                                             }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Cambodian":  {
+                                                                      "Khmer":  13.3
+                                                                  },
+                                                    "Thai":  {
+                                                                 "Thai":  6.8
+                                                             }
+                                                }
+                        },
+    "tier":  "3"
 }

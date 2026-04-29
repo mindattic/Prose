@@ -1,184 +1,243 @@
-{
-  "id": "019d6143a7307e469e816dd119c0e555",
-  "rating": 23.3,
-  "vote_count": 3,
-  "type": "character",
-  "name": "Alejandro Owusu-Casta\u00F1eda",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Fixer - Synthetic rights jobs",
-  "age": 28,
-  "status": "active",
-  "location": "The Circuit, near North Ave and Milwaukee",
-  "description": "",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.4,
-      "ideal": 0.5,
-      "id": 0.6,
-      "shadow": 0.5,
-      "mask": 0.7,
-      "ghost": 0.3
-    },
-    "core_fears": [],
-    "core_desires": [],
-    "coping_mechanisms": [],
-    "blind_spots": [],
-    "secret": ""
-  },
-  "speech_patterns": {
-    "vocabulary": "",
-    "cadence": "",
-    "verbal_tics": [],
-    "example_lines": [],
-    "avoidances": [],
-    "subtext": "",
-    "under_pressure": "",
-    "intimacy_register": ""
-  },
-  "relationships": [],
-  "story_hooks": [],
-  "narrative_function": "Fixer",
-  "augmentations": "",
-  "daily_life": "",
-  "affiliation": "Tessera Corponation (mid-level fixer)",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {},
-    "mental": {},
-    "social": {},
-    "personality": {},
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "fixer",
-      "runner",
-      "contract"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [],
-    "escalation_ladder": [],
-    "interpersonal_modes": {},
-    "stress_responses": {},
-    "contradictions": [],
-    "habits": [],
-    "breaking_points": []
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Manipulator": 0.9,
-    "Opportunist": 0.9,
-    "Face": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Circuit",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "physical_description": {
-    "heritage": "Hispanic/Latin American (53.3%) with substantial Sub-Saharan African (33.8%) ancestry, creating a striking warm phenotype. Central Asian (5.2%), South Asian (3.0%), East Asian (2.5%), and Middle Eastern (2.2%) heritage add subtle complexity to facial structure and feature expression. The dominant Latin-African blend produces deep warm brown skin with golden and reddish undertones. Facial structure shows strength across multiple heritage expressions: high prominent cheekbones and angular definition reflect both Latin American and African ancestry, while Central and South Asian components contribute subtle variations in eye shape and facial proportion. Overall appearance carries rich warmth and visual depth from the harmonious genetic blend.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean and angular, with defined musculature from street work and parkour. Minimal body fat, wiry strength in shoulders and forearms.",
-    "hair_color": "Black with silver synthetic streaks (subcutaneous LED fiber)",
-    "hair_style": "Pulled back in a tight Dutch braid, practical and minimal",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown with faint cyan circuitry visible around the iris (neural interface marker)",
-    "skin_tone": "Deep warm brown with golden and reddish undertones, reflecting the dominant Hispanic/Latin American and Sub-Saharan African genetic blend with subtle complexity from Central and South Asian heritage",
-    "complexion": "Clear skin with warm golden-reddish undertones and substantial depth from mixed heritage. Sharp facial features with high prominent cheekbones and angular definition reflecting African and Latin American ancestry. A few thin scars on the left cheekbone and jawline \u2014 old street marks. Minimal makeup. Focused, alert expression.",
-    "distinguishing_marks": [
-      "Thin white scar running 3cm along the left cheekbone, likely from blade contact",
-      "Burn mark on inner right wrist (2cm diameter, circular) \u2014 old neural jack scar, partially healed",
-      "Subdermal geometric tattoo on left temple \u2014 three interlocking circles in white ink, Free Assembly symbol"
-    ],
-    "visible_augmentations": "Faint luminescent circuitry visible around both eyes during low-light conditions. Right wrist shows a thin chrome jack port beneath the skin \u2014 partially visible as a slight metallic sheen. No obvious limb replacements; augmentations are primarily neural and sensory.",
-    "posture_movement": "Moves with controlled precision \u2014 no wasted motion. Stands at an oblique angle when talking, always positioning herself with an exit in mind. Eyes scan rooms automatically. Hands rest near her body, ready to move. Walks with a measured stride, balanced on the balls of her feet.",
-    "clothing_style": "Tier 3 street-functional aesthetic. Black reinforced synthweave tactical jacket with asymmetrical pockets and a micro-LED wrist display panel. Fitted charcoal cargo pants with integrated knee pads. Steel-toed combat boots, scuffed and practical. Wears a lightweight mesh undershirt visible at the collar \u2014 acts as a secondary armor layer. Accessorizes with a worn leather wrist cuff on her right arm and a silver chain with a small pendant (possibly a key or data token). No corpo logos; all gear is modular and purpose-built."
-  },
-  "image_prompt": "Alejandro Owusu-Casta\u00F1eda, mixed-heritage neo-noir operative, deep warm brown skin with golden undertones, high angular cheekbones, dark brown eyes with faint cyan neural circuitry, black hair with silver LED streaks pulled back in tight Dutch braid. Thin scar along left cheekbone, white subdermal geometric tattoo on temple. Lean muscular build, 168cm tall. Wearing black reinforced tactical synthweave jacket with asymmetrical pockets, fitted charcoal cargo pants with knee pads, steel-toed combat boots. Mesh undershirt visible at collar, worn leather wrist cuff, silver chain pendant. Faint luminescent circuitry visible around eyes, chrome jack port visible beneath right wrist skin. Posture alert and controlled, scanning environment. Low-light neo-noir street setting, neon reflections on wet pavement, moody atmospheric lighting, Great Lakes Metropolitan Zone 2226. Street-functional, dangerous precision, ready for action. --ar 2:3 --v 6",
-  "dalle3_prompt": "",
-  "genetic_ancestry": {
-    "Hispanic/Latin American": 53.3,
-    "Sub-Saharan African": 33.8,
-    "Central Asian": 5.2,
-    "South Asian": 3,
-    "East Asian": 2.5,
-    "Middle Eastern": 2.2
-  },
-  "ancestry_detail": {
-    "Hispanic/Latin American": {
-      "South American": {
-        "Peruvian": 18.7
-      },
-      "Caribbean": {
-        "Haitian": 34.6
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Tanzanian": 33.8
-      }
-    },
-    "Central Asian": {
-      "Mongolic": {
-        "Mongolian": 3.3,
-        "Buryat": 1.9
-      }
-    },
-    "South Asian": {
-      "Pakistani": {
-        "Pashtun": 1.6
-      },
-      "Bangladeshi": {
-        "Bangladeshi": 1.4
-      }
-    },
-    "East Asian": {
-      "Chinese": {
-        "Sichuanese": 2.5
-      }
-    },
-    "Middle Eastern": {
-      "Arab Levantine": {
-        "Syrian": 1.3
-      },
-      "Arab Gulf": {
-        "Yemeni": 0.6
-      },
-      "Kurdish": {
-        "Kurdish": 0.3
-      }
-    }
-  }
+﻿{
+    "id":  "019d6143a7307e469e816dd119c0e555",
+    "rating":  23.3,
+    "vote_count":  3,
+    "type":  "character",
+    "name":  "Alejandro Owusu-Castañeda",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Fixer - Synthetic rights jobs",
+    "age":  28,
+    "status":  "active",
+    "location":  "The Circuit, near North Ave and Milwaukee",
+    "description":  "",
+    "psychology":  {
+                       "core_fears":  [
+
+                                      ],
+                       "core_desires":  [
+
+                                        ],
+                       "coping_mechanisms":  [
+
+                                             ],
+                       "blind_spots":  [
+
+                                       ],
+                       "secret":  ""
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "",
+                            "cadence":  "",
+                            "verbal_tics":  [
+
+                                            ],
+                            "example_lines":  [
+
+                                              ],
+                            "avoidances":  [
+
+                                           ],
+                            "subtext":  "",
+                            "under_pressure":  "",
+                            "intimacy_register":  ""
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+
+                    ],
+    "narrative_function":  "Fixer",
+    "augmentations":  "",
+    "daily_life":  "",
+    "affiliation":  "Tessera Corponation (mid-level fixer)",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+
+                               },
+                  "mental":  {
+
+                             },
+                  "social":  {
+
+                             },
+                  "personality":  {
+
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "fixer",
+                               "runner",
+                               "contract"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+
+                                          ],
+                       "escalation_ladder":  [
+
+                                             ],
+                       "interpersonal_modes":  {
+
+                                               },
+                       "stress_responses":  {
+
+                                            },
+                       "contradictions":  [
+
+                                          ],
+                       "habits":  [
+
+                                  ],
+                       "breaking_points":  [
+
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Manipulator":  0.9,
+                       "Opportunist":  0.9,
+                       "Face":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Circuit",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "physical_description":  {
+                                 "heritage":  "Hispanic/Latin American (53.3%) with substantial Sub-Saharan African (33.8%) ancestry, creating a striking warm phenotype. Central Asian (5.2%), South Asian (3.0%), East Asian (2.5%), and Middle Eastern (2.2%) heritage add subtle complexity to facial structure and feature expression. The dominant Latin-African blend produces deep warm brown skin with golden and reddish undertones. Facial structure shows strength across multiple heritage expressions: high prominent cheekbones and angular definition reflect both Latin American and African ancestry, while Central and South Asian components contribute subtle variations in eye shape and facial proportion. Overall appearance carries rich warmth and visual depth from the harmonious genetic blend.",
+                                 "height_cm":  168,
+                                 "weight_kg":  58,
+                                 "build":  "Lean and angular, with defined musculature from street work and parkour. Minimal body fat, wiry strength in shoulders and forearms.",
+                                 "hair_color":  "Black with silver synthetic streaks (subcutaneous LED fiber)",
+                                 "hair_style":  "Pulled back in a tight Dutch braid, practical and minimal",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown with faint cyan circuitry visible around the iris (neural interface marker)",
+                                 "skin_tone":  "Deep warm brown with golden and reddish undertones, reflecting the dominant Hispanic/Latin American and Sub-Saharan African genetic blend with subtle complexity from Central and South Asian heritage",
+                                 "complexion":  "Clear skin with warm golden-reddish undertones and substantial depth from mixed heritage. Sharp facial features with high prominent cheekbones and angular definition reflecting African and Latin American ancestry. A few thin scars on the left cheekbone and jawline — old street marks. Minimal makeup. Focused, alert expression.",
+                                 "distinguishing_marks":  [
+                                                              "Thin white scar running 3cm along the left cheekbone, likely from blade contact",
+                                                              "Burn mark on inner right wrist (2cm diameter, circular) — old neural jack scar, partially healed",
+                                                              "Subdermal geometric tattoo on left temple — three interlocking circles in white ink, Free Assembly symbol"
+                                                          ],
+                                 "visible_augmentations":  "Faint luminescent circuitry visible around both eyes during low-light conditions. Right wrist shows a thin chrome jack port beneath the skin — partially visible as a slight metallic sheen. No obvious limb replacements; augmentations are primarily neural and sensory.",
+                                 "posture_movement":  "Moves with controlled precision — no wasted motion. Stands at an oblique angle when talking, always positioning herself with an exit in mind. Eyes scan rooms automatically. Hands rest near her body, ready to move. Walks with a measured stride, balanced on the balls of her feet.",
+                                 "clothing_style":  "Tier 3 street-functional aesthetic. Black reinforced synthweave tactical jacket with asymmetrical pockets and a micro-LED wrist display panel. Fitted charcoal cargo pants with integrated knee pads. Steel-toed combat boots, scuffed and practical. Wears a lightweight mesh undershirt visible at the collar — acts as a secondary armor layer. Accessorizes with a worn leather wrist cuff on her right arm and a silver chain with a small pendant (possibly a key or data token). No corpo logos; all gear is modular and purpose-built."
+                             },
+    "image_prompt":  "Alejandro Owusu-Castañeda, mixed-heritage neo-noir operative, deep warm brown skin with golden undertones, high angular cheekbones, dark brown eyes with faint cyan neural circuitry, black hair with silver LED streaks pulled back in tight Dutch braid. Thin scar along left cheekbone, white subdermal geometric tattoo on temple. Lean muscular build, 168cm tall. Wearing black reinforced tactical synthweave jacket with asymmetrical pockets, fitted charcoal cargo pants with knee pads, steel-toed combat boots. Mesh undershirt visible at collar, worn leather wrist cuff, silver chain pendant. Faint luminescent circuitry visible around eyes, chrome jack port visible beneath right wrist skin. Posture alert and controlled, scanning environment. Low-light neo-noir street setting, neon reflections on wet pavement, moody atmospheric lighting, Great Lakes Metropolitan Zone 2226. Street-functional, dangerous precision, ready for action. --ar 2:3 --v 6",
+    "dalle3_prompt":  "",
+    "genetic_ancestry":  {
+                             "Hispanic/Latin American":  53.3,
+                             "Sub-Saharan African":  33.8,
+                             "Central Asian":  5.2,
+                             "South Asian":  3,
+                             "East Asian":  2.5,
+                             "Middle Eastern":  2.2
+                         },
+    "ancestry_detail":  {
+                            "Hispanic/Latin American":  {
+                                                            "South American":  {
+                                                                                   "Peruvian":  18.7
+                                                                               },
+                                                            "Caribbean":  {
+                                                                              "Haitian":  34.6
+                                                                          }
+                                                        },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Tanzanian":  33.8
+                                                                         }
+                                                    },
+                            "Central Asian":  {
+                                                  "Mongolic":  {
+                                                                   "Mongolian":  3.3,
+                                                                   "Buryat":  1.9
+                                                               }
+                                              },
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Pashtun":  1.6
+                                                              },
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  1.4
+                                                                }
+                                            },
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Sichuanese":  2.5
+                                                           }
+                                           },
+                            "Middle Eastern":  {
+                                                   "Arab Levantine":  {
+                                                                          "Syrian":  1.3
+                                                                      },
+                                                   "Arab Gulf":  {
+                                                                     "Yemeni":  0.6
+                                                                 },
+                                                   "Kurdish":  {
+                                                                   "Kurdish":  0.3
+                                                               }
+                                               }
+                        }
 }

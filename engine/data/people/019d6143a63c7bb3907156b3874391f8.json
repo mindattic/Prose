@@ -1,347 +1,360 @@
-{
-  "id": "019d6143a63c7bb3907156b3874391f8",
-  "type": "character",
-  "name": "Cheyenne Subramaniam-Deshpande",
-  "aliases": [],
-  "species": "human",
-  "gender": "male",
-  "pronouns": "he/him",
-  "role": "Network intrusion and digital warfare specialist — netrunner",
-  "age": 33,
-  "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Division",
-  "description": "Cheyenne Subramaniam-Deshpande is lean and angular, all sharp edges and visible tension. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a netrunner out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nCheyenne Subramaniam-Deshpande has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.57,
-      "ideal": 0.85,
-      "id": 0.43,
-      "shadow": 0.66,
-      "mask": 0.54,
-      "ghost": 0.76
-    },
-    "core_fears": [
-      "Their past catching up — debts, enemies, broken promises",
-      "Losing control of their own body to a hacker or malfunctioning cyberware",
-      "Being replaced — younger, faster, cheaper runners coming up behind them"
-    ],
-    "core_desires": [
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "To find the person who burned them and make it educational"
-    ],
-    "coping_mechanisms": [
-      "Violence — hits something when they can't process emotions, preferably something that deserves it",
-      "Exercises compulsively — the body must be ready, always",
-      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive"
-    ],
-    "blind_spots": [
-      "Assumes everyone has an angle because they always have an angle",
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
-      "Refuses to update their mental model of people — first impressions calcify into permanent judgments"
-    ],
-    "secret": "Kadiatou Eriksson-Diallo betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
-  },
-  "speech_patterns": {
-    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
-    "cadence": "Measured and deliberate — pauses before important words for emphasis.",
-    "verbal_tics": [
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
-      "Ends statements with 'yeah?' — not a question, a dare"
-    ],
-    "example_lines": [
-      "\"Every system has a door. Most of them have a door the architect forgot about.\"",
-      "\"I don't hack networks. I have conversations with them. Most of them are lonely.\"",
-      "\"The ice they're running is military-grade. That means expensive, not impenetrable.\""
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "The fixer who handles Kadiatou Eriksson-Diallo's contracts goes silent — dead, disappeared, or turned",
-    "A former associate resurfaces with evidence that could destroy Kadiatou Eriksson-Diallo's reputation — and a price for silence",
-    "Kadiatou Eriksson-Diallo is offered a contract that would clear all their debts — the target is someone they respect"
-  ],
-  "narrative_function": "Kadiatou Eriksson-Diallo represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Smartgun link in right forearm — interfaces directly with compatible weapons. Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Freelance — Geartown regular",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": {
-        "base": 5,
-        "augmented": 3,
-        "effective": 7
-      },
-      "agility": {
-        "base": 4,
-        "augmented": 2,
-        "effective": 6
-      },
-      "endurance": {
-        "base": 3,
-        "augmented": 2,
-        "effective": 10
-      },
-      "reflexes": {
-        "base": 8,
-        "augmented": 3,
-        "effective": 5
-      }
-    },
-    "mental": {
-      "intelligence": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 9
-      },
-      "perception": {
-        "base": 5,
-        "augmented": 0,
-        "effective": 8
-      },
-      "willpower": {
-        "base": 8,
-        "augmented": 0,
-        "effective": 10
-      },
-      "technical": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 5
-      }
-    },
-    "social": {
-      "charisma": {
-        "base": 4,
-        "augmented": 3,
-        "effective": 10
-      },
-      "intimidation": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 7
-      },
-      "deception": {
-        "base": 4,
-        "augmented": 1,
-        "effective": 5
-      },
-      "empathy": {
-        "base": 6,
-        "augmented": 1,
-        "effective": 6
-      }
-    },
-    "personality": {
-      "aggression": 0.5,
-      "caution": 0.54,
-      "loyalty": 0.11,
-      "greed": 0.82,
-      "empathy": 0.63
-    },
-    "drives": [
-      "justice",
-      "money",
-      "survival"
-    ],
-    "thresholds": {
-      "pain": 8,
-      "stress": 8,
-      "loyalty_break": 7
-    },
-    "strengths": [
-      "pain tolerance beyond normal limits",
-      "mechanical aptitude — can repair or modify almost anything",
-      "technical expertise with augmentation systems"
-    ],
-    "weaknesses": [
-      "grudge-holding that compromises rational decision-making",
-      "inability to delegate — must control everything personally",
-      "trust issues that limit crew effectiveness"
-    ],
-    "tags": [
-      "runner",
-      "freelance",
-      "netrunner",
-      "tier-2",
-      "meridian-88",
-      "augmented",
-      "street-level",
-      "contract-worker"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Always has an exit route planned before agreeing to any meeting",
-      "Always verifies target identity independently before lethal contracts",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Will not betray a client who paid in full, regardless of better offers"
-    ],
-    "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
-    ],
-    "interpersonal_modes": {
-      "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
-      "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
-    },
-    "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
-      "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
-      "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
-    },
-    "contradictions": [
-      "Preaches independence but is desperate for approval from people they respect",
-      "Advocates caution to others but takes insane risks personally — double standard they can't see"
-    ],
-    "habits": [
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Practices a kata or fighting form every morning regardless of circumstances",
-      "Carries a specific caliber round as a lucky charm — has never fired it",
-      "Keeps a physical paper notebook — no digital record of personal thoughts"
-    ],
-    "breaking_points": [
-      "Running out of options — no contacts, no money, no safe house, no way out",
-      "A child being put in danger as leverage against them",
-      "Watching someone they trained or mentored die on a job they recommended"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Smartgun link in right forearm",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
-      "replaces": ""
-    },
-    {
-      "name": "Wired reflexes with adrenaline pump",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "worn",
-      "installed_date": "",
-      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Analyst": 0.7,
-    "Pattern Reader": 0.7,
-    "Problem Solver": 0.7
-  },
-  "operating_territory": {
-    "home_turf": "Ashfield",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Forge-Smith Collective Thundermouth Double 'Old Testament'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ashfield",
-    "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
-    "Felix Roundtree",
-    "Pellucid Systems"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly South Asian (66.9%) with significant East Asian (21.3%) and Sub-Saharan African (11.8%) ancestry. Facial structure reflects this primary blend: South Asian bone structure with characteristic high cheekbones and strong jawline, refined by East Asian eye shape and brow geometry. Sub-Saharan African ancestry contributes warmth and depth to melanin expression. Features read as distinctly pan-Asian with warm, luminous undertones — a striking cosmopolitan appearance of mixed global heritage.",
-    "height_cm": 178,
-    "weight_kg": 68,
-    "build": "Lean and angular with visible musculature — minimal body fat, long limbs, compressed posture suggesting coiled readiness rather than relaxation",
-    "hair_color": "Dark brown, natural",
-    "hair_style": "Short, close-cropped, maintained with functional precision",
-    "hair_length": "Short",
-    "eye_color": "Dark brown with slight amber undertone",
-    "skin_tone": "Warm medium-deep brown with golden and burnished undertones — South Asian melanin base enriched by East Asian depth and Sub-Saharan African warmth, creating a nuanced complexion with subtle luminosity that shifts warmer in direct light",
-    "complexion": "Angular face with high, pronounced cheekbones and strong jawline reflecting South Asian primary ancestry with East Asian refinement; brow geometry shows East Asian influence. Skin is clear but marked by surgical augmentation scars along temples and neck; meticulous grooming with no cosmetics or affectation.",
-    "distinguishing_marks": [
-      "Surgical scar running 4cm along right temple, faint but visible under certain light, from wired reflexes installation",
-      "Chrome smartgun link interface visible on right forearm — gunmetal gray neural port inset at wrist, with thin silver filament traces running up inner forearm beneath translucent synthetic skin overlay",
-      "Burn scar on left shoulder blade, roughly 3cm diameter, pale and old — evidence of past operational mishap",
-      "Fine lattice of subdermal circuitry visible at base of neck when head is tilted back — faint blue-green bioluminescence when adrenaline pump is active"
-    ],
-    "visible_augmentations": "Right forearm smartgun link with exposed neural interface port at wrist — functional, unadorned chrome. Subdermal circuitry tracery at neck base glows faintly under stress or augmentation activation. No cosmetic chrome; all augmentations are work-driven and visible by necessity rather than aesthetic choice.",
-    "posture_movement": "Carries himself with compressed tension — shoulders slightly forward, spine straight but not rigid. Movements are economical and precise; he doesn't waste motion. When stationary, weight shifts constantly between balls of feet as if ready to move in any direction. Eyes track stimulus obsessively — reflex testing or paranoia, unclear which.",
-    "clothing_style": "Tier 3-4 utilitarian runner kit — form-fitting tactical synth-weave bodysuit in charcoal gray with reinforced panels at shoulders and ribs; right forearm left bare to accommodate smartgun interface. Heavy-duty smartfabric jacket with asymmetrical fastening, pockets stuffed with maintenance tools and contract data chips. Worn Geartown-district boots with grip-sole modifications. No corporate branding, no flash — everything is functional and designed for rapid movement or environmental adaptation. Clothing shows signs of regular field use: scuff marks, repaired seams, faint chemical stains suggesting explosive residue or solvents."
-  },
-  "image_prompt": "Cheyenne Subramaniam-Deshpande, 178cm lean runner with coiled tension, warm medium-deep brown skin blending South Asian, East Asian, and Sub-Saharan ancestry — high cheekbones, strong angular jawline, dark eyes with amber undertone. Close-cropped dark hair, meticulous grooming. Wearing form-fitting charcoal tactical synth-weave bodysuit with reinforced panels, asymmetrical smartfabric jacket, right forearm bare revealing gunmetal chrome smartgun neural port at wrist with silver filament traces. Visible surgical scar along right temple, subdermal circuitry lattice faintly glowing at neck base, old burn scar on left shoulder blade. Posture compressed and ready, weight on balls of feet, movements economical. Worn Geartown boots. GLMZ Great Lakes Metropolitan Zone, near-future tactical gear, no flash, all functional. Moody neon-lit alley or industrial runner safe house, cool blue and amber lighting highlighting chrome augmentations and warm skin tone. Film noir neo-noir atmosphere, ready for action. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 66.9,
-    "East Asian": 21.3,
-    "Sub-Saharan African": 11.8
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "South Asian": {
-      "Pakistani": {
-        "Punjabi Pakistani": 24.7
-      },
-      "Nepali": {
-        "Nepali": 31.2
-      },
-      "Sri Lankan": {
-        "Sinhalese": 11
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 8.9
-      },
-      "Japanese": {
-        "Japanese": 7.6
-      },
-      "Chinese": {
-        "Cantonese": 4.8
-      }
-    },
-    "Sub-Saharan African": {
-      "Southern African": {
-        "Botswanan": 11.8
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a63c7bb3907156b3874391f8",
+    "type":  "character",
+    "name":  "Cheyenne Subramaniam-Deshpande",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "male",
+    "pronouns":  "he/him",
+    "role":  "Network intrusion and digital warfare specialist â€” netrunner",
+    "age":  33,
+    "status":  "active",
+    "location":  "Ashfield â€” former residential district, half-burned, now squatter territory, near Ashland and Division",
+    "description":  "Cheyenne Subramaniam-Deshpande is lean and angular, all sharp edges and visible tension. At 33, he has soft features that belie the chrome underneath â€” people underestimate him once, usually only once. The chrome is visible â€” smartgun link in right forearm â€” interfaces directly with compatible weapons â€” and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a netrunner out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nCheyenne Subramaniam-Deshpande has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Their past catching up â€” debts, enemies, broken promises",
+                                          "Losing control of their own body to a hacker or malfunctioning cyberware",
+                                          "Being replaced â€” younger, faster, cheaper runners coming up behind them"
+                                      ],
+                       "core_desires":  [
+                                            "Reputation â€” to be the name fixers whisper when the job absolutely cannot fail",
+                                            "Enough Quanta to buy out of the life â€” a clean identity and passage out of GLMZ",
+                                            "To find the person who burned them and make it educational"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Violence â€” hits something when they can\u0027t process emotions, preferably something that deserves it",
+                                                 "Exercises compulsively â€” the body must be ready, always",
+                                                 "Art â€” draws, paints, or sculpts in private; the violence goes somewhere constructive"
+                                             ],
+                       "blind_spots":  [
+                                           "Assumes everyone has an angle because they always have an angle",
+                                           "Mistakes pattern recognition for wisdom â€” sees connections that aren\u0027t there",
+                                           "Refuses to update their mental model of people â€” first impressions calcify into permanent judgments"
+                                       ],
+                       "secret":  "Kadiatou Eriksson-Diallo betrayed their previous crew to survive a corporate raid. The crew didn\u0027t survive. Nobody in GLMZ knows this."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Terse to the point of rudeness. Treats words like ammunition â€” expensive and not to be wasted.",
+                            "cadence":  "Measured and deliberate â€” pauses before important words for emphasis.",
+                            "verbal_tics":  [
+                                                "Pauses mid-sentence to listen â€” combat habit that bleeds into conversation",
+                                                "Ends statements with \u0027yeah?\u0027 â€” not a question, a dare"
+                                            ],
+                            "example_lines":  [
+                                                  "\"Every system has a door. Most of them have a door the architect forgot about.\"",
+                                                  "\"I don\u0027t hack networks. I have conversations with them. Most of them are lonely.\"",
+                                                  "\"The ice they\u0027re running is military-grade. That means expensive, not impenetrable.\""
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "The fixer who handles Kadiatou Eriksson-Diallo\u0027s contracts goes silent â€” dead, disappeared, or turned",
+                        "A former associate resurfaces with evidence that could destroy Kadiatou Eriksson-Diallo\u0027s reputation â€” and a price for silence",
+                        "Kadiatou Eriksson-Diallo is offered a contract that would clear all their debts â€” the target is someone they respect"
+                    ],
+    "narrative_function":  "Kadiatou Eriksson-Diallo represents the working professional of the runner world â€” competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. His stories explore what happens when skill meets systemic injustice.",
+    "augmentations":  "Smartgun link in right forearm â€” interfaces directly with compatible weapons. Wired reflexes with adrenaline pump â€” chemical-mechanical hybrid augmentation",
+    "daily_life":  "Keeps a rigid daily structure â€” wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+    "affiliation":  "Freelance â€” Geartown regular",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  {
+                                                    "base":  5,
+                                                    "augmented":  3,
+                                                    "effective":  7
+                                                },
+                                   "agility":  {
+                                                   "base":  4,
+                                                   "augmented":  2,
+                                                   "effective":  6
+                                               },
+                                   "endurance":  {
+                                                     "base":  3,
+                                                     "augmented":  2,
+                                                     "effective":  10
+                                                 },
+                                   "reflexes":  {
+                                                    "base":  8,
+                                                    "augmented":  3,
+                                                    "effective":  5
+                                                }
+                               },
+                  "mental":  {
+                                 "intelligence":  {
+                                                      "base":  5,
+                                                      "augmented":  0,
+                                                      "effective":  9
+                                                  },
+                                 "perception":  {
+                                                    "base":  5,
+                                                    "augmented":  0,
+                                                    "effective":  8
+                                                },
+                                 "willpower":  {
+                                                   "base":  8,
+                                                   "augmented":  0,
+                                                   "effective":  10
+                                               },
+                                 "technical":  {
+                                                   "base":  6,
+                                                   "augmented":  1,
+                                                   "effective":  5
+                                               }
+                             },
+                  "social":  {
+                                 "charisma":  {
+                                                  "base":  4,
+                                                  "augmented":  3,
+                                                  "effective":  10
+                                              },
+                                 "intimidation":  {
+                                                      "base":  6,
+                                                      "augmented":  1,
+                                                      "effective":  7
+                                                  },
+                                 "deception":  {
+                                                   "base":  4,
+                                                   "augmented":  1,
+                                                   "effective":  5
+                                               },
+                                 "empathy":  {
+                                                 "base":  6,
+                                                 "augmented":  1,
+                                                 "effective":  6
+                                             }
+                             },
+                  "personality":  {
+                                      "aggression":  0.5,
+                                      "caution":  0.54,
+                                      "loyalty":  0.11,
+                                      "greed":  0.82,
+                                      "empathy":  0.63
+                                  },
+                  "drives":  [
+                                 "justice",
+                                 "money",
+                                 "survival"
+                             ],
+                  "thresholds":  {
+                                     "pain":  8,
+                                     "stress":  8,
+                                     "loyalty_break":  7
+                                 },
+                  "strengths":  [
+                                    "pain tolerance beyond normal limits",
+                                    "mechanical aptitude â€” can repair or modify almost anything",
+                                    "technical expertise with augmentation systems"
+                                ],
+                  "weaknesses":  [
+                                     "grudge-holding that compromises rational decision-making",
+                                     "inability to delegate â€” must control everything personally",
+                                     "trust issues that limit crew effectiveness"
+                                 ],
+                  "tags":  [
+                               "runner",
+                               "freelance",
+                               "netrunner",
+                               "tier-2",
+                               "meridian-88",
+                               "augmented",
+                               "street-level",
+                               "contract-worker"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Always has an exit route planned before agreeing to any meeting",
+                                              "Always verifies target identity independently before lethal contracts",
+                                              "Refuses contracts that require operating inside The Spires â€” too much surveillance",
+                                              "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
+                                              "Will abandon a job if the intel was deliberately falsified â€” being set up violates the contract",
+                                              "Will not betray a client who paid in full, regardless of better offers"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "1. Observe â€” gather information before acting",
+                                                 "2. Evade â€” avoid the problem entirely if possible",
+                                                 "3. Misdirect â€” create a distraction, redirect attention",
+                                                 "4. Disable â€” targeted takedowns, quiet and efficient",
+                                                 "5. Eliminate â€” when silence is no longer an option",
+                                                 "6. Vanish â€” disappear completely, burn identity if necessary"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "employers":  "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
+                                                   "crew":  "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
+                                                   "strangers":  "Dismissive unless they demonstrate usefulness or threat potential. Time is a resource.",
+                                                   "threats":  "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Channels it into preparation â€” checks gear, reviews plans, contacts sources.",
+                                                "medium":  "Becomes curt and demanding. Efficiency overrides courtesy.",
+                                                "high":  "Goes quiet. The silence is not calm â€” it\u0027s the sound of every contingency being evaluated simultaneously.",
+                                                "critical":  "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
+                                            },
+                       "contradictions":  [
+                                              "Preaches independence but is desperate for approval from people they respect",
+                                              "Advocates caution to others but takes insane risks personally â€” double standard they can\u0027t see"
+                                          ],
+                       "habits":  [
+                                      "Counts ammunition obsessively â€” knows the exact round count at all times",
+                                      "Practices a kata or fighting form every morning regardless of circumstances",
+                                      "Carries a specific caliber round as a lucky charm â€” has never fired it",
+                                      "Keeps a physical paper notebook â€” no digital record of personal thoughts"
+                                  ],
+                       "breaking_points":  [
+                                               "Running out of options â€” no contacts, no money, no safe house, no way out",
+                                               "A child being put in danger as leverage against them",
+                                               "Watching someone they trained or mentored die on a job they recommended"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Smartgun link in right forearm",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Smartgun link in right forearm â€” interfaces directly with compatible weapons",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "Wired reflexes with adrenaline pump",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "worn",
+                                    "installed_date":  "",
+                                    "description":  "Wired reflexes with adrenaline pump â€” chemical-mechanical hybrid augmentation",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Analyst":  0.7,
+                       "Pattern Reader":  0.7,
+                       "Problem Solver":  0.7
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Ashfield",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Forge-Smith Collective Thundermouth Double \u0027Old Testament\u0027"
+                        ],
+    "registered_firearms":  [
+
+                            ],
+    "related_entities":  [
+                             "Ashfield",
+                             "Lazarus LX-2 \u0027Lab Rat\u0027",
+                             "Slagworks Industrial",
+                             "Felix Roundtree",
+                             "Pellucid Systems"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly South Asian (66.9%) with significant East Asian (21.3%) and Sub-Saharan African (11.8%) ancestry. Facial structure reflects this primary blend: South Asian bone structure with characteristic high cheekbones and strong jawline, refined by East Asian eye shape and brow geometry. Sub-Saharan African ancestry contributes warmth and depth to melanin expression. Features read as distinctly pan-Asian with warm, luminous undertones â€” a striking cosmopolitan appearance of mixed global heritage.",
+                                 "height_cm":  178,
+                                 "weight_kg":  68,
+                                 "build":  "Lean and angular with visible musculature â€” minimal body fat, long limbs, compressed posture suggesting coiled readiness rather than relaxation",
+                                 "hair_color":  "Dark brown, natural",
+                                 "hair_style":  "Short, close-cropped, maintained with functional precision",
+                                 "hair_length":  "Short",
+                                 "eye_color":  "Dark brown with slight amber undertone",
+                                 "skin_tone":  "Warm medium-deep brown with golden and burnished undertones â€” South Asian melanin base enriched by East Asian depth and Sub-Saharan African warmth, creating a nuanced complexion with subtle luminosity that shifts warmer in direct light",
+                                 "complexion":  "Angular face with high, pronounced cheekbones and strong jawline reflecting South Asian primary ancestry with East Asian refinement; brow geometry shows East Asian influence. Skin is clear but marked by surgical augmentation scars along temples and neck; meticulous grooming with no cosmetics or affectation.",
+                                 "distinguishing_marks":  [
+                                                              "Surgical scar running 4cm along right temple, faint but visible under certain light, from wired reflexes installation",
+                                                              "Chrome smartgun link interface visible on right forearm â€” gunmetal gray neural port inset at wrist, with thin silver filament traces running up inner forearm beneath translucent synthetic skin overlay",
+                                                              "Burn scar on left shoulder blade, roughly 3cm diameter, pale and old â€” evidence of past operational mishap",
+                                                              "Fine lattice of subdermal circuitry visible at base of neck when head is tilted back â€” faint blue-green bioluminescence when adrenaline pump is active"
+                                                          ],
+                                 "visible_augmentations":  "Right forearm smartgun link with exposed neural interface port at wrist â€” functional, unadorned chrome. Subdermal circuitry tracery at neck base glows faintly under stress or augmentation activation. No cosmetic chrome; all augmentations are work-driven and visible by necessity rather than aesthetic choice.",
+                                 "posture_movement":  "Carries himself with compressed tension â€” shoulders slightly forward, spine straight but not rigid. Movements are economical and precise; he doesn\u0027t waste motion. When stationary, weight shifts constantly between balls of feet as if ready to move in any direction. Eyes track stimulus obsessively â€” reflex testing or paranoia, unclear which.",
+                                 "clothing_style":  "Tier 3-4 utilitarian runner kit â€” form-fitting tactical synth-weave bodysuit in charcoal gray with reinforced panels at shoulders and ribs; right forearm left bare to accommodate smartgun interface. Heavy-duty smartfabric jacket with asymmetrical fastening, pockets stuffed with maintenance tools and contract data chips. Worn Geartown-district boots with grip-sole modifications. No corporate branding, no flash â€” everything is functional and designed for rapid movement or environmental adaptation. Clothing shows signs of regular field use: scuff marks, repaired seams, faint chemical stains suggesting explosive residue or solvents."
+                             },
+    "image_prompt":  "Cheyenne Subramaniam-Deshpande, 178cm lean runner with coiled tension, warm medium-deep brown skin blending South Asian, East Asian, and Sub-Saharan ancestry â€” high cheekbones, strong angular jawline, dark eyes with amber undertone. Close-cropped dark hair, meticulous grooming. Wearing form-fitting charcoal tactical synth-weave bodysuit with reinforced panels, asymmetrical smartfabric jacket, right forearm bare revealing gunmetal chrome smartgun neural port at wrist with silver filament traces. Visible surgical scar along right temple, subdermal circuitry lattice faintly glowing at neck base, old burn scar on left shoulder blade. Posture compressed and ready, weight on balls of feet, movements economical. Worn Geartown boots. GLMZ Great Lakes Metropolitan Zone, near-future tactical gear, no flash, all functional. Moody neon-lit alley or industrial runner safe house, cool blue and amber lighting highlighting chrome augmentations and warm skin tone. Film noir neo-noir atmosphere, ready for action. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "South Asian":  66.9,
+                             "East Asian":  21.3,
+                             "Sub-Saharan African":  11.8
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "South Asian":  {
+                                                "Pakistani":  {
+                                                                  "Punjabi Pakistani":  24.7
+                                                              },
+                                                "Nepali":  {
+                                                               "Nepali":  31.2
+                                                           },
+                                                "Sri Lankan":  {
+                                                                   "Sinhalese":  11
+                                                               }
+                                            },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  8.9
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  7.6
+                                                            },
+                                               "Chinese":  {
+                                                               "Cantonese":  4.8
+                                                           }
+                                           },
+                            "Sub-Saharan African":  {
+                                                        "Southern African":  {
+                                                                                 "Botswanan":  11.8
+                                                                             }
+                                                    }
+                        },
+    "tier":  "3"
 }

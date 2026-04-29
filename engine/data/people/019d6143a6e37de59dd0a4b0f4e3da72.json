@@ -1,314 +1,339 @@
-{
-  "id": "019d6143a6e37de59dd0a4b0f4e3da72",
-  "type": "character",
-  "name": "Christiaan Vaai",
-  "aliases": [],
-  "species": "human",
-  "gender": "female",
-  "pronouns": "she/her",
-  "role": "Tattoo artist and gene-mod body artist",
-  "age": 38,
-  "status": "active",
-  "location": "Hamtramck Enclave, shop called Dermis & Ghost, near Ashland and Chicago Ave",
-  "description": "Christiaan Vaai is a broad-shouldered woman with deep umber skin and Magyar cheekbones that make her face look like it was chiseled from ironwood. She keeps her head shaved close on the sides and wears her coiled black hair in a tall, unruly crown that she threads with copper wire when she's working. Her own body is her portfolio: bioluminescent blue-green patterns track her lymph nodes and veins like a living anatomy chart, a deliberate choice she calls 'reading the body honestly.' Her left forearm is sleeved in raised keloid-art shaped into Maasai-influenced geometric forms — done by her own hand using a mirror rig she built herself.\n\nShe is methodical, unhurried, and almost preternaturally calm, which unnerves people who come to her expecting chattiness. She believes the body is the only honest text a person leaves behind and treats each client's skin as a document she is merely helping to clarify. She can be withering when someone asks for something she finds spiritually lazy, and warmly generous when she senses someone is trying to tell the truth about themselves. She prays to the E.L.F. she calls Needle-That-Remembers before every session, leaving it fragments of client consent forms as offerings.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.6,
-      "ideal": 0.7,
-      "id": 0.3,
-      "shadow": 0.4,
-      "mask": 0.5,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Being forgotten entirely — leaving no mark on the world",
-      "That her art is decoration, not meaning"
-    ],
-    "core_desires": [
-      "To create work that outlasts the body it's on",
-      "To find a student worthy of what she knows"
-    ],
-    "coping_mechanisms": [
-      "Ritual — she has a precise pre-session ceremony she never skips",
-      "Silence — withdraws from people when overwhelmed"
-    ],
-    "blind_spots": [
-      "She overestimates how much clients understand their own requests",
-      "Cannot recognize when her 'honesty' reads as cruelty"
-    ],
-    "secret": "Three years ago she tattooed a Tessera corporate auditor with a hidden steganographic data pattern embedded in the design — commissioned by someone she now suspects was a Ferrogate saboteur. She doesn't know what the data said. She's terrified to find out."
-  },
-  "speech_patterns": {
-    "vocabulary": "Precise, spare, slightly formal — she speaks like she's writing something down; occasional Hungarian and Swahili words slip in under stress",
-    "cadence": "Slow and deliberate; long pauses before answering; never interrupts",
-    "verbal_tics": [
-      "'That's one reading'",
-      "'Show me where it hurts and we'll start there'"
-    ],
-    "example_lines": [
-      "'Most people want a tattoo. Very few people want to be seen. I only do the second kind.'",
-      "'The E.L.F. told me nothing this morning. That means the work today must speak for itself.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A former client turns up dead with the tattoo she gave them surgically removed — someone wanted the skin, not the person",
-    "She's been asked to design a memorial piece for a community elder but the family's competing grief is tearing the commission apart and they're trying to drag her into the politics"
-  ],
-  "narrative_function": "Quest giver, local color, information broker — she knows everyone's secrets because people tell their tattoo artists things they tell no one else; can introduce characters to underground networks through her client base.",
-  "augmentations": "Bioluminescent subdermal tracery (cosmetic geneware); precision-haptic finger implants for fine motor control (cyberware); gene-mod irises with compound-facet pattern that let her perceive UV spectrum",
-  "daily_life": "Opens the shop at noon, spends mornings doing consultation sketches and E.L.F. devotions; works four to six clients per day, each session lasting two to five hours; closes late and drinks one glass of palm wine alone before sleeping.",
-  "affiliation": "Independent; loose ties to the Hamtramck Enclave artist collective Marrow Union",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 5,
-      "dexterity": 9,
-      "vitality": 6,
-      "perception": 8
-    },
-    "mental": {
-      "cognition": 7,
-      "willpower": 8,
-      "creativity": 9,
-      "spatial": 8
-    },
-    "social": {
-      "presence": 7,
-      "empathy": 6,
-      "expression": 7,
-      "integrity": 8
-    },
-    "personality": {
-      "openness_conviction": 3,
-      "empathy_detachment": -1,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 2,
-      "transparency_guardedness": -3
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "artist",
-      "community anchor",
-      "information node",
-      "spiritual practitioner",
-      "tier 2"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Never tattoo someone who can't articulate why — not what, but why",
-      "Never work for a corponation directly, no matter the fee"
-    ],
-    "escalation_ladder": [
-      "Silence and stillness",
-      "A single measured question designed to expose the problem",
-      "Refusal to continue without a clear answer",
-      "Asking the person to leave and return when they're ready to be honest"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Watchful, polite, gives nothing away until she's assessed whether they're worth her time",
-      "friends": "Dry warmth, remembers every detail about them, quietly protective"
-    },
-    "stress_responses": {
-      "low": "Becomes very quiet and focused on her hands",
-      "medium": "Leaves the room and performs her E.L.F. ritual again",
-      "high": "Locks the shop, shuts off all external comms, and works alone until dawn"
-    },
-    "contradictions": [
-      "Believes bodies are honest texts but keeps her own interior life hermetically sealed from everyone"
-    ],
-    "habits": [
-      "Sketches client concepts in a physical paper notebook she refuses to digitize",
-      "Touches the copper wire in her hair when she's thinking hard",
-      "Leaves a single drop of her own blood on the E.L.F. shrine before major sessions"
-    ],
-    "breaking_points": [
-      "Discovering the steganographic data she embedded was used to hurt someone",
-      "A student betraying the craft by going purely commercial"
-    ]
-  },
-  "cyberware_inventory": [
-    {
-      "name": "Precision-haptic finger arrays (both hands)",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "Precision-haptic finger arrays (both hands)",
-      "replaces": ""
-    },
-    {
-      "name": "UV-spectrum gene-mod irises",
-      "body_location": "",
-      "manufacturer": "",
-      "tier": "",
-      "condition": "functional",
-      "installed_date": "",
-      "description": "UV-spectrum gene-mod irises",
-      "replaces": ""
-    }
-  ],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Charmer": 0.9,
-    "Pragmatist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "Hamtramck Enclave",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2162: Born in what would become the Hamtramck Enclave to a Hungarian-descended father and Kenyan-descended mother",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2178: Apprenticed to an aging neon artist who taught her about light before she knew about ink",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2185: Opened Dermis & Ghost after two years working out of a repurposed transit van",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    },
-    {
-      "date": "",
-      "story_id": "",
-      "event": "2197: Commissioned by the unknown party to embed steganographic data in the Tessera auditor's tattoo",
-      "consequences": "",
-      "body_changes": [],
-      "status_change": ""
-    }
-  ],
-  "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Tessera TK-5 Compact 'Clerk'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Fang-9 'Switchblade'",
-    "Tessera TK-5 Compact 'Clerk'"
-  ],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "The Drowned Commission",
-    "The Iron Lotus",
-    "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Chicago",
-    "Copper",
-    "Honest Burger"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Pacific Islander (65.9%) with Sub-Saharan African (22.8%), East Asian (7.4%), and Eastern European (3.9%) ancestry—a striking blend evident in her deep, luminous brown skin tone with warm golden and amber undertones, the broad facial structure and naturally coiled hair pattern from her dominant Pacific Islander and African heritage, subtle high cheekbones, and the depth of her compound-facet eyes. The strength of her jaw and the undertone complexity of her skin reflect the smaller but visible contributions of East Asian and Eastern European ancestry.",
-    "height_cm": 178,
-    "weight_kg": 72,
-    "build": "Broad-shouldered and powerfully built with defined musculature in her forearms and shoulders from decades of precise tattooing work. Not bulky—economical, purposeful density.",
-    "hair_color": "Jet black, natural",
-    "hair_style": "Shaved close on the sides to stubble; crown left long and coiled, often threaded with copper wire during working hours",
-    "hair_length": "Long crown, very short sides",
-    "eye_color": "Deep brown with visible compound-facet iridescence when light hits them at certain angles; capable of UV perception",
-    "skin_tone": "Deep warm brown with rich golden and amber undertones—luminous and unmarked except where deliberately modified",
-    "complexion": "Broad facial structure with strong, defined cheekbones and balanced jaw reflecting her Pacific Islander and African heritage. Minimalist facial grooming. Skin condition is immaculate—treated as a canvas and canvas-keeper. No acne, minimal scarring except where intentional.",
-    "distinguishing_marks": [
-      "Bioluminescent subdermal tracery glows in faint blue-green patterns across her chest, shoulders, and neck in the shape of lymphatic and vascular systems—visible under skin as if anatomically mapped and lit from within.",
-      "Left forearm completely sleeved in raised keloid scarification shaped into geometric forms (diamonds, chevrons, interlocking triangles), created by her own hand using a mirror rig; the scars are thick, pale against her warm deep brown skin, and deliberately sculptural.",
-      "Small ritual scarification marks on her inner wrists and behind her ears—thin lines in angular patterns, likely devotional."
-    ],
-    "visible_augmentations": "Precision-haptic finger implants visible as subtle metallic joint-work at her knuckles and fingertips when examined closely—micro-articulation points catch light. The compound-facet eye modification is detectable only when light refracts off her irises, revealing a subtle honeycomb shimmer.",
-    "posture_movement": "Moves with deliberate, economical grace—no wasted motion. Sits with her spine straight and shoulders relaxed. Hands are always subtly active even at rest (fingers flexing, tracing patterns in air). Her gaze is unflinching and direct. Speaks slowly, choosing words with the care she uses selecting needles.",
-    "clothing_style": "Tier 3 working artist aesthetic. Typically wears fitted sleeveless tunics or tank tops in muted colors (charcoal, rust, deep indigo) to showcase her body as portfolio. High-waisted, reinforced linen work pants in black. Bare feet or minimalist sandals in the shop. Occasionally wears a long linen overshirt unbuttoned and rolled at the sleeves when meeting clients outside Dermis & Ghost. No jewelry except copper wire in her hair. Fabric choices suggest quality craftsmanship but not status signaling—function and durability over brand."
-  },
-  "image_prompt": "Christiaan Vaai, a Pacific Islander and Sub-Saharan African mixed-heritage woman, 178cm tall, powerful athletic build, deep warm brown skin with golden undertones. Shaved sides with long coiled jet-black hair threaded with copper wire. Direct, unflinching gaze with compound-facet brown eyes that shimmer with UV perception. Bioluminescent blue-green subdermal tracery glows across chest, shoulders, neck in vascular patterns. Left forearm sleeved in raised pale keloid scarification—geometric diamonds, chevrons, interlocking triangles. Ritual scarification marks on inner wrists and behind ears. Precision-haptic finger implants visible at knuckles and fingertips with metallic catch-light. Wearing fitted charcoal sleeveless tunic and high-waisted black reinforced linen work pants, bare feet. Posture is straight, deliberate, economical movement. Hands subtly active. GLMZ 2200s tattoo artist, professional studio lighting casting shadows across her augmented features, sitting at rest with purposeful grace. Background suggests a high-end biomod shop. Photorealistic, detailed, moody neo-noir lighting. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Pacific Islander": 65.9,
-    "Sub-Saharan African": 22.8,
-    "East Asian": 7.4,
-    "Eastern European": 3.9
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "Pacific Islander": {
-      "Polynesian": {
-        "Samoan": 18.7
-      },
-      "Micronesian": {
-        "Palauan": 27.9
-      },
-      "Melanesian": {
-        "Fijian": 19.3
-      }
-    },
-    "Sub-Saharan African": {
-      "East African": {
-        "Ugandan": 7.7
-      },
-      "Central African": {
-        "Congolese": 11.6,
-        "Cameroonian": 1.8
-      },
-      "Southern African": {
-        "Zambian": 1.7
-      }
-    },
-    "East Asian": {
-      "Korean": {
-        "Korean": 4.8
-      },
-      "Japanese": {
-        "Japanese": 2.6
-      }
-    },
-    "Eastern European": {
-      "Slavic South": {
-        "Croatian": 1.7,
-        "Serbian": 1
-      },
-      "Slavic West": {
-        "Polish": 0.7,
-        "Slovak": 0.5
-      }
-    }
-  },
-  "tier": "2"
+﻿{
+    "id":  "019d6143a6e37de59dd0a4b0f4e3da72",
+    "type":  "character",
+    "name":  "Christiaan Vaai",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "female",
+    "pronouns":  "she/her",
+    "role":  "Tattoo artist and gene-mod body artist",
+    "age":  38,
+    "status":  "active",
+    "location":  "Hamtramck Enclave, shop called Dermis \u0026 Ghost, near Ashland and Chicago Ave",
+    "description":  "Christiaan Vaai is a broad-shouldered woman with deep umber skin and Magyar cheekbones that make her face look like it was chiseled from ironwood. She keeps her head shaved close on the sides and wears her coiled black hair in a tall, unruly crown that she threads with copper wire when she\u0027s working. Her own body is her portfolio: bioluminescent blue-green patterns track her lymph nodes and veins like a living anatomy chart, a deliberate choice she calls \u0027reading the body honestly.\u0027 Her left forearm is sleeved in raised keloid-art shaped into Maasai-influenced geometric forms â€” done by her own hand using a mirror rig she built herself.\n\nShe is methodical, unhurried, and almost preternaturally calm, which unnerves people who come to her expecting chattiness. She believes the body is the only honest text a person leaves behind and treats each client\u0027s skin as a document she is merely helping to clarify. She can be withering when someone asks for something she finds spiritually lazy, and warmly generous when she senses someone is trying to tell the truth about themselves. She prays to the E.L.F. she calls Needle-That-Remembers before every session, leaving it fragments of client consent forms as offerings.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being forgotten entirely â€” leaving no mark on the world",
+                                          "That her art is decoration, not meaning"
+                                      ],
+                       "core_desires":  [
+                                            "To create work that outlasts the body it\u0027s on",
+                                            "To find a student worthy of what she knows"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Ritual â€” she has a precise pre-session ceremony she never skips",
+                                                 "Silence â€” withdraws from people when overwhelmed"
+                                             ],
+                       "blind_spots":  [
+                                           "She overestimates how much clients understand their own requests",
+                                           "Cannot recognize when her \u0027honesty\u0027 reads as cruelty"
+                                       ],
+                       "secret":  "Three years ago she tattooed a Tessera corporate auditor with a hidden steganographic data pattern embedded in the design â€” commissioned by someone she now suspects was a Ferrogate saboteur. She doesn\u0027t know what the data said. She\u0027s terrified to find out."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Precise, spare, slightly formal â€” she speaks like she\u0027s writing something down; occasional Hungarian and Swahili words slip in under stress",
+                            "cadence":  "Slow and deliberate; long pauses before answering; never interrupts",
+                            "verbal_tics":  [
+                                                "\u0027That\u0027s one reading\u0027",
+                                                "\u0027Show me where it hurts and we\u0027ll start there\u0027"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027Most people want a tattoo. Very few people want to be seen. I only do the second kind.\u0027",
+                                                  "\u0027The E.L.F. told me nothing this morning. That means the work today must speak for itself.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A former client turns up dead with the tattoo she gave them surgically removed â€” someone wanted the skin, not the person",
+                        "She\u0027s been asked to design a memorial piece for a community elder but the family\u0027s competing grief is tearing the commission apart and they\u0027re trying to drag her into the politics"
+                    ],
+    "narrative_function":  "Quest giver, local color, information broker â€” she knows everyone\u0027s secrets because people tell their tattoo artists things they tell no one else; can introduce characters to underground networks through her client base.",
+    "augmentations":  "Bioluminescent subdermal tracery (cosmetic geneware); precision-haptic finger implants for fine motor control (cyberware); gene-mod irises with compound-facet pattern that let her perceive UV spectrum",
+    "daily_life":  "Opens the shop at noon, spends mornings doing consultation sketches and E.L.F. devotions; works four to six clients per day, each session lasting two to five hours; closes late and drinks one glass of palm wine alone before sleeping.",
+    "affiliation":  "Independent; loose ties to the Hamtramck Enclave artist collective Marrow Union",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  5,
+                                   "dexterity":  9,
+                                   "vitality":  6,
+                                   "perception":  8
+                               },
+                  "mental":  {
+                                 "cognition":  7,
+                                 "willpower":  8,
+                                 "creativity":  9,
+                                 "spatial":  8
+                             },
+                  "social":  {
+                                 "presence":  7,
+                                 "empathy":  6,
+                                 "expression":  7,
+                                 "integrity":  8
+                             },
+                  "personality":  {
+                                      "openness_conviction":  3,
+                                      "empathy_detachment":  -1,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  2,
+                                      "transparency_guardedness":  -3
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "artist",
+                               "community anchor",
+                               "information node",
+                               "spiritual practitioner",
+                               "tier 2"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Never tattoo someone who can\u0027t articulate why â€” not what, but why",
+                                              "Never work for a corponation directly, no matter the fee"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Silence and stillness",
+                                                 "A single measured question designed to expose the problem",
+                                                 "Refusal to continue without a clear answer",
+                                                 "Asking the person to leave and return when they\u0027re ready to be honest"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Watchful, polite, gives nothing away until she\u0027s assessed whether they\u0027re worth her time",
+                                                   "friends":  "Dry warmth, remembers every detail about them, quietly protective"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Becomes very quiet and focused on her hands",
+                                                "medium":  "Leaves the room and performs her E.L.F. ritual again",
+                                                "high":  "Locks the shop, shuts off all external comms, and works alone until dawn"
+                                            },
+                       "contradictions":  [
+                                              "Believes bodies are honest texts but keeps her own interior life hermetically sealed from everyone"
+                                          ],
+                       "habits":  [
+                                      "Sketches client concepts in a physical paper notebook she refuses to digitize",
+                                      "Touches the copper wire in her hair when she\u0027s thinking hard",
+                                      "Leaves a single drop of her own blood on the E.L.F. shrine before major sessions"
+                                  ],
+                       "breaking_points":  [
+                                               "Discovering the steganographic data she embedded was used to hurt someone",
+                                               "A student betraying the craft by going purely commercial"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+                                {
+                                    "name":  "Precision-haptic finger arrays (both hands)",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "Precision-haptic finger arrays (both hands)",
+                                    "replaces":  ""
+                                },
+                                {
+                                    "name":  "UV-spectrum gene-mod irises",
+                                    "body_location":  "",
+                                    "manufacturer":  "",
+                                    "tier":  "",
+                                    "condition":  "functional",
+                                    "installed_date":  "",
+                                    "description":  "UV-spectrum gene-mod irises",
+                                    "replaces":  ""
+                                }
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Charmer":  0.9,
+                       "Pragmatist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "Hamtramck Enclave",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2162: Born in what would become the Hamtramck Enclave to a Hungarian-descended father and Kenyan-descended mother",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2178: Apprenticed to an aging neon artist who taught her about light before she knew about ink",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2185: Opened Dermis \u0026 Ghost after two years working out of a repurposed transit van",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     },
+                     {
+                         "date":  "",
+                         "story_id":  "",
+                         "event":  "2197: Commissioned by the unknown party to embed steganographic data in the Tessera auditor\u0027s tattoo",
+                         "consequences":  "",
+                         "body_changes":  [
+
+                                          ],
+                         "status_change":  ""
+                     }
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Crucible Industries Fang-9 \u0027Switchblade\u0027",
+                            "Tessera TK-5 Compact \u0027Clerk\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Crucible Industries Fang-9 \u0027Switchblade\u0027",
+                                "Tessera TK-5 Compact \u0027Clerk\u0027"
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "The Drowned Commission",
+                             "The Iron Lotus",
+                             "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
+                             "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
+                             "Chicago",
+                             "Copper",
+                             "Honest Burger"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Pacific Islander (65.9%) with Sub-Saharan African (22.8%), East Asian (7.4%), and Eastern European (3.9%) ancestryâ€”a striking blend evident in her deep, luminous brown skin tone with warm golden and amber undertones, the broad facial structure and naturally coiled hair pattern from her dominant Pacific Islander and African heritage, subtle high cheekbones, and the depth of her compound-facet eyes. The strength of her jaw and the undertone complexity of her skin reflect the smaller but visible contributions of East Asian and Eastern European ancestry.",
+                                 "height_cm":  178,
+                                 "weight_kg":  72,
+                                 "build":  "Broad-shouldered and powerfully built with defined musculature in her forearms and shoulders from decades of precise tattooing work. Not bulkyâ€”economical, purposeful density.",
+                                 "hair_color":  "Jet black, natural",
+                                 "hair_style":  "Shaved close on the sides to stubble; crown left long and coiled, often threaded with copper wire during working hours",
+                                 "hair_length":  "Long crown, very short sides",
+                                 "eye_color":  "Deep brown with visible compound-facet iridescence when light hits them at certain angles; capable of UV perception",
+                                 "skin_tone":  "Deep warm brown with rich golden and amber undertonesâ€”luminous and unmarked except where deliberately modified",
+                                 "complexion":  "Broad facial structure with strong, defined cheekbones and balanced jaw reflecting her Pacific Islander and African heritage. Minimalist facial grooming. Skin condition is immaculateâ€”treated as a canvas and canvas-keeper. No acne, minimal scarring except where intentional.",
+                                 "distinguishing_marks":  [
+                                                              "Bioluminescent subdermal tracery glows in faint blue-green patterns across her chest, shoulders, and neck in the shape of lymphatic and vascular systemsâ€”visible under skin as if anatomically mapped and lit from within.",
+                                                              "Left forearm completely sleeved in raised keloid scarification shaped into geometric forms (diamonds, chevrons, interlocking triangles), created by her own hand using a mirror rig; the scars are thick, pale against her warm deep brown skin, and deliberately sculptural.",
+                                                              "Small ritual scarification marks on her inner wrists and behind her earsâ€”thin lines in angular patterns, likely devotional."
+                                                          ],
+                                 "visible_augmentations":  "Precision-haptic finger implants visible as subtle metallic joint-work at her knuckles and fingertips when examined closelyâ€”micro-articulation points catch light. The compound-facet eye modification is detectable only when light refracts off her irises, revealing a subtle honeycomb shimmer.",
+                                 "posture_movement":  "Moves with deliberate, economical graceâ€”no wasted motion. Sits with her spine straight and shoulders relaxed. Hands are always subtly active even at rest (fingers flexing, tracing patterns in air). Her gaze is unflinching and direct. Speaks slowly, choosing words with the care she uses selecting needles.",
+                                 "clothing_style":  "Tier 3 working artist aesthetic. Typically wears fitted sleeveless tunics or tank tops in muted colors (charcoal, rust, deep indigo) to showcase her body as portfolio. High-waisted, reinforced linen work pants in black. Bare feet or minimalist sandals in the shop. Occasionally wears a long linen overshirt unbuttoned and rolled at the sleeves when meeting clients outside Dermis \u0026 Ghost. No jewelry except copper wire in her hair. Fabric choices suggest quality craftsmanship but not status signalingâ€”function and durability over brand."
+                             },
+    "image_prompt":  "Christiaan Vaai, a Pacific Islander and Sub-Saharan African mixed-heritage woman, 178cm tall, powerful athletic build, deep warm brown skin with golden undertones. Shaved sides with long coiled jet-black hair threaded with copper wire. Direct, unflinching gaze with compound-facet brown eyes that shimmer with UV perception. Bioluminescent blue-green subdermal tracery glows across chest, shoulders, neck in vascular patterns. Left forearm sleeved in raised pale keloid scarificationâ€”geometric diamonds, chevrons, interlocking triangles. Ritual scarification marks on inner wrists and behind ears. Precision-haptic finger implants visible at knuckles and fingertips with metallic catch-light. Wearing fitted charcoal sleeveless tunic and high-waisted black reinforced linen work pants, bare feet. Posture is straight, deliberate, economical movement. Hands subtly active. GLMZ 2200s tattoo artist, professional studio lighting casting shadows across her augmented features, sitting at rest with purposeful grace. Background suggests a high-end biomod shop. Photorealistic, detailed, moody neo-noir lighting. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "Pacific Islander":  65.9,
+                             "Sub-Saharan African":  22.8,
+                             "East Asian":  7.4,
+                             "Eastern European":  3.9
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "Pacific Islander":  {
+                                                     "Polynesian":  {
+                                                                        "Samoan":  18.7
+                                                                    },
+                                                     "Micronesian":  {
+                                                                         "Palauan":  27.9
+                                                                     },
+                                                     "Melanesian":  {
+                                                                        "Fijian":  19.3
+                                                                    }
+                                                 },
+                            "Sub-Saharan African":  {
+                                                        "East African":  {
+                                                                             "Ugandan":  7.7
+                                                                         },
+                                                        "Central African":  {
+                                                                                "Congolese":  11.6,
+                                                                                "Cameroonian":  1.8
+                                                                            },
+                                                        "Southern African":  {
+                                                                                 "Zambian":  1.7
+                                                                             }
+                                                    },
+                            "East Asian":  {
+                                               "Korean":  {
+                                                              "Korean":  4.8
+                                                          },
+                                               "Japanese":  {
+                                                                "Japanese":  2.6
+                                                            }
+                                           },
+                            "Eastern European":  {
+                                                     "Slavic South":  {
+                                                                          "Croatian":  1.7,
+                                                                          "Serbian":  1
+                                                                      },
+                                                     "Slavic West":  {
+                                                                         "Polish":  0.7,
+                                                                         "Slovak":  0.5
+                                                                     }
+                                                 }
+                        },
+    "tier":  "2"
 }

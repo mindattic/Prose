@@ -1,260 +1,281 @@
-{
-  "id": "019d6143a6c475b3bdb0aabbfe507da5",
-  "type": "character",
-  "name": "Apollonia Espinoza",
-  "aliases": [],
-  "species": "human",
-  "gender": "nonbinary",
-  "pronouns": "they/them",
-  "role": "Fake ID vendor and identity documents forger — The Alban Souk",
-  "age": 27,
-  "status": "active",
-  "location": "The Alban Souk, Hamtramck Enclave, near Pulaski and Chicago Ave",
-  "description": "Apollonia Espinoza is the kind of person you notice and immediately forget, which is the point. Medium height, medium build, features that read as generically pleasant — warm light-brown skin, dark eyes, hair that is currently an unremarkable chin-length black but was a different color last week and will be again next week. They have a cosmetic geneware mod that lets them adjust their hair color through a dermal panel on the back of their neck, and they use it strategically to match moods, blend into crowds, or signal to regular clients what kind of day it is (black means business, dark red means they're watching, deep green means come back later). The only consistent physical detail is a small tattoo of an open eye on the inside of their left wrist, which they cover when working.\n\nTheir stall front is officially a document services and notarization kiosk — perfectly legal, mildly boring, doing a modest but real trade in legitimate bureaucratic services for the enclave's large population of people whose papers are perpetually in some state of incompleteness. The back half of the business happens in a rented room above a noodle shop forty meters away, which they visit by a route they vary daily. They are calm, precise, and give off a faint air of someone taking a very long test that never ends.",
-  "psychology": {
-    "facet_weights": {
-      "wound": 0.7,
-      "ideal": 0.4,
-      "id": 0.5,
-      "shadow": 0.5,
-      "mask": 0.9,
-      "ghost": 0.6
-    },
-    "core_fears": [
-      "Being fully known by anyone — the loss of the buffer between self and world",
-      "That one day they will forget who they actually are beneath all the constructed faces"
-    ],
-    "core_desires": [
-      "To build one identity — their own — that feels true and unreachable by anyone who wants to use or erase it",
-      "Financial stability enough to stop taking high-risk clients"
-    ],
-    "coping_mechanisms": [
-      "Maintaining obsessive operational routines as a substitute for emotional structure",
-      "Collecting small objects from each significant client as a private archive they don't examine too closely",
-      "Hair color changes as mood regulation"
-    ],
-    "blind_spots": [
-      "Has told themselves their work is purely transactional so many times they've stopped asking what happens to the people they give new faces to",
-      "Trusts systems and routines more than people, which means they are completely unprepared for system failures"
-    ],
-    "secret": "They built and maintain a fully functional identity for a person who doesn't exist — complete biometric trail, employment history, credit record, social profile — and they use it to live parts of their life that they want kept separate from everything else, including their own name."
-  },
-  "speech_patterns": {
-    "vocabulary": "Spare and precise, no word wasted; slips into slightly more formal register when nervous, which reads as calm",
-    "cadence": "Even and measured, with deliberate pauses before anything important",
-    "verbal_tics": [
-      "a soft 'mm' before answering anything they're thinking about",
-      "rarely uses names, addresses people by context instead ('the person you asked about', 'your situation')"
-    ],
-    "example_lines": [
-      "'I don't need to know why. I do need to know whether anyone is currently looking for the name you're leaving behind — that affects the timeline.'",
-      "'The legitimate service is real. The notarization is real. Everything here is real. What you're asking about requires a different conversation, somewhere else, after I've had time to think.'"
-    ]
-  },
-  "relationships": [],
-  "story_hooks": [
-    "A client from six months ago has resurfaced — not the person they built the identity for, but someone using it who has no idea where it came from, which means the original client sold it or was taken",
-    "A Hamtramck Ledger enforcer has been sniffing around the kiosk in a way that feels like leverage-gathering rather than routine tax collection",
-    "Their phantom identity — the one they built for themselves — has started appearing in Axiom corporate databases in a context they didn't create"
-  ],
-  "narrative_function": "Procurement contact for false identities and documentation; information broker adjacent — they know who in the enclave is trying to become someone else, and why.",
-  "augmentations": "Color-shift hair geneware (cosmetic, strategic). Subdermal microfabricator array in dominant hand (functional — allows high-precision document printing without external equipment).",
-  "daily_life": "Runs the legitimate kiosk from morning to mid-afternoon, takes a two-hour break that is actually when they do their real work, returns for the evening rush of people needing their paperwork witnessed, and spends nights updating their identity template library.",
-  "affiliation": "Independent; pays informal street tax to a local crew called the Hamtramck Ledger without being formally affiliated",
-  "uses_facets": false,
-  "narration_voice": "",
-  "stats": {
-    "physical": {
-      "strength": 4,
-      "dexterity": 8,
-      "vitality": 5,
-      "perception": 9
-    },
-    "mental": {
-      "cognition": 9,
-      "willpower": 7,
-      "creativity": 8,
-      "spatial": 6
-    },
-    "social": {
-      "presence": 5,
-      "empathy": 6,
-      "expression": 4,
-      "integrity": 5
-    },
-    "personality": {
-      "openness_conviction": 1,
-      "empathy_detachment": 2,
-      "impulsivity_deliberation": 4,
-      "assertion_deference": 0,
-      "transparency_guardedness": 5
-    },
-    "drives": [],
-    "thresholds": {},
-    "strengths": [],
-    "weaknesses": [],
-    "tags": [
-      "forger",
-      "identity architect",
-      "operational security",
-      "mask wearer",
-      "enclave fixture"
-    ]
-  },
-  "behavioral": {
-    "decision_rules": [
-      "Operational security above convenience, always",
-      "Never take a client who is in active pursuit — only people moving away from something, not running from something chasing them right now",
-      "Leave no loose ends in paperwork"
-    ],
-    "escalation_ladder": [
-      "Politely declines and redirects",
-      "Goes very still and very formal",
-      "Activates a pre-planned exit protocol and is simply not at the kiosk tomorrow",
-      "Disappears entirely into the phantom identity if forced"
-    ],
-    "interpersonal_modes": {
-      "strangers": "Pleasant, helpful, thoroughly opaque — a perfect service professional surface",
-      "friends": "Rare, but when someone has earned it, they are disarmingly genuine and surprisingly warm, which they find embarrassing"
-    },
-    "stress_responses": {
-      "low": "Reorganizes their template archive",
-      "medium": "Changes their hair, reroutes their daily path, audits every recent transaction",
-      "high": "Activates a pre-built contingency scenario and methodically disappears from current patterns"
-    },
-    "contradictions": [
-      "Desperately wants to be known by someone but has built their entire life to prevent it"
-    ],
-    "habits": [
-      "Changes their route to the back room every day without fail",
-      "Keeps a small collection of objects from significant clients in a locked tin they've never opened",
-      "Reads every piece of legitimate paperwork they process with genuine attention"
-    ],
-    "breaking_points": [
-      "Having their actual identity — not a constructed one — exposed to someone with power over them",
-      "Being asked to build an identity for someone they know is going to hurt the person the identity is taken from"
-    ]
-  },
-  "cyberware_inventory": [],
-  "belongings": {
-    "primary_weapon": "",
-    "secondary_weapon": "",
-    "armor": "",
-    "vehicle": "",
-    "residence": "",
-    "clothing_style": "",
-    "favorite_drink": "",
-    "favorite_food": "",
-    "stimulant": "",
-    "comm_device": "",
-    "signature_gear": [],
-    "pharmaceuticals": [],
-    "other": {}
-  },
-  "archetypes": {
-    "Networker": 0.9,
-    "Opportunist": 0.9
-  },
-  "operating_territory": {
-    "home_turf": "The Alban Souk",
-    "familiar_zones": [],
-    "zone_reputation": {},
-    "no_go_zones": [],
-    "range": "local"
-  },
-  "timeline": [],
-  "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'"
-  ],
-  "registered_firearms": [
-    "Hearthstone Firearms Guardian-12 'Bedside'"
-  ],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "The Alban Souk",
-    "ShieldTech Enforcer DM-4 'Crossover'",
-    "Chicago",
-    "Akosua Johansson",
-    "Déjà Vu"
-  ],
-  "district": "the Gray Zone",
-  "physical_description": {
-    "heritage": "Predominantly East Asian (45.2%) with substantial Hispanic/Latin American ancestry (32.8%), complemented by South Asian (10.5%), Indigenous American (9.8%), and Southeast Asian (1.7%) genetic contributions. This genetic profile reflects the Ubiquitous Diaspora's characteristic global recombination—East Asian features as primary phenotype, enriched by Latin American warmth and South Asian definition, with subtle Indigenous American bone structure influence. The result is a distinctly mixed phenotype: East Asian eye shape and cheekbone prominence married to Latin American and South Asian mid-face proportions, with Indigenous American influences visible in subtle jaw and orbital structure.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Lean and compact, economical in movement — the build of someone who takes up only as much space as necessary. Minimal visible musculature; wiry rather than athletic.",
-    "hair_color": "Currently black; cosmetically mutable via subdermal geneware panel",
-    "hair_style": "Blunt cut, chin-length, styled to sit neutrally around the face — neither masculine nor feminine in presentation, deliberately unremarkable",
-    "hair_length": "Medium",
-    "eye_color": "Dark brown, unremarkable luminosity",
-    "skin_tone": "Warm medium-tan with golden-amber undertones—characteristic East Asian base enriched by Latin American and South Asian warmth. Even tone across face and body, suggesting genetic blending across multiple ancestry groups rather than single geographic origin.",
-    "complexion": "Clean, well-maintained skin with a matte finish — minimal scarring, no visible acne. Face is softly angular with defined cheekbones reflecting East Asian primary ancestry, with mid-face fullness and jaw structure showing Latin American and South Asian influence. Mild epicanthic fold at eye corners consistent with dominant East Asian genetics; subtle broadening of nasal base reflecting South Asian and Latin American heritage. Expression defaults to neutral attentiveness. Eyebrows are dark and groomed but not styled. No facial hair.",
-    "distinguishing_marks": [
-      "Small tattoo of an open eye (approximately 2cm diameter) on the inner surface of the left wrist — usually concealed during work hours with a wrist cuff or sleeve",
-      "Faint surgical scar along the back of the neck, approximately 4cm, barely visible unless hair is pulled away — location of dermal hair-color modification panel"
-    ],
-    "visible_augmentations": "The back-of-neck dermal panel is occasionally visible as a faint rectangular outline beneath the skin when hair is wet or pulled tightly back, but remains concealed under normal circumstances. The subdermal microfabricator array in the dominant hand (right) shows as a faint lattice of silver-gray lines beneath the skin across the palm and inner forearm, visible only at close range or in bright light. No external chrome or obvious technological modification.",
-    "posture_movement": "Stands with weight centered, shoulders relaxed but not slouched — a neutral baseline posture that broadcasts neither confidence nor anxiety. Moves with deliberate precision; economical gestures. Hands move with practiced control. Overall impression is of someone perpetually in a state of calm focus, as if solving a complex problem in real time. Maintains slight distance in social contexts; does not fidget.",
-    "clothing_style": "Tier 3-4 blend: functional, well-maintained, deliberately unmemorable. Typically wears neutral-toned layered clothing — charcoal or dark gray long-sleeved shirts, sometimes a fitted dark vest without logos. Dark trousers (black or dark gray), always with functional pockets. Shoes are practical and worn: good-condition but aging synthetic leather boots or slip-ons, kept clean but not polished. A dark hooded jacket or long coat for movement between locations. No visible jewelry except occasionally a simple wrist cuff in matte black that covers the eye tattoo. Accessorizes with a shoulder bag or messenger satchel (no obvious branding, worn leather, practical organization). Overall aesthetic: someone dressing for utility and invisibility, not expression. Clothes are replaced before they become notable; nothing torn, nothing flashy."
-  },
-  "image_prompt": "GLMZ, portrait of Apollonia Espinoza, 168cm lean mixed-heritage figure with warm golden-tan skin reflecting East Asian, Latin American, and South Asian ancestry. Dark brown eyes with subtle epicanthic fold, defined cheekbones, softly angular face with mid-face fullness. Chin-length blunt black hair, neutral expression of calm focus. Wears dark charcoal long-sleeved layered shirt, fitted dark vest, aged synthetic leather boots. Matte black wrist cuff covering small eye tattoo on left inner wrist. Faint silver-gray lattice of subdermal microfabricator array visible on right palm under bright neon-blue accent lighting. Shoulder messenger satchel, worn leather. Neutral posture, centered weight, precise economical movement. Standing in dimly lit GLMZ corridor or indistinct urban setting, sharp focus on face and hands. Neo-noir dystopian atmosphere with subtle neon accent lighting. High detail, photorealistic, cinematic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 45.2,
-    "Hispanic/Latin American": 32.8,
-    "South Asian": 10.5,
-    "Indigenous American": 9.8,
-    "Southeast Asian": 1.7
-  },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
-  "ancestry_detail": {
-    "East Asian": {
-      "Chinese": {
-        "Mandarin Northern": 12.6,
-        "Cantonese": 13.5
-      },
-      "Japanese": {
-        "Japanese": 19.1
-      }
-    },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 8.9
-      },
-      "Central American": {
-        "Honduran": 23.9
-      }
-    },
-    "South Asian": {
-      "Bangladeshi": {
-        "Bangladeshi": 10.5
-      }
-    },
-    "Indigenous American": {
-      "Mesoamerican": {
-        "Zapotec": 3.7
-      },
-      "Plains Nations": {
-        "Cherokee": 3.2,
-        "Lakota": 2
-      },
-      "Andean": {
-        "Aymara": 0.9
-      }
-    },
-    "Southeast Asian": {
-      "Indonesian": {
-        "Javanese": 1.6
-      },
-      "Cambodian": {
-        "Khmer": 0.1
-      }
-    }
-  },
-  "tier": "3"
+﻿{
+    "id":  "019d6143a6c475b3bdb0aabbfe507da5",
+    "type":  "character",
+    "name":  "Apollonia Espinoza",
+    "aliases":  [
+
+                ],
+    "species":  "human",
+    "gender":  "nonbinary",
+    "pronouns":  "they/them",
+    "role":  "Fake ID vendor and identity documents forger â€” The Alban Souk",
+    "age":  27,
+    "status":  "active",
+    "location":  "The Alban Souk, Hamtramck Enclave, near Pulaski and Chicago Ave",
+    "description":  "Apollonia Espinoza is the kind of person you notice and immediately forget, which is the point. Medium height, medium build, features that read as generically pleasant â€” warm light-brown skin, dark eyes, hair that is currently an unremarkable chin-length black but was a different color last week and will be again next week. They have a cosmetic geneware mod that lets them adjust their hair color through a dermal panel on the back of their neck, and they use it strategically to match moods, blend into crowds, or signal to regular clients what kind of day it is (black means business, dark red means they\u0027re watching, deep green means come back later). The only consistent physical detail is a small tattoo of an open eye on the inside of their left wrist, which they cover when working.\n\nTheir stall front is officially a document services and notarization kiosk â€” perfectly legal, mildly boring, doing a modest but real trade in legitimate bureaucratic services for the enclave\u0027s large population of people whose papers are perpetually in some state of incompleteness. The back half of the business happens in a rented room above a noodle shop forty meters away, which they visit by a route they vary daily. They are calm, precise, and give off a faint air of someone taking a very long test that never ends.",
+    "psychology":  {
+                       "core_fears":  [
+                                          "Being fully known by anyone â€” the loss of the buffer between self and world",
+                                          "That one day they will forget who they actually are beneath all the constructed faces"
+                                      ],
+                       "core_desires":  [
+                                            "To build one identity â€” their own â€” that feels true and unreachable by anyone who wants to use or erase it",
+                                            "Financial stability enough to stop taking high-risk clients"
+                                        ],
+                       "coping_mechanisms":  [
+                                                 "Maintaining obsessive operational routines as a substitute for emotional structure",
+                                                 "Collecting small objects from each significant client as a private archive they don\u0027t examine too closely",
+                                                 "Hair color changes as mood regulation"
+                                             ],
+                       "blind_spots":  [
+                                           "Has told themselves their work is purely transactional so many times they\u0027ve stopped asking what happens to the people they give new faces to",
+                                           "Trusts systems and routines more than people, which means they are completely unprepared for system failures"
+                                       ],
+                       "secret":  "They built and maintain a fully functional identity for a person who doesn\u0027t exist â€” complete biometric trail, employment history, credit record, social profile â€” and they use it to live parts of their life that they want kept separate from everything else, including their own name."
+                   },
+    "speech_patterns":  {
+                            "vocabulary":  "Spare and precise, no word wasted; slips into slightly more formal register when nervous, which reads as calm",
+                            "cadence":  "Even and measured, with deliberate pauses before anything important",
+                            "verbal_tics":  [
+                                                "a soft \u0027mm\u0027 before answering anything they\u0027re thinking about",
+                                                "rarely uses names, addresses people by context instead (\u0027the person you asked about\u0027, \u0027your situation\u0027)"
+                                            ],
+                            "example_lines":  [
+                                                  "\u0027I don\u0027t need to know why. I do need to know whether anyone is currently looking for the name you\u0027re leaving behind â€” that affects the timeline.\u0027",
+                                                  "\u0027The legitimate service is real. The notarization is real. Everything here is real. What you\u0027re asking about requires a different conversation, somewhere else, after I\u0027ve had time to think.\u0027"
+                                              ]
+                        },
+    "relationships":  [
+
+                      ],
+    "story_hooks":  [
+                        "A client from six months ago has resurfaced â€” not the person they built the identity for, but someone using it who has no idea where it came from, which means the original client sold it or was taken",
+                        "A Hamtramck Ledger enforcer has been sniffing around the kiosk in a way that feels like leverage-gathering rather than routine tax collection",
+                        "Their phantom identity â€” the one they built for themselves â€” has started appearing in Axiom corporate databases in a context they didn\u0027t create"
+                    ],
+    "narrative_function":  "Procurement contact for false identities and documentation; information broker adjacent â€” they know who in the enclave is trying to become someone else, and why.",
+    "augmentations":  "Color-shift hair geneware (cosmetic, strategic). Subdermal microfabricator array in dominant hand (functional â€” allows high-precision document printing without external equipment).",
+    "daily_life":  "Runs the legitimate kiosk from morning to mid-afternoon, takes a two-hour break that is actually when they do their real work, returns for the evening rush of people needing their paperwork witnessed, and spends nights updating their identity template library.",
+    "affiliation":  "Independent; pays informal street tax to a local crew called the Hamtramck Ledger without being formally affiliated",
+    "narration_voice":  "",
+    "stats":  {
+                  "physical":  {
+                                   "strength":  4,
+                                   "dexterity":  8,
+                                   "vitality":  5,
+                                   "perception":  9
+                               },
+                  "mental":  {
+                                 "cognition":  9,
+                                 "willpower":  7,
+                                 "creativity":  8,
+                                 "spatial":  6
+                             },
+                  "social":  {
+                                 "presence":  5,
+                                 "empathy":  6,
+                                 "expression":  4,
+                                 "integrity":  5
+                             },
+                  "personality":  {
+                                      "openness_conviction":  1,
+                                      "empathy_detachment":  2,
+                                      "impulsivity_deliberation":  4,
+                                      "assertion_deference":  0,
+                                      "transparency_guardedness":  5
+                                  },
+                  "drives":  [
+
+                             ],
+                  "thresholds":  {
+
+                                 },
+                  "strengths":  [
+
+                                ],
+                  "weaknesses":  [
+
+                                 ],
+                  "tags":  [
+                               "forger",
+                               "identity architect",
+                               "operational security",
+                               "mask wearer",
+                               "enclave fixture"
+                           ]
+              },
+    "behavioral":  {
+                       "decision_rules":  [
+                                              "Operational security above convenience, always",
+                                              "Never take a client who is in active pursuit â€” only people moving away from something, not running from something chasing them right now",
+                                              "Leave no loose ends in paperwork"
+                                          ],
+                       "escalation_ladder":  [
+                                                 "Politely declines and redirects",
+                                                 "Goes very still and very formal",
+                                                 "Activates a pre-planned exit protocol and is simply not at the kiosk tomorrow",
+                                                 "Disappears entirely into the phantom identity if forced"
+                                             ],
+                       "interpersonal_modes":  {
+                                                   "strangers":  "Pleasant, helpful, thoroughly opaque â€” a perfect service professional surface",
+                                                   "friends":  "Rare, but when someone has earned it, they are disarmingly genuine and surprisingly warm, which they find embarrassing"
+                                               },
+                       "stress_responses":  {
+                                                "low":  "Reorganizes their template archive",
+                                                "medium":  "Changes their hair, reroutes their daily path, audits every recent transaction",
+                                                "high":  "Activates a pre-built contingency scenario and methodically disappears from current patterns"
+                                            },
+                       "contradictions":  [
+                                              "Desperately wants to be known by someone but has built their entire life to prevent it"
+                                          ],
+                       "habits":  [
+                                      "Changes their route to the back room every day without fail",
+                                      "Keeps a small collection of objects from significant clients in a locked tin they\u0027ve never opened",
+                                      "Reads every piece of legitimate paperwork they process with genuine attention"
+                                  ],
+                       "breaking_points":  [
+                                               "Having their actual identity â€” not a constructed one â€” exposed to someone with power over them",
+                                               "Being asked to build an identity for someone they know is going to hurt the person the identity is taken from"
+                                           ]
+                   },
+    "cyberware_inventory":  [
+
+                            ],
+    "belongings":  {
+                       "primary_weapon":  "",
+                       "secondary_weapon":  "",
+                       "armor":  "",
+                       "vehicle":  "",
+                       "residence":  "",
+                       "clothing_style":  "",
+                       "favorite_drink":  "",
+                       "favorite_food":  "",
+                       "stimulant":  "",
+                       "comm_device":  "",
+                       "signature_gear":  [
+
+                                          ],
+                       "pharmaceuticals":  [
+
+                                           ],
+                       "other":  {
+
+                                 }
+                   },
+    "archetypes":  {
+                       "Networker":  0.9,
+                       "Opportunist":  0.9
+                   },
+    "operating_territory":  {
+                                "home_turf":  "The Alban Souk",
+                                "familiar_zones":  [
+
+                                                   ],
+                                "zone_reputation":  {
+
+                                                    },
+                                "no_go_zones":  [
+
+                                                ],
+                                "range":  "local"
+                            },
+    "timeline":  [
+
+                 ],
+    "changelog":  [
+
+                  ],
+    "carried_weapons":  [
+                            "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027"
+                        ],
+    "registered_firearms":  [
+                                "Hearthstone Firearms Guardian-12 \u0027Bedside\u0027"
+                            ],
+    "related_entities":  [
+                             "Hamtramck Enclave",
+                             "The Alban Souk",
+                             "ShieldTech Enforcer DM-4 \u0027Crossover\u0027",
+                             "Chicago",
+                             "Akosua Johansson",
+                             "DÃ©jÃ  Vu"
+                         ],
+    "district":  "the Gray Zone",
+    "physical_description":  {
+                                 "heritage":  "Predominantly East Asian (45.2%) with substantial Hispanic/Latin American ancestry (32.8%), complemented by South Asian (10.5%), Indigenous American (9.8%), and Southeast Asian (1.7%) genetic contributions. This genetic profile reflects the Ubiquitous Diaspora\u0027s characteristic global recombinationâ€”East Asian features as primary phenotype, enriched by Latin American warmth and South Asian definition, with subtle Indigenous American bone structure influence. The result is a distinctly mixed phenotype: East Asian eye shape and cheekbone prominence married to Latin American and South Asian mid-face proportions, with Indigenous American influences visible in subtle jaw and orbital structure.",
+                                 "height_cm":  168,
+                                 "weight_kg":  62,
+                                 "build":  "Lean and compact, economical in movement â€” the build of someone who takes up only as much space as necessary. Minimal visible musculature; wiry rather than athletic.",
+                                 "hair_color":  "Currently black; cosmetically mutable via subdermal geneware panel",
+                                 "hair_style":  "Blunt cut, chin-length, styled to sit neutrally around the face â€” neither masculine nor feminine in presentation, deliberately unremarkable",
+                                 "hair_length":  "Medium",
+                                 "eye_color":  "Dark brown, unremarkable luminosity",
+                                 "skin_tone":  "Warm medium-tan with golden-amber undertonesâ€”characteristic East Asian base enriched by Latin American and South Asian warmth. Even tone across face and body, suggesting genetic blending across multiple ancestry groups rather than single geographic origin.",
+                                 "complexion":  "Clean, well-maintained skin with a matte finish â€” minimal scarring, no visible acne. Face is softly angular with defined cheekbones reflecting East Asian primary ancestry, with mid-face fullness and jaw structure showing Latin American and South Asian influence. Mild epicanthic fold at eye corners consistent with dominant East Asian genetics; subtle broadening of nasal base reflecting South Asian and Latin American heritage. Expression defaults to neutral attentiveness. Eyebrows are dark and groomed but not styled. No facial hair.",
+                                 "distinguishing_marks":  [
+                                                              "Small tattoo of an open eye (approximately 2cm diameter) on the inner surface of the left wrist â€” usually concealed during work hours with a wrist cuff or sleeve",
+                                                              "Faint surgical scar along the back of the neck, approximately 4cm, barely visible unless hair is pulled away â€” location of dermal hair-color modification panel"
+                                                          ],
+                                 "visible_augmentations":  "The back-of-neck dermal panel is occasionally visible as a faint rectangular outline beneath the skin when hair is wet or pulled tightly back, but remains concealed under normal circumstances. The subdermal microfabricator array in the dominant hand (right) shows as a faint lattice of silver-gray lines beneath the skin across the palm and inner forearm, visible only at close range or in bright light. No external chrome or obvious technological modification.",
+                                 "posture_movement":  "Stands with weight centered, shoulders relaxed but not slouched â€” a neutral baseline posture that broadcasts neither confidence nor anxiety. Moves with deliberate precision; economical gestures. Hands move with practiced control. Overall impression is of someone perpetually in a state of calm focus, as if solving a complex problem in real time. Maintains slight distance in social contexts; does not fidget.",
+                                 "clothing_style":  "Tier 3-4 blend: functional, well-maintained, deliberately unmemorable. Typically wears neutral-toned layered clothing â€” charcoal or dark gray long-sleeved shirts, sometimes a fitted dark vest without logos. Dark trousers (black or dark gray), always with functional pockets. Shoes are practical and worn: good-condition but aging synthetic leather boots or slip-ons, kept clean but not polished. A dark hooded jacket or long coat for movement between locations. No visible jewelry except occasionally a simple wrist cuff in matte black that covers the eye tattoo. Accessorizes with a shoulder bag or messenger satchel (no obvious branding, worn leather, practical organization). Overall aesthetic: someone dressing for utility and invisibility, not expression. Clothes are replaced before they become notable; nothing torn, nothing flashy."
+                             },
+    "image_prompt":  "GLMZ, portrait of Apollonia Espinoza, 168cm lean mixed-heritage figure with warm golden-tan skin reflecting East Asian, Latin American, and South Asian ancestry. Dark brown eyes with subtle epicanthic fold, defined cheekbones, softly angular face with mid-face fullness. Chin-length blunt black hair, neutral expression of calm focus. Wears dark charcoal long-sleeved layered shirt, fitted dark vest, aged synthetic leather boots. Matte black wrist cuff covering small eye tattoo on left inner wrist. Faint silver-gray lattice of subdermal microfabricator array visible on right palm under bright neon-blue accent lighting. Shoulder messenger satchel, worn leather. Neutral posture, centered weight, precise economical movement. Standing in dimly lit GLMZ corridor or indistinct urban setting, sharp focus on face and hands. Neo-noir dystopian atmosphere with subtle neon accent lighting. High detail, photorealistic, cinematic. --ar 2:3 --v 6",
+    "genetic_ancestry":  {
+                             "East Asian":  45.2,
+                             "Hispanic/Latin American":  32.8,
+                             "South Asian":  10.5,
+                             "Indigenous American":  9.8,
+                             "Southeast Asian":  1.7
+                         },
+    "ancestry_harmonized":  true,
+    "tags":  [
+                 "person",
+                 "sentient",
+                 "human"
+             ],
+    "ancestry_detail":  {
+                            "East Asian":  {
+                                               "Chinese":  {
+                                                               "Mandarin Northern":  12.6,
+                                                               "Cantonese":  13.5
+                                                           },
+                                               "Japanese":  {
+                                                                "Japanese":  19.1
+                                                            }
+                                           },
+                            "Hispanic/Latin American":  {
+                                                            "Mexican":  {
+                                                                            "Mexican":  8.9
+                                                                        },
+                                                            "Central American":  {
+                                                                                     "Honduran":  23.9
+                                                                                 }
+                                                        },
+                            "South Asian":  {
+                                                "Bangladeshi":  {
+                                                                    "Bangladeshi":  10.5
+                                                                }
+                                            },
+                            "Indigenous American":  {
+                                                        "Mesoamerican":  {
+                                                                             "Zapotec":  3.7
+                                                                         },
+                                                        "Plains Nations":  {
+                                                                               "Cherokee":  3.2,
+                                                                               "Lakota":  2
+                                                                           },
+                                                        "Andean":  {
+                                                                       "Aymara":  0.9
+                                                                   }
+                                                    },
+                            "Southeast Asian":  {
+                                                    "Indonesian":  {
+                                                                       "Javanese":  1.6
+                                                                   },
+                                                    "Cambodian":  {
+                                                                      "Khmer":  0.1
+                                                                  }
+                                                }
+                        },
+    "tier":  "3"
 }
