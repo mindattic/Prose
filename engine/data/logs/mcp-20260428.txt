@@ -211,3 +211,112 @@ System.Text.Json.JsonException: The JSON value could not be converted to System.
 2026-04-28 20:51:16.435 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (smoke-test 0.0) method 'tools/call' request handler completed in 2038.8498ms.
 2026-04-28 20:51:16.445 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) shutting down.
 2026-04-28 20:51:16.445 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) shut down.
+2026-04-28 21:23:21.409 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-04-28 21:23:21.478 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-04-28 21:23:21.495 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'initialize' request handler completed in 14.0755ms.
+2026-04-28 21:23:54.398 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-04-28 21:23:54.469 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-04-28 21:23:54.485 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler called.
+2026-04-28 21:23:54.486 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'initialize' request handler completed in 14.3999ms.
+2026-04-28 21:23:54.493 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler completed in 7.2573ms.
+2026-04-28 21:29:31.161 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport completed reading messages.
+2026-04-28 21:29:36.684 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-04-28 21:29:36.751 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-04-28 21:29:36.767 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'initialize' request handler completed in 13.2441ms.
+2026-04-28 21:29:36.770 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler called.
+2026-04-28 21:29:36.776 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler completed in 6.1694ms.
+2026-04-28 21:30:33.121 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-04-28 21:30:33.184 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-04-28 21:30:33.199 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'initialize' request handler completed in 12.5255ms.
+2026-04-28 21:31:40.614 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport completed reading messages.
+2026-04-28 21:31:47.121 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-04-28 21:31:47.185 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-04-28 21:31:47.200 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler called.
+2026-04-28 21:31:47.202 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'initialize' request handler completed in 13.2007ms.
+2026-04-28 21:31:47.206 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler completed in 6.2518ms.
+2026-04-28 22:09:11.148 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport completed reading messages.
+2026-04-28 22:09:25.518 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-04-28 22:09:25.607 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-04-28 22:09:25.637 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'initialize' request handler completed in 25.3723ms.
+2026-04-28 22:09:25.737 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler called.
+2026-04-28 22:09:25.752 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler completed in 14.5691ms.
+2026-04-28 22:10:00.523 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport completed reading messages.
+2026-04-28 22:10:29.785 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-04-28 22:10:29.850 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-04-28 22:10:29.864 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler called.
+2026-04-28 22:10:29.865 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'initialize' request handler completed in 12.6753ms.
+2026-04-28 22:10:29.871 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler completed in 6.7085ms.
+2026-04-28 22:11:46.353 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler called.
+2026-04-28 22:11:46.399 -05:00 [WRN] Failed to load book from D:\Projects\MindAttic\StreetSamurai\engine\data\books\de7b5d9c9eb4796b84c1a1fb29c1bd27.json
+System.Text.Json.JsonException: The JSON value could not be converted to System.Nullable`1[System.DateTime]. Path: $.state_at_end.in_world_time | LineNumber: 25 | BytePositionInLine: 103.
+ ---> System.FormatException: The JSON value is not in a supported DateTime format.
+   at System.Text.Json.ThrowHelper.ThrowFormatException(DataType dataType)
+   at System.Text.Json.Utf8JsonReader.GetDateTime()
+   at System.Text.Json.Serialization.Converters.NullableConverter`1.Read(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.ReadJsonAndSetMember(Object obj, ReadStack& state, Utf8JsonReader& reader)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, Utf8JsonReader& reader, Exception ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, T& value, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.Deserialize(Utf8JsonReader& reader, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at StreetSamurai.Core.Services.JsonBookRepository.LoadFromFile(String path) in D:\Projects\MindAttic\StreetSamurai\v3\StreetSamurai.Core\Services\JsonBookRepository.cs:line 85
+2026-04-28 22:11:46.416 -05:00 [INF] "list_books" completed. IsError = false.
+2026-04-28 22:11:46.417 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler completed in 63.7651ms.
+2026-04-28 22:11:46.421 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler called.
+2026-04-28 22:11:47.384 -05:00 [INF] "get_character" completed. IsError = false.
+2026-04-28 22:11:47.385 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler completed in 963.9062ms.
+2026-04-28 22:11:53.259 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler called.
+2026-04-28 22:11:53.263 -05:00 [INF] "get_book" completed. IsError = false.
+2026-04-28 22:11:53.264 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler completed in 4.6051ms.
+2026-04-28 22:11:57.506 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler called.
+2026-04-28 22:11:57.515 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-04-28 22:11:57.515 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler completed in 8.7119ms.
+2026-04-28 22:13:33.546 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler called.
+2026-04-28 22:13:33.549 -05:00 [INF] "get_chapter" completed. IsError = false.
+2026-04-28 22:13:33.550 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler completed in 4.0048ms.
+2026-04-28 22:13:58.689 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler called.
+2026-04-28 22:13:59.314 -05:00 [INF] Start processing HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:13:59.316 -05:00 [INF] Sending HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:14:09.638 -05:00 [INF] Received HTTP response headers after 10319.8482ms - 200
+2026-04-28 22:14:09.638 -05:00 [INF] End processing HTTP request after 10326.7851ms - 200
+2026-04-28 22:14:09.641 -05:00 [INF] Claude response: model=claude-sonnet-4-6, responseLen=1436
+2026-04-28 22:14:09.646 -05:00 [INF] Start processing HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:14:09.646 -05:00 [INF] Sending HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:14:20.604 -05:00 [INF] Received HTTP response headers after 10958.1986ms - 200
+2026-04-28 22:14:20.605 -05:00 [INF] End processing HTTP request after 10958.4612ms - 200
+2026-04-28 22:14:20.605 -05:00 [INF] Claude response: model=claude-sonnet-4-6, responseLen=1395
+2026-04-28 22:14:20.606 -05:00 [INF] Start processing HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:14:20.606 -05:00 [INF] Sending HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:14:32.444 -05:00 [INF] Received HTTP response headers after 11838.2132ms - 200
+2026-04-28 22:14:32.444 -05:00 [INF] End processing HTTP request after 11838.4868ms - 200
+2026-04-28 22:14:32.444 -05:00 [INF] Claude response: model=claude-sonnet-4-6, responseLen=1608
+2026-04-28 22:14:32.445 -05:00 [INF] Start processing HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:14:32.445 -05:00 [INF] Sending HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:14:49.369 -05:00 [INF] Received HTTP response headers after 16924.0337ms - 200
+2026-04-28 22:14:49.369 -05:00 [INF] End processing HTTP request after 16924.2646ms - 200
+2026-04-28 22:14:49.370 -05:00 [INF] Claude response: model=claude-sonnet-4-6, responseLen=2287
+2026-04-28 22:14:49.371 -05:00 [INF] Start processing HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:14:49.371 -05:00 [INF] Sending HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:15:07.632 -05:00 [INF] Received HTTP response headers after 18261.49ms - 200
+2026-04-28 22:15:07.633 -05:00 [INF] End processing HTTP request after 18261.7989ms - 200
+2026-04-28 22:15:07.633 -05:00 [INF] Claude response: model=claude-sonnet-4-6, responseLen=2644
+2026-04-28 22:15:07.634 -05:00 [INF] Start processing HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:15:07.634 -05:00 [INF] Sending HTTP request POST https://api.anthropic.com/v1/messages
+2026-04-28 22:15:26.143 -05:00 [INF] Received HTTP response headers after 18509.2666ms - 200
+2026-04-28 22:15:26.143 -05:00 [INF] End processing HTTP request after 18509.4345ms - 200
+2026-04-28 22:15:26.143 -05:00 [INF] Claude response: model=claude-sonnet-4-6, responseLen=2545
+2026-04-28 22:15:26.148 -05:00 [INF] "draft_combat_scene" completed. IsError = false.
+2026-04-28 22:15:26.150 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/call' request handler completed in 87460.679ms.
+2026-04-28 22:26:54.061 -05:00 [INF] Server (stream) (StreetSamurai.Mcp) transport reading messages.
+2026-04-28 22:26:54.131 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0) method 'initialize' request handler called.
+2026-04-28 22:26:54.146 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler called.
+2026-04-28 22:26:54.148 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'initialize' request handler completed in 13.372ms.
+2026-04-28 22:26:54.153 -05:00 [INF] Server (StreetSamurai.Mcp 1.0.0.0), Client (claude-code 2.1.122) method 'tools/list' request handler completed in 7.107ms.

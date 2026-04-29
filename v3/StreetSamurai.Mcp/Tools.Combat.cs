@@ -17,7 +17,8 @@ namespace StreetSamurai.Mcp;
 // caller is expected to review and stage the output (e.g. validate_canon_text
 // + analyze_writing_quality) before persisting it into a chapter.
 
-[McpServerToolType]
+// [McpServerToolType] — disabled: combat scenes go through hand-written prose,
+// not the MCP draft pipeline. Uncomment to re-expose draft_combat_scene.
 public class CombatTools
 {
     private readonly CombatSceneWriter writer;

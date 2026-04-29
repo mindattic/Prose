@@ -1,0 +1,117 @@
+{
+  "id": "0260c60e7a18b1e4d5f6a708b9c0d1e2",
+  "type": "faction",
+  "name": "The Vultures",
+  "aliases": [
+    "Bone Collectors",
+    "Last Responders",
+    "Doorstep Repo",
+    "The Ghoul Crew",
+    "Pickup",
+    "Carrion Logistics LLC (registered name, never spoken)"
+  ],
+  "motto": "We were already coming.",
+  "description": "The Vultures are the GLMZ's body-pickup-and-disposal layer — the men who arrive after the shooting stops, before the blood has finished pooling, with unmarked refrigerated panel trucks and the specific bored efficiency of people who do the same job two or three times a night. Officially they are licensed corpse-removal contractors, registered under the bureaucratic shell name Carrion Logistics LLC, holding municipal hauling permits and chain-of-custody paperwork that would survive a routine audit if anyone ever ordered one, which no one does. Unofficially they are a federation of ghouls with overlapping jurisdictions, mutual non-aggression treaties, and an internal economy denominated in flesh, chrome, and gold.\n\nTheir history begins in the late 2180s, when GLMZ's collapse-era municipal services stopped collecting bodies from the Tier 1 streets and the corponations declined to fill the gap. Independent operators stepped in — first as scavengers stripping the dead for resaleable cyberware, then, as the volume scaled, as something resembling a sanitation infrastructure. By 2195 the trade had professionalized enough that the surviving syndicates began hiring Vultures on retainer for cleanup after their own work, and by 2210 the city itself was paying them per-pickup fees out of an unmarked sub-budget. The arrangement was not formalized into anything anyone would be willing to put their name on. It still is not. The Vultures continue to operate in the legal grey because the legal grey is the substrate they evolved in and they would not survive being moved to clean ground.\n\nThe primary trade is body removal. A Vulture crew arrives within twenty minutes of a notification — sometimes faster, depending on which district and which channel called them — and processes the scene with a checklist that has been refined over four decades: confirm cessation of vital signs (a formality, occasionally relevant), identify the body if possible (often they do not bother), tag the body with their internal manifest barcode, load, depart. The destination depends on the contract. Most bodies go to the contracted client — usually a crematorium, a research facility, an organ processor, or one of the corponation specimen-intake channels that accept unclaimed dead. Some go to the morgue and the dignified municipal end. Some go to buyers the Vultures find on their own, after they have stripped what they can sell off the body in transit.\n\nWhich is the second trade. Every Vulture crew pre-processes the body before delivery. Cyberware is harvested — anything tier-2 or above, anything with a resale market, anything that comes out cleanly with the equipment they keep in the truck bed. Jewelry, weapons, the contents of pockets. What goes onto the delivery dock is a body that has been culled of value. The clients know. The clients have always known. The clients pay the Vultures' rate because the alternative is doing the pickup themselves, which is not a thing anyone wants to do, so the skim is priced into the relationship and nobody talks about it. A body delivered to a research facility arrives with its NeoCortex array intact (the array is the product) but without the Tier 4 cardiac regulator and without the chrome jaw and without the watch on the wrist. The skim is structural.\n\nThe third trade is the one the Vultures are most known for in the residential sector and most denied in their official communications: organ repossession. When a citizen finances a replacement organ — kidney, liver, retinal array, cardiac valve — through one of the consumer-credit BCI lenders, the contract specifies a payment schedule and a default clause. If the citizen falls behind on payments past the grace period, the lender contracts the Vultures to repossess the asset. A two-man crew arrives at the residence in matching gray uniforms with the Carrion Logistics insignia stitched in matte black on the left chest. They knock. They present the paperwork. They are calm and professional. They are not police but they are licensed contractors and the law permits them to enter under the financing agreement's cooperation clause. The citizen has the right to call counsel. Counsel will not arrive in time. The procedure is performed on the citizen's kitchen table or living room floor with portable surgical equipment and analgesic that is administered at the technician's discretion. The organ is recovered. The citizen, if they survive, is left with a referral to a charity clinic and a balance-due notice for the remaining principal. The phrase *Vultures on the doorstep* is GLMZ shorthand for the worst day of someone's life.\n\nThe trade has scaled. The Vultures employ approximately four hundred field technicians across the GLMZ, organized into twelve dispatch nodes corresponding loosely to the city's territorial map. Each node has a senior Vulture who runs the schedule and arbitrates disputes. There is no central leadership — the federation operates by treaty between the nodes, with periodic cross-node meetings to rebalance jurisdictions and adjust the internal market in salvaged parts. The closest thing to a head is an elderly woman called Elder Marrow who has been arbitrating inter-node disputes since the late 2190s and whose actual name and residence are unknown to the technicians who work for her.\n\nThe Vultures do not kill anyone. This is the line, and it is a real line. Killing creates rivals and disrupts the supply chain; arriving after the killing keeps the supply chain reliable and the rivals minimal. A Vulture crew that initiates a homicide is dispatched by the federation itself, and the offending crew becomes its own pickup. This has happened seven times in twenty years and the seven times are how the rule stays a rule.",
+  "ideology": "Pure scavenging pragmatism. The Vultures do not believe in justice, vengeance, mercy, or meaning. They believe in the schedule, the manifest, the chain-of-custody form, and the per-unit rate. The body is a bill of materials. The flesh is a perishable consumable. The cyberware is the line item. The dignity of the deceased is a service the Vultures do not offer because no one has ever been willing to pay for it at the rate it would cost. They do not enjoy their work. They do not hate it. They show up.\n\nThe internal code, such as it is: pick up promptly, deliver on schedule, do not start a fight that wasn't already finished, do not skim above the published informal rate (currently 18% of a body's resale value, by federation convention), do not lie on the chain-of-custody paperwork (skim is fine; lying about the skim is not), and do not under any circumstances move on a body that is still breathing unless the contract is an organ repossession with proper paperwork. The line between scavenger and predator is the only line they enforce, because crossing it would turn the entire city against them and the city is currently too tired to bother.",
+  "territory": "GLMZ-wide. Twelve dispatch nodes corresponding loosely to the named territories. Highest activity in the Gray Zone, the Circuit, and the lower industrial tiers near Old Harbor. Lower activity but premium rates in the Core, where bodies are rarer and the salvage on each is significantly higher. The Settling and the periphery sectors are serviced by floating crews on retainer to the nearest dispatch node.",
+  "leadership": "Federated structure with no central leader. Twelve dispatch nodes, each run by a senior Vulture who arbitrates schedules and disputes within the node. The federation as a whole answers to Elder Marrow, an elderly woman whose actual name and residence are unknown to the technicians who work for her. She arbitrates inter-node disputes and adjusts the internal market in salvaged parts via untraceable cipher messages delivered by courier. She has held the role since approximately 2196.",
+  "methods": [
+    "Body pickup after shootouts, accidents, overdoses, and natural deaths in unattended residences — twenty-minute response window in most districts",
+    "Pre-delivery body stripping — cyberware tier-2 and above, jewelry, weapons, pocket contents — known and priced into all delivery contracts at an 18% federation-standard skim",
+    "Organ repossession at residences — licensed under consumer-credit financing default clauses; portable surgical equipment, analgesic at the technician's discretion, balance-due notice on departure",
+    "Specimen-intake delivery to corponation research facilities — Atlas-program continuation labs, BCI research outfits, gene-therapy houses, anyone who buys bodies wholesale",
+    "Cold-chain transport for high-value salvage — the trucks are refrigerated; the refrigeration also extends preservation windows for premium delivery routes",
+    "Discreet contract delivery — for an additional fee, the Vultures will deliver a body to a non-standard destination without asking questions, which has been used at least once by Hua of the Lotus Syndicate to insert a False Death Protocol subject into an Atlas-program facility under specimen cover"
+  ],
+  "resources": [
+    "Fleet of approximately ninety unmarked refrigerated panel trucks, distributed across the twelve dispatch nodes",
+    "Internal salvage market — the federation runs an in-house auction for harvested cyberware, jewelry, and tier-grade biological material; nodes trade across the market by federation convention",
+    "Standing contracts with nine major corponation research facilities (specimen intake), four municipal crematoria, two registered organ processors, and an unknown number of black-market buyers",
+    "Insider notification network — paid relationships with Arcturus Civil Security dispatch, Lotus Syndicate scene-clearers, the Iron Lotus's clinic intake desks, and at least three private medical responder services who route death notifications to Carrion Logistics for a per-pickup kickback",
+    "Carrion Logistics LLC paperwork shell — municipal hauling permits, business registration, filed taxes, the full appearance of a legitimate sanitation contractor",
+    "The Doorstep Database — the federation's internal record of every consumer-credit organ-financing contract in the GLMZ, cross-indexed against payment status; updated daily; the data feed that drives the repossession schedule",
+    "Approximately four hundred trained field technicians — most cross-trained in basic surgical recovery, body handling, and the discretion required to do the work in a residential setting without alarming the neighbors"
+  ],
+  "goals": [
+    "Maintain the federation's monopoly on legal body-pickup contracts in the GLMZ",
+    "Expand the residential organ-repossession trade as consumer-credit financing scales — projected to be the federation's largest revenue stream within five years",
+    "Lock in long-term specimen-supply contracts with the Atlas-program continuation labs before competing scavenger networks formalize their own paperwork shells",
+    "Acquire and quietly retire any independent body-pickup operator who has been working without paying federation tribute — currently estimated at fewer than thirty operators citywide, down from over a hundred a decade ago",
+    "Keep Elder Marrow's identity and location unknown — both as an operational safeguard and as the symbolic spine the federation organizes itself around"
+  ],
+  "relationships": [
+    {
+      "name": "The Iron Lotus / Lotus Syndicate",
+      "type": "frequent client / mutual respect",
+      "description": "Lotus uses the Vultures for nearly all post-engagement scene clearance. Lotus crews call the Vultures the moment a contract closes, sometimes before the bodies have stopped twitching. The Vultures price Lotus contracts at the standard federation rate. Hua of the south-arm cell has used the Vultures for at least one non-standard delivery — a False Death Protocol subject inserted into an Atlas-program facility under specimen cover."
+    },
+    {
+      "name": "Axiom Defense Solutions",
+      "type": "research-facility client / quiet supplier relationship",
+      "description": "Axiom's research divisions buy specimens from the Vultures wholesale. The arrangement is not contractual — Axiom does not contract with the federation directly — but the per-body intake price has been stable for over a decade and the volume is reliable. The Vultures know better than to ask what Axiom does with the bodies."
+    },
+    {
+      "name": "Arcturus Civil Security",
+      "type": "operational coordination / kickback relationship",
+      "description": "Arcturus dispatch routes scene-clearance notifications to the Vultures by default. The Vultures pay a per-pickup kickback to Arcturus dispatch officers, structured as a 'route coordination fee.' The arrangement saves Arcturus the trouble of clearing scenes themselves and pays Arcturus dispatch for the privilege of not doing so."
+    },
+    {
+      "name": "Consumer-credit BCI lenders (multiple)",
+      "type": "primary client / organ repossession contract pipeline",
+      "description": "The lenders contract the Vultures for residential organ repossession on defaulted financing agreements. The Doorstep Database is jointly maintained — the lenders supply the payment-status data, the Vultures supply the field execution. The arrangement has scaled rapidly over the last six years and is the federation's projected primary revenue stream within five."
+    },
+    {
+      "name": "Independent body-pickup operators",
+      "type": "competitor / acquisition target",
+      "description": "A shrinking population of unaffiliated scavengers who work scenes the federation has not formally claimed. The Vultures absorb them by offering federation membership at favorable terms; if the operator declines, the federation declines to pick up the operator's eventual body in a timely manner, which is the strongest message the federation knows how to send."
+    }
+  ],
+  "narrative_function": "The Vultures are the GLMZ's economic argument that a body is only ever worth its salvage value. They are not villainous. They are not framed as villainous. They are a city service in the sense that garbage collection is a city service — present, inevitable, professional, and morally neutral about the nature of the materials they handle. The horror they produce is not in any individual act but in the existence of the federation as a whole: a city has decided that its dead are a tradable commodity and built the logistics layer to monetize the decision.\n\nIn Bushido Coda chapter 5 (Street Meat), Hua calls the Vultures to deliver Kyle's False-Death-Protocol-flatlined body to the Atlas-program facility holding Dr. Nadia Onyekachi-Park. The Vultures process Kyle the way they process everything — manifest tag, refrigerated transport, specimen-intake delivery — and the horror beat is procedural: the city has a service for this, the service is paid for, the chain of custody is in order, and a man's voluntary cardiac arrest is just one more pickup on a Tuesday route.\n\nThey are also the seed for a future standalone story — *Vultures on the Doorstep* — where the residential organ-repossession trade gets the chapter-length treatment it deserves. The body-as-collateral economy is the GLMZ's substrate; the Vultures are the substrate's enforcement layer.",
+  "story_hooks": [
+    "Vultures on the Doorstep — a man hears the knock at three in the morning and recognizes the gray uniforms through the peephole; he has known this was coming for two months and has nowhere to run",
+    "A Vulture crew skims an item off a body that turns out to be a tracked corponation asset; the federation has to decide whether to return it (admitting the skim publicly) or hold it (and let the corp come looking)",
+    "Elder Marrow's identity becomes vulnerable — someone with corponation resources is close to a name and a residence; the federation has to defend a leader who has spent thirty years being unfindable",
+    "Kyle realizes, after Bushido Coda, that the Vultures who delivered him to the facility know who he is and what the False Death Protocol looks like from the inside of a body bag — making them either a future asset or a future liability",
+    "A Vulture crew arrives at Mrs. Chen's stall after an event Mrs. Chen does not yet know is going to happen; Kyle intervenes at the door and the federation files the obstruction the way it files everything",
+    "The Doorstep Database is leaked — every defaulted organ-financing contract in the GLMZ becomes public knowledge; the federation faces a choice between accelerating the repossession schedule and watching the trade collapse",
+    "A defector from the federation tries to start an independent operation; he becomes his own pickup within nine days"
+  ],
+  "tags": [
+    "faction",
+    "ghoul",
+    "scavenger",
+    "body",
+    "corpse",
+    "organ",
+    "cyberware",
+    "salvage",
+    "logistics",
+    "federation",
+    "carrion_logistics",
+    "elder_marrow",
+    "doorstep",
+    "repossession",
+    "consumer_credit",
+    "specimen_intake",
+    "atlas_program_supplier",
+    "lotus_syndicate_contractor",
+    "axiom_supplier",
+    "arcturus_kickback",
+    "bushido_coda_street_meat",
+    "vultures_on_the_doorstep_seed",
+    "morally_neutral",
+    "procedurally_horrific"
+  ],
+  "related_entities": [
+    "Hua",
+    "Kyle Ellen Corbin-Vasik",
+    "The Iron Lotus",
+    "Lotus Syndicate",
+    "Axiom Defense Solutions",
+    "Arcturus Civil Security",
+    "Dr. Nadia Onyekachi-Park",
+    "Cruciform Depot",
+    "Mrs. Chen / Chen Wei-Lin",
+    "Elder Marrow"
+  ]
+}
